@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_2948627</developerName>
+        <masterLabel>YP Wave Area</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Contact.Wave_started__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Brent A 10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brent A 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brent A 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brent A 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brent A 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brent A 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brent A 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brent A 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brent A 9</sourceValue>
+            </sourceValues>
+            <value>Brent</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Croydon A 10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Croydon A 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Croydon A 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Croydon A 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Croydon A 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Croydon A 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Croydon A 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Croydon A 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Croydon A 9</sourceValue>
+            </sourceValues>
+            <value>Croydon</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Ealing A 10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ealing A 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ealing A 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ealing A 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ealing A 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ealing A 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ealing A 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ealing A 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ealing A 9</sourceValue>
+            </sourceValues>
+            <value>Ealing</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Harrow B 10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Harrow B 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Harrow B 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Harrow B 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Harrow B 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Harrow B 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Harrow B 9</sourceValue>
+            </sourceValues>
+            <value>Harrow</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Kingston B 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingston B 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingston B 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingston B 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingston B 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingston B 9</sourceValue>
+            </sourceValues>
+            <value>Kingston</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBarGrouped</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_2948627</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>HS_Activity__c.HS_Application_Status__c</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_Status__c</field>
+    </columns>
+    <description>A summary of YPs&apos; application status by borough. Includes &apos;defer to autumn&apos;</description>
+    <filter>
+        <booleanFilter>((1 AND (2 OR 3)) and (4 Or 5 Or 6))</booleanFilter>
+        <criteriaItems>
+            <column>CONTACT_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Young_Person</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Date_HS_Application_pack_triggered__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>9/24/2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.HS_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>autumn</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Wave_started__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>ealing,hillingdon,hounslow,staines,slough,harrow,merton,kingston,richmond,wandsworth,k&amp;c,h&amp;f,westminster</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Wave_started__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>lambeth,southwark,croydon,sutton</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Wave_started__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>brent,barnet,camden,islington,city,tower hamlets,hackney,waltham forest,haringey,enfield</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>HS_Activity__c.HS_Application_Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_2948627</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.Wave_started__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Autumn 2015 London Application Review</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$HS_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

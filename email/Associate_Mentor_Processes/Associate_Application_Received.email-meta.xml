@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Acknowledgement email that is sent to SAM/AM to confirm that we have received application</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>1. Associate Mentor Application Received</name>
+    <style>freeForm</style>
+    <subject>TCS: Application Received</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Thanks very much for applying to be an {!Job_Application__c.Roles__c} with The Challenge.
+
+This is to confirm that we have received your application.
+
+We will contact all applicants by the beginning of May 2014. If your application is successful, you will need to attend a day of training with us. Details of training will be emailed to successful candidates.
+
+In the meantime, if you have any questions please email grads@the-challenge.org
+
+Thanks again,
+
+The Challenge Society</textOnly>
+    <type>html</type>
+</EmailTemplate>

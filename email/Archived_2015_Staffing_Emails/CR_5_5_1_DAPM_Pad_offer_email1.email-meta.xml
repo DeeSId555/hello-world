@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 5.5.1 DAPM/Pad offer email</name>
+    <style>formalLetter</style>
+    <subject>Your assessment for the DAPM/PAd role</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}.
+
+Dear {!Contact.FirstName},
+
+Congratulations! Following your assessment with us, we are delighted to be able to offer you a role with us this summer as a {!Job_Application__c.Role_to_assess_for__c}.
+
+Unlike our other seasonal role candidates, you will not need to fill out the rest of the sections on the Staffing Website. Your programmes team will be in touch soon to tell you which steps to take next.
+
+Well done again on your successful assessment - we can’t wait to work with you this summer, and hope that you are looking forward to taking on your role in the programmes team!
+
+Best wishes,
+
+The Challenge
+NCS Programme
+seasonalroles@the-challenge.org
+Email Reference: CR 5.5.1</textOnly>
+    <type>html</type>
+</EmailTemplate>

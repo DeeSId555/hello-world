@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>IC 1 (2016) Candidate requires reasonable adjustments</name>
+    <style>formalLetter</style>
+    <subject>{!Job_Application__c.Contact.Name} requires reasonable adjustment at assessment</subject>
+    <textOnly>This email was sent from Salesforce - please do not respond. For more information please contact your line manager.
+Dear Sherry and Matthew,
+
+
+The candidate below has been invited to an assessment. In their application, they indicated that they have a disability or additional needs which may require reasonable adjustments on our part during the assessment.
+
+
+Follow this link to their job application: {!Job_Application__c.Link}
+
+
+Please ensure that you discuss the candidate’s requirements at least one week before their assessment date in order to give enough time for adjustments to be put in place.
+
+
+Thanks,
+
+
+The Staffing Team
+Salesforce</textOnly>
+    <type>html</type>
+</EmailTemplate>

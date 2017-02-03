@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Account.Programmes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Junctions__r.Bookings__r$Partner_or_Venue__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>2014</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Junctions__r.Bookings__r$Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>heal b</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Junctions__r.Bookings__r$Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Junctions__r$Usage_Type_Formula__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>HEAL Bookings - Ealing</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Prog14_AccountsUsagesBookings__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account.Junctions__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

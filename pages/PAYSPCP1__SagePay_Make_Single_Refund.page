@@ -1,0 +1,89 @@
+<apex:page standardcontroller="PAYBASE2__Refund__c" extensions="PAYSPCP1.SagePaySingleRefundExtension" action="{!checkLicence}">
+  <apex:outputPanel layout="none" rendered="{! hasLicenceCheck }" >
+    <apex:outputPanel layout="none" rendered="{! LicenceCheck.canUse }" >
+
+      <apex:outputPanel layout="none" rendered="{! hasLicenceMessage }" >
+        <font color="red">
+          <br/>
+          Message from Licence Manager: {! LicenceCheck.messages }
+          <br/>
+          <br/>
+        </font>
+      </apex:outputPanel>
+
+      <apex:outputPanel layout="none" rendered="{! hasLicenceMessages }" >
+        <font color="red">
+          <br/>
+          Messages from Licence Manager: 
+          <br/>
+          <apex:dataList value="{! LicenceCheck.messages }" var="msg">
+                <apex:outputText value="{!msg}"/>
+          </apex:dataList>
+          
+          <br/>
+        </font>
+      </apex:outputPanel>
+    
+      <apex:outputPanel layout="none" rendered="{! payment.PAYBASE2__Is_Paid__c }" >
+        <apex:pageMessages />
+        <apex:form >
+          <apex:pageBlock title="Make Single Refund" mode="edit">
+            <apex:pageBlockButtons >
+              <apex:commandButton action="{!proceed}" value="Proceed"/>
+              <apex:outputPanel rendered="{! CancelURL != null }" layout="none">
+                <input type="button" class="btn" value="Cancel" onclick="window.location='{! JSENCODE(CancelURL) }';" />
+              </apex:outputPanel>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Payment Details" columns="1">
+              <apex:outputField value="{!payment.PAYBASE2__Amount__c}" />
+              <apex:outputField value="{!payment.PAYBASE2__Balance__c}" />
+        
+              <apex:inputField value="{!Refund.PAYBASE2__Amount__c}" required="true"/>
+              <apex:inputField value="{!Refund.PAYCP2__Reason__c}" required="true" style="width:400px; height:150px;"/>
+            </apex:pageBlockSection>
+          </apex:pageBlock>
+        </apex:form>
+      </apex:outputPanel>
+
+      <apex:outputPanel layout="none" rendered="{! (!payment.PAYBASE2__Is_Paid__c) }" >
+          <p/>
+          <p/>
+          This payment cannot be refunded
+      </apex:outputPanel>
+    
+    </apex:outputPanel>
+  
+    <apex:outputPanel layout="none" rendered="{! !LicenceCheck.canUse }" >
+      You do not have a licence for this product.
+
+      <apex:outputPanel layout="none" rendered="{! hasLicenceMessage }" >
+        <font color="red">
+          <br/>
+          Message from Licence Manager: {! LicenceCheck.messages }
+          <br/>
+          <br/>
+        </font>
+      </apex:outputPanel>
+
+      <apex:outputPanel layout="none" rendered="{! hasLicenceMessages }" >
+        <font color="red">
+          <br/>
+          Messages from Licence Manager: 
+          <br/>
+          <apex:dataList value="{! LicenceCheck.messages }" var="msg">
+                <apex:outputText value="{!msg}"/>
+          </apex:dataList>
+        
+          <br/>
+        </font>
+      </apex:outputPanel>
+    </apex:outputPanel>
+  </apex:outputPanel>
+
+  <apex:outputPanel layout="none" rendered="{! !hasLicenceCheck }" >
+    <font color="red">
+      Failed to check licence
+    </font>
+  </apex:outputPanel>
+
+</apex:page>

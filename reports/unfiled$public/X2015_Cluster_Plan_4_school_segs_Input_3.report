@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.School_code__c</field>
+    </columns>
+    <columns>
+        <field>School_Activities__c.School_s_segment_number__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>School_Activities__c.School_Activity_2014_S</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Borough_or_area__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Manchester,Bury</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2015 Cluster Plan 4-school segs-Input 3</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$School_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

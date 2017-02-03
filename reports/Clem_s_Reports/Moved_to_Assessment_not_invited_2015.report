@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Contact_Name__c</field>
+    </columns>
+    <columns>
+        <field>PHONE3</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>startsWith</operator>
+            <value>JA-2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Region_selected__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>North West</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Post_screen_status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Move to assessment</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Invite_to_Assessment__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Job_Application__c.Job_Application_pre_screen_2012,Job_Application__c.Job_Application_post_screen_2012,Job_Application__c.Senior_Associate_Mentor_Application_2012,Job_Application__c.Youth_Board_Application,Job_Application__c.TCS_Mentor_2012,Job_Application__c.Job_Application_post_screen_2013,Job_Application__c.Pre_screen_2014,Job_Application__c.Post_screen_2014,Job_Application__c.Rejected_2014,Job_Application__c.Pre_screen_2015,Job_Application__c.Rejected_2015,Job_Application__c.Associate_Mentor_2015</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Moved to Assessment- not invited 2015</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Job_Application__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

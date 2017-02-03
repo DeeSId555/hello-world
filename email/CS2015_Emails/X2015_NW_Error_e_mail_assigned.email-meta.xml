@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2015 NW Error e-mail reserved</name>
+    <style>none</style>
+    <subject>{!Contact.FirstName}&apos;s meeting points for NCS</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTHECHALLENGE.ORG
+
+{!Contact.FirstName}&apos;s meeting points for NCS
+
+
+
+
+Dear Parent/Guardian of {!Contact.Name},
+
+Thank you for your application for {!Contact.Name} to take part in NCS. We hope they are looking forward to spending some of their summer with us.
+
+They currently have a provisional reserved place starting on {!Wave_Selection__c.PC_KO_Day__c} for the programme with meeting points in {!Wave__c.Boroughs_or_areas__c}. However, we have noticed that this is outside of their school’s borough.
+
+If {!Contact.Name} is unable to travel to this location and you would like to change to a different one, please call us as soon as possible on 0203 542 2400. We will then try our best to place them on a more suitable programme.
+
+Yours sincerely,
+
+
+Tanya Dunne
+Head of Customer Services - The Challenge
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

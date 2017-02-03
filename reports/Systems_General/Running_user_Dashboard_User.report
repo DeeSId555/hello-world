@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Dashboard$Id</field>
+    </columns>
+    <columns>
+        <field>Dashboard$Title</field>
+    </columns>
+    <columns>
+        <field>Dashboard$RunningUser</field>
+    </columns>
+    <columns>
+        <field>Dashboard$LastModifiedBy</field>
+    </columns>
+    <columns>
+        <field>Dashboard$Folder</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Dashboard$RunningUser</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Dashboard</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Year</dateGranularity>
+        <field>Dashboard$LastModifiedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Running user Dashboard User</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Dashboards__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Dashboard$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

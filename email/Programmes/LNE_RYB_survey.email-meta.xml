@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>LNN RYB survey</name>
+    <style>freeForm</style>
+    <subject>NCS Regional Youth Board - have your say!</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+As a member of the NCS Regional Youth Board for North London, we&apos;d love to hear your opinion on a range of issues relating to the boards.
+
+We&apos;d really appreciate it if you could take a few minutes to fill in this short survey (https://www.surveymonkey.co.uk/r/RYBFeedback), and let us know what you think. This will help us make the Regional Youth Boards as rewarding and effective as possible in the future.
+
+Thanks very much, and look out for an email soon with the date of your next Regional Youth Board meeting!
+
+Kind regards,
+
+The Challenge Society</textOnly>
+    <type>html</type>
+</EmailTemplate>

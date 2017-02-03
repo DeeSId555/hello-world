@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Graduation Email to be sent 2013</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Unconditional Waiting List Email autumn 2013B</name>
+    <style>none</style>
+    <subject>Update about your application for NCS with The Challenge.</subject>
+    <textOnly>Dear {!Contact.FirstName} and Parent/Guardian of {!Contact.FirstName},
+
+Thank you for completing {!Contact.FirstName}’s application for a place on NCS (National Citizen Service) powered by The Challenge.
+
+Due to the popularity of the programme, {!Contact.FirstName} has been placed on a waiting list. However, we closely track all allocations across the country and will give {!Contact.FirstName} a place on a programme as soon as one becomes available.
+
+We will be in touch with you as soon as there is any progress in {!Contact.FirstName}’s application. In the unlikely situation that we are not able to offer {!Contact.FirstName} a place, and provided that they have not given up a place we have previously offered, we will issue you with a full refund.
+
+We are pleased that {!Contact.FirstName} has decided to take up this fantastic opportunity, and we will confirm {!Contact.FirstName}&apos;s place as soon as possible.
+
+If you have any questions, please do get in touch. You can call us on 020 3542 2400, or email us at contact@the-challenge.org.
+
+
+Yours sincerely,
+
+Rebecca Carter
+Director at The Challenge Network
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

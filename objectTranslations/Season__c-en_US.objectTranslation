@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Season</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Seasons</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active season --></label>
+        <name>Active_season__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Automated wave selection gen active? --></label>
+        <name>Automated_wave_selection_gen_active__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the date from which an EOI is considered --></help>
+        <label><!-- Date Sales season commences --></label>
+        <name>Date_Sales_season_commences__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sales tracker finishes --></label>
+        <name>Date_Sales_tracker_finishes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date applications open --></label>
+        <name>Date_applications_open__c</name>
+    </fields>
+    <fields>
+        <label><!-- Early-bird discount --></label>
+        <name>Early_bird_discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- End date of last wave --></label>
+        <name>End_date_of_last_wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full price --></label>
+        <name>Full_price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Oldest Date of Birth Possible:FirstWave --></label>
+        <name>Oldest_Date_of_Birth_Possible_First_Wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Oldest date of birth --></label>
+        <name>Oldest_date_of_birth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online discount --></label>
+        <name>Online_discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment validity beyond current Season --></label>
+        <name>Payment_validity_beyond_current_Season__c</name>
+        <picklistValues>
+            <masterLabel>Autumn 2015</masterLabel>
+            <translation><!-- Autumn 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autumn 2016</masterLabel>
+            <translation><!-- Autumn 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autumn 2017</masterLabel>
+            <translation><!-- Autumn 2017 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autumn 2018</masterLabel>
+            <translation><!-- Autumn 2018 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February 2015</masterLabel>
+            <translation><!-- February 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February 2016</masterLabel>
+            <translation><!-- February 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February 2017</masterLabel>
+            <translation><!-- February 2017 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February 2018</masterLabel>
+            <translation><!-- February 2018 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summer 2015</masterLabel>
+            <translation><!-- Summer 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summer 2016</masterLabel>
+            <translation><!-- Summer 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summer 2017</masterLabel>
+            <translation><!-- Summer 2017 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summer 2018</masterLabel>
+            <translation><!-- Summer 2018 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Tick this if the Weekend RCA picklist is required on the OBS (generally only required for Summer) --></help>
+        <label><!-- RCA weekend picklist --></label>
+        <name>RCA_weekend_picklist__c</name>
+    </fields>
+    <fields>
+        <label><!-- Season close date --></label>
+        <name>Season_close_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Season number --></label>
+        <name>Season_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Season open date --></label>
+        <name>Season_open_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tick this to make available the ability to download the Confirmation letter on OBS My Programme --></help>
+        <label><!-- Show Confirmation letter --></label>
+        <name>Show_Confirmation_letter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tick here if the download for the Graduation invitation is available for on OBS My Programme --></help>
+        <label><!-- Show Graduation invitation --></label>
+        <name>Show_Graduation_invitation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tick if the download for Parents&apos; Information Evening details are available for OBS My Programme --></help>
+        <label><!-- Show Information evening details --></label>
+        <name>Show_Information_evening_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show My Programme --></label>
+        <name>Show_My_Programme__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tick this if Programme Information letter download should be available on OBS My Programme section --></help>
+        <label><!-- Show Programme letter --></label>
+        <name>Show_Programme_letter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tick here to allow the download of September weekend timetables on OBS My Programme --></help>
+        <label><!-- Show September weekend timetable --></label>
+        <name>Show_September_weekend_timetable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tick this if the main programme timetable should be available for download on OBS My Programme --></help>
+        <label><!-- Show Timetable --></label>
+        <name>Show_Timetable__c</name>
+    </fields>
+    <fields>
+        <label><!-- VIS/GIS standard price to pay --></label>
+        <name>VIS_GIS_standard_price_to_pay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Youngest date of birth --></label>
+        <name>Youngest_date_of_birth__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

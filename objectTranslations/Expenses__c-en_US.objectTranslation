@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Expenses</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Expenses</value>
+    </caseValues>
+    <fields>
+        <label><!-- APM --></label>
+        <name>APM__c</name>
+    </fields>
+    <fields>
+        <label><!-- APM email --></label>
+        <name>APM_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- All items approved --></label>
+        <name>All_items_approved__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the amount that has not been approved for payment after review. --></help>
+        <label><!-- Amount not approved (post-review) --></label>
+        <name>Amount_not_approved_for_payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval status --></label>
+        <name>Approval_status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approve all? --></label>
+        <name>Approve_all__c</name>
+        <picklistValues>
+            <masterLabel>Approve all</masterLabel>
+            <translation><!-- Approve all --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Items individually approved</masterLabel>
+            <translation><!-- Items individually approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reject all</masterLabel>
+            <translation><!-- Reject all --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact email --></label>
+        <name>Contact_email__c</name>
+    </fields>
+    <fields>
+        <help><!-- If there is a date in this field it means that the email has been sent to the staff member --></help>
+        <label><!-- Date last claim summary sent --></label>
+        <name>Date_expense_update_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date expenses reviewed --></label>
+        <name>Date_expenses_reviewed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 1 date incurred --></label>
+        <name>Date_incurred_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 2 date incurred --></label>
+        <name>Date_incurred_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 3 date incurred --></label>
+        <name>Date_incurred_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date incurred Travel 5 --></label>
+        <name>Date_incurred_Travel_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date incurred telephone 3 --></label>
+        <name>Date_incurred_telephone_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date incurred travel 1 --></label>
+        <name>Date_incurred_travel_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date incurred travel 2 --></label>
+        <name>Date_incurred_travel_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date incurred travel 3 --></label>
+        <name>Date_incurred_travel_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date incurred travel 4 --></label>
+        <name>Date_incurred_travel_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date submitted --></label>
+        <name>Date_submitted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows at what time and date this expense form was marked as paid --></help>
+        <label><!-- Date/time marked as paid --></label>
+        <name>Date_time_marked_as_paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 1 description --></label>
+        <name>Description_other_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 2 description --></label>
+        <name>Description_other_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 3 description --></label>
+        <name>Description_other_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 4 description --></label>
+        <name>Description_telephone_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 5 description --></label>
+        <name>Description_telephone_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description travel 5 --></label>
+        <name>Description_travel_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Escalated --></label>
+        <name>Escalated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense age (days) --></label>
+        <name>Expense_age_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expenses payroll date/time --></label>
+        <name>Expenses_payroll_date_time__c</name>
+    </fields>
+    <fields>
+        <help><!-- This guidance tells you what you can approve. --></help>
+        <label><!-- Expenses policy --></label>
+        <name>Expenses_policy__c</name>
+    </fields>
+    <fields>
+        <label><!-- External approval status --></label>
+        <name>External_approval_status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final approval date --></label>
+        <name>Final_approval_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the total amount of all approved items. --></help>
+        <label><!-- Grand Total --></label>
+        <name>Grand_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incurred during --></label>
+        <name>Incurred_during__c</name>
+        <picklistValues>
+            <masterLabel>Personal Challenge</masterLabel>
+            <translation><!-- Personal Challenge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Challenge Action</masterLabel>
+            <translation><!-- Real Challenge Action --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Challenge Design</masterLabel>
+            <translation><!-- Real Challenge Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Team Challenge</masterLabel>
+            <translation><!-- Team Challenge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training</masterLabel>
+            <translation><!-- Training --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Item 1 --></label>
+        <name>Item_1__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telephone</masterLabel>
+            <translation><!-- Telephone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel</masterLabel>
+            <translation><!-- Travel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Item 1 amount approved --></label>
+        <name>Item_1_amount_approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 1 double approved --></label>
+        <name>Item_1_double_approved__c</name>
+    </fields>
+    <fields>
+        <help><!-- Give details here of why this was declined. Please make explanation clear so that others can understand. --></help>
+        <label><!-- Item 1 - reason declined --></label>
+        <name>Item_1_reason_declined__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 2 --></label>
+        <name>Item_2__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telephone</masterLabel>
+            <translation><!-- Telephone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel</masterLabel>
+            <translation><!-- Travel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Item 2 amount approved --></label>
+        <name>Item_2_amount_approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 2 double approved --></label>
+        <name>Item_2_double_approved__c</name>
+    </fields>
+    <fields>
+        <help><!-- Give details here of why this was declined. Please make explanation clear so that others can understand. --></help>
+        <label><!-- Item 2 - reason declined --></label>
+        <name>Item_2_reason_declined__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 3 --></label>
+        <name>Item_3__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telephone</masterLabel>
+            <translation><!-- Telephone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel</masterLabel>
+            <translation><!-- Travel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Item 3 amount approved --></label>
+        <name>Item_3_amount_approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 3 double approved --></label>
+        <name>Item_3_double_approved__c</name>
+    </fields>
+    <fields>
+        <help><!-- Give details here of why this was declined. Please make explanation clear so that others can understand. --></help>
+        <label><!-- Item 3 - reason declined --></label>
+        <name>Item_3_reason_declined__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 4 --></label>
+        <name>Item_4__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telephone</masterLabel>
+            <translation><!-- Telephone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel</masterLabel>
+            <translation><!-- Travel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Item 4 amount approved --></label>
+        <name>Item_4_amount_approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 4 approved? --></label>
+        <name>Item_4_approved__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unreviewed</masterLabel>
+            <translation><!-- Unreviewed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Item 4 date incurred --></label>
+        <name>Item_4_date_incurred__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 4 double approved --></label>
+        <name>Item_4_double_approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 4 - reason declined --></label>
+        <name>Item_4_reason_declined__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 5 --></label>
+        <name>Item_5__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telephone</masterLabel>
+            <translation><!-- Telephone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel</masterLabel>
+            <translation><!-- Travel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Item 5 amount --></label>
+        <name>Item_5_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 5 amount approved --></label>
+        <name>Item_5_amount_approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 5 approved? --></label>
+        <name>Item_5_approved__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unreviewed</masterLabel>
+            <translation><!-- Unreviewed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Item 5 date incurred --></label>
+        <name>Item_5_date_incurred__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 5 double approved --></label>
+        <name>Item_5_double_approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 5 - reason declined --></label>
+        <name>Item_5_reason_declined__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Application --></label>
+        <name>Job_Application__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Job placement --></label>
+        <name>Job_placement__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- NB: --></label>
+        <name>NB__c</name>
+    </fields>
+    <fields>
+        <label><!-- National Insurance number --></label>
+        <name>National_Insurance_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 1 amount --></label>
+        <name>Other_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 2 amount --></label>
+        <name>Other_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 3 amount --></label>
+        <name>Other_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 1 approved? --></label>
+        <name>Other_approved__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unreviewed</masterLabel>
+            <translation><!-- Unreviewed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This amount is set. Any approved other expenses above this amount will be flagged to the PM --></help>
+        <label><!-- Other cap --></label>
+        <name>Other_cap__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other subtotal --></label>
+        <name>Other_subtotal__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM approval needed --></label>
+        <name>PM_approval_needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM email --></label>
+        <name>PM_email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows that this expense form has been paid. See &quot;Date marked as paid&quot; for when this was done. --></help>
+        <label><!-- Paid --></label>
+        <name>Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-approved Expenses --></label>
+        <name>Pre_approved_Expenses_from_JP__c</name>
+    </fields>
+    <fields>
+        <help><!-- Add any notes here relating to the expense claim, eg &quot;Found receipts in the expense receipt archive (programmes.expenses@the-challenge) --></help>
+        <label><!-- Programmes Notes --></label>
+        <name>Programmes_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Programmes User view --></label>
+        <name>Programmes_User_view__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>Role_from_JP__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPM email --></label>
+        <name>SPM_email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tick this box to resend an auto-email to the staff member to inform them of what has and has not been paid. --></help>
+        <label><!-- Resend claim summary --></label>
+        <name>Send_discretionary_expense_claim_summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suggestions: --></label>
+        <name>Suggestions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summer Manager email --></label>
+        <name>Summer_Manager_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Telephone 1 --></label>
+        <name>Telephone_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Telephone 2 --></label>
+        <name>Telephone_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Telephone 3 --></label>
+        <name>Telephone_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 2 approved? --></label>
+        <name>Telephone_approved__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unreviewed</masterLabel>
+            <translation><!-- Unreviewed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This amount is set. Any approved telephone claims above this amount will be flagged to the PM --></help>
+        <label><!-- Telephone cap --></label>
+        <name>Telephone_cap__c</name>
+    </fields>
+    <fields>
+        <label><!-- Telephone subtotal --></label>
+        <name>Telephone_subtotal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel 3 --></label>
+        <name>Travel_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel 4 --></label>
+        <name>Travel_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel 5 --></label>
+        <name>Travel_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 3 approved? --></label>
+        <name>Travel_approved__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unreviewed</masterLabel>
+            <translation><!-- Unreviewed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This amount is set. Approved travel expense claims over this amount will be flagged to the PM --></help>
+        <label><!-- Travel cap --></label>
+        <name>Travel_cap__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel subtotal --></label>
+        <name>Travel_subtotal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unreviewed expenses - 20 Days --></label>
+        <name>Unreviewed_expenses_20_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave --></label>
+        <name>Wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zone --></label>
+        <name>Zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item 4 amount --></label>
+        <name>item_4_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- # items --></label>
+        <name>items__c</name>
+    </fields>
+    <fields>
+        <label><!-- # reviewed items --></label>
+        <name>reviewed_items__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- 2012 --></label>
+        <name>X2012</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2013 --></label>
+        <name>X2013</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2014 --></label>
+        <name>X2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2015 --></label>
+        <name>X2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2016 --></label>
+        <name>X2016</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please write a few words in the &quot;reason declined&quot; fields to explain why each item was declined. It will help with future queries about the claim. Thanks. --></errorMessage>
+        <name>All_items_declined</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please put today&apos;s date in the field &quot;Final Approval Date&quot; to confirm that these expenses should be paid. --></errorMessage>
+        <name>Final_approval_date_and_PM</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please write a few words to explain why this item was declined. It will help with future queries about the claim. Thanks. --></errorMessage>
+        <name>Item_1_declined</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please write a few words to explain why this item was declined. It will help with future queries about the claim. Thanks. --></errorMessage>
+        <name>Item_2_declined</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please write a few words to explain why this item was declined. It will help with future queries about the claim. Thanks. --></errorMessage>
+        <name>Item_3_declined</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please write a few words to explain why this item was declined. It will help with future queries about the claim. Thanks. --></errorMessage>
+        <name>Item_4_declined</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please write a few words to explain why this item was declined. It will help with future queries about the claim. Thanks. --></errorMessage>
+        <name>Item_5_declined</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change the amount  of an expense item once it has been reviewed --></errorMessage>
+        <name>Prevent_Amount_Change_on_ReviewedExpense</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If an expense item has an amount entered, an item type must also be entered. --></errorMessage>
+        <name>Prevent_Blank_Item</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This expense claim has been paid. You can no longer change the approval fields --></errorMessage>
+        <name>Prevent_post_payment_edits</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You will not be able to save this Expenses record until you have approved or declined all of the claims. --></errorMessage>
+        <name>Prevent_save_all_items_reviewed</name>
+    </validationRules>
+</CustomObjectTranslation>

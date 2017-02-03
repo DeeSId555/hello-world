@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>confirmation of assessment for PVs</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Staffing confirmation of assessment for PVs</name>
+    <style>none</style>
+    <subject>The Challenge Network: assessment confirmation</subject>
+    <textOnly>CONFIRMATION OF YOUR ASSESSMENT
+
+Dear {!HR_Event_Attendance__c.Candidate_Name__c},
+ 
+This is to confirm your group assessment with us on {!HR_Event_Attendance__c.HR_Event_Date__c} at {!HR_Event_Attendance__c.Start_time__c} until {!HR_Event_Attendance__c.End_time__c} at {!HR_Event_Attendance__c.Venue__c} 
+{!HR_Event_Attendance__c.Venue_address__c} 
+ 
+The assessment will include various group activities so please wear smart/casual comfortable clothing. Please prepare two &apos;icebreaker games&apos; to share: these are simple games to break the ice with a group about ten people which last for about three minutes.
+Click on the link below for directions to the assessment venue. 
+{!HR_Event_Attendance__c.Directions__c}
+
+We look forward to meeting you!
+ 
+Best wishes, 
+ 
+The Staffing Team
+The Challenge Network
+
+WWW.THE-CHALLENGE.ORG
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

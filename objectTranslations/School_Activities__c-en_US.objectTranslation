@@ -1,0 +1,2342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>School Activity</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>School Activities</value>
+    </caseValues>
+    <fields>
+        <label><!-- Access Agreed --></label>
+        <name>Access_Agreed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account owner --></label>
+        <name>Account_owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active Season number --></label>
+        <name>Active_Season_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address line 1 --></label>
+        <name>Address_line_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address line 2 --></label>
+        <name>Address_line_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address line 3 --></label>
+        <name>Address_line_3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Agreed Nominated Champion School recruitment target, only MMs and MAMs can edit. --></help>
+        <label><!-- Agreed CS recruitment target --></label>
+        <name>Agreed_CS_recruitment_target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ambassador name --></label>
+        <name>Ambassador_name__c</name>
+        <relationshipLabel><!-- School Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Assembly date --></label>
+        <name>Assembly_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assembly presenter --></label>
+        <name>Assembly_presenter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Borough or area --></label>
+        <name>Borough_or_area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Borough or area --></label>
+        <name>Borough_or_area_current__c</name>
+    </fields>
+    <fields>
+        <label><!-- CT Title --></label>
+        <name>CT_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- CT email address --></label>
+        <name>CT_email_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- CT first name --></label>
+        <name>CT_first_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- CT gender --></label>
+        <name>CT_gender__c</name>
+    </fields>
+    <fields>
+        <label><!-- CT last name --></label>
+        <name>CT_last_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- CT meeting date --></label>
+        <name>CT_meeting_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- CT mobile --></label>
+        <name>CT_mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- CT phone number --></label>
+        <name>CT_phone_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- CT relationship history --></label>
+        <name>CT_relationship_history__c</name>
+    </fields>
+    <fields>
+        <label><!-- Champion school (CS) status --></label>
+        <name>Champion_school_CS_status__c</name>
+        <picklistValues>
+            <masterLabel>Awarded Champion School Status S 2014</masterLabel>
+            <translation><!-- Awarded Champion School Status S 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In discussions</masterLabel>
+            <translation><!-- In discussions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCN approaching about CS</masterLabel>
+            <translation><!-- TCN approaching about CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes agreed to working towards CS</masterLabel>
+            <translation><!-- Yes agreed to working towards CS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The value of this field is pulled through from the School Account record.  Ask your Manager to tick the box in School Accounts once you have agreed with a school that they will work towards Champion Schools Status. --></help>
+        <label><!-- Working towards Champion School Status --></label>
+        <name>Champion_school__c</name>
+    </fields>
+    <fields>
+        <label><!-- Champion school status notes --></label>
+        <name>Champion_school_status_notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cluster --></label>
+        <name>Cluster__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cluster --></label>
+        <name>Cluster_current__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Target School? --></label>
+        <name>Current_Target_School__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Assembly arranged --></label>
+        <name>Date_Assembly_arranged__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date CT Meeting arranged --></label>
+        <name>Date_CT_Meeting_arranged__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Head Meeting arranged --></label>
+        <name>Date_Head_Meeting_arranged__c</name>
+    </fields>
+    <fields>
+        <label><!-- ST Meeting Date --></label>
+        <name>Date_ST_Meeting_arranged__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sales Tracker last refreshed --></label>
+        <name>Date_Sales_Tracker_last_refreshed__c</name>
+    </fields>
+    <fields>
+        <label><!-- TT Activated --></label>
+        <name>Date_Sales_Tracking_activated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sales Tracking commences --></label>
+        <name>Date_Sales_Tracking_commences__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sales tracking finishes --></label>
+        <name>Date_Sales_tracking_finishes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Teacher Information Request Sent --></label>
+        <name>Date_Teacher_Information_Request_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date interest shown --></label>
+        <name>Date_interest_shown__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of last tracker --></label>
+        <name>Date_of_last_tracker__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount deadline --></label>
+        <name>Discount_deadline__c</name>
+    </fields>
+    <fields>
+        <label><!-- DofE participation? --></label>
+        <name>DofE_participation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email sent --></label>
+        <name>Email_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 10 Date --></label>
+        <name>Event_10_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 10 ID --></label>
+        <name>Event_10_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 10 NCS Type --></label>
+        <name>Event_10_NCS_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 10 Time --></label>
+        <name>Event_10_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 10 Type --></label>
+        <name>Event_10_Type__c</name>
+        <picklistValues>
+            <masterLabel>6th form open day</masterLabel>
+            <translation><!-- 6th form open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6th form open evening</masterLabel>
+            <translation><!-- 6th form open evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assembly</masterLabel>
+            <translation><!-- Assembly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Careers fair</masterLabel>
+            <translation><!-- Careers fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College open day</masterLabel>
+            <translation><!-- College open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOI event</masterLabel>
+            <translation><!-- EOI event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Focus group</masterLabel>
+            <translation><!-- Focus group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freshers&apos; fair</masterLabel>
+            <translation><!-- Freshers&apos; fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hoody handout</masterLabel>
+            <translation><!-- Hoody handout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Networking event</masterLabel>
+            <translation><!-- Networking event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSHE/citizenship class</masterLabel>
+            <translation><!-- PSHE/citizenship class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Piggyback parents&apos; evening</masterLabel>
+            <translation><!-- Piggyback parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCN-specific parents&apos; evening</masterLabel>
+            <translation><!-- TCN-specific parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teacher conference</masterLabel>
+            <translation><!-- Teacher conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tutor time/form time follow-up</masterLabel>
+            <translation><!-- Tutor time/form time follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whole year PSHE/citizenship lesson</masterLabel>
+            <translation><!-- Whole year PSHE/citizenship lesson --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event 10 est end time --></label>
+        <name>Event_10_est_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 10 insight --></label>
+        <name>Event_10_insight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 10 start time --></label>
+        <name>Event_10_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 11 Date --></label>
+        <name>Event_11_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 11 ID --></label>
+        <name>Event_11_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 11 NCS Type --></label>
+        <name>Event_11_NCS_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 11 Type --></label>
+        <name>Event_11_Type__c</name>
+        <picklistValues>
+            <masterLabel>6th form open day</masterLabel>
+            <translation><!-- 6th form open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6th form open evening</masterLabel>
+            <translation><!-- 6th form open evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assembly</masterLabel>
+            <translation><!-- Assembly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Careers fair</masterLabel>
+            <translation><!-- Careers fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College open day</masterLabel>
+            <translation><!-- College open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOI event</masterLabel>
+            <translation><!-- EOI event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Focus group</masterLabel>
+            <translation><!-- Focus group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freshers&apos; fair</masterLabel>
+            <translation><!-- Freshers&apos; fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hoody handout</masterLabel>
+            <translation><!-- Hoody handout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Networking event</masterLabel>
+            <translation><!-- Networking event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSHE/citizenship class</masterLabel>
+            <translation><!-- PSHE/citizenship class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Piggyback parents&apos; evening</masterLabel>
+            <translation><!-- Piggyback parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCN-specific parents&apos; evening</masterLabel>
+            <translation><!-- TCN-specific parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teacher conference</masterLabel>
+            <translation><!-- Teacher conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tutor time/form time follow-up</masterLabel>
+            <translation><!-- Tutor time/form time follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whole year PSHE/citizenship lesson</masterLabel>
+            <translation><!-- Whole year PSHE/citizenship lesson --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event 11 est end time --></label>
+        <name>Event_11_est_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 11 start time --></label>
+        <name>Event_11_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 12 Date --></label>
+        <name>Event_12_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 12 ID --></label>
+        <name>Event_12_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 12 NCS Type --></label>
+        <name>Event_12_NCS_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 12 Type --></label>
+        <name>Event_12_Type__c</name>
+        <picklistValues>
+            <masterLabel>6th form open day</masterLabel>
+            <translation><!-- 6th form open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6th form open evening</masterLabel>
+            <translation><!-- 6th form open evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assembly</masterLabel>
+            <translation><!-- Assembly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Careers fair</masterLabel>
+            <translation><!-- Careers fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College open day</masterLabel>
+            <translation><!-- College open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOI event</masterLabel>
+            <translation><!-- EOI event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Focus group</masterLabel>
+            <translation><!-- Focus group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freshers&apos; fair</masterLabel>
+            <translation><!-- Freshers&apos; fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hoody handout</masterLabel>
+            <translation><!-- Hoody handout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Networking event</masterLabel>
+            <translation><!-- Networking event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSHE/citizenship class</masterLabel>
+            <translation><!-- PSHE/citizenship class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Piggyback parents&apos; evening</masterLabel>
+            <translation><!-- Piggyback parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCN-specific parents&apos; evening</masterLabel>
+            <translation><!-- TCN-specific parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teacher conference</masterLabel>
+            <translation><!-- Teacher conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tutor time/form time follow-up</masterLabel>
+            <translation><!-- Tutor time/form time follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whole year PSHE/citizenship lesson</masterLabel>
+            <translation><!-- Whole year PSHE/citizenship lesson --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event 12 est end time --></label>
+        <name>Event_12_est_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 12 start time --></label>
+        <name>Event_12_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 13 Date --></label>
+        <name>Event_13_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 13 ID --></label>
+        <name>Event_13_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 13 NCS Type --></label>
+        <name>Event_13_NCS_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 13 Type --></label>
+        <name>Event_13_Type__c</name>
+        <picklistValues>
+            <masterLabel>6th form open day</masterLabel>
+            <translation><!-- 6th form open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6th form open evening</masterLabel>
+            <translation><!-- 6th form open evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assembly</masterLabel>
+            <translation><!-- Assembly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Careers fair</masterLabel>
+            <translation><!-- Careers fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College open day</masterLabel>
+            <translation><!-- College open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOI event</masterLabel>
+            <translation><!-- EOI event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Focus group</masterLabel>
+            <translation><!-- Focus group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freshers&apos; fair</masterLabel>
+            <translation><!-- Freshers&apos; fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hoody handout</masterLabel>
+            <translation><!-- Hoody handout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Networking event</masterLabel>
+            <translation><!-- Networking event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSHE/citizenship class</masterLabel>
+            <translation><!-- PSHE/citizenship class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Piggyback parents&apos; evening</masterLabel>
+            <translation><!-- Piggyback parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCN-specific parents&apos; evening</masterLabel>
+            <translation><!-- TCN-specific parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teacher conference</masterLabel>
+            <translation><!-- Teacher conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tutor time/form time follow-up</masterLabel>
+            <translation><!-- Tutor time/form time follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whole year PSHE/citizenship lesson</masterLabel>
+            <translation><!-- Whole year PSHE/citizenship lesson --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event 13 est end time --></label>
+        <name>Event_13_est_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 13 start time --></label>
+        <name>Event_13_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 14 Date --></label>
+        <name>Event_14_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 14 ID --></label>
+        <name>Event_14_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 14 NCS Type --></label>
+        <name>Event_14_NCS_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 14 Type --></label>
+        <name>Event_14_Type__c</name>
+        <picklistValues>
+            <masterLabel>6th form open day</masterLabel>
+            <translation><!-- 6th form open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6th form open evening</masterLabel>
+            <translation><!-- 6th form open evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assembly</masterLabel>
+            <translation><!-- Assembly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Careers fair</masterLabel>
+            <translation><!-- Careers fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College open day</masterLabel>
+            <translation><!-- College open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOI event</masterLabel>
+            <translation><!-- EOI event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Focus group</masterLabel>
+            <translation><!-- Focus group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freshers&apos; fair</masterLabel>
+            <translation><!-- Freshers&apos; fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hoody handout</masterLabel>
+            <translation><!-- Hoody handout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Networking event</masterLabel>
+            <translation><!-- Networking event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSHE/citizenship class</masterLabel>
+            <translation><!-- PSHE/citizenship class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Piggyback parents&apos; evening</masterLabel>
+            <translation><!-- Piggyback parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCN-specific parents&apos; evening</masterLabel>
+            <translation><!-- TCN-specific parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teacher conference</masterLabel>
+            <translation><!-- Teacher conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tutor time/form time follow-up</masterLabel>
+            <translation><!-- Tutor time/form time follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whole year PSHE/citizenship lesson</masterLabel>
+            <translation><!-- Whole year PSHE/citizenship lesson --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event 14 est end time --></label>
+        <name>Event_14_est_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 14 start time --></label>
+        <name>Event_14_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 15 Date --></label>
+        <name>Event_15_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 15 ID --></label>
+        <name>Event_15_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 15 NCS Type --></label>
+        <name>Event_15_NCS_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 15 Type --></label>
+        <name>Event_15_Type__c</name>
+        <picklistValues>
+            <masterLabel>6th form open day</masterLabel>
+            <translation><!-- 6th form open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6th form open evening</masterLabel>
+            <translation><!-- 6th form open evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assembly</masterLabel>
+            <translation><!-- Assembly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Careers fair</masterLabel>
+            <translation><!-- Careers fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College open day</masterLabel>
+            <translation><!-- College open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOI event</masterLabel>
+            <translation><!-- EOI event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Focus group</masterLabel>
+            <translation><!-- Focus group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freshers&apos; fair</masterLabel>
+            <translation><!-- Freshers&apos; fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hoody handout</masterLabel>
+            <translation><!-- Hoody handout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Networking event</masterLabel>
+            <translation><!-- Networking event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSHE/citizenship class</masterLabel>
+            <translation><!-- PSHE/citizenship class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Piggyback parents&apos; evening</masterLabel>
+            <translation><!-- Piggyback parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCN-specific parents&apos; evening</masterLabel>
+            <translation><!-- TCN-specific parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teacher conference</masterLabel>
+            <translation><!-- Teacher conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tutor time/form time follow-up</masterLabel>
+            <translation><!-- Tutor time/form time follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whole year PSHE/citizenship lesson</masterLabel>
+            <translation><!-- Whole year PSHE/citizenship lesson --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event 15 est end time --></label>
+        <name>Event_15_est_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 15 start time --></label>
+        <name>Event_15_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 1 Date --></label>
+        <name>Event_1_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 1 ID --></label>
+        <name>Event_1_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 1 NCS Type --></label>
+        <name>Event_1_NCS_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 1 Time --></label>
+        <name>Event_1_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 1 Type --></label>
+        <name>Event_1_Type__c</name>
+        <picklistValues>
+            <masterLabel>6th form open day</masterLabel>
+            <translation><!-- 6th form open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6th form open evening</masterLabel>
+            <translation><!-- 6th form open evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assembly</masterLabel>
+            <translation><!-- Assembly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Careers fair</masterLabel>
+            <translation><!-- Careers fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College open day</masterLabel>
+            <translation><!-- College open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOI event</masterLabel>
+            <translation><!-- EOI event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Focus group</masterLabel>
+            <translation><!-- Focus group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freshers&apos; fair</masterLabel>
+            <translation><!-- Freshers&apos; fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hoody handout</masterLabel>
+            <translation><!-- Hoody handout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Networking event</masterLabel>
+            <translation><!-- Networking event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSHE/citizenship class</masterLabel>
+            <translation><!-- PSHE/citizenship class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Piggyback parents&apos; evening</masterLabel>
+            <translation><!-- Piggyback parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCN-specific parents&apos; evening</masterLabel>
+            <translation><!-- TCN-specific parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teacher conference</masterLabel>
+            <translation><!-- Teacher conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tutor time/form time follow-up</masterLabel>
+            <translation><!-- Tutor time/form time follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whole year PSHE/citizenship lesson</masterLabel>
+            <translation><!-- Whole year PSHE/citizenship lesson --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please use the format HH:MM --></help>
+        <label><!-- Event 1 est end time --></label>
+        <name>Event_1_est_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 1 insight --></label>
+        <name>Event_1_insight__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please use the format HH:MM --></help>
+        <label><!-- Event 1 start time --></label>
+        <name>Event_1_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 2 Date --></label>
+        <name>Event_2_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 2 ID --></label>
+        <name>Event_2_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 2 NCS Type --></label>
+        <name>Event_2_NCS_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 2 Time --></label>
+        <name>Event_2_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 2 Type --></label>
+        <name>Event_2_Type__c</name>
+        <picklistValues>
+            <masterLabel>6th form open day</masterLabel>
+            <translation><!-- 6th form open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6th form open evening</masterLabel>
+            <translation><!-- 6th form open evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assembly</masterLabel>
+            <translation><!-- Assembly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Careers fair</masterLabel>
+            <translation><!-- Careers fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College open day</masterLabel>
+            <translation><!-- College open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOI event</masterLabel>
+            <translation><!-- EOI event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Focus group</masterLabel>
+            <translation><!-- Focus group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freshers&apos; fair</masterLabel>
+            <translation><!-- Freshers&apos; fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hoody handout</masterLabel>
+            <translation><!-- Hoody handout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Networking event</masterLabel>
+            <translation><!-- Networking event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSHE/citizenship class</masterLabel>
+            <translation><!-- PSHE/citizenship class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Piggyback parents&apos; evening</masterLabel>
+            <translation><!-- Piggyback parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCN-specific parents&apos; evening</masterLabel>
+            <translation><!-- TCN-specific parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teacher conference</masterLabel>
+            <translation><!-- Teacher conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tutor time/form time follow-up</masterLabel>
+            <translation><!-- Tutor time/form time follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whole year PSHE/citizenship lesson</masterLabel>
+            <translation><!-- Whole year PSHE/citizenship lesson --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event 2 est end time --></label>
+        <name>Event_2_est_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 2 insight --></label>
+        <name>Event_2_insight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 2 start time --></label>
+        <name>Event_2_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 3 Date --></label>
+        <name>Event_3_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 3 ID --></label>
+        <name>Event_3_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 3 NCS Type --></label>
+        <name>Event_3_NCS_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 3 Time --></label>
+        <name>Event_3_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 3 Type --></label>
+        <name>Event_3_Type__c</name>
+        <picklistValues>
+            <masterLabel>6th form open day</masterLabel>
+            <translation><!-- 6th form open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6th form open evening</masterLabel>
+            <translation><!-- 6th form open evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assembly</masterLabel>
+            <translation><!-- Assembly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Careers fair</masterLabel>
+            <translation><!-- Careers fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College open day</masterLabel>
+            <translation><!-- College open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOI event</masterLabel>
+            <translation><!-- EOI event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Focus group</masterLabel>
+            <translation><!-- Focus group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freshers&apos; fair</masterLabel>
+            <translation><!-- Freshers&apos; fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hoody handout</masterLabel>
+            <translation><!-- Hoody handout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Networking event</masterLabel>
+            <translation><!-- Networking event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSHE/citizenship class</masterLabel>
+            <translation><!-- PSHE/citizenship class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Piggyback parents&apos; evening</masterLabel>
+            <translation><!-- Piggyback parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCN-specific parents&apos; evening</masterLabel>
+            <translation><!-- TCN-specific parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teacher conference</masterLabel>
+            <translation><!-- Teacher conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tutor time/form time follow-up</masterLabel>
+            <translation><!-- Tutor time/form time follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whole year PSHE/citizenship lesson</masterLabel>
+            <translation><!-- Whole year PSHE/citizenship lesson --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event 3 est end time --></label>
+        <name>Event_3_est_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 3 insight --></label>
+        <name>Event_3_insight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 3 start time --></label>
+        <name>Event_3_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 4 Date --></label>
+        <name>Event_4_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 4 ID --></label>
+        <name>Event_4_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 4 NCS Type --></label>
+        <name>Event_4_NCS_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 4 Time --></label>
+        <name>Event_4_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 4 Type --></label>
+        <name>Event_4_Type__c</name>
+        <picklistValues>
+            <masterLabel>6th form open day</masterLabel>
+            <translation><!-- 6th form open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6th form open evening</masterLabel>
+            <translation><!-- 6th form open evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assembly</masterLabel>
+            <translation><!-- Assembly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Careers fair</masterLabel>
+            <translation><!-- Careers fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College open day</masterLabel>
+            <translation><!-- College open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOI event</masterLabel>
+            <translation><!-- EOI event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Focus group</masterLabel>
+            <translation><!-- Focus group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freshers&apos; fair</masterLabel>
+            <translation><!-- Freshers&apos; fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hoody handout</masterLabel>
+            <translation><!-- Hoody handout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Networking event</masterLabel>
+            <translation><!-- Networking event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSHE/citizenship class</masterLabel>
+            <translation><!-- PSHE/citizenship class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Piggyback parents&apos; evening</masterLabel>
+            <translation><!-- Piggyback parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCN-specific parents&apos; evening</masterLabel>
+            <translation><!-- TCN-specific parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teacher conference</masterLabel>
+            <translation><!-- Teacher conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tutor time/form time follow-up</masterLabel>
+            <translation><!-- Tutor time/form time follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whole year PSHE/citizenship lesson</masterLabel>
+            <translation><!-- Whole year PSHE/citizenship lesson --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event 4 est end time --></label>
+        <name>Event_4_est_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 4 insight --></label>
+        <name>Event_4_insight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 4 start time --></label>
+        <name>Event_4_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 5 Date --></label>
+        <name>Event_5_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 5 ID --></label>
+        <name>Event_5_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 5 NCS Type --></label>
+        <name>Event_5_NCS_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 5 Time --></label>
+        <name>Event_5_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 5 Type --></label>
+        <name>Event_5_Type__c</name>
+        <picklistValues>
+            <masterLabel>6th form open day</masterLabel>
+            <translation><!-- 6th form open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6th form open evening</masterLabel>
+            <translation><!-- 6th form open evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assembly</masterLabel>
+            <translation><!-- Assembly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Careers fair</masterLabel>
+            <translation><!-- Careers fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College open day</masterLabel>
+            <translation><!-- College open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOI event</masterLabel>
+            <translation><!-- EOI event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Focus group</masterLabel>
+            <translation><!-- Focus group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freshers&apos; fair</masterLabel>
+            <translation><!-- Freshers&apos; fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hoody handout</masterLabel>
+            <translation><!-- Hoody handout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Networking event</masterLabel>
+            <translation><!-- Networking event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSHE/citizenship class</masterLabel>
+            <translation><!-- PSHE/citizenship class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Piggyback parents&apos; evening</masterLabel>
+            <translation><!-- Piggyback parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCN-specific parents&apos; evening</masterLabel>
+            <translation><!-- TCN-specific parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teacher conference</masterLabel>
+            <translation><!-- Teacher conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tutor time/form time follow-up</masterLabel>
+            <translation><!-- Tutor time/form time follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whole year PSHE/citizenship lesson</masterLabel>
+            <translation><!-- Whole year PSHE/citizenship lesson --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event 5 est end time --></label>
+        <name>Event_5_est_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 5 insight --></label>
+        <name>Event_5_insight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 5 start time --></label>
+        <name>Event_5_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 6 Date --></label>
+        <name>Event_6_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 6 ID --></label>
+        <name>Event_6_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 6 NCS Type --></label>
+        <name>Event_6_NCS_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 6 Time --></label>
+        <name>Event_6_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 6 Type --></label>
+        <name>Event_6_Type__c</name>
+        <picklistValues>
+            <masterLabel>6th form open day</masterLabel>
+            <translation><!-- 6th form open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6th form open evening</masterLabel>
+            <translation><!-- 6th form open evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assembly</masterLabel>
+            <translation><!-- Assembly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Careers fair</masterLabel>
+            <translation><!-- Careers fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College open day</masterLabel>
+            <translation><!-- College open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOI event</masterLabel>
+            <translation><!-- EOI event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Focus group</masterLabel>
+            <translation><!-- Focus group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freshers&apos; fair</masterLabel>
+            <translation><!-- Freshers&apos; fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hoody handout</masterLabel>
+            <translation><!-- Hoody handout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Networking event</masterLabel>
+            <translation><!-- Networking event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSHE/citizenship class</masterLabel>
+            <translation><!-- PSHE/citizenship class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Piggyback parents&apos; evening</masterLabel>
+            <translation><!-- Piggyback parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCN-specific parents&apos; evening</masterLabel>
+            <translation><!-- TCN-specific parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teacher conference</masterLabel>
+            <translation><!-- Teacher conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tutor time/form time follow-up</masterLabel>
+            <translation><!-- Tutor time/form time follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whole year PSHE/citizenship lesson</masterLabel>
+            <translation><!-- Whole year PSHE/citizenship lesson --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event 6 est end time --></label>
+        <name>Event_6_est_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 6 insight --></label>
+        <name>Event_6_insight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 6 start time --></label>
+        <name>Event_6_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 7 Date --></label>
+        <name>Event_7_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 7 ID --></label>
+        <name>Event_7_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 7 NCS Type --></label>
+        <name>Event_7_NCS_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 7 Time --></label>
+        <name>Event_7_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 7 Type --></label>
+        <name>Event_7_Type__c</name>
+        <picklistValues>
+            <masterLabel>6th form open day</masterLabel>
+            <translation><!-- 6th form open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6th form open evening</masterLabel>
+            <translation><!-- 6th form open evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assembly</masterLabel>
+            <translation><!-- Assembly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Careers fair</masterLabel>
+            <translation><!-- Careers fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College open day</masterLabel>
+            <translation><!-- College open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOI event</masterLabel>
+            <translation><!-- EOI event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Focus group</masterLabel>
+            <translation><!-- Focus group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freshers&apos; fair</masterLabel>
+            <translation><!-- Freshers&apos; fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hoody handout</masterLabel>
+            <translation><!-- Hoody handout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Networking event</masterLabel>
+            <translation><!-- Networking event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSHE/citizenship class</masterLabel>
+            <translation><!-- PSHE/citizenship class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Piggyback parents&apos; evening</masterLabel>
+            <translation><!-- Piggyback parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCN-specific parents&apos; evening</masterLabel>
+            <translation><!-- TCN-specific parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teacher conference</masterLabel>
+            <translation><!-- Teacher conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tutor time/form time follow-up</masterLabel>
+            <translation><!-- Tutor time/form time follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whole year PSHE/citizenship lesson</masterLabel>
+            <translation><!-- Whole year PSHE/citizenship lesson --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event 7 est end time --></label>
+        <name>Event_7_est_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 7 insight --></label>
+        <name>Event_7_insight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 7 start time --></label>
+        <name>Event_7_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 8 Date --></label>
+        <name>Event_8_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 8 ID --></label>
+        <name>Event_8_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 8 NCS Type --></label>
+        <name>Event_8_NCS_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 8 Time --></label>
+        <name>Event_8_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 8 Type --></label>
+        <name>Event_8_Type__c</name>
+        <picklistValues>
+            <masterLabel>6th form open day</masterLabel>
+            <translation><!-- 6th form open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6th form open evening</masterLabel>
+            <translation><!-- 6th form open evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assembly</masterLabel>
+            <translation><!-- Assembly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Careers fair</masterLabel>
+            <translation><!-- Careers fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College open day</masterLabel>
+            <translation><!-- College open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOI event</masterLabel>
+            <translation><!-- EOI event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Focus group</masterLabel>
+            <translation><!-- Focus group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freshers&apos; fair</masterLabel>
+            <translation><!-- Freshers&apos; fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hoody handout</masterLabel>
+            <translation><!-- Hoody handout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Networking event</masterLabel>
+            <translation><!-- Networking event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSHE/citizenship class</masterLabel>
+            <translation><!-- PSHE/citizenship class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Piggyback parents&apos; evening</masterLabel>
+            <translation><!-- Piggyback parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCN-specific parents&apos; evening</masterLabel>
+            <translation><!-- TCN-specific parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teacher conference</masterLabel>
+            <translation><!-- Teacher conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tutor time/form time follow-up</masterLabel>
+            <translation><!-- Tutor time/form time follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whole year PSHE/citizenship lesson</masterLabel>
+            <translation><!-- Whole year PSHE/citizenship lesson --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event 8 est end time --></label>
+        <name>Event_8_est_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 8 insight --></label>
+        <name>Event_8_insight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 8 start time --></label>
+        <name>Event_8_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 9 ID --></label>
+        <name>Event_9_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 9 NCS Type --></label>
+        <name>Event_9_NCS_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 9 Time --></label>
+        <name>Event_9_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 9 Type --></label>
+        <name>Event_9_Type__c</name>
+        <picklistValues>
+            <masterLabel>6th form open day</masterLabel>
+            <translation><!-- 6th form open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6th form open evening</masterLabel>
+            <translation><!-- 6th form open evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assembly</masterLabel>
+            <translation><!-- Assembly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Careers fair</masterLabel>
+            <translation><!-- Careers fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College open day</masterLabel>
+            <translation><!-- College open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOI event</masterLabel>
+            <translation><!-- EOI event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Focus group</masterLabel>
+            <translation><!-- Focus group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freshers&apos; fair</masterLabel>
+            <translation><!-- Freshers&apos; fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hoody handout</masterLabel>
+            <translation><!-- Hoody handout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Networking event</masterLabel>
+            <translation><!-- Networking event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSHE/citizenship class</masterLabel>
+            <translation><!-- PSHE/citizenship class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Piggyback parents&apos; evening</masterLabel>
+            <translation><!-- Piggyback parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCN-specific parents&apos; evening</masterLabel>
+            <translation><!-- TCN-specific parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teacher conference</masterLabel>
+            <translation><!-- Teacher conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tutor time/form time follow-up</masterLabel>
+            <translation><!-- Tutor time/form time follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whole year PSHE/citizenship lesson</masterLabel>
+            <translation><!-- Whole year PSHE/citizenship lesson --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event 9 Date --></label>
+        <name>Event_9_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 9 est end time --></label>
+        <name>Event_9_est_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 9 insight --></label>
+        <name>Event_9_insight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event 9 start time --></label>
+        <name>Event_9_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event --></label>
+        <name>Event__c</name>
+        <picklistValues>
+            <masterLabel>6th form open day</masterLabel>
+            <translation><!-- 6th form open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6th form open evening</masterLabel>
+            <translation><!-- 6th form open evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assembly</masterLabel>
+            <translation><!-- Assembly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Careers fair</masterLabel>
+            <translation><!-- Careers fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College open day</masterLabel>
+            <translation><!-- College open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOI event</masterLabel>
+            <translation><!-- EOI event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Focus group</masterLabel>
+            <translation><!-- Focus group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freshers&apos; fair</masterLabel>
+            <translation><!-- Freshers&apos; fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hoody handout</masterLabel>
+            <translation><!-- Hoody handout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Networking event</masterLabel>
+            <translation><!-- Networking event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSHE/citizenship class</masterLabel>
+            <translation><!-- PSHE/citizenship class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Piggyback parents&apos; evening</masterLabel>
+            <translation><!-- Piggyback parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCN-specific parents&apos; evening</masterLabel>
+            <translation><!-- TCN-specific parents&apos; evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teacher conference</masterLabel>
+            <translation><!-- Teacher conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tutor time/form time follow-up</masterLabel>
+            <translation><!-- Tutor time/form time follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whole year PSHE/citizenship lesson</masterLabel>
+            <translation><!-- Whole year PSHE/citizenship lesson --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- End date for ExO period, entered by Sales --></help>
+        <label><!-- ExO End Date --></label>
+        <name>ExO_End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Promotional price --></help>
+        <label><!-- ExO Price --></label>
+        <name>ExO_Price__c</name>
+    </fields>
+    <fields>
+        <help><!-- Start date for ExO period, entered by Sales --></help>
+        <label><!-- ExO Start Date --></label>
+        <name>ExO_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- First accessed by TCN --></label>
+        <name>First_accessed_by_TCN__c</name>
+    </fields>
+    <fields>
+        <label><!-- # From Borough or Area --></label>
+        <name>From_Borough_or_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- # From Zone --></label>
+        <name>From_Zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Graduated --></label>
+        <name>Graduated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head email address --></label>
+        <name>Head_email_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head first name --></label>
+        <name>Head_first_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head gender --></label>
+        <name>Head_gender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head job title preferred --></label>
+        <name>Head_job_title_preferred__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head last name --></label>
+        <name>Head_last_name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tick box if there is not going to be a meeting with the Head --></help>
+        <label><!-- Head meeting NOT to be held --></label>
+        <name>Head_meeting_NOT_to_be_held__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head meeting date --></label>
+        <name>Head_meeting_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head of Year Group email address --></label>
+        <name>Head_of_Year_Group_email_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head of Year Group first name --></label>
+        <name>Head_of_Year_Group_first_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head of Year Group gender --></label>
+        <name>Head_of_Year_Group_gender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head of Year Group last name --></label>
+        <name>Head_of_Year_Group_last_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head of Year Group phone number --></label>
+        <name>Head_of_Year_Group_phone_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head of Year Group relationship history --></label>
+        <name>Head_of_Year_Group_relationship_history__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head of Year Group title --></label>
+        <name>Head_of_Year_Group_title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head phone number --></label>
+        <name>Head_phone_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head relationship history --></label>
+        <name>Head_relationship_history__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head&apos;s PA email address --></label>
+        <name>Head_s_PA_email_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head&apos;s PA first name --></label>
+        <name>Head_s_PA_first_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head&apos;s PA gender --></label>
+        <name>Head_s_PA_gender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head&apos;s PA last name --></label>
+        <name>Head_s_PA_last_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head&apos;s PA phone number --></label>
+        <name>Head_s_PA_phone_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head&apos;s PA relationship history --></label>
+        <name>Head_s_PA_relationship_history__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head&apos;s PA title --></label>
+        <name>Head_s_PA_title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head title --></label>
+        <name>Head_title__c</name>
+    </fields>
+    <fields>
+        <label><!-- History --></label>
+        <name>History__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hoodie details --></label>
+        <name>Hoodie_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hoody handout date --></label>
+        <name>Hoody_handout_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest shown --></label>
+        <name>Interest_shown__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is a college or academy --></label>
+        <name>Is_a_college_or_academy__c</name>
+        <picklistValues>
+            <masterLabel>Academy</masterLabel>
+            <translation><!-- Academy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College</masterLabel>
+            <translation><!-- College --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is this a Step Forward account --></label>
+        <name>Is_this_a_Step_Forward_account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Long account ID --></label>
+        <name>Long_account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS Event 1 date --></label>
+        <name>NCS_Event_1_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS School Type --></label>
+        <name>NCS_School_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS Target School --></label>
+        <name>NCS_Target_School__c</name>
+    </fields>
+    <fields>
+        <label><!-- ST Next Update --></label>
+        <name>Next_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next action --></label>
+        <name>Next_action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Events passed --></label>
+        <name>Number_of_Events_passed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Sales Trackers --></label>
+        <name>Number_of_Sales_Trackers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of events booked --></label>
+        <name>Number_of_events_booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offset number --></label>
+        <name>Offset_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Activity date --></label>
+        <name>Other_Activity_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Activity description --></label>
+        <name>Other_Activity_description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other email address --></label>
+        <name>Other_email_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other first name --></label>
+        <name>Other_first_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other gender --></label>
+        <name>Other_gender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other job title --></label>
+        <name>Other_job_title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other last name --></label>
+        <name>Other_last_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other phone number --></label>
+        <name>Other_phone_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other relationship history --></label>
+        <name>Other_relationship_history__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other title --></label>
+        <name>Other_title__c</name>
+    </fields>
+    <fields>
+        <label><!-- EOI event --></label>
+        <name>P1_event_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Paid Overall --></label>
+        <name>Paid_Overall__c</name>
+    </fields>
+    <fields>
+        <label><!-- Addtl EOI Event --></label>
+        <name>Part_1_event_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment target 2015 --></label>
+        <name>Payment_target_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parents Evening Date --></label>
+        <name>Piggyback_PG_eve_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postcode --></label>
+        <name>Postcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-Assembly Letter Sent --></label>
+        <name>Pre_Assembly_Letter_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prom date and time --></label>
+        <name>Prom_date_and_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- RM Primary Contact email --></label>
+        <name>RM_Primary_Contact_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- RM Primary Contact first name --></label>
+        <name>RM_Primary_Contact_first_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- RM Primary Contact last name --></label>
+        <name>RM_Primary_Contact_last_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- RM primary contact gender --></label>
+        <name>RM_primary_contact_gender__c</name>
+    </fields>
+    <fields>
+        <label><!-- RM primary contact mobile --></label>
+        <name>RM_primary_contact_mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- RM primary contact phone number --></label>
+        <name>RM_primary_contact_phone_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- RM primary contact relationship hist --></label>
+        <name>RM_primary_contact_relationship_hist__c</name>
+    </fields>
+    <fields>
+        <label><!-- RM primary contact title --></label>
+        <name>RM_primary_contact_title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region_current__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rejected by school --></label>
+        <name>Rejected_by_school__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Teacher Mtg Date --></label>
+        <name>ST_meeting_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Tracker Offset --></label>
+        <name>Sales_Tracker_Offset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Tracker Pendulum --></label>
+        <name>Sales_Tracker_Pendulum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Tracker next update --></label>
+        <name>Sales_Tracker_next_update__c</name>
+    </fields>
+    <fields>
+        <label><!-- SalesforceSAId --></label>
+        <name>SalesforceSAId__c</name>
+    </fields>
+    <fields>
+        <label><!-- School Code --></label>
+        <name>School_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- School DD override --></label>
+        <name>School_DD_override__c</name>
+    </fields>
+    <fields>
+        <label><!-- School History ID --></label>
+        <name>School_History_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- School Name --></label>
+        <name>School_NameForm__c</name>
+    </fields>
+    <fields>
+        <label><!-- School Name --></label>
+        <name>School_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- School --></label>
+        <name>School__c</name>
+        <relationshipLabel><!-- School Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- School accessed --></label>
+        <name>School_accessed__c</name>
+    </fields>
+    <fields>
+        <label><!-- School&apos;s segment number --></label>
+        <name>School_s_segment_number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pulls through school type from Account --></help>
+        <label><!-- School type --></label>
+        <name>School_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- School type old --></label>
+        <name>School_type_old__c</name>
+    </fields>
+    <fields>
+        <label><!-- Season Name --></label>
+        <name>Season_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Season --></label>
+        <name>Season__c</name>
+    </fields>
+    <fields>
+        <label><!-- Season --></label>
+        <name>Season_lookup__c</name>
+        <relationshipLabel><!-- School Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sign up 2014 --></label>
+        <name>Sign_up_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign up target 2015 +10% --></label>
+        <name>Sign_up_target_2015_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign up target 2015 +25% --></label>
+        <name>Sign_up_target_2015_25__c</name>
+    </fields>
+    <fields>
+        <help><!-- This should be your turn-up target for the school plus attrition (usually 120%). Do not change this field without first consulting your manager. --></help>
+        <label><!-- Season Sign up target --></label>
+        <name>Sign_up_target_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sixth form? --></label>
+        <name>Sixth_form__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Started --></label>
+        <name>Started__c</name>
+    </fields>
+    <fields>
+        <label><!-- State of Play --></label>
+        <name>State_of_Play__c</name>
+    </fields>
+    <fields>
+        <label><!-- New state of play notes --></label>
+        <name>State_of_play_current__c</name>
+    </fields>
+    <fields>
+        <help><!-- Stores the history of the State of play notes and adds the date and user alias who entered notes in the State of Play field --></help>
+        <label><!-- State of play notes --></label>
+        <name>State_of_play_notes_current__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>StatusNew__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assembly arranged</masterLabel>
+            <translation><!-- Assembly arranged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assembly held</masterLabel>
+            <translation><!-- Assembly held --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attempted Contact</masterLabel>
+            <translation><!-- Attempted Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT meeting arranged</masterLabel>
+            <translation><!-- CT meeting arranged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT meeting held</masterLabel>
+            <translation><!-- CT meeting held --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DO NOT CONTACT!</masterLabel>
+            <translation><!-- DO NOT CONTACT! --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email sent</masterLabel>
+            <translation><!-- Email sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Follow up held 1</masterLabel>
+            <translation><!-- Follow up held 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Follow up held 2</masterLabel>
+            <translation><!-- Follow up held 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Follow up held 3</masterLabel>
+            <translation><!-- Follow up held 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head/Snr Teacher meeting arranged</masterLabel>
+            <translation><!-- Head/Snr Teacher meeting arranged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head/Snr Teacher meeting held</masterLabel>
+            <translation><!-- Head/Snr Teacher meeting held --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interest shown</masterLabel>
+            <translation><!-- Interest shown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Met Contact</masterLabel>
+            <translation><!-- Met Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NGB</masterLabel>
+            <translation><!-- NGB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P1 event held</masterLabel>
+            <translation><!-- P1 event held --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Potential</masterLabel>
+            <translation><!-- Potential --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected by school</masterLabel>
+            <translation><!-- Rejected by school --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visit 1 held</masterLabel>
+            <translation><!-- Visit 1 held --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visit 2 held</masterLabel>
+            <translation><!-- Visit 2 held --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subcluster --></label>
+        <name>Subcluster__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subcluster --></label>
+        <name>Subcluster_current__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS Specific event NOT to be held --></label>
+        <name>TCN_specific_PG_eve_NOT_to_be_held__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS Specific Event Date --></label>
+        <name>TCN_specific_PG_eve_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS Specific Event Location --></label>
+        <name>TCN_specific_PG_eve_location__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS Specific Event Time --></label>
+        <name>TCN_specific_PG_eve_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target school Summer 2014 --></label>
+        <name>Target_school_Summer_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- School Staff Briefing Date --></label>
+        <name>Teacher_briefing_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Try again --></label>
+        <name>Try_again__c</name>
+    </fields>
+    <fields>
+        <label><!-- Turn up 2014 --></label>
+        <name>Turn_up_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- Turn up 2015 --></label>
+        <name>Turn_up_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website --></label>
+        <name>Website__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year group size --></label>
+        <name>Year_group_size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zone --></label>
+        <name>Zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zone --></label>
+        <name>Zone_current__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of EOIs --></label>
+        <name>of_EOIs__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- School Activity 2009 S --></label>
+        <name>School_Activity_2009_S</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- School Activity 2010 S --></label>
+        <name>School_Activity_2010_S</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- School Activity 2011 S --></label>
+        <name>School_Activity_2011_S</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- School Activity 2012 A --></label>
+        <name>School_Activity_2012_A</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- School Activity 2012 S --></label>
+        <name>School_Activity_2012_S</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- School Activity 2013 A --></label>
+        <name>School_Activity_2013_A</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- School Activity 2013 S --></label>
+        <name>School_Activity_2013_S</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- School Activity 2014 A --></label>
+        <name>School_Activity_2014_A</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- School Activity 2014 S --></label>
+        <name>School_Activity_2014_S</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- School Activity 2015 Autumn --></label>
+        <name>School_Activity_2015_Autumn</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- School Activity 2015 Feb --></label>
+        <name>School_Activity_2015_Feb</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- School Activity 2015 Summer --></label>
+        <name>School_Activity_2015_Summer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- School Activity 2016 Autumn --></label>
+        <name>School_Activity_2016_Autumn</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- School Activity 2016 Feb --></label>
+        <name>School_Activity_2016_Feb</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- School Activity 2016 Summer --></label>
+        <name>School_Activity_2016_Summer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- School Activity 2017 Summer --></label>
+        <name>School_Activity_2017_Summer</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please ensure the Exploding Offer End Date is later than the Exploding Offer Start Date. Please note the end date can&apos;t be on the same day. --></errorMessage>
+        <name>ExO_End_Date_Must_be_Greater_than_Start</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the ExO Start and End Dates are populated, then the ExO Price cannot be zero or blank. Please enter a valid ExO Price. --></errorMessage>
+        <name>ExO_Price_Must_Be_GT_0_if_Date_not_Blank</name>
+    </validationRules>
+</CustomObjectTranslation>

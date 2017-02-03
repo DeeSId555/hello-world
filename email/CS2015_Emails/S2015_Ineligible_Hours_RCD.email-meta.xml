@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>S2015 Ineligible Hours - RCD</name>
+    <style>none</style>
+    <subject>NCS – Attendance Update</subject>
+    <textOnly>NCSTHECHALLENGE.ORG
+
+NCS – Attendance Update
+
+
+Dear {!Contact.Name} and Parent/Guardian,
+
+We hope you’re really enjoying your time on NCS. We wanted to let you know that, based on our records of your attendance, you have missed too much of the NCS programme to become an official NCS graduate.  Unfortunately, this means you won’t be able to receive your certificate at the graduation ceremony.
+
+However, we still hope you will continue to join us for the rest of NCS so you can get the best out of the experience. You are both still very welcome to come along to the graduation ceremony to celebrate your achievements on NCS with your teammates. The graduation ceremony will be on {!Wave__c.Graduation_Date__c} and you should receive an invitation with full details well before this, if you haven’t already.
+
+If you have any questions or need to get in touch with us about this, you can call us on 0203 542 2400. Please do not reply directly to the email address we’ve sent this from as we cannot check replies to this mailbox. You can contact us by email at contact@ncsthechallenge.org.
+
+We hope to see you during the rest of NCS and at the graduation ceremony.
+
+Yours sincerely,
+
+Rachel Slade
+Head of Programmes and Staffing
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+© The Challenge Network.
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

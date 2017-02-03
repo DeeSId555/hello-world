@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.Job_Applications__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r.Job_placements__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r$Contact__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r.Job_placements__r$Wave__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r.Job_placements__r$RecordType</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r.Job_placements__r$Approved_for_payroll__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r.Job_placements__r$days_worked__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r.Job_placements__r$days_worked_confirmed__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Job_Applications__r.Job_placements__r$Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>North East</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Job_Applications__r.Job_placements__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Job_placement__c.Graduation</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>NE Graduation leaders</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_Job_Applications_with_Job_Placements__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

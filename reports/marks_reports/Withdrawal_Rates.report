@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.TCNAccountID__c</field>
+    </columns>
+    <columns>
+        <field>NCS_Application__c.Withdrawal_confirmed_by_Owner__c</field>
+    </columns>
+    <columns>
+        <field>Contact.School_s_zone__c</field>
+    </columns>
+    <columns>
+        <field>Contact.EOI_Priority__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Season__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Summer 2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Date_of_first_payment__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FIRST_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LAST_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Test</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Withdrawal Rates</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$NCS_Application__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

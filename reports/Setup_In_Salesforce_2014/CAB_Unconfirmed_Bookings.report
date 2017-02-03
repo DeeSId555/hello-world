@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Junctions__r.Bookings__r$Cluster_Pull__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>CAB</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Junctions__r.Bookings__r$Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Confirmed</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Junctions__r.Bookings__r$Booking_Date_Formula__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>CAB Unconfirmed Bookings</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Usages_and_Bookings__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$Date_Started_NCS__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

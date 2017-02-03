@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Job_Application__c.Job_placements__r$Name</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Job_placements__r$Contact__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Job_placements__r$Role__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Job_placements__r$RecordType</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Job_Application__c.Job_placements__r$Team_lookup__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c$Role_to_assess_for__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Senior Mentor,Community Mentor</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c$Contact__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Test,Test Person</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Job_Application__c.Job_placements__r$Team_lookup__c.Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>CM continuity Wave-RCA</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Job_Apps_Job_Placements_and_Team_lookup__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Job_Application__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

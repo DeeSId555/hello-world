@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Wave__c$Name</field>
+    </columns>
+    <columns>
+        <field>Wave__c$Region__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c$Zone__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Wave__c$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Wave__c.X2012,Wave__c.X2012A,Wave__c.X2013</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Waves 2012-2013</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Waves__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Wave__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

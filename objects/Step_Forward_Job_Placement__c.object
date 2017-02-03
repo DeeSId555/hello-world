@@ -1,0 +1,2289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>AAT_Registration_Number__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Used by Delivery</inlineHelpText>
+        <label>AAT Registration Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Additional_Learning_needs_Delivery__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Additional Learning needs - Delivery</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Age_of_Associate__c</fullName>
+        <externalId>false</externalId>
+        <formula>(TODAY()- Associate_Date_Of_Birth__c) /365.2425</formula>
+        <label>Age of Associate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Agreed_Fee_for_Employer__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job__r.Agreed_Fee_for_Employer__c</formula>
+        <label>Agreed Fee for Employer</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Allocated_Update__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Updates &quot;Allocated Associate/Job Name&quot; fields on SF Job and SF Activity</inlineHelpText>
+        <label>Allocated Update</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Apprenticeship_Framework_and_Level_del__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Pathway__c = &quot;Accounting&quot;, &quot;AAT - Level 3 Diploma in Accounting&quot;, 
+ IF(Pathway__c = &quot;Business Administration&quot;, &quot;Pearsons - Level 3 Diploma in Business &amp; Administration&quot;, 
+ IF(Pathway__c = &quot;IT, Software and Telecoms&quot;, &quot;Pearsons - Level 3 Diploma in IT, Software, Web &amp; Telecoms Professionals&quot;, 
+ IF(Pathway__c = &quot;Social Media &amp; Digital Marketing&quot;, &quot;Skills First - Level 3 Diploma in Social Media &amp; Digital Marketing&quot;, 
+ IF(Pathway__c = &quot;Early Years Education&quot;, &quot;Pearsons - Level 3 Diploma for the Children and Young People&apos;s Workforce&quot;, 
+ IF(Pathway__c = &quot;Hospitality&quot;, &quot;Advance Level Apprenticeship in Hospitality Supervision and Leadership&quot;,&quot;&quot; ))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>To be included in Apprenticeship Agreement for Employer</inlineHelpText>
+        <label>Apprenticeship Framework and Level</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Assessor__c</fullName>
+        <externalId>false</externalId>
+        <label>Assessor</label>
+        <length>15</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Associate_Code_of_Conduct__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Associate Code of Conduct</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Associate_Contract_notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Associate Contract notes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Associate_Date_Of_Birth__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Activity__r.Date_of_birth_StepFwd_check__c</formula>
+        <label>Associate Date Of Birth</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Associate_Email1__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Email of YP</inlineHelpText>
+        <label>Associate Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Associate_First_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Activity__r.Associate__r.FirstName</formula>
+        <label>Associate First Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Associate_General_Info_Form__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Associate General Info Form</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Associate_Last_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Activity__r.Associate__r.LastName</formula>
+        <label>Associate Last Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Associate_Lastname__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Activity__r.Associate__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Associate Lastname</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Associate_Work_email__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Used by Delivery</inlineHelpText>
+        <label>Associate Work email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Associate_Work_phone_number__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Used by Delivery</inlineHelpText>
+        <label>Associate Work phone number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Associate__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Activity__r.Associate__r.FirstName + &quot; &quot; + Step_Forward_Activity__r.Associate__r.LastName</formula>
+        <label>Associate</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Associate_address__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(Step_Forward_Activity__r.Address_Line_1__c&lt;&gt;&quot;&quot;,Step_Forward_Activity__r.Address_Line_1__c &amp;&quot;, &quot;,&quot;&quot;)&amp;
+if(Step_Forward_Activity__r.Address_Line_2__c&lt;&gt;&quot;&quot;,Step_Forward_Activity__r.Address_Line_2__c &amp;&quot;,&quot;,&quot;&quot;)&amp;
+if(Step_Forward_Activity__r.Address_Line_3__c&lt;&gt;&quot;&quot;,Step_Forward_Activity__r.Address_Line_3__c&amp;&quot;, &quot;,&quot;&quot;)&amp;
+if(Step_Forward_Activity__r.Address_Post_Code__c&lt;&gt;&quot;&quot;,Step_Forward_Activity__r.Address_Post_Code__c,&quot;&quot;)</formula>
+        <label>Associate address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Associate_email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Activity__r.Associate_StepFwd_email__c</formula>
+        <label>Associate email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Associate_has_additional_Learning_needs__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Associate has additional Learning needs</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Associate_tel__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Activity__r.Associate_StepFwd_Mobile__c</formula>
+        <label>Associate tel</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BSKB_complete__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>BSKB complete</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Block_1_Date_and_time_of_assessor_visit__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Used by Delivery</inlineHelpText>
+        <label>Block 1: Date and time of assessor visit</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Block_Training_dates__c</fullName>
+        <externalId>false</externalId>
+        <label>Block Training dates</label>
+        <length>3000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Contract_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Contracting_Lead_Employer__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job__r.Contracting_Lead_Employer__c</formula>
+        <label>Contracting Lead Employer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contracting_Lead_Employer_email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job__r.Contracting_Lead_Employer_Email__c</formula>
+        <label>Contracting Lead Employer email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contracting_Lead_Step_Forward__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job__r.Contracting_Lead_Step_Forward__c</formula>
+        <label>Contracting Lead Step Forward</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contracting_Lead_Step_Forward_email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job__r.Contracting_Lead_Step_Forward_email__c</formula>
+        <label>Contracting Lead Step Forward email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contracting_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>if( Learning_Agreement__c=true &amp;&amp; Associate_General_Info_Form__c=true &amp;&amp; Step_Forward_Agreement__c=true &amp;&amp; Associate_Code_of_Conduct__c=true &amp;&amp; BSKB_complete__c=true,&quot;Complete&quot;,
+if(ispickval(Step_Forward_Placement_Status__c,&quot;Withdrawal of Associate - unmatched&quot;),&quot;Withdrawal of Associate&quot;,
+if(ispickval(Step_Forward_Placement_Status__c,&quot;Withdrawal of Employer - unmatched&quot;),&quot;Withdrawal of Employer&quot;,&quot;Incomplete&quot;)))</formula>
+        <label>Contracting Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contracting_Status_for_Activity__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Always Keep ticked!  
+Updates Contracting Status on SF Activity</inlineHelpText>
+        <label>Contracting Status for Activity</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Contracts_Company_and_Charity_Numbers__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(and(Not(isblank(Registered_Charity_Number__c)),not(isblank(Registered_Company_Number__c))),&quot;registered charity no. &quot;&amp;Registered_Charity_Number__c&amp;&quot; and registered company no. &quot;&amp;Registered_Company_Number__c,
+if(and(not(isblank(Registered_Charity_Number__c)),isblank(Registered_Company_Number__c)),&quot;registered charity no. &quot;&amp;Registered_Charity_Number__c,
+if(and(isblank(Registered_Charity_Number__c),not(isblank(Registered_Company_Number__c))),&quot;registered company no. &quot;&amp;Registered_Company_Number__c,&quot; &quot;)))</formula>
+        <label>Contracts: Company and Charity Numbers</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DOB_Check__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Activity__r.DOB_check__c</formula>
+        <label>DOB Check</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_BKSB_Login_sent_to_Associate__c</fullName>
+        <externalId>false</externalId>
+        <label>Date BKSB Login sent to Associate</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_BKSB_completed_by_Associate__c</fullName>
+        <externalId>false</externalId>
+        <label>Date BKSB completed by Associate</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Barometer_Survey_Received__c</fullName>
+        <defaultValue>today()</defaultValue>
+        <description>This will record the date the Barometer Survey was received</description>
+        <externalId>false</externalId>
+        <label>Date Barometer Survey Received</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Barometer_Survey_Reminder_Sent__c</fullName>
+        <defaultValue>today()</defaultValue>
+        <externalId>false</externalId>
+        <label>Date Barometer Survey Reminder Sent</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Barometer_Survey_Sent__c</fullName>
+        <description>This will record the date the SF Barometer Email was sent</description>
+        <externalId>false</externalId>
+        <label>Date Barometer Survey Sent</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Code_of_Conduct_returned_frm_Assoc__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Code of Conduct returned frm Assoc.</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Code_of_Conduct_sent_to_Associate__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Code of Conduct sent to Associate</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_DBS_Update_Service_details_sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Date DBS Update Service details sent</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Final_allocation_call_Assoc__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Final allocation call Assoc</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Final_allocation_call_Empl__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Final allocation call Empl</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_General_Info_form_sent_to_Associate__c</fullName>
+        <externalId>false</externalId>
+        <label>Date General Info form sent to Associate</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_General_Info_returned_from_Assoc__c</fullName>
+        <externalId>false</externalId>
+        <label>Date General Info returned from Assoc.</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Learning_Agreement_created__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Date of the Learning Agreement</inlineHelpText>
+        <label>Date Learning Agreement created</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Learning_Agreement_returned_frm_Emp__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Learning Agreement returned frm Emp</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Learning_Agreement_returned_from_YP__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Learning Agreement returned from YP</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Learning_Agreement_sent_to_YP__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Learning Agreement sent to YP</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Learning_Agreement_sent_to_employer__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Learning Agreement sent to employer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Programme_Started__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Used by Delivery</inlineHelpText>
+        <label>Date Programme Started</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Step_Forward_Agreement_created__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Date of the Step Forward Agreement</inlineHelpText>
+        <label>Date Step Forward Agreement created</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Step_Forward_Agreement_sent_to_Emp__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Step Forward Agreement sent to Emp</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Stp_Fwd_Agreement_returned_from_Emp__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Stp Fwd Agreement returned from Emp</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_all_signed_contracts_sent_to_Assoc__c</fullName>
+        <externalId>false</externalId>
+        <label>Date all signed contracts sent to Assoc.</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_all_signed_contracts_sent_to_empl__c</fullName>
+        <externalId>false</externalId>
+        <label>Date all signed contracts sent to empl.</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_Agreement__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Fill in this field for date to show on a generated document</inlineHelpText>
+        <label>Date of Agreement</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_Interview__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of Interview</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Delivery_Step_Team__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Used by Delivery</inlineHelpText>
+        <label>Delivery Step Team</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Dietary_requirements_for_Induction__c</fullName>
+        <externalId>false</externalId>
+        <label>Dietary requirements for Induction</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Employer_Contact_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job__r.Step_Forward_Account_Management_Name__r.Step_Forward_main_contact__r.FirstName &amp;&quot; &quot;&amp;  Step_Forward_Job__r.Step_Forward_Account_Management_Name__r.Step_Forward_main_contact__r.LastName</formula>
+        <label>Employer Contact Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Employer_Contact_Tel__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job__r.Step_Forward_Account_Management_Name__r.Main_contact_numbers__c</formula>
+        <label>Employer Contact Tel</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Employer_Contact_email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job__r.Step_Forward_Account_Management_Name__r.Main_contact_email__c</formula>
+        <label>Employer Contact email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Employer_Contract_notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Employer Contract notes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Employer_Identifier__c</fullName>
+        <externalId>false</externalId>
+        <label>Employer Identifier</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Employer_Job_Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job__r.Job_Address__c &amp;br()&amp;
+ Step_Forward_Job__r.Job_Postcode__c</formula>
+        <label>Employer Job Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Employer_Notes__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Notes from SF Job
+- edit and save the record to refresh</inlineHelpText>
+        <label>Employer Notes</label>
+        <length>16000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Employer__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job__r.Employer__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Employer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Employer_liability_insurance_expiry_date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job__r.Employer_liability_insurance_expiry__c</formula>
+        <label>Employer liability insurance expiry date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Ethnicity__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(Step_Forward_Activity__r.Ethnicity__c)</formula>
+        <label>Ethnicity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Event_Date__c</fullName>
+        <description>Event Date mapped to SFJP to allow the tracking of time from interview to contract sent</description>
+        <externalId>false</externalId>
+        <label>Event Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Final_ELI_check_done__c</fullName>
+        <externalId>false</externalId>
+        <label>Final ELI check done</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Final_QC_Check__c</fullName>
+        <description>Status mapped from SF Job so that Matching know when contracts can be sent</description>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job__r.Final_QC_check__c</formula>
+        <label>Final QC Check</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Framework_code__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(Pathway__c=&quot;Accounting&quot;,&quot;454&quot;,
+if(Pathway__c=&quot;Business Administration&quot;,&quot;490&quot;,
+if(Pathway__c=&quot;IT, Software and Telecoms&quot;,&quot;418&quot;,
+if(Pathway__c=&quot;Social Media &amp; Digital Marketing&quot;,&quot;579&quot;,
+if(Pathway__c=&quot;Early Years Education&quot;,&quot;445&quot;,
+if(Pathway__c=&quot;Hospitality&quot;,&quot;583&quot;,&quot; &quot;))))))</formula>
+        <label>Framework code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Full_Funding_Indicator__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(Age_of_Associate__c&lt;=18,1,
+if(Age_of_Associate__c&gt;=19,2,34404))</formula>
+        <label>Full Funding Indicator</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Gender__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(Step_Forward_Activity__r.Gender__c)</formula>
+        <label>Gender</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Group_1_Match__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(Step_Forward_Activity__r.Group_1_Score__c+(Step_Forward_Job__r.Group_11__c)&lt;0,((Step_Forward_Activity__r.Group_1_Score__c+(Step_Forward_Job__r.Group_11__c))-(Step_Forward_Activity__r.Group_1_Score__c+(Step_Forward_Job__r.Group_11__c))-(Step_Forward_Activity__r.Group_1_Score__c+(Step_Forward_Job__r.Group_11__c))),(Step_Forward_Activity__r.Group_1_Score__c+(Step_Forward_Job__r.Group_11__c)))</formula>
+        <label>Group 1 Match</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Group_2_Match__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(Step_Forward_Activity__r.Group_2_Score__c+(Step_Forward_Job__r.Group_21__c)&lt;0,((Step_Forward_Activity__r.Group_2_Score__c+(Step_Forward_Job__r.Group_21__c))-(Step_Forward_Activity__r.Group_2_Score__c+(Step_Forward_Job__r.Group_21__c))-(Step_Forward_Activity__r.Group_2_Score__c+(Step_Forward_Job__r.Group_21__c))),(Step_Forward_Activity__r.Group_2_Score__c+(Step_Forward_Job__r.Group_21__c)))</formula>
+        <label>Group 2 Match</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Group_3_Match__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(Step_Forward_Activity__r.Group_3_Score__c+(Step_Forward_Job__r.Group_31__c)&lt;0,((Step_Forward_Activity__r.Group_3_Score__c+(Step_Forward_Job__r.Group_31__c))-(Step_Forward_Activity__r.Group_3_Score__c+(Step_Forward_Job__r.Group_31__c))-(Step_Forward_Activity__r.Group_3_Score__c+(Step_Forward_Job__r.Group_31__c))),(Step_Forward_Activity__r.Group_3_Score__c+(Step_Forward_Job__r.Group_31__c)))</formula>
+        <label>Group 3 Match</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Induction_Attendance_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(Step_Forward_Activity__r.Induction_Attendance_Status__c)</formula>
+        <label>Induction Attendance Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Induction_Details__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(ispickval(Induction_date__c,&quot;Induction 1&quot;),&quot;Induction dates: Saturday 22nd Aug 2015-Tuesday 25th Aug 2015&quot; &amp;br()&amp;
+&quot;Departure address: tbc&quot; &amp;br()&amp;
+&quot;Arrival time: tbc&quot;,
+
+if(ispickval(Induction_date__c,&quot;Induction 2&quot;),&quot;Induction dates: Thursday 27th Aug 2015-Sunday 30th Aug 2015&quot; &amp;br()&amp;
+&quot;Departure address: tbc&quot; &amp;br()&amp;
+&quot;Arrival time: tbc&quot;,&quot; &quot;))</formula>
+        <label>Induction Details</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Induction_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(Step_Forward_Activity__r.Induction_Status__c)</formula>
+        <label>Induction Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Induction_date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Induction 1 - Saturday 22nd August 2015 to Tuesday 25th August 2015
+Induction 2 - Thursday 27th August 20015 to Sunday 30th August 2015</inlineHelpText>
+        <label>Induction date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Induction 1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Induction 2</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Job_Contact_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job__r.Job_main_contact__r.FirstName &amp; &quot; &quot; &amp;  Step_Forward_Job__r.Job_main_contact__r.LastName</formula>
+        <label>Job Contact Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Job_Contact_Phone__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job__r.Job_main_contact__r.MobilePhone</formula>
+        <label>Job Contact Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Job_Contact_email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job__r.Job_main_contact__r.Email</formula>
+        <label>Job Contact email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Job_Placement_Notes_Entry__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Type your Notes in here.</inlineHelpText>
+        <label>Job Placement Notes Entry</label>
+        <length>1000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Job_Placement_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Job Placement Notes</label>
+        <length>15000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Learning_Agreement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Learning Agreement</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Learning_aim_reference__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(Pathway__c=&quot;Accounting&quot;,&quot;60069089&quot;,
+if(Pathway__c=&quot;Business Administration&quot;,&quot;60134069&quot;,
+if(Pathway__c=&quot;IT, Software and Telecoms&quot;,&quot;50112910&quot;,
+if(Pathway__c=&quot;Social Media &amp; Digital Marketing&quot;,&quot;60112098&quot;,
+if(Pathway__c=&quot;Early Years Education&quot;,&quot;60129633&quot;,&quot;ERROR&quot;)))))</formula>
+        <label>Learning aim reference</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Line_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Line Manager</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Step Forward Job Placements</relationshipLabel>
+        <relationshipName>Step_Forward_Job_Placements</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Line_Manager_email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Line_Manager__r.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Line Manager email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Line_Manager_telephone__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;Phone : &quot;&amp;  Line_Manager__r.Phone  &amp; BR()&amp;
+&quot;Mobile: &quot;&amp;  Line_Manager__r.MobilePhone  &amp; br()&amp;
+&quot;Work : &quot;&amp;  Line_Manager__r.npe01__WorkPhone__c</formula>
+        <label>Line Manager telephone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Match_Definition__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(and(value(Match_Quality_Static__c)&gt;0,value(Match_Quality_Static__c)&lt;=3), 
+
+&quot;Near Perfect Match&quot;, 
+
+if(and(value(Match_Quality_Static__c)&gt;3,value(Match_Quality_Static__c)&lt;=6),
+ 
+&quot;Match&quot;,
+
+if(and(value(Match_Quality_Static__c)&gt;6,value(Match_Quality_Static__c)&lt;=10), 
+
+&quot;Weak Match&quot;,
+
+if(and(value(Match_Quality_Static__c)&gt;10,value(Match_Quality_Static__c)&lt;=18), 
+
+&quot;Poor Match&quot;,&quot;Perfect Match&quot;))))</formula>
+        <label>Match Definition</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Match_Quality_Static__c</fullName>
+        <externalId>false</externalId>
+        <label>Match Quality - Static</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Match_Quality__c</fullName>
+        <externalId>false</externalId>
+        <formula>text((Group_1_Match__c)+(Group_2_Match__c)+(Group_3_Match__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>0 = perfect match
+1-3 = near perfect match
+4-6 = match
+7 -10 = weak match
+11-18 = Poor match</inlineHelpText>
+        <label>Match Quality</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Matching_Day__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(Step_Forward_Activity__r.Matching_date_shortlisted_for__c)</formula>
+        <label>Matching Day</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Matching_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Matching Notes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Matching_day_details__c</fullName>
+        <externalId>false</externalId>
+        <label>Matching day details</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Mentor__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Used by Delivery</inlineHelpText>
+        <label>Mentor</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Month_and_Year_of_SF_Barometer__c</fullName>
+        <description>This field shows the month and year of when the current Barometer Survey was received</description>
+        <externalId>false</externalId>
+        <formula>TEXT(MONTH( Date_Barometer_Survey_Received__c )) &amp; &quot;-&quot; &amp; TEXT(YEAR( Date_Barometer_Survey_Received__c ))</formula>
+        <label>Month and Year of SF Barometer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>National_Insurance_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>National Insurance Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Overall_YP_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(Step_Forward_Activity__r.YP_Overall_Status__c)</formula>
+        <label>Overall YP Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pathway__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(Step_Forward_Job__r.Pathway__c)</formula>
+        <label>Pathway</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pearson_Registration_Number__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Used by Delivery</inlineHelpText>
+        <label>Pearson Registration Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Programme_Status__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Used by Delivery</inlineHelpText>
+        <label>Programme Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Completed Programme</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Dropped out - registered</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Dropped out - not registered</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Programme_of_Learning__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(Pathway__c=&quot;Accounting&quot;,&quot;AAT Level 3 Diploma in Accounting&quot;,
+if(Pathway__c=&quot;Business Administration&quot;,&quot;Pearson BTEC Level 3 Diploma in Business Administration (QCF)&quot;,
+if(Pathway__c=&quot;IT, Software and Telecoms&quot;,&quot;Pearson BTEC Level 3 Diploma in Professional Competence for IT and Telecoms Professionals; Pearson BTEC Nationals in Information Technology (QCF)&quot;,
+if(Pathway__c=&quot;Social Media &amp; Digital Marketing&quot;,&quot;Skillsfirst Awards Diploma in Social Media for Business (QCF)&quot;,
+if(Pathway__c=&quot;Early Years Education&quot;,&quot;Pearson Edexcel Level 3 Diploma in Children&apos;s Learning and Development (Early Years Educator) (QCF)&quot;,
+if(Pathway__c=&quot;Hospitality&quot;,&quot;Edexcel level 3 NVQ Diploma in Hospitality, Supervision and Leadership &amp; Edexcel BTEC Level 3 Award in Hospitality, Supervision and Leadership&quot;,&quot; &quot;))))))</formula>
+        <label>Programme of Learning</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Provide_brief_explanation_of_feedback__c</fullName>
+        <externalId>false</externalId>
+        <label>Provide brief explanation of feedback</label>
+        <length>300</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Registered_Charity_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job__r.Registered_Charity_Number__c</formula>
+        <label>Registered Charity Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Registered_Company_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job__r.Registered_Company_Number__c</formula>
+        <label>Registered Company Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Registered_Organisation_Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job__r.Registered_Organisation_Address__c</formula>
+        <label>Registered Organisation Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Registered_Organisation_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job__r.Registered_Organisation_Name__c</formula>
+        <label>Registered Organisation Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Send_Barometer_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Send Barometer Email</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_General_Information_Form__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Send General Information Form</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Skills_First_Registration_Number__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Used by Delivery</inlineHelpText>
+        <label>ULN</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Step_Forward_Activity__c</fullName>
+        <externalId>false</externalId>
+        <label>Step Forward Activity</label>
+        <referenceTo>Step_Forward_Activity__c</referenceTo>
+        <relationshipName>Step_Forward_Matches</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Step_Forward_Agreement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Step Forward Agreement</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Step_Forward_Job_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job__r.Step_Forward_Job_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Step Forward Job Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Step_Forward_Job__c</fullName>
+        <externalId>false</externalId>
+        <label>Step Forward Job</label>
+        <referenceTo>Step_Forward_Job__c</referenceTo>
+        <relationshipName>Step_Forward_Matches</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Step_Forward_Placement_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Step Forward Placement Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Invited to interview</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Did not attend - Empl</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Did not attend - Assoc</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Attended, Successful - Job Offer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unsuccessful - not offered</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unsuccessful - Empl not accepted</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unsuccessful - YP not accepted</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Contracts started</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Contracts completed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Withdrawal of Associate - unmatched</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Withdrawal of Employer - unmatched</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Step_Forward_Survey__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Step Forward Survey</label>
+        <referenceTo>Step_Forward_Survey__c</referenceTo>
+        <relationshipLabel>Step Forward Job Placements</relationshipLabel>
+        <relationshipName>Step_Forward_Job_Placements</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Step_Team__c</fullName>
+        <externalId>false</externalId>
+        <label>Step Team</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Adams</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Malala</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Folarin</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ashton</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Simmonds</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Kato</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bates</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hodgson</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ralph</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tutor__c</fullName>
+        <externalId>false</externalId>
+        <label>Tutor</label>
+        <length>15</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Wave__c</fullName>
+        <defaultValue>&quot;One day a week (exact day and time to be confirmed in writing between the parties)&quot;</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Previously known as Wave</inlineHelpText>
+        <label>Training Day</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>matchable__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>matchable</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Step Forward Job Placement</label>
+    <listViews>
+        <fullName>AOIFE_ALL_contract_tracking</fullName>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Job__c</columns>
+        <columns>Pathway__c</columns>
+        <columns>Associate__c</columns>
+        <columns>Employer__c</columns>
+        <columns>Step_Forward_Job_Name__c</columns>
+        <columns>Matching_Notes__c</columns>
+        <columns>Employer_Contact_Name__c</columns>
+        <columns>Date_Learning_Agreement_sent_to_employer__c</columns>
+        <columns>Date_Learning_Agreement_returned_frm_Emp__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Step_Forward_Placement_Status__c</field>
+            <operation>equals</operation>
+            <value>Contracts started,Contracts completed,&quot;Attended, Successful - Job Offer&quot;</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>notEqual</operation>
+            <value>SFM-0000001</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>lessOrEqual</operation>
+            <value>12/31/2015 12:00 AM</value>
+        </filters>
+        <label>MATCH C2 Employer Learning Agreement</label>
+    </listViews>
+    <listViews>
+        <fullName>Barometer_email_send1</fullName>
+        <columns>NAME</columns>
+        <columns>Associate__c</columns>
+        <columns>Send_Barometer_Email__c</columns>
+        <columns>Date_Barometer_Survey_Sent__c</columns>
+        <columns>Date_Barometer_Survey_Reminder_Sent__c</columns>
+        <columns>Month_and_Year_of_SF_Barometer__c</columns>
+        <columns>Date_Barometer_Survey_Received__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Step_Forward_Placement_Status__c</field>
+            <operation>equals</operation>
+            <value>Contracts started,&quot;Attended, Successful - Job Offer&quot;,Contracts completed</value>
+        </filters>
+        <filters>
+            <field>Contract_End_Date__c</field>
+            <operation>lessThan</operation>
+            <value>12/31/2016</value>
+        </filters>
+        <label>Barometer email send</label>
+    </listViews>
+    <listViews>
+        <fullName>General_Information_Form_Tracking</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>Associate_First_Name__c</columns>
+        <columns>Associate_Lastname__c</columns>
+        <columns>Send_General_Information_Form__c</columns>
+        <columns>Date_General_Info_form_sent_to_Associate__c</columns>
+        <columns>Date_General_Info_returned_from_Assoc__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>3/15/2016 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_Placement_Status__c</field>
+            <operation>notContain</operation>
+            <value>Unsuccessful - YP not accepted,Withdrawal of Associate - unmatched,Withdrawal,U</value>
+        </filters>
+        <filters>
+            <field>Employer__c</field>
+            <operation>notEqual</operation>
+            <value>Lord Mosca Inc.</value>
+        </filters>
+        <filters>
+            <field>Associate_First_Name__c</field>
+            <operation>notEqual</operation>
+            <value>Rohema</value>
+        </filters>
+        <filters>
+            <field>Associate_Lastname__c</field>
+            <operation>notEqual</operation>
+            <value>SloanTEST</value>
+        </filters>
+        <label>General Information Form Tracking</label>
+    </listViews>
+    <listViews>
+        <fullName>MATCH_C3_AM_TRACKER</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND (6 OR 7) AND 8</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Final_QC_Check__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Pathway__c</columns>
+        <columns>Event_Date__c</columns>
+        <columns>Associate__c</columns>
+        <columns>Employer__c</columns>
+        <columns>Step_Forward_Placement_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>3/15/2016 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>notEqual</operation>
+            <value>SFM-0000347</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>notEqual</operation>
+            <value>SFM-0000366</value>
+        </filters>
+        <filters>
+            <field>Employer__c</field>
+            <operation>notEqual</operation>
+            <value>Lord Mosca Inc.</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_Placement_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Withdrawal of Associate - unmatched,Withdrawal of Employer - unmatched</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_Placement_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Unsuccessful - YP not accepted</value>
+        </filters>
+        <filters>
+            <field>Employer__c</field>
+            <operation>notEqual</operation>
+            <value>Joe Public TEST</value>
+        </filters>
+        <label>MATCH C3 AM TRACKER</label>
+    </listViews>
+    <listViews>
+        <fullName>MATCH_C3_Agreement_MB_Version</fullName>
+        <columns>NAME</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Pathway__c</columns>
+        <columns>Associate__c</columns>
+        <columns>Employer__c</columns>
+        <columns>Step_Forward_Placement_Status__c</columns>
+        <columns>Contract_Start_Date__c</columns>
+        <columns>Contract_End_Date__c</columns>
+        <columns>Agreed_Fee_for_Employer__c</columns>
+        <columns>Block_Training_dates__c</columns>
+        <columns>Registered_Charity_Number__c</columns>
+        <columns>Registered_Company_Number__c</columns>
+        <columns>Registered_Organisation_Address__c</columns>
+        <columns>Registered_Organisation_Name__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>3/15/2016 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>notEqual</operation>
+            <value>SFM-0000347</value>
+        </filters>
+        <label>MATCH C3 Agreement (MB Version)</label>
+    </listViews>
+    <listViews>
+        <fullName>MATCH_C3_Agreement_check_list2</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND (6 OR 7) AND 8</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Final_QC_Check__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Pathway__c</columns>
+        <columns>Associate__c</columns>
+        <columns>Employer__c</columns>
+        <columns>Step_Forward_Placement_Status__c</columns>
+        <columns>Contract_Start_Date__c</columns>
+        <columns>Contract_End_Date__c</columns>
+        <columns>Date_Learning_Agreement_created__c</columns>
+        <columns>Date_Step_Forward_Agreement_created__c</columns>
+        <columns>Block_Training_dates__c</columns>
+        <columns>Registered_Charity_Number__c</columns>
+        <columns>Registered_Company_Number__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>3/15/2016 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>notEqual</operation>
+            <value>SFM-0000347</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>notEqual</operation>
+            <value>SFM-0000366</value>
+        </filters>
+        <filters>
+            <field>Employer__c</field>
+            <operation>notEqual</operation>
+            <value>Lord Mosca Inc.</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_Placement_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Withdrawal of Associate - unmatched,Withdrawal of Employer - unmatched</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_Placement_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Unsuccessful - YP not accepted</value>
+        </filters>
+        <filters>
+            <field>Employer__c</field>
+            <operation>notEqual</operation>
+            <value>Joe Public TEST</value>
+        </filters>
+        <label>MATCH C3 Agreement check list</label>
+    </listViews>
+    <listViews>
+        <fullName>MATCH_C3_EYE_YPs_who_need_DBS</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND (6 OR 7) AND 8 AND 9</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Final_QC_Check__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Pathway__c</columns>
+        <columns>Associate__c</columns>
+        <columns>Employer__c</columns>
+        <columns>Step_Forward_Placement_Status__c</columns>
+        <columns>Contract_Start_Date__c</columns>
+        <columns>Contract_End_Date__c</columns>
+        <columns>Date_Learning_Agreement_created__c</columns>
+        <columns>Date_Step_Forward_Agreement_created__c</columns>
+        <columns>Block_Training_dates__c</columns>
+        <columns>Registered_Charity_Number__c</columns>
+        <columns>Registered_Company_Number__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>3/15/2016 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>notEqual</operation>
+            <value>SFM-0000347</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>notEqual</operation>
+            <value>SFM-0000366</value>
+        </filters>
+        <filters>
+            <field>Employer__c</field>
+            <operation>notEqual</operation>
+            <value>Lord Mosca Inc.</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_Placement_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Withdrawal of Associate - unmatched,Withdrawal of Employer - unmatched</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_Placement_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Unsuccessful - YP not accepted</value>
+        </filters>
+        <filters>
+            <field>Employer__c</field>
+            <operation>notEqual</operation>
+            <value>Joe Public TEST</value>
+        </filters>
+        <filters>
+            <field>Pathway__c</field>
+            <operation>equals</operation>
+            <value>Early Years Education</value>
+        </filters>
+        <label>MATCH C3 EYE YPs who need DBS</label>
+    </listViews>
+    <listViews>
+        <fullName>MATCH_C3_Time_lag_event_to_offer</fullName>
+        <columns>NAME</columns>
+        <columns>Final_QC_Check__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Employer__c</columns>
+        <columns>Event_Date__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Pathway__c</columns>
+        <columns>Associate__c</columns>
+        <columns>Step_Forward_Placement_Status__c</columns>
+        <columns>Contract_Start_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>3/15/2016 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>notEqual</operation>
+            <value>SFM-0000347</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>notEqual</operation>
+            <value>SFM-0000366</value>
+        </filters>
+        <filters>
+            <field>Employer__c</field>
+            <operation>notEqual</operation>
+            <value>Lord Mosca Inc.</value>
+        </filters>
+        <label>MATCH C3 Time lag event to offer</label>
+    </listViews>
+    <listViews>
+        <fullName>MATCH_C3_Withdrawn</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND (6 OR 7)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Final_QC_Check__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Contracting_Status__c</columns>
+        <columns>Pathway__c</columns>
+        <columns>Associate__c</columns>
+        <columns>Employer__c</columns>
+        <columns>Step_Forward_Placement_Status__c</columns>
+        <columns>Date_Learning_Agreement_created__c</columns>
+        <columns>Date_Step_Forward_Agreement_created__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>3/15/2016 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>notEqual</operation>
+            <value>SFM-0000347</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>notEqual</operation>
+            <value>SFM-0000366</value>
+        </filters>
+        <filters>
+            <field>Employer__c</field>
+            <operation>notEqual</operation>
+            <value>Lord Mosca Inc.</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_Placement_Status__c</field>
+            <operation>contains</operation>
+            <value>Withdrawal</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_Placement_Status__c</field>
+            <operation>contains</operation>
+            <value>not accepted</value>
+        </filters>
+        <label>MATCH C3 Withdrawn or not accepted</label>
+    </listViews>
+    <listViews>
+        <fullName>MATCH_C3_eye_matched</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND (6 OR 7) AND 8 AND 9</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Associate__c</columns>
+        <columns>Final_QC_Check__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Pathway__c</columns>
+        <columns>Event_Date__c</columns>
+        <columns>Employer__c</columns>
+        <columns>Step_Forward_Placement_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>3/15/2016 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>notEqual</operation>
+            <value>SFM-0000347</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>notEqual</operation>
+            <value>SFM-0000366</value>
+        </filters>
+        <filters>
+            <field>Employer__c</field>
+            <operation>notEqual</operation>
+            <value>Lord Mosca Inc.</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_Placement_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Withdrawal of Associate - unmatched,Withdrawal of Employer - unmatched</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_Placement_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Unsuccessful - YP not accepted</value>
+        </filters>
+        <filters>
+            <field>Employer__c</field>
+            <operation>notEqual</operation>
+            <value>Joe Public TEST</value>
+        </filters>
+        <filters>
+            <field>Pathway__c</field>
+            <operation>equals</operation>
+            <value>Early Years Education</value>
+        </filters>
+        <label>MATCH C3 eye matched</label>
+    </listViews>
+    <listViews>
+        <fullName>Matt_Connolly_YP_Details</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Job__c</columns>
+        <columns>Associate__c</columns>
+        <columns>Associate_email__c</columns>
+        <columns>Pathway__c</columns>
+        <columns>DOB_Check__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Step_Forward_Placement_Status__c</field>
+            <operation>equals</operation>
+            <value>&quot;Attended, Successful - Job Offer&quot;,Contracts started,Contracts completed</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>4/1/2015 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>lessThan</operation>
+            <value>10/6/2015 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>Pathway__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>Matt Connolly YP Details</label>
+    </listViews>
+    <listViews>
+        <fullName>PAIGE_YP_BKSB_GIF_returns</fullName>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Job__c</columns>
+        <columns>Pathway__c</columns>
+        <columns>Associate__c</columns>
+        <columns>Employer__c</columns>
+        <columns>Step_Forward_Job_Name__c</columns>
+        <columns>Date_General_Info_form_sent_to_Associate__c</columns>
+        <columns>Date_General_Info_returned_from_Assoc__c</columns>
+        <columns>Date_BKSB_Login_sent_to_Associate__c</columns>
+        <columns>Date_BKSB_completed_by_Associate__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Step_Forward_Placement_Status__c</field>
+            <operation>equals</operation>
+            <value>Contracts started,Contracts completed,&quot;Attended, Successful - Job Offer&quot;</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>notEqual</operation>
+            <value>SFM-0000001</value>
+        </filters>
+        <label>PAIGE YP BKSB/GIF returns</label>
+    </listViews>
+    <listViews>
+        <fullName>SIAN_YP_Employer_withdrawn_after_match</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Job__c</columns>
+        <columns>Associate__c</columns>
+        <columns>Associate_email__c</columns>
+        <columns>Pathway__c</columns>
+        <columns>Employer__c</columns>
+        <columns>Date_General_Info_form_sent_to_Associate__c</columns>
+        <columns>Date_General_Info_returned_from_Assoc__c</columns>
+        <columns>Date_Learning_Agreement_sent_to_YP__c</columns>
+        <columns>Date_Learning_Agreement_returned_from_YP__c</columns>
+        <columns>Date_Code_of_Conduct_sent_to_Associate__c</columns>
+        <columns>Date_Code_of_Conduct_returned_frm_Assoc__c</columns>
+        <columns>Date_BKSB_Login_sent_to_Associate__c</columns>
+        <columns>Date_BKSB_completed_by_Associate__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Step_Forward_Placement_Status__c</field>
+            <operation>equals</operation>
+            <value>Withdrawal of Associate - unmatched,Withdrawal of Employer - unmatched</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>4/1/2015 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>lessThan</operation>
+            <value>10/6/2015 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>Pathway__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>SIAN YP/Employer withdrawn after match</label>
+    </listViews>
+    <nameField>
+        <displayFormat>SFM-{0000000}</displayFormat>
+        <label>Step Forward Placement Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Step Forward Job Placements</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>Generate_ILR</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Generate ILR</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!Step_Forward_Job_Placement__c.Id}
+&amp;TemplateId=a2MC000000CwJec
+&amp;DefaultPDF=0&amp;OFN={!Step_Forward_Job_Placement__c.Associate_First_Name__c}+Learning+Agreement
+&amp;QueryId=[SFJPnSFA]a2NC0000000OjVD
+&amp;DS7={!IF($User.ProfileId=&quot;00e80000000th5B&quot;,&quot;0&quot;,IF($User.ProfileId=&quot;00eC0000001Ss1L&quot;,&quot;0&quot;,&quot;3&quot;))}
+&amp;LG4=0</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Generate_Learning_Agreement</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Gen Learning Agreement</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!Step_Forward_Job_Placement__c.Id}
+&amp;TemplateId={!IF(Step_Forward_Job_Placement__c.Pathway__c=&quot;Early Years Education&quot;,&quot;a2MC0000000KSY0&quot;,&quot;a2MC0000000KSXl&quot;)}
+&amp;DefaultPDF=1&amp;OFN={!Step_Forward_Job_Placement__c.Associate_First_Name__c}+Learning+Agreement
+&amp;QueryId=[SFJP]a2kC0000000N9Ni?pv0={!Step_Forward_Job_Placement__c.Id}
+&amp;DS7={!IF($User.ProfileId=&quot;00e80000000th5B&quot;,&quot;0&quot;,IF($User.ProfileId=&quot;00eC0000001Sttg&quot;,&quot;0&quot;,IF($User.ProfileId=&quot;00eC0000001TNhw&quot;,&quot;0&quot;,&quot;3&quot;)))}
+&amp;LG4=0</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Generate_Step_Forward_Agreement</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Gen Step Forward Agreement</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!Step_Forward_Job_Placement__c.Id}
+&amp;TemplateId={!IF(Step_Forward_Job_Placement__c.Pathway__c=&quot;Early Years Education&quot;,&quot;a2MC000000CwBDw&quot;,&quot;a2MC0000000KSXq&quot;)}
+&amp;DefaultPDF=1&amp;OFN={!Step_Forward_Job_Placement__c.Associate_First_Name__c}+Step+Forward+Agreement
+&amp;QueryId=[SFDocTest]a2kC0000000N9Ni?pv0={!Step_Forward_Job_Placement__c.Id}
+&amp;DS7={!IF($User.ProfileId=&quot;00e80000000th5B&quot;,&quot;0&quot;,IF($User.ProfileId=&quot;00eC0000001Sttg&quot;,&quot;0&quot;,IF($User.ProfileId=&quot;00eC0000001TNhw&quot;,&quot;0&quot;,&quot;3&quot;)))}
+&amp;LG4=0</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Send_Learning_Agreement</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Send Learning Agreement</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!Step_Forward_Job_Placement__c.Id}
+&amp;TemplateId={!IF(Step_Forward_Job_Placement__c.Pathway__c=&quot;Early Years Education&quot;,&quot;a2MC0000000KSY0&quot;,&quot;a2MC0000000KSXl&quot;)}
+&amp;DefaultPDF=1&amp;OFN={!Step_Forward_Job_Placement__c.Associate_First_Name__c}+Learning+Agreement
+&amp;QueryId=[SFJP]a2kC0000000N9Ni?pv0={!Step_Forward_Job_Placement__c.Id}
+&amp;DS7={!IF($User.ProfileId=&quot;00e80000000th5B&quot;,&quot;0&quot;,IF($User.ProfileId=&quot;00eC0000001Sttg&quot;,&quot;0&quot;,IF($User.ProfileId=&quot;00eC0000001TNhw&quot;,&quot;0&quot;,&quot;7&quot;)))}
+&amp;LG4=0
+&amp;DocuSignVisible=1
+&amp;DocuSignRoutingOrder=1
+&amp;DocuSignEmailSubject=Step+Forward+Learning+Agreement+is+ready+for+your+signature
+&amp;DocuSignTag=0</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Send_Step_Forward_Agreement</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Send Step Forward Agreement</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!Step_Forward_Job_Placement__c.Id}
+&amp;TemplateId={!IF(Step_Forward_Job_Placement__c.Pathway__c=&quot;Early Years Education&quot;,&quot;a2MC000000CwBDw&quot;,&quot;a2MC0000000KSXq&quot;)}
+&amp;DefaultPDF=1&amp;OFN={!Step_Forward_Job_Placement__c.Associate_First_Name__c}+Step+Forward+Agreement
+&amp;QueryId=[SFDocTest]a2kC0000000N9Ni?pv0={!Step_Forward_Job_Placement__c.Id}
+&amp;DS7={!IF($User.ProfileId=&quot;00e80000000th5B&quot;,&quot;0&quot;,IF($User.ProfileId=&quot;00eC0000001Sttg&quot;,&quot;0&quot;,IF($User.ProfileId=&quot;00eC0000001TNhw&quot;,&quot;0&quot;,&quot;7&quot;)))}
+&amp;LG4=0
+&amp;DocuSignVisible=1
+&amp;DocuSignRoutingOrder=1
+&amp;DocuSignEmailSubject=Step+Forward+Agreement+is+ready+for+your+signature
+&amp;DocuSignTag=0</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Send_with_DocuSign</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Send with DocuSign</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/apex/dsfs__DocuSign_JavaScript&quot;)}
+DocuSign_CreateEnvelope();</url>
+    </webLinks>
+</CustomObject>

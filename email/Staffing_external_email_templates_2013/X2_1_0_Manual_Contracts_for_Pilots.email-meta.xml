@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Manual Contracts for Pilots</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>2.1.0 Manual Contracts for Pilots</name>
+    <style>freeForm</style>
+    <subject>Your contract for NCS with The Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative
+
+Date: as per date of email
+
+Dear {!Job_placement__c.Contact__c}
+
+Please download and read your contract and its conditions (content below) before you submit your response at the bottom of this page. Please submit a response within 7 days of viewing this page.
+
+Once you have submitted a response you will be unable to amend it so please read carefully before submitting.
+
+You can only submit one response per contract. For each different work schedule (also termed wave schedule) you will have a corresponding wave contract; please submit a response for all contracts. Once an acceptance is submitted, an enforceable contract has been entered into between yourself and The Challenge.
+
+1. We are pleased to be able to offer you a contract of employment with The Challenge on the NCS summer programme. Each Wave Contract and each Weekend Contract is a separate employment contract. Each contract is for a fixed term and the beginning and end dates for each fixed term is set out in the timetable (see separate &apos;Timetable and Role guide&apos; email).
+
+2. Although each Wave Contract and each Weekend Contract is a separate contract of employment, please note that if you accept a Wave Contract you must also accept the corresponding Weekend Contract. Similarly, you cannot just accept a Weekend Contract without accepting the corresponding Wave Contract. Therefore the offer of the Wave Contract is conditional on your acceptance of the corresponding Weekend Contracts and vice versa, unless specifically agreed otherwise.
+
+3. Each employment contract (whether a Wave Contract or a Weekend Contract) is made up from the applicable parts of this section, and The Challenge Terms of Employment that is attached to this email.
+
+4. Your employment cannot commence until we have received (1) two satisfactory references and an enhanced DBS check; (2) a copy of the enclosed terms confirming your acceptance of each contract; and (3) satisfactory evidence that you are not prohibited from working in the UK. Please see the Terms and Conditions for details of what constitutes satisfactory evidence. If you fail to do so you will be unable to commence employment. If this is problematic please contact your local staffing team.
+
+Yes – I accept and hereby sign the contract
+I hereby understand that by submitting my response as ‘Yes – I accept and hereby sign the contract’ I am accepting the work schedule, terms and conditions outlined in the contract
+
+No – I can no longer work on this wave
+I hereby understand that by submitting my response as ‘No – I can no longer work on this wave’ I am declining the work schedule outlined in my contract and I wish to explore other schedules knowing fully that this is not guaranteed.
+
+No – I do not want to work for NCS with The Challenge
+I hereby understand that by submitting my response as ‘No – I do not want to work for NCS with The Challenge’ I am declining the terms and schedules outlined in my contract. I also understand that if I do not want to work for The Challenge I must inform the Staffing team in writing.
+
+Submit your response below
+
+Yes – I accept and hereby sign the contract
+http://www.clicktools.com/survey?iv=6n28fx5wuas9&amp;q1={!Job_placement__c.Id}&amp;q2=1
+
+
+No – I can no longer work on this wave
+http://www.clicktools.com/survey?iv=6n28fx5wuas9&amp;q1={!Job_placement__c.Id}&amp;q2=2
+
+No – I do not want to work for NCS with The Challenge
+http://www.clicktools.com/survey?iv=6n28fx5wuas9&amp;q1={!Job_placement__c.Id}&amp;q2=3
+
+Yours sincerely,
+The Challenge
+e: {!Job_placement__c.Staffing_Associate_email__c}
+
+
+2.1.0</textOnly>
+    <type>html</type>
+</EmailTemplate>

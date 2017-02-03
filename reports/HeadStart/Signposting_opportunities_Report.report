@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Volunteering_Opportunity__c.Full_description__c</field>
+    </columns>
+    <columns>
+        <field>Volunteering_Opportunity__c.Location_address_of_opportunity__c</field>
+    </columns>
+    <columns>
+        <field>Account.Main_Contact__c</field>
+    </columns>
+    <columns>
+        <field>Volunteering_Opportunity__c.Approx_number_of_volunteering_places__c</field>
+    </columns>
+    <columns>
+        <field>Volunteering_Opportunity__c.Date_s__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>LAST_UPDATE_BY</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>lakeisha davison</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Signposting opportunities Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$Volunteering_Opportunity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>ACCOUNT.NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto-notification sent to Contact Owner when CCT have acted on moving YP to Autumn</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CCT have acted on your request to move YP to Autumn</name>
+    <style>none</style>
+    <subject>CCT have acted on your request to move {!Contact.Name} to Autumn</subject>
+    <textOnly>Hi {!Contact.OwnerFirstName}
+
+CCT have acted on your request to move {!Contact.Name} to Autumn. Click on this link to see the record: {!Contact.Link}.
+
+This is a standard email, sent automatically whenever CCT move YP to Autumn at the request of Marketing</textOnly>
+    <type>custom</type>
+</EmailTemplate>

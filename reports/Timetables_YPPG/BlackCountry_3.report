@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Wave__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r$RecordType</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r$Account__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r$Address_to_use__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r$Driving_and_parking_directions__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r$Nearest_public_transport__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Junctions__r.Bookings__r$Usage_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Sun RCA,Sat RCA,Weekend RCA,TC Usage,Big Challenge,Fundraising,Dragon,Junction,Professional,Sports,Community</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Junctions__r.Bookings__r$Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>BlackCountry 1</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>BlackCountry 3</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Usages_and_Bookings__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

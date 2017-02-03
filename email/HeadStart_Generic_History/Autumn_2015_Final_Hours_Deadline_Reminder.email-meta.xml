@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Autumn 2015: Final Hours Deadline Reminder</name>
+    <style>none</style>
+    <subject>FINAL REMINDER: hours deadline 1st February</subject>
+    <textOnly>*|MC:SUBJECT|*
+
+
+FINAL REMINDER: hours deadline 1st February
+
+
+Time is almost up for completing those all important volunteering hours.  You’ve done a great job so far, racking up {!HS_Activity__c.HS_Hours_Total__c} hours of volunteering.  One final push should do the trick!
+
+Make sure each time you volunteer, you log your hours on the HeadStart Website. Remember, we can only invite you to the workshops and your guaranteed interview once you have completed 16 hours or more of volunteering so keep it up!
+
+Please get in touch with us at headstart@the-challenge.org if you need any further support or guidance.
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

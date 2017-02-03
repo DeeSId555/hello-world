@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email confirming receipt of application</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>AM 2.1 Application Received</name>
+    <style>formalLetter</style>
+    <subject>Your application is being processed</subject>
+    <textOnly>We have received your application.
+Dear {!Contact.FirstName},
+
+Thank you for applying to be an Associate Mentor on NCS with The Challenge.
+
+What happens now?
+
+If your application is successful, we&apos;ll invite you to an Associate Mentor assessment. We’re expecting a huge number of applications this year, so please allow 2 weeks to hear back from us and make sure you check your emails regularly!
+
+The assessment is a chance for us to find out a bit more about you, for you to get to know us, and for you to receive specialist training on how to be an Associate Mentor. You’ll also have the chance to ask any questions that you have.
+
+Your assessment is not a formal interview, and you do not need to prepare anything in advance. We will be looking for the following things:
+
+· Reliability – e.g. arriving on time to the session you have signed up to
+
+· Professionalism – e.g. following the NCS Code of Conduct and acting as though you are in a place of work (not with your mates!)
+
+· Positivity – e.g. trying your best in all the activities
+
+If you will need any extra support before or during the assessment and have not already put that on your application form, then please tell your local Graduate team.
+
+
+If you are successful at the assessment event, we will then offer you a volunteer role as Associate Mentor (or Senior Associate Mentor) and let you know what the next steps are.
+
+Need to get in touch with us?
+
+Please email {!Contact.OwnerEmail} and start your email with:
+
+·Your name
+
+·What borough you live in (or your postcode)
+All the best,
+
+NCS Graduates Team
+The Challenge</textOnly>
+    <type>html</type>
+</EmailTemplate>

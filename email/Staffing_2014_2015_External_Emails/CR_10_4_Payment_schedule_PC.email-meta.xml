@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 10.4 Payment schedule - PC</name>
+    <style>formalLetter</style>
+    <subject>Payment schedule for your role on {!Job_placement__c.Wave__c}</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Job_placement__c.Staffing_Associate_email__c}.
+Dear {!Contact.FirstName},
+
+
+
+Payment schedule for {!Job_placement__c.Wave__c}, clause 4.1
+
+
+
+Payment information for your role with us on {!Job_placement__c.Wave__c} is outlined below. This information is subject to you completing your employment with us as per the conditions in your contract.
+
+
+
+Payment overview
+
+
+
+You have been allocated to work on {!Job_placement__c.Wave__c} as a {!Job_placement__c.Role__c}. This work placement is counted as a single employment contract.
+
+
+
+You are contracted to work from {!Job_placement__c.Assignment_start_date__c} to {!Job_placement__c.Assignment_end_date__c} (known as your ‘work period’). You will be paid a total amount of {!Job_placement__c.Total_gross_pay__c} for your role. This includes payment in lieu of accrued holiday.
+
+
+
+This payment is calculated on the basis that you will work all days required of your role; any days or half days that you are absent or no longer required to work will be deducted from your pay.
+
+
+
+Please note that as stated [above] your dates of employment under this contract will be from {!Job_placement__c.Assignment_start_date__c} to {!Job_placement__c.Assignment_end_date__c}, which is a total of {!Job_placement__c.Standard_days_for_role__c}. For the avoidance of doubt, in line with the contract you have entered into with us, your employment under this contract with us will come to an end automatically on {!Job_placement__c.Assignment_end_date__c} without further notice required.
+
+
+
+All of your pay will be subject to tax and National Insurance (NI) deductions. You will be able to review tax deductions on your payslip. Payslips are sent via email two days prior to your payment date.
+
+
+
+What else?
+
+
+
+In addition to the work dates outlined above, Personal Coaches are also expected to attend a minimum of 6 half day meetings before and after their wave and attending the young person&apos;s graduation. Each of these will be paid at a rate of £47.50 (half day). This is subject to returning a completed review form after each meeting.&quot;
+
+
+
+This part of your payment will not be recorded on your payment schedule or payment notification emails, but will be evident in your payslip. For further information, please contact inclusionroles@the-challenge.org.
+
+
+
+When will I receive this payment?
+
+
+
+You will be paid for your role on {!Job_placement__c.Wave__c} on {!Job_placement__c.Payroll_payment_date__c}.
+
+
+
+We pay our seasonal staff on a monthly basis. We aim to pay staff within 5 weeks of their completing a wave, where possible. For an overview of our payment date and the corresponding waves, please see this document.
+https://staffing.the-challenge.org/assets/2016payroll-WhenwillIbepaidformyrole.pdf
+
+
+What next?
+
+
+
+At the end of your wave, you will receive a ‘payment notification’ email outlining your approved pay. Please note that if you are working multiple waves over the summer, you will receive a new payment notification email for each work period.
+
+
+
+Workplace Pension auto-enrollment
+
+
+
+Due to new auto-enrollment legislation, employees of The Challenge, including a small number of seasonal staff, will be enrolled into a workplace pension scheme. Auto-enrollment does not occur until October 2015, and staff will have the opportunity to opt-out at this point. To see if you qualify for auto-enrollment, please see FAQ 11.10.
+https://staffing.the-challenge.org/frequently-asked-questions/#20
+
+
+Any questions?
+
+
+
+If you have any queries about the payment schedule please contact your local staffing team, or you can look through our ‘Payment, Advances and Expenses FAQs’.
+https://staffing.the-challenge.org/contact/
+https://staffing.the-challenge.org/frequently-asked-questions/#20
+
+
+Best wishes,
+The Challenge
+
+NCS Programme
+
+
+
+Email reference: CR 10.4</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,12 @@
+Hi {!Contact.OwnerFirstName},
+<br class="blank" />
+<br class="blank" />
+{!Contact.FirstName} {!Contact.LastName} has not submitted their payroll information and may not have submitted details for their referees either. 
+<br class="blank" />
+<br class="blank" />
+Please check their Job Application and follow up with a call, as it is possible that they have not received the emails.
+<br class="blank" />
+Click on the link to view the record {!Job_Application__c.Link}.
+<br class="blank" />
+<br class="blank" />
+This is a standard email, sent automatically 4 days after "Date payroll reminder 2" when "Date payroll info submitted" is empty.

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>Bank + tax reminder - no tax info</name>
+    <style>formalLetter</style>
+    <subject>URGENT: You must submit your tax information!</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact us on seasonalroles@the-challenge.org.
+
+Dear {!Contact.FirstName},
+
+The first wave of this summer&apos;s NCS programme kicks off in less than a month, so we wanted to ensure you&apos;re all set to start your role with us this summer.
+
+A huge part of ensuring the programme runs smoothly is making sure we have the right bank and tax information for all our staff ahead of the first wave starting. We&apos;ve noticed that you haven&apos;t submitted your bank or tax information yet - please read on, and update  the relevant sections by 6th June 2016. After this date you will not be able to edit your records, and this may result in your wage being paid incorrectly.
+
+How to submit your tax information
+
+In order for us to generate a tax code for you, you need to make a tax declaration.
+
+To make a tax declaration you&apos;ll need to read through three statements and select the one which is most applicable to your current circumstances.
+
+Unfortunately, we cannot help with any tax queries - if you&apos;re unsure what tax information you should provide us with, you should contact HMRC directly.
+
+What else?
+
+Please check that your bank details are correct - you will no longer be able to edit this information after the 31st May 2016.
+
+Additionally, if you haven&apos;t completed your Health, Safeguarding and Inclusion form yet, please ensure you do this as soon as possible. We can&apos;t allocate you to any work placements until we have this information.
+
+Any questions?
+
+As stated above, we regret that we cannot help with any tax queries. As ever though, if you have any general queries about your role or the NCS programme you can contact us on seasonalroles@the-challenge.org.
+
+Best wishes,
+
+The Challenge Staffing Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object houses records where requests from SAW users to change event days are stored</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Additional_information__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional information</label>
+        <length>10000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Any_other_dates_not_available__c</fullName>
+        <externalId>false</externalId>
+        <label>Any other dates not available</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Date_time_reviewed__c</fullName>
+        <externalId>false</externalId>
+        <label>Date/time reviewed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Event_days_user_can_no_longer_attend__c</fullName>
+        <externalId>false</externalId>
+        <label>Event days user can no longer attend</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Day 1</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Day 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Day 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Day 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Day 5</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Job_Application__c</fullName>
+        <externalId>false</externalId>
+        <label>Job Application</label>
+        <referenceTo>Job_Application__c</referenceTo>
+        <relationshipLabel>Alternative Event Requests</relationshipLabel>
+        <relationshipName>Alternative_Event_Requests</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Reason_for_request_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason for request 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Family emergency</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Illness</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Exam</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Reason_for_request_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason for request 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Family emergency</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Illness</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Exam</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Reason_for_request_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason for request 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Family emergency</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Illness</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Exam</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Reason_for_request_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason for request 4</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Family emergency</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Illness</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Exam</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Reason_for_request_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason for request 5</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Family emergency</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Illness</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Exam</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Review_status__c</fullName>
+        <externalId>false</externalId>
+        <label>Review status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Unreviewed</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>On hold</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>In progress</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Approved - new date(s) found</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Declined - no date(s) found</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Staffing_Event__c</fullName>
+        <externalId>false</externalId>
+        <label>Staffing Event</label>
+        <referenceTo>Staffing_Event__c</referenceTo>
+        <relationshipLabel>Alternative Event Requests</relationshipLabel>
+        <relationshipName>Alternative_Event_Requests</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Unavailable_date_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Unavailable date 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Unavailable_date_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Unavailable date 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Unavailable_date_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Unavailable date 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Unavailable_date_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Unavailable date 4</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Unavailable_date_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Unavailable date 5</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <label>Alternative Event Request</label>
+    <nameField>
+        <displayFormat>AER-{YYYY}-{00000}</displayFormat>
+        <label>Alternative Event Request Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Alternative Event Requests</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>X2014</fullName>
+        <active>true</active>
+        <label>2014</label>
+        <picklistValues>
+            <picklist>Event_days_user_can_no_longer_attend__c</picklist>
+            <values>
+                <fullName>Day 1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Day 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day 5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_for_request_1__c</picklist>
+            <values>
+                <fullName>Exam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Family emergency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Illness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_for_request_2__c</picklist>
+            <values>
+                <fullName>Exam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Family emergency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Illness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_for_request_3__c</picklist>
+            <values>
+                <fullName>Exam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Family emergency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Illness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_for_request_4__c</picklist>
+            <values>
+                <fullName>Exam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Family emergency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Illness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_for_request_5__c</picklist>
+            <values>
+                <fullName>Exam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Family emergency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Illness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Review_status__c</picklist>
+            <values>
+                <fullName>Approved - new date%28s%29 found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Declined - no date%28s%29 found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unreviewed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>X2015</fullName>
+        <active>true</active>
+        <label>2015</label>
+        <picklistValues>
+            <picklist>Event_days_user_can_no_longer_attend__c</picklist>
+            <values>
+                <fullName>Day 1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Day 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day 5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_for_request_1__c</picklist>
+            <values>
+                <fullName>Exam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Family emergency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Illness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_for_request_2__c</picklist>
+            <values>
+                <fullName>Exam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Family emergency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Illness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_for_request_3__c</picklist>
+            <values>
+                <fullName>Exam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Family emergency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Illness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_for_request_4__c</picklist>
+            <values>
+                <fullName>Exam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Family emergency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Illness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_for_request_5__c</picklist>
+            <values>
+                <fullName>Exam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Family emergency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Illness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Review_status__c</picklist>
+            <values>
+                <fullName>Approved - new date%28s%29 found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Declined - no date%28s%29 found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unreviewed</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>X2016</fullName>
+        <active>true</active>
+        <label>2016</label>
+        <picklistValues>
+            <picklist>Event_days_user_can_no_longer_attend__c</picklist>
+            <values>
+                <fullName>Day 1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Day 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day 5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_for_request_1__c</picklist>
+            <values>
+                <fullName>Exam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Family emergency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Illness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_for_request_2__c</picklist>
+            <values>
+                <fullName>Exam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Family emergency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Illness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_for_request_3__c</picklist>
+            <values>
+                <fullName>Exam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Family emergency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Illness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_for_request_4__c</picklist>
+            <values>
+                <fullName>Exam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Family emergency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Illness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_for_request_5__c</picklist>
+            <values>
+                <fullName>Exam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Family emergency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Illness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Review_status__c</picklist>
+            <values>
+                <fullName>Approved - new date%28s%29 found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Declined - no date%28s%29 found</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unreviewed</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+</CustomObject>

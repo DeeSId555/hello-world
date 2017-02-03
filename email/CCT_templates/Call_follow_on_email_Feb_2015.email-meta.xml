@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>*** Call follow on email Feb 2015</name>
+    <style>none</style>
+    <subject>NCS - thanks for talking to us &amp; how to apply</subject>
+    <textOnly>NCS POWERED BY THE CHALLENGE
+
+NCS - thanks for talking to us.
+
+
+Hello {!Contact.Name} and Parent/ Guardian,
+
+Thank you for taking the time to talk to us about NCS with The Challenge today. We hope you are excited about this opportunity for {!Contact.FirstName} to develop skills which look great on a CV or UCAS application – and to make friends and have fun along the way!
+
+How do I apply?
+As we discussed on the phone, it&apos;s easy to sign up online, and online applications receive a £5 discount. Parents/guardians should follow this link  and use {!Contact.FirstName}’s unique login details to start their application:
+
+
+ID Number: {!Contact.Account_s_TCN_Id__c}
+Password: {!Contact.Login_PIN__c}
+
+When is the programme running?
+The NCS with The Challenge February programme is part-residential and runs over February half-term (14 - 20 February)  and a total of four additional weekend dates in February and March. The programme structure is:
+
+Part 1 – residential (4 days, 3 nights): 14 - 17 February
+Part 2 – non-residential (3 days): 18 - 20 February
+Part 3 – non-residential weekend days (4 separate days): Saturday 28 February, Sunday 1 March, Saturday 7 March, Saturday 14 March.
+
+What are the benefits?
+NCS builds skills and confidence in 16- 17 year olds  to help them get ahead in work and life, whatever they plan on doing in the future.  Visit http://www.ncsthechallenge.org/the-benefits to find out more and watch a video about how the programme has benefitted others.
+
+How much does it cost?
+Each place is valued at over £1000 but government backing means the maximum cost you&apos;ll pay is a £50 administration fee – with an extra £5 discount if you sign up online! Accommodation, food, transport and equipment used during the programme is all covered. If you need some help with this cost you can request financial support when signing up.
+
+More questions?
+Take a look at our Questions page, or get in touch at contact@the-challenge.org or on 0203 542 2400.
+
+Places are limited so apply soon - don’t miss out on this once-in-a-lifetime opportunity!
+
+Yours sincerely,
+
+
+
+Rebecca Carter - Director at The Challenge
+
+- Participants must meet our age eligibility requirements – generally, they need to have turned 16 or 17 on or before 31 August 2014 and must not be 18 during the residential part of the programme.
+- The first two parts of the programme run from Saturday 14 February – Friday 20 February, which will be half-term for the majority of schools in the areas we operate in.
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

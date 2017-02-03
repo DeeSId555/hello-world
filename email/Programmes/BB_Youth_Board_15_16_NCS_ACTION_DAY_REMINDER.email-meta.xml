@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>BB Youth Board 15/16 NCS ACTION DAY REMINDER</name>
+    <style>freeForm</style>
+    <subject>Youth Board Session Reminder</subject>
+    <textOnly>Hello {!Contact.FirstName}!
+
+This is a quick email to remind you of our upcoming meeting on Tuesday 1st March @ 5pm.
+
+As usual, the meeting place will be the New Eltham Methodist Church: 435-439 Footscray Road, New Eltham, London SE9 3UL
+
+Your youth board mentor for the day will be Stephanie.
+
+The session will be focussing purchasing all the items that will be in the packs and any finishing touches for the event on Saturday!
+
+You will also be receiving your NCS action day party ticket at the meeting!
+
+Look out for the reminder text and we will see you there!
+
+Best,
+
+Bromley and Bexley team</textOnly>
+    <type>html</type>
+</EmailTemplate>

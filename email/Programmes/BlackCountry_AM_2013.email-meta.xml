@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>BlackCountry AM 2013</name>
+    <style>freeForm</style>
+    <subject>Are you ready for your next CHALLENGE?</subject>
+    <textOnly>{!Contact.FirstName}
+
+If you can&apos;t see this image please see attached file or contact vicky.harrold@the-challenge.org if you would like more information about the Graduate Summer Programme.
+
+Thank you :)</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>0.0.1 SAW Login Info</name>
+    <style>freeForm</style>
+    <subject>Password reminder for the Staffing Website: NCS with The Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+
+Dear {!Contact.FirstName}
+
+
+You made a request for your login details to be resent to you.
+
+User name: {!Contact.Email}
+
+Password: {!Contact.Login_Password__c}
+
+Click here to go to the Staffing Website
+https://staffing.the-challenge.org/secure/UpdatePassword.aspx 
+
+After you login, we suggest that you change your password.
+
+This email was sent to you by a member of the staffing team at your request. If you did not request this, please contact me on the details listed below.
+
+
+
+{!Contact.OwnerFullName}
+
+{!Contact.Contact_Owner_alternative_email__c}
+
+NCS with The Challenge</textOnly>
+    <type>html</type>
+</EmailTemplate>

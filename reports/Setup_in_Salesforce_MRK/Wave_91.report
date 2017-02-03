@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Wave_Component_Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Wave_Component_End_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Wave__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Contact__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Arrival_Time__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Contact_Phone__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Day_2_departure_time__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 OR 3 OR 4) AND 2</booleanFilter>
+        <criteriaItems>
+            <column>Account.Junctions__r$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>TC community</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Junctions__r.Bookings__r$Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>MRK B 9</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Junctions__r$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>RCD sponsorship</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Junctions__r$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>professional</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Wave 9</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Account_Usages_and_Bookings__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$Ambassador_Email_Sent__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

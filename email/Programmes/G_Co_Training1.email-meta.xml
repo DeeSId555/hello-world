@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Example/Test, made for a presentation</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>G-Co Training</name>
+    <style>freeForm</style>
+    <subject>Your 1st G-Co Meeting!</subject>
+    <textOnly>Hey {!Contact.FirstName}
+
+Hope you can attend our first G-Co Meeting, meanwhile visit the TCS website for more info.</textOnly>
+    <type>html</type>
+</EmailTemplate>

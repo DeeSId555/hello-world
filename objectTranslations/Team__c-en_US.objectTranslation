@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Team</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Teams</value>
+    </caseValues>
+    <fields>
+        <label><!-- Campaign Aim --></label>
+        <name>Campaign_Aim__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Details --></label>
+        <name>Campaign_Details__c</name>
+    </fields>
+    <fields>
+        <help><!-- e.g. What was their campaign action; How many people signed a petition. --></help>
+        <label><!-- Campaign Key Achievements --></label>
+        <name>Campaign_Key_Achievements__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Name --></label>
+        <name>Campaign_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- 1 = Low, 5 - High. --></help>
+        <label><!-- Campaign Rating --></label>
+        <name>Campaign_Rating__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Connecting</masterLabel>
+            <translation><!-- Connecting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Educating</masterLabel>
+            <translation><!-- Educating --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Petitioning</masterLabel>
+            <translation><!-- Petitioning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cluster --></label>
+        <name>Cluster__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is there a easily communicable problem that they seek to address? --></help>
+        <label><!-- RCA Partner: Communicable Problem --></label>
+        <name>Communicable_Problem__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 1 Arrival time at RA --></label>
+        <name>Day_1_Arrival_time_at_RA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 1 Arrival time at TC CP venue --></label>
+        <name>Day_1_Arrival_time_at_TC_CP_venue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only complete if returning from TC venue --></help>
+        <label><!-- Day 1 Arrival time at TC venue --></label>
+        <name>Day_1_Arrival_time_at_TC_venue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 1 Depart time from TC CP venue --></label>
+        <name>Day_1_Depart_time_from_TC_CP_venue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 1 Depart time from TC venue --></label>
+        <name>Day_1_Depart_time_from_TC_venue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please complete regardless of where you are coming from. --></help>
+        <label><!-- Day 1 Depart time to RA --></label>
+        <name>Day_1_Depart_time_to_RA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 1 Return to TC venue? --></label>
+        <name>Day_1_Return_to_TC_venue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please complete regardless of where you are coming from. --></help>
+        <label><!-- Day 2 Arrival time at RA --></label>
+        <name>Day_2_Arrival_time_at_RA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 2 Arrival time at TC CP venue --></label>
+        <name>Day_2_Arrival_time_at_TC_CP_venue__c</name>
+    </fields>
+    <fields>
+        <help><!-- only complete if returning from TC venue --></help>
+        <label><!-- Day 2 Arrival time at TC venue --></label>
+        <name>Day_2_Arrival_time_at_TC_venue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 2 Depart time from TC CP venue --></label>
+        <name>Day_2_Depart_time_from_TC_CP_venue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 2 Depart time from TC venue --></label>
+        <name>Day_2_Depart_time_from_TC_venue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only complete if returning from TC venue --></help>
+        <label><!-- Day 2 Depart time to RA --></label>
+        <name>Day_2_Depart_time_to_RA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 2 Return to TC venue? --></label>
+        <name>Day_2_Return_to_TC_venue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Did they turn up? --></label>
+        <name>Did_they_turn_up__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fundraising Total --></label>
+        <name>Fundraising_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is there a 2nd TC Partner? --></label>
+        <name>Is_there_a_2nd_TC_Partner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Long team name --></label>
+        <name>Long_team_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Media Coverage? --></label>
+        <name>Media_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minibus to Partner Challenge? --></label>
+        <name>Minibus_to_Partner_Challenge__c</name>
+    </fields>
+    <fields>
+        <help><!-- Data manually entered based on wave size and as per last upload to NCST. Data needs to be changed if wave size changes. The NCST system does not allow for decimal places so numbers are rounded up. --></help>
+        <label><!-- NCST target participants --></label>
+        <name>NCST_target_participants__c</name>
+    </fields>
+    <fields>
+        <help><!-- NCST team id used as external id on the NCST CRM system. Manually entered rather than calculated. --></help>
+        <label><!-- NCST team id --></label>
+        <name>NCST_team_id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula pulling &apos;NCS zone&apos; from Wave --></help>
+        <label><!-- NCS zone --></label>
+        <name>NCS_zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM Check --></label>
+        <name>PM_Check__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please choose the category which best fits the partner organization. --></help>
+        <label><!-- Partner Category --></label>
+        <name>Partner_Category__c</name>
+        <picklistValues>
+            <masterLabel>Alcohol/Substance Abuse</masterLabel>
+            <translation><!-- Alcohol/Substance Abuse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Children&apos;s and Youth Service</masterLabel>
+            <translation><!-- Children&apos;s and Youth Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crime</masterLabel>
+            <translation><!-- Crime --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disability Services</masterLabel>
+            <translation><!-- Disability Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elderly Care</masterLabel>
+            <translation><!-- Elderly Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental</masterLabel>
+            <translation><!-- Environmental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food Bank</masterLabel>
+            <translation><!-- Food Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Homelessness</masterLabel>
+            <translation><!-- Homelessness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intergenerational</masterLabel>
+            <translation><!-- Intergenerational --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mental Health</masterLabel>
+            <translation><!-- Mental Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Potential CAT? --></label>
+        <name>Potential_CAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 1-3 Formula --></label>
+        <name>RCA_1_3_Formula__c</name>
+    </fields>
+    <fields>
+        <help><!-- Day that RCA days 1-3 fall on --></help>
+        <label><!-- RCA 1-3 --></label>
+        <name>RCA_1_3__c</name>
+        <picklistValues>
+            <masterLabel>Pilot</masterLabel>
+            <translation><!-- Pilot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saturday</masterLabel>
+            <translation><!-- Saturday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sunday</masterLabel>
+            <translation><!-- Sunday --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCA day 1 date. --></label>
+        <name>RCA_1_day_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 4 Meeting Point --></label>
+        <name>RCA_4_Meeting_Point__c</name>
+    </fields>
+    <fields>
+        <help><!-- Day that RCA 4 falls on --></help>
+        <label><!-- RCA 4 --></label>
+        <name>RCA_4__c</name>
+        <picklistValues>
+            <masterLabel>Pilot</masterLabel>
+            <translation><!-- Pilot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saturday</masterLabel>
+            <translation><!-- Saturday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sunday</masterLabel>
+            <translation><!-- Sunday --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCA day 4 date. --></label>
+        <name>RCA_4_day_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Partner Challenge Visit date --></label>
+        <name>RCA_Partner_Challenge_Visit_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 1-3 Meeting Point --></label>
+        <name>RCA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA day 1 date --></label>
+        <name>RCA_day_1_date_2013__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA day 2 date --></label>
+        <name>RCA_day_2_date_2013__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA day 2 date. --></label>
+        <name>RCA_day_2_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA day 3 date --></label>
+        <name>RCA_day_3_date_2013__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA day 3 date. --></label>
+        <name>RCA_day_3_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA day 4 date --></label>
+        <name>RCA_day_4_date_2013__c</name>
+    </fields>
+    <fields>
+        <help><!-- e.g., What tasks did they complete; Who did they work with. --></help>
+        <label><!-- Social Action Day Key Achievements --></label>
+        <name>Social_Action_Day_Key_Achievements__c</name>
+    </fields>
+    <fields>
+        <help><!-- What does the partner do that is socially beneficial? --></help>
+        <label><!-- RCA Partner: Socially Beneficial --></label>
+        <name>Socially_Beneficial__c</name>
+    </fields>
+    <fields>
+        <help><!-- 1 = Low, 5 - High. --></help>
+        <label><!-- Team Preparedness --></label>
+        <name>Team_Preparedness__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Team --></label>
+        <name>Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team code --></label>
+        <name>Team_code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Who should not be assigned to this team? E.g. wheelchair users --></help>
+        <label><!-- Team unsuitable for --></label>
+        <name>Team_unsuitable_for__c</name>
+    </fields>
+    <fields>
+        <label><!-- Theme --></label>
+        <name>Theme__c</name>
+        <picklistValues>
+            <masterLabel>Art</masterLabel>
+            <translation><!-- Art --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drama</masterLabel>
+            <translation><!-- Drama --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise</masterLabel>
+            <translation><!-- Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Music</masterLabel>
+            <translation><!-- Music --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Photography</masterLabel>
+            <translation><!-- Photography --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sport</masterLabel>
+            <translation><!-- Sport --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wave Number --></label>
+        <name>Wave_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave --></label>
+        <name>Wave__c</name>
+        <relationshipLabel><!-- Teams --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Wheelchair User for Transport --></label>
+        <name>Wheelchair_User_for_Transport__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- 2012 --></label>
+        <name>X2012</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2012A --></label>
+        <name>X2012A</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2013 --></label>
+        <name>X2013</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2014 --></label>
+        <name>X2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2015 --></label>
+        <name>X2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2016 --></label>
+        <name>X2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2017 --></label>
+        <name>X2017</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

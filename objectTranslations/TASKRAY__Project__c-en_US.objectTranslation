@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Client dept(s) --></label>
+        <name>CUSTOM_Client_dept_s__c</name>
+        <picklistValues>
+            <masterLabel>All NCS</masterLabel>
+            <translation><!-- All NCS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All Step Forward</masterLabel>
+            <translation><!-- All Step Forward --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central Marketing</masterLabel>
+            <translation><!-- Central Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Curriculum and Grads</masterLabel>
+            <translation><!-- Curriculum and Grads --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Services</masterLabel>
+            <translation><!-- Customer Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fundraising</masterLabel>
+            <translation><!-- Fundraising --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR</masterLabel>
+            <translation><!-- HR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HeadStart</masterLabel>
+            <translation><!-- HeadStart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inclusion</masterLabel>
+            <translation><!-- Inclusion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Innovation</masterLabel>
+            <translation><!-- Innovation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal dept</masterLabel>
+            <translation><!-- Legal dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal requirement</masterLabel>
+            <translation><!-- Legal requirement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NCS Trust</masterLabel>
+            <translation><!-- NCS Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procurement</masterLabel>
+            <translation><!-- Procurement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programmes</masterLabel>
+            <translation><!-- Programmes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Affairs</masterLabel>
+            <translation><!-- Public Affairs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staffing</masterLabel>
+            <translation><!-- Staffing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step Forward Account Management</masterLabel>
+            <translation><!-- Step Forward Account Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step Forward Delivery</masterLabel>
+            <translation><!-- Step Forward Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step Forward Matching</masterLabel>
+            <translation><!-- Step Forward Matching --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step Forward Sales</masterLabel>
+            <translation><!-- Step Forward Sales --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- External dev. reference # --></label>
+        <name>CUSTOM_External_dev_reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project summary --></label>
+        <name>CUSTOM_Project_summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Share to Chatter Groups (ID) --></label>
+        <name>TASKRAY__ChatterGroupSharingIds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Share to Chatter Groups (Name) --></label>
+        <name>TASKRAY__ChatterGroupSharingNames__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependent Update Pending --></label>
+        <name>TASKRAY__Dependent_Update_Pending__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color --></label>
+        <name>TASKRAY__ProjectColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project End --></label>
+        <name>TASKRAY__Project_End__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Project --></label>
+        <name>TASKRAY__Project_Parent__c</name>
+        <relationshipLabel><!-- Child Projects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Start --></label>
+        <name>TASKRAY__Project_Start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Archived --></label>
+        <name>TASKRAY__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deprecated (Do Not Use) --></label>
+        <name>TASKRAY__TextColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Time (hrs) --></label>
+        <name>TASKRAY__trActualHours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completion Percentage --></label>
+        <name>TASKRAY__trCompletionPercentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Time (hrs) --></label>
+        <name>TASKRAY__trEstimatedHours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nickname --></label>
+        <name>TASKRAY__trNickname__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template --></label>
+        <name>TASKRAY__trTemplate__c</name>
+    </fields>
+    <sharingReasons>
+        <label><!-- Project Contributor added in TaskRay --></label>
+        <name>TASKRAY__Project_Member_added_in_TaskRay</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- Project Nicknames cannot have spaces --></errorMessage>
+        <name>TASKRAY__No_spaces_in_Nickname</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- TaskRay_Project_Clone --></label>
+        <name>TASKRAY__TaskRay_Project_Clone</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_in_TaskRay --></label>
+        <name>TASKRAY__View_in_TaskRay</name>
+    </webLinks>
+</CustomObjectTranslation>

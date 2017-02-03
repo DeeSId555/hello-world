@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Accepts applicants and asks for further info and consent</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>PV acceptance agreement</name>
+    <style>none</style>
+    <subject>The Challenge: Project Volunteer {!Lead.Applicant_Location__c} acceptance</subject>
+    <textOnly>Dear {!Lead.FirstName} 
+
+Thank you very much for applying to be a Project Volunteer with The Challenge this summer. We believe you would be a great support to a team of young people and would very much like you to support a team of young people as they complete their community challenges. 
+
+To make this happen, please click on the link below and fill in the form, so that we can get further information on your availability in September and October. We will then contact you again to confirm the arrangements. Please click here http://www.clicktools.com/survey?iv=3a1315e799bd63f&amp;q1={!Lead.Id}&amp;q2={!Lead.Applicant_Location__c}
+
+Ivan Wise
+The Challenge Network
+
+e: staffing@the-challenge.org
+t: 020 7921 4203
+
+www.the-challenge.org
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. 
+Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

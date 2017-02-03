@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This is sent to APMs when an AM or SAM has completed their role</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>6. Associate Mentor Feedback Request (Internal)</name>
+    <style>none</style>
+    <subject>Please give feedback for {!Job_placement__c.Contact_Name__c}</subject>
+    <textOnly>Hi {!Job_placement__c.00NC0000005EiNO},
+
+As the summer is now over, it is vital that you submit feedback for {!Job_placement__c.Contact_Name__c} who completed their {!Job_placement__c.Role__c} role on {!Job_placement__c.Wave__c}.
+
+Please include all information relevant to {!Job_placement__c.Contact_Name__c}, including whether they should automatically be offered a higher role in 2013 (please specify which role), automatically be offered the same role in 2013. If the {!Job_placement__c.Role__c} should not be rehired again, due to their behaviour, please select &quot;Do not invite back for any role&quot;.
+
+If you have already submitted feedback for this person, please do so again, as the fact that you have received this email means that the feedback did not arrive in Salesforce.
+
+Please click on the link below and fill in the online form. http://www.clicktools.com/survey?iv=3a13799148220a7&amp;q1={!Job_Application__c.Id}
+
+Thank you very much for your assistance,
+
+NCS Graduates Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.HS_Activities__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$MobilePhone</field>
+    </columns>
+    <columns>
+        <field>Contact$HomePhone</field>
+    </columns>
+    <columns>
+        <field>Contact$Email</field>
+    </columns>
+    <description>YPs who haven&apos;t applied for the autumn programme yet</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND (4 OR 5 OR 6)</booleanFilter>
+        <criteriaItems>
+            <column>Contact$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Young_Person</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Wave_started__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>6,7,8,9,10</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.HS_Activities__r$HS_Application_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Application in Progress,Application Submitted - Awaiting Confirmation,Placement Confirmed,Application Unsuccessful</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Wave_started__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Ealing,Hillingdon,Hounslow,Staines,Slough,Harrow,Merton,Kingston,Richmond,Wandsworth,K&amp;C,H&amp;F,Westminster</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Wave_started__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Lambeth,Southwark,Croydon,Sutton</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Wave_started__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Brent,Barnet,Camden,Islington,City,Tower Hamlets,Hackney,Waltham Forest,Haringey,Enfield</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$Wave_started__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Autumn 2015 - marketing calls</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_or_without_HS_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$Birthdate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

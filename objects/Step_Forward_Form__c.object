@@ -1,0 +1,2454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>A_reader__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Based on previous support received at your school or college</inlineHelpText>
+        <label>A reader</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>A_scribe__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Based on previous support received at your school or college</inlineHelpText>
+        <label>A scribe</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>A_separate_room__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Based on previous support received at your school or college</inlineHelpText>
+        <label>A separate room</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Allergies__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Suffer from any allergies?</inlineHelpText>
+        <label>Allergies</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Any_other_information__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please use the box below to detail any additional information that you think is important for us to know to ensure you receive the appropriate support on the Step Forward programme.</inlineHelpText>
+        <label>Any other information</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Are_you_a_graduate__c</fullName>
+        <externalId>false</externalId>
+        <label>Are you a graduate?</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Are_you_registered_disabled__c</fullName>
+        <externalId>false</externalId>
+        <label>Are you registered disabled</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Asperger_s_syndrome__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Enrollment Form</description>
+        <externalId>false</externalId>
+        <label>Asperger&apos;s syndrome</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Associate_First_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job_Placement__r.Associate_First_Name__c</formula>
+        <label>Associate First Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Associate_Last_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job_Placement__r.Associate_Last_Name__c</formula>
+        <label>Associate Last Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Associate_tel__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job_Placement__r.Associate_tel__c</formula>
+        <label>Associate tel</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Asthma__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Suffer from asthma?</inlineHelpText>
+        <label>Asthma</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Attended_Uni_at_part_full_time_basis__c</fullName>
+        <externalId>false</externalId>
+        <label>Attended Uni at part-/full-time basis?</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Attending_school_college_higher_ed__c</fullName>
+        <externalId>false</externalId>
+        <label>Attending school/college/higher ed?</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Autism_spectrum_disorder__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Enrollment Form</description>
+        <externalId>false</externalId>
+        <label>Autism spectrum disorder</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Can_swim_50m__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Can associate swim 50m in light clothing?</inlineHelpText>
+        <label>Can swim 50m?</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Computer_Usage_Policy__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Computer Usage Policy</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Consider_learning_difficulty_disability__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(or( Visual_Impairment__c =true, Hearing_Impairment__c=true,  Disability_Affecting_Mobility__c=true,  Profound_complex_disabilities__c=true,  Mental_ill_health__c=true,  Moderate_Learning_Difficulties__c=true,  Severe_Learning_Difficulties__c=true,  Dyscalculia__c=true,  Dyslexia__c=true,  Autism_spectrum_disorder__c=true,  Asperger_s_syndrome__c=true,  Temporary_disability_after_illness__c=true,  Other_physical_disability__c=true,  Other_Specific_Learning_Difficulty__c=true,  Other_medical_condition__c=true,  Other_Learning_Difficulty__c=true,  Other_disabilities__c=true,  Prefer_not_to_say__c=true),&quot;Yes&quot;,&quot;No&quot;)</formula>
+        <label>Consider learning difficulty/disability?</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_preferences__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>You may be contacted about your progression once you have completed your Apprenticeship. If you would prefer not to be contacted for other purposes please tick from the following options</inlineHelpText>
+        <label>Contact preferences</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not for course or learning opportunities</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not for survey and research</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not to be contacted</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not by post</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not by phone</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Criminal_Record_or_Court_case_pending__c</fullName>
+        <externalId>false</externalId>
+        <label>Criminal Record or Court case pending?</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Currently_doing__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What associate is currently doing</inlineHelpText>
+        <label>Currently doing</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Studying at college/sixth form</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Working full time/part time</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Looking for work/unemployed</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Date_School_College_1_Attended_From__c</fullName>
+        <externalId>false</externalId>
+        <label>Date School/College 1 Attended From</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_School_College_1_Attended_to__c</fullName>
+        <externalId>false</externalId>
+        <label>Date School/College 1 Attended to</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_School_College_2_Attended_From__c</fullName>
+        <externalId>false</externalId>
+        <label>Date School/College 2 Attended From</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_School_College_2_Attended_to__c</fullName>
+        <externalId>false</externalId>
+        <label>Date School/College 2 Attended to</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_School_College_3_Attended_From__c</fullName>
+        <externalId>false</externalId>
+        <label>Date School/College 3 Attended From</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_School_College_3_Attended_to__c</fullName>
+        <externalId>false</externalId>
+        <label>Date School/College 3 Attended to</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_Birth__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job_Placement__r.Step_Forward_Activity__r.Date_of_birth_StepFwd_check__c</formula>
+        <label>Date of Birth</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Declaration_accepted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Declaration accepted</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Defective_hearing__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Suffer from any deficiency or impairment with your hearing?</inlineHelpText>
+        <label>Defective hearing</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Defective_vision__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Suffer from any defect in your vision?</inlineHelpText>
+        <label>Defective vision</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Dietary_Requirements__c</fullName>
+        <externalId>false</externalId>
+        <label>Dietary Requirements</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Disability_Affecting_Mobility__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Disability Affecting Mobility</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Dyscalculia__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Dyscalculia</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Dyslexia__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Dyslexia</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Emotional_behavioural_difficulties__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Emotional/behavioural difficulties</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Employed_Prior_to_Apprenticeship__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>How long have you been in employment with your current employer prior to starting your apprenticeship?</inlineHelpText>
+        <label>Employed Prior to Apprenticeship</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Up to 3 months</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4-6 months</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>7-12 months</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>More than 12 months</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>English_Certificate_or_PLR_provided__c</fullName>
+        <externalId>false</externalId>
+        <label>English: Certificate or PLR provided</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>English_Date_achieved__c</fullName>
+        <externalId>false</externalId>
+        <label>English: Date achieved</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>English_Grade__c</fullName>
+        <externalId>false</externalId>
+        <label>English: Grade</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>English_Highest_Level__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A*</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>A</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>B</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>C</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>D</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>E</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>F</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Merit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Distinction</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>GCSE</controllingFieldValue>
+                <controllingFieldValue>IGCSE</controllingFieldValue>
+                <controllingFieldValue>AS Level</controllingFieldValue>
+                <controllingFieldValue>A Level</controllingFieldValue>
+                <valueName>A*</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>GCSE</controllingFieldValue>
+                <controllingFieldValue>IGCSE</controllingFieldValue>
+                <controllingFieldValue>AS Level</controllingFieldValue>
+                <controllingFieldValue>A Level</controllingFieldValue>
+                <valueName>A</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>GCSE</controllingFieldValue>
+                <controllingFieldValue>IGCSE</controllingFieldValue>
+                <controllingFieldValue>AS Level</controllingFieldValue>
+                <controllingFieldValue>A Level</controllingFieldValue>
+                <valueName>B</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>GCSE</controllingFieldValue>
+                <controllingFieldValue>IGCSE</controllingFieldValue>
+                <controllingFieldValue>AS Level</controllingFieldValue>
+                <controllingFieldValue>A Level</controllingFieldValue>
+                <valueName>C</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>GCSE</controllingFieldValue>
+                <controllingFieldValue>IGCSE</controllingFieldValue>
+                <controllingFieldValue>AS Level</controllingFieldValue>
+                <controllingFieldValue>A Level</controllingFieldValue>
+                <valueName>D</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>GCSE</controllingFieldValue>
+                <controllingFieldValue>IGCSE</controllingFieldValue>
+                <controllingFieldValue>AS Level</controllingFieldValue>
+                <controllingFieldValue>A Level</controllingFieldValue>
+                <valueName>E</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>GCSE</controllingFieldValue>
+                <controllingFieldValue>IGCSE</controllingFieldValue>
+                <controllingFieldValue>AS Level</controllingFieldValue>
+                <controllingFieldValue>A Level</controllingFieldValue>
+                <valueName>F</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BTEC level 2</controllingFieldValue>
+                <controllingFieldValue>BTEC level 3</controllingFieldValue>
+                <controllingFieldValue>NVQ level 2</controllingFieldValue>
+                <controllingFieldValue>NVQ level 3</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Pass</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BTEC level 2</controllingFieldValue>
+                <controllingFieldValue>BTEC level 3</controllingFieldValue>
+                <controllingFieldValue>NVQ level 2</controllingFieldValue>
+                <controllingFieldValue>NVQ level 3</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Merit</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BTEC level 2</controllingFieldValue>
+                <controllingFieldValue>BTEC level 3</controllingFieldValue>
+                <controllingFieldValue>NVQ level 2</controllingFieldValue>
+                <controllingFieldValue>NVQ level 3</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Distinction</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>English_Highest_Level__c</fullName>
+        <externalId>false</externalId>
+        <label>English: Highest Level</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>GCSE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IGCSE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AS Level</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>A Level</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BTEC level 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BTEC level 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NVQ level 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NVQ level 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>English_Support__c</fullName>
+        <externalId>false</externalId>
+        <label>English Support</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Ethnic_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>Ethnic Group</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>English/Welsh/Scottish/Northern Irish/British</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Irish</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gypsy or Irish Traveller</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Any other white background</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>White and Black Caribbean</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>White and Black African</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>White and Asian</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Any other Mixed/multiple ethnic background</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Indian</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pakistani</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bangladeshi</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Chinese</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Any other Asian background</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>African</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Caribbean</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Any other black/African/Carribean background</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Arab</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Any other ethnic group</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Extra_Time__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Based on previous support received at your school or college</inlineHelpText>
+        <label>Extra Time</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Fitness__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Fitness - would be described as</inlineHelpText>
+        <label>Fitness</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Very Fit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unfit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Very Unfit</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Full_time_education_prior_to_apprntcship__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If you were in full time education prior to starting your apprenticeship please answer the question below (you will be starting with your new employer to commence the apprenticeship).
+I was in Full time education prior to starting my apprenticeship .</inlineHelpText>
+        <label>Full time education prior to training</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Government_funded_learning__c</fullName>
+        <externalId>false</externalId>
+        <label>Government funded learning?</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Group_learning_support_assistant__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Based on previous support received at your school or college</inlineHelpText>
+        <label>Group learning support assistant</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Have_you_completed_school_year_11__c</fullName>
+        <externalId>false</externalId>
+        <label>Have you completed school year 11?</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Hearing_Impairment__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Enrollment Form</inlineHelpText>
+        <label>Hearing Impairment</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Height__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>(meters)</inlineHelpText>
+        <label>Height</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Household_Situation__c</fullName>
+        <externalId>false</externalId>
+        <label>Household Situation</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1. No household member is in employment and the household includes one more dependent children</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2. No household member is in employment and the household does not include any dependent children</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3. I live in a single adult household with dependent children</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4. Both options 1 and 3 apply</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5. Prefer not to say</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>6. None of the above apply</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ICT_Certificate_or_PLR_provided__c</fullName>
+        <externalId>false</externalId>
+        <label>ICT: Certificate or PLR provided</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ICT_Date_achieved__c</fullName>
+        <externalId>false</externalId>
+        <label>ICT: Date achieved</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ICT_Grade__c</fullName>
+        <externalId>false</externalId>
+        <label>ICT: Grade</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>ICT_Highest_Level__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A*</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>A</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>B</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>C</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>D</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>E</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>F</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Merit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Distinction</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>GCSE</controllingFieldValue>
+                <controllingFieldValue>IGCSE</controllingFieldValue>
+                <controllingFieldValue>AS Level</controllingFieldValue>
+                <controllingFieldValue>A Level</controllingFieldValue>
+                <valueName>A*</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>GCSE</controllingFieldValue>
+                <controllingFieldValue>IGCSE</controllingFieldValue>
+                <controllingFieldValue>AS Level</controllingFieldValue>
+                <controllingFieldValue>A Level</controllingFieldValue>
+                <valueName>A</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>GCSE</controllingFieldValue>
+                <controllingFieldValue>IGCSE</controllingFieldValue>
+                <controllingFieldValue>AS Level</controllingFieldValue>
+                <controllingFieldValue>A Level</controllingFieldValue>
+                <valueName>B</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>GCSE</controllingFieldValue>
+                <controllingFieldValue>IGCSE</controllingFieldValue>
+                <controllingFieldValue>AS Level</controllingFieldValue>
+                <controllingFieldValue>A Level</controllingFieldValue>
+                <valueName>C</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>GCSE</controllingFieldValue>
+                <controllingFieldValue>IGCSE</controllingFieldValue>
+                <controllingFieldValue>AS Level</controllingFieldValue>
+                <controllingFieldValue>A Level</controllingFieldValue>
+                <valueName>D</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>GCSE</controllingFieldValue>
+                <controllingFieldValue>IGCSE</controllingFieldValue>
+                <controllingFieldValue>AS Level</controllingFieldValue>
+                <controllingFieldValue>A Level</controllingFieldValue>
+                <valueName>E</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>GCSE</controllingFieldValue>
+                <controllingFieldValue>IGCSE</controllingFieldValue>
+                <controllingFieldValue>AS Level</controllingFieldValue>
+                <controllingFieldValue>A Level</controllingFieldValue>
+                <valueName>F</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BTEC level 2</controllingFieldValue>
+                <controllingFieldValue>BTEC level 3</controllingFieldValue>
+                <controllingFieldValue>NVQ level 2</controllingFieldValue>
+                <controllingFieldValue>NVQ level 3</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Pass</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BTEC level 2</controllingFieldValue>
+                <controllingFieldValue>BTEC level 3</controllingFieldValue>
+                <controllingFieldValue>NVQ level 2</controllingFieldValue>
+                <controllingFieldValue>NVQ level 3</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Merit</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BTEC level 2</controllingFieldValue>
+                <controllingFieldValue>BTEC level 3</controllingFieldValue>
+                <controllingFieldValue>NVQ level 2</controllingFieldValue>
+                <controllingFieldValue>NVQ level 3</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Distinction</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ICT_Highest_Level__c</fullName>
+        <externalId>false</externalId>
+        <label>ICT: Highest Level</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>GCSE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IGCSE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AS Level</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>A Level</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BTEC level 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BTEC level 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NVQ level 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NVQ level 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Last_Seizure__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Seizure</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Learning_Impairment__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Learning Impairment</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Lived_in_UK_3_years__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(Step_Forward_Job_Placement__r.Step_Forward_Activity__r.UK_or_EU_for_the_past_3_years__c)</formula>
+        <label>Lived in UK 3 years?</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Maths_Certificate_or_PLR_provided__c</fullName>
+        <externalId>false</externalId>
+        <label>Maths: Certificate or PLR provided</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Maths_Date_achieved__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>mm/yyyy</inlineHelpText>
+        <label>Maths: Date achieved</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Maths_Grade__c</fullName>
+        <externalId>false</externalId>
+        <label>Maths: Grade</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Maths_Highest_Level__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A*</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>A</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>B</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>C</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>D</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>E</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>F</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Merit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Distinction</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>GCSE</controllingFieldValue>
+                <controllingFieldValue>IGCSE</controllingFieldValue>
+                <controllingFieldValue>AS Level</controllingFieldValue>
+                <controllingFieldValue>A Level</controllingFieldValue>
+                <valueName>A*</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>GCSE</controllingFieldValue>
+                <controllingFieldValue>IGCSE</controllingFieldValue>
+                <controllingFieldValue>AS Level</controllingFieldValue>
+                <controllingFieldValue>A Level</controllingFieldValue>
+                <valueName>A</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>GCSE</controllingFieldValue>
+                <controllingFieldValue>IGCSE</controllingFieldValue>
+                <controllingFieldValue>AS Level</controllingFieldValue>
+                <controllingFieldValue>A Level</controllingFieldValue>
+                <valueName>B</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>GCSE</controllingFieldValue>
+                <controllingFieldValue>IGCSE</controllingFieldValue>
+                <controllingFieldValue>AS Level</controllingFieldValue>
+                <controllingFieldValue>A Level</controllingFieldValue>
+                <valueName>C</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>GCSE</controllingFieldValue>
+                <controllingFieldValue>IGCSE</controllingFieldValue>
+                <controllingFieldValue>AS Level</controllingFieldValue>
+                <controllingFieldValue>A Level</controllingFieldValue>
+                <valueName>D</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>GCSE</controllingFieldValue>
+                <controllingFieldValue>IGCSE</controllingFieldValue>
+                <controllingFieldValue>AS Level</controllingFieldValue>
+                <controllingFieldValue>A Level</controllingFieldValue>
+                <valueName>E</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>GCSE</controllingFieldValue>
+                <controllingFieldValue>IGCSE</controllingFieldValue>
+                <controllingFieldValue>AS Level</controllingFieldValue>
+                <controllingFieldValue>A Level</controllingFieldValue>
+                <valueName>F</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BTEC level 2</controllingFieldValue>
+                <controllingFieldValue>BTEC level 3</controllingFieldValue>
+                <controllingFieldValue>NVQ level 2</controllingFieldValue>
+                <controllingFieldValue>NVQ level 3</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Pass</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BTEC level 2</controllingFieldValue>
+                <controllingFieldValue>BTEC level 3</controllingFieldValue>
+                <controllingFieldValue>NVQ level 2</controllingFieldValue>
+                <controllingFieldValue>NVQ level 3</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Merit</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BTEC level 2</controllingFieldValue>
+                <controllingFieldValue>BTEC level 3</controllingFieldValue>
+                <controllingFieldValue>NVQ level 2</controllingFieldValue>
+                <controllingFieldValue>NVQ level 3</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Distinction</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Maths_Highest_Level__c</fullName>
+        <externalId>false</externalId>
+        <label>Maths: Highest Level</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>GCSE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IGCSE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AS Level</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>A Level</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BTEC level 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BTEC level 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NVQ level 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NVQ level 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Maths_support__c</fullName>
+        <externalId>false</externalId>
+        <label>Maths support</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Mental_ill_health__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Mental ill health</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Moderate_Learning_Difficulties__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Moderate Learning Difficulties</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Most_recent_Tetanus_injection__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please give the date, if known, of the most recent Tetanus injection (dd/mm/yyyy)</inlineHelpText>
+        <label>Most recent Tetanus injection</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Multiple_Learning_Difficulties__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Multiple Learning Difficulties</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Multiple_disabilities__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Multiple disabilities</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Name_of_Doctor__c</fullName>
+        <externalId>false</externalId>
+        <label>Name of Doctor</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name_of_School_College_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Name of School/College 1</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name_of_School_College_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Name of School/College 2</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name_of_School_College_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Name of School/College 3</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name_of_Surgery__c</fullName>
+        <externalId>false</externalId>
+        <label>Name of Surgery</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>National_Insurance_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Job_Placement__r.National_Insurance_Number__c</formula>
+        <label>National Insurance Number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Nationality__c</fullName>
+        <externalId>false</externalId>
+        <label>Nationality</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Next_of_Kin_1_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Next of Kin 1: Address</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Next_of_Kin_1_Daytime_phone_number__c</fullName>
+        <externalId>false</externalId>
+        <label>Next of Kin 1: Daytime phone number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Next_of_Kin_1_Driving_Licence__c</fullName>
+        <externalId>false</externalId>
+        <label>Next of Kin 1: Driving Licence</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Next_of_Kin_1_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Next of Kin 1: Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Next_of_Kin_1_Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Next of Kin 1: Full Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Next_of_Kin_1_Mobile_number__c</fullName>
+        <externalId>false</externalId>
+        <label>Next of Kin 1: Mobile number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Next_of_Kin_1_Relationship__c</fullName>
+        <externalId>false</externalId>
+        <label>Next of Kin 1: Relationship</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Next_of_Kin_2_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Next of Kin 2: Address</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Next_of_Kin_2_Daytime_phone_number__c</fullName>
+        <externalId>false</externalId>
+        <label>Next of Kin 2: Daytime phone number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Next_of_Kin_2_Driving_Licence__c</fullName>
+        <externalId>false</externalId>
+        <label>Next of Kin 2: Driving Licence</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Next_of_Kin_2_Email_address__c</fullName>
+        <externalId>false</externalId>
+        <label>Next of Kin 2: Email address</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Next_of_Kin_2_Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Next of Kin 2: Full Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Next_of_Kin_2_Mobile_number__c</fullName>
+        <externalId>false</externalId>
+        <label>Next of Kin 2: Mobile number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Next_of_Kin_2_Relationship__c</fullName>
+        <externalId>false</externalId>
+        <label>Next of Kin 2: Relationship</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_Learning_Difficulty__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>No Learning Difficulty</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>No_disability__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>No disability</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>One_to_one_support_in_class__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Based on previous support received at your school or college</inlineHelpText>
+        <label>One to one support in class</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Other_Learning_Difficulty__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Other Learning Difficulty</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Other_Specific_Learning_Difficulty__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Other Specific Learning Difficulty</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Other_disabilities__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Other disabilities</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Other_illness_disability__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Any other illness, disability, or medical condition not included above?</inlineHelpText>
+        <label>Other illness/disability</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Other_medical_condition__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Other medical condition</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Other_medical_facts__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please include below any other medical facts that could affect your safety during your time with Step Forward and our residential partner.</inlineHelpText>
+        <label>Other medical facts</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Other_physical_disability__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Other physical disability</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Other_previous_support__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Based on previous support received at your school or college</inlineHelpText>
+        <label>Other previous support</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Other_previous_support_details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If you selected YES for other please provide details in the box below</inlineHelpText>
+        <label>Other previous support details</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Other_restricted_movement__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Have any other restrictions in your movement (neck or back for example)?</inlineHelpText>
+        <label>Other restricted movement</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Prefer_not_to_say__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Enrollment Form</description>
+        <externalId>false</externalId>
+        <label>Prefer not to say</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Health_Problem__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Health Problem</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Profound_complex_disabilities__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Profound complex disabilities</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Reccuring_injury__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Suffer from any weakness or reoccurring injury to your joints, limbs, back or neck?</inlineHelpText>
+        <label>Reccuring injury</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Relevant_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If you answered yes to any of “Your Current Health” questions, please give relevant details.</inlineHelpText>
+        <label>Relevant Details</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Resident_of_UK_EU_EEU_for_3_years__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Have you been ordinarily resident in the United Kingdom and Islands or the European Union (EU) or the European Economic Area (EEA) continuously for at least the previous three years on the first day of learning?</inlineHelpText>
+        <label>Resident of UK/EU/EEU for 3 years?</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Rest_breaks__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Based on previous support received at your school or college</inlineHelpText>
+        <label>Rest breaks</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Restricted_movement__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Have any restriction of movement of your joints or limbs?</inlineHelpText>
+        <label>Restricted movement</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Right_to_Abode__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Are you a citizen of the United Kingdom and Islands, have Right of Abode (the right to live permanently in the United Kingdom without any immigration restrictions), or a citizen of a country that is within the European Economic Area (EEA)?</inlineHelpText>
+        <label>Right to Abode</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Severe_Learning_Difficulties__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Severe Learning Difficulties</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Social_and_emotional_difficulties__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Enrollment Form</description>
+        <externalId>false</externalId>
+        <label>Social and emotional difficulties</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Statement_of_educational_needs__c</fullName>
+        <externalId>false</externalId>
+        <label>Statement of educational needs</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Step_Forward_Job_Placement__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Step Forward Job Placement</label>
+        <referenceTo>Step_Forward_Job_Placement__c</referenceTo>
+        <relationshipName>Step_Forward_General_Information</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Surgery_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Surgery Address</label>
+        <length>120</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Surgery_Post_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Surgery Post Code</label>
+        <length>12</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Surgery_Telephone_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Surgery Telephone Number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Taking_Medication_Diabetes__c</fullName>
+        <externalId>false</externalId>
+        <label>Taking Medication: Diabetes</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Taking_Medication_Epilepsy__c</fullName>
+        <externalId>false</externalId>
+        <label>Taking Medication: Epilepsy</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Taking_Medication_Heart_condition__c</fullName>
+        <externalId>false</externalId>
+        <label>Taking Medication: Heart condition</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Temporary_disability_after_illness__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Temporary disability after illness or accident</inlineHelpText>
+        <label>Temporary disability after illness</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Title__c</fullName>
+        <externalId>false</externalId>
+        <label>Title</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Mr</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mrs</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ms</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Miss</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Unemployed_Prior_to_Apprenticeship__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If you are unemployed prior to starting your apprenticeship- please answer the question below.
+How long have you been unemployment prior to starting your apprenticeship?</inlineHelpText>
+        <label>Unemployed Prior to Apprenticeship</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Less than 6 months</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>6-11 months</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>12-23 months</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>24-35 months</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Over 36 months</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Visual_Impairment__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Visual Impairment</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Weight__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>(kg)</inlineHelpText>
+        <label>Weight</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Would_you_like_additional_support__c</fullName>
+        <externalId>false</externalId>
+        <label>Would you like additional support?</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Step Forward Form</label>
+    <nameField>
+        <displayFormat>SFF-{000000}</displayFormat>
+        <label>Form Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Step Forward Forms</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>Enrollment_Form</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Enrollment Form</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!Step_Forward_Form__c.Id}
+&amp;TemplateId=a2MC000000CwJeh
+&amp;DefaultPDF=1&amp;OFN={!Step_Forward_Form__c.Associate_First_Name__c}+Enrollment+Form
+&amp;QueryId=[AdditionalFields]a2NC0000000OjVI?pv0={!Step_Forward_Form__c.Id}
+&amp;DS7={!IF($User.ProfileId=&quot;00e80000000th5B&quot;,&quot;0&quot;,IF($User.ProfileId=&quot;00eC0000001Sttg&quot;,&quot;0&quot;,IF($User.ProfileId=&quot;00eC0000001TNhw&quot;,&quot;0&quot;,&quot;3&quot;)))}
+&amp;LG4=0</url>
+    </webLinks>
+    <webLinks>
+        <fullName>General_Information_Form</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>General Information Form</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!Step_Forward_Form__c.Id}
+&amp;TemplateId=a2MC000000CwBDr
+&amp;DefaultPDF=1&amp;OFN={!Step_Forward_Form__c.Associate_First_Name__c}+General+Information+Form
+&amp;QueryId=[SFForm]a2kC0000000N9Ni?pv0={!Step_Forward_Form__c.Id}
+&amp;DS7={!IF($User.ProfileId=&quot;00e80000000th5B&quot;,&quot;0&quot;,IF($User.ProfileId=&quot;00eC0000001Sttg&quot;,&quot;0&quot;,IF($User.ProfileId=&quot;00eC0000001TNhw&quot;,&quot;0&quot;,&quot;3&quot;)))}
+&amp;LG4=0</url>
+    </webLinks>
+</CustomObject>

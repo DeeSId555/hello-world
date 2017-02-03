@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>Wave 11 Barnet Graduation Invite</name>
+    <style>freeForm</style>
+    <subject>Congratulations! Graduate from NCS this weekend</subject>
+    <textOnly>{!Contact.FirstName}
+
+Well done on completing NCS with The Challenge!
+
+To celebrate your amazing achievements, you are invited to graduate and collect your NCS graduation pack, this weekend.
+
+The ceremony will take place at:
+Arts Depot
+5 Nether Street
+North Finchley
+N12 0GA
+
+Sunday 18th October
+2.30pm - 4pm. Don&apos;t be late.
+
+You may bring one guest into the ceremony.
+
+If you are unable to attend, please let us know by emailing and confirming your postal address so we can send you your graduation pack.
+
+Congratulations again!
+
+All the best,
+
+The Team at NCS with The Challenge</textOnly>
+    <type>html</type>
+</EmailTemplate>

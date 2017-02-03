@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Wave__c.Online_places_available__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Places Available</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Wave__c.SL_4a_Place_Taken__c:SUM + Wave__c.SL_4b_Place_Taken__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Space for SL4</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_26910259</developerName>
+        <masterLabel>Cluster</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Wave__c$Name</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Redbridge B 10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Redbridge B 13</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Redbridge B 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Redbridge B 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Redbridge B 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Redbridge B 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Redbridge B 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Redbridge B 9</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 14</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 9</sourceValue>
+            </sourceValues>
+            <value>RAW</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Havering A 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Havering A 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Havering A 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barking A 13</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barking A 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barking A 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barking A 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barking A 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barking A 9</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Newham B 13</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Newham B 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Newham B 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Newham B 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Newham B 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Newham B 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Newham B 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Newham B 9</sourceValue>
+            </sourceValues>
+            <value>HABAN</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA2</column>
+        </chartSummaries>
+        <chartType>VerticalColumnStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Wave__c$PC_KO_day__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>Wave__c$Wave_Cluster__c</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisManualRangeEnd>6.0</summaryAxisManualRangeEnd>
+        <summaryAxisManualRangeStart>0.0</summaryAxisManualRangeStart>
+        <summaryAxisRange>Manual</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Wave__c$Name</field>
+    </columns>
+    <columns>
+        <field>Wave__c$Online_places_available__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c$Access_category_4_5_assigned_reserved__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c$Support_level_5_assigned_reserved__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Wave__c$PC_KO_day__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>6/18/2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave__c$PC_KO_day__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>8/11/2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave__c$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>test</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Wave__c$PC_KO_day__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Wave__c$Wave_Cluster__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Wave__c$SL_4b_Place_Taken__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>2016Sales SL4 Availability</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Waves__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Wave__c$Big_Challenge_date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

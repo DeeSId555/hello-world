@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.Hours__r$Hours__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Hours__r$Date_hours_submitted__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Hours__r$Volunteering_Opportunity__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Hours__r$Organisation_volunteering_with__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Hours__r$Rating__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact$Total_hours_at_signposting_opportunities__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Hours, by Challenger</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_hours__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

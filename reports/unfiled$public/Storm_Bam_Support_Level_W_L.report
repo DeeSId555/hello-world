@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$Gender__c</field>
+    </columns>
+    <columns>
+        <field>Contact.NCS_Applications__r.Wave_Selections__r$Status__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Amount_due_outstanding__c</field>
+    </columns>
+    <columns>
+        <field>Contact$COMPLETE_and_support_level_is_correct__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Access_category_2_6__c</field>
+    </columns>
+    <columns>
+        <field>Contact.NCS_Applications__r.Wave_Selections__r$Waiting_list_priority__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Latest_attempted_call_date__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Result_of_call__c</field>
+    </columns>
+    <columns>
+        <field>Contact.NCS_Applications__r.Wave_Selections__r$Number_of_waiting_list_waves__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Young_Person</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$NCS_Application_Primary_Season__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Summer 2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.NCS_Applications__r.Wave_Selections__r$Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Tameside a 2,Bury A 2,Central Manc A 3,Tameside A 3,Stockport b 3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.NCS_Applications__r.Wave_Selections__r$Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Waiting list</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Storm/Bam Support Level W/L</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_NCS_Applications_with_Wave_Selections__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Contact$Access_category_2_6__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

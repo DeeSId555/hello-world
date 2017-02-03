@@ -1,0 +1,19 @@
+Hi {!HR_Event__c.OwnerFirstName},
+<br class="blank" />
+<br class="blank" />
+The assessment confirmation email that you just tried to send to {!HR_Event_Attendance__c.Applicant_Name__c} did not go through.<br class="blank" />
+There are two possible reasons for this: <br class="blank" /><br class="blank" />
+1) There is information missing on the HR Event<br class="blank" />
+2) You have tried to send an assessment confirmation for a training event.
+<br class="blank" /><br class="blank" />
+Please click on this link to check the related HR Event: {!HR_Event__c.Link}<br class="blank" /> 
+If the HR Event type is "Training Event", you should tick the "Send training confirmation email" checkbox.<br class="blank" />
+<br class="blank" />
+Once you have verified the information, you can resend the confirmation email.
+<br class="blank" />
+<br class="blank" />
+Thanks,<br class="blank" /><br class="blank" />
+Central Operations
+<br class="blank" />
+<br class="blank" />
+This is a standard email, sent automatically when someone tries to send a assessment confirmation email without the required information.

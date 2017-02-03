@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Cluster_read_only</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Cluster read-only</label>
+        <sharedTo>
+            <group>ProgrammesAll</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>2012,2012A,2011,2013</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

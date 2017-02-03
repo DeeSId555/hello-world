@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Initial marketing email sent to graduates to apply for Senior Associate Mentor roles</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Initial marketing email for SAM application (2010 grads)</name>
+    <style>none</style>
+    <subject>Apply to be a Senior Associate Mentor with The Challenge</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Here at The Challenge Society, we are loving all this sunshine. Summer is on its way. And you know what that means? The Challenge is soon to kick off again for three unforgettable weeks.  And we want YOU to come back and be a part of it!
+
+The Challenge Society is inviting you to apply to be a Senior Associate Mentor on our summer programme.
+
+Senior Associate Mentors are one step up from the Associate Mentor role. As a Senior Associate Mentor, you come back and volunteer with summer staff, using your knowledge and experience to support and mentor Challengers. Like the Associate Mentor role, you work during the Real Challenge Design week, but as a Senior Associate Mentor you also attend the Real Challenge Action weekend where you help Challengers bring their campaigns to life. You may have volunteered as an Associate Mentor last year, or you may have been itching for a chance to get back involved with The Challenge for a while. Either way, this is an amazing opportunity for you to stay involved in The Challenge Society; to meet up with old friends, to continue to develop your teamwork and leadership skills and to really feel you are making a difference by supporting Challengers. You will be given training beforehand and be fully supported by Challenge staff while you are volunteering with us. This is also a great chance to gain valuable experience that will help if you want to apply for other summer roles with The Challenge in the future.
+
+Sound good? Then what are you waiting for!
+
+Click on the link below to fill out the application form. You will be asked to specify which dates you are available as well as your preferred area to work.
+
+http://www.clicktools.com/survey?iv=3b1365e1600df14&amp;q1={!Contact.Id}
+
+We’re really looking forward to reading your applications!
+
+Good luck!
+
+The Challenge Society
+
+WWW.THE-CHALLENGE.ORG/GRADUATES    /thechallengesociety
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

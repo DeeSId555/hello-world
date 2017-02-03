@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Wave__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Description</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Info_to_NCS_Staff__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Contact__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Junctions__r$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>TC community</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Junctions__r.Bookings__r$Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>MRK A</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Junctions__r.Bookings__r$Team__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>SAbesan</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>MRK A Pracs report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Account_Usages_and_Bookings__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$Ambassador_Email_Sent__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

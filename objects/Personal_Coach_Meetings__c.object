@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Location of Meeting</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Meeting_Summary_trigger__c</fullName>
+        <externalId>false</externalId>
+        <label>Meeting Summary trigger</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Meeting_attendance__c</fullName>
+        <description>Picklist with YP attendance options</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please specify whether or not the YP attended the scheduled meeting</inlineHelpText>
+        <label>Did the YP attend the meeting?</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Attended</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Did not attend</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Meeting_date__c</fullName>
+        <description>Date field for capturing date of scheduled meeting with YP</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date of the scheduled meeting with the YP</inlineHelpText>
+        <label>Date of meeting</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Meeting_number__c</fullName>
+        <description>Picklist for capturing which number meeting this is with the YP</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Of the 6 monthly meetings you should have with the YP, which meeting is this?</inlineHelpText>
+        <label>Meeting number</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>9</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>11</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>12</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Meeting_successful__c</fullName>
+        <externalId>false</externalId>
+        <label>Meeting successful?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Meeting_summary__c</fullName>
+        <description>Long text area for capturing notes of the meeting</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please provide a summary or outline of the meeting</inlineHelpText>
+        <label>Meeting summary</label>
+        <length>32768</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Meeting_summary_read_by_Champion__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Box checked when Champion has read meeting report</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please tick the box when you have read the meeting report</inlineHelpText>
+        <label>Meeting Successful box seen by Champion</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PC_Champion_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>PC Champion Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PC_Coach__c</fullName>
+        <externalId>false</externalId>
+        <formula>Personal_Coaching__r.Coach__r.Username</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PC Coach</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Personal_Coach_Meetings_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&apos;TCSPortal_PersonalCoachMeetings?id=&apos;+Id, Name,&apos;_top&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Personal Coach Meetings Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Personal_Coaching__c</fullName>
+        <description>Master-detail link to the main Personal Coaching record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Link to the main Personal Coaching record</inlineHelpText>
+        <label>Personal Coaching</label>
+        <referenceTo>Personal_Coach__c</referenceTo>
+        <relationshipLabel>Personal Coach Meetings</relationshipLabel>
+        <relationshipName>Personal_Coach_Meetings</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Time_of_meeting__c</fullName>
+        <externalId>false</externalId>
+        <label>Time of meeting</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Personal Coach Meeting</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Meeting_attendance__c</columns>
+        <columns>Meeting_date__c</columns>
+        <columns>Personal_Coaching__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>PCM#{000000}</displayFormat>
+        <label>Personal Coach Meetings Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Personal Coach Meetings</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Date_Location_Or_Time_of_Meeting_Blank</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(OR(
+ISBLANK(  Meeting_date__c ), 
+ISBLANK(  Location__c  ), 
+ISBLANK(  Time_of_meeting__c)))</errorConditionFormula>
+        <errorMessage>You will not be able to save this record until you have put in the Date, Location and Time of this meeting.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Meeting_Successful_after_meeting_date</fullName>
+        <active>true</active>
+        <description>Forces use to populate Meeting Successful? after the date of the meeting has passed.
+This was added because users were not doing this.</description>
+        <errorConditionFormula>AND(Today() &gt;= Meeting_date__c , NOT(ISPICKVAL (Meeting_successful__c , &quot;No&quot;)),NOT(ISPICKVAL( Meeting_successful__c , &quot;Yes&quot;)))</errorConditionFormula>
+        <errorDisplayField>Meeting_successful__c</errorDisplayField>
+        <errorMessage>Please select &quot;Yes&quot; or &quot;No&quot; from the &quot;Meeting Successful?&quot; field.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Meeting_summary</fullName>
+        <active>true</active>
+        <description>Require a meeting summary when the YP has attended a meeting</description>
+        <errorConditionFormula>AND(ISPICKVAL( Meeting_attendance__c , &quot;Attended&quot;),ISBLANK( Meeting_summary__c ))</errorConditionFormula>
+        <errorDisplayField>Meeting_summary__c</errorDisplayField>
+        <errorMessage>Please provide a summary/outline of the meeting the YP attended</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Two_days_after_Meet_Summary_not_updated</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( Meeting_date__c   &lt;=    TODAY() -  2, ISBLANK( Meeting_summary__c ), OR (NOT( ISCHANGED( Meeting_summary__c ) ) ))</errorConditionFormula>
+        <errorMessage>In order to save this record you must update the meeting summary</errorMessage>
+    </validationRules>
+</CustomObject>

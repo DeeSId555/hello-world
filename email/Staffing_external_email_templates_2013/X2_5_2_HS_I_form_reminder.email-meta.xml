@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Temp (clicktools) link inserted [DS]</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>2.5.2 HS&amp;I form reminder</name>
+    <style>freeForm</style>
+    <subject>HS&amp;I form reminder</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+Dear {!Contact.FirstName},
+
+REMINDER!
+
+We notice that we have not received a completed Health Safety and Inclusion form from you and would appreciate you completing it as soon as possible.
+
+Please do this by follow the link below:
+
+http://thechallenge.force.com/AvailableDates/OnlineHealthandSafetyQuestionaire?id={!Job_Application__c.Id}
+
+We need this information to pass to our Personal Challenge providers and for our records for the Team Challenge and Real Challenge, so that we can make any reasonable adjustment required to meet your needs.
+
+If you will be following Ramadan please include this information in the section relating to dietary requirements.
+
+You may receive this email more than once. Please only complete it again if your circumstances have changed. If you have not completed it at all please do so, as it is a important for you and the Challenge that we have this information.
+
+Thanks and regards
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.Contact_Owner_alternative_email__c}
+CR 2.5.2</textOnly>
+    <type>html</type>
+</EmailTemplate>

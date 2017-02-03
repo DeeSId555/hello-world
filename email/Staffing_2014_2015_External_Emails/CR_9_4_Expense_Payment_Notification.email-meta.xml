@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 9.4 Expense Payment Notification</name>
+    <style>formalLetter</style>
+    <subject>Your expense claim: payment notification</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Job_placement__c.Staffing_Associate_email__c}.
+Dear {!Expenses__c.Contact_Name__c},
+
+
+
+Thank you for submitting an expense claim for your work on the NCS programme. Your approved expense(s) for {!Expenses__c.Wave__c} will be paid into your account within the next 7 working days.
+
+
+
+To check which of your expense claims have been approved, and the total sum you should have received, please refer to your &apos;Summary of submitted expenses&apos; email.
+
+
+
+If you do not receive this payment within 7 days, please contact your staffing associate as soon as possible.
+
+
+
+Best wishes,
+
+
+
+The Challenge Staffing Team
+VISIT NCSTHECHALLENGE.ORG NOW</textOnly>
+    <type>html</type>
+</EmailTemplate>

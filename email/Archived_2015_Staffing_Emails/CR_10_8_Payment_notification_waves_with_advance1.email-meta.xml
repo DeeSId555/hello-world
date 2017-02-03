@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 10.8 Payment notification (waves with advance)</name>
+    <style>formalLetter</style>
+    <subject>Payment notification for {!Job_placement__c.Wave__c}</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Job_placement__c.Staffing_Associate_email__c}.
+
+Dear {!Job_placement__c.Contact_Name__c},
+
+We hope that you had a great time on the programme! We have now processed payroll for your work{!Job_placement__c.Wave__c}
+
+Summary of your approved payroll for {!Job_placement__c.Wave__c}
+
+
+Your gross pay is {!Job_placement__c.Total_Amount_Paid__c}. This payment covers a total of {!Job_placement__c.days_worked__c} days.
+
+
+
+This payment constitutes your work between the dates of {!Job_placement__c.Assignment_start_date__c} and {!Job_placement__c.Assignment_end_date__c}.
+
+
+
+There are two payment dates for this wave. You will receive an advance payment on 25/08/2015, and then the remaining pay on {!Job_placement__c.Payroll_payment_date__c}.
+
+
+
+
+Advance payment date - 25 August 2015
+
+
+
+All seasonal staff working on this wave will receive an advance payment of 70% of their gross pay.
+
+
+
+Your advance payment is {!Job_placement__c.Payroll_advance_owed__c}. This amount will not be subject to tax and National Insurance (NI) contributions, and you will not receive a payslip for this payment.You will receive this advance payment on the 25/08/2015.
+
+
+
+
+Your remaining salary
+
+
+
+You will receive the remainder of your gross pay on {!Job_placement__c.Payroll_payment_date__c}. This amount will be subject to the tax and NI contributions from your total gross pay. Following these deductions, you may find on {!Job_placement__c.Payroll_payment_date__c} you receive far less than you’re expecting, in some cases this could be close  to £0. On your payslip (sent via email on {!Job_placement__c.Payroll_payment_date__c}) you will see the total amount which you will receive with any tax and NI deductions listed, as well as the advance amount you received earlier .
+
+
+
+
+What else?
+
+
+
+Workplace pension auto-enrollment: Due to new auto-enrollment legislation, employees of The Challenge, including a small number of seasonal staff, will be enrolled into a workplace pension scheme. Auto-enrollment does not occur until October 2015 and staff will have the opportunity to opt-out at this point. To see if you qualify for auto-enrollment, please see our FAQs.
+
+
+
+
+Additional payments:
+
+
+
+You will receive a separate payment notification for each wave you work over the summer.
+
+
+
+If you are contracted to work in September on NCS: Real Challenge Action (RCA) you will receive a separate payment notification in October for each individual date you work.
+
+
+
+If you feel that you are missing additional communications concerning your payment, please contact your local staffing team.
+
+
+
+
+Any questions?
+
+
+
+If you have any further questions about your payment, please contact your local staffing team quoting the email reference number in correspondence. Alternatively, information is available on our FAQs.
+
+
+
+
+Best wishes,
+The Challenge
+
+NCS Programme
+
+
+
+Email reference: CR 10.8</textOnly>
+    <type>html</type>
+</EmailTemplate>

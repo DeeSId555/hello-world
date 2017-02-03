@@ -1,0 +1,138 @@
+<apex:page sidebar="false" standardStylesheets="true" showHeader="false">
+
+<html>
+    <head>
+        <style>
+@font-face{
+    font-family : "Dirty";
+    src: url("{!URLFOR($Resource.dirtyfont, 'DirtyFont/fonts/DirtyHeadline.ttf')}") format('truetype');
+          }
+    .optext{
+             font : 32px "Dirty", Arial, Helvetica;
+             
+        }
+        
+.button1{
+        margin-left:10%; 
+        height:30px; 
+        width:160px; 
+        margin-bottom:20px; 
+        border: solid 4px; 
+        border-color:#B31217; 
+        font : 18px "Dirty", Arial, Helvetica; 
+        vertical-align:5px;
+        background :white;
+        border-radius:15px;
+        }
+        
+.button2{
+         
+        height:200px; 
+        width:250px; 
+        margin-right: 60px;
+        border: solid 8px; 
+        border-color:#B31217; 
+        font : 32px "Dirty", Arial, Helvetica; 
+        background :white;
+        border-radius:15px;
+        }
+        .loginheadline{
+                        float:right; 
+                        margin-right:20px; 
+                        margin-top:175px; 
+                        font-size:40px;
+                       }
+        .logindiv{
+                  width:500px;
+                  height:200px;
+                  border:solid 8px;
+                  border-color:#D9D9D9;
+                  margin-left:30%;
+                  }
+        </style>
+    </head>
+    
+    <body>    
+        
+        <!--<apex:form >-->
+        <apex:composition template="PortalTemplate">
+        
+            <apex:define name="TopDiv">
+            </apex:define>
+            
+            <apex:define name="MidDiv">
+               <br />
+               <!--------------- Mid Div ------------------>
+               <div style="margin-left:1%; margin-right:1%;">
+                <apex:listViews type="Contact"/>
+              
+              <!-- <apex:outputPanel id="ContactList1">     
+                <apex:outputText styleClass="optext" value="{!ViewName}"></apex:outputText> 
+               
+                <div data-spy="scroll" class="scrollspy-example" data-offset="0">
+                  <table class="table table-striped" style="100%;">
+                          <th>{!$ObjectType.Contact.Fields.Name.Label}</th>
+                          <th>{!$ObjectType.Contact.Fields.Activities_and_areas_of_interest__c.Label}</th>
+                          <th>{!$ObjectType.Contact.Fields.TCS_Mentor_Most_recent_call_date__c.Label}</th>
+                          <th>{!$ObjectType.Contact.Fields.MobilePhone.Label}</th>
+                          <th>{!$ObjectType.Contact.Fields.DO_NOT_CONTACT__c.Label}</th>
+                          
+             <apex:repeat value="{!RecentlyUpdatedContactsTemp}" var="cntc">
+                 <tr style="width:100%;">
+                     <td> <apex:outputLink value="{!$Page.TCSPortal_ContactDetail}?id={!cntc.id}">{!cntc.Name}</apex:outputLink>  </td>
+                     <td> <apex:outputText value="{!cntc.Activities_and_areas_of_interest__c}"></apex:outputText>  </td>
+                     <td><apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+                        <apex:param value="{!cntc.TCS_Mentor_Most_recent_call_date__c}" /> 
+                    </apex:outputText>
+                    </td>
+                     <td> <apex:outputText value="{!cntc.MobilePhone}"/> </td>
+                     <td> <apex:image value="{!$Resource.False_Checkbox}" rendered="{!IF(cntc.DO_NOT_CONTACT__c==true,true,false)}" width="20" height="20"/>
+                          <apex:image value="{!$Resource.True_Checkbox}" rendered="{!IF(cntc.DO_NOT_CONTACT__c==true,false,true)}" width="20" height="20"/> </td>
+                 </tr>
+             </apex:repeat>
+             </table>-->
+               
+                 <!-- </div>
+              </apex:outputPanel> -->
+               </div>       
+            </apex:define>
+        </apex:composition>
+        
+    </body>
+   
+   <style> 
+  option[value="00B80000006Ahv6"]{
+      display:none;
+  }
+  .bFilterView{
+      margin-left:2%; 
+   }
+  .headerRow th:nth-child(2){
+     display:none;
+ }
+ .dataRow th{
+     display:none;
+ } 
+ .actionColumn{
+     display:none;
+     } 
+ .listHeader{
+     display:none;
+ }
+ .pbButton{
+     display:none;
+ }
+ .bPageBlock .pbHeader, .bGeneratedReport .bPageBlock .pbSubheader{
+     background-color:white;
+ }   
+ .bPageBlock, .individualPalette .bPageBlock{
+     border:0px;
+ }
+.scrollspy-example {
+height: 250px;
+overflow: auto;
+position: relative;
+    }
+    </style>
+</html>
+</apex:page>

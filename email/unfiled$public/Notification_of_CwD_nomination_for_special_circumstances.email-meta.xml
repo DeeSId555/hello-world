@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto-email sent to YP when they have been nominated for CwD</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Notification of CwD nomination for special circumstances</name>
+    <style>none</style>
+    <subject>You have been nominated for the Challenge with Distinction!</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Congratulations! We are very pleased to let you know that you have been nominated for the prestigious Challenge with Distinction award! We are really impressed with the excellent work you have accomplished and the dedication you have shown.
+
+The Challenge with Distinction is a fantastic way for us to thank you for your long term participation and assistance in your community.
+
+We will be in touch to let you know if your nomination was successful, so watch this space!
+
+Good luck!
+
+Best wishes,
+
+The Challenge Society Team!</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- AccountID --></label>
+        <name>AccountID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alternative email --></label>
+        <name>Alternative_email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box if the user is a Salesforce Champion user --></help>
+        <label><!-- Champion user --></label>
+        <name>Champion_user__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date As Text --></label>
+        <name>Date_As_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checking this box will allow this user to run LOOPlus on a staging environment when testing is available. When enabled, the LOOPlus page will take slightly longer to load. --></help>
+        <label><!-- DDP Tester --></label>
+        <name>Loop__LOOPlus_Tester__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocuSign Password --></label>
+        <name>Loop__dsPassword__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocuSign API UserName --></label>
+        <name>Loop__dsToken__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter how many Challenge Links you are responsible for --></help>
+        <label><!-- Number of Challenge Links --></label>
+        <name>Number_of_Challenge_Links__c</name>
+    </fields>
+    <fields>
+        <label><!-- OBS Challenge password --></label>
+        <name>OBS_Challenge_password__c</name>
+    </fields>
+    <fields>
+        <label><!-- OBS Challenge pin --></label>
+        <name>OBS_Challenge_pin__c</name>
+    </fields>
+    <fields>
+        <label><!-- OBS access override --></label>
+        <name>OBS_access_override__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Excluding Inclusion</masterLabel>
+            <translation><!-- Excluding Inclusion --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wave Cluster Name --></label>
+        <name>Wave_Cluster_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- API_URL --></label>
+        <name>copado__API_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- The visibility of the message asking users to rate &amp; feedback Copado on the AppExchange is controlled here. --></help>
+        <label><!-- Hide Copado feedback --></label>
+        <name>copado__Hide_Copado_feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSProSFMembershipStatus --></label>
+        <name>dsfs__DSProSFMembershipStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSProSFPassword --></label>
+        <name>dsfs__DSProSFPassword__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSProSFUsername --></label>
+        <name>dsfs__DSProSFUsername__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Duplicate Check --></label>
+        <name>dupcheck__dc3DisableDuplicateCheck__c</name>
+    </fields>
+    <fields>
+        <label><!-- Natterbox Password --></label>
+        <name>natterbox__Natterbox_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Natterbox Username --></label>
+        <name>natterbox__Natterbox_Username__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Change_DS_Cred --></label>
+        <name>Loop__Change_DS_Cred</name>
+    </webLinks>
+</CustomObjectTranslation>

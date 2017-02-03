@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CAMPAIGN_NAME</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>MEMBER_STATUS</field>
+    </columns>
+    <columns>
+        <field>HAS_RESPONDED</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>PHONE3</field>
+    </columns>
+    <columns>
+        <field>Contact.npo02__Formula_HouseholdPhone__c</field>
+    </columns>
+    <columns>
+        <field>CampaignMember.Support_Level1__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>MEMBER_STATUS</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Responded-maybe attending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Access_category_2_6__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>5 Full-time support worker,5:0.5 Requires support worker - could share with another YP,5:1 Requires full time support worker,5:2 Requires 2 full time support workers</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>TCS Ignite! Manc - Graduation EOIs</name>
+    <params>
+        <name>scopeid</name>
+        <value>701C0000000i4ZU</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignContact</reportType>
+    <scope>one</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>CampaignMember.Support_Level1__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+</Report>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Campaign.ContactCampaignMembers$FirstName</field>
+    </columns>
+    <columns>
+        <field>Campaign.ContactCampaignMembers$LastName</field>
+    </columns>
+    <columns>
+        <field>Campaign.ContactCampaignMembers.Wave_Selections__r$Wave__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.ContactCampaignMembers.Wave_Selections__r$Assigned_team_name__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Campaign$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>North West Graduation 1.30pm</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign.ContactCampaignMembers.Wave_Selections__r$Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Assigned</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign.ContactCampaignMembers*Contact$Hours_to_make_up_for_graduation__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>North West 1.30pm Graduating Challengers</name>
+    <params>
+        <name>scopeid</name>
+        <value>701C0000000gdmm</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Campaigns_with_Contacts_and_Wave_Selection__c</reportType>
+    <scope>one</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Campaign$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

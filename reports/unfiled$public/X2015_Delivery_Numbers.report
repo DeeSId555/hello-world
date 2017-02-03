@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Wave__c.Zone__c</field>
+    </columns>
+    <columns>
+        <field>Cluster__c.Zone__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CHILD_NAME</field>
+    </columns>
+    <columns>
+        <field>Wave__c.Total_Assigned__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c.Progs_Number_of_YPs_started_wave__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>2011,2012,2013,2014</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2015 Delivery Numbers</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Cluster__c$Wave__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Cluster__c.Challenge_Action_Leader_Training_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

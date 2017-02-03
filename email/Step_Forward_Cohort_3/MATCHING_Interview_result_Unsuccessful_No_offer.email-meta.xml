@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>8.1.16 (Workflow)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>MATCHING Interview result (Unsuccessful - No offer)</name>
+    <style>none</style>
+    <subject>Result and feedback from your interview</subject>
+    <textOnly>Feedback from your interview
+
+
+
+Dear {!Step_Forward_Associate_Attendance__c.Associate_First_Name__c}
+
+
+Thank you for attending your recent interview.  As you know, Step Forward is a very competitive programme and ultimately it&apos;s up to the employer who they choose to make an offer of employment - no one is guaranteed a job.
+
+
+Unfortunately, you have been unsuccessful in your interview with {!Step_Forward_Associate_Attendance__c.Employer_Name__c} for the role of {!Step_Forward_Associate_Attendance__c.SF_Job_Name__c}.  We want to provide you with some feedback that you can use for your future development.
+
+The employer said that you performed well in the following areas: {!Step_Forward_Associate_Attendance__c.Areas_of_Strength__c}
+
+They suggest areas of development are: {!Step_Forward_Associate_Attendance__c.Areas_of_Development__c}
+
+Think back on the interview and how you could have improved based on the feedback above.  These could be things to work on for your next professional interview.
+
+
+Please note that we cannot guarantee you further interviews with Step Forward. However, if a suitable position becomes available we will contact you by email.
+
+In the meantime, please reply to stepforward.interview@the-challenge.org if you have any questions.
+
+
+All the best,
+
+Step Forward Matching Team
+
+020 3542 2404. Option 5.
+
+stepforward.interview@the-challenge.org
+
+
+
+
+
+
+
+
+
+
+
+www.stepforward.uk.com
+
+
+The Challenge Network is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 39 York Rd, London SE1 7NQ</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CA 9.6c Tented village pay schedule (manual send out) - archived</name>
+    <style>formalLetter</style>
+    <subject>Payment schedule for your role on {!Job_placement__c.Wave__c}</subject>
+    <textOnly>NCSTHECHALLENGE.ORG/SEASONAL-ROLES
+Please do not reply to this email. This email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your local staffing team.
+
+Dear {!Job_placement__c.Contact_Name___c},
+
+Payment schedule for {!Job_placement__c.Wave__c}, clause 4.1
+
+Payment information for your employment contract with us on {!Job_placement__c.Wave__c} is listed below. This information is subject to you completing your employment with us in conjunction with the conditions in your contract.
+
+Payment Overview
+
+You have been allocated to {!Job_placement__c.Wave__c} as a Residential Mentor.
+
+The Wave Contract dates are {!Job_placement__c.Assignment_start_date__c} and {!Job_placement__c.Assignment_end_date__c} (&quot;Work Period&quot;) plus {!Job_placement__c.Annual_Leave_entitlement__c} days (&quot;Holiday Period&quot;); together referred to as a Wave Contract (a &quot;Wave Contract&quot;).
+
+You will be paid an amount of £375.
+
+The amounts are calculated on the basis that you will work all days required of your role; any days or half days that you are absent or no longer required to work will be deducted from your pay.
+
+All of your pay will be subject to tax and National Insurance (NI) deductions. You will be able to review tax deductions on your payslip which is sent to you via email two days prior to your payment date.
+
+N.B All Residential Mentors are required to work an additional day before the first wave and after their last wave depending on their geographical area (this will be paid at the daily rate)​.
+
+When will I receive this payment?
+
+You will be paid for your role on {!Job_placement__c.Wave__c} on {!Job_placement__c.Payroll_payment_date__c}.
+
+
+We pay our seasonal staff on a monthly basis. We aim to pay seasonal staff within 5 weeks of their completing a wave (where possible). For an overview of our payment dates and the corresponding waves, please see this document.
+
+
+What next?
+
+You will receive a ‘Payment Notification’ email outlining your approved pay at the end of each wave. Please note that if you are working multiple waves over the summer, you will receive a new payment notification email for each work period.
+
+Workplace pension auto-enrollment: Due to new auto-enrollment legislation, employees of The Challenge, including a small number of seasonal staff, will be enrolled into a workplace pension scheme. Auto-enrollment does not occur until October 2015 and staff will have the opportunity to opt-out at this point. To see if you qualify for auto-enrollment, please see our FAQs.
+
+Any questions? If you have any queries about the payment schedule please contact your local staffing team, quoting the email reference number below in any correspondence. Alternatively, you can look through our ‘Payment, Advances and Expenses’ FAQs.
+
+
+Best wishes,
+
+The Challenge
+NCS Programme
+
+Email reference: CA 9.6c</textOnly>
+    <type>html</type>
+</EmailTemplate>

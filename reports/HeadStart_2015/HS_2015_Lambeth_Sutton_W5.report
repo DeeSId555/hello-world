@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$Email</field>
+    </columns>
+    <columns>
+        <field>Contact$MobilePhone</field>
+    </columns>
+    <columns>
+        <field>Contact$HomePhone</field>
+    </columns>
+    <columns>
+        <field>Contact$HS_Activity_completed_app__c</field>
+    </columns>
+    <columns>
+        <field>Contact.HS_Activities__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$Login_PIN__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Login_Password__c</field>
+    </columns>
+    <description>showing those who have applied (HS activity) or not</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Young_Person</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Wave_started__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Sutton B 5,Lambeth B 5</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$Wave_started__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>HS 2015 - Lambeth &amp; Sutton W5</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_or_without_HS_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Contact.HS_Activities__r$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact$Birthdate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

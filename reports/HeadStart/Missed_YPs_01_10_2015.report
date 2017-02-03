@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.HS_Activities__r$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Contact.HS_Activities__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.HS_Activities__r$HS_Application_Status__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.HS_Activities__r$CreatedDate</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>9/30/2015 12:00 AM</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Missed YPs 01/10/2015</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_or_without_HS_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$Date_HS_Application_pack_triggered__c</dateColumn>
+        <endDate>2015-10-01</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-10-01</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Linked to &apos;Send final application reminder&apos; on salesforce</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>*WORKFLOW Application reminder</name>
+    <style>none</style>
+    <subject>Step Forward: Apply Now!</subject>
+    <textOnly>First Application Deadline
+
+
+Dear {!Contact.FirstName},
+
+Thank you for expressing your interest in Step Forward, now it’s time to apply!
+
+Make the wise decision about your future and apply now for our exciting school leavers’ programme beginning in August 2016!
+
+www.stepforward.uk.com
+
+Just as a reminder, what is it?
+
+Step Forward is a London based school leavers programme which provides school and college leavers with a chance to spend a year in the world of work with a top employer. As a Step Forward Associate, you’ll get invaluable experience, fantastic training and a qualification - all while benefiting from the help and advice of an experienced mentor.
+
+Get paid to do real work for a high quality employer, make new friends and develop the skills you’ll need to get ahead in the future, whether you go on to University or continue in the world of work.
+
+How do I apply?
+
+Step Forward is a competitive programme and places are limited. The deadline to be considered for our first assessment event in early November is Sunday 18th October so make sure you apply as soon as possible.
+
+Simply login to our website here using your unique username and pin/password below:
+
+Email: {!Contact.Email}
+Pin: {!Contact.Login_PIN__c}
+Password: {!Contact.Login_Password__c}
+
+
+Good luck!
+
+
+Step Forward
+
+
+step.forward@the-challenge.org
+
+
+
+
+
+
+
+
+
+
+www.stepforward.uk.com
+
+
+The Challenge Network is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 39 York Rd, London SE1 7NQ</textOnly>
+    <type>custom</type>
+</EmailTemplate>

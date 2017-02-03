@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 10.2 Payment schedule - CFs</name>
+    <style>formalLetter</style>
+    <subject>Payment schedule for your role on {!Job_placement__c.Wave__c}</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Job_placement__c.Staffing_Associate_email__c}.
+Dear {!Job_placement__c.Contact_Name__c},
+
+
+
+Payment Schedule for {!Job_placement__c.Wave__c}, clause 4.1
+
+
+
+Details of payment for your employment contract with us on  {!Job_placement__c.Wave__c} wave is listed below. This information is subject to your completing your employment with us in conjunction with the conditions stated in your contract.
+
+
+
+
+Payment Overview
+
+You have been allocated to {!Job_placement__c.Wave__c} as a {!Job_placement__c.Role__c}. The Wave Contract dates are {!Job_placement__c.Assignment_start_date__c} and {!Job_placement__c.Assignment_end_date__c} (&quot;Work Period&quot;) plus {!Job_placement__c.Annual_Leave_entitlement__c} days (&quot;Holiday Period&quot;)]; together referred to as a Wave Contract (a &quot;Wave Contract&quot;).
+
+
+You will be paid an amount of {!Job_placement__c.Total_gross_pay__c}.
+
+
+
+You are also contracted to work September weekends as part of your role. This will be at least four Saturdays or four Sundays (one day each weekend)*. You will be paid a standard rate of £70 per day (&quot;Work Period&quot;) plus 0.5 days (&quot;Holiday Period&quot;)];together referred to as a Weekend Contract (a  &quot;Weekend Contract&quot;)
+
+
+
+The amounts are calculated on the basis that you will work all days required of your role; any days or half days that you are absent or no longer required to work  will be deducted from your pay.
+
+
+
+All of your pay will be subject to tax and National Insurance (NI) deductions. You will be able to review tax deductions on your payslip which is sent to you via email 2 days prior to your payment date.
+
+
+
+*If you are working two or more waves, you will be required to work both Saturday and Sunday of each NCS: RCA weekend.
+
+
+
+
+When will I receive this payment?
+
+
+
+You will be paid for your role on {!Job_placement__c.Wave__c} on {!Job_placement__c.Payroll_payment_date__c}.
+
+
+
+We pay our seasonal staff on a monthly payroll. There should be no more than five weeks between the end of a ‘wave’ and the payment date for those dates. For an overview of our payment dates and the corresponding waves, please see this document.
+
+
+
+Please note that you will be paid for your work on NCS: Real Challenge Action September weekends on 08/10/2015.
+
+
+
+
+What next?
+
+
+
+You will receive a ‘Payment Notification’ email outlining your approved pay at the end of your wave. Please note that if you are working multiple waves or job placements over the summer, you will receive a new payment notification email for each work period.
+
+
+
+
+Workplace Pension auto-enrollment
+
+
+
+Due to new auto-enrollment legislation, employees of The Challenge, including a small number of seasonal staff, will be enrolled into a workplace pension scheme. Auto-enrollment does not occur until October 2015 and staff will have the opportunity to opt-out at this point. To see if you qualify for auto-enrollment  please see our FAQs.
+
+
+
+
+Any questions?
+
+
+
+If you have any queries about the payment schedule please contact your local staffing team, quoting the email reference number below in any correspondence. Alternatively, you can look through our ‘Payment, Advances and Expenses’ FAQs.
+
+
+
+
+Best wishes,
+The Challenge
+
+NCS Programme
+
+
+
+Email reference: CR 10.2</textOnly>
+    <type>html</type>
+</EmailTemplate>

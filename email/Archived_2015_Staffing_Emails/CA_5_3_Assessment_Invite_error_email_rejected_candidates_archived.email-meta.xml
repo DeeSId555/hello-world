@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CA 5.3 Assessment Invite error email - rejected candidates - archived</name>
+    <style>formalLetter</style>
+    <subject>Sorry for the confusion! Assessment email sent in error.</subject>
+    <textOnly>Please do not reply to this email. This email was sent from an unattended mailbox and responses are not reviewed.
+
+Dear {!Contact.FirstName},
+
+We have become aware that an email was sent in error recently regarding invitation to assessment. We have been having some systems issues, and it seems that this email was inadvertently sent to some individuals, such as yourself, who have already attended assessment this year.
+
+Please disregard the email and apologies for any confusion this has caused.
+
+Thank you for your interest in The Challenge and the NCS programme.
+
+
+Best wishes,
+
+The Challenge
+NCS Programme
+
+Email reference: CR 5.3</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>1.3.4 PV Staffing assessment reminder</name>
+    <style>freeForm</style>
+    <subject>Reminder: Invitation to an assessment at The Challenge Network</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+Dear {!Contact.FirstName}
+
+I have noticed that you have not yet booked an assessment date. Please click on the link below and submit your booking as soon as possible.
+
+
+
+If you no longer wish to be part of the assessment process, please email me on the email address below to confirm that you would like to withdraw.
+
+Please note that it is essential that you are available for the relevant training.
+
+Please check our website for Project Volunteer training dates.
+
+Thank you for your interest in The Challenge.
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.Contact_Owner_alternative_email__c}
+
+CR 1.3.4</textOnly>
+    <type>html</type>
+</EmailTemplate>

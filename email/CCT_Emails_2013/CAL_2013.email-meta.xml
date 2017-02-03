@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>CAL HTML email template for The Challenge</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CAL 2013</name>
+    <style>none</style>
+    <subject>Thank you for your application to The Challenge - here are your next steps</subject>
+    <textOnly>The Challenge Network
+
+CONDITIONAL ACCEPTANCE
+
+
+Dear {!Contact.FirstName} and the Parent/Guardian of {!Contact.FirstName},
+
+Thank you for beginning your application to secure a place for {!Contact.FirstName} on The Challenge, the largest provider of the National Citizen Service. {!Contact.FirstName} has nearly completed their application for a place on the programme!
+
+To avoid {!Contact.FirstName} missing out on this opportunity, we have temporarily reserved a place for two weeks only in order for you to complete the application. After this time, the space may be given to another applicant.
+
+All we need in order to finish processing {!Contact.FirstName}’s place is:
+
+{!Contact.CAL_Missing_Items_Criteria_Paragraph__c}
+Call us: 020 3542 2400 / Email us: contact@the-challenge.org /
+Log into our website at: www.the-challenge.org
+
+Please provide the above within two weeks. Once we have received this, we will be able to continue processing {!Contact.FirstName}’s application.
+
+If you have any questions, or think you will be unable to complete {!Contact.FirstName}’s application within two weeks, please do get in touch with us as soon as possible so that we can assist you.
+
+If you can&apos;t remember your password, you can recover it here: https://bookings.the-challenge.org/login-password.php
+
+We are delighted that {!Contact.FirstName} has decided to sign up for The Challenge. As places are filling up very rapidly across the country, we would urge {!Contact.FirstName} to remind their friends to take part in this unique and exciting opportunity.
+
+Yours sincerely,
+
+Rebecca Carter
+Director at The Challenge Network
+
+the-challenge.org  ncsyes.co.uk
+/thechallengenetwork    /ncs
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

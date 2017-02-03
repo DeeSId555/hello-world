@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Expense form update to contact</name>
+    <style>none</style>
+    <subject>Approval status for your expense claim # {!Expenses__c.Name}</subject>
+    <textOnly>Dear {!Expenses__c.Contact_Name__c},
+
+Please find below the status of your expense claim #{!Expenses__c.Name}.
+
+{!Expenses__c.Item_1__c}
+{!Expenses__c.Description_other_1__c}
+{!Expenses__c.Other_1__c}
+{!Expenses__c.Other_approved__c}
+
+{!Expenses__c.Item_2__c}
+{!Expenses__c.Description_other_2__c}
+{!Expenses__c.Other_2__c}
+{!Expenses__c.Telephone_approved__c}
+
+{!Expenses__c.Item_3__c}
+{!Expenses__c.Description_other_3__c}
+{!Expenses__c.Other_3__c}
+{!Expenses__c.Travel_approved__c}
+
+{!Expenses__c.Item_4__c}
+{!Expenses__c.Description_telephone_1__c}
+{!Expenses__c.item_4_amount__c}
+{!Expenses__c.Item_4_approved__c}
+
+{!Expenses__c.Item_5__c}
+{!Expenses__c.Description_telephone_2__c}
+{!Expenses__c.Item_5_amount__c}
+{!Expenses__c.Item_5_approved__c}
+
+Any expense items that are not covered by the have been declined Expenses Policy
+
+If you wish to query the decisions made here, please contact your APM.
+
+Best wishes,
+
+The Challenge Network</textOnly>
+    <type>custom</type>
+</EmailTemplate>

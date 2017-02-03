@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_15007670</developerName>
+        <masterLabel>School Type simplified</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Contact.School_type__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Independent Selective</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Independent Standard</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Other Independent School</sourceValue>
+            </sourceValues>
+            <value>Indepdendent</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Independent PRU</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>State PRU</sourceValue>
+            </sourceValues>
+            <value>PRU</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Independent SEN</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>State SEN</sourceValue>
+            </sourceValues>
+            <value>SEN</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>State comprehensive</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>State selective</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Academy Sponsor Led</sourceValue>
+            </sourceValues>
+            <value>State</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Further education Independent</sourceValue>
+            </sourceValues>
+            <value>Further Independent</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Further Education</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Further education SEN</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Further education State</sourceValue>
+            </sourceValues>
+            <value>Further (non-Independent)</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Date_P2_data_form_received_by_CO__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CONTACT_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.YP2014</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Total_payment_received__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Agree_to_main_consent_statement__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Season__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>includes</operator>
+            <value>Autumn 2014</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_15007670</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>YP2014 AP school type</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

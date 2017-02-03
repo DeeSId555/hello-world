@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Complete and active</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>1.1b PV auto-response to application</name>
+    <style>freeForm</style>
+    <subject>Thank you for your Project Volunteer application for NCS with The Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+Dear {!Contact.FirstName},
+
+Thank you for completing your application form for a Project Volunteer role for NCS powered by The Challenge.
+
+In order for your application to be assessed we require a Care Check to be carried out.
+
+Care Check is the first step in the process to obtaining a full DBS (formerly CRB). This process will be completed when a Project Volunteer role is offered.
+
+Care check will send you an email with your unique application reference number. Please keep this safe so that you can track your application for a DBS as we can only allow people with a full DBS disclosure to volunteer with the progamme.
+
+If you already have a valid DBS or CRB (dated after 30 April 2012) please submit a scanned copy through the online Essential Information Form (EIF) below.
+
+If you do not have a current DBS or CRB please follow the instructions on the form.
+
+The Essential Information Form EIF (link below) covers all the information we require in order for you to Volunteer with us:-
+
+Essential Information Form
+http://www.clicktools.com/survey?iv=1itextt51fhyy&amp;q1={!Job_Application__c.Id}
+
+Please Note:-
+
+We employ a third party organisation (Evolution) to carry out our referencing and DBS applications. This process has no bearing on selection and assessment outcomes and is only followed up on post assessment decision. The purpose of starting this process at this stage is to due to a high percentage of successful candidates and the high volume of candidates we need to process.
+
+{!Contact.OwnerFullName}
+t: {!Contact.OwnerPhone}
+e: {!Contact.Contact_Owner_alternative_email__c}
+The Challenge Network
+
+CR 1.1b</textOnly>
+    <type>html</type>
+</EmailTemplate>

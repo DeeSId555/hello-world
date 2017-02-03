@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_90508531</developerName>
+        <masterLabel>Welcome Call Result</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Contact.Welcome_call_result__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Spoke to PG</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Spoke to YP</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Spoke to YP and PG</sourceValue>
+            </sourceValues>
+            <value>Successful</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Left v/m message</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Left message with family member</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>No answer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>No telephone number</sourceValue>
+            </sourceValues>
+            <value>Unsuccessful</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>FK_NAME</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.NCS_Application_Primary_Season__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_90508531</field>
+    </columns>
+    <columns>
+        <field>Contact.Welcome_call_made__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CONTACT_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Young_Person</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave_Selection__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Assigned,Reserved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.NCS_Application_Primary_Season__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Summer 2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>N Birmingham A 6</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>RH N Birm A 6 welcome calls</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Wave_Selection__c@Wave_Selection__c.Wave__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

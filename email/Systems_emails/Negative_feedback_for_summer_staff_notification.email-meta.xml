@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent to Staffing when neg feedback received for summer staff</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Negative feedback for summer staff notification</name>
+    <style>none</style>
+    <subject>Negative feedback received for {!Feedback__c.Contact_Name__c}.</subject>
+    <type>text</type>
+</EmailTemplate>

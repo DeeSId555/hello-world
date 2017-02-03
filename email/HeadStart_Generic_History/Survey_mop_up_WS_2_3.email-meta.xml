@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Mop up surveys for WS 2 and 3</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Survey mop up: WS 2/3</name>
+    <style>none</style>
+    <subject>HeadStart: Start logging your volunteering hours</subject>
+    <textOnly>Log your volunteering to get started on your way to achieving 16 hours!
+
+{!HS_Activity__c.YP_First_name_from_HS_Application_Form__c}, well done for attending your Welcome Session!
+
+We really hope you enjoyed meeting your charity and found it useful. You should now know more about what your volunteering will involve and when your next volunteering session will be. If not, follow the guidance at the base of this email.
+
+
+Next Steps
+Your Welcome Session counts towards your 16 hours of volunteering, so you can now log your hours on the HeadStart website using the guidance and log-in details below!
+
+Log-In Details
+
+Username: {!Contact.Email}
+Password: {!Contact.Login_Password__c}
+
+Not sure when your next volunteering session will be?
+
+Then contact your charity using the details below:
+
+Manager’s name: {!HS_Activity__c.Main_Contact__c}
+Manager’s Email address: {!HS_Activity__c.Main_contact_email__c}
+Manager’s telephone number: {!HS_Activity__c.Main_contact_number__c}
+
+Great work so far. You are well on your way to achieving 16 hours which will allow you to access exclusive skill-building workshops and your job interview!
+
+If you have any difficulties or need to ask us a question, please email us at headstart@the-challenge.org.
+
+follow on Twitter | friend on Facebook
+
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

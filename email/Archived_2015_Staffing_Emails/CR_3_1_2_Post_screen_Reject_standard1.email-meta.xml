@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 3.1.2 Post-screen Reject (standard)</name>
+    <style>formalLetter</style>
+    <subject>Your application for The Challenge 2015</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed.
+
+Dear {!Contact.Name}
+
+Thank you for submitting an application to work on The Challenge 2015.
+
+Unfortunately your application has not reached the standard we require and as a result we will not be taking it further.
+
+Due to the high number of applications we receive, we are unable to provide feedback for individual applicants.
+
+Thank you for your interest in the NCS programmes.
+
+
+Best Wishes
+
+The Challenge
+
+Email Reference: CR 3.1.2</textOnly>
+    <type>html</type>
+</EmailTemplate>

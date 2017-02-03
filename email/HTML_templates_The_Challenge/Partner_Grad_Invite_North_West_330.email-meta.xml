@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Partner Grad Invite North West 3.30m</name>
+    <style>none</style>
+    <subject>The Challenge: Invitation to the Graduation event</subject>
+    <textOnly>INVITATION TO THE CHALLENGE GRADUATION EVENT
+
+Dear {!Contact.FirstName},
+
+Thank you for your commitment and contribution to The Challenge this summer. We would love for you to celebrate with us at The Challenge graduation ceremony where you can see the effect your work has had on the young people involved.
+
+You are warmly invited to The Challenge Graduation ceremony.
+
+We&apos;d love to know if you are coming.
+
+RSVP by clicking on the following link: 
+http://www.clicktools.com/survey?iv=3a132cae1853d4e&amp;q1={!Contact.Id}&amp;q2=1 
+
+Where: 
+Twickenham Stadium
+200 Whitton Road
+Twickenham
+TW2 7RE
+
+When: 
+22/10/2011
+
+12:30 - 14:00
+
+
+
+www.the-challenge.org 
+
+facebook.com/thechallengenetwork</textOnly>
+    <type>custom</type>
+</EmailTemplate>

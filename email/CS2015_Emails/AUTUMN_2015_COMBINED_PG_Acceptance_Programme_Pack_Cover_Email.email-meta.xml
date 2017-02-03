@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>AUTUMN 2015 COMBINED PG Acceptance +Programme Pack Cover Email</name>
+    <style>none</style>
+    <subject>NCS Info Pack – Your Next Steps as Parent / Guardian</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTHECHALLENGE.ORG
+
+NCS Info Pack &amp; Your Next Steps
+
+
+Dear Parent or Guardian of {!Contact.Name},
+
+Congratulations – {!Contact.FirstName} now has a confirmed place on NCS (National Citizen Service), starting on {!Wave_Selection__c.PC_KO_Day__c}. {!Contact.FirstName} will receive their free NCS T-shirt either when we visit their school or college again or on the first day of NCS. This is your information pack for {!Contact.FirstName}’s NCS programme. Please read it carefully as there is a lot of important information here, including:
+
+• {!Contact.FirstName}’s NCS timetable - this shows {!Contact.FirstName}’s meeting points, programme dates, and where they will be staying in Part 1, including their type of accommodation. You will need to organise {!Contact.FirstName}’s transport to and from the meeting points for the start and return times shown. Click here to see this: https://c.na8.content.force.com/email/{!Wave__c.Programme_Pack_Letters__c}
+
+• Your NCS information booklet - this has lots of essential information about NCS, including this autumn&apos;s packing list and how to contact us in an emergency. Click here to see this: https://c.na8.content.force.com/email/{!Wave__c.Programme_booklet__c}
+
+We will also email {!Contact.FirstName} with the above information.
+
+
+There are three important things you need to do before {!Contact.FirstName} starts NCS:
+
+1. {!Wave_Selection__c.Programme_Pack_emergency_phone_paragraph__c}
+We will use this number to contact parents or guardians in an emergency. It is your responsibility to make sure we have a correct number and that someone will be available to take calls on it. If you want to give us extra contact details, or if any of your contact details change, please contact us.
+
+2. Please contact us if there have been any changes to the medical, support or dietary information you gave us about {!Contact.FirstName}, or if you need to give us any other details about this.
+You are responsible for making sure we have full and up-to-date medical, support and dietary information, including details of any medication*. If you have any questions about this, please contact us.
+
+3. Please read everything in this information pack carefully.
+
+If you have any questions, please contact us. You can call us on
+0203 542 2400 or email us at contact@ncsthechallenge.org
+
+
+More information about NCS:
+
+{!Wave_Selection__c.Programme_Pack_Girls_Only_Wave__c}
+
+{!Wave__c.Part_2_Timetable_Merge_Field__c} {!Wave__c.Part_3_Timetable_Merge_Field__c}
+
+If a venue or time is shown on {!Contact.FirstName}’s timetable as ‘to be confirmed’, or if there is a venue change, we will send out new information as soon as we can. Please note that return times may depend on traffic so please make sure you have a way to keep in touch with your young person about estimated return times.
+
+If {!Contact.FirstName} can’t attend one or more of the dates on their timetable, please read the absence policy online at http://www.ncsthechallenge.org/terms to find out your next steps and then call us on 0203 542 2400. You need to tell us about any absences in advance so please do this as soon as you can.
+
+And of course, if you need to ask to move {!Contact.FirstName} to a different programme date, or if they can no longer attend NCS, please get in touch so we can offer this once-in-a-lifetime place to another young person.
+
+Please do not reply to this email address directly as it will not be responded to - please use the contact details above to get in touch with us.
+
+We are looking forward to welcoming {!Contact.FirstName} to NCS!
+
+Yours sincerely,
+
+
+
+Tanya Dunne
+Head of Customer Service - The Challenge
+
+
+* As standard, The Challenge does not accept responsibility for any medication that a young person brings on the NCS programme. The Challenge is not responsible for administering medication. See our consent statement for more details. Please contact us on 0203 542 2400 if there needs to be an exception to this for a young person or if you have any concerns.
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451.  Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

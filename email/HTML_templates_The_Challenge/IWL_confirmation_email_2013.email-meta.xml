@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>IWL confirmation email 2013</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>IWL confirmation email 2013</name>
+    <style>none</style>
+    <subject>All you need to know before starting The Challenge</subject>
+    <textOnly>The Challenge Network
+
+Take on The Challenge this autumn
+
+
+Dear Parent/Guardian of {!Contact.Name} and {!Contact.FirstName},
+
+We are excited that {!Contact.FirstName} is keen to take part in NCS with The Challenge and wanted to keep you updated on the status of their application.  We are pleased to tell you that {!Contact.FirstName} is on a waiting list but is closer to getting a place on the programme starting {!Wave_Selection__c.Wave_start_date__c}.
+
+For this reason we are offering {!Wave_Selection__c.IWL_voucher_amount__c} in high-street shopping vouchers to {!Contact.FirstName} and a full refund if they do not get a place on the programme but are willing to turn up on the first day of the programme with their bags packed and ready to leave.  Some participants cancel their place at short notice, due to circumstances out of their control, and so we are asking a select few who have a good chance of getting a place to be ready to fill these spaces.  We also want to ensure that we do not waste any of our funded places that are worth hundreds of pounds each.  We will be in touch if a place becomes available beforehand.
+
+Please ensure that we have received full and up-to-date medical and behavioural information for {!Contact.FirstName}. You can do this online or by calling our team on 020 3542 2400.
+
+We will also send you an information pack, containing everything {!Contact.FirstName} needs to know before The Challenge begins. This will include a full schedule including all of {!Contact.FirstName}’s meeting locations and times, as well as a comprehensive packing list and answers to some frequently asked questions. If you have any further questions please do contact us by telephone on 020 3542 2400 or email us at contact@the-challenge.org.
+
+We hope that {!Contact.FirstName} will be able to take on The Challenge this autumn and thank you for agreeing to take part in this scheme.
+
+Yours sincerely,
+
+Rebecca Carter
+Director at The Challenge Network
+
+the-challenge.org  ncsyes.co.uk
+/thechallengenetwork    /ncs
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

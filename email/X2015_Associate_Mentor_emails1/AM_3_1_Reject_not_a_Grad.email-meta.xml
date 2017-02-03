@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to applicants who are not Grads</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>AM 3.1 Reject - not a Grad</name>
+    <style>formalLetter</style>
+    <subject>Thank you for your interest in being an Associate Mentor!</subject>
+    <textOnly>We have received your application.
+Dear {!Contact.FirstName},
+
+Thank you for applying to be an Associate Mentor on NCS with The Challenge.
+
+Associate Mentor roles are only available to people who have graduated from NCS with The Challenge.
+
+From our records, it looks like you are not a graduate of NCS with The Challenge, and so I am afraid we cannot proceed with your application.
+
+If you are 15 to 17 years old and live in England or Northern Ireland, visit www.ncsyes.co.uk to take part in NCS.
+
+If you are aged 18+ and wish to apply for a staff role, please visit www.ncsthechallenge.org/jobs
+With kind regards,
+
+NCS Graduates Team
+The Challenge</textOnly>
+    <type>html</type>
+</EmailTemplate>

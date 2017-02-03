@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Potential_role_in_our_programme__c</field>
+    </columns>
+    <columns>
+        <field>Account.Programmes_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.PROG_State_of_play_2013_notes__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Ealing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Potential_role_in_our_programme__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>includes</operator>
+            <value>RCA Community Partner,RCD Fundraising Partner,Big Challenge Partner</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Ealing RCD/A Partners 2015/16</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountPartner@Account.Local_Authority__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

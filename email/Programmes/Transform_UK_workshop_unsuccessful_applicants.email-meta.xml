@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Transform UK workshop unsuccessful applicant email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>Transform UK workshop unsuccessful applicants</name>
+    <style>formalLetter</style>
+    <subject>Your application to Transform UK&apos;s web development workshop</subject>
+    <textOnly>Hi {!Contact.FirstName},
+Please do keep checking your local Graduate website for more opportunities.
+
+
+
+We hope to see you soon!
+All the best
+
+NCS Graduates Team
+
+The Challenge Society</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Advocacy Goal</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Advocacy Goals</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tick this box if you have achieved this goal --></help>
+        <label><!-- Achieved? --></label>
+        <name>Achieved__c</name>
+    </fields>
+    <fields>
+        <help><!-- In this box, attach the contact for which this Advocacy Goal applies to --></help>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Advocacy Goals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Set the date by which you wish for this Advocacy Goal to be achieved by --></help>
+        <label><!-- Deadline --></label>
+        <name>Deadline__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose one Advocacy Goal which you are pursuing for this Contact --></help>
+        <label><!-- Goal --></label>
+        <name>Goal__c</name>
+        <picklistValues>
+            <masterLabel>Feature TCN in report/publication</masterLabel>
+            <translation><!-- Feature TCN in report/publication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support commission</masterLabel>
+            <translation><!-- Support commission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supportive of NCS</masterLabel>
+            <translation><!-- Supportive of NCS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Write about social division</masterLabel>
+            <translation><!-- Write about social division --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

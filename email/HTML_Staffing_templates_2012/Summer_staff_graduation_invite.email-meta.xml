@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Graduation invitation to summer staff. Only to be sent to Senior Mentors, Team Mentors, Support Workers, Logistics Officers and Practitioners</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Summer staff graduation invite</name>
+    <style>none</style>
+    <subject>Invitation to your team&apos;s graduation</subject>
+    <textOnly>The Challenge Network
+
+Dear {!Contact.FirstName},
+
+I am writing to let you know that the graduation day for the young people you worked with in The Challenge during the summer will be on {!Job_placement__c.00NC0000005Eq5m}.
+
+Their graduation will be held at {!Job_placement__c.00NC0000005Eq5r}. It will start at {!Job_placement__c.00NC0000005Eq5X} and will finish at {!Job_placement__c.00NC0000005Eq5h}. You would be very welcome to attend.
+
+If you are able to come, please let us know.
+
+Many thanks for all your work with us over the summer.
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.OwnerEmail}
+
+WWW.THE-CHALLENGE.ORG    /thechallengeNETWORK
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

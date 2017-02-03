@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email for Starbucks YPs updating info and inviting to workshop 2</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Job Preference Email_12082015 STARBUCKS</name>
+    <style>none</style>
+    <subject>HeadStart - Starbucks welcome and workshop 2 invite</subject>
+    <textOnly>HeadStart login details:
+
+Email Address {!Contact.Email}
+
+NCS ID
+
+{!Contact.NCS_ID__c}
+
+PIN {!Contact.Login_Password__c}
+
+HeadStart Website
+
+HeadStart - Logging hrs and Starbucks key dates
+
+Good Afternoon {!Contact.FirstName},
+
+Welcome to the start of your Starbucks journey!
+Firstly, we hope you are all enjoying the summer and starting to get those volunteering hours booked in. As a quick reminder, it&apos;s really important for you to start logging your volunteering hours so that we can invite you to all the opportunities and that you qualify for your interview. To do this:
+Step 1: go to www.headstart-thechallenge.org
+Step 2: login using your username and password (see above)
+Step 3: Input the hours you have been volunteering
+If you don&apos;t log your voluteering hours we cant invite you to the job interview!
+
+
+Welcome to Starbucks
+Now for the exciting part - your first steps as a HeadStart Starbucks Barista! We have attached here an information pack giving you all the details you need to know about Starbucks, your role as a Barista and the commitments you will need to make in order to be successful.
+Please read the pack through carefully and ensure you are able to make all of the commitments listed.
+Next Steps
+As you are now starting to log your hours we are delighted to invite you all to your Customer Service Workshop!
+The workshop has been developed in partnership with Starbucks and will provide you with the opportunity to identify key qualities that contribute to world class customer service.  Attending this workshop will boost your chances of getting the job.
+To ensure you don&apos;t miss out on this fantastic workshop opportunity, please book your place on ONE of the sessions using the Eventbrite link below:
+1 - Tues 18th August @ The Lift, North London (2 sessions available on this day)
+2 - Wed 19th August @ City Hall, Central London (1 session available on this day)
+3 - Fri 21st August @ Starbucks Central Offce, Chiswick, West London (2 sessions available on this day)
+
+
+Download the Starbucks application pack HERE
+
+
+If you have any further questions please do get in contact with us. Otherwise, get yourself booked on your Customer Service Workshop and we look forward to seeing you next week!
+
+
+Any questions? Email the HeadStart team, check out our website or get in touch on facebook.
+
+
+The HeadStart team
+
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subsribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

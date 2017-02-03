@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.Account_s_TCN_Id__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.No_of_weeks_candidate_can_work_for__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Job_Application__c.Role_to_assess_for__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Support Worker</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.SW_skills_for_additional_needs__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>includes</operator>
+            <value>,ADHD,Autism,Dyslexia,GDD,Asthma,Social Phobia</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Job_Application__c.Post_screen_2014</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>SW test: SW unavailability &amp; cluster</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Job_Application__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

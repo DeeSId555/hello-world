@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SW: SW unable to attend; talk to staffing rep</name>
+    <style>none</style>
+    <subject>SW: SW unable to attend; talk to staffing rep</subject>
+    <textOnly>Hi
+
+{!Contact.Name}&apos;s SW is no longer able to attend the PIE. Please contact {!Contact.Name} to let them know and to arrange an alternative meeting.
+
+Click on the link to view the record {!Contact.Link}
+
+This is a standard email, sent automatically whenever the SW dropped out of the PIE but the YPPG is still due to attend.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_88427641</developerName>
+        <masterLabel>volunteering preference</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>HS_Activity__c$Young_Person__c</sourceColumnName>
+        <useOther>false</useOther>
+    </buckets>
+    <columns>
+        <field>HS_Activity__c$Name</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c$Young_Person__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c$HS_Owner__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c$HS_Hours_Total__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c$Interview_preference__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c$HS_Attended_KO__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c$Attended_Welcome_day__c</field>
+    </columns>
+    <format>Matrix</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>HS_Activity__c$Volunteering_preference__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>HS Summer Interview Pred</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>HS_Hours_with_HS_Activities_and_Signposting_Opps__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>HS_Activity__c$Date_congratulations_email_sent__c</dateColumn>
+        <endDate>2015-09-06</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-07-01</startDate>
+    </timeFrameFilter>
+</Report>

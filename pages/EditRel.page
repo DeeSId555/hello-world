@@ -1,0 +1,187 @@
+<apex:page standardController="Account" extensions="extEditRel" sidebar="false" showHeader="false">
+<style type="text/css">
+.lbl { text-decoration:underline;font-weight:bold;color:#4A4A56; }
+.lblEle { font-weight:bold;color:#333333;font-size:91%; }
+.ele { padding:0px 25px 0px 10px}
+</style>
+<apex:form id="frmEditRel">
+<apex:pageBlock id="pbEditRel_T1">
+<!-- BUTTON SECTION -->
+    <apex:pageBlockButtons id="pbBtnEditRel_T2">
+    <apex:commandButton value="Save" action="{!SavePage}"/>
+    <apex:commandButton value="Cancel" action="{!CancelPage}"/>
+    </apex:pageBlockButtons>
+<!-- END BUTTON SECTION -->
+
+<!-- FIELD SECTION -->    
+    <table cellpadding="0" cellspacing="8" style="margin:20px;">
+        <tr>
+            <td>
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="lblEle">Entity 1 Type:</td>
+                    <td class="ele">
+                        <apex:outputPanel id="opnlEditrel_E1T" layout="block" styleClass="requiredInput">
+                            <apex:outputPanel layout="block" styleClass="requiredBlock"/>
+                            <apex:Inputfield value="{! propRelationship.From_Relationship_Entity__c}" onChange="jsFlipFromLookupType(this.options[this.selectedIndex].text, '{!ISNULL(propFromIndInsName)}');"/>
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+            </table>                
+            </td>
+            <td>
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="lblEle">Entity 1:</td>
+                    <td class="ele">
+                        <apex:outputPanel id="opnlEditrel_E1">
+                            <a href="#" onclick="Redirect('{!propParentId}');"><apex:outputLabel value="{!propFromIndInsName}" rendered="{!IF(AND(NOT(ISNULL(propFromIndInsName)), ISNULL(propToIndInsName), propIsEdit) , true, false)}" styleClass="lbl"/></a>
+                            <apex:Inputfield value="{!propRelationship.From_Individual__c}" rendered="{!IF(AND(ISNULL(propFromIndInsName), ISNULL(propRelationship.From_Institution__c), propRelationship.From_Relationship_Entity__c == 'Individual'), true, false)}"/>
+                            <apex:Inputfield value="{!propRelationship.From_Institution__c}" rendered="{!IF(AND(ISNULL(propFromIndInsName), ISNULL(propRelationship.From_Individual__c), propRelationship.From_Relationship_Entity__c == 'Institution'), true, false)}"/>
+                        </apex:outputPanel><!-- End opnlEditrel_E1 -->
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="lblEle">Entity 2 Type:</td>
+                    <td class="ele">
+                    <apex:outputPanel id="opnlEditrel_E2T" layout="block" styleClass="requiredInput">
+                        <apex:outputPanel layout="block" styleClass="requiredBlock"/>
+                        <apex:Inputfield value="{! propRelationship.To_Relationship_Entity__c}" onChange="jsFlipToLookupType(this.options[this.selectedIndex].text, '{!ISNULL(propToIndInsName)}');"/>
+                    </apex:outputPanel>
+                    </td>
+                </tr>
+            </table>   
+            </td>
+            <td>
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="lblEle">Entity 2:</td>
+                    <td class="ele">
+                    <apex:outputPanel id="opnlEditrel_E2">            
+                        <a href="#" onclick="Redirect('{!propParentId}');"><apex:outputLabel value="{!propToIndInsName}" rendered="{!IF(AND(NOT(ISNULL(propToIndInsName)), ISNULL(propFromIndInsName), propIsEdit) , true, false)}" styleClass="lbl"/></a>
+                        <apex:Inputfield value="{!propRelationship.To_Individual__c}" rendered="{!IF(AND(ISNULL(propRelationship.To_Institution__c), ISNULL(propToIndInsName), propRelationship.To_Relationship_Entity__c == 'Individual'), true, false)}"/>
+                        <apex:Inputfield value="{!propRelationship.To_Institution__c}" rendered="{!IF(AND(ISNULL(propRelationship.To_Individual__c), ISNULL(propToIndInsName), propRelationship.To_Relationship_Entity__c == 'Institution'), true, false)}"/>
+                    </apex:outputPanel><!-- End opnlEditrel_E2 -->
+                    </td>
+                </tr>
+            </table>                
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="lblEle">Entity 1 to Entity 2 Relationship:</td>
+                    <td class="ele">
+                    <apex:outputPanel id="opnlEditrel_E1toE2">
+                        <apex:selectList value="{!propRelationship.First_Relationship_Type__c}" size="1" onchange="jsChangeE2toE1(this.options[this.selectedIndex].value);">
+                            <apex:selectOptions value="{!PropRelationshipType}" />
+                        </apex:selectList>
+                    </apex:outputPanel><!-- End opnlEditrel_E1toE2 -->
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="lblEle">Entity 2 to Entity 1 Relationship:</td>
+                    <td class="ele">
+                    <apex:outputPanel id="opnlEditrel_E2toE1">
+                        <apex:selectList value="{!propRelationship.Second_Relationship_Type__c}" size="1">
+                            <apex:selectOptions value="{!PropRelationshipType}" />
+                        </apex:selectList>
+                    </apex:outputPanel><!-- End opnlEditrel_E2toE1 -->
+                    </td>
+                </tr>
+            </table> 
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="lblEle">Start Date:</td>
+                    <td class="ele"><apex:Inputfield value="{!propRelationship.Start_Date__c}" /></td>
+                </tr>
+            </table>            
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="lblEle">End Date:</td>
+                    <td class="ele" style="padding-left:15px;"><apex:Inputfield value="{!propRelationship.End_Date__c}" /></td>
+                </tr>
+            </table>            
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <table cellpadding="0" cellspacing="0" style="disply:none;">
+                <tr>
+                    <td class="lblEle">Key Relationship:</td>
+                    <td class="ele"><apex:Inputfield value="{!propRelationship.Key_Relationship__c}" /></td>
+                </tr>
+            </table>            
+            </td>
+        </tr>
+    </table>
+<!-- END FIELD SECTION -->
+
+<!-- PROCESSING SCREEN --> 
+<apex:actionStatus id="processingStatus">
+    <apex:facet name="start">
+        <c:processing BackColor="#efefef" borderColor="#336699" borderSize="3" height="100px" width="200px" ImageUrl=""  Message="test" messageStyle="color:darkred;font-size:11pt;font-weight:bold;"/>
+    </apex:facet>
+</apex:actionStatus>
+<!-- END PROCESSING SCREEN -->  
+
+<!---- ACTION FUNCTIONS ---->
+<apex:actionFunction name="FlipFromLookupType" action="{!FlipFromLookupType}" rerender="opnlEditrel_E1,opnlEditrel_E1T" status="processingStatus">
+    <apex:param name="paramSelVal" assignTo="{!propSelVal}" value="" />
+</apex:actionFunction>
+<apex:actionFunction name="FlipToLookupType" action="{!FlipToLookupType}" rerender="opnlEditrel_E2,opnlEditrel_E2T" status="processingStatus">
+    <apex:param name="paramSelVal" assignTo="{!propSelVal}" value="" />
+</apex:actionFunction>
+
+<apex:actionFunction name="ChangeE2toE1" action="{!ChangeE2toE1}" rerender="opnlEditrel_E2toE1" status="processingStatus">
+    <apex:param name="paramSelValE1toE2" assignTo="{!propSelValE1toE2}" value="" />
+</apex:actionFunction>
+<!-- END ACTION FUNCTIONS -->
+<script>
+function jsFlipFromLookupType(itm, edit)
+{
+  if(itm != "--None--" && eval(edit))
+    FlipFromLookupType(itm);
+}
+
+function jsFlipToLookupType(itm, edit)
+{
+  if(itm != "--None--" && eval(edit))
+    FlipToLookupType(itm);
+}
+
+function jsChangeE2toE1(itm)
+{
+  if(itm != "")
+    ChangeE2toE1(itm);
+}
+
+function Redirect(reId)
+{
+  window.parent.parent.location= '/' + reId;
+}
+</script>  
+</apex:pageBlock>
+</apex:form>
+</apex:page>

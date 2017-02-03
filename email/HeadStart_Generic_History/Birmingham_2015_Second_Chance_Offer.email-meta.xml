@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>YP who have not started application 08/10/2015</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Birmingham 2015 Second Chance Offer</name>
+    <style>none</style>
+    <subject>HeadStart - Last opportunity to Apply!</subject>
+    <textOnly>HeadStart login details:
+
+Email Address {!Contact.Email}
+
+NCS ID
+
+{!Contact.NCS_ID__c}
+
+PIN {!Contact.Login_Password__c}
+
+HeadStart Website
+
+Final Chance to Apply for HeadStart!
+
+Hi {!Contact.FirstName},
+
+The Birmingham HeadStart programme has re-opened applications for 3 days only until midnight on Sunday 11th October.
+HeadStart is a programme run by The Challenge that guarantees you an interview for a part-time job once you have completed 16 hours of volunteering. It will also massively help your UCAS application and/or CV.
+There are places left for those applicants who can find their own volunteering opportunity and there will be a waiting list for those who choose volunteering opportunities from the website. These will be filled as places become available.
+To register your login details are below
+
+Email Address {!Contact.Email}
+
+NCS ID{!Contact.NCS_ID__c}
+
+PIN {!Contact.Login_Password__c}
+
+CLICK HERE to access the HeadStart Website and use your login details above to register.
+
+
+Any questions? Email the HeadStart team, check out our website or get in touch on Twitter or Facebook
+
+
+The HeadStart team
+
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subsribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>NCS with The Challenge – Adjustment Requirements</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>1.3.6 Assessment with reasonable adjustments</name>
+    <style>freeForm</style>
+    <subject>Your application to work for NCS with the Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+
+
+Dear {!Contact.FirstName},
+
+
+Thank you for applying for a role at NCS with The Challenge. I am writing to invite you to a group assessment with us.
+
+
+In your application you indicated that you have a disability that potentially requires adjustment at assessment. Prior to your assessment, we would like to discuss your requirements in more detail with you.
+
+
+Please call or email me using the details below as soon as possible. We will need at least one week prior to your assessment to ensure we have everything in place.
+
+
+In the meantime, please click on the button below to register for an assessment.
+http://thechallenge.force.com/AvailableDates?JType={!Job_Application__c.Id}&amp;Type={!Job_Application__c.00NC0000005EVyp}&amp;key={!Job_Application__c.ContactId__c}
+
+Once you have booked onto an assessment you will receive a confirmation email with relevant details.
+
+
+If you are successful at this assessment you will be asked to attend one or more days training depending on your role from the beginning of October.
+
+
+Thank you for your interest in NCS with The Challenge.
+
+
+
+
+Best wishes,
+
+
+{!Contact.OwnerFullName}
+
+{!Contact.OwnerPhone}
+
+{!Contact.Contact_Owner_alternative_email__c}
+
+NCS with The Challenge
+
+
+
+CR 1.3.6</textOnly>
+    <type>html</type>
+</EmailTemplate>

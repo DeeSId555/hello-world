@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.P3_completion_date__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Date_of_YPPG_withdrawal_notification__c</field>
+    </columns>
+    <columns>
+        <field>Contact.YP_completed_TC__c</field>
+    </columns>
+    <columns>
+        <field>Account.Date_of_first_payment__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Account_s_TCN_Id__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CONTACT_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.YP2014</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>MASI effect on withdrawal 2014</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Contact.Date_of_YPPG_withdrawal_notification__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

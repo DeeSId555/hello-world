@@ -1,0 +1,1408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Represents payments from you to your customers</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fieldSets>
+        <fullName>PAYBASE2__Linked_To</fullName>
+        <description>Populating payment</description>
+        <displayedFields>
+            <field>PAYBASE2__Created_From_Account__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>PAYBASE2__Created_From_Contact__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>PAYBASE2__Created_From_Lead__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>PAYBASE2__Created_From_Opportunity__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Linked To</label>
+    </fieldSets>
+    <fields>
+        <fullName>Account_ID__c</fullName>
+        <description>This is the Salesforce Record ID of the Contact&apos;s Account record, used to make some coding issues easier. (copied from custom field on paycp1</description>
+        <externalId>false</externalId>
+        <formula>IF( NOT(ISBLANK( PAYBASE2__Created_From_Account__c )), PAYBASE2__Created_From_Account__r.Id, 
+IF( NOT(ISBLANK( PAYBASE2__Created_From_Opportunity__c )), PAYBASE2__Created_From_Opportunity__r.AccountId, 
+IF( NOT(ISBLANK( PAYBASE2__Created_From_Contact__c )), PAYBASE2__Created_From_Contact__r.AccountId, &quot;&quot; )))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Help_text__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( RecordType.Name = &quot;Worldpay&quot;, 
+
+&quot;Please note that as this is a payment through an old card payment provider, it will not be possible to make a refund through Salesforce. &quot; , &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Help text</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYBASE2__Amount_Refunded__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Where refunds have been linked to this payment, the total amount of those refunds</description>
+        <externalId>false</externalId>
+        <label>Amount Refunded</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PAYBASE2__Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Payment amount</description>
+        <externalId>false</externalId>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PAYBASE2__Balance__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The payment amount minus the total amount refunded</description>
+        <externalId>false</externalId>
+        <formula>PAYBASE2__Amount__c  -  PAYBASE2__Amount_Refunded__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Balance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PAYBASE2__Created_From_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Links payment to a particular account</description>
+        <externalId>false</externalId>
+        <label>Created From Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Payments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PAYBASE2__Created_From_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Links payment to a particular contact</description>
+        <externalId>false</externalId>
+        <label>Created From Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>Payments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PAYBASE2__Created_From_Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Links payment to a particular lead</description>
+        <externalId>false</externalId>
+        <label>Created From Lead</label>
+        <referenceTo>Lead</referenceTo>
+        <relationshipName>Payments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PAYBASE2__Created_From_Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Links payment to a particular opportunity</description>
+        <externalId>false</externalId>
+        <label>Created From Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipName>Payments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PAYBASE2__Is_Paid__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Was payment transaction successful</description>
+        <externalId>false</externalId>
+        <label>Is Paid</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PAYBASE2__Pay_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Pay Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PAYBASE2__Status_Text__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Information about payment, such as why payment failed</description>
+        <externalId>false</externalId>
+        <label>Status Text</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYBASE2__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Payment status</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Error</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__Address_Check__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Results of any address check carried out by the payment gateway</description>
+        <externalId>false</externalId>
+        <label>Address Check</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Supported</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Supplied</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Checked</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Matched</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Matched</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Partial Match</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__Address_City__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Card holder&apos;s address city</description>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__Address_Country__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Card holder&apos;s address country</description>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__Address_County__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Card holder&apos;s address county</description>
+        <externalId>false</externalId>
+        <label>County</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__Address_Postcode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Card holder&apos;s address postcode</description>
+        <externalId>false</externalId>
+        <label>Postcode</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__Address_Street__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Card holder&apos;s address street</description>
+        <externalId>false</externalId>
+        <label>Street</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__Authorisation_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Transaction authorisation code returned by payment gateway</description>
+        <externalId>false</externalId>
+        <label>Authorisation Code</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__CVV_Check__c</fullName>
+        <deprecated>false</deprecated>
+        <description>CVV check result returned from payment gateway</description>
+        <externalId>false</externalId>
+        <label>CVV Check</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Supported</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Supplied</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Checked</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Matched</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Matched</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Partial Match</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__Card_Expiry__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Card expiry date returned by payment gateway</description>
+        <externalId>false</externalId>
+        <label>Card Expiry</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__Card_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Card type returned by payment gateway</description>
+        <externalId>false</externalId>
+        <label>Card Type</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__Created_From_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This field is redundant and should not be used</description>
+        <externalId>false</externalId>
+        <label>Old Created From Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Payments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__Created_From_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This field is redundant and should not be used</description>
+        <externalId>false</externalId>
+        <label>Old Created From Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>Payments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__Created_From_Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This field is redundant and should not be used</description>
+        <externalId>false</externalId>
+        <label>Old Created From Lead</label>
+        <referenceTo>Lead</referenceTo>
+        <relationshipName>Payments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__Created_From_Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This field is redundant and should not be used</description>
+        <externalId>false</externalId>
+        <label>Old Created From Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipName>Payments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__Email__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Card holder&apos;s email address</description>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <length>150</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__FI_Recipient_Account_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>FI Recipient Account Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__FI_Recipient_Date_Of_Birth__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>FI Recipient Date Of Birth</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__FI_Recipient_Postcode__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>FI Recipient Postcode</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__FI_Recipient_Surname__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>FI Recipient Surname</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__Gateway_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Id sent to payment gateway to identify client</description>
+        <externalId>false</externalId>
+        <label>Gateway Id</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__Gateway_Transaction_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Transaction id supplied by payment gateway</description>
+        <externalId>false</externalId>
+        <label>Gateway Transaction Id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__Is_Test__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Is this a test transaction</description>
+        <externalId>false</externalId>
+        <label>Is Test</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__Masked_PAN__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Card number returned by payment gateway</description>
+        <externalId>false</externalId>
+        <label>Masked PAN</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__Name_On_Card__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Card holder&apos;s name</description>
+        <externalId>false</externalId>
+        <label>Name On Card</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__Payment_Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Description of payment</description>
+        <externalId>false</externalId>
+        <label>Payment Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__Postcode_Check__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Result of postcode check returned from payment gateway</description>
+        <externalId>false</externalId>
+        <label>Postcode Check</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Supported</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Supplied</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Checked</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Matched</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Matched</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Partial Match</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PAYCP2__Vendor_Transaction_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Transaction id supplied by card payment application</description>
+        <externalId>false</externalId>
+        <label>Vendor Transaction Id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYSPCP1__Address_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Address check status, returned by SagePay</description>
+        <externalId>false</externalId>
+        <label>Address Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Confirmed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unconfirmed</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PAYSPCP1__Bank_Authorisation_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Bank authorisation code, returned by SagePay</description>
+        <externalId>false</externalId>
+        <label>Bank Authorisation Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYSPCP1__CAVV__c</fullName>
+        <deprecated>false</deprecated>
+        <description>CAVV, returned by SagePay</description>
+        <externalId>false</externalId>
+        <label>CAVV</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYSPCP1__Decline_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Transaction declined code, returned by SagePay</description>
+        <externalId>false</externalId>
+        <label>Decline Code</label>
+        <length>5</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYSPCP1__Fraud_Response__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Fraud check response, returned by SagePay</description>
+        <externalId>false</externalId>
+        <label>Fraud Response</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Accept</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deny</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Challenge</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Checked</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PAYSPCP1__Gift_Aid__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Was a gift aid transaction, returned by SagePay</description>
+        <externalId>false</externalId>
+        <label>Gift Aid</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PAYSPCP1__Payer_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Payer status, returned by SagePay</description>
+        <externalId>false</externalId>
+        <label>Payer Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Verified</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unverified</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PAYSPCP1__Redirect_Parent__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Redirect Parent</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PAYSPCP1__Redirect_URL__c</fullName>
+        <deprecated>false</deprecated>
+        <description>URL to redirect user to after transaction complete</description>
+        <externalId>false</externalId>
+        <label>Redirect URL</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYSPCP1__Security_Key__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Security key, returned by SagePay</description>
+        <externalId>false</externalId>
+        <label>Security Key</label>
+        <length>15</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYSPCP1__Transaction_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Transaction Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>eCommerce</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>MOTO</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PAYSPCP1__X3D_Secure_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>3D secure check status, returned from SagePay</description>
+        <externalId>false</externalId>
+        <label>3D Secure Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ok</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Checked</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Available</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Authorised</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Incomplete</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Error</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Payment_status_email_sent_to_cardholder__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The date/time that the email with the payment transaction ID, amount and payment status was sent to the cardholder</inlineHelpText>
+        <label>Payment status email sent to cardholder</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Receipt_Email_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Receipt Email Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <label>Payonomy Payment</label>
+    <listViews>
+        <fullName>PAYBASE2__All</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>PAYBASE2__Amount__c</columns>
+        <columns>PAYBASE2__Pay_Date__c</columns>
+        <columns>PAYBASE2__Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Payonomy Payment Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Payonomy Payments</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>PAYBASE2__Base</fullName>
+        <active>true</active>
+        <label>Base</label>
+        <picklistValues>
+            <picklist>PAYBASE2__Status__c</picklist>
+            <values>
+                <fullName>Error</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>PAYBASE2__Cash</fullName>
+        <active>true</active>
+        <description>Cash payment</description>
+        <label>Cash</label>
+        <picklistValues>
+            <picklist>PAYBASE2__Status__c</picklist>
+            <values>
+                <fullName>Error</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>PAYBASE2__Cheque</fullName>
+        <active>true</active>
+        <description>Cheque payment</description>
+        <label>Cheque</label>
+        <picklistValues>
+            <picklist>PAYBASE2__Status__c</picklist>
+            <values>
+                <fullName>Error</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>PAYBASE2__Standing_Order</fullName>
+        <active>true</active>
+        <description>Standing order payment</description>
+        <label>Standing Order</label>
+        <picklistValues>
+            <picklist>PAYBASE2__Status__c</picklist>
+            <values>
+                <fullName>Error</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>PAYSPCP1__SagePay</fullName>
+        <active>true</active>
+        <description>Credit card payment using SagePay payment gateway</description>
+        <label>SagePay</label>
+        <picklistValues>
+            <picklist>PAYBASE2__Status__c</picklist>
+            <values>
+                <fullName>Error</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PAYCP2__Address_Check__c</picklist>
+            <values>
+                <fullName>Matched</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Checked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Matched</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Supplied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Supported</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial Match</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PAYCP2__CVV_Check__c</picklist>
+            <values>
+                <fullName>Matched</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Checked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Matched</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Supplied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Supported</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial Match</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PAYCP2__Postcode_Check__c</picklist>
+            <values>
+                <fullName>Matched</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Checked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Matched</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Supplied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Supported</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial Match</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PAYSPCP1__Address_Status__c</picklist>
+            <values>
+                <fullName>Confirmed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unconfirmed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PAYSPCP1__Fraud_Response__c</picklist>
+            <values>
+                <fullName>Accept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Challenge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deny</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Checked</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PAYSPCP1__Payer_Status__c</picklist>
+            <values>
+                <fullName>Unverified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Verified</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PAYSPCP1__Transaction_Type__c</picklist>
+            <values>
+                <fullName>MOTO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eCommerce</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PAYSPCP1__X3D_Secure_Status__c</picklist>
+            <values>
+                <fullName>Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incomplete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Authorised</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Available</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Checked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ok</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Worldpay</fullName>
+        <active>true</active>
+        <description>Credit card payment via Worldpay (Not in Package)</description>
+        <label>Worldpay</label>
+        <picklistValues>
+            <picklist>PAYBASE2__Status__c</picklist>
+            <values>
+                <fullName>Error</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PAYCP2__Address_Check__c</picklist>
+            <values>
+                <fullName>Matched</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Checked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Matched</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Supplied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Supported</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial Match</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PAYCP2__CVV_Check__c</picklist>
+            <values>
+                <fullName>Matched</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Checked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Matched</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Supplied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Supported</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial Match</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PAYCP2__Postcode_Check__c</picklist>
+            <values>
+                <fullName>Matched</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Checked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Matched</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Supplied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Supported</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial Match</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PAYSPCP1__Address_Status__c</picklist>
+            <values>
+                <fullName>Confirmed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unconfirmed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PAYSPCP1__Fraud_Response__c</picklist>
+            <values>
+                <fullName>Accept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Challenge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deny</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Checked</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PAYSPCP1__Payer_Status__c</picklist>
+            <values>
+                <fullName>Unverified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Verified</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PAYSPCP1__Transaction_Type__c</picklist>
+            <values>
+                <fullName>MOTO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eCommerce</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PAYSPCP1__X3D_Secure_Status__c</picklist>
+            <values>
+                <fullName>Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incomplete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Authorised</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Available</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Checked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ok</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PAYBASE2__Amount__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PAYBASE2__Pay_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PAYBASE2__Status__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>RECORDTYPE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PAYBASE2__Amount__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PAYBASE2__Pay_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PAYBASE2__Status__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>RECORDTYPE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PAYBASE2__Amount__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PAYBASE2__Pay_Date__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PAYBASE2__Status__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>RECORDTYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PAYBASE2__Amount__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PAYBASE2__Pay_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PAYBASE2__Status__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>PAYBASE2__Amount_greater_than_zero</fullName>
+        <active>false</active>
+        <description>This is redundant</description>
+        <errorConditionFormula>FALSE</errorConditionFormula>
+        <errorDisplayField>PAYBASE2__Amount__c</errorDisplayField>
+        <errorMessage>Amount must be greater than zero</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>PAYSPCP1__Amount_greater_than_1</fullName>
+        <active>true</active>
+        <errorConditionFormula>RecordType.Name == &apos;SagePay&apos; &amp;&amp;PAYBASE2__Amount__c  &lt; 1</errorConditionFormula>
+        <errorDisplayField>PAYBASE2__Amount__c</errorDisplayField>
+        <errorMessage>Amount cannot be less than 1</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>PAYSPCP1__Amount_less_than_100001</fullName>
+        <active>true</active>
+        <errorConditionFormula>RecordType.Name == &apos;SagePay&apos; &amp;&amp;PAYBASE2__Amount__c  &gt; 100000</errorConditionFormula>
+        <errorDisplayField>PAYBASE2__Amount__c</errorDisplayField>
+        <errorMessage>Amount cannot be greater than 100,000</errorMessage>
+    </validationRules>
+</CustomObject>

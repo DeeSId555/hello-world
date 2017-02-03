@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The total case age in business hours from open to close. --></help>
+        <label><!-- Case Age In Business Hours --></label>
+        <name>Case_Age_In_Business_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Comment Updated --></label>
+        <name>Case_Comment_Updated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Owner Email --></label>
+        <name>Case_Owner_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact mobile number --></label>
+        <name>Contact_mobile_number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check box if a criticism (not a proper complaint) is made. Example of criticism is saying that we did not call them back quickly --></help>
+        <label><!-- Criticism? --></label>
+        <name>Criticism__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date auto-close email sent --></label>
+        <name>Date_auto_close_email_sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date that the case was linked to an existing case. An email will have been sent to the case originator --></help>
+        <label><!-- Date notification of existing case sent --></label>
+        <name>Date_notification_of_existing_case_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date status change email sent --></label>
+        <name>Date_status_change_email_sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows when the first response was sent --></help>
+        <label><!-- Date/time of first response --></label>
+        <name>Date_time_of_first_response__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days taken to close case --></label>
+        <name>Days_taken_to_close_case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+        <picklistValues>
+            <masterLabel>Central Inclusion</masterLabel>
+            <translation><!-- Central Inclusion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central Marketing</masterLabel>
+            <translation><!-- Central Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Curriculum</masterLabel>
+            <translation><!-- Curriculum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Services</masterLabel>
+            <translation><!-- Customer Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evolution</masterLabel>
+            <translation><!-- Evolution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fundraising</masterLabel>
+            <translation><!-- Fundraising --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR</masterLabel>
+            <translation><!-- HR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HeadStart</masterLabel>
+            <translation><!-- HeadStart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Innovation</masterLabel>
+            <translation><!-- Innovation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procurement</masterLabel>
+            <translation><!-- Procurement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programmes - TCS</masterLabel>
+            <translation><!-- Programmes - TCS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programmes - delivery</masterLabel>
+            <translation><!-- Programmes - delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programmes - set up</masterLabel>
+            <translation><!-- Programmes - set up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Affairs</masterLabel>
+            <translation><!-- Public Affairs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staffing</masterLabel>
+            <translation><!-- Staffing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>StepForward</masterLabel>
+            <translation><!-- StepForward --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Systems</masterLabel>
+            <translation><!-- Systems --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training</masterLabel>
+            <translation><!-- Training --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Notes the number of hours needed to resolve this case.
+Default is 5 minutes --></help>
+        <label><!-- Hours required --></label>
+        <name>Hours_required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box, if the case and/or the resolution should be included in the review of the system --></help>
+        <label><!-- Include in systems review --></label>
+        <name>Include_in_systems_review__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box if the parent case should appear in the Key Parent Case view --></help>
+        <label><!-- Key parent case --></label>
+        <name>Key_parent_case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Status Change --></label>
+        <name>Last_Status_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last comment/outgoing email sent --></label>
+        <name>Last_comment_outgoing_email_sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check box if it is a complaint --></help>
+        <label><!-- Official Complaint? --></label>
+        <name>Official_Complaint__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box if you do not want this case to be flagged up through the escalation rules. This should only be used when the case is receiving a lot of attention and does not need to be flagged. --></help>
+        <label><!-- Opt out of escalations --></label>
+        <name>Opt_out_of_escalations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response time --></label>
+        <name>Response_time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Updates from Time with Support when case is first modified - this captures the first response time, regardless of the length of time needed to resolve the case. --></help>
+        <label><!-- SLA response time check --></label>
+        <name>SLA_response_time_check__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tick this box to notify case originator of amendments to the case status --></help>
+        <label><!-- Send status change notification --></label>
+        <name>Send_status_change_notification__c</name>
+    </fields>
+    <fields>
+        <help><!-- The time in business hours that this case spent in the hands of the customer. --></help>
+        <label><!-- Time With Customer --></label>
+        <name>Time_With_Customer__c</name>
+    </fields>
+    <fields>
+        <help><!-- The time in business hours that this case spent with support. --></help>
+        <label><!-- Time With Support --></label>
+        <name>Time_With_Support__c</name>
+    </fields>
+    <fields>
+        <help><!-- For innovation team to indicate what priority a case has. --></help>
+        <label><!-- Triage --></label>
+        <name>Triage__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label><!-- GoogleApps support --></label>
+        <name>GoogleApps_support</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Staffing SouthLon/Surrey --></label>
+        <name>Staffing</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Staffing NW --></label>
+        <name>Staffing_NW</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Staffing North London --></label>
+        <name>Staffing_North_London</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Staffing West London --></label>
+        <name>Staffing_West_London</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Staffing West Midlands --></label>
+        <name>Staffing_West_Midlands</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Staffing - general --></label>
+        <name>Staffing_general</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Systems support --></label>
+        <name>Systems_support</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TCS --></label>
+        <name>TCS</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TheChallenge --></label>
+        <name>TheChallenge</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please change the Case Owner over to yourself or the relevant person. --></errorMessage>
+        <name>Force_case_owner_change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter an estimate of how long it took you to investigate and resolve the case --></errorMessage>
+        <name>Hours_required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOP --></label>
+        <name>Loop__LOOP</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOP_Merge --></label>
+        <name>Loop__LOOP_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOPlus --></label>
+        <name>Loop__LOOPlus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_LOOP_Merge --></label>
+        <name>Loop__Mass_LOOP_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_LOOPlus --></label>
+        <name>Loop__Mass_LOOPlus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_SMS --></label>
+        <name>Send_SMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- UpsellCrosssellOpportunity --></label>
+        <name>UpsellCrosssellOpportunity</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+</CustomObjectTranslation>

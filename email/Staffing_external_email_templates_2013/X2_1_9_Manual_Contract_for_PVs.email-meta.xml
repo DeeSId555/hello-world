@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Contract Needed</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>2.1.9 Manual Contract for PVs</name>
+    <style>freeForm</style>
+    <subject>Your Project Volunteer contract for NCS with The Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative
+
+Date: as per date of email
+
+Dear {!Job_placement__c.Contact__c}
+
+Please download and read your contract and its conditions (content below) before you submit your response at the bottom of this page. Please submit a response within 7 days of receiving this contract.
+
+Once you have submitted a response you will be unable to amend it so please read carefully before submitting.
+
+You can only submit one response per contract. Once an acceptance is submitted, an enforceable contract has been entered into between yourself and The Challenge.
+
+1. We are pleased to be able to offer you a contract of volunteering on NCS with The Challenge summer programme.  Each contract is for a fixed term and the beginning and end date for each fixed term are set out in the timetable ( your Timetable is available on the Staffing Website). 
+https://staffing.the-challenge.org/Login.aspx?ReturnUrl=%2fsecure%2fMyRole.aspx
+Each September day is regarded as a separate contract, therefore you may receive up to 8 contracts. Please submit a response for all contracts.
+
+2. Each employment contract is made up from the applicable parts of this section, and 2014 Project Volunteer Agreement that is attached to this email.
+
+3. Your volunteering cannot commence until we have received (1) two satisfactory references; (2) an enhanced DBS check; (3) a copy of the enclosed terms confirming your acceptance of each contract; Please see the Terms and Conditions for details of what constitutes satisfactory evidence. If you fail to do so you will be unable to commence volunteering. If this is problematic please contact your local staffing team.
+
+4. This email and contract relates to the NCS: Real Challenge Action work date on the {!Job_placement__c.Assignment_end_date__c}.
+
+Yes – I accept and hereby sign the contract
+I hereby understand that by submitting my response as ‘Yes – I accept and hereby sign the contract’ I am accepting the work schedule, terms and conditions outlined in the contract
+
+No – I can no longer work this wave (day)
+I hereby understand that by submitting my response as ‘No – I can no longer work this wave (day)’ I am declining the work schedule outlined in my contract and I wish to explore other schedules.
+
+No – I do not want to work for NCS with The Challenge
+I hereby understand that by submitting my response as ‘No – I do not want to work for NCS with The Challenge’ I am declining the terms and schedules outlined in my contract. I also understand that if I do not want to work for The Challenge I must inform the Staffing team in writing.
+
+Submit your response below
+
+Yes – I accept and hereby sign the contract 
+http://www.clicktools.com/survey?iv=6n28fx5wuas9&amp;q1={!Job_placement__c.Id}&amp;q2=1 
+
+No – I can no longer work this wave (days)
+http://www.clicktools.com/survey?iv=6n28fx5wuas9&amp;q1={!Job_placement__c.Id}&amp;q2=2 
+
+No – I do not want to work for NCS with The Challenge 
+http://www.clicktools.com/survey?iv=6n28fx5wuas9&amp;q1={!Job_placement__c.Id}&amp;q2=3 
+
+Yours sincerely,
+The Challenge
+{!Job_placement__c.Staffing_Associate_email__c}
+
+
+2.1.0</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_29983638</developerName>
+        <masterLabel>CLUSTER</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Contact.School_s_subcluster__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>CNE Birmingham</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CNW Birmingham</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>NW Birmingham</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>NE Birmingham</sourceValue>
+            </sourceValues>
+            <value>North</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>CSE Birmingham</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CSW Birmingham</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>SE Birmingham</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>SW Birmingham</sourceValue>
+            </sourceValues>
+            <value>South</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Contact.ApplicantID__c</field>
+    </columns>
+    <columns>
+        <field>Contact.School_s_zone__c</field>
+    </columns>
+    <columns>
+        <field>Contact.School_s_cluster__c</field>
+    </columns>
+    <columns>
+        <field>Contact.School_s_borough_or_area__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Withdrawal_confirmed_by_Owner__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Contact.Date_signed_up__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Date_of_YPPG_withdrawal_notification__c</field>
+    </columns>
+    <columns>
+        <field>Account.Date_of_first_payment__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CONTACT_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Young_Person</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LAST_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.NCS_Application_Primary_Season__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Summer 2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Date_of_first_payment__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Dupe_exclude_from_processes__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FIRST_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.School_s_cluster__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>2016 Birmingham</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_29983638</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>RH 2016 Payments Summer</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <sortColumn>Account.Date_of_first_payment__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

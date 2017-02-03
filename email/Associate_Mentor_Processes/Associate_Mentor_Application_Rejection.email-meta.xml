@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Rejection email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>2b. Associate Mentor Application Rejection</name>
+    <style>freeForm</style>
+    <subject>Your {!Job_Application__c.Roles__c}  Application</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Thanks once again for applying for the {!Job_Application__c.Roles__c}  role on NCS with The Challenge this summer.
+
+
+
+This is a very important role on the programme, and potentially a fantastic opportunity. So, we need to make sure that everyone who takes it on is prepared and ready for the responsibility.
+
+
+
+Unfortunately, your application does not contain enough information for us to invite you to training at this stage.
+
+
+
+HOWEVER, if you really want to be considered for the {!Job_Application__c.Roles__c}  role this year, there is still time to go back and re-submit your application.
+
+
+
+Remember:
+
+
+
+- You don&apos;t need to have loads of experience; you do need to show you are committed to trying your best.
+
+- Try to be really clear about why you want the role, and what you can offer
+
+
+
+I hope you&apos;ll consider re-submitting your application. If you have any questions, get in touch with us at grads@the-challenge.org.
+
+
+
+
+
+Best wishes,
+
+
+
+
+The Challenge Society Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

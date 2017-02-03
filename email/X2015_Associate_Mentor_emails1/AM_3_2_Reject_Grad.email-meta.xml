@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to unsuccessful grad applicants</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>AM 3.2 Reject - Grad</name>
+    <style>formalLetter</style>
+    <subject>Thank you for applying to be an Associate Mentor</subject>
+    <textOnly>We have received your application
+Dear {!Contact.FirstName},
+
+Thank you for applying for an Associate Mentor role on NCS with The Challenge.
+
+This is an important part of our NCS staff team. We need to make sure that every member of the team is ready to take on the responsibility of their role, and that we are able to give each member the right level of support.
+
+I&apos;m afraid that there is not enough information in your application for us to proceed, so we cannot accept your application at this point.
+
+This means that, based on your application, we feel this is not be the right time for you to take on the role.
+
+You are more than welcome to apply again in the future.
+
+Thanks again for taking the time to apply.
+With kind regards,
+
+NCS Graduates Team
+The Challenge
+graduates@the-challenge.org</textOnly>
+    <type>html</type>
+</EmailTemplate>

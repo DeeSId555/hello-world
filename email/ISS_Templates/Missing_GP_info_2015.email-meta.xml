@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Missing GP info 2015</name>
+    <style>none</style>
+    <subject>NCS with The Challenge Application: Missing GP information</subject>
+    <textOnly>NCSTHECHALLENGE.ORG
+
+Missing GP information
+
+
+Dear {!Contact.Parent_Name__c},
+
+Thank you for filling in {!Contact.FirstName}&apos;s application for NCS.
+
+We are currently missing {!Contact.FirstName}&apos;s GP information. If you could kindly give us the information below, we will add this to {!Contact.FirstName}&apos;s application:
+
+GP Name:
+GP Address:
+GP Telephone:
+
+Please do not hesitate to contact us if you have any questions.
+
+
+Yours sincerely,
+
+
+Tanya Dunne
+Head of Customer Services - The Challenge
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+© The Challenge Network.
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

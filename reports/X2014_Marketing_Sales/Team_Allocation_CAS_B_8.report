@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Gender__c</field>
+    </columns>
+    <columns>
+        <field>Contact.School_s_code_display__c</field>
+    </columns>
+    <columns>
+        <field>Wave_Selection__c.UNMOVABLE_Assigned_Team__c</field>
+    </columns>
+    <columns>
+        <field>Contact.RCA_dates_my_child_cannot_attend__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Team_Challenge_1st_Choice__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Team_Challenge_2nd_choice__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Team_Challenge_3rd_choice__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Access_category_2_6__c</field>
+    </columns>
+    <columns>
+        <field>DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>Contact.School_type__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>CAS B 8</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave_Selection__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Assigned,Reserved</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Team Allocation CAS B 8</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Wave_Selection__c@Wave_Selection__c.Wave__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

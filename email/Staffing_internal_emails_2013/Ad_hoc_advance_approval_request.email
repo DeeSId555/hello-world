@@ -1,0 +1,20 @@
+Hi team,
+
+An ad hoc advance request has come through. Please could you review it and approve or decline it as appropriate.
+Name: {!Job_placement__c.Contact__c}
+Ad hoc advance amount {!Job_placement__c.Ad_hoc_payment__c}
+Urgency level: {!Job_placement__c.Ad_hoc_advance_urgency__c}
+Reason for ad hoc advance: {!Job_placement__c.Reason_for_ad_hoc_advance__c}
+
+To review:
+1. Click on the link to the Job Placement: {!Job_placement__c.Link}
+2. Scroll to the section "Ad hoc advances"
+3. Review the details and select "Approved" or "Rejected" in the field "Ad hoc advance approved by Finance".
+
+Thanks,
+
+The Staffing team
+
+--------------------------------------------------------------------------------------------------
+
+This is an auto-email sent when "Date ad hoc advance requested" is not equal to NULL

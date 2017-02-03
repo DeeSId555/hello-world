@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent 24/09/15 using &apos;surveys&apos;</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Summer 15 - Completers Lloyds congratulations</name>
+    <style>none</style>
+    <subject>HeadStart - Congratulations!</subject>
+    <textOnly>HeadStart login details:
+
+Email Address {!Contact.Email}
+
+NCS ID
+
+{!Contact.NCS_ID__c}
+
+PIN {!Contact.Login_Password__c}
+
+HeadStart Website
+
+Well done from HeadStart!
+
+Hi {!Contact.FirstName},
+
+Congratulations for logging your volunteering hours! You have made such a difference to your local community and the charity that you have been supporting and should be really proud of your achievements.
+
+As you logged your hours before the deadline, you are now eligible to attend an interview with your chosen employer: Lloyds.
+
+Your next steps:
+
+We will be verifying your hours with your charity partner. If you’ve not yet given us the details of where you have been volunteering please email headstart@the-challenge.org
+You will be invited to your Lloyds workshop and Information Day in February half-term, week commencing Monday 15th February 2016
+This will be followed by an online application that you will need to complete
+Successful candidates will then be invited to your communications coaching session and formal interview, due to take place during the Easter holidays in 2016.
+Successful candidates will start their new role at the start of the Summer Holiday (where they will work full-time and complete a month long training course in August with Lloyds)
+
+
+Congratulations again and remember you can continue volunteering if you wish to and keep logging those hours on the HeadStart website.
+
+We will be in touch with more information as it becomes available.
+
+
+Best wishes
+
+HeadStart Team
+
+Any questions? Email the HeadStart team, check out our website or get in touch on facebook.
+
+
+The HeadStart team
+
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subsribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

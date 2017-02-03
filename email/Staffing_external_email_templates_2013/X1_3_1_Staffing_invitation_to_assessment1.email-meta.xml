@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Updated for 2014 SN. Plain text requires link to booking form.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>1.3.1 Staffing invitation to assessment</name>
+    <style>freeForm</style>
+    <subject>Invitation to an assessment at NCS with The Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+Dear {!Contact.FirstName}
+
+Thank you for applying for a role at NCS with The Challenge. I am writing to invite you to a group assessment with us.
+
+Please click on the button below to register for an assessment.
+http://thechallenge.force.com/AvailableDates?JType={!Job_Application__c.Id}&amp;Type={!Job_Application__c.00NC0000005EVyp}&amp;key={!Job_Application__c.ContactId__c}
+
+
+Once you have booked onto an assessment you will receive a confirmation email with relevant details.
+
+If you cannot access the booking page for any reason, please call me on the number below.
+
+The Challenge is an equal opportunities employer. Please notify us of any disability that you have that may require reasonable adjustment on our part during the assessment.
+
+If you are successful at this assessment you will be asked to attend one or more days training depending on your role from the beginning October
+
+Thank you for your interest in The Challenge.
+
+Best Wishes,
+
+{!Contact.OwnerFullName}
+{!Contact.OwnerPhone}
+{!Contact.Contact_Owner_alternative_email__c}
+NCS with The Challenge
+
+
+CR 1.3.1</textOnly>
+    <type>html</type>
+</EmailTemplate>

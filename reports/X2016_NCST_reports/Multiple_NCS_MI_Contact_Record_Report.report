@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.Inclusion_Details__r.NCS_MI_Contacts__r$Id</field>
+    </columns>
+    <description>This report shows the number of duplicate NCS MI Contact record against an Inclusion Detail record.</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Inclusion_Details__r$Count_of_NCSMIContact_records__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Multiple NCS MI Contact Record Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_Inclusion_Details_with_NCS_MI_Contacts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

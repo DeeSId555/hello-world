@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Booking__c$Name</field>
+    </columns>
+    <description>Report used to track HEK Booking progress 2012</description>
+    <filter>
+        <criteriaItems>
+            <column>Booking__c$Cluster_Pull__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>2011</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Booking__c$Cluster_Pull__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>HEK</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Booking__c$Cluster_Pull__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>HEK Booking progress 2012</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Bookings__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Booking__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

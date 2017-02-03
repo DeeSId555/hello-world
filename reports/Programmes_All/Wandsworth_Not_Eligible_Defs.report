@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.Team__c</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Attendance__c.Total_number_of_recorded_absences__c</field>
+    </columns>
+    <columns>
+        <field>Attendance__c.Day_left_the_programme__c</field>
+    </columns>
+    <columns>
+        <field>PHONE3</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <column>Contact.Wave_started__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Wandsworth B 5,Wandsworth B 6,Wandsworth B 7,Wandsworth B 8,Wandsworth B 9,Wandsworth B 10</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Attendance__c.Day_left_the_programme__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>PC 1,PC 2,PC 3,PC 4,PC 5,TC 1,TC 2,TC 3,TC 4,TC 5,RCD 1,RCD 2,RCD 3,RCD 4,RCA 1,RCA 2,RCA 3,RCA 4</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Attendance__c.Total_number_of_recorded_absences__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>17</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Wandsworth Not Eligible Defs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Attendance__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

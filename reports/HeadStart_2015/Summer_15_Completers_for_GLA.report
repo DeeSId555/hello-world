@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CONTACT_ID</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.YP_First_name_from_HS_Application_Form__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.YP_Last_name_from_HS_Application_Form__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_Application_form_Email__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_Hours_Total__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.X16_HS_hours_verified__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.Interview_preference__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>HS_Activity__c.Date_congratulations_email_sent__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>7/1/2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.HS_Hours_Total__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>16</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.HS_Application_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Placement Confirmed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.Interview_preference__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>GLA (London only)</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Summer 15 - Completers for GLA</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$HS_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

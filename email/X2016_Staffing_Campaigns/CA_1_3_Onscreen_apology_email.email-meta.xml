@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>Unscreened apology email (post autumn)</name>
+    <style>formalLetter</style>
+    <subject>Your application for the NCS seasonal roles</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}.
+Dear {!Contact.FirstName},
+
+
+
+Thank you for applying for the NCS autumn programme. Unfortunately, we had already finished recruitment when we received your application, and the autumn programme is about to finish.
+
+
+
+Although we will not be able to work with you this autumn, we do still have exciting opportunities coming up in the summer!
+
+
+
+The NCS 2016 Summer programme
+
+
+
+We would love for you to apply to work with us in summer 2016 instead. Currently, we are updating our application form to include new, more relevant questions for our 2016 roles. As a result, we regret that we will be unable to use your recent application form for 2016 as it does not include the updated questions.
+
+
+
+When will application for the 2016 seasonal roles open?
+
+
+
+Applications for our 2016 seasonal roles do not open until 14 December 2015. We’ll be in touch when you are able to create a new application!
+
+
+
+If you do re-submit your application in December, we’ll do our best to make sure that your application is prioritised.
+
+
+
+We look forward to receiving your application in December!
+
+
+
+Best wishes,
+
+
+
+The Staffing Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

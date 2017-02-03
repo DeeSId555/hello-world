@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>******************* COPY needed **********************</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>7.1 Confirmation of RCA</name>
+    <style>freeForm</style>
+    <subject>RCA Confirmation</subject>
+    <textOnly>*** TEMPLATE **** TEMPLATE **** TEMPLATE **** TEMPLATE ****
+
+Dear {!Contact.FirstName},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.Contact_Owner_alternative_email__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

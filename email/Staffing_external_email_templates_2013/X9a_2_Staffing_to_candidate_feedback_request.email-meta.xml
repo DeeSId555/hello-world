@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Apology for miscommunication.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>9a.5. Feed back sent in error apology :</name>
+    <style>freeForm</style>
+    <subject>Miscommunication Apology</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+Dear {!Contact.FirstName}
+
+Feedback Request Sent in Error.
+
+You recently received contact from The Challenge Network asking you to complete a feedback survey.  This request was sent in error due to a systems malfunction and we wish to offer you our apologies for any confusion or inconvenience caused. You do not need to complete the survey.
+
+Thank you for your original interest in The Challenge.
+
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.Contact_Owner_alternative_email__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Access_category_2_6__c</field>
+    </columns>
+    <columns>
+        <field>Contact.School_s_cluster__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Total_payment_received__c</field>
+    </columns>
+    <columns>
+        <field>CUST_ID</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CONTACT_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Young_Person</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.NCS_Application_Primary_Season__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>summer 2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Waiting_list_waves__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Inclusion_Details__c.Support_Level__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>&quot;4a – Extra APL support for YPs with restricted mobility, language barrier or learning difficulties&quot;,4b - extra APL support for challenging behaviour or mental health conditions,&quot;5.05 - support worker required, can share with another YP&quot;,5.1 - full-time support worker required,5.2 - requires 2 full time support workers</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.School_s_cluster__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>ESurrey,WSurrey</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>High SL on WL in Surrey</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Inclusion_Details__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

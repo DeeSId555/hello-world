@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Regions</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Regions</value>
+    </caseValues>
+    <fields>
+        <help><!-- Sentence describing the travel time that YP and PG should leave in order to ensure they reach venues on time. Used to merge into the timetables supplied to YP and PG for Waves 1 - 11 --></help>
+        <label><!-- Description of YPPG travel time Wave1-11 --></label>
+        <name>Description_of_YPPG_travel_time_Wave1_11__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sentence describing the travel time that YP and PG should leave in order to ensure they reach venues on time. Used to merge into the timetables supplied to YP and PG for Wave 12 --></help>
+        <label><!-- Description of YPPG travel time Wave 12 --></label>
+        <name>Description_of_YPPG_travel_time_Wave_12__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field needs to be checked for the Region to show on the OBS website --></help>
+        <label><!-- OBS region --></label>
+        <name>OBS_region__c</name>
+    </fields>
+    <fields>
+        <label><!-- OBS region description --></label>
+        <name>OBS_region_description__c</name>
+    </fields>
+    <fields>
+        <help><!-- RCD start time for YP --></help>
+        <label><!-- RCD start time YP --></label>
+        <name>RCD_start_time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique code for the region --></help>
+        <label><!-- Region code --></label>
+        <name>Region_code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Regional lead within the Programmes dept --></help>
+        <label><!-- Regional lead Programmes --></label>
+        <name>Regional_lead_Programmes__c</name>
+        <relationshipLabel><!-- Regions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Showcase end time --></label>
+        <name>Showcase_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Showcase start time --></label>
+        <name>Showcase_start_time__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

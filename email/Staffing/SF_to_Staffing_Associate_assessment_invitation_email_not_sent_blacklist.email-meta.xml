@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This is send to Staffing Associate record owner assessment invitation is not sent</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SF to Staffing Associate assessment invitation email not sent - Do Not Rehire</name>
+    <style>none</style>
+    <subject>Error: Assessment invitation not sent</subject>
+    <textOnly>Hi {!Contact.OwnerFirstName},
+
+The assessment invitation email that you just tried to send to {!Job_Application__c.Contact_Name__c} did not go through, as their rehire status is set as &quot;Do Not Rehire&quot;.
+Please click on this click to view the Job Application: {!Job_Application__c.Link}
+
+This is a standard email, sent automatically when someone tries to send a assessment invitation email and the contact is blacklisted.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

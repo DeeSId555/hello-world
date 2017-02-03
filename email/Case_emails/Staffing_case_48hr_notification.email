@@ -1,0 +1,12 @@
+Hi {!Case.OwnerFirstName},
+
+It has now been 6 working days since case #{!Case.CaseNumber} was modified ({!Case.LastModifiedDate})
+
+Please review the case and response and/or close the case where appropriate.
+{!Case.Link}
+
+Thanks,
+
+Staffing
+
+This is an automatic email sent to the case owner when it has not been modified or closed in the last 48 hours

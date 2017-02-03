@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2015 YP IWL PIE EMAIL</name>
+    <style>none</style>
+    <subject>Your NCS Parents’ Information Evening</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTHECHALLENGE.ORG
+
+Your NCS Parents’ Information Evening
+
+
+
+
+Dear {!Contact.Name},
+
+Thank you for agreeing to come to the first day of NCS on {!Wave_Selection__c.PC_KO_Day__c} in the hope that a place will become available. Although you are still on the waiting list, we hope that a place will become available on the day. So, we’d like to invite you and your parent or guardian to come to a short Parents’ Information Evening  about the programme. Here you’ll have the chance to find out more about what’s coming up on NCS, ask us questions, and meet young people who have signed up to the programme. All the details you need are below:
+
+Date: {!Wave_Selection__c.Info_Eve_Date__c}
+Time: {!Wave_Selection__c.Info_Eve_time__c}
+Address: {!Wave_Selection__c.Info_Eve_venue_and_address__c}  {!Wave__c.Info_eve_additional_info__c}
+
+It will last for around one hour, with a short presentation starting within the first 15 minutes. It really helps us if you can arrive promptly so we can start on time.
+
+Please let us know if you are coming by emailing  {!Wave_Selection__c.Info_Eve_SC_email_address__c} or by calling {!Wave_Selection__c.Info_Eve_Mktg_mobile_number__c}.
+
+If you can’t make it but would still like to meet us, we will be holding other evenings for NCS programmes running in different areas, or on different dates. Please contact us for details of these alternative Parents’ Information Evenings.
+
+This event is for parents or guardians, participants and those who have agreed to come along to the first day in the hope of getting a place. However, if you want to bring a friend who might be interested in NCS, please just let us know when you tell us you are coming. We’d be happy to meet them and discuss the likelihood of them getting a place on NCS.
+
+Yours sincerely,
+
+{!Wave_Selection__c.Info_Eve_Mktg_lead_name__c}
+The Challenge
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451.  Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

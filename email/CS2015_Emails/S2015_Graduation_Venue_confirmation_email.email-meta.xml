@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>S2015 Graduation Venue confirmation email</name>
+    <style>none</style>
+    <subject>IMPORTANT - Graduation venue update</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTHECHALLENGE.ORG
+
+Meeting point information for
+Saturday 5 September
+
+
+Dear Parent or Guardian of {!Contact.Name} and {!Contact.FirstName},
+
+You be gradding at {!Wave__c.Graduation_Venue__c} which is here {!Wave__c.Graduation_Venue_Address__c}
+
+Yours sincerely,
+Jo Lunt
+Customer Services Manager
+The Challenge
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451.  Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

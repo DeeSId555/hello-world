@@ -1,0 +1,488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head><!-- This is a simple example template that you can edit to create your own custom templates -->
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" /><!-- Facebook sharing information tags -->
+	<meta content="*|MC:SUBJECT|*" property="og:title" />
+	<title>*|MC:SUBJECT|*</title>
+	<style type="text/css">#outlook a{
+			padding:0;
+		}
+		body{
+			width:100% !important;
+		}
+		body{
+			-webkit-text-size-adjust:none;
+		}
+		body{
+			margin:0;
+			padding:0;
+		}
+		img{
+			border:none;
+			font-size:14px;
+			font-weight:bold;
+			height:auto;
+			line-height:100%;
+			outline:none;
+			text-decoration:none;
+			text-transform:capitalize;
+		}
+		#backgroundTable{
+			height:100% !important;
+			margin:0;
+			padding:0;
+			width:100% !important;
+		}
+	/*
+	@tab Page
+	@section background color
+	@tip Set the background color for your email. You may want to choose one that matches your company's branding.
+	@theme page
+	*/
+		body,.backgroundTable{
+			/*@editable*/background-color:#FAFAFA;
+		}
+	/*
+	@tab Page
+	@section email border
+	@tip Set the border for your email.
+	*/
+		#templateContainer{
+			/*@editable*/border:1px solid #DDDDDD;
+		}
+	/*
+	@tab Page
+	@section heading 1
+	@tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+	@theme heading1
+	*/
+		h1,.h1{
+			/*@editable*/color:#202020;
+			display:block;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:34px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:100%;
+			margin-bottom:10px;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Page
+	@section heading 2
+	@tip Set the styling for all second-level headings in your emails.
+	@theme heading2
+	*/
+		h2,.h2{
+			/*@editable*/color:#202020;
+			display:block;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:30px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:100%;
+			margin-bottom:10px;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Page
+	@section heading 3
+	@tip Set the styling for all third-level headings in your emails.
+	@theme heading3
+	*/
+		h3,.h3{
+			/*@editable*/color:#202020;
+			display:block;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:26px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:100%;
+			margin-bottom:10px;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Page
+	@section heading 4
+	@tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+	@theme heading4
+	*/
+		h4,.h4{
+			/*@editable*/color:#202020;
+			display:block;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:22px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:100%;
+			margin-bottom:10px;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Header
+	@section preheader style
+	@tip Set the background color for your email's preheader area.
+	@theme page
+	*/
+		#templatePreheader{
+			/*@editable*/background-color:#FAFAFA;
+		}
+	/*
+	@tab Header
+	@section preheader text
+	@tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
+	*/
+		.preheaderContent div{
+			/*@editable*/color:#505050;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:10px;
+			/*@editable*/line-height:100%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Header
+	@section preheader link
+	@tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
+	*/
+		.preheaderContent div a:link,.preheaderContent div a:visited{
+			/*@editable*/color:#336699;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+		.preheaderContent div img{
+			height:auto;
+			max-width:600px;
+		}
+	/*
+	@tab Header
+	@section header style
+	@tip Set the background color and border for your email's header area.
+	@theme header
+	*/
+		#templateHeader{
+			/*@editable*/background-color:#FFFFFF;
+			/*@editable*/border-bottom:0;
+		}
+	/*
+	@tab Header
+	@section header text
+	@tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+	*/
+		.headerContent{
+			/*@editable*/color:#202020;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:34px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:100%;
+			/*@editable*/padding:0;
+			/*@editable*/text-align:center;
+			/*@editable*/vertical-align:middle;
+		}
+	/*
+	@tab Header
+	@section header link
+	@tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
+	*/
+		.headerContent a:link,.headerContent a:visited{
+			/*@editable*/color:#336699;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+		#headerImage{
+			height:auto;
+			max-width:600px !important;
+		}
+	/*
+	@tab Body
+	@section body style
+	@tip Set the background color for your email's body area.
+	*/
+		#templateContainer,.bodyContent{
+			/*@editable*/background-color:#FDFDFD;
+		}
+	/*
+	@tab Body
+	@section body text
+	@tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+	@theme main
+	*/
+		.bodyContent div{
+			/*@editable*/color:#505050;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:14px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Body
+	@section body link
+	@tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+	*/
+		.bodyContent div a:link,.bodyContent div a:visited{
+			/*@editable*/color:#336699;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+		.bodyContent img{
+			display:inline;
+			margin-bottom:10px;
+		}
+	/*
+	@tab Footer
+	@section footer style
+	@tip Set the background color and top border for your email's footer area.
+	@theme footer
+	*/
+		#templateFooter{
+			/*@editable*/background-color:#FDFDFD;
+			/*@editable*/border-top:0;
+		}
+	/*
+	@tab Footer
+	@section footer text
+	@tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+	@theme footer
+	*/
+		.footerContent div{
+			/*@editable*/color:#707070;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:12px;
+			/*@editable*/line-height:125%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Footer
+	@section footer link
+	@tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+	*/
+		.footerContent div a:link,.footerContent div a:visited{
+			/*@editable*/color:#336699;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+		.footerContent img{
+			display:inline;
+		}
+	/*
+	@tab Footer
+	@section social bar style
+	@tip Set the background color and border for your email's footer social bar.
+	*/
+		#social{
+			/*@editable*/background-color:#FAFAFA;
+			/*@editable*/border:1px solid #F5F5F5;
+		}
+	/*
+	@tab Footer
+	@section social bar style
+	@tip Set the background color and border for your email's footer social bar.
+	*/
+		#social div{
+			/*@editable*/text-align:center;
+		}
+	/*
+	@tab Footer
+	@section utility bar style
+	@tip Set the background color and border for your email's footer utility bar.
+	*/
+		#utility{
+			/*@editable*/background-color:#FDFDFD;
+			/*@editable*/border-top:1px solid #F5F5F5;
+		}
+	/*
+	@tab Footer
+	@section utility bar style
+	@tip Set the background color and border for your email's footer utility bar.
+	*/
+		#utility div{
+			/*@editable*/text-align:center;
+		}
+		#monkeyRewards img{
+			max-width:160px;
+		}
+	</style>
+</head>
+<body leftmargin="0" marginheight="0" marginwidth="0" offset="0" topmargin="0">
+<center>
+<table border="0" cellpadding="0" cellspacing="0" height="100%" id="backgroundTable" width="100%">
+	<tbody>
+		<tr>
+			<td align="center" valign="top"><!-- // Begin Template Preheader \\ -->
+			<table border="0" cellpadding="10" cellspacing="0" id="templatePreheader" width="600">
+				<tbody>
+					<tr>
+						<td class="preheaderContent" valign="top"><!-- // Begin Module: Standard Preheader \\ -->
+						<table border="0" cellpadding="10" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+									<td valign="top">
+									<div mc:edit="std_preheader_content">Give time, get ahead this Christmas!</div>
+									</td>
+									<td valign="top" width="180">
+									<div mc:edit="std_preheader_links"><!-- *|END:IF|* --></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- // End Module: Standard Preheader \\ --></td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- // End Template Preheader \\ -->
+
+			<table border="0" cellpadding="0" cellspacing="0" id="templateContainer" width="600">
+				<tbody>
+					<tr>
+						<td align="center" valign="top"><!-- // Begin Template Header \\ -->
+						<table border="0" cellpadding="0" cellspacing="0" id="templateHeader" width="600">
+							<tbody>
+								<tr>
+									<td class="headerContent"><!-- // Begin Module: Standard Header Image \\ --><img alt="" border="0" mc:edit="header_image" src="https://gallery.mailchimp.com/b137e98c9da54ed77d9672518/images/771c3f85-9195-4faa-b0c2-2a6e410ce369.png" style="margin: 0; padding: 0;" /> <!-- // End Module: Standard Header Image \\ --></td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- // End Template Header \\ --></td>
+					</tr>
+					<tr>
+						<td align="center" valign="top"><!-- // Begin Template Body \\ -->
+						<table border="0" cellpadding="10" cellspacing="0" id="templateBody" width="600">
+							<tbody>
+								<tr>
+									<td class="bodyContent" valign="top"><!-- // Begin Module: Standard Content \\ -->
+									<table border="0" cellpadding="10" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td valign="top">
+												<div mc:edit="std_content00">&nbsp;
+												<table class="GeneratedTable" style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-size: medium; line-height: normal; width: 600px;">
+													<thead>
+													</thead>
+													<tbody>
+														<tr>
+															<td>
+															<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; text-align: center;"><a href="http://www.fareshare.org.uk/" target="_blank"><img align="none" src="http://www.pleeceandco.com/wp-content/uploads/2013/09/FareShare_Logo_Hi-Res.png" style="height: 98px; line-height: 14px; width: 203px; margin: 0px;" /></a></p>
+
+															<div dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">&nbsp;</div>
+
+															<div dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-family:trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif"><span style="font-size:14.6667px; line-height:1.38; white-space:pre-wrap">Fareshare aims to fight hunger and tackle food waste by sending out food<span style="font-family:trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif"><span style="font-size:14.6667px; line-height:1.38; white-space:pre-wrap"> to charities and community groups. </span></span></span></span></div>
+
+															<div dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-family:trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif"><span style="font-size:14.6667px; line-height:1.38; white-space:pre-wrap">This is an amazing opportunity for</span></span></div>
+
+															<div>you to get involved with helping those less fortunate by sorting and distributing food at food banks.</div>
+
+															<div><span style="font-family:trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif"><span id="docs-internal-guid-27b4b57d-8154-ad46-4605-52283150731d"><strong style="font-size:14.6667px; font-weight:700; vertical-align:baseline; white-space:pre-wrap">How to sign up? </strong><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">Visit the Fareshare website to contact your local distribution centre.</span></span></span></div>
+
+															<div>&nbsp;</div>
+															</td>
+															<td style="vertical-align: top;">
+															<div style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; text-align: center;"><a href="https://www.samaritans-purse.org.uk/" target="_blank"><img align="none" height="122" src="https://laurenecox.files.wordpress.com/2013/11/sponsorsamaritanspurse.png" style="height: 122px; line-height: 14px; width: 197px; margin: 0px;" width="197" /></a></div>
+
+															<div style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-family:trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif"><span style="font-size:14.6667px; white-space:pre-wrap">Operation: Christmas Child.</span><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">Build a shoebox for a child in need, Samaritan&rsquo;s Purse will send it and it can all be done online! </span></span></div>
+
+															<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-family:trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif"><span id="docs-internal-guid-27b4b57d-8155-bcff-1a04-5bda931ad4e2"><strong style="background-color:rgb(255, 255, 255); font-size:14.6667px; font-weight:700; vertical-align:baseline; white-space:pre-wrap">How to sign up? </strong><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">Complete the </span><a href="https://www.samaritans-purse.org.uk/what-we-do/operation-christmas-child/get-involved-occ/" style="text-decoration: none;"><u style="background-color:rgb(255, 255, 255); color:rgb(17, 85, 204); font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">form </u></a><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">on the Samaritans&rsquo; Purse website.</span></span></span></p>
+
+															<div>&nbsp;</div>
+															</td>
+														</tr>
+														<tr>
+															<td style="vertical-align: top;">
+															<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; text-align: center;"><br />
+															<br />
+															<a href="http://www.crisis.org.uk/pages/christmas.html" target="_blank"><img align="none" height="99" src="https://community.crisis.org.uk/image/christmas-dm-reserve-a-place-2015/christmas_tag.png" style="height: 99px; line-height: 14px; width: 215px; margin: 0px;" width="215" /></a></p>
+
+															<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-family:trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif"><span id="docs-internal-guid-27b4b57d-8155-f9a6-985d-ed570def4c79"><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">Volunteer with Crisis to help homeless people this Christmas. </span><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">Crisis have a wide range of roles for you to get involved with. &nbsp;</span><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">If you want to interact with different people and be in a </span></span></span></p>
+
+															<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-family:trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif"><span><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">festive environment,this is for &nbsp;you!</span></span></span></p>
+
+															<div><span style="font-family:trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif"><span id="docs-internal-guid-27b4b57d-8155-f9a6-985d-ed570def4c79"><strong style="font-size:14.6667px; font-weight:700; vertical-align:baseline; white-space:pre-wrap">How to sign up? </strong><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">Register as a </span></span></span></div>
+
+															<div><span style="font-family:trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif"><span><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">volunteer on the Crisis website.</span></span></span></div>
+															</td>
+															<td>
+															<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; text-align: center;">&nbsp;</p>
+
+															<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; text-align: center;"><span style="font-family:trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif"><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap"><a href="http://amchurch.co.uk/soup-kitchen/" target="_blank"><img align="none" src="https://gallery.mailchimp.com/b137e98c9da54ed77d9672518/images/8e1bd831-2019-4435-b7ec-6fb35ff754dd.png" style="height: 119px; line-height: 14px; width: 105px; margin: 0px;" /></a></span></span></p>
+
+															<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-family:trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif"><span id="docs-internal-guid-27b4b57d-8156-2808-dbf4-363fa9c59560"><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">The Soup kitchen provides free meals for vulnerable people everyday. You can get involved with prepping and serving meals or helping out in the office. This is a brilliant way for you to get involved with giving back to people in need this Christmas.</span></span></span></p>
+
+															<div><span style="font-family:trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif"><span id="docs-internal-guid-27b4b57d-8156-2808-dbf4-363fa9c59560"><strong style="font-size:14.6667px; font-weight:700; vertical-align:baseline; white-space:pre-wrap">How to sign up? </strong><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">Email </span><a href="mailto:soupvolunteer@amchurch.co.uk" style="text-decoration: none;"><u style="color:rgb(17, 85, 204); font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">soupvolunteer@amchurch.co.uk</u></a><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap"> for more information.</span></span></span></div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+															<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><br />
+															&nbsp; &nbsp;&nbsp;<a href="https://www.teenagecancertrust.org/" target="_blank"><img align="none" height="108" src="http://stephensstory.co.uk/wp-content/uploads/2014/04/teenage-cancer-trust1.png" style="height: 108px; line-height: 14px; width: 200px; margin: 0px;" width="200" /></a></p>
+
+															<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-family:trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif"><span id="docs-internal-guid-27b4b57d-8156-5de1-b2f2-46579d349d80"><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">Teenage Cancer Trust is dedicated to creating world-class cancer services for young people in the UK so young people don&rsquo;t have to face cancer alone. You have the opportunity to fundraise at a local Sainsburys store for this great cause! </span></span></span></p>
+
+															<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-family:trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif"><span id="docs-internal-guid-27b4b57d-8156-5de1-b2f2-46579d349d80"><strong style="font-size:14.6667px; font-weight:700; vertical-align:baseline; white-space:pre-wrap">How to sign up? </strong><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">Check out the </span><br />
+															<a href="https://www.teenagecancertrust.org/sites/default/files/Bucket%20Collector%20-%20Sainsburys%20Christmas%20ALL_0.pdf" style="text-decoration: none;"><u style="color:rgb(17, 85, 204); font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">volunteering opportunities</u></a><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap"> and email </span><a href="mailto:volunteers@teenagecancertrust.org" style="text-decoration: none;"><u style="color:rgb(17, 85, 204); font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">volunteers@teenagecancertrust.org</u></a><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap"> </span></span></span></p>
+
+															<div>&nbsp;</div>
+															</td>
+															<td style="vertical-align: top;">
+															<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; text-align: center;"><br />
+															<br />
+															<br />
+															<a href="http://www.redcross.org.uk/" target="_blank"><img align="none" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/British_Red_Cross_logo.svg/2000px-British_Red_Cross_logo.svg.png" style="height: 68px; line-height: 14px; width: 294px; margin: 0px;" /></a></p>
+
+															<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-family:trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif"><span id="docs-internal-guid-27b4b57d-8156-8dc7-9cd1-4fd93ed062c0"><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">The British Red Cross aims to help people in crisis whoever and wherever they are. They provide services such as protecting people in conflict and refugee support. If you want to fundraise and campaign for this cause, get involved this Christmas! </span></span></span></p>
+															<span style="font-family:trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif"><span id="docs-internal-guid-27b4b57d-8156-8dc7-9cd1-4fd93ed062c0"><strong style="font-size:14.6667px; font-weight:700; vertical-align:baseline; white-space:pre-wrap">How to sign up? </strong><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">Check out the </span><a href="https://jobs.redcross.org.uk/tlive1_webrecruitment/wrd/run/etrec105gf.open?wvid=772610007l" style="text-decoration: none;"><u style="color:rgb(17, 85, 204); font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">volunteering opportunities </u></a><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">in your area.</span></span></span></td>
+														</tr>
+														<tr>
+															<td>
+															<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><a href="https://www.cardaid.co.uk/" target="_blank"><span style="font-family:trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif"><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap"><img align="none" height="179" src="https://gallery.mailchimp.com/b137e98c9da54ed77d9672518/images/7e88ae47-4b89-4a77-86b4-a2c8d0bb6bf1.png" style="height: 179px; line-height: 14px; width: 170px; margin: 0px;" width="170" /></span></span></a></p>
+
+															<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-family:trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif"><span id="docs-internal-guid-27b4b57d-8156-fcfb-6c13-db7e77e1dfc0"><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">Card Aid works with over 200 charities to donate proceeds for selling charity Christmas cards. This a great way to get in the Christmas spirit by selling Christmas cards for a great cause.</span></span></span></p>
+
+															<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-family:trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif"><span id="docs-internal-guid-27b4b57d-8156-fcfb-6c13-db7e77e1dfc0"><strong style="font-size:14.6667px; font-weight:700; vertical-align:baseline; white-space:pre-wrap">How to sign up? </strong><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">Check out the </span><a href="https://www.cardaid.co.uk/our-shops" style="text-decoration: none;"><u style="color:rgb(17, 85, 204); font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap">Card Aid website</u></a><span style="font-size:14.6667px; vertical-align:baseline; white-space:pre-wrap"> and email volunteers@cardaid.co.uk</span></span></span></p>
+															</td>
+															<td style="vertical-align: top;">
+															<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; text-align: center;"><br />
+															<br />
+															<a href="https://www.headstart-thechallenge.org/" target="_blank"><img align="none" height="300" src="https://gallery.mailchimp.com/b137e98c9da54ed77d9672518/images/76822b75-43e6-4d3c-8be4-799a7d5b7dfd.png" style="width: 320px; height: 300px; margin: 0px;" width="320" /></a></p>
+
+															<div>&nbsp;</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<div style="text-align: center;"><img align="none" height="482" src="https://gallery.mailchimp.com/b137e98c9da54ed77d9672518/images/89e6bd4e-e62f-4eac-b70b-efc4e5da6baa.png" style="width: 363px; height: 482px; margin: 0px;" width="363" /></div>
+												</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- // End Module: Standard Content \\ --></td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- // End Template Body \\ --></td>
+					</tr>
+					<tr>
+						<td align="center" valign="top"><!-- // Begin Template Footer \\ -->
+						<table border="0" cellpadding="10" cellspacing="0" id="templateFooter" width="600">
+							<tbody>
+								<tr>
+									<td class="footerContent" valign="top"><!-- // Begin Module: Standard Footer \\ -->
+									<table border="0" cellpadding="10" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td colspan="2" id="social" valign="middle">
+												<div mc:edit="std_social"><a href="https://twitter.com/HeadStartLondon" style="font-size: 12px; line-height: 15px;"><img alt="Twitter" height="48" src="http://www.iconsdb.com/icons/preview/gray/twitter-xxl.png" style="line-height: 14px;" width="48" /></a><span style="font-size:12px; line-height:15px">&nbsp;</span><a href="https://www.facebook.com/Londonheadstart-1570591483167105/" style="font-size: 12px; line-height: 15px;"><img alt="LinkedIn" height="48" src="http://www.blueclawrestaurant.com/images/Round_Facebook_Icon_3.png" style="line-height: 14px;" width="48" /></a></div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- // End Module: Standard Footer \\ --></td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- // End Template Footer \\ --></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+</body>
+</html>

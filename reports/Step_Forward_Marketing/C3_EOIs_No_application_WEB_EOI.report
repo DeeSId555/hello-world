@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Step_Forward_Activity__c.Associate_StepFwd_email__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Activity__c.Taken_part_in_NCS_with_The_Challenge__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Step_Forward_Activity__c.Cohort__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Cohort 3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Step_Forward_Activity__c.Date_Step_Forward_Application_received__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Step_Forward_Activity__c.Associate_call_result__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Response - Not interested</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Step_Forward_Activity__c.Date_Step_Forward_EOI_received__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>C3 EOIs No application (WEB EOI)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Step_Forward_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

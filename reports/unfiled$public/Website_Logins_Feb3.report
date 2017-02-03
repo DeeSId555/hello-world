@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Website_Login__c.Date_time_logged_in__c</field>
+    </columns>
+    <columns>
+        <field>Website_Login__c.Date_time_logged_out__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Website_Login__c.Date_time_logged_in__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>2/3/2016 12:00 PM</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Website Logins Feb3</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Website_Login__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Website_Login__c.Date_time_logged_in__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

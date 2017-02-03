@@ -1,0 +1,57 @@
+<apex:page controller="ScheduleWaveSMSController" action="{!updateCustomSettings}">
+ <apex:form >
+
+ <apex:pageBlock >
+ <apex:pageMessages /><br/>
+ <table>
+ <tr>
+    <td> 
+    Wave : 
+    </td>
+    <td>
+    	<apex:inputText id="waveName" value="{!waveName}"  disabled="false"/> <br /><br />
+    </td>
+ </tr>
+ 
+ <tr> 
+   <td>Sender Id: </td>
+   <td>
+   <apex:selectList size="1" value="{!senderId}" > 
+     <apex:selectOptions value="{!senderIds}"/>
+        </apex:selectList><br /><br /> 
+   </td>
+ </tr>
+     
+ <tr>
+   <td>
+   Select Template:</td>
+   <td>
+   <apex:selectList size="1" id="contactTemplateList" value="{!contactTemplateName}" >
+   <apex:actionSupport event="onchange" rerender="SMSText" />
+   <apex:selectOption itemValue="" itemLabel="Choose the template" />
+   <apex:selectOptions value="{!templateDropDown}" />
+     </apex:selectList><br /><br /> 
+     </td>
+  </tr>
+     
+     <tr>
+   <td>SMS Text : </td> 
+   <td> <apex:inputTextArea id="SMSText"  style="width:300px;height:80px;" value="{!waveTextContent}"/><br /><br />
+   </td>
+   </tr>
+   
+   <tr>
+  <td>Date To Schedule : </td> 
+  <td><apex:inputText id="scheduleDate" value="{!dateToschedule}" style="height : 15px; width: 165px;" />
+     <apex:outputLabel style="color:red;"> [yyyy-mm-dd]</apex:outputLabel>
+     <br /><br /> 
+  </td>
+   </tr>
+  </table>
+     <apex:pageBlockButtons location="bottom" id="bottomLocation">
+        <apex:commandButton id="Schedule" value="Schedule" action="{!scheduleSMS}" disabled="{!IF (disableScheduleButton,true, false)}"/>
+        <apex:commandButton id="Cancel" value="Cancel" action="{!cancel}" />
+     </apex:pageBlockButtons>
+ </apex:pageBlock>
+ </apex:form>
+</apex:page>

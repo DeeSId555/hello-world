@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Parents Information Evening Template</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>APXTConga4__Conga_Email_Letterhead</letterhead>
+    <name>PIE Template</name>
+    <style>freeForm</style>
+    <subject>Parents Information Evening</subject>
+    <textOnly>{!Contact.Name}’s NCS (National Citizen Service) programme is almost here! Before it starts, we would like you and {!Contact.Name} to come to a short Parents’ Information Evening about the programme. Here you will have the chance to find out more about NCS, ask us questions, and meet other parents or guardians and young people who have signed up to the programme. It will last around one hour, and will take place at VENUE at TIME.
+
+Please email INFO EVE LEAD EMAIL to let us know if you can or cannot attend.
+
+Many thanks,
+NCS with The Challenge</textOnly>
+    <type>html</type>
+</EmailTemplate>

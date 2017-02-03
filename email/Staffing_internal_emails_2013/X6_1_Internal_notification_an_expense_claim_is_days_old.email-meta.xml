@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent when an expense claim is # days old</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>6.1 Internal notification: an expense claim is # days old</name>
+    <style>none</style>
+    <subject>An expense claim for {!Expenses__c.Wave__c} is {!Expenses__c.Expense_age_days__c} days overdue</subject>
+    <type>text</type>
+</EmailTemplate>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sends email to AM/SAM with login details to WTBW website</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>5. AM Role Confirmation Email (2 days)</name>
+    <style>freeForm</style>
+    <subject>Your {!Job_placement__c.Role__c} role starts in 2 days!</subject>
+    <textOnly>Dear {!Job_placement__c.Contact_Name__c},
+
+As your {!Job_placement__c.Role__c} role starts in 2 days, please go to the website to check your details that tell you where you need to be and at what time, as they may have changed.
+
+Website: http://staff.the-challenge.org/
+Username: {!Job_placement__c.Contact_email__c}
+Login pin: {!Job_placement__c.Staffing_website_login_PIN__c}
+
+If you have any problems, please email us on associate.mentors@the-challenge.org
+
+See you soon!
+
+Best wishes,
+
+The Challenge Society
+The Challenge Network</textOnly>
+    <type>html</type>
+</EmailTemplate>

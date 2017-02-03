@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SUPERCEDED from summer 2015</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>HeadStart Application Pack Template 2015 (Workflow) STAINES W6</name>
+    <style>none</style>
+    <subject>HeadStart summer places still available!</subject>
+    <textOnly>HeadStart summer spaces still available!
+
+
+
+
+Dear {!Contact.FirstName},
+
+
+It was great to meet you last week at Showcase - it was a fantastic event. We hope you are enjoying the rest of your time on NCS.  We have an exclusive opportunity for you to take part in HeadStart summer 2015 - this is only available for Staines and Slough graduates this week! This is a fantastic chance to continue your NCS journey.
+
+
+Click HERE to apply.
+
+
+The deadline for applications is midnight Sunday 9th August. Places with HeadStart charity partners - particularly those ran with The Challenge - are limited so apply early to avoid disappointment. You will need your email address / NCS ID, and the below PIN to log in to the site. You will need to type your email exactly as it is here as it is case sensitive.
+
+
+Email Address: {!Contact.Email}
+
+NCS ID: {!Contact.NCS_ID__c}
+
+PIN: {!Contact.Login_Password__c}
+
+Any questions? Email the HeadStart team, check out our website or get in touch on facebook.
+
+We look forward to receiving your application!
+
+
+Emily
+
+HeadStart
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subsribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

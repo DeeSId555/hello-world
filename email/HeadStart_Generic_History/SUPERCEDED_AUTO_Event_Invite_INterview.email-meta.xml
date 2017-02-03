@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Clone of interview template email.  Superceded.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SUPERCEDED - AUTO_Event_Invite(INterview)</name>
+    <style>none</style>
+    <subject>Confirm your Interview attendance</subject>
+    <textOnly>*|MC:SUBJECT|*
+
+Hi {!HS_Activity__c.YP_First_name_from_HS_Application_Form__c},
+
+Congratulations! We are really pleased to say that because you have completed 16+ hours of volunteering, we&apos;d like to invite you to an interview with {!HS_Activity__c.Final_Employer_choice__c}
+
+
+Details of your interview
+
+Where? {!HS_YP_Attendance__c.HS_Event_Day__c}
+
+What time? {!HS_Event_Day__c.Event_Day_Date__c}
+
+
+What you need to do
+
+It is very important that you let us know whether or not you can attend your interview at the specified time above.
+
+Please confirm or decline your attendance here.
+
+Please note, if you cannot attend your designated interview, we will do our best to arrange an alternative time for you. However, we cannot guarantee that another date will be available, so please be aware that if you decline your interview it may not be possible to secure another.
+
+We wish you the best of luck with your upcoming interview!
+
+
+Yours,
+
+HeadStart
+
+follow on Twitter | friend on Facebook | forward to a friend
+
+*|IF:LIST|* Copyright © *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.
+*|LIST:DESCRIPTION|*
+Our mailing address is:
+*|HTML:LIST_ADDRESS_HTML|*
+*|ELSE:|*  Copyright © *|CURRENT_YEAR|* *|USER:COMPANY|*, All rights reserved.
+Our mailing address is:
+*|USER:ADDRESS_HTML|*  *|END:IF|*
+
+
+*|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*
+
+unsubscribe from this list | update subscription preferences | view email in browser</textOnly>
+    <type>custom</type>
+</EmailTemplate>

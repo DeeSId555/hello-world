@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Info_to_NCS_Staff__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Overview_of_the_visit__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Junctions__r.Bookings__r$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Merton,Richmond</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Junctions__r$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>TC community partner 2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Junctions__r.Bookings__r$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>A 5,A 6,A 7,A 8,A 9,A 10</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>MRK A 2015 for practs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Account_Usages_and_Bookings__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$Ambassador_Email_Sent__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

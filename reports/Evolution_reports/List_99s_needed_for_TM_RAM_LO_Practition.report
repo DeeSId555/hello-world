@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Contact_Name__c</field>
+    </columns>
+    <columns>
+        <field>BIRTHDATE</field>
+    </columns>
+    <columns>
+        <field>PHONE3</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Role_to_assess_for__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Job_Application__c.Contact_Name__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Role_to_assess_for__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Practitioner - Drama,Residential Accommodation Manager,Practitioner - Enterprise,Practitioner - Sport,Practitioner - Photography,Practitioner - Media</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>List 99s for TM/RAM/LO/Practitioner</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Job_Application__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>BIRTHDATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

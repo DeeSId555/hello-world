@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>[DS] Link checked - subject line needs to be edited though, R?</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>1.5.2 notification of withdrawal in 7 days</name>
+    <style>freeForm</style>
+    <subject>We have not heard from you in a while</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Following your non attendance at the assessment you booked with us please contact me on the email address below if you are still interested in working for The Challenge.
+
+If we do not hear from you in 7 working days your application will be moved to our dormant applications file .
+
+If you wish to reactivate your application please select an assessment date by accessing the link below and email me so that I can reactivate your application if job placements still remain available in your area.
+
+Please click on the button below to choose your preferred assessment date and time.
+
+http://thechallenge.secure.force.com/AvailableDates?key={!Job_Application__c.ContactId__c}&amp;Type={!Job_Application__c.00NC0000005EVyp}&amp;JType={!Job_Application__c.Id}
+
+If you cannot access the booking page for any reason, please call me on the number below.
+
+Thank you for your interest in The Challenge.
+
+Kind regards
+
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.Contact_Owner_alternative_email__c}
+
+CR 1.5.2</textOnly>
+    <type>html</type>
+</EmailTemplate>

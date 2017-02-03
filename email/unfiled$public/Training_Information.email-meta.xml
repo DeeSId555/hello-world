@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>Training Information</name>
+    <style>freeForm</style>
+    <subject>Training with The Challenge last June weekend</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+I hope you are well.
+
+Please find the below arrangements for the LondonTraining Weekend on  {!HR_Event__c.Event_Date__c}- {!HR_Event__c.Event_end_date__c}.
+
+You are required to attend @ London South Bank University 103 Borough Rd, London, Greater London SE1 0AA
+
+Times: 9-5pm; on all days. Ready to start promptly.
+
+Please Bring:
+
+Passport (and visa paperwork if relevant) OR combination of birth certificate plus National Insurance card or P45/ P60.
+
+CRB (DBS) documents; We will be verifying CRB (DBS)documents so please bring your documents with you. If you don’t have a valid CRB please bring with you identification we have earlier requested for your application.
+
+Lunch and refreshments will be provided, please let us know if you require a vegetarian option, by Tuesday 25th June.
+
+After you have attended training your contract will be sent shortly before the programme starts.
+
+The training days are fully loaded with activities and information so please come prepared and full of energy. This is a great opportunity for you to really understand the summer programme and you might get a chance to meet some of the people you will be working with!
+
+Warm Regards,
+
+Sherry Kimball
+Staffing Associate
+The Challenge Network
+
+e: sherry.kimball@the-challenge.org
+m: 0778 562 3400
+t: 0207 921 4521</textOnly>
+    <type>html</type>
+</EmailTemplate>

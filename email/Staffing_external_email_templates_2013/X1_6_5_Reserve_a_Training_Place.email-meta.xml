@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>In review process</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>1.6.5.0 Reserve a Training Place</name>
+    <style>freeForm</style>
+    <subject>NCS with The Challenge - Training for your role</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+
+
+Dear {!Contact.FirstName}
+
+
+
+Following your offer of {!Job_Application__c.Role_to_assess_for__c} on NCS with the Challenge, please reserve your place at training by following the link below and completing the online form.
+
+http://thechallenge.secure.force.com/AvailableDates?key={!Job_Application__c.ContactId__c}&amp;Type={!Job_Application__c.00NC0000005EVyp}&amp;JType={!Job_Application__c.Id}
+
+
+
+
+Training is compulsory for all roles and these training dates are very important as it is the only opportunity to meet the team you will be working with. Please make every effort to move any commitments you have to be available for these dates. If this is not possible please contact me on the number below and we can discuss what options may be available.
+
+
+
+We look forward to you joining us at NCS with The Challenge.
+
+
+
+Best wishes,
+
+
+
+
+
+{!Contact.OwnerFullName}
+
+{!Contact.OwnerPhone}
+
+{!Contact.Contact_Owner_alternative_email__c}
+
+The Challenge
+
+
+
+CR 1.6.5.0</textOnly>
+    <type>html</type>
+</EmailTemplate>

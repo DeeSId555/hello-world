@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Allocation Tool Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Allocation Tool Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- This is TRUE as default and unticked when a role cannot be allocated to a girl-only wave. Only on “Column” record type. --></help>
+        <label><!-- Allow on girl-only waves --></label>
+        <name>Allow_on_girl_only_waves__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cluster record type --></label>
+        <name>Cluster_record_type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use the Clusters multipicklist to choose which clusters this role should be available for, so that regional differences can be taken into account in the tool. --></help>
+        <label><!-- Cluster(s) --></label>
+        <name>Cluster_s__c</name>
+        <picklistValues>
+            <masterLabel>2016 3BIC</masterLabel>
+            <translation><!-- 2016 3BIC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016 BBLG</masterLabel>
+            <translation><!-- 2016 BBLG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016 BHARN</masterLabel>
+            <translation><!-- 2016 BHARN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016 Birmingham</masterLabel>
+            <translation><!-- 2016 Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016 BlackCountry</masterLabel>
+            <translation><!-- 2016 BlackCountry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016 Brad</masterLabel>
+            <translation><!-- 2016 Brad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016 CLS</masterLabel>
+            <translation><!-- 2016 CLS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016 EBB</masterLabel>
+            <translation><!-- 2016 EBB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016 East Surrey</masterLabel>
+            <translation><!-- 2016 East Surrey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016 Greater Manchester North &amp; Central</masterLabel>
+            <translation><!-- 2016 Greater Manchester North &amp; Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016 HER</masterLabel>
+            <translation><!-- 2016 HER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016 HEWT</masterLabel>
+            <translation><!-- 2016 HEWT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016 HiHaB</masterLabel>
+            <translation><!-- 2016 HiHaB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016 LaW</masterLabel>
+            <translation><!-- 2016 LaW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016 Lancs</masterLabel>
+            <translation><!-- 2016 Lancs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016 SCAW</masterLabel>
+            <translation><!-- 2016 SCAW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016 SMWK</masterLabel>
+            <translation><!-- 2016 SMWK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016 STORM</masterLabel>
+            <translation><!-- 2016 STORM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016 WEB</masterLabel>
+            <translation><!-- 2016 WEB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016 West Surrey</masterLabel>
+            <translation><!-- 2016 West Surrey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAM</masterLabel>
+            <translation><!-- BAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BANT</masterLabel>
+            <translation><!-- BANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAP</masterLabel>
+            <translation><!-- BAP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BB</masterLabel>
+            <translation><!-- BB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCHIC</masterLabel>
+            <translation><!-- BCHIC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BHEN</masterLabel>
+            <translation><!-- BHEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BWELL</masterLabel>
+            <translation><!-- BWELL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barnet</masterLabel>
+            <translation><!-- Barnet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BlackCountry</masterLabel>
+            <translation><!-- BlackCountry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAB</masterLabel>
+            <translation><!-- CAB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAS</masterLabel>
+            <translation><!-- CAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAW</masterLabel>
+            <translation><!-- CAW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EEB</masterLabel>
+            <translation><!-- EEB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESurrey</masterLabel>
+            <translation><!-- ESurrey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEM</masterLabel>
+            <translation><!-- GEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greenwich</masterLabel>
+            <translation><!-- Greenwich --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HABAN</masterLabel>
+            <translation><!-- HABAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HEAL</masterLabel>
+            <translation><!-- HEAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HEN</masterLabel>
+            <translation><!-- HEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HIHO</masterLabel>
+            <translation><!-- HIHO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HITCH</masterLabel>
+            <translation><!-- HITCH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hillingdon</masterLabel>
+            <translation><!-- Hillingdon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hounslow</masterLabel>
+            <translation><!-- Hounslow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LG</masterLabel>
+            <translation><!-- LG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lanc</masterLabel>
+            <translation><!-- Lanc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRK</masterLabel>
+            <translation><!-- MRK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NBham</masterLabel>
+            <translation><!-- NBham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NCBirm</masterLabel>
+            <translation><!-- NCBirm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NManc</masterLabel>
+            <translation><!-- NManc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAW</masterLabel>
+            <translation><!-- RAW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBham</masterLabel>
+            <translation><!-- SBham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBirm</masterLabel>
+            <translation><!-- SBirm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SL</masterLabel>
+            <translation><!-- SL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SLL</masterLabel>
+            <translation><!-- SLL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STORM</masterLabel>
+            <translation><!-- STORM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SWarkS</masterLabel>
+            <translation><!-- SWarkS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SoCo</masterLabel>
+            <translation><!-- SoCo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRIW</masterLabel>
+            <translation><!-- TRIW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEB</masterLabel>
+            <translation><!-- WEB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WHR</masterLabel>
+            <translation><!-- WHR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WSurrey</masterLabel>
+            <translation><!-- WSurrey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warks</masterLabel>
+            <translation><!-- Warks --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CombinedCell --></label>
+        <name>CombinedCell__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable for Autumn --></label>
+        <name>Enable_for_Autumn__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ticking this checkbox prevents users of the SAT from allocating Priority 2 Job Placements --></help>
+        <label><!-- Freeze priority 2 JPs --></label>
+        <name>Freeze_priority_2_JPs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ticking this checkbox prevents users of the SAT from allocating Priority 3 Job Placements --></help>
+        <label><!-- Freeze priority 3 JPs --></label>
+        <name>Freeze_priority_3_JPs__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Job Placement record type for this record --></help>
+        <label><!-- JP record type --></label>
+        <name>JP_record_type__c</name>
+    </fields>
+    <fields>
+        <help><!-- This would give us the ability to set the number of days between the end of one role and the start of the next. This could be different from role to role and from year to year. Only on “Column” record type. --></help>
+        <label><!-- Min number of rest days --></label>
+        <name>Min_number_of_rest_days__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number in this fields determines the order this record appears in the SAT --></help>
+        <label><!-- Order --></label>
+        <name>Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field creates the link between the SAT and the role-specific data that is held in Role --></help>
+        <label><!-- Role --></label>
+        <name>Role__c</name>
+        <relationshipLabel><!-- Allocation Tool Settings --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This looks at the corresponding fields on the Job record to see which other Waves the Contact can be allocated to. Only on “Column” record type. --></help>
+        <label><!-- Role end --></label>
+        <name>Role_end__c</name>
+    </fields>
+    <fields>
+        <help><!-- This gives us the ability to set the standard number of days that each role type works. This is different from role to role and could change from year to year. Only on “Column” record type. --></help>
+        <label><!-- Role length --></label>
+        <name>Role_length__c</name>
+    </fields>
+    <fields>
+        <help><!-- This looks at the corresponding fields on the Job record to see which other Waves the Contact can be allocated to. Only on “Column” record type. --></help>
+        <label><!-- Role start --></label>
+        <name>Role_start__c</name>
+    </fields>
+    <fields>
+        <help><!-- In “Column” records, TeamName will be used to determine the Team allocation for Job Placements that require this --></help>
+        <label><!-- TeamName --></label>
+        <name>TeamName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box when the Team is fixed for the role, eg Practitioners (except Practitioner Plus, which is not tied to a team --></help>
+        <label><!-- Team is fixed --></label>
+        <name>Team_is_fixed__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the text of the column/rows headers in the Allocation Tool. These need to be unique values. --></help>
+        <label><!-- VisibleName --></label>
+        <name>VisibleName__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Admin 2014 --></label>
+        <name>Admin_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Admin 2015 --></label>
+        <name>Admin_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Admin 2016 --></label>
+        <name>Admin_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Column 2014 --></label>
+        <name>Column_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Column 2015 --></label>
+        <name>Column_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Column 2016 --></label>
+        <name>Column_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Row 2014 --></label>
+        <name>Row_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Row 2015 --></label>
+        <name>Row_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Row 2016 --></label>
+        <name>Row_2016</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

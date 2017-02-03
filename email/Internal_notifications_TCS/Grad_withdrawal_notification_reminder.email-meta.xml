@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto-notification sent to Contact Owner when 2 weeks have elapsed from when the Grad requested withdrawal and no action recorded</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Grad withdrawal notification reminder</name>
+    <style>none</style>
+    <subject>Reminder: Grad wants to withdraw from The Challenge Society</subject>
+    <textOnly>Hi {!Contact.OwnerFirstName}
+
+It has been two weeks since the Grad asked to withdraw from The Challenge Society and no action has been recorded. Please look at {!Contact.Name}&apos;s record and contact them to see if you can change their mind and find a way for them to remain with The Challenge Society. Click on this link to see the record: {!Contact.Link}
+
+If you are able to change their mind, then please remove the date from the &apos;Date of YPPG withdrawal notification&apos; field.
+
+If you are not able to change their mind, then please put their date of your conversation with them into the &apos;Withdrawal confirmed by Owner&apos; field, so that it is clear that they are definitely withdrawing. Please also note their reason for withdrawal.
+
+This is a standard email, sent automatically whenever a Grad notifies us that they want to withdraw.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

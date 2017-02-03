@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>TCS Personal Coaching</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>APM_call_outcome__c</fullName>
+        <externalId>false</externalId>
+        <label>Did YP accept offer of Personal Coaching</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>YP does not want coaching</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Selected for referral elsewhere</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Selected for TCN coaching</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Champion__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup relationship to the YP&apos;s Personal Coach Champion</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Link to the YP&apos;s Personal Coach Champion</inlineHelpText>
+        <label>Zonal Champion</label>
+        <lookupFilter>
+            <active>false</active>
+            <errorMessage>User does not exist or does not match filter criteria.</errorMessage>
+            <filterItems>
+                <field>$User.UserType</field>
+                <operation>equals</operation>
+                <value>Standard</value>
+            </filterItems>
+            <infoMessage>Search for the name of the person who is the Champion</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Personal_Coaching_Champion</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Coach_TCS_Mentor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>If the Personal Coach is a TCS Mentor, please add them here.</inlineHelpText>
+        <label>Coach (TCS Mentor)</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>TCS Mentor 2012, Summer staff</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Personal Coaching (Coach (TCS Mentor))</relationshipLabel>
+        <relationshipName>Personal_Coaching_TCS_Mentor</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Coach__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup relationship to the YP&apos;s coach</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Link to the YP&apos;s coach</inlineHelpText>
+        <label>Coach</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Personal_Coaching</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Coaching_end_date__c</fullName>
+        <description>Date coaching period is scheduled to end</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date coaching period is scheduled to end</inlineHelpText>
+        <label>Suggested date of last meeting</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Coaching_start_date__c</fullName>
+        <description>Date coaching period is scheduled to start</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date coaching period is scheduled to start</inlineHelpText>
+        <label>Did the YP and coach meet at RCA 4?</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Conclusion_summary__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please write a couple of paragraphs to summarise whether the YP has reached their goals, and on what skills they have gained</inlineHelpText>
+        <label>Conclusion summary</label>
+        <length>32768</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Date_YP_was_referred_elsewhere__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter date when YP was referred elsewhere</inlineHelpText>
+        <label>Date YP was referred elsewhere</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_first_meeting_after_RCA_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of first meeting after RCA 4</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Email_of_YP__c</fullName>
+        <description>Email of YP, pulled through from Contact</description>
+        <externalId>false</externalId>
+        <formula>Young_person__r.Email</formula>
+        <inlineHelpText>Email address of YP (as it appears on their Contact record)</inlineHelpText>
+        <label>Email of YP</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_of_coach__c</fullName>
+        <externalId>false</externalId>
+        <label>Email of coach</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Goal_3_personal_steps__c</fullName>
+        <description>Long text field for capturing the YP&apos;s 3 steps towards their goal</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please summarise the YP&apos;s 3 steps towards their goal</inlineHelpText>
+        <label>Personal Goal: 3 steps</label>
+        <length>800</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Goal_TCS__c</fullName>
+        <description>TCS goal, auto-populated by formula</description>
+        <externalId>false</externalId>
+        <formula>&quot;To complete 24 hours of TCS involvement&quot;</formula>
+        <inlineHelpText>The YP&apos;s TCS goal (all YP have this same goal)</inlineHelpText>
+        <label>TCS Goal</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Goal_desciption__c</fullName>
+        <description>Long text field for description of the YP&apos;s goal</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please describe the YP&apos;s goal</inlineHelpText>
+        <label>Personal Goal: description</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Meetings_attended__c</fullName>
+        <externalId>false</externalId>
+        <label>Meetings attended</label>
+        <summaryFilterItems>
+            <field>Personal_Coach_Meetings__c.Meeting_attendance__c</field>
+            <operation>equals</operation>
+            <value>Attended</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Personal_Coach_Meetings__c.Personal_Coaching__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Meetings_not_attended__c</fullName>
+        <externalId>false</externalId>
+        <label>Meetings not attended</label>
+        <summaryFilterItems>
+            <field>Personal_Coach_Meetings__c.Meeting_attendance__c</field>
+            <operation>equals</operation>
+            <value>Did not attend</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Personal_Coach_Meetings__c.Personal_Coaching__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Meetings_scheduled__c</fullName>
+        <externalId>false</externalId>
+        <label>Meetings scheduled</label>
+        <summaryForeignKey>Personal_Coach_Meetings__c.Personal_Coaching__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Mobile_phone_of_Coach__c</fullName>
+        <description>Mobile number of Coach, pulled from their User record</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK( Coach__c ), Coach_TCS_Mentor__r.MobilePhone,  Coach__r.Phone)</formula>
+        <inlineHelpText>Mobile number of Coach (as it appears on their Salesforce User record)</inlineHelpText>
+        <label>Mobile phone of Coach</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mobile_phone_of_YP__c</fullName>
+        <description>Mobile of YP, pulled from Contact record</description>
+        <externalId>false</externalId>
+        <formula>Young_person__r.MobilePhone</formula>
+        <inlineHelpText>YP&apos;s mobile phone number (as it appears on their Contact record)</inlineHelpText>
+        <label>Mobile phone of YP</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notes_of_referral_elsewhere__c</fullName>
+        <description>Text notes of YP&apos;s referral elsewhere</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter notes of YP&apos;s referral elsewhere</inlineHelpText>
+        <label>Notes of referral elsewhere</label>
+        <length>1000</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>RCA_Offer_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>RCA Offer Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Offer at RCA 1 (1st choice)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Offer at RCA 2 (backup)</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Step_1_achieved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Step 1 achieved?</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Step_2_achieved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Step 2 achieved?</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Step_3_achieved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Step 3 achieved?</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Wave__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Wave</label>
+        <referenceTo>Wave__c</referenceTo>
+        <relationshipLabel>Personal Coaching</relationshipLabel>
+        <relationshipName>Personal_Coaching</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Why_1_of_the_6__c</fullName>
+        <externalId>false</externalId>
+        <label>Benefit to YP from Personal Coaching</label>
+        <length>32768</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>X1_of_6__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>1 of 6?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>X6_monthly_end_of_period_revew__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What goals have been achieved?</inlineHelpText>
+        <label>End of Coaching Review</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Coaching to end as planned</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>YP has withdrawn from coaching</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>New coaching period has been agreed</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>YP_s_coaching_preferences__c</fullName>
+        <externalId>false</externalId>
+        <label>YP&apos;s coaching preferences</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Young_person__c</fullName>
+        <description>Master-detail link to YP being coached</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Link to the young person being coached</inlineHelpText>
+        <label>Young person</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Personal Coaching</relationshipLabel>
+        <relationshipName>Personal_Coaching</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>Personal Coach</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Young_person__c</columns>
+        <columns>Wave__c</columns>
+        <columns>NAME</columns>
+        <columns>Champion__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Champion__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>APM_call_outcome__c</field>
+            <operation>equals</operation>
+            <value>Selected for TCN coaching</value>
+        </filters>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>P#{000000}</displayFormat>
+        <label>Personal Coach Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Personal Coaching</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

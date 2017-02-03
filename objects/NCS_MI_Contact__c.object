@@ -1,0 +1,2027 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>For NCS MI reporting</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Age_on_31_Aug_of_campaign_year__c</fullName>
+        <description>Calculates age on 31 August of campaign year. Currently set for 2016</description>
+        <externalId>false</externalId>
+        <formula>IF( 
+MONTH(X31_August_current_year__c )&gt;MONTH(  Inclusion_Detail__r.Contact__r.Birthdate  ), 
+YEAR(X31_August_current_year__c )-YEAR( Inclusion_Detail__r.Contact__r.Birthdate ), 
+IF(AND(MONTH(X31_August_current_year__c ) = MONTH( Inclusion_Detail__r.Contact__r.Birthdate ), DAY(X31_August_current_year__c ) &gt;= DAY( Inclusion_Detail__r.Contact__r.Birthdate )), 
+YEAR(X31_August_current_year__c )-YEAR( Inclusion_Detail__r.Contact__r.Birthdate ), 
+(YEAR(X31_August_current_year__c )-YEAR( Inclusion_Detail__r.Contact__r.Birthdate ))-1) 
+)</formula>
+        <inlineHelpText>Calculates age on 31 August of campaign year. Currently set for 2016</inlineHelpText>
+        <label>Age on 31 Aug of campaign year</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Amount_Paid__c</fullName>
+        <description>Brings down the amount paid by the YP from their contact record</description>
+        <externalId>false</externalId>
+        <formula>Inclusion_Detail__r.Contact__r.Total_payment_received__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Amount Paid</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Refunded__c</fullName>
+        <description>For NCS report. Should always stay blank</description>
+        <externalId>false</externalId>
+        <label>Amount Refunded</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Amount_deposit_paid__c</fullName>
+        <description>For NCS report. Should always stay blank</description>
+        <externalId>false</externalId>
+        <label>Amount deposit paid</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Autistic_spectrum_disorder_asperger_synd__c</fullName>
+        <description>Translates our P3 information into a binary answer for NCS upload.</description>
+        <externalId>false</externalId>
+        <formula>&quot;Formula deleted as related to old P3 fields&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Autistic spectrum disorder/asperger synd</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Blind_or_Partially_Sighted__c</fullName>
+        <description>Translates our P3 information into a binary answer for NCS upload.</description>
+        <externalId>false</externalId>
+        <formula>&quot;&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Blind or Partially Sighted</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Consent__c</fullName>
+        <description>Data sharing consent. Always populated with &apos;1&apos; as young people are exposed to the sharing policy whenever they express interest.</description>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <label>Consent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Source_New__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK( Inclusion_Detail__r.Contact__r.SFDC_Concact_ID_From_Trust__c ),&quot;Provider&quot;,Inclusion_Detail__r.Contact__r.SFDC_Concact_ID_From_Trust__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Source New</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_created_date_time__c</fullName>
+        <description>Date-time of Contact creation, using &apos;Created Date&apos; field</description>
+        <externalId>false</externalId>
+        <formula>Inclusion_Detail__r.Contact__r.CreatedDate</formula>
+        <inlineHelpText>Date-time of Contact creation</inlineHelpText>
+        <label>Contact created date-time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Contact_source__c</fullName>
+        <description>Source of the contact. Defaulted as &apos;provider&apos;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Source of the contact. Defaulted as &apos;provider&apos;</inlineHelpText>
+        <label>Contact source</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Provider</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Central FB</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Central web</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Creation__c</fullName>
+        <externalId>false</externalId>
+        <label>Creation</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Criminal_record_real_target__c</fullName>
+        <externalId>false</externalId>
+        <label>Criminal record &apos;real&apos; target</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deaf_or_hearing_impaired__c</fullName>
+        <description>Translates our P3 information into a binary answer for NCS upload.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Inclusion_Detail__r.Contact__r.Severe_hearing_or_visual_impairment__c),&quot;&quot;,IF(INCLUDES( Inclusion_Detail__r.Contact__r.Severe_hearing_or_visual_impairment__c ,&quot;No&quot;),&quot;No&quot;,IF(OR(INCLUDES( Inclusion_Detail__r.Contact__r.Severe_hearing_or_visual_impairment__c ,&quot;Yes, mild hearing impairment&quot;),INCLUDES( Inclusion_Detail__r.Contact__r.Severe_hearing_or_visual_impairment__c ,&quot;Yes, moderate hearing impairment&quot;),INCLUDES( Inclusion_Detail__r.Contact__r.Severe_hearing_or_visual_impairment__c ,&quot;Yes, severe hearing impairment&quot;),INCLUDES( Inclusion_Detail__r.Contact__r.Severe_hearing_or_visual_impairment__c ,&quot;Yes, profound hearing impairment&quot;)),&quot;Yes&quot;,&quot;&quot;)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Deaf or hearing impaired</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Drop_out_reason__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Drop out reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EOI_received__c</fullName>
+        <externalId>false</externalId>
+        <formula>DATEVALUE( Inclusion_Detail__r.Contact__r.CreatedDate )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>EOI received</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Ethnicity_Target__c</fullName>
+        <description>This stores the ethnicity targets for the YPs from the individual LAs</description>
+        <externalId>false</externalId>
+        <label>Ethnicity Target</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ethnicity__c</fullName>
+        <description>This amends our limited ethnicity pickvals to the more specific ones used for NCS reporting</description>
+        <externalId>false</externalId>
+        <formula>IF( ISPICKVAL( Inclusion_Detail__r.Ethnicity__c , &quot;White&quot;) , &quot;Any other White background&quot; ,
+IF( ISPICKVAL( Inclusion_Detail__r.Ethnicity__c , &quot;Black&quot;) , &quot;Any other Black background&quot; ,
+IF( ISPICKVAL( Inclusion_Detail__r.Ethnicity__c , &quot;Asian&quot;) , &quot;Any other Asian background&quot; ,
+IF( ISPICKVAL( Inclusion_Detail__r.Ethnicity__c , &quot;Other&quot;) , &quot;Any other ethnic group&quot; ,
+IF( ISPICKVAL( Inclusion_Detail__r.Ethnicity__c , &quot;Mixed&quot;) , &quot;Any other Mixed background&quot; ,
+IF( ISPICKVAL( Inclusion_Detail__r.Ethnicity__c , &quot;Gypsy/ Roma&quot;) , &quot;Gypsy/Roma&quot; ,
+IF( ISPICKVAL( Inclusion_Detail__r.Ethnicity__c , &quot;Black Carribbean&quot;) , &quot;Black Caribbean&quot; ,
+
+
+TEXT(Inclusion_Detail__r.Ethnicity__c))))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ethnicity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ethnicity_real_targetA__c</fullName>
+        <externalId>false</externalId>
+        <label>Ethnicity &apos;real&apos; target</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ethnicity_real_target_del__c</fullName>
+        <externalId>false</externalId>
+        <formula>Ethnicity_Target__c *354</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ethnicity &apos;real&apos; target</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FSM_Target__c</fullName>
+        <externalId>false</externalId>
+        <label>FSM Target</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>FSM_real_target__c</fullName>
+        <externalId>false</externalId>
+        <label>FSM &apos;real&apos; target</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Faith_Religion__c</fullName>
+        <description>This converts our blank faith/religion to &apos;none&apos; were necessary.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(TEXT( Inclusion_Detail__r.Faith_Religion__c )),&quot;None&quot;,TEXT( Inclusion_Detail__r.Faith_Religion__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Faith/Religion</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>First_Programme_Started__c</fullName>
+        <externalId>false</externalId>
+        <label>First Programme Started</label>
+        <length>15</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Free_school_meals__c</fullName>
+        <description>This converts our FSM response the relevant NCS MI value .</description>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Inclusion_Detail__r.Free_school_meals__c,&quot;Unsure&quot;), &quot;0&quot;, 
+IF(ISPICKVAL(Inclusion_Detail__r.Free_school_meals__c,&quot;Yes&quot;),&quot;1&quot;,&quot;0&quot;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Free school meals</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Full_Consent_EOI__c</fullName>
+        <description>This works out the date that we receive a YPs consent</description>
+        <externalId>false</externalId>
+        <formula>&quot;&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Full Consent EOI</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Gender__c</fullName>
+        <description>This pulls down the gender from the YPs contact record.</description>
+        <externalId>false</externalId>
+        <formula>TEXT(Inclusion_Detail__r.Contact__r.Gender__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Gender</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Grad_hours__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF((Inclusion_Detail__r.Contact__r.Total_hours_submitted__c - Inclusion_Detail__r.Contact__r.Total_hours_to_make_up_for_grad_C_O__c) &lt; 1,0,Inclusion_Detail__r.Contact__r.Total_hours_submitted__c - Inclusion_Detail__r.Contact__r.Total_hours_to_make_up_for_grad_C_O__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Grad hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Graduated__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Inclusion_Detail__r.Contact__r.Graduation_key__c =&quot;Graduated&quot;, &quot;1&quot;,&quot;0&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Graduated</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Graduation_Status__c</fullName>
+        <description>This is a manual upload to show whether a YP has &apos;graduated&apos; or not. Please note that this does not necessarily mean that the YP attended graduation.</description>
+        <externalId>false</externalId>
+        <label>Graduation Status</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>History_of_offending_Target__c</fullName>
+        <externalId>false</externalId>
+        <label>History of offending Target</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>History_of_offending__c</fullName>
+        <description>This converts our criminal record response the relevant NCS MI value</description>
+        <externalId>false</externalId>
+        <formula>IF(INCLUDES( Inclusion_Detail__r.Criminal_Justice_engagement__c ,&quot;Criminal Record&quot;),&quot;1&quot;,&quot;0&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>History of offending</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>How_did_you_hear__c</fullName>
+        <externalId>false</externalId>
+        <label>How did you first hear about NCS?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Facebook/twitter/ social media</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Word of mouth</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Media article / programme</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Advert</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>At school / college</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Through youth group / organisation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IM_Curevey_first_name__c</fullName>
+        <description>Used only for Ipsis Mori Survey</description>
+        <externalId>false</externalId>
+        <formula>&quot;&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IM Curevey first name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>In_Care_real_target__c</fullName>
+        <externalId>false</externalId>
+        <label>In Care &apos;real&apos; target</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>In_or_recently_in_care__c</fullName>
+        <description>This converts our In Care response the relevant NCS MI value</description>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Inclusion_Detail__r.YP_in_or_recently_in_care__c,&quot;Yes&quot;),&quot;1&quot;,&quot;0&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>In or recently in care</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>In_or_recently_in_care_target__c</fullName>
+        <externalId>false</externalId>
+        <label>In or recently in care target</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Inclusion_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Inclusion Detail</label>
+        <referenceTo>Inclusion_Details__c</referenceTo>
+        <relationshipLabel>NCS MI Contacts</relationshipLabel>
+        <relationshipName>NCS_MI_Contacts</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Interested_in_Autumn_New__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+OR(ISBLANK(Inclusion_Detail__r.Contact__r.Date_P2_data_form_received_by_CO__c ),ISBLANK(payment_recieved__c  ))
+,
+
+
+IF(ISBLANK(Inclusion_Detail__r.Contact__r.Assigned_Wave__c), 
+
+IF(ISBLANK(Inclusion_Detail__r.Contact__r.Reserved_Wave__c), 
+
+IF(OR( 
+INCLUDES(Inclusion_Detail__r.Contact__r.Season__c,&quot;Feb 2015&quot;), 
+Inclusion_Detail__r.Contact__r.NCS_Application_Primary_Season__c =&quot;Feb 2015&quot; 
+) 
+,&quot;1&quot;,&quot;0&quot;) 
+
+, 
+
+IF(Inclusion_Detail__r.Contact__r.Reserved_Wave__r.Autumn_wave__c = TRUE, &quot;1&quot;, &quot;0&quot;) 
+), 
+IF(Inclusion_Detail__r.Contact__r.Assigned_Wave__r.Autumn_wave__c = TRUE, &quot;1&quot;, &quot;0&quot;) 
+)
+
+,
+
+IF( Interested_in_Summer_New__c = &quot;1&quot;,&quot;0&quot;,&quot;1&quot;)
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Interested in Autumn New</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Interested_in_Autumn_V3__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Inclusion_Detail__r.Contact__r.Assigned_Wave__c), 
+
+IF(ISBLANK(Inclusion_Detail__r.Contact__r.Reserved_Wave__c), 
+
+
+
+IF(ISBLANK(Inclusion_Detail__r.Contact__r.NCS_Application_Primary_Season__c), 
+
+IF(Inclusion_Detail__r.Contact__r.Withdrawn_From_Season__c = &quot;Autumn&quot;,&quot;1&quot;,&quot;0&quot;), 
+
+IF(Inclusion_Detail__r.Contact__r.NCS_Application_Primary_Season__c =&quot;Autumn 2015&quot;, &quot;1&quot;,&quot;0&quot;) 
+
+)
+
+, 
+
+IF(Inclusion_Detail__r.Contact__r.Reserved_Wave__r.Autumn_wave__c = TRUE, &quot;1&quot;, &quot;0&quot;) 
+), 
+IF(Inclusion_Detail__r.Contact__r.Assigned_Wave__r.Autumn_wave__c = TRUE, &quot;1&quot;, &quot;0&quot;) 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Interested in Autumn V3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Interested_in_Spring_New__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+OR(ISBLANK(Inclusion_Detail__r.Contact__r.Date_P2_data_form_received_by_CO__c),ISBLANK(payment_recieved__c  ))
+,
+
+IF(ISBLANK(Inclusion_Detail__r.Contact__r.Assigned_Wave__c), 
+
+IF(ISBLANK(Inclusion_Detail__r.Contact__r.Reserved_Wave__c), 
+
+IF(OR( 
+INCLUDES(Inclusion_Detail__r.Contact__r.Season__c,&quot;Feb 2015&quot;), 
+Inclusion_Detail__r.Contact__r.NCS_Application_Primary_Season__c =&quot;Feb 2015&quot; 
+) 
+,&quot;1&quot;,&quot;0&quot;) 
+
+, 
+
+IF(Inclusion_Detail__r.Contact__r.Reserved_Wave__r.Spring_wave__c = TRUE, &quot;1&quot;, &quot;0&quot;) 
+), 
+IF(Inclusion_Detail__r.Contact__r.Assigned_Wave__r.Spring_wave__c = TRUE, &quot;1&quot;, &quot;0&quot;) 
+)
+
+,
+
+IF( Interested_in_Summer_New__c = &quot;1&quot;,&quot;0&quot;,
+
+IF( Interested_in_Autumn_New__c = &quot;1&quot;,&quot;0&quot;,&quot;1&quot;)
+
+)
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Interested in Spring New</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Interested_in_Spring_V3__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Inclusion_Detail__r.Contact__r.Assigned_Wave__c), 
+
+IF(ISBLANK(Inclusion_Detail__r.Contact__r.Reserved_Wave__c), 
+
+IF(ISBLANK(Inclusion_Detail__r.Contact__r.NCS_Application_Primary_Season__c), 
+
+IF(Inclusion_Detail__r.Contact__r.Withdrawn_From_Season__c = &quot;Spring&quot;,&quot;1&quot;,&quot;0&quot;), 
+
+IF(Inclusion_Detail__r.Contact__r.NCS_Application_Primary_Season__c =&quot;Spring 2015&quot;, &quot;1&quot;,&quot;0&quot;) 
+
+), 
+
+IF(Inclusion_Detail__r.Contact__r.Reserved_Wave__r.Spring_wave__c = TRUE, &quot;1&quot;, &quot;0&quot;) 
+), 
+IF(Inclusion_Detail__r.Contact__r.Assigned_Wave__r.Spring_wave__c = TRUE, &quot;1&quot;, &quot;0&quot;) 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Interested in Spring V3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Interested_in_Summer_New__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Inclusion_Detail__r.Contact__r.Assigned_Wave__c), 
+
+IF(ISBLANK(Inclusion_Detail__r.Contact__r.Reserved_Wave__c), 
+
+IF(OR(
+INCLUDES(Inclusion_Detail__r.Contact__r.Season__c,&quot;Summer 2015&quot;),
+Inclusion_Detail__r.Contact__r.NCS_Application_Primary_Season__c =&quot;Summer 2015&quot;
+)
+,&quot;1&quot;,&quot;0&quot;)
+
+, 
+
+IF(
+OR(Inclusion_Detail__r.Contact__r.Reserved_Wave__r.Autumn_wave__c = TRUE, 
+Inclusion_Detail__r.Contact__r.Reserved_Wave__r.Spring_wave__c = TRUE),
+&quot;0&quot;, &quot;1&quot;)
+
+
+),
+IF(OR(Inclusion_Detail__r.Contact__r.Assigned_Wave__r.Autumn_wave__c = TRUE,
+Inclusion_Detail__r.Contact__r.Assigned_Wave__r.Spring_wave__c = TRUE)
+, &quot;0&quot;, &quot;1&quot;)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Interested in Summer New</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Interested_in_Summer_V3__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Inclusion_Detail__r.Contact__r.Assigned_Wave__c), 
+
+IF(ISBLANK(Inclusion_Detail__r.Contact__r.Reserved_Wave__c), 
+
+IF(Contains(NCS_Primary_Season__c, &quot;Summer&quot;), &quot;1&quot;, &quot;0&quot;),
+
+IF( 
+OR(Inclusion_Detail__r.Contact__r.Reserved_Wave__r.Autumn_wave__c = TRUE, 
+Inclusion_Detail__r.Contact__r.Reserved_Wave__r.Spring_wave__c = TRUE), 
+&quot;0&quot;, &quot;1&quot;)
+
+), 
+IF(OR(Inclusion_Detail__r.Contact__r.Assigned_Wave__r.Autumn_wave__c = TRUE, 
+Inclusion_Detail__r.Contact__r.Assigned_Wave__r.Spring_wave__c = TRUE) 
+, &quot;0&quot;, &quot;1&quot;) 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Interested in Summer V3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Interested_in_Summer_V3_archive__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Inclusion_Detail__r.Contact__r.Assigned_Wave__c), 
+
+IF(ISBLANK(Inclusion_Detail__r.Contact__r.Reserved_Wave__c), 
+
+
+IF(ISBLANK(Inclusion_Detail__r.Contact__r.NCS_Application_Primary_Season__c), 
+
+IF(Inclusion_Detail__r.Contact__r.Withdrawn_From_Season__c = &quot;Summer&quot;,&quot;1&quot;,&quot;0&quot;), 
+
+IF(Inclusion_Detail__r.Contact__r.NCS_Application_Primary_Season__c =&quot;Summer 2015&quot;, &quot;1&quot;,&quot;0&quot;) 
+
+), 
+
+IF( 
+OR(Inclusion_Detail__r.Contact__r.Reserved_Wave__r.Autumn_wave__c = TRUE, 
+Inclusion_Detail__r.Contact__r.Reserved_Wave__r.Spring_wave__c = TRUE), 
+&quot;0&quot;, &quot;1&quot;) 
+
+
+), 
+IF(OR(Inclusion_Detail__r.Contact__r.Assigned_Wave__r.Autumn_wave__c = TRUE, 
+Inclusion_Detail__r.Contact__r.Assigned_Wave__r.Spring_wave__c = TRUE) 
+, &quot;0&quot;, &quot;1&quot;) 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Interested in Summer V3 archive</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Interested_in_autumn__c</fullName>
+        <defaultValue>&quot;No&quot;</defaultValue>
+        <description>NO LONGER USED</description>
+        <externalId>false</externalId>
+        <inlineHelpText>NO LONGER USED</inlineHelpText>
+        <label>Interested in autumn</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Interested_in_summer__c</fullName>
+        <defaultValue>&quot;Yes&quot;</defaultValue>
+        <description>NO LONGER USED</description>
+        <externalId>false</externalId>
+        <inlineHelpText>NO LONGER USED</inlineHelpText>
+        <label>Interested_in_summer</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ipsis_Mori_survey_ID__c</fullName>
+        <description>This field gives the unique ID for the unique link for the Ipsis Mori EOI survey</description>
+        <externalId>false</externalId>
+        <label>Ipsis Mori survey ID</label>
+        <length>11</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_modified_date__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+AND(
+LastModifiedDate &gt;  Inclusion_Detail__r.LastModifiedDate ,
+LastModifiedDate &gt;  Inclusion_Detail__r.Contact__r.LastModifiedDate
+),
+LastModifiedDate,
+IF(Inclusion_Detail__r.LastModifiedDate &gt; Inclusion_Detail__r.Contact__r.LastModifiedDate
+,
+Inclusion_Detail__r.LastModifiedDate,
+Inclusion_Detail__r.Contact__r.LastModifiedDate
+))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Last modified date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Local_Authority__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(OR( Inclusion_Detail__r.Contact__r.District__c = &apos;Elmbridge&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Epsom and Ewell&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Guildford&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Mole Valley&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Reigate and Banstead&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Runnymede&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Spelthorne&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Surrey Heath&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Tandridge&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Waverley&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Woking&apos;),
+
+&quot;Surrey&quot;,
+
+IF(OR( Inclusion_Detail__r.Contact__r.District__c = &apos;North Warwickshire&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Warwick&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;South Warwickshire&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Nuneaton and Bedworth&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Rugby&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Stratford-Apon-Avon&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Stratford-on-Avon&apos;),
+
+&quot;Warwickshire&quot;,
+
+IF(OR(Inclusion_Detail__r.Contact__r.District__c = &apos;West Lancashire&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Preston&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Chorley&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Fylde&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Hyndburn&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Lancaster&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Pendle&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Ribble Valley&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Rossendale&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;South Ribble&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Wyre&apos;,
+Inclusion_Detail__r.Contact__r.District__c = &apos;Burnley&apos;),
+
+&apos;Lancashire&apos;,
+
+IF(Inclusion_Detail__r.Contact__r.District__c = &apos;South Lakeland&apos;,
+
+&apos;Cumbria&apos;,
+
+IF(Inclusion_Detail__r.Contact__r.District__c = &apos;Craven&apos;,
+
+&apos;North Yorkshire&apos;,
+
+Inclusion_Detail__r.Contact__r.District__c)))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Local Authority</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MIS_Contact_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;TCN&quot;&amp;Inclusion_Detail__r.Contact__r.TCNContactId__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MIS Contact ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mental_health_difficulties__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Inclusion_Detail__r.Contact__r.Nervous_illness_depression_pyschiatric__c),&quot;&quot;,IF(OR( INCLUDES(Inclusion_Detail__r.Contact__r.Nervous_illness_depression_pyschiatric__c , &quot;Yes, depression&quot;),INCLUDES(Inclusion_Detail__r.Contact__r.Nervous_illness_depression_pyschiatric__c , &quot;Yes, other mental health condition&quot;),INCLUDES(Inclusion_Detail__r.Contact__r.Nervous_illness_depression_pyschiatric__c , &quot;Yes, eating disorder&quot;)),&quot;Yes&quot;,&quot;No&quot;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mental health difficulties</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NCS_Contact_ID__c</fullName>
+        <description>Formula creating NCS Contact ID (Provider ID + Salesforce&apos;s Contact ID)</description>
+        <externalId>false</externalId>
+        <formula>Original_provider_ID__c  + Inclusion_Detail__r.Contact__r.SalesforceCID__c</formula>
+        <inlineHelpText>NCS Contact ID (Provider ID + Salesforce&apos;s Contact ID)</inlineHelpText>
+        <label>NCS Contact ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NCS_Edubase_school_URN__c</fullName>
+        <description>The YP&apos;s School&apos;s NCS Edubase URN</description>
+        <externalId>false</externalId>
+        <formula>Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c</formula>
+        <inlineHelpText>The YP&apos;s School&apos;s NCS Edubase URN</inlineHelpText>
+        <label>NCS Edubase school URN</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NCS_Edubase_school_borough__c</fullName>
+        <description>School&apos;s NCS Edubase local authority</description>
+        <externalId>false</externalId>
+        <formula>Inclusion_Detail__r.Contact__r.School__r.NCS_Local_Authority__c</formula>
+        <inlineHelpText>School&apos;s NCS Edubase local authority</inlineHelpText>
+        <label>NCS Edubase school borough</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NCS_Primary_Season__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(Inclusion_Detail__r.Contact__r.Withdrawal_confirmed_by_Owner__c  ) , Inclusion_Detail__r.Contact__r.NCS_Application_Primary_Season__c, Inclusion_Detail__r.Contact__r.Primary_Season_Withdrawn__c )</formula>
+        <label>NCS Primary Season</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NCS_Prime_ID__c</fullName>
+        <description>Prime ID of the YP, calculated by a formula.</description>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(NCS_Prime_ID_override__c) ,
+
+IF( NCS_Provider_ID__c = &quot;TCN&quot;,&quot;INS&quot;,&quot;TCN&quot;)
+
+, NCS_Prime_ID_override__c )</formula>
+        <inlineHelpText>Prime ID of the YP.</inlineHelpText>
+        <label>NCS Prime ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NCS_Prime_ID_override__c</fullName>
+        <description>Used for manual override of the NCS Prime ID field output as is incorporated into that formula, and displays when not blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Data in this field replaces the usual value of the &apos;NCS Prime id&apos; field</inlineHelpText>
+        <label>NCS Prime ID override</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NCS_Provider_ID__c</fullName>
+        <description>Provider ID of the YP&apos;s School Provider</description>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK( NCS_Provider_ID_override__c )
+
+,IF(ISBLANK( Inclusion_Detail__r.Contact__r.NCS_Zone__c ),
+
+ Inclusion_Detail__r.Contact__r.School__r.NCS_Provider_ID__c 
+
+,
+
+IF( Inclusion_Detail__r.Contact__r.NCS_Zone__c = &quot;TCN NW3&quot;,&quot;TCN&quot;,
+
+IF(Inclusion_Detail__r.Contact__r.NCS_Zone__c = &quot;TCN ERROR&quot;,Inclusion_Detail__r.Contact__r.School__r.NCS_Provider_ID__c ,Inclusion_Detail__r.Contact__r.NCS_Zone__c)
+
+)
+
+)
+
+, NCS_Provider_ID_override__c )</formula>
+        <inlineHelpText>Provider ID of the YP&apos;s School Provider</inlineHelpText>
+        <label>NCS Provider ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NCS_Provider_ID_override__c</fullName>
+        <description>Entered text will be used to directly replace data in the NCS Provider ID field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Entered text will update the NCS Provider ID field</inlineHelpText>
+        <label>NCS Provider ID override</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NCS_withdrawal_reason__c</fullName>
+        <description>Formula, translating withdrawal reasons (from Contact) into NCS-specified withdrawal reasons</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK( Inclusion_Detail__r.Contact__r.Withdrawal_confirmed_by_Owner__c ),NULL,
+
+IF(ISBLANK(Inclusion_Detail__r.Contact__r.Withdrawal_reason__c),&quot;Other&quot;,
+
+IF( INCLUDES( Inclusion_Detail__r.Contact__r.Withdrawal_reason__c , &quot;Conflict with holiday&quot;) , &quot;Going on holiday&quot;,
+IF( INCLUDES( Inclusion_Detail__r.Contact__r.Withdrawal_reason__c , &quot;Conflict with job&quot;) , &quot;Does not fit with job&quot;,
+IF( INCLUDES( Inclusion_Detail__r.Contact__r.Withdrawal_reason__c , &quot;Conflicts with exam timetable&quot;) , &quot;Concerns about missing school / college / homework&quot;,
+IF( INCLUDES( Inclusion_Detail__r.Contact__r.Withdrawal_reason__c , &quot;Conflict with other commitment&quot;) , &quot;Busy doing other things&quot;,
+IF( INCLUDES( Inclusion_Detail__r.Contact__r.Withdrawal_reason__c , &quot;Does not want to attend&quot;) , &quot;Don&apos;t want to do it&quot;,
+IF( INCLUDES( Inclusion_Detail__r.Contact__r.Withdrawal_reason__c , &quot;We offered them a waiting list place&quot;) , &quot;Other&quot;,
+IF( INCLUDES( Inclusion_Detail__r.Contact__r.Withdrawal_reason__c , &quot;PG will not allow them to attend&quot;) , &quot;Other&quot;,
+IF( INCLUDES( Inclusion_Detail__r.Contact__r.Withdrawal_reason__c , &quot;Unwell&quot;) , &quot;Sickness / injury&quot;,
+IF( INCLUDES( Inclusion_Detail__r.Contact__r.Withdrawal_reason__c , &quot;Unknown or other reason&quot;) , &quot;Other&quot;,
+IF( INCLUDES( Inclusion_Detail__r.Contact__r.Withdrawal_reason__c , &quot;Failed to show up at KO&quot;) , &quot;Other&quot;,
+IF( INCLUDES( Inclusion_Detail__r.Contact__r.Withdrawal_reason__c , &quot;Not interested in TCS&quot;) , &quot;Don&apos;t want to do it&quot;,
+IF ( INCLUDES( Inclusion_Detail__r.Contact__r.Withdrawal_reason__c , &quot;Unwell, but possible 2013 participant&quot;) , &quot;Sickness / injury&quot;,&quot;Other&quot;))))))))))))))</formula>
+        <inlineHelpText>Formula, translating withdrawal reasons (from Contact) into NCS-specified withdrawal reasons</inlineHelpText>
+        <label>NCS withdrawal reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Non_NCS_YP__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Non-NCS YP</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Old_payment_field__c</fullName>
+        <externalId>false</externalId>
+        <formula>Inclusion_Detail__r.Contact__r.Account.Date_of_first_payment__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Old payment field</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Original_provider_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Inclusion_Detail__r.Contact__r.School__r.NCS_Provider_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Original provider ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Other_Disability_Need_Med_condition__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Other Disability/Need/Med condition</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PG_Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Inclusion_Detail__r.Contact__r.Agree_to_main_consent_statement__c =TRUE, Inclusion_Detail__r.Contact__r.Parent_Email__c ,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PG Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PG_Facebook_name__c</fullName>
+        <externalId>false</externalId>
+        <label>PG Facebook name</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PG_Twitter_handle__c</fullName>
+        <externalId>false</externalId>
+        <label>PG Twitter handle</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PG_first_name__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Inclusion_Detail__r.Contact__r.Agree_to_main_consent_statement__c =TRUE, RIGHT( LEFT( Inclusion_Detail__r.Contact__r.Parent_Name__c , FIND(&quot; &quot;, Inclusion_Detail__r.Contact__r.Parent_Name__c,6)),LEN(LEFT( Inclusion_Detail__r.Contact__r.Parent_Name__c , FIND(&quot; &quot;, Inclusion_Detail__r.Contact__r.Parent_Name__c,6))) - FIND(&quot; &quot;, Inclusion_Detail__r.Contact__r.Parent_Name__c,1)), &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PG first name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PG_home_phone__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Inclusion_Detail__r.Contact__r.Agree_to_main_consent_statement__c =TRUE, Inclusion_Detail__r.Contact__r.Parent_Phone__c ,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PG home phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PG_last_name__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Inclusion_Detail__r.Contact__r.Agree_to_new_consent_statement__c =TRUE, RIGHT( Inclusion_Detail__r.Contact__r.Parent_Name__c, LEN(Inclusion_Detail__r.Contact__r.Parent_Name__c)-FIND(&quot; &quot;, Inclusion_Detail__r.Contact__r.Parent_Name__c,6)), &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PG last name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PG_mobile__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Inclusion_Detail__r.Contact__r.Agree_to_main_consent_statement__c =TRUE, Inclusion_Detail__r.Contact__r.Parent_Mobile_Phone__c , &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PG mobile</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phone_adaption__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( AND( 
+ISBLANK( Inclusion_Detail__r.Contact__r.MobilePhone ), 
+DATEVALUE(Inclusion_Detail__r.Contact__r.CreatedDate) &lt; DATE(2015,05,05) 
+), 
+&quot;07700 900858&quot;, 
+Inclusion_Detail__r.Contact__r.MobilePhone
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Phone adaption</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Post_16_current_activity__c</fullName>
+        <externalId>false</externalId>
+        <label>Post 16 current activity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Postcode_anonymised__c</fullName>
+        <description>The Contact&apos;s postcode. Where we have consent to share data, this is the full postcode. Where we do not have this consent, the postcode is anonymised through removal of the last 3 characters (the remnants of the postcode can still be used for local authority identification)</description>
+        <externalId>false</externalId>
+        <formula>IF(OR(
+ISBLANK(Inclusion_Detail__r.Contact__r.MailingPostalCode ), 
+Inclusion_Detail__r.Contact__r.MailingPostalCode =&quot;0&quot;, 
+ Inclusion_Detail__r.Contact__r.Postcode_error__c = TRUE 
+)
+,
+
+IF( NCS_Provider_ID__c = &quot;TCN LNN&quot;,&quot;N1 1AA&quot;,
+IF( NCS_Provider_ID__c = &quot;TCN LNS&quot;,&quot;SE1 7NQ&quot;,
+IF( NCS_Provider_ID__c = &quot;TCN SE2&quot;,&quot;RG2 7QA&quot;,
+IF( NCS_Provider_ID__c = &quot;TCN SE3&quot;,&quot;GU1 3AJ&quot;,
+IF( NCS_Provider_ID__c = &quot;TCN WM2&quot;,&quot;B19 2SA&quot;,
+IF( NCS_Provider_ID__c = &quot;TCN NW2&quot;,&quot;M32 0RS&quot;,
+IF( NCS_Provider_ID__c = &quot;TCN&quot;,&quot;WN2 5RJ&quot;,
+
+
+&quot;N1 1AA&quot;)))))))
+
+,
+IF(CONTAINS(Inclusion_Detail__r.Contact__r.MailingPostalCode ,&quot; &quot;),Inclusion_Detail__r.Contact__r.MailingPostalCode,
+LEFT(Inclusion_Detail__r.Contact__r.MailingPostalCode,LEN(Inclusion_Detail__r.Contact__r.MailingPostalCode)-3)&amp;&quot; &quot;&amp;RIGHT(Inclusion_Detail__r.Contact__r.MailingPostalCode,3)
+))</formula>
+        <inlineHelpText>The YP&apos;s postcode. Where we have consent to share data, this is the full postcode. Where we do not have this consent, the postcode is anonymised through removal of the last 3 characters.</inlineHelpText>
+        <label>Postcode (anonymised)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Programme__c</fullName>
+        <description>replace 2014 with year on record type changeover</description>
+        <externalId>false</externalId>
+        <formula>IF(OR(ISBLANK(Inclusion_Detail__r.Contact__r.Date_P2_data_form_received_by_CO__c ),ISBLANK(payment_recieved__c ),ISBLANK( Gender__c  )),&quot;&quot;,
+
+IF(NOT(ISBLANK( Inclusion_Detail__r.Contact__r.Wave_started__c )),  Year__c &amp; Inclusion_Detail__r.Contact__r.Wave_started__c,
+
+IF(NOT(ISBLANK( Inclusion_Detail__r.Contact__r.Assigned_Wave__r.Name )), Year__c &amp; Inclusion_Detail__r.Contact__r.Assigned_Wave__r.Name,
+
+IF(NOT(ISBLANK( Inclusion_Detail__r.Contact__r.Reserved_Wave__r.Name )), Year__c &amp; Inclusion_Detail__r.Contact__r.Reserved_Wave__r.Name,
+
+IF(NOT(ISBLANK( Inclusion_Detail__r.Contact__r.Withdrawn_from_Wave__c )), Year__c &amp; Inclusion_Detail__r.Contact__r.Withdrawn_from_Wave__c,
+
+&quot;&quot;))))
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Programme</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Registration_Complete__c</fullName>
+        <externalId>false</externalId>
+        <formula>Inclusion_Detail__r.Contact__r.NCS_or_TCN_registration_complete__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Registration Complete</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Response_type__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK( Inclusion_Detail__r.Contact__r.Date_PG_intro_letter_created__c ) , NULL, &quot;Letter&quot;)</formula>
+        <label>Response type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SEN_Target__c</fullName>
+        <externalId>false</externalId>
+        <label>SEN Target</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SEN__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL( Inclusion_Detail__r.Statement_of_SEN__c , &quot;Yes&quot;),&quot;1&quot;,&quot;0&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SEN</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SEN_real_Target__c</fullName>
+        <externalId>false</externalId>
+        <label>SEN &apos;real&apos; Target</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SFDC_Contact_Id_from_Trust__c</fullName>
+        <externalId>false</externalId>
+        <label>SFDC Contact Id from Trust</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>School_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND( NCS_Prime_ID__c =&quot;TCN&quot; ,
+
+OR( Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;119751&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;119758&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;119792&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;132834&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;110125&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;132823&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;116929&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;TCN222333&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;TCN222334&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;TCN222335&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;130443&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;1197670.1&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;138459&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;110125&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;136924&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;119746&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;138835&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;119774&quot;)),
+
+&quot;&quot;,
+
+
+IF(AND( NCS_Prime_ID__c =&quot;INS&quot; ,
+
+OR( Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;135864&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;130523&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;130522&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;130506&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;132834.1&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;130499&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;106537&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;TCNA218266&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;1197670.1&quot;,
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c = &quot;137210&quot;)),
+
+&quot;&quot;,
+
+Inclusion_Detail__r.Contact__r.School__r.NCS_Edubase_URN__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>School ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>School_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK( Inclusion_Detail__r.Contact__r.School_first_application__c ),
+
+TEXT(Inclusion_Detail__r.Contact__r.School__r.School_type__c)
+
+,
+TEXT(Inclusion_Detail__r.Contact__r.School_first_application__r.School_type__c)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>School Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sign_up__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(OR( Inclusion_Detail__r.Agree_to_main_consent__c = FALSE,
+ISBLANK( Inclusion_Detail__r.Contact__r.Account.Date_of_first_payment__c )
+),
+NULL,Inclusion_Detail__r.Contact__r.Account.Date_of_first_payment__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sign up</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Special_case_age_type__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISPICKVAL( Inclusion_Detail__r.Contact__r.DoB_issue_resolved__c , &quot;Approved - Other Criteria&quot;),&quot;Other disability&quot;,TEXT(Inclusion_Detail__r.Contact__r.DoB_issue_resolved__c))</formula>
+        <label>Special case age type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Started_Phase_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(OR(
+ISBLANK(Inclusion_Detail__r.Contact__r.Date_P2_data_form_received_by_CO__c ),
+ISBLANK(payment_recieved__c ),
+ISBLANK( Team__c ),
+ISBLANK( Programme__c )
+
+)
+
+,&quot;0&quot;, 
+
+IF(ISBLANK( Inclusion_Detail__r.Contact__r.Wave_started__c ),
+
+IF(ISBLANK(Inclusion_Detail__r.Contact__r.Assigned_Wave__c),&quot;0&quot;,
+
+IF(ISBLANK( Inclusion_Detail__r.Contact__r.Assigned_Wave__r.MM_confirmed_PCKO_starters__c),&quot;0&quot;,&quot;1&quot;))
+
+,
+
+&quot;1&quot;)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Started Phase 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Started_Phase_3__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Inclusion_Detail__r.Contact__r.Current_Phase__c  &gt; 3,&quot;1&quot;,&quot;0&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Started Phase 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Started_Phase_4__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Inclusion_Detail__r.Contact__r.Current_Phase__c  &gt; 3,&quot;1&quot;,&quot;0&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Started Phase 4</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Started_Phase_5__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Inclusion_Detail__r.Contact__r.Current_Phase__c  &gt; 4,&quot;1&quot;,&quot;0&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Started Phase 5</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Team_TEST__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Programme__c), NULL,(IF(OR(ISBLANK(Inclusion_Detail__r.Contact__r.Date_P2_data_form_received_by_CO__c),ISBLANK(payment_recieved__c)),&quot;&quot;,IF(ISBLANK(Inclusion_Detail__r.Contact__r.Team__c),&quot;&quot;,&quot;2015&quot;&amp;Inclusion_Detail__r.Contact__r.Team__c))))</formula>
+        <label>Team TEST</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Team__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+   OR(
+      ISBLANK(Inclusion_Detail__r.Contact__r.Date_P2_data_form_received_by_CO__c ),
+      ISBLANK(payment_recieved__c )),
+   &quot;&quot;, 
+   IF(
+      ISBLANK(Inclusion_Detail__r.Contact__r.Team__c),
+      &quot;&quot;,
+      &quot;2016&quot;&amp;Inclusion_Detail__r.Contact__r.Team__c
+      )
+   )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Team</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_seasons__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Interested_in_Spring_New__c =&quot;1&quot;,1,0)
++IF(  Interested_in_Summer_New__c  =&quot;1&quot;,1,0)
++IF(  Interested_in_Autumn_New__c  =&quot;1&quot;,1,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total seasons</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Volunteering__c</fullName>
+        <externalId>false</externalId>
+        <label>Volunteering</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Wave_start_date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Inclusion_Detail__r.Contact__r.Assigned_Wave__r.PC_KO_day__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Wave start date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Wheelchair_user_or_mobility_difficulties__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Wheelchair user or mobility difficulties</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X31_August_current_year__c</fullName>
+        <defaultValue>DATEVALUE(&quot;2016-08-31&quot;)</defaultValue>
+        <description>Holds date of 31 August for current delivery year, so that other formulas can reference this</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Holds date of 31 August for current delivery year, so that other formulas can reference this</inlineHelpText>
+        <label>31 August current year</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>YP_Address_1__c</fullName>
+        <externalId>false</externalId>
+        <formula>Inclusion_Detail__r.Contact__r.MailingStreet</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>YP Address 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>YP_Address_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>Inclusion_Detail__r.Contact__r.MailingCity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>YP Address 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>YP_Address_3__c</fullName>
+        <externalId>false</externalId>
+        <formula>Inclusion_Detail__r.Contact__r.MailingState</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>YP Address 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>YP_County__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Inclusion_Detail__r.Contact__r.Agree_to_main_consent_statement__c =TRUE ,  Inclusion_Detail__r.Contact__r.County_region__c  , &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>YP County</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>YP_Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Inclusion_Detail__r.Contact__r.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>YP Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>YP_First_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Inclusion_Detail__r.Contact__r.Agree_to_main_consent_statement__c =TRUE, Inclusion_Detail__r.Contact__r.FirstName , &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>YP First Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>YP_Home_phone__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Inclusion_Detail__r.Contact__r.Agree_to_main_consent_statement__c =TRUE, Inclusion_Detail__r.Contact__r.HomePhone , &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>YP Home phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>YP_Last_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Inclusion_Detail__r.Contact__r.Agree_to_main_consent_statement__c =TRUE, Inclusion_Detail__r.Contact__r.LastName , &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>YP Last Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>YP_Mobile__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Inclusion_Detail__r.Contact__r.Agree_to_main_consent_statement__c =TRUE, Inclusion_Detail__r.Contact__r.MobilePhone, &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>YP Mobile</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>YP_Postcode__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND( Inclusion_Detail__r.Contact__r.RecordType.Name =&quot;YP2014&quot;, Inclusion_Detail__r.Contact__r.Agree_to_main_consent_statement__c =TRUE), Inclusion_Detail__r.Contact__r.Post_code__c,
+IF(AND( Inclusion_Detail__r.Contact__r.RecordType.Name =&quot;YP2013&quot;, 
+DATEVALUE(Inclusion_Detail__r.Contact__r.CreatedDate) &gt; DATE(2013,02,19)), Inclusion_Detail__r.Contact__r.Post_code__c,
+IF(AND(ISPICKVAL(Inclusion_Detail__r.Contact__r.LeadSource, &quot;School paper form (Marketing)&quot;), DATEVALUE(Inclusion_Detail__r.Contact__r.CreatedDate) &gt; DATE(2013,09,01), Inclusion_Detail__r.Contact__r.School__r.Region_2012__c = &quot;London&quot;), Inclusion_Detail__r.Contact__r.Post_code__c,
+IF(AND(ISPICKVAL(Inclusion_Detail__r.Contact__r.LeadSource, &quot;School paper form (Marketing)&quot;), DATEVALUE(Inclusion_Detail__r.Contact__r.CreatedDate) &gt; DATE(2013,03,06), NOT(Inclusion_Detail__r.Contact__r.School__r.Region_2012__c = &quot;London&quot;)), Inclusion_Detail__r.Contact__r.Post_code__c, Postcode_anonymised__c
+))))</formula>
+        <label>YP Postcode</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>YP_Twitter_handle__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Inclusion_Detail__r.Contact__r.Agree_to_main_consent_statement__c =TRUE, Inclusion_Detail__r.Contact__r.Twitter_handle__c , &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>YP Twitter handle</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>YP_facebook__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Inclusion_Detail__r.Contact__r.Agree_to_new_consent_statement__c =TRUE, Inclusion_Detail__r.Contact__r.Facebook_name__c , &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>YP facebook</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>YP_town__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Inclusion_Detail__r.Contact__r.Agree_to_main_consent_statement__c =TRUE, Inclusion_Detail__r.Contact__r.Town_City__c , &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>YP town</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Year__c</fullName>
+        <description>Formula is not future proof and does not take into account seasons 2 years ago or older. The formula reaches a compile limit error if we try to incorporate all the possibilities. See Pivotal Tracker https://www.pivotaltracker.com/story/show/120275799</description>
+        <externalId>false</externalId>
+        <formula>IF(
+   ISBLANK( Inclusion_Detail__r.Contact__r.Assigned_Wave__c),
+   IF(
+      ISBLANK( Inclusion_Detail__r.Contact__r.Reserved_Wave__c),
+      IF(
+         ISBLANK( Inclusion_Detail__r.Contact__r.NCS_Application_Primary_Season__c),
+         IF(
+            ISBLANK( Inclusion_Detail__r.Contact__r.Season__c ),
+            TEXT(YEAR( DATEVALUE( Inclusion_Detail__r.CreatedDate ))),
+            IF(
+               OR(
+                  INCLUDES(Inclusion_Detail__r.Contact__r.Season__c,&quot;Summer 2016&quot;),
+                  INCLUDES(Inclusion_Detail__r.Contact__r.Season__c,&quot;Autumn 2016&quot; )
+                 ),
+               &quot;2016&quot;,
+               &quot;2015&quot;
+               )
+            ),
+         RIGHT(Inclusion_Detail__r.Contact__r.NCS_Application_Primary_Season__c,4)
+         ),
+      TEXT(YEAR(Inclusion_Detail__r.Contact__r.Reserved_Wave__r.PC_KO_day__c) )
+      ),
+   TEXT(YEAR(Inclusion_Detail__r.Contact__r.Assigned_Wave__r.PC_KO_day__c) )
+   )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Year</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>dummy_email_autonumber__c</fullName>
+        <displayFormat>TCN{0000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>dummy email autonumber</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>email_adaption__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( AND(
+ISBLANK(Inclusion_Detail__r.Contact__r.Email ),
+DATEVALUE(Inclusion_Detail__r.Contact__r.CreatedDate) &lt; DATE(2015,05,05)
+),
+ Inclusion_Detail__r.Contact__r.TCNContactId__c  &amp;&quot;@ncstrust.co.uk&quot;,
+Inclusion_Detail__r.Contact__r.Email
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Email adaption</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>interested_in_spring__c</fullName>
+        <defaultValue>&quot;No&quot;</defaultValue>
+        <description>Auto-filled with &apos;No&apos; as we do not offer a spring programme</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Auto-filled with &apos;No&apos; as we do not offer a spring programme</inlineHelpText>
+        <label>Interested in spring programme</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>payment_recieved__c</fullName>
+        <externalId>false</externalId>
+        <formula>Inclusion_Detail__r.Contact__r.Account.Date_First_Payment_Received_Workflow__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>payment recieved</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>sign_up_2015__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(OR(
+ISBLANK( payment_recieved__c ),
+ISBLANK( Registration_Complete__c )
+),
+0,1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>sign up 2015</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>NCS MI Contact</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>NCSMIC{000000}</displayFormat>
+        <label>NCS MI Contact Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>NCS MI Contacts</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Actual_Assigned</fullName>
+        <active>true</active>
+        <label>Actual Assigned</label>
+        <picklistValues>
+            <picklist>Contact_source__c</picklist>
+            <values>
+                <fullName>Central FB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Central web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>How_did_you_hear__c</picklist>
+            <values>
+                <fullName>Advert</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>At school %2F college</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Facebook%2Ftwitter%2F social media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media article %2F programme</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Through youth group %2F organisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>PbR_Target</fullName>
+        <active>true</active>
+        <label>PbR Target</label>
+        <picklistValues>
+            <picklist>Contact_source__c</picklist>
+            <values>
+                <fullName>Central FB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Central web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>How_did_you_hear__c</picklist>
+            <values>
+                <fullName>Advert</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>At school %2F college</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Facebook%2Ftwitter%2F social media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media article %2F programme</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Through youth group %2F organisation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+</CustomObject>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>kick off emails sent 26/08/15</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Logged/started 1-5hrs 24/8/15</name>
+    <style>none</style>
+    <subject>HeadStart - Keep logging your hours...4 weeks left!</subject>
+    <textOnly>HeadStart login details:
+
+Email Address {!Contact.Email}
+
+NCS ID
+
+{!Contact.NCS_ID__c}
+
+PIN {!Contact.Login_Password__c}
+
+HeadStart Website
+
+Keep logging your hours...only 4 weeks left!
+
+Hi {!Contact.FirstName},
+
+Well done on completing {!HS_Activity__c.HS_Hours_Total__c} hours of volunteering! You’ve made a great contribution to your volunteering organisation and your community. You’re on your way to that guaranteed job interview with a HeadStart employer.
+
+There’s only 4 weeks left to log 16 hours of volunteering!
+
+Keep your profile up to date by logging your hours regularly on the HeadStart website to guarantee your interview. Your login details are at the top of this email.
+
+Deadline for logging your hours is 18th September.
+
+Any questions? Email the HeadStart team, check out our website or get in touch on facebook.
+
+
+The HeadStart team
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subsribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

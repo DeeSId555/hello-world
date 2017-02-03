@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Transport - Inform APM of PM Rejection</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>Transport - Inform APM of PM Rejection</name>
+    <style>freeForm</style>
+    <subject>Transport Order Rejection</subject>
+    <textOnly>Your Transport Order {!Transport_order__c.Link} has been rejected with the following notes:
+
+{!Transport_order__c.PM_rejection_notes__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

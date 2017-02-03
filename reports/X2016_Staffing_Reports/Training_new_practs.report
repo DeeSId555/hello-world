@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>CONTACT_ID</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Staff_type__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Role_to_assess_for__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Date_offer_training_WSO_email_resent__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Job_Application__c.Post_screen_2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Role_to_assess_for__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Practitioner Plus,Practitioner - Drama,Practitioner - Enterprise,Practitioner - Sport,Practitioner - Photography,Practitioner - Media,Practitioner - Music,Practitioner - Art</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Date_offer_training_WSO_email_resent__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Staff_type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>New Application</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Training - new practs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Job_Application__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Send this email to inform PGs that we are planning on using an interpreter to carry out MASI call</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2016 - ICC Interpreter Call - Advanced Notice</name>
+    <style>none</style>
+    <subject>Notification of language support call</subject>
+    <textOnly>NCSTHECHALLENGE.ORG
+
+Language Support Notification
+
+
+Dear {!Contact.Parent_Name__c},
+
+We contacted you to get more information about {!Contact.FirstName}’s needs, however, we could not finish the phone call.
+
+We will call you again in the next few days with an interpreter to translate our questions to you.
+
+If you want to speak to us, please call 0333 150 2425 or email  inclusion.support@the-challenge.org  - we will be happy to help.
+
+Yours sincerely,
+
+
+Tanya Dunne
+Head of Customer Services - The Challenge
+
+© The Challenge Network.
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

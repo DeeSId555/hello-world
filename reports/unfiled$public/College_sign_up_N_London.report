@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.School__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CONTACT_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Young_Person</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.NCS_Application_Primary_Season__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Summer 2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Withdrawal_confirmed_by_Owner__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LAST_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>test,Test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>NCS_Application__c.Date_Full_Payment_Received__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.COMPLETE_and_support_level_is_correct__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.School__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Barking and Dagenham college,Barnet college (Grahame Park),Barnet college (Wood Street),Capel Manor college,City and Islington college,City of Westminster college,Fashion Retail Academy,Hackney Community college,Haringey Sixth Form Centre,Harrow college (Harrow on the Hill),Havering college of Further and Higher Education,Kensington and Chelsea college,London Skills Academy,Newham college of Further Education,Newham Sixth Form college,Opal college London,Redbridge college,Southgate college,St Charles Catholic Sixth Form,St Dominic&apos;s RC Sixth Form college,Stanmore college,STEM Academy,Stratford college London,Technical Skills Academy,The college of North East London,The college of North West London,Tower Hamlets college,Uxbridge college,Westminster Kingsway college - Kings Cross,William Morris Academy Sixth Form,Woodhouse college</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>NCS_Application__c.Season__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Summer 2015</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>College sign up N London</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$NCS_Application__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

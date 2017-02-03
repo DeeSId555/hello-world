@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>G-Co Training</name>
+    <style>freeForm</style>
+    <subject>G-Co Training</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+Hello and welcome to our G-Co team, where we have weekly meetings every fortnight which involves training, chats up and sharing techniques to help us at work.
+
+Our next meeting is next week Monday 21st December at 10am, and we would love if you could attend. To confirm your place, please go to the TCS website and fill out our form.
+
+Hope to see you there.
+
+Graduate Coordinator Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

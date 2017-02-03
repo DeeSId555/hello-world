@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>Challenge with Distinction Invite</name>
+    <style>freeForm</style>
+    <subject>Congratulations! Celebrate your Challenge with Distinction certificate!</subject>
+    <textOnly>{!Contact.FirstName}
+
+
+For your continued commitment to your community and for logging a fantastic {!Contact.Total_hours_at_signposting_opportunities__c} hours of volunteering, you have been awarded our exclusive Challenge with Distinction award!
+
+To celebrate your amazing achievements after NCS, we invite you to collect your Challenge with Distinction certificate at one of our NCS graduation events in October.
+
+Please visit our eventbrite page and select one of the ceremonies to attend. You may bring one guest.
+
+Link to register: http://www.eventbrite.co.uk/o/the-challenge-society-7235640401
+
+If you are unable to attend any ceremony, let us know by emailing tcs.northlondon@the-challenge.org, and we will post you your certificate.
+
+Well done and keep up the good work!
+
+All the best,
+
+The Team at The Challenge Society</textOnly>
+    <type>html</type>
+</EmailTemplate>

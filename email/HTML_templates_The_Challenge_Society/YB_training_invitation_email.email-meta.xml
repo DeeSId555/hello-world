@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Training email that is sent to YB members</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>YB training invitation email</name>
+    <style>none</style>
+    <subject>Youth Board Results</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Congratulations on your application to become Youth Board Member for The Challenge Society’s Youth Board in your local community. I am happy to confirm your application has been successful, providing you confirm your interest by responding to this email and attend a Youth Board training event.
+
+We are delighted you are volunteering as a Youth Board Member for The Challenge Society. As you know, this is a fantastic opportunity to represent your Challenge wave on the Youth Board and be responsible for planning community events and sharing the opinions of your Challenge peers. It will be a lot of fun and looks really good on your CV and UCAS forms too! 
+
+As member of the Youth Board your responsibilities will include: 
+
+Attending Youth Board meetings
+There will be on average of two meetings per month where you will work together as a team on a variety of projects. You will choose a specific role which suits you whether you are creative or good at project planning, and be supported by Challenge staff to develop your leadership, teamwork, communication and project planning skills. 
+
+Supporting the Challenge in putting on a community event
+As a team you will be given a budget and planning tools to enable you to support the set up an event to make a difference in your community. You will design and deliver a marketing strategy to get your Challenge friends involved, coordinate the logistics and ensure everything runs smoothly on the day. 
+
+Represent your Challenge peers
+You will also consult and represent the voice and opinions of your Challenge peers in influencing the development of The Challenge and The Challenge Society. You will have opportunity to impact the important decisions of The Challenge Network through direct contact with staff and with our young trustees who are Challenge Graduates themselves. 
+
+I’d like to make you aware that the training is mandatory. I must stress you will be unable to be on the Youth Board if you fail to attend this on time. Please respond by Monday 1st October at the latest otherwise we will assume you do not want to be involved. 
+
+Please view and choose a date by clicking on the link below:
+{!Job_Application__c.ContactId__c}&amp;Type={!Job_Application__c.00NC0000005EVyp}&amp;JType={!Job_Application__c.Id}
+
+If you no longer wish to be a Youth Board member with The Challenge Network, please read the following statement and click on the link below.
+I  wish to withdraw my application to be part of the Youth Board. 
+
+http://www.clicktools.com/survey?iv=391396ce4e8b431&amp;q1={!Job_Application__c.Id}&amp;q2=2
+
+We look forward to seeing you at training.
+
+Kind regards,
+
+The Challenge Society
+youth.board@the-challenge.org
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

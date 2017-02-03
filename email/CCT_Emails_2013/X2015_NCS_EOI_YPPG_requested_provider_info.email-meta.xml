@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2015 NCS Campaign - Requested local call back</name>
+    <style>none</style>
+    <subject>NCS - we&apos;ll be in touch soon</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTheChallenge.org
+
+NCS - we’ll be in touch soon
+
+
+
+Hi {!Contact.FirstName},
+
+Thanks for letting us know you&apos;re interested in National Citizen Service (NCS). We are The Challenge and we&apos;ll be running NCS in your area this summer. We understand you have a question for us about NCS. We now have your contact details and will be in touch as soon as possible to answer your query.
+
+In the meantime, here&apos;s a taster of what NCS is about...
+https://www.youtube.com/watch?v=a591P6wYiGU
+
+You can also take a look at questions.ncsthechallenge.org. If you find the information you need, you can go ahead and start your application for NCS. Go to www.NCSTheChallenge.org, click ‘login’ and use your unique login details shown below to start your application:
+
+Your NCS ID: {!Contact.NCS_ID__c}
+Your young person password: {!Contact.Login_PIN__c}
+
+The website will tell you that your parent or guardian will need to fill in the main part of your application. Please ask your parent or guardian to do this. If you’re not sure who can complete your application form, please get in touch with us and we’ll have a chat - you can call us on 0203 542 2400 or send an email to contact@ncsthechallenge.org 
+
+Alternatively, if your parent or guardian would like a paper application form instead, they can call us on 0203 542 2400 and we’ll send one to them in the post.
+
+Even though you expressed a preference to take part at a certain time, all our dates are subject to availability - so please ask your parent or guardian to complete your application and select your dates as soon as possible!
+
+Don&apos;t worry if you need more information before you start your application as we&apos;ll be in touch if your application is not completed.
+
+Best wishes,
+
+Tanya Dunne
+Head of Customer Services
+The Challenge (largest provider of NCS)
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network is a charity registered in England and Wales with charity no. 1129239 and company no. 6845451, whose registered office is at Elizabeth House, 39 York Road, London SE1 7NQ.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

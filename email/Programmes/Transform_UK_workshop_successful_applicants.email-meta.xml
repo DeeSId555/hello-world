@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Transform UK workshop successful applicant email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>Transform UK workshop successful applicants</name>
+    <style>formalLetter</style>
+    <subject>Your application to Transform UK&apos;s web development workshop</subject>
+    <textOnly>Hi {!Contact.FirstName},
+Competition for places was extremely high, and your application stood out as someone who is really passionate about the digital industry.
+
+
+
+Please find details for the course as follows:
+
+
+
+Location
+
+60 Great Portland St, Fitzrovia, London, W1W 7RT
+Nearest tube stations are Oxford Circus, Great Portland Street, and Goodge Street
+
+
+Times
+
+10am to 6pm, with an hour for lunch (lunch is provided)
+Please arrive 15 minutes early to allow time to register
+
+
+
+Contact details
+
+Your contact from The Challenge for this event is Ian Van der Heyden, The Challenge&apos;s National Graduate Manager
+His phone number is 07837 417494
+If you have any concerns before or during the course, please speak to Ian
+
+
+If you are no longer able to attend this course then please email graduates@the-challenge.org as soon as possible. We have a long waiting list, and will offer your place to another applicant.
+
+
+Congratulations once again, and enjoy the course!
+All the best
+
+NCS Graduates Team
+
+The Challenge Society</textOnly>
+    <type>html</type>
+</EmailTemplate>

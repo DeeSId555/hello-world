@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Zone__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Wave__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$RecordType</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Booking_Date_Formula__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Junctions__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Partner_or_Venue__c.Sat_RCA_Day_Venue_2014,Partner_or_Venue__c.Sun_RCA_2014</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2014 South RCA booking</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Account_Usages_and_Bookings__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Account.Junctions__r.Bookings__r$RecordType</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$Ambassador_Email_Sent__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email prompting candidate to start their DBS application</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>AM 3.7 DBS Prompt</name>
+    <style>formalLetter</style>
+    <subject>Associate Mentor application: apply for your DBS!</subject>
+    <textOnly>APPLY FOR YOUR DISCLOSURE AND BARRING SERVICE (DBS) CHECK
+NOW!
+Dear {!Contact.FirstName},
+
+We&apos;re delighted to have invited you to an Associate Mentor assessment.
+
+Your DBS check:
+
+Since you&apos;ll be 18 or over by the time you start your Associate Mentor placement, you need to have a Disclosure and Barring Service (DBS) check. DBS checks can take up to 12 weeks to come through, so get you need to start yours immediately to make sure that you can still be an Associate Mentor.
+
+
+
+How do I apply?
+
+Click here!
+
+
+
+Do I have to pay for this?
+
+No! The Challenge will cover all costs: you just need to complete the online application and take your documents to your local Post Office.
+
+
+
+I&apos;ve already got a DBS from another organisation...
+
+Great - we just need to see it! Scan it in and send it to your local Graduate team, or take it along to your Associate Mentor assessment to be witnessed.
+
+
+
+What if my DBS doesn&apos;t come through in time?
+
+Unfortunately you won&apos;t be able to be an Associate Mentor with us this summer. Make sure you speak to your local Graduate team if this happens.
+
+Need to get in touch with us?
+
+Send an email to your local Graduate Team. Make sure that you include your name, and either the borough that you completed NCS in or your postcode.
+
+Well done once again for making it through the initial application - we&apos;ll see you at your assessment!
+All the best,
+
+{!Contact.OwnerFullName}
+Graduate Team
+The Challenge</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,25 @@
+<apex:page standardStylesheets="false" sidebar="false" showHeader="false">
+
+    <apex:form styleClass="form-horizontal">
+<!------ STYLE ----->
+ <apex:stylesheet value="{!URLFOR($Resource.Bootstrap,'css/bootstrap.css')}"/>
+ <style type="text/css">
+      html,body{background-color:#eee;}
+      html,body{background-color:#454545;}
+       body{padding-top:40px;/* 40px to make the container go all the way to the bottom of the topbar */}
+            .container > footer p{text-align:center; padding-top: 20px;/* center align it with the container */}
+            .container{width: 960px;/* downsize our container to make the content feel a bit tighter and more cohesive. NOTE:this removes two full columns from the grid,meaning you only go to 14 columns and not 16. */}
+            .container > .content{background-color:#fff;padding:30px;margin:0 -20px 0 -20px;/* negative indent the amount of the padding to maintain the grid system */
+            -webkit-border-radius:6px 6px 6px 6px;-moz-border-radius:6px 6px 6px 6px;border-radius:6px 6px 6px 6px;-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,.15);-moz-box-shadow:0px 1px 2px rgba(0,0,0,.15);box-shadow:0px 1px 2px rgba(0,0,0,.15);}
+            .page-header{background-color:#fff;padding:10px 20px 10px;margin:-30px -30px 30px;border-bottom: 1px solid #bbb;}
+            .form-actions {background-color:#fff;}
+  </style> 
+  <div class="container">
+        <div class="content">
+        <center>
+            <h3>Thank you. Your information has been saved successfully.</h3>
+        </center>
+        </div>
+  </div>
+    </apex:form>
+</apex:page>

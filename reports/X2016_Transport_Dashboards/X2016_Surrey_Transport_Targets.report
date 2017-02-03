@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_10302084</developerName>
+        <masterLabel>Input Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Transport_order__c.Status__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Journey Ready</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Not in use</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Approved (PM)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Approved (auto)</sourceValue>
+            </sourceValues>
+            <value>Complete</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Awaiting PM Approval</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Journey not submitted</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Not started</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rejected - Please see notes</sourceValue>
+            </sourceValues>
+            <value>Incomplete</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Pie</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>false</expandOthers>
+        <groupingColumn>BucketField_10302084</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>true</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Transport_order__c.Wave__c</field>
+    </columns>
+    <columns>
+        <field>Transport_order__c.Journey__c</field>
+    </columns>
+    <columns>
+        <field>Transport_order__c.Date__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Transport_order__c.From_Account__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Dummy,TBC,To Be Confirmed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Transport_order__c.To_Account__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Dummy,TBC,To Be Confirmed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Transport_order__c.Zone__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Surrey</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_10302084</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Transport_order__c.Cluster__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Transport_order__c.Wave_APM__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>2016 Surrey Transport Targets</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Transport_order__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-01-01</startDate>
+    </timeFrameFilter>
+</Report>

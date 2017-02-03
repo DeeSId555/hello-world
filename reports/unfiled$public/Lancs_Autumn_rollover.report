@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$FirstName</field>
+    </columns>
+    <columns>
+        <field>Contact$LastName</field>
+    </columns>
+    <columns>
+        <field>Contact$MobilePhone</field>
+    </columns>
+    <columns>
+        <field>Contact$HomePhone</field>
+    </columns>
+    <columns>
+        <field>Contact$School__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Email</field>
+    </columns>
+    <columns>
+        <field>Contact$Description</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact$Description</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Feb 2016,February,Summer 2016,Feb,Spring,Spring 2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$NCS_Application_Primary_Season__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Autumn 2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Date_of_birth_check__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>DOB OK,DOB MISSING</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$School_s_zone__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Lancashire</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Dupe_exclude_from_processes__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Total_payment_received__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Lancs Autumn rollover</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_NCS_Applications_with_Wave_Selections__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$Added_to_waiting_list__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

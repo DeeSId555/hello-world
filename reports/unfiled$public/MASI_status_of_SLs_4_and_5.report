@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Inclusion_Details__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Inclusion_Details__r$P3_received_date__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Inclusion_Details__r$OBS_P3_form_status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Completed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Inclusion_Details__r$Support_Level__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>&quot;4a – Extra APL support for YPs with restricted mobility, language barrier or learning difficulties&quot;,4b - extra APL support for challenging behaviour or mental health conditions,&quot;5.05 - support worker required, can share with another YP&quot;,5.1 - full-time support worker required,5.2 - requires 2 full time support workers</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Season__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>includes</operator>
+            <value>Summer 2015</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.Inclusion_Details__r$do_we_have_full_inclusion_information__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.Inclusion_Details__r$Support_Level__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>MASI status of SLs 4 and 5</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_Inclusion_Details__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact.Inclusion_Details__r$P3_received_date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

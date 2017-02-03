@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Wave__c$Name</field>
+    </columns>
+    <columns>
+        <field>Wave__c$Mktg_total_number_of_YPs_on_wave__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c$NCS_Zone__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c$Boroughs_or_areas__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Wave__c$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Wave__c.X2013</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Waves report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Waves__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Wave__c$Big_Challenge_date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

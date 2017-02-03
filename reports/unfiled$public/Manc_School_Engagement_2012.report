@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>School_Activities__c.CT_meeting_date__c</field>
+    </columns>
+    <columns>
+        <field>School_Activities__c.Head_meeting_date__c</field>
+    </columns>
+    <columns>
+        <field>School_Activities__c.ST_meeting_date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Date_agreed_to_Assembly_1__c</field>
+    </columns>
+    <columns>
+        <field>School_Activities__c.Email_sent__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>School_Activities__c.School_Activity_2013_S</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>School_Activities__c.Borough_or_area_current__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>wigan,north manchester,bury,rochdale,oldham</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.School_type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>State comprehensive,State selective,Independent Standard,Independent Selective,Further education Independent,Further education State</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>Manc School Engagement 2012</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$School_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>School_Activities__c.Email_sent__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

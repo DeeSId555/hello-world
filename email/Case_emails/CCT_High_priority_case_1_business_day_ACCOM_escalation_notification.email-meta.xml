@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email notifying ACCOMs that a high priority case has not reviewed with one business day</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CCT: High priority case 1 business day escalation- internal notification</name>
+    <style>none</style>
+    <subject>High priority case is 1 business day over-due: #{!Case.CaseNumber}</subject>
+    <type>text</type>
+</EmailTemplate>

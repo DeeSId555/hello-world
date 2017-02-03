@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Survey Summary</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Survey Summaries</value>
+    </caseValues>
+    <fields>
+        <label><!-- Action Team or Youth Board --></label>
+        <name>Action_Team_or_Youth_Board__c</name>
+        <relationshipLabel><!-- Survey Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Campaign --></label>
+        <name>Campaign__c</name>
+        <relationshipLabel><!-- Survey Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cluster --></label>
+        <name>Cluster__c</name>
+        <relationshipLabel><!-- Survey Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cluster name --></label>
+        <name>Cluster_name__c</name>
+        <picklistValues>
+            <masterLabel>BAD WHRN</masterLabel>
+            <translation><!-- BAD WHRN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BBLG</masterLabel>
+            <translation><!-- BBLG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BETHH</masterLabel>
+            <translation><!-- BETHH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birmingham</masterLabel>
+            <translation><!-- Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Black Country</masterLabel>
+            <translation><!-- Black Country --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHIW</masterLabel>
+            <translation><!-- CHIW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HEK</masterLabel>
+            <translation><!-- HEK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HRW</masterLabel>
+            <translation><!-- HRW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LANCS</masterLabel>
+            <translation><!-- LANCS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAK</masterLabel>
+            <translation><!-- MAK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MANC</masterLabel>
+            <translation><!-- MANC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Micro</masterLabel>
+            <translation><!-- Micro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCaW</masterLabel>
+            <translation><!-- SCaW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SLC</masterLabel>
+            <translation><!-- SLC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSH</masterLabel>
+            <translation><!-- SSH --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HR Event --></label>
+        <lookupFilter>
+            <errorMessage><!-- Only AM training feedback survey summaries can be attached to HR Events --></errorMessage>
+        </lookupFilter>
+        <name>HR_Event__c</name>
+        <relationshipLabel><!-- Survey Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Number of NCS Surveys --></label>
+        <name>Number_of_NCS_Surveys__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique external id of the Wave Summary record --></help>
+        <label><!-- WaveSum TCN Id --></label>
+        <name>WaveSum_TCN_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave Summary Number --></label>
+        <name>Wave_Summary_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave number --></label>
+        <name>Wave_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zone --></label>
+        <name>Zone__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- AM training feedback --></label>
+        <name>AM_training_feedback</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Summer Surveys 2014 --></label>
+        <name>Summer_Surveys_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Summer surveys 2012 --></label>
+        <name>Summer_surveys_2012</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Summer surveys 2013 --></label>
+        <name>Summer_surveys_2013</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Survey Summaries 2015 --></label>
+        <name>Survey_Summaries_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Survey Summaries 2016 --></label>
+        <name>Survey_Summaries_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TCS Surveys 2012-2013 --></label>
+        <name>TCS_Surveys_2012_2013</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- YB Baseline --></label>
+        <name>YB_Baseline</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- YB Session --></label>
+        <name>YB_Session</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

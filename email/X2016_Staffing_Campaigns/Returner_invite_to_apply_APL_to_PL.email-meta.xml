@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>Returner - invite to apply (APL to PL)</name>
+    <style>formalLetter</style>
+    <subject>NCS 2016 - Applications now open!</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}.
+
+Dear {!Contact.FirstName},
+
+Great news - Applications for the 2016 NCS seasonal programmes are now officially open!
+
+https://staffing.the-challenge.org/Login.aspx?ReturnUrl=%2fsecure%2f
+
+Last year, due to your incredible commitment, 81% of young people on the programme felt that they gained an understanding of what life is like for others, 72% believe that they are more able to trust people from other backgrounds, and 76% feel more confident about the future. Thank you for helping us achieve this!.
+
+2016 seasonal roles
+
+The application form for our 2016 roles is now available and we would love to work with you again. Due to your excellent performance in the role of APL in 2015, our Programmes team have recommended you for the role of Programme Leader.
+
+To see the Programme Leader role description, click here. Alternatively, have a look through the other possible roles you could apply for.
+
+http://www.ncsthechallenge.org/opportunities/programme-leader/
+http://www.ncsthechallenge.org/jobs/#available-opportunities
+
+If you choose to apply for the Programme Leader role as recommended you will not need to assess again - however, please note that if you decide that you would like to have a go at a completely different role, you may be asked to attend one of our group assessments in the new year to assess suitability.
+
+Applications now open!
+
+Please login to the staffing website using your existing username and password, and ensure that your personal details on the ‘My Profile’ section are up-to-date before starting your application.
+
+Username: {!Contact.Email}
+
+Password: {!Contact.Login_Password__c}
+
+Some of your application form will have been pre-filled for you with responses from last year’s application - however, depending on which role(s) you decide to go for, you will need to answer a range of new role-specific questions later in the form.
+
+Any questions?
+
+If you have any questions about our 2016 roles, or which role to apply for, please don’t hesitate to contact your local staffing team.
+
+Best wishes,
+
+The Staffing Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

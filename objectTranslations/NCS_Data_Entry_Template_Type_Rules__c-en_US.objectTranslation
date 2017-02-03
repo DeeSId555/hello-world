@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>NCS Data Entry Template Type Rules</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>NCS Data Entry Template Type Rules</value>
+    </caseValues>
+    <fields>
+        <help><!-- For the template type - Do we create a new Guardian Contact --></help>
+        <label><!-- Upsert Guardian Contact --></label>
+        <name>Upsert_Guardian_Contact__c</name>
+    </fields>
+    <fields>
+        <help><!-- For the template type - Do we create a new Inclusion Details record --></help>
+        <label><!-- Upsert Inclusion Detail --></label>
+        <name>Upsert_Inclusion_Detail__c</name>
+    </fields>
+    <fields>
+        <help><!-- For the template type - Do we create a new NCS Application --></help>
+        <label><!-- Upsert NCS Application --></label>
+        <name>Upsert_NCS_Application__c</name>
+    </fields>
+    <fields>
+        <help><!-- For the template type - Do we create a new Young Contact? --></help>
+        <label><!-- Upsert Young Contact --></label>
+        <name>Upsert_Young_Contact__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

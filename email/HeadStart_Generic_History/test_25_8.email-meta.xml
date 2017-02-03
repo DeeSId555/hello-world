@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Generic Interviews sent on 26/08/15</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>No welcome day, no hours logged 24/8/15</name>
+    <style>none</style>
+    <subject>Still want a guaranteed job interview?  Let us know!</subject>
+    <textOnly>HeadStart login details:
+
+Email Address {!Contact.Email}
+
+NCS ID
+
+{!Contact.NCS_ID__c}
+
+PIN {!Contact.Login_Password__c}
+
+HeadStart Website
+
+Still want a guaranteed job interview?  Let us know!
+
+Hi {!Contact.FirstName},
+
+Do you still want a guaranteed interview for a part-time job with a HeadStart employer? If so, you need to log 16 hours of volunteering before 18th September!
+
+
+There’s still time. Here’s what you need to do:
+
+
+You were matched to volunteer with a HeadStart community partner. Have you been in touch with them to arrange your volunteering? If so, remember to log your hours on the HeadStart website. You need to log 16 hours of volunteering by 18th September in order to be invited to an interview for a part-time job. It only takes a few minutes using the log-in details above.
+
+
+If you haven’t started volunteering yet - not to worry! There’s still time to complete your 16 hours of volunteering before 18th September. All you have to do is arrange your own volunteering opportunity. It’s really straightforward to do and we have created a brief guide to help you. We’ve also written a short letter of introduction for you to print and take with you to any potential charity to explain what HeadStart is.
+
+
+Once you’ve found a place to volunteer, please complete this form to let us know the details of the organisation. Please do this ASAP to give yourself plenty of time to complete your volunteering.
+
+Any questions? Email the HeadStart team, check out our website or get in touch on facebook.
+
+
+The HeadStart team
+
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subsribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

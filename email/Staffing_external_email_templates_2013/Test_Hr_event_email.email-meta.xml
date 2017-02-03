@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>Test Hr event email</name>
+    <style>freeForm</style>
+    <subject>Your training starts on {!HR_Event_Attendance__c.HR_Event_Date__c}</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!HR_Event_Attendance__c.HR_Event_Owner_email__c}
+
+Dear {!HR_Event_Attendance__c.Candidate_Name__c},
+
+I am writing to you in order to confirm the details of your training session with us.
+
+Address: {!HR_Event_Attendance__c.Venue_address__c}
+Start date: {!HR_Event_Attendance__c.HR_Event_Date__c}
+Start time: {!HR_Event_Attendance__c.Start_time__c}
+
+End date: {!HR_Event_Attendance__c.End_date__c}
+End time: {!HR_Event_Attendance__c.End_time__c}
+
+The training session will include various lively group activities. Lunch will be provided.
+Please come prepared with the following:-
+
+-a notepad and pen.
+-appropriate clothing as some activities may take place outdoors.
+-two icebreaker games/exercises to share with the group.
+-your passport/proof of identity for DBS verification.
+
+
+{!HR_Event_Attendance__c.Extra_info__c}
+{!HR_Event_Attendance__c.Packing_list__c}.
+
+Click on the link below for directions to the training venue. {!HR_Event_Attendance__c.Directions__c}
+
+We look forward to seeing you again!
+
+Best wishes,
+
+{!HR_Event_Attendance__c.HR_event_Owner__c}
+{!HR_Event_Attendance__c.HR_Event_Owner_email__c}
+The Challenge Network
+
+
+
+
+CR 1.6.5</textOnly>
+    <type>html</type>
+</EmailTemplate>

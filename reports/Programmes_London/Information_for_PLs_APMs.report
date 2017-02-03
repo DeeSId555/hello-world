@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Wave_Component_Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Team__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r$Contact_before_hand__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Contact_Phone__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r$What_does_the_organisation_do__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r$What_does_the_partner_do_that_is_sociall__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Junctions__r.Bookings__r$Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>TRIW 6</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Junctions__r$Usage_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>professional,sponsorship,community</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Information for PLs/APMs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Usages_and_Bookings__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Account.Junctions__r.Bookings__r$Team__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$Date_Started_NCS__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

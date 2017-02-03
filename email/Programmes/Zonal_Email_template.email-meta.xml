@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>Zonal Email template</name>
+    <style>newsletter</style>
+    <subject>NCS is over....what next?</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+Congratulations on completing NCS with The Challenge, we hope you enjoyed your summer as much as we did.
+
+You are now part of The Challenge Society which will help you continue your NCS journey developing yourself further and meeting old NCS friends. We will send you an email every month with exciting opportunities just for NCS grads.
+
+If you have any questions or want more info email us on tcs.westmidlands@the-challenge.org or drop me a text on 07785627463.
+
+Have a great day,
+
+Liam
+(Midlands NCS Grad Team)
+
+Info on how to sign up will be emailed to you in November
+Loved NCS? Love2Shop?
+
+Want a free £20 voucher? It&apos;s this simple.
+[1] Think of a mate who hasn&apos;t done NCS
+[2] Enter your contact details here
+[3] We will send you a code, they sign up for NCS using it, you receive a £20 Love2Shop voucher in the post
+
+Simply enter your details on the link below and we will contact you with your code
+
+Click here for your code
+Fancy developing your public speaking skills and encouraging other to sign up for NCS?
+
+Our Sales Team are looking for Sales Ambassadors to help out in assemblies and lunch stands. You get excellent training and the chance to tell everyone about your NCS experience.
+
+Interested? Click here
+Certificates, awards ceremonies and prize draws for freebies such as Nandos vouchers if you log your volunteering before the end of December.
+
+Go to https://www.thechallengesociety.org/
+
+Your username is {!Contact.Email}
+Your password is {!Contact.Login_Password__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

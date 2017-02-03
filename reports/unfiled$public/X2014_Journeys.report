@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Transport_order__c.From_Address_Hidden__c</field>
+    </columns>
+    <columns>
+        <field>Transport_order__c.To_Address_Hidden__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Transport_order__c.Method_of_Transport__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Private Transport</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Transport_order__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Journey Ready</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Transport_order__c.Wave__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>2014 Journeys</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Transport_order__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Transport_order__c.Date__c</dateColumn>
+        <endDate>2014-07-07</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2014-06-30</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Inclusion_Details__c$Contact__c</field>
+    </columns>
+    <columns>
+        <field>Inclusion_Details__c.Wave_Selections__r$Name</field>
+    </columns>
+    <columns>
+        <field>Inclusion_Details__c$Name</field>
+    </columns>
+    <columns>
+        <field>Inclusion_Details__c$Details_of_restricted_mobility__c</field>
+    </columns>
+    <columns>
+        <field>Inclusion_Details__c.Wave_Selections__r$Wave__c</field>
+    </columns>
+    <columns>
+        <field>Inclusion_Details__c.Wave_Selections__r$Assigned_team__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Inclusion_Details__c.Wave_Selections__r$Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Assigned,Reserved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Inclusion_Details__c$restricted_mobility_wheelchair_user__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Yes and is a wheelchair user</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Inclusion_Details__c$Contact__c.RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Young_Person</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Inclusion_Details__c$Logistical_needs__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>includes</operator>
+            <value>Wheelchair transport required</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2015 - Transport for wheelchair users</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Wave_Selection_and_Inclusion_Detail__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Inclusion_Details__c$X7_days_time__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

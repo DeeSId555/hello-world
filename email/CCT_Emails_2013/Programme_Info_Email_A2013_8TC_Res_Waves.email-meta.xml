@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Programme Pack Email to be sent 2013A</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Programme Info Email A2013-8TC Res Waves</name>
+    <style>none</style>
+    <subject>All you need to know before starting The Challenge</subject>
+    <textOnly>The Challenge Network
+
+Get ready to take on NCS with The Challenge
+
+
+Dear Parent/Guardian of {!Contact.FirstName} {!Contact.LastName} and {!Contact.FirstName},
+
+We hope {!Contact.FirstName} is excited about the Autumn programme!
+
+Please find below a link to {!Contact.FirstName}’s information pack, containing everything they need to know before NCS powered by The Challenge. You will find a full schedule, packing list and answers to frequently asked questions. In the unlikely event that a venue is shown as “to be confirmed”, we will be in touch as soon as the details are finalised.
+
+You will also be sent an invitation to an information evening, held in the weeks leading up to the programme, where we will go through all of the details with you and give you a chance to ask any questions. If you are unable to attend, all of the information that you need can be found in the links below and do not hesitate to contact us if you have any further queries. In the meantime, please visit our Facebook page to find photos, comments, and competitions.
+
+Please ensure the medical and dietary details that you have provided are up-to-date, and communicate any changes to us as soon as possible. Should any circumstance arise that would prevent {!Contact.FirstName} from attending, please let us know as far in advance as possible, in order to minimise wastage of high value places.
+
+Please do not hesitate to contact us on 020 3542 2400 or at contact@the-challenge.org if you have any questions. We are looking forward to welcoming {!Contact.FirstName} on NCS by The Challenge, and encourage them to remind friends to complete their applications as soon as possible.
+
+Your personalised timetable can be found here: {!Wave__c.Programme_Pack_Letters__c}. Our information booklet, containing everything you need to know about the Autumn programme, can be found here.
+
+Please do not hesitate to contact us on 020 3542 2400 or at contact@the-challenge.org if you have any questions or require any further information.
+
+Yours sincerely,
+
+Rebecca Carter
+Director at The Challenge Network
+
+the-challenge.org  ncsyes.co.uk
+/thechallengenetwork    /ncs
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

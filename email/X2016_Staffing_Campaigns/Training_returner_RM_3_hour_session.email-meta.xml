@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>Training - returner RM - 3 hour session</name>
+    <style>formalLetter</style>
+    <subject>Book onto your role training on the staffing website!</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact us on seasonalroles@the-challenge.org.
+
+Dear {!Contact.FirstName},
+
+You can now book onto training for your role on the staffing website!
+
+Returning Residential Mentors only need to attend a three-hour session to re-introduce you to the NCS programme and our safeguarding procedures. This training is a compulsory part of all our seasonal roles, and we can’t let you work on the programme without completing it.
+
+All Residential Mentors also need training in First Aid trained and Food Safety in accordance with The Challenge’s policy - please see below.
+
+What do I need to do?
+
+Head to the staffing website now and go to the ‘Booking Training’ page to see a list of possible training dates.
+
+https://staffing.the-challenge.org/Login.aspx
+
+Select either ‘register’ or ‘decline’ for the date you can attend.
+
+If you can’t make any of the dates offered to you, or if no dates are available, contact your local staffing team as soon as possible.
+
+Our training sessions (especially those taking place over weekends) tend to book up very quickly. Make sure you choose your dates and ‘submit’ them as soon as possible to avoid losing your place!
+
+First Aid and Food Safety training
+
+Your role is also required to be trained in First Aid and Food Safety. If you attended full role-training with us last year, you will have covered a half-day of First Aid training - unless you already had a valid First Aid certificate - and you should have completed an online Food Safety Course ahead of starting your 2015 role.
+
+If you did not attend First Aid training with us last year, and your existing/old First Aid certificate is out of date (more than 3 years old), please call your staffing team to book onto a half-day of First Aid training.
+
+Similarly, if you did not complete your Food Safety course online last year, you’ll need to contact your staffing associate so that we can book your online training.
+
+Both First Aid and Food Safety training are compulsory parts of your role.
+
+Any questions?
+
+If you’d like to find out more about our training sessions and what they’ll cover, you can find information on our FAQs otherwise you can call your local staffing team.
+
+We look forward to seeing you again at training!
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+{!Contact.Contact_Owner_alternative_email__c}
+The Challenge Staffing Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

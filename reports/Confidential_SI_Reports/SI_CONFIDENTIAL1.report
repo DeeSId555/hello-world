@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$NCS_ID__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Id</field>
+    </columns>
+    <columns>
+        <field>Contact.Inclusion_Details__r$Support_Level__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Inclusion_Details__r.Wave_Selections__r$Status__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Inclusion_Details__r.Wave_Selections__r$Wave__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Inclusion_Details__r.Wave_Selections__r$Wave_number__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Inclusion_Details__r.Wave_Selections__r$PC_KO_Day__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Young_Person</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Inclusion_Details__r.Wave_Selections__r$Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Assigned,Reserved,Waiting list</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$NCS_Application_Primary_Season__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Summer 2016,Autumn 2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Inclusion_Details__r$SI_data_to_be_handled__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>SI CONFIDENTIAL</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_Inclusion_Details_with_Wave_Selections_2__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$Birthdate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

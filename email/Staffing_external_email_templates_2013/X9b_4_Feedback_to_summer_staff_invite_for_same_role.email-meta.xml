@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SN Updated 12.13</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>9b.4 Feedback to summer staff: invite for same role no assessment necessary</name>
+    <style>freeForm</style>
+    <subject>Feedback from your role this summer</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+
+
+Dear {!Contact.FirstName},
+
+
+Many thanks for your contribution to NCS with The Challenge. Following the feedback received on your performance, we would therefore like to offer you the same role {!Job_Application__c.Recommendation_for_next_year__c} for 2014. Please follow the link below and complete the application form. If you would like to reapply for this role you do not need to attend an assessment.
+
+
+All returning staff must complete the new style application form for data purposes and to open a new profile for the year. When applying for the same role, for the following sections in the application form (see below) you can enter ‘Please see previous application’. If you want to take this opportunity to add any new experience to your application for the new profile, please do.
+
+
+Sections:
+
+‘Please outline any experience you have working with young people, particularly in a residential or community setting’
+
+‘Why do you want to work for NCS with The Challenge?’
+
+
+N.B, if you would like to apply for additional roles please complete the application fully and put in any information that would be relevant to that role(s). Your application will then be considered alongside all other applications and you will need to attend an assessment for the role if considered suitable.
+
+
+Please follow the link below to complete the application form:
+
+
+http://thechallenge.force.com/TCN/New_Job_Application
+
+
+Thank you for your ongoing interest in The Challenge and we look forward to working with you again.
+
+
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+The Challenge Network
+e: {!Contact.Contact_Owner_alternative_email__c}
+CR 9.4</textOnly>
+    <type>html</type>
+</EmailTemplate>

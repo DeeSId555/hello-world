@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SE2 Email Spring 2015</name>
+    <style>none</style>
+    <subject>NCS Application</subject>
+    <textOnly>NCSTHECHALLENGE.ORG
+
+Your NCS programme
+
+
+Dear Parent/Guardian of {!Contact.FirstName},
+
+
+I am writing to you as I know that {!Contact.FirstName} signed up to take part in NCS this Spring with The NCS Network; however due to a change in provider The Challenge will now be delivering NCS in your area. Unfortunately there will no longer be any programmes happening in Spring this year in your local area, however there will be plenty of opportunity for {!Contact.FirstName} to complete NCS over the Summer.  Hopefully you have received a call from me or one of my colleagues to discuss this change. If you would like to speak to somebody regarding this please do give us a call on 0203 542 2400.
+
+The Challenge is a registered charity founded in 2009. We are the largest provider of NCS in the country and last year provided over 18,000 places across the South East, Midlands and the North West of England. The Challenge aims to bring together local people across all generations, ethnic groups and incomes to build a stronger society. For more information, please visit our website.
+
+Due to this change I would like to ask you to go onto our website and select the date that {!Contact.FirstName} would like to take part in NCS this summer as well as this we would like to ask you to complete their medical form, which can also be found online. In order to do this please visit our booking website and log in with {!Contact.FirstName}’s username and password which are below;
+
+NCS ID: {!Contact.NCS_ID__c}
+Password: {!Contact.Login_PIN__c}
+
+The payment you made to take part in NCS has been passed over to us and as such you will of course not be required to make a new payment*. If you have any questions at all about the sign up process or about the change in provider of the programme please feel free to contact us on 0203 542 2400.
+
+
+Kind regards,
+
+Mark Higgins
+NCS Manager - Buckinghamshire and Berkshire
+The Challenge
+
+
+
+*Please note that your payment, which has been carried over from the NCS Network, can be refunded should the change in provider mean {!Contact.FirstName} no longer wish to take part in NCS. Refunds will only be available until the 30th January 2015, after this date we will no longer be able to refund your original payment.
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+© The Challenge Network.
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

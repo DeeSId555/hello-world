@@ -1,0 +1,1877 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Step Forward Employer Recruitment Activity and Account Management</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ASK_notes__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter any notes that might be relevant  to this process.</inlineHelpText>
+        <label>ASK notes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Account_Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.BillingStreet &amp; br() &amp;
+ Account__r.BillingCity &amp; br() &amp;
+ Account__r.BillingCountry &amp; br() &amp;
+ Account__r.BillingPostalCode</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Local_Authority__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Local_Authority__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Local Authority</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Owner_info__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;Name: &quot;&amp; Account__r.Owner.FirstName &amp;&quot; &quot;&amp; Account__r.Owner.LastName &amp;br()&amp;
+&quot;Role:  &quot;&amp; Account__r.Owner.Title &amp;br()&amp;
+&quot;Email:  &quot;&amp; Account__r.Owner.Email&amp;br()&amp;
+&quot;Mobile: &quot;&amp; Account__r.Owner.MobilePhone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Owner info</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Post_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.BillingPostalCode</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Post Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Step_Forward_Recruitment_Activies</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Account_main_Phone_number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Phone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account main Phone number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_main_contact_name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Main_Contact__r.FirstName &amp;&quot; &quot;&amp; Account__r.Main_Contact__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account main contact name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_main_email_address__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Email__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>A lookup to the main account email address</inlineHelpText>
+        <label>Account main email address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Accounting_Jobs__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>All jobs by Accounting pathway</inlineHelpText>
+        <label>Accounting Jobs</label>
+        <summaryFilterItems>
+            <field>Step_Forward_Job__c.Pathway__c</field>
+            <operation>equals</operation>
+            <value>Accounting</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Step_Forward_Job__c.Step_Forward_Account_Management_Name__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Ask_status__c</fullName>
+        <externalId>false</externalId>
+        <label>Ask status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ask in progress; no contact yet</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unable to contact account owner</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Account owner contacted</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not agreed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Confirmed</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>BSS_Jobs__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>All jobs by Business Support Services pathway</inlineHelpText>
+        <label>BA Jobs</label>
+        <summaryFilterItems>
+            <field>Step_Forward_Job__c.Pathway__c</field>
+            <operation>equals</operation>
+            <value>Business Administration</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Step_Forward_Job__c.Step_Forward_Account_Management_Name__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Contact_responsibility__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact responsibility</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Decision maker</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hiring manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Champion</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Date_account_owner_contacted__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The date the account owner was contacted, this is a very informative help text.</inlineHelpText>
+        <label>Date account owner contacted</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Employer_Recruitment_Stage__c</fullName>
+        <externalId>false</externalId>
+        <label>Employer Recruitment Stage</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No Answer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Left Email</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spoke to Gatekeeper - worth phoning again</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spoke to gatekeeper - give up</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spoke to Decision Maker - think about it</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spoke to Decision Maker - not interested</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spoke to Decision Maker - not interested, contact next year</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Follow up call sorted</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting booked</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting held - in discussion</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting held -not interested</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Vacancy confirmed</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Employer_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Employer Size</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1-50</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>51-250</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>251-1000</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>1000+</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>First_Call_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>First Call Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Follow_up_date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Date_account_owner_contacted__c +7</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>7 days after initial contact</inlineHelpText>
+        <label>Follow up date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Form_Name_of_SF_coordinator__c</fullName>
+        <externalId>false</externalId>
+        <label>Form: Name of SF coordinator</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hospitality_Jobs__c</fullName>
+        <externalId>false</externalId>
+        <label>Hospitality Jobs</label>
+        <summaryFilterItems>
+            <field>Step_Forward_Job__c.Pathway__c</field>
+            <operation>equals</operation>
+            <value>Hospitality</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Step_Forward_Job__c.Step_Forward_Account_Management_Name__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>IT_Software_Telecoms_Jobs__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>All jobs by IT, Software and Telecoms pathway</inlineHelpText>
+        <label>IT, Software Telecoms Jobs</label>
+        <summaryFilterItems>
+            <field>Step_Forward_Job__c.Pathway__c</field>
+            <operation>equals</operation>
+            <value>&quot;IT, Software and Telecoms&quot;</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Step_Forward_Job__c.Step_Forward_Account_Management_Name__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Is_Ask_required__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(ispickval(Source_of_opportunity__c,&quot;Internal lead&quot;),&quot;Yes&quot;,&quot;No&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Ask required?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>London_borough__c</fullName>
+        <externalId>false</externalId>
+        <label>London borough</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Barking And Dagenham</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Barnet</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bexley</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Brent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bromley</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Camden</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>City Of London</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Croydon</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ealing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Enfield</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Greenwich</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hackney</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hammersmith And Fulham</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Haringey</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Harrow</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Havering</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hillingdon</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hounslow</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Islington</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Kensington And Chelsea</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Kingston Upon Thames</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lambeth</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lewisham</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Merton</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Newham</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Redbridge</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Richmond Upon Thames</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Southwark</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sutton</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tower Hamlets</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Waltham Forest</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wandsworth</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Westminster</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Main_contact_email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_main_contact__r.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Main contact email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Main_contact_numbers__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;Phone : &quot;&amp; Step_Forward_main_contact__r.Phone &amp; BR()&amp;
+&quot;Mobile: &quot;&amp;  Step_Forward_main_contact__r.MobilePhone &amp; br()&amp;
+&quot;Work  : &quot;&amp;  Step_Forward_main_contact__r.npe01__WorkPhone__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Main contact numbers</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meeting_Booked_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Meeting Booked Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Meeting_Held_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Meeting Held Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Method_of_contact__c</fullName>
+        <externalId>false</externalId>
+        <label>Method of contact</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Phone</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Face to face</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Pathways_eligible_for__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select all pathways this organisation is eligible for</inlineHelpText>
+        <label>Pathways eligible for</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Accounting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Business Administration</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IT, Software and Telecoms</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Social Media &amp; Digital Media</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Early Years Education</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hospitality</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Previous_StepFwd_Contat_Involvement__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Has there been previous contact or involvement with this account by Step Forward?</inlineHelpText>
+        <label>Previous StepFwd Contat/Involvement?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Recruitment_cycle__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Step Forward Account Management Recruitment Cycle</inlineHelpText>
+        <label>Recruitment cycle</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>2014</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2015</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2017</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2018</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2019</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2020</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2021</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2022</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2023</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2024</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2025</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Registered_Organisation_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Registered Organisation Address</label>
+        <length>120</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Registered_Organisation_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Registered Organisation Name</label>
+        <length>120</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Second_Call_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Second Call Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Sector__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select the sector this organisation is in</inlineHelpText>
+        <label>Sector</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Accountancy, banking and finance</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Business, consulting and management</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Creative arts and culture</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Charities and voluntary work</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Engineering and manufacturing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Energy and utilities</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Environment and agriculture</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Health and social care</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hospitality, tourism and sport</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IT and information services</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Law</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Marketing, advertising and PR</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Media and publishing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Property and construction</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Public sector</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Recruitment and HR</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Retail</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Science and pharmaceuticals</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Teaching and education</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Transport and logistics</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Short_description_of_account__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>A general summary of what the organisation is all about</inlineHelpText>
+        <label>Short description of account</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Social_Media_Digital_Marketing_Jobs__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>All jobs by Social Media &amp; Digital Marketing pathway</inlineHelpText>
+        <label>Social Media &amp; Digital Marketing Jobs</label>
+        <summaryFilterItems>
+            <field>Step_Forward_Job__c.Pathway__c</field>
+            <operation>equals</operation>
+            <value>Social Media &amp; Digital Marketing</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Step_Forward_Job__c.Step_Forward_Account_Management_Name__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Source_of_opportunity__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please note that if the account is from an internal source, and you would like to use its contacts, you will need to go through the ASK process and contact the account owner for permission.</inlineHelpText>
+        <label>Source of employer opportunity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cold call</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cold Call Database</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Job listing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Social Media</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Account contact</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Step Forward contact</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Current employer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Personal contact</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Internal lead</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Networking Event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Stage_Visual__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(ispickval(Employer_Recruitment_Stage__c,&quot;3 - Considering meeting&quot;),image(&quot;https://c.na8.content.force.com/servlet/servlet.FileDownload?file=015C0000002ONiv&quot;,&quot;Orange&quot;),
+if(ispickval(Employer_Recruitment_Stage__c,&quot;4 - Meeting booked&quot;),image(&quot;https://c.na8.content.force.com/servlet/servlet.FileDownload?file=015C0000002ONiv&quot;,&quot;Orange&quot;),
+if(ispickval(Employer_Recruitment_Stage__c,&quot;5 - Discussing potential jobs&quot;),image(&quot;https://c.na8.content.force.com/servlet/servlet.FileDownload?file=015C0000002ONiv&quot;,&quot;Orange&quot;),
+if(ispickval(Employer_Recruitment_Stage__c,&quot;7 - Interested - Not this year&quot;),image(&quot;https://c.na8.content.force.com/servlet/servlet.FileDownload?file=015C0000002ONlV&quot;,&quot;SpeedLimit&quot;),
+if(ispickval(Employer_Recruitment_Stage__c,&quot;7 - Interested - No jobs confirmed&quot;),image(&quot;https://c.na8.content.force.com/servlet/servlet.FileDownload?file=015C0000002ONlV&quot;,&quot;SpeedLimit&quot;),
+if(ispickval(Employer_Recruitment_Stage__c,&quot;8 - Closed - No interest at all&quot;),image(&quot;https://c.na8.content.force.com/servlet/servlet.FileDownload?file=015C0000002ONj5&quot;,&quot;Red&quot;),
+if(ispickval(Employer_Recruitment_Stage__c,&quot;8 - Closed - Job/s confirmed&quot;),image(&quot;https://c.na8.content.force.com/servlet/servlet.FileDownload?file=015C0000002ONiq&quot;,&quot;Green&quot;),image(&quot;https://c.na8.content.force.com/servlet/servlet.FileDownload?file=015C0000002N9yO&quot;,&quot;StepForward&quot;))))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage Visual</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Step_Forward_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Step Forward Notes</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Step_Forward_Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Step Forward Owner</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Profile.Name</field>
+                <operation>equals</operation>
+                <value>Step Forward Recruitment</value>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Step_Forward_Employer_Recruitment</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Step_Forward_main_contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Main account contact</inlineHelpText>
+        <label>Step Forward main contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>Step_Forward_Employer_Recruitment</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Step_Forward_notes_entry__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter your notes here</inlineHelpText>
+        <label>Step Forward notes entry</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Third_Call_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Third Call Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Warm_Cold__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Warm or cold contact</inlineHelpText>
+        <label>Warm/Cold</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Warm</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cold</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Working_with_Children_Jobs__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>All jobs by Working with Children pathway</inlineHelpText>
+        <label>Early Years Education</label>
+        <summaryFilterItems>
+            <field>Step_Forward_Job__c.Pathway__c</field>
+            <operation>equals</operation>
+            <value>Early Years Education</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Step_Forward_Job__c.Step_Forward_Account_Management_Name__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <label>Step Forward Account Management</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Account_Post_Code__c</columns>
+        <columns>Account_main_contact_name__c</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Sector__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Andy</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Account_Post_Code__c</columns>
+        <columns>Account_main_contact_name__c</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Sector__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Step_Forward_Owner__c</field>
+            <operation>equals</operation>
+            <value>andy bowley</value>
+        </filters>
+        <label>Andy</label>
+    </listViews>
+    <listViews>
+        <fullName>Andy_ALL_Meetings_Booked</fullName>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Sector__c</columns>
+        <columns>Account__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Employer_Recruitment_Stage__c</field>
+            <operation>contains</operation>
+            <value>Meeting booked,Meeting held - in discussion,Meeting held -not in,Vacancy confir</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_Owner__c</field>
+            <operation>contains</operation>
+            <value>Andy</value>
+        </filters>
+        <label>Andy ALL Meetings Booked</label>
+    </listViews>
+    <listViews>
+        <fullName>Andy_ALL_Meetings_Booked1</fullName>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Sector__c</columns>
+        <columns>Account__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Employer_Recruitment_Stage__c</field>
+            <operation>contains</operation>
+            <value>Meeting booked,Meeting held - in discussion,Meeting held -not in,Vacancy confir</value>
+        </filters>
+        <label>Andy ALL Meetings Booked</label>
+    </listViews>
+    <listViews>
+        <fullName>Blank</fullName>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Sector__c</columns>
+        <columns>Account__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Employer_Recruitment_Stage__c</field>
+            <operation>contains</operation>
+            <value>Meeting booked,Meeting held - in discussion,Meeting held -not in,Vacancy confir</value>
+        </filters>
+        <filters>
+            <field>Sector__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Blank</label>
+    </listViews>
+    <listViews>
+        <fullName>Busy_bees_Contacts_2015_CW</fullName>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Account__c</columns>
+        <columns>Account_main_Phone_number__c</columns>
+        <columns>Account_main_email_address__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Sector__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Sector__c</field>
+            <operation>equals</operation>
+            <value>Teaching and education</value>
+        </filters>
+        <filters>
+            <field>Account__c</field>
+            <operation>contains</operation>
+            <value>busy bees</value>
+        </filters>
+        <label>Busy bees Contacts 2015 CW</label>
+    </listViews>
+    <listViews>
+        <fullName>Cath_s_team_ALL_Meetings_Booked</fullName>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Sector__c</columns>
+        <columns>Account__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Employer_Recruitment_Stage__c</field>
+            <operation>contains</operation>
+            <value>Meeting booked,Meeting held - in discussion,Meeting held -not in,Vacancy confir</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_Owner__c</field>
+            <operation>contains</operation>
+            <value>Catharine,Diana,Stephen,Zac</value>
+        </filters>
+        <label>Cath&apos;s team ALL Meetings Booked</label>
+    </listViews>
+    <listViews>
+        <fullName>Charity_list</fullName>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Account__c</columns>
+        <columns>Account_Post_Code__c</columns>
+        <columns>Account_main_Phone_number__c</columns>
+        <columns>Account_main_email_address__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Sector__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Sector__c</field>
+            <operation>equals</operation>
+            <value>Charities and voluntary work</value>
+        </filters>
+        <label>Charity list</label>
+    </listViews>
+    <listViews>
+        <fullName>IT_Sector</fullName>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Account__c</columns>
+        <columns>Account_main_Phone_number__c</columns>
+        <columns>Account_main_email_address__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Sector__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Sector__c</field>
+            <operation>equals</operation>
+            <value>IT and information services</value>
+        </filters>
+        <label>IT Sector</label>
+    </listViews>
+    <listViews>
+        <fullName>James_s_team_ALL_Meetings_Booked</fullName>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Sector__c</columns>
+        <columns>Account__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Employer_Recruitment_Stage__c</field>
+            <operation>contains</operation>
+            <value>Meeting booked</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_Owner__c</field>
+            <operation>contains</operation>
+            <value>James,Ayesha</value>
+        </filters>
+        <label>James&apos;s team ALL Meetings Booked</label>
+    </listViews>
+    <listViews>
+        <fullName>James_s_team_ALL_Meetings_Booked_Rick</fullName>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Sector__c</columns>
+        <columns>Account__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Employer_Recruitment_Stage__c</field>
+            <operation>contains</operation>
+            <value>Meeting</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_Owner__c</field>
+            <operation>contains</operation>
+        </filters>
+        <label>James&apos;s team ALL Meetings Booked - Rick</label>
+    </listViews>
+    <listViews>
+        <fullName>LEYF</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Recruitment_cycle__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account__c</field>
+            <operation>contains</operation>
+            <value>LEYF</value>
+        </filters>
+        <filters>
+            <field>Recruitment_cycle__c</field>
+            <operation>equals</operation>
+            <value>2016</value>
+        </filters>
+        <label>LEYF</label>
+    </listViews>
+    <listViews>
+        <fullName>LEYF_Benoit</fullName>
+        <columns>NAME</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>Account__c</columns>
+        <columns>Working_with_Children_Jobs__c</columns>
+        <columns>Step_Forward_main_contact__c</columns>
+        <columns>Account_Address__c</columns>
+        <columns>Account_Post_Code__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account__c</field>
+            <operation>contains</operation>
+            <value>LEYF</value>
+        </filters>
+        <filters>
+            <field>Recruitment_cycle__c</field>
+            <operation>equals</operation>
+            <value>2016</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>3/14/2016 12:00 AM</value>
+        </filters>
+        <label>LEYF Benoit</label>
+    </listViews>
+    <listViews>
+        <fullName>Nursery_Sector_3_March_2015</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Account_Address__c</columns>
+        <columns>Account_main_Phone_number__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>4/2/2015 12:00 AM</value>
+        </filters>
+        <label>Nursery Sector 3 (March 2015)</label>
+    </listViews>
+    <listViews>
+        <fullName>Nursery_Sector_4_May_2015</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Account_Address__c</columns>
+        <columns>Account_main_Phone_number__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>5/8/2015 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>CREATEDBY_USER</field>
+            <operation>equals</operation>
+            <value>Maksymilian Wardalinski</value>
+        </filters>
+        <label>Nursery Sector 4 (May 2015)</label>
+    </listViews>
+    <listViews>
+        <fullName>Private_Sector_Accounts_2015</fullName>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Account_main_contact_name__c</columns>
+        <columns>Account_main_Phone_number__c</columns>
+        <columns>Account_main_email_address__c</columns>
+        <columns>First_Call_Date__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Contact_responsibility__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Step_Forward_Owner__c</field>
+            <operation>contains</operation>
+            <value>Catharine Bryant,Diana Muriithi,Stephen Bowcott</value>
+        </filters>
+        <label>Private Sector Accounts 2015</label>
+    </listViews>
+    <listViews>
+        <fullName>SF_Nursery_Follow_Up_Booked_2015</fullName>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Account__c</columns>
+        <columns>Account_main_Phone_number__c</columns>
+        <columns>Account_main_email_address__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Sector__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Sector__c</field>
+            <operation>equals</operation>
+            <value>Teaching and education</value>
+        </filters>
+        <filters>
+            <field>Employer_Recruitment_Stage__c</field>
+            <operation>equals</operation>
+            <value>5 - Follow up booked</value>
+        </filters>
+        <label>SF Nursery Follow Up Booked 2015</label>
+    </listViews>
+    <listViews>
+        <fullName>SF_Warm_Contacts_Follow_Up_booked_2015</fullName>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Account__c</columns>
+        <columns>Step_Forward_main_contact__c</columns>
+        <columns>Account_main_Phone_number__c</columns>
+        <columns>Account_main_email_address__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Source_of_opportunity__c</field>
+            <operation>equals</operation>
+            <value>Personal contact</value>
+        </filters>
+        <filters>
+            <field>Employer_Recruitment_Stage__c</field>
+            <operation>equals</operation>
+            <value>5 - Follow up booked</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_Owner__c</field>
+            <operation>contains</operation>
+            <value>Sian Meech,Ayesha Ahmed</value>
+        </filters>
+        <label>SF Warm Contacts Follow Up booked 2015</label>
+    </listViews>
+    <listViews>
+        <fullName>SF_Warm_Contacts_Meetings_Booked_2015</fullName>
+        <booleanFilter>1 AND (2 or 3)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Account__c</columns>
+        <columns>Step_Forward_main_contact__c</columns>
+        <columns>Account_main_Phone_number__c</columns>
+        <columns>Account_main_email_address__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Employer_Recruitment_Stage__c</field>
+            <operation>equals</operation>
+            <value>6 - Meeting booked</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_Owner__c</field>
+            <operation>contains</operation>
+            <value>Sian</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_Owner__c</field>
+            <operation>contains</operation>
+            <value>Ayesha</value>
+        </filters>
+        <label>Team 1 All Meetings Booked</label>
+    </listViews>
+    <listViews>
+        <fullName>SF_Warm_Contacts_Successful_AA</fullName>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Account__c</columns>
+        <columns>Step_Forward_main_contact__c</columns>
+        <columns>Account_main_Phone_number__c</columns>
+        <columns>Account_main_email_address__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Source_of_opportunity__c</field>
+            <operation>equals</operation>
+            <value>Personal contact</value>
+        </filters>
+        <filters>
+            <field>Employer_Recruitment_Stage__c</field>
+            <operation>equals</operation>
+            <value>4 - Contact successful - Interested</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_Owner__c</field>
+            <operation>equals</operation>
+            <value>Ayesha</value>
+        </filters>
+        <label>SF Warm Contacts Successful AA</label>
+    </listViews>
+    <listViews>
+        <fullName>SF_Warm_Contacts_Successful_SM</fullName>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Account__c</columns>
+        <columns>Step_Forward_main_contact__c</columns>
+        <columns>Account_main_Phone_number__c</columns>
+        <columns>Account_main_email_address__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Source_of_opportunity__c</field>
+            <operation>equals</operation>
+            <value>Personal contact</value>
+        </filters>
+        <filters>
+            <field>Employer_Recruitment_Stage__c</field>
+            <operation>equals</operation>
+            <value>4 - Contact successful - Interested</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_Owner__c</field>
+            <operation>equals</operation>
+            <value>Sian</value>
+        </filters>
+        <label>SF Warm Contacts Successful SM</label>
+    </listViews>
+    <listViews>
+        <fullName>Sian_All_Meetings_Booked</fullName>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Sector__c</columns>
+        <columns>Account__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Employer_Recruitment_Stage__c</field>
+            <operation>contains</operation>
+            <value>Meeting booked,Meeting held - in discussion,Meeting held -not interested,Vacanc</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_Owner__c</field>
+            <operation>contains</operation>
+            <value>Sian Meech,Benoit Morana,Ayesha Ahmed</value>
+        </filters>
+        <label>Sian&apos;s team ALL Meetings Booked</label>
+    </listViews>
+    <listViews>
+        <fullName>Sian_s_Super_View_Pew_Pew</fullName>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Account__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Account_main_Phone_number__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <columns>Step_Forward_main_contact__c</columns>
+        <columns>Account_main_contact_name__c</columns>
+        <columns>Account_main_email_address__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>LAST_ACTIVITY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>2/12/2015 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>CREATEDBY_USER</field>
+            <operation>equals</operation>
+            <value>Maksymilian Wardalinski</value>
+        </filters>
+        <filters>
+            <field>Source_of_opportunity__c</field>
+            <operation>equals</operation>
+            <value>Other</value>
+        </filters>
+        <label>Nursery sector 2 (Feb 12/02)</label>
+    </listViews>
+    <listViews>
+        <fullName>Sian_s_team_3rd_Sector_Meetings_Booked</fullName>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Sector__c</columns>
+        <columns>Account__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Employer_Recruitment_Stage__c</field>
+            <operation>contains</operation>
+            <value>Meeting booked</value>
+        </filters>
+        <filters>
+            <field>Sector__c</field>
+            <operation>contains</operation>
+            <value>Charities and voluntary work,Public sector</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_Owner__c</field>
+            <operation>contains</operation>
+            <value>Sian,Benoit,Ayesha</value>
+        </filters>
+        <label>Sian&apos;s team 3rd Sector Meetings Booked</label>
+    </listViews>
+    <listViews>
+        <fullName>Sian_s_team_Nursery_Meetings_Booked</fullName>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Sector__c</columns>
+        <columns>Account__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Employer_Recruitment_Stage__c</field>
+            <operation>contains</operation>
+            <value>Meeting booked</value>
+        </filters>
+        <filters>
+            <field>Sector__c</field>
+            <operation>contains</operation>
+            <value>Teaching and education</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_Owner__c</field>
+            <operation>contains</operation>
+            <value>Sian,Benoit,Ayesha</value>
+        </filters>
+        <label>Sian&apos;s team Nursery Meetings Booked</label>
+    </listViews>
+    <listViews>
+        <fullName>Step_Forward_IT_Contacts_2015</fullName>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Account__c</columns>
+        <columns>Step_Forward_main_contact__c</columns>
+        <columns>Account_main_Phone_number__c</columns>
+        <columns>Account_main_email_address__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Source_of_opportunity__c</field>
+            <operation>equals</operation>
+            <value>Cold call,Cold Call Database</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_Owner__c</field>
+            <operation>notContain</operation>
+            <value>Benoit,Sian</value>
+        </filters>
+        <label>Step Forward IT Contacts 2015</label>
+    </listViews>
+    <listViews>
+        <fullName>Step_Forward_Nursery_Contacts_2015</fullName>
+        <columns>NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Account__c</columns>
+        <columns>Account_main_Phone_number__c</columns>
+        <columns>Account_main_email_address__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Sector__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Sector__c</field>
+            <operation>equals</operation>
+            <value>Teaching and education</value>
+        </filters>
+        <label>Step Forward Nursery Contacts 2015</label>
+    </listViews>
+    <listViews>
+        <fullName>Step_Forward_Third_Sector_Upload_12</fullName>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Account__c</columns>
+        <columns>Step_Forward_main_contact__c</columns>
+        <columns>Account_main_Phone_number__c</columns>
+        <columns>Account_main_email_address__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <columns>Sector__c</columns>
+        <columns>First_Call_Date__c</columns>
+        <columns>Second_Call_Date__c</columns>
+        <columns>Third_Call_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Sector__c</field>
+            <operation>equals</operation>
+            <value>Charities and voluntary work</value>
+        </filters>
+        <label>Charity sector accounts 2015 (1)</label>
+    </listViews>
+    <listViews>
+        <fullName>Step_Forward_Warm_Contacts_2015</fullName>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Account__c</columns>
+        <columns>Step_Forward_main_contact__c</columns>
+        <columns>Account_main_Phone_number__c</columns>
+        <columns>Account_main_email_address__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Source_of_opportunity__c</field>
+            <operation>equals</operation>
+            <value>Personal contact</value>
+        </filters>
+        <label>Step Forward Warm Contacts 2015</label>
+    </listViews>
+    <listViews>
+        <fullName>Stephen_Step_Forward</fullName>
+        <columns>Account__c</columns>
+        <columns>Account_Owner_info__c</columns>
+        <columns>Account_main_contact_name__c</columns>
+        <columns>Account_main_email_address__c</columns>
+        <columns>Account_main_Phone_number__c</columns>
+        <columns>Contact_responsibility__c</columns>
+        <columns>First_Call_Date__c</columns>
+        <columns>London_borough__c</columns>
+        <columns>Main_contact_email__c</columns>
+        <columns>Main_contact_numbers__c</columns>
+        <columns>Previous_StepFwd_Contat_Involvement__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <columns>Step_Forward_main_contact__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Owner_info__c</field>
+            <operation>contains</operation>
+            <value>Stephen Bowcott</value>
+        </filters>
+        <label>Stephen Step Forward</label>
+    </listViews>
+    <listViews>
+        <fullName>Test_Catharine_2015</fullName>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Owner__c</columns>
+        <columns>Account__c</columns>
+        <columns>Employer_Recruitment_Stage__c</columns>
+        <columns>First_Call_Date__c</columns>
+        <columns>Second_Call_Date__c</columns>
+        <columns>Third_Call_Date__c</columns>
+        <columns>Step_Forward_notes_entry__c</columns>
+        <columns>Step_Forward_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Step_Forward_Owner__c</field>
+            <operation>contains</operation>
+            <value>Catharine,Diana,Stephen</value>
+        </filters>
+        <label>Cath&apos;s Team Calls Made 2015</label>
+    </listViews>
+    <nameField>
+        <displayFormat>EMP-{0000000}</displayFormat>
+        <label>Recruitment Activity Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Step Forward Account Management</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Ask_outcome</fullName>
+        <active>true</active>
+        <description>If ASK is required, the Ask outcome will need to be populated</description>
+        <errorConditionFormula>and((Is_Ask_required__c =&quot;Yes&quot;),(text(Ask_status__c )=&quot;&quot;))</errorConditionFormula>
+        <errorDisplayField>Ask_status__c</errorDisplayField>
+        <errorMessage>Please select the relevant value from the tickbox</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Must_enter_Ask_contact_date</fullName>
+        <active>true</active>
+        <errorConditionFormula>and(text(Ask_status__c)=&quot;Account owner contacted&quot;,text(Date_account_owner_contacted__c)=&quot;&quot;)</errorConditionFormula>
+        <errorDisplayField>Date_account_owner_contacted__c</errorDisplayField>
+        <errorMessage>Please enter the date the account owner was contacted</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Must_enter_Source</fullName>
+        <active>true</active>
+        <errorConditionFormula>(text(Source_of_opportunity__c))=&quot;&quot;</errorConditionFormula>
+        <errorDisplayField>Source_of_opportunity__c</errorDisplayField>
+        <errorMessage>Please select from the list</errorMessage>
+    </validationRules>
+</CustomObject>

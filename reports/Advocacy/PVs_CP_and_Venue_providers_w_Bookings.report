@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Main_Contact__c</field>
+    </columns>
+    <columns>
+        <field>Account$Email__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Junctions__r.Bookings__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Booking__c.Professional_Visit,Booking__c.RCA_Community_Partner,Booking__c.TC_Community_Partner,Booking__c.Split_RCD_Venue,Booking__c.PCKO_Venue_2014,Booking__c.PC_Return_Venue,Booking__c.RCD_Day_Venue,Booking__c.RCD_Professional_Visit,Booking__c.Sat_RCA_Day_Venue,Booking__c.Showcase_Venue,Booking__c.Sun_RCA_Day_Venue,Booking__c.TCKO_Venue,Booking__c.TC_Day_Venue,Booking__c.TC_Sports_Venue,Booking__c.TC_Evening_Session_Space_Venue,Booking__c.RCA_Day_Venue,Booking__c.TC_Return_Venue</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>PVs, CP and Venue providers w. Bookings</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Prog14_AccountsUsagesBookings__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account.Junctions__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

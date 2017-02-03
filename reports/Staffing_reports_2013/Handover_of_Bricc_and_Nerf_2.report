@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Job_Application__c.Contact_Name__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Role_to_assess_for__c</field>
+    </columns>
+    <columns>
+        <field>PHONE3</field>
+    </columns>
+    <columns>
+        <field>Contact.Gender__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Date_candidate_invited_to_assessment__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Preferred_waves__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Candidate_accepted_offer__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Registered_for_Training__c</field>
+    </columns>
+    <description>Handover of Bricc and Nerf 2</description>
+    <filter>
+        <criteriaItems>
+            <column>CONTACT_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Summer_staff</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>JA-2013</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Role_to_assess_for__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>TCS Mentor</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Role_to_assess_for__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Programme Leader,Assistant Programme Leader,Senior Mentor,Community Mentor</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Decision_post_assessment__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Accept,Offer different role,No assessment needed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Cluster_selected__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>NERF,BRICC</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Job_Application__c.Cluster_selected__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Handover of Bricc and Nerf 2</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Job_Application__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2012-11-27</startDate>
+    </timeFrameFilter>
+</Report>

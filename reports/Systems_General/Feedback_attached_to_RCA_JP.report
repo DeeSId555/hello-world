@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Feedback__c$Name</field>
+    </columns>
+    <columns>
+        <field>Feedback__c$Job_Application__c</field>
+    </columns>
+    <columns>
+        <field>Feedback__c$Role__c</field>
+    </columns>
+    <columns>
+        <field>Feedback__c$Date_feedback_submitted__c</field>
+    </columns>
+    <columns>
+        <field>Feedback__c$Job_placement__c.RecordType</field>
+    </columns>
+    <columns>
+        <field>Feedback__c$Wave__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Feedback__c$Job_placement__c.RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Job_placement__c.RCA_1_2014,Job_placement__c.RCA_2_2014,Job_placement__c.RCA_3_2014,Job_placement__c.RCA_4_2014</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Feedback__c$Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>CAW,WSurrey,GEM A 3,GEM A 4,GEM A 5,GEM A 7,GEM A 9</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Feedback attached to RCA JP</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Feedback__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Feedback__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

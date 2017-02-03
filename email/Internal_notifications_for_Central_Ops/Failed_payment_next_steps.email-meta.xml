@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto-notification sent to Central Ops when 2 weeks have elapsed from contacting parents re failed payment</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Failed payment next steps</name>
+    <style>none</style>
+    <subject>2nd payment reminder has been sent for {!Contact.Name}</subject>
+    <textOnly>Hi 
+
+Two weeks have elapsed since contact was made with PG regarding failed payment for {!Contact.Name}.  Please move {!Contact.Name} from either assigned/reserved or paid waiting list to bottom of unpaid waiting list and send email to PG to confirm action.
+
+This is a standard email, sent automatically whenever 14 days have elapsed from contacting PG regarding failed payment.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

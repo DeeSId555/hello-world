@@ -1,0 +1,1219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Incident</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Incidents</value>
+    </caseValues>
+    <fields>
+        <label><!-- APM Email --></label>
+        <name>APM_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this incident took place at a partner or venue, please record the Account. --></help>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Incidents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- &quot;Please add notes here that record important events regarding the management of this incident after it occurred (i.e. key people spoken to, decisions made, referrals made).
+The date, time and your user name will be automatically recorded.&quot; --></help>
+        <label><!-- Add New Notes --></label>
+        <name>Add_New_Notes_Long__c</name>
+    </fields>
+    <fields>
+        <help><!-- &quot;Please add notes here that record important events regarding the management of this incident after it occurred (i.e. key people spoken to, decisions made, referrals made).
+The date, time and your user name will be automatically recorded.&quot; --></help>
+        <label><!-- Add new notes --></label>
+        <name>Add_new_notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Advice given to PAM / PM? --></label>
+        <name>Advice_given_to_PAM_PM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Advice given to wave staff by phone? --></label>
+        <name>Advice_given_to_wave_staff_by_phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned/Reserved on Different Wave --></label>
+        <name>Assigned_Reserved_on_Different_Wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attendance --></label>
+        <name>Attendance__c</name>
+        <relationshipLabel><!-- Incidents --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Campaign --></label>
+        <name>Campaign__c</name>
+        <relationshipLabel><!-- Incidents --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Card type --></label>
+        <name>Card_type__c</name>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red (2nd yellow awarded)</masterLabel>
+            <translation><!-- Red (2nd yellow awarded) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warning</masterLabel>
+            <translation><!-- Warning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yellow</masterLabel>
+            <translation><!-- Yellow --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case notes --></label>
+        <name>Case_notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter as many items as you feel apply. --></help>
+        <label><!-- Cause of incident --></label>
+        <name>Cause_of_incident__c</name>
+        <picklistValues>
+            <masterLabel>Alcohol or drugs</masterLabel>
+            <translation><!-- Alcohol or drugs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Allergic Reaction</masterLabel>
+            <translation><!-- Allergic Reaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drowing/suffocation</masterLabel>
+            <translation><!-- Drowing/suffocation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental</masterLabel>
+            <translation><!-- Environmental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equipment failure</masterLabel>
+            <translation><!-- Equipment failure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exhaustion</masterLabel>
+            <translation><!-- Exhaustion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exposure to fire or explosion</masterLabel>
+            <translation><!-- Exposure to fire or explosion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exposure to harmful substance</masterLabel>
+            <translation><!-- Exposure to harmful substance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Falls from height</masterLabel>
+            <translation><!-- Falls from height --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fight/Altercation</masterLabel>
+            <translation><!-- Fight/Altercation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food Poisoning</masterLabel>
+            <translation><!-- Food Poisoning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Illness</masterLabel>
+            <translation><!-- Illness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Injured while handling/lifting/carrying</masterLabel>
+            <translation><!-- Injured while handling/lifting/carrying --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Involved in vehicle collision</masterLabel>
+            <translation><!-- Involved in vehicle collision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing/lost</masterLabel>
+            <translation><!-- Missing/lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-existing condition</masterLabel>
+            <translation><!-- Pre-existing condition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self Harm</masterLabel>
+            <translation><!-- Self Harm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slips, trips or falls on same level</masterLabel>
+            <translation><!-- Slips, trips or falls on same level --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Struck by moving object or vehicle</masterLabel>
+            <translation><!-- Struck by moving object or vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Struck something fixed/stationary</masterLabel>
+            <translation><!-- Struck something fixed/stationary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vehicle</masterLabel>
+            <translation><!-- Vehicle --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cluster --></label>
+        <name>Cluster__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Team --></label>
+        <name>Contact_Team__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use the spyglass to look up the name of the young person. --></help>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Incidents --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Dangerous accident? --></label>
+        <name>Dangerous_accident__c</name>
+    </fields>
+    <fields>
+        <label><!-- DateTime Alert Sent to PM --></label>
+        <name>DateTime_Alert_Sent_to_PM__c</name>
+    </fields>
+    <fields>
+        <label><!-- DateTime Alert Sent to SPM --></label>
+        <name>DateTime_Alert_Sent_to_SPM__c</name>
+    </fields>
+    <fields>
+        <label><!-- DateTime Reminder Sent to SPM --></label>
+        <name>DateTime_Reminder_Sent_to_SPM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Reported to PHAROS --></label>
+        <name>Date_Reported_to_PHAROS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Reported to RIDDOR --></label>
+        <name>Date_Reported_to_RIDDOR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Reported to The Charity Commission --></label>
+        <name>Date_Reported_to_The_Charity_Commission__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the PL was informed, please enter the time and date. --></help>
+        <label><!-- Date and time incident reported to PL --></label>
+        <name>Date_and_time_incident_reported_to_PL__c</name>
+    </fields>
+    <fields>
+        <help><!-- A core staff member should always be informed of an incident. Please record the date/time here. --></help>
+        <label><!-- Date reported to core staff member --></label>
+        <name>Date_and_time_incident_reported_to_PM__c</name>
+    </fields>
+    <fields>
+        <help><!-- When the incident actually ocurred. --></help>
+        <label><!-- Date and time of incident --></label>
+        <name>Date_and_time_of_incident__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date card was given --></label>
+        <name>Date_card_was_given__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the date that the YP left the programme. --></help>
+        <label><!-- Date left the programme --></label>
+        <name>Date_left_the_programme__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of incident --></label>
+        <name>Date_of_incident__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date that PL was informed --></label>
+        <name>Date_that_PL_was_informed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date that PM was informed --></label>
+        <name>Date_that_PM_was_informed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day as a number --></label>
+        <name>Day_as_a_number__c</name>
+    </fields>
+    <fields>
+        <help><!-- For &apos;started but left&apos; YPs, this is the date that they quit the programme. If this is different from the day they actually went home, enter this information in the fields below. --></help>
+        <label><!-- Day that action was taken/YP left --></label>
+        <name>Day_that_card_was_given__c</name>
+        <picklistValues>
+            <masterLabel>PC 1</masterLabel>
+            <translation><!-- PC 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PC 2</masterLabel>
+            <translation><!-- PC 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PC 3</masterLabel>
+            <translation><!-- PC 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PC 4</masterLabel>
+            <translation><!-- PC 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PC 5</masterLabel>
+            <translation><!-- PC 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PC 6</masterLabel>
+            <translation><!-- PC 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA 1</masterLabel>
+            <translation><!-- RCA 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA 2</masterLabel>
+            <translation><!-- RCA 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA 3</masterLabel>
+            <translation><!-- RCA 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA 4</masterLabel>
+            <translation><!-- RCA 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD 1</masterLabel>
+            <translation><!-- RCD 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD 2</masterLabel>
+            <translation><!-- RCD 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD 3</masterLabel>
+            <translation><!-- RCD 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD 4</masterLabel>
+            <translation><!-- RCD 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC 1</masterLabel>
+            <translation><!-- TC 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC 2</masterLabel>
+            <translation><!-- TC 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC 3</masterLabel>
+            <translation><!-- TC 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC 4</masterLabel>
+            <translation><!-- TC 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC 5</masterLabel>
+            <translation><!-- TC 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- &quot;Describe the incident:
+- What happened?
+- Any damage to property?
+- Was any treatment given?
+- Any significant evidence including photographs to be retained?
+- Anything else that needs to be recorded?&apos;&quot; --></help>
+        <label><!-- Description of incident --></label>
+        <name>Description_of_incident__c</name>
+    </fields>
+    <fields>
+        <help><!-- Was the YP&apos;s departure date the same as the day they quit/were awarded the red card? --></help>
+        <label><!-- Did YP leave the programme the same day? --></label>
+        <name>Did_YP_leave_the_programme_the_same_day__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Document URL 2 --></label>
+        <name>Document_URL_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document URL 3 --></label>
+        <name>Document_URL_3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the Salesforce link of the document that has been uploaded. --></help>
+        <label><!-- Document URL --></label>
+        <name>Document_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Uploaded By --></label>
+        <name>Document_Uploaded_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document deleted elsewhere? --></label>
+        <name>Document_deleted_elsewhere__c</name>
+        <picklistValues>
+            <masterLabel>N/a</masterLabel>
+            <translation><!-- N/a --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- If injury occurred, has PM contacted PG? --></label>
+        <name>If_injury_occurred_has_PM_contacted_PG__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Input the day that the YP departed from the programme if it&apos;s not the same day they were awarded the red card/quit. --></help>
+        <label><!-- If not, what was their departure day? --></label>
+        <name>If_not_what_was_their_departure_day__c</name>
+    </fields>
+    <fields>
+        <label><!-- If other, what was lost --></label>
+        <name>If_other_what_was_lost__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field for any additional information that you feel is important. --></help>
+        <label><!-- Incident notes --></label>
+        <name>Incident_notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job --></label>
+        <name>Job__c</name>
+        <relationshipLabel><!-- Incidents --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Legal Notes --></label>
+        <name>Legal_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal - close case --></label>
+        <name>Legal_close_case__c</name>
+    </fields>
+    <fields>
+        <label><!-- MHA: Actions completed ? --></label>
+        <name>MHA_Actions_completed__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In progress</masterLabel>
+            <translation><!-- In progress --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MHA spoken to parent / guardian --></label>
+        <name>MHA_spoken_to_parent_guardian__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please tick this box if this incident refers to a mental health support need. You may also need to tick the Safeguarding and disclosure box if a there was also a safeguarding disclosure --></help>
+        <label><!-- Mental Health ? --></label>
+        <name>Mental_Health__c</name>
+    </fields>
+    <fields>
+        <label><!-- Met with young person? --></label>
+        <name>Met_with_young_person__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter your own name or that of the person who reported the incident to you. --></help>
+        <label><!-- Name of Delivery Staff who reported this --></label>
+        <name>Name_of_Delivery_Staff_who_reported_this__c</name>
+        <relationshipLabel><!-- Incidents (Name of Delivery Staff who reported this) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter your own name or that of the person who reported the incident to you. --></help>
+        <label><!-- Name of Delivery Staff who reported this --></label>
+        <name>Name_of_person_reporting__c</name>
+        <relationshipLabel><!-- Incidents --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Name of person who lost information --></label>
+        <name>Name_of_person_who_lost_information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name of person who recorded this --></label>
+        <name>Name_of_person_who_recorded_this__c</name>
+    </fields>
+    <fields>
+        <label><!-- Names of organisation(s) referred to --></label>
+        <name>Names_of_organisation_s_referred_to__c</name>
+    </fields>
+    <fields>
+        <help><!-- People present but not directly impacted --></help>
+        <label><!-- Names of witnesses --></label>
+        <name>Names_of_witnesses__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describe injury and name of injured.
+Provide more detail of the injury sustained and any treatment provided. --></help>
+        <label><!-- Nature of any injury --></label>
+        <name>Nature_of_any_injury__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nature of incident --></label>
+        <name>Nature_of_incident__c</name>
+        <picklistValues>
+            <masterLabel>Damage to person</masterLabel>
+            <translation><!-- Damage to person --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Damage to property</masterLabel>
+            <translation><!-- Damage to property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Illness</masterLabel>
+            <translation><!-- Illness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Near miss</masterLabel>
+            <translation><!-- Near miss --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- No action taken --></label>
+        <name>No_action_taken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other individuals involved --></label>
+        <name>Other_individuals_involved__c</name>
+    </fields>
+    <fields>
+        <label><!-- PAM/PM: Case closed --></label>
+        <name>PA_PM_Case_closed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PA/PM Notes --></label>
+        <name>PA_PM_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Programmes User View --></label>
+        <name>PM_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM Email --></label>
+        <name>PM_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Section of the programme? --></label>
+        <name>Period_of_programme__c</name>
+        <picklistValues>
+            <masterLabel>Graduation</masterLabel>
+            <translation><!-- Graduation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PC</masterLabel>
+            <translation><!-- PC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA</masterLabel>
+            <translation><!-- RCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD</masterLabel>
+            <translation><!-- RCD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC</masterLabel>
+            <translation><!-- TC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCS</masterLabel>
+            <translation><!-- TCS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Give details of the location --></help>
+        <label><!-- Location of incident --></label>
+        <name>Precise_location_of_incident__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prior warning details --></label>
+        <name>Prior_warning_details__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describe why the card was given --></help>
+        <label><!-- Reason for reporting --></label>
+        <name>Reason_for_Card__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the Reasons for leaving and any further details. --></help>
+        <label><!-- Reason for leaving --></label>
+        <name>Reason_for_leaving__c</name>
+    </fields>
+    <fields>
+        <label><!-- Red card awarded --></label>
+        <name>Red_card_awarded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reported to PHAROS --></label>
+        <name>Reported_to_PHAROS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reported to RIDDOR --></label>
+        <name>Reported_to_RIDDOR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reported to The Charity Commission --></label>
+        <name>Reported_to_The_Charity_Commission__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resources given --></label>
+        <name>Resources_given__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resources given for self help strategies --></label>
+        <name>Resources_given_for_self_help_strategies__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field to be filled in at time of Red Card.  PM should make the call of the 3 options. --></help>
+        <label><!-- Result of red Card --></label>
+        <name>Result_of_red_Card__c</name>
+        <picklistValues>
+            <masterLabel>Can not take any further role in TCS</masterLabel>
+            <translation><!-- Can not take any further role in TCS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Can only taken part in TCS if they have a personal Coach</masterLabel>
+            <translation><!-- Can only taken part in TCS if they have a personal Coach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Can still take part in TCS</masterLabel>
+            <translation><!-- Can still take part in TCS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>Role__c</name>
+        <picklistValues>
+            <masterLabel>APM</masterLabel>
+            <translation><!-- APM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EO</masterLabel>
+            <translation><!-- EO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LO</masterLabel>
+            <translation><!-- LO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PL</masterLabel>
+            <translation><!-- PL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAM</masterLabel>
+            <translation><!-- RAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPM</masterLabel>
+            <translation><!-- SPM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summer Manager</masterLabel>
+            <translation><!-- Summer Manager --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SPM Email --></label>
+        <name>SPM_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPM Notes --></label>
+        <name>SPM_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please tick this box if this incident is a safeguarding disclosure. You may also need to tick the Mental Health box if a mental health support need was disclosed --></help>
+        <label><!-- Safeguarding and Disclosure --></label>
+        <name>Safeguarding_and_Disclosure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Section of the programme --></label>
+        <name>Section_of_the_programme__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use your judgement: As a guide 1=very minor eg. graze, 5= emergency eg hospital visit for collapse --></help>
+        <label><!-- Severity of Injury --></label>
+        <name>Severity_of_Injury__c</name>
+        <picklistValues>
+            <masterLabel>Fatal</masterLabel>
+            <translation><!-- Fatal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major (Person sent to Hospital)</masterLabel>
+            <translation><!-- Major (Person sent to Hospital) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major (anything reportable to RIDDOR – see classification below)</masterLabel>
+            <translation><!-- Major (anything reportable to RIDDOR – see classification below) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor</masterLabel>
+            <translation><!-- Minor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resulting in a staff member unable to work for 3 consecutive days</masterLabel>
+            <translation><!-- Resulting in a staff member unable to work for 3 consecutive days --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Severity of incident --></label>
+        <name>Severity_of_incident_Behaviour__c</name>
+        <picklistValues>
+            <masterLabel>1 - Crisis</masterLabel>
+            <translation><!-- 1 - Crisis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - Very serious</masterLabel>
+            <translation><!-- 2 - Very serious --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - Serious</masterLabel>
+            <translation><!-- 3 - Serious --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 - Minor</masterLabel>
+            <translation><!-- 4 - Minor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter a value 1 to 5 to indicate the severity of the incident, where 1 is low severity and 5 is high --></help>
+        <label><!-- Severity of incident --></label>
+        <name>Severity_of_incident__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter a value 4 to 1 to indicate the severity of the incident, where 4 is low severity and 1 is very high severity. --></help>
+        <label><!-- Severity of incident --></label>
+        <name>Severity_of_incident_health__c</name>
+        <picklistValues>
+            <masterLabel>1 – Crisis: e.g. Fatality on the programme</masterLabel>
+            <translation><!-- 1 – Crisis: e.g. Fatality on the programme --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 – Very serious: e.g. Life-changing injury</masterLabel>
+            <translation><!-- 2 – Very serious: e.g. Life-changing injury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 – Serious: e.g. Fractured limb</masterLabel>
+            <translation><!-- 3 – Serious: e.g. Fractured limb --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 – Minor: e.g. Sprains, abrasions, bruising</masterLabel>
+            <translation><!-- 4 – Minor: e.g. Sprains, abrasions, bruising --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter a value 4 to 1 to indicate the severity of the incident, where 4 is low severity and 1 is very high severity. --></help>
+        <label><!-- Severity of incident --></label>
+        <name>Severity_of_incident_safeguarding__c</name>
+        <picklistValues>
+            <masterLabel>1 – Crisis: e.g. Sexual assault on programme</masterLabel>
+            <translation><!-- 1 – Crisis: e.g. Sexual assault on programme --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 – Very serious: e.g. Allegation against staff</masterLabel>
+            <translation><!-- 2 – Very serious: e.g. Allegation against staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 – Serious: e.g. Risk posed upon leaving programme</masterLabel>
+            <translation><!-- 3 – Serious: e.g. Risk posed upon leaving programme --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 – Minor: e.g. No immediate risk posed</masterLabel>
+            <translation><!-- 4 – Minor: e.g. No immediate risk posed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SuM Email --></label>
+        <name>SuM_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPM/DSPM: Case closed --></label>
+        <name>SuM_SPM_Case_closed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SuM/SPM notes --></label>
+        <name>SuM_SPM_notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Support Level of YP --></label>
+        <name>Support_Level_of_YP__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Support given to wave staff face-to-face --></label>
+        <name>Support_given_to_wave_staff_face_to_face__c</name>
+    </fields>
+    <fields>
+        <label><!-- Support to access universal services --></label>
+        <name>Support_to__c</name>
+    </fields>
+    <fields>
+        <label><!-- Support to access specialised services --></label>
+        <name>Support_to_access_specialised_services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Support to access tier 3 MH services --></label>
+        <name>Support_to_access_tier_3_MH_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Support to access tier 2 MH services --></label>
+        <name>Supported_YP_PG_to_access_Level_2_Ment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sys - Is Record Older Than 7 Days? --></label>
+        <name>Sys_Is_Record_Older_Than_7_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sys: temp trigger --></label>
+        <name>Sys_temp_trigger__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please ensure you include both cluster and team, e.g. HEAL A 5 Edwards. --></help>
+        <label><!-- Team --></label>
+        <name>Team__c</name>
+        <relationshipLabel><!-- Incidents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Were other young people / staff affected but not injured? --></help>
+        <label><!-- Those directly affected by the incident --></label>
+        <name>Those_directly_affected_by_the_incident__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time of incident --></label>
+        <name>Time_of_incident__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time that PL was informed --></label>
+        <name>Time_that_PL_was_informed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time that PM was informed --></label>
+        <name>Time_that_PM_was_informed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Accident --></label>
+        <name>Type_of_Accident__c</name>
+        <picklistValues>
+            <masterLabel>Contact with moving machinery</masterLabel>
+            <translation><!-- Contact with moving machinery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drowning/ suffocation</masterLabel>
+            <translation><!-- Drowning/ suffocation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exposure to fire or explosion</masterLabel>
+            <translation><!-- Exposure to fire or explosion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exposure to harmful substance</masterLabel>
+            <translation><!-- Exposure to harmful substance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Falls from height</masterLabel>
+            <translation><!-- Falls from height --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Injured while handling/lifting/carrying</masterLabel>
+            <translation><!-- Injured while handling/lifting/carrying --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slips, trips or fall on same level</masterLabel>
+            <translation><!-- Slips, trips or fall on same level --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Struck by moving object or vehicle</masterLabel>
+            <translation><!-- Struck by moving object or vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Struck something fixed/stationary</masterLabel>
+            <translation><!-- Struck something fixed/stationary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter as many items as you feel apply. --></help>
+        <label><!-- Type of Injury --></label>
+        <name>Type_of_Injury__c</name>
+        <picklistValues>
+            <masterLabel>Bone/Muscle injury</masterLabel>
+            <translation><!-- Bone/Muscle injury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bruise</masterLabel>
+            <translation><!-- Bruise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burn</masterLabel>
+            <translation><!-- Burn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cuts/open wound</masterLabel>
+            <translation><!-- Cuts/open wound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Damage to property</masterLabel>
+            <translation><!-- Damage to property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fracture/dislocation</masterLabel>
+            <translation><!-- Fracture/dislocation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Illness (incl. pre existing conditions)</masterLabel>
+            <translation><!-- Illness (incl. pre existing conditions) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Near miss</masterLabel>
+            <translation><!-- Near miss --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poisoning/gassing</masterLabel>
+            <translation><!-- Poisoning/gassing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Psychological</masterLabel>
+            <translation><!-- Psychological --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skin surface injury e.g. cut/bruise/rash</masterLabel>
+            <translation><!-- Skin surface injury e.g. cut/bruise/rash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sprain/strain</masterLabel>
+            <translation><!-- Sprain/strain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vomiting/Diarrohea</masterLabel>
+            <translation><!-- Vomiting/Diarrohea --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of incident --></label>
+        <name>Type_of_incident__c</name>
+        <picklistValues>
+            <masterLabel>Behaviour (whole wave)</masterLabel>
+            <translation><!-- Behaviour (whole wave) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost medical form(s)</masterLabel>
+            <translation><!-- Lost medical form(s) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wave --></label>
+        <name>Wave__c</name>
+        <relationshipLabel><!-- Incidents --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Wave selection status updated? --></label>
+        <name>Wave_selection_status_updated__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the emergency services were called, the severity of the incident must be set to 2 or 3. --></help>
+        <label><!-- Were the emergency services called? --></label>
+        <name>Were_the_emergency_services_called__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- What was lost --></label>
+        <name>What_was_lost__c</name>
+        <picklistValues>
+            <masterLabel>Individual Medical Form</masterLabel>
+            <translation><!-- Individual Medical Form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Team Medical Forms</masterLabel>
+            <translation><!-- Team Medical Forms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Team Register</masterLabel>
+            <translation><!-- Team Register --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wave Medical Forms</masterLabel>
+            <translation><!-- Wave Medical Forms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wave Register</masterLabel>
+            <translation><!-- Wave Register --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Who informed PG? --></label>
+        <name>Who_informed_parents__c</name>
+        <picklistValues>
+            <masterLabel>APM</masterLabel>
+            <translation><!-- APM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA/ PM</masterLabel>
+            <translation><!-- PA/ PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SuM/ SPM</masterLabel>
+            <translation><!-- SuM/ SPM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Zone (Text &amp; Hidden) --></label>
+        <name>Zone_Text_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zone --></label>
+        <name>Zone__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select any other incident categories that this incident is relevant to. --></help>
+        <label><!-- Does this fall into any other categories --></label>
+        <name>any_other_categories__c</name>
+        <picklistValues>
+            <masterLabel>Behaviour</masterLabel>
+            <translation><!-- Behaviour --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Damage to property</masterLabel>
+            <translation><!-- Damage to property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data loss</masterLabel>
+            <translation><!-- Data loss --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disclosures and safeguarding</masterLabel>
+            <translation><!-- Disclosures and safeguarding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health and safety</masterLabel>
+            <translation><!-- Health and safety --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Misc incident</masterLabel>
+            <translation><!-- Misc incident --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staff health</masterLabel>
+            <translation><!-- Staff health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Started but left</masterLabel>
+            <translation><!-- Started but left --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCS - behaviour (card awarded)</masterLabel>
+            <translation><!-- TCS - behaviour (card awarded) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCS - damage to property</masterLabel>
+            <translation><!-- TCS - damage to property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCS - health</masterLabel>
+            <translation><!-- TCS - health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whole wave incident</masterLabel>
+            <translation><!-- Whole wave incident --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label><!-- Behaviour --></label>
+        <name>Behaviour</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Damage to property --></label>
+        <name>Damage_to_property</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Data Loss --></label>
+        <name>Data_Loss</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Disclosures and safeguarding --></label>
+        <name>Disclosures_and_safeguarding</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Health and safety --></label>
+        <name>Health_and_safety</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Whole Wave Incident --></label>
+        <name>Lost_Medical_Forms</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Misc Incident --></label>
+        <name>Misc_Incident</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Staff Health --></label>
+        <name>Staff_Health</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Started but left --></label>
+        <name>Started_but_left</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TCS _ Behaviour (card awarded) --></label>
+        <name>TCS_Behaviour_card_awarded</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TCS - Damage to property --></label>
+        <name>TCS_Damage_to_property</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TCS - Health --></label>
+        <name>TCS_Health</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- You will not be able to save this unless you have filled in: Date that PL was informed; Time that PL was informed; Date that PM was informed; Time that PM was informed --></errorMessage>
+        <name>Card_Type_Awarded_Required_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter a date the YP left the programme if they received a red card and can not enter a date if they have not received a red card. --></errorMessage>
+        <name>Date_YP_Left_must_be_null_unless</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must input a valid Document URL for disclosure incidents. --></errorMessage>
+        <name>Document_must_be_uploaded_for_disclosure</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a description of the Incident --></errorMessage>
+        <name>Highly_severe_incident_need_explanation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please tick any one or both of the following boxes in the information section: Safeguarding/Disclosure AND/OR Mental Health? --></errorMessage>
+        <name>Mental_Health_Incident</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This field should be blank unless &apos;Other&apos; is selected --></errorMessage>
+        <name>Other_What_Was_Lost_Restriction</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This field should contain text if &apos;Other&apos; is selected --></errorMessage>
+        <name>Other_What_Was_Lost_RestrictionAnswerReq</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the date you reported this incident in the right-hand column --></errorMessage>
+        <name>Reporting_Date_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the date that the YP left the programme --></errorMessage>
+        <name>Require_departure_day</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only SPMs can report incidents to PHAROS or The Charity Commission --></errorMessage>
+        <name>SPMs_Incident_Escalation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter a value 4, 3, 2, or 1 to indicate the severity of the incident, where 4 is low and 1 is high --></errorMessage>
+        <name>Severity_of_incident</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Graduation Email to be sent 2013</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Graduation Email 2013 No Hours</name>
+    <style>none</style>
+    <subject>Graduation No hours to make up</subject>
+    <textOnly>The Challenge Network
+
+Get ready to take on NCS with The Challenge
+
+
+Dear Parent/Guardian of {!Contact.FirstName} {!Contact.LastName} and {!Contact.FirstName},
+
+We hope {!Contact.FirstName} is excited about the Autumn!
+
+Please find below a link to {!Contact.FirstName}’s information pack, containing everything they need to know before NCS powered by The Challenge. You will also find a full schedule including all of {!Contact.FirstName}’s meeting locations and times, as well as a comprehensive packing list and answers to some frequently asked questions on the links below. In the unlikely event that a venue should be shown on your timetable as “to be confirmed”, please be assured that your local team will be in touch with you as soon as the details are finalised.
+
+You will also be invited to an information evening about the programme, which will be held in the weeks leading up to {!Contact.FirstName}&apos;s beginning NCS powered by The Challenge.  Both parents and participants in {!Contact.FirstName}’s group will be invited, so that we can go through all the details with you and give you a chance to ask us any last-minute questions. We will send you the date, time and location of this evening nearer the time. Please note that if you are unable to attend, all the information you need is contained in the information booklet, and do not hesitate to contact us if you have any further queries.
+
+As the largest provider of the National Citizen Service, we are looking forward to welcoming {!Contact.FirstName}  on NCS powered by The Challenge, and we would encourage {!Contact.FirstName}  to remind their friends to complete their applications before the autumn. In the meantime, please visit our Facebook page www.facebook.com/thechallengenetwork where you can find photos, comments, and competitions.
+
+Please ensure the medical or dietary details that you have provided are up-to-date, and communicate any changes to us as soon as possible. Should any circumstance arise that would prevent {!Contact.FirstName} from attending NCS powered by The Challenge please let us know as far in advance as possible, in order to minimise wastage of high value places on the programme.
+
+Your personalised timetable can be found here: {!Wave__c.Programme_Pack_Letters__c}. Our information booklet, containing everything you need to know about the autumn, can be found here.
+
+Please do not hesitate to contact us on 020 3542 2400 or at contact@the-challenge.org if you have any questions or require any further information.
+
+Yours sincerely,
+
+Rebecca Carter
+Director at The Challenge Network
+
+the-challenge.org  ncsyes.co.uk
+/thechallengenetwork    /ncs
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

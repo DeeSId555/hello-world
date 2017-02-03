@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>School_Activities__c.CT_meeting_date__c</field>
+    </columns>
+    <columns>
+        <field>School_Activities__c.Assembly_date__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>School_Activities__c.Current_Target_School__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.School_s_segment_number__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>7</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.School_type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>State PRU,Independent PRU,Further education PRU</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>School_Activities__c.School_Activity_2015_Summer</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>JM prus sls - for sarah</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$School_Activities__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>School_Activities__c.CT_meeting_date__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>*** Attempted contact email Feb 2015</name>
+    <style>none</style>
+    <subject>Sorry we missed you – remember to say YES to NCS</subject>
+    <textOnly>Hello {!Contact.Name} and Parent/ Guardian,
+
+We recently tried to contact you about a fantastic opportunity with NCS (National Citizen Service) with The Challenge that {!Contact.FirstName} expressed an interest in.
+
+What is NCS with The Challenge?
+The NCS with The Challenge autumn programme is a part-residential youth programme for 16- 17 year olds . It reaches beyond school or college to help young people to get ahead in work and life.  It&apos;s the perfect opportunity to develop skills which look great on a CV or UCAS application – and to make friends and have fun along the way! It runs over October half-term (25-31 October)  and four weekend days in November. The programme structure is:
+
+Part 1 - residential (4 days, 3 nights): 25 – 28 October
+Part 2 – non-residential (3 days): 29 – 31 October
+Part 3 – non-residential weekend days (4 separate days): Saturday 8 November, Sunday 9 November, Saturday 15 November, Saturday 22 November.
+
+How do I apply?
+It&apos;s easy to sign up online, and online applications receive a £5 discount. Parents/guardians should follow this link and use {!Contact.FirstName}’s unique login details to start their application:
+
+ID Number: {!Contact.Account_s_TCN_Id__c}
+Password: {!Contact.Login_PIN__c}
+
+How much does it cost?
+Each place is valued at over £1000 but government backing means the maximum cost you&apos;ll pay is a £50 administration fee. Accommodation, food, transport and equipment used during the programme is all covered. If you need some help with this cost you can request financial support when signing up.
+
+- Participants must meet our age eligibility requirements – generally, they need to have turned 16 or 17 on or before 31 August 2014 and must not be 18 during the residential part of the programme.
+- The first two parts of the programme run from Saturday 25 October – Friday 31 October, which will be half-term for the majority of schools in the areas we operate in.
+
+More questions?
+Take a look at our Questions page, or get in touch at contact@the-challenge.org or on 0203 542 2400.
+
+Places are limited so apply soon - don’t miss out on this once-in-a-lifetime opportunity!
+
+Yours sincerely,
+
+
+
+Rebecca Carter - Director at The Challenge
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

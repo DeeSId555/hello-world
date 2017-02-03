@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>AUTO send to YPs when placement confirmed in SF</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Autumn 2015 HeadStart Partner Confirmation Email</name>
+    <style>none</style>
+    <subject>Headstart partner confirmation</subject>
+    <textOnly>HeadStart | The Challenge
+
+
+
+HeadStart login details:
+
+Email Address {!Contact.Email}
+
+NCS ID
+
+{!Contact.NCS_ID__c}
+
+PIN {!Contact.Login_Password__c}
+
+HeadStart Website
+
+
+{!Contact.FirstName} welcome to HeadStart!
+
+
+We are really excited to have you on the programme.
+
+Your placement is:
+
+{!HS_Activity__c.Volunteering_Placement__c}.
+
+Your induction session will be on: {!HS_Activity__c.Welcome_Day__c}.
+
+At: {!HS_Activity__c.Location_of_Welcome_day__c}.
+
+The main contact at your placement is: {!HS_Activity__c.Main_Contact__c}.
+
+You can reach them on: {!HS_Activity__c.Main_contact_number__c}.
+
+
+{!HS_Activity__c.Welcome_day_attachment_link__c}
+
+
+This session will give you a short introduction to your volunteering partner - you&apos;ll have the chance to hear about what you will be doing whilst volunteering, meet other HeadStart volunteers, and plan your next session of volunteering. You can log the time spent at your induction session on the HeadStart website towards your 16 hours.  You must attend this session to begin your volunteering. If you are unable to attend we cannot guarentee that you can continue to volunteer with this partner.
+
+
+You can contact your HeadStart team contact on {!User.Email}.
+
+
+This information is also all detailed on your profile on the HeadStart website. Please remember:
+
+Arrive 5 minutes before.
+
+Give the organiser your contact details when you get there so they can contact you with information about the next session.
+
+Log your hours on the HeadStart website (this is how we know when you’re ready to be invited for interviews and workshops). We will tell you more about how to do this at Kick Off.
+
+If you cannot attend this session email {!User.Email} at least 24 hours before your session.
+
+
+
+If you have any questions you can contact us at headstart@the-challenge.org.  Good Luck with your volunteering!
+
+The HeadStart team
+
+Facebook: /Londonheadstart
+
+headstart@the-challenge.org
+
+www.headstart-thechallenge.org/
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Role</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Roles</value>
+    </caseValues>
+    <fields>
+        <help><!-- Tick this field, if the Staffing Application Website should create Job Placements for the record type associated with this Role record --></help>
+        <label><!-- Allow SAW JP creation? --></label>
+        <name>Allow_SAW_JP_creation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>Contract__c</name>
+    </fields>
+    <fields>
+        <label><!-- End day (Autumn) --></label>
+        <name>End_day_Autumn__c</name>
+        <picklistValues>
+            <masterLabel>Assignment End Date</masterLabel>
+            <translation><!-- Assignment End Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduation</masterLabel>
+            <translation><!-- Graduation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PCEnd</masterLabel>
+            <translation><!-- PCEnd --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA1</masterLabel>
+            <translation><!-- RCA1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA2</masterLabel>
+            <translation><!-- RCA2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA3</masterLabel>
+            <translation><!-- RCA3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA4</masterLabel>
+            <translation><!-- RCA4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCAEnd</masterLabel>
+            <translation><!-- RCAEnd --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCDEnd</masterLabel>
+            <translation><!-- RCDEnd --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCEnd</masterLabel>
+            <translation><!-- TCEnd --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- End day (Spring) --></label>
+        <name>End_day_Spring__c</name>
+        <picklistValues>
+            <masterLabel>Assignment End Date</masterLabel>
+            <translation><!-- Assignment End Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduation</masterLabel>
+            <translation><!-- Graduation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PCEnd</masterLabel>
+            <translation><!-- PCEnd --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA1</masterLabel>
+            <translation><!-- RCA1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA2</masterLabel>
+            <translation><!-- RCA2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA3</masterLabel>
+            <translation><!-- RCA3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA4</masterLabel>
+            <translation><!-- RCA4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCAEnd</masterLabel>
+            <translation><!-- RCAEnd --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCDEnd</masterLabel>
+            <translation><!-- RCDEnd --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCEnd</masterLabel>
+            <translation><!-- TCEnd --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- End day (Summer) --></label>
+        <name>End_day__c</name>
+        <picklistValues>
+            <masterLabel>Assignment End Date</masterLabel>
+            <translation><!-- Assignment End Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduation</masterLabel>
+            <translation><!-- Graduation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PCEnd</masterLabel>
+            <translation><!-- PCEnd --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA1</masterLabel>
+            <translation><!-- RCA1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA2</masterLabel>
+            <translation><!-- RCA2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA3</masterLabel>
+            <translation><!-- RCA3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA4</masterLabel>
+            <translation><!-- RCA4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCAEnd</masterLabel>
+            <translation><!-- RCAEnd --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCDEnd</masterLabel>
+            <translation><!-- RCDEnd --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCEnd</masterLabel>
+            <translation><!-- TCEnd --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Expense claim permissions --></label>
+        <name>Expense_claim_permissions__c</name>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telephone</masterLabel>
+            <translation><!-- Telephone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel</masterLabel>
+            <translation><!-- Travel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Freeze Role --></label>
+        <name>Freeze_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ideas Bible --></label>
+        <name>Ideas_Bible__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box when role should not create Job Placements in Salesforce --></help>
+        <label><!-- Is special case --></label>
+        <name>Is_special_case__c</name>
+    </fields>
+    <fields>
+        <label><!-- JP Record type --></label>
+        <name>JP_Record_type__c</name>
+    </fields>
+    <fields>
+        <help><!-- This would give us the ability to set the number of days between the end of one role and the start of the next. This could be different from role to role and from year to year. --></help>
+        <label><!-- Min number of rest days --></label>
+        <name>Min_number_of_rest_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prog section 1 End Date --></label>
+        <name>Prog_section_1_End_Date__c</name>
+        <picklistValues>
+            <masterLabel>PC End Date</masterLabel>
+            <translation><!-- PC End Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner</masterLabel>
+            <translation><!-- Practitioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA End Date</masterLabel>
+            <translation><!-- RCA End Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD End Date</masterLabel>
+            <translation><!-- RCD End Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC End Date</masterLabel>
+            <translation><!-- TC End Date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Prog section 1 Start Date --></label>
+        <name>Prog_section_1_Start_Date__c</name>
+        <picklistValues>
+            <masterLabel>PC Start Date</masterLabel>
+            <translation><!-- PC Start Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner</masterLabel>
+            <translation><!-- Practitioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA Start Date</masterLabel>
+            <translation><!-- RCA Start Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD Start Date</masterLabel>
+            <translation><!-- RCD Start Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC Start Date</masterLabel>
+            <translation><!-- TC Start Date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Prog section 1 --></label>
+        <name>Prog_section_1__c</name>
+        <picklistValues>
+            <masterLabel>PC</masterLabel>
+            <translation><!-- PC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner</masterLabel>
+            <translation><!-- Practitioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA</masterLabel>
+            <translation><!-- RCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD</masterLabel>
+            <translation><!-- RCD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC</masterLabel>
+            <translation><!-- TC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Prog section 2 End Date --></label>
+        <name>Prog_section_2_End_Date__c</name>
+        <picklistValues>
+            <masterLabel>PC End Date</masterLabel>
+            <translation><!-- PC End Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner</masterLabel>
+            <translation><!-- Practitioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA End Date</masterLabel>
+            <translation><!-- RCA End Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD End Date</masterLabel>
+            <translation><!-- RCD End Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC End Date</masterLabel>
+            <translation><!-- TC End Date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Prog section 2 Start Date --></label>
+        <name>Prog_section_2_Start_Date__c</name>
+        <picklistValues>
+            <masterLabel>PC Start Date</masterLabel>
+            <translation><!-- PC Start Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner</masterLabel>
+            <translation><!-- Practitioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA Start Date</masterLabel>
+            <translation><!-- RCA Start Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD Start Date</masterLabel>
+            <translation><!-- RCD Start Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC Start Date</masterLabel>
+            <translation><!-- TC Start Date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Prog section 2 --></label>
+        <name>Prog_section_2__c</name>
+        <picklistValues>
+            <masterLabel>PC</masterLabel>
+            <translation><!-- PC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner</masterLabel>
+            <translation><!-- Practitioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA</masterLabel>
+            <translation><!-- RCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD</masterLabel>
+            <translation><!-- RCD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC</masterLabel>
+            <translation><!-- TC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Prog section 3 End Date --></label>
+        <name>Prog_section_3_End_Date__c</name>
+        <picklistValues>
+            <masterLabel>PC End Date</masterLabel>
+            <translation><!-- PC End Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner</masterLabel>
+            <translation><!-- Practitioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA End Date</masterLabel>
+            <translation><!-- RCA End Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD End Date</masterLabel>
+            <translation><!-- RCD End Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC End Date</masterLabel>
+            <translation><!-- TC End Date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Prog section 3 Start Date --></label>
+        <name>Prog_section_3_Start_Date__c</name>
+        <picklistValues>
+            <masterLabel>PC Start Date</masterLabel>
+            <translation><!-- PC Start Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner</masterLabel>
+            <translation><!-- Practitioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA Start Date</masterLabel>
+            <translation><!-- RCA Start Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD Start Date</masterLabel>
+            <translation><!-- RCD Start Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC Start Date</masterLabel>
+            <translation><!-- TC Start Date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Prog section 3 --></label>
+        <name>Prog_section_3__c</name>
+        <picklistValues>
+            <masterLabel>PC</masterLabel>
+            <translation><!-- PC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner</masterLabel>
+            <translation><!-- Practitioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA</masterLabel>
+            <translation><!-- RCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD</masterLabel>
+            <translation><!-- RCD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC</masterLabel>
+            <translation><!-- TC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Prog section 4 End Date --></label>
+        <name>Prog_section_4_End_Date__c</name>
+        <picklistValues>
+            <masterLabel>PC End Date</masterLabel>
+            <translation><!-- PC End Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner</masterLabel>
+            <translation><!-- Practitioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA End Date</masterLabel>
+            <translation><!-- RCA End Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD End Date</masterLabel>
+            <translation><!-- RCD End Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC End Date</masterLabel>
+            <translation><!-- TC End Date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Prog section 4 Start Date --></label>
+        <name>Prog_section_4_Start_Date__c</name>
+        <picklistValues>
+            <masterLabel>PC Start Date</masterLabel>
+            <translation><!-- PC Start Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner</masterLabel>
+            <translation><!-- Practitioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA Start Date</masterLabel>
+            <translation><!-- RCA Start Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD Start Date</masterLabel>
+            <translation><!-- RCD Start Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC Start Date</masterLabel>
+            <translation><!-- TC Start Date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Prog section 4 --></label>
+        <name>Prog_section_4__c</name>
+        <picklistValues>
+            <masterLabel>PC</masterLabel>
+            <translation><!-- PC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner</masterLabel>
+            <translation><!-- Practitioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA</masterLabel>
+            <translation><!-- RCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD</masterLabel>
+            <translation><!-- RCD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC</masterLabel>
+            <translation><!-- TC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Role Guide --></label>
+        <name>Role_Guide__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role description --></label>
+        <name>Role_description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Role number is set so that we have flexibility in adding role types to SAW --></help>
+        <label><!-- Role number --></label>
+        <name>Role_number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is this a summer-long role? --></help>
+        <label><!-- SLR? --></label>
+        <name>SLR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Season(s) role available for --></label>
+        <name>Seasons_role_available_for__c</name>
+        <picklistValues>
+            <masterLabel>Autumn</masterLabel>
+            <translation><!-- Autumn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring</masterLabel>
+            <translation><!-- Spring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summer</masterLabel>
+            <translation><!-- Summer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Special case 1 end --></label>
+        <name>Special_case_1_end__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special case 1 start --></label>
+        <name>Special_case_1_start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special case 2 end --></label>
+        <name>Special_case_2_end__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special case 2 start --></label>
+        <name>Special_case_2_start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special case 3 end --></label>
+        <name>Special_case_3_end__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special case 3 start --></label>
+        <name>Special_case_3_start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start day (Autumn) --></label>
+        <name>Start_day_Autumn__c</name>
+        <picklistValues>
+            <masterLabel>PCKO</masterLabel>
+            <translation><!-- PCKO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA1</masterLabel>
+            <translation><!-- RCA1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA2</masterLabel>
+            <translation><!-- RCA2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA3</masterLabel>
+            <translation><!-- RCA3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA4</masterLabel>
+            <translation><!-- RCA4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCDKO</masterLabel>
+            <translation><!-- RCDKO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCKO</masterLabel>
+            <translation><!-- TCKO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCKO+1</masterLabel>
+            <translation><!-- TCKO+1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCKO+2</masterLabel>
+            <translation><!-- TCKO+2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start day (Spring) --></label>
+        <name>Start_day_Spring__c</name>
+        <picklistValues>
+            <masterLabel>PCKO</masterLabel>
+            <translation><!-- PCKO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA1</masterLabel>
+            <translation><!-- RCA1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA2</masterLabel>
+            <translation><!-- RCA2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA3</masterLabel>
+            <translation><!-- RCA3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA4</masterLabel>
+            <translation><!-- RCA4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCDKO</masterLabel>
+            <translation><!-- RCDKO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCKO</masterLabel>
+            <translation><!-- TCKO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCKO+1</masterLabel>
+            <translation><!-- TCKO+1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCKO+2</masterLabel>
+            <translation><!-- TCKO+2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The day that people in this role start their work period on the programme --></help>
+        <label><!-- Start day (Summer) --></label>
+        <name>Start_day__c</name>
+        <picklistValues>
+            <masterLabel>PCKO</masterLabel>
+            <translation><!-- PCKO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA1</masterLabel>
+            <translation><!-- RCA1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA2</masterLabel>
+            <translation><!-- RCA2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA3</masterLabel>
+            <translation><!-- RCA3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA4</masterLabel>
+            <translation><!-- RCA4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCDKO</masterLabel>
+            <translation><!-- RCDKO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCKO</masterLabel>
+            <translation><!-- TCKO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCKO+1</masterLabel>
+            <translation><!-- TCKO+1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCKO+2</masterLabel>
+            <translation><!-- TCKO+2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This is helptext for the work preferences page of the SAW. This helptext should be a generic explanation of the variations that can occur in the work schedule. This will be especially important for SLRs --></help>
+        <label><!-- Work schedule description --></label>
+        <name>Work_schedule_description__c</name>
+    </fields>
+    <fields>
+        <label><!-- # work days --></label>
+        <name>work_days__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- 2014 --></label>
+        <name>X2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2015 --></label>
+        <name>X2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2016 --></label>
+        <name>X2016</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

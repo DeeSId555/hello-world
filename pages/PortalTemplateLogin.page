@@ -1,0 +1,72 @@
+<apex:page sidebar="false" standardStylesheets="false" showHeader="false" >
+<html>
+    <head>
+        <apex:includeScript value="{!URLFOR($Resource.Bootstrap,'js/bootstrap.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.Bootstrap,'jquery-1.7.2.js')}"/>
+        <apex:stylesheet value="{!URLFOR($Resource.Bootstrap,'css/bootstrap.css')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.BootstrapModal,'bootstrap-modal.js')}"/>
+    </head>
+    <style>
+    @font-face{
+            font-family : "Dirty";
+            src: url("{!URLFOR($Resource.dirtyfont, 'DirtyFont/fonts/DirtyHeadline.ttf')}") format('truetype');
+          }
+    .optext{
+            font : 32px "Dirty", Arial, Helvetica;
+        }
+    
+    .topdiv{
+            width:1200px;
+            height:224px;
+            border:solid 1px;
+            border-bottom:solid 8px;
+            border-color:#D9D9D9;
+            margin-top:20px;
+            }
+    .middiv{
+            width:1200px;
+            height:400px;
+            border:solid 1px;
+            border-top:solid 4px;
+            border-bottom:solid 8px;
+            border-color:#D9D9D9;
+            }
+    .botdiv{
+            width:1200px;
+            height:150px;
+            border:solid 1px;
+            border-top:solid 4px;
+            border-color:#D9D9D9;
+            }
+    .logo{
+            float:left; 
+            margin:20px;
+            width:300px;
+          }
+          
+    </style>
+    <body>
+  
+        <!-- ------------------First Part Of The Page----------------------- -->
+        
+            <div class="container topdiv">
+               <a href="{!$Page.TCNPortal_Home}"> <apex:image styleClass="logo" value="{!$Resource.TCSLogo2}"/></a>
+                <apex:insert name="TopDiv"/>
+            </div>
+            
+        <!-- ------------------Second Part Of The Page---------------------- -->    
+        
+            <div class="container middiv">
+                 <apex:insert name="MidDiv"/>
+            </div>
+            
+        <!-- ------------------Third Part Of The Page----------------------- -->    
+        
+            <div class="container botdiv">
+                 <apex:insert name="BotDiv"/>
+            </div>
+    
+     
+    </body>
+</html>
+</apex:page>

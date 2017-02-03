@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.TCNContactId__c</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>Contact.Assigned_Wave__c</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_LAST_UPDATE_BY</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Campaign.Action_Team_or_Youth_Board__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>NCS Action Day - London Wide Celebration</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Assigned_Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Camden,Islington,Westminster,K&amp;C,H&amp;F</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>TRIC YB Action Day attendance 2016</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignContact</reportType>
+    <scope>orgAll</scope>
+    <showDetails>true</showDetails>
+</Report>

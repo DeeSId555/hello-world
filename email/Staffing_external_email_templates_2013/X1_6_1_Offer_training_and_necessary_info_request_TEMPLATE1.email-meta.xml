@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Checked AO please check plain text for EI form link</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>1.6.1 Offer, training and necessary info request</name>
+    <style>freeForm</style>
+    <subject>Re: Your assessment at NCS with The Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+
+
+Dear {!Contact.FirstName}
+
+
+
+Following your assessment for NCS with The Challenge, I am delighted to let you know that you have been successful and we would like to provisionally offer you a role as {!Job_Application__c.Role_to_assess_for__c}.
+
+
+
+This offer is conditional upon
+
+
+The completion of your essential information which includes the receipt of satisfactory enhanced DBS and references.
+Your being matched to a vacant role which fits your available work dates and location.
+
+
+What do you need to do now?
+
+Staffing Website Login
+
+
+We have created a profile for you on our Staffing Website so that you can update and monitor all the information we need from you. Your job offer will remain conditional until we have received satisfactory information and documents from you, and once you have attended training.
+
+
+
+Your login details are:
+
+Username: {!Contact.Email}
+
+Password: {!Contact.Login_Password__c}
+
+
+
+Once you have logged in, click on ‘My Profile’. At the bottom of your profile there is an option to update your password.
+
+
+Click here to go to the Staffing Website.
+https://staffing.the-challenge.org/
+
+N.B please complete all the required information as soon as you can. Any delay could affect whether we can confirm a work schedule for you.
+
+
+
+Training for your role
+
+
+Training is compulsory for all staff who work on NCS with The Challenge programme. To book onto your training day please contact me on the details below!
+
+Congratulations again on your success and we look forward to working with you on NCS with The Challenge.
+
+
+
+
+Best Wishes,
+
+
+{!Contact.OwnerFullName}
+
+{!Contact.OwnerPhone}
+
+{!Contact.Contact_Owner_alternative_email__c}
+
+NCS with The Challenge
+
+
+Follow us on Twitter and Facebook
+https://twitter.com/seasonalstaff
+https://www.facebook.com/thechallengestaff</textOnly>
+    <type>html</type>
+</EmailTemplate>

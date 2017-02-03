@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Job</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Jobs</value>
+    </caseValues>
+    <fields>
+        <label><!-- (S)AMs --></label>
+        <name>AMs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Counts number of APLs confirmed to work on the wave. --></help>
+        <label><!-- #APL --></label>
+        <name>APL__c</name>
+    </fields>
+    <fields>
+        <label><!-- APM email --></label>
+        <name>APM_email1__c</name>
+    </fields>
+    <fields>
+        <label><!-- APM email --></label>
+        <name>APM_email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checked when All staff confirmed for payroll is more than #Staff payroll approved and escalation process has reached the top --></help>
+        <label><!-- Add to payroll escalation report --></label>
+        <name>Add_to_payroll_escalation_report__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date on which summer staff on waves 4,5,6,10,11 and 12 will receive 70% of their salary --></help>
+        <label><!-- Advance payment date --></label>
+        <name>Advance_payment_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- All staff confirmed for payroll --></label>
+        <name>All_confirmed_core_staff__c</name>
+    </fields>
+    <fields>
+        <label><!-- All payroll approved? --></label>
+        <name>All_payroll_approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Autumn wave --></label>
+        <name>Autumn_wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancelled Wave? --></label>
+        <name>Cancelled_Wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cluster Staff target all --></label>
+        <name>Cluster_Staff_target_all__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cluster --></label>
+        <name>Cluster__c</name>
+        <relationshipLabel><!-- Jobs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- #CF/SCF --></label>
+        <name>Community_Mentors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Core roles --></label>
+        <name>Core_roles__c</name>
+        <picklistValues>
+            <masterLabel>Assistant Programme Leader</masterLabel>
+            <translation><!-- Assistant Programme Leader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logistics Officer</masterLabel>
+            <translation><!-- Logistics Officer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner</masterLabel>
+            <translation><!-- Practitioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programme Leader</masterLabel>
+            <translation><!-- Programme Leader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential Accommodation Manager</masterLabel>
+            <translation><!-- Residential Accommodation Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Mentor</masterLabel>
+            <translation><!-- Senior Mentor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Mentor Plus</masterLabel>
+            <translation><!-- Senior Mentor Plus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Team Mentor</masterLabel>
+            <translation><!-- Team Mentor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- When this date/time is populated, no editing of Job Placements is possible apart from by Rob Ovens and Ivan Wise. --></help>
+        <label><!-- Date/time payroll processing started --></label>
+        <name>Date_time_payroll_processing_started__c</name>
+    </fields>
+    <fields>
+        <label><!-- EmailUpdateTrigger --></label>
+        <name>EmailUpdateTrigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grad payroll date --></label>
+        <name>Grad_payroll_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grad payroll date/time --></label>
+        <name>Grad_payroll_date_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grad staff payroll approved --></label>
+        <name>Grad_staff_payroll_approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation date --></label>
+        <name>Graduation_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation end time --></label>
+        <name>Graduation_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation staff confirmed --></label>
+        <name>Graduation_staff_confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation start time --></label>
+        <name>Graduation_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation venue --></label>
+        <name>Graduation_venue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is this a pilot --></label>
+        <name>Is_this_a_pilot__c</name>
+    </fields>
+    <fields>
+        <label><!-- # JPs --></label>
+        <name>JPs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job description --></label>
+        <name>Job_description__c</name>
+    </fields>
+    <fields>
+        <label><!-- KO Venue --></label>
+        <name>KO_Venue__c</name>
+    </fields>
+    <fields>
+        <label><!-- LO end date --></label>
+        <name>LO_RAM_end_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Feeds into Contract email --></help>
+        <label><!-- LO WTBW doc --></label>
+        <name>LO_WTBW_doc__c</name>
+    </fields>
+    <fields>
+        <label><!-- LO start date --></label>
+        <name>LO_start_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last payroll meeting of the month --></label>
+        <name>Last_payroll_meeting_of_the_month__c</name>
+    </fields>
+    <fields>
+        <help><!-- Managers can edit this field to adjust the number of SWs on the wave --></help>
+        <label><!-- MAX Support worker --></label>
+        <name>MAX_Support_worker__c</name>
+    </fields>
+    <fields>
+        <help><!-- Managers can edit this field if another APL is needed for this wave --></help>
+        <label><!-- Max APLs --></label>
+        <name>Max_APLs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Managers can edit this field to adjust number of Community Mentors on a wave --></help>
+        <label><!-- Max CF/SCFs --></label>
+        <name>Max_Community_Mentors__c</name>
+    </fields>
+    <fields>
+        <help><!-- Managers can edit this field to adjust number of LOs on a wave --></help>
+        <label><!-- Max LO --></label>
+        <name>Max_LO__c</name>
+    </fields>
+    <fields>
+        <help><!-- Managers can edit this field to adjust number of Senior Mentors on a wave --></help>
+        <label><!-- Max Senior Mentors --></label>
+        <name>Max_Mentors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max PLs --></label>
+        <name>Max_PLs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Managers can edit this field to adjust the number of Practitioners working on this work --></help>
+        <label><!-- Max Practitioners --></label>
+        <name>Max_Practitioners__c</name>
+    </fields>
+    <fields>
+        <help><!-- Managers can edit this field to adjust number of RAMs on the wave --></help>
+        <label><!-- Max RM --></label>
+        <name>Max_RAM__c</name>
+    </fields>
+    <fields>
+        <help><!-- Counts the number of Senior Mentors confirmed to work on this wave --></help>
+        <label><!-- #SM --></label>
+        <name>Mentors__c</name>
+    </fields>
+    <fields>
+        <label><!-- PCKO Date --></label>
+        <name>PCKO_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- PCKO Time TL --></label>
+        <name>PCKO_Time_TL__c</name>
+    </fields>
+    <fields>
+        <label><!-- PCKO Time other staff --></label>
+        <name>PCKO_Time_other_staff__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Day Off 1 --></label>
+        <name>PC_Day_Off_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Day Off 2 --></label>
+        <name>PC_Day_Off_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC End date --></label>
+        <name>PC_End_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- #PL --></label>
+        <name>PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM email --></label>
+        <name>PM_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll Escalation Date - Next Weekday --></label>
+        <name>Payroll_Escalation_Date_Next_Weekday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll Escalation Date - Second Weekday --></label>
+        <name>Payroll_Escalation_Date_Second_Weekday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll comms date --></label>
+        <name>Payroll_comms_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll escalation trigger --></label>
+        <name>Payroll_escalation_trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll model --></label>
+        <name>Payroll_model__c</name>
+        <picklistValues>
+            <masterLabel>70% advance</masterLabel>
+            <translation><!-- 70% advance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No advance</masterLabel>
+            <translation><!-- No advance --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The date on which summer staff on the wave should receive the total salary owed. --></help>
+        <label><!-- Payroll payment date --></label>
+        <name>Payroll_payment_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll processing meeting date --></label>
+        <name>Payroll_processing_meeting_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pilot? --></label>
+        <name>Pilot__c</name>
+    </fields>
+    <fields>
+        <label><!-- Place available for Support Worker --></label>
+        <name>Place_available_for_Support_Worker__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practitioner Day Off 1 --></label>
+        <name>Practitioner_Day_Off_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practitioner Day Off 2 --></label>
+        <name>Practitioner_Day_Off_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practitioner - Drama WTBW doc --></label>
+        <name>Practitioner_Drama_WTBW_doc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practitioner - Enterprise WTBW doc --></label>
+        <name>Practitioner_Enterprise_WTBW_doc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practitioner - Media WTBW doc --></label>
+        <name>Practitioner_Media_WTBW_doc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practitioner - Photography WTBW doc --></label>
+        <name>Practitioner_Photography_WTBW_doc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practitioner - Sport WTBW doc --></label>
+        <name>Practitioner_Sport_WTBW_doc__c</name>
+    </fields>
+    <fields>
+        <help><!-- Feeds into contract email --></help>
+        <label><!-- Practitioner WTBW doc --></label>
+        <name>Practitioner_WTBW_doc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practitioner end date --></label>
+        <name>Practitioner_end_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practitioner start date --></label>
+        <name>Practitioner_start_date1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practitioner work dates --></label>
+        <name>Practitioner_work_dates__c</name>
+    </fields>
+    <fields>
+        <label><!-- #Practitioners --></label>
+        <name>Practitioners__c</name>
+    </fields>
+    <fields>
+        <label><!-- Programmes User view --></label>
+        <name>Programmes_User_view__c</name>
+    </fields>
+    <fields>
+        <help><!-- Feeds into contract email --></help>
+        <label><!-- RAM WTBW doc --></label>
+        <name>RAM_WTBW_doc__c</name>
+    </fields>
+    <fields>
+        <label><!-- RAM end date --></label>
+        <name>RAM_end_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RAM start date --></label>
+        <name>RAM_start_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 1-2 payroll date --></label>
+        <name>RCA_1_2_payroll_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 1 payroll date/time --></label>
+        <name>RCA_1_2_payroll_date_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 2 staff confirmed --></label>
+        <name>RCA_1_2_staff_confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 1 Sat --></label>
+        <name>RCA_1_Sat__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 1 Sun --></label>
+        <name>RCA_1_Sun__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 1 payroll approved --></label>
+        <name>RCA_1_payroll_approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 1 staff confirmed --></label>
+        <name>RCA_1_staff_confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 2 Sat --></label>
+        <name>RCA_2_Sat__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 2 Sun --></label>
+        <name>RCA_2_Sun__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 2 payroll date/time --></label>
+        <name>RCA_2_payroll_date_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 3 staff confirmed --></label>
+        <name>RCA_3_4_staff_confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 3 Sat --></label>
+        <name>RCA_3_Sat__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 3 Sun --></label>
+        <name>RCA_3_Sun__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 4 Sat --></label>
+        <name>RCA_4_Sat__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 4 Sun --></label>
+        <name>RCA_4_Sun__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 4 payroll approved --></label>
+        <name>RCA_4_payroll_approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 4 payroll date/time --></label>
+        <name>RCA_4_payroll_date_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 4 staff confirmed --></label>
+        <name>RCA_4_staff_confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Day Off 1 --></label>
+        <name>RCA_Day_Off_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Day Off 2 --></label>
+        <name>RCA_Day_Off_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA End Day --></label>
+        <name>RCA_End_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA KO DATE --></label>
+        <name>RCA_KO_DATE__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows number of approvals for RCA 1 and 2 days that have been approved --></help>
+        <label><!-- RCA 2 payroll approved --></label>
+        <name>RCA_Sat_payroll_approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 3 payroll approved --></label>
+        <name>RCA_Sun_payroll_approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 3 payroll date/time --></label>
+        <name>RCA_end_date_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 3-4 payroll date --></label>
+        <name>RCA_grad_payroll_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA payroll escalation trigger --></label>
+        <name>RCA_payroll_escalation_trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD KO Date --></label>
+        <name>RCDKO_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD Day Off 1 --></label>
+        <name>RCD_Day_Off_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD Day Off 2 --></label>
+        <name>RCD_Day_Off_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD End date --></label>
+        <name>RCD_End_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave payroll date/time --></label>
+        <name>RCD_end_date_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- #RM --></label>
+        <name>Res_Accomm_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPM email --></label>
+        <name>SPM_email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Support workers on the wave --></help>
+        <label><!-- #SW --></label>
+        <name>SW__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spring wave --></label>
+        <name>Spring_wave__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows number of staff on the wave who&apos;s payroll has been approved --></help>
+        <label><!-- #Staff payroll approved --></label>
+        <name>Staff_payroll_approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Staffing Associate --></label>
+        <name>Staffing_Associate__c</name>
+        <relationshipLabel><!-- Jobs (Staffing Associate) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Staffing Manager --></label>
+        <name>Staffing_Manager__c</name>
+        <relationshipLabel><!-- Jobs (Staffing Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Staffing Zone --></label>
+        <name>Staffing_Zone__c</name>
+        <picklistValues>
+            <masterLabel>East</masterLabel>
+            <translation><!-- East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Midlands</masterLabel>
+            <translation><!-- Midlands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North</masterLabel>
+            <translation><!-- North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North West</masterLabel>
+            <translation><!-- North West --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSH &amp; Black Country</masterLabel>
+            <translation><!-- SSH &amp; Black Country --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South</masterLabel>
+            <translation><!-- South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West</masterLabel>
+            <translation><!-- West --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Summer Manager email --></label>
+        <name>Summer_Manager_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- TCKO Date --></label>
+        <name>TCKO_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC Day Off 1 --></label>
+        <name>TC_Day_Off_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC Day Off 2 --></label>
+        <name>TC_Day_Off_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC end day --></label>
+        <name>TC_end_day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total (S)AMs --></label>
+        <name>Total_S_AMs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel Directions link --></label>
+        <name>Travel_Directions_link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave APM --></label>
+        <name>Wave_APM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave End Day of Week --></label>
+        <name>Wave_End_Day_of_Week__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave Model - Staffing --></label>
+        <name>Wave_Model_Staffing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave Number --></label>
+        <name>Wave_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave --></label>
+        <name>Wave__c</name>
+        <relationshipLabel><!-- Jobs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Wave end date --></label>
+        <name>Wave_end_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave model --></label>
+        <name>Wave_model_formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave salary total --></label>
+        <name>Wave_salary_total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave-specific info --></label>
+        <name>Wave_specific_info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zone --></label>
+        <name>Zone__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Wave-long roles 2014 --></label>
+        <name>Job_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Summer-long staff 2013 --></label>
+        <name>Summer_long_staff</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Wave-long roles 2013 --></label>
+        <name>Wave_long_roles</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Wave-long roles 2015 --></label>
+        <name>Wave_long_roles_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Wave-long roles 2016 --></label>
+        <name>Wave_long_roles_2016</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- There are already 5 AMs/SAMs allocated to this wave. --></errorMessage>
+        <name>AM_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The position of APL has been filled for this wave. If you need to add an extra APL, please ask your manager to edit the &quot;Max APL&quot; field. --></errorMessage>
+        <name>APL_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Community Facilitator positions have been filled for this wave. If you need to add more CFs, please ask your manager to edit the &quot;Max CFs&quot; field. --></errorMessage>
+        <name>CF_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Mentor positions have been filled for this wave. If you need to add more Mentors, please ask your manager to edit the &quot;Max Mentor&quot; field. --></errorMessage>
+        <name>Mentor_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This wave has no place for a Support Worker, so you cannot add one to this Job. Please speak to the Inclusion team for more info. --></errorMessage>
+        <name>No_SW_place_on_Wave</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The position of Programme Leader has been filled for this wave. --></errorMessage>
+        <name>PL_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Practitioner roles have been filled for this wave. If you need to add another Practitioner, please ask your manager to edit the &quot;Max Practitioner&quot; field. --></errorMessage>
+        <name>Practitioner_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Residential Mentor positions have been filled for this wave. If you need to add another RM, please ask your manager to edit the field &quot;Max RM&quot;. --></errorMessage>
+        <name>RM_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- There are no places left for additional support workers. Please contact inclusion to speak to them about potentially taking an extra support worker on this wave --></errorMessage>
+        <name>Support_work_place_filled_1place1YP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- There are no places left for additional support workers. Please contact inclusion to speak to them about potentially taking an extra support worker on this wave --></errorMessage>
+        <name>Support_work_place_filled_1place2YP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- There are no places left for additional support workers. Please contact inclusion to speak to them about potentially taking an extra support worker on this wave --></errorMessage>
+        <name>Support_work_place_filled_2places</name>
+    </validationRules>
+</CustomObjectTranslation>

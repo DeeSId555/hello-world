@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Job_Application__c$Contact__c.Id</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c$Name</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c$Contact__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c$Staffing_Zone__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c$Feedback_decision__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c$Recommendation_for_next_year__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c$Date_staff_thank_you_email_sent__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Job_Application__c$Date_staff_thank_you_email_sent__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>12/17/2013,12/19/2013</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2013 Feedback email rec.</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Job_applications__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Job_Application__c$Date_staff_thank_you_email_sent__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Job_Application__c$Assignment_end_date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

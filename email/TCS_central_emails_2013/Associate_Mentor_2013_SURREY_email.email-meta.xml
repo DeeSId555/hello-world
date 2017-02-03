@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Please only clone this template.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>Associate Mentor 2013 SURREY email</name>
+    <style>freeForm</style>
+    <subject>Associate Mentor Application - Deadline Next Week!</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+The deadline for Associate Mentor Applications is fast approaching:
+
+May 1st  - Next Wednesday!
+
+If you haven&apos;t applied yet, just click on the link below.
+
+http://www.clicktools.com/survey?iv=kwprkk5qx0op&amp;q1={!Contact.Id}
+
+
+The role is 4 days long and there are options of start dates.
+
+You will be volunteering on the Real Challenge Design week, supporting Challengers to develop their campaigning skills, pitch to the Dragons and to get ready for the Real Challenge Action weekends.
+
+We’re really looking forward to reading your applications.
+
+This is an amazing opportunity for you to stay involved in The Challenge Society; to meet up with old friends, to continue to develop your teamwork and leadership skills and to really feel you are making a difference by supporting Challengers. You will be given training beforehand and be fully supported by Challenge staff while you are volunteering with us. This is also a great chance to gain valuable experience that will help if you want to apply for other summer roles with The Challenge in the future.
+
+Good luck!
+
+The Challenge Society</textOnly>
+    <type>html</type>
+</EmailTemplate>

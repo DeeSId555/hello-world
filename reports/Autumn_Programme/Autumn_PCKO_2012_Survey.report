@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Survey__c$RecordType</field>
+    </columns>
+    <columns>
+        <field>Survey__c$Contact_lookup__c</field>
+    </columns>
+    <columns>
+        <field>Survey__c$Contact_s_TCN_Id__c</field>
+    </columns>
+    <columns>
+        <field>Survey__c$Wave_Summary__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Survey__c$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Survey__c.PCKO_YP</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Survey__c$Wave_Summary__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Autumn 2N</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Autumn PCKO 2012 Survey</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Surveys__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Survey__c$CreatedDate</dateColumn>
+        <endDate>2012-12-10</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2012-01-01</startDate>
+    </timeFrameFilter>
+</Report>

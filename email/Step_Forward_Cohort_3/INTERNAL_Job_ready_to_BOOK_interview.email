@@ -1,0 +1,70 @@
+<h2><big><strong>INTERNAL EMAIL ALERT</strong></big></h2>
+
+<div>
+<hr />
+<p>&nbsp;</p>
+</div>
+
+<h2><strong>Subject: Job ready to BOOK interview</strong></h2>
+
+<p><strong style="line-height: 20.8px;">SF job number</strong><span style="line-height: 20.8px;">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="https://na8.salesforce.com/">{!Step_Forward_Job__c.Name}</a></p>
+
+<h1>EMPLOYER: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;{!Step_Forward_Job__c.Employer__c}</h1>
+
+<h1>PATHWAY: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;{!Step_Forward_Job__c.Pathway__c}</h1>
+
+<p>&nbsp;</p>
+
+<p>Dear Account Manager,&nbsp;{!Step_Forward_Job__c.SF_Account_Owner__c},</p>
+
+<p>&nbsp;</p>
+
+<p>The following job is now ready to be booked for an interview.&nbsp; The matching team are satisfied that they have sufficient capacity and availability of candidates for this job. &nbsp;Please follow the next steps:</p>
+
+<ol>
+	<li><strong>Contact the employer</strong> to book interview date,&nbsp;time and duration for each interview (include contact name and number if there is somebody for the YP&nbsp;to meet at the interview)</li>
+	<li><strong>Send a confirmation email to the employer</strong> adivsing Cvs to follow 5 days before interview</li>
+	<li><strong>Create a Step Forward Event Component</strong> and input the interview details</li>
+	<li>*When you have all the details, check the box <strong>&#39;Ready to Match&#39;</strong></li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p>****Please note, you must leave at least<strong> <span class="marker">2-3 weeks notice between &#39;Ready to Match&#39; and the interview date.</span></strong></p>
+
+<p>&nbsp;</p>
+
+<p><strong><span class="marker">IF THE EMPLOYER IS NOT YET&nbsp;READY TO INTERVIEW IN THE NEXT 3-4 WEEKS THEN FOLLOW THSE STEPS:</span></strong></p>
+
+<ol style="line-height: 20.8px;">
+	<li>Compelte the field in SFJob called<b> &#39; Interview Availability&#39;</b> eg. <em>End of June 2016</em></li>
+	<li>Change the field of <b>&#39;EmployerAvailabile for Interview?&#39; </b>to <em>No</em></li>
+	<li>Input a reminder date in <b>&#39;Date to contact Employer again&#39; </b>so you can review a View in salesforce to call this employer at a later date</li>
+	<li>Matching Team will not take any further action until you have followed the steps to book an interview and created an SFEC</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p><u>Step Forward Job details</u></p>
+
+<p><strong style="line-height: 20.8px;">SF job number</strong><span style="line-height: 20.8px;">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="https://na8.salesforce.com/" style="line-height: 20.8px;">{!Step_Forward_Job__c.Name}</a></p>
+
+<p><strong>Employer</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {!Step_Forward_Job__c.Employer__c}</p>
+
+<p><strong>SF job name&nbsp;&nbsp;&nbsp; </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {!Step_Forward_Job__c.Step_Forward_Job_Name__c}</p>
+
+<p><strong>Pathway</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {!Step_Forward_Job__c.Pathway__c}</p>
+
+<p><strong>Job Postcode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>{!Step_Forward_Job__c.Job_Postcode__c}</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Best wishes,</p>
+
+<p>&nbsp;</p>
+
+<p>Matching Team</p>

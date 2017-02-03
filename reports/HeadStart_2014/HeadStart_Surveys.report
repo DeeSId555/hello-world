@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>HS_Survey__c$Id</field>
+    </columns>
+    <columns>
+        <field>HS_Survey__c$RecordType</field>
+    </columns>
+    <columns>
+        <field>HS_Survey__c$Name</field>
+    </columns>
+    <columns>
+        <field>HS_Survey__c$HS_Activity__c</field>
+    </columns>
+    <columns>
+        <field>HS_Survey__c$Skills_I_have_relevant__c</field>
+    </columns>
+    <columns>
+        <field>HS_Survey__c$HS_Main_reason__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>HS_Survey__c$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>HS_Survey__c.HS_Baseline_Survey</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>HeadStart Baseline Surveys</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>HS_Surveys__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>HS_Survey__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

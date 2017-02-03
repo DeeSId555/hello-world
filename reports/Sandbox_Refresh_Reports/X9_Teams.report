@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Team__c$RecordType</field>
+    </columns>
+    <columns>
+        <field>Team__c$Wave__c</field>
+    </columns>
+    <columns>
+        <field>Team__c$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Team__c$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Team__c.X2016</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>9. Teams</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Teams__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Team__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

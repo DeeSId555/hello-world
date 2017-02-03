@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>OWNER_FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.School_s_cluster__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Northmanc,Southmanc</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave_Selection__c.Waiting_list_waves__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Total_payment_received__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave_Selection__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Waiting list,Was reserved - now on waiting list,Withdrawn</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Access_category_2_6__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>3 Significant extra Mentor support,3a (medical) Moderate extra support needed,3b (behavioural) Moderate extra support needed,4 Requires APL support,5 Full-time support worker,5:0.5 Requires support worker - could share with another YP,5:1 Requires full time support worker,5:2 Requires 2 full time support workers,6 Case-by-case - potential non-accept</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Higher support on waiting lists</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Wave_Selection__c@Wave_Selection__c.Wave__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

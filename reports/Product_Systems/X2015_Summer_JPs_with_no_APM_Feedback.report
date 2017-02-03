@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Job_Application__c$Name</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c$Account_Name__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Job_placements__r$Name</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Job_placements__r.Feedback__r$Name</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Job_placements__r.Feedback__r$RecordType</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Job_placements__r.Feedback__r$Date_feedback_submitted__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Job_Application__c.Job_placements__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Job_placement__c.AM_2014,Job_placement__c.PL_2014,Job_placement__c.Practitioner_2014,Job_placement__c.RCA_1_2014,Job_placement__c.RCA_2_2014,Job_placement__c.RCA_3_2014,Job_placement__c.RCA_4_2014,Job_placement__c.RM_2014,Job_placement__c.SAM_2014,Job_placement__c.SM_2014,Job_placement__c.SW_2014,Job_placement__c.APL_2014,Job_placement__c.CF_2014,Job_placement__c.LO_2014,Job_placement__c.RCA_back_up_2014</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2015 Summer JPs with no APM Feedback</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Job_Applications_with_Job_placements_and_w_wo_Feed__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Job_Application__c$Assignment_end_date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

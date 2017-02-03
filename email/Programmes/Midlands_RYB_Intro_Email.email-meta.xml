@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>Midlands RYB Intro Email</name>
+    <style>freeForm</style>
+    <subject>Invite to Midlands Regional Youth Board</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+I would like to invite you to be part of the Regional Youth Board. The opportunity to be involved is only for NCS Leaders and one selected person from each &apos;local&apos; youth board.
+
+A quick summary of what it involves:
+
+Attending 3/4 meetings in 2016
+Meetings will take place in Birmingham. We can help with transport such as buses, trains or a taxi to the train station if needed.
+The Regional Youth Board will review the funding pitches of local youth boards and decide on whether they are successful or not
+Get to make key decisions to shape NCS graduate activity locally
+
+The first meeting will be in Birmingham city centre on Tuesday 16th February 2-4pm. Exact location to be confirmed (probably in the Bullring)
+
+If you can&apos;t attend, don&apos;t worry! We will send you a meeting summary afterwards.
+
+Please reply and let me know:
+
+If you want to be a part of Regional youth board
+If you can attend the first meeting
+If you need any help with transport and what help this might be (i.e. pay for train or a taxi to the train station)
+
+Thanks,
+
+Liam</textOnly>
+    <type>html</type>
+</EmailTemplate>

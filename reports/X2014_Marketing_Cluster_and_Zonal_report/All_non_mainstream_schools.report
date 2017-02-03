@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Zone__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cluster__c</field>
+    </columns>
+    <columns>
+        <field>Account.Borough_or_area__c</field>
+    </columns>
+    <columns>
+        <field>Account.School_type__c</field>
+    </columns>
+    <columns>
+        <field>Account.Assembly_date_2012__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Account.Schools</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.School_type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>State PRU,State SEN,Independent PRU,Independent SEN,Non-mainstream - other,Further education PRU,Further education SEN,Home schooling,Not at school</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>All non-mainstream schools</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

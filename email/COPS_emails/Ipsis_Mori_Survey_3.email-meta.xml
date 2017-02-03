@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Ipsis Mori Survey 3</name>
+    <style>none</style>
+    <subject>Win an iPad - a quick survey about you</subject>
+    <textOnly>NCS Survey Take Part
+
+{!Lead.LastName}
+
+Take part in our quick survey to enter a prize draw for an iPad with Retina display Wi-Fi + Cellular 16GB.
+
+To take part please click on your unique link below or paste it into your internet browser:
+
+https://research.ipsosinteractive.com/mrIWeb/mrIWeb.dll?I.Project=S1021814&amp;id={!Lead.Ipsis_Mori_survey_ID__c}
+
+This email is being sent to people who expressed an interested in NCS (National Citizen Service). We would like to invite you to take part in an important study about you, how you spend your time, and your plans for the future.
+
+The prize draw will close when the survey closes on 31st August 2013, and if you win the prize we will contact you by email before 11th October 2013. More details about the prize draw are available here. here.
+
+Ipsos MORI, an independent research organisation, is running this study on behalf of the Government (the Office for Civil Society in the Cabinet Office). It should only take about 10-15 minutes to complete and all of the information collected will be treated in the strictest of confidence in line with the Data Protection Act. Your answers will be anonymised by Ipsos MORI and no individual will be identifiable in the data or results, so please be entirely honest when you complete the survey. There are no right or wrong answers!
+
+We hope you can take part – if you have any questions about the survey please email us at
+
+
+
+
+
+Daniel Cameron
+Associate Director
+Ipsos MORI
+
+(Should you wish to stop receiving invitations to this survey, click here.)</textOnly>
+    <type>custom</type>
+</EmailTemplate>

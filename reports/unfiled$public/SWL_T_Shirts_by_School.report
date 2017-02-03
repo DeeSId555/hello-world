@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.NCS_Applications__r.Wave_Selections__r$Status__c</field>
+    </columns>
+    <columns>
+        <field>Contact.NCS_Applications__r$T_Shirt_size__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Date_given_hoodie__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Young_Person</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.NCS_Applications__r.Wave_Selections__r$Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Assigned,Reserved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$NCS_Application_Primary_Season__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Summer 2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.NCS_Applications__r$School_s_code__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>KCG</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>SWL T-Shirts by School</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_NCS_Applications_with_Wave_Selections__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$LastActivityDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

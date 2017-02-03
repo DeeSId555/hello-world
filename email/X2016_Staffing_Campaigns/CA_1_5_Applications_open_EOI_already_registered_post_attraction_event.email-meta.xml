@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>1.5 Applications open - EOI (already registered, post-attraction event)</name>
+    <style>formalLetter</style>
+    <subject>Seasonal roles with The Challenge</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}.
+
+Dear {!Contact.FirstName},
+
+Thank you for your interest in working on the 2016 NCS programme with The Challenge! Applications for our 2016 summer programme are now open.
+
+Your profile on the staffing website
+
+As you have already provided us with some of your details, we&apos;ve gone ahead and done some of the work by creating a profile for you on our staffing website! All you need to do is use the login details below to access the &apos;My Profile&apos; section to submit your personal details, and then complete the application form.
+
+Username: {!Contact.Email}
+
+Password: {!Contact.Login_Password__c}
+
+You can leave the application form at any time and come back to it later - just remember to &apos;save&apos; before you exit! The application form can be edited at any point up until submission. After this, the &apos;My Application&apos; section will be locked while we consider your application.
+
+
+Click here to login to the staffing website!
+
+
+Any questions?
+
+If you need more information about the roles on offer, all details and job descriptions can be found here.
+
+If you have specific queries about seasonal roles or the application form, please don&apos;t hesitate to contact us on our general helpline: seasonalroles@the-challenge.org. You can also find information on our FAQs page.
+
+We look forward to receiving your application!
+
+
+Best wishes,
+
+The Staffing Team
+The Challenge</textOnly>
+    <type>html</type>
+</EmailTemplate>

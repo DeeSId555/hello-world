@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Borough_or_area__c</field>
+    </columns>
+    <columns>
+        <field>Account.TEST_Status_2012__c</field>
+    </columns>
+    <columns>
+        <field>Account.School_type__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Account.Schools,012C0000000Q9nK</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cluster__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>NorthManc,SouthManc,Lanc</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.School_type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>State comprehensive,State selective,State PRU,State SEN,Independent Standard,Independent Selective,Independent PRU,Independent SEN,Non-mainstream - other,Further education PRU,Further education SEN,Further education Independent,Further education State,Home schooling,Not at school</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Current_target_school_2012__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Marks Tracker 2013</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

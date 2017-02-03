@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email with links to Payroll and reference forms: reminder 1</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Payroll and reference reminder 1</name>
+    <style>none</style>
+    <subject>Reminder of request for tax declaration, bank details and references</subject>
+    <textOnly>The Challenge Network
+
+Dear {!Job_Application__c.Contact_Name__c},
+
+We wrote to you on {!Job_Application__c.00NC0000005F0ZO} asking you to submit your tax declaration and bank details.
+
+In order for us to pay you in a timely manner, it is very important that you complete the form with your tax declaration and bank details.
+
+http://www.clicktools.com/survey?iv=jirptbuxyu1um&amp;q1={!Job_Application__c.Id}
+
+Please note that this is a secure form, but if you are not happy to submit your details in this way, you can call Lucy Found or Mandy Nichols on 020 8673 2211.
+
+
+It is also important that you complete the process by supplying the contact details of two referees. We will then contact them for references. Please click on the link below to enter this information:
+http://www.clicktools.com/survey?iv=3a136eee55a668f&amp;q1={!Job_Application__c.Id}
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.OwnerEmail}
+
+WWW.THE-CHALLENGE.ORG    /thechallengeNETWORK
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

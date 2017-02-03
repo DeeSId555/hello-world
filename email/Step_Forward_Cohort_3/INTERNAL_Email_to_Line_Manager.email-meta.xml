@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>INTERNAL: Email to Line Manager</name>
+    <style>none</style>
+    <subject>{!Step_Forward_Job__c.Name} Awaits Your Approval</subject>
+    <textOnly>Hi,
+
+{!Step_Forward_Account_Management__c.Step_Forward_Owner__c} has requested your approval for the following job:
+
+
+{!Step_Forward_Job__c.Name} ({!Step_Forward_Job__c.Step_Forward_Job_Name__c} at {!Step_Forward_Job__c.Employer__c})
+
+
+Thanks,
+
+Salesforce</textOnly>
+    <type>custom</type>
+</EmailTemplate>

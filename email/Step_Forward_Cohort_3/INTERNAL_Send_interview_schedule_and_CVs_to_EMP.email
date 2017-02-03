@@ -1,0 +1,51 @@
+<h2><big><strong>INTERNAL EMAIL ALERT</strong></big></h2>
+
+<div>
+<hr />
+<p>&nbsp;</p>
+</div>
+
+<h2><strong>Subject: Send CVs and interview schedule to the Employer</strong></h2>
+
+<p><strong style="line-height: 20.8px;">SF event component number:</strong><span style="line-height: 20.8px;">&nbsp; </span><a href="https://na8.salesforce.com/">{!Step_Forward_Event_Component__c.Id}</a></p>
+
+<p><strong>Sf Job:</strong> &nbsp;<a href="https://na8.salesforce.com/">{!Step_Forward_Event_Component__c.Step_Forward_Job__c}</a></p>
+
+<p>&nbsp;</p>
+
+<p>Dear Account Manager,&nbsp;{!Step_Forward_Event_Component__c.SF_Account_Owner__c},</p>
+
+<p>The Matching team have allocated candidates to interview time slots and confirmed their availability.</p>
+
+<p><strong>Please email the Employer (at least 5 days before the interview date) with the following:</strong></p>
+
+<ol>
+	<li>Interview schedule and name of each candidate</li>
+	<li>Attach a copy of CV for each candidate (be sure to use the correct version of CV, they may have more than one! - you can find these on SFA)</li>
+	<li>Attach the Employer interview guidance doc and Employer feedback doc</li>
+	<li>Alert the Employer that we will be contacting them for their feedback within 24hrs of interview</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p><u style="line-height: 1.6;">Step Forward Event Component details</u></p>
+
+<p><strong>SF event component number:</strong>&nbsp; {!Step_Forward_Event_Component__c.Name}</p>
+
+<p><strong>SF&nbsp;Job: </strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;{!Step_Forward_Event_Component__c.Step_Forward_Job__c}</p>
+
+<p><strong>Event Date</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {!Step_Forward_Event_Component__c.Event_Date_Matching__c}</p>
+
+<p><strong>Interview Start and Finish times</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;{!Step_Forward_Event_Component__c.Interview_start_and_finish_times__c}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p><strong>Pathway: </strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{!Step_Forward_Event_Component__c.Pathway__c}</p>
+
+<p>Interview address:</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Best wishes,</p>
+
+<p>Matching Team</p>

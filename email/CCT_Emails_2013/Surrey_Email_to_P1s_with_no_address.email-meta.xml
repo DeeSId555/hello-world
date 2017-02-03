@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email to Surrey YPs to sign up</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Surrey Email to P1s with no address</name>
+    <style>none</style>
+    <subject>Take on The Challenge this summer</subject>
+    <textOnly>The Challenge Network
+
+Take on The Challenge this summer
+
+
+Dear {!Contact.FirstName},
+
+We know that you were initially interested in coming on The Challenge summer programme but have been unable to complete your sign up yet.  We still have a limited number of places for this summer available and would love for you to get involved. Until the end of May you can sign up for  just £35  using the code  SURREY13 .
+
+The Challenge is an exciting part-residential programme designed exclusively for 15-17 year olds. It begins with three challenges over 14 days during the summer holidays, after your exams, followed by four weekend days in early autumn.
+
+Whilst we offer a wide range of start dates, there are now a limited number of places available. Each date is filling up quickly - the quickest and easiest way to confirm a place is through our website. Please visit www.the-challenge.org and sign in using your personal log-in details as soon as possible to secure your place today:
+
+CHALLENGE ID:
+
+LOGIN PIN: {!Contact.Login_PIN__c}
+
+
+A place on The Challenge is worth around £1,500 but thanks to our generous funders, we are able to offer the programme for the all-inclusive price of just £50. Until the end of May we can provide a further discounted price  of just £35  if you use the discount code  SURREY13. This price covers all accommodation, food, transport, and equipment. If cost is still an issue for you, please contact us about bursaries.
+
+Throughout the programme you can expect to build self-confidence as well as leadership, teamwork and communication skills, whilst having an amazing time. As the largest provider of National Citizen Service (NCS), employers and universities recognise the unique value of The Challenge. Additionally, UCAS have recently cited NCS as a preferred ‘skill or achievement’ to include in a personal statement. The Challenge can also count towards the Duke of Edinburgh award as well as the International Baccalaureate.
+
+If you have any further questions, please do not hesitate to contact your local schools representative Angela Jehan on 07718086569 or angela.jehan@the-challenge.org
+
+Look forward to hearing from you soon!
+
+the-challenge.org  ncsyes.co.uk
+/thechallengenetwork    /ncs
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

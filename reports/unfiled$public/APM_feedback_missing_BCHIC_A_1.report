@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Job_Application__c$Name</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Job_placements__r$Name</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Job_placements__r$Contact__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Job_placements__r$Role__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Job_placements__r$Date_APM_feedback_submitted__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Job_Application__c.Job_placements__r$Job__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>BCHIC A 1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Job_placements__r$Was_Confirmed__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Job_placements__r$Date_APM_feedback_submitted__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>APM feedback missing BCHIC A 1</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Job_Applications_with_Job_placements_and_w_wo_Feed__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Job_Application__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

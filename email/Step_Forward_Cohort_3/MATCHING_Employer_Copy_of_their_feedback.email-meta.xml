@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>22.1.16 (Workflow)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>MATCHING Employer Copy of their feedback</name>
+    <style>none</style>
+    <subject>Copy of interview feedback for your records</subject>
+    <textOnly>Copy of your feedback
+
+
+Hello,
+
+
+Thank you for providing feedback on your recent interview with {!Step_Forward_Activity__c.Associate__c}.
+
+Please find a copy of this feedback for your records below.
+
+
+1. Employer preference: Of the candidates interviewed, which preference is this candidate?
+
+{!Step_Forward_Associate_Attendance__c.EIF_Preference__c}
+
+
+2. If candidate is unsuccessful (i.e. not 1st choice)] What is the main reason this candidate was unsuccessful?
+
+{!Step_Forward_Associate_Attendance__c.EIF_Notes__c}
+
+
+3. Candidate preparation: The candidate arrived in good time for the interview
+
+{!Step_Forward_Associate_Attendance__c.EIF_Prep_punctuality__c}
+
+
+4. Candidate preparation: The candidate presented themselves well, i.e. appropriate smart dress and introduction
+
+{!Step_Forward_Associate_Attendance__c.EIF_Prep_presentation__c}
+
+
+5. Candidate preparation: The candidate was well prepared for their interview, e.g. understood role, had done some research on the company
+
+{!Step_Forward_Associate_Attendance__c.EIF_Prep_research__c}
+
+
+6. Communication skills: The candidate had good verbal communication skills
+
+{!Step_Forward_Associate_Attendance__c.EIF_verbal_communication_skills__c}
+
+
+7. Communication skills: The candidate demonstrated good non-verbal communication skills, i.e. eye contact, positive body language
+
+{!Step_Forward_Associate_Attendance__c.EIF_non_verbal_communication_skills__c}
+
+
+8. [if relevant] Communication skills: The candidate had good written communication skills
+
+{!Step_Forward_Associate_Attendance__c.EIF_written_communication_skills__c}
+
+
+9. Interview responses: The candidate gave clear answers to interview questions
+
+{!Step_Forward_Associate_Attendance__c.EIF_response_answers__c}
+
+
+10. Interview responses: The candidate used appropriate examples to support their answers
+
+{!Step_Forward_Associate_Attendance__c.EIF_response_examples__c}
+
+
+11. Experience and skills:  The candidate had the relevant experience and skills for the role
+
+{!Step_Forward_Associate_Attendance__c.EIF_relevant_experience__c}
+
+
+12. Experience and skills:  The candidate showed an ability to take the initiative or be pro-active
+
+{!Step_Forward_Associate_Attendance__c.EIF_pro_active__c}
+
+
+13. Attitude: The candidate was enthusiastic about the role
+
+{!Step_Forward_Associate_Attendance__c.EIF_Attitude__c}
+
+
+14. Culture: The candidate understood our workplace culture and would fit in well
+
+{!Step_Forward_Associate_Attendance__c.EIF_Culture__c}
+
+
+15. Any specific comments or feedback?
+
+{!Step_Forward_Associate_Attendance__c.EIF_Specific_feedback__c}
+
+
+Best wishes,
+
+Step Forward Matching Team
+
+020 3542 2404. Option 5.
+
+stepforward.interview@the-challenge.org
+
+
+
+
+
+
+
+
+
+
+
+www.stepforward.uk.com
+
+
+The Challenge Network is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 39 York Rd, London SE1 7NQ</textOnly>
+    <type>custom</type>
+</EmailTemplate>

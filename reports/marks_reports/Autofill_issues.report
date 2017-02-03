@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Wave__c$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Wave__c$Online_places_available__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave__c$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Wave__c.X2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave__c$Total_On_Waiting_List_del__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave__c$Wave_Cluster__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>WEB,EBB</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Autofill issues??</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Waves__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Wave__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

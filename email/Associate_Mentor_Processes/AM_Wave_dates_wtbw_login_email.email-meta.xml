@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sends email to AM/SAM with login details to WTBW website</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>4. AM Role Confirmation Email</name>
+    <style>freeForm</style>
+    <subject>Details of your role with The Challenge</subject>
+    <textOnly>Dear {!Job_placement__c.Contact__c},
+
+Congratulations on successfully completing training and being appointed {!Job_placement__c.Role__c} to work on NCS with The Challenge this summer. 
+
+I am very pleased to confirm that you will be working on {!Job_placement__c.Wave__c} from {!Job_placement__c.RCD_KO_date__c} to {!Job_placement__c.RCD_End_date__c}. 
+
+My name is {!Job_placement__c.Wave_APM__c}. I am Assistant Programme Manager (APM)  for {!Job_placement__c.Wave__c}, and we will be working together this summer on the NCS Real Challenge Design. My contact details are at the end of this email.
+
+This is where you need to be:
+
+-RCD Day Venue Details
+
+This is when you need to be there:
+
+- {!Job_placement__c.RCD_KO_date__c} at 09:00am  
+
+It is very important to be on time. Please plan how you&apos;re going to get to -RCD Day Venue Name- and check your travel information. 
+
+- LINK TO TRAVELINE / TFL.gov
+
+I hope you have a fantastic time with The Challenge this summer!
+
+Best wishes, 
+
+{!Job_placement__c.Wave_APM__c}
+
+The Challenge
+
+- Wave APM email
+-Wave APM phone number</textOnly>
+    <type>html</type>
+</EmailTemplate>

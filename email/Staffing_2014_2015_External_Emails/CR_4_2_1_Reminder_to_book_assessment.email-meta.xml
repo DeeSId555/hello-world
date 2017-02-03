@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 3.1 Reminder to book assessment (2016)</name>
+    <style>formalLetter</style>
+    <subject>Reminder - you&apos;re not booked onto an assessment yet!</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}.
+
+Dear {!Contact.FirstName},
+
+We have noticed that you have not yet booked onto any of our group assessments for our 2016 seasonal roles.
+
+What do I need to do?
+
+Please head to the Booking Assessments page on the staffing website. Here you will:
+
+View a list of possible assessment dates
+
+Book onto an assessment
+
+Review details of your chosen assessment
+
+Submit an Alternative Dates Form* if you cannot make any of the dates offered to you.
+
+
+*Please note: it is not always possible to offer you alternative assessment dates. We would recommend that you try to make yourself available for one of the initial dates offered to you where possible.
+
+What else?
+
+If you no longer wish to work on the NCS programme, please contact your local staffing team or email our general helpline (seasonalroles@the-challenge.org) to notify us of your withdrawal.
+
+If you have any questions about our group assessments please contact your local staffing team. You can also find information on our assessments on our FAQs.
+
+We look forward to meeting you!
+
+Best wishes,
+
+The Staffing Team
+The Challenge
+
+seasonalroles@the-challenge.org</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HR Event</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HR Events</value>
+    </caseValues>
+    <fields>
+        <label><!-- #Attendee --></label>
+        <name>Attendee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cluster --></label>
+        <name>Cluster1__c</name>
+        <relationshipLabel><!-- HR Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select all of the Clustersthat you want this HR Event to be available to. --></help>
+        <label><!-- Cluster(s) --></label>
+        <name>Cluster_s__c</name>
+        <picklistValues>
+            <masterLabel>BANT</masterLabel>
+            <translation><!-- BANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BB</masterLabel>
+            <translation><!-- BB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCHIC</masterLabel>
+            <translation><!-- BCHIC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BHEN</masterLabel>
+            <translation><!-- BHEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BlackCountry</masterLabel>
+            <translation><!-- BlackCountry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAS</masterLabel>
+            <translation><!-- CAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAW</masterLabel>
+            <translation><!-- CAW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESurrey</masterLabel>
+            <translation><!-- ESurrey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exclude from booking form</masterLabel>
+            <translation><!-- Exclude from booking form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEM</masterLabel>
+            <translation><!-- GEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greenwich</masterLabel>
+            <translation><!-- Greenwich --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HEAL</masterLabel>
+            <translation><!-- HEAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HIHO</masterLabel>
+            <translation><!-- HIHO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lanc</masterLabel>
+            <translation><!-- Lanc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRK</masterLabel>
+            <translation><!-- MRK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NCBirm</masterLabel>
+            <translation><!-- NCBirm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NManc</masterLabel>
+            <translation><!-- NManc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBirm</masterLabel>
+            <translation><!-- SBirm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SLL</masterLabel>
+            <translation><!-- SLL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SWarkS</masterLabel>
+            <translation><!-- SWarkS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRIW</masterLabel>
+            <translation><!-- TRIW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WHR</masterLabel>
+            <translation><!-- WHR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WSurrey</masterLabel>
+            <translation><!-- WSurrey --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please add the date, time and location information for the event here. If there are multiple dates for this event, please add them on separate lines. --></help>
+        <label><!-- Date, time, location --></label>
+        <name>Date_time_location__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is a URL field and will change anything entered into the field into a URL starting with http...
+It is specifically meant for links to google maps etc --></help>
+        <label><!-- Directions (website link) --></label>
+        <name>Directions__c</name>
+    </fields>
+    <fields>
+        <label><!-- End time --></label>
+        <name>End_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event start date --></label>
+        <name>Event_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event end date --></label>
+        <name>Event_end_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Extra info for training confirmation emails. Max characters 255. --></help>
+        <label><!-- Extra info --></label>
+        <name>Extra_info__c</name>
+    </fields>
+    <fields>
+        <label><!-- HR Event Status --></label>
+        <name>HR_Event_Status__c</name>
+        <picklistValues>
+            <masterLabel>Event Date and Venue confirmed</masterLabel>
+            <translation><!-- Event Date and Venue confirmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event done</masterLabel>
+            <translation><!-- Event done --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event to be confirmed</masterLabel>
+            <translation><!-- Event to be confirmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Less than one week until event</masterLabel>
+            <translation><!-- Less than one week until event --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HR Event Type --></label>
+        <name>HR_Event_Type__c</name>
+        <picklistValues>
+            <masterLabel>Assessment</masterLabel>
+            <translation><!-- Assessment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Back-Up Training Event</masterLabel>
+            <translation><!-- Back-Up Training Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training Event</masterLabel>
+            <translation><!-- Training Event --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Hide HR Event --></label>
+        <name>Hide_HR_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- MaxAttendee --></label>
+        <name>MaxAttendee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Packing list --></label>
+        <name>Packing_list__c</name>
+    </fields>
+    <fields>
+        <label><!-- Roles to invite --></label>
+        <name>Role_to_be_assessed1__c</name>
+        <picklistValues>
+            <masterLabel>Assistant Programme Leader</masterLabel>
+            <translation><!-- Assistant Programme Leader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Associate Mentor</masterLabel>
+            <translation><!-- Associate Mentor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Facilitator</masterLabel>
+            <translation><!-- Community Facilitator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logistics Officer</masterLabel>
+            <translation><!-- Logistics Officer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Coach</masterLabel>
+            <translation><!-- Personal Coach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner - Drama</masterLabel>
+            <translation><!-- Practitioner - Drama --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner - Enterprise</masterLabel>
+            <translation><!-- Practitioner - Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner - Media</masterLabel>
+            <translation><!-- Practitioner - Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner - Music</masterLabel>
+            <translation><!-- Practitioner - Music --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner - Photography</masterLabel>
+            <translation><!-- Practitioner - Photography --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner - Sport</masterLabel>
+            <translation><!-- Practitioner - Sport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner Plus</masterLabel>
+            <translation><!-- Practitioner Plus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programme Leader</masterLabel>
+            <translation><!-- Programme Leader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Volunteer</masterLabel>
+            <translation><!-- Project Volunteer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential Mentor</masterLabel>
+            <translation><!-- Residential Mentor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Associate Mentor</masterLabel>
+            <translation><!-- Senior Associate Mentor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Mentor</masterLabel>
+            <translation><!-- Senior Mentor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Worker</masterLabel>
+            <translation><!-- Support Worker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCS Mentor</masterLabel>
+            <translation><!-- TCS Mentor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The Challenge Academy</masterLabel>
+            <translation><!-- The Challenge Academy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Youth Board Member</masterLabel>
+            <translation><!-- Youth Board Member --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Roles to invite (OLD) --></label>
+        <name>Roles_to_be_assessed__c</name>
+        <picklistValues>
+            <masterLabel>Assistant Programme Leader</masterLabel>
+            <translation><!-- Assistant Programme Leader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Associate Mentor</masterLabel>
+            <translation><!-- Associate Mentor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Mentor</masterLabel>
+            <translation><!-- Community Mentor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logs Officer</masterLabel>
+            <translation><!-- Logs Officer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Coach</masterLabel>
+            <translation><!-- Personal Coach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner - Drama</masterLabel>
+            <translation><!-- Practitioner - Drama --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner - Enterprise</masterLabel>
+            <translation><!-- Practitioner - Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner - Media</masterLabel>
+            <translation><!-- Practitioner - Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner - Photography</masterLabel>
+            <translation><!-- Practitioner - Photography --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner - Sport</masterLabel>
+            <translation><!-- Practitioner - Sport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner Plus</masterLabel>
+            <translation><!-- Practitioner Plus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programme Leader</masterLabel>
+            <translation><!-- Programme Leader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Volunteer</masterLabel>
+            <translation><!-- Project Volunteer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential Accommodation Manager</masterLabel>
+            <translation><!-- Residential Accommodation Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Associate Mentor</masterLabel>
+            <translation><!-- Senior Associate Mentor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Mentor</masterLabel>
+            <translation><!-- Senior Mentor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Worker</masterLabel>
+            <translation><!-- Support Worker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCS Mentor</masterLabel>
+            <translation><!-- TCS Mentor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The Challenge Academy</masterLabel>
+            <translation><!-- The Challenge Academy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Youth Board Member</masterLabel>
+            <translation><!-- Youth Board Member --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Staff type --></label>
+        <name>Staff_type__c</name>
+        <picklistValues>
+            <masterLabel>Core Staff</masterLabel>
+            <translation><!-- Core Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Application</masterLabel>
+            <translation><!-- New Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Returner</masterLabel>
+            <translation><!-- Returner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Returner - different role</masterLabel>
+            <translation><!-- Returner - different role --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Returner - lower role</masterLabel>
+            <translation><!-- Returner - lower role --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Returner - same role</masterLabel>
+            <translation><!-- Returner - same role --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start time --></label>
+        <name>Start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- TCN Staff member 1 --></label>
+        <name>TCN_Staff_member_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- TCN Staff member 2 --></label>
+        <name>TCN_Staff_member_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- TCN Staff member 3 --></label>
+        <name>TCN_Staff_member_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Variable date/location info --></label>
+        <name>Variable_date_location_info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Venue --></label>
+        <name>Venue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Venue address --></label>
+        <name>Venue_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- YP end time --></label>
+        <name>YP_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- YP Hours required --></label>
+        <name>YP_hours_required__c</name>
+    </fields>
+    <fields>
+        <label><!-- YP start time --></label>
+        <name>YP_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total capacity reached --></label>
+        <name>total_capacity_reached__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Assessment --></label>
+        <name>Assessment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Back-Up Training --></label>
+        <name>BackUp_Training</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- HR Event --></label>
+        <name>HR_Event</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sample --></label>
+        <name>Sample</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Training --></label>
+        <name>Training</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Exceeded maximum number of attendees --></errorMessage>
+        <name>ControlForMaxAtt</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- As this is an assessment, please make sure that &quot;New Application&quot; and &quot;Returner&quot; are added to the field &quot;Staff type&quot;. --></errorMessage>
+        <name>Ensure_returner_is_on_assessments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you want to hide this event, please tick the &quot;Hide HR Event&quot; box and do not fill in the Venue field. --></errorMessage>
+        <name>Hide_HR_Event</name>
+    </validationRules>
+</CustomObjectTranslation>

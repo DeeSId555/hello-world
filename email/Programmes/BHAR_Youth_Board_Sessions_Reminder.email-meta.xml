@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>BHAR Youth Board Sessions Reminder</name>
+    <style>freeForm</style>
+    <subject>Youth Board Session Dates</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+Please see below the details of your upcoming Youth Board sessions. They will all be taking place at Frenford Clubs, The Drive, Ilford IG1 3PS.
+
+Monday 18th January, 5pm - 7pm
+Monday 1st February, 4.30pm - 6.30pm
+Monday 8th February, 4.30pm - 6.30pm
+Monday 15th February, 4.30pm - 6.30pm
+Monday 29th February, 4.30pm - 6.30pm
+Saturday 5th March - NCS Action Day
+
+If you are not able to attend any of these sessions, please let me know by replying to this email.
+
+Kind regards,
+
+Hannah Kinghorn
+The Challenge</textOnly>
+    <type>html</type>
+</EmailTemplate>

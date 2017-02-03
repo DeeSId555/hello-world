@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Feedback to summer staff: invite to do same role (no application)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Feedback to summer staff: invite for same role</name>
+    <style>none</style>
+    <subject>Feedback from your role this summer</subject>
+    <textOnly>The Challenge Network
+
+Dear {!Contact.FirstName},
+
+Many thanks for all your work with us this summer. I am writing to you to give you some feedback on your role as {!Job_Application__c.Role_to_assess_for__c} this summer.
+
+{!Job_Application__c.00NC0000005EqFE}
+
+We would therefore like to offer you the {!Job_Application__c.Recommendation_for_next_year__c} role in 2013. If you would like to take up any other new role, you would need to attend another assessment.
+
+We will contact you again when applications reopen in January 2013.
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.OwnerEmail}
+
+WWW.THE-CHALLENGE.ORG    /thechallengeNETWORK
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

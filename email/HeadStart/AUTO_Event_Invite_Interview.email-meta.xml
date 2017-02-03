@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This one is attached to workflow!</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>AUTO_Event_Invite(INterview)</name>
+    <style>none</style>
+    <subject>Your Zendesk interview is here!</subject>
+    <textOnly>Details inside about your Zendesk interview
+
+Thankyou for coming along to the Zendesk Workshop!
+
+We hope you enjoyed the evening and found it a really valuable experience! Your interview is happening next week - here are the next steps:
+
+
+1) If you haven&apos;t already, complete your Online Application by Sunday night
+
+Everyone who completes an Online Applications in eligible to be interviewed, so make sure you don&apos;t miss the deadline!
+
+
+2) Confirm you are attending the interview next week
+
+What?
+{!HS_YP_Attendance__c.HS_Event_Day__c}
+
+Where?
+{!HS_Event_Day__c.Event_Day_Location__c}
+
+When?
+{!HS_Event_Day__c.Event_Day_Date__c}
+
+Time?
+{!HS_Event_Day__c.Event_Day_Time__c}
+
+Important information about the interview
+
+{!HS_Event_Day__c.Event_Day_Summary__c}
+
+
+Important information about the role
+
+You must be available to work either the 1st - 5th August OR 15th - 19th August
+The role will be Monday to Friday, 09:00 - 17:00
+Salary will be paid into your bank account upon completion of the placement
+
+DON&apos;T FORGET: AWESOME GRAD OPPORTUNITIES COMING UP!
+Career Skills Sessions with Goldman Sachs
+South &amp; Central London - 18th, 19th, 20th July (Tickets)
+North &amp; Central London - 21st July (Tickets)
+North London - 22nd July (Tickets)
+Celebrate your HeadStart achievements at Get Ahead
+5th August (Tickets here!)
+
+
+Any questions? Email matthew.keable@the-challenge.org
+Good luck in your interview!
+
+Copyright © The Challenge, All rights reserved.
+
+You are receiving this email because you are a HeadStart participant.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

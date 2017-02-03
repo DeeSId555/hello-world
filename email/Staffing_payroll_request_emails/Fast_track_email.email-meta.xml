@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Fast track email. Contains training, WSO, crb/med request, payroll request</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Fast track email</name>
+    <style>none</style>
+    <subject>Re: Your assessment with The Challenge</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Thank you for attending the assessment at The Challenge. We very much enjoyed meeting you and I am pleased to offer you the role of {!Job_Application__c.Role_to_assess_for__c}, subject to a satisfactory CRB or List 99 check. 
+
+This email contains information that is vital to the quick processing of your application, so please read it carefully. 
+
+TRAINING
+Please click on the button below to register for the training session in your region and to confirm that you would like to accept this offer.
+
+http://thechallenge.secure.force.com/AvailableDates?key={!Job_Application__c.ContactId__c}&amp;Type={!Job_Application__c.00NC0000005EVyp}&amp;JType={!Job_Application__c.Id}
+
+During training, you will learn all you need to know about The Challenge and your role.
+
+CRB
+In order to apply for your CRB, please follow these instructions. Please note that you do not need to enter a password. 
+Visit www.carecheck.co.uk
+Click on the Applicant tab
+Please read all the notes and instructions
+Click on Click here to continue
+Click on Criminal Records Bureau (CRB) Application Form
+Click on Start a New Application
+Enter the Organisation Reference: evolutionrecruitment
+Enter your personal information to apply for the CRB check.
+
+Please submit your documents for verification on the below form by {!Job_Application__c.00NC0000005EjGJ}, so it will be ready before your role begins. Go to http://carecheck.arrangementcms.co.uk/index.php?node=ID-Rules for information on which documents can be accepted. We also request that you submit your dietary requirements and any medical information (such as allergies) that we need to know about, so that we can cater for you during training and during your role on The Challenge. 
+
+Please click on the link below to submit your scanned documents and any information that we need to know in order meet your medical and dietary needs while you are with us.
+
+If you already have an enhanced CRB, we will accept it if the document is dated 30 September 2011 or later. Please submit a scanned copy through the online form.
+
+http://www.clicktools.com/survey?iv=3b1353e7938ac86&amp;q1={!Contact.Id}&amp;q2={!Job_Application__c.Id} 
+
+If, after repeated attempts, you are not able to upload your documents, please email them to crb@the-challenge.org
+
+WORK DATES
+The Challenge runs over a variety of dates over the summer. 
+Please double check the Where You Can Work webpage as the programme only runs in certain locations on specific wave dates: 
+http://www.the-challenge.org/work-with-us/summer-roles/where-you-can-work/ 
+
+Please click on the link below to select all the dates for which you will be available. Please note that the dates are subject to availability and we cannot guarantee that you will be given your preferred work dates. 
+http://www.clicktools.com/survey?iv=3b1350f0a6dc7af&amp;q1={!Job_Application__c.Id} 
+
+PAYROLL AND TAX INFORMATION
+In order for us to pay you in a timely manner, please click the following link and complete the form with your tax declaration and bank details. Please note that this is a secure form, but if you are not happy to submit your details in this way, you can call Lucy Found or Mandy Nichols on 020 8673 2211. 
+
+http://www.clicktools.com/survey?iv=jirptbuxyu1um&amp;q1={!Job_Application__c.Id}.
+
+If you cannot access the links above for any reason, please call me on the number below.
+
+Congratulations on your success and we look forward to working with you on The Challenge.
+
+Best wishes, 
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.OwnerEmail}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Opportunity creation notificaiton</name>
+    <style>none</style>
+    <subject>Volunteering opportunity has been created in your area - let your grads know!</subject>
+    <textOnly>Hi
+
+A new volunteering opportunity has been created. It applies to {!Volunteering_Opportunity__c.Borough_area_this_applies_to__c}
+
+Make sure your grads know about this opportunity. Click here to read about the opportunity {!Volunteering_Opportunity__c.Link}
+---
+This is an automated email, sent automatically when an opportunity is created</textOnly>
+    <type>custom</type>
+</EmailTemplate>

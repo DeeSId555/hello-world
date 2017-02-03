@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Wave__c$Wave_number__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c$Name</field>
+    </columns>
+    <columns>
+        <field>Wave__c$Assigned_Reserved_paid_on_Wave__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c$Total_Reserved_Assigned__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c$YP_place_capacity_absolute_maximum__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c$Total_On_Waiting_List_del__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <column>Wave__c$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Wave__c.X2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave__c$Wave_Cluster__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>STORM,BAM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave__c$Boroughs_or_areas__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Wigan,Leigh</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>NW2 wave fullnesss</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Waves__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Wave__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

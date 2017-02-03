@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Campaign --></label>
+        <name>iContactforSF__Campaign__c</name>
+        <relationshipLabel><!-- iContact Clicked Links --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The date/time of the message click. --></help>
+        <label><!-- Last Click Time --></label>
+        <name>iContactforSF__Click_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- ClickedLink_ID --></label>
+        <name>iContactforSF__ClickedLink_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total number of clicks this link has received. --></help>
+        <label><!-- Clicks --></label>
+        <name>iContactforSF__Clicks__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this link&apos;s statistic was associated to a Contact record, this field points to that Contact. --></help>
+        <label><!-- Contact --></label>
+        <name>iContactforSF__Contact__c</name>
+        <relationshipLabel><!-- iContact Clicked Links --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Full Link --></label>
+        <name>iContactforSF__Full_Link__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hidden field used for bulk sorting of records for pagination. --></help>
+        <label><!-- IdString --></label>
+        <name>iContactforSF__IdString__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this link&apos;s statistic was associated to a Lead record, this field points to that Lead. --></help>
+        <label><!-- Lead --></label>
+        <name>iContactforSF__Lead__c</name>
+        <relationshipLabel><!-- iContact Clicked Links --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Total number of unique users who have clicked on this link at least once. --></help>
+        <label><!-- Unique Clicks --></label>
+        <name>iContactforSF__Unique_Clicks__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this record is tracking an individual&apos;s link clicks, this will point to their statistics record. --></help>
+        <label><!-- iContact Message Statistic --></label>
+        <name>iContactforSF__iContact_Message_Statistic__c</name>
+        <relationshipLabel><!-- iContact Clicked Links --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The message this link was contained within. --></help>
+        <label><!-- iContact Sent Message --></label>
+        <name>iContactforSF__iContact_Sent_Message__c</name>
+        <relationshipLabel><!-- iContact Clicked Links --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

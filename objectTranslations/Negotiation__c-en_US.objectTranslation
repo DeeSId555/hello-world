@@ -1,0 +1,2390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Negotiation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Negotiations</value>
+    </caseValues>
+    <fields>
+        <label><!-- AALA activities --></label>
+        <name>AALA_activities__c</name>
+        <picklistValues>
+            <masterLabel>Caving</masterLabel>
+            <translation><!-- Caving --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Climbing</masterLabel>
+            <translation><!-- Climbing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trekking</masterLabel>
+            <translation><!-- Trekking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Watersports</masterLabel>
+            <translation><!-- Watersports --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- AALA expiry date --></label>
+        <name>AALA_expiry_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- AHOEC Gold Standard --></label>
+        <name>AHOEC_Gold_Standard__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Accessible bathroom/showers --></label>
+        <name>Accessible_bathroom_showers__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Accessible entrance --></label>
+        <name>Accessible_entrance__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Accessible interior doorways --></label>
+        <name>Accessible_interior_doorways__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Accessible transport --></label>
+        <name>Accessible_transport__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Negotiations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Bedding Cost --></label>
+        <name>Additional_Bedding_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Cleaning Cost --></label>
+        <name>Additional_Cleaning_Cost__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is the result of the sum of all additional costs --></help>
+        <label><!-- Additional Costs --></label>
+        <name>Additional_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Evening Space Cost --></label>
+        <name>Additional_Evening_Space_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Kitchenware Cost --></label>
+        <name>Additional_Kitchenware_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional activities --></label>
+        <name>Additional_activities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional cost --></label>
+        <name>Additional_cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adjustment for wheelchair users? --></label>
+        <name>Adjustment_for_wheelchair_users__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial</masterLabel>
+            <translation><!-- Partial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Cost per YP --></help>
+        <label><!-- Agreed cost --></label>
+        <name>Agreed_cost__c</name>
+    </fields>
+    <fields>
+        <help><!-- Procurement will approve, for now. --></help>
+        <label><!-- Approved by Legal --></label>
+        <name>Approved_by_Legal__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Autistic spectrum disorder --></label>
+        <name>Autistic_spectrum_disorder__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field is the result of the sum of: Buyback Cost, Evening Space Cost, Cleaning Cost, Bedding Cost and Kitchenware Cost --></help>
+        <label><!-- Basic costs --></label>
+        <name>Basic_costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bath available --></label>
+        <name>Bath_available__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bedding Cost --></label>
+        <name>Bedding_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Beef free --></label>
+        <name>Beef_free__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Behaviour --></label>
+        <name>Behaviour__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Booking --></label>
+        <name>Booking__c</name>
+        <relationshipLabel><!-- Negotiations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Breakout rooms --></label>
+        <name>Breakout_rooms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Buyback Cost --></label>
+        <name>Buyback_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Buybacks? --></label>
+        <name>Buybacks__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Camp facilities --></label>
+        <name>Camp_facilities__c</name>
+        <picklistValues>
+            <masterLabel>Drinking water</masterLabel>
+            <translation><!-- Drinking water --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Showers</masterLabel>
+            <translation><!-- Showers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Toilets</masterLabel>
+            <translation><!-- Toilets --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Camp type --></label>
+        <name>Camp_type__c</name>
+        <picklistValues>
+            <masterLabel>Commercial</masterLabel>
+            <translation><!-- Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Field</masterLabel>
+            <translation><!-- Field --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other centre</masterLabel>
+            <translation><!-- Other centre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wild</masterLabel>
+            <translation><!-- Wild --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cancellation terms --></label>
+        <name>Cancellation_terms__c</name>
+        <picklistValues>
+            <masterLabel>Non-standard</masterLabel>
+            <translation><!-- Non-standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Canoe hoist --></label>
+        <name>Canoe_hoist__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Canoeing/kayaking --></label>
+        <name>Canoeing_kayaking__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offsite</masterLabel>
+            <translation><!-- Offsite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onsite</masterLabel>
+            <translation><!-- Onsite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OnsiteOffsite</masterLabel>
+            <translation><!-- OnsiteOffsite --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Canoes/kayaks for 2 --></label>
+        <name>Canoes_kayaks_for_2__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Caving --></label>
+        <name>Caving__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offsite</masterLabel>
+            <translation><!-- Offsite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onsite</masterLabel>
+            <translation><!-- Onsite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OnsiteOffsite</masterLabel>
+            <translation><!-- OnsiteOffsite --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Charging points --></label>
+        <name>Charging_points__c</name>
+        <picklistValues>
+            <masterLabel>Limited</masterLabel>
+            <translation><!-- Limited --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unrestricted</masterLabel>
+            <translation><!-- Unrestricted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cleaning Cost --></label>
+        <name>Cleaning_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cleaning --></label>
+        <name>Cleaning__c</name>
+        <picklistValues>
+            <masterLabel>Bathrooms</masterLabel>
+            <translation><!-- Bathrooms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bedrooms</masterLabel>
+            <translation><!-- Bedrooms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kitchens</masterLabel>
+            <translation><!-- Kitchens --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oven clean - once</masterLabel>
+            <translation><!-- Oven clean - once --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oven clean - twice</masterLabel>
+            <translation><!-- Oven clean - twice --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cleaning equipment on site? --></label>
+        <name>Cleaning_equipment_on_site__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brush</masterLabel>
+            <translation><!-- Brush --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bucket</masterLabel>
+            <translation><!-- Bucket --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dustpan</masterLabel>
+            <translation><!-- Dustpan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hoover</masterLabel>
+            <translation><!-- Hoover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mop</masterLabel>
+            <translation><!-- Mop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Climbing/abseiling --></label>
+        <name>Climbing_abseiling__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offsite</masterLabel>
+            <translation><!-- Offsite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onsite</masterLabel>
+            <translation><!-- Onsite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OnsiteOffsite</masterLabel>
+            <translation><!-- OnsiteOffsite --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Climbing hoist --></label>
+        <name>Climbing_hoist__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Commode --></label>
+        <name>Commode__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Computer with internet access --></label>
+        <name>Computer_with_internet_access__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contingency plan for poor connectivity --></label>
+        <name>Contingency_plan_for_poor_connectivity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract type --></label>
+        <name>Contract_type__c</name>
+        <picklistValues>
+            <masterLabel>Combined</masterLabel>
+            <translation><!-- Combined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ours</masterLabel>
+            <translation><!-- Ours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Theirs</masterLabel>
+            <translation><!-- Theirs --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contract value --></label>
+        <name>Contract_value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current AALA License --></label>
+        <name>Current_AALA_License__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dairy free --></label>
+        <name>Dairy_free__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Day 1 activity --></label>
+        <name>Day_1_activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 2 activity --></label>
+        <name>Day_2_activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day 3 activity --></label>
+        <name>Day_3_activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details of material financial issues --></label>
+        <name>Details_of_material_financial_issues__c</name>
+    </fields>
+    <fields>
+        <help><!-- If there are no hot meals on arrival, please provide details. --></help>
+        <label><!-- Details of meal on arrival (if not hot) --></label>
+        <name>Details_of_meal_on_arrival_if_not_hot__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drinking water available --></label>
+        <name>Drinking_water_available__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Earliest booking date --></label>
+        <name>Earliest_booking_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Earliest contracting date --></label>
+        <name>Earliest_contracting_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enhanced DBS for staff? --></label>
+        <name>Enhanced_DBS_for_staff__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ensuite bedroom --></label>
+        <name>Ensuite_bedroom__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Equal opportunities employer? --></label>
+        <name>Equal_opportunities_employer__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Equipment cost --></label>
+        <name>Equipment_cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equipment details --></label>
+        <name>Equipment_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equipment provided --></label>
+        <name>Equipment_provided__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Evening Space Cost --></label>
+        <name>Evening_Space_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Evening space available --></label>
+        <name>Evening_space_available__c</name>
+        <picklistValues>
+            <masterLabel>Nearby</masterLabel>
+            <translation><!-- Nearby --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onsite</masterLabel>
+            <translation><!-- Onsite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Expedition --></label>
+        <name>Expedition__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Expedition for restricted mobility? --></label>
+        <name>Expedition_for_restricted_mobility__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Expedition for wheelchair user? --></label>
+        <name>Expedition_for_wheelchair_user__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Expedition road access --></label>
+        <name>Expedition_road_access__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Final room allocation date --></label>
+        <name>Final_room_allocation_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is the product of the field &quot;Total cost&quot; divided by the field &quot;Number of YP rooms contracted&quot; --></help>
+        <label><!-- Final unit cost --></label>
+        <name>Final_unit_cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- First aid on call --></label>
+        <name>First_aid_on_call__c</name>
+        <picklistValues>
+            <masterLabel>No cover</masterLabel>
+            <translation><!-- No cover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On call - less than 10 minutes</masterLabel>
+            <translation><!-- On call - less than 10 minutes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On call - more than 10 minutes</masterLabel>
+            <translation><!-- On call - more than 10 minutes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On site</masterLabel>
+            <translation><!-- On site --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Flex Down --></label>
+        <name>Flex_Down__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flex Up --></label>
+        <name>Flex_Up__c</name>
+    </fields>
+    <fields>
+        <label><!-- Food cost --></label>
+        <name>Food_cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fridge for medication/diet --></label>
+        <name>Fridge_for_medication_diet__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- General cost --></label>
+        <name>General_cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gluten free --></label>
+        <name>Gluten_free__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ground floor bedroom and communal space --></label>
+        <name>Ground_floor_bedroom_and_communal_space__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Guided reflection --></label>
+        <name>Guided_reflection__c</name>
+    </fields>
+    <fields>
+        <label><!-- HSE reportable incidents --></label>
+        <name>HSE_reportable_incidents__c</name>
+    </fields>
+    <fields>
+        <label><!-- HSE reportable incidents-accept liabilit --></label>
+        <name>HSE_reportable_incidents_accept_liabilit__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HSE reportable incidents - details --></label>
+        <name>HSE_reportable_incidents_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- H&amp;S food compliance --></label>
+        <name>H_S_food_compliance__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Halal --></label>
+        <name>Halal__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- High/low ropes --></label>
+        <name>High_low_ropes__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offsite</masterLabel>
+            <translation><!-- Offsite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onsite</masterLabel>
+            <translation><!-- Onsite --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- High support needs room --></label>
+        <name>High_support_needs_room__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Hike/mountaineer --></label>
+        <name>Hike_mountaineer__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offsite</masterLabel>
+            <translation><!-- Offsite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onsite</masterLabel>
+            <translation><!-- Onsite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OnsiteOffsite</masterLabel>
+            <translation><!-- OnsiteOffsite --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Hoist --></label>
+        <name>Hoist__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Hot evening meals --></label>
+        <name>Hot_evening_meals__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Hot meal on arrival --></label>
+        <name>Hot_meal_on_arrival__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Instructor cost --></label>
+        <name>Instructor_cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Instructors first aid trained --></label>
+        <name>Instructors_first_aid_trained__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Instructors qualified --></label>
+        <name>Instructors_qualified__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Insurance cost --></label>
+        <name>Insurance_cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- John Muir --></label>
+        <name>John_Muir__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Kitchenware Cost --></label>
+        <name>Kitchenware_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOtC quality badge --></label>
+        <name>LOtC_quality_badge__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Latest wave affected by buybacks --></label>
+        <name>Latest_wave_affected_by_buybacks__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Level of public liability insurance --></label>
+        <name>Level_of_public_liability_insurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Major concerns --></label>
+        <name>Major_concerns__c</name>
+    </fields>
+    <fields>
+        <label><!-- Major mitigations --></label>
+        <name>Major_mitigations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material financial issues? --></label>
+        <name>Material_financial_issues__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Max beds in room --></label>
+        <name>Max_beds_in_room__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max minibus capacity --></label>
+        <name>Max_minibus_capacity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Number of Teams --></label>
+        <name>Maximum_Number_of_Teams__c</name>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Member of AHOEC --></label>
+        <name>Member_of_AHOEC__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Memberships --></label>
+        <name>Memberships__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mental health --></label>
+        <name>Mental_health__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Minor concerns --></label>
+        <name>Minor_concerns__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minor mitigations --></label>
+        <name>Minor_mitigations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mitigating of contractual conditions --></label>
+        <name>Mitigating_of_contractual_conditions__c</name>
+        <picklistValues>
+            <masterLabel>Agreed both</masterLabel>
+            <translation><!-- Agreed both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agreed external</masterLabel>
+            <translation><!-- Agreed external --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agreed internal</masterLabel>
+            <translation><!-- Agreed internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mitigation plan? --></label>
+        <name>Mitigation_plan__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If type of accommodation is mixed, please give details. --></help>
+        <label><!-- Mixed accommodation details --></label>
+        <name>Mixed_accommodation_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS Ethos training --></label>
+        <name>NCS_Ethos_training__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of YP rooms contracted --></label>
+        <name>Number_of_YP_rooms_contracted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of groups --></label>
+        <name>Number_of_groups__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of staff --></label>
+        <name>Number_of_staff__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of team spaces --></label>
+        <name>Number_of_team_spaces__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nut free --></label>
+        <name>Nut_free__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Off road wheelchair --></label>
+        <name>Off_road_wheelchair__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Other inclusion equipment --></label>
+        <name>Other_inclusion_equipment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other inclusion facilities --></label>
+        <name>Other_inclusion_facilities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other sharing --></label>
+        <name>Other_sharing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other training --></label>
+        <name>Other_training__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is the product of the field &quot;Total cost&quot;, divided by the field &quot;Total room nights contracted&quot; --></help>
+        <label><!-- Overall cost per person per night --></label>
+        <name>Overall_cost_per_person_per_night__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overnight camp cost --></label>
+        <name>Overnight_camp_cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM Approval --></label>
+        <name>PM_Approval__c</name>
+    </fields>
+    <fields>
+        <help><!-- Day 1st. payment due --></help>
+        <label><!-- Payment 1 Date --></label>
+        <name>Payment_1_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter percentage of 1st. payment --></help>
+        <label><!-- % of Payment 1 --></label>
+        <name>Payment_1_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment 1 amount --></label>
+        <name>Payment_1_amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Day 2nd. payment due --></help>
+        <label><!-- Payment 2 Date --></label>
+        <name>Payment_2_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter percentage of 2nd. payment --></help>
+        <label><!-- % of Payment 2 --></label>
+        <name>Payment_2_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment 2 amount --></label>
+        <name>Payment_2_amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Day 3rd. payment due --></help>
+        <label><!-- Payment 3 Date --></label>
+        <name>Payment_3_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter percentage of 3rd. payment --></help>
+        <label><!-- % of Payment 3 --></label>
+        <name>Payment_3_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment 3 amount --></label>
+        <name>Payment_3_amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Day 4th. payment due --></help>
+        <label><!-- Payment 4 Date --></label>
+        <name>Payment_4_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter percentage of 4th. payment --></help>
+        <label><!-- % of Payment 4 --></label>
+        <name>Payment_4_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment 4 amount --></label>
+        <name>Payment_4_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Total - Check --></label>
+        <name>Payment_Total_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone connectivity - activities --></label>
+        <name>Phone_connectivity_activities__c</name>
+        <picklistValues>
+            <masterLabel>Average</masterLabel>
+            <translation><!-- Average --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Good</masterLabel>
+            <translation><!-- Very Good --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Phone connectivity - centre --></label>
+        <name>Phone_connectivity_centre__c</name>
+        <picklistValues>
+            <masterLabel>Average</masterLabel>
+            <translation><!-- Average --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Good</masterLabel>
+            <translation><!-- Very Good --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Physical disability --></label>
+        <name>Physical_disability__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Place for a support worker --></label>
+        <name>Place_for_a_support_worker__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pork free --></label>
+        <name>Pork_free__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Problem solving --></label>
+        <name>Problem_solving__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offsite</masterLabel>
+            <translation><!-- Offsite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onsite</masterLabel>
+            <translation><!-- Onsite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OnsiteOffsite</masterLabel>
+            <translation><!-- OnsiteOffsite --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Profile bed --></label>
+        <name>Profile_bed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Profit --></label>
+        <name>Profit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Protected environment? --></label>
+        <name>Protected_environment__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Public liability insurance of £5M? --></label>
+        <name>Public_liability_insurance_of_5M__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Raft building --></label>
+        <name>Raft_building__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offsite</masterLabel>
+            <translation><!-- Offsite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onsite</masterLabel>
+            <translation><!-- Onsite --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Regular emergency policy review? --></label>
+        <name>Regular_emergency_policy_review__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Room charge --></label>
+        <name>Room_charge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Room charge unit --></label>
+        <name>Room_charge_unit__c</name>
+        <picklistValues>
+            <masterLabel>Night</masterLabel>
+            <translation><!-- Night --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week</masterLabel>
+            <translation><!-- Week --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Room cost per person per wave --></label>
+        <name>Room_cost_per_person_per_wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scrambling/walking --></label>
+        <name>Scrambling_walking__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offsite</masterLabel>
+            <translation><!-- Offsite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onsite</masterLabel>
+            <translation><!-- Onsite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OnsiteOffsite</masterLabel>
+            <translation><!-- OnsiteOffsite --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Secure data storage --></label>
+        <name>Secure_data_storage__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sensory impairment - hearing --></label>
+        <name>Sensory_impairment_hearing__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sensory impairment - visual --></label>
+        <name>Sensory_impairment_visual__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sharing accommodation --></label>
+        <name>Sharing_accommodation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sharing activities --></label>
+        <name>Sharing_activities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sharing bedtime facilities --></label>
+        <name>Sharing_bedtime_facilities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sharing eating space --></label>
+        <name>Sharing_eating_space__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sharing evening space --></label>
+        <name>Sharing_evening_space__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sharing free time --></label>
+        <name>Sharing_free_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sharing site --></label>
+        <name>Sharing_site__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sharing transport --></label>
+        <name>Sharing_transport__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shower ratio --></label>
+        <name>Shower_ratio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shower seat --></label>
+        <name>Shower_seat__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Significant contractual conditions --></label>
+        <name>Significant_contractual_conditions__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is the result of the field &quot;Room cost per person per wave&quot; divided by 4, times the field &quot;Total room nights contracted&quot;, plus the field &quot;Basic costs&quot; --></help>
+        <label><!-- Site cost --></label>
+        <name>Site_cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site/venue cost --></label>
+        <name>Site_venue_cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sole use of toilets &amp; showers --></label>
+        <name>Sole_use_of_toilets_showers__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Staff toilets and showers --></label>
+        <name>Staff_toilets_and_showers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Confirmed</masterLabel>
+            <translation><!-- Confirmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracted</masterLabel>
+            <translation><!-- Contracted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Potential</masterLabel>
+            <translation><!-- Potential --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programmes Checking</masterLabel>
+            <translation><!-- Programmes Checking --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subcluster --></label>
+        <name>Subcluster__c</name>
+        <relationshipLabel><!-- Negotiations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Suitable bedding --></label>
+        <name>Suitable_bedding__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Target price --></label>
+        <name>Target_price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team flex --></label>
+        <name>Team_flex__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation><!-- 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Team split details --></label>
+        <name>Team_split_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Teams on different actvities --></label>
+        <name>Teams_on_different_actvities__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Teams split during activities --></label>
+        <name>Teams_split_during_activities__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Toilet ratio --></label>
+        <name>Toilet_ratio__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter Total Payment Amount and relative percentages --></help>
+        <label><!-- Total Payment Amount --></label>
+        <name>Total_Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- SUM OF OTHER COST FIELDS --></help>
+        <label><!-- Total --></label>
+        <name>Total__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is the result of the sum between the &quot;Site cost&quot; field and the &quot;Additional costs&quot; field --></help>
+        <label><!-- Total cost --></label>
+        <name>Total_cost__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is the product of all &quot;Wave # Booked&quot; fields, if corresponding &quot;Wave # Dates Available&quot; picked option = &quot;Contracted&quot; --></help>
+        <label><!-- Total number booked --></label>
+        <name>Total_number_booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total room nights contracted --></label>
+        <name>Total_room_nights_contracted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transfer board --></label>
+        <name>Transfer_board__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transport cost --></label>
+        <name>Transport_cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transport to offsite activities --></label>
+        <name>Transport_to_offsite_activities__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Travel time to offsite activities --></label>
+        <name>Travel_time_to_offsite_activities__c</name>
+        <picklistValues>
+            <masterLabel>Less than 30 minutes</masterLabel>
+            <translation><!-- Less than 30 minutes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over 30 minutes</masterLabel>
+            <translation><!-- Over 30 minutes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of accommodation --></label>
+        <name>Type_of_accommodation__c</name>
+        <picklistValues>
+            <masterLabel>Camping pods</masterLabel>
+            <translation><!-- Camping pods --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dorms</masterLabel>
+            <translation><!-- Dorms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mixed</masterLabel>
+            <translation><!-- Mixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single/twin room</masterLabel>
+            <translation><!-- Single/twin room --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tents</masterLabel>
+            <translation><!-- Tents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yurts</masterLabel>
+            <translation><!-- Yurts --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of bed --></label>
+        <name>Type_of_bed__c</name>
+        <picklistValues>
+            <masterLabel>Air bed</masterLabel>
+            <translation><!-- Air bed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bunk bed</masterLabel>
+            <translation><!-- Bunk bed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Camp bed</masterLabel>
+            <translation><!-- Camp bed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roll mat</masterLabel>
+            <translation><!-- Roll mat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard bed</masterLabel>
+            <translation><!-- Standard bed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Usage --></label>
+        <name>Usage__c</name>
+        <relationshipLabel><!-- Negotiations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VAT --></label>
+        <name>VAT__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staff</masterLabel>
+            <translation><!-- Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Valuables storage --></label>
+        <name>Valuables_storage__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Vegan --></label>
+        <name>Vegan__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Vegetarian --></label>
+        <name>Vegetarian__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Washing machine available --></label>
+        <name>Washing_machine_available__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wave 10 Booked --></label>
+        <name>Wave_10_Booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave 10 Dates Available --></label>
+        <name>Wave_10_Dates_Available__c</name>
+        <picklistValues>
+            <masterLabel>Available</masterLabel>
+            <translation><!-- Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracted</masterLabel>
+            <translation><!-- Contracted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wave 11 Booked --></label>
+        <name>Wave_11_Booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave 11 Dates Available --></label>
+        <name>Wave_11_Dates_Available__c</name>
+        <picklistValues>
+            <masterLabel>Available</masterLabel>
+            <translation><!-- Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracted</masterLabel>
+            <translation><!-- Contracted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wave 12 Booked --></label>
+        <name>Wave_12_Booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave 12 Dates Available --></label>
+        <name>Wave_12_Dates_Available__c</name>
+        <picklistValues>
+            <masterLabel>Available</masterLabel>
+            <translation><!-- Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracted</masterLabel>
+            <translation><!-- Contracted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wave 1 Booked --></label>
+        <name>Wave_1_Booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave 1 Dates Available --></label>
+        <name>Wave_1_Dates_Available__c</name>
+        <picklistValues>
+            <masterLabel>Available</masterLabel>
+            <translation><!-- Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracted</masterLabel>
+            <translation><!-- Contracted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wave 2 Booked --></label>
+        <name>Wave_2_Booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave 2 Dates Available --></label>
+        <name>Wave_2_Dates_Available__c</name>
+        <picklistValues>
+            <masterLabel>Available</masterLabel>
+            <translation><!-- Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracted</masterLabel>
+            <translation><!-- Contracted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wave 3 Booked --></label>
+        <name>Wave_3_Booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave 3 Dates Available --></label>
+        <name>Wave_3_Dates_Available__c</name>
+        <picklistValues>
+            <masterLabel>Available</masterLabel>
+            <translation><!-- Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracted</masterLabel>
+            <translation><!-- Contracted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wave 4 Booked --></label>
+        <name>Wave_4_Booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave 4 Dates Available --></label>
+        <name>Wave_4_Dates_Available__c</name>
+        <picklistValues>
+            <masterLabel>Available</masterLabel>
+            <translation><!-- Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracted</masterLabel>
+            <translation><!-- Contracted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wave 5 Booked --></label>
+        <name>Wave_5_Booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave 5 Dates Available --></label>
+        <name>Wave_5_Dates_Available__c</name>
+        <picklistValues>
+            <masterLabel>Available</masterLabel>
+            <translation><!-- Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracted</masterLabel>
+            <translation><!-- Contracted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wave 6 Booked --></label>
+        <name>Wave_6_Booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave 6 Dates Available --></label>
+        <name>Wave_6_Dates_Available__c</name>
+        <picklistValues>
+            <masterLabel>Available</masterLabel>
+            <translation><!-- Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracted</masterLabel>
+            <translation><!-- Contracted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wave 7 Booked --></label>
+        <name>Wave_7_Booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave 7 Dates Available --></label>
+        <name>Wave_7_Dates_Available__c</name>
+        <picklistValues>
+            <masterLabel>Available</masterLabel>
+            <translation><!-- Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracted</masterLabel>
+            <translation><!-- Contracted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wave 8 Booked --></label>
+        <name>Wave_8_Booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave 8 Dates Available --></label>
+        <name>Wave_8_Dates_Available__c</name>
+        <picklistValues>
+            <masterLabel>Available</masterLabel>
+            <translation><!-- Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracted</masterLabel>
+            <translation><!-- Contracted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wave 9 Booked --></label>
+        <name>Wave_9_Booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave 9 Dates Available --></label>
+        <name>Wave_9_Dates_Available__c</name>
+        <picklistValues>
+            <masterLabel>Available</masterLabel>
+            <translation><!-- Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracted</masterLabel>
+            <translation><!-- Contracted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wave --></label>
+        <name>Wave__c</name>
+        <relationshipLabel><!-- Negotiations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Wave space available --></label>
+        <name>Wave_space_available__c</name>
+        <picklistValues>
+            <masterLabel>Nearby</masterLabel>
+            <translation><!-- Nearby --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onsite - both</masterLabel>
+            <translation><!-- Onsite - both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onsite - indoors</masterLabel>
+            <translation><!-- Onsite - indoors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onsite - outdoors</masterLabel>
+            <translation><!-- Onsite - outdoors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wave space size --></label>
+        <name>Wave_space_size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wheelchair accessible --></label>
+        <name>Wheelchair_accessible__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wheelchair adjustments details --></label>
+        <name>Wheelchair_adjustments_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- WiFi --></label>
+        <name>WiFi__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Windows secured --></label>
+        <name>Windows_secured__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Ground Floor</masterLabel>
+            <translation><!-- Yes - Ground Floor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Years experience --></label>
+        <name>Years_experience__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Outdoors --></label>
+        <name>Outdoors</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Res Acc --></label>
+        <name>Res_Acc</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter a Cost for the Buyback. --></errorMessage>
+        <name>Buyback_mandatory_cost</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If there are no hot meals on arrival, details must be entered. --></errorMessage>
+        <name>Food_on_arrival</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If type of accommodation is mixed, please give details. --></errorMessage>
+        <name>Mixed_accommodation_details</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If there are no buybacks, there shouldn&apos;t be a cost... --></errorMessage>
+        <name>No_Buybacks_no_cost</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please, insert a value &gt;0 --></errorMessage>
+        <name>Number_of_YP_rooms_contracted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please insert a percentage for the 1st. payment --></errorMessage>
+        <name>Payment_1_Amount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please insert a valid date for 1st. payment --></errorMessage>
+        <name>Payment_1_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a value of 100%, or fill other payment percentages --></errorMessage>
+        <name>Payment_1_Percentage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please insert an amount for 2nd. payment --></errorMessage>
+        <name>Payment_2_Amount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please insert a valid date for 2nd. payment --></errorMessage>
+        <name>Payment_2_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please insert an amount for 3rd. payment --></errorMessage>
+        <name>Payment_3_Amount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please insert a valid date for 3rd. payment --></errorMessage>
+        <name>Payment_3_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please insert a valid date for 4th. payment --></errorMessage>
+        <name>Payment_4_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please, insert a value &gt;0 --></errorMessage>
+        <name>Room_Cost_Per_Person</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please correct payment percentages --></errorMessage>
+        <name>Total_Percentage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please, insert a value &gt;0 --></errorMessage>
+        <name>Total_room_nights_contracted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you chose &quot;No&quot; on the &quot;Wave 10 Dates Available&quot; option, or left it empty, this field is to be left empty, otherwise, a value must be entered. --></errorMessage>
+        <name>Wave_10_Dates_Available</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you chose &quot;No&quot; on the &quot;Wave 11 Dates Available&quot; option, or left it empty, this field is to be left empty, otherwise, a value must be entered. --></errorMessage>
+        <name>Wave_11_Dates_Available</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you chose &quot;No&quot; on the &quot;Wave 12 Dates Available&quot; option, or left it empty, this field is to be left empty, otherwise, a value must be entered. --></errorMessage>
+        <name>Wave_12_Dates_Available</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you chose &quot;No&quot; on the &quot;Wave 1 Dates Available&quot; option, or left it empty, this field is to be left empty, otherwise, a value must be entered. --></errorMessage>
+        <name>Wave_1_Dates_Available</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you chose &quot;No&quot; on the &quot;Wave 2 Dates Available&quot; option, or left it empty, this field is to be left empty, otherwise, a value must be entered. --></errorMessage>
+        <name>Wave_2_Dates_Available</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you chose &quot;No&quot; on the &quot;Wave 3 Dates Available&quot; option, or left it empty, this field is to be left empty, otherwise, a value must be entered. --></errorMessage>
+        <name>Wave_3_Dates_Available</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you chose &quot;No&quot; on the &quot;Wave 4 Dates Available&quot; option, or left it empty, this field is to be left empty, otherwise, a value must be entered. --></errorMessage>
+        <name>Wave_4_Dates_Available</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you chose &quot;No&quot; on the &quot;Wave 5 Dates Available&quot; option, or left it empty, this field is to be left empty, otherwise, a value must be entered. --></errorMessage>
+        <name>Wave_5_Dates_Available</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you chose &quot;No&quot; on the &quot;Wave 6 Dates Available&quot; option, or left it empty, this field is to be left empty, otherwise, a value must be entered. --></errorMessage>
+        <name>Wave_6_Dates_Available</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you chose &quot;No&quot; on the &quot;Wave 7 Dates Available&quot; option, or left it empty, this field is to be left empty, otherwise, a value must be entered. --></errorMessage>
+        <name>Wave_7_Dates_Available</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you chose &quot;No&quot; on the &quot;Wave 8 Dates Available&quot; option, or left it empty, this field is to be left empty, otherwise, a value must be entered. --></errorMessage>
+        <name>Wave_8_Dates_Available</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you chose &quot;No&quot; on the &quot;Wave 9 Dates Available&quot; option, or left it empty, this field is to be left empty, otherwise, a value must be entered. --></errorMessage>
+        <name>Wave_9_Dates_Available</name>
+    </validationRules>
+</CustomObjectTranslation>

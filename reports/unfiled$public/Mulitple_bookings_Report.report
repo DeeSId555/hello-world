@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Junctions__r$Usage_Type_Formula__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Address_line_1__c</field>
+    </columns>
+    <columns>
+        <field>Account$Address_line_2__c</field>
+    </columns>
+    <columns>
+        <field>Account$Address_line_3__c</field>
+    </columns>
+    <columns>
+        <field>Account$BillingAddress</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Junctions__r.Bookings__r$Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>BRICC 5</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Junctions__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Partner_or_Venue__c.RCD_Usage_2013,Partner_or_Venue__c.Big_Challenge_Partner_2013,Partner_or_Venue__c.Showcase_Usage_2013,Partner_or_Venue__c.Sports_Usage_2013,Partner_or_Venue__c.TC_Community_Partner_2013,Partner_or_Venue__c.RCD_Celebration_2013,Partner_or_Venue__c.Sponsorship_Partner_2013</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Mulitple bookings Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Usages_and_Bookings__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$Date_Started_NCS__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,49 @@
+<apex:page standardController="Contact" extensions="IndividulMetricController">
+  <apex:pageBlock >
+      <apex:pageBlockTable value="{!ListMetrics}" var="metric" cellpadding="10">
+      
+          <apex:column headervalue="Involved">
+              <center>
+                  {!metric.Involved__c}
+              </center>
+           </apex:column>
+           
+           <apex:column headervalue="Active">
+               <center>
+                   {!metric.Active__c}
+               </center>
+           </apex:column>
+          
+           <apex:column headerValue="Signposting Opportunity attendances">
+             <center>
+                  {!metric.Total_SignPosting_Oppty_Meetings_Attend__c}
+               </center>
+           </apex:column>
+           
+           <apex:column headerValue="TCS event attendances">
+               <center>
+                   {!metric.Big_Challenge_Day_Event_Attended__c+metric.Local_Events_Attended__c}
+                </center>
+          </apex:column>
+          
+          <apex:column headerValue="Youth Board or CAT attendances">
+               <center>
+                  {!metric.CAT_Meetings_Attended__c+metric.YB_Meetings_Attended__c}
+               </center>
+          </apex:column>
+          
+           <apex:column headerValue="Ambassador attendances">
+                <center>
+                   {!metric.Staffing_Ambassador__c+metric.Media_Ambassador_Events_Attended__c+metric.Marketing_Ambassador_Events_Attended1__c}
+               </center>
+          </apex:column>
+          
+           <apex:column headerValue="Personal Coach attendances">
+                <center>
+                  {!metric.PC_Meetings_Attended__c}
+               </center>
+          </apex:column>
+        
+      </apex:pageBlockTable>
+  </apex:pageBlock>
+</apex:page>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>Meta - Cardboard Citizens YP email</name>
+    <style>freeForm</style>
+    <subject>Meta by Cardboard Citizens - See the play you helped create!</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+During the Real Challenge part of your NCS experience last year, you worked alongside Cardboard Citizens to help develop a play about the development of the teenage brain, and the impact it has on thoughts, feelings and behaviours.
+
+The play is now ready to hit the stage and Cardboard Citizens would love you to see how your contributions helped create it! The play is being shown in various east London venue across March - to find out more information, watch the trailer and book tickets, visit http://cardboardcitizens.org.uk/events/meta.
+
+Kind regards,
+
+The Challenge Society</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,81 @@
+<apex:page sidebar="false" standardStylesheets="false" showHeader="false" >
+<html>
+    <head>
+        <style>
+@font-face{
+    font-family : "Dirty";
+    src: url("{!URLFOR($Resource.dirtyfont, 'DirtyFont/fonts/DirtyHeadline.ttf')}") format('truetype');
+          }
+    .optext{
+             font : 32px "Dirty", Arial, Helvetica;
+             
+        }
+        
+.button1{
+        margin-left:10%; 
+        height:30px; 
+        width:160px; 
+        margin-bottom:20px; 
+        border: solid 4px; 
+        border-color:#B31217; 
+        font : 18px "Dirty", Arial, Helvetica; 
+        vertical-align:5px;
+        background :white;
+        border-radius:15px;
+        }
+        
+.button2{
+         
+        height:200px; 
+        width:250px; 
+        margin-right: 60px;
+        border: solid 8px; 
+        border-color:#B31217; 
+        font : 32px "Dirty", Arial, Helvetica; 
+        background :white;
+        border-radius:15px;
+        }
+        .loginheadline{
+                        float:right; 
+                        margin-right:20px; 
+                        margin-top:175px; 
+                        font-size:40px;
+                       }
+        .logindiv{
+                  width:500px;
+                  height:200px;
+                  border:solid 8px;
+                  border-color:#D9D9D9;
+                  margin-left:30%;
+                  }
+        </style>
+    </head>
+    
+    <body>    
+        
+        <apex:form >
+        
+        <apex:composition template="PortalTemplate">
+        
+            <apex:define name="TopDiv">
+            </apex:define>
+            
+            
+            <apex:define name="MidDiv">
+                   
+                       <div style="margin:4%;"> <center>
+                         <a href="{!$Page.TCSPortal_VolunteeringOpportunity}"><button type="button" class="btn btn-large button2">SignPosting Opportunities</button></a>
+                         <a href="{!$Page.TCNPortal_ContactHome}?j_id0%3Aj_id2%3Aj_id29%3Afcf=00BC0000008mrsA"><button type="button" class="btn btn-large button2">Contacts</button></a>
+                        <a href="{!$Page.TCSPortal_MeetingEventList}"><button type="button" class="btn btn-large button2" style="margin-right:0px;">Events</button></a>
+                       </center>     
+                        </div> 
+                                    
+            </apex:define>
+           
+           
+        </apex:composition>
+        </apex:form>   
+        
+    </body>
+</html>
+</apex:page>

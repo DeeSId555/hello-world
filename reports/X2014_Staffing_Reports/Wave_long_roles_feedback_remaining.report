@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Job_Application__c.Job_placements__r$Name</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Job_placements__r$Staffing_Associate__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Job_placements__r$Wave__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Job_placements__r$Wave_APM__c</field>
+    </columns>
+    <description>PL,SM,CF,SW,APL who have outstanding feedback regardless of whether they have existing feedback</description>
+    <filter>
+        <criteriaItems>
+            <column>Job_Application__c$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Job_Application__c.Post_screen_2014</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Job_placements__r$Was_Confirmed__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Job_placements__r$Date_APM_feedback_submitted__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Job_placements__r$Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Confirmed,Withdrew from wave (during programme) - available for ad hoc days,Withdrew from TCN (during programme) - see withdrawal date,Dismissed - see dismissal date</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Job_placements__r$Role__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Assistant Programme Leader,Programme Leader,Senior Mentor,Support Worker,Community Facilitator</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Job_placements__r$CreatedDate</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2014 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Job_placements__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Job_placement__c.PL_2014,Job_placement__c.SM_2014,Job_placement__c.SW_2014,Job_placement__c.APL_2014,Job_placement__c.CF_2014</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Job_Application__c$Staffing_Zone__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Job_Application__c$Contact_Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>PL,SM,CF,SW,APL all outstanding feedback</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Job_Applications_with_Job_placements_and_w_wo_Feed__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Job_Application__c$Assignment_end_date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,345 @@
+<apex:page sidebar="false" standardStylesheets="false" showHeader="false" standardController="TCS_Attendance_record__c">
+
+<html>
+    <head>
+        <style>   
+.button1{
+        height:70px;
+        width:200px; 
+        border: solid 4px; 
+        border-color:#B31217; 
+        font : 18px "Dirty", Arial, Helvetica; 
+        background :white;
+        border-radius:15px;
+        }
+        </style>
+    </head>
+    
+    <body>    
+        
+        
+        <apex:composition template="PortalTemplate">
+        
+            <apex:define name="TopDiv">
+            <!---------------- MENU -------------------------->
+                
+                  
+            </apex:define>
+            
+            <apex:define name="MidDiv">
+               <!--------------- Mid Div ------------------>
+               <table style="width:100%;">
+                  
+               <tr >
+
+
+<!--------------------------------------------- OPPTY INFO. -------------------------------------------->
+   <td valign="top" style="width:50%;">
+   <div style="margin-left:2%; margin-bottom:5%; margin-top:1%;">
+       <apex:outputText styleClass="optext" value="opportunity information"/><br />
+       
+       <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.TCS_Attendance_record__c.Fields.Volunteering_Opportunity__c.Label}"/>
+                </td>
+              <td><apex:outputText value="{!TCS_Attendance_record__c.Volunteering_Opportunity__r.Name}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+       <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.TCS_Attendance_record__c.Fields.Date_this_Vol_Opp_expires__c.Label}"/>
+               </td>
+              <td><apex:outputText value="{0,date,dd'/'MM'/'yyyy}">
+                    <apex:param value="{!TCS_Attendance_record__c.Date_this_Vol_Opp_expires__c}" /> 
+                </apex:outputText>
+              </td> 
+              </tr>
+             </table></div>
+             
+      <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.TCS_Attendance_record__c.Fields.Vol_Opps_Dates__c.Label}"/>
+               </td>
+              <td><apex:outputText value="{!TCS_Attendance_record__c.Vol_Opps_Dates__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+      <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.TCS_Attendance_record__c.Fields.Vol_Opp_Time_s__c.Label}"/>
+            </td>
+              <td><apex:outputText value="{!TCS_Attendance_record__c.Vol_Opp_Time_s__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+       <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.TCS_Attendance_record__c.Fields.YP_sign_up_action__c.Label}"/> 
+            </td>
+              <td><apex:outputText value="{!TCS_Attendance_record__c.YP_sign_up_action__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+   </div>
+   </td>
+<!---------------------------------------------/ OPPTY INFO. -------------------------------------------->
+
+
+<!--------------------------------------------- ADDITIONAL MEETING -------------------------------------------->                       
+                       
+   <td valign="top" width="600" style="border-left:solid 4px; border-color:#D9D9D9; ">
+    <div style="margin-left:2%; margin-bottom:5%; margin-top:1%;">
+       <apex:outputText styleClass="optext" value="additional meetings"/><br />
+       
+        <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.TCS_Attendance_record__c.Fields.Meetings_attended_Dec__c.Label}"/>
+                </td>
+              <td><apex:outputText value="{!TCS_Attendance_record__c.Meetings_attended_Dec__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+        <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.TCS_Attendance_record__c.Fields.Meetings_attended_May_Jun__c.Label}"/>
+                </td>
+              <td><apex:outputText value="{!TCS_Attendance_record__c.Meetings_attended_May_Jun__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+        <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.TCS_Attendance_record__c.Fields.Meetings_attended_Nov_Dec__c.Label}"/>
+                </td>
+              <td><apex:outputText value="{!TCS_Attendance_record__c.Meetings_attended_Nov_Dec__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+        <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.TCS_Attendance_record__c.Fields.Meetings_attended_Jul_Aug__c.Label}"/>
+               </td>
+              <td><apex:outputText value="{!TCS_Attendance_record__c.Meetings_attended_Jul_Aug__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+       <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.TCS_Attendance_record__c.Fields.Meetings_attended_Mar_Apr__c.Label}"/> 
+           </td>
+              <td><apex:outputText value="{!TCS_Attendance_record__c.Meetings_attended_Mar_Apr__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+   </div>
+   </td>
+</tr>
+<!---------------------------------------------/ ADDITIONAL MEETING -------------------------------------------->
+
+
+<!--------------------------------------------- YP INFORMATION -------------------------------------------->                   
+                   
+<tr>
+
+   <td >
+     <div style="margin-left:2%; margin-bottom:5%; ">
+        <apex:outputText styleClass="optext" value="yp information"/><br />
+        
+         <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+        <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.TCS_Attendance_record__c.Fields.Contact__c.Label}"/>
+                  </td>
+              <td><apex:outputText value="{!TCS_Attendance_record__c.Contact__r.Name}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+         <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+        <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.TCS_Attendance_record__c.Fields.Availability_notes__c.Label}"/>
+             </td>
+              <td><apex:outputText value="{!TCS_Attendance_record__c.Availability_notes__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+    </div>
+   </td>
+ <!---------------------------------------------/ YP INFO. -------------------------------------------->                      
+ 
+ 
+ <!--------------------------------------------- GENERAL NOTES -------------------------------------------->
+                       
+       <td style="border-left:solid 4px; border-color:#D9D9D9;">
+        <div style="margin-left:2%; margin-bottom:5%;">
+            <apex:outputText styleClass="optext" value="general notes"/><br />
+            
+             <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+                      <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.TCS_Attendance_record__c.Fields.General_notes__c.Label}"/>
+                </td>
+              <td><apex:outputText value="{!TCS_Attendance_record__c.Availability_notes__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+        </div>
+       </td>
+   </tr>
+<!---------------------------------------------/ GENERAL NOTES -------------------------------------------->                   
+                   
+                   
+<!--------------------------------------------- FIRST MEETING -------------------------------------------->                   
+   <tr >
+   
+       <td>
+        <div style="margin-left:2%; margin-bottom:5%;">
+            <apex:outputText styleClass="optext" value="first meeting"/><br />
+            
+             <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.TCS_Attendance_record__c.Fields.Date_of_first_meeting__c.Label}"/>
+               </td>
+              <td><apex:outputText value="{0,date,dd'/'MM'/'yyyy}">
+                    <apex:param value="{!TCS_Attendance_record__c.Date_of_first_meeting__c}" /> 
+                </apex:outputText>
+              </td> 
+              </tr>
+             </table></div>
+             
+           <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.TCS_Attendance_record__c.Fields.First_meeting_details__c.Label}"/>
+                </td>
+              <td><apex:outputText value="{!TCS_Attendance_record__c.First_meeting_details__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+        </div>
+       </td>
+<!---------------------------------------------/ FIRST MEETING -------------------------------------------->                       
+                       
+                       
+<!--------------------------------------------- LAST MEETING DETAILS -------------------------------------------->                       
+       <td style="border-left:solid 4px; border-color:#D9D9D9;">
+        <div style="margin-left:2%; margin-bottom:5%;">
+           <apex:outputText styleClass="optext" value="last meeting details"/><br />
+           
+            <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.TCS_Attendance_record__c.Fields.Date_of_final_meeting__c.Label}"/>
+                 </td>
+              <td><apex:outputText value="{0,date,dd'/'MM'/'yyyy}">
+                        <apex:param value="{!TCS_Attendance_record__c.Date_of_final_meeting__c}" /> 
+                    </apex:outputText>
+              </td> 
+              </tr>
+             </table></div>
+             
+           <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.TCS_Attendance_record__c.Fields.Reason_for_end_of_meetings__c.Label}"/>
+              </td>
+              <td><apex:outputText value="{!TCS_Attendance_record__c.Reason_for_end_of_meetings__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+        </div>
+       </td>
+   </tr>
+<!---------------------------------------------/ LAST MEETING DETAILS -------------------------------------------->                   
+                   
+                   
+<!--------------------------------------------- SYSTEM INFO. -------------------------------------------->                   
+   <tr >
+   
+       <td>
+        <div style="margin-left:2%; margin-bottom:5%;">
+           <apex:outputText styleClass="optext" value="system information"/><br />
+           
+            <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.TCS_Attendance_record__c.Fields.Name.Label}"/>
+                   </td>
+              <td><apex:outputText value="{!TCS_Attendance_record__c.Name}"/>
+              </td> 
+              </tr>
+             </table></div>
+                 
+            <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="Created By"/>
+               </td>
+              <td><apex:outputText value="{!TCS_Attendance_record__c.CreatedBy.name}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+            <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="Last Modified By"/>
+           </td>
+              <td><apex:outputText value="{!TCS_Attendance_record__c.LastModifiedBy.name}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+        </div>
+       </td>
+       
+       
+       <td valign="bottom" style="border-left:solid 4px; border-color:#D9D9D9;">
+           <a style="float:right;  margin-right:2%;  margin-bottom:2%;" href="{!TCS_Attendance_record__c.id}/e?retURL=/TCSPortal_TCSAttDetail?id={!TCS_Attendance_record__c.id}"><button type="button" style="margin-top:10px; height:35px; width:100px;" class="button1">Edit</button></a>
+       </td>
+   </tr>
+<!--------------------------------------------- SYSTEM INFO. -------------------------------------------->
+               </table>
+            </apex:define>
+           
+           <apex:define name="BotDiv"> 
+               <center>
+                   <div style="margin-top:2%;">
+                       <apex:outputLink value="{!$Page.TCSPortal_ContactDetail}?id={!TCS_Attendance_record__c.Contact__c}" styleClass="optext btn button1">back to <br/> {!TCS_Attendance_record__c.Contact__r.Name}</apex:outputLink>
+                   </div>  
+               </center>
+               
+           </apex:define>
+           
+           
+        </apex:composition> 
+        
+    </body>
+      <style>
+    .scrollspy-example {
+                height: 400px;
+                overflow: auto;
+                position: relative;
+    </style>
+</html>
+</apex:page>

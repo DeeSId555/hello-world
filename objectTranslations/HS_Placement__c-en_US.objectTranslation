@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HS Placement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HS Placements</value>
+    </caseValues>
+    <fields>
+        <label><!-- Assigned wave --></label>
+        <name>Assigned_wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Record Type --></label>
+        <name>Contact_Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Placement Withdrawn --></label>
+        <name>Date_Placement_Withdrawn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Placement was chosen --></label>
+        <name>Date_Placement_was_chosen__c</name>
+    </fields>
+    <fields>
+        <label><!-- HS Activity --></label>
+        <name>HS_Activity__c</name>
+        <relationshipLabel><!-- HS Placements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HS Application Status (HSA) --></label>
+        <name>HS_Application_Status_HSA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Name --></label>
+        <name>Partner_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Placement Choice --></label>
+        <name>Placement_Choice__c</name>
+        <picklistValues>
+            <masterLabel>First Choice</masterLabel>
+            <translation><!-- First Choice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second Choice</masterLabel>
+            <translation><!-- Second Choice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Choice</masterLabel>
+            <translation><!-- Third Choice --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Placement Confirmed/Chosen --></label>
+        <name>Placement_Confirmed_Chosen__c</name>
+    </fields>
+    <fields>
+        <label><!-- Placement Withdrawn --></label>
+        <name>Placement_Withdrawn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signposting Borough --></label>
+        <name>Signposting_Borough__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signposting Opp. Places Left --></label>
+        <name>Signposting_Opp_Places_Left__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signposting Opportunity --></label>
+        <name>Signposting_Opportunity__c</name>
+        <relationshipLabel><!-- HS Placements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Support Needed? --></label>
+        <name>Support_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Withdrawal Reason --></label>
+        <name>Withdrawal_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- YP Already Placed --></label>
+        <name>YP_Already_Placed__c</name>
+    </fields>
+    <fields>
+        <label><!-- YP District --></label>
+        <name>YP_District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Young Person Name --></label>
+        <name>Young_Person_Name__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Placement withdrawn, untick to save. --></errorMessage>
+        <name>Both_Ticks_Test</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This YP already has a confirmed placement! --></errorMessage>
+        <name>Debug_Idea_v1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not happening.. Volunteering Opportunity is full!! --></errorMessage>
+        <name>Validation_Tick_Test</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not happening.. Volunteering Opportunity has too many confirmed places!! --></errorMessage>
+        <name>Validation_Tick_Test2</name>
+    </validationRules>
+</CustomObjectTranslation>

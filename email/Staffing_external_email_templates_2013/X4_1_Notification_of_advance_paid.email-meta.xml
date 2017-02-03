@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Copy received and workflow active</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>4.1 Notification of advance paid</name>
+    <style>freeForm</style>
+    <subject>Notification of Advance Payment for {!Job_placement__c.Wave__c}</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Job_placement__c.Staffing_Associate_email__c}
+
+Dear {!Job_placement__c.Contact_Name__c},
+
+I hope you have enjoyed your placement with NCS with The Challenge.
+
+As part of your payment schedule for {!Job_placement__c.Wave__c}, you will receive two payments for this role. This payment covers the following parts of the programme -  NCS: Personal Challenge, NCS: Team Challenge and NCS: Real Challenge Design (one or more will be relevant to your role). Payments for NCS: The Real Challenge Action will be communicated to you at a later date once you have completed them.
+
+You will receive an initial payment of 70% of the gross role for your role on this wave on {!Job_placement__c.Advance_payment_date__c}. This payment is an advance and thus will not be subjected to tax and National Insurance. You will receive {!Job_placement__c.Payroll_advance_owed__c} on this advance date.
+
+You will then receive a second payment on {!Job_placement__c.Payroll_payment_date__c}. This second payment will consist of the remaining 30% of the gross pay for this wave, with Tax and NI deductions for the entire wave made from this payment.
+
+The overall amount which you receive on {!Job_placement__c.Payroll_payment_date__c} will vary according to your tax code, but will be significantly smaller than your first payment for this role, and may be close to zero.
+
+On your payslip (sent via email on {!Job_placement__c.Payroll_payment_date__c}) , you will see the total amount which you will receive. This includes the advance which is an initial payment prior to payroll and is not subject to Tax or National Insurance contributions. This also includes the second payment which is subject to Tax or National Insurance contributions.
+
+Due to new auto-enrolment legislation, employees of The Challenge, including summer staff, will be automatically enrolled in a workplace pension scheme. This is a way of saving for your retirement that&apos;s arranged by your employer. This affects staff who earn more than £473 per month and are aged between 22 and state pension age. You will see your pension contributions on your payslip. For further information, please go to www.gov.uk/workplace-pensions.
+
+Further communications, including how to opt out, will be sent to you in September where we will start to process all summer staff for auto-enrolment. At that point, if you would like to opt out of the pension scheme, you will need an opt-out form from The People&apos;s Pension, which you can get from and then return to by emailing thepeoplespension@bandce.co.uk. Staff will have a one month opt-out period: this begins from the day the administration for their becoming a member is complete, i.e. one month from the date of enrolment, which will not take place until September
+
+If you have any questions, do contact us.
+
+Yours sincerely,
+
+NCS with The Challenge
+{!Job_placement__c.Staffing_Associate_email__c}
+
+
+CR 4.1</textOnly>
+    <type>html</type>
+</EmailTemplate>

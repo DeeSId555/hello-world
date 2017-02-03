@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Count_of_refunds__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Amount_due_outstanding__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 AND 2 AND (3 OR 4)) AND 5</booleanFilter>
+        <criteriaItems>
+            <column>CONTACT_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.YP2014</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.School_s_zone__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>North West</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Amount_due_outstanding__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Count_of_refunds__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.School_s_code_display__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>MFPHS,MOHGS6,MBJHN,MMHS,MHCCSF,MWH,MCHHHS,MASCC6,MASA,MACHS,MCHHS,MASA6,MSJC,MMHH,MDA,MTCOL,MCA,MLCLC,MDCC,MRVT,MHHGS,MHGHS6,MHGHS,LWS,LAARC,LSMCOL,LSGS,LGSC,LBTRC,LCNC,LMCOLB,LRCO,LFA,LCPH,LCTK,LHLHS,LOC,LQEG6,LWLC,LMHC,LWSC,LBP,LAIS,MTDC,MWHSS,MHHH,MHHS,MWC,MTCAM,MSMC,MMHA,MSEA,MFLH,MTBH,MMEA6,MMGS6,MMCMA6,MCMHS,MTCAM6,MBMAC,MBRCHS,MSPHS,MNGHS6,MMHA6,MMGS,MCHS,MMA6,MMHSG,MBHS,MPTHS,MWHS,MBOS,MMT,MBGSB6,MSMR,MSMR6,MCLRC,MKPHS,MSAA</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.School_s_borough_or_area__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>NW payments - 2 school events held</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

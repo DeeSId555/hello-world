@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Connection (and status of connection) to an Action Team or Action Board</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Action_Team_Membership_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&apos;/TCS/TCSPortal_CATYBMembershipDetail?id=&apos;+Id, Name,&apos;_top&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Action Team/Youth Board Membership Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Action_Team__c</fullName>
+        <externalId>false</externalId>
+        <label>Action Team/Youth Board</label>
+        <referenceTo>Action_Team_Youth_Board__c</referenceTo>
+        <relationshipLabel>Action Team or Youth Board Membership</relationshipLabel>
+        <relationshipName>Action_Team_Selection</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>Action_Team_Selection</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Date_successful_YB_app_email_sent__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This shows that the email informing the YP that their application has been successful has been sent.</inlineHelpText>
+        <label>Date successful YB app email sent</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Mobile_number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact__r.MobilePhone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mobile number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Grad Rep</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wave Nominee</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Grad ex-member (asked to leave)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Associate Mentor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ex-Associate Mentor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Team Coach</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unsuccessful applicant</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Member</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NCS Leader</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Withdrawn</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Team Director</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Action Team or Youth Board Membership</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Action_Team__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All_KK_MKTG</fullName>
+        <columns>NAME</columns>
+        <columns>Action_Team__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>6/1/2013 12:00 AM</value>
+        </filters>
+        <label>All KK MKTG</label>
+    </listViews>
+    <listViews>
+        <fullName>Test_records</fullName>
+        <columns>NAME</columns>
+        <columns>Action_Team__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Mobile_number__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Contact__c</field>
+            <operation>contains</operation>
+            <value>test,gradperson</value>
+        </filters>
+        <label>Test records</label>
+    </listViews>
+    <listViews>
+        <fullName>Tim</fullName>
+        <columns>NAME</columns>
+        <columns>Action_Team__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>1/1/2014 12:00 AM</value>
+        </filters>
+        <label>Tim</label>
+    </listViews>
+    <nameField>
+        <displayFormat>ATS{00000000}</displayFormat>
+        <label>Action Team Membership Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Action Team or Youth Board Membership</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Action_Team_Membership</fullName>
+        <active>true</active>
+        <label>Action Team Membership</label>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Member</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NCS Leader</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Team Director</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unsuccessful applicant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wave Nominee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Withdrawn</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <webLinks>
+        <fullName>Send_Bulk_SMS</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Send Bulk SMS</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/10.0/connection.js&quot;)} 
+
+var records = {!GETRECORDIDS($ObjectType.Action_Team_Youth_Board_Membership__c)}; 
+if (records[0] == null) 
+{ 
+alert(&quot;Please select at least one Action_Team_Youth_Board_Membership__c&quot;) 
+} 
+else{ 
+var recordType = &quot;Action_Team_Youth_Board_Membership__c&quot;; 
+var recordIds = &quot;&quot;; 
+for (var n in records) { 
+if(n == &apos;remove&apos; || n == &apos;indexOf&apos;) continue; 
+recordIds = recordIds + records[n]; 
+
+if (n != records.length-1) { 
+recordIds = recordIds + &quot;,&quot;; 
+} 
+} 
+var queryString = parent.window.location.pathname; 
+if (parent.window.location.search){ 
+queryString = queryString + parent.window.location.search 
+} 
+
+var url = &quot;/apex/smagicinteract__BulkSendSMS?retURL=&quot;+queryString + &quot;&amp;phoneField=Mobile_number__c&amp;nameField=Contact__c&amp;objectType=&quot;+recordType+&quot;&amp;recordIds=&quot;+ recordIds; 
+
+parent.window.location = url; 
+}</url>
+    </webLinks>
+</CustomObject>

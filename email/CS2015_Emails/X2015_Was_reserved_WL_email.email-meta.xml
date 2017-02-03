@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2015 Was reserved WL email</name>
+    <style>none</style>
+    <subject>You have been moved to the waiting list for NCS</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTHECHALLENGE.ORG
+
+{!Contact.FirstName} has been moved to the waiting list for NCS
+
+
+Dear Parent or Guardian of {!Contact.Name},
+
+We have moved {!Contact.FirstName} to the waiting list for NCS (National Citizen Service)
+
+We sent you an email on {!NCS_Application__c.Date_CAL_created__c} asking you to pay your {!NCS_Application__c.Amount_due_outstanding__c} admin fee for {!Contact.FirstName}’s application for NCS and explaining how to ask for financial assistance if you need help with the cost.
+
+NCS is a very popular programme.  This means we can only reserve places without payment for a limited time before we offer the place to another young person.
+
+As we didn’t receive a payment from you by the deadline, we have moved {!Contact.FirstName} to the waiting list.
+
+What if {!Contact.FirstName} still wants to take part in NCS?
+
+Please call us on 0203 542 2400 or email us at contact@ncsthechallenge.org. We will then try our best to find a suitable programme for {!Contact.FirstName}, or add them to more waiting lists to increase their chances of getting a place.
+
+
+Yours sincerely,
+
+
+Tanya Dunne
+Head of Customer Services - The Challenge
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

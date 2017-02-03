@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>5.2 RCA availability request for non-RCA staff</name>
+    <style>freeForm</style>
+    <subject>Would you like to work during The Real Challenge weekends?</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Over the four weekends in September, all 10,000 young people who took part in The Challenge will undertake a series of volunteering days.
+
+In case of last minute illness or unavailability, we would like to have a small number of back-up staff to work as Autumn Mentors on those days. Attached is the role description.
+
+If you would like to be considered for the Autumn Mentor role, to work on either four Saturdays (7, 14, 21, 28 September) or four Sundays (8, 15, 22, 29 September), please contact us, and we will let you know further details.
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.Contact_Owner_alternative_email__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

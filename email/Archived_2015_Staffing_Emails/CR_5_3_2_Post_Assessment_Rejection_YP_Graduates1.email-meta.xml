@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 5.3.2 Post- Assessment Rejection YP Graduates</name>
+    <style>formalLetter</style>
+    <subject>Your assessment for the NCS programme</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}.
+
+
+Dear {!Contact.FirstName},
+
+Many thanks for attending an assessment for the NCS programme. We assess candidates against a range of criteria but unfortunately, on this occasion you did not meet the requirements for a role on the programme.
+
+We appreciate that this must be disappointing news for you. However, we would love you to stay involved with our work. Some of the options are outlined below:
+
+
+I still want to be involved, what else can I do?
+
+If you would still like to be involved in our seasonal programmes the Associate Mentor and Senior Associate Mentor roles may be perfect for you.
+
+Associate Mentor: this role is for those who have graduated from NCS with The Challenge within the past two years.
+
+Senior Associate Mentor: this role is for those who have completed a role as an Associate Mentor within the past year.
+
+These voluntary roles can help you gain valuable experience and skills required for youth and community work, and may lead on to a paid role with us in the future.
+
+
+Sounds great, how do I apply?
+
+If you are interested in either the Associate Mentor or Senior Associate Mentor roles, you will need to register your interest by emailing graduates@the-challenge.org.
+
+
+Thank you for your interest in the NCS programme and we hope to work with you in the future.
+
+Best Wishes
+
+The Challenge
+NCS Programme
+{!Contact.OwnerFullName}
+{!Contact.Contact_Owner_alternative_email__c}
+Email Reference: CR 5.3.2</textOnly>
+    <type>html</type>
+</EmailTemplate>

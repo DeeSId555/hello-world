@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account_Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>Partner__r.BillingStreet &amp; br()&amp;
+ Partner__r.BillingCity &amp; br()&amp;
+ Partner__r.BillingPostalCode</formula>
+        <label>Account Address</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_main_email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Partner__r.Email__c</formula>
+        <label>Account main email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_main_number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Partner__r.Phone</formula>
+        <label>Account main number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Engagement_Cycle__c</fullName>
+        <externalId>false</externalId>
+        <label>Engagement Cycle</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Autumn 2015</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016 C1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016 C2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2017 C1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2017 C2</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Engagement_Notes_Entry__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the notes here and save</inlineHelpText>
+        <label>Engagement Notes Entry</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Engagement_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Engagement Notes</label>
+        <length>25000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Estimated_number_of_Vacancies__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Unconfirmed number of vacancies</inlineHelpText>
+        <label>Estimated number of Vacancies</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HS_Region__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>HS Region</label>
+        <referenceTo>HS_Region__c</referenceTo>
+        <relationshipLabel>HS Partner Engagements</relationshipLabel>
+        <relationshipName>HS_Partner_Engagements</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>HS_Subregion__c</fullName>
+        <externalId>false</externalId>
+        <label>HS Subregion</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>London North West</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>London North East</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>London South West</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>London South East</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Main_Contact_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Main Contact Name</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>HS Partner Engagements</relationshipLabel>
+        <relationshipName>HS_Partner_Engagements</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Main_Contact_email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Main_Contact_Name__r.Email</formula>
+        <label>Main Contact email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Main_Contact_number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Main_Contact_Name__r.Phone</formula>
+        <label>Main Contact number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_ofVacancies_available__c</fullName>
+        <externalId>false</externalId>
+        <label>Number ofVacancies available</label>
+        <summarizedField>HS_Partner_Opportunity__c.Number_of_vacancies_available__c</summarizedField>
+        <summaryForeignKey>HS_Partner_Opportunity__c.HS_Partner_Engagement__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Partner__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Which Partner/Store is this engagement about?</inlineHelpText>
+        <label>Partner</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>HS Partner Engagements</relationshipLabel>
+        <relationshipName>HS_Partner_Engagements</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>London North</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>London South</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>London East</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>London West</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>London Central</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>London City &amp; Southbank</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Birmingham</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Secondary_Contact_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Secondary Contact Name</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>HS Partner Engagements (Engagement Secondary Contact Name)</relationshipLabel>
+        <relationshipName>HS_Partner_Engagements1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Secondary_Contact_email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Secondary_Contact_Name__r.Email</formula>
+        <label>Secondary Contact email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Secondary_Contact_number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Secondary_Contact_Name__r.Phone</formula>
+        <label>Secondary Contact number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>HS Partner Engagement</label>
+    <nameField>
+        <label>HS Partner Engagement</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>HS Partner Engagements</pluralLabel>
+    <searchLayouts>
+        <listViewButtons>Invite_to_Event</listViewButtons>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>Invite_to_Event</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Invite to Event</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>var selectedIDs = ({!GETRECORDIDS($ObjectType.HS_Partner_Engagement__c)}).toString().replace(/,/g, 
+&apos;&apos;); 
+
+location.href = &apos;/flow/HS_Partner_Event_Invite?txtSelectedRecordsP=&apos; + selectedIDs;</url>
+    </webLinks>
+</CustomObject>

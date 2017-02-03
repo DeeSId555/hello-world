@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Please only clone this template.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>Reminder Email: Still time to apply!</name>
+    <style>freeForm</style>
+    <subject>Still time to apply to be an Associate Mentor!</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+We recently wrote to you with details of how to apply to be an Associate Mentor. There is still time to apply! You have until Wednesday 1st May to apply. Click on the below…
+
+This summer, the Challenge will kick off again for three unforgettable weeks.  And we want YOU to come back and be a part of it! Associate Mentors are Challengers who come back and volunteer with summer staff, using their knowledge and experience to support and mentor Challengers. You will be volunteering on the Real Challenge Design week, supporting Challengers to develop their campaigning skills, pitch to the Dragons and to get ready for the Real Challenge Action weekends.
+
+http://www.clicktools.com/survey?iv=kwprkk5qx0op&amp;q1={!Contact.Id}
+
+This link is unique to YOU so please do not share it with your friends - if they did the Challenge they will have received an email with their own personal link.
+
+Many thanks!
+
+The Challenge Society</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Personal Coach Meeting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Personal Coach Meetings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Location of Meeting --></label>
+        <name>Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting Summary trigger --></label>
+        <name>Meeting_Summary_trigger__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please specify whether or not the YP attended the scheduled meeting --></help>
+        <label><!-- Did the YP attend the meeting? --></label>
+        <name>Meeting_attendance__c</name>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did not attend</masterLabel>
+            <translation><!-- Did not attend --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date of the scheduled meeting with the YP --></help>
+        <label><!-- Date of meeting --></label>
+        <name>Meeting_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Of the 6 monthly meetings you should have with the YP, which meeting is this? --></help>
+        <label><!-- Meeting number --></label>
+        <name>Meeting_number__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation><!-- 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Meeting successful? --></label>
+        <name>Meeting_successful__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please provide a summary or outline of the meeting --></help>
+        <label><!-- Meeting summary --></label>
+        <name>Meeting_summary__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please tick the box when you have read the meeting report --></help>
+        <label><!-- Meeting Successful box seen by Champion --></label>
+        <name>Meeting_summary_read_by_Champion__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Champion Email --></label>
+        <name>PC_Champion_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Coach --></label>
+        <name>PC_Coach__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Coach Meetings Number --></label>
+        <name>Personal_Coach_Meetings_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Link to the main Personal Coaching record --></help>
+        <label><!-- Personal Coaching --></label>
+        <name>Personal_Coaching__c</name>
+        <relationshipLabel><!-- Personal Coach Meetings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Time of meeting --></label>
+        <name>Time_of_meeting__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You will not be able to save this record until you have put in the Date, Location and Time of this meeting. --></errorMessage>
+        <name>Date_Location_Or_Time_of_Meeting_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select &quot;Yes&quot; or &quot;No&quot; from the &quot;Meeting Successful?&quot; field. --></errorMessage>
+        <name>Meeting_Successful_after_meeting_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide a summary/outline of the meeting the YP attended --></errorMessage>
+        <name>Meeting_summary</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In order to save this record you must update the meeting summary --></errorMessage>
+        <name>Two_days_after_Meet_Summary_not_updated</name>
+    </validationRules>
+</CustomObjectTranslation>

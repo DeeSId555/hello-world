@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2016 Refund Acknowledgement</name>
+    <style>none</style>
+    <subject>NCS - your refund has been processed</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTHECHALLENGE.ORG
+
+Your refund for NCS has been processed
+
+
+Dear Parent or Guardian of {!Contact.Name},
+
+We have refunded the admin fee you paid for {!Contact.FirstName} to take part in National Citizen Service (NCS).
+
+Please allow 3-5 working days for the refund to reach the account you originally paid with.
+
+If you have not received your refund after 5 working days, please contact us by emailing  contact@ncsthechallenge.org or calling 0203 542 2400.
+
+Yours sincerely,
+
+Tanya Dunne
+Head of Customer Services
+The Challenge (largest provider of NCS)
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451.  Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

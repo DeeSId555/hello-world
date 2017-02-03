@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>Croydon Youth Board 2015-16</name>
+    <style>freeForm</style>
+    <subject>this is a test email</subject>
+    <textOnly>Hey {!CampaignMember.FirstName}
+
+this is a test</textOnly>
+    <type>html</type>
+</EmailTemplate>

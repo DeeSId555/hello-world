@@ -1,0 +1,123 @@
+<apex:page sidebar="false" standardStylesheets="true" showHeader="false" standardController="Contact" >
+
+<html>
+    <head>
+        <style>
+.button2{
+         
+        height:65px; 
+        margin-top:2%;
+        border: solid 4px; 
+        border-color:#B31217; 
+        font : 32px "Dirty", Arial, Helvetica; 
+        background :white;
+        border-radius:15px;
+    }
+.button1{
+    
+    height:65px;  
+    border: solid 4px; 
+    border-color:#B31217; 
+    font : 18px "Dirty", Arial, Helvetica; 
+    background :white;
+    border-radius:15px;
+    hover:grey;
+    }  
+        </style>
+    </head>
+    
+    <body>    
+        
+       <!-- <apex:form >-->
+        <apex:composition template="PortalTemplate">
+        
+            <apex:define name="TopDiv">
+            <!---------------- MENU -------------------------->
+            </apex:define>
+            
+<apex:define name="MidDiv">
+           
+               <!--------------- Mid Div ------------------>
+      
+        <apex:variable var="call" value="{!0}" /> 
+          <apex:repeat value="{!Contact.Job_Applications__r}" var="tcs">
+              <apex:variable var="call" value="{!call+1}"/>
+          </apex:repeat>
+          
+         <!--NO RECORDS--->
+        <apex:outputPanel rendered="{!IF(call<=0,true,false)}">
+           <apex:pageBlock >    
+              <apex:outputLabel styleClass="optext"> There are no job applications</apex:outputLabel>
+            </apex:pageBlock>   
+        </apex:outputPanel>
+        <!--/NO RECORDS--->
+        
+        
+        <!--DISPLAY RECORD-->
+            <apex:outputPanel rendered="{!IF(call > 0,true,false)}">
+                <apex:pageBlock >
+                    <apex:pageBlockSection columns="1">
+                        <apex:relatedList pageSize="{!call}" list="Job_Applications__r"/>
+                    </apex:pageBlockSection>   
+                </apex:pageBlock>
+            </apex:outputPanel>
+        <!--/ DISPLAY RECORD--> 
+      
+        
+   
+                    <!--  <table class="table table-striped" style="100%;">
+                          <th>{!$ObjectType.Job_Application__c.Fields.Name.Label}</th>
+                          <th>{!$ObjectType.Job_Application__c.Fields.Role_to_assess_for__c.Label}</th>
+                     
+                         <apex:repeat value="{!JobAppList}" var="ja">
+                             <apex:outputPanel rendered="{!IF(ja.Contact__c==$CurrentPage.parameters.cid,true,false)}">
+                                 <tr style="width:100%;">
+                                     <td> <apex:outputLink target="_blank" value="{!ja.id}">{!ja.Name}</apex:outputLink>  </td>
+                                     <td> <apex:outputText value="{!ja.Role_to_assess_for__c}"/>  </td>
+                                 </tr>
+                             </apex:outputPanel>
+                         </apex:repeat>
+                         </table>-->
+                         
+                  
+            </apex:define>
+            
+             <apex:define name="BotDiv"> 
+               <center>
+                   <div style="margin:2%;">
+                   
+                       <apex:outputLink value="{!$Page.TCSPortal_ContactDetail}?id={!Contact.id}" styleClass="optext btn button2">back to<br/> {!Contact.Name}</apex:outputLink>
+                     <!--  <apex:outputLink value="/a0q/e?CF00NC0000005E41h={!$CurrentPage.parameters.cname}&CF00NC0000005E41h_lkid={!$CurrentPage.parameters.cid}&retURL=/TCSPortal_ContactDetail?id{!$CurrentPage.parameters.cid}" styleClass="optext btn button2">add a new Hour</apex:outputLink>-->
+                   </div>  
+               </center>
+               
+           </apex:define>
+           
+        </apex:composition>
+       <!-- </apex:form>   -->
+        
+    </body>
+     <style>
+ .actionColumn{
+     display:none;
+     } 
+ .listHeader{
+     display:none;
+ }
+ .pbButton{
+     display:none;
+ }
+ .bPageBlock .pbHeader, .bGeneratedReport .bPageBlock .pbSubheader{
+     background-color:white;
+ }   
+ .bPageBlock, .individualPalette .bPageBlock{
+     border:0px;
+ }
+.scrollspy-example {
+height: 250px;
+overflow: auto;
+position: relative;
+    }
+    </style>
+</html>
+</apex:page>

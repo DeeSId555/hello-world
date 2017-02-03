@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <description>KO &amp; W1 attendance - 17th July 2015. These surveys were done on paper before survey gizmo</description>
+    <filter>
+        <criteriaItems>
+            <column>HS_Activity__c.HS_Attendance_at_KO_confirmed__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>7/17/2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.HS_Attended_KO__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>7/17/2015</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>KO Attendance</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$HS_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

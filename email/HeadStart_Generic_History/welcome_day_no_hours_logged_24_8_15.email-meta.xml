@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>generic workshop invitations sent 26/08/15</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>welcome day, no hours logged 24/8/15</name>
+    <style>none</style>
+    <subject>HeadStart needs YOU to log your hours!</subject>
+    <textOnly>HeadStart login details:
+
+Email Address {!Contact.Email}
+
+NCS ID
+
+{!Contact.NCS_ID__c}
+
+PIN {!Contact.Login_Password__c}
+
+HeadStart Website
+
+HeadStart needs YOU to log your hours!
+
+Hi {!Contact.FirstName},
+
+Remember to log your hours on the HeadStart website
+
+
+There’s still time. Here’s what you need to do:
+
+
+We hope you’re enjoying your volunteering placement. In order to be invited to an interview with a HeadStart employer, you must log 16 hours of volunteering by 18th September.
+
+Forgotten how to log your hours!?
+
+
+Your Login details are at the top of this email!
+
+Click here to log your hours
+
+Click on the red ‘log your hours’ button
+
+Make sure you log your hours, including the minutes, even if it’s 0 (otherwise it won’t save!) eg. 1 hour. 0 minutes.
+
+
+Remember that attending your welcome session also counts towards your 16 hour target so you can log this too!
+
+
+If you’re concerned that you won’t complete your volunteering in time, please email headstart@the-challenge.org and we can look at your options.
+
+Any questions? Email the HeadStart team, check out our website or get in touch on facebook.
+
+
+The HeadStart team
+
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subsribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

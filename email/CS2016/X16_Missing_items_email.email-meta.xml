@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>16 PG Missing items email</name>
+    <style>none</style>
+    <subject>NCS application - your next steps</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTHECHALLENGE.ORG
+
+NCS application - your next steps
+
+
+
+Dear Parent or Guardian of {!Contact.Name},
+
+
+Please complete {!Contact.FirstName}’s application for NCS
+
+Thank you for starting {!Contact.FirstName}’s application for National Citizen Service (NCS). At the moment, parts of this are not complete and we cannot give {!Contact.FirstName} a place until we have received and reviewed these parts. So, we need you ({!Contact.FirstName}&apos;s parent or legal guardian) to provide:
+
+{!NCS_Application__c.Missing_Item_MASI__c}{!NCS_Application__c.Missing_Item_Consent__c}
+
+{!NCS_Application__c.Missing_Item_DOB__c}
+
+{!NCS_Application__c.Missing_Item_School__c}
+
+{!NCS_Application__c.Missing_payment_paragraph__c}{!NCS_Application__c.Missing_Payment_SDD_Not_in_Past__c}{!NCS_Application__c.Missing_Payment_with_Bursary_Call_Due__c}{!NCS_Application__c.Missing_Payment_Bursary_Call_Made__c}
+
+The easiest way to do this and complete {!Contact.FirstName}&apos;s application is by logging in to your online account at bookings.ncsthechallenge.org. If you are unable to complete it online or have any questions, please call us on 0203 542 2400 – we’re always happy to help.
+
+Places are filling up fast, so please complete {!Contact.FirstName}’s application as soon as possible to increase their chances of benefiting from this once-in-a-lifetime experience.
+
+
+Yours sincerely,
+
+
+Tanya Dunne
+Head of Customer Service
+The Challenge (largest provider of NCS)
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network is a charity registered in England and Wales with charity no. 1129239 and company no. 6845451, whose registered office is at Elizabeth House, 39 York Road, London SE1 7NQ.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

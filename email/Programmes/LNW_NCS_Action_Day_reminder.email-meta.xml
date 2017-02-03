@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>LNW NCS Action Day reminder</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>LNW NCS Action Day reminder</name>
+    <style>formalLetter</style>
+    <subject>{!Contact.FirstName}, are you coming on Saturday?</subject>
+    <textOnly>{!Contact.FirstName}, are you ready for this weekend?
+
+
+Help out at one of our incredible volunteering projects during the day and get guaranteed you entry to our afternoon of workshops (from Sport Relief, Bite the Ballot, St John&apos;s Ambulance, and loads more) as well as our AFTER PARTY!
+
+If you don&apos;t have time to volunteer then don&apos;t worry: you can still come along to the workshops and party by paying £3 here or on the door. Anyone who came to an NCS graduate event during half term also gets in free!
+
+Get to us for 4pm for guaranteed entry, doors close at 5pm.
+Volunteering projects are taking place all over London, so check out the sign-up form and website to find one near you.
+
+The workshops and party are at Conway Hall, 25 Red Lion Square, London, WC1R 4RL. You can claim back travel expenses by bringing your receipt with you.
+
+Any questions, email us at tcs.northlondon@the-challenge.org.
+
+See you there!
+
+Megan</textOnly>
+    <type>html</type>
+</EmailTemplate>

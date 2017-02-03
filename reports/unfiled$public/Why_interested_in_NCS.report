@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.NCS_Applications__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.NCS_Applications__r.Wave_Selections__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.NCS_Applications__r$Why_interested_in_NCS__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.NCS_Applications__r.Wave_Selections__r$Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Assigned</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Young_Person</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Why interested in NCS?</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_NCS_Applications_with_Wave_Selections__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

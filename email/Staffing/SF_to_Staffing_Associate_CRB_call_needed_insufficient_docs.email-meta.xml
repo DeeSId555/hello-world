@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This is send to Staffing Associate record owner when a CRB follow-up call is required due to insufficient docs received</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SF to Staffing Associate CRB call needed - insufficient docs</name>
+    <style>none</style>
+    <subject>{!Contact.FirstName} {!Contact.LastName} has not submitted insufficient CRB documentation</subject>
+    <textOnly>Hi {!Contact.OwnerFirstName},
+
+{!Contact.FirstName} {!Contact.LastName} has not submitted sufficient documentation to process their CRB. Evolution&apos;s notes on the matter are as follows:
+{!Job_Application__c.CRB_notes__c}
+Please follow up with a call.
+Click on the link to view the record {!Job_Application__c.Link}.
+
+This is a standard email, sent automatically when &quot;Insufficient documents received&quot; is ticked</textOnly>
+    <type>custom</type>
+</EmailTemplate>

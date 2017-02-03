@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Cluster__c$Name</field>
+    </columns>
+    <columns>
+        <field>Cluster__c.Waves__r.Bookings__r$Account_Name__c</field>
+    </columns>
+    <columns>
+        <field>Cluster__c.Waves__r$Name</field>
+    </columns>
+    <columns>
+        <field>Cluster__c.Waves__r.Bookings__r$Name</field>
+    </columns>
+    <columns>
+        <field>Cluster__c.Waves__r.Bookings__r$Info_to_NCS_Staff__c</field>
+    </columns>
+    <columns>
+        <field>Cluster__c.Waves__r.Bookings__r$Overview_of_the_visit__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Cluster__c.Waves__r$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Kingston,Merton,Richmond</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Cluster__c.Waves__r.Bookings__r$Usage_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>TC Community Partner 2015</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>MRK Practitioner</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Clusters_waves_and_bookings__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Cluster__c.Waves__r.Bookings__r$LastActivityDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

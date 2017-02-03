@@ -1,0 +1,22 @@
+<apex:page action="{!if($Profile.Name !='System Administrator',null,urlFor($Action.Account.Delete, $CurrentPage.Parameters.id, [retURL='/a17'], true))}" standardController="Job_Application__c" showHeader="true"  tabStyle="Job_Application__c">
+<apex:includescript value="/soap/ajax/28.0/connection.js"/>
+
+<br></br>
+<font face="arial black" size="6" color="cranberry"> WARNING </font> 
+<br></br><br></br>
+<font size="3"> Deleting this <b>Job Application</b> will also delete any associated <b>Job Placement and Expense</b> records: </font>
+<br></br><br></br>
+
+<apex:relatedList list="Job_placements__r" />
+<apex:relatedList list="Expenses__r" />
+
+<br></br><br></br>
+<font size="3"> On deletion it will be stored for two weeks in your <b>Recycle Bin</b>, found in the sidebar to the left. </font> 
+<br></br>
+
+<br></br><apex:form >
+<font size="3"> To exit without deleting, use this <apex:commandButton action="{!cancel}" immediate="true" value=" Cancel "/> button.  </font> 
+<font size="3"> To continue and delete, use this <apex:commandButton value=" Confirm " action="{!URLFOR($Action.Task.Delete, $CurrentPage.Parameters.id,[retURL='/a17'],true)}"/> button.  </font>
+</apex:form><br></br><br></br>
+
+</apex:page>

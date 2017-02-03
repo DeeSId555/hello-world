@@ -1,0 +1,9 @@
+<apex:page standardController="Contact">
+<apex:relatedList list="Wave_Selection__r" />
+  <h1>Example interview test</h1>
+  <apex:form > 
+            Change Contact gender: <p/> 
+            <apex:inputField value="{!contact.Gender__c}"/> <p/>
+            <apex:commandButton action="{!save}" value="Save changed gender"/>
+            </apex:form>  
+</apex:page>

@@ -1,0 +1,9 @@
+Hi {!Contact.OwnerFirstName},
+<br class="blank" />
+<br class="blank" />
+The assessment invitation email that you just tried to send to {!Job_Application__c.Contact_Name__c} did not go through, as their rehire status is set as "Do Not Rehire".
+<br class="blank" />
+Please click on this click to view the Job Application: {!Job_Application__c.Link}
+<br class="blank" />
+<br class="blank" />
+This is a standard email, sent automatically when someone tries to send a assessment invitation email and the contact is blacklisted.

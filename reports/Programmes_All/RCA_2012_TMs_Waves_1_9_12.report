@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Id</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_placements__r$Contact_Name__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_placements__r$Wave__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Job_placements__r$Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>1,2,3,4,5,6,7,8,9,12</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Job_placements__r$Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>10,11</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Job_placements__r$Contact_Name__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Job_placements__r$Role__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Team Mentor</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Job_placements__r$Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Confirmed,Confirmed - back-up role</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>RCA 2012 TMs Waves 1-9, 12</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_Job_Placements__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

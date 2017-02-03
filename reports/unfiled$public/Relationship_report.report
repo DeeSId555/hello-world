@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Relationship__c.First_Relationship_Type__c</field>
+    </columns>
+    <columns>
+        <field>Relationship__c.Second_Relationship_Type__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_CNTC_FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Relationship__c.Wave__c</field>
+    </columns>
+    <columns>
+        <field>Relationship__c.To_Individual__c</field>
+    </columns>
+    <description>Adding assigned wave to relationship</description>
+    <filter>
+        <criteriaItems>
+            <column>Relationship__c.Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>BB A 1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Relationship__c.Second_Relationship_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Daughter,Son,ward</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Relationship report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Relationship__c@Relationship__c.From_Individual__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Relationship__c.End_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

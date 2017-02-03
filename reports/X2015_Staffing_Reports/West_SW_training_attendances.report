@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r$Role_to_assess_for__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r$Summer_Staff_mobile__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Cluster_2012__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r.Staffing_Event_attendances__r$Staffing_Event_Day__c.Day_date__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r.Staffing_Event_attendances__r$Attendance_status__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r$RTW_Type__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r$DBS_indicated_on_application__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r$DBS_docs_witnessed__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 OR 2) AND 3 AND (4 OR 6) AND (5 OR 6) AND 7</booleanFilter>
+        <criteriaItems>
+            <column>Contact.Job_Applications__r.Staffing_Event_attendances__r$Staffing_Event_Day__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>West London Mentor/Facilitator Training - 16/05/2015 9 am - 5 pm</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Job_Applications__r.Staffing_Event_attendances__r$Staffing_Event_Day__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>West London Mentor/Facilitator Training - 17/05/2015 9 am - 5 pm</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Job_Applications__r.Staffing_Event_attendances__r$Registration_status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Registered</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Job_Applications__r$DBS_docs_witnessed__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Yes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Job_Applications__r$DBS_indicated_on_application__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Valid DBS received</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Job_Applications__r$RTW_Validated__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Job_Applications__r$Role_to_assess_for__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Support Worker,Personal Coach</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>West SW training attendances</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_Job_Apps_and_Staffing_Event_Attendance__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Contact$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

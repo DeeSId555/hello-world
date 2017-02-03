@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Updated for 2014 SN, AO approved</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>1.4.2 Unavailable for assessment/training dates offered.</name>
+    <style>freeForm</style>
+    <subject>Re: booking form</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+Dear {!Job_Application__c.Contact_Name__c},
+
+Thank you for submitting your response on the booking form. Please contact me on the details below to arrange an alternative date.
+
+Best wishes,
+
+
+{!Contact.OwnerFullName}
+{!Contact.OwnerPhone}
+{!Contact.Contact_Owner_alternative_email__c}
+NCS with The Challenge
+
+CR 1.4.2</textOnly>
+    <type>html</type>
+</EmailTemplate>

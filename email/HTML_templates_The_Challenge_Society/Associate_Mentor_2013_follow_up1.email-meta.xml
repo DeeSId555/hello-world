@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Please only clone this template.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>Associate Mentor 2013 follow up</name>
+    <style>freeForm</style>
+    <subject>Your Associate Mentor application</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Here at The Challenge Society, we are dreaming of sunshine, and thinking about all of you who are studying for exams. Hope they are going well!
+
+The Challenge Society are inviting you to apply to be an Associate Mentor!
+
+This summer, the Challenge will kick off again for three unforgettable weeks.  And we want YOU to come back and be a part of it! Associate Mentors are Challengers who come back and volunteer with summer staff, using their knowledge and experience to support and mentor Challengers. You will be volunteering on the Real Challenge Design week, supporting Challengers to develop their campaigning skills, pitch to the Dragons and to get ready for the Real Challenge Action weekends.
+
+This is an amazing opportunity for you to stay involved in The Challenge Society; to meet up with old friends, to continue to develop your teamwork and leadership skills and to really feel you are making a difference by supporting Challengers. You will be given training beforehand and be fully supported by Challenge staff while you are volunteering with us. This is also a great chance to gain valuable experience that will help if you want to apply for other summer roles with The Challenge in the future.
+
+Sound good? Then what are you waiting for!
+
+Click on the link below to fill out the application form.
+http://www.clicktools.com/survey?iv=kwprkk5qx0op&amp;q1={!Contact.Id}
+
+You will be asked to specify which dates you are available as well as your preferred area to work.  If you have already volunteered with us as an Associate Mentor in the past, then don’t forget you can apply to be a Senior Associate Mentor – just tick the relevant box on the application.
+
+We’re really looking forward to reading your applications.
+
+Good luck!
+
+The Challenge Society</textOnly>
+    <type>html</type>
+</EmailTemplate>

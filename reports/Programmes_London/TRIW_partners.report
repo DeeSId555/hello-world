@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Partner_or_Venue__c.Bookings__r$Name__c</field>
+    </columns>
+    <columns>
+        <field>Partner_or_Venue__c.Bookings__r$Usage_Type__c</field>
+    </columns>
+    <columns>
+        <field>Partner_or_Venue__c$Account__c</field>
+    </columns>
+    <columns>
+        <field>Partner_or_Venue__c.Bookings__r$Contact__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Partner_or_Venue__c.Bookings__r$Name__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>TRIW A,TRIW B 4,TRIW B 6</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Partner_or_Venue__c.Bookings__r$Partner_or_Venue__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>,Venue,Acc,graduation,Dragon 2014,RCD Professional Visit 2014,Local Community Leader 2014</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>TRIW partners</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Prog14_UsagesBookings__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Partner_or_Venue__c.Bookings__r$Usage_Type__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Partner_or_Venue__c.Bookings__r$Booking_Date_Formula__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

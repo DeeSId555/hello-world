@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>Returner - invite to apply (CF, no recommended role)</name>
+    <style>formalLetter</style>
+    <subject>Seasonal roles with The Challenge</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}.
+
+
+Dear {!Contact.FirstName},
+
+Great news - Applications for the 2016 NCS seasonal programmes are now officially open!
+
+https://staffing.the-challenge.org/Login.aspx?ReturnUrl=%2fsecure%2f
+
+Last year, due to your incredible commitment, 81% of young people on the programme felt that they gained an understanding of what life is like for others, 72% believe that they are more able to trust people from other backgrounds, and 76% feel more confident about the future. Thank you for helping us achieve this!.
+
+2016 seasonal roles
+
+Due to some restructuring of the programme, unfortunately the role of Community Facilitator we will no longer be on offer for 2016 -  however, given your fantastic work in 2015, we’d still very much encourage you to apply for another of our seasonal roles for the upcoming programmes!
+
+Click here to see the roles we’re recruiting for this year: http://www.ncsthechallenge.org/jobs/#available-opportunities
+
+As you would be taking on a completely different role for 2016, you will be invited to one of our group assessments once again - this is simply to ascertain that you are suited to a different role.
+
+Applications now open!
+
+Please login to the staffing website using your existing username and password, and ensure that your personal details on the ‘My Profile’ section are up-to-date before starting your application.
+
+Username: {!Contact.Email}
+
+Password: {!Contact.Login_Password__c}
+
+Some of your application form will have been pre-filled for you with responses from last year’s application - however, depending on which role(s) you decide to go for, you will need to answer a range of new role-specific questions later in the form.
+
+Any questions?
+
+If you have any questions about our 2016 roles, or which role to apply for, please don’t hesitate to contact your local staffing team.
+
+*Please note that the Staffing Department will be closing on Wednesday 23rd December until the 4th of January. All queries during this period will be picked up on our return. Have a great festive break from all of us in the staffing team!
+
+
+Best wishes,
+
+The Staffing Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Call follow on email - autumn 2015</name>
+    <style>none</style>
+    <subject>NCS - thanks for talking to us &amp; how to apply</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTheChallenge.org
+
+Thanks for talking to us...
+
+
+
+Dear {!Contact.FirstName} and Parent or Guardian,
+
+Thank you for taking the time to talk to us about NCS today. We hope you are excited about this opportunity for {!Contact.FirstName} to develop skills which look great on a CV or UCAS application - and to have fun along the way!
+
+How do I apply?
+As we discussed on the phone, it’s easy to sign up online, and online applications receive a £5 discount. Parents or guardians should go to https://bookings.ncsthechallenge.org/ and use {!Contact.FirstName}’s unique login details to start their application:
+
+NCS ID: {!Contact.NCS_ID__c}
+Young person&apos;s password: {!Contact.Login_PIN__c}
+
+This young person password is for the initial stages of the application, which either the parent or guardian or the young person can complete. However, parts of the application can only be done by the parent or guardian. When you go online, the website will guide parents or guardians to create their own unique password so they can access the parent or guardian account and complete the application.
+
+When is the programme running?
+The programme is running during October half term* and over four weekend days in November. There are three parts to the autumn programme:
+
+Part 1 - Get Active (in October half term): Four days (three nights) staying away from home in the countryside doing outdoor adventure activities.
+Part 2 - Get Involved (in October half term): Three activity days developing skills, staying at home at night.
+Part 3 - Make Your Mark (weekend days on 7, 8, 14 and 21 November): Four weekend days designing and running a project in the local community, staying at home at night.
+
+Programme start dates will vary from the Friday evening (23 October) through to the Monday (26 October). We will confirm exact dates when confirming your place. You can also see specific start dates when booking online.
+
+The meeting points for NCS will generally be based in the area of the young person&apos;s school or a nearby area.
+
+How much does it cost?
+Government funding means that NCS costs you no more than a £50 admin fee, even though each place is valued at over £1000.  Plus, you get an extra £5 discount when you sign up online. This cost covers accommodation, food and transport when staying away from home during Part 1, as well as all activities and equipment throughout NCS. As we believe that cost should never be a barrier to taking part, financial assistance can also be requested when signing up.
+
+What are the benefits?
+NCS is an exciting, part-residential youth programme that builds skills and confidence in 16-17 year olds to help them get ahead in work and life. It’s the perfect opportunity to develop skills which look great on a CV or UCAS application - and to make friends along the way! Over 130,000 young people have already taken part in NCS. To find out more information about the benefits of the programme visit our website: http://www.ncsthechallenge.org/
+
+More questions?
+If you have any queries before sign-up, take a look at our Questions page at http://questions.ncsthechallenge.org/, or contact us at contact@ncsthechallenge.org or on 0203 542 2400. We’d be happy to hear from you.
+
+Places are limited so apply soon - don’t miss out on this once-in-a-lifetime opportunity!
+
+
+Yours sincerely,
+
+
+Tanya Dunne
+Head of Customer Services - The Challenge
+
+*The dates NCS is running this October are the October half term dates for the majority of schools in our areas.
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

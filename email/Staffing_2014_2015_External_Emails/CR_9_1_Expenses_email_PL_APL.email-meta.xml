@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 9.1 Expenses email - PL/APL/RM</name>
+    <style>formalLetter</style>
+    <subject>Claiming your expenses - NCS expense form for {!Job_placement__c.Wave__c}</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Job_placement__c.Staffing_Associate_email__c}.
+
+Dear {!Contact.FirstName},
+
+We hope you&apos;re ready to start your wave on the NCS programme! This email contains information on how to claim back money for any valid expenses you incur whilst you&apos;re working with us on wave {!Job_placement__c.Wave__c}.
+
+What expense claims can I submit?
+
+Seasonal staff members can only make expense claims for travel costs incurred during your work placement - not your travel to- and from your home to the NCS programme venues.
+
+We occasionally cover other expenses in exceptional circumstances - these claims are authorised on a case-by-case basis. Please ensure you discuss your claim with your Programmes team before submitting it online.
+
+How do I submit an expense claim?
+
+Click on the link below to access the expense form for wave {!Job_placement__c.Wave__c}.
+
+http://survey.clicktools.com/app/survey/go.jsp?iv=hl8kxfyebuyp&amp;q1={!Job_Application__c.Id}&amp;q2={!Job_placement__c.Id}
+
+Please read the instructions on the form carefully - claims submitted incorrectly will not be processed. You can re-use this expense form as many times as you need to submit your claims for this wave.
+
+What do I need to know?
+
+- All of your summer expenses must be submitted by 15th September 2016
+
+- Make sure that you attach clear scanned or photograhped copies of all relevant receipts/tickets, and keep the original copies until your expenses are reviewed. Paper receipts handed in or posted will not be processed.
+
+- This expense form is only valid for {!Job_placement__c.Wave__c} and is specific to you and your job placement on this wave. Please don&apos;t send this link to other seasonal staff!
+
+- Each expense claim is subject to approval by your programmes team.
+
+- Your programmes team will review all expense claims at the end of each wave.Try to submit your expense form within 3-4 days of your role ending.
+
+- Expenses will be processed on a fortnightly basis thereafter.
+
+- We aim to pay all expenses within two weeks of authorisation. We&apos;ll email you to let you know when your claims have been processed.
+
+Working on multiple waves this summer?
+
+This expense form is only valid for cost incurred on {!Job_placement__c.Wave__c}. We will provide you will a new expense form for each wave or work placement you are &apos;confirmed&apos; for. Please make sure you use the corresponding form for whichever wave you are submitted expenses for.
+
+Any questions?
+
+If you have any queries about The Challenge&apos;s expenses policy, or regarding any existing expense claims you might have, please get in touch with your local staffing team directly.
+
+Best wishes,
+
+The Challenge Staffing Team
+VISIT NCSTHECHALLENGE.ORG NOW</textOnly>
+    <type>html</type>
+</EmailTemplate>

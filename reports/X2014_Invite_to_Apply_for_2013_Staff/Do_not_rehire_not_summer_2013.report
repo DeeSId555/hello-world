@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Feedback__c$Name</field>
+    </columns>
+    <columns>
+        <field>Feedback__c$Contact_Name__c</field>
+    </columns>
+    <columns>
+        <field>Feedback__c$Wave__c</field>
+    </columns>
+    <columns>
+        <field>Feedback__c$Feedback_summary__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Feedback__c$Feedback_summary__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Do not rehire in any capacity next year</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Feedback__c$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Feedback__c.APM_Feedback_summer_staff</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Feedback__c$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>2013</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Feedback__c$Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>1,2,3,4,5,6,7,8,9,10,11,12</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Do not rehire - not summer 2013</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Feedback__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Feedback__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <block>
+        <blockInfo>
+            <blockId>B1</blockId>
+            <joinTable>a</joinTable>
+        </blockInfo>
+        <columns>
+            <field>FIRST_NAME</field>
+        </columns>
+        <columns>
+            <field>LAST_NAME</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>CONTACT_RECORDTYPE</column>
+                <isUnlocked>false</isUnlocked>
+                <operator>equals</operator>
+                <value>Contact.YP2012</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Contacts &amp; Accounts block 1</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>ContactList</reportType>
+        <scope>organization</scope>
+        <timeFrameFilter>
+            <dateColumn>CREATED_DATE</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <block>
+        <blockInfo>
+            <blockId>B0</blockId>
+            <joinTable>a</joinTable>
+        </blockInfo>
+        <columns>
+            <field>USERS.NAME</field>
+        </columns>
+        <columns>
+            <field>ACCOUNT.NAME</field>
+        </columns>
+        <columns>
+            <field>Account.Piggyback_PG_eve_date_2012__c</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>RECORDTYPE</column>
+                <isUnlocked>false</isUnlocked>
+                <operator>equals</operator>
+                <value>Account.Schools</value>
+            </criteriaItems>
+            <criteriaItems>
+                <column>Account.Piggyback_PG_eve_date_2012__c</column>
+                <isUnlocked>false</isUnlocked>
+                <operator>notEqual</operator>
+                <value></value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Accounts block 2</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>AccountList</reportType>
+        <scope>organization</scope>
+        <sortColumn>ACCOUNT.NAME</sortColumn>
+        <sortOrder>Asc</sortOrder>
+        <timeFrameFilter>
+            <dateColumn>CREATED_DATE</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId xsi:nil="true"/>
+        <joinTable>a</joinTable>
+    </blockInfo>
+    <format>MultiBlock</format>
+    <name>YP and Schools with piggy back PG eve</name>
+    <reportType>ContactList</reportType>
+    <showDetails>true</showDetails>
+</Report>

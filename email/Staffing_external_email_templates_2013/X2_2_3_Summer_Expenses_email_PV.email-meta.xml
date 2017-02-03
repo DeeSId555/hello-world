@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Workflow active (DS: 2014)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>2.2.3 Summer Expenses email (PV)</name>
+    <style>freeForm</style>
+    <subject>NCS with The Challenge: Expenses</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Job_placement__c.Staffing_Associate_email__c}
+
+Dear {!Job_placement__c.Contact_Name__c},
+
+It is possible that you will incur travel expenses during your assignment on NCS with The Challenge.
+
+What do we cover?
+
+As a Project Volunteer we will reimburse reasonable travel expenses occurred when on assignment. As a policy we do not cover any other expenses however, some additional costs may be agreed to by your Staffing Associate. These will be looked at on a case by case basis. Please discuss additional costs with your staffing associate before submitting an expense.
+
+Please submit your expenses on this form so that we can arrange for a reimbursement.
+Expenses form
+http://survey.clicktools.com/go?iv=1vyf7njxua1li&amp;q1={!Job_Application__c.Id}&amp;q2={!Job_placement__c.Id}
+
+What do you need to do?
+
+Please follow these steps:
+
+Scan or photograph your receipts from the summer.
+Number the scans/photographs to correspond to the items on the form.
+Itemise your expenses and upload scans or photographs of your receipts on the online form.
+Submit the form
+Please also send your receipts to programme.expenses@the-challenge.org
+The form can be re-used for further claims
+Please ensure that you retain all receipts until you have been paid your expenses.
+
+You can submit the form as many times as you need to fit all your expenses.
+
+
+
+We can only accept scanned or clearly photographed receipts. Paper receipts handed in or posted will not be processed.
+
+
+
+We encourage you to submit your expenses as soon you finish your placement. This will help to ensure you are reimbursed as quickly as possible.
+
+
+
+When will I be paid?
+
+
+
+Your claim will be authorised if everything is completed correctly. We will aim to pay all expenses directly into your bank account within two weeks of receiving your claim.
+
+
+
+Expenses will be paid to you on a monthly basis and need to be submitted before the first and third Sunday of the month to avoid delays to repayment.
+
+
+
+The deadline for the submission of expenses is 31 October 2014. Any expenses submitted after this date will not be paid.
+
+
+
+If you have any questions please contact me on the below email address.
+
+
+Best wishes,
+
+{!Job_placement__c.Staffing_Associate__c}
+{!Job_placement__c.Staffing_Associate_email__c}
+NCS with The Challenge
+
+CR 2.2.3 PV</textOnly>
+    <type>html</type>
+</EmailTemplate>

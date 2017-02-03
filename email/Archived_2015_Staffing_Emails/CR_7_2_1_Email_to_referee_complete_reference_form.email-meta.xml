@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 7.2.1 Email to referee - complete reference form</name>
+    <style>formalLetter</style>
+    <subject>Reference for {!Job_Application__c.Contact_Name__c}, please complete</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox and responses are not reviewed. Please instead email staffing.support@the-challenge.org
+Dear Sir or Madam,
+
+
+
+The Challenge is the largest provider of NCS, an intense youth and community programme. We recruit seasonal staff to work on the NCS programmes in various roles working with young people (aged 15 - 17) both residentially and non-residentially, and for this reason we ask all staff to provide contact details for referees who can indicate their suitability to work on the programme.
+
+
+
+{!Job_Application__c.Contact_Name__c} has named you as one of their referees.
+
+
+
+Please complete the following questions and email them back to staffing.support@the-challenge.org.
+
+
+
+If you would like a document version of the referee form, please click here to download a copy.
+https://staffing.the-challenge.org/assets/The_Challenge_NCS_Programme_References_form.docx
+
+
+1. Name of candidate: {!Job_Application__c.Contact_Name__c}
+
+2. Your Job Title:
+
+3. In what capacity do you know the named person:
+
+4. How long have you known this person? : ­­­­
+
+
+
+We are looking for somebody who:
+
+A - Would provide a really strong role model for young people
+
+B - Is organised and enthusiastic
+
+C - Is energetic and positive
+
+
+
+5. Do you feel you can give a reference given the characteristics we are seeking?
+
+Yes /No (if &apos;No&apos;, please elaborate)
+
+
+
+If ‘no’, please answer why and send your responses back to staffing.support@the-challenge.org. You will not need to complete any more questions beyond this point.
+
+
+
+If ‘yes’, please continue to question 6.
+
+
+
+6. Would you be happy for this person to work with young people?
+
+Yes/ No (if &apos;No&apos;, please elaborate)
+
+
+
+If ‘no’, please answer why and send your responses back to staffing.support@the-challenge.org. You will not need to complete any more questions beyond this point.
+
+
+
+If ‘yes’, please complete the remaining questions.
+
+
+
+7. Please give examples of how they meet criteria A, B and C.
+
+
+
+8. Please rate the candidates on categories listed below using the key
+
+KEY = EXCELLENT - 4, GOOD - 3, AVERAGE - 2, POOR 1, NOT APPLICABLE - 0
+
+
+Timekeeping
+Attendance
+Performance
+Attitude
+Teamwork/Team player
+Relationship with Line Manager
+Engaging Young People
+Facilitation of Groups
+Managing Staff
+Managing Challenging Behaviour with young people
+Ability to take on feedback
+
+
+If {!Job_Application__c.Contact_Name__c} was employed by you/your organisation please answer question 9 and 10, otherwise go to question 11.
+
+9. Number of days this person had off sick:
+
+
+
+10. Would you re-employ this person?
+
+Yes/ No
+
+11. Other useful Comments:
+
+
+
+
+Thank you for your time and co-operation
+Best wishes,
+
+
+
+The Challenge
+
+
+
+CR 7.2.1
+
+
+© The Challenge Network.
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+
+You are receiving this email because you opted to subscribe for communications from The</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,65 @@
+<apex:page controller="smagicsmro.RelatedObjectSMSController" tabStyle="Account">
+<apex:includeScript value="/soap/ajax/15.0/connection.js"/>
+<apex:includeScript value="/soap/ajax/15.0/apex.js"/>
+<script type="text/javascript">
+	function checkAll(cb)
+	{
+		var inputElem = document.getElementsByTagName("input");
+		for(var i=0; i<inputElem.length; i++){
+			if(inputElem[i].id.indexOf("checkedone")!=-1)
+				inputElem[i].checked = cb.checked;
+		}
+	}    
+</script>
+<apex:form >
+<apex:pageBlock id="main" title="Send SMS to Related Object">
+		<apex:pageMessages /><br/>
+		<apex:pageBlockSection id="sectionSenderId"  title="Sender Id">
+			<apex:selectList size="1"  value="{!senderId}">
+				<apex:selectOptions value="{!senderIds}"/>
+			</apex:selectList>
+	    </apex:pageBlockSection>
+	    
+	    <apex:pageBlockSection columns="3" title="Selected Numbers"> 
+			<apex:pageBlockTable value="{!contactWrapperList}" var="c">
+			<apex:column >
+				<apex:facet name="header">
+					<apex:inputCheckbox >
+					<apex:actionSupport event="onclick" action="{!getSelected}" onsubmit="checkAll(this)" rerender="Selected_PBS"/>
+					</apex:inputCheckbox>
+				</apex:facet>
+				<apex:inputCheckbox value="{!c.selected}" id="checkedone">
+					<apex:actionSupport event="onchange" action="{!getSelected}" rerender="Selected_PBS"/>
+				</apex:inputCheckbox>
+			</apex:column>
+			<apex:column headervalue="Name" value="{!c.nameFieldVal}" />
+			<apex:column headervalue="MobilePhone" value="{!c.mobilePhoneFieldVal}" />
+			</apex:pageBlockTable>
+		</apex:pageBlockSection>
+	
+	    <apex:pageBlockSection title="Use Templates">
+		<apex:selectList value="{!template}" size="1" title="Choose a template" >
+		    <apex:actionSupport event="onchange" rerender="textSection" action="{!changeTemplateText}" status="contactTemplateLoadingStatus"/>
+		    <apex:selectOptions value="{!items}"/>
+		</apex:selectList>
+		<apex:actionStatus id="contactTemplateLoadingStatus" startText="loading template..." stopText="" layout="inline" />
+		</apex:pageBlockSection> 
+	
+		<apex:pageBlockSection id="textSection" columns="2" title="SMS Text">   
+		    <apex:inputTextArea id="SMSText"  style="width:400px;height:80px;" value="{!smsText}"/>
+		</apex:pageBlockSection>
+	
+		<apex:pageBlockSection title="Send SMS To Opt-out Members :"> 
+		  <apex:selectList id="optOutList" value="{!optOutFieldValue}" size="1" >
+		    	<apex:selectOption itemValue="no" itemLabel="No" />
+		        <apex:selectOption itemValue="yes" itemLabel="Yes" />
+		    </apex:selectList>
+		</apex:pageBlockSection>
+
+		<apex:pageBlockButtons >
+			<apex:commandButton action="{!sendSMS}" value="send" />
+			 <apex:commandButton action="{!cancel}" value="cancel" />
+		</apex:pageBlockButtons>
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

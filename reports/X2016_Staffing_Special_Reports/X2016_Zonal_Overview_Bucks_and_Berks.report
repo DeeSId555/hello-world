@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Wave__c$Name</field>
+    </columns>
+    <columns>
+        <field>Wave__c.Jobs__r$Name</field>
+    </columns>
+    <columns>
+        <field>Wave__c.Jobs__r.Job_placements__r$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Wave__c$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Wave__c.X2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave__c.Jobs__r.Job_placements__r$Role__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Learning and Behaviour Mentor,Personal Coach,Support Worker</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave__c$Zone__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Bucks &amp; Berks</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave__c.Jobs__r.Job_placements__r$Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Selected as preference</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave__c.Jobs__r.Job_placements__r$Restricted_Availability_Formula__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>yes</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Wave__c$Wave_number__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Wave__c.Jobs__r.Job_placements__r$Contact__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Wave__c.Jobs__r.Job_placements__r$Role__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>2016 Zonal Overview - Bucks and Berks</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Waves_with_Jobs_with_Job_Placements_with_Job_Apps__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Wave__c$Big_Challenge_date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>1b. Associate Mentor Application Received &gt;17</name>
+    <style>freeForm</style>
+    <subject>Your {!Job_Application__c.Roles__c}  Application</subject>
+    <textOnly>Dear {!Contact.Name},
+
+Thanks for applying for the role of {!Job_Application__c.Role_to_assess_for__c}. As you will be over 17 years old during NCS with The Challenge 2014, we&apos;ll need you to complete a check with the Disclosure and Barring Service (DBS) before you carry out your role.
+
+This is nothing to worry about right now; the DBS check is completely free of charge to you and we&apos;ll help you to complete it.
+
+We&apos;ll be in touch to let you know what needs to happen next.</textOnly>
+    <type>html</type>
+</EmailTemplate>

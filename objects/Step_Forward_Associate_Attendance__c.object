@@ -1,0 +1,2104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Areas_of_Development__c</fullName>
+        <externalId>false</externalId>
+        <label>Areas of Development</label>
+        <length>2000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Areas_of_Strength__c</fullName>
+        <externalId>false</externalId>
+        <label>Areas of Strength</label>
+        <length>2000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Associate_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Associate Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Associate_First_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Activity__r.Associate__r.FirstName</formula>
+        <label>Associate First Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Associate_Last_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Activity__r.Associate__r.LastName</formula>
+        <label>Associate Last Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Associate_StepFwd_Mobile__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Activity__r.Associate_StepFwd_Mobile__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Associate StepFwd Mobile</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Availability_Request_Reason_Not_Availabl__c</fullName>
+        <externalId>false</externalId>
+        <label>Availability Request Reason Not Availabl</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Availability_Request_Response__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>used as a part of the workflow to prevent YPs from changing the status</inlineHelpText>
+        <label>Availability Request Response</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Available for Interview</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>unavailable for Interview</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Briefing_Call_Result__c</fullName>
+        <externalId>false</externalId>
+        <label>Briefing Call Result</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Call Successful</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No Response</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Call_notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Call notes</label>
+        <length>4000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Call_notes_input__c</fullName>
+        <externalId>false</externalId>
+        <label>Call notes input</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Event_Component__r.Contact_Name__c</formula>
+        <label>Contact Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_telephone_number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Event_Component__r.Contact_Phone_number__c</formula>
+        <label>Contact telephone number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Create_Step_Forward_Job_Placement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Creates Step Forward Job Placement</inlineHelpText>
+        <label>Create Step Forward Job Placement</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Date_Availability_Request_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Availability Request Sent</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Availability_Response_received__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Availability Response received</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Interview_details_sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Interview details sent</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_JD_Warm_up_call_made__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Call YP within 1 day of JD email.</inlineHelpText>
+        <label>Date JD Warm up call made</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Time_into_Text_Converter__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(Event_Day__c )&amp;&quot; &quot;&amp; Time_Slot_Allocated__c &amp;&quot;:00&quot;</formula>
+        <label>Date/Time into Text Converter</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_briefing_call_made__c</fullName>
+        <externalId>false</externalId>
+        <label>Date briefing call made</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_feedback_form_completed_by_Employer__c</fullName>
+        <externalId>false</externalId>
+        <label>Date feedback form completed by Employer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_feedback_form_completed_by_YP__c</fullName>
+        <externalId>false</externalId>
+        <label>Date feedback form completed by YP</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_feedback_form_sent_to_Employer__c</fullName>
+        <externalId>false</externalId>
+        <label>Date feedback form sent to Employer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_feedback_form_sent_to_YP__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Auto email sent 2 hours after the interview.</inlineHelpText>
+        <label>Date feedback form sent to YP</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_replied_to_Time_Slot_JD_email__c</fullName>
+        <externalId>false</externalId>
+        <label>Date replied to Time Slot+ JD email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Duration_of_Interview__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Event_Component__r.Duration_of_interview__c</formula>
+        <label>Duration of Interview</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EIF_Attitude__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Employer Interview Feedback: Attitude: The candidate was enthusiastic about the role</inlineHelpText>
+        <label>EIF Attitude</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 – Strongly disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2 – Disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3 – Neither agree nor disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4 – Agree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5 – Strongly agree</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EIF_Culture__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Employer Interview Feedback: Culture: The candidate understood our workplace culture and would fit in well</inlineHelpText>
+        <label>EIF Culture</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 – Strongly disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2 – Disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3 – Neither agree nor disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4 – Agree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5 – Strongly agree</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EIF_Notes__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Employer Interview Feedback: If candidate is unsuccessful(i.e. not 1st choice)] What is the main reason this candidate was unsuccessful?</inlineHelpText>
+        <label>EIF: Notes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>EIF_Preference__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Employer Interview Feedback:Employer preference: Of the candidates interviewed, which preference is this candidate?</inlineHelpText>
+        <label>EIF: Preference</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1st choice</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2nd choice</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3rd choice</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4th choice</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5th choice</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Veto</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Did not attend</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EIF_Prep_presentation__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Employer Interview Feedback: Candidate preparation: The candidate presented themselves well, i.e. appropriate smart dress and introduction</inlineHelpText>
+        <label>EIF:  Prep presentation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 – Strongly disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2 – Disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3 – Neither agree nor disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4 – Agree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5 – Strongly agree</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EIF_Prep_punctuality__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Employer Interview Feedback: Candidate preparation: The candidate arrived in good time for the interview</inlineHelpText>
+        <label>EIF: Prep punctuality</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 – Strongly disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2 – Disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3 – Neither agree nor disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4 – Agree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5 – Strongly agree</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EIF_Prep_research__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Employer Interview Feedback: Candidate preparation: The candidate was well prepared for their interview, e.g. understood role, had done some research on the company</inlineHelpText>
+        <label>EIF: Prep research</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 – Strongly disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2 – Disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3 – Neither agree nor disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4 – Agree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5 – Strongly agree</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EIF_Specific_feedback__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Employer InterviewFeedback: Any specific comments or feedback?</inlineHelpText>
+        <label>EIF Specific feedback</label>
+        <length>1000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>EIF_non_verbal_communication_skills__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Employer Interview Feedback: Candidate preparation: The candidate arrived in good time for the interview</inlineHelpText>
+        <label>EIF non-verbal communication skills</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 – Strongly disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2 – Disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3 – Neither agree nor disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4 – Agree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5 – Strongly agree</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EIF_pro_active__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Employer Interview Feedback: Experience and skills:  The candidate showed an ability to take the initiative or be pro-active</inlineHelpText>
+        <label>EIF  pro-active</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 – Strongly disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2 – Disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3 – Neither agree nor disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4 – Agree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5 – Strongly agree</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EIF_relevant_experience__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Employer Interview Feedback: Experience and skills:  The candidate  had the relevant experience and skills for the role</inlineHelpText>
+        <label>EIF relevant experience</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 – Strongly disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2 – Disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3 – Neither agree nor disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4 – Agree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5 – Strongly agree</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EIF_response_answers__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Employer Interview Feedback: Interview responses: The candidate gave clear answers to interview questions</inlineHelpText>
+        <label>EIF response answers</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 – Strongly disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2 – Disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3 – Neither agree nor disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4 – Agree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5 – Strongly agree</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EIF_response_examples__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Employer interview Feedback: Interview responses: The candidate used appropriate examples to support their answers</inlineHelpText>
+        <label>EIF response examples</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 – Strongly disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2 – Disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3 – Neither agree nor disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4 – Agree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5 – Strongly agree</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EIF_verbal_communication_skills__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Employer Interview Feedback: Communication skills: The candidate had good verbal communication skills</inlineHelpText>
+        <label>EIF verbal communication skills</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 – Strongly disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2 – Disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3 – Neither agree nor disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4 – Agree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5 – Strongly agree</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EIF_written_communication_skills__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Employer interview Feedback: Communication skills: The candidate had good written communication skills</inlineHelpText>
+        <label>EIF written communication skills</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 – Strongly disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2 – Disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3 – Neither agree nor disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4 – Agree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5 – Strongly agree</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Employer_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Event_Component__r.Step_Forward_Job__r.Employer__c</formula>
+        <label>Employer Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Employer_email__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Main Contact email - SFAM</inlineHelpText>
+        <label>Employer email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Event_Day_Time__c</fullName>
+        <externalId>false</externalId>
+        <formula>datetimevalue(Date_Time_into_Text_Converter__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Event Day &amp; Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Event_Day__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(isnull(Step_Forward_Event_Component__r.Event_Date_Matching__c)=false,Step_Forward_Event_Component__r.Event_Date_Matching__c, Step_Forward_Event_Component__r.Event_Date__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Event Day</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Exclusive__c</fullName>
+        <externalId>false</externalId>
+        <label>Exclusive?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Interview_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Interview Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In Review</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Shortlisted</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Shortlisted - reserve</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Shortlisted</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Available for Interview</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unavailable for interview</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No Response</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not attending</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unsuccessful - Did not attend</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unsuccessful - Interview cancelled</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unsuccessful - No offer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unsuccessful - YP not accepted</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Successful - Job offer accepted</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Interview_start_and_finish_times__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Event_Component__r.Interview_start_and_finish_times__c</formula>
+        <label>Interview start and finish times</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Job_Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Event_Component__r.Step_Forward_Job__r.Job_Address__c</formula>
+        <label>Job Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Job_Postcode__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Event_Component__r.Step_Forward_Job__r.Job_Postcode__c</formula>
+        <label>Job Postcode</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Level_of_Engagement__c</fullName>
+        <externalId>false</externalId>
+        <label>Level of Engagement</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Link_to_JD__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Event_Component__r.Step_Forward_Job__r.JD_Download_link__c</formula>
+        <label>Link to JD</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pathway__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(Step_Forward_Event_Component__r.Step_Forward_Job__r.Pathway__c)</formula>
+        <inlineHelpText>Pathway taken form the Job</inlineHelpText>
+        <label>Pathway</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Request_replacement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Request replacement</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SF_Job_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Step_Forward_Event_Component__r.Step_Forward_Job__r.Step_Forward_Job_Name__c</formula>
+        <label>SF Job Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Scheduled_date_for_briefing_call__c</fullName>
+        <externalId>false</externalId>
+        <label>Scheduled date for briefing call</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Send_Availability_Request__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Send Availability Request</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_Interview_slot_and_JD__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Send Interview slot and JD</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_copy_of_Employer_feedback__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Send copy of Employer feedback</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_feedback_form_to_employer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Account Manager calls employer to get feedback or checks this box after interview.</inlineHelpText>
+        <label>Send feedback form to employer</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_result_of_interview_email_to_YP__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Matching check this box only after ares of strength and ares of development fields completed.</inlineHelpText>
+        <label>Send result of interview email to YP</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Step_Forward_Activity__c</fullName>
+        <externalId>false</externalId>
+        <label>Step Forward Activity</label>
+        <referenceTo>Step_Forward_Activity__c</referenceTo>
+        <relationshipLabel>Step Forward Associates Attendance</relationshipLabel>
+        <relationshipName>Step_Forward_Associates_Attendance</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Step_Forward_Event_Component__c</fullName>
+        <externalId>false</externalId>
+        <label>Step Forward Event Component</label>
+        <referenceTo>Step_Forward_Event_Component__c</referenceTo>
+        <relationshipLabel>Step Forward Associates Attendance</relationshipLabel>
+        <relationshipName>Step_Forward_Associates_Attendance</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Time_Slot_Allocated__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(not(isblank(Step_Forward_Event_Component__r.Time_Slot__c)),Step_Forward_Event_Component__r.Time_Slot__c,
+
+(if(Name = Step_Forward_Event_Component__r.Time_Slot_1_Allocation__r.Name, Step_Forward_Event_Component__r.Time_Slot_1__c,
+if(Name = Step_Forward_Event_Component__r.Time_Slot_2_Allocation__r.Name, Step_Forward_Event_Component__r.Time_Slot_2__c,
+if(Name = Step_Forward_Event_Component__r.Time_Slot_3_Allocation__r.Name, Step_Forward_Event_Component__r.Time_Slot_3__c,
+if(Name = Step_Forward_Event_Component__r.Time_Slot_4_Allocation__r.Name, Step_Forward_Event_Component__r.Time_Slot_4__c,
+if(Name = Step_Forward_Event_Component__r.Time_Slot_5_Allocation__r.Name, Step_Forward_Event_Component__r.Time_Slot_5__c,
+if(Name = Step_Forward_Event_Component__r.Time_Slot_6_Allocation__r.Name, Step_Forward_Event_Component__r.Time_Slot_6__c,
+if(Name = Step_Forward_Event_Component__r.Time_Slot_7_Allocation__r.Name, Step_Forward_Event_Component__r.Time_Slot_7__c,
+if(Name = Step_Forward_Event_Component__r.Time_Slot_8_Allocation__r.Name, Step_Forward_Event_Component__r.Time_Slot_8__c,&quot;00:00&quot;))))))))))</formula>
+        <label>Time Slot Allocated</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_Slot_and_JD_Acknowledgement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Time Slot and JD Acknowledgement</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>YPIF_Commute__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>YP Interview Feedback: Commute: I can see myself doing this commute 4 days a week for a year</inlineHelpText>
+        <label>YPIF: Commute</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 – Strongly disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2 – Disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3 – Agree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4 – Strongly agree</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>YPIF_Feeling__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>YP Interview Feedback: Feeling: My interview made me feel excited</inlineHelpText>
+        <label>YPIF: Feeling</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 – Strongly disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2 – Disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3 – Agree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4 – Strongly agree</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>YPIF_Other_Comments__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>YP Interview Feedback: Other comments or feedback? E.g. Any specific concerns you may have about the commute, questions about the role.</inlineHelpText>
+        <label>YPIF: Other Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>YPIF_People__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>YP Interview Feedback: People: I got on well with the people I met</inlineHelpText>
+        <label>YPIF: People</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 - Strongly disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2 - Disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3 - Agree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4 - Strongly Agree</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>YPIF_Quality_check__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>YP Interview Feedback: Quality check: The location where my interview took place was safe and clean</inlineHelpText>
+        <label>YPIF: Quality check</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 – Strongly disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2 – Disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3 – Agree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4 – Strongly agree</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>YPIF_The_Role__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>YP Interview Feedback:The role: I could imagine enjoying this role for a year</inlineHelpText>
+        <label>YPIF: The Role</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1- Strongly disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2 - Disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3 - Agree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4- Strongly Agree</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>YPIF_The_workplace__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>YP Interview Feedback: The workplace: I could imagine working there</inlineHelpText>
+        <label>YPIF: The workplace</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 - Strongly disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2 - Disagree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3 - Agree</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4 - Strongly Agree</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>YP_Accepted_Job_Offer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>YP Accepted Job Offer</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Yp_at_risk__c</fullName>
+        <externalId>false</externalId>
+        <label>Yp at risk?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Step Forward Associate Attendance</label>
+    <listViews>
+        <fullName>Briefing_Calls_BA</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Pathway__c</columns>
+        <columns>Associate_First_Name__c</columns>
+        <columns>Associate_Last_Name__c</columns>
+        <columns>Employer_Name__c</columns>
+        <columns>Event_Day__c</columns>
+        <columns>Interview_Status__c</columns>
+        <columns>Date_Interview_details_sent__c</columns>
+        <columns>Date_replied_to_Time_Slot_JD_email__c</columns>
+        <columns>Date_JD_Warm_up_call_made__c</columns>
+        <columns>Scheduled_date_for_briefing_call__c</columns>
+        <columns>Date_briefing_call_made__c</columns>
+        <columns>Briefing_Call_Result__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Interview_Status__c</field>
+            <operation>equals</operation>
+            <value>Available for Interview</value>
+        </filters>
+        <filters>
+            <field>Pathway__c</field>
+            <operation>equals</operation>
+            <value>Accounting</value>
+        </filters>
+        <label>Briefing Calls // ACC</label>
+    </listViews>
+    <listViews>
+        <fullName>Briefing_Calls_BSS</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Event_Component__c</columns>
+        <columns>Associate_First_Name__c</columns>
+        <columns>Associate_Last_Name__c</columns>
+        <columns>SF_Job_Name__c</columns>
+        <columns>Employer_Name__c</columns>
+        <columns>Event_Day__c</columns>
+        <columns>Interview_Status__c</columns>
+        <columns>Date_Interview_details_sent__c</columns>
+        <columns>Date_replied_to_Time_Slot_JD_email__c</columns>
+        <columns>Date_JD_Warm_up_call_made__c</columns>
+        <columns>Scheduled_date_for_briefing_call__c</columns>
+        <columns>Date_briefing_call_made__c</columns>
+        <columns>Briefing_Call_Result__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Interview_Status__c</field>
+            <operation>equals</operation>
+            <value>Available for Interview</value>
+        </filters>
+        <filters>
+            <field>Pathway__c</field>
+            <operation>equals</operation>
+            <value>Business Administration</value>
+        </filters>
+        <label>Briefing Calls // BSS</label>
+    </listViews>
+    <listViews>
+        <fullName>Briefing_Calls_Ba1</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Event_Component__c</columns>
+        <columns>SF_Job_Name__c</columns>
+        <columns>Associate_First_Name__c</columns>
+        <columns>Associate_Last_Name__c</columns>
+        <columns>Employer_Name__c</columns>
+        <columns>Event_Day__c</columns>
+        <columns>Interview_Status__c</columns>
+        <columns>Date_Interview_details_sent__c</columns>
+        <columns>Date_replied_to_Time_Slot_JD_email__c</columns>
+        <columns>Date_JD_Warm_up_call_made__c</columns>
+        <columns>Scheduled_date_for_briefing_call__c</columns>
+        <columns>Date_briefing_call_made__c</columns>
+        <columns>Briefing_Call_Result__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Interview_Status__c</field>
+            <operation>equals</operation>
+            <value>Available for Interview</value>
+        </filters>
+        <filters>
+            <field>Pathway__c</field>
+            <operation>equals</operation>
+            <value>Business Administration</value>
+        </filters>
+        <label>Briefing Calls // Ba</label>
+    </listViews>
+    <listViews>
+        <fullName>Briefing_Calls_EYE</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Pathway__c</columns>
+        <columns>Associate_First_Name__c</columns>
+        <columns>Associate_Last_Name__c</columns>
+        <columns>Interview_Status__c</columns>
+        <columns>Date_Interview_details_sent__c</columns>
+        <columns>Event_Day__c</columns>
+        <columns>Employer_Name__c</columns>
+        <columns>Date_replied_to_Time_Slot_JD_email__c</columns>
+        <columns>Date_JD_Warm_up_call_made__c</columns>
+        <columns>Scheduled_date_for_briefing_call__c</columns>
+        <columns>Date_briefing_call_made__c</columns>
+        <columns>Briefing_Call_Result__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Interview_Status__c</field>
+            <operation>equals</operation>
+            <value>Available for Interview</value>
+        </filters>
+        <filters>
+            <field>Pathway__c</field>
+            <operation>equals</operation>
+            <value>Early Years Education</value>
+        </filters>
+        <label>Briefing Calls // EYE</label>
+    </listViews>
+    <listViews>
+        <fullName>Briefing_Calls_HOSP</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Step_Forward_Event_Component__c</columns>
+        <columns>SF_Job_Name__c</columns>
+        <columns>Associate_First_Name__c</columns>
+        <columns>Associate_Last_Name__c</columns>
+        <columns>Employer_Name__c</columns>
+        <columns>Event_Day__c</columns>
+        <columns>Interview_Status__c</columns>
+        <columns>Date_Interview_details_sent__c</columns>
+        <columns>Date_replied_to_Time_Slot_JD_email__c</columns>
+        <columns>Date_JD_Warm_up_call_made__c</columns>
+        <columns>Scheduled_date_for_briefing_call__c</columns>
+        <columns>Date_briefing_call_made__c</columns>
+        <columns>Briefing_Call_Result__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Pathway__c</field>
+            <operation>equals</operation>
+            <value>Hospitality</value>
+        </filters>
+        <label>Briefing Calls // HOSP</label>
+    </listViews>
+    <listViews>
+        <fullName>Briefing_Calls_IT</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Pathway__c</columns>
+        <columns>SF_Job_Name__c</columns>
+        <columns>Associate_First_Name__c</columns>
+        <columns>Associate_Last_Name__c</columns>
+        <columns>Employer_Name__c</columns>
+        <columns>Event_Day__c</columns>
+        <columns>Interview_Status__c</columns>
+        <columns>Time_Slot_Allocated__c</columns>
+        <columns>Send_Interview_slot_and_JD__c</columns>
+        <columns>Date_Interview_details_sent__c</columns>
+        <columns>Date_replied_to_Time_Slot_JD_email__c</columns>
+        <columns>Scheduled_date_for_briefing_call__c</columns>
+        <columns>Date_briefing_call_made__c</columns>
+        <columns>Briefing_Call_Result__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Interview_Status__c</field>
+            <operation>equals</operation>
+            <value>Available for Interview</value>
+        </filters>
+        <filters>
+            <field>Pathway__c</field>
+            <operation>startsWith</operation>
+            <value>IT</value>
+        </filters>
+        <label>Briefing Calls // IT</label>
+    </listViews>
+    <listViews>
+        <fullName>Briefing_Calls_SM_DM</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Pathway__c</columns>
+        <columns>Associate_First_Name__c</columns>
+        <columns>Associate_Last_Name__c</columns>
+        <columns>Employer_Name__c</columns>
+        <columns>Event_Day__c</columns>
+        <columns>Interview_Status__c</columns>
+        <columns>Date_Interview_details_sent__c</columns>
+        <columns>Date_replied_to_Time_Slot_JD_email__c</columns>
+        <columns>Date_JD_Warm_up_call_made__c</columns>
+        <columns>Scheduled_date_for_briefing_call__c</columns>
+        <columns>Date_briefing_call_made__c</columns>
+        <columns>Briefing_Call_Result__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Interview_Status__c</field>
+            <operation>equals</operation>
+            <value>Available for Interview</value>
+        </filters>
+        <filters>
+            <field>Pathway__c</field>
+            <operation>equals</operation>
+            <value>Social Media &amp; Digital Marketing</value>
+        </filters>
+        <label>Briefing Calls // SM&amp;DM</label>
+    </listViews>
+    <listViews>
+        <fullName>C3_Pre_Interview_calling_list</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Associate_First_Name__c</columns>
+        <columns>Associate_Last_Name__c</columns>
+        <columns>Associate_StepFwd_Mobile__c</columns>
+        <columns>Associate_Email__c</columns>
+        <columns>Pathway__c</columns>
+        <columns>Employer_Name__c</columns>
+        <columns>SF_Job_Name__c</columns>
+        <columns>Step_Forward_Event_Component__c</columns>
+        <columns>Event_Day__c</columns>
+        <columns>Interview_Status__c</columns>
+        <columns>Send_Availability_Request__c</columns>
+        <columns>Date_Availability_Response_received__c</columns>
+        <columns>Send_Interview_slot_and_JD__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Interview_Status__c</field>
+            <operation>equals</operation>
+            <value>In Review,Shortlisted,Shortlisted - reserve,Not Shortlisted</value>
+        </filters>
+        <label>In review and Shortlisting</label>
+    </listViews>
+    <listViews>
+        <fullName>Feedback1</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Associate_First_Name__c</columns>
+        <columns>Associate_Last_Name__c</columns>
+        <columns>Interview_Status__c</columns>
+        <columns>Pathway__c</columns>
+        <columns>Employer_Name__c</columns>
+        <columns>Step_Forward_Event_Component__c</columns>
+        <columns>Event_Day__c</columns>
+        <columns>Send_feedback_form_to_employer__c</columns>
+        <columns>Date_feedback_form_sent_to_Employer__c</columns>
+        <columns>Date_feedback_form_sent_to_YP__c</columns>
+        <columns>Date_feedback_form_completed_by_YP__c</columns>
+        <columns>Date_feedback_form_completed_by_Employer__c</columns>
+        <columns>EIF_Preference__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Interview_Status__c</field>
+            <operation>equals</operation>
+            <value>Available for Interview,Unsuccessful - Did not attend,Unsuccessful - No offer</value>
+        </filters>
+        <label>Feedback</label>
+    </listViews>
+    <listViews>
+        <fullName>Feedback_ACC</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Associate_First_Name__c</columns>
+        <columns>Associate_Last_Name__c</columns>
+        <columns>Interview_Status__c</columns>
+        <columns>Pathway__c</columns>
+        <columns>Employer_Name__c</columns>
+        <columns>Step_Forward_Event_Component__c</columns>
+        <columns>Event_Day__c</columns>
+        <columns>Send_feedback_form_to_employer__c</columns>
+        <columns>Date_feedback_form_sent_to_Employer__c</columns>
+        <columns>Date_feedback_form_sent_to_YP__c</columns>
+        <columns>Date_feedback_form_completed_by_YP__c</columns>
+        <columns>Date_feedback_form_completed_by_Employer__c</columns>
+        <columns>EIF_Preference__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Interview_Status__c</field>
+            <operation>equals</operation>
+            <value>Available for Interview,Unsuccessful - Did not attend,Unsuccessful - No offer</value>
+        </filters>
+        <filters>
+            <field>Pathway__c</field>
+            <operation>equals</operation>
+            <value>Accounting</value>
+        </filters>
+        <label>Feedback // ACC</label>
+    </listViews>
+    <listViews>
+        <fullName>Feedback_BSS1</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Associate_First_Name__c</columns>
+        <columns>Associate_Last_Name__c</columns>
+        <columns>Interview_Status__c</columns>
+        <columns>Pathway__c</columns>
+        <columns>Employer_Name__c</columns>
+        <columns>Step_Forward_Event_Component__c</columns>
+        <columns>Event_Day__c</columns>
+        <columns>Send_feedback_form_to_employer__c</columns>
+        <columns>Date_feedback_form_sent_to_Employer__c</columns>
+        <columns>Date_feedback_form_sent_to_YP__c</columns>
+        <columns>Date_feedback_form_completed_by_YP__c</columns>
+        <columns>Date_feedback_form_completed_by_Employer__c</columns>
+        <columns>EIF_Preference__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Interview_Status__c</field>
+            <operation>equals</operation>
+            <value>Available for Interview,Unsuccessful - Did not attend,Unsuccessful - No offer</value>
+        </filters>
+        <filters>
+            <field>Pathway__c</field>
+            <operation>equals</operation>
+            <value>Business Administration</value>
+        </filters>
+        <label>Feedback // BSS</label>
+    </listViews>
+    <listViews>
+        <fullName>Feedback_EYE</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Associate_First_Name__c</columns>
+        <columns>Associate_Last_Name__c</columns>
+        <columns>Interview_Status__c</columns>
+        <columns>Pathway__c</columns>
+        <columns>Employer_Name__c</columns>
+        <columns>Step_Forward_Event_Component__c</columns>
+        <columns>Event_Day__c</columns>
+        <columns>Send_feedback_form_to_employer__c</columns>
+        <columns>Date_feedback_form_sent_to_Employer__c</columns>
+        <columns>Date_feedback_form_sent_to_YP__c</columns>
+        <columns>Date_feedback_form_completed_by_YP__c</columns>
+        <columns>Date_feedback_form_completed_by_Employer__c</columns>
+        <columns>EIF_Preference__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Interview_Status__c</field>
+            <operation>equals</operation>
+            <value>Available for Interview,Unsuccessful - Did not attend,Unsuccessful - No offer</value>
+        </filters>
+        <filters>
+            <field>Pathway__c</field>
+            <operation>equals</operation>
+            <value>Early Years Education</value>
+        </filters>
+        <label>Feedback // EYE</label>
+    </listViews>
+    <listViews>
+        <fullName>Feedback_IT</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Associate_First_Name__c</columns>
+        <columns>Associate_Last_Name__c</columns>
+        <columns>Interview_Status__c</columns>
+        <columns>Pathway__c</columns>
+        <columns>Employer_Name__c</columns>
+        <columns>Step_Forward_Event_Component__c</columns>
+        <columns>Event_Day__c</columns>
+        <columns>Send_feedback_form_to_employer__c</columns>
+        <columns>Date_feedback_form_sent_to_Employer__c</columns>
+        <columns>Date_feedback_form_sent_to_YP__c</columns>
+        <columns>Date_feedback_form_completed_by_YP__c</columns>
+        <columns>Date_feedback_form_completed_by_Employer__c</columns>
+        <columns>EIF_Preference__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Interview_Status__c</field>
+            <operation>equals</operation>
+            <value>Available for Interview,Unsuccessful - Did not attend,Unsuccessful - No offer</value>
+        </filters>
+        <filters>
+            <field>Pathway__c</field>
+            <operation>startsWith</operation>
+            <value>IT</value>
+        </filters>
+        <label>Feedback // IT</label>
+    </listViews>
+    <listViews>
+        <fullName>Feedback_SM_DM</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Associate_First_Name__c</columns>
+        <columns>Associate_Last_Name__c</columns>
+        <columns>Interview_Status__c</columns>
+        <columns>Pathway__c</columns>
+        <columns>Employer_Name__c</columns>
+        <columns>Step_Forward_Event_Component__c</columns>
+        <columns>Event_Day__c</columns>
+        <columns>Send_feedback_form_to_employer__c</columns>
+        <columns>Date_feedback_form_sent_to_Employer__c</columns>
+        <columns>Date_feedback_form_sent_to_YP__c</columns>
+        <columns>Date_feedback_form_completed_by_YP__c</columns>
+        <columns>Date_feedback_form_completed_by_Employer__c</columns>
+        <columns>EIF_Preference__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Interview_Status__c</field>
+            <operation>equals</operation>
+            <value>Available for Interview,Unsuccessful - Did not attend,Unsuccessful - No offer</value>
+        </filters>
+        <filters>
+            <field>Pathway__c</field>
+            <operation>equals</operation>
+            <value>Social Media &amp; Digital Marketing</value>
+        </filters>
+        <label>Feedback // SM&amp;DM</label>
+    </listViews>
+    <listViews>
+        <fullName>Feedback_pending_result_and_comments</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Associate_First_Name__c</columns>
+        <columns>Associate_Last_Name__c</columns>
+        <columns>Interview_Status__c</columns>
+        <columns>Pathway__c</columns>
+        <columns>Employer_Name__c</columns>
+        <columns>Step_Forward_Event_Component__c</columns>
+        <columns>Event_Day__c</columns>
+        <columns>Send_feedback_form_to_employer__c</columns>
+        <columns>Date_feedback_form_sent_to_Employer__c</columns>
+        <columns>Date_feedback_form_sent_to_YP__c</columns>
+        <columns>Date_feedback_form_completed_by_YP__c</columns>
+        <columns>Date_feedback_form_completed_by_Employer__c</columns>
+        <columns>EIF_Preference__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Interview_Status__c</field>
+            <operation>equals</operation>
+            <value>Available for Interview</value>
+        </filters>
+        <label>Feedback - pending result and comments</label>
+    </listViews>
+    <listViews>
+        <fullName>In_review_and_Shortlisting_LEYF</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Associate_First_Name__c</columns>
+        <columns>Associate_Last_Name__c</columns>
+        <columns>Time_Slot_Allocated__c</columns>
+        <columns>Pathway__c</columns>
+        <columns>Employer_Name__c</columns>
+        <columns>Step_Forward_Event_Component__c</columns>
+        <columns>Event_Day__c</columns>
+        <columns>Interview_Status__c</columns>
+        <columns>Send_Availability_Request__c</columns>
+        <columns>Date_Availability_Response_received__c</columns>
+        <columns>Send_Interview_slot_and_JD__c</columns>
+        <columns>Date_Interview_details_sent__c</columns>
+        <columns>Date_replied_to_Time_Slot_JD_email__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Employer_Name__c</field>
+            <operation>contains</operation>
+            <value>LEYF</value>
+        </filters>
+        <label>In review and Shortlisting LEYF</label>
+    </listViews>
+    <listViews>
+        <fullName>JD_Sell_Briefing_calls</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Pathway__c</columns>
+        <columns>Associate_First_Name__c</columns>
+        <columns>Associate_Last_Name__c</columns>
+        <columns>Associate_StepFwd_Mobile__c</columns>
+        <columns>Employer_Name__c</columns>
+        <columns>SF_Job_Name__c</columns>
+        <columns>Event_Day__c</columns>
+        <columns>Interview_Status__c</columns>
+        <columns>Date_Interview_details_sent__c</columns>
+        <columns>Date_replied_to_Time_Slot_JD_email__c</columns>
+        <columns>Date_JD_Warm_up_call_made__c</columns>
+        <columns>Scheduled_date_for_briefing_call__c</columns>
+        <columns>Date_briefing_call_made__c</columns>
+        <columns>Briefing_Call_Result__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Interview_Status__c</field>
+            <operation>equals</operation>
+            <value>Available for Interview</value>
+        </filters>
+        <label>Briefing Calls // ALL</label>
+    </listViews>
+    <listViews>
+        <fullName>Job_Offer_Accepted_CHECK_LIST</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Associate_First_Name__c</columns>
+        <columns>Associate_Last_Name__c</columns>
+        <columns>Pathway__c</columns>
+        <columns>Employer_Name__c</columns>
+        <columns>Event_Day__c</columns>
+        <columns>YP_Accepted_Job_Offer__c</columns>
+        <columns>Step_Forward_Activity__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Interview_Status__c</field>
+            <operation>equals</operation>
+            <value>Successful - Job offer accepted</value>
+        </filters>
+        <filters>
+            <field>Employer_Name__c</field>
+            <operation>notContain</operation>
+            <value>Lord Mosca Inc.</value>
+        </filters>
+        <label>Job Offer Accepted CHECK LIST</label>
+    </listViews>
+    <listViews>
+        <fullName>Job_Offer_Accepted_CHECK_LIST1</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Associate_First_Name__c</columns>
+        <columns>Associate_Last_Name__c</columns>
+        <columns>Pathway__c</columns>
+        <columns>Employer_Name__c</columns>
+        <columns>Event_Day__c</columns>
+        <columns>YP_Accepted_Job_Offer__c</columns>
+        <columns>Step_Forward_Activity__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Interview_Status__c</field>
+            <operation>equals</operation>
+            <value>Successful - Job offer accepted</value>
+        </filters>
+        <filters>
+            <field>Employer_Name__c</field>
+            <operation>notContain</operation>
+            <value>Lord Mosca Inc.</value>
+        </filters>
+        <label>Job Offer Accepted CHECK LIST</label>
+    </listViews>
+    <listViews>
+        <fullName>Marriott_exclusive_to_Marriott</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Associate_First_Name__c</columns>
+        <columns>Associate_Last_Name__c</columns>
+        <columns>Interview_Status__c</columns>
+        <columns>Associate_StepFwd_Mobile__c</columns>
+        <columns>Associate_Email__c</columns>
+        <columns>Pathway__c</columns>
+        <columns>Employer_Name__c</columns>
+        <columns>SF_Job_Name__c</columns>
+        <columns>Step_Forward_Event_Component__c</columns>
+        <columns>Event_Day__c</columns>
+        <columns>Send_Availability_Request__c</columns>
+        <columns>Date_Availability_Response_received__c</columns>
+        <columns>Send_Interview_slot_and_JD__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Employer_Name__c</field>
+            <operation>contains</operation>
+            <value>Marriott</value>
+        </filters>
+        <label>Marriott - exclusive to Marriott</label>
+    </listViews>
+    <listViews>
+        <fullName>Not_Attending_Cancelled_interviews</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Pathway__c</columns>
+        <columns>SF_Job_Name__c</columns>
+        <columns>Associate_First_Name__c</columns>
+        <columns>Associate_Last_Name__c</columns>
+        <columns>Interview_Status__c</columns>
+        <columns>Employer_Name__c</columns>
+        <columns>Event_Day__c</columns>
+        <columns>Date_Interview_details_sent__c</columns>
+        <columns>Date_replied_to_Time_Slot_JD_email__c</columns>
+        <columns>Date_JD_Warm_up_call_made__c</columns>
+        <columns>Scheduled_date_for_briefing_call__c</columns>
+        <columns>Date_briefing_call_made__c</columns>
+        <columns>Briefing_Call_Result__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Interview_Status__c</field>
+            <operation>equals</operation>
+            <value>Not attending,Unsuccessful - Did not attend,Unsuccessful - Interview cancelled</value>
+        </filters>
+        <label>Not Attending / Cancelled interviews</label>
+    </listViews>
+    <listViews>
+        <fullName>Unsucccessful_calls</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Associate_First_Name__c</columns>
+        <columns>Associate_Last_Name__c</columns>
+        <columns>Pathway__c</columns>
+        <columns>Employer_Name__c</columns>
+        <columns>Step_Forward_Event_Component__c</columns>
+        <columns>Event_Day__c</columns>
+        <columns>Interview_Status__c</columns>
+        <columns>Send_result_of_interview_email_to_YP__c</columns>
+        <columns>Areas_of_Strength__c</columns>
+        <columns>Areas_of_Development__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Interview_Status__c</field>
+            <operation>equals</operation>
+            <value>Unsuccessful - No offer</value>
+        </filters>
+        <filters>
+            <field>Employer_Name__c</field>
+            <operation>notEqual</operation>
+            <value>Lord Mosca Inc.</value>
+        </filters>
+        <filters>
+            <field>Employer_Name__c</field>
+            <operation>notEqual</operation>
+            <value>ServiceTeam</value>
+        </filters>
+        <label>Unsucccessful calls</label>
+    </listViews>
+    <nameField>
+        <displayFormat>SFAA-{0000000}</displayFormat>
+        <label>Step Forward Associate Attendance Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Step Forward Associates Attendance</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Step_Forward_Event_Component__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>Step_Forward_Event_Component__c</searchFilterFields>
+        <searchResultsAdditionalFields>Step_Forward_Event_Component__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

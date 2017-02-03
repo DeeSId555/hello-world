@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Cloned copy including link to training booking</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>PV Offer, training and necessary info request</name>
+    <style>freeForm</style>
+    <subject>Re: Your assessment with The Challenge</subject>
+    <textOnly>Dear {!Contact.FirstName}
+
+Following your assessment at The Challenge we are unable to offer you a paid role but feel you would be ideally suited to the role of {!Job_Application__c.Role_to_assess_for__c} and hope you feel able to accept.
+
+This role will allow you to gain experience working with young people that could lead to paid employment in the future.
+
+This offer is conditional on the completion of a satisfactory CRB, your availability and the receipt of further information required to arrange a job placement for you.
+
+Please click on the buttons below to complete this process.
+
+ESSENTIAL INFO FORM: http://thechallenge.force.com/AvailableDates/OnlineUpdateJobApplication?jaid={!Job_Application__c.Id}
+
+TRAINING
+
+Please confirm your attendance at your training session and select your available dates as soon as possible to confirm that you would like to accept this offer.
+
+Please click on the link below to register for the training session in your region.
+
+http://thechallenge.secure.force.com/AvailableDates?key={!Job_Application__c.ContactId__c}&amp;Type={!Job_Application__c.00NC0000005EVyp}&amp;JType={!Job_Application__c.Id}
+
+During training, you will learn all you need to know about The Challenge and your role.
+
+If you cannot access either of the links above for any reason, please call me on the number below.
+
+Once this process is complete we will notify you.
+
+
+Best wishes,
+
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.Contact_Owner_alternative_email__c}
+
+CR 1.6.6</textOnly>
+    <type>html</type>
+</EmailTemplate>

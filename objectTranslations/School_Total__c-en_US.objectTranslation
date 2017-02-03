@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>School Total</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>School Totals</value>
+    </caseValues>
+    <fields>
+        <help><!-- Flags red if there are more than 10 YP&apos;s per school --></help>
+        <label><!-- Above Limit --></label>
+        <name>Above_Limit_YP_Per_School__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- School Totals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The number of remaining places --></help>
+        <label><!-- All places (inc overbooking) available --></label>
+        <name>All_places_inc_overbooking_available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned/Reserved - Combined School --></label>
+        <name>Assigned_Reserved_Combined_School__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned/Reserved - Single School --></label>
+        <name>Assigned_Reserved_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is this school filled on the wave? --></label>
+        <name>Is_this_school_filled_on_the_wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Waiting List --></label>
+        <name>On_Waiting_List_Total__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of remaining places on the wave --></help>
+        <label><!-- Online places available --></label>
+        <name>Online_places_available__c</name>
+    </fields>
+    <fields>
+        <help><!-- The wave&apos;s online school capacity --></help>
+        <label><!-- Online single school capacity --></label>
+        <name>Online_single_school_capacity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula, returns the smallest of all places available or places available for this particular school --></help>
+        <label><!-- Online single school places available --></label>
+        <name>Online_single_school_places_available__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the wave&apos;s region --></help>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- School Borough or area --></label>
+        <name>School_Borough_or_area__c</name>
+    </fields>
+    <fields>
+        <label><!-- School Cluster --></label>
+        <name>School_Cluster__c</name>
+    </fields>
+    <fields>
+        <label><!-- School Name --></label>
+        <name>School_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- School --></label>
+        <name>School__c</name>
+    </fields>
+    <fields>
+        <help><!-- The wave&apos;s single school capacity (including overbooking) --></help>
+        <label><!-- Single school capacity inc overbooking --></label>
+        <name>Single_school_capacity_inc_overbooking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Waiting List --></label>
+        <name>Waiting_List__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave --></label>
+        <name>Wave__c</name>
+        <relationshipLabel><!-- School Totals --></relationshipLabel>
+    </fields>
+    <nameFieldLabel>School Totals Id</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

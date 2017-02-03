@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_26910259</developerName>
+        <masterLabel>Cluster</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Wave__c$Name</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Redbridge B 10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Redbridge B 13</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Redbridge B 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Redbridge B 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Redbridge B 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Redbridge B 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Redbridge B 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Redbridge B 9</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 14</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 9</sourceValue>
+            </sourceValues>
+            <value>RAW</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Havering A 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Havering A 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Havering A 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barking A 13</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barking A 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barking A 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barking A 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barking A 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barking A 9</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Newham B 13</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Newham B 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Newham B 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Newham B 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Newham B 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Newham B 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Newham B 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Newham B 9</sourceValue>
+            </sourceValues>
+            <value>HABAN</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Wave__c$SL_4a_Place_Taken__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c$SL_4b_Place_Taken__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c$Remaining_SL5_Places_Available__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Wave__c$PC_KO_day__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>6/18/2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave__c$PC_KO_day__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>8/11/2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave__c$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>test</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Wave__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>2016Sales SL4 and SL5 Availability</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Waves__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Wave__c$Big_Challenge_date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

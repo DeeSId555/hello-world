@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.HS_Activities__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.HS_Activities__r$Date_HS_Application_form_received__c</field>
+    </columns>
+    <columns>
+        <field>Contact$MobilePhone</field>
+    </columns>
+    <columns>
+        <field>Contact$HomePhone</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Young_Person</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Assigned_Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Brent,Hillingdon,Ealing,Enfield,Merton,Southwark,Croydon,Tower Hamlets</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Assigned_Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.HS_Activities__r$HS_Application_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Application in Progress,Application Submitted - Awaiting Confirmation,Placement Confirmed,Application Unsuccessful</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$Assigned_Wave__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>HS Invitees by Wave (W2) - not started</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_or_without_HS_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$Added_to_waiting_list__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

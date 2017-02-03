@@ -1,0 +1,3691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Wave</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Waves</value>
+    </caseValues>
+    <fields>
+        <label><!-- APL --></label>
+        <name>APL__c</name>
+        <relationshipLabel><!-- Waves (APL) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- APM first name --></label>
+        <name>APM_first_name_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- Acc. comm. prog variation URL --></label>
+        <name>Acc_comm_prog_variation_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Count of support level 4b YP with assigned/reserved wave selections --></help>
+        <label><!-- Support level 4b assigned/reserved --></label>
+        <name>Access_category_4_5_assigned_reserved__c</name>
+    </fields>
+    <fields>
+        <label><!-- All Girl Wave? --></label>
+        <name>All_Girl_Wave__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The number of remaining places for someone at an independent school, including overbooking and reserved places --></help>
+        <label><!-- All Ind Sch places (inc over) available --></label>
+        <name>All_Ind_Sch_places_inc_over_available__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of remaining places for girls, including overbooking and reserved places --></help>
+        <label><!-- All female places (inc over) available --></label>
+        <name>All_female_places_inc_over_available__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of remaining places for boys, including overbooking and reserved places --></help>
+        <label><!-- All male places (inc over) available --></label>
+        <name>All_male_places_inc_over_available__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of remaining places, including overbooking and reserved places --></help>
+        <label><!-- All places (inc overbooking) available --></label>
+        <name>All_places_inc_overbooking_available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ant --></label>
+        <name>Ant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned/Reserved paid on Wave --></label>
+        <name>Assigned_Reserved_paid_on_Wave__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula which looks at number of support level 5 YP on wave to ascertain capacity level for more 5s, based on wave maximum of 2. Does not take any other factors (e.g. where there are places at all available on the wave) into account --></help>
+        <label><!-- At support level 5 capacity? --></label>
+        <name>At_support_level_5_capacity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check if wave is an Autumn wave --></help>
+        <label><!-- Autumn wave --></label>
+        <name>Autumn_wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Big Challenge KO driving and parking --></label>
+        <name>Big_Challenge_KO_driving_and_parking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Big Challenge KO public transport nearby --></label>
+        <name>Big_Challenge_KO_public_transport__c</name>
+    </fields>
+    <fields>
+        <label><!-- Big Challenge KO venue address --></label>
+        <name>Big_Challenge_KO_venue_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Big Challenge SMS address --></label>
+        <name>Big_Challenge_SMS_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Big Challenge date --></label>
+        <name>Big_Challenge_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The area/borough (either school or home) that the wave is a booking option for. (This field is not part of the booking site: rather it exists to help us understand the options) --></help>
+        <label><!-- Booking option for --></label>
+        <name>Booking_option_for__c</name>
+        <picklistValues>
+            <masterLabel>Barking and Dagenham</masterLabel>
+            <translation><!-- Barking and Dagenham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barnet</masterLabel>
+            <translation><!-- Barnet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bexley</masterLabel>
+            <translation><!-- Bexley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birmingham NE</masterLabel>
+            <translation><!-- Birmingham NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birmingham NW</masterLabel>
+            <translation><!-- Birmingham NW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birmingham SE</masterLabel>
+            <translation><!-- Birmingham SE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birmingham SW</masterLabel>
+            <translation><!-- Birmingham SW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blackburn with Darwen</masterLabel>
+            <translation><!-- Blackburn with Darwen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brent</masterLabel>
+            <translation><!-- Brent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bromley</masterLabel>
+            <translation><!-- Bromley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burnley</masterLabel>
+            <translation><!-- Burnley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bury</masterLabel>
+            <translation><!-- Bury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Camden</masterLabel>
+            <translation><!-- Camden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>City of London</masterLabel>
+            <translation><!-- City of London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coventry</masterLabel>
+            <translation><!-- Coventry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Croydon</masterLabel>
+            <translation><!-- Croydon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dudley</masterLabel>
+            <translation><!-- Dudley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ealing</masterLabel>
+            <translation><!-- Ealing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enfield</masterLabel>
+            <translation><!-- Enfield --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greenwich</masterLabel>
+            <translation><!-- Greenwich --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hackney</masterLabel>
+            <translation><!-- Hackney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hammersmith and Fulham</masterLabel>
+            <translation><!-- Hammersmith and Fulham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haringey</masterLabel>
+            <translation><!-- Haringey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Harrow</masterLabel>
+            <translation><!-- Harrow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Havering</masterLabel>
+            <translation><!-- Havering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hillingdon</masterLabel>
+            <translation><!-- Hillingdon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hounslow</masterLabel>
+            <translation><!-- Hounslow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Islington</masterLabel>
+            <translation><!-- Islington --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kensington and Chelsea</masterLabel>
+            <translation><!-- Kensington and Chelsea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kingston</masterLabel>
+            <translation><!-- Kingston --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lambeth</masterLabel>
+            <translation><!-- Lambeth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lancashire</masterLabel>
+            <translation><!-- Lancashire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lewisham</masterLabel>
+            <translation><!-- Lewisham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester</masterLabel>
+            <translation><!-- Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merton</masterLabel>
+            <translation><!-- Merton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newham</masterLabel>
+            <translation><!-- Newham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North Warwickshire</masterLabel>
+            <translation><!-- North Warwickshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oldham</masterLabel>
+            <translation><!-- Oldham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preston</masterLabel>
+            <translation><!-- Preston --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redbridge</masterLabel>
+            <translation><!-- Redbridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Richmond</masterLabel>
+            <translation><!-- Richmond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rochdale</masterLabel>
+            <translation><!-- Rochdale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salford</masterLabel>
+            <translation><!-- Salford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sandwell</masterLabel>
+            <translation><!-- Sandwell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solihull</masterLabel>
+            <translation><!-- Solihull --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Warwickshire</masterLabel>
+            <translation><!-- South Warwickshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southwark</masterLabel>
+            <translation><!-- Southwark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stockport</masterLabel>
+            <translation><!-- Stockport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surrey</masterLabel>
+            <translation><!-- Surrey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sutton</masterLabel>
+            <translation><!-- Sutton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tameside</masterLabel>
+            <translation><!-- Tameside --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tower Hamlets</masterLabel>
+            <translation><!-- Tower Hamlets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walsall</masterLabel>
+            <translation><!-- Walsall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waltham Forest</masterLabel>
+            <translation><!-- Waltham Forest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wandsworth</masterLabel>
+            <translation><!-- Wandsworth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Westminster</masterLabel>
+            <translation><!-- Westminster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wigan</masterLabel>
+            <translation><!-- Wigan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wolverhampton</masterLabel>
+            <translation><!-- Wolverhampton --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Used to link the programme pack and timetable to the correct booklet for the mailing house --></help>
+        <label><!-- Booklet code --></label>
+        <name>Booklet_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Boroughs or areas --></label>
+        <name>Boroughs_or_areas__c</name>
+        <picklistValues>
+            <masterLabel>Acocks Green</masterLabel>
+            <translation><!-- Acocks Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aston</masterLabel>
+            <translation><!-- Aston --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barking &amp; Dagenham</masterLabel>
+            <translation><!-- Barking &amp; Dagenham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barnet</masterLabel>
+            <translation><!-- Barnet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bartley Green</masterLabel>
+            <translation><!-- Bartley Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bexley</masterLabel>
+            <translation><!-- Bexley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billesley</masterLabel>
+            <translation><!-- Billesley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birmingham</masterLabel>
+            <translation><!-- Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blackburn</masterLabel>
+            <translation><!-- Blackburn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blackburn with Darwen</masterLabel>
+            <translation><!-- Blackburn with Darwen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blackpool</masterLabel>
+            <translation><!-- Blackpool --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bordesley Green</masterLabel>
+            <translation><!-- Bordesley Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bournville</masterLabel>
+            <translation><!-- Bournville --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bracknell Forest</masterLabel>
+            <translation><!-- Bracknell Forest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bradford</masterLabel>
+            <translation><!-- Bradford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brandwood</masterLabel>
+            <translation><!-- Brandwood --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brent</masterLabel>
+            <translation><!-- Brent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bromley</masterLabel>
+            <translation><!-- Bromley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burnley</masterLabel>
+            <translation><!-- Burnley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bury</masterLabel>
+            <translation><!-- Bury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CNE Birmingham</masterLabel>
+            <translation><!-- CNE Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CNW Birmingham</masterLabel>
+            <translation><!-- CNW Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSE Birmingham</masterLabel>
+            <translation><!-- CSE Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSW Birmingham</masterLabel>
+            <translation><!-- CSW Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Camden</masterLabel>
+            <translation><!-- Camden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central Manchester</masterLabel>
+            <translation><!-- Central Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chiltern</masterLabel>
+            <translation><!-- Chiltern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chorley</masterLabel>
+            <translation><!-- Chorley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>City of London</masterLabel>
+            <translation><!-- City of London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coventry</masterLabel>
+            <translation><!-- Coventry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Croydon</masterLabel>
+            <translation><!-- Croydon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dudley</masterLabel>
+            <translation><!-- Dudley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ealing</masterLabel>
+            <translation><!-- Ealing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edgbaston</masterLabel>
+            <translation><!-- Edgbaston --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elmbridge</masterLabel>
+            <translation><!-- Elmbridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enfield</masterLabel>
+            <translation><!-- Enfield --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Epsom</masterLabel>
+            <translation><!-- Epsom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Epsom and Ewell</masterLabel>
+            <translation><!-- Epsom and Ewell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erdington</masterLabel>
+            <translation><!-- Erdington --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Godalming</masterLabel>
+            <translation><!-- Godalming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greenwich</masterLabel>
+            <translation><!-- Greenwich --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guildford</masterLabel>
+            <translation><!-- Guildford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hackney</masterLabel>
+            <translation><!-- Hackney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hall Green</masterLabel>
+            <translation><!-- Hall Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hammersmith</masterLabel>
+            <translation><!-- Hammersmith --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hammersmith &amp; Fulham</masterLabel>
+            <translation><!-- Hammersmith &amp; Fulham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Handsworth Wood</masterLabel>
+            <translation><!-- Handsworth Wood --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Harborne</masterLabel>
+            <translation><!-- Harborne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haringey</masterLabel>
+            <translation><!-- Haringey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Harrow</masterLabel>
+            <translation><!-- Harrow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Havering</masterLabel>
+            <translation><!-- Havering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hillingdon</masterLabel>
+            <translation><!-- Hillingdon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hodge Hill</masterLabel>
+            <translation><!-- Hodge Hill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hounslow</masterLabel>
+            <translation><!-- Hounslow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Islington</masterLabel>
+            <translation><!-- Islington --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kensington &amp; Chelsea</masterLabel>
+            <translation><!-- Kensington &amp; Chelsea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kings Norton</masterLabel>
+            <translation><!-- Kings Norton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kingstanding</masterLabel>
+            <translation><!-- Kingstanding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kingston</masterLabel>
+            <translation><!-- Kingston --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ladywood</masterLabel>
+            <translation><!-- Ladywood --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lambeth</masterLabel>
+            <translation><!-- Lambeth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lancashire</masterLabel>
+            <translation><!-- Lancashire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leeds</masterLabel>
+            <translation><!-- Leeds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leigh</masterLabel>
+            <translation><!-- Leigh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lewisham</masterLabel>
+            <translation><!-- Lewisham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Longbridge</masterLabel>
+            <translation><!-- Longbridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lozells and East Handsworth</masterLabel>
+            <translation><!-- Lozells and East Handsworth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Luton</masterLabel>
+            <translation><!-- Luton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester</masterLabel>
+            <translation><!-- Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester Central North</masterLabel>
+            <translation><!-- Manchester Central North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester Central South</masterLabel>
+            <translation><!-- Manchester Central South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester North</masterLabel>
+            <translation><!-- Manchester North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester South</masterLabel>
+            <translation><!-- Manchester South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merton</masterLabel>
+            <translation><!-- Merton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mole Valley</masterLabel>
+            <translation><!-- Mole Valley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moseley and Kings Heath</masterLabel>
+            <translation><!-- Moseley and Kings Heath --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE Birmingham</masterLabel>
+            <translation><!-- NE Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NW Birmingham</masterLabel>
+            <translation><!-- NW Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nechells</masterLabel>
+            <translation><!-- Nechells --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newbury</masterLabel>
+            <translation><!-- Newbury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newham</masterLabel>
+            <translation><!-- Newham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North Birmingham</masterLabel>
+            <translation><!-- North Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North Manchester</masterLabel>
+            <translation><!-- North Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North Warwickshire</masterLabel>
+            <translation><!-- North Warwickshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northfield</masterLabel>
+            <translation><!-- Northfield --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oldham</masterLabel>
+            <translation><!-- Oldham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oscott</masterLabel>
+            <translation><!-- Oscott --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perry Barr</masterLabel>
+            <translation><!-- Perry Barr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preston</masterLabel>
+            <translation><!-- Preston --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quinton</masterLabel>
+            <translation><!-- Quinton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reading</masterLabel>
+            <translation><!-- Reading --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redbridge</masterLabel>
+            <translation><!-- Redbridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redditch</masterLabel>
+            <translation><!-- Redditch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reigate</masterLabel>
+            <translation><!-- Reigate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reigate &amp; Banstead</masterLabel>
+            <translation><!-- Reigate &amp; Banstead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Richmond</masterLabel>
+            <translation><!-- Richmond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rochdale</masterLabel>
+            <translation><!-- Rochdale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Runnymede</masterLabel>
+            <translation><!-- Runnymede --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SE Birmingham</masterLabel>
+            <translation><!-- SE Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SW Birmingham</masterLabel>
+            <translation><!-- SW Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salford</masterLabel>
+            <translation><!-- Salford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sandwell</masterLabel>
+            <translation><!-- Sandwell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Selly Oak</masterLabel>
+            <translation><!-- Selly Oak --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shard End</masterLabel>
+            <translation><!-- Shard End --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sheldon</masterLabel>
+            <translation><!-- Sheldon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slough</masterLabel>
+            <translation><!-- Slough --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soho</masterLabel>
+            <translation><!-- Soho --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solihull</masterLabel>
+            <translation><!-- Solihull --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Birmingham</masterLabel>
+            <translation><!-- South Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Buckinghamshire</masterLabel>
+            <translation><!-- South Buckinghamshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Manchester</masterLabel>
+            <translation><!-- South Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Warwickshire</masterLabel>
+            <translation><!-- South Warwickshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Yardley</masterLabel>
+            <translation><!-- South Yardley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southwark</masterLabel>
+            <translation><!-- Southwark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sparkbrook</masterLabel>
+            <translation><!-- Sparkbrook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spelthorne</masterLabel>
+            <translation><!-- Spelthorne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Springfield</masterLabel>
+            <translation><!-- Springfield --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staines</masterLabel>
+            <translation><!-- Staines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stechford and Yardley North</masterLabel>
+            <translation><!-- Stechford and Yardley North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stockland Green</masterLabel>
+            <translation><!-- Stockland Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stockport</masterLabel>
+            <translation><!-- Stockport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stratford-on-Avon</masterLabel>
+            <translation><!-- Stratford-on-Avon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surrey</masterLabel>
+            <translation><!-- Surrey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surrey Heath</masterLabel>
+            <translation><!-- Surrey Heath --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sutton</masterLabel>
+            <translation><!-- Sutton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sutton Four Oaks</masterLabel>
+            <translation><!-- Sutton Four Oaks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sutton New Hall</masterLabel>
+            <translation><!-- Sutton New Hall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sutton Trinity</masterLabel>
+            <translation><!-- Sutton Trinity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sutton Vesey</masterLabel>
+            <translation><!-- Sutton Vesey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tameside</masterLabel>
+            <translation><!-- Tameside --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tandridge</masterLabel>
+            <translation><!-- Tandridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tower Hamlets</masterLabel>
+            <translation><!-- Tower Hamlets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tyburn</masterLabel>
+            <translation><!-- Tyburn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wakefield</masterLabel>
+            <translation><!-- Wakefield --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walsall</masterLabel>
+            <translation><!-- Walsall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waltham Forest</masterLabel>
+            <translation><!-- Waltham Forest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wandsworth</masterLabel>
+            <translation><!-- Wandsworth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warwickshire</masterLabel>
+            <translation><!-- Warwickshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Washwood Heath</masterLabel>
+            <translation><!-- Washwood Heath --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waverley</masterLabel>
+            <translation><!-- Waverley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weoley</masterLabel>
+            <translation><!-- Weoley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Berkshire</masterLabel>
+            <translation><!-- West Berkshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Lancashire</masterLabel>
+            <translation><!-- West Lancashire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Westminster</masterLabel>
+            <translation><!-- Westminster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wigan</masterLabel>
+            <translation><!-- Wigan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windsor &amp; Maidenhead</masterLabel>
+            <translation><!-- Windsor &amp; Maidenhead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Woking</masterLabel>
+            <translation><!-- Woking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wokingham</masterLabel>
+            <translation><!-- Wokingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wolverhampton</masterLabel>
+            <translation><!-- Wolverhampton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wycombe</masterLabel>
+            <translation><!-- Wycombe --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Boys Assigned --></label>
+        <name>Boys_Assigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Boys Reserved/Assigned --></label>
+        <name>Boys_Reserved_Assigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Boys Reserved --></label>
+        <name>Boys_Reserved__c</name>
+    </fields>
+    <fields>
+        <label><!-- CCT --></label>
+        <name>Central_Ops__c</name>
+        <relationshipLabel><!-- Waves (CCT) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Challenge Action Leader Training Date --></label>
+        <name>Chal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Challenging Behaviour --></label>
+        <name>Challenging_Behaviour__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of places, including overbooking, available for YP at a champion school. Calculated from total capacity and champion school percentage limit --></help>
+        <label><!-- Champion school capacity inc overbooking --></label>
+        <name>Champion_school_capacity_inc_overbooking__c</name>
+    </fields>
+    <fields>
+        <help><!-- Percentage of YP on the wave who can attend from the same champion school --></help>
+        <label><!-- Champion school place limit percentage --></label>
+        <name>Champion_school_place_limit_percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will there be a coach needed on Presentation day? Or can they walk to the venue? --></help>
+        <label><!-- Coach on Presentation Day? --></label>
+        <name>Coach_on_Presentation_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed RCA Timetable Changed --></label>
+        <name>Completed_RCA_Timetable_Changed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed Timetable Changed --></label>
+        <name>Completed_Timetable_Changed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Conga Template --></label>
+        <name>Conga_Template__c</name>
+        <relationshipLabel><!-- Waves --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Formula which returns 1 if any girls are reserved/assigned; returns 0 if no girls are reserved/assigned. Formula is used within reports --></help>
+        <label><!-- Count female --></label>
+        <name>Count_female__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula which returns 1 if any boys are reserved/assigned; returns 0 if no boys are reserved/assigned. Formula is used within reports --></help>
+        <label><!-- Count male --></label>
+        <name>Count_male__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date RCA Timetable Sent --></label>
+        <name>Date_RCA_Timetable_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Timetable Sent --></label>
+        <name>Date_Timetable_Sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is updated via workflow when Website display status is not blank and this field is blank --></help>
+        <label><!-- Date wave closed on OBS --></label>
+        <name>Date_wave_closed_on_OBS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days to PC KO --></label>
+        <name>Days_to_PC_KO__c</name>
+    </fields>
+    <fields>
+        <help><!-- The wave staffing fields are currently being updated. If you have questions or concerns regarding these fields, please contact innovation.support@the-challenge.org --></help>
+        <label><!-- Support PM 1 --></label>
+        <name>Delivery_PM__c</name>
+        <relationshipLabel><!-- Waves (Support PM 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- NCS-defined period in which wave is delivered --></help>
+        <label><!-- Delivery period (NCS) --></label>
+        <name>Delivery_period_NCS__c</name>
+        <picklistValues>
+            <masterLabel>Autumn</masterLabel>
+            <translation><!-- Autumn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring</masterLabel>
+            <translation><!-- Spring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summer</masterLabel>
+            <translation><!-- Summer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Multi-select Picklist Formula. Box is checked if demand smoothing is True for the Borough or Area (Birmingham, Manchester and London Boroughs) --></help>
+        <label><!-- Demand is Smoothed --></label>
+        <name>Demand_is_Smoothed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sentence which describes the break between PC and TC. Used to merge into timetables for YP and PG. --></help>
+        <label><!-- Description of PC to TC break --></label>
+        <name>Description_of_PC_to_TC_break__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sentence describing the travel time that YP and PG should leave in order to ensure they reach venues on time. Used to merge into the timetables supplied to YP and PG --></help>
+        <label><!-- Description of travel time for YP and PG --></label>
+        <name>Description_of_travel_time_for_YP_and_PG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details of non-NCS starters --></label>
+        <name>Details_of_non_NCS_starters__c</name>
+    </fields>
+    <fields>
+        <label><!-- Diff YP on Wave and Sales figures --></label>
+        <name>Diff_YP_on_Wave_and_Sales_figures__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do YP meet at Residential Acommodation? --></label>
+        <name>Do_YP_meet_at_RA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document file name --></label>
+        <name>Document_file_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document label --></label>
+        <name>Document_label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Driving and parking directions --></label>
+        <name>Driving_and_parking_directions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Edwards RCA1 date --></label>
+        <name>Edwards_RCA1_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Edwards RCA2 date --></label>
+        <name>Edwards_RCA2_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Edwards RCA3 date --></label>
+        <name>Edwards_RCA3_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Edwards RCA Mtg Pt --></label>
+        <name>Edwards_RCA_Mtg_Pt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Autofill --></label>
+        <name>Enable_Autofill__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a fee to override, at a wave level, the usual fee --></help>
+        <label><!-- Fee override (wave) --></label>
+        <name>Fee_override_wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flex --></label>
+        <name>Flex__c</name>
+        <picklistValues>
+            <masterLabel>Down</masterLabel>
+            <translation><!-- Down --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No flex</masterLabel>
+            <translation><!-- No flex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Up</masterLabel>
+            <translation><!-- Up --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Girls Assigned --></label>
+        <name>Girls_Assigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Girls Reserved/Assigned --></label>
+        <name>Girls_Reserved_Assigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Girls Reserved --></label>
+        <name>Girls_Reserved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grad invite guest copy --></label>
+        <name>Grad_invite_guest_copy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grad payroll date/time --></label>
+        <name>Grad_payroll_date_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation Date Formula --></label>
+        <name>Graduation_Date_Formula__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date of Graduation for this wave --></help>
+        <label><!-- Graduation Date --></label>
+        <name>Graduation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation Letter Check Complete --></label>
+        <name>Graduation_Letter_Check_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation Letter Published --></label>
+        <name>Graduation_Letter_Published__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation Postcode --></label>
+        <name>Graduation_Postcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation Time --></label>
+        <name>Graduation_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation Venue Address --></label>
+        <name>Graduation_Venue_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation Venue Formula --></label>
+        <name>Graduation_Venue_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation Venue --></label>
+        <name>Graduation_Venue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation end time --></label>
+        <name>Graduation_end_time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Time that summer staff need to be at the venue --></help>
+        <label><!-- Graduation: Staff start time --></label>
+        <name>Graduation_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- HTMU Document Name --></label>
+        <name>HTMU_Document_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- HTMU: Graduation: Programme Type Formula --></label>
+        <name>HTMU_Graduation_Programme_Type_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- HTMU: Graduation: Programme Type Text --></label>
+        <name>HTMU_Graduation_Programme_Type_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- HTR? --></label>
+        <name>HTR__c</name>
+    </fields>
+    <fields>
+        <help><!-- LInk to the half cluster Object for programmes reporting --></help>
+        <label><!-- Sub Cluster --></label>
+        <name>Half_Clusters__c</name>
+        <relationshipLabel><!-- Waves --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IWL voucher amount --></label>
+        <name>IWL_voucher_amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of places, including overbooking, available for YP at independent schools. Calculated from total capacity and independent percentage limit --></help>
+        <label><!-- Ind school capacity inc overbooking --></label>
+        <name>Ind_school_capacity_inc_overbooking__c</name>
+    </fields>
+    <fields>
+        <help><!-- Percentage of YP on the wave who can attend an independent school --></help>
+        <label><!-- Ind school type place limit percentage --></label>
+        <name>Ind_school_type_place_limit_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- PIE Sales email address --></label>
+        <name>Info_Eve_Mktg_email_address__c</name>
+    </fields>
+    <fields>
+        <help><!-- Link to the Marketing person running the info eve --></help>
+        <label><!-- PIE Sales lead --></label>
+        <name>Info_Eve_Mktg_lead__c</name>
+        <relationshipLabel><!-- Waves (PIE Sales lead) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The email address of the Marketing. Automatically populated once the Marketing lead has been selected --></help>
+        <label><!-- PIE Sales lead email --></label>
+        <name>Info_Eve_Mktg_lead_email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Mobile number of the Marketing lead. Automatically populated once the Marketing lead has been selected --></help>
+        <label><!-- PIE Sales lead mobile --></label>
+        <name>Info_Eve_Mktg_lead_mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- PIE date --></label>
+        <name>Info_Eve_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- PIE time --></label>
+        <name>Info_Eve_time__c</name>
+    </fields>
+    <fields>
+        <help><!-- The address of the info eve venue. This must be correctly spelt and in the correct case, so that it can be merged into a letter --></help>
+        <label><!-- PIE venue address --></label>
+        <name>Info_Eve_venue_address__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the info eve venue. This must be correctly spelt and in the correct case, so that it can be merged into a letter --></help>
+        <label><!-- PIE venue name --></label>
+        <name>Info_Eve_venue_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- PIE additional info --></label>
+        <name>Info_eve_additional_info__c</name>
+    </fields>
+    <fields>
+        <label><!-- #JPs --></label>
+        <name>JPs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Learning Difficulties --></label>
+        <name>Learning_Difficulties__c</name>
+    </fields>
+    <fields>
+        <help><!-- Wave location as displayed on website. Leave blank to avoid location display --></help>
+        <label><!-- Location display text online --></label>
+        <name>Location_display_text_online__c</name>
+    </fields>
+    <fields>
+        <help><!-- MM to fill in a date when all the Marketing Information Evening fields have been checked. --></help>
+        <label><!-- SM Sign Off --></label>
+        <name>MM_Sign_Off__c</name>
+    </fields>
+    <fields>
+        <label><!-- SM --></label>
+        <name>MM__c</name>
+        <relationshipLabel><!-- Waves (SM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Marketing Manager enters the date when they confirm that the number Mktg Number of YPs started Wave (entered by SC/AMM) is correct --></help>
+        <label><!-- ASM confirmed PCKO starters --></label>
+        <name>MM_confirmed_PCKO_starters__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date when Marketing Manager confirms the number of late starters for the wave --></help>
+        <label><!-- ASM confirmed number of late starters --></label>
+        <name>MM_confirmed_number_of_late_starters__c</name>
+    </fields>
+    <fields>
+        <label><!-- SM email --></label>
+        <name>MM_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Register Received --></label>
+        <name>Marketing_Register_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Register Signed Out --></label>
+        <name>Marketing_Register_Signed_Out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Number of 18+ allowed --></label>
+        <name>Max_Number_of_18_allowed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Number of SL5 allowed --></label>
+        <name>Max_Number_of_SL5_allowed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Number of SL 3# allowed --></label>
+        <name>Max_Number_of_SL_3_allowed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Number of SL 3a allowed --></label>
+        <name>Max_Number_of_SL_3a_allowed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Number of SL 3b allowed --></label>
+        <name>Max_Number_of_SL_3b_allowed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Number of SL 4a allowed --></label>
+        <name>Max_Number_of_SL_4a_allowed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Number of SL 4b allowed --></label>
+        <name>Max_Number_of_SL_4b_allowed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max number of HTR allowed --></label>
+        <name>Max_number_of_HTR_allowed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Med info 4 weeks prior --></label>
+        <name>Med_info_4_weeks_prior__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medical form template --></label>
+        <name>Medical_form_template__c</name>
+        <picklistValues>
+            <masterLabel>Full details</masterLabel>
+            <translation><!-- Full details --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summary</masterLabel>
+            <translation><!-- Summary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Medical template formula --></label>
+        <name>Medical_template_formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medicals Name --></label>
+        <name>Medicals_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the following information for each late starter: Full name of YP; Date YP arrived on the programme; Reason for late start --></help>
+        <label><!-- Sales Add details of late starters --></label>
+        <name>Mktg_Add_details_of_late_starters__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of YPs that marketing have calculated have got on the bus at PCKO --></help>
+        <label><!-- Sales Number of YPs started Wave at PCKO --></label>
+        <name>Mktg_Number_of_YPs_started_Wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales details of late starters --></label>
+        <name>Mktg_details_of_late_starters__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of YPs that started after PCKO (ie did not get on the bus at PCKO) but within 3 days of wave starting --></help>
+        <label><!-- Sales number of late starters after PCKO --></label>
+        <name>Mktg_number_of_late_starters_after_PCKO__c</name>
+    </fields>
+    <fields>
+        <help><!-- Adds the Mktg Number of YPs started Wave to Mktg number of late starters after PCKO --></help>
+        <label><!-- Sales total number of YPs on wave --></label>
+        <name>Mktg_total_number_of_YPs_on_wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS Zone --></label>
+        <name>NCSZone__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS Prime --></label>
+        <name>NCS_Prime__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS ZoneOld --></label>
+        <name>NCS_Zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nearest public transport --></label>
+        <name>Nearest_public_transport__c</name>
+    </fields>
+    <fields>
+        <label><!-- NoHTMU:Graduation:Programme Type Formula --></label>
+        <name>NoHTMU_Graduation_Programme_Type_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- NoHTMU:Graduation: Programme Type Text --></label>
+        <name>NoHTMU_Graduation_Programme_Type_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- No HTMU Document Name --></label>
+        <name>No_HTMU_Document_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- When ticked this means that the TC week is residential --></help>
+        <label><!-- Residential TC Wave Autumn --></label>
+        <name>Non_Residential_TC_Wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- NotEligible:Graduation:ProgrammeTypeForm --></label>
+        <name>NotEligible_Graduation_ProgrammeTypeForm__c</name>
+    </fields>
+    <fields>
+        <label><!-- NotEligible:Graduation:ProgrammeTypeText --></label>
+        <name>NotEligible_Graduation_ProgrammeTypeText__c</name>
+    </fields>
+    <fields>
+        <label><!-- Not Eligibble &amp; SL5 Document Name --></label>
+        <name>Not_Eligibble_SL5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Graduation Guests Permitted --></label>
+        <name>Number_of_Graduation_Guests_Permitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Level 4&apos;s allowed on Wave --></label>
+        <name>Number_of_Level_4_s_allowed_on_Wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of NCS Evaluation surveys --></label>
+        <name>Number_of_NCS_Evaluation_surveys__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Teams --></label>
+        <name>Number_of_Teams__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the number of additional YPs who have either started too late or who are starting the programme again (not to be included in NCS reporting) --></help>
+        <label><!-- Number of additional non-NCS YPs --></label>
+        <name>Number_of_additional_non_NCS_YPs__c</name>
+    </fields>
+    <fields>
+        <label><!-- OBS Wave End Date --></label>
+        <name>OBS_Wave_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Oldest date of birth possible --></label>
+        <name>Oldest_date_of_birth_possible__c</name>
+    </fields>
+    <fields>
+        <help><!-- Percentage of independent school online places that are full (either assigned or reserved) --></help>
+        <label><!-- Online Ind Sch bookings, percentage full --></label>
+        <name>Online_Ind_Sch_bookings_percentage_full__c</name>
+    </fields>
+    <fields>
+        <help><!-- Subtracts the total independent school reserved/assigned YP from the total capacity for independent school YP (no other variables are taken into account). If the wave is overbooked for such YP, a minus number will be displayed. --></help>
+        <label><!-- Online Ind School (over)bookings --></label>
+        <name>Online_Ind_School_over_bookings__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of remaining places for someone at an independent school --></help>
+        <label><!-- Online Ind School places available --></label>
+        <name>Online_Ind_School_places_available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online SL3 places available --></label>
+        <name>Online_SL3_places_available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online YP SL3 capacityOLD --></label>
+        <name>Online_YP_SL3_capacityOLD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online YP SL3 capacity --></label>
+        <name>Online_YP_SL3_capacity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Percentage of online places that are full (either assigned or reserved) --></help>
+        <label><!-- Online YP bookings, percentage full --></label>
+        <name>Online_YP_bookings_percentage_full__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of online places available for girls. Calculated from total capacity and female percentage limit --></help>
+        <label><!-- Online YP female capacity --></label>
+        <name>Online_YP_female_capacity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of online places available for boys. Calculated from total capacity and male percentage limit --></help>
+        <label><!-- Online YP male capacity --></label>
+        <name>Online_YP_male_capacity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Maximum number of YP who can be booked onto the wave, online. Calculated from overbooking total minus the total places held back --></help>
+        <label><!-- Online booking YP place capacity --></label>
+        <name>Online_booking_YP_place_capacity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of online places available for YP at a champion school. Calculated from total online capacity and single school percentage limit --></help>
+        <label><!-- Online champion school capacity --></label>
+        <name>Online_champion_school_capacity__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of places available for girls at independent school --></help>
+        <label><!-- Online female Ind places available --></label>
+        <name>Online_female_Ind_places_available__c</name>
+    </fields>
+    <fields>
+        <help><!-- Percentage of female online places that are full (either assigned or reserved) --></help>
+        <label><!-- Online female bookings, percentage full --></label>
+        <name>Online_female_bookings_percentage_full__c</name>
+    </fields>
+    <fields>
+        <help><!-- Subtracts the total female reserved/assigned YP from the total capacity for female YP (no other variables are taken into account). If the wave is overbooked for such YP, a minus number will be displayed. --></help>
+        <label><!-- Online female (over)bookings --></label>
+        <name>Online_female_over_bookings__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of remaining places for girls --></help>
+        <label><!-- Online female places available --></label>
+        <name>Online_female_places_available__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of online places available for YP at independent schools. Calculated from total capacity and independent percentage limit --></help>
+        <label><!-- Online independent school capacity --></label>
+        <name>Online_independent_school_capacity__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of places available for boys at an independent school --></help>
+        <label><!-- Online male Ind places available --></label>
+        <name>Online_male_Ind_places_available__c</name>
+    </fields>
+    <fields>
+        <help><!-- Percentage of male online places that are full (either assigned or reserved) --></help>
+        <label><!-- Online male bookings, percentage full --></label>
+        <name>Online_male_bookings_percentage_full__c</name>
+    </fields>
+    <fields>
+        <help><!-- Subtracts the total male reserved/assigned YP from the total capacity for male YP (no other variables are taken into account). If the wave is overbooked for such YP, a minus number will be displayed. --></help>
+        <label><!-- Online male (over)bookings --></label>
+        <name>Online_male_over_bookings__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of remaining places for boys --></help>
+        <label><!-- Online male places available --></label>
+        <name>Online_male_places_available__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of remaining places --></help>
+        <label><!-- Online places available --></label>
+        <name>Online_places_available__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of online place available for YP at a single school. Calculated from total online capacity and single school percentage limit --></help>
+        <label><!-- Online single school capacity --></label>
+        <name>Online_single_school_capacity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inclusion total spaces on Wave --></label>
+        <name>Other_Spaces_on_the_Wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Over 18 room --></label>
+        <name>Over_18_room__c</name>
+        <picklistValues>
+            <masterLabel>Discretionary number</masterLabel>
+            <translation><!-- Discretionary number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maybe</masterLabel>
+            <translation><!-- Maybe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - 1</masterLabel>
+            <translation><!-- Yes - 1 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The wave staffing fields are currently being updated. If you have questions or concerns regarding these fields, please contact innovation.support@the-challenge.org --></help>
+        <label><!-- Wave PM --></label>
+        <name>PA__c</name>
+        <relationshipLabel><!-- Waves (Wave PM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Time Coach leaves the PCKO Venue --></help>
+        <label><!-- PC KO Coach Leave time --></label>
+        <name>PCKO_Coach_Leave_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales KO Lead --></label>
+        <name>PCKO_Mktg_Lead__c</name>
+        <relationshipLabel><!-- Waves (Sales KO Lead) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales KO lead mobile --></label>
+        <name>PCKO_Mktg_lead_mobile__c</name>
+    </fields>
+    <fields>
+        <help><!-- Time the YP can be expected to arrive at the PC Provider --></help>
+        <label><!-- PC Arrival Time --></label>
+        <name>PC_Arrival_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Day Off 1 (website) --></label>
+        <name>PC_Day_Off_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the extra text you want to appear on the website. --></help>
+        <label><!-- PC Day Off 1 text --></label>
+        <name>PC_Day_Off_1_text__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Day Off 2 (website) --></label>
+        <name>PC_Day_Off_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the extra text you want to appear on the website. --></help>
+        <label><!-- PC Day Off 2 text --></label>
+        <name>PC_Day_Off_2_text__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Estimated return time --></label>
+        <name>PC_Estimated_return_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC KO Timetable Check Complete --></label>
+        <name>PC_KO_Timetable_Check_Complete__c</name>
+    </fields>
+    <fields>
+        <help><!-- Personal Challenge Kick Off Day --></help>
+        <label><!-- PC KO day --></label>
+        <name>PC_KO_day__c</name>
+    </fields>
+    <fields>
+        <help><!-- Personal Challenge Kick Off start time for SM, TL and ATL --></help>
+        <label><!-- PC KO start time (Staff) --></label>
+        <name>PC_KO_start_time_TL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Personal Challenge Kick Off YP --></help>
+        <label><!-- PC KO start time (YP) --></label>
+        <name>PC_KO_start_time_YP__c</name>
+    </fields>
+    <fields>
+        <help><!-- Personal Challenge Kick Off start time for APM/PM/LO --></help>
+        <label><!-- PC KO start time Settup --></label>
+        <name>PC_KO_start_time_other_staff__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the 1st. day off for the PC Programme Section --></help>
+        <label><!-- PC Off Day 1 --></label>
+        <name>PC_Off_Day_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the 2nd. day off for the PC Programme Section --></help>
+        <label><!-- PC Off Day 2 --></label>
+        <name>PC_Off_Day_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Partner Address line 1 --></label>
+        <name>PC_Partner_Address_line_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Partner Address line 2 --></label>
+        <name>PC_Partner_Address_line_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Partner Address line 3 --></label>
+        <name>PC_Partner_Address_line_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Partner County or region --></label>
+        <name>PC_Partner_County_or_region__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Partner Postcode --></label>
+        <name>PC_Partner_Postcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Return day --></label>
+        <name>PC_Return_day__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Sign in Sheets scanned --></label>
+        <name>PC_Sign_in_Sheet_scanned__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Tented --></label>
+        <name>PC_Tented__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Venue address --></label>
+        <name>PC_Venue_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC data input --></label>
+        <name>PC_data_input__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC dropoff different from KO? --></label>
+        <name>PC_dropoff_different_from_KO__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC partner inclusion notes --></label>
+        <name>PC_partner_inclusion_notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC register destroyed --></label>
+        <name>PC_register_destroyed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Links to PC venue --></help>
+        <label><!-- PC venue --></label>
+        <name>PC_venue__c</name>
+        <relationshipLabel><!-- Waves --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PC venue description --></label>
+        <name>PC_venue_description__c</name>
+    </fields>
+    <fields>
+        <label><!-- PIE Details have changed --></label>
+        <name>PIE_Details_have_changed__c</name>
+    </fields>
+    <fields>
+        <help><!-- PL for the wave --></help>
+        <label><!-- PL --></label>
+        <name>PL__c</name>
+        <relationshipLabel><!-- Waves --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Programmes User View --></label>
+        <name>PM_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM Email --></label>
+        <name>PM_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- The wave staffing fields are currently being updated. If you have questions or concerns regarding these fields, please contact innovation.support@the-challenge.org --></help>
+        <label><!-- Wave PAM --></label>
+        <name>PM__c</name>
+        <relationshipLabel><!-- Waves (Wave PAM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Part 1 Timetable Merge Field --></label>
+        <name>Part_1_Timetable_Merge_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Part 1 accommodation text --></label>
+        <name>Part_1_accommodation_text__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used in the programme pack cover letter --></help>
+        <label><!-- Part 1 accommodation type --></label>
+        <name>Part_1_accommodation_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Part 2 Timetable Merge Field --></label>
+        <name>Part_2_Timetable_Merge_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Part 2 accommodation text --></label>
+        <name>Part_2_accommodation_text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Part 2 accommodation type --></label>
+        <name>Part_2_accommodation_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Part 3 (Celebration) end time --></label>
+        <name>Part_3_Celebration_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Part 3 (RCD) end time --></label>
+        <name>Part_3_RCD_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Part 3 (RCD) start time --></label>
+        <name>Part_3_RCD_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Part 3 Timetable Merge Field --></label>
+        <name>Part_3_Timetable_Merge_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Perham RCA1 date --></label>
+        <name>Perham_RCA1_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Perham RCA2 date --></label>
+        <name>Perham_RCA2_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Perham RCA3 date --></label>
+        <name>Perham_RCA3_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Perham RCA Mtg Pt --></label>
+        <name>Perham_RCA_Mtg_Pt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 2 Address Line 1 --></label>
+        <name>Phase_2_Address_Line_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 2 Address Line 2 --></label>
+        <name>Phase_2_Address_Line_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 2 Address line 3 --></label>
+        <name>Phase_2_Address_line_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 2 County --></label>
+        <name>Phase_2_County__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 2 Postcode --></label>
+        <name>Phase_2_Postcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 2 Town --></label>
+        <name>Phase_2_Town__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 3: PostCode --></label>
+        <name>Phase_3_PostCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 4: PostCode --></label>
+        <name>Phase_4_PostCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase 5: PostCode --></label>
+        <name>Phase_5_PostCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pilot? --></label>
+        <name>Pilot__c</name>
+        <picklistValues>
+            <masterLabel>2 Day Campaign</masterLabel>
+            <translation><!-- 2 Day Campaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alternative food supplier</masterLabel>
+            <translation><!-- Alternative food supplier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Sequential RCA</masterLabel>
+            <translation><!-- Internal Sequential RCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Transport Provider</masterLabel>
+            <translation><!-- Local Transport Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Music as Skill</masterLabel>
+            <translation><!-- Music as Skill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NCS Sequential RCA</masterLabel>
+            <translation><!-- NCS Sequential RCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential Practitioner</masterLabel>
+            <translation><!-- Residential Practitioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Community Facilitator</masterLabel>
+            <translation><!-- Senior Community Facilitator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Action Project with RCA Partner</masterLabel>
+            <translation><!-- Social Action Project with RCA Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tented TC</masterLabel>
+            <translation><!-- Tented TC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tented Village in TC</masterLabel>
+            <translation><!-- Tented Village in TC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Graduation: Programme Type --></label>
+        <name>Pilot_or_Non_Pilot__c</name>
+        <picklistValues>
+            <masterLabel>Non Pilot</masterLabel>
+            <translation><!-- Non Pilot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pilot</masterLabel>
+            <translation><!-- Pilot --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pilot wave --></label>
+        <name>Pilot_wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Place available for Support Worker --></label>
+        <name>Place_available_for_Support_Worker__c</name>
+        <picklistValues>
+            <masterLabel>Maybe</masterLabel>
+            <translation><!-- Maybe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Place filled</masterLabel>
+            <translation><!-- Place filled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Place filled for two support workers</masterLabel>
+            <translation><!-- Place filled for two support workers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - 1 SW</masterLabel>
+            <translation><!-- Yes - 1 SW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - 1 SW for 2 YPs</masterLabel>
+            <translation><!-- Yes - 1 SW for 2 YPs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - 2 SWs</masterLabel>
+            <translation><!-- Yes - 2 SWs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - for 2 YPs</masterLabel>
+            <translation><!-- Yes - for 2 YPs --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Practitioner Day Off 1 (website) --></label>
+        <name>Practitioner_Day_Off_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the extra text you want to appear on the website. --></help>
+        <label><!-- Practitioner Day Off 1 text --></label>
+        <name>Practitioner_Day_Off_1_text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practitioner Day Off 2 (website) --></label>
+        <name>Practitioner_Day_Off_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the extra text you want to appear on the website. --></help>
+        <label><!-- Practitioner Day Off 2 text --></label>
+        <name>Practitioner_Day_Off_2_text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practitioner End Date --></label>
+        <name>Practitioner_End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the 1st. day off for the Practitioner Programme Section --></help>
+        <label><!-- Practitioner Off Day 1 --></label>
+        <name>Practitioner_Off_Day_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the 2nd. day off for the Practitioner Programme Section --></help>
+        <label><!-- Practitioner Off Day 2 --></label>
+        <name>Practitioner_Off_Day_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practitioner Start Date --></label>
+        <name>Practitioner_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Time that non-res Practitioners&apos; day ends --></help>
+        <label><!-- Practitioner end time --></label>
+        <name>Practitioner_end_time__c</name>
+    </fields>
+    <fields>
+        <help><!-- The wave staffing field are currently being updated. If you have questions or concerns regarding these fields, please contact innovation.support@the-challenge.org --></help>
+        <label><!-- Programme Administrator 2 --></label>
+        <name>Programme_Administrator_2__c</name>
+        <relationshipLabel><!-- Waves (Programme Administrator 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Published Timetables --></label>
+        <name>Programme_Pack_Letters__c</name>
+    </fields>
+    <fields>
+        <label><!-- Programme --></label>
+        <name>Programme__c</name>
+    </fields>
+    <fields>
+        <label><!-- Programme booklet (YP) --></label>
+        <name>Programme_booklet_YP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Programme booklet --></label>
+        <name>Programme_booklet__c</name>
+    </fields>
+    <fields>
+        <label><!-- All Phase Programmes Timetable check --></label>
+        <name>Programmes_Timetable_Check_Complete__c</name>
+    </fields>
+    <fields>
+        <help><!-- Complete this field with the number of young people that started the wave --></help>
+        <label><!-- Progs Number of YPs started wave at PCKO --></label>
+        <name>Progs_Number_of_YPs_started_wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Progs/mktg diff --></label>
+        <name>Progs_mktg_diff__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provides Halal meat? --></label>
+        <name>Provides_Halal_meat__c</name>
+    </fields>
+    <fields>
+        <label><!-- Published Acceptance --></label>
+        <name>Published_Acceptance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Published Graduation --></label>
+        <name>Published_Graduation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Published PIE details --></label>
+        <name>Published_PIE_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Published Programme letter --></label>
+        <name>Published_Programme_letter__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 1 payroll date/time --></label>
+        <name>RCA_1_2_payroll_date_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 1 Sat --></label>
+        <name>RCA_1_Sat__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 1 Sun --></label>
+        <name>RCA_1_Sun__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 2 Sat --></label>
+        <name>RCA_2_Sat__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 2 Sun --></label>
+        <name>RCA_2_Sun__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date/time by which RCA 2 payroll reminders start going out to APMs and PMs --></help>
+        <label><!-- RCA 2 payroll date/time --></label>
+        <name>RCA_2_payroll_date_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 3 Sat --></label>
+        <name>RCA_3_Sat__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 3 Sun --></label>
+        <name>RCA_3_Sun__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 4 Meeting Point --></label>
+        <name>RCA_4_Meeting_Point__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 4 Sat --></label>
+        <name>RCA_4_Sat__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 4 Sun --></label>
+        <name>RCA_4_Sun__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date/time by which payroll reminders start going out to APMs and PMs --></help>
+        <label><!-- RCA 4 payroll date/time --></label>
+        <name>RCA_4_payroll_date_time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of user responsible for RCA Booking on the Wave --></help>
+        <label><!-- RCA Booking --></label>
+        <name>RCA_Booking__c</name>
+        <relationshipLabel><!-- Waves (RCA Booking) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- RCA Day Off 1 (website) --></label>
+        <name>RCA_Day_Off_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the extra text you want to appear on the website. --></help>
+        <label><!-- RCA Day Off 1 text --></label>
+        <name>RCA_Day_Off_1_text__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Day Off 2 (website) --></label>
+        <name>RCA_Day_Off_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the extra text you want to appear on the website. --></help>
+        <label><!-- RCA Day Off 2 text --></label>
+        <name>RCA_Day_Off_2_text__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA End Date --></label>
+        <name>RCA_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA End Day --></label>
+        <name>RCA_End_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD End time staff --></label>
+        <name>RCA_End_time_staff__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the 1st. day off for the RCA Programme Section --></help>
+        <label><!-- RCA Off Day 1 --></label>
+        <name>RCA_Off_Day_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the 2nd. day off for the RCA Programme Section --></help>
+        <label><!-- RCA Off Day 2 --></label>
+        <name>RCA_Off_Day_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Timetable Name --></label>
+        <name>RCA_Register_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Sign in Sheets scanned --></label>
+        <name>RCA_Sign_in_sheets_scanned__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Start Date --></label>
+        <name>RCA_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD Start time staff --></label>
+        <name>RCA_Start_time_staff__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Timetable Check Complete --></label>
+        <name>RCA_Timetable_Check_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Timetable --></label>
+        <name>RCA_Timetable__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Timetables Download --></label>
+        <name>RCA_Timetables_Download__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Timetables Template Selected --></label>
+        <name>RCA_Timetables_Template_Selected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Published RCA Timetables --></label>
+        <name>RCA_Timetables__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Venue and Address --></label>
+        <name>RCA_Venue_and_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA day 4 Day --></label>
+        <name>RCA_day_4_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 3 payroll date/time --></label>
+        <name>RCA_end_date_time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Approx time that RCA days will end for seasonal staff --></help>
+        <label><!-- RCA end time (staff) --></label>
+        <name>RCA_end_time_staff1__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA paragraph part 1 --></label>
+        <name>RCA_paragraph_part_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA paragraph part 2 --></label>
+        <name>RCA_paragraph_part_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA register destroyed --></label>
+        <name>RCA_register_destroyed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Time that seasonal staff start on RCA days --></help>
+        <label><!-- RCA start time (staff) --></label>
+        <name>RCA_start_time_staff1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of user responsible for RCD Booking on the Wave --></help>
+        <label><!-- RCD Booking --></label>
+        <name>RCD_Booking__c</name>
+        <relationshipLabel><!-- Waves (RCD Booking) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- RCD Day Off 1 (website) --></label>
+        <name>RCD_Day_Off_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the extra text you want to appear on the website. --></help>
+        <label><!-- RCD Day Off 1 text --></label>
+        <name>RCD_Day_Off_1_text__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD Day Off 2 (website) --></label>
+        <name>RCD_Day_Off_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the extra text you want to appear on the website. --></help>
+        <label><!-- RCD Day Off 2 text --></label>
+        <name>RCD_Day_Off_2_text__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the 1st. day off for the RCD Programme Section --></help>
+        <label><!-- RCD Off Day 1 --></label>
+        <name>RCD_Off_Day_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the 2nd. day off for the RCD Programme Section --></help>
+        <label><!-- RCD Off Day 2 --></label>
+        <name>RCD_Off_Day_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD Venue Booking --></label>
+        <name>RCD_Venue_Booking__c</name>
+        <relationshipLabel><!-- Waves (RCD Venue) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- RCD Venue and Address --></label>
+        <name>RCD_Venue_and_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD End date --></label>
+        <name>RCD_end_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave payroll date/time --></label>
+        <name>RCD_end_date_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD, paragraph 1, part 1 --></label>
+        <name>RCD_paragraph_1_part_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD, paragraph 1, part 2 --></label>
+        <name>RCD_paragraph_1_part_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD pt 2 end date --></label>
+        <name>RCD_pt_2_end_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD pt 2 start date --></label>
+        <name>RCD_pt_2_start_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD register destroyed --></label>
+        <name>RCD_register_destroyed__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD Start date --></label>
+        <name>RCD_start_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- RCD start time for young people --></help>
+        <label><!-- RCD start time YP --></label>
+        <name>RCD_start_time_YP__c</name>
+    </fields>
+    <fields>
+        <help><!-- This indicates if an RM will start on the Friday before TCKO for the first Wave of a Half-Cluster --></help>
+        <label><!-- RM Early Start --></label>
+        <name>RM_Early_Start__c</name>
+    </fields>
+    <fields>
+        <label><!-- RM late finish --></label>
+        <name>RM_late_finish__c</name>
+    </fields>
+    <fields>
+        <label><!-- Radcliffe RCA1 date --></label>
+        <name>Radcliffe_RCA1_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Radcliffe RCA2 date --></label>
+        <name>Radcliffe_RCA2_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Radcliffe RCA3 date --></label>
+        <name>Radcliffe_RCA3_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Radcliffe RCA Mtg Pt --></label>
+        <name>Radcliffe_RCA_Mtg_Pt__c</name>
+    </fields>
+    <fields>
+        <help><!-- Reason for why some places are temporarily held back --></help>
+        <label><!-- Why are places temporarily held back? --></label>
+        <name>Reason_places_temporarily_held_back__c</name>
+    </fields>
+    <fields>
+        <help><!-- Region the wave is in --></help>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave Document Name --></label>
+        <name>Register_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Select Wave Document Required --></label>
+        <name>Register_Template_Required__c</name>
+        <picklistValues>
+            <masterLabel>Graduation Register</masterLabel>
+            <translation><!-- Graduation Register --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Labels</masterLabel>
+            <translation><!-- Labels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logistics forms</masterLabel>
+            <translation><!-- Logistics forms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PC KO Register</masterLabel>
+            <translation><!-- PC KO Register --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA Register</masterLabel>
+            <translation><!-- RCA Register --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD Register</masterLabel>
+            <translation><!-- RCD Register --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sign In Sheet PC</masterLabel>
+            <translation><!-- Sign In Sheet PC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sign in Sheet RCA</masterLabel>
+            <translation><!-- Sign in Sheet RCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC Register</masterLabel>
+            <translation><!-- TC Register --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wave Document Template to Select --></label>
+        <name>Register_Template_to_Select__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave Documents Templates --></label>
+        <name>Register_Templates_V2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reiss RCA1 date --></label>
+        <name>Reiss_RCA1_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reiss RCA2 date --></label>
+        <name>Reiss_RCA2_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reiss RCA3 date --></label>
+        <name>Reiss_RCA3_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reiss RCA Mtg Pt --></label>
+        <name>Reiss_RCA_Mtg_Pt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining HTR Places Available --></label>
+        <name>Remaining_HTR_Places_Available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining SL3# Places Available --></label>
+        <name>Remaining_SL3_Places_Available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining SL5 Places Available --></label>
+        <name>Remaining_SL5_Places_Available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Residential? --></label>
+        <name>Residential__c</name>
+    </fields>
+    <fields>
+        <label><!-- Restricted Mobility -not wheelchair user --></label>
+        <name>Restricted_Mobility_not_wheelchair_user__c</name>
+    </fields>
+    <fields>
+        <label><!-- SL3# Spaces Check --></label>
+        <name>SL3_Spaces_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- SL4a Spaces Check --></label>
+        <name>SL4a_Spaces_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- SL4b Spaces Check --></label>
+        <name>SL4b_Spaces_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- SL5 Spaces Check --></label>
+        <name>SL5_Spaces_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining SL4a Places Available --></label>
+        <name>SL_4a_Place_Taken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining SL4b Places Available --></label>
+        <name>SL_4b_Place_Taken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Support level 5 Assigned/Reserved --></label>
+        <name>SL_5_Assigned_Reserved__c</name>
+    </fields>
+    <fields>
+        <help><!-- Kick off SMS text for RCA 1-3 --></help>
+        <label><!-- SMS RCA 1-3 --></label>
+        <name>SMS_RCA_1_3__c</name>
+    </fields>
+    <fields>
+        <help><!-- SMS text RCA 4 --></help>
+        <label><!-- SMS RCA 4 --></label>
+        <name>SMS_RCA_4__c</name>
+    </fields>
+    <fields>
+        <help><!-- The wave staffing fields are currently being updated. If you have questions or concerns regarding these fields, please contact innovation.support@the-challenge.org --></help>
+        <label><!-- Wave SPM --></label>
+        <name>SPM1__c</name>
+        <relationshipLabel><!-- Waves (Wave SPM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SPM Email --></label>
+        <name>SPM_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPM --></label>
+        <name>SPM__c</name>
+    </fields>
+    <fields>
+        <label><!-- SW availability status --></label>
+        <name>SW_availability_status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Counts the number of Support Workers who are working this wave. --></help>
+        <label><!-- SWs on wave --></label>
+        <name>SWs_on_wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sabesan RCA1 date --></label>
+        <name>Sabesan_RCA1_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sabesan RCA2 date --></label>
+        <name>Sabesan_RCA2_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sabesan RCA3 date --></label>
+        <name>Sabesan_RCA3_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sabesan RCA Mtg Pt --></label>
+        <name>Sabesan_RCA_Mtg_Pt__c</name>
+    </fields>
+    <fields>
+        <label><!-- SalesforceWId --></label>
+        <name>SalesforceWId__c</name>
+    </fields>
+    <fields>
+        <label><!-- School Type Independent --></label>
+        <name>School_Type_Independent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Season --></label>
+        <name>Season__c</name>
+        <relationshipLabel><!-- Waves --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Select RCA Timetable Template Required --></label>
+        <name>Select_RCA_Timetable_Template_Required__c</name>
+        <picklistValues>
+            <masterLabel>Sat RCA Timetable</masterLabel>
+            <translation><!-- Sat RCA Timetable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sun RCA Timetable</masterLabel>
+            <translation><!-- Sun RCA Timetable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indication of whether the RCA weekends will be held on Saturdays or Sundays, or if the wave is a Pilot wave (ie no RCA September weekends) --></help>
+        <label><!-- September RCA weekends --></label>
+        <name>September_RCA_weekends__c</name>
+        <picklistValues>
+            <masterLabel>Pilot</masterLabel>
+            <translation><!-- Pilot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saturday</masterLabel>
+            <translation><!-- Saturday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sunday</masterLabel>
+            <translation><!-- Sunday --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Showcase date --></label>
+        <name>Showcase_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Showcase finish time --></label>
+        <name>Showcase_finish_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Showcase starting time --></label>
+        <name>Showcase_starting_time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of places, including overbooking, available for YP at a single school. Calculated from total capacity and single school percentage limit --></help>
+        <label><!-- Single school capacity inc overbooking --></label>
+        <name>Single_school_capacity_inc_overbooking__c</name>
+    </fields>
+    <fields>
+        <help><!-- Percentage of YP on the wave who can attend the same school --></help>
+        <label><!-- Single school place limit percentage --></label>
+        <name>Single_school_place_limit_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Social Action Day Merge 1 --></label>
+        <name>Social_Action_Day_Merge_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Social Action Day Merge 2 --></label>
+        <name>Social_Action_Day_Merge_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Social Action Day Merge 3 --></label>
+        <name>Social_Action_Day_Merge_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Social Action Days end time --></label>
+        <name>Social_Action_Days_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Social Action Days start time --></label>
+        <name>Social_Action_Days_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Social Action Timetable Merge Field --></label>
+        <name>Social_Action_Timetable_Merge_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sports Practioner Mobile --></label>
+        <name>Sports_Practioner_Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sports Practioner Name --></label>
+        <name>Sports_Practioner_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spring wave --></label>
+        <name>Spring_wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Staffing Manager --></label>
+        <name>Staffing_Manager__c</name>
+        <relationshipLabel><!-- Waves (Staffing Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subcluster 2012 --></label>
+        <name>Subcluster_2012__c</name>
+        <picklistValues>
+            <masterLabel>Barking and Dagenham</masterLabel>
+            <translation><!-- Barking and Dagenham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barnet</masterLabel>
+            <translation><!-- Barnet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bexley</masterLabel>
+            <translation><!-- Bexley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blackburn</masterLabel>
+            <translation><!-- Blackburn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brent</masterLabel>
+            <translation><!-- Brent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bromley</masterLabel>
+            <translation><!-- Bromley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burnley</masterLabel>
+            <translation><!-- Burnley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bury</masterLabel>
+            <translation><!-- Bury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Camden</masterLabel>
+            <translation><!-- Camden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coventry</masterLabel>
+            <translation><!-- Coventry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Croydon</masterLabel>
+            <translation><!-- Croydon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dudley</masterLabel>
+            <translation><!-- Dudley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ealing</masterLabel>
+            <translation><!-- Ealing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enfield</masterLabel>
+            <translation><!-- Enfield --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greenwich</masterLabel>
+            <translation><!-- Greenwich --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hackney</masterLabel>
+            <translation><!-- Hackney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hammersmith and Fulham</masterLabel>
+            <translation><!-- Hammersmith and Fulham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haringey</masterLabel>
+            <translation><!-- Haringey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Harrow</masterLabel>
+            <translation><!-- Harrow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Havering</masterLabel>
+            <translation><!-- Havering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hillingdon</masterLabel>
+            <translation><!-- Hillingdon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hounslow</masterLabel>
+            <translation><!-- Hounslow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Islington</masterLabel>
+            <translation><!-- Islington --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kensington and Chelsea</masterLabel>
+            <translation><!-- Kensington and Chelsea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kingston</masterLabel>
+            <translation><!-- Kingston --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lambeth</masterLabel>
+            <translation><!-- Lambeth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lewisham</masterLabel>
+            <translation><!-- Lewisham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester</masterLabel>
+            <translation><!-- Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merton</masterLabel>
+            <translation><!-- Merton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE Birmingham</masterLabel>
+            <translation><!-- NE Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NW Birmingham</masterLabel>
+            <translation><!-- NW Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newham</masterLabel>
+            <translation><!-- Newham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North Warwickshire</masterLabel>
+            <translation><!-- North Warwickshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oldham</masterLabel>
+            <translation><!-- Oldham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preston</masterLabel>
+            <translation><!-- Preston --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redbridge</masterLabel>
+            <translation><!-- Redbridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Richmond</masterLabel>
+            <translation><!-- Richmond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rochdale</masterLabel>
+            <translation><!-- Rochdale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SE Birmingham</masterLabel>
+            <translation><!-- SE Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SW Birmingham</masterLabel>
+            <translation><!-- SW Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salford</masterLabel>
+            <translation><!-- Salford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sandwell</masterLabel>
+            <translation><!-- Sandwell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solihull</masterLabel>
+            <translation><!-- Solihull --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Warkwickshire</masterLabel>
+            <translation><!-- South Warkwickshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southwark</masterLabel>
+            <translation><!-- Southwark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stockport</masterLabel>
+            <translation><!-- Stockport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surrey</masterLabel>
+            <translation><!-- Surrey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sutton</masterLabel>
+            <translation><!-- Sutton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tameside</masterLabel>
+            <translation><!-- Tameside --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tower Hamlets</masterLabel>
+            <translation><!-- Tower Hamlets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walsall</masterLabel>
+            <translation><!-- Walsall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waltham Forest</masterLabel>
+            <translation><!-- Waltham Forest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Westminister</masterLabel>
+            <translation><!-- Westminister --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wigan</masterLabel>
+            <translation><!-- Wigan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wolverhampton</masterLabel>
+            <translation><!-- Wolverhampton --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subcluster --></label>
+        <name>Subcluster__c</name>
+        <picklistValues>
+            <masterLabel>(options required)</masterLabel>
+            <translation><!-- (options required) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BBCW</masterLabel>
+            <translation><!-- BBCW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BI</masterLabel>
+            <translation><!-- BI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BLS</masterLabel>
+            <translation><!-- BLS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blackburn</masterLabel>
+            <translation><!-- Blackburn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bury</masterLabel>
+            <translation><!-- Bury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coventry and North Warwickshire</masterLabel>
+            <translation><!-- Coventry and North Warwickshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HEK</masterLabel>
+            <translation><!-- HEK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HRK</masterLabel>
+            <translation><!-- HRK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LC</masterLabel>
+            <translation><!-- LC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North</masterLabel>
+            <translation><!-- North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preston</masterLabel>
+            <translation><!-- Preston --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solihull</masterLabel>
+            <translation><!-- Solihull --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South</masterLabel>
+            <translation><!-- South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Warwickshire</masterLabel>
+            <translation><!-- South Warwickshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WMS</masterLabel>
+            <translation><!-- WMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wigan</masterLabel>
+            <translation><!-- Wigan --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DSPM Email --></label>
+        <name>Summer_Manager_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- The wave staffing fields are currently being updated. If you have questions or concerns regarding these fields, please contact innovation.support@the-challenge.org --></help>
+        <label><!-- Delivery SPM --></label>
+        <name>Summer_Manager__c</name>
+        <relationshipLabel><!-- Waves (Delivery SPM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The wave staffing fields are currently being updated. If you have questions or concerns regarding these fields, please contact innovation.support@the-challenge.org --></help>
+        <label><!-- Support APM 3 --></label>
+        <name>Support_APM_3__c</name>
+        <relationshipLabel><!-- Waves (Support APM 3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The wave staffing fields are currently being updated. If you have questions or concerns regarding these fields, please contact innovation.support@the-challenge.org --></help>
+        <label><!-- Support APM 4 --></label>
+        <name>Support_APM_4__c</name>
+        <relationshipLabel><!-- Waves (Support APM 4) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The wave staffing fields are currently being updated. If you have questions or concerns regarding these fields, please contact innovation.support@the-challenge.org --></help>
+        <label><!-- Programme Administrator 1 --></label>
+        <name>Support_APM_5__c</name>
+        <relationshipLabel><!-- Waves (Programme Administrator 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The wave staffing fields are currently being updated. If you have questions or concerns regarding these fields, please contact innovation.support@the-challenge.org --></help>
+        <label><!-- Support APM 1 --></label>
+        <name>Support_APM__c</name>
+        <relationshipLabel><!-- Waves (Support APM 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The wave staffing fields are currently being updated. If you have questions or concerns regarding these fields, please contact innovation.support@the-challenge.org --></help>
+        <label><!-- Support PAM 1 --></label>
+        <name>Support_PAM_1__c</name>
+        <relationshipLabel><!-- Waves (Support PAM 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The wave staffing fields are currently being updated. If you have questions or concerns regarding these fields, please contact innovation.support@the-challenge.org --></help>
+        <label><!-- Support PAM 2 --></label>
+        <name>Support_PAM_2__c</name>
+        <relationshipLabel><!-- Waves (Support PAM 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The wave staffing fields are currently being updated. If you have questions or concerns regarding these fields, please contact innovation.support@the-challenge.org --></help>
+        <label><!-- Support PAM 3 --></label>
+        <name>Support_PAM_3__c</name>
+        <relationshipLabel><!-- Waves (Support PAM 3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The wave staffing fields are currently being updated. If you have questions or concerns regarding these fields, please contact innovation.support@the-challenge.org --></help>
+        <label><!-- Support PM 2 --></label>
+        <name>Support_PM_2__c</name>
+        <relationshipLabel><!-- Waves (Support PM 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Support Worker confirmed --></label>
+        <name>Support_Worker_confirmed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Count of support level 3 YP with assigned/reserved wave selections --></help>
+        <label><!-- Support level 3 assigned/reserved --></label>
+        <name>Support_level_3_assigned_reserved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Support level 3a assigned/reserved --></label>
+        <name>Support_level_3a_assigned_reserved__c</name>
+    </fields>
+    <fields>
+        <help><!-- Count of support level 3b YP with assigned/reserved wave selections --></help>
+        <label><!-- Support level 3b assigned/reserved --></label>
+        <name>Support_level_3b_assigned_reserve__c</name>
+    </fields>
+    <fields>
+        <help><!-- Count of support level 4a YP with assigned/reserved wave selections --></help>
+        <label><!-- Support level 4a assigned/reserved --></label>
+        <name>Support_level_5_assigned_reserved__c</name>
+    </fields>
+    <fields>
+        <help><!-- Time coach needs to leave the TCKO venue.  This will be blanks if there is no TCKO --></help>
+        <label><!-- TCKO Coach leave time --></label>
+        <name>TCKO_Coach_leave_time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Time Practitioners arrive on their 1st day --></help>
+        <label><!-- Practitioner arrival time --></label>
+        <name>TCKO_Staff_Arrival_time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of user responsible for TC Bookinga on the Wave --></help>
+        <label><!-- TC Booking --></label>
+        <name>TC_Booking__c</name>
+        <relationshipLabel><!-- Waves (TC Booking) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- TC Day Off 1 (website) --></label>
+        <name>TC_Day_Off_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the extra text you want to appear on the website. --></help>
+        <label><!-- TC Day Off 1 text --></label>
+        <name>TC_Day_Off_1_text__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC Day Off 2 (website) --></label>
+        <name>TC_Day_Off_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the extra text you want to appear on the website. --></help>
+        <label><!-- TC Day Off 2 text --></label>
+        <name>TC_Day_Off_2_text__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC End time (staff) --></label>
+        <name>TC_End_time_staff__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC Estimated Return time --></label>
+        <name>TC_Estimated_Return_time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Team Challenge Kick Off date --></help>
+        <label><!-- TC KO day --></label>
+        <name>TC_KO_day__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the time the summer staff need to arrive at the RA --></help>
+        <label><!-- TC KO start time (Staff1) --></label>
+        <name>TC_KO_start_time_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC KO time for YP --></label>
+        <name>TC_KO_time_for_YP__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the 1st. day off for the TC Programme Section --></help>
+        <label><!-- TC Off Day 1 --></label>
+        <name>TC_Off_Day_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the 2nd. day off for the TC Programme Section --></help>
+        <label><!-- TC Off Day 2 --></label>
+        <name>TC_Off_Day_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC Res Venue --></label>
+        <name>TC_Res_Venue__c</name>
+        <relationshipLabel><!-- Waves (TC Res Venue) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- TC Res Venue address --></label>
+        <name>TC_Res_Venue_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC Return Time --></label>
+        <name>TC_Return_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC Tented --></label>
+        <name>TC_Tented__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC Venue and address --></label>
+        <name>TC_Venue_and_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC end day --></label>
+        <name>TC_end_day__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC register destroyed --></label>
+        <name>TC_register_destroyed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test formula --></label>
+        <name>Test_formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tim --></label>
+        <name>Tim__c</name>
+    </fields>
+    <fields>
+        <help><!-- The full file name of the timetable document, made by combining together the name of the wave and the text entered into the &apos;Timetable document label&apos; field --></help>
+        <label><!-- Timetable document file name --></label>
+        <name>Timetable_document_file_name__c</name>
+    </fields>
+    <fields>
+        <help><!-- The label for the timetable document, which is combined with the name of the wave to make the full file name. This data is entered by CCT. --></help>
+        <label><!-- Timetable document label --></label>
+        <name>Timetable_document_label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timetable download --></label>
+        <name>Timetable_download__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timetable ready to go --></label>
+        <name>Timetable_ready_to_go__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Assigned --></label>
+        <name>Total_Assigned__c</name>
+    </fields>
+    <fields>
+        <help><!-- Count of reserved or assigned YP at an indepedent school (but not PRU or SEN) --></help>
+        <label><!-- Total Ind School Reserved/Assign --></label>
+        <name>Total_Ind_School_Reserved_Assign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total On Waiting List --></label>
+        <name>Total_On_Waiting_List_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Reserved/Assigned --></label>
+        <name>Total_Reserved_Assigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Reserved --></label>
+        <name>Total_Reserved__c</name>
+    </fields>
+    <fields>
+        <help><!-- Count of SL 3 reserved or assigned YPs. --></help>
+        <label><!-- Total SL3 Reserved/Assign --></label>
+        <name>Total_SL3_Reserved_Assign__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll-up summary of waiting list --></help>
+        <label><!-- Total Waiting List Boys --></label>
+        <name>Total_Waiting_List_Boys__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Waiting List Girls --></label>
+        <name>Total_Waiting_List_Girls__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total on wave (assigned or left) --></label>
+        <name>Total_on_wave_assigned_or_left__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total unpaid reserved or assigned --></label>
+        <name>Total_unpaid_reserved_or_assigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transport provider --></label>
+        <name>Transport__c</name>
+        <picklistValues>
+            <masterLabel>First</masterLabel>
+            <translation><!-- First --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Used to trigger payroll reminders to APMs and PMs --></help>
+        <label><!-- Trigger APM/PM reminders --></label>
+        <name>Trigger_APM_PM_reminders__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check box which triggers payroll and expenses reminders to APMs and PMs. --></help>
+        <label><!-- Trigger APM email change --></label>
+        <name>Trigger_APM_reminders__c</name>
+    </fields>
+    <fields>
+        <label><!-- Video Brief for Media Group --></label>
+        <name>Video_Brief_for_Media_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- WAPM Email --></label>
+        <name>WAPM_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- WS_Id_To_Process --></label>
+        <name>WS_Id_To_Process__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave APM/PM Check --></label>
+        <name>Wave_APM_PM_Check__c</name>
+    </fields>
+    <fields>
+        <help><!-- The wave staffing fields are currently being updated. If you have questions or concerns regarding these fields, please contact innovation.support@the-challenge.org --></help>
+        <label><!-- Wave APM --></label>
+        <name>Wave_APM__c</name>
+        <relationshipLabel><!-- Waves (Wave APM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cluster --></label>
+        <name>Wave_Cluster__c</name>
+        <relationshipLabel><!-- Waves --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Wave MAM --></label>
+        <name>Wave_MAM__c</name>
+        <relationshipLabel><!-- Waves (Wave MAM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Wave Model - Staffing --></label>
+        <name>Wave_Model_Staffing__c</name>
+        <picklistValues>
+            <masterLabel>Pilot</masterLabel>
+            <translation><!-- Pilot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Use over the Summer for e.g. travel updates. --></help>
+        <label><!-- Wave Notes --></label>
+        <name>Wave_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Wave&apos;s unique auto-generated TCN id --></help>
+        <label><!-- Wave TCN Id --></label>
+        <name>Wave_TCN_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave Template --></label>
+        <name>Wave_Template__c</name>
+        <relationshipLabel><!-- Waves --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Wave boroughs --></label>
+        <name>Wave_boroughsnew__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique wave code --></help>
+        <label><!-- Wave code --></label>
+        <name>Wave_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave dates description long text --></label>
+        <name>Wave_dates_description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave locator --></label>
+        <name>Wave_locator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave number --></label>
+        <name>Wave_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave salary total --></label>
+        <name>Wave_salary_total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave schedule --></label>
+        <name>Wave_schedule__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description of the timetable, for provision to YPPG --></help>
+        <label><!-- Wave timetable description --></label>
+        <name>Wave_timetable_description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sets website visibility status --></help>
+        <label><!-- Website display status --></label>
+        <name>Website_display_status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Due to commence shortly</masterLabel>
+            <translation><!-- Due to commence shortly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Has commenced</masterLabel>
+            <translation><!-- Has commenced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not bookable online: hidden</masterLabel>
+            <translation><!-- Not bookable online: hidden --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wheelchair Accessible --></label>
+        <name>Wheelchair_Accessible1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wheelchair Accessible --></label>
+        <name>Wheelchair_Accessible__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wheelchair user for transport --></label>
+        <name>Wheelchair_user_for_transport__c</name>
+    </fields>
+    <fields>
+        <label><!-- #18+ allowed on wave --></label>
+        <name>X18_allowed_on_wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- 18+ assigned/reserved --></label>
+        <name>X18_assigned_reserved__c</name>
+    </fields>
+    <fields>
+        <label><!-- YP Capacity reported to CO --></label>
+        <name>YP_Capacity_reported_to_CO__c</name>
+    </fields>
+    <fields>
+        <label><!-- YP List --></label>
+        <name>YP_List__c</name>
+    </fields>
+    <fields>
+        <label><!-- YP SL3 capacity inc overbooking --></label>
+        <name>YP_SL3_capacity_inc_overbooking__c</name>
+    </fields>
+    <fields>
+        <label><!-- YP SL3 place limit percentage --></label>
+        <name>YP_SL3_place_limit_percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of places, including overbooking, available for girls. Calculated from total capacity and female percentage limit --></help>
+        <label><!-- YP female capacity inc overbooking --></label>
+        <name>YP_female_capacity_inc_overbooking__c</name>
+    </fields>
+    <fields>
+        <help><!-- Percentage of the wave that can be female --></help>
+        <label><!-- YP female place limit percentage --></label>
+        <name>YP_female_place_limit_percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of places, including overbooking, available for boys. Calculated from total capacity and male percentage limit --></help>
+        <label><!-- YP male capacity inc overbooking --></label>
+        <name>YP_male_capacity_inc_overbooking__c</name>
+    </fields>
+    <fields>
+        <help><!-- Percentage of the wave that can be male --></help>
+        <label><!-- YP male place limit percentage --></label>
+        <name>YP_male_place_limit_percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- YP over 18 --></label>
+        <name>YP_over_18__c</name>
+    </fields>
+    <fields>
+        <help><!-- Absolute maximum of YP who can actually come on the wave - the real size of the wave --></help>
+        <label><!-- YP place capacity absolute maximum --></label>
+        <name>YP_place_capacity_absolute_maximum__c</name>
+    </fields>
+    <fields>
+        <help><!-- Calculates (absolute max capacity + overbooking percentage) the maximum number of YP who can be booked onto a wave --></help>
+        <label><!-- YP place capacity including overbooking --></label>
+        <name>YP_place_capacity_including_overbooking__c</name>
+    </fields>
+    <fields>
+        <help><!-- The additional percentage of YP who can be booked onto a wave, above the maximum wave capacity of 100% --></help>
+        <label><!-- YP place overbooking capacity percentage --></label>
+        <name>YP_place_overbooking_capacity_percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of places held back for emergency use --></help>
+        <label><!-- YP places held back: emergency --></label>
+        <name>YP_places_held_back_emergency__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of places held back for YP in inclusion categories 4 or 5 --></help>
+        <label><!-- YP places held back: inclusion cat 4/5 --></label>
+        <name>YP_places_held_back_inclusion_cat_4_5__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of YP places temporarily held back --></help>
+        <label><!-- YP places held back: temporarily --></label>
+        <name>YP_places_held_back_temporarily__c</name>
+    </fields>
+    <fields>
+        <help><!-- Calculates total of YP places held back (emergency + inclusion + temporarily) --></help>
+        <label><!-- YP places held back: total --></label>
+        <name>YP_places_held_back_total__c</name>
+    </fields>
+    <fields>
+        <help><!-- The wave staffing fields are currently being updated. If you have questions or concerns regarding these fields, please contact innovation.support@the-challenge.org --></help>
+        <label><!-- Zonal APM --></label>
+        <name>Zonal_APM__c</name>
+        <relationshipLabel><!-- Waves (Zonal APM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Zone the wave is in --></help>
+        <label><!-- Zone --></label>
+        <name>Zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- iscalculate --></label>
+        <name>iscalculate__c</name>
+    </fields>
+    <fields>
+        <label><!-- lastupdatewaveselectionID --></label>
+        <name>lastupdatewaveselectionID__c</name>
+    </fields>
+    <fields>
+        <label><!-- % of Ass/Res from Ind Sch --></label>
+        <name>of_Ass_Res_from_Ind_Sch__c</name>
+    </fields>
+    <fields>
+        <label><!-- % of Ass/Res from SL3 --></label>
+        <name>of_Ass_Res_from_SL3__c</name>
+    </fields>
+    <fields>
+        <label><!-- % of Wave cap paid --></label>
+        <name>of_wave_cap_paid__c</name>
+    </fields>
+    <fields>
+        <help><!-- The wave staffing fields are currently being updated. If you have questions or concerns regarding these fields, please contact innovation.support@the-challenge.org --></help>
+        <label><!-- Support APM 2 --></label>
+        <name>support_APM_2__c</name>
+        <relationshipLabel><!-- Waves (Support APM 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- testwavefield --></label>
+        <name>testwavefield__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Summer-long staff --></label>
+        <name>Summer_long_staff</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2011 --></label>
+        <name>X2011</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2012 --></label>
+        <name>X2012</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2012A --></label>
+        <name>X2012A</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2013 --></label>
+        <name>X2013</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2014 --></label>
+        <name>X2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2015 --></label>
+        <name>X2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2016 --></label>
+        <name>X2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2017 --></label>
+        <name>X2017</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The Wave Selection record cannot be created as there are already 10 YP in access categories 2, 3 or 4 either reserved or assigned to this wave --></errorMessage>
+        <name>Access_categories_3_4_5_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Wave Selection record cannot be created as there are already 5 YP in access categories 3 &amp; 4 either reserved or assigned to this wave --></errorMessage>
+        <name>Access_categories_3_4_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Wave Selection record cannot be created as there is already 1 YP in access categories 4 or 5 either reserved or assigned to this wave --></errorMessage>
+        <name>Access_categories_4_5_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Since you defined a Day Off, please add some text (e.g. &quot;Day Off -&gt;&quot;) --></errorMessage>
+        <name>Add_text_to_PC_Day_Off_1_text</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Since you defined a Day Off, please add some text (e.g. &quot;Day Off -&gt;&quot;) --></errorMessage>
+        <name>Add_text_to_PC_Day_Off_2_text</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Since you defined a Day Off, please add some text (e.g. &quot;Day Off -&gt;&quot;) --></errorMessage>
+        <name>Add_text_to_Practitioner_Day_Off_1_text</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Since you defined a Day Off, please add some text (e.g. &quot;Day Off -&gt;&quot;) --></errorMessage>
+        <name>Add_text_to_Practitioner_Day_Off_2_text</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Since you defined a Day Off, please add some text (e.g. &quot;Day Off -&gt;&quot;) --></errorMessage>
+        <name>Add_text_to_RCA_Day_Off_1_text</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Since you defined a Day Off, please add some text (e.g. &quot;Day Off -&gt;&quot;) --></errorMessage>
+        <name>Add_text_to_RCA_Day_Off_2_text</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Since you defined a Day Off, please add some text (e.g. &quot;Day Off -&gt;&quot;) --></errorMessage>
+        <name>Add_text_to_RCD_Day_Off_1_text</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Since you defined a Day Off, please add some text (e.g. &quot;Day Off -&gt;&quot;) --></errorMessage>
+        <name>Add_text_to_RCD_Day_Off_2_text</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Since you defined a Day Off, please add some text (e.g. &quot;Day Off -&gt;&quot;) --></errorMessage>
+        <name>Add_text_to_TC_Day_Off_1_text</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Since you defined a Day Off, please add some text (e.g. &quot;Day Off -&gt;&quot;) --></errorMessage>
+        <name>Add_text_to_TC_Day_Off_2_text</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Wave Selection record cannot be created as there are already 32 Boys either reserved or assigned in this wave --></errorMessage>
+        <name>Boys_reserved_or_assigned_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Prevents more than given amount of 18+ YPs from being assigned/reserved to a Wave --></errorMessage>
+        <name>EighteenPlus_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Wave Selection cannot be created as there are no spaces for girls left on this wave --></errorMessage>
+        <name>Girls_reserved_or_assigned_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Prevents more than given amount of HTRs being assigned/reserved to a Wave --></errorMessage>
+        <name>HTR_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Wave Selection record cannot be created as there are already 11 Young People either reserved or assigned from Independent schools in this wave --></errorMessage>
+        <name>Ind_school_reserved_or_assigned_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The number in Max Number of SL3a allowed must not be less than the number in Max Number of SL3# allowed --></errorMessage>
+        <name>Max_SL3a_equals_Max_SL3</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The number in Max Number of SL3a allowed must not be greater than the number in Max Number of SL3# allowed --></errorMessage>
+        <name>Max_SL3a_not_greater_than_Max_SL3</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The number in Max Number of SL3b allowed must not be greater than the number in Max Number of SL3# allowed --></errorMessage>
+        <name>Max_SL3b_not_greater_than_Max_SL3</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The number in max number SL3# cannot be less than the number of SL3# who are assigned/reserved on the wave --></errorMessage>
+        <name>Max_no_SL3_cannot_be_less_than_on_wave</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The number in max number SL3a cannot be less than the number of SL3a who are assigned/reserved on the wave --></errorMessage>
+        <name>Max_no_SL3a_cannot_be_less_than_on_wave</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The number in max number SL3b cannot be less than the number of SL3b who are assigned/reserved on the wave --></errorMessage>
+        <name>Max_no_SL3b_cannot_be_less_than_on_wave</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The number in max number SL4a cannot be less than the number of SL4a who are assigned/reserved on the wave --></errorMessage>
+        <name>Max_no_SL4a_cannot_be_less_than_on_wave</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The number in max number SL4b cannot be less than the number of SL4b who are assigned/reserved on the wave --></errorMessage>
+        <name>Max_no_SL4b_cannot_be_less_than_on_wave</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The number in max number SL5 cannot be less than the number of SL5 who are assigned/reserved on the wave --></errorMessage>
+        <name>Max_no_SL5_cannot_be_less_than_on_wave</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot edit both the Max Number of SL4a and SL4b fields at the same time. Please edit one, save, and then edit the the other field. --></errorMessage>
+        <name>Max_no_of_SLs_and_HTR_simultaneous_edit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Wave Selection record cannot be created as there are already 61 Young People with no access condition either reserved or assigned in this wave --></errorMessage>
+        <name>No_access_categories_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Your MM has already confirmed the number of starters this wave. Please see your MM to remove this date if you would like to make further changes. --></errorMessage>
+        <name>Prevent_changes_after_MM_sign_off</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Your MM has already confirmed the number of late starters this wave. Please see your MM to remove this date if you would like to make further changes. --></errorMessage>
+        <name>Prevent_changes_after_MM_sign_off_late</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sorry - Only Systems can change the name of a wave. --></errorMessage>
+        <name>Prevent_user_from_changing_wave_name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Prevents more than given amount of SL3a&apos;s being assigned/reserved to a Wave --></errorMessage>
+        <name>SL3a_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Prevents more than given amount of SL3bs being assigned/reserved to a Wave --></errorMessage>
+        <name>SL3b_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Prevents more than given amount of SL4as being assigned/reserved to a Wave --></errorMessage>
+        <name>SL4a_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Prevents more than given amount of SL4bs being assigned/reserved to a Wave --></errorMessage>
+        <name>SL4b_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Prevents more than given amount of SL5s being assigned/reserved to a Wave --></errorMessage>
+        <name>SL5_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Prevents more than given amount of SL3as and SL3bs from being assigned/reserved to a Wave --></errorMessage>
+        <name>Total_SL3_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Wave Selection record cannot be created as there are already 63 Young People either reserved or assigned in this wave --></errorMessage>
+        <name>Total_reserved_or_assigned_check</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Generate_Marketing_Register --></label>
+        <name>Generate_Marketing_Register</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Medical_Forms --></label>
+        <name>Generate_Medical_Forms</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Medical_TEST --></label>
+        <name>Generate_Medical_TEST</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_RCA_timetable --></label>
+        <name>Generate_RCA_timetable</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Register --></label>
+        <name>Generate_Register</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Staffing_Profiles --></label>
+        <name>Generate_Staffing_Profiles</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Staffing_Profiles2 --></label>
+        <name>Generate_Staffing_Profiles2</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Staffing_Profiles_Old --></label>
+        <name>Generate_Staffing_Profiles_Old</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Wave_Doc_TEST --></label>
+        <name>Generate_Wave_Doc_TEST</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_document --></label>
+        <name>Generate_document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HTMU --></label>
+        <name>HTMU</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Wave --></label>
+        <name>New_Wave</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- No_HTMU --></label>
+        <name>No_HTMU</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Not_Eligible --></label>
+        <name>Not_Eligible</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Schedule_SMS --></label>
+        <name>Schedule_SMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Transport_Plan --></label>
+        <name>Transport_Plan</name>
+    </webLinks>
+</CustomObjectTranslation>

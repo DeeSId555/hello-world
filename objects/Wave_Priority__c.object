@@ -1,0 +1,1554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Wave_Priorities</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Active_season__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( Season__r.Active_season__c )</formula>
+        <label>Active season</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Actual_Wave_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual Wave Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>BADHAV 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BADHAV 5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BADHAV 6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BADHAV 7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BADHAV 8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BADHAV 9</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BBG 10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BBG 11</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BBG 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BBG 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BBG 5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BBG 6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BBG 7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BBG 8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BBG 9</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BEN 10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BEN 11</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BEN 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BEN 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BEN 5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BEN 6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BEN 7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BEN 8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BEN 9</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BlackCountry 1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BlackCountry 10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BlackCountry 11</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BlackCountry 12</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BlackCountry 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BlackCountry 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BlackCountry 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BlackCountry 5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BlackCountry 6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BlackCountry 7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BlackCountry 8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BlackCountry 9</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BRICC 10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BRICC 11</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BRICC 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BRICC 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BRICC 5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BRICC 6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BRICC 7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BRICC 8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BRICC 9</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CAS 1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CAS 10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CAS 11</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CAS 12</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CAS 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CAS 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CAS 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CAS 5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CAS 6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CAS 7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CAS 8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CAS 9</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CaW 1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CaW 10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CaW 11</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CaW 12</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CaW 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CaW 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CaW 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CaW 5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CaW 6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CaW 7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CaW 8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CaW 9</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EastSurrey 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EastSurrey 5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EastSurrey 6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EastSurrey 7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EastSurrey 8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EastSurrey 9</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HEAL 10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HEAL 11</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HEAL 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HEAL 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HEAL 5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HEAL 6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HEAL 7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HEAL 8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HEAL 9</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HIHO 1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HIHO 10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HIHO 11</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HIHO 12</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HIHO 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HIHO 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HIHO 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HIHO 5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HIHO 6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HIHO 7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HIHO 8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HIHO 9</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lanc 1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lanc 10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lanc 11</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lanc 12</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lanc 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lanc 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lanc 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lanc 5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lanc 6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lanc 7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lanc 8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lanc 9</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MRK 1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MRK 10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MRK 11</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MRK 12</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MRK 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MRK 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MRK 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MRK 5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MRK 6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MRK 7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MRK 8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MRK 9</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NERF 1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NERF 10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NERF 11</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NERF 12</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NERF 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NERF 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NERF 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NERF 5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NERF 6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NERF 7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NERF 8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NERF 9</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NorthBirmingham 1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NorthBirmingham 10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NorthBirmingham 11</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NorthBirmingham 12</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NorthBirmingham 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NorthBirmingham 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NorthBirmingham 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NorthBirmingham 5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NorthBirmingham 6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NorthBirmingham 7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NorthBirmingham 8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NorthBirmingham 9</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NorthManc 1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NorthManc 10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NorthManc 11</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NorthManc 12</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NorthManc 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NorthManc 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NorthManc 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NorthManc 5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NorthManc 6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NorthManc 7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NorthManc 8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NorthManc 9</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SLL 1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SLL 10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SLL 11</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SLL 12</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SLL 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SLL 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SLL 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SLL 5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SLL 6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SLL 7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SLL 8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SLL 9</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Solihull 10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Solihull 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Solihull 6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SouthBirmingham 10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SouthBirmingham 11</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SouthBirmingham 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SouthBirmingham 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SouthBirmingham 5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SouthBirmingham 6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SouthBirmingham 7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SouthBirmingham 8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SouthBirmingham 9</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SouthManc 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SouthManc 5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SouthManc 6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SouthManc 7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SouthManc 8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TH3 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TH3 5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TH3 6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TH3 7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TH3 8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TH3 9</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TRIW 1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TRIW 10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TRIW 11</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TRIW 12</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TRIW 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TRIW 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TRIW 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TRIW 5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TRIW 6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TRIW 7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TRIW 8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TRIW 9</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>WestSurrey 10</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>WestSurrey 11</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>WestSurrey 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>WestSurrey 4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>WestSurrey 5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>WestSurrey 6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>WestSurrey 7</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>WestSurrey 8</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>WestSurrey 9</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>All_girl_wave__c</fullName>
+        <description>Pulls through the All Girl Wave? value from Wave</description>
+        <externalId>false</externalId>
+        <formula>TEXT( Wave__r.All_Girl_Wave__c )</formula>
+        <label>All girl wave?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Location_display_text_online__c</fullName>
+        <externalId>false</externalId>
+        <formula>Wave__r.Location_display_text_online__c</formula>
+        <label>Location display text online</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Oldest_date_of_birth_possible__c</fullName>
+        <description>Oldest date of birth possible to go on the particular wave</description>
+        <externalId>false</externalId>
+        <formula>Wave__r.Oldest_date_of_birth_possible__c</formula>
+        <label>Oldest date of birth possible</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Part1_KO_Date__c</fullName>
+        <description>KO day for Part 1 (Personal Challenge, Get Active)</description>
+        <externalId>false</externalId>
+        <formula>Wave__r.PC_KO_day__c</formula>
+        <label>Part1 KO Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Part3_end_date__c</fullName>
+        <description>Used on OBS tile</description>
+        <externalId>false</externalId>
+        <formula>IF( 
+ISPICKVAL(Wave__r.Pilot__c, &quot;NCS Sequential RCA&quot;), 
+Wave__r.RCD_end_date__c,  
+Wave__r.RCA_End_Date__c
+)</formula>
+        <label>Part3 end date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Priority__c</fullName>
+        <externalId>false</externalId>
+        <label>Priority</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Season_SF_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Season__r.Id</formula>
+        <label>Season SF ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Season__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Season the wave priority is in</description>
+        <externalId>false</externalId>
+        <label>Season</label>
+        <referenceTo>Season__c</referenceTo>
+        <relationshipLabel>Wave Priorities</relationshipLabel>
+        <relationshipName>Wave_Priorities</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>September_RCA_weekends__c</fullName>
+        <description>Pulls through the value of September RCA weekends from Wave</description>
+        <externalId>false</externalId>
+        <formula>TEXT( Wave__r.September_RCA_weekends__c )</formula>
+        <inlineHelpText>Pulls through the value of September RCA weekends from Wave</inlineHelpText>
+        <label>September RCA weekends</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Wave_Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Wave Location</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Barking and Dagenham</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Barnet</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bexley</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Birmingham</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Blackburn with Darwen</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Brent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bromley</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Burnley</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bury</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Camden</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>City of London</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Coventry</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Coventry and North Warwickshire</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Croydon</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Dudley</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ealing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Enfield</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Epsom and Ewell</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Godalming</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Greenwich</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hackney</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hammersmith and Fulham</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Haringey</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Harrow</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Havering</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hillingdon</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hounslow</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Islington</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Kensington and Chelsea</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Kingston</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lambeth</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lancashire</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lewisham</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Luton</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Manchester</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Merton</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Newham</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>North Warwickshire</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Oldham</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Preston</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Redbridge</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Reigate and Banstead</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Richmond</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rochdale</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Salford</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sandwell</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Solihull</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Southwark</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>South Warwickshire</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Stockport</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Surrey</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sutton</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tameside</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tower Hamlets</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Walsall</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Waltham Forest</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wandsworth</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Westminster</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wigan</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Woking</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wolverhampton</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Wave_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Wave Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Wave 1 (23rd June)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wave 2 (27th June)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wave 3 (3rd July)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wave 4 (8th July)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wave 5 (14th July)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wave 6 (18th July)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wave 7 (24th July)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wave 8 (29th July)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wave 9 (4th August)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wave 10 (8th August)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wave 11 (13th August)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wave 12 (17th August)</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Wave_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Wave__r.Wave_number__c</formula>
+        <label>Wave Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Wave_Record_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Wave Record Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>2012</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2012A</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2013</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2013A</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2014</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2015</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016</fullName>
+                    <default>true</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Wave_SF_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Wave__r.Id</formula>
+        <label>Wave SF ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Wave__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Wave</label>
+        <referenceTo>Wave__c</referenceTo>
+        <relationshipLabel>Wave Priorities</relationshipLabel>
+        <relationshipName>Wave_Priorities</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Wave_dates_description_long_text__c</fullName>
+        <description>Pulled through from Wave object.  For OBS</description>
+        <externalId>false</externalId>
+        <formula>Wave__r.Wave_dates_description__c</formula>
+        <inlineHelpText>Pulled through from Wave object.  For OBS</inlineHelpText>
+        <label>Wave dates description long text</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Wave_name_value__c</fullName>
+        <description>Wave name as a text field</description>
+        <externalId>false</externalId>
+        <formula>Wave__r.Name</formula>
+        <label>Wave name value</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Wave_schedule__c</fullName>
+        <description>Pulls through Wave Schedule from Wave object.  Used to display programme dates and information on OBS</description>
+        <externalId>false</externalId>
+        <formula>Wave__r.Wave_schedule__c</formula>
+        <inlineHelpText>Pulls through Wave Schedule from Wave object.  Used to display programme dates and information on OBS</inlineHelpText>
+        <label>Wave schedule</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Website_display_status__c</fullName>
+        <description>Pulls through the value of Website display status from Wave</description>
+        <externalId>false</externalId>
+        <formula>TEXT( Wave__r.Website_display_status__c )</formula>
+        <label>Website display status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Youngest_date_of_birth__c</fullName>
+        <description>Youngest date of birth possible for this wave priority value</description>
+        <externalId>false</externalId>
+        <formula>Season__r.Youngest_date_of_birth__c</formula>
+        <label>Youngest date of birth</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <label>Wave Priority</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Account__c</columns>
+        <columns>Priority__c</columns>
+        <columns>Wave_dates_description_long_text__c</columns>
+        <columns>Wave_Number__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Season__c</field>
+            <operation>equals</operation>
+            <value>summer 2016</value>
+        </filters>
+        <filters>
+            <field>Wave_Location__c</field>
+            <operation>equals</operation>
+            <value>Redbridge</value>
+        </filters>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>W-{00000}</displayFormat>
+        <label>Wave Priorities Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Wave Priorities</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

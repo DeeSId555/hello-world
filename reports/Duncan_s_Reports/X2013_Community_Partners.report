@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r$Usage_Type__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Junctions__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Partner_or_Venue__c.Big_Challenge_Partner_2013,Partner_or_Venue__c.Sponsorship_Partner_2013,Partner_or_Venue__c.RCA_Community_Partner_2013,Partner_or_Venue__c.TC_Community_Partner_2013</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2013 Community Partners</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Prog14_AccountsUsagesBookings__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$Date_of_next_step__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

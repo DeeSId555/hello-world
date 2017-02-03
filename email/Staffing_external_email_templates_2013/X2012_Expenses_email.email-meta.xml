@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>2012 Expenses email</name>
+    <style>freeForm</style>
+    <subject>Expenses form</subject>
+    <textOnly>Dear {!Job_placement__c.Contact_Name__c},
+
+It is possible that you will incur expenses during your assignment with The Challenge. Please use this form to submit all expenses.
+
+Summer Expenses form:
+http://www.clicktools.com/survey?iv=1x0lrts1bnxq1&amp;q1={!Job_Application__c.Id}&amp;q2={!Job_placement__c.Id}
+
+Please read the instructions carefully:
+
+Expenses will be paid to you on a monthly basis and need to be submitted before the third Sunday of the month to avoid delays to repayment.
+
+How do I claim expenses?
+Claiming expenses is very easy. Just follow these steps:
+
+Scan or photograph your receipts from the summer.
+Number the scans/photographs to correspond to the items on the form.
+Itemise your expenses and upload scans or photographs of your receipts on the online form. If you cannot upload the scanned files, please submit the form and send them to summer2012@the-challenge.org
+Submit the form
+
+The form can be re-used for further claims.
+If you are submitting expenses for more than one part of The Challenge, please do so on separate forms.
+
+We will only authorise expenses for essential travel during the programme. Our Expenses Policy only covers &apos;other&apos; expenses in exceptional circumstances. Please note that we will be unable to repay any expenses without receipts.
+
+We can only accept scanned or clearly photographed receipts. Paper receipts handed in or posted will not be processed.
+
+We encourage you to submit your expenses regularly - on a weekly basis where possible. This will help to ensure you are reimbursed as quickly as possible.
+
+Your claim will be authorised if everything is completed correctly. We will aim to pay all expenses directly into your bank account within 10 days of receiving your claim.
+
+The deadline for the submission of expenses is 31 October 2012. Any expenses submitted after this date will not be paid.
+
+Best wishes,
+
+{!Job_placement__c.Staffing_Associate__c}
+{!Job_placement__c.Staffing_Associate_email__c}
+The Challenge Network</textOnly>
+    <type>html</type>
+</EmailTemplate>

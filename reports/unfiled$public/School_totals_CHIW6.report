@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Wave__c.School_Totals__r$School_Name__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c.School_Totals__r$Online_single_school_places_available__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Wave__c$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>CHIW 6</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>School totals CHIW6</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Waves_with_school_totals__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Wave__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_PREVCUR2FY</interval>
+    </timeFrameFilter>
+</Report>

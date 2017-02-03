@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>From NCS campaign</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2016 NCS Campaign - Declined sign up</name>
+    <style>none</style>
+    <subject>NCS - opportunities to take part</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTheChallenge.org
+
+Opportunities to take part in NCS
+
+
+
+Dear {!Contact.FirstName},
+
+As you told us you might be interested in NCS, we wanted to introduce ourselves. We are The Challenge and we are running NCS in your area next summer.  We understand that you can’t take part this time, but wanted to let you know that there are other opportunities to do NCS.
+
+Not sure if NCS is for you?
+Here&apos;s a taster of what NCS is all about...
+http://youtu.be/YEpX7Q2-CVQ
+
+NCS is a once-in-a-lifetime opportunity aimed at all 15-17 year olds. It’s a chance to experience new activities, make new friends and build the skills and confidence to help you get ahead. Over 120,000 young people have already taken part - don&apos;t miss your chance!
+
+When is NCS running in 2016?
+NCS runs at two different times throughout the year:
+- During the summer – we have lots of start dates throughout the summer holidays.
+- October half-term, with 4 weekend days after.
+
+You&apos;ll need to be the right age though - see our age eligibility requirements at www.NCSTheChallenge.org/terms. For more details, check out  NCSTheChallenge.org.
+
+What do I do if I decide to take part in NCS?
+You can simply apply online. Places fill up quickly, so make sure you sign up as soon as possible. Go to  www.NCSTheChallenge.org and use the following unique login details to apply:
+
+NCS ID: {!Contact.NCS_ID__c}
+Password: {!Contact.Login_PIN__c}
+
+The website will tell you that some parts need to be completed by your parent or guardian. Please ask them to log in to complete these.
+
+It is quicker to apply online but if your parent or guardian would like a paper copy of the application form instead, please call us on 020 3542 2400 and we’ll send one out in the post.
+
+What if I have more questions?
+If you have any questions, or need more information about the programme to make up your mind, take a look at  questions.ncsthechallenge.org. Or, get in touch by calling 020 3542 2400 or emailing  contact@the-challenge.org.
+
+We hope you get a chance to sign up for this once-in-a-lifetime opportunity.
+
+Yours sincerely,
+
+Tanya Dunne
+Head of Customer Services - The Challenge
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

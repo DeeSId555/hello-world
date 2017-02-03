@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Request for Availability for Autumn waves Staff without JP&apos;s</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>5.1.2 Autumn availability Back up staff</name>
+    <style>freeForm</style>
+    <subject>Work Opportunities</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+Dear {!Contact.FirstName},
+
+WORK OPPORTUNITIES
+
+Thank you for your interest in working for NCS powered by The Challenge. 
+
+We are aware that to date you have not received a role with us this summer and wanted to give you the opportunity of working with us on our Autumn programme and applying for core roles. Please see opportunities below.
+
+AUTUMN PROGRAMMES
+
+The Autumn programme is a compacted version of the Summer programme. Please follow the link at the bottom of this email to our web site for details on dates and roles.
+
+To be considered to work on the Autumn programme in the role you were assessed for, please click on the New Availability link to confirm your availability. 
+
+NB You will not be required to attend training
+
+New Availability form: http://www.clicktools.com/survey?iv=1b49htgah35ov&amp;q1={!Job_Application__c.Id}
+
+CORE ROLES/YEAR ROUND ROLES
+
+We are currently looking for candidates for a range of roles within the Challenge. Please follow the link to the web site and look under &apos;Year round roles&apos; for job description and application process.
+
+Details of all the roles and dates can be found on our web site below.
+
+http://www.the-challenge.org/index.php/support-us/work-for-us
+
+If you have any questions, please feel free to contact me. 
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.Contact_Owner_alternative_email__c}
+5.1.2 Autumn</textOnly>
+    <type>html</type>
+</EmailTemplate>

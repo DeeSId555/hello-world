@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>There has been some confusion re Showcase. this email is clarification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>PG email re showcase</name>
+    <style>none</style>
+    <subject>The Challenge - Showcase 7th July 2011</subject>
+    <textOnly>Dear {!Contact.00NC0000004a6DQ}{!Contact.00NC0000004a6Da},
+
+
+Further to the programme pack which we sent to you on {!Contact.Date_Prog_Details_letter_created__c} please find further information about the Showcase event on the last day of the Team Challenge.
+
+
+The Showcase gives the young people a chance to present the work that they have done in their teams to the whole group of 60 people. The event starts at 3pm at the Peabody, Hugh Cubitt Centre and we warmly invite you to come to that as well. After the Showcase, you are welcome to take {!Contact.FirstName} home.
+
+
+If you are unable to come to the Showcase event, please be aware that it ends at approximately 5.30pm and you can pick up {!Contact.FirstName} from the Peabody or they can make their own way home. 
+
+
+If you have any further questions, please do not hesitate to contact us on 0207 921 4404 or at contact@the-challenge.org
+
+
+Kind regards,
+
+
+Dominique Standring
+Central Operations
+The Challenge Network</textOnly>
+    <type>custom</type>
+</EmailTemplate>

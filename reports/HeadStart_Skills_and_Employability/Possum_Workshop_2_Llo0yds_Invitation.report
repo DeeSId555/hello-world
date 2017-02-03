@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.YP_First_name_from_HS_Application_Form__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.YP_Last_name_from_HS_Application_Form__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_Application_form_Email__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_Hours_Total__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.Interview_preference__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.Final_Employer_choice__c</field>
+    </columns>
+    <description>YPs who chose Lloyds from summer and autumn</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND (4 OR 5) AND 6</booleanFilter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>HS_Activity__c.HS_Activity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.Date_congratulations_email_sent__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>6/20/2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.HS_Hours_Total__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>16</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.Interview_preference__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Lloyds (London only)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.Final_Employer_choice__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Lloyds</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.YP_confirmed_OJE__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Possum - Workshop 2 Llo0yds Invitation</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$HS_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>confirmation of training mentors</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Staffing confirmation of training mentors</name>
+    <style>none</style>
+    <subject>The Challenge Network: training confirmation</subject>
+    <textOnly>Dear {!HR_Event_Attendance__c.Candidate_Name__c},
+
+I am writing to you in order to confirm the details of your training session with us.
+
+Address: {!HR_Event_Attendance__c.Venue_address__c} 
+Start date: {!HR_Event_Attendance__c.HR_Event_Date__c} 
+Start time: {!HR_Event_Attendance__c.Start_time__c}. 
+End date: {!HR_Event_Attendance__c.End_date__c}
+End time: {!HR_Event_Attendance__c.End_time__c}
+
+The training session will include various lively group activities. Lunch will be provided.  Please bring a notepad and pen along with you. Please note that some activities may take place outdoors, so please wear appropriate clothing. Please prepare two icebreaker games/exercises to share with the group. Please bring your passport/proof of identity along with you to training for CRB verification. 
+
+{!HR_Event_Attendance__c.Extra_info__c}
+
+{!HR_Event_Attendance__c.Packing_list__c}. 
+
+Click on the link below for directions to the training venue.
+{!HR_Event_Attendance__c.Directions__c}
+
+We look forward to seeing you again!
+
+Best wishes,
+
+The Staffing Team
+The Challenge Network
+
+
+
+WWW.THE-CHALLENGE.ORG    /thechallengeNETWORK
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

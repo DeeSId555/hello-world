@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Thank_you_letter</letterhead>
+    <name>Generic Thank you email</name>
+    <style>freeForm</style>
+    <subject>Thank you for your involvement with The Challenge</subject>
+    <textOnly>Dear {!Contact.FirstName} {!Contact.LastName},
+
+Thank you so much for all of your involvement with The Challenge this year!  Founded in 2009, The Challenge aims to inspire and connect young people to make a difference in their community.  We believe that it is not acceptable that our country has the lowest level of trust and belonging amongst its citizens in Europe.  With your help, we have worked to change this by bringing together young people from different backgrounds and challenging them to strengthen their communities. Particularly, your comprehensive involvement in multiple aspects of the programme has been instrumental to  the success not only of The Challenge, but to the lives of the young people who participated.
+
+This year has been a great year, but we know that there is so much more to do if we are to make a permanent difference to levels of trust in our society.  Over the next twelve months you will see us expand our work to reach twice as many young people. We could love you to continue to be part of this. 
+
+Thank you once again for the contribution you have made to the lives of our Challengers!
+
+Yours sincerely,
+
+Craig Morley, Chief Executive on behalf of The Challenge Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

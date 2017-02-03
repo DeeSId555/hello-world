@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CHILD_ID</field>
+    </columns>
+    <columns>
+        <field>FK_$Job_Application__c.Contact_Name__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Job_Application__c.Role_to_assess_for__c</field>
+    </columns>
+    <columns>
+        <field>HR_Event_Attendance__c.Attended_Day_2__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>07/06 - TRIW - New Mentor Training,07/06 - TRIW - Practitioner Training,07/06 - TRIW - Residential Mentor Training,31/05 - TRIW - New Leader Training</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>TRIW - Sat training upload</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$HR_Event__c$HR_Event_Attendance__c@HR_Event_Attendance__c.Job_Application__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>FK_$Job_Application__c.Contact_Name__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>HR_Event__c.Event_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2014-05-30</startDate>
+    </timeFrameFilter>
+</Report>

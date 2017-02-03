@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Completion status --></label>
+        <name>CUSTOM_Completion_status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date completed --></label>
+        <name>CUSTOM_Date_completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>CUSTOM_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required --></label>
+        <name>CUSTOM_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task deadline --></label>
+        <name>CUSTOM_Task_deadline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template 1: description --></label>
+        <name>CUSTOM_Template_1_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template 1 --></label>
+        <name>CUSTOM_Template_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template 2 --></label>
+        <name>CUSTOM_Template_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template 2: description --></label>
+        <name>CUSTOM_Template_2_description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template 3 --></label>
+        <name>CUSTOM_Template_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template 3: description --></label>
+        <name>CUSTOM_Template_3_description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed --></label>
+        <name>TASKRAY__Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- TaskRay Task --></label>
+        <name>TASKRAY__Project_Task__c</name>
+        <relationshipLabel><!-- TaskRay Checklist Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>TASKRAY__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Checklist Group --></label>
+        <name>TASKRAY__trChecklistGroup__c</name>
+        <relationshipLabel><!-- TaskRay Checklist Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- My Checklist Item --></label>
+        <name>TASKRAY__trIsMyChecklistItem__c</name>
+    </fields>
+    <fields>
+        <label><!-- Checklist Item Name --></label>
+        <name>TASKRAY__trLongName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned To --></label>
+        <name>TASKRAY__trOwner__c</name>
+        <relationshipLabel><!-- TaskRay Checklist Items --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

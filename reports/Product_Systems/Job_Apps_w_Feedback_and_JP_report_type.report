@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Job_Application__c$Name</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Feedback__r$Name</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Feedback__r$Job_placement__c.Name</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Job Apps w Feedback and JP report type</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Job_Apps_with_Feedback_and_Job_Placement_fields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Job_Application__c$Assignment_end_date__c</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

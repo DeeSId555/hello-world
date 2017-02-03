@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>workflow active (DS)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>1.2.1d PV Care Check registration complete confirmation</name>
+    <style>freeForm</style>
+    <subject>Your application to The Challenge Network</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+Dear {!Contact.FirstName},
+
+Thank you for your application to volunteer with The Challenge Network.
+
+Your Care Check registration has been received and your application is now being processed.
+
+We will be in touch with you in due course. Please allow 28 working days in order for us to give your application due consideration.
+
+Thank you for your interest in The Challenge.
+
+Best wishes,
+
+
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.Contact_Owner_alternative_email__c}
+
+CR 1.2.1c PV</textOnly>
+    <type>html</type>
+</EmailTemplate>

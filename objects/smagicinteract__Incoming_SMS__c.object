@@ -1,0 +1,1830 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account_owner__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact__r.Account.Owner.FirstName  &amp; &quot; &quot; &amp;  Contact__r.Account.Owner.LastName</formula>
+        <label>Account owner</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ActualCreatedDate__c</fullName>
+        <externalId>false</externalId>
+        <label>ActualCreatedDate</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Incoming SMS</relationshipLabel>
+        <relationshipName>Incoming_SMS</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Incoming SMS</relationshipLabel>
+        <relationshipName>Incoming_SMS</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lead</label>
+        <referenceTo>Lead</referenceTo>
+        <relationshipLabel>Incoming SMS</relationshipLabel>
+        <relationshipName>Incoming_SMS</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>smagicinteract__Inbound_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <description>You can receive incoming sms to this number.</description>
+        <externalId>false</externalId>
+        <label>Inbound Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smagicinteract__Mobile_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Mobile Number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>smagicinteract__SMS_Text__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>SMS Text</label>
+        <length>4000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>smagicinteract__actionTaken__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>actionTaken</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smagicinteract__external_field__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>external field</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>smagicinteract__taskId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>taskId</label>
+        <length>200</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Incoming SMS</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Lead__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>ActualCreatedDate__c</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+            <value>Sales</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>4/5/2016 12:00 AM</value>
+        </filters>
+        <label>2016 Sales inbox</label>
+    </listViews>
+    <listViews>
+        <fullName>All3</fullName>
+        <columns>OBJECT_ID</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <columns>ActualCreatedDate__c</columns>
+        <columns>NAME</columns>
+        <columns>Lead__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>TS texts</label>
+    </listViews>
+    <listViews>
+        <fullName>BHITCH_Incoming_SMS_to_deal_with</fullName>
+        <booleanFilter>1</booleanFilter>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>Account_owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Iryna Libych</value>
+        </filters>
+        <label>Iryna Incoming SMS to deal with</label>
+        <sharedTo>
+            <group>MarketingNorthEastLondon</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BRAD_Incoming_SMS_2016</fullName>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <columns>CREATED_DATE</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>Account_owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Shakeel Aziz,Clare Higgins,Sonya Kumar,Lucy Neal</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Ginevra Hall,Thomas Gatehouse,Archie Moss</value>
+        </filters>
+        <label>BRAD Incoming SMS 2016</label>
+        <sharedTo>
+            <group>MarketingNorthEastLondon</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Colleen_Test</fullName>
+        <columns>OBJECT_ID</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <columns>ActualCreatedDate__c</columns>
+        <columns>NAME</columns>
+        <columns>Lead__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>Yes NWL Texts to Monitor</label>
+    </listViews>
+    <listViews>
+        <fullName>Dealt_with</fullName>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Contact__c</columns>
+        <columns>NAME</columns>
+        <columns>ActualCreatedDate__c</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>contains</operation>
+        </filters>
+        <label>Dealt with</label>
+    </listViews>
+    <listViews>
+        <fullName>HABAN_Incoming_SMS_to_deal_with</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>Account_owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>enrico Incoming SMS to deal with</label>
+        <sharedTo>
+            <group>MarketingNorthEastLondon</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Hen_Incoming_SMS_to_deal_with</fullName>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <columns>CREATED_DATE</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>Account_owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Ian Campbell,Cardy Lee,Monica Mason</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Lee Waller,Emma Fox</value>
+        </filters>
+        <label>Hen Incoming SMS to deal with</label>
+        <sharedTo>
+            <group>MarketingNorthEastLondon</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Incoming_SMS_Sales</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>Account_owner__c</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+            <value>Sales</value>
+        </filters>
+        <label>Incoming SMS - Sales</label>
+    </listViews>
+    <listViews>
+        <fullName>Incoming_SMS_Sales_JH</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>Account_owner__c</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+            <value>Sales</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>contains</operation>
+            <value>Kate Weaver,Sanshia Blake,Joshua Howells,Stephen Hanson</value>
+        </filters>
+        <label>Incoming SMS - Sales-JH</label>
+    </listViews>
+    <listViews>
+        <fullName>Incoming_SMS_Sales_SoCo</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>Account_owner__c</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+            <value>Sales</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>contains</operation>
+            <value>Rachel Capper,Tom Perrin,Laurence Hickin,Tessa McGrath,Nathan Alleyne</value>
+        </filters>
+        <label>Incoming SMS - Sales-SoCo</label>
+    </listViews>
+    <listViews>
+        <fullName>JJ_Incoming_TXT</fullName>
+        <columns>OBJECT_ID</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <columns>ActualCreatedDate__c</columns>
+        <columns>NAME</columns>
+        <columns>Lead__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Lead__c</field>
+            <operation>equals</operation>
+            <value>Josh Johnson</value>
+        </filters>
+        <label>JJ: Incoming TXT</label>
+    </listViews>
+    <listViews>
+        <fullName>JJ_Incoming_TXT1</fullName>
+        <columns>OBJECT_ID</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <columns>ActualCreatedDate__c</columns>
+        <columns>NAME</columns>
+        <columns>Lead__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>JJ: Incoming TXT</label>
+    </listViews>
+    <listViews>
+        <fullName>JJ_Incoming_TXT2</fullName>
+        <columns>OBJECT_ID</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <columns>ActualCreatedDate__c</columns>
+        <columns>NAME</columns>
+        <columns>Lead__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>JJ: Incoming TXT</label>
+    </listViews>
+    <listViews>
+        <fullName>JJ_Incoming_TXT3</fullName>
+        <columns>OBJECT_ID</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <columns>ActualCreatedDate__c</columns>
+        <columns>NAME</columns>
+        <columns>Lead__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>JJ: Incoming TXT</label>
+    </listViews>
+    <listViews>
+        <fullName>JJ_Incoming_TXT4</fullName>
+        <columns>OBJECT_ID</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <columns>ActualCreatedDate__c</columns>
+        <columns>NAME</columns>
+        <columns>Lead__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Contact__c</field>
+            <operation>equals</operation>
+            <value>Josh Johnson</value>
+        </filters>
+        <label>JJ: Incoming TXT</label>
+    </listViews>
+    <listViews>
+        <fullName>Jo_check</fullName>
+        <columns>NAME</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>contains</operation>
+            <value>AM</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>9/1/2013 12:00 AM</value>
+        </filters>
+        <label>Jo check</label>
+        <sharedTo>
+            <group>Central_Comms_Admins</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Josh_C_Texts</fullName>
+        <columns>OBJECT_ID</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <columns>ActualCreatedDate__c</columns>
+        <columns>NAME</columns>
+        <columns>Lead__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Joshua Cooper</value>
+        </filters>
+        <label>Josh C Texts</label>
+    </listViews>
+    <listViews>
+        <fullName>LAW_Incoming_SMS_2016</fullName>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <columns>CREATED_DATE</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>Account_owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>,Rebekah Campbell,Josh Rickayzen,Linda Allinson</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>,Evelyn Griffiths,Gabby Abbott</value>
+        </filters>
+        <label>Leeds Incoming SMS 2016</label>
+        <sharedTo>
+            <group>MarketingNorthEastLondon</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>MC_Text_View_Reply_s</fullName>
+        <columns>OBJECT_ID</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <columns>ActualCreatedDate__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>NAME</columns>
+        <columns>Lead__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>MC- Text View Reply&apos;s</label>
+    </listViews>
+    <listViews>
+        <fullName>Marketing_to_deal_with</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>NAME</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+            <value>marketing</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Mel Vasileva</value>
+        </filters>
+        <label>Marketing to deal with</label>
+        <sharedTo>
+            <group>MarketingAll</group>
+            <group>MarketingLondon</group>
+            <group>MarketingManagers</group>
+            <group>MarketingMidlands</group>
+            <group>MarketingNorthWest</group>
+            <group>Marketing_Bucks_Berks</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Marketing_to_deal_with1</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>NAME</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+            <value>SALES</value>
+        </filters>
+        <label>Sales Inbox</label>
+        <sharedTo>
+            <group>MarketingNorthWest</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Mel_s_SMS</fullName>
+        <columns>Account_owner__c</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>ActualCreatedDate__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Lead__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Mel Vasileva,Luke Graham,Mathew Betts,Rowan Gleadle</value>
+        </filters>
+        <label>Mel&apos;s SMS</label>
+    </listViews>
+    <listViews>
+        <fullName>NE_London_Incoming_SMS_to_deal_with1</fullName>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <columns>CREATED_DATE</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>Account_owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Lucie Vickers,Serena Flynn,Holly Dowling,Salome Wagaine-Twabwe,Sara Siddiqi</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>helen menczykowski,Hannah Corkery,Eleanor McAll</value>
+        </filters>
+        <label>NE London Incoming SMS to deal with</label>
+        <sharedTo>
+            <group>MarketingNorthEastLondon</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>NE_London_Incoming_SMS_to_deal_with10</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+            <value>marketing</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Hannah Corkery,Fransesca Walsh,Barnaby Smith,Lilian Rice</value>
+        </filters>
+        <label>NE London Incoming SMS to deal withBCHIC</label>
+        <sharedTo>
+            <group>MarketingNorthEastLondon</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>NE_London_Incoming_SMS_to_deal_with9</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+            <value>marketing</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Hannah Corkery,Sara Siddiqi,Eleanor McAll,Helen Menczykowski</value>
+        </filters>
+        <label>NE London Incoming SMS to deal with</label>
+        <sharedTo>
+            <group>MarketingNorthEastLondon</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>NE_London_Incoming_SMS_to_deal_with_MH1</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+            <value>marketing</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Mark Hatt</value>
+        </filters>
+        <label>NE London Incoming SMS to deal with MH</label>
+        <sharedTo>
+            <group>MarketingNorthEastLondon</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>NE_London_Incoming_SMS_to_deal_with_NG1</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+            <value>marketing</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Niamh Grego</value>
+        </filters>
+        <label>NE London Incoming SMS to deal with NG</label>
+        <sharedTo>
+            <group>MarketingNorthEastLondon</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>NE_London_Incoming_SMS_to_deal_with_SM1</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+            <value>marketing</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Shuna Mackay</value>
+        </filters>
+        <label>NE London Incoming SMS to deal with SM</label>
+        <sharedTo>
+            <group>MarketingNorthEastLondon</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>PM_All</fullName>
+        <columns>OBJECT_ID</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <columns>ActualCreatedDate__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>NAME</columns>
+        <columns>Lead__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Philippa Murphy</value>
+        </filters>
+        <label>PM All</label>
+    </listViews>
+    <listViews>
+        <fullName>PM_All1</fullName>
+        <columns>OBJECT_ID</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <columns>ActualCreatedDate__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>NAME</columns>
+        <columns>Lead__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>PM All</label>
+    </listViews>
+    <listViews>
+        <fullName>Programmes_to_deal_with</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>NAME</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+            <value>Programmes</value>
+        </filters>
+        <label>Programmes to deal with</label>
+        <sharedTo>
+            <group>MarketingAll</group>
+            <group>MarketingLondon</group>
+            <group>MarketingManagers</group>
+            <group>MarketingMidlands</group>
+            <group>MarketingNorthWest</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>RAW_Incoming_SMS_to_deal_with</fullName>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <columns>CREATED_DATE</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>Account_owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Karel Morris,Durrell Kelly-Adai</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Kate Greenlees,Tuva Johansson</value>
+        </filters>
+        <label>RAW Incoming SMS to deal with</label>
+        <sharedTo>
+            <group>MarketingNorthEastLondon</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>SMS_Issue</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>11/1/2014 12:00 AM</value>
+        </filters>
+        <label>SMS Issue</label>
+    </listViews>
+    <listViews>
+        <fullName>Scaw_Incoming_SMS_to_deal_with</fullName>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <columns>CREATED_DATE</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>Account_owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Rachel Capper,Tom Perrin,Marium Begg,Tessa McGrath</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Laurence Hickin,Nathan Alleyne</value>
+        </filters>
+        <label>Scaw Incoming SMS to deal with</label>
+        <sharedTo>
+            <group>MarketingNorthEastLondon</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>SoCo_Texts_NJA</fullName>
+        <columns>Account_owner__c</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>SoCo Texts NJA</label>
+    </listViews>
+    <listViews>
+        <fullName>TCS_Events</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>NAME</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+            <value>TCSEvents</value>
+        </filters>
+        <label>TCS Events</label>
+        <sharedTo>
+            <allCustomerPortalUsers></allCustomerPortalUsers>
+            <allInternalUsers></allInternalUsers>
+            <allPartnerUsers></allPartnerUsers>
+            <group>All_TCN_users</group>
+            <group>Allexcludingfranchisepartners186351</group>
+            <group>BADWHRN_Mentors</group>
+            <group>BAD_WHRN</group>
+            <group>BBLG</group>
+            <group>BETHH</group>
+            <group>Birmingham</group>
+            <group>Birmingham_cluster</group>
+            <group>BlackCountry</group>
+            <group>Black_Country_TCS_Mentors</group>
+            <group>CHIW</group>
+            <group>Call_Centre</group>
+            <group>Central_Comms</group>
+            <group>Central_Comms_Admins</group>
+            <group>DataPro418511</group>
+            <group>Development186351</group>
+            <group>EastLondon</group>
+            <group>Finance</group>
+            <group>FranchisePartners186351</group>
+            <group>FranchisePartnersTCN186351</group>
+            <group>Fundraising_all</group>
+            <group>HEK</group>
+            <group>HRW</group>
+            <group>Inclusion</group>
+            <group>Inclusion_2013</group>
+            <group>LLT_Local_Leadership_Teams</group>
+            <group>Lanc</group>
+            <group>Lancs</group>
+            <group>LondonNorth</group>
+            <group>MAK</group>
+            <group>MKTG_MGRS_Midlands</group>
+            <group>MKTG_MGRS_NE_London</group>
+            <group>MKTG_MGRS_North_West</group>
+            <group>MKTG_MGRS_SLS</group>
+            <group>MKTG_MGRS_West_London</group>
+            <group>Manc</group>
+            <group>Manc_cluster</group>
+            <group>MarketingAll</group>
+            <group>MarketingLondon</group>
+            <group>MarketingManagers</group>
+            <group>MarketingMidlands</group>
+            <group>MarketingNorthEastLondon</group>
+            <group>MarketingNorthWest</group>
+            <group>MarketingSouthLondonSurrey</group>
+            <group>MarketingWestLondon</group>
+            <group>Marketing_BADHAV</group>
+            <group>Marketing_BEN</group>
+            <group>Marketing_BRICC</group>
+            <group>Marketing_NERF</group>
+            <group>Marketing_Tracking_Dashboards</group>
+            <group>Mealand</group>
+            <group>Micro</group>
+            <group>Micro_cluster</group>
+            <group>NCS_Dasboards</group>
+            <group>NCS_Product_team</group>
+            <group>NW_Mentors</group>
+            <group>Nat_Staffing_Dashboard_Recipients_2014</group>
+            <group>PROG_Afua_Benny_2013</group>
+            <group>PROG_Black_Country_2013</group>
+            <group>PROG_Midlands_SPM_SuM_2013</group>
+            <group>PROG_NERF_2013</group>
+            <group>PROG_NorthBirminham_2013</group>
+            <group>PROG_North_East_London_SPM_SuM_2013</group>
+            <group>PROG_North_West_SPM_SuM_2013</group>
+            <group>PROG_PC_Provider_Incidents_2013</group>
+            <group>PROG_TH3_2013</group>
+            <group>PROG_West_London_SPM_SuM_2013</group>
+            <group>Payonomy</group>
+            <group>Payroll_Processing</group>
+            <group>ProgBEN2013</group>
+            <group>ProgCaW2013</group>
+            <group>ProgCurriculum</group>
+            <group>ProgLancs2013</group>
+            <group>ProgMidlands2013</group>
+            <group>ProgNLondon</group>
+            <group>ProgNWEngland2013</group>
+            <group>ProgNorthManc2013</group>
+            <group>ProgPersonalChallenge</group>
+            <group>ProgSPT</group>
+            <group>ProgSouthManc2013</group>
+            <group>Prog_BADH2013</group>
+            <group>Prog_BBG_2013</group>
+            <group>Prog_BRICC_2013</group>
+            <group>Prog_CAS_2013</group>
+            <group>Prog_EastSurrey_2013</group>
+            <group>Prog_HEAL_2013</group>
+            <group>Prog_HIHO_2013</group>
+            <group>Prog_London_2013</group>
+            <group>Prog_MRK_2013</group>
+            <group>Prog_NE_London_2013</group>
+            <group>Prog_NWEF_WRN_2013</group>
+            <group>Prog_SLL_2013</group>
+            <group>Prog_S_London_S_SPM_SuM_2013</group>
+            <group>Prog_Solihull_2013</group>
+            <group>Prog_SouthBirmingham_2013</group>
+            <group>Prog_South_Surrey_2013</group>
+            <group>Prog_TRIW_2013</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>TS_texts</fullName>
+        <columns>OBJECT_ID</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <columns>ActualCreatedDate__c</columns>
+        <columns>NAME</columns>
+        <columns>Lead__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Lily Phillips</value>
+        </filters>
+        <label>TS texts</label>
+    </listViews>
+    <listViews>
+        <fullName>To_Be_Dealt_With</fullName>
+        <columns>Account_owner__c</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>To Be Dealt With</label>
+    </listViews>
+    <listViews>
+        <fullName>To_Be_Dealt_With_Kate_Weaver</fullName>
+        <columns>Account_owner__c</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>To Be Dealt With Kate Weaver</label>
+    </listViews>
+    <listViews>
+        <fullName>To_Be_Dealt_With_SoCo</fullName>
+        <columns>Account_owner__c</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Rachel Capper,Sean Monaghan,Nathan Alleyne,Lauren Whetton</value>
+        </filters>
+        <label>To Be Dealt With - SoCo</label>
+    </listViews>
+    <listViews>
+        <fullName>To_be_dealt_with_AP_MH_LH_SA_LH</fullName>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>Contact__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>contains</operation>
+            <value>Case</value>
+        </filters>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Anne Parker,Lee Hornsby,Mark Higgins,Louisa Hopkins,Sarah Armstrong</value>
+        </filters>
+        <label>To be dealt with AP, MH, LH, SA, LH</label>
+        <sharedTo>
+            <group>MarketingNorthWest</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>To_be_dealt_with_Anne1</fullName>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>Contact__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>contains</operation>
+            <value>Case</value>
+        </filters>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Jeni Harrison</value>
+        </filters>
+        <label>To be dealt with Jeni</label>
+        <sharedTo>
+            <group>MarketingNorthWest</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>To_be_dealt_with_Lee</fullName>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>Contact__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>contains</operation>
+            <value>Case</value>
+        </filters>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Lee Hornsby</value>
+        </filters>
+        <label>To be dealt with Lee</label>
+        <sharedTo>
+            <group>MarketingNorthWest</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>To_be_dealt_with_Midlands</fullName>
+        <booleanFilter>1 AND (2 Or 3 Or 4)</booleanFilter>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>Contact__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+            <value>Midlands</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>,Hayley Parkinson,Hezron Brown,Dionne Brown,Marium Begg,Jessica Cruse</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Catherine Illes,Elise Smith,Rebecca Martin,Azande Mbhele,Omar Sharif</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>To be dealt with Midlands</label>
+        <sharedTo>
+            <group>MarketingNorthWest</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>To_be_dealt_with_Midlands_SM</fullName>
+        <booleanFilter>1 AND (2 Or 3 Or 4)</booleanFilter>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>Contact__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+            <value>Midlands</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>contains</operation>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>contains</operation>
+            <value>Sean Monaghan</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>contains</operation>
+        </filters>
+        <label>To be dealt with Midlands SM</label>
+        <sharedTo>
+            <group>MarketingNorthWest</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>To_be_dealt_with_NE_London</fullName>
+        <booleanFilter>(1 OR 2) AND (3 OR 4 OR 5)</booleanFilter>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>Contact__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>contains</operation>
+            <value>Case</value>
+        </filters>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+            <value>W London</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>contains</operation>
+            <value>Abigail Green,Alice Noble,Cardy Lee,Ben Montgomery,Hannah Brayson,Nadia Nicholas</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>contains</operation>
+            <value>Jade Bailey,Jade Champagnie,Laura Nelson,Marya Ahmed</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>contains</operation>
+            <value>Robert Austin,Sohaib Malik,Zahra Kassamali,Tamara Obeng</value>
+        </filters>
+        <label>To be dealt with W London</label>
+        <sharedTo>
+            <group>MarketingNorthWest</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>To_be_dealt_with_North_West</fullName>
+        <booleanFilter>(1 OR 2) AND (3 OR 4 OR 5)</booleanFilter>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>Contact__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>contains</operation>
+            <value>Case</value>
+        </filters>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+            <value>North West</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>contains</operation>
+            <value>Abigail Paine,Anne Parker,Frances Pearson</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>contains</operation>
+            <value>Jeni Harrison,Mark Higgins,Lyndsey Price,Paris Goodwin</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>contains</operation>
+            <value>Lee Hornsby,louisa hopkins,Ciara Kavanagh,Danny Wareing,Sarah Armstrong</value>
+        </filters>
+        <label>To be dealt with North West</label>
+        <sharedTo>
+            <group>MarketingNorthWest</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>To_be_dealt_with_S_London</fullName>
+        <booleanFilter>1 AND (2 Or 3 Or 4)</booleanFilter>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>Contact__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+            <value>S London</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>contains</operation>
+            <value>,James Chave,Daniel Dubier,Angela Jehan,Mastak Pal Kaur</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>contains</operation>
+            <value>,Giannina Walsh,Hannah Rickayzen,Javayria Masood,Steven McGoldrick</value>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>contains</operation>
+            <value>Katie Grammer,Laura Rowland,Sara Siddiqi,Stefanie Calderbank</value>
+        </filters>
+        <label>To be dealt with S London</label>
+        <sharedTo>
+            <group>MarketingSouthLondonSurrey</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>To_be_dealt_with_W_London</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>Contact__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+            <value>NE London</value>
+        </filters>
+        <label>To be dealt with NE London</label>
+        <sharedTo>
+            <group>MarketingNorthWest</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>To_be_dealt_with_james</fullName>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>Contact__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>contains</operation>
+            <value>Case</value>
+        </filters>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Anne Parker</value>
+        </filters>
+        <label>To be dealt with Anne</label>
+        <sharedTo>
+            <group>MarketingNorthWest</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Today_SMS</fullName>
+        <columns>NAME</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Lead__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>smagicinteract__external_field__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>5/20/2016 12:00 AM</value>
+        </filters>
+        <label>Today SMS 2016</label>
+    </listViews>
+    <listViews>
+        <fullName>Wakefield_Incoming_SMS_2016</fullName>
+        <booleanFilter>1</booleanFilter>
+        <columns>CREATED_DATE</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>Account_owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Thomas Guilfoyle,Chris Hyliger,Aisling Rafter</value>
+        </filters>
+        <label>Wakefield Incoming SMS 2016</label>
+        <sharedTo>
+            <group>MarketingNorthEastLondon</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X2015_Storm_Texts_El</fullName>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <columns>CREATED_DATE</columns>
+        <columns>Contact__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>Account_owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_owner__c</field>
+            <operation>equals</operation>
+            <value>Emilie Lahouel,Katy Robinson,Lucie Rymer,Vanessa Lang</value>
+        </filters>
+        <filters>
+            <field>CREATEDBY_USER</field>
+            <operation>equals</operation>
+            <value>Emilie Lahouel</value>
+        </filters>
+        <label>2015 Storm Texts El</label>
+    </listViews>
+    <listViews>
+        <fullName>Yesterday_SMS</fullName>
+        <columns>NAME</columns>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Lead__c</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>smagicinteract__external_field__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>7/7/2016 12:00 AM</value>
+        </filters>
+        <label>Yesterday SMS</label>
+    </listViews>
+    <listViews>
+        <fullName>smagicinteract__All</fullName>
+        <columns>smagicinteract__Inbound_Number__c</columns>
+        <columns>smagicinteract__SMS_Text__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>smagicinteract__Mobile_Number__c</columns>
+        <columns>smagicinteract__actionTaken__c</columns>
+        <columns>Account_owner__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Lead__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>NAME</columns>
+        <columns>ActualCreatedDate__c</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>smagicinteract__actionTaken__c</field>
+            <operation>equals</operation>
+            <value>Sales</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>4/7/2016 12:00 AM</value>
+        </filters>
+        <label>2015 Sales inbox</label>
+    </listViews>
+    <nameField>
+        <displayFormat>I-{00000000}</displayFormat>
+        <label>Incoming SMS Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Incoming SMS</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>smagicinteract__Mobile_Number__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>smagicinteract__SMS_Text__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>smagicinteract__Inbound_Number__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATEDBY_USER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <listViewButtons>smagicinteract__Create_Lead</listViewButtons>
+        <listViewButtons>smagicinteract__Create_Task</listViewButtons>
+        <listViewButtons>smagicinteract__Create_Case</listViewButtons>
+        <listViewButtons>smagicinteract__Create_Contact</listViewButtons>
+        <listViewButtons>smagicinteract__Create_Opportunity</listViewButtons>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchResultsAdditionalFields>smagicinteract__SMS_Text__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>smagicinteract__Create_Case</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create Case</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/10.0/connection.js&quot;)} 
+
+var packagePrefix = &quot;smagicinteract__&quot;; 
+var records = {!GETRECORDIDS($ObjectType.smagicinteract__Incoming_SMS__c)}; 
+if (records[0] == null) 
+{ 
+alert(&quot;Please select at least one Record&quot;);
+} 
+else{ 
+var action = &quot;Create Case&quot;; 
+var recordIds = &quot;&quot;; 
+for (var n in records) { 
+if(n == &apos;remove&apos; || n == &apos;indexOf&apos;) continue; 
+recordIds = recordIds + records[n]; 
+
+if (n != records.length-1) { 
+recordIds = recordIds + &quot;,&quot;; 
+} 
+} 
+var queryString = parent.window.location.pathname; 
+if (parent.window.location.search){ 
+queryString = queryString + parent.window.location.search 
+} 
+
+var url = &quot;/apex/&quot;+packagePrefix+&quot;LookupConfigAction?retURL=&quot;+queryString + &quot;&amp;action=&quot;+action+&quot;&amp;recordIds=&quot;+ recordIds; 
+
+parent.window.location = url; 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>smagicinteract__Create_Contact</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create Contact</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/10.0/connection.js&quot;)}
+
+var packagePrefix = &quot;smagicinteract__&quot;;
+var records = {!GETRECORDIDS($ObjectType.smagicinteract__Incoming_SMS__c)};
+if (records[0] == null)
+{
+    alert(&quot;Please select at least one Record&quot;);
+}
+else{
+       var action = &quot;Create Contact&quot;;
+       var recordIds = &quot;&quot;;
+	for (var n in records) {
+               if(n == &apos;remove&apos; || n == &apos;indexOf&apos;) continue;
+              	recordIds  = recordIds  + records[n];
+                                  
+		if (n != records.length-1) {
+			recordIds  = recordIds  + &quot;,&quot;;
+		}
+	}
+  var queryString =  parent.window.location.pathname;
+   if (parent.window.location.search){
+        queryString = queryString + parent.window.location.search
+    }
+
+   var url = &quot;/apex/&quot;+packagePrefix+&quot;LookupConfigAction?retURL=&quot;+queryString + &quot;&amp;action=&quot;+action+&quot;&amp;recordIds=&quot;+ recordIds;
+ 
+  parent.window.location = url;
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>smagicinteract__Create_Lead</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create Lead</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/10.0/connection.js&quot;)}
+
+var packagePrefix = &quot;smagicinteract__&quot;;
+var records = {!GETRECORDIDS($ObjectType.smagicinteract__Incoming_SMS__c)};
+if (records[0] == null)
+{
+    alert(&quot;Please select at least one Record&quot;);
+}
+else{
+       var action = &quot;Create Lead&quot;;
+       var recordIds = &quot;&quot;;
+	for (var n in records) {
+               if(n == &apos;remove&apos; || n == &apos;indexOf&apos;) continue;
+              	recordIds  = recordIds  + records[n];
+                                  
+		if (n != records.length-1) {
+			recordIds  = recordIds  + &quot;,&quot;;
+		}
+	}
+  var queryString =  parent.window.location.pathname;
+   if (parent.window.location.search){
+        queryString = queryString + parent.window.location.search
+    }
+
+   var url = &quot;/apex/&quot;+packagePrefix+&quot;LookupConfigAction?retURL=&quot;+queryString + &quot;&amp;action=&quot;+action+&quot;&amp;recordIds=&quot;+ recordIds;
+ 
+  parent.window.location = url;
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>smagicinteract__Create_Opportunity</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create Opportunity</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/10.0/connection.js&quot;)} 
+
+var packagePrefix = &quot;smagicinteract__&quot;; 
+var records = {!GETRECORDIDS($ObjectType.smagicinteract__Incoming_SMS__c)}; 
+if (records[0] == null) 
+{ 
+alert(&quot;Please select at least one Record&quot;); 
+} 
+else{ 
+var action = &quot;Create Opportunity&quot;; 
+var recordIds = &quot;&quot;; 
+for (var n in records) { 
+if(n == &apos;remove&apos; || n == &apos;indexOf&apos;) continue; 
+recordIds = recordIds + records[n]; 
+
+if (n != records.length-1) { 
+recordIds = recordIds + &quot;,&quot;; 
+} 
+} 
+var queryString = parent.window.location.pathname; 
+if (parent.window.location.search){ 
+queryString = queryString + parent.window.location.search 
+} 
+
+var url = &quot;/apex/&quot;+packagePrefix+&quot;LookupConfigAction?retURL=&quot;+queryString + &quot;&amp;action=&quot;+action+&quot;&amp;recordIds=&quot;+ recordIds; 
+
+parent.window.location = url; 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>smagicinteract__Create_Task</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create Task</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/10.0/connection.js&quot;)} 
+
+var packagePrefix = &quot;smagicinteract__&quot;; 
+var records = {!GETRECORDIDS($ObjectType.smagicinteract__Incoming_SMS__c)}; 
+if (records[0] == null) 
+{ 
+alert(&quot;Please select at least one Record&quot;) ;
+} 
+else{ 
+var action = &quot;Create Task&quot;; 
+var recordIds = &quot;&quot;; 
+for (var n in records) { 
+if(n == &apos;remove&apos; || n == &apos;indexOf&apos;) continue; 
+recordIds = recordIds + records[n]; 
+
+if (n != records.length-1) { 
+recordIds = recordIds + &quot;,&quot;; 
+} 
+} 
+var queryString = parent.window.location.pathname; 
+if (parent.window.location.search){ 
+queryString = queryString + parent.window.location.search 
+} 
+
+var url = &quot;/apex/&quot;+packagePrefix+&quot;LookupConfigAction?retURL=&quot;+queryString + &quot;&amp;action=&quot;+action+&quot;&amp;recordIds=&quot;+ recordIds; 
+
+parent.window.location = url; 
+}</url>
+    </webLinks>
+</CustomObject>

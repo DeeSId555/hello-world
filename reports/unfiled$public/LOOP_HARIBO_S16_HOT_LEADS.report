@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$FirstName</field>
+    </columns>
+    <columns>
+        <field>Contact$LastName</field>
+    </columns>
+    <columns>
+        <field>Contact$MobilePhone</field>
+    </columns>
+    <columns>
+        <field>Contact$HomePhone</field>
+    </columns>
+    <columns>
+        <field>Contact$School_s_borough_or_area__c</field>
+    </columns>
+    <columns>
+        <field>Contact$School__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Email</field>
+    </columns>
+    <columns>
+        <field>Contact$Description</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact$Description</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>haribo,Lancs Hot Lead 2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$School_s_cluster__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>2016 Lancs</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$NCS_Application_Primary_Season__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Summer 2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Date_of_birth_check__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>DOB OK,DOB MISSING</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Date_Full_Payment_Received_New__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Description</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>clock</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>LOOP HARIBO S16 HOT LEADS</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_NCS_Applications_with_Wave_Selections__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$Added_to_waiting_list__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

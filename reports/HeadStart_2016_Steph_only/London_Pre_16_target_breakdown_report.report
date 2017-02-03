@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.YP_First_name_from_HS_Application_Form__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.YP_Last_name_from_HS_Application_Form__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_Hours_Total__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.Attended_Welcome_day__c</field>
+    </columns>
+    <description>For tracker</description>
+    <filter>
+        <criteriaItems>
+            <column>HS_Activity__c.Date_HS_Application_form_received__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>6/20/2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.Region__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>London</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>London Pre 16 target breakdown report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$HS_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>16 YP NCS Campaign - Sign up</name>
+    <style>none</style>
+    <subject>Your NCS application - next steps</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTheChallenge.org
+
+Your NCS application - next steps
+
+
+
+Dear {!Contact.FirstName},
+
+Thanks for starting your NCS application. We are The Challenge and we&apos;ll be running NCS in your area next summer.
+
+Completing your NCS application
+You&apos;ve already made a start on your application, but you now need to complete it. Go to www.NCSTheChallenge.org, click &apos;login&apos; and use the following unique login details to continue your application:
+
+NCS ID: {!Contact.NCS_ID__c}
+Password: {!Contact.Login_PIN__c}
+
+The website will tell you that some parts of your application must be completed by your parent or guardian. Please ask your parent or guardian to complete these parts.
+
+It is quicker to apply online but if your parent or guardian would like a paper copy of the application form instead, please call us on 020 3542 2400 and we’ll send one out in the post.
+
+Any questions?
+If you have any questions, take a look at questions.ncsthechallenge.org, or get in touch by calling 020 3542 2400 or emailing  contact@the-challenge.org.
+
+Places are filling up fast so make sure you don&apos;t miss out! We&apos;ll be in touch once we&apos;ve received your application.
+
+Yours sincerely,
+
+Tanya Dunne
+Head of Customer Services - The Challenge
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

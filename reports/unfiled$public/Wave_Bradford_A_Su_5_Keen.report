@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.NCS_Applications__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.NCS_Applications__r.Wave_Selections__r$Status__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Description</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.NCS_Applications__r.Wave_Selections__r$Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Bradford A Su 8</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.NCS_Applications__r.Wave_Selections__r$Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Assigned,Reserved,Waiting list</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Description</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>TG Keen</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Description</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>TG Not Keen</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Wave: Bradford A Su 8 Keen</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_NCS_Applications_with_Wave_Selections__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Contact.NCS_Applications__r$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

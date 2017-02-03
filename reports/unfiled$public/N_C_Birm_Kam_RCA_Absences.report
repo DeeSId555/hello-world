@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Attendance__c.Wave__c</field>
+    </columns>
+    <columns>
+        <field>Attendance__c.Days_Absent_WF__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Attendance__c.Hours_to_be_made_up__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Attendance__c.Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>startsWith</operator>
+            <value>NCBirm</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Attendance__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Left the programme</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Attendance__c.Unauthorised_absences__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>0.5</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Attendance__c.Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>A 6</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Attendance__c.Unauthorised_absences__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>N C Birm Kam RCA Absences</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Attendance__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Attendance__c.Wave__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Share_with_portal_users</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share with portal users</label>
+        <sharedTo>
+            <group>TCS_Mentors</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Action Team Meeting,Youth Board Meeting,Local Event,Other,Big Challenge Day,Skills Workshop,Focus Group,Development/Advocacy Event</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Share_Campaigns_with_internal_staff</fullName>
+        <accessLevel>All</accessLevel>
+        <label>Share Campaigns with internal staff</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Team__c</field>
+    </columns>
+    <columns>
+        <field>PHONE3</field>
+    </columns>
+    <columns>
+        <field>Contact.Parent_Mobile_Phone__c</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>Contact.npo02__Formula_HouseholdPhone__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Post_code__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Hours_to_make_up_for_graduation__c</field>
+    </columns>
+    <columns>
+        <field>Contact.TCSKO_sign_up__c</field>
+    </columns>
+    <description>The Challenge Christmas Party and Homeless Shelter Visit</description>
+    <filter>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>The Challenge Christmas Party and Homeless Shelter Visit</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MEMBER_STATUS</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Responded - attending,Sent</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>NL Christmas Register</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignContact@Contact.Cluster__c</reportType>
+    <scope>orgAll</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>FIRST_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+</Report>

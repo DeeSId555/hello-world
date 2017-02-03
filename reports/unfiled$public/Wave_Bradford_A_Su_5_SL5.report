@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.NCS_Applications__r$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.NCS_Applications__r.Wave_Selections__r$Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Bradford A Su 8</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Access_category_2_6__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>5 Full-time support worker,5:0.5 Requires support worker - could share with another YP,5:1 Requires full time support worker,5:2 Requires 2 full time support workers,5.1 - full-time support worker required,5.2 - requires 2 full time support workers,5b - personal coach required</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.NCS_Applications__r.Wave_Selections__r$Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Assigned,Reserved</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Wave: Bradford A Su 8 SL5</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_NCS_Applications_with_Wave_Selections__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$Assigned_Wave__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Team__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Inclusion_Details__r$Logistical_needs__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Inclusion_Details__r$Details_of_other_logistical_needs__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Inclusion_Details__r$Details_of_prescribed_medications__c</field>
+    </columns>
+    <description>For medication / logistical need conga report</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Inclusion_Details__r$Logistical_needs__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Medication - Administering (SW only),Medication - Disbursing (SW only),Medication - Emergency/Rescue,Medication - Epilepsy Rescue medication,Medication - Holding,Medication - Preparing (SW only),Medication - Reminders,Medication special storage</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Assigned_Wave__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Logistical Needss Medication Form</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_Inclusion_Details__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Contact.Inclusion_Details__r$Logistical_needs__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact.Inclusion_Details__r$Date_P3_form_started__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

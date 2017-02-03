@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Natterbox Call Reporting Object</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Natterbox Call Reporting Object</value>
+    </caseValues>
+    <fields>
+        <help><!-- The Account in Salesforce that this call is related to (if applicable) --></help>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Natterbox Call Reporting Object --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Internal Use only. The unique identifier for a bridged leg of a call. --></help>
+        <label><!-- Bridge UUID --></label>
+        <name>Bridge_UUID__c</name>
+    </fields>
+    <fields>
+        <help><!-- With Natterbox Voice Intelligence, it maybe the case that only a subset of calls also have an activity created by the CTI. Call that have a corresponding activity will have this checkbox ticked. --></help>
+        <label><!-- CTI Activity Created --></label>
+        <name>CTI_Activity_Created__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the call has an associated activity, a link to it will be in this box. --></help>
+        <label><!-- CTI Activity Link --></label>
+        <name>CTI_Activity_Link__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if the call was successfully connected. Will be in the form yes/no --></help>
+        <label><!-- CallConnected --></label>
+        <name>CallConnected__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The direction, inbound or outbound, of the call. --></help>
+        <label><!-- CallDirection --></label>
+        <name>CallDirection__c</name>
+        <picklistValues>
+            <masterLabel>Inbound</masterLabel>
+            <translation><!-- Inbound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outbound</masterLabel>
+            <translation><!-- Outbound --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Total length of the call in seconds. This includes time the phone was ringing and any other extra connection time. --></help>
+        <label><!-- CallDurationSeconds --></label>
+        <name>CallDurationSeconds__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date and time the call ended. In the format of: 2014-01-23 19:07:09 --></help>
+        <label><!-- CallEndDate --></label>
+        <name>CallEndDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The time the called ended in seconds since 01-01-1970 --></help>
+        <label><!-- CallEndEpoch --></label>
+        <name>CallEndEpoch__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the call was inbound and placed in a queue before being answered, this will be the time time the call was on hold before it was answered. If the call was outbound, this will be the same as CallRingSeconds. --></help>
+        <label><!-- CallHuntSeconds --></label>
+        <name>CallHuntSeconds__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total time the call was ringing in seconds before it was answered. --></help>
+        <label><!-- CallRingSeconds --></label>
+        <name>CallRingSeconds__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date and time the call sarted. In the format of: 2014-01-23 19:07:09 --></help>
+        <label><!-- CallStartDate --></label>
+        <name>CallStartDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The time the call started in seconds since 01-01-1970 --></help>
+        <label><!-- CallStartEpoch --></label>
+        <name>CallStartEpoch__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the time the user spent talking to the other party. This does not include talk time of any conversations before the call was transferred to the user. --></help>
+        <label><!-- CallUserTalkSeconds --></label>
+        <name>CallTalkSeconds__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the total time the other party spent talking to your company. This includes talk time from multiple users if the call was transferred. --></help>
+        <label><!-- CallTotalTalkSeconds --></label>
+        <name>CallTotalTalkSeconds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Start Date (Date) --></label>
+        <name>Call_Start_Date_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Start Date (Date and Time) --></label>
+        <name>Call_Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- The short code of the country of the number called (If known). For example: GBR for the United Kingdom. --></help>
+        <label><!-- CalledCountryShort --></label>
+        <name>CalledCountryShort__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the number that the caller dialled to enter the Natterbox service. In all but very rare occasions, this will be the same as the CalledNumber --></help>
+        <label><!-- CalledNumberIn --></label>
+        <name>CalledNumberIn__c</name>
+    </fields>
+    <fields>
+        <help><!-- Phone number that was Called in domestic format. --></help>
+        <label><!-- CalledNumber --></label>
+        <name>CalledNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the person being called is on a Natterbox mobile phone that is roaming, this will be the short country code that the user is currently in. If the call recipient is not on a Natterbox mobile, this field will be left blank. --></help>
+        <label><!-- CalledRoaming --></label>
+        <name>CalledRoaming__c</name>
+    </fields>
+    <fields>
+        <help><!-- The three digit short country code of the caller (if known). For example: GBR for the United Kingdom. --></help>
+        <label><!-- CallerCountryShort --></label>
+        <name>CallerCountryShort__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the caller is a Natterbox User, this will be their email address as it appears in the Natterbox Portal. If they are an external caller, this field will be left blank. NOTE: This email address is NOT pulled from Salesforce but from the Natterbox system. --></help>
+        <label><!-- CallerEmailAddress --></label>
+        <name>CallerEmailAddress__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the caller is a Natterbox User, this will be their first name as it appears in the Natterbox Portal. If they are an external caller, this field will be left blank. NOTE: This name is NOT pulled from Salesforce but from the Natterbox system. --></help>
+        <label><!-- CallerFirstName --></label>
+        <name>CallerFirstName__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the caller is a Natterbox User, this will be their primary group as it appears in the Natterbox Portal. If they are an external caller, or have no groups assigned in the Natterbox Portal, this field will be left blank. --></help>
+        <label><!-- CallerGroup --></label>
+        <name>CallerGroup__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the caller is a Natterbox User, this will be their last name as it appears in the Natterbox Portal. If they are an external caller, this field will be left blank. NOTE: This name is NOT pulled from Salesforce but from the Natterbox system. --></help>
+        <label><!-- CallerLastName --></label>
+        <name>CallerLastName__c</name>
+    </fields>
+    <fields>
+        <help><!-- The phone number of the caller in domestic format. If the caller is a Natterbox user, this will be their 4 digit extension number rather than their external number. If you need the Natterbox user&apos;s external number, use the E164CallerNumber field instead. --></help>
+        <label><!-- CallerNumber --></label>
+        <name>CallerNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the caller is on a Natterbox mobile phone that is roaming, this will be the short country code that the user is currently in. If the call recipient is not on a Natterbox mobile, this field will be left blank. --></help>
+        <label><!-- CallerRoaming --></label>
+        <name>CallerRoaming__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Type of caller:
+User: A Natterbox User
+Device: A VOIP Phone
+External: Phone call from an external source. --></help>
+        <label><!-- CallerType --></label>
+        <name>CallerType__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the caller is using a SIP or VOIP device and that SIP/VOIP device is set to broadcast its hardware details. Those details will be placed here. If not, this field will be left blank. --></help>
+        <label><!-- CallerUserAgent --></label>
+        <name>CallerUserAgent__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the caller is a Natterbox User, this will be their full name as it appears in the Natterbox Portal. If they are an external caller, this field will be left blank. NOTE: This name is NOT pulled from Salesforce but from the Natterbox system. --></help>
+        <label><!-- Caller User Full Name --></label>
+        <name>Caller_User_Full_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the case that was related to the call (If applicable) --></help>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Natterbox Call Reporting Object --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If the recipient is a Natterbox User, this will be their email address as it appears in the Natterbox Portal. If this is an external call, this field will be left blank. NOTE: This address is NOT pulled from Salesforce but from the Natterbox system. --></help>
+        <label><!-- ConnectedEmailAddress --></label>
+        <name>ConnectedEmailAddress__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the call recipient is a Natterbox User, this will be their first name as it appears in the Natterbox Portal. If the call is outbound to an external number, this will be blank. NOTE: This name is NOT pulled from Salesforce but from the Natterbox system. --></help>
+        <label><!-- ConnectedFirstName --></label>
+        <name>ConnectedFirstName__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the caller is a Natterbox User, this will be their primary group as it appears in the Natterbox Portal. If this is an outbound call to an external number, or have no groups assigned in the Natterbox Portal, this field will be left blank. --></help>
+        <label><!-- ConnectedGroup --></label>
+        <name>ConnectedGroup__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the call recipient is a Natterbox User, this will be their last name as it appears in the Natterbox Portal. If the call is outbound to an external number, this will be blank. NOTE: This name is NOT pulled from Salesforce but from the Natterbox system. --></help>
+        <label><!-- ConnectedLastName --></label>
+        <name>ConnectedLastName__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will be the phone number of the person that answered the call (This may well be different to CalledNumber, depending on call dialplan routing). If the call recipient was a Natterbox user, this will show their 4 digit extension number. --></help>
+        <label><!-- ConnectedNumber --></label>
+        <name>ConnectedNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Type of call recipient:
+User: A Natterbox User
+Device: A VOIP Phone
+External: Phone number being called was external --></help>
+        <label><!-- ConnectedType --></label>
+        <name>ConnectedType__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the recipient of the call is using a SIP or VOIP device and that SIP/VOIP device is set to broadcast its hardware details. Those details will be placed here. If not, this field will be left blank. --></help>
+        <label><!-- ConnectedUserAgent --></label>
+        <name>ConnectedUserAgent__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the call recipient is a Natterbox User, this will be their full name as it appears in the Natterbox Portal. If this is an outbound external call, this field will be left blank. NOTE This name is NOT pulled from Salesforce but from the Natterbox system. --></help>
+        <label><!-- Connected User Full Name --></label>
+        <name>Connnected_User_Full_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- The day of the month that the call happened. This will return the numeric value for the day of the month. --></help>
+        <label><!-- Day of the Month --></label>
+        <name>Day_of_the_Month__c</name>
+    </fields>
+    <fields>
+        <help><!-- The day of the week (in text, eg, Monday, Tuesday, etc) that the call took place. --></help>
+        <label><!-- Day of the Week --></label>
+        <name>Day_of_the_Week__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the department the user belongs to in Salesforce. If the user&apos;s department is blank in Salesforce, this filed will be blank too. If Natterbox is unable to find a corresponding Salesforce user for this call, this field will be left blank. --></help>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+    </fields>
+    <fields>
+        <help><!-- Any Natterbox Relevant Diagnostic information about this call will be placed here. --></help>
+        <label><!-- Diagnostics --></label>
+        <name>Diagnostics__c</name>
+    </fields>
+    <fields>
+        <help><!-- The actual digits tapped into the phone by the caller. For internal calls, this can also show the extension number dialed. This may be different to ConnectedNumber, depending on dialplan rules. --></help>
+        <label><!-- DialledNumber --></label>
+        <name>DialledNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the number that the caller called to enter the Natterbox service but in E164 format. This will almost always be the same as &apos;CalledNumber&apos; which should be used instead of this macro. --></help>
+        <label><!-- E164CalledNumberIn --></label>
+        <name>E164CalledNumberIn__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number that was called in E164 format (E164 format will always begin with the country code of the called number, then the full number without the leading zero. For example, 07881943075 will become 447881943075). --></help>
+        <label><!-- E164CalledNumber --></label>
+        <name>E164CalledNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of the caller in E164 format (E164 format will always begin with the country code of the called number, then the full number without the leading zero. For example, 07881943075 will become 447881943075). --></help>
+        <label><!-- E164CallerNumber --></label>
+        <name>E164CallerNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of the call recipient in E164 format. If the call is answered by a Natterbox user, this field will be left blank. For details on numbers answered by Natterbox users, use the ConnectedNumber field instead. --></help>
+        <label><!-- E164ConnectedNumber --></label>
+        <name>E164ConnectedNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- Prior to the call reaching Natterbox, if one of the previous telcos in the chain diverted the number, this diversion number will appear here in E146 format. If this information is not supplied by the other telcos, this field will be left blank. --></help>
+        <label><!-- E164DiversionNumber --></label>
+        <name>E164DiversionNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is no longer used and will be removed in an upcoming release. --></help>
+        <label><!-- ExternalConnectedNumber --></label>
+        <name>ExternalConnectedNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the reason the call was terminated. This field will be useful in showing any potential call errors. --></help>
+        <label><!-- HangupCause --></label>
+        <name>HangupCause__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the home country code of the Natterbox user involved in the call. This is the 2 or 3 digit numeric dialling code for that country. For example, for the UK, this would be &apos;44&apos;. --></help>
+        <label><!-- HomeCountryCode --></label>
+        <name>HomeCountryCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inclusion Detail --></label>
+        <name>Inclusion_Detail__c</name>
+        <relationshipLabel><!-- Natterbox Call Reporting Object --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Internal Use Only. If multiple bridging calls are made, this is the unique identifier of the last bridged call leg. --></help>
+        <label><!-- Last Bridge UUID --></label>
+        <name>Last_Bridge_UUID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Internal Use Only. If a call is bridged. This is the unique identifier to the call leg that was handed on to Natterbox. --></help>
+        <label><!-- Last Bridge to UUID --></label>
+        <name>Last_Bridge_to_UUID__c</name>
+    </fields>
+    <fields>
+        <help><!-- If Natterbox was able to find the phone number in the lead table within Saleforce, the corresponding link to that lead will be placed here. --></help>
+        <label><!-- Lead --></label>
+        <name>Lead__c</name>
+        <relationshipLabel><!-- Natterbox Call Reporting Object --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This is the month of the year that the call took place. This is the text version of the month. For example, January, February, March, etc, --></help>
+        <label><!-- Month of the Year --></label>
+        <name>Month_of_the_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS Application --></label>
+        <name>NCS_Application__c</name>
+        <relationshipLabel><!-- Natterbox Call Reporting Object --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This is the hour of the day in numeric format. For example, if the call was made at 4:35pm , this will show &apos;16&apos;. --></help>
+        <label><!-- Hour of the Day --></label>
+        <name>NEW_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the user is using the Natterbox Voice Manager product, any notes entered into the CTI during the call will be placed here. --></help>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- If Natterbox was unable to find the phone number in the Contact, Accounts or Lead tables, this checkbox will be ticked to indicate that this phone number could not be found in Salesforce. --></help>
+        <label><!-- Number Not In Salesforce --></label>
+        <name>Number_Not_In_Salesforce__c</name>
+    </fields>
+    <fields>
+        <help><!-- If Natterbox was able to find the phone number in the Opportunity table within Saleforce, the corresponding link to that Opportunity will be placed here. --></help>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Natterbox Call Reporting Object --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If the call was linked to another, unknown Salesforce ID, a URL link to that ID will be added here. --></help>
+        <label><!-- Other ID --></label>
+        <name>Other_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Natterbox will attempt to link the Natterbox user to a corresponding user in Salesforce. If this link is successful, the user in Salesforce that was responsible for the call will be listed here. If no user in Salesforce could be found, this will be blank. --></help>
+        <label><!-- User --></label>
+        <name>Owner__c</name>
+        <relationshipLabel><!-- Natterbox Call Reporting Object --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PG Email --></label>
+        <name>PG_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the CTI is using picklist functionality, the value of the first picklist selection can be put here. Requires Natterbox Professional Services to setup. --></help>
+        <label><!-- Picklist 1 --></label>
+        <name>Picklist_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the CTI is using picklist functionality, the value of the second picklist selection can be put here. Requires Natterbox Professional Services to setup. --></help>
+        <label><!-- Picklist 2 --></label>
+        <name>Picklist_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the method of entry for the call into the Natterbox system
+DDI: call made to a DDI number
+Mobile_hook: call to or from a Natterbox mobile
+Public: call to a switchboard number
+ext_hook: Internal call
+outbound_hook: outbound call (not Mobile) --></help>
+        <label><!-- PolicyStartType --></label>
+        <name>PolicyStartType__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the link to the audio recording on the Nattebox cloud storage system. Please note that further authentication may be required to access the recording. --></help>
+        <label><!-- Recording --></label>
+        <name>Recording__c</name>
+    </fields>
+    <fields>
+        <help><!-- If Natterbox was able to find the phone number in the contact table within Saleforce, the corresponding link to that contact will be placed here. --></help>
+        <label><!-- Contact --></label>
+        <name>RelatedContact__c</name>
+        <relationshipLabel><!-- Natterbox Call Reporting Object --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Internal Use Only. The unique identifier of the signalling leg of the call. --></help>
+        <label><!-- Signal Bond UUID --></label>
+        <name>Signal_Bond_UUID__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will be the same as the CallTalkSeconds macro if the call was over the solid call threshold time. If the call was not considered a solid call, this field will be left blank. --></help>
+        <label><!-- Solid Call Time --></label>
+        <name>Solid_Call_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- If a solid call threshold time has been set and the call was longer than this, this checkbox will be be ticked. --></help>
+        <label><!-- Solid Call --></label>
+        <name>Solid_Call__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the unique identifier for the call supplied by Natterbox. This can be used to identify the corresponding call data on the Natterbox system. --></help>
+        <label><!-- UUID --></label>
+        <name>UUID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Not currently used. --></help>
+        <label><!-- Unique Merchant Call --></label>
+        <name>Unique_Merchant_Call__c</name>
+    </fields>
+    <fields>
+        <help><!-- The first Wrapup String entered by the user on the Natterbox CTI. --></help>
+        <label><!-- Wrapup String 1 --></label>
+        <name>Wrapup_String_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- The second Wrapup String entered by the user on the Natterbox CTI. --></help>
+        <label><!-- Wrapup String 2 --></label>
+        <name>Wrapup_String_2__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

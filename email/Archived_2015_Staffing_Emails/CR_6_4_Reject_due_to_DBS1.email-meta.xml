@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 6.4 Reject due to DBS</name>
+    <style>formalLetter</style>
+    <subject>Check your DBS status on the Staffing Website</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your local staffing team.
+Dear {!Contact.FirstName},
+
+
+
+Following your recent phone call with the Staffing Team, after reviewing your DBS we are unfortunately unable to offer you a place to work with us on the NCS programme. This decision is final and was made with reference to our strict policy guidelines on working with young people.
+
+
+
+We thank you for your interest in The Challenge.
+Best wishes,
+
+
+
+The Challenge
+
+NCS programme
+
+
+Email reference: CR 6.4</textOnly>
+    <type>html</type>
+</EmailTemplate>

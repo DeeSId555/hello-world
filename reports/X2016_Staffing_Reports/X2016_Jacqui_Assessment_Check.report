@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r.Staffing_Event_attendances__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r$Decision_post_assessment__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r.Staffing_Event_attendances__r$Role_from_JA__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r$Date_offer_training_WSO_email_resent__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r.Staffing_Event_attendances__r$Staffing_Event_Day__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r.Staffing_Event_attendances__r$Attendance_status__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Job_Applications__r.Staffing_Event_attendances__r$Staffing_Event_Day__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Surrey Leader Assessment - 05/04/2016 - 11:00am - 3:00pm</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Job_Applications__r.Staffing_Event_attendances__r$Registration_status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Registered</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2016 Jacqui Assessment Check</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_Job_Apps_and_Staffing_Event_Attendance__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Contact.Job_Applications__r.Staffing_Event_attendances__r$Attendance_status__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

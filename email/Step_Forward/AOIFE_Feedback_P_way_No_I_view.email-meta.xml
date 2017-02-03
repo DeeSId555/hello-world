@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Connected to &apos;Send Feedback&apos; field. Pathway no interview</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>*WORKFLOW Assessment Feedback P-way No I-view</name>
+    <style>none</style>
+    <subject>Step Forward Assessment Feedback</subject>
+    <textOnly>Dear {!Step_Forward_Activity__c.Associate__c},
+
+
+Thank you for attending the assessment in November. We hope that it was a useful introduction to the interview and assessment process.
+
+As promised, below is your individual feedback which is designed to help you assess areas of strength and areas for improvement to use in future assessments.
+
+
+
+{!Step_Forward_Activity__c.Overall_Feedback__c}
+
+
+
+We apologise but due to the high number of applicants we are not able to provide any further feedback at this time.
+
+Thank you once again for taking the time to submit an application and coming in to meet our team.
+
+
+Best wishes,
+
+The Step Forward Team
+
+
+
+
+
+
+
+
+
+
+
+www.stepforward.uk.com
+
+
+The Challenge Network is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 39 York Rd, London SE1 7NQ</textOnly>
+    <type>custom</type>
+</EmailTemplate>

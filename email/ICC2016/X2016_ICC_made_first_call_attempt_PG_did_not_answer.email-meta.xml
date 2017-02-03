@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>ICC will send this email after they have attempted the first MASI call and the PG did not answer.  The email urges PGs to get in contact with ICC in order to complete MASI call</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2016 - ICC made first call attempt, PG did not answer</name>
+    <style>none</style>
+    <subject>NCS - please call us to give additional medical and support information</subject>
+    <textOnly>NCSTHECHALLENGE.ORG
+
+Please call us to give additional medical and support information for NCS
+
+
+Dear Parent or Guardian of {!Contact.Name},
+
+Thank you for your application for {!Contact.FirstName} to take part in NCS.
+
+We have tried to call you to discuss the medical and support information you submitted for them. Please call us on 0333 150 2425. Our phone lines are open from 9am - 7pm Monday to Friday, and from 10am – 6pm on weekends.
+
+Please note that places are provisional until we have all the information we need.
+
+If we are unable to discuss the medical and support information, we will not be able to progress with {!Contact.FirstName}’s application and they may miss out on securing a place on NCS.
+
+Please call us as soon as you can. We hope to hear from you soon.
+
+Yours sincerely,
+
+
+Tanya Dunne
+Head of Customer Services - The Challenge
+
+© The Challenge Network.
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to South &amp; West London yps to invite to Kick Off using &apos;placement&apos; on 15/10/15</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Autumn 2015 SW London Kick Off invite</name>
+    <style>none</style>
+    <subject>HeadStart - your Kick Off invitation</subject>
+    <textOnly>HeadStart login details:
+
+Email Address {!HS_Activity__c.HS_Application_form_Email__c}
+
+NCS ID
+
+{!Contact.NCS_ID__c}
+
+PIN {!Contact.Login_Password__c}
+
+HeadStart Website
+
+Book your place at Kick Off now!
+
+Hi {!Contact.FirstName},
+
+Sign up now
+
+Please note, you only need to book a place at one of the events!
+
+Saturday 24th October
+
+Waterloo Action Centre, 14 Baylis Rd, London SE1 7AA
+
+Morning: 9.30am - 12.15pm - book here
+
+Afternoon: 12.30 - 3.15pm - book here
+
+Monday 26th October
+
+University of West London, St Mary&apos;s Rd, London W5 5RF
+
+Morning: 10.30am - 13.15pm - book here
+
+Afternoon: 13.30pm - 4.15pm - book here
+
+If all tickets are taken, we may release some more
+
+
+What is Kick Off?
+
+This is an event put on by the HeadStart team to help you get ahead in the programme and give you a chance to meet all HeadStart participants.
+
+Kick Off part one: an introduction to the programme.  This will break down all important information you will need for the next few months and how you can make the most of your volunteering placement.
+
+Kick Off part two: the workshop. This will be an interactive session full of group and individual tasks.  The workshop will enable you to further develop your skills and get an idea of what you’re working towards in terms of your possible work placement.
+
+Important information
+
+You only need to book one time slot for Kick Off. Places are limited so make sure you’re not double booking.
+
+Bring all your questions as the team will be available to answer them for you. We want to help you have fun, learn and really get the most out of your opportunity.
+
+If you have any questions before then, please contact us on; headstart@the-challenge.org
+
+Best wishes
+
+HeadStart team
+
+Any questions? Email the HeadStart team, check out our website or get in touch on facebook.
+
+
+The HeadStart team
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subsribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

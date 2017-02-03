@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Gender__c</field>
+    </columns>
+    <columns>
+        <field>Contact$FirstName</field>
+    </columns>
+    <columns>
+        <field>Contact$LastName</field>
+    </columns>
+    <columns>
+        <field>Contact$Date_Full_Payment_Received_New__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Date_given_hoodie__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Size_of_hoodie_given__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Wave_Selections__r$Incentivised__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Wave_Selections__r$Status__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Team_Challenge_1st_Choice__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Wave_Selections__r$Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>SLL 1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Wave_Selections__r$Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Assigned,Reserved,Waiting list,Was reserved - now on waiting list</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Info eve register MRK 3</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_Cluster_Wave__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Contact$LastName</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2011-01-01</startDate>
+    </timeFrameFilter>
+</Report>

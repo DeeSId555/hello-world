@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Team__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Contact__c</field>
+    </columns>
+    <columns>
+        <field>Account$Address_line_1__c</field>
+    </columns>
+    <columns>
+        <field>Account$Address_line_2__c</field>
+    </columns>
+    <columns>
+        <field>Account$Address_line_3__c</field>
+    </columns>
+    <columns>
+        <field>Account$Postcode__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Junctions__r.Bookings__r$Cluster_Pull__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>HIHO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Junctions__r.Bookings__r$Usage_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>TC Community Partner 2013</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>HIHO TC Partners</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Usages_and_Bookings__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

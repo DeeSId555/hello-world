@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 6.3.2 Reminder - listed DBS to be approved</name>
+    <style>formalLetter</style>
+    <subject>Check your DBS status on the Staffing Website</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your local staffing team.
+
+Dear {!Contact.FirstName},
+
+We recently contacted you because we have been notified that your DBS certificate is listed and there is information we need to review prior to authorisation
+
+It is urgent that you contact your Staffing representative as soon as possible or this could affect your place on the programme.
+
+
+What do I need to do?
+
+Mail your original DBS certificate to us - Please post the copy to our Waterloo office (address below) for the attention of Abby Lamb
+
+Abby Lamb
+Central Staffing Team:
+The Challenge
+Mezzanine Floor
+Elizabeth House
+39 York Road
+London
+SE1 7NQ
+
+Use &apos;Royal Mail Signed For&apos; delivery method - This ensures that your documents are sent to us securely, and the Staffing Team will need to sign for your package. We will return your certificate by the same method.  Please ensure that you write the &apos;return&apos; address on the back of the envelope!
+
+
+I have not received by DBS certificate yet
+
+It should now be 7 days since you were notified that your DBS has been processed. We advise you to contact the Disclosure and Barring Service within the next couple of days to request for your certificate to be resent. If you fail to do this within 14 days of receiving your notification email, you will have to start your DBS application again.
+
+If you have any further questions regarding your DBS application, please contact your local staffing team, quoting the email reference number below in any correspondence.
+
+
+Best wishes,
+
+{!Contact.Contact_Owner}
+{!Contact.Contact_Owner_email}
+The Challenge
+
+Email reference: CR 6.3.1</textOnly>
+    <type>html</type>
+</EmailTemplate>

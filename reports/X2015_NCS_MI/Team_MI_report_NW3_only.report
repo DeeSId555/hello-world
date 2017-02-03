@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Wave__c.Teams__r$Name</field>
+    </columns>
+    <columns>
+        <field>Wave__c.Teams__r$NCST_team_id__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c$NCSZone__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c$Name</field>
+    </columns>
+    <columns>
+        <field>Wave__c.Teams__r$NCST_target_participants__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Wave__c$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Wave__c.X2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave__c$Season__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Summer 2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave__c$NCSZone__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>NW3</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Team MI report NW3 only</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Waves_and_Teams__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Wave__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

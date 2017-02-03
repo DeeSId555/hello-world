@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Website Login</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Website Logins</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accessing user --></label>
+        <name>Accessing_user__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Website Logins --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date/time logged in --></label>
+        <name>Date_time_logged_in__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date/time logged out --></label>
+        <name>Date_time_logged_out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Login type --></label>
+        <name>Login_type__c</name>
+        <picklistValues>
+            <masterLabel>Challenge User</masterLabel>
+            <translation><!-- Challenge User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PG</masterLabel>
+            <translation><!-- PG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YP</masterLabel>
+            <translation><!-- YP --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label><!-- OBS Challenge --></label>
+        <name>OBS_Challenge</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OBS user --></label>
+        <name>OBS_user</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

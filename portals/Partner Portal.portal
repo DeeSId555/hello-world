@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Portal xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <description>Partner Portal</description>
+    <emailSenderAddress>ivan.wise@the-challenge.org</emailSenderAddress>
+    <emailSenderName>Ivan Wise</emailSenderName>
+    <enableSelfCloseCase>false</enableSelfCloseCase>
+    <forgotPassTemplate>TCS_Mentor_portal_email_templates/TCS_Mentor_portal_reset_password</forgotPassTemplate>
+    <isSelfRegistrationActivated>false</isSelfRegistrationActivated>
+    <logoutUrl>http://thechallenge.force.com/TCS</logoutUrl>
+    <newPassTemplate>TCS_Mentor_portal_email_templates/TCS_Mentor_portal_reset_password</newPassTemplate>
+    <newUserTemplate>TCS_Mentor_portal_email_templates/New_TCS_user_credentials_notification</newUserTemplate>
+    <showActionConfirmation>false</showActionConfirmation>
+    <type>Partner</type>
+</Portal>

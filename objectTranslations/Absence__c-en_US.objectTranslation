@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Absence</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Absences</value>
+    </caseValues>
+    <fields>
+        <label><!-- Absence on PCKO day --></label>
+        <name>Absence_on_PCKO_day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Absences --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date/Time YP will leave NCS Programme --></label>
+        <name>Date_Time_YP_will_leave_NCS_Programme__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date/Time YP will return toNCS Programme --></label>
+        <name>Date_Time_YP_will_return_toNCS_Programme__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of absence --></label>
+        <name>Date_of_Absence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Length of absence --></label>
+        <name>Half_day_up_to__c</name>
+        <picklistValues>
+            <masterLabel>Full day (4+ hours)</masterLabel>
+            <translation><!-- Full day (4+ hours) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half day (2 - 4 hours)</masterLabel>
+            <translation><!-- Half day (2 - 4 hours) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- How YP leaves NCS Programme --></label>
+        <name>How_YP_leaves_NCS_Programme__c</name>
+        <picklistValues>
+            <masterLabel>1. The young person will leave on their own</masterLabel>
+            <translation><!-- 1. The young person will leave on their own --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Someone will collect the young person</masterLabel>
+            <translation><!-- 2. Someone will collect the young person --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Length in days --></label>
+        <name>Length_in_days__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please provide details on how the YP will travel to/from the programme to/form the absence --></help>
+        <label><!-- Travel Instructions --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- PCKO --></label>
+        <name>PCKO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Part of NCS programme Absence falls in --></label>
+        <name>Part_of_NCS_programme_Absence_falls_in__c</name>
+        <picklistValues>
+            <masterLabel>Non-residential absence</masterLabel>
+            <translation><!-- Non-residential absence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part 1: Get active (staying away from home)</masterLabel>
+            <translation><!-- Part 1: Get active (staying away from home) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part 2: Get involved (staying at home at night)</masterLabel>
+            <translation><!-- Part 2: Get involved (staying at home at night) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part 3: Make your mark (staying at home at night)</masterLabel>
+            <translation><!-- Part 3: Make your mark (staying at home at night) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential absence</masterLabel>
+            <translation><!-- Residential absence --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reason for absence --></label>
+        <name>Reason_for_absence__c</name>
+        <picklistValues>
+            <masterLabel>1. Bereavement/funeral</masterLabel>
+            <translation><!-- 1. Bereavement/funeral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10. Holiday</masterLabel>
+            <translation><!-- 10. Holiday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11. University open day</masterLabel>
+            <translation><!-- 11. University open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12. Party</masterLabel>
+            <translation><!-- 12. Party --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13. Other programmes/courses</masterLabel>
+            <translation><!-- 13. Other programmes/courses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14. School graduations/proms</masterLabel>
+            <translation><!-- 14. School graduations/proms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15. Collecting Exam Results (half a day or less)</masterLabel>
+            <translation><!-- 15. Collecting Exam Results (half a day or less) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16. Signing on</masterLabel>
+            <translation><!-- 16. Signing on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17. Court appearance</masterLabel>
+            <translation><!-- 17. Court appearance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18. Other</masterLabel>
+            <translation><!-- 18. Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Illness</masterLabel>
+            <translation><!-- 2. Illness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Serious injury</masterLabel>
+            <translation><!-- 3. Serious injury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Job interview</masterLabel>
+            <translation><!-- 4. Job interview --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Commencement of employment</masterLabel>
+            <translation><!-- 5. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Sixth form college inductions</masterLabel>
+            <translation><!-- 6. Sixth form college inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Religious Festivals</masterLabel>
+            <translation><!-- 7. Religious Festivals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Exams</masterLabel>
+            <translation><!-- 8. Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Wedding</masterLabel>
+            <translation><!-- 9. Wedding --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Requested by PG --></label>
+        <name>Requested_by_PG__c</name>
+    </fields>
+    <fields>
+        <label><!-- TCKO --></label>
+        <name>TCKO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave --></label>
+        <name>Wave__c</name>
+    </fields>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Absence requires a date --></errorMessage>
+        <name>Absence_requires_date</name>
+    </validationRules>
+</CustomObjectTranslation>

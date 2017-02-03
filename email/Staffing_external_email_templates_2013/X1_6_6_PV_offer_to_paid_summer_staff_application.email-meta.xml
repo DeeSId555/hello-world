@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Copy checked and workflow active (DS). AO approved 2014</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>1.6.6. PV offer to paid summer staff application</name>
+    <style>freeForm</style>
+    <subject>Re: Your assessment with The Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+Dear {!Contact.FirstName}
+
+Following your assessment at The Challenge we are unable to offer you a paid role but feel you would be ideally suited to the role of {!Job_Application__c.Role_to_assess_for__c} and hope you feel able to accept.
+
+
+
+This role will allow you to gain experience working with young people that could lead to paid employment in the future.
+
+
+
+This offer is conditional on the completion of a satisfactory DBS, your availability and the receipt of further information required to arrange a job placement for you.
+
+
+
+We will contact you at the end of April to gather your interest and other information from you.
+
+
+
+Thanks you for your support and we hope to see you again soon.
+
+
+
+Best wishes,
+
+
+{!Contact.OwnerFullName}
+t: {!Contact.OwnerPhone}
+e: {!Contact.Contact_Owner_alternative_email__c}
+The Challenge
+
+CR 1.6.6</textOnly>
+    <type>html</type>
+</EmailTemplate>

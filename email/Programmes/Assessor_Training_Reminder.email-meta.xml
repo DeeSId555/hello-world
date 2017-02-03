@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>WM Assessor Training Reminder 16</name>
+    <style>freeForm</style>
+    <subject>Assessor Training tomorrow</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+Remember that your Youth Assessor training is taking place tomorrow from 6-8pm at The Challenge, 52 Charlotte Street, Jewellery Quarter, Birmingham, B3 1AR.
+
+Please check out how to get here on Google Maps. and arrive at 5.50pm.
+
+There will be pizza! We still have a handful of spaces left, so if you have a friend who did NCS, and is under 18, feel free to bring them along.
+
+Please let me know if you can&apos;t make it now and we can see if there is space on the back-up training next Monday.
+
+Thanks,
+
+Liam
+liam.roseblade@the-challenge.org
+07785627463</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>2016 Absence Form Cover Email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>PG Version - 2016 Absence Form Cover Email</name>
+    <style>none</style>
+    <subject>NCS - Absence Form for {!Contact.FirstName}</subject>
+    <textOnly>NCS powered by The Challenge 
+
+NCSTHECHALLENGE.ORG 
+
+NCS absence form for {!Contact.FirstName}
+  
+Dear {!IF(Contact.Parent_Name__c&lt;&gt;&quot;&quot;,&quot;&quot;&amp;(Contact.Parent_Name__c)&amp;&quot;&quot;,&quot;Parent or Guardian&quot;)}, 
+
+Thank you for letting us know that you want to request an absence from NCS for {!Contact.FirstName} 
+
+You now need to fill in a form to give full details of your absence request. You will need to fill in information about each day that you&apos;re requesting for {!Contact.FirstName} to be absent. You can do this by clicking here: http://survey.clicktools.com/app/survey/response.jsp
+You can only submit information using this link once. 
+
+Please note:
+- {!Contact.FirstName} cannot be absent for more than two days of NCS, or they may not be eligible to graduate from the programme.
+- {!Contact.FirstName} may need to make up the hours missed by independently volunteering so they can graduate and receive their certificate. If this applies to {!Contact.FirstName}, they will be told how many hours they need to make up during NCS and we will send you an email. You and the young person will then need to organise some volunteering which aims to benefit the environment or community.
+If you are unable to fill in this form online or have any questions, please contact us using the details below. 
+
+Yours sincerely, 
+
+The NCS Team - The Challenge
+
+Phone: 0203 542 2400
+Email: contact@ncsthechallenge.org
+Our opening hours are 9am - 7pm Monday to Friday
+and 9am - 3pm on Saturdays and Sundays.
+
+NCS THE CHALLENGE    @NCSTheChallenge
+NCSThe Challenge    @NCSTheChallenge
+
+
+Copyright © 2016 The Challenge Network, All rights reserved.
+The Challenge Network is a charity registered in England and Wales with charity no. 1129239
+and company no. 6845451, whose registered office is at Elizabeth House, 39 York Road, London SE1 7NQ.
+
+You are receiving this email because you have registered your interest for NCS.
+Want to update your preferences or unsubscribe? Please contact us.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

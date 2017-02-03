@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Summer Staff with JP availability for the Autumn</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>5.1.1 Autumn availability request</name>
+    <style>freeForm</style>
+    <subject>Work Opportunities at NCS with The Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+Dear {!Contact.FirstName},
+
+Thank you for working on NCS with The Challenge. We hope that you enjoyed your work with us this summer. If you would like to continue working with us we have short term and year round roles available. Please see the opportunities below.
+
+AUTUMN PROGRAMME
+
+The autumn programme is a compacted version of the summer programme. Please follow the link at the bottom of this email to our web site for details on dates and roles.
+
+To be considered to work on the autumn programme in your current role, please click on the Autumn Availability Form below to confirm your availability
+
+NB You will not be required to attend training if you are completing the same role.
+
+Autumn Availability Form
+http://www.clicktools.com/survey?iv=1b49htgah35ov&amp;q1={!Job_Application__c.Id}
+
+CORE ROLES/YEAR ROUND ROLES
+
+We are also currently looking for candidates for a range of roles within The Challenge. Please follow the link to the web site and look under &apos;Permanent Roles&apos; for job description and application process.
+
+Details of all the roles and dates can be found on our web site:
+
+http://ncsthechallenge.org/seasonal-roles
+
+If you have any questions, please feel free to contact me.
+
+
+Best wishes,
+
+
+{!Contact.OwnerFullName}
+NCS with The Challenge
+{!Contact.Contact_Owner_alternative_email__c}
+5.1.1 Autumn</textOnly>
+    <type>html</type>
+</EmailTemplate>

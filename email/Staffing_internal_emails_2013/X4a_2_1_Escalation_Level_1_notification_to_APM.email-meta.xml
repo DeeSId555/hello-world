@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sends at 2pm day after wave has ended</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>4a.2.1 Escalation Level 1: Alert to PM and SM</name>
+    <style>none</style>
+    <subject>URGENT: The payroll for {!Job__c.Wave__c} has not been completed. Please action.</subject>
+    <type>text</type>
+</EmailTemplate>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Assigned_Wave__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Reserved_Wave__c</field>
+    </columns>
+    <columns>
+        <field>Inclusion_Details__c.details_of_hearing_impairments__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Inclusion_Details__c.Hearing_impairment__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Yes</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Inclusion_Details__c.Severity_of_hearing_impairment__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>HB 2016 - YP Hearing Impairment</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Inclusion_Details__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

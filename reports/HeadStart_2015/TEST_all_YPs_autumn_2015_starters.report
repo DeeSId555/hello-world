@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_51759492</developerName>
+        <masterLabel>City</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>HS_Activity__c.HS_Owner__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Ben Toney</sourceValue>
+            </sourceValues>
+            <value>Birmingham</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Karen Scott</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Emily Kiddle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bevan Caister</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jayde Ellis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michelle Besa</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rebecca Jones</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alice Handelman-Pedroza</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michael Tutton</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Eleanor Roper</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Caitlin Brooks</sourceValue>
+            </sourceValues>
+            <value>London</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_68554825</developerName>
+        <masterLabel>HS hours total retention bucket</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>HS_Activity__c.HS_Hours_Total__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>1</to>
+            </sourceValues>
+            <value>1</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1</from>
+            </sourceValues>
+            <value>Starters</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Donut</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>false</expandOthers>
+        <groupingColumn>BucketField_51759492</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>PHONE3</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>Contact.District__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.Volunteering_Placement_Borough__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.Volunteering_Placement__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.Find_own_volunteering_opportunity__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_Hours_Total__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_Status__c</field>
+    </columns>
+    <description>London and Birmingham</description>
+    <filter>
+        <criteriaItems>
+            <column>HS_Activity__c.Date_congratulations_email_sent__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>9/9/2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.HS_Application_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Placement Confirmed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>HS_Activity__c.HS_Activity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.HS_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Left HeadStart</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.HS_Hours_Total__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>HS_Activity__c.Volunteering_preference__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_51759492</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>TEST- all YPs autumn 2015 starters</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$HS_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

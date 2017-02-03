@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Step Forward Job</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Step Forward Jobs</value>
+    </caseValues>
+    <fields>
+        <help><!-- Matching check this box to alert account manager to book interview&apos; --></help>
+        <label><!-- Account Manager to book interviews --></label>
+        <name>Account_Manager_to_book_interviews__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Post Code --></label>
+        <name>Account_Post_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreed Fee for Employer --></label>
+        <name>Agreed_Fee_for_Employer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of Associate --></help>
+        <label><!-- Allocated Associate Name --></label>
+        <name>Allocated_Associate_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allocated Associate --></label>
+        <name>Allocated_Associate__c</name>
+        <relationshipLabel><!-- Step Forward Jobs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- I am satisfied that this employer and this role meet Step Forward’s quality standards in every way, and that the position is ready to be advertised to candidates. --></help>
+        <label><!-- Approved by Account Owner --></label>
+        <name>Approved_by_Account_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved by Line Manager --></label>
+        <name>Approved_by_Line_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attendance confirmed fr Matching Eve-Emp --></label>
+        <name>Attendance_confirmed_fr_Matching_Eve_Emp__c</name>
+        <picklistValues>
+            <masterLabel>Thursday 18 June Slot 1</masterLabel>
+            <translation><!-- Thursday 18 June Slot 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thursday 18 June Slot 2</masterLabel>
+            <translation><!-- Thursday 18 June Slot 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thursday 18 June Slot 3</masterLabel>
+            <translation><!-- Thursday 18 June Slot 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday 14 July Slot 1</masterLabel>
+            <translation><!-- Tuesday 14 July Slot 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday 14 July Slot 2</masterLabel>
+            <translation><!-- Tuesday 14 July Slot 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday 14 July Slot 3</masterLabel>
+            <translation><!-- Tuesday 14 July Slot 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday 28 April Slot 1</masterLabel>
+            <translation><!-- Tuesday 28 April Slot 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday 28 April Slot 2</masterLabel>
+            <translation><!-- Tuesday 28 April Slot 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday 28 April Slot 3</masterLabel>
+            <translation><!-- Tuesday 28 April Slot 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday 31 March Slot 1</masterLabel>
+            <translation><!-- Tuesday 31 March Slot 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday 31 March Slot 2</masterLabel>
+            <translation><!-- Tuesday 31 March Slot 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday 31 March Slot 3</masterLabel>
+            <translation><!-- Tuesday 31 March Slot 3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Candidates NOT intending to go to uni --></label>
+        <name>Candidates_NOT_intending_to_go_to_uni__c</name>
+    </fields>
+    <fields>
+        <label><!-- Conf. Email with CVs sent --></label>
+        <name>Conf_Email_with_CVs_sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date Account Management send the email with CVs to Employer. --></help>
+        <label><!-- Conf. Email with CVs sent to Empl. --></label>
+        <name>Conf_Email_with_CVs_sent_to_Empl__c</name>
+    </fields>
+    <fields>
+        <help><!-- Matching check email and send to Account Management if correct. Put initials here. --></help>
+        <label><!-- Conf. email with CVs checked - Initial --></label>
+        <name>Conf_email_with_CVs_checked_Initial__c</name>
+    </fields>
+    <fields>
+        <help><!-- Matching draft email and put initials here --></help>
+        <label><!-- Conf. email with CVs drafted - Initial --></label>
+        <name>Conf_email_with_CVs_drafted_Initial__c</name>
+    </fields>
+    <fields>
+        <help><!-- Add initial to confirm when  interview feedback uploaded to matching tool. --></help>
+        <label><!-- Confirm feedback uploaded - Initial --></label>
+        <name>Confirm_feedback_uploaded_Initial__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date confirmation pack sent to Empl. including MOU, JD, H&amp;S. --></help>
+        <label><!-- Confirmation Pack Sent --></label>
+        <name>Confirmation_Pack_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confirming Matching Result --></label>
+        <name>Confirming_Matching_Result__c</name>
+        <picklistValues>
+            <masterLabel>Attending</masterLabel>
+            <translation><!-- Attending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In discussion</masterLabel>
+            <translation><!-- In discussion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not attending</masterLabel>
+            <translation><!-- Not attending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Confirming matching Notes --></label>
+        <name>Confirming_matching_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contracting Lead Employer Email --></label>
+        <name>Contracting_Lead_Employer_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Person who&apos;s name will be on the contract. -EMPLOYER --></help>
+        <label><!-- Contracting Lead Employer --></label>
+        <name>Contracting_Lead_Employer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Person who will show up on the contract - STEP FORWARD --></help>
+        <label><!-- Contracting Lead Step Forward --></label>
+        <name>Contracting_Lead_Step_Forward__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contracting Lead Step Forward email --></label>
+        <name>Contracting_Lead_Step_Forward_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Step Forward Event Components --></label>
+        <name>Count_Step_Forward__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date HS Form signed by employer --></label>
+        <name>Date_HS_Form_signer_by_employer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date called confirming matching --></label>
+        <name>Date_called_confirming_matching__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date formal invite to matching sent --></label>
+        <name>Date_formal_invite_to_matching_sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the Employer is not yet ready for interview, but could possibly be in the future ,set a future date to contact them again --></help>
+        <label><!-- Date to contact employer again --></label>
+        <name>Date_to_contact_employer_again__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email manager about JD check --></label>
+        <name>Email_manager_about_JD_check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Empl- shortlisted for matching day --></label>
+        <name>Empl_shortlisted_for_matching_day__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used by Delivery --></help>
+        <label><!-- Employer Reference Number --></label>
+        <name>Employer_Reference_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employer Special Requests --></label>
+        <name>Employer_Special_Requests__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employer --></label>
+        <name>Employer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employer allocated to matching day --></label>
+        <name>Employer_allocated_to_matching_day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employer available for interview? --></label>
+        <name>Employer_available_for_interview__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Employer eligible for AGE grant --></label>
+        <name>Employer_eligible_for_AGE_grant__c</name>
+        <picklistValues>
+            <masterLabel>Employer not interested</masterLabel>
+            <translation><!-- Employer not interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please enter the date that the employer liability insurance expires --></help>
+        <label><!-- Employer liability insurance expiry date --></label>
+        <name>Employer_liability_insurance_expiry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employer&apos;s availability for I-views --></label>
+        <name>Employer_s_availability_for_I_views__c</name>
+        <picklistValues>
+            <masterLabel>Thursday 18th June 12pm-3pm</masterLabel>
+            <translation><!-- Thursday 18th June 12pm-3pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thursday 18th June 3pm-6pm</masterLabel>
+            <translation><!-- Thursday 18th June 3pm-6pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thursday 18th June 9am-12pm</masterLabel>
+            <translation><!-- Thursday 18th June 9am-12pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday 14th July 12pm-3pm</masterLabel>
+            <translation><!-- Tuesday 14th July 12pm-3pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday 14th July 3pm-6pm</masterLabel>
+            <translation><!-- Tuesday 14th July 3pm-6pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday 14th July 9am-12pm</masterLabel>
+            <translation><!-- Tuesday 14th July 9am-12pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday 28th April 12pm-3pm</masterLabel>
+            <translation><!-- Tuesday 28th April 12pm-3pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday 28th April 3pm-6pm</masterLabel>
+            <translation><!-- Tuesday 28th April 3pm-6pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday 28th April 9am-12pm</masterLabel>
+            <translation><!-- Tuesday 28th April 9am-12pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday 31st March 12pm-3pm</masterLabel>
+            <translation><!-- Tuesday 31st March 12pm-3pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday 31st March 3pm-6pm</masterLabel>
+            <translation><!-- Tuesday 31st March 3pm-6pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday 31st March 9am-12pm</masterLabel>
+            <translation><!-- Tuesday 31st March 9am-12pm --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Exclusive? --></label>
+        <name>Exclusive__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fee Payment Terms Type --></label>
+        <name>Fee_Payment_Terms_Type__c</name>
+        <picklistValues>
+            <masterLabel>No Payment of Training Fee</masterLabel>
+            <translation><!-- No Payment of Training Fee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment of Training Fee in Full</masterLabel>
+            <translation><!-- Payment of Training Fee in Full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment of Training Fee in Three Separate Instalments</masterLabel>
+            <translation><!-- Payment of Training Fee in Three Separate Instalments --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fee Payment Terms --></label>
+        <name>Fee_Payment_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final QC check --></label>
+        <name>Final_QC_check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Follow up call pre-interview made --></label>
+        <name>Follow_up_call_pre_interview_made__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please make sure that the full job description is attached before this box it ticked. --></help>
+        <label><!-- Full job description --></label>
+        <name>Full_job_description__c</name>
+    </fields>
+    <fields>
+        <help><!-- 3 Extrovert
+-3 Introvert --></help>
+        <label><!-- Group 1 --></label>
+        <name>Group_11__c</name>
+    </fields>
+    <fields>
+        <help><!-- 3 Creative
+-3 Methodical --></help>
+        <label><!-- Group 2 --></label>
+        <name>Group_21__c</name>
+    </fields>
+    <fields>
+        <help><!-- +3 Collaborator
+-3 Autonomous --></help>
+        <label><!-- Group 3 --></label>
+        <name>Group_31__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please make sure that the health &amp; safety risk assessment form is attached before this box is ticked. --></help>
+        <label><!-- Health &amp; Safety risk assessment form --></label>
+        <name>Health_Safety_risk_assessment_form__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT job Stream --></label>
+        <name>IT_job_Stream__c</name>
+        <picklistValues>
+            <masterLabel>Network &amp; hardware support</masterLabel>
+            <translation><!-- Network &amp; hardware support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software and web development</masterLabel>
+            <translation><!-- Software and web development --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Interview Availability --></label>
+        <name>Interview_Availability__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date we call to to invite them to interview --></help>
+        <label><!-- Interview Availability call made --></label>
+        <name>Interview_Availability_call_made__c</name>
+    </fields>
+    <fields>
+        <help><!-- Be careful when changing the name as it may affect existing integrations. --></help>
+        <label><!-- Interview Availability call result --></label>
+        <name>Interview_Availability_call_result__c</name>
+        <picklistValues>
+            <masterLabel>Attending</masterLabel>
+            <translation><!-- Attending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In discussion</masterLabel>
+            <translation><!-- In discussion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Message</masterLabel>
+            <translation><!-- Left Message --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Answer</masterLabel>
+            <translation><!-- No Answer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not attending</masterLabel>
+            <translation><!-- Not attending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Interview Result --></label>
+        <name>Interview_Result__c</name>
+        <picklistValues>
+            <masterLabel>Did not attend</masterLabel>
+            <translation><!-- Did not attend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Successful</masterLabel>
+            <translation><!-- Successful --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsuccessful - Empl. declined</masterLabel>
+            <translation><!-- Unsuccessful - Empl. declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsuccessful - YP declined</masterLabel>
+            <translation><!-- Unsuccessful - YP declined --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date email sent confirming invite to interview, requesting RSVP within 24 hours --></help>
+        <label><!-- Interview availability email sent --></label>
+        <name>Interview_availability_email_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- JD Download link --></label>
+        <name>JD_Download_link__c</name>
+    </fields>
+    <fields>
+        <label><!-- JD ID --></label>
+        <name>JD_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Paste your JD here --></help>
+        <label><!-- JD Link --></label>
+        <name>JD_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- JD checked by manager --></label>
+        <name>JD_checked_by_manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Address --></label>
+        <name>Job_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Description --></label>
+        <name>Job_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Difficult to Match reason --></label>
+        <name>Job_Difficult_to_Match_reason__c</name>
+        <picklistValues>
+            <masterLabel>Candidate shortage due to postcode</masterLabel>
+            <translation><!-- Candidate shortage due to postcode --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Candidate shortage for person specification</masterLabel>
+            <translation><!-- Candidate shortage for person specification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Candidate shortage in this pathway</masterLabel>
+            <translation><!-- Candidate shortage in this pathway --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lack of interest in JD from candidates</masterLabel>
+            <translation><!-- Lack of interest in JD from candidates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Job Matching Status --></label>
+        <name>Job_Matching_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Postcode --></label>
+        <name>Job_Postcode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does the job require the Associate to have a Specific Interest? (please select between 0-3) --></help>
+        <label><!-- Job Specific interests --></label>
+        <name>Job_Specific_interests__c</name>
+        <picklistValues>
+            <masterLabel>Arts</masterLabel>
+            <translation><!-- Arts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charity / Social Action</masterLabel>
+            <translation><!-- Charity / Social Action --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Creative</masterLabel>
+            <translation><!-- Creative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Design</masterLabel>
+            <translation><!-- Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Economics</masterLabel>
+            <translation><!-- Economics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entertainment</masterLabel>
+            <translation><!-- Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event Management</masterLabel>
+            <translation><!-- Event Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fashion</masterLabel>
+            <translation><!-- Fashion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government &amp; Politics</masterLabel>
+            <translation><!-- Government &amp; Politics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR &amp; Recruitment</masterLabel>
+            <translation><!-- HR &amp; Recruitment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitality</masterLabel>
+            <translation><!-- Hospitality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Literature</masterLabel>
+            <translation><!-- Literature --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing &amp; PR</masterLabel>
+            <translation><!-- Marketing &amp; PR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical</masterLabel>
+            <translation><!-- Medical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Music</masterLabel>
+            <translation><!-- Music --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER (see OTHER field)</masterLabel>
+            <translation><!-- OTHER (see OTHER field) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property / Facilities Management</masterLabel>
+            <translation><!-- Property / Facilities Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Science</masterLabel>
+            <translation><!-- Science --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sport</masterLabel>
+            <translation><!-- Sport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation><!-- Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel &amp; Transport</masterLabel>
+            <translation><!-- Travel &amp; Transport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Youth Sector</masterLabel>
+            <translation><!-- Youth Sector --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Job Confirmation Status --></label>
+        <name>Job_Status__c</name>
+        <picklistValues>
+            <masterLabel>1. In discussion</masterLabel>
+            <translation><!-- 1. In discussion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Verbal confirmation</masterLabel>
+            <translation><!-- 2. Verbal confirmation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. All docs signed off and ready for matching</masterLabel>
+            <translation><!-- 3. All docs signed off and ready for matching --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Closed: Job confirmation unsuccessful</masterLabel>
+            <translation><!-- 4. Closed: Job confirmation unsuccessful --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Job cycle --></label>
+        <name>Job_cycle__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will email matching team to inform them of this. --></help>
+        <label><!-- Job difficult to match --></label>
+        <name>Job_difficult_to_match__c</name>
+    </fields>
+    <fields>
+        <help><!-- Main contact for specific job --></help>
+        <label><!-- Job main contact --></label>
+        <name>Job_main_contact__c</name>
+        <relationshipLabel><!-- Step Forward Jobs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Link to JD --></label>
+        <name>Link_to_JD__c</name>
+    </fields>
+    <fields>
+        <label><!-- MOU Received date --></label>
+        <name>MOU_Received_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Memorandum of Understanding --></help>
+        <label><!-- MOU --></label>
+        <name>MOU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager email for JD check --></label>
+        <name>Manager_email_for_JD_check__c</name>
+    </fields>
+    <fields>
+        <help><!-- Free text box to write any notes regarding matching communications. --></help>
+        <label><!-- Matching Comms Notes --></label>
+        <name>Matching_Comms_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Matching Communication notes --></label>
+        <name>Matching_Communication_notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Matching date Empl. allocated to --></label>
+        <name>Matching_date_Empl_allocated_to__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date of the interview we want to invite the Employer to (added by matching) --></help>
+        <label><!-- Matching date shortlisted for --></label>
+        <name>Matching_date_shortlisted_for__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please use this field to enter your notes. --></help>
+        <label><!-- Notes entry --></label>
+        <name>Notes_entry__c</name>
+    </fields>
+    <fields>
+        <help><!-- To be completed when &quot;Other&quot; option is selected in Job Specific Interests --></help>
+        <label><!-- OTHER --></label>
+        <name>OTHER__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original AGE grant form received --></label>
+        <name>Original_AGE_grant_form_received__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date we call to let them know the final outcome of the interviews. --></help>
+        <label><!-- Outcome call made --></label>
+        <name>Outcome_call_made__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is the outcome of the call? --></help>
+        <label><!-- Outcome call result --></label>
+        <name>Outcome_call_result__c</name>
+        <picklistValues>
+            <masterLabel>Left message</masterLabel>
+            <translation><!-- Left message --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No answer</masterLabel>
+            <translation><!-- No answer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spoke to Empl. -  Did not accept</masterLabel>
+            <translation><!-- Spoke to Empl. -  Did not accept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spoke to Empl. - accepted</masterLabel>
+            <translation><!-- Spoke to Empl. - accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spoke to Empl.- In discussion</masterLabel>
+            <translation><!-- Spoke to Empl.- In discussion --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date the email sent to Empl. confirming the final outcome of the interviews. --></help>
+        <label><!-- Outcome email sent to Empl. --></label>
+        <name>Outcome_email_sent_to_Empl__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the pathway this job is connected to --></help>
+        <label><!-- Pathway --></label>
+        <name>Pathway__c</name>
+        <picklistValues>
+            <masterLabel>Accounting</masterLabel>
+            <translation><!-- Accounting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Administration</masterLabel>
+            <translation><!-- Business Administration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Early Years Education</masterLabel>
+            <translation><!-- Early Years Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitality</masterLabel>
+            <translation><!-- Hospitality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT, Software and Telecoms</masterLabel>
+            <translation><!-- IT, Software and Telecoms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media &amp; Digital Marketing</masterLabel>
+            <translation><!-- Social Media &amp; Digital Marketing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The amount of associates this job needs --></help>
+        <label><!-- Positions available --></label>
+        <name>Positions_available__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date we call to ask how the interviews went. --></help>
+        <label><!-- Post interview courtesy call made to Emp --></label>
+        <name>Post_interview_courtesy_call_made_to_Emp__c</name>
+    </fields>
+    <fields>
+        <help><!-- Call to check they know interview details --></help>
+        <label><!-- Pre-interview briefing call made --></label>
+        <name>Preinterview_briefing_call_made__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quality Control Form --></label>
+        <name>Quality_Control_Form__c</name>
+    </fields>
+    <fields>
+        <label><!-- Registered Charity Number --></label>
+        <name>Registered_Charity_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Registered Company Number --></label>
+        <name>Registered_Company_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Registered Organisation Address --></label>
+        <name>Registered_Organisation_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Registered Organisation Name --></label>
+        <name>Registered_Organisation_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Result of courtesy call --></label>
+        <name>Result_of_courtesy_call__c</name>
+        <picklistValues>
+            <masterLabel>Left message</masterLabel>
+            <translation><!-- Left message --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No answer</masterLabel>
+            <translation><!-- No answer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spoke to Empl.</masterLabel>
+            <translation><!-- Spoke to Empl. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Result of pre-interview call --></label>
+        <name>Result_of_pre_interview_call__c</name>
+        <picklistValues>
+            <masterLabel>Left message</masterLabel>
+            <translation><!-- Left message --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No answer</masterLabel>
+            <translation><!-- No answer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spoke to Empl.</masterLabel>
+            <translation><!-- Spoke to Empl. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SF Account Owner --></label>
+        <name>SF_Account_Owner__c</name>
+    </fields>
+    <fields>
+        <help><!-- Email of Account Manager --></help>
+        <label><!-- SF Owner Email --></label>
+        <name>SF_Owner_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salary --></label>
+        <name>Salary__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of Step Forward Account Management --></help>
+        <label><!-- Step Forward Account Management Name --></label>
+        <name>Step_Forward_Account_Management_Name__c</name>
+        <relationshipLabel><!-- Step Forward Jobs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Step Forward Job Name --></label>
+        <name>Step_Forward_Job_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Successful - Job offer accepted --></label>
+        <name>Successful_Job_offer_accepted__c</name>
+    </fields>
+    <fields>
+        <label><!-- This is a customer facing role. --></label>
+        <name>This_is_a_customer_facing_role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Days not possible for Employers --></label>
+        <name>Training_Days_not_possible_for_Employers__c</name>
+        <picklistValues>
+            <masterLabel>Friday</masterLabel>
+            <translation><!-- Friday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monday</masterLabel>
+            <translation><!-- Monday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thursday</masterLabel>
+            <translation><!-- Thursday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday</masterLabel>
+            <translation><!-- Tuesday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wednesday</masterLabel>
+            <translation><!-- Wednesday --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unsuccessful - YP not accepted --></label>
+        <name>Unsuccessful_YP_not_accepted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verbal confirmation date --></label>
+        <name>Verbal_confirmation_date__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

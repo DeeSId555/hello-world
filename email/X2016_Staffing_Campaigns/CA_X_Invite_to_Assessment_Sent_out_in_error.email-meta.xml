@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>Invite to Assessment Sent out in error</name>
+    <style>formalLetter</style>
+    <subject>Invite to rebook onto assessment sent in error</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative..
+Dear {!Contact.FirstName},
+
+Hope you are well - we&apos;re looking forward to meeting you at your assessment!
+
+Earlier today, we accidentally sent you a second email inviting you to book onto one of our group assessments. This email was sent out in error - please don&apos;t worry, you&apos;re still booked onto your chosen assessment.
+
+We&apos;re sorry for any confusion caused by this email - if you would like to double check your assessment details, please login to the staffing website and head to the &apos;Booking Assessments&apos; page for a summary of your upcoming event.
+
+If you have any questions about your booked assessment please get in touch with your local staffing team or check out our FAQs!
+
+Apologies again for any confusion or inconvenienced caused. See you at your assessment!
+
+Best wishes,
+
+The Challenge Staffing team
+seasonalroles@the-challenge.org</textOnly>
+    <type>html</type>
+</EmailTemplate>

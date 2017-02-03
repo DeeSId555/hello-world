@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Additional information used for NCS MI reporting</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Access_agreed__c</fullName>
+        <description>Formula calculating when &apos;access agreed&apos; by school. This equates to Head meeting date, or, if blank, the ST meeting date, or, if blank, the CT meeting date. If School has a &apos;Reason not participating&apos;, then the field is blank</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISNULL( Account__r.Reason_if_not_participating__c ) )  , NULL, IF(NOT(ISNULL(Account__r.Head_meeting_date2012__c ) ) , Account__r.Head_meeting_date2012__c, IF(NOT(ISNULL(Account__r.ST_meeting_date_2012__c) ) , Account__r.ST_meeting_date_2012__c, IF(NOT(ISNULL( Account__r.CT_meeting_date_2012__c ) ) , Account__r.CT_meeting_date_2012__c , NULL))))</formula>
+        <inlineHelpText>When &apos;access agreed&apos; by the School. This equates to Head meeting date, or, if blank, the ST meeting date, or, if blank, the CT meeting date. If School has a &apos;Reason not participating&apos;, then the field is blank</inlineHelpText>
+        <label>Access agreed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <description>Link to Master Account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Link to Account</inlineHelpText>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>NCS_MI</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Event1_type__c</fullName>
+        <description>Formula, returning &apos;Assembly&apos; whenever there is a date in the Assembly field in Account</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK( Account__r.Assembly_date_2012__c) , NULL, &quot;Assembly&quot;)</formula>
+        <inlineHelpText>Formula, returning &apos;Assembly&apos; whenever there is a date in the Assembly field in Account</inlineHelpText>
+        <label>Event1 type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Event3_type__c</fullName>
+        <description>Formula, returning &apos;Parent evening&apos; whenever there is a date in the Piggyback PG Eve field in Account</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Account__r.Piggyback_PG_eve_date_2012__c), NULL, &quot;Parent evening&quot;)</formula>
+        <inlineHelpText>Formula, returning &apos;Parent evening&apos; whenever there is a date in the Piggyback PG Eve field in Account</inlineHelpText>
+        <label>Event3 type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Event4_type__c</fullName>
+        <description>Formula, returning &apos;Parent evening&apos; whenever there is a date in theTCN-specific PG Eve field in Account</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Account__r.TCN_specific_PG_eve_date2012__c), NULL, &quot;Parent evening&quot;)</formula>
+        <inlineHelpText>Formula, returning &apos;Parent evening&apos; whenever there is a date in theTCN-specific PG Eve field in Account</inlineHelpText>
+        <label>Event4 type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Event5_type__c</fullName>
+        <description>Formula, returning &apos;Other&apos; whenever there is a date in the Hoody handout field in Account</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK( Account__r.Hoody_handout_date_2012__c ) , NULL, &quot;Other&quot;)</formula>
+        <inlineHelpText>Formula, returning &apos;Other&apos; whenever there is a date in the Hoody handout field in Account</inlineHelpText>
+        <label>Event5 type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Event7_type__c</fullName>
+        <description>Currently no data to report to NCS for this</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Currently no data to report to NCS for this</inlineHelpText>
+        <label>Event7 type</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Event_1_date__c</fullName>
+        <description>Date of event 1 (i.e, the Assembly date)</description>
+        <externalId>false</externalId>
+        <formula>Account__r.Assembly_date_2012__c</formula>
+        <inlineHelpText>Date of event 1, pulled from Account</inlineHelpText>
+        <label>Event 1 date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Headteacher_first_name__c</fullName>
+        <description>Headteacher first name, as provided by Cabinet Office from Edubase</description>
+        <externalId>false</externalId>
+        <inlineHelpText>As provided by Cabinet Office from Edubase</inlineHelpText>
+        <label>Headteacher first name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Headteacher_phone__c</fullName>
+        <description>Headteacher phone, as provided by Cabinet Office from Edubase</description>
+        <externalId>false</externalId>
+        <inlineHelpText>As provided by Cabinet Office from Edubase</inlineHelpText>
+        <label>Headteacher phone</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Headteacher_surname__c</fullName>
+        <description>Headteacher surname, as provided by Cabinet Office from Edubase</description>
+        <externalId>false</externalId>
+        <inlineHelpText>As provided by Cabinet Office from Edubase</inlineHelpText>
+        <label>Headteacher surname</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reason_if_not_participating__c</fullName>
+        <externalId>false</externalId>
+        <formula>if( INCLUDES(Account__r.Reason_if_not_participating__c ,&quot;Not interested - D of E instead&quot;),&quot;Not interested - D of E instead&quot;,IF( INCLUDES(Account__r.Reason_if_not_participating__c ,&quot;Not interested - distraction from exams&quot;),&quot;Not interested - distraction from exams&quot;,IF(INCLUDES(Account__r.Reason_if_not_participating__c ,&quot;Not interested - other reason&quot;),&quot;Not interested - other reason&quot;,IF(INCLUDES(Account__r.Reason_if_not_participating__c ,&quot;Unable to engage school&quot;),&quot;Unable to engage school&quot;,&quot;&quot;))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Reason if not participating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>School_name__c</fullName>
+        <description>School name, as provided by Cabinet Office from Edubase</description>
+        <externalId>false</externalId>
+        <inlineHelpText>As provided by Cabinet Office from Edubase</inlineHelpText>
+        <label>School name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>School_notes__c</fullName>
+        <description>Notes field (not mandatory) for reporting to NCS</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Notes field (not mandatory) for reporting to NCS</inlineHelpText>
+        <label>School notes</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Year_group_15_size__c</fullName>
+        <description>Number of pupils who are aged 15, from Cabinet Office from Edubase</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of pupils who are aged 15, from Cabinet Office from Edubase</inlineHelpText>
+        <label>No. of pupils age 15</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Year_group_16_size__c</fullName>
+        <description>Number of pupils who are aged 16, from Cabinet Office from Edubase</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of pupils who are aged 16, from Cabinet Office from Edubase</inlineHelpText>
+        <label>No. of pupils age 16</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Year_group_17_size__c</fullName>
+        <description>Number of pupils who are aged 17, from Cabinet Office from Edubase</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of pupils who are aged 17, from Cabinet Office from Edubase</inlineHelpText>
+        <label>No. of pupils age 17</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>event2_type__c</fullName>
+        <description>Formula, returning &apos;Lunch event&apos; whenever there is a date in the P1 event held field in Account</description>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK( Account__r.P1_event_date2012__c ) , NULL, &quot;Lunch event&quot;)</formula>
+        <inlineHelpText>Formula, returning &apos;Lunch event&apos; whenever there is a date in the P1 event held field in Account</inlineHelpText>
+        <label>Event2 type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>event6_type__c</fullName>
+        <description>Currently no data to report to NCS for this</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Currently no data to report to NCS for this</inlineHelpText>
+        <label>Event6 type</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>event8_type__c</fullName>
+        <description>Currently no data to report to NCS on this</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Currently no data to report to NCS on this</inlineHelpText>
+        <label>Event8 type</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>NCS MI Account</label>
+    <nameField>
+        <displayFormat>NCSMI{000000}</displayFormat>
+        <label>NCS MI Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>NCS MI Accounts</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

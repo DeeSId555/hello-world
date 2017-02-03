@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>Bank + tax reminder - check both</name>
+    <style>formalLetter</style>
+    <subject>URGENT: Check your bank and tax information</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact us on seasonalroles@the-challenge.org.
+
+Dear {!Contact.FirstName},
+
+The first wave of this summer&apos;s NCS programme kicks off in less than a month, so we want to ensure you&apos;re all set to start your role with us this summer.
+
+A huge part of ensuring the programme runs smoothly is making sure we have the right bank and tax information for all our staff ahead of the first wave starting. Please go back to the Essential Information page and make any changes by 6th June 2016. After this date you will not be able to edit your information.
+
+My bank details are incorrect
+
+If your bank details are incorrect, you will have until the deadline above to amend them. Please double check that your bank account number, sort code, and the account name are correct before you &apos;save&apos; your information.
+
+My tax information is incorrect
+
+In order for us to generate a tax code for you, you need to make a tax declaration.
+
+To make a tax declaration, you’ll need to read through three statements and select the statement which is most applicable to your circumstances - it’s better to have submitted something than nothing at all!
+
+What else?
+
+If you haven’t completed your Health, Safeguarding and Inclusion form on the staffing website yet, please ensure you complete this as soon as possible. We must have this information before we can allocate you to any work placements.
+
+If you have any questions regarding our Health, Safeguarding and Inclusion form, please contact the Inclusion Staffing Team on inclusion.ss@the-challenge.org or 0203 542 2451.
+
+Any questions?
+
+Unfortunately, we cannot help with any tax queries - if you’re unsure what tax information you should provide us with, you should contact HMRC directly. As ever though, if you have any general queries about your role or the NCS programme you can contact us on seasonalroles@the-challenge.org.
+
+Best wishes,
+
+The Challenge Staffing Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

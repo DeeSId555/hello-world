@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>S2014 Acceptance Email CAWWS</name>
+    <style>none</style>
+    <subject>Your place on NCS with The Challenge is confirmed!</subject>
+    <textOnly>NCS POWERED BY THE CHALLENGE
+
+Congratulations!
+
+
+Dear Parent/Guardian of {!Contact.FirstName},
+
+
+Congratulations – you have completed {!Contact.FirstName}’s application for NCS with The Challenge! {!Contact.FirstName} now has a confirmed place, starting on {!Wave_Selection__c.PC_KO_Day__c}.
+
+{!Wave_Selection__c.Girl_only_wave_prog_email_sentence__c} The dates {!Contact.FirstName} will be on the programme are:
+
+Part 1 (residential): {!Wave_Selection__c.PC_KO_Day__c} until {!Wave_Selection__c.PC_Return_Day__c}
+
+Part 2 (residential): {!Wave_Selection__c.TC_KO_Day__c} until {!Wave_Selection__c.TC_End_Day__c}
+
+Part 3 {!Wave_Selection__c.RCD_paragraph_part_1_new__c} {!Wave_Selection__c.RCD_paragraph_part_2_new__c}
+
+{!Wave_Selection__c.RCA_paragraph_part_1_new__c} {!Wave_Selection__c.RCA_paragraph_part_2_new__c}  If any of these specific dates are a problem for you, or {!Contact.FirstName} is unable to attend the programme at all, please contact us as soon as possible. You can call us on 0203 542 2400 or email us at contact@the-challenge.org.
+
+More information about the programme:
+We’ll send you a detailed information pack for {!Contact.FirstName}’s programme approximately one month before the start date. This will include meeting point locations, times, and further essential information.
+
+We will also email you an invitation to an information evening taking place approximately one to two weeks before {!Contact.FirstName} begins NCS with The Challenge. Here you will have the chance to meet us and ask any questions you may have.
+
+In the meantime, please take a look at some information here, and visit www.NCSthechallenge.org/ to find the answers to any questions you may have. To stay connected, you can also check out Facebook.com/ NCSTheChallenge and follow us on Twitter @NCSTheChallenge.
+
+It’s great that you’ve managed to secure {!Contact.FirstName} a space and we hope they are excited about this once-in-a-lifetime opportunity to get ahead and make new friends.
+
+
+Yours sincerely,
+
+
+
+Rebecca Carter - Director at The Challenge
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

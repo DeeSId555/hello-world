@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Step_Forward_Job_Placement__c$Name</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job_Placement__c$Associate__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job_Placement__c$Date_General_Info_form_sent_to_Associate__c</field>
+    </columns>
+    <crossFilters>
+        <operation>without</operation>
+        <primaryTableColumn>Step_Forward_Job_Placement__c$Id</primaryTableColumn>
+        <relatedTable>Step_Forward_Form__c</relatedTable>
+        <relatedTableJoinColumn>Step_Forward_Job_Placement__c</relatedTableJoinColumn>
+    </crossFilters>
+    <filter>
+        <criteriaItems>
+            <column>Step_Forward_Job_Placement__c$Step_Forward_Placement_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contracts started,Contracts completed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Step_Forward_Job_Placement__c$Contract_Start_Date__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>6/1/2016</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>C3 Associates without SF Form</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Step_Forward_Job_Placements__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Step_Forward_Job_Placement__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_Owner__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_Attendance_at_KO_confirmed__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.Attendance_at_Welcome_day_confirmed__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.Attended_Workshop_2__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.Attended_Workshop_3__c</field>
+    </columns>
+    <description>KO, workshops, welcome days</description>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>HS_Activity__c.HS_Activity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.HS_Application_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Placement Confirmed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.Date_congratulations_email_sent__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>7/2/2015</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>HS 2015 - YP Event attendance</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$HS_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

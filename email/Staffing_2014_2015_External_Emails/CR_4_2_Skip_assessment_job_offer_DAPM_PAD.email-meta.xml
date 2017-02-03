@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 4.2 Skip assessment - job offer (DAPM/PAD) (2016)</name>
+    <style>formalLetter</style>
+    <subject>Your application for the NCS Programme</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+Dear {!Contact.FirstName},
+
+Welcome back! We are delighted to invite you to return to your role as a {!Job_Application__c.Role_to_assess_for__c} this summer.
+
+What now?
+
+As you’ll be joining us in one of our regional offices for your role, you won’t need to go through the same online process as our other seasonal roles. Instead, we’ll be in touch soon to go through the process from here and confirm your availability and essential information.
+
+DBS applications
+
+Your offer is conditional on you obtaining a satisfactory ‘Enhanced DBS with Barred Listings’. If you already have a valid certificate dated from 1 January 2015, you’ll be able to have this verified in-house when you start your role.
+
+If you don’t already own a DBS certificate you can apply for a new one, paid for by us. The DBS process can sometimes take up to 6 weeks to process - make sure you start your application as soon as possible. Please follow these instructions on how to apply for a DBS certificate.
+
+https://staffing.the-challenge.org/assets/2016DBSinstructionspostoffer.pdf
+
+
+Any questions?
+
+We’ll be in touch soon, but in the meantime, if you have any questions please don’t hesitate to contact me using the email address below. You can also find general information about the NCS programme on our FAQs.
+
+We look forward to working with you again this summer!
+
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+
+{!Contact.Owner_Owner_alternative_email__c}.</textOnly>
+    <type>html</type>
+</EmailTemplate>

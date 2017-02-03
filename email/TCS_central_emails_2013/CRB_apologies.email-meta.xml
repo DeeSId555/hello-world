@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Please only clone this template.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>CRB - apologies</name>
+    <style>freeForm</style>
+    <subject>About your Associate Mentor Application</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+
+Thank you for your recent application to be an Associate Mentor. We are currently processing it and if you haven&apos;t heard already, you will hear from us soon.
+
+
+
+You may have received a request to complete a Care Check or CRB application. This was a mistake on our part - you do not need to complete this in order to be an Associate Mentor.  We’re really sorry for any confusion!
+
+
+
+Don’t worry if you’ve started the Care Check already, as it won’t affect your application.
+
+
+
+We’ll be in touch,
+
+
+
+Best Wishes,
+
+The Challenge Society</textOnly>
+    <type>html</type>
+</EmailTemplate>

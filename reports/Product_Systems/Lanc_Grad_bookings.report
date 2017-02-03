@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Booking__c$Name</field>
+    </columns>
+    <columns>
+        <field>Booking__c$Date_of_event__c</field>
+    </columns>
+    <columns>
+        <field>Booking__c$Date__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Booking__c$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Booking__c.Graduation_Usage</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Booking__c$Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Lanc</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Lanc Grad bookings</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Bookings__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Booking__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

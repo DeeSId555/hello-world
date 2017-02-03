@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Transport_order__c.Team__c</field>
+    </columns>
+    <columns>
+        <field>Transport_order__c.Method_of_Transport__c</field>
+    </columns>
+    <columns>
+        <field>Transport_order__c.Journey__c</field>
+    </columns>
+    <columns>
+        <field>Transport_order__c.From_Account__c</field>
+    </columns>
+    <columns>
+        <field>Transport_order__c.To_Account__c</field>
+    </columns>
+    <columns>
+        <field>Transport_order__c.Journey_Length_mins__c</field>
+    </columns>
+    <columns>
+        <field>Transport_order__c.Latest_Arrival_time__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Transport_order__c.Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>K&amp;C A 3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Transport_order__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Awaiting PM Approval,Journey not submitted,Journey ready</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Transport_order__c.Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>TRIW Wave 3 Transport Timings</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Transport_order__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Transport_order__c.Latest_Arrival_time__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <endDate>2015-09-13</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-01-01</startDate>
+    </timeFrameFilter>
+</Report>

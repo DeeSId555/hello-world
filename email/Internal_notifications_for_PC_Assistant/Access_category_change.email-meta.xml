@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto-notification sent to PCA to review access</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Access category change</name>
+    <style>none</style>
+    <subject>Bursary or payment waiver/reduction request</subject>
+    <textOnly>Hi {!Account.OwnerFirstName} 
+
+Please look at {!Account.Name}&apos;s record, either the YP or PG has requested a bursary, or that we waive or reduce payment. Please discuss with your manager (unless you are a manager) and ensure that the applicant receives a response. Click on this link to see the account record: {!Account.Link} 
+
+This is a standard email, sent automatically whenever a bursary is requested.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

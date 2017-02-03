@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_94621030</developerName>
+        <masterLabel>Paid vs Unpaid</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Contact.Amount_due_outstanding__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>0</to>
+            </sourceValues>
+            <value>Paid</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>0</from>
+            </sourceValues>
+            <value>Unpaid</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_34457107</developerName>
+        <masterLabel>School Type</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Contact.School_type__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Independent PRU</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Independent SEN</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Independent Selective</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Independent Standard</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Further education Independent</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>private</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Other Independent School</sourceValue>
+            </sourceValues>
+            <value>Independent</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Further education SEN</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Further education State</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Further Education</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>City Technology College</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Community School</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Academy Sponsor Led</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Academy Converters</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Non-mainstream - other</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pupil Referral Unit</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Special College</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>State PRU</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>State SEN</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>State comprehensive</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>State selective</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Voluntary Aided School</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>state</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Community Special School</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Foundation School</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Home schooling</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Other School</sourceValue>
+            </sourceValues>
+            <value>State</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_46838688</developerName>
+        <masterLabel>Support Level (Bucket)</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Contact.Access_category_2_6__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1 No extra support</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2A(medical) Some extra Mentor support</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2B(behavioural) Some extra Mentor support</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2A &amp; 2B Some extra Mentor support</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3 Significant extra Mentor support</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3a (medical) Moderate extra support needed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3b (behavioural) Moderate extra support needed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1 - no extra support</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2 - medical conditions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3a - extra mentor support for learning difficulties</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3b - extra mentor support for challenging behaviour or mental health conditions</sourceValue>
+            </sourceValues>
+            <value>1-3.</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>4 Requires APL support</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4a – Extra APL support for YPs with restricted mobility, language barrier or learning difficulties</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4b - extra APL support for challenging behaviour or mental health conditions</sourceValue>
+            </sourceValues>
+            <value>4.</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>5 Full-time support worker</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5:0.5 Requires support worker - could share with another YP</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5:1 Requires full time support worker</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5:2 Requires 2 full time support workers</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5.1 - full-time support worker required</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5.05 - support worker required, can share with another YP</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5.2 - requires 2 full time support workers</sourceValue>
+            </sourceValues>
+            <value>5.</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>6 Case-by-case - potential non-accept</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6 - case-by-case, potential non-accept</sourceValue>
+            </sourceValues>
+            <value>6.</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Total_payment_received__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CONTACT_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Young_Person</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave_Selection__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Assigned,Reserved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Wave__c.X2015</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_46838688</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Support Level</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Wave_Selection__c@Wave_Selection__c.Wave__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

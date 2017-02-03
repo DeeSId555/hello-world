@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HS Partner Engagement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HS Partner Engagements</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Address --></label>
+        <name>Account_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account main email --></label>
+        <name>Account_main_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account main number --></label>
+        <name>Account_main_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engagement Cycle --></label>
+        <name>Engagement_Cycle__c</name>
+        <picklistValues>
+            <masterLabel>2016 C1</masterLabel>
+            <translation><!-- 2016 C1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016 C2</masterLabel>
+            <translation><!-- 2016 C2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2017 C1</masterLabel>
+            <translation><!-- 2017 C1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2017 C2</masterLabel>
+            <translation><!-- 2017 C2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autumn 2015</masterLabel>
+            <translation><!-- Autumn 2015 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the notes here and save --></help>
+        <label><!-- Engagement Notes Entry --></label>
+        <name>Engagement_Notes_Entry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engagement Notes --></label>
+        <name>Engagement_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unconfirmed number of vacancies --></help>
+        <label><!-- Estimated number of Vacancies --></label>
+        <name>Estimated_number_of_Vacancies__c</name>
+    </fields>
+    <fields>
+        <label><!-- HS Region --></label>
+        <name>HS_Region__c</name>
+        <relationshipLabel><!-- HS Partner Engagements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HS Subregion --></label>
+        <name>HS_Subregion__c</name>
+        <picklistValues>
+            <masterLabel>London North East</masterLabel>
+            <translation><!-- London North East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London North West</masterLabel>
+            <translation><!-- London North West --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London South East</masterLabel>
+            <translation><!-- London South East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London South West</masterLabel>
+            <translation><!-- London South West --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Main Contact Name --></label>
+        <name>Main_Contact_Name__c</name>
+        <relationshipLabel><!-- HS Partner Engagements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Main Contact email --></label>
+        <name>Main_Contact_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main Contact number --></label>
+        <name>Main_Contact_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number ofVacancies available --></label>
+        <name>Number_ofVacancies_available__c</name>
+    </fields>
+    <fields>
+        <help><!-- Which Partner/Store is this engagement about? --></help>
+        <label><!-- Partner --></label>
+        <name>Partner__c</name>
+        <relationshipLabel><!-- HS Partner Engagements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>Birmingham</masterLabel>
+            <translation><!-- Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London Central</masterLabel>
+            <translation><!-- London Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London City &amp; Southbank</masterLabel>
+            <translation><!-- London City &amp; Southbank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London East</masterLabel>
+            <translation><!-- London East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London North</masterLabel>
+            <translation><!-- London North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London South</masterLabel>
+            <translation><!-- London South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London West</masterLabel>
+            <translation><!-- London West --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Secondary Contact Name --></label>
+        <name>Secondary_Contact_Name__c</name>
+        <relationshipLabel><!-- HS Partner Engagements (Engagement Secondary Contact Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Secondary Contact email --></label>
+        <name>Secondary_Contact_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Contact number --></label>
+        <name>Secondary_Contact_number__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Invite_to_Event --></label>
+        <name>Invite_to_Event</name>
+    </webLinks>
+</CustomObjectTranslation>

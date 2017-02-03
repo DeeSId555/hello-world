@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 9.3a Summary of expenses (approved) - previously SFP</name>
+    <style>formalLetter</style>
+    <subject>Summary of your submitted expenses</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your local staffing team.
+Dear {!Expenses__c.Contact_Name__c},
+
+
+
+Thank you for submitting an expense claims for your work on {!Job_placement__c.Wave__c} on the NCS programme.
+
+
+
+Below is a summary of the expenses you submitted on {!Expenses__c.Date_submitted__c}.
+
+
+
+Item 1
+
+{!Expenses__c.Item_1__c}, {!Expenses__c.Description_other_1__c}
+
+{!Expenses__c.Other_1__c}
+
+{!Expenses__c.Item_1_amount_approved__c}
+
+
+
+
+Item 2 (if applicable)
+
+{!Expenses__c.Item_1__c}, {!Expenses__c.Description_other_1__c}
+
+{!Expenses__c.Other_1__c}
+
+{!Expenses__c.Other_approved__c}
+
+
+
+
+Item 3 (if applicable)
+
+{!Expenses__c.Item_1__c}, {!Expenses__c.Description_other_1__c}
+
+{!Expenses__c.Other_1__c}
+
+{!Expenses__c.Other_1__c}
+
+{!Expenses__c.Other_approved__c}
+
+
+
+
+Item 4 (if applicable)
+
+{!Expenses__c.Item_1__c}, {!Expenses__c.Description_other_1__c}
+
+{!Expenses__c.Other_1__c}
+
+{!Expenses__c.Other_approved__c}
+
+
+
+
+Item 5 (if applicable)
+
+{!Expenses__c.Item_1__c}, {!Expenses__c.Description_other_1__c}
+
+{!Expenses__c.Other_1__c}
+
+{!Expenses__c.Other_approved__c}
+
+
+
+
+
+Expenses are declined if they do not meet The Challenge’s expense policy.Our expense policy can be found in your role guide on the Staffing Website.
+
+
+
+
+
+What happens now?
+
+
+
+If your expenses have been approved they will be paid into one of expense payment dates listed on our FAQs.
+
+
+
+If you have any further questions about our expense policy, please contact your local staffing team, quoting the email reference number below in any correspondence.
+
+
+
+Best wishes,
+
+
+
+The Challenge
+
+NCS Programme
+
+seasonalroles@the-challenge.org
+
+
+
+Email reference: CR 9.3a
+VISIT NCSTHECHALLENGE.ORG NOW</textOnly>
+    <type>html</type>
+</EmailTemplate>

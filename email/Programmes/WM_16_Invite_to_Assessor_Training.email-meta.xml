@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>WM 16 Invite to Assessor Training</name>
+    <style>freeForm</style>
+    <subject>Invite to Assessor Training</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+Thanks for applying to be a youth assessor. Great news, your application was successful. You are going to learn all about what companies look for in assessments and what makes a good staff member for NCS.
+
+The venue is The Challenge, 52 Charlotte Street, Jewellery Quarter, B3 1AR. (Check out Google Maps for the best way to get here).
+
+You have two choices for when to do your Assessor training before you start assessing staff. Please click the following link to pick which one you would prefer:
+
+https://docs.google.com/a/the-challenge.org/forms/d/1w3WBrwP9rtHTr-6lQzTxkhjhG1_hctWs1szQhmhawFM/viewform
+
+
+If you need help paying for transport or received transport support during the NCS programme please let me know so I can help!
+
+We will provide some food and drink during the evening (maybe pizza!). Any questions please get in touch.
+
+Have a great evening,
+
+Liam</textOnly>
+    <type>html</type>
+</EmailTemplate>

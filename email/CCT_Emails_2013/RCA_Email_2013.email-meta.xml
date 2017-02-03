@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>RCA Email to be sent 2013</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>RCA Email 2013</name>
+    <style>none</style>
+    <subject>Your September Weekends</subject>
+    <textOnly>The Challenge Network
+
+Your September Weekends
+
+
+Dear Parent/Guardian of {!Contact.FirstName} {!Contact.LastName},
+
+We are delighted that {!Contact.FirstName} took part in NCS powered by The Challenge this summer, and look forward to seeing them again in September to complete their NCS programme.
+
+The final part of NCS by The Challenge – The Real Challenge Action, takes part over four exciting weekend days in September, you can find {!Contact.FirstName}&apos;s  personalised timetable for these days here:{!Wave__c.RCA_Timetables__c}
+
+The Challenge Network is a major provider of NCS.  By completing their Real Challenge Action weekend days, {!Contact.FirstName} will be able to graduate from NCS, along with their team, and join in with further activities as part of The Challenge Society.  We will send you an invitation to our Graduation soon and hope to see you and {!Contact.FirstName} there.
+
+Participants need to attend all four September weekend days to be able to graduate.  Should something critical arise that means {!Contact.FirstName} is no longer able to attend a day, please send us the attached Absence Request Form as soon as possible and well in advance.  Under certain criteria {!Contact.FirstName} may then be able to graduate if the time is made up elsewhere. We will be in touch to explain this once we receive your Absence Request Form.
+
+
+
+Please do not hesitate to Call us on: 020 3542 2400 / Email us on: contact@the-challenge.org / if you have any questions or require any further information.
+
+
+
+
+Yours sincerely,
+
+Benny Goodman
+Director of Operations
+The Challenge Network
+
+
+the-challenge.org  ncsyes.co.uk
+/thechallengenetwork    /ncs
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

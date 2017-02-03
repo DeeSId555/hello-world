@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Contact__c</field>
+    </columns>
+    <columns>
+        <field>Account$Main_Contact__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Contact_Phone__c</field>
+    </columns>
+    <columns>
+        <field>Account$Email__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Junctions__r.Bookings__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Booking__c.Dragon,Booking__c.RCD_Professional_Visit</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Dummy USage 2014</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2014 Dragons and PVs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Prog14_AccountsUsagesBookings__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account.Junctions__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2013-11-01</startDate>
+    </timeFrameFilter>
+</Report>

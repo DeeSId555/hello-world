@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_94621030</developerName>
+        <masterLabel>Paid vs Unpaid</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Contact.Amount_due_outstanding__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>0</to>
+            </sourceValues>
+            <value>Paid</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>0</from>
+            </sourceValues>
+            <value>Unpaid</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_34457107</developerName>
+        <masterLabel>School Type</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Contact.School_type__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Independent PRU</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Independent SEN</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Independent Selective</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Independent Standard</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Further education Independent</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>private</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Other Independent School</sourceValue>
+            </sourceValues>
+            <value>Independent</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Further education SEN</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Further education State</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Further Education</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>City Technology College</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Community School</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Academy Sponsor Led</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Academy Converters</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Non-mainstream - other</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pupil Referral Unit</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Special College</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>State PRU</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>State SEN</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>State comprehensive</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>State selective</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Voluntary Aided School</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>state</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Community Special School</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Foundation School</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Home schooling</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Other School</sourceValue>
+            </sourceValues>
+            <value>State</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Total_payment_received__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CONTACT_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Young_Person</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave_Selection__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Waiting list</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Wave__c.X2015</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.Access_category_2_6__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Support Level WL</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Wave_Selection__c@Wave_Selection__c.Wave__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

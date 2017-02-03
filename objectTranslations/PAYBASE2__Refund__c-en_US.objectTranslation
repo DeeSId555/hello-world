@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Amount --></label>
+        <name>PAYBASE2__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created From Account --></label>
+        <name>PAYBASE2__Created_From_Account__c</name>
+        <relationshipLabel><!-- Payonomy Refunds --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created From Contact --></label>
+        <name>PAYBASE2__Created_From_Contact__c</name>
+        <relationshipLabel><!-- Payonomy Refunds --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created From Lead --></label>
+        <name>PAYBASE2__Created_From_Lead__c</name>
+        <relationshipLabel><!-- Payonomy Refunds --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created From Opportunity --></label>
+        <name>PAYBASE2__Created_From_Opportunity__c</name>
+        <relationshipLabel><!-- Payonomy Refunds --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is Paid --></label>
+        <name>PAYBASE2__Is_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pay Date --></label>
+        <name>PAYBASE2__Pay_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment --></label>
+        <name>PAYBASE2__Payment__c</name>
+        <relationshipLabel><!-- Payonomy Refunds --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status Text --></label>
+        <name>PAYBASE2__Status_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>PAYBASE2__Status__c</name>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Authorisation Code --></label>
+        <name>PAYCP2__Authorisation_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gateway Id --></label>
+        <name>PAYCP2__Gateway_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gateway Transaction Id --></label>
+        <name>PAYCP2__Gateway_Transaction_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason --></label>
+        <name>PAYCP2__Reason__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Base --></label>
+        <name>Base</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Cash --></label>
+        <name>Cash</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Cheque --></label>
+        <name>Cheque</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SagePay --></label>
+        <name>SagePay</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Worldpay --></label>
+        <name>Worldpay</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Amount must be greater than zero --></errorMessage>
+        <name>PAYBASE2__Amount_greater_than_zero</name>
+    </validationRules>
+</CustomObjectTranslation>

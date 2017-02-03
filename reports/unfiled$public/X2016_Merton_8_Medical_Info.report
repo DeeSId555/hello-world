@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Inclusion_Details__c.Support_Level__c</field>
+    </columns>
+    <columns>
+        <field>Inclusion_Details__c.Date_Epi_pen_Letter_Sent__c</field>
+    </columns>
+    <columns>
+        <field>Inclusion_Details__c.CCT_P3_Notes__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Assigned_Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Merton A Su 8</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2016 Merton 8 Medical Info</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Inclusion_Details__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

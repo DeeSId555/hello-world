@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>PHONE3</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Cluster_whilst_on_TC__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Dates_selected__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Dietary_requirements__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Disability__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Registered_for_Training__c</field>
+    </columns>
+    <description>A list of YP&apos;s that we can make a register from. Please change Cluster info to personalise to you own training</description>
+    <filter>
+        <criteriaItems>
+            <column>Job_Application__c.Roles__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Associate Mentor</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Training_location__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>HIHO</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>HIHO AM Training 2013</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Job_Application__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

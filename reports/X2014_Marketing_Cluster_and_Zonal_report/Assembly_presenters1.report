@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>School_Activities__c.Assembly_date__c</field>
+    </columns>
+    <columns>
+        <field>School_Activities__c.Cluster_current__c</field>
+    </columns>
+    <columns>
+        <field>School_Activities__c.Assembly_presenter__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Zone__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>S London &amp; Surrey</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Assembly presenters</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$School_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>School_Activities__c.Cluster_current__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>School_Activities__c.Assembly_date__c</dateColumn>
+        <endDate>2014-02-17</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2013-09-01</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Changed Dates Confirmation Email To be sent when YP (PG) changes dates on the OBS to become assigned on a new wave.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>YP Version - YP assigned on new dates</name>
+    <style>none</style>
+    <subject>Your new dates for NCS</subject>
+    <textOnly>Your experience is just round the corner
+
+
+
+Thanks for changing your dates for NCS.
+Hi {!Contact.FirstName}
+
+Congratulations, your dates for NCS have been changed!
+
+Your meeting points will be in {!Wave_Selection__c.Demand_smoothing_acc_comm_line__c}
+
+The dates you will be on NCS are now:
+Part 1 - Get Active
+Staying away from home: {!Wave_Selection__c.PC_KO_Day__c} until {!Wave_Selection__c.PC_Return_Day__c}
+
+Part 2 - Get Involved
+Staying away from home: {!Wave_Selection__c.TC_KO_Day__c} until {!Wave_Selection__c.TC_End_Day__c}
+
+Part 3a - Make Your Mark
+{!Wave_Selection__c.Acc_prog_length_PART3A_copy__c} {!Wave_Selection__c.RCD_Start_Date__c} until {!Wave_Selection__c.RCD_End_Date__c}
+
+Part 3b - Make Your Mark
+Daily activities, staying at home at night: {!Wave_Selection__c.RCA1_Sat__c}, {!Wave_Selection__c.RCA_2_Sat__c}, {!Wave_Selection__c.RCA3_Sat__c} and {!Wave_Selection__c.RCA_4_Sat__c}
+
+More information about your NCS programme:
+
+How long each programme lasts, and what activities will take place on each part of NCS, can vary from programme to programme. To see information about the activities on your particular programme, please go to {!Wave__c.Acc_comm_prog_variation_URL__c} .
+
+If you have any questions in the meantime, you can search for answers at questions.ncsthechallenge.org, or contact us on the details below.
+
+We‘re really looking forward to seeing you on NCS this summer!
+
+The NCS Team - The Challenge
+
+Phone: 0203 542 2400
+Email: contact@ncsthechallenge.org
+Our opening hours are 9am - 7pm Monday to Friday
+and 9am - 3pm on Saturdays and Sundays.
+
+NCS THE CHALLENGE    @NCSTheChallenge
+NCSThe Challenge    @NCSTheChallenge
+
+
+Copyright © 2016 The Challenge Network, All rights reserved.
+The Challenge Network is a charity registered in England and Wales with charity no. 1129239
+and company no. 6845451, whose registered office is at Elizabeth House, 39 York Road, London SE1 7NQ.
+
+You are receiving this email because you have registered your interest for NCS.
+Want to update your preferences or unsubscribe? Please contact us.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

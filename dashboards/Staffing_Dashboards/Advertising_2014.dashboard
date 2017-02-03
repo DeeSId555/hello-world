@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#FFFFFF</backgroundEndColor>
+    <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
+    <backgroundStartColor>#FFFFFF</backgroundStartColor>
+    <dashboardFilters>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Programme Leader</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Assistant Programme Leader</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Senior Mentor</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Community Facilitator</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Support Worker</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Programme Leader,Assistant Programme Leader</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Senior Mentor,Community Facilitator</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Residential Mentor,Logistics Officer</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Practitioner Plus,Practitioner - Drama,Practitioner - Enterprise,Practitioner - Sport,Practitioner - Photography,Practitioner - Media,Practitioner - Music</values>
+        </dashboardFilterOptions>
+        <name>Role</name>
+    </dashboardFilters>
+    <dashboardFilters>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>12/16/2013 12:00 AM</values>
+            <values>2/1/2014 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>2/2/2014 12:00 AM</values>
+            <values>3/1/2014 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>3/2/2014 12:00 AM</values>
+            <values>4/1/2014 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>4/2/2014 12:00 AM</values>
+            <values>5/1/2014 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>5/2/2014 12:00 AM</values>
+            <values>6/1/2014 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>6/2/2014 12:00 AM</values>
+            <values>7/1/2014 12:00 AM</values>
+        </dashboardFilterOptions>
+        <name>Job Application: Created Date</name>
+    </dashboardFilters>
+    <dashboardFilters>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>North East London</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>S London &amp; Surrey</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>West London</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>North West</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Midlands</values>
+        </dashboardFilterOptions>
+        <name>Staffing Zone</name>
+    </dashboardFilters>
+    <dashboardType>SpecifiedUser</dashboardType>
+    <isGridLayout>false</isGridLayout>
+    <leftSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Column</componentType>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CUST_CREATED_DATE</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <header>How did Applicant hear about TC</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>X2014_Advertising_Reports/Advertising_Sources_2014</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowValueAscending</sortBy>
+            <title>All Applicants</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Column</componentType>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CUST_CREATED_DATE</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <header>How did Applicant hear about TC</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>X2014_Advertising_Reports/Advertising_Invite_to_Assess</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowValueAscending</sortBy>
+            <title>Invited to Assessment</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Column</componentType>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CUST_CREATED_DATE</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <header>How did Applicant hear about TC</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>X2014_Advertising_Reports/Advertising_Offer_Role</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowValueAscending</sortBy>
+            <title>Offer Role</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Column</componentType>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CUST_CREATED_DATE</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <header>How did applicant hear about TC</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>X2014_Advertising_Reports/Advertising_Placed</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowValueAscending</sortBy>
+            <title>Placed Staff</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Column</componentType>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CUST_CREATED_DATE</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <header>All Applicants</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>X2014_Advertising_Reports/Advertising_Reject</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Rejected</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Column</componentType>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CUST_CREATED_DATE</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <header>How did Applicant hear about TC</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>X2014_Advertising_Reports/All_Applicants_Printed_Advert</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowValueAscending</sortBy>
+            <title>Printed Advert</title>
+            <useReportChart>false</useReportChart>
+        </components>
+    </leftSection>
+    <middleSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CUST_CREATED_DATE</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <header>All Applicants</header>
+            <indicatorBreakpoint1>100.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>200.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#FFFFFF</indicatorLowColor>
+            <indicatorMiddleColor>#C28B54</indicatorMiddleColor>
+            <report>X2016_Staffing_Reports/All_Applicants_Website</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Website</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CUST_CREATED_DATE</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <header>Invited to Assessment</header>
+            <indicatorBreakpoint1>10.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>79.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#FFFFFF</indicatorLowColor>
+            <indicatorMiddleColor>#C28B54</indicatorMiddleColor>
+            <report>X2014_Advertising_Reports/Invite_to_Assessment_Website</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Website</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CUST_CREATED_DATE</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <header>Offer Role</header>
+            <indicatorBreakpoint2>20.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>X2014_Advertising_Reports/Offer_Role_Website</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Website</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CUST_CREATED_DATE</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <header>Placed Staff</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>X2014_Advertising_Reports/Placed_Website</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Website</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CUST_CREATED_DATE</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <header>Reject</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>X2014_Advertising_Reports/Reject_Website</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Website</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CUST_CREATED_DATE</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <header>Offer Role</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>X2014_Advertising_Reports/Offer_Role_Printed_Ad</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Printed Advert</title>
+        </components>
+    </middleSection>
+    <rightSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Funnel</componentType>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CUST_CREATED_DATE</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>true</expandOthers>
+            <header>All Applicants</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>X2014_Advertising_Reports/All_Applicants_Word_of_Mouth</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Word of Mouth</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Funnel</componentType>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CUST_CREATED_DATE</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <header>Invited to Assessment</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>X2014_Advertising_Reports/Invited_to_Assess_Word_of_Mouth</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Word of Mouth</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Funnel</componentType>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CUST_CREATED_DATE</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <header>Offer Role</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>X2014_Advertising_Reports/Offer_Role_Word_of_Mouth</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Word of Mouth</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Funnel</componentType>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CUST_CREATED_DATE</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <header>Placed Staff</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>X2014_Advertising_Reports/Placed_Staff_Offer_Role</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Word of Mouth</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Pie</componentType>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CUST_CREATED_DATE</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <header>Reject</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>X2014_Advertising_Reports/Reject_Word_of_Mouth</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Word of Mouth</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Column</componentType>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CUST_CREATED_DATE</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <header>Placed Staff</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>X2014_Advertising_Reports/Placed_Staff_Printed_Ad</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowValueAscending</sortBy>
+            <title>Printed Ad</title>
+            <useReportChart>false</useReportChart>
+        </components>
+    </rightSection>
+    <runningUser>jonny.forbes@the-challenge.org</runningUser>
+    <textColor>#000000</textColor>
+    <title>Advertising 2014</title>
+    <titleColor>#000000</titleColor>
+    <titleSize>12</titleSize>
+</Dashboard>

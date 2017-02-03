@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$Booking__c.Status__c</field>
+    </columns>
+    <columns>
+        <field>Transport_order__c.Status__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Booking__c.Number_of_Optimised_Journeys__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>FK_$Booking__c.Partner_or_Venue__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>dummy</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Transport_order__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Journey not submitted</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$Booking__c.Number_of_Optimised_Journeys__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>TOs on Dummy usage</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Transport_order__c@Transport_order__c.To_Booking__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Transport_order__c.Resubmit_rejected_journey__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

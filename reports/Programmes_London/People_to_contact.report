@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Programmes_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r$Usage_Type_Formula__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account$Local_Authority_s_Cluster__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>TRIW</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Junctions__r$Usage_Type_Formula__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>2014</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Junctions__r$Usage_Type_Formula__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>venue,professional,dragon,graduation,rcd</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>People to contact</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Prog14_AccountsUsagesBookings__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Account$Programmes_Status__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account.Junctions__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

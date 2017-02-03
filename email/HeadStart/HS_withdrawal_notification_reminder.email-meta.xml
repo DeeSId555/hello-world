@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto-notification sent to HS Owner when 1 week has elapsed from when the YP requested withdrawal and no action recorded</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>HS withdrawal notification reminder</name>
+    <style>none</style>
+    <subject>Reminder: YP wants to withdraw from HeadStart</subject>
+    <textOnly>Hi {!HS_Activity__c.HS_Owner_First_Name__c},
+
+It has been one week since the YP asked to withdraw from HeadStart and no action has been recorded.  Please look at {!Contact.Name}&apos;s record and contact them to see if you can change their mind and find a way for them to remain with HeadStart. Click on this link to see the record: {!HS_Activity__c.Link}
+
+If you are able to change their mind, then please the following fields:
+Remove the date from the &apos;Date of HS withdrawal notification&apos; field, and
+Update their &apos;HS Status&apos; field
+
+If you are not able to change their mind, then please put the date of your conversation with them into the &apos;Withdrawal confirmed by HS Team&apos; field, so that it is clear that they are definitely withdrawing. Please also note their reason for withdrawal.  In addition, please clear their &apos;Volunteering Placement&apos;
+
+This is a standard email, sent automatically whenever a YP notifies us that they want to withdraw.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

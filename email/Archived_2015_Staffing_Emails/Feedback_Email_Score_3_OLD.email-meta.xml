@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>Feedback Email - Score 3 OLD</name>
+    <style>formalLetter</style>
+    <subject>Your performance feedback</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.OwnerEmail}.
+Dear {!Contact.FirstName}
+
+
+
+Many thanks for your contribution to the NCS Programme. We hope you have enjoyed your experience with The Challenge.
+
+
+
+Would you like to apply to work in 2015?
+
+If so arrange a time to discuss your feedback by contacting {!Contact.OwnerFullName} at {!Contact.OwnerEmail}. A time will be organised for you to speak with your Programmes team to talk about your performance and any potential roles for 2015.
+
+
+
+Why do I have feed back?
+
+The Challenge wants to encourage as many of our staff to return to work for us each year. The feedback process has been enhanced this year to give you the benefit of more detail information on your performance.
+
+
+
+We look forwards to hearing from you.
+
+
+Best Wishes
+NCS with The Challenge
+
+{!Contact.OwnerFullName}
+
+{!Contact.OwnerEmail}
+
+Email Reference: CR 1.1</textOnly>
+    <type>html</type>
+</EmailTemplate>

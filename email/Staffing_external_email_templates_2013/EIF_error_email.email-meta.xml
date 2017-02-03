@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>EIF error email</name>
+    <style>freeForm</style>
+    <subject>Update to your tax information needed</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+You recently completed the Essential Information Form which communicates to us information necessary to both complete your pre employment screening and to set up your payroll records.  Unfortunately, part of the form malfunctioned and did not allow you to make a full tax declaration which is vital in order for us to establish which tax code you should be working on.
+Please therefore indicate which of the following three statements is relevant to you and will reflect your circumstances at the point at which you commence work with TCN this summer:
+A – This is my first job since last 6 April and I have not been receiving taxable Jobseeker&apos;s
+Allowance, Employment and Support Allowance or taxable Incapacity Benefit or a state or
+occupational pension.
+OR
+
+B – This is now my only job, but since last 6 April I have had another job, or have received
+taxable Jobseeker&apos;s Allowance, Employment and Support Allowance or taxable Incapacity Benefit. I do not receive a state or occupational pension.
+OR
+
+C – I have another job or receive a state or occupational pension.
+
+Please respond as soon as possible to crb@the-challenge.org
+
+
+Yours sincerely,
+
+Lucy Found
+crb@the-challenge.org
+Evolution Recruitment, on behalf of
+The Challenge Network</textOnly>
+    <type>html</type>
+</EmailTemplate>

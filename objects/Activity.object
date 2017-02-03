@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ComposeGmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LogCall</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MailMerge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SendEmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewAll</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Agent_Name__c</fullName>
+        <description>Populates Agent Name when Task is completed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the Agent that closed the Task.</inlineHelpText>
+        <label>Agent Name</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Call_Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Date_Task_Started__c +1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Call Due Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Call_Lost__c</fullName>
+        <description>Cell that is used to Count the number of Lost phone calls, made for TCS.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL( Call_status__c , &quot;spoke to young person, not coming&quot;), 1, Null)</formula>
+        <label>Call Lost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Call_Won__c</fullName>
+        <description>This Field returns 1 if the TCS call has been &quot;won&quot;, i.e. YP has agreed to go to the event.  This is used to report on TCS Comms.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL( Call_status__c , &quot;spoke to young person, attending&quot;) , 1, NULL)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Call Won?</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Call_status__c</fullName>
+        <description>Summary Field used to record the results of a communication.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use this field to record the results of the communication</inlineHelpText>
+        <label>Comm status</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Didn&apos;t get through</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spoke to young person, not coming</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spoke to young person, attending</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spoke to young person, maybe coming</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Call was not about Marketing an event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Count__c</fullName>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DateCompleted__c</fullName>
+        <description>This field populates once the Task is completed, keeping the date.</description>
+        <externalId>false</externalId>
+        <label>Date Task Completed</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Task_Started__c</fullName>
+        <defaultValue>today()</defaultValue>
+        <externalId>false</externalId>
+        <label>Date Task Started</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_activity_actioned__c</fullName>
+        <externalId>false</externalId>
+        <label>Date activity actioned</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Details_of_Other__c</fullName>
+        <description>Details of &apos;Other&apos; when this is picked as as an option in the &apos;Communication Status&apos; field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please summarise the details of the communication</inlineHelpText>
+        <label>If Other, specify details</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>ICC_Outcome_of_call__c</fullName>
+        <externalId>false</externalId>
+        <label>ICC Tier2 - ICC Outcome of call</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Who_ICC_contacted__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Had discussion</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Agreed call back</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Left no response comm</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No comm sent</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Spoke to PG</controllingFieldValue>
+                <controllingFieldValue>Spoke to YP</controllingFieldValue>
+                <controllingFieldValue>Spoke to social worker</controllingFieldValue>
+                <controllingFieldValue>Spoke to specialist</controllingFieldValue>
+                <controllingFieldValue>Spoke to YOT</controllingFieldValue>
+                <controllingFieldValue>Spoke to Teacher</controllingFieldValue>
+                <controllingFieldValue>Spoke to Other</controllingFieldValue>
+                <valueName>Had discussion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spoke to PG</controllingFieldValue>
+                <controllingFieldValue>Spoke to YP</controllingFieldValue>
+                <controllingFieldValue>Spoke to social worker</controllingFieldValue>
+                <controllingFieldValue>Spoke to specialist</controllingFieldValue>
+                <controllingFieldValue>Spoke to YOT</controllingFieldValue>
+                <controllingFieldValue>Spoke to Teacher</controllingFieldValue>
+                <controllingFieldValue>Spoke to Other</controllingFieldValue>
+                <valueName>Agreed call back</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Left Voicemail</controllingFieldValue>
+                <controllingFieldValue>No contact</controllingFieldValue>
+                <valueName>Left no response comm</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Left Voicemail</controllingFieldValue>
+                <controllingFieldValue>No contact</controllingFieldValue>
+                <valueName>No comm sent</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Inclusion_Type_Count__c</fullName>
+        <description>This field will count the Inclusion Call Task Types</description>
+        <externalId>false</externalId>
+        <label>Inclusion Type Count</label>
+        <length>2</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Natterbox_Notes__c</fullName>
+        <description>This will be populated with the call notes</description>
+        <externalId>false</externalId>
+        <label>Natterbox Notes</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Recording__c</fullName>
+        <externalId>false</externalId>
+        <label>Recording</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Send_PG_TS_followup_email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Send PG TS follow-up email</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_YP_TS_followup_email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Send YP TS follow-up email</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Staffing_CRM_Stage__c</fullName>
+        <externalId>false</externalId>
+        <label>Staffing CRM Stage</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pre Assessment Call</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Welcome Call</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Allocation Call</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Follow up Call 1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Follow up Call 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Training Confirmation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Post- Training Checking</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Steps__c</fullName>
+        <description>This is picklist for the Advocacy Tasks layout to assign tasks to work towards an Advocacy Goal.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose a task you want to pursue to help you achieve your Advocacy Goal</inlineHelpText>
+        <label>Steps</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Send email</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Briefing meeting/conversation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting follow up</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Programme invite</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Programme visit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meet young people</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TS_Outcome_of_call__c</fullName>
+        <externalId>false</externalId>
+        <label>TS Tier2 - TS Outcome of call</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Who_TS_contacted__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Agreed to sign up online</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Took basic info</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Took application details</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Call back arranged</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>More info requested</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ineligible (too young)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ineligible (too old)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not interested (log why on NCS App)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wrong number</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Dead number</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unable to leave Voicemail</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Spoke to YP</controllingFieldValue>
+                <controllingFieldValue>Spoke to PG</controllingFieldValue>
+                <controllingFieldValue>Spoke to both YP and PG</controllingFieldValue>
+                <valueName>Agreed to sign up online</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spoke to YP</controllingFieldValue>
+                <controllingFieldValue>Spoke to PG</controllingFieldValue>
+                <controllingFieldValue>Spoke to both YP and PG</controllingFieldValue>
+                <valueName>Took basic info</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spoke to YP</controllingFieldValue>
+                <controllingFieldValue>Spoke to PG</controllingFieldValue>
+                <controllingFieldValue>Spoke to both YP and PG</controllingFieldValue>
+                <valueName>Took application details</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spoke to YP</controllingFieldValue>
+                <controllingFieldValue>Spoke to PG</controllingFieldValue>
+                <controllingFieldValue>Spoke to both YP and PG</controllingFieldValue>
+                <valueName>Call back arranged</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spoke to YP</controllingFieldValue>
+                <controllingFieldValue>Spoke to PG</controllingFieldValue>
+                <controllingFieldValue>Spoke to both YP and PG</controllingFieldValue>
+                <valueName>More info requested</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spoke to YP</controllingFieldValue>
+                <controllingFieldValue>Spoke to PG</controllingFieldValue>
+                <controllingFieldValue>Spoke to both YP and PG</controllingFieldValue>
+                <valueName>Ineligible (too young)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spoke to YP</controllingFieldValue>
+                <controllingFieldValue>Spoke to PG</controllingFieldValue>
+                <controllingFieldValue>Spoke to both YP and PG</controllingFieldValue>
+                <valueName>Ineligible (too old)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spoke to YP</controllingFieldValue>
+                <controllingFieldValue>Spoke to PG</controllingFieldValue>
+                <controllingFieldValue>Spoke to both YP and PG</controllingFieldValue>
+                <valueName>Not interested (log why on NCS App)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No contact</controllingFieldValue>
+                <valueName>Wrong number</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No contact</controllingFieldValue>
+                <valueName>Dead number</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No contact</controllingFieldValue>
+                <valueName>Unable to leave Voicemail</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Telesales_Type_Count__c</fullName>
+        <description>This field will count the Telesales Call Task Types</description>
+        <externalId>false</externalId>
+        <label>Telesales Type Count</label>
+        <length>2</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type_for_Natterbox_use__c</fullName>
+        <description>This is a duplication (as text format) of the Task Type, in order to allow Natterbox to update it.</description>
+        <externalId>false</externalId>
+        <label>Type for Natterbox use</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UUID__c</fullName>
+        <externalId>false</externalId>
+        <label>UUID</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>What_was_taken_in_this_call__c</fullName>
+        <externalId>false</externalId>
+        <label>What was taken in this call?</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Dates</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Payment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MASI</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Consent</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Who_ICC_contacted__c</fullName>
+        <externalId>false</externalId>
+        <label>ICC Tier1 - Who ICC contacted</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Spoke to PG</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spoke to YP</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spoke to social worker</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spoke to specialist</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spoke to YOT</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spoke to Teacher</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spoke to Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Left Voicemail</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No contact</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Who_TS_contacted__c</fullName>
+        <externalId>false</externalId>
+        <label>TS Tier1 - Who TS contacted</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Spoke to YP</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spoke to PG</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spoke to both YP and PG</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No contact</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Left voicemail</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Wrapup0__c</fullName>
+        <defaultValue>&quot;-&quot;</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the first Wraup Code from the Natterbox CTI</inlineHelpText>
+        <label>Who was contacted</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Wrapup1__c</fullName>
+        <defaultValue>&quot;-&quot;</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the second wrapup code from the Natterbox CTI.</inlineHelpText>
+        <label>Outcome of contact</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>AllActivities</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>MyActivities</fullName>
+        <filterScope>Everything</filterScope>
+        <label>My Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Calls</fullName>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>Call_status__c</columns>
+        <columns>TASK.CREATED_DATE</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.TYPE</field>
+            <operation>equals</operation>
+            <value>Call</value>
+        </filters>
+        <label>My Calls</label>
+        <sharedTo>
+            <group>Central_Comms</group>
+            <group>MarketingAll</group>
+            <group>ProgrammesAll</group>
+            <group>Staffing_2013</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>UpcomingEvents</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>greaterThan</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <label>Upcoming Events</label>
+    </listViews>
+    <searchLayouts>
+        <searchFilterFields>TASK.SUBJECT</searchFilterFields>
+        <searchResultsAdditionalFields>TASK.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHO_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHAT_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.DUE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+</CustomObject>

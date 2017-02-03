@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.Job_Applications__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r.Job_placements__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r.Job_placements__r$Wave__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Email</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r.Job_placements__r$Status__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Job_Applications__r.Job_placements__r$Role__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Residential Accommodation Manager,Logistics Officer,Practitioner - Media,Practitioner - Sport,Practitioner - Photography,Practitioner - Drama,Practitioner - Enterprise,Practitioner - Music,Practitioner Plus</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Job_Applications__r.Job_placements__r$Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>On back-up list,Withdrew from TCN (pre-programme),Withdrew from wave (pre-programme),Withdrew from wave (during programme) - available for ad hoc days,Withdrew from TCN (during programme) - see withdrawal date,Withdrawn</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Job_Applications__r$Feedback_decision__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Feedback Sharmin aLI</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_Job_Applications_with_Job_Placements__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact.Job_Applications__r.Job_placements__r$CreatedDate</dateColumn>
+        <endDate>2013-10-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2013-05-16</startDate>
+    </timeFrameFilter>
+</Report>

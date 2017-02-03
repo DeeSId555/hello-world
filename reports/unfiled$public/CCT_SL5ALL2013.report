@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_8282651</developerName>
+        <masterLabel>Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Wave_Selection__c.Status__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Assigned</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Reserved</sourceValue>
+            </sourceValues>
+            <value>Assigned &amp; reserved</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Waiting list</sourceValue>
+            </sourceValues>
+            <value>Waiting list</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Account.TCNAccountID__c</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Date_of_birth_check__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$Wave__c.Place_available_for_Support_Worker__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Access_category_2_6__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Status_2012__c</field>
+    </columns>
+    <columns>
+        <field>Contact.COMPLETE_and_support_level_is_correct__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 AND 2 AND 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <column>Wave_Selection__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Assigned,Waiting list,Reserved,Was reserved - now on waiting list</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Access_category_2_6__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>5 Full-time support worker,5:0.5 Requires support worker - could share with another YP,5:1 Requires full time support worker,5:2 Requires 2 full time support workers</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.YP2013</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Withdrawal_confirmed_by_Owner__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.P3_status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>CCT SL5ALL2013</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Wave_Selection__c@Wave_Selection__c.Wave__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

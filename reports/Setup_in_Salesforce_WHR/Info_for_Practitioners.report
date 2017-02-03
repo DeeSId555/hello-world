@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Booking__c$Name</field>
+    </columns>
+    <columns>
+        <field>Booking__c$Date__c</field>
+    </columns>
+    <columns>
+        <field>Booking__c$Partner_or_Venue__c</field>
+    </columns>
+    <columns>
+        <field>Booking__c$Info_to_NCS_Staff__c</field>
+    </columns>
+    <columns>
+        <field>Booking__c$Overview_of_the_visit__c</field>
+    </columns>
+    <columns>
+        <field>Booking__c$Project_plan_for_the_day__c</field>
+    </columns>
+    <columns>
+        <field>Booking__c$Booking_Date_Formula__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Booking__c$Partner_or_Venue__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>2014</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Booking__c$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>WHR</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Booking__c$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>TC Community</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Info for Practitioners</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Prog14_Bookings__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Booking__c$Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

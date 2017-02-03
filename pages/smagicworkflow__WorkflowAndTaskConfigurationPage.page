@@ -1,0 +1,51 @@
+<apex:page controller="smagicworkflow.WorkflowAndTaskConfiguration"  > <!--  extensions="IncomingLookupController" > -->
+<apex:form >
+<apex:pageMessages />
+	<apex:pageBlock id="objDropDown">
+		<apex:pageBlockSection id="section1" title="XML Genarater" >
+		  Lookup Object Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;	
+	      <apex:selectList id="allObjectDropDown" value="{!selectedObjName}"  size="1">
+	       <apex:actionSupport event="onchange" rerender="mobileFieldDropDown,referenceFieldDropDown,nameFieldDropDown" />
+				<apex:selectOption itemValue="" itemLabel="Choose Object"/>
+	            <apex:selectOptions value="{!lookupObjects}" />  
+	      </apex:selectList>
+	      
+	      <br/><br/>
+	      Template Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;
+	      <apex:selectList id="referenceFieldDropDown" value="{!templateFieldName}" size="1">
+				<apex:selectOption itemValue="" itemLabel="Choose Field"/>
+	            <apex:selectOptions value="{!templateNamesList}" />  
+	      </apex:selectList>
+	      
+	      <br/><br/>
+	      Search MobileField Name &nbsp;:&nbsp;
+	      <apex:selectList id="mobileFieldDropDown" value="{!mobileFieldName}" size="1">
+				<apex:selectOption itemValue="" itemLabel="Choose Field"/>
+	            <apex:selectOptions value="{!mobileFieldsForSelectedObject}" />  
+	      </apex:selectList>
+	      
+	      <br/><br/>
+	      Search Name Field &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;
+	      <apex:selectList id="nameFieldDropDown" value="{!nameField}" size="1">
+				<apex:selectOption itemValue="" itemLabel="Choose Field"/>
+	            <apex:selectOptions value="{!nameFieldsForSelectedObject}" />  
+	      </apex:selectList>
+	      
+	      
+	      <br/><br/>
+	      <apex:inputTextarea id="txtArea" value="{!testObj}" cols="65" rows="5" readonly="true"/>
+      </apex:pageBlockSection>
+      
+      <apex:pageBlockButtons location="bottom">
+      	<apex:actionSupport event="onchange" rerender="txtArea" />
+	  	<apex:commandButton action="{!genarate}" value="Genarate" />
+	  </apex:pageBlockButtons>
+	       
+	</apex:pageBlock>
+	</apex:form>
+	<apex:pageBlock id="workflowConfig">
+		<apex:pageBlockSection id="section2" title="Workflow SMS Configuration" >
+	    	<apex:ListViews type="smagicworkflow__WorkflowSMSConfig__c" />
+		</apex:pageBlockSection>
+	</apex:pageBlock>
+</apex:page>

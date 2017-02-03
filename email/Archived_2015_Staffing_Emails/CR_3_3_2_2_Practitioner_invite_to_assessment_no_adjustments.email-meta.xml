@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 3.3.2.2 Practitioner invite to assessment - no adjustments</name>
+    <style>formalLetter</style>
+    <subject>The Challenge 2015 - Invitation to Assessment</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}.
+
+Dear {!Contact.Name},
+
+Congratulations! You have passed the first stage of our recruitment process, and we would like to invite you to assess for the {!Job_Application__c.Role_to_assess_for__c} role.
+
+How do I book onto an assessment?
+
+Please log into the Staffing Website and head to the ‘Booking Assessments’ page. In this section you can:
+
+- See a list of available dates
+
+- Book onto an assessment
+
+- Review details of your chosen assessment date
+
+- Request alternative dates by submitting a form*
+
+
+*Please note that we cannot always guarantee an alternative date within your availability.
+
+
+Click here to book onto an assessment
+
+
+What does the Practitioner assessment entail?
+
+Our group Practitioner assessments are designed to test both your skills in your chosen area(s) (media, photography, music, drama, sport and enterprise) and your ability to facilitate and manage groups of young people.
+
+In preparation for your assessment, we ask candidates to bring a five-minute workshop based on the skill you are being assessed for. More information on the workshop can be found under the event page once you have registered onto an assessment date.
+
+Please also bring your passport or other form of photo ID.
+
+Further information on booking onto an assessment can be found by clicking on the ‘info’ icons in the top right-hand corner of the page, and in section 4 of our FAQs.
+
+We look forward to meeting you at an assessment soon!
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+{!Contact.Contact_Owner_alternative_email__c}
+The Challenge
+
+Email reference: CR 3.3.3</textOnly>
+    <type>html</type>
+</EmailTemplate>

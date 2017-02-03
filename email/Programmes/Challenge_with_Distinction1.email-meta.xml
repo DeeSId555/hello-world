@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>CwD</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>Challenge with Distinction</name>
+    <style>freeForm</style>
+    <subject>Congratulations on getting Challenge with Distinction!</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+A massive congratulations on being awarded Challenge with Distinction for all your hard work over the last year. We&apos;d love to invite you to get your certificate at graduation this December, the details are below:
+
+Date: Saturday 6th December 2014
+Time: 15:00 - 16:30
+Location: Birmingham City FC, St. Andrews Stadium, Cattell Rd, Birmingham, West Midlands B9 4RL
+
+Please come in smart dress like you did for your graduation last year, unfortunately due to restricted seating we ask that you don&apos;t bring guests. If you are unable to attend we can send you your certificate in the mail, please just let us know.
+
+Huge congratulations again!
+
+The Challenge Society</textOnly>
+    <type>html</type>
+</EmailTemplate>

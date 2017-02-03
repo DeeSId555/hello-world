@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>PHONE3</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Date_screened__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Date_candidate_invited_to_assessment__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Job_Application__c.Staffing_Zone__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>North West</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Reason_for_withdrawal__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Can&apos;t cope with role,Did not attend assessment,Did not respond to assessment invitation,Doesn&apos;t feel that TCN is right fit,Emergency circumstances,Has found employment elsewhere,Other,Returned contract unsigned,Uninformed withdrawal,Withdrawn due to lack of comms,No longer wants to work for TCN</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Decision_post_assessment__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Accept,Offer different role,No assessment needed</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Charlotte&apos;s Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Job_Application__c</reportType>
+    <scope>my</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Job_Application__c.Date_screened__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2012-12-28</startDate>
+    </timeFrameFilter>
+</Report>

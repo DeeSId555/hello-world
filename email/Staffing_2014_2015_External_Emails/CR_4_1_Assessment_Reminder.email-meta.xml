@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 3.3 Assessment Reminder (2 days before) (2016)</name>
+    <style>formalLetter</style>
+    <subject>IMPORTANT INFORMATION ENCLOSED - your assessment for The Challenge is in 5 days!</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+Dear {!Contact.FirstName},
+
+Your group assessment with The Challenge on {!Staffing_Event_Day__c.Day_date__c} is only 2 days away!
+
+
+What do I need to do?
+
+Please also head to the Booking Assessments page on the staffing website to review:
+
+Date, time and venue of your assessment
+What you will need to prepare
+Which documents you will need to bring.
+
+Please ensure that you check this information the night before your assessment date. Any changes to the venue or date/time will be updated no later than the day before the event.
+
+Existing DBS certificate
+
+If you already have an &apos;Enhanced DBS with barred listings&apos; from a different provider, please bring your original certificate to your assessment. A member of staff will make a copy for our records and check the certificate against your other ID documents.
+
+If you don&apos;t have an existing DBS certificate, we&apos;ll be in touch with instructions for applying for a new certificate when you&apos;re offered a seasonal role (if successful). These instructions will contain the &apos;organisation pin&apos; and &apos;secret word&apos; needed for the GB Group application.
+
+
+Need to contact us?
+
+If you can no longer attend, please let us know as soon as possible so that we can offer your place to another candidate. We will try to offer you an alternative assessment date, but unfortunately this is not always possible.
+
+Please note: If you are unable to attend and do not let us know, we may no longer be able to process your application.
+
+If you have any problems on the day, please contact your local staffing team. You can also find information on our group assessments on our FAQs.
+
+We look forward to meeting you!
+
+Best wishes,
+
+The Staffing Team
+The Challenge
+
+seasonalroles@the-challenge.org</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>YP who have started application, sent 25/09/15</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Birmingham 2015 Started Application Email</name>
+    <style>none</style>
+    <subject>HeadStart - Last opportunity to Apply!</subject>
+    <textOnly>HeadStart login details:
+
+Email Address {!Contact.Email}
+
+NCS ID
+
+{!Contact.NCS_ID__c}
+
+PIN {!Contact.Login_Password__c}
+
+HeadStart Website
+
+Final Reminder to Apply Before the Deadline!
+
+Hi {!Contact.FirstName},
+
+We just wanted to let you know that the final deadline for applying to the HeadStart programme is this Sunday the 27th September! And we want as many young people on the programme as possible. This is your final reminder to get that application in to ensure you don&apos;t miss out on this exclusive programme. Please let us know via the links below, if there&apos;s anything we can help you with to complete your application.
+
+
+CLICK HERE to access the HeadStart Website and use your login details above to register.
+
+
+Any questions? Email the HeadStart team, check out our website or get in touch on Twitter or Facebook
+
+
+The HeadStart team
+
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subsribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

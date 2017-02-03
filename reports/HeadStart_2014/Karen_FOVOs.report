@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_Volunteering_hours__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.Own_Vol_Organisation_name__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.West_Own_Vol_Borough__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.Notes__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>HS_Activity__c.HeadStart_Cycle__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Autumn</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.Volunteering_preference__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>I would prefer to find and organise my own volunteering placement</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.HS_Owner__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Karen Scott</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.HS_Volunteering_hours__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>2</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Karen: FOVOs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$HS_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

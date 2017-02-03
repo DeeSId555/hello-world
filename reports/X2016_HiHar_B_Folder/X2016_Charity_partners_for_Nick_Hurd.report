@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Timetable_Address_Field__c</field>
+    </columns>
+    <columns>
+        <field>Account.Programmes_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Potential_role_in_our_programme__c</field>
+    </columns>
+    <description>Charity partners based in MP Nick Hurd&apos;s catchment area (Northwood, Ruilsip, Pinner)</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Potential_role_in_our_programme__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>includes</operator>
+            <value>RCA Community Partner,RCD Fundraising Partner,TC Community Partner</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Timetable_Address_Field__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>HA4,HA5,HA6</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Programmes_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>not contacted,can&apos;t work with us this year</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2016 Charity partners for Nick Hurd</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_UPDATE</dateColumn>
+        <endDate>2016-06-02</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-02-01</startDate>
+    </timeFrameFilter>
+</Report>

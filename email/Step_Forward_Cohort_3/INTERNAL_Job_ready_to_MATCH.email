@@ -1,0 +1,81 @@
+<h2><big><strong>INTERNAL EMAIL ALERT</strong></big></h2>
+
+<div>
+<hr />
+<p>&nbsp;</p>
+</div>
+
+<h2><strong>Subject: Job ready to MATCH</strong></h2>
+
+<p><strong style="line-height: 20.8px;">SF event component number:</strong><span style="line-height: 20.8px;">&nbsp; <a href="https://na8.salesforce.com/">{!Step_Forward_Event_Component__c.Name}</a></span></p>
+
+<p><strong>Sf Job:</strong> &nbsp;<a href="https://na8.salesforce.com/">{!Step_Forward_Event_Component__c.Step_Forward_Job__c}</a></p>
+
+<p>&nbsp;</p>
+
+<p>Dear Matching Team,</p>
+
+<p>The event component is now ready to match.&nbsp; The interview slots have been confirmed with the Employer. Follow the next steps:</p>
+
+<ol>
+	<li>Find the matching info for job on SF Job (list is below)</li>
+	<li>Create a report in SF&nbsp;Activities. <strong>Filter the right YPs</strong> by checking the matching info on SF Job*&nbsp;</li>
+	<li>Use the <strong>matching tool</strong> to find the right YPs</li>
+	<li><strong>Attach</strong> each SF Activity to the SF Event Component using SF Activity View called &#39;YP Cvs ready for review&#39;</li>
+	<li>When you have attached all the SF Activities, check the box <strong>&#39;YP CVs ready for review&#39; on SFEC</strong> to alert the Account Manager to review the CVs</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p><u style="line-height: 1.6;">Step Forward Event Component details</u></p>
+
+<p><strong>SF event component number:</strong>&nbsp; {!Step_Forward_Event_Component__c.Name}</p>
+
+<p><strong>SF&nbsp;Job: </strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;{!Step_Forward_Event_Component__c.Step_Forward_Job__c}</p>
+
+<p><strong>Event Date</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {!Step_Forward_Event_Component__c.Event_Date_Matching__c}</p>
+
+<p><strong>Interview Start and Finish times</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;{!Step_Forward_Event_Component__c.Interview_start_and_finish_times__c}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p><strong>Suggested no of YP to review</strong>&nbsp; {!Step_Forward_Event_Component__c.Suggested_number_of_CVs_to_review__c}</p>
+
+<p><strong>Pathway</strong>: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;{!Step_Forward_Event_Component__c.Pathway__c}</p>
+
+<p>Account Owner: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{!Step_Forward_Event_Component__c.SF_Account_Owner__c}</p>
+
+<p>&nbsp;</p>
+
+<p>SF Job details</p>
+
+<p style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-size: medium; line-height: normal;"><strong>Employer Special Requests</strong>&nbsp;&nbsp;&nbsp;&nbsp; {!Step_Forward_Job__c.Employer_Special_Requests__c}</p>
+
+<p style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-size: medium; line-height: normal;"><b>Job specific interests</b>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{!Step_Forward_Job__c.Job_Specific_interests__c}</p>
+
+<p style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-size: medium; line-height: normal;"><strong>Exclusive Candidates? &nbsp; &nbsp; &nbsp;&nbsp;</strong>{!Step_Forward_Job__c.Exclusive__c}</p>
+
+<p style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-size: medium; line-height: normal;"><strong>Only candidates NOT intending on going to Uni? &nbsp;&nbsp;</strong>{!Step_Forward_Job__c.Candidates_NOT_intending_to_go_to_uni__c}</p>
+
+<p style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-size: medium; line-height: normal;"><strong>This is a customer facing role &nbsp;&nbsp;</strong>{!Step_Forward_Job__c.This_is_a_customer_facing_role__c}</p>
+
+<p>&nbsp;</p>
+
+<p><strong><u>*Matching info to check on SF Job&nbsp;when using the Matching tool:</u></strong></p>
+
+<ul>
+	<li style="line-height: 20.8px;">Pathway</li>
+	<li style="line-height: 20.8px;">Job Postcode</li>
+	<li style="line-height: 20.8px;">Employer Special Requests</li>
+	<li style="line-height: 20.8px;">Job specific interests</li>
+	<li style="line-height: 20.8px;">Exclusive Candidates?</li>
+	<li style="line-height: 20.8px;">Only candidates NOT intending on going to Uni? &nbsp;&nbsp;</li>
+	<li style="line-height: 20.8px;">This is a customer facing role</li>
+	<li style="line-height: 20.8px;">Suggested number of YPs to review</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Best wishes,</p>
+
+<p>Account Management [created by]</p>

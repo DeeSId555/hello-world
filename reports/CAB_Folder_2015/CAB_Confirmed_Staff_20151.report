@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$Email</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_placements__r$Status__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_placements__r$Role__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_placements__r$Wave__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_placements__r$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Job_placements__r$Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>brent,camden</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Job_placements__r$Role__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Associate Mentor,Community Facilitator</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Job_placements__r$Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Confirmed</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>CAB - Confirmed Staff 2015</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_Job_Placements__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact.Job_placements__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

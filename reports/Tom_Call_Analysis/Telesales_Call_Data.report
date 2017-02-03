@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_$Contact.Account_s_TCN_Id__c</field>
+    </columns>
+    <columns>
+        <field>Natterbox_Call_Reporting_Object__c.CalledNumber__c</field>
+    </columns>
+    <columns>
+        <field>Natterbox_Call_Reporting_Object__c.Call_Start_Date_Date__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Telesales Call Data</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Natterbox_Call_Reporting_Object__c@Natterbox_Call_Reporting_Object__c.RelatedContact__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Natterbox_Call_Reporting_Object__c.Call_Start_Date_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

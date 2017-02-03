@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>Media Team push</name>
+    <style>promotionLeft</style>
+    <subject>Last places in the media team!</subject>
+    <textOnly>Hi {!Contact.Name},
+
+We Still have a few place left in the media teams! Looking for something to do tomorrow?
+
+Why don&apos;t you and your friends come along to the media team launch?
+
+It&apos;s taking place in Birmingham and 52 Charlotte Street, B3 1AR from 10am - 4pm. Dominos for lunch and a great time  will be had.
+
+You can turn up on the day or call/text Liam on 07785627463 for info on how to get here.
+
+See you tomorrow hopefully!</textOnly>
+    <type>html</type>
+</EmailTemplate>

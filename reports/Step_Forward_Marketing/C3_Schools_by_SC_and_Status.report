@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_School_Activity__c.Step_Forward_SC__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_School_Activity__c.Status__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Step_Forward_School_Activity__c.Is_this_a_Step_Forward_School__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>2015 - 2016</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>C3 Schools by SC and Status</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$Step_Forward_School_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

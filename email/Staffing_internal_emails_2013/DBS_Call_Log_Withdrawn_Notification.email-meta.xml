@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Candidate Withdrawal (via Evolution) Staffing Notification to Confirm</name>
+    <style>none</style>
+    <subject>{!Job_Application__c.Contact__c} may withdraw, please call to confirm!</subject>
+    <type>text</type>
+</EmailTemplate>

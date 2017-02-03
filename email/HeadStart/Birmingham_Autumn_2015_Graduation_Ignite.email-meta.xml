@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Birmingham Autumn 2015 Graduation&amp;Ignite</name>
+    <style>none</style>
+    <subject>Want to continue your NCS journey with The Challenge?</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+As an NCS graduate, you are eligible to apply for HeadStart - a new programme The Challenge has developed in partnership with Starbucks and New Look to give you the skills and experience to get ahead.
+
+HeadStart offers an exciting way for you to build on the experiences gained through NCS, whilst getting back together with friends from your wave.
+
+The HeadStart programme is made up of three simple steps:
+
+Volunteer for at least 16 hours with a local charity. This can be something you do already or a new opportunity found through your college or Do-it.org.
+
+Engage in exclusive skills workshops, developed with leading employers to give you the right skills and aptitude to get ahead.
+
+Get a guaranteed interview for a paid part-time/seasonal job with New Look or Starbucks
+
+
+Email Address: {!Contact.Email}
+
+NCS ID: {!Contact.NCS_ID__c}
+
+PIN: {!Contact.Login_PIN__c}
+
+Password: {!Contact.Login_Password__c}
+
+Any questions? Email the HeadStart team, check out our website or get in touch on social media
+
+The HeadStart team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

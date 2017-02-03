@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 3.3.2 Invite to assessment</name>
+    <style>formalLetter</style>
+    <subject>The Challenge 2015 - Invitation to Assessment</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}.
+Dear {!Contact.Name}
+
+
+
+Congratulations! You have passed the first stage of our recruitment process. To move to the next stage you need to attend one of our group assessments.
+
+How do I book onto an assessment?
+
+Please log in to the Staffing Website and click on the &apos;Booking Assessments&apos; section. In this section you can
+
+See a list of available dates
+
+Book  onto an assessment
+
+Review details of your chosen assessment date
+
+Request alternative dates by submitting a form*
+
+
+*Please note that we cannot always guarantee an alternative date within your availability.
+
+
+Click here to book onto an assessment
+
+
+Further information on the assessment booking can be found by clicking on the &apos;info&apos; icons in the top right-hand corner of the page, and in section 4 of our FAQs.
+
+
+Please start your DBS application now!
+
+In order to account for delays we encourage all applicants who are invited to assessment to apply for their DBS straight away. The process is straightforward and free so don&apos;t delay!
+
+Candidates who we know have a valid DBS certificate will be placed as a priority and, as such, are more likely to be assigned to their preferred location and dates.
+
+All staff must produce an ‘Enhanced DBS certificate with Barred List check’ dated after 31 January 2014. You can either upload an existing DBS certificate* or apply for a new DBS certificate through GB Group through the Staffing Website.
+
+Instructions and directions for the DBS application website can be found on the Staffing Website. Please read these instructions carefully before starting your application. Please use the ‘Organisation Pin’ and ‘Secret Word’ below to start your GB Group application.
+
+Organisation Pin: 139135
+
+Secret Word: TCNCS15
+
+*To check if your existing Enhanced DBS fits The Challenge’s requirements, please refer to FAQ 6.3.
+
+We look forward to meeting you at an assessment soon.
+
+
+Best Wishes
+{!Contact.OwnerFullName}
+{!Contact.Contact_Owner_alternative_email__c}
+The Challenge
+
+
+Email Reference: CR 3.3.2</textOnly>
+    <type>html</type>
+</EmailTemplate>

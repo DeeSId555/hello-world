@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto-notification sent to Contact Owner when no places available for YP</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Waiting list availability to be checked</name>
+    <style>none</style>
+    <subject>YP has been placed on a waiting list</subject>
+    <textOnly>Hi {!Contact.OwnerFirstName}
+
+Please look at {!Contact.Name}&apos;s record. They have been placed on a waiting list(s) either because there are no places available for them on the wave(s) they have selected, or because they have not paid. Click on this link to see the record: {!Contact.Link}, or look at the waiting list dashboards to see everyone on the waiting list.
+
+If you speak to them about their availability, then please - add any notes to the &apos;Waiting list conversation notes&apos; field - if they can do other waves or want to be added to more waiting list waves, please ONLY put the date of your conversation with them in the &apos;Date agreed other waves and/or other WLs&apos; field - if they want to remain on the waiting list instead, please put the date of your conversation with them in the &apos;Date agreed to remain on waiting list - send letter&apos; field (this should only be filled out once) - if they decide to withdraw, please add this information to the withdrawal section.
+
+This is a standard email, sent automatically whenever it is not possible to reserve or assign a YP to a wave.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

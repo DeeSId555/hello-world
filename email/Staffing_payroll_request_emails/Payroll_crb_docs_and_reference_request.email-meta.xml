@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email requesting payroll, tax, crb and reference info</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Payroll, crb docs and reference request</name>
+    <style>none</style>
+    <subject>Urgent request for details to finalise your role with The Challenge</subject>
+    <textOnly>The Challenge Network
+
+Dear {!Contact.FirstName},
+
+We have noticed that we are missing your {!Job_Application__c.Missing_info__c}, which is vital to secure your role with The Challenge this summer.
+
+Please read the following information carefully and complete all of the relevant forms in this email.  If you experience any problems with the forms, please call us on 0207 921 4405 as soon as possible.
+
+CRB
+In order to apply for your CRB, please follow these instructions. Please note that you do not need to enter a password.
+
+Visit www.carecheck.co.uk
+Click on the Applicant tab
+Please read all the notes and instructions
+Click on Click here to continue
+Click on Criminal Records Bureau (CRB) Application Form
+Click on Start a New Application
+Enter the Organisation Reference:  evolutionrecruitment
+Enter your personal information to apply for the CRB check.
+
+Please submit your documents for verification on the below form. Please go to http://carecheck.arrangementcms.co.uk/index.php?node=ID-Rules for information on which documents can be accepted. We also request that you submit your dietary requirements and any medical information (such as allergies) that we need to know about, so that we can cater for you during training and during your role on The Challenge.
+
+Please click on the link below to submit your scanned documents, your date of birth and any information that we need to know in order meet your medical and dietary needs while you are with us.
+
+If you already have an enhanced CRB, we will accept it if the document is dated 30 September 2011 or later. Please submit a scanned copy through the online form.
+
+CRB and medical/dietary information form
+
+If, after repeated attempts, you are not able to upload your documents, please email them to crb@the-challenge.org
+
+PAYROLL AND TAX INFORMATION
+In order for us to pay you in a timely manner, please click the following link and complete the form with your tax declaration and bank details. Please note that this is a secure form, but if you are not happy to submit your details in this way, you can call Lucy Found or Mandy Nichols on 020 8673 2211.
+
+Payroll and Tax Information form: http://www.clicktools.com/survey?iv=jirptbuxyu1um&amp;q1={!Job_Application__c.Id}
+
+REFEREE CONTACT DETAILS
+
+Please supply the contact details of two (2) referees. We will be contacting them by email, so please supply these wherever possible. Please click on the link below to enter this information.
+
+Reference Request form: http://www.clicktools.com/survey?iv=3a136eee55a668f&amp;q1={!Job_Application__c.Id} 
+
+If you cannot access the links above for any reason, please call me on the number below.
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.OwnerEmail}
+
+WWW.THE-CHALLENGE.ORG    /thechallengeNETWORK
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Job_Application__c.Job_placements__r$Name</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Job_placements__r$Contact__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Job_placements__r$Role__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Job_placements__r$RecordType</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Job_placements__r$Team_lookup__c.Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Job_Application__c.Job_placements__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>RCA 1,Job_placement__c.RCA_2,Job_placement__c.RCA_3,Job_placement__c.RCA_4</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Job_placements__r$Team_lookup__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c$Role_to_assess_for__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Senior Mentor,Community Mentor</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Job_Application__c.Job_placements__r$CreatedBy</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Job placements without Team</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Job_Apps_Job_Placements_and_Team_lookup__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Job_Application__c$Assignment_end_date__c</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

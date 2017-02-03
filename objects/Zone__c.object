@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>TCN Zone (geographical area)</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Region__c</fullName>
+        <description>Region the zone is part of</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The region this zones is part of</inlineHelpText>
+        <label>Region</label>
+        <referenceTo>Region__c</referenceTo>
+        <relationshipLabel>Zones</relationshipLabel>
+        <relationshipName>Zones</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Used_this_year__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Allows list views for zones that are used for current year. Not referenced in any formulas/workflows/APEX etc.</description>
+        <externalId>false</externalId>
+        <label>Used this year?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Zonal_GIS_VIS_lead_email__c</fullName>
+        <externalId>false</externalId>
+        <label>Zonal RAF lead email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zone_code__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Zone&apos;s unique code</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zone&apos;s unique code</inlineHelpText>
+        <label>Zone code</label>
+        <length>1</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Zone_lead_Programmes__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lead for the zone, within the Programmes dept</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lead for the zone, within the Programmes dept</inlineHelpText>
+        <label>Zone lead Programmes</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>User.UserType</field>
+                <operation>equals</operation>
+                <value>Standard</value>
+            </filterItems>
+            <filterItems>
+                <field>$Profile.UserType</field>
+                <operation>equals</operation>
+                <value>Standard</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Zones</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Zone</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Region__c</columns>
+        <columns>Zone_code__c</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>Used_this_year__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Zone Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Zones</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>Staffing_National_Target_Tracking</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Staffing: National Target Tracking</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://composer.congamerge.com?SessionId={!API.Session_ID}&amp;ServerUrl={!$Api.Partner_Server_URL_290}&amp;Id={!Zone__c.Id}
+
+&amp;TemplateId=a2MC0000000Pqb6
+
+&amp;QueryId=[WL]a2kC0000001Hju2
+&amp;QueryId=[NEL]a2kC0000001HjuM
+&amp;QueryId=[SLS]a2kC0000001Hju7
+&amp;QueryId=[NW]a2kC0000001HjuC
+&amp;QueryId=[WM]a2kC0000001HjuH
+&amp;QueryId=[BB]a2kC0000001Hjtx
+
+
+&amp;DS7={!IF( $User.ProfileId = &quot;00e80000000th5B&quot;, &quot;0&quot;, &quot;3&quot;)}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Staffing_Zone_Target_Tracking</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Staffing: Zone Target Tracking</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://composer.congamerge.com?SessionId={!API.Session_ID}&amp;ServerUrl={!$Api.Partner_Server_URL_290}&amp;Id={!Zone__c.Id}&amp;TemplateId=a2MC0000000PqiF&amp;QueryId=[TT]a2kC0000001HjuW&amp;DS7={!IF( $User.ProfileId = &quot;00e80000000th5B&quot;, &quot;0&quot;, &quot;3&quot;)}</url>
+    </webLinks>
+</CustomObject>

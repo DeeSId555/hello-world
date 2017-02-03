@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>8.1.16 (Workflow, clicktools)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>MATCHING Interview result (Successful - Job offer accepted)</name>
+    <style>none</style>
+    <subject>Congratulations! You have been offered a job</subject>
+    <textOnly>Congratulations!
+
+You have been offered a job
+
+
+Dear {!Step_Forward_Associate_Attendance__c.Associate_First_Name__c},
+
+I am delighted to confirm that you have been successful in your recent employer interviews and you have gained a place on Step Forward working with {!Step_Forward_Associate_Attendance__c.Employer_Name__c} as a {!Step_Forward_Associate_Attendance__c.SF_Job_Name__c}. The employer was impressed by your interview and is excited about the prospect of you spending a year working with them.
+
+This means that you are now confirmed as a Step Forward Associate for 2016: congratulations!
+
+Please confirm that you would like to accept this offer via the link below as soon as possible.
+
+
+[Send response here]
+
+
+We’ll be back in contact with your contracts in the next 5 days so please check your emails.
+
+
+If you have any questions regarding your place on Step Forward then you can contact us on stepforward.interview@the-challenge.org.
+
+
+All the best,
+
+Step Forward Matching Team
+
+020 3542 2404. Option 5.
+
+stepforward.interview@the-challenge.org
+
+(You can&apos;t reply to this email, please send a new email to the address above)
+
+
+
+
+
+
+
+
+
+
+
+www.stepforward.uk.com
+
+
+The Challenge Network is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 39 York Rd, London SE1 7NQ</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 10.1.2 Sept RCA payment schedule</name>
+    <style>formalLetter</style>
+    <subject>Payment schedule for your role in September</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Job_placement__c.Staffing_Associate_email__c}.
+
+Dear {!Job_placement__c.Contact_Name__c},
+
+Payment schedule for your role in NCS: Real Challenge Action (RCA)
+
+Payment information for your NCS: RCA employment contract* with us on {!Job_placement__c.Wave__c} is listed below. This information is subject to you completing your employment with us in conjunction with the conditions in your contract.
+
+*Please note: Each individual NCS: RCA date you work constitutes a separate ‘employment contract’, and therefore you will receive a separate email and payment overview for each RCA date your are confirmed for.
+
+Payment Overview
+
+You have been allocated to work on {!Job_placement__c.RCA_Start_date__c} as a {!Job_placement__c.Role__c} for {!Job_placement__c.Wave__c}.
+
+You will be paid an amount of {!Job_placement__c.Standard_daily_rate__c} for the individual day, plus 0.1 day (“Holiday Period”), together referred to as a “Weekend Contract”. This is the standard daily rate for your role.
+
+This amount will be subject to tax and National Insurance (NI) deductions. You will be able to review tax deductions on your payslip which is sent to you via email two days prior to your payment date.
+
+When will I receive this payment?
+
+All NCS: RCA payments will be paid to staff on 08/10/15.
+
+For an overview of our payment dates and the corresponding waves, please see this document.
+
+https://staffing.the-challenge.org/assets/Summer2015PaymentTimetable_(2).pdf
+
+What next?
+
+You will recieve a ‘Payment Notification’ email outlining your approved pay shortly after each NCS: RCA date. Please note that you will receive a separate set of payment emails for each individual date you work over NCS: RCA.
+
+Workplace pension auto-enrollment: Due to new auto-enrollment legislation, employees of The Challenge, including a small number of seasonal staff, will be enrolled into a workplace pension scheme. Auto-enrollment does not occur until October 2015 and staff will have the opportunity to opt-out at this point. To see if you qualify for auto-enrollment, please see our FAQs.
+
+Any questions? If you have any queries about the payment schedule for NCS: RCA, please contact your local staffing team, quoting the email reference number below in any correspondence. You can also find payment information in our FAQs.
+
+
+Best wishes,
+
+The Challenge
+NCS Programme
+
+Email reference: CR 10.1.2</textOnly>
+    <type>html</type>
+</EmailTemplate>

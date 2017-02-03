@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Incident__c.Description_of_incident__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>Incident__c.Description_of_incident__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>went missing,absconded,off site,truent,ran away</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Incident__c.Incident_notes__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>went missing,absconded,off site,truent,ran away</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2014 Incidents - YP absconding</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Incident__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>CUST_CREATED_DATE</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Incident__c.Date_and_time_incident_reported_to_PM__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

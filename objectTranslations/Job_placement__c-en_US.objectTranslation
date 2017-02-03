@@ -1,0 +1,2329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Job placement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Job placements</value>
+    </caseValues>
+    <fields>
+        <label><!-- AM venue and address --></label>
+        <name>AM_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- AM Location --></label>
+        <name>AM_Location__c</name>
+        <picklistValues>
+            <masterLabel>RCA</masterLabel>
+            <translation><!-- RCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD</masterLabel>
+            <translation><!-- RCD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC</masterLabel>
+            <translation><!-- TC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- APM number --></label>
+        <name>APM_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Programmes User view --></label>
+        <name>APM_User_View__c</name>
+    </fields>
+    <fields>
+        <label><!-- APM email --></label>
+        <name>APM_email1__c</name>
+    </fields>
+    <fields>
+        <label><!-- APM feedback link --></label>
+        <name>APM_feedback_link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence 1 End Date --></label>
+        <name>Absence_1_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence 1 Notes --></label>
+        <name>Absence_1_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Reason for first period of absence on the job placement --></help>
+        <label><!-- Absence 1 Reason --></label>
+        <name>Absence_1_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Annual Leave</masterLabel>
+            <translation><!-- Annual Leave --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compassionate Leave</masterLabel>
+            <translation><!-- Compassionate Leave --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency Dependents Leave</masterLabel>
+            <translation><!-- Emergency Dependents Leave --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Absence - Medical Appointments</masterLabel>
+            <translation><!-- Medical Absence - Medical Appointments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Absence - Reasonable Adjustment</masterLabel>
+            <translation><!-- Medical Absence - Reasonable Adjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Absence - Sickness</masterLabel>
+            <translation><!-- Medical Absence - Sickness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other - please enter reason in notes</masterLabel>
+            <translation><!-- Other - please enter reason in notes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Absence 1 Start Date --></label>
+        <name>Absence_1_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence 1 Total Days --></label>
+        <name>Absence_1_Total_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence 2 End Date --></label>
+        <name>Absence_2_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence 2 Notes --></label>
+        <name>Absence_2_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Reason for second period of absence on the job placement --></help>
+        <label><!-- Absence 2 Reason --></label>
+        <name>Absence_2_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Annual Leave</masterLabel>
+            <translation><!-- Annual Leave --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compassionate Leave</masterLabel>
+            <translation><!-- Compassionate Leave --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency Dependents Leave</masterLabel>
+            <translation><!-- Emergency Dependents Leave --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Absence - Medical Appointments</masterLabel>
+            <translation><!-- Medical Absence - Medical Appointments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Absence - Reasonable Adjustment</masterLabel>
+            <translation><!-- Medical Absence - Reasonable Adjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Absence - Sickness</masterLabel>
+            <translation><!-- Medical Absence - Sickness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other - please enter reason in notes</masterLabel>
+            <translation><!-- Other - please enter reason in notes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Absence 2 Start Date --></label>
+        <name>Absence_2_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence 2 Total Days --></label>
+        <name>Absence_2_Total_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence 3 End Date --></label>
+        <name>Absence_3_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence 3 Notes --></label>
+        <name>Absence_3_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Reason for third period of absence on the job placement --></help>
+        <label><!-- Absence 3 Reason --></label>
+        <name>Absence_3_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Annual Leave</masterLabel>
+            <translation><!-- Annual Leave --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compassionate Leave</masterLabel>
+            <translation><!-- Compassionate Leave --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency Dependents Leave</masterLabel>
+            <translation><!-- Emergency Dependents Leave --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Absence - Medical Appointments</masterLabel>
+            <translation><!-- Medical Absence - Medical Appointments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Absence - Reasonable Adjustment</masterLabel>
+            <translation><!-- Medical Absence - Reasonable Adjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Absence - Sickness</masterLabel>
+            <translation><!-- Medical Absence - Sickness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other - please enter reason in notes</masterLabel>
+            <translation><!-- Other - please enter reason in notes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Absence 3 Start Date --></label>
+        <name>Absence_3_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence 3 Total Days --></label>
+        <name>Absence_3_Total_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ad hoc day 1 venue --></label>
+        <name>Ad_hoc_Day_1_venue__c</name>
+        <picklistValues>
+            <masterLabel>PC Return Venue</masterLabel>
+            <translation><!-- PC Return Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PC Venue</masterLabel>
+            <translation><!-- PC Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PCKO Venue</masterLabel>
+            <translation><!-- PCKO Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA Day Venue</masterLabel>
+            <translation><!-- RCA Day Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD Day Venue</masterLabel>
+            <translation><!-- RCD Day Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Res Acc</masterLabel>
+            <translation><!-- Res Acc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC Day Venue</masterLabel>
+            <translation><!-- TC Day Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC Showcase Venue</masterLabel>
+            <translation><!-- TC Showcase Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCKO Venue</masterLabel>
+            <translation><!-- TCKO Venue --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Record when ad hoc payments (errors) are actually paid. --></help>
+        <label><!-- Ad hoc Payment Date --></label>
+        <name>Ad_hoc_Payment_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the person qualifies for an extra payment (not advance), add the amount here. It will be appear in the field &quot;Total Salary owed&quot; and will be paid at the same time. --></help>
+        <label><!-- Ad hoc additional payment --></label>
+        <name>Ad_hoc_additional_payment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tick this box when the additional payment has been processed --></help>
+        <label><!-- Ad hoc additional payment processed --></label>
+        <name>Ad_hoc_additional_payment_paid__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only editable by Finance --></help>
+        <label><!-- Ad hoc advance approved by Finance --></label>
+        <name>Ad_hoc_advance_approved_by_Finance__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ad hoc advance collection date --></label>
+        <name>Ad_hoc_advance_collection_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ad hoc advance history --></label>
+        <name>Ad_hoc_advance_history__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ad hoc advance reclaimed --></label>
+        <name>Ad_hoc_advance_reclaimed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ad hoc advance status --></label>
+        <name>Ad_hoc_advance_status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ad hoc advance urgency --></label>
+        <name>Ad_hoc_advance_urgency__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ad hoc day 1 --></label>
+        <name>Ad_hoc_day_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ad hoc day 1 time --></label>
+        <name>Ad_hoc_day_1_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ad hoc day 2 --></label>
+        <name>Ad_hoc_day_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ad hoc day 2 time --></label>
+        <name>Ad_hoc_day_2_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ad hoc day 2 venue --></label>
+        <name>Ad_hoc_day_2_venue__c</name>
+        <picklistValues>
+            <masterLabel>PC Return Venue</masterLabel>
+            <translation><!-- PC Return Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PC Venue</masterLabel>
+            <translation><!-- PC Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PCKO Venue</masterLabel>
+            <translation><!-- PCKO Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA Day Venue</masterLabel>
+            <translation><!-- RCA Day Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD Day Venue</masterLabel>
+            <translation><!-- RCD Day Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Res Acc</masterLabel>
+            <translation><!-- Res Acc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC Day Venue</masterLabel>
+            <translation><!-- TC Day Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC Showcase Venue</masterLabel>
+            <translation><!-- TC Showcase Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCKO Venue</masterLabel>
+            <translation><!-- TCKO Venue --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ad hoc day 3 --></label>
+        <name>Ad_hoc_day_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ad hoc day 3 time --></label>
+        <name>Ad_hoc_day_3_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ad hoc day 3 venue --></label>
+        <name>Ad_hoc_day_3_venue__c</name>
+        <picklistValues>
+            <masterLabel>PC Return Venue</masterLabel>
+            <translation><!-- PC Return Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PC Venue</masterLabel>
+            <translation><!-- PC Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PCKO Venue</masterLabel>
+            <translation><!-- PCKO Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA Day Venue</masterLabel>
+            <translation><!-- RCA Day Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD Day Venue</masterLabel>
+            <translation><!-- RCD Day Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Res Acc</masterLabel>
+            <translation><!-- Res Acc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC Day Venue</masterLabel>
+            <translation><!-- TC Day Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC Showcase Venue</masterLabel>
+            <translation><!-- TC Showcase Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCKO Venue</masterLabel>
+            <translation><!-- TCKO Venue --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ad hoc day 4 --></label>
+        <name>Ad_hoc_day_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ad hoc day 4 time --></label>
+        <name>Ad_hoc_day_4_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ad hoc day 4 venue --></label>
+        <name>Ad_hoc_day_4_venue__c</name>
+        <picklistValues>
+            <masterLabel>PC Return Venue</masterLabel>
+            <translation><!-- PC Return Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PC Venue</masterLabel>
+            <translation><!-- PC Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PCKO Venue</masterLabel>
+            <translation><!-- PCKO Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA Day Venue</masterLabel>
+            <translation><!-- RCA Day Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD Day Venue</masterLabel>
+            <translation><!-- RCD Day Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Res Acc</masterLabel>
+            <translation><!-- Res Acc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC Day Venue</masterLabel>
+            <translation><!-- TC Day Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC Showcase Venue</masterLabel>
+            <translation><!-- TC Showcase Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCKO Venue</masterLabel>
+            <translation><!-- TCKO Venue --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ad hoc day 5 --></label>
+        <name>Ad_hoc_day_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ad hoc day 5 time --></label>
+        <name>Ad_hoc_day_5_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ad hoc day 5 venue --></label>
+        <name>Ad_hoc_day_5_venue__c</name>
+        <picklistValues>
+            <masterLabel>PC Return Venue</masterLabel>
+            <translation><!-- PC Return Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PC Venue</masterLabel>
+            <translation><!-- PC Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PCKO Venue</masterLabel>
+            <translation><!-- PCKO Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA Day Venue</masterLabel>
+            <translation><!-- RCA Day Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD Day Venue</masterLabel>
+            <translation><!-- RCD Day Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Res Acc</masterLabel>
+            <translation><!-- Res Acc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC Day Venue</masterLabel>
+            <translation><!-- TC Day Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC Showcase Venue</masterLabel>
+            <translation><!-- TC Showcase Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCKO Venue</masterLabel>
+            <translation><!-- TCKO Venue --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Shows the date that ad hoc staff member finished work --></help>
+        <label><!-- Ad hoc end date --></label>
+        <name>Ad_hoc_end_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is where any one-off advances that are not covered by expenses or standard advances are entered. This is only editable by managers. --></help>
+        <label><!-- Ad hoc advance --></label>
+        <name>Ad_hoc_payment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box when an ad hoc advance has been paid. --></help>
+        <label><!-- Ad hoc advance paid --></label>
+        <name>Ad_hoc_payment_paid__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the date that this staff member started work --></help>
+        <label><!-- Ad hoc start date --></label>
+        <name>Ad_hoc_start_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Add New JP Availability Notes --></label>
+        <name>Add_New_JP_Availability_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to show that an advance has been paid. The amount paid will appear in &quot;Total Amount Paid&quot;. --></help>
+        <label><!-- Standard advance paid --></label>
+        <name>Advance_paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Advance payment date --></label>
+        <name>Advance_payment_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allocated to RCA for this wave --></label>
+        <name>Allocated_to_RCA_for_this_wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allocation check --></label>
+        <name>Allocation_check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Leave entitlement --></label>
+        <name>Annual_Leave_entitlement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ant --></label>
+        <name>Ant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Applicant Available? --></label>
+        <name>Applicant_Availability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved &gt; expected salary --></label>
+        <name>Approved_expected_salary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for payroll? --></label>
+        <name>Approved_for_payroll__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not approved on SF</masterLabel>
+            <translation><!-- Not approved on SF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volunteer role</masterLabel>
+            <translation><!-- Volunteer role --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Assignment end date --></label>
+        <name>Assignment_end_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assignment start date --></label>
+        <name>Assignment_start_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please add your initials here to authorise the amount in &quot;Override daily rate&quot; field. You will not be able to save the record until you have done this. --></help>
+        <label><!-- Authorising initial (overide daily rate) --></label>
+        <name>Authorising_initial__c</name>
+    </fields>
+    <fields>
+        <help><!-- Managers need to add their initials here in order to enter a figure in &quot;Ad hoc advance&quot; --></help>
+        <label><!-- Authorising initial (ad hoc advance) --></label>
+        <name>Authorising_initial_ad_hoc_payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorising initial (Ad hoc additional) --></label>
+        <name>Authorising_initial_additional_adh__c</name>
+    </fields>
+    <fields>
+        <label><!-- Autumn wave --></label>
+        <name>Autumn_wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clashed JPs --></label>
+        <name>Clashed_JPs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cluster --></label>
+        <name>Cluster__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name (from Contact) --></label>
+        <name>Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Job placements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact email --></label>
+        <name>Contact_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract response --></label>
+        <name>Contract_response__c</name>
+        <picklistValues>
+            <masterLabel>No - I can no longer work on this day</masterLabel>
+            <translation><!-- No - I can no longer work on this day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No - I can no longer work on this wave</masterLabel>
+            <translation><!-- No - I can no longer work on this wave --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No - I do not want to work for NCS with The Challenge</masterLabel>
+            <translation><!-- No - I do not want to work for NCS with The Challenge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - I accept and hereby sign the contract</masterLabel>
+            <translation><!-- Yes - I accept and hereby sign the contract --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This box is true when &quot;Staff Type&quot; on JA includes Core Staff,Limited Company,Volunteer,Agency staff --></help>
+        <label><!-- Exclude from SF payroll --></label>
+        <name>Core_Staff__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date last APM feedback request sent --></label>
+        <name>Date_APM_feedback_request_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date APM feedback submitted --></label>
+        <name>Date_APM_feedback_submitted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically updates based on date &quot;Confirmed&quot; was selected in Status field --></help>
+        <label><!-- Date Confirmed --></label>
+        <name>Date_Confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date PIE Payment made --></label>
+        <name>Date_PIE_Payment_made__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date PIE Successful --></label>
+        <name>Date_PIE_Successful__c</name>
+    </fields>
+    <fields>
+        <help><!-- Email template: 6.1 --></help>
+        <label><!-- Date RCA confirmation sent --></label>
+        <name>Date_RCA_confirmation_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date ad hoc additional payment processed --></label>
+        <name>Date_ad_hoc_additional_payment_paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date ad hoc advance paid --></label>
+        <name>Date_ad_hoc_advance_paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date ad hoc advance reclaimed --></label>
+        <name>Date_ad_hoc_advance_reclaimed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date ad hoc advance requested --></label>
+        <name>Date_ad_hoc_advance_requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date advance paid due to payroll issue --></label>
+        <name>Date_advance_paid_due_to_payroll_issue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Email templates
+PLs, APLs and LOs: 2.2.1
+All other staff: 2.2.2 --></help>
+        <label><!-- Date last expenses form sent --></label>
+        <name>Date_expenses_form_sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date that email template 3.2 --></help>
+        <label><!-- Date last Wave Info email sent --></label>
+        <name>Date_last_WTBW_email_sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the last time that the contract for this Job Placement has been sent
+Email templates
+PL: 2.1.1
+APL: 2.1.2
+Mentor: 2.1.3
+CM: 2.1.4 --></help>
+        <label><!-- Date last contract sent --></label>
+        <name>Date_last_contract_sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Email template: 2.4 --></help>
+        <label><!-- Date last status change email sent --></label>
+        <name>Date_last_status_change_email_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of dismissal --></label>
+        <name>Date_of_dismissal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of withdrawal from TCN --></label>
+        <name>Date_of_withdrawal_from_TCN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of withdrawal from wave --></label>
+        <name>Date_of_withdrawal_from_wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date payroll corrected --></label>
+        <name>Date_payroll_corrected__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date/time 4.1 email template has been sent. --></help>
+        <label><!-- Date/time advance paid notification sent --></label>
+        <name>Date_time_advance_notification_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date/time advance processed --></label>
+        <name>Date_time_advance_processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date/time payment notification sent --></label>
+        <name>Date_time_payment_notification_sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the date and time that &quot;Total salary paid&quot; was ticked by Rob/Ivan --></help>
+        <label><!-- Date/time salary processed --></label>
+        <name>Date_time_salary_processed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Counts the whole days worked AND the off-days between sections of the programme (if applicable). Also includes day of dismissal. --></help>
+        <label><!-- Days worked when dismissed --></label>
+        <name>Days_worked_when_dismissed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Counts the whole days worked AND the off-days between sections of the programme (if applicable). Also includes day of withdrawal. --></help>
+        <label><!-- Days worked when withdrawn --></label>
+        <name>Days_worked_when_withdrawn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Did not attend RCA? --></label>
+        <name>Did_not_attend_RCA__c</name>
+        <picklistValues>
+            <masterLabel>Did not attend</masterLabel>
+            <translation><!-- Did not attend --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dismissed before prog start --></label>
+        <name>Dismissed_before_prog_start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Emergency email trigger --></label>
+        <name>Emergency_email_trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback received for another wave? --></label>
+        <name>Feedback_received_for_another_wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Force change 2 --></label>
+        <name>Force_change_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geo sharing check --></label>
+        <name>Geo_sharing_check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation attendance confirmed --></label>
+        <name>Graduation_attendance_confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation salary approved? --></label>
+        <name>Graduation_salary_approved__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is From Tool --></label>
+        <name>Is_From_Tool__c</name>
+    </fields>
+    <fields>
+        <label><!-- JP Availability Notes --></label>
+        <name>JP_Availability_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Application --></label>
+        <name>Job_Application__c</name>
+        <relationshipLabel><!-- Job placements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Job --></label>
+        <name>Job__c</name>
+        <relationshipLabel><!-- Job placements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- LO end date --></label>
+        <name>LO_officer_end_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- LO start date --></label>
+        <name>LO_start_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name (from JA) --></label>
+        <name>Name_from_JA__c</name>
+    </fields>
+    <fields>
+        <label><!-- National Insurance number --></label>
+        <name>National_Insurance_number__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this field has a figure, it will override the &quot;standard daily pay&quot; field. Only managers can edit. --></help>
+        <label><!-- Override daily rate --></label>
+        <name>Override_daily_rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- PCKO booking --></label>
+        <name>PCKO_booking__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC End date --></label>
+        <name>PC_End_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC KO Date --></label>
+        <name>PC_KO_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Return booking --></label>
+        <name>PC_Return_booking__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Start date --></label>
+        <name>PC_Start_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Venue booking --></label>
+        <name>PC_Venue_booking__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC end time --></label>
+        <name>PC_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC start time --></label>
+        <name>PC_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM --></label>
+        <name>PM__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM email --></label>
+        <name>PM_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM number --></label>
+        <name>PM_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- PV attendance --></label>
+        <name>PV_attendance__c</name>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did not attend</masterLabel>
+            <translation><!-- Did not attend --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If this person should receive a customised contract, timetable etc, select the relevant one from the list. This will prevent the standard pages appearing in SAW. --></help>
+        <label><!-- Pages to exclude --></label>
+        <name>Pages_to_exclude__c</name>
+        <picklistValues>
+            <masterLabel>Contract</masterLabel>
+            <translation><!-- Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timetable</masterLabel>
+            <translation><!-- Timetable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Info Re-sent --></label>
+        <name>Payment_Info_Re_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll Additional Information --></label>
+        <name>Payroll_Additional_Information__c</name>
+        <picklistValues>
+            <masterLabel>Cancellation</masterLabel>
+            <translation><!-- Cancellation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid Back Up</masterLabel>
+            <translation><!-- Paid Back Up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSP</masterLabel>
+            <translation><!-- SSP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payroll advance owed --></label>
+        <name>Payroll_advance_owed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll approval date/time --></label>
+        <name>Payroll_approval_date_time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please add any information here that will help explain anomalies in this person&apos;s pay - eg deductions in the number of days worked. --></help>
+        <label><!-- Payroll approval notes --></label>
+        <name>Payroll_approval_notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll checking notes --></label>
+        <name>Payroll_checking_notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- DEL Payroll comms date --></label>
+        <name>Payroll_comms_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll Issue --></label>
+        <name>Payroll_issue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll issue status --></label>
+        <name>Payroll_issue_status__c</name>
+        <picklistValues>
+            <masterLabel>Issue identified</masterLabel>
+            <translation><!-- Issue identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issue resolved</masterLabel>
+            <translation><!-- Issue resolved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No issue</masterLabel>
+            <translation><!-- No issue --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payroll issue status last update --></label>
+        <name>Payroll_issue_status_last_update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll payment date --></label>
+        <name>Payroll_payment_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pilot? --></label>
+        <name>Pilot__c</name>
+    </fields>
+    <fields>
+        <label><!-- Position Still Available? --></label>
+        <name>Position_Still_Available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practitioner End Date --></label>
+        <name>Practitioner_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practitioner Start Date --></label>
+        <name>Practitioner_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field for Staffing to enter in any absences they have pre-approved --></help>
+        <label><!-- Pre-Approved Absences (Staffing) --></label>
+        <name>Pre_Approved_Absences_Staffing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-approved Expenses --></label>
+        <name>Pre_approved_Expenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- RAM end date --></label>
+        <name>RAM_end_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RAM start date --></label>
+        <name>RAM_start_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to mark the salary for RCA 1 and 2 paid --></help>
+        <label><!-- RCA 1&amp;2 paid --></label>
+        <name>RCA_1_2_paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA day date --></label>
+        <name>RCA_1_Sat__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 1 Sun --></label>
+        <name>RCA_1_Sun__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tick this box to show that the staff member has confirmed that they will attend --></help>
+        <label><!-- RCA 1 attendance confirmed --></label>
+        <name>RCA_1_confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 1 salary approved? --></label>
+        <name>RCA_1_salary_approved__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCA 2 Sat --></label>
+        <name>RCA_2_Sat__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 2 Sun --></label>
+        <name>RCA_2_Sun__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 2 attendance confirmed --></label>
+        <name>RCA_2_confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 2 salary approved? --></label>
+        <name>RCA_2_salary_approved__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Check this box to mark RCA 3,4 and grad as paid --></help>
+        <label><!-- RCA 3&amp;4/grad paid --></label>
+        <name>RCA_3_4_grad_paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 3 Sat --></label>
+        <name>RCA_3_Sat__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 3 Sun --></label>
+        <name>RCA_3_Sun__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 3 attendance confirmed --></label>
+        <name>RCA_3_confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 3 salary approved? --></label>
+        <name>RCA_3_salary_approved__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCA 4 Sat --></label>
+        <name>RCA_4_Sat__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 4 Sun --></label>
+        <name>RCA_4_Sun__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 4 attendance confirmed --></label>
+        <name>RCA_4_confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 4 salary approved? --></label>
+        <name>RCA_4_salary_approved__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCA Annual Leave entitlement --></label>
+        <name>RCA_Annual_Leave_entitlement__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA End Date --></label>
+        <name>RCA_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Start Time --></label>
+        <name>RCA_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Start booking --></label>
+        <name>RCA_Start_booking__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Start date --></label>
+        <name>RCA_Start_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA day --></label>
+        <name>RCA_day__c</name>
+        <picklistValues>
+            <masterLabel>Pilot</masterLabel>
+            <translation><!-- Pilot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saturday</masterLabel>
+            <translation><!-- Saturday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sunday</masterLabel>
+            <translation><!-- Sunday --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCA end booking --></label>
+        <name>RCA_end_booking__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA end time --></label>
+        <name>RCA_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD End booking --></label>
+        <name>RCD_End_booking__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD End date --></label>
+        <name>RCD_End_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD Start date --></label>
+        <name>RCD_KO_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD Start booking --></label>
+        <name>RCD_Start_booking__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD end time --></label>
+        <name>RCD_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD start time --></label>
+        <name>RCD_start_time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to send the WTBW email (3.2) --></help>
+        <label><!-- (Re)Send Wave Info email --></label>
+        <name>Re_Send_WTBW_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for ad hoc additional payment --></label>
+        <name>Reason_for_ad_hoc_additional_payment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter here a brief explanation of why this person is receiving an ad hoc advance --></help>
+        <label><!-- Reason for ad hoc advance --></label>
+        <name>Reason_for_ad_hoc_advance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Add here any notes the person&apos;s employment that are relevant to the payroll process - eg, why they were employed.
+This field is mandatory for Ad hoc staff and staff that were added late. --></help>
+        <label><!-- Reason for employment --></label>
+        <name>Reason_for_employment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please record here why this person is receiving a higher rate --></help>
+        <label><!-- Reason for override --></label>
+        <name>Reason_for_override__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason why ad hoc advance declined --></label>
+        <name>Reason_why_ad_hoc_advance_declined__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference --></label>
+        <name>Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resend Expenses form --></label>
+        <name>Resend_Expenses_form__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resend Payment Info --></label>
+        <name>Resend_Payment_Info__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tick this box to resend the ad hoc advance again --></help>
+        <label><!-- Resend advance request --></label>
+        <name>Resend_advance_request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resend payment notification email --></label>
+        <name>Resend_payment_notification_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Restricted Availability --></label>
+        <name>Restricted_Availability_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Restricted Availability Reviewed? --></label>
+        <name>Restricted_Availability_Reviewed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>Role__c</name>
+        <picklistValues>
+            <masterLabel>Assistant Programme Leader</masterLabel>
+            <translation><!-- Assistant Programme Leader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Associate Mentor</masterLabel>
+            <translation><!-- Associate Mentor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Facilitator</masterLabel>
+            <translation><!-- Community Facilitator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Mentor</masterLabel>
+            <translation><!-- Community Mentor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery Assistant Programme Manager</masterLabel>
+            <translation><!-- Delivery Assistant Programme Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduation Helper</masterLabel>
+            <translation><!-- Graduation Helper --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Learning and Behaviour Mentor</masterLabel>
+            <translation><!-- Learning and Behaviour Mentor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logistics Officer</masterLabel>
+            <translation><!-- Logistics Officer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Coach</masterLabel>
+            <translation><!-- Personal Coach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner</masterLabel>
+            <translation><!-- Practitioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner - Art</masterLabel>
+            <translation><!-- Practitioner - Art --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner - Drama</masterLabel>
+            <translation><!-- Practitioner - Drama --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner - Enterprise</masterLabel>
+            <translation><!-- Practitioner - Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner - Media</masterLabel>
+            <translation><!-- Practitioner - Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner - Music</masterLabel>
+            <translation><!-- Practitioner - Music --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner - Photography</masterLabel>
+            <translation><!-- Practitioner - Photography --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner - Sport</masterLabel>
+            <translation><!-- Practitioner - Sport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner Plus</masterLabel>
+            <translation><!-- Practitioner Plus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programme Administrator</masterLabel>
+            <translation><!-- Programme Administrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programme Leader</masterLabel>
+            <translation><!-- Programme Leader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Volunteer</masterLabel>
+            <translation><!-- Project Volunteer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential Accommodation Manager</masterLabel>
+            <translation><!-- Residential Accommodation Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential Mentor</masterLabel>
+            <translation><!-- Residential Mentor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential Practitioner</masterLabel>
+            <translation><!-- Residential Practitioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Associate Mentor</masterLabel>
+            <translation><!-- Senior Associate Mentor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Community Facilitator</masterLabel>
+            <translation><!-- Senior Community Facilitator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Mentor</masterLabel>
+            <translation><!-- Senior Mentor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Mentor Plus</masterLabel>
+            <translation><!-- Senior Mentor Plus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Inclusion Associate</masterLabel>
+            <translation><!-- Social Inclusion Associate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Worker</masterLabel>
+            <translation><!-- Support Worker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Team Mentor</masterLabel>
+            <translation><!-- Team Mentor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- To monitor the number of roles a summer staff member does in one summer. &quot;1st&quot; is set to default, so subsequent roles should be manually set to 2nd or 3rd --></help>
+        <label><!-- Role number --></label>
+        <name>Role_number__c</name>
+        <picklistValues>
+            <masterLabel>1st</masterLabel>
+            <translation><!-- 1st --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2nd</masterLabel>
+            <translation><!-- 2nd --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3rd</masterLabel>
+            <translation><!-- 3rd --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Tick this box to trigger the APM feedback request email to resend --></help>
+        <label><!-- Resend APM feedback request --></label>
+        <name>Send_APM_feedback_request__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to resend a contract to the staff member --></help>
+        <label><!-- Resend contract --></label>
+        <name>Send_contract__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to notify the staff member of the status change of this Job Placement --></help>
+        <label><!-- Send status change email --></label>
+        <name>Send_status_change_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show in payroll approval view --></label>
+        <name>Show_in_payroll_approval_view__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Code --></label>
+        <name>Sort_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Staffing Associate --></label>
+        <name>Staffing_Associate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Staffing Associate email --></label>
+        <name>Staffing_Associate_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Staffing user view --></label>
+        <name>Staffing_user_view__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAW login password --></label>
+        <name>Staffing_website_login_PIN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Standard advance --></label>
+        <name>Standard_Advance_to_Pay__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field shows the standard daily rate for this role type. The daily rate will be overridden if there is a figure in the &quot;Override daily rate&quot; field. This field is updated by workflow and is only editable by System Administrators --></help>
+        <label><!-- Standard daily rate --></label>
+        <name>Standard_daily_rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Standard days for role --></label>
+        <name>Standard_days_for_role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>AM - High probability of attending</masterLabel>
+            <translation><!-- AM - High probability of attending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AM - Low probability of attending</masterLabel>
+            <translation><!-- AM - Low probability of attending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confirmed</masterLabel>
+            <translation><!-- Confirmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dismissed - see dismissal date</masterLabel>
+            <translation><!-- Dismissed - see dismissal date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not available (date clash)</masterLabel>
+            <translation><!-- Not available (date clash) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On back-up list</masterLabel>
+            <translation><!-- On back-up list --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Role finished</masterLabel>
+            <translation><!-- Role finished --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAM - High probability of attending</masterLabel>
+            <translation><!-- SAM - High probability of attending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAM - Low probability of attending</masterLabel>
+            <translation><!-- SAM - Low probability of attending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Selected as preference</masterLabel>
+            <translation><!-- Selected as preference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Started during wave - see ad hoc start date</masterLabel>
+            <translation><!-- Started during wave - see ad hoc start date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrawn</masterLabel>
+            <translation><!-- Withdrawn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrew from TCN (during programme) - see withdrawal date</masterLabel>
+            <translation><!-- Withdrew from TCN (during programme) - see withdrawal date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrew from TCN (post-programme)</masterLabel>
+            <translation><!-- Withdrew from TCN (post-programme) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrew from TCN (pre-programme)</masterLabel>
+            <translation><!-- Withdrew from TCN (pre-programme) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrew from wave (during programme) - available for ad hoc days</masterLabel>
+            <translation><!-- Withdrew from wave (during programme) - available for ad hoc days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrew from wave (pre-programme)</masterLabel>
+            <translation><!-- Withdrew from wave (pre-programme) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mobile --></label>
+        <name>Summer_Staff_mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sys Ad: APM feedback trigger --></label>
+        <name>Sys_Ad_APM_feedback_trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sys Ad: Expense form trigger --></label>
+        <name>Sys_Ad_Expense_form_trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC Start date --></label>
+        <name>TC_KO_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC Return booking --></label>
+        <name>TC_Return_booking__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC Start Booking --></label>
+        <name>TC_Start_booking__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC Venue booking --></label>
+        <name>TC_Venue_booking__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC end day --></label>
+        <name>TC_end_day__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC end time --></label>
+        <name>TC_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC start time --></label>
+        <name>TC_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- DO NOT USE Team --></label>
+        <name>Team__c</name>
+        <picklistValues>
+            <masterLabel>Edwards</masterLabel>
+            <translation><!-- Edwards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perham</masterLabel>
+            <translation><!-- Perham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reiss</masterLabel>
+            <translation><!-- Reiss --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sabesan</masterLabel>
+            <translation><!-- Sabesan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ward</masterLabel>
+            <translation><!-- Ward --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Team --></label>
+        <lookupFilter>
+            <errorMessage><!-- Only Teams for this calendar year can be added in this field. --></errorMessage>
+        </lookupFilter>
+        <name>Team_lookup__c</name>
+        <relationshipLabel><!-- Delivery Staff --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Test --></label>
+        <name>Test__c</name>
+    </fields>
+    <fields>
+        <help><!-- This shows the total amount paid to this person so far. If it exceeds the amount in &quot;Gross total pay&quot; the system will flag this to a Staffing Manager --></help>
+        <label><!-- Total Amount Paid --></label>
+        <name>Total_Amount_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount owed --></label>
+        <name>Total_Amount_to_Pay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total amount owed (RCA) --></label>
+        <name>Total_amount_owed_RCA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the maximum amount that someone should be paid. Managers can edit this to reflect any ad hoc payments that are made. This is used to flag up when someone has been paid too much --></help>
+        <label><!-- Expected salary --></label>
+        <name>Total_gross_pay__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field will be checked by Evolution when the total sum of all that is owed (advance and salary) is paid --></help>
+        <label><!-- Total salary paid --></label>
+        <name>Total_salary_paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unavailability 1 change --></label>
+        <name>Unavailability_1_change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unavailability 2 change --></label>
+        <name>Unavailability_2_change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unavailability 3 change --></label>
+        <name>Unavailability_3_change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unavailability 4 change --></label>
+        <name>Unavailability_4_change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unavailability 5 change --></label>
+        <name>Unavailability_5_change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unavailability Period 1 --></label>
+        <name>Unavailability_Period_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unavailability Period 2 --></label>
+        <name>Unavailability_Period_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unavailability Period 3 --></label>
+        <name>Unavailability_Period_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unavailability Period 4 --></label>
+        <name>Unavailability_Period_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unavailability Period 5 --></label>
+        <name>Unavailability_Period_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Was Confirmed --></label>
+        <name>Was_Confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave APM --></label>
+        <name>Wave_APM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave ID --></label>
+        <name>Wave_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave Model --></label>
+        <name>Wave_Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave --></label>
+        <name>Wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave end date --></label>
+        <name>Wave_end_date_formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave number --></label>
+        <name>Wave_number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tick this box to confirm that the days worked includes subtractions due to withdrawal or dismissal --></help>
+        <label><!-- DEL Double confirm days worked --></label>
+        <name>Withdrawal_dismissal_confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Withdrawal reason --></label>
+        <name>Withdrawal_reason__c</name>
+        <picklistValues>
+            <masterLabel>DBS not complete</masterLabel>
+            <translation><!-- DBS not complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency Circumstances</masterLabel>
+            <translation><!-- Emergency Circumstances --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Found other employment</masterLabel>
+            <translation><!-- Found other employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Illness</masterLabel>
+            <translation><!-- Illness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Misunderstanding for placement</masterLabel>
+            <translation><!-- Misunderstanding for placement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moved to fill gap elsewhere</masterLabel>
+            <translation><!-- Moved to fill gap elsewhere --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>References not complete</masterLabel>
+            <translation><!-- References not complete --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Calculation of actual days worked minus standard days for that role --></help>
+        <label><!-- Working days disparity --></label>
+        <name>Working_days_disparity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only to be used for Support Worker job placements. Links the Support Worker with their assigned young person. --></help>
+        <label><!-- Young Person --></label>
+        <name>Young_Person__c</name>
+        <relationshipLabel><!-- Job placements (Young Person) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field shows the default number of days that this role type works. If the staff member is absent, please deduct the number of days they were absent from this number. --></help>
+        <label><!-- Actual #days worked --></label>
+        <name>days_worked__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to confirm that the staff member has worked all days recorded in &quot;Actual # days worked&quot;. 
+NB: You will not be able to approve payroll until this box has been checked. --></help>
+        <label><!-- Confirm # days worked --></label>
+        <name>days_worked_confirmed__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- AM 2014 --></label>
+        <name>AM_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- (S)AM 2015 --></label>
+        <name>AM_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- APL 2014 --></label>
+        <name>APL_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- APL 2015 --></label>
+        <name>APL_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- APL 2016 --></label>
+        <name>APL_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- APM 2016 --></label>
+        <name>APM_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Ad hoc staff member --></label>
+        <name>Ad_hoc_staff_member</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Ad hoc staff member 2014 --></label>
+        <name>Ad_hoc_staff_member_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Ad hoc staff member 2015 --></label>
+        <name>Ad_hoc_staff_member_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Ad hoc staff member 2016 --></label>
+        <name>Ad_hoc_staff_member_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Assistant Programme Leader --></label>
+        <name>Assistant_Programme_Leader</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Associate Mentor --></label>
+        <name>Associate_Mentor</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CF 2014 --></label>
+        <name>CF_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CF 2015 --></label>
+        <name>CF_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CF 2016 --></label>
+        <name>CF_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Community Mentor --></label>
+        <name>Community_Mentor</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Grad 2014 --></label>
+        <name>Grad_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Grad 2015 --></label>
+        <name>Grad_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Grad 2016 --></label>
+        <name>Grad_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Graduation --></label>
+        <name>Graduation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- LBM 2016 --></label>
+        <name>LBM_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- LO 2014 --></label>
+        <name>LO_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- LO 2015 --></label>
+        <name>LO_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- LO 2016 --></label>
+        <name>LO_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Logs Officer --></label>
+        <name>Logs_Officer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PC 2015 --></label>
+        <name>PC_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PC 2016 --></label>
+        <name>PC_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PL 2014 --></label>
+        <name>PL_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PL 2015 --></label>
+        <name>PL_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PL 2016 --></label>
+        <name>PL_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Pad 2016 --></label>
+        <name>Pad_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Practitioner --></label>
+        <name>Practitioner</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Practitioner 2014 --></label>
+        <name>Practitioner_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Practitioner 2015 --></label>
+        <name>Practitioner_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Practitioner 2016 --></label>
+        <name>Practitioner_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Programme Leader --></label>
+        <name>Programme_Leader</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCA 1 --></label>
+        <name>RCA_1</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCA 1 2014 --></label>
+        <name>RCA_1_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCA 1 2015 --></label>
+        <name>RCA_1_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCA 1 2016 --></label>
+        <name>RCA_1_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCA 2 --></label>
+        <name>RCA_2</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCA 2 2014 --></label>
+        <name>RCA_2_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCA 2 2015 --></label>
+        <name>RCA_2_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCA 2 2016 --></label>
+        <name>RCA_2_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCA 3 --></label>
+        <name>RCA_3</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCA 3 2014 --></label>
+        <name>RCA_3_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCA 3 2015 --></label>
+        <name>RCA_3_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCA 3 2016 --></label>
+        <name>RCA_3_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCA 4 --></label>
+        <name>RCA_4</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCA 4 2014 --></label>
+        <name>RCA_4_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCA 4 2015 --></label>
+        <name>RCA_4_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCA 4 2016 --></label>
+        <name>RCA_4_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCA back-up 2014 --></label>
+        <name>RCA_back_up_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCA back-up 2015 --></label>
+        <name>RCA_back_up_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCA back-up 2016 --></label>
+        <name>RCA_back_up_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RM 2014 --></label>
+        <name>RM_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RM 2015 --></label>
+        <name>RM_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RM 2016 --></label>
+        <name>RM_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Residential Accommodation Manager --></label>
+        <name>Residential_Accommodation_Manager</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SAM 2014 --></label>
+        <name>SAM_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SAM 2015 --></label>
+        <name>SAM_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SCF 2015 --></label>
+        <name>SCF_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SCF 2016 --></label>
+        <name>SCF_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SIA 2016 --></label>
+        <name>SIA_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SMBS 2015 --></label>
+        <name>SMBS_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SM 2014 --></label>
+        <name>SM_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SM 2015 --></label>
+        <name>SM_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SM 2016 --></label>
+        <name>SM_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SW 2014 --></label>
+        <name>SW_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SW 2015 --></label>
+        <name>SW_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SW 2016 --></label>
+        <name>SW_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- (S)AM 2016 --></label>
+        <name>S_AM_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Senior Associate Mentor --></label>
+        <name>Senior_Associate_Mentor</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- (Senior) Associate Mentor 2016 --></label>
+        <name>Senior_Associate_Mentor_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Senior Mentor --></label>
+        <name>Senior_Mentor</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Support Worker --></label>
+        <name>Support_Worker</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please make sure the number of days worked is entered in half days 0.5) or whole days (1.0) --></errorMessage>
+        <name>Actual_Days_Worked_Increments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please ensure you enter Ad Hoc days in chronological order --></errorMessage>
+        <name>Ad_Hoc_Date_Order</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ad hoc job placements must have a number between 1 and 5 entered on the &quot;Standard days for role&quot; field --></errorMessage>
+        <name>Ad_Hoc_Standard_Days_Completed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Before you can create an Ad-hoc job placement, you must enter a date for the first day of the placement. --></errorMessage>
+        <name>Ad_hoc_day_1_date_missing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Pick a value for- !!Ad hoc day venue Field --></errorMessage>
+        <name>Ad_hoc_day_1venue</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The date must fall within the first and last day of the programme. --></errorMessage>
+        <name>Adhoc_day_1_within_wave_dates</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It is only possible to change the Job for back-up staff --></errorMessage>
+        <name>Allow_Job_reparenting_for_backup_staff</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You have selected the wrong RCA day. If you have selected &quot;Saturday&quot;, please change it to &quot;Sunday&quot; and vice versa --></errorMessage>
+        <name>Check_RCA_4_day</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The system has calculated that this person, having been dismissed, has worked less than the number of days currently in the field &quot;Actual # days worked&quot;. Please enter the correct number of days. --></errorMessage>
+        <name>Check_days_worked_dismissed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The system has calculated that this person, having withdrawn, has worked less than the number of days currently in the field &quot;Actual # days worked&quot;. Please enter the correct number of days. --></errorMessage>
+        <name>Check_days_worked_withdrawn</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must confirm the number of days worked, before you can approve the payroll for this person. --></errorMessage>
+        <name>Confirm_days_worked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CRITICAL: You MUST enter the exact number of days that this person worked before they left the programme to ensure they are paid correctly. Tick &quot;Double confirm days worked&quot; to confirm that this number is correct. --></errorMessage>
+        <name>Confirm_withdrawal_dismissal_RCA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can only send contracts to PVs on RCA --></errorMessage>
+        <name>Contract_to_PV_only</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The total amount has been paid to this person. You can longer tick &quot;Ad hoc payment paid&quot; or &quot;Advance paid&quot;. --></errorMessage>
+        <name>DEL_Prevent_double_payment_of_ad_hoc</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If actual days for role NOT EQUAL to standard days for role, Absence 1 reason and Absence 1 dates must be filled in --></errorMessage>
+        <name>Enforce_Absence_Reason_and_Dates</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please add the reason why the advance has been declined, so that Staffing can pass this on to the summer staff member. --></errorMessage>
+        <name>Enforce_adhoc_advance_rejection_notes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please detail why this record has been approved after the Payroll Processing meeting for this wave. (Min 20 characters) --></errorMessage>
+        <name>Enforce_notes_for_late_approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill in the reason for employing this person or the reason why they have been recorded as worked after the payroll processing meeting date. (Min 20 characters) --></errorMessage>
+        <name>Enforce_population_Reason_for_Employment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must select &quot;Yes&quot; in the field &quot;Approved for payroll?&quot; to complete the payroll approval process for this person. --></errorMessage>
+        <name>Force_Approved_when_confirmed_true</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill in the Team --></errorMessage>
+        <name>Force_Team_population</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- IMPORTANT! Please enter the exact number of days that this person will be working. This will determine the number of days for which they are paid. --></errorMessage>
+        <name>Force_adhoc_work_days</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ad hoc payments are for errors. Total salary paid must be ticked and &apos;Ad hoc additional payment&apos;, &apos;Authorising initial (Ad hoc additional&apos;, &apos;Reason for ad hoc additional payment&apos; should not be blank. Contact Innovation if you need assistance. --></errorMessage>
+        <name>Force_initialling_of_ad_hoc_additional</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please authorise this ad hoc payment by adding your initials in the &quot;Authorising initials (ad hoc payment)&quot; field. --></errorMessage>
+        <name>Force_initialling_of_ad_hoc_advance</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please authorise this override by adding your initials in the &quot;Authorising initial (overide daily rate)&quot; field. --></errorMessage>
+        <name>Force_initialling_of_override_rate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It is necessary to input a time for a marked ad-hoc day. --></errorMessage>
+        <name>Insert_adhoc_day_time</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please ensure that the field &quot;Pages to exclude&quot; includes &quot;Contract&quot; before you send the contract out to pilots --></errorMessage>
+        <name>Pages_to_exclude_Internal_RCA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please ensure that the field &quot;Pages to exclude&quot; includes &quot;Contract&quot; and &quot;Timetable&quot; before you send the contract out to pilots --></errorMessage>
+        <name>Pages_to_exclude_NCS_Pilot</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This person was dismissed before they started their role. Please do not approve payroll --></errorMessage>
+        <name>Prevent_Approval_for_dismissed_b4_PCKO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This wave is for SCFs only --></errorMessage>
+        <name>Prevent_CF_on_SCF_wave</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select the Status &quot;Selected as preference&quot; to create the record. You can then confirm the Job Placement once you have done this. --></errorMessage>
+        <name>Prevent_Confirmed_on_record_creation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The autumn waves do not have RCA 3 or 4. --></errorMessage>
+        <name>Prevent_RCA_3_and_4_on_Autumn_waves</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You have entered more days than this role would work. Please enter the correct number of days for this person. --></errorMessage>
+        <name>Prevent_addition_of_extra_days</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Each RCA Job Placement represents 1 day. Please only adjust this field if you feel that this person should be paid less than 1 day&apos;s work. --></errorMessage>
+        <name>Prevent_addition_of_extra_days_RCA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot tick &quot;Advance paid&quot; for this person, as this wave is not being paid an advance --></errorMessage>
+        <name>Prevent_advance_paid_for_non_advances</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot pay an advance, as the applicant has already been paid (please see Job Placement History for date of Total Salary Paid) --></errorMessage>
+        <name>Prevent_advancepaid_after_totalsalary</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot approve this payroll until after Graduation --></errorMessage>
+        <name>Prevent_approval_before_Grad</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot approve this payroll until RCA 1 has ended. --></errorMessage>
+        <name>Prevent_approval_before_RCA1_end</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot approve this payroll until RCA 2 has ended. --></errorMessage>
+        <name>Prevent_approval_before_RCA2_end</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot approve this payroll until RCA 3 has ended. --></errorMessage>
+        <name>Prevent_approval_before_RCA3_end</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot approve this payroll until RCA 4 has ended. --></errorMessage>
+        <name>Prevent_approval_before_RCA4_end</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot approve this payroll until the wave has ended. --></errorMessage>
+        <name>Prevent_approval_before_wave_end</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If this person did not work at all, you cannot approve them for payroll. Please highlight to the Staffing dept that the Status needs to be changed to reflect this. --></errorMessage>
+        <name>Prevent_approval_for_0_days</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot override. Applicant has already been paid (please see Job Placement History for date of Total Salary Paid) --></errorMessage>
+        <name>Prevent_being_paid_twice</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot edit this field for this record type --></errorMessage>
+        <name>Prevent_edit_of_Actual_days_worked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Payroll is currently being processed. 
+It will not be possible to edit any Job Placements until 6 hours from the date/time listed in &quot;Date/Time payroll processing started&quot; field on the Job --></errorMessage>
+        <name>Prevent_editing_during_payroll_processin</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This wave is a girl-only wave. 
+Male  PLs, APLs, SMs, CFs and SWs cannot be confirmed as working on it. --></errorMessage>
+        <name>Prevent_male_staff_on_girl_only_waves</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot approve payroll for this person, as they have not been confirmed as working on your wave. If they are, please contact Staffing urgently to rectify the situation. --></errorMessage>
+        <name>Prevent_no_days_for_unconfirmed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This email cannot be resent after the payroll payment date. --></errorMessage>
+        <name>Prevent_payment_email_after_payment_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This person has already been approved. You cannot edit the days that they worked. If the current number in &quot; Actual # days worked&quot; is incorrect, please contact Staffing asap. --></errorMessage>
+        <name>Prevent_post_approval_edits</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This person has already been paid. You cannot edit the payroll approval fields. If anything is incorrect, please contact Innovation asap. --></errorMessage>
+        <name>Prevent_post_payment_edits</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This person has already been paid. You cannot edit the payroll approval fields. If anything is incorrect, please contact Innovation asap. --></errorMessage>
+        <name>Prevent_post_payment_edits2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The total amount has been paid to this person. You can longer make an additional payment to this person via Salesforce. --></errorMessage>
+        <name>Prevent_postpayment_additional_payment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change the record type. Please create a new record with the correct record type instead --></errorMessage>
+        <name>Prevent_record_type_change_Staffing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This wave has now ended, so it is not possible to add new Job Placements to it. --></errorMessage>
+        <name>Prevent_retrospective_JP_creation_autumn</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This wave has now ended, so it is not possible to add new Job Placements to it. --></errorMessage>
+        <name>Prevent_retrospective_JP_creation_summer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This person is due an advance. Please tick &quot;Advance paid&quot; instead. --></errorMessage>
+        <name>Prevent_total_salary_paid_for_advanced</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change the Status for this person, as they have been marked as paid. If this is incorrect, please urgently contact the relevant people (your manager, the PM and Systems Support) to resolve the issue. --></errorMessage>
+        <name>Prevent_unconfirmed_status_after_paid</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are trying to create a Job Placement with the Contact record of one person and the Job Application of other. Please correct your error and save. --></errorMessage>
+        <name>Prevent_wrong_record_link</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- There is no space for a Support Worker on this wave. Please check with Central Comms and Anna that this does not have repercussions for a young person with special needs. --></errorMessage>
+        <name>Prevents_SW_being_added_to_wave</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This staff member was not confirmed as attending for  RCA 1 on this record. If they did attend, tick the relevant &quot;RCA 1 attendance confirmed&quot; checkbox. If they did not attend, you should not be approving the payroll for this RCA 1 day. --></errorMessage>
+        <name>RCA_1attendance_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This staff member was not confirmed as attending RCA 2 on this record. If they did attend, tick the  &quot;RCA 2 attendance confirmed&quot; checkbox. If they did not attend, you should not be approving the payroll for RCA 2. --></errorMessage>
+        <name>RCA_2attendance_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This staff member was not confirmed as attending RCA 3 on this record. If they did attend, tick the  &quot;RCA 3 attendance confirmed&quot; checkbox. If they did not attend, you should not be approving the payroll for this RCA 3 day. --></errorMessage>
+        <name>RCA_3attendance_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This staff member was not confirmed as attending RCA 4 on this record. If they did attend, tick the  &quot;RCA 4 attendance confirmed&quot; checkbox. If they did not attend, you should not be approving the payroll for this RCA 4 day. --></errorMessage>
+        <name>RCA_4attendance_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter &quot;Yes&quot; or &quot;No&quot; in this field --></errorMessage>
+        <name>Restrict_Approve_for_Payroll_Progs</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This person is not being paid through Salesforce or is a volunteer. Please change &quot;Approve for payroll&quot; back to &quot;No&quot; and only confirm the number in &quot;Actual #days worked&quot; by ticking &quot;Confirm # days worked&quot; --></errorMessage>
+        <name>Staff_type_payment_prevention</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can only update this field for Ad Hoc job placement records --></errorMessage>
+        <name>Standard_Days_For_Role_Ad_Hoc</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ensure you enter reason for withdrawal --></errorMessage>
+        <name>Withdrawl_Reason_whenWithdrewfromwave</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot confirm someone&apos;s attendance at the next RCA weekend until the current one has passed. --></errorMessage>
+        <name>prevent_too_early_confirmation_of_RCA</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Send_Bulk_SMS --></label>
+        <name>Send_Bulk_SMS</name>
+    </webLinks>
+</CustomObjectTranslation>

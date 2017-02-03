@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>8.1.16 (Workflow, timed)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>MATCHING Associate availability - Reminder</name>
+    <style>none</style>
+    <subject>Please reply to Availability for Interview - Remider</subject>
+    <textOnly>Availability for Interview Please send us your response
+
+
+Hello {!Step_Forward_Associate_Attendance__c.Associate_First_Name__c},
+
+
+We sent you an email requesting your availability for Step Forward interviews 2 days ago.  We don&apos;t appear to have received a response and you are not yet confirmed for this interview.
+
+
+We are now actively seeking another candidate for this interview.  Please call us on the phone number below if you still wish to be considered for interview.
+
+Unfortunately, we may not be able to rearrange an interview if we have found a replacement.
+
+
+All the best,
+
+Step Forward Matching Team
+
+020 3542 2404
+
+stepforward.interview@the-challenge.org
+
+(You can&apos;t reply to this email but you can send a new email to the address above)
+
+
+
+
+
+
+
+
+
+
+
+www.stepforward.uk.com
+
+
+The Challenge Network is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 39 York Rd, London SE1 7NQ</textOnly>
+    <type>custom</type>
+</EmailTemplate>

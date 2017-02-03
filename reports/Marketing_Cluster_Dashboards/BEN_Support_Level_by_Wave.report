@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Wave_Selections__r$Wave__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Access_category_2_6__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Wave_Selections__r$Status__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Wave_Selections__r$Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>BEN 2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Access_category_2_6__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>3 Significant extra Mentor support,3a (medical) Moderate extra support needed,3b (behavioural) Moderate extra support needed,4 Requires APL support,5 Full-time support worker,5:0.5 Requires support worker - could share with another YP,5:1 Requires full time support worker,5:2 Requires 2 full time support workers,6 Case-by-case - potential non-accept</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Wave_Selections__r$Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Assigned,Reserved,Waiting list</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>BEN Support Level by Wave</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_Cluster_Wave__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$Birthdate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,83 @@
+<apex:page standardcontroller="Booking__c" extensions="MultipleBooking" >
+
+   <apex:form >
+    <apex:pageBlock >
+       <apex:pageBlockSection title="Waves Available for Copying This Booking for Usage Type: {!currentBookingRecord.Partner_or_Venue__r.Usage_Type__r.Name}" columns="1" collapsible="false">
+                <apex:pageBlockTable value="{!SampleWaveList}" var="a">
+                     
+                       <apex:column headerValue="Wave Name">
+                            <apex:inputCheckbox value="{!a.Selected}"/>
+                            <apex:outputText value="{!a.WaveItem.Name}"></apex:outputText>
+                       </apex:column>
+                    
+                    <apex:column headerValue="Date To Be Copied" value="{!a.WaveDate.Name}"/>
+                       
+                </apex:pageBlockTable>
+                 <apex:commandButton value="Copy Booking" rendered="{!ButtonControl}" action="{!ApplyToSelectedWaves}" oncomplete="window.top.location='/{!currentBookingId}';" />
+                </apex:pageBlockSection>
+                
+                
+                <apex:pageBlockSection title="Missing Waves" collapsible="false" columns="1" rendered="{!currentBookingRecord.Partner_or_Venue__r.Usage_Type__r.Group_Event__c==FALSE}">
+                
+                    <apex:pageBlockTable value="{!MissingWaves}" var="book">
+                    
+                        <apex:column headerValue="Wave Name" value="{!book.Name}"/>
+                        
+                        <apex:column headerValue="Booking">
+                            <apex:repeat value="{!book.Bookings__r}" var="b">
+                             
+                              <a href="/{!b.Id}" target="_blank">{!b.Name} ({!IF(b.Team__r.Name=='','Template Booking',b.Team__r.Name)})</a>
+                               <br />
+                            </apex:repeat>
+                        </apex:column>
+                  
+                        <apex:column headerValue="Wave Date">
+                            <apex:repeat value="{!book.Bookings__r}" var="t">   
+                                <a href="/{!t.Wave_Dates__c}" target="_blank">{!t.Wave_Dates__r.Name}</a>
+                               <br />
+                            </apex:repeat>
+                        </apex:column>
+                        
+                         <apex:column headerValue="Missing Team Booking">
+                            <apex:repeat value="{!MissingTeams}" var="t"> 
+                            
+                             <p> <apex:outputText value="{!t.Name}" rendered="{!book.Id==t.Wave__c}"/></p>
+                            </apex:repeat>
+                        </apex:column>
+                    
+                    </apex:pageBlockTable>
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockSection title="Completed Waves" collapsible="false" columns="1">
+                
+                    <apex:pageBlockTable value="{!IF(currentBookingRecord.Partner_or_Venue__r.Usage_Type__r.Group_Event__c,BookedWave,CompletedWaves)}" var="bookk">
+                        <apex:column value="{!bookk.Name}"/>
+                        <apex:column headerValue="Booking">
+                            <apex:repeat value="{!bookk.Bookings__r}" var="b">
+                                <a href="/{!b.Id}" target="_blank">{!b.Name}</a>
+                               <br />
+                            </apex:repeat>
+                        </apex:column>
+                    
+                    <apex:column headerValue="Group Event / Team">
+                            <apex:repeat value="{!bookk.Bookings__r}" var="t"> 
+                                <apex:outputField value="{!t.Partner_or_Venue__r.Usage_Type__r.Group_Event__c}" rendered="{!IF(t.Partner_or_Venue__r.Usage_Type__r.Group_Event__c,TRUE,FALSE)}"/>
+                                
+                                <apex:outputText > <a href="/{!t.Team__c}" target="_blank">{!t.Team__r.Name}</a></apex:outputText>
+                               <br />
+                            </apex:repeat>
+                   </apex:column>
+                  
+                        <apex:column headerValue="Wave Date">
+                            <apex:repeat value="{!bookk.Bookings__r}" var="t">   
+                                <a href="/{!t.Wave_Dates__c}" target="_blank">{!t.Wave_Dates__r.Name}</a>
+                               <br />
+                            </apex:repeat>
+                        </apex:column>
+                    
+                    </apex:pageBlockTable>
+                </apex:pageBlockSection>
+    </apex:pageBlock> 
+    </apex:form>
+   
+</apex:page>

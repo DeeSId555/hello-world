@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Job_Application__c.Cluster_selected__c</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Role_to_assess_for__c</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_ZIP</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_COUNTRY</field>
+    </columns>
+    <columns>
+        <field>PHONE3</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CONTACT_OWNER</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Lindsey Graver</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Decision_post_assessment__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Accept,Offer different role,Back-up role,No assessment needed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Job_Application__c.Post_screen_2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Role_to_assess_for__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Programme Leader,Assistant Programme Leader,Senior Mentor,Community Facilitator,Senior Community Facilitator</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Cluster_selected__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>SL,CAS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Post_screen_status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Move to assessment,Skip assessment</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Date_offer_training_WSO_email_resent__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>12/1/2014</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>CRM Email Addresses</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Job_Application__c</reportType>
+    <scope>my</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Job_Application__c.Role_to_assess_for__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

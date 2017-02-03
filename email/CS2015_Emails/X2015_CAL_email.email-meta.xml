@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2015 Missing items email</name>
+    <style>none</style>
+    <subject>NCS - Next steps for your application</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTHECHALLENGE.ORG
+
+Next steps for your application
+
+
+
+Dear Parent/Guardian of {!Contact.Name},
+
+Thank you for starting {!Contact.FirstName}’s application for NCS. At the moment, parts of this are not complete and we cannot give {!Contact.FirstName} a place until they are. Before we can process your application, we need:
+
+{!NCS_Application__c.Missing_payment_paragraph__c}
+
+{!NCS_Application__c.Missing_Item_MASI__c}
+
+{!NCS_Application__c.Missing_Item_Consent__c}
+
+{!NCS_Application__c.Missing_Item_DOB__c}
+
+{!NCS_Application__c.Missing_Item_School__c}
+
+You can log in to our website by visiting https://bookings.ncsthechallenge.org/ . If you have any questions, you can call email us at contact@ncsthechallenge.org or call us on 0203 542 2400. Places are filling up fast, so please provide these items as soon as possible to increase {!Contact.FirstName}’s chances of taking part in this once-in-a-lifetime experience.
+
+
+
+Yours sincerely,
+
+
+Tanya Dunne
+Head of Customer Services - The Challenge
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

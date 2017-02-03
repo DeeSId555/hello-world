@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Relationship</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Relationships</value>
+    </caseValues>
+    <fields>
+        <help><!-- Leave blank if no end. --></help>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Relationship Type --></label>
+        <name>First_Relationship_Type__c</name>
+        <relationshipLabel><!-- Relationships (First Relationship Type) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- From Account ID (dupe check) --></label>
+        <name>From_Account_ID_dupe_check__c</name>
+    </fields>
+    <fields>
+        <label><!-- From Contact ID --></label>
+        <name>From_Contact_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- From Contact ID (dupe check) --></label>
+        <name>From_Contact_ID_dupe_check__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pick only ONE &quot;From&quot;, either Institution or Individual --></help>
+        <label><!-- From Contact --></label>
+        <name>From_Individual__c</name>
+        <relationshipLabel><!-- Relationships (From Individual) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Pick only ONE &quot;From&quot;, either Institution OR Individual. --></help>
+        <label><!-- From Account --></label>
+        <name>From_Institution__c</name>
+        <relationshipLabel><!-- Relationships (From Institution) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- From Relationship Entity --></label>
+        <name>From_Relationship_Entity__c</name>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Institution</masterLabel>
+            <translation><!-- Institution --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Is this a KEY relationship? Used in reports. --></help>
+        <label><!-- Key Relationship --></label>
+        <name>Key_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last name letters (dupe checking) --></label>
+        <name>Last_name_letters_dupe_checking__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS Overwrite --></label>
+        <name>NCS_Overwrite__c</name>
+    </fields>
+    <fields>
+        <label><!-- Second Relationship Type --></label>
+        <name>Second_Relationship_Type__c</name>
+        <relationshipLabel><!-- Second Relationship Type --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- When did this relationship start? --></help>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- To Account ID (dupe check) --></label>
+        <name>To_Account_ID_dupe_check__c</name>
+    </fields>
+    <fields>
+        <label><!-- To Contact ID --></label>
+        <name>To_Contact_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- To Contact ID (dupe check) --></label>
+        <name>To_Contact_ID_dupe_check__c</name>
+    </fields>
+    <fields>
+        <label><!-- To Contact --></label>
+        <name>To_Individual__c</name>
+        <relationshipLabel><!-- Relationships (To Individual) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Pick only ONE To, either Institution OR Individual. --></help>
+        <label><!-- To Account --></label>
+        <name>To_Institution__c</name>
+        <relationshipLabel><!-- Relationships (To Institution) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- To Relationship Entity --></label>
+        <name>To_Relationship_Entity__c</name>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Institution</masterLabel>
+            <translation><!-- Institution --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wave --></label>
+        <name>Wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Duplicate Check --></label>
+        <name>dc3DisableDuplicateCheck__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Not ready for use</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>Feedback Email - Score 4/5, V3 Same exact role OLD</name>
+    <style>formalLetter</style>
+    <subject>Your performance feedback</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+Dear {!Contact.Name}
+
+
+Many thanks for your contribution on the 2014 NCS Programme. We hope you have enjoyed your experience with The Challenge and would like to work with us again in the future.
+
+
+Performance feedback
+
+Set out below is some feedback on your performance this year and an outline of options available to you in 2015.
+
+
+
+How was my performance during the programme?
+
+
+Feedback for your overall performance was: {!Job_Application__c.Overall_Score__c}
+
+
+I would like to work on the NCS programme again what are my options?
+
+
+1. Recommended option Re- apply for the same role of {!Job_Application__c.Role_to_assess_for__c}
+
+Based on your feedback, this would be our recommended role for you.
+
+You would not need to re-assess for this role. However, all returning staff must complete a new application for the 2015 programmes (see the “what do I need to do next” section below).
+
+
+2. Apply for a different role
+
+If you feel you have gained additional experience and relevant skills.
+
+You would be required to attend an assessment if your application is successful.
+
+
+NB. All roles are conditional on attendance at training, DBS and references and the availability of positions at the time of allocation. Not all roles are available in all areas and some roles have changed. Please check role descriptions for more details.
+
+
+Detailed Performance Feedback
+
+This feedback is generated from a number of different categories relevant to your role. Please see below for a full list of how you performed in each category.
+
+
+
+Regrettably due to the volume of staff we employ we are unable to offer further discussion or clarification to this feedback.
+
+
+
+
+Punctuality &amp; Organisation
+
+{!Job_Application__c.Punctuality_Organisation__c}
+
+Engaging Young People
+
+{!Job_Application__c.Engaging_Young_People__c}
+
+Facilitation of Groups
+
+{!Job_Application__c.Facilitation_of_Groups__c}
+
+Teamwork (With other Staff)
+
+{!Job_Application__c.Teamwork_With_other_Staff__c}
+
+Managing Challenging Behaviour
+
+{!Job_Application__c.Managing_Challenging_Behaviour__c}
+
+Professional and Role
+
+{!Job_Application__c.Professional_and_Role_Model__c}
+
+Responsiveness to Feedback
+
+{!Job_Application__c.Responsiveness_to_Feedback__c}
+
+Managing Staff
+
+{!Job_Application__c.Managing_Staff__c}
+
+Inclusiveness (Sympathetic to all Young People)
+
+{!Job_Application__c.Inclusiveness_Sympathetic_to_all_YP__c}
+
+Proactive, Self-Starter
+
+{!Job_Application__c.Proactive_Self_Starter__c}
+
+
+
+N.B if your performance is listed as &apos;not recorded&apos; then it is a category that is not relevant to your role.
+
+
+
+Why do I have feed back?
+
+The challenge wants to encourage as many of our high quality staff to return to work for us each year. The feedback process has been enhanced this year to give you the benefit of more detail information on your performance.
+
+
+What do I need to do next?
+
+Please follow the link to the Staffing Website where some of your details will already have been transferred from your previous application. Please check these details are correct, and add any additional information if needed.
+
+
+Want to know more?
+
+If you have any questions about this year’s application process please refer to the FAQs on the Staffing Website. Alternatively, you can contact your staffing associate quoting the email reference below in any correspondence.
+
+
+
+Thank you for your ongoing interest in the NCS programme and we look forward to working with you again.
+
+
+
+Best Wishes,
+NCS with The Challenge
+
+{!Contact.OwnerFullName}
+
+{!Contact.Contact_Owner_alternative_email__c}
+
+Email Reference: CR 1.2</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>HTML Acceptance Letter Email 2013</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Unconditional Autumn Acceptance Letter 2013B</name>
+    <style>none</style>
+    <subject>Your place on NCS by The Challenge is confirmed</subject>
+    <textOnly>The Challenge Network
+
+CONFIRMATION OF YOUR PLACE
+
+Dear Parent/Guardian of {!Contact.FirstName} {!Contact.LastName},
+
+We are delighted to confirm that we have secured {!Contact.FirstName} a place on NCS by The Challenge beginning on {!Wave_Selection__c.PC_KO_Day__c}. Congratulations! We have received your payment of {!Contact.Total_payment_received__c}, which includes all accommodation, transport, food, and equipment used during the autumn programme.
+
+We will send you a fully detailed information pack approximately two weeks before the start of the programme, containing {!Contact.FirstName}’s schedule and a packing list. We will also hold an information evening approximately one week before The Challenge begins, which you will receive an invitation to, and where we will be able to answer any questions that you may have. As places are filling up very rapidly, we would urge {!Contact.FirstName} to remind their friends* to take part in this unique and exciting opportunity.
+
+Please see below for the key dates of when the group will be away. If {!Contact.FirstName} cannot attend any of these dates please contact us at the earliest opportunity.
+
+The Personal Challenge: outdoor activity centre, residential accommodation
+{!Wave_Selection__c.PC_KO_Day__c} until  {!Wave_Selection__c.PC_Return_Day__c}
+
+The Team Challenge: {!Wave_Selection__c.Residential__c}
+{!Wave_Selection__c.TC_KO_Day__c}  until {!Wave_Selection__c.TC_End_Day__c}
+
+The Real Challenge: local venue, non-residential
+Join us on the following four days:  09/11/2013, 10/11/2013, 16/11/2013  and  23/11/2013
+
+If you have any further questions please do contact us on 020 3542 2400 or at contact@the-challenge.org. You can also keep in touch using Facebook. Otherwise, we look forward to seeing you in the autumn.
+
+Yours sincerely,
+
+Rebecca Carter
+Director at The Challenge Network
+
+*Young people are eligible to take part in NCS by The Challenge if they are aged 15-17.
+
+Further to this, participants of the Autumn NCS programme cannot have reached age 18 by the 1st of January 2014 and must be at further education age (i.e. not in Year 11) in order to take part.
+
+Alternatively, from January 2014, we welcome applications to our Summer 2014 programme from those who are in Year 11 or 12 (or equivalent and of age 15-17 and not 18 during any residential parts of the programme).
+
+Please note that Young People can only take part in NCS once.
+
+the-challenge.org  ncsyes.co.uk
+/thechallengenetwork    /ncs
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Payroll History</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Payroll History</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual #days worked --></label>
+        <name>Actual_days_worked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ad hoc additional payment --></label>
+        <name>Ad_hoc_additional_payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ad hoc advance --></label>
+        <name>Ad_hoc_advance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ad hoc advance approved by Finance --></label>
+        <name>Ad_hoc_advance_approved_by_Finance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ad hoc advance collection date --></label>
+        <name>Ad_hoc_advance_collection_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Advance payment date --></label>
+        <name>Advance_payment_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorising initial - ad hoc advance --></label>
+        <name>Authorising_initial_ad_hoc_advance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorising initial - additional payment --></label>
+        <name>Authorising_initial_additional_payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorising initial -override daily rate --></label>
+        <name>Authorising_initial_override_daily_rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cluster --></label>
+        <name>Cluster__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact ID --></label>
+        <name>Contact_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date advance paid due to payroll issue --></label>
+        <name>Date_advance_paid_due_to_payroll_issue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of withdrawal notification --></label>
+        <name>Date_of_withdrawal_notification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date payroll corrected --></label>
+        <name>Date_payroll_corrected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date staff member was dismissed --></label>
+        <name>Date_staff_member_was_dismissed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days worked when dismissed --></label>
+        <name>Days_worked_when_dismissed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days worked when withdrawn --></label>
+        <name>Days_worked_when_withdrawn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected salary --></label>
+        <name>Expected_salary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Application ID --></label>
+        <name>Job_Application_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Application # --></label>
+        <name>Job_Application__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job ID --></label>
+        <name>Job_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Placement ID --></label>
+        <name>Job_Placement_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Placement # --></label>
+        <name>Job_Placement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Placement record type --></label>
+        <name>Job_Placement_record_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job placement lookup --></label>
+        <name>Job_placement_lookup__c</name>
+        <relationshipLabel><!-- Payroll History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last payroll meeting of the month --></label>
+        <name>Last_payroll_meeting_of_the_month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override daily rate --></label>
+        <name>Override_daily_rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll Issue --></label>
+        <name>Payroll_Issue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll advance owed --></label>
+        <name>Payroll_advance_owed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll approval date/time --></label>
+        <name>Payroll_approval_date_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll approval notes --></label>
+        <name>Payroll_approval_notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll checking notes --></label>
+        <name>Payroll_checking_notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll issue status --></label>
+        <name>Payroll_issue_status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll issue status last update --></label>
+        <name>Payroll_issue_status_last_update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll model --></label>
+        <name>Payroll_model__c</name>
+        <picklistValues>
+            <masterLabel>70% advance</masterLabel>
+            <translation><!-- 70% advance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No advance</masterLabel>
+            <translation><!-- No advance --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payroll payment date --></label>
+        <name>Payroll_payment_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll processing meeting date --></label>
+        <name>Payroll_processing_meeting_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for additional payment --></label>
+        <name>Reason_for_additional_payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for adhoc advance --></label>
+        <name>Reason_for_adhoc_advance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for employment --></label>
+        <name>Reason_for_employment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason of overridden daily rate --></label>
+        <name>Reason_of_overridden_daily_rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type ID --></label>
+        <name>Record_Type_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Staffing Associate --></label>
+        <name>Staffing_Associate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Standard daily rate --></label>
+        <name>Standard_daily_rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team --></label>
+        <name>Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount owed --></label>
+        <name>Total_Amount_owed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total amount paid --></label>
+        <name>Total_amount_paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave APM --></label>
+        <name>Wave_APM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave --></label>
+        <name>Wave__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

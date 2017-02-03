@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_52109108</developerName>
+        <masterLabel>Assembly Arranged</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>School_Activities__c.StatusNew__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Presentation Booked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Presentation Held</sourceValue>
+            </sourceValues>
+            <value>Assembly Arranged</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Contacted</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Meeting Arranged</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Meeting Held</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Not Contacted</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rejected by School</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>School Accessed</sourceValue>
+            </sourceValues>
+            <value>Assembly Not Arranged</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>School_Activities__c.School_type__c</field>
+    </columns>
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>School_Activities__c.StatusNew__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>School_Activities__c.School_Activity_2016_Feb</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Feb_target_school__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_52109108</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>2015 SALES Feb Assembly Arranged</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$School_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

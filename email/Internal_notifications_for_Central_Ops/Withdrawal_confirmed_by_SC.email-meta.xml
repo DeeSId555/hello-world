@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto-notification sent to Central Ops when withdrawal is confirmed</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Withdrawal confirmed by SC</name>
+    <style>none</style>
+    <subject>SC has confirmed that a {!Contact.School_s_cluster__c} YP is withdrawing</subject>
+    <textOnly>Hi 
+
+Please look at {!Contact.Name}&apos;s record as the SC has confirmed that this YP is withdrawing from The Challenge. Please urgently withdraw them from any wave they are assigned/reserved onto. If they are eligible please arrange a refund.
+Click on this link to see the record: {!Contact.Link}
+
+This email has been sent to all Central Ops Admins, so please can whoever gets to this first notify everyone else that this has been dealt with.
+
+Our refund policy is that a refund is available if requested in writing within 14 days of payment. If they paid by card we can refund by the same method (depending when they paid - in some circumstances we may need to send a cheque instead). If they paid by any other means we will refund by cheque. We are not able to issue refunds after this time.
+
+This is a standard email, sent automatically whenever a YP or PG notifies us that they want to withdraw.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

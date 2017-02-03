@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Fundraising Payment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Fundraising Payments</value>
+    </caseValues>
+    <fields>
+        <help><!-- Amount promised to TCN --></help>
+        <label><!-- Amount committed --></label>
+        <name>Amount_committed__c</name>
+    </fields>
+    <fields>
+        <help><!-- The area(s) of activity the funding applies to --></help>
+        <label><!-- Areas of activity --></label>
+        <name>Areas_of_activity__c</name>
+        <picklistValues>
+            <masterLabel>AMs</masterLabel>
+            <translation><!-- AMs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Action Teams</masterLabel>
+            <translation><!-- Action Teams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Challenge Ambassador</masterLabel>
+            <translation><!-- Challenge Ambassador --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Challenge Days</masterLabel>
+            <translation><!-- Challenge Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Development Ambassador</masterLabel>
+            <translation><!-- Development Ambassador --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Events Marketer</masterLabel>
+            <translation><!-- Events Marketer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extra Opportunity Fund</masterLabel>
+            <translation><!-- Extra Opportunity Fund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Coach</masterLabel>
+            <translation><!-- Personal Coach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signposting Mentor</masterLabel>
+            <translation><!-- Signposting Mentor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staffing Advisor</masterLabel>
+            <translation><!-- Staffing Advisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summer Opportunities Fund</masterLabel>
+            <translation><!-- Summer Opportunities Fund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Youth Board</masterLabel>
+            <translation><!-- Youth Board --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ask --></label>
+        <name>Ask__c</name>
+        <relationshipLabel><!-- Fundraising Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Count of 1 per record. Used for reporting purposes --></help>
+        <label><!-- Count --></label>
+        <name>Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date TCN expect to receive the payment --></help>
+        <label><!-- Date amount expected --></label>
+        <name>Date_amount_expected__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date TCN actually received the amount --></help>
+        <label><!-- Date amount received --></label>
+        <name>Date_amount_received__c</name>
+    </fields>
+    <fields>
+        <help><!-- Local authority (or authorities) the funding applies to --></help>
+        <label><!-- Local authorities --></label>
+        <name>Local_authorities__c</name>
+        <picklistValues>
+            <masterLabel>Barking and Dagenham</masterLabel>
+            <translation><!-- Barking and Dagenham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barnet</masterLabel>
+            <translation><!-- Barnet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bexley</masterLabel>
+            <translation><!-- Bexley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birmingham</masterLabel>
+            <translation><!-- Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brent</masterLabel>
+            <translation><!-- Brent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bromley</masterLabel>
+            <translation><!-- Bromley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bury</masterLabel>
+            <translation><!-- Bury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Camden</masterLabel>
+            <translation><!-- Camden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>City of London</masterLabel>
+            <translation><!-- City of London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coventry</masterLabel>
+            <translation><!-- Coventry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Croydon</masterLabel>
+            <translation><!-- Croydon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dudley</masterLabel>
+            <translation><!-- Dudley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ealing</masterLabel>
+            <translation><!-- Ealing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enfield</masterLabel>
+            <translation><!-- Enfield --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greenwich</masterLabel>
+            <translation><!-- Greenwich --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hackney</masterLabel>
+            <translation><!-- Hackney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hammersmith and Fulham</masterLabel>
+            <translation><!-- Hammersmith and Fulham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haringey</masterLabel>
+            <translation><!-- Haringey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Harrow</masterLabel>
+            <translation><!-- Harrow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Havering</masterLabel>
+            <translation><!-- Havering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hillingdon</masterLabel>
+            <translation><!-- Hillingdon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hounslow</masterLabel>
+            <translation><!-- Hounslow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Islington</masterLabel>
+            <translation><!-- Islington --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kensington and Chelsea</masterLabel>
+            <translation><!-- Kensington and Chelsea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kingston Upon Thames</masterLabel>
+            <translation><!-- Kingston Upon Thames --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lambeth</masterLabel>
+            <translation><!-- Lambeth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lewisham</masterLabel>
+            <translation><!-- Lewisham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester</masterLabel>
+            <translation><!-- Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merton</masterLabel>
+            <translation><!-- Merton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newham</masterLabel>
+            <translation><!-- Newham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oldham</masterLabel>
+            <translation><!-- Oldham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redbridge</masterLabel>
+            <translation><!-- Redbridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Richmond Upon Thames</masterLabel>
+            <translation><!-- Richmond Upon Thames --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rochdale</masterLabel>
+            <translation><!-- Rochdale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sandwell</masterLabel>
+            <translation><!-- Sandwell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solihull</masterLabel>
+            <translation><!-- Solihull --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southwark</masterLabel>
+            <translation><!-- Southwark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stockport</masterLabel>
+            <translation><!-- Stockport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surrey</masterLabel>
+            <translation><!-- Surrey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sutton</masterLabel>
+            <translation><!-- Sutton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tameside</masterLabel>
+            <translation><!-- Tameside --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tower Hamlets</masterLabel>
+            <translation><!-- Tower Hamlets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walsall</masterLabel>
+            <translation><!-- Walsall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waltham Forest</masterLabel>
+            <translation><!-- Waltham Forest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wandsworth</masterLabel>
+            <translation><!-- Wandsworth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warwickshire</masterLabel>
+            <translation><!-- Warwickshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Westminster</masterLabel>
+            <translation><!-- Westminster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wigan</masterLabel>
+            <translation><!-- Wigan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wolverhampton</masterLabel>
+            <translation><!-- Wolverhampton --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Details of other restriction which applies to the funding --></help>
+        <label><!-- Other restriction --></label>
+        <name>Other_restriction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request time period --></label>
+        <name>Request_time_period__c</name>
+        <picklistValues>
+            <masterLabel>2013 Q1</masterLabel>
+            <translation><!-- 2013 Q1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2013 Q2</masterLabel>
+            <translation><!-- 2013 Q2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2013 Q3</masterLabel>
+            <translation><!-- 2013 Q3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2013 Q4</masterLabel>
+            <translation><!-- 2013 Q4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2014 Q1</masterLabel>
+            <translation><!-- 2014 Q1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2014 Q2</masterLabel>
+            <translation><!-- 2014 Q2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2014 Q3</masterLabel>
+            <translation><!-- 2014 Q3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2014 Q4</masterLabel>
+            <translation><!-- 2014 Q4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Time period covered --></label>
+        <name>Time_period_covered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year amount applies to --></label>
+        <name>Year_amount_applies_to__c</name>
+        <picklistValues>
+            <masterLabel>2012-13</masterLabel>
+            <translation><!-- 2012-13 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2013-14</masterLabel>
+            <translation><!-- 2013-14 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2014-15</masterLabel>
+            <translation><!-- 2014-15 --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

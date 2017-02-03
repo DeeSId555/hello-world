@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_LINE1</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_ZIP</field>
+    </columns>
+    <columns>
+        <field>Partner_or_Venue__c.Usage_Type__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Partner_or_Venue__c.Usage_Type__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>RCA Partner 2016,RCD Professional Partner 2016,TC Community Partner 2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Local_Authority__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>westminster,hammesmith,chelsea</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>All TRI Partners 2016</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$Partner_or_Venue__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

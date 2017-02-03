@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Close</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteSeries</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewTask</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ActivityDate</fullName>
+    </fields>
+    <fields>
+        <fullName>CallDisposition</fullName>
+    </fields>
+    <fields>
+        <fullName>CallDurationInSeconds</fullName>
+    </fields>
+    <fields>
+        <fullName>CallObject</fullName>
+    </fields>
+    <fields>
+        <fullName>CallType</fullName>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+    </fields>
+    <fields>
+        <fullName>IsRecurrence</fullName>
+    </fields>
+    <fields>
+        <fullName>IsVisibleInSelfService</fullName>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>RecurrenceInterval</fullName>
+    </fields>
+    <fields>
+        <fullName>RecurrenceRegeneratedType</fullName>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>TaskSubtype</fullName>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>WhatId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>WhoId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <recordTypes>
+        <fullName>Advocacy_not_MPs</fullName>
+        <active>true</active>
+        <description>This Record Type is used for creating Advocacy tasks related to Advocacy Goals</description>
+        <label>Advocacy (not MPs)</label>
+        <picklistValues>
+            <picklist>Call_status__c</picklist>
+            <values>
+                <fullName>Call was not about Marketing an event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Didn%27t get through</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spoke to young person%2C attending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spoke to young person%2C maybe coming</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spoke to young person%2C not coming</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Steps__c</picklist>
+            <values>
+                <fullName>Briefing meeting%2Fconversation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meet young people</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting follow up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programme invite</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programme visit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send email</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call re</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Email re</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Facebook msg re</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Followup re</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left voicemail message re</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LinkedIn msg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting re</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMS re</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tweet re</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Facebook</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LinkedIn</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tweet</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>Comm_Status_Other</fullName>
+        <active>true</active>
+        <description>Requires that &apos;Details if other&apos; field is completed, if Other is selected as the result of the communication</description>
+        <errorConditionFormula>AND(ISPICKVAL(Call_status__c,&quot;Other&quot;),ISBLANK(Details_of_Other__c  ))</errorConditionFormula>
+        <errorMessage>Please provide details in the &apos;If Other, specify details&apos; field</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>View_HTML_Email_Status</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>View HTML Email Status</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!URLFOR(
+ $Action.Task.View_HTML_Email_Status ,
+ Contact.Id 
+)}</url>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Wave__c$Name</field>
+    </columns>
+    <columns>
+        <field>Wave__c$YP_place_capacity_absolute_maximum__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c$Mktg_total_number_of_YPs_on_wave__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Wave__c$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Preston,Blackburn,Burnley,W Lancs,Blackpool,Chorley</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave__c$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>2013</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Wave__c$Boroughs_or_areas__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Lancashire 2015 Wave Totals</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Waves__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Wave__c$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Wave__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

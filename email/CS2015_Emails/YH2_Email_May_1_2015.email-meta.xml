@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>YH2 Email May 1 2015</name>
+    <style>none</style>
+    <subject>NCS - important info &amp; next steps</subject>
+    <textOnly>NCSTHECHALLENGE.ORG
+
+NCS (National Citizen Service)
+
+
+Dear Parent or Guardian of {!Contact.FirstName},
+
+NCS Network will no longer be providing NCS (National Citizen Service) in your area this autumn. NCS will, however, continue to be provided by The Challenge. The NCS Network has passed your contact details to us at The Challenge so we can let you know your next steps and {!Contact.FirstName} doesn&apos;t miss out on this once-in-a-lifetime opportunity! 
+
+Who are The Challenge? We are a registered charity founded in 2009 and the largest provider of NCS in the country. Last year, over 18,000 young people from  across the South East, the Midlands and the North West of England completed NCS with us. And we&apos;re looking forward to delivering even more this year! For more information, visit our website: http://www.the-challenge.org/
+
+What do I need to do?
+To complete {!Contact.FirstName} &apos;s application, please log in to our booking website using the account we have set up for you. 
+
+https://bookings.ncsthechallenge.org/
+
+Your unique parent/guardian username and password are:
+
+Username: {!Contact.NCS_ID__c}
+Password: {!Contact.PG_NCS_PIN__c}
+You will be able to set your own password the first time you log in.
+
+Here, you can select the programme dates that {!Contact.FirstName} would like to take part in NCS this autumn. You will also need to complete the medical and support information form for {!Contact.FirstName}. The last stage of the application is paying the administration fee (which will be a maximum of £50).
+
+What if I have already paid for NCS?
+If you have already paid for NCS through The NCS Network, this has already been passed over to us so you will not need to pay again*.
+
+More Questions?
+If you would like to speak to somebody about the change in provider of the programme, or have any questions at all about the sign up process or NCS in general, please do give us a call on 0203 542 2400 or email us at contact@ncsthechallenge.org
+
+Yours sincerely,
+
+
+Tanya Dunne
+Head of Customer Services - The Challenge
+
+
+
+*Please note that if you have made a payment to the NCS Network but the change in provider means {!Contact.FirstName} no longer wants to take part in NCS, we can refund your payment. However, refunds will only be available until the 30 June 2015. Please contact us before this date to request one.
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+© The Challenge Network.
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>HS Corporate Partner Object holds information for Heastarts corporate partners. These records get published to the Headstart website.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Application_Extras__c</fullName>
+        <externalId>false</externalId>
+        <label>Application Extras</label>
+        <length>10000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Corporate_Partner_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Corporate Partner Description</label>
+        <length>10000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Corporate_Partner__c</fullName>
+        <externalId>false</externalId>
+        <label>Corporate Partner</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New Look</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Starbucks</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lloyds</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Berkeley Group</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Zendesk</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>GLA</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bloomberg</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No Corporate Partner</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Image_1_Preview__c</fullName>
+        <externalId>false</externalId>
+        <formula>image( Image_Link_1__c ,&quot;no Image&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Image 1 Preview</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Image_Link_1__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Insert link here</inlineHelpText>
+        <label>Image Link 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Job_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Job Description</label>
+        <length>10000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Key_dates_interviews__c</fullName>
+        <externalId>false</externalId>
+        <label>Key dates interviews</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Key_dates_workshops__c</fullName>
+        <externalId>false</externalId>
+        <label>Key dates workshops</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Provisional_start_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Provisional start date</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Publish_to_Website__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Publish to Website</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <referenceTo>HS_Region__c</referenceTo>
+        <relationshipLabel>HS Corporate Partners</relationshipLabel>
+        <relationshipName>HS_Corporate_Partners</relationshipName>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Role_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Role Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>What_we_need_from_YP__c</fullName>
+        <externalId>false</externalId>
+        <label>What we need from YP</label>
+        <length>10000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <label>HS Corporate Partner</label>
+    <listViews>
+        <fullName>All_Corporate_Partners</fullName>
+        <columns>NAME</columns>
+        <columns>Corporate_Partner__c</columns>
+        <columns>Publish_to_Website__c</columns>
+        <columns>Region__c</columns>
+        <columns>Role_Name__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Corporate Partners</label>
+    </listViews>
+    <nameField>
+        <label>HS Corporate Partner Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>HS Corporate Partners</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

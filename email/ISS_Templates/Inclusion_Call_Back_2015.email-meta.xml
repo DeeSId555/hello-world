@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Inclusion Call Back 2015</name>
+    <style>none</style>
+    <subject>Please contact us about your child&apos;s application for NCS</subject>
+    <textOnly>NCSTHECHALLENGE.ORG
+
+Please contact us about
+{!Contact.FirstName}&apos;s application for NCS
+
+
+Dear {!Contact.Parent_Name__c},
+
+Thank you for going online and requesting a callback about changes to {!Contact.Name}’s medical and support information. We tried to call you about this today.
+
+Please call us on 0203 691 8741 to provide us with the up-to-date information. It is really important that you provide us with up-to-date medical and support information so that we can understand what staff support or logistical adjustments {!Contact.FirstName} might need on the programme.
+
+Or, if you would prefer us to call you back at another time, please send an email to inclusion.support@the-challenge.org with the following information:
+
+Young person’s name:
+Your name (parent/guardian):
+Parent/guardian contact number:
+The best time of day to contact you:
+
+We will then do our best to call you at this time.
+
+If you requested a callback by mistake, you do not need to contact us.
+
+
+Yours sincerely,
+
+
+Tanya Dunne
+Head of Customer Services - The Challenge
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+© The Challenge Network.
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 8.3 Training booking confirmation (online &amp; manual)</name>
+    <style>formalLetter</style>
+    <subject>Confirmation of your training with The Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}.
+Dear {!Contact.FirstName},
+
+
+
+This is a confirmation email to confirm you have been booked onto your training day which will take place on {!Staffing_Event_Day__c.Day_date__c}. If you have to attend more than one day you will receive multiple emails.
+
+
+
+What should I do now?
+
+Please log into the Staffing Website and go to &apos;Booking Training&apos; section. Here, you will be able to review:
+
+
+
+The time and location of the training session.
+
+What you will need to bring.
+
+
+
+
+What else?
+
+
+If you&apos;re with us for a full day, we&apos;ll provide lunch for you -we can offer vegetarian options but unfortunately, we are unable to accommodate other specific dietary requirements. If you have specific dietary requirements please bring your own lunch!
+
+
+If you have not already done so, please let us know of any additional needs you have that may require reasonable adjustment on our part during the training. Please email the Inclusion Staffing Team on inclusion.ss@the-challenge.org. Anything you disclose will be treated confidentially.
+
+
+Please ensure that you check for any changes to the training details the night before. These will be updated on the &apos;Training Booking Details&apos; page no later than a day before the event.
+
+
+
+What if I can no longer attend this date?
+
+Please contact your local staffing team as soon as possible if you are unable to attend the training. We will try to offer you an alternative training date, but unfortunately this may not always be possible.
+
+
+
+If you have any further questions please get in touch with your local staffing team directly. Information can also be found on our FAQs.
+Best wishes,
+
+
+
+The Challenge
+
+{!Contact.OwnerFullName}
+
+{!Contact.Contact_Owner_alternative_email__c}
+
+{!Contact.OwnerPhone}
+
+
+
+Email reference: CR 8.3</textOnly>
+    <type>html</type>
+</EmailTemplate>

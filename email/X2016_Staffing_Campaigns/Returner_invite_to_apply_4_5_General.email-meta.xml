@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>Returner - invite to apply (4/5 General)</name>
+    <style>formalLetter</style>
+    <subject>NCS 2016 - Applications now open!</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}.
+Dear {!Contact.FirstName},
+
+
+
+Great news - Applications for the 2016 NCS seasonal programmes are now officially open!
+https://staffing.the-challenge.org/Login.aspx
+
+
+Last year, due to your incredible commitment, 81% of young people on the programme felt that they gained an understanding of what life is like for others, 72% believe that they are more able to trust people from other backgrounds, and 76% feel more confident about the future.Thank you for helping us achieve this!
+
+
+
+2016 application form
+
+
+
+The application form for our 2016 roles is now available and, given the quality of feedback we have received from our Programmes Team from your work this year, we would love to work with you again. Please login to the staffing website using your existing username and password, and ensure that your personal details on the ‘My Profile’ section are up-to-date before starting your application. Happily, much of the application will be pre-filled with your information from last year to make the process as efficient and easy as possible!
+
+
+
+Username: {!Contact.Email}
+
+Password: {!Contact.Login_Password__c}
+
+
+
+You’re free to apply for as many roles as you like - just indicate on the application which is your preferred role. Please note that you may be asked to attend another one of our group assessments if you choose to go for a different role to last year.
+
+
+
+Why should you join us again?
+
+
+
+We have over 4,500 roles, making 2016 our biggest year to date!
+
+New, streamlined recruitment process for returning staff
+
+Concise, one-day training for returners to the same role
+
+Exciting new roles, locations and wave layouts for you to try
+
+Most of the application form is already filled out for you!
+
+
+
+
+Last but not least, the experience of the young people and the impact of the programme is proven to be enhanced by the presence of high quality returning staff who can bring their invaluable experience to the project.
+
+
+
+Any questions?
+
+
+
+If you have any questions about the application process, or about the NCS programme and/or the seasonal roles, please contact us on our general helpline: seasonalroles@the-challenge.org. You can also find information on our FAQs.
+https://staffing.the-challenge.org/frequently-asked-questions/
+
+
+
+*Please note that the Staffing Department will be closing on Wednesday 23rd December until the 4th of January. All queries during this period will be picked up on our return. Have a great festive break from all of us in the staffing team!
+
+
+
+Best Wishes,
+
+
+
+The Staffing Team
+
+When you apply, let us know by tweeting @SeasonalStaff!</textOnly>
+    <type>html</type>
+</EmailTemplate>

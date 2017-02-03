@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 2.1.2b Pract invite to assess - reasonable adjustments</name>
+    <style>formalLetter</style>
+    <subject>Your application for the NCS Programme</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}.
+
+Dear {!Contact.FirstName},
+
+Congratulations! We are delighted to invite you to attend one of our group assessments for the {!Job_Application__c.Role_to_assess_for_c} role.
+
+It may be that this is not be the role which you identified as your preference upon initial application; however, following an assessment of your skills and experience, this is the role for which we believe you are best suited. If you wish to familiarise yourself with the details of this role prior to assessment then you can access the job description here.
+
+Booking onto an assessment
+
+To book onto one of our group assessments you’ll need to login to the staffing website and head to the ‘Booking Assessments’ section, which should now be available to you.
+
+In this section, you can:
+
+See a list of assessment dates
+
+‘Register’ or ‘Decline’ dates
+
+Review details of your chosen date
+
+Request alternative assessment dates* (if unavailable for those offered to you)
+
+
+*Please note that we cannot always guarantee an alternative assessment date and, as such, we strongly recommend that you make every effort to be available for those listed.
+
+Practitioner assessments - what do I need to do?
+
+Our group assessments for the practitioner roles are designed to test both your skill in your chosen area(s) (media, photography, music, drama, art, enterprise and/or sport) and your ability to facilitate and manage groups of young people.
+
+We ask practitioner candidates to prepare a short workshop based on their skill to carry out with the group. Your workshop should last no longer than 5 minutes, and be suitable for around 12 people. For more information on the workshop requirements, please head to the Booking Assessments page and click on the title of your chosen event.
+
+Please also ensure that you bring valid ID documents. These documents should prove both your identity and your Right To Work in the UK and will be scanned during your assessment. If you are unsure which documents you can bring, please check our FAQ 5.8.
+
+Reasonable adjustments at assessment
+
+In your application you indicated that you have a disability or additional needs which may require us to adjust the assessment format. We’d like to make our assessment as accessible to you as possible, so please contact our Inclusion Staffing team on inclusion.ss@the-challenge.org or 0203 542 2451 to discuss your requirements in more detail. We will need at least a week before the assessment date to ensure we have everything in place.
+
+Any questions?
+
+If you have any questions about booking onto an assessment, please contact your local staffing team. Information on our group assessments can also be found on our FAQs.
+
+We look forward to meeting you!
+
+{!Contact.OwnerFullName}
+
+{!Contact.Contact_Owner_alternative_email}
+
+The Staffing Team
+
+The Challenge</textOnly>
+    <type>html</type>
+</EmailTemplate>

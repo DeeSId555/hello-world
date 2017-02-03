@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Job_Application__c$Contact__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c$Name</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Staffing_Event_attendances__r$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Job_Application__c$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Job_Application__c.Post_screen_2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c.Staffing_Event_attendances__r$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Training Not Booked</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Job_Applications_with_without_Booked_Training__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Job_Application__c.Staffing_Event_attendances__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

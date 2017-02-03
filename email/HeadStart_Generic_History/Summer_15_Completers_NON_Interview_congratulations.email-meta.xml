@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>sent 24/09/15 using &apos;workshop invites&apos;</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Summer 15 - Completers NON Interview congratulations</name>
+    <style>none</style>
+    <subject>HeadStart - Congratulations!</subject>
+    <textOnly>HeadStart login details:
+
+Email Address {!Contact.Email}
+
+NCS ID
+
+{!Contact.NCS_ID__c}
+
+PIN {!Contact.Login_Password__c}
+
+HeadStart Website
+
+Well done from HeadStart!
+
+Hi {!Contact.FirstName},
+
+Congratulations for logging your volunteering hours! You have made such a difference to your local community and the charity that you have been supporting and should be really proud of your achievements.
+
+We hope you have enjoyed the experience and wish to continue volunteering.  Remember, the HeadStart website is still open for you to continue to log your hours with us.  Your details are above.
+
+You will recieve an official certificate from the Mayor of London and be invited to attend a graduation ceremony in 2016 which will be a really amazing event that we hope to see you there at!
+
+We will be in touch in the future with more info and updates about HeadStart.  Until then if you have an queries please contact us on the details below.
+
+
+Best wishes
+
+HeadStart Team
+
+Any questions? Email the HeadStart team, check out our website or get in touch on facebook.
+
+
+The HeadStart team
+
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subsribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

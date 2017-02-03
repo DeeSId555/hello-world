@@ -1,0 +1,1524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Signposting Opportunity</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Signposting Opportunities</value>
+    </caseValues>
+    <fields>
+        <help><!-- Please give a rough number of how many young people could take up this opportunity. --></help>
+        <label><!-- Approx number of volunteering places --></label>
+        <name>Approx_number_of_volunteering_places__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will there be an area for young people to store their bags and coats? --></help>
+        <label><!-- Area for bags and coats --></label>
+        <name>Area_for_bags_and_coats__c</name>
+    </fields>
+    <fields>
+        <label><!-- Availability --></label>
+        <name>Availability__c</name>
+        <picklistValues>
+            <masterLabel>Full</masterLabel>
+            <translation><!-- Full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Places available</masterLabel>
+            <translation><!-- Places available --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- # Available places --></label>
+        <name>Available_places__c</name>
+    </fields>
+    <fields>
+        <label><!-- Borough/area this applies to --></label>
+        <name>Borough_area_this_applies_to__c</name>
+        <picklistValues>
+            <masterLabel>Barking &amp; Dagenham</masterLabel>
+            <translation><!-- Barking &amp; Dagenham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barnet</masterLabel>
+            <translation><!-- Barnet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bexley</masterLabel>
+            <translation><!-- Bexley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birmingham</masterLabel>
+            <translation><!-- Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blackburn</masterLabel>
+            <translation><!-- Blackburn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brent</masterLabel>
+            <translation><!-- Brent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bromley</masterLabel>
+            <translation><!-- Bromley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burnley</masterLabel>
+            <translation><!-- Burnley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bury</masterLabel>
+            <translation><!-- Bury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSE Birmingham</masterLabel>
+            <translation><!-- CSE Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSW Birmingham</masterLabel>
+            <translation><!-- CSW Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Camden</masterLabel>
+            <translation><!-- Camden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>City of London</masterLabel>
+            <translation><!-- City of London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coventry</masterLabel>
+            <translation><!-- Coventry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Croydon</masterLabel>
+            <translation><!-- Croydon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dudley</masterLabel>
+            <translation><!-- Dudley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ealing</masterLabel>
+            <translation><!-- Ealing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enfield</masterLabel>
+            <translation><!-- Enfield --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Epsom</masterLabel>
+            <translation><!-- Epsom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Godalming</masterLabel>
+            <translation><!-- Godalming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greenwich</masterLabel>
+            <translation><!-- Greenwich --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hackney</masterLabel>
+            <translation><!-- Hackney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hammersmith &amp; Fulham</masterLabel>
+            <translation><!-- Hammersmith &amp; Fulham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haringey</masterLabel>
+            <translation><!-- Haringey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Harrow</masterLabel>
+            <translation><!-- Harrow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Havering</masterLabel>
+            <translation><!-- Havering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hillingdon</masterLabel>
+            <translation><!-- Hillingdon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hounslow</masterLabel>
+            <translation><!-- Hounslow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Islington</masterLabel>
+            <translation><!-- Islington --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kensington &amp; Chelsea</masterLabel>
+            <translation><!-- Kensington &amp; Chelsea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kingston</masterLabel>
+            <translation><!-- Kingston --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lambeth</masterLabel>
+            <translation><!-- Lambeth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lewisham</masterLabel>
+            <translation><!-- Lewisham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester</masterLabel>
+            <translation><!-- Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merton</masterLabel>
+            <translation><!-- Merton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N Warwickshire</masterLabel>
+            <translation><!-- N Warwickshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE Birmingham</masterLabel>
+            <translation><!-- NE Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NW Birmingham</masterLabel>
+            <translation><!-- NW Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newham</masterLabel>
+            <translation><!-- Newham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oldham</masterLabel>
+            <translation><!-- Oldham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preston</masterLabel>
+            <translation><!-- Preston --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redbridge</masterLabel>
+            <translation><!-- Redbridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reigate</masterLabel>
+            <translation><!-- Reigate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Richmond</masterLabel>
+            <translation><!-- Richmond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rochdale</masterLabel>
+            <translation><!-- Rochdale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S Warwickshire</masterLabel>
+            <translation><!-- S Warwickshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SE Birmingham</masterLabel>
+            <translation><!-- SE Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SW Birmingham</masterLabel>
+            <translation><!-- SW Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salford</masterLabel>
+            <translation><!-- Salford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sandwell</masterLabel>
+            <translation><!-- Sandwell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slough</masterLabel>
+            <translation><!-- Slough --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solihull</masterLabel>
+            <translation><!-- Solihull --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southwark</masterLabel>
+            <translation><!-- Southwark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staines</masterLabel>
+            <translation><!-- Staines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stockport</masterLabel>
+            <translation><!-- Stockport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surrey</masterLabel>
+            <translation><!-- Surrey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sutton</masterLabel>
+            <translation><!-- Sutton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tameside</masterLabel>
+            <translation><!-- Tameside --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tower Hamlets</masterLabel>
+            <translation><!-- Tower Hamlets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walsall</masterLabel>
+            <translation><!-- Walsall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waltham Forest</masterLabel>
+            <translation><!-- Waltham Forest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wandsworth</masterLabel>
+            <translation><!-- Wandsworth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warwickshire</masterLabel>
+            <translation><!-- Warwickshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Lancs</masterLabel>
+            <translation><!-- West Lancs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Westminster</masterLabel>
+            <translation><!-- Westminster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wigan</masterLabel>
+            <translation><!-- Wigan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Woking</masterLabel>
+            <translation><!-- Woking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wolverhampton</masterLabel>
+            <translation><!-- Wolverhampton --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Borough of Signposting Opp. --></label>
+        <name>Borough_of_Signposting_Opp__c</name>
+        <picklistValues>
+            <masterLabel>Barking &amp; Dagenham</masterLabel>
+            <translation><!-- Barking &amp; Dagenham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barnet</masterLabel>
+            <translation><!-- Barnet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bexley</masterLabel>
+            <translation><!-- Bexley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birmingham</masterLabel>
+            <translation><!-- Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blackburn</masterLabel>
+            <translation><!-- Blackburn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brent</masterLabel>
+            <translation><!-- Brent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bromley</masterLabel>
+            <translation><!-- Bromley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burnley</masterLabel>
+            <translation><!-- Burnley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bury</masterLabel>
+            <translation><!-- Bury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSE Birmingham</masterLabel>
+            <translation><!-- CSE Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSW Birmingham</masterLabel>
+            <translation><!-- CSW Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Camden</masterLabel>
+            <translation><!-- Camden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>City of London</masterLabel>
+            <translation><!-- City of London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coventry</masterLabel>
+            <translation><!-- Coventry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Croydon</masterLabel>
+            <translation><!-- Croydon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dudley</masterLabel>
+            <translation><!-- Dudley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ealing</masterLabel>
+            <translation><!-- Ealing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enfield</masterLabel>
+            <translation><!-- Enfield --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Epsom</masterLabel>
+            <translation><!-- Epsom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Godalming</masterLabel>
+            <translation><!-- Godalming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greenwich</masterLabel>
+            <translation><!-- Greenwich --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hackney</masterLabel>
+            <translation><!-- Hackney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hammersmith &amp; Fulham</masterLabel>
+            <translation><!-- Hammersmith &amp; Fulham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haringey</masterLabel>
+            <translation><!-- Haringey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Harrow</masterLabel>
+            <translation><!-- Harrow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Havering</masterLabel>
+            <translation><!-- Havering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hillingdon</masterLabel>
+            <translation><!-- Hillingdon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hounslow</masterLabel>
+            <translation><!-- Hounslow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Islington</masterLabel>
+            <translation><!-- Islington --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kensington &amp; Chelsea</masterLabel>
+            <translation><!-- Kensington &amp; Chelsea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kingston</masterLabel>
+            <translation><!-- Kingston --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lambeth</masterLabel>
+            <translation><!-- Lambeth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lewisham</masterLabel>
+            <translation><!-- Lewisham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manchester</masterLabel>
+            <translation><!-- Manchester --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merton</masterLabel>
+            <translation><!-- Merton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N Warwickshire</masterLabel>
+            <translation><!-- N Warwickshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE Birmingham</masterLabel>
+            <translation><!-- NE Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NW Birmingham</masterLabel>
+            <translation><!-- NW Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newham</masterLabel>
+            <translation><!-- Newham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oldham</masterLabel>
+            <translation><!-- Oldham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preston</masterLabel>
+            <translation><!-- Preston --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redbridge</masterLabel>
+            <translation><!-- Redbridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reigate</masterLabel>
+            <translation><!-- Reigate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Richmond</masterLabel>
+            <translation><!-- Richmond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rochdale</masterLabel>
+            <translation><!-- Rochdale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S Warwickshire</masterLabel>
+            <translation><!-- S Warwickshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SE Birmingham</masterLabel>
+            <translation><!-- SE Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SW Birmingham</masterLabel>
+            <translation><!-- SW Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salford</masterLabel>
+            <translation><!-- Salford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sandwell</masterLabel>
+            <translation><!-- Sandwell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slough</masterLabel>
+            <translation><!-- Slough --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solihull</masterLabel>
+            <translation><!-- Solihull --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southwark</masterLabel>
+            <translation><!-- Southwark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staines</masterLabel>
+            <translation><!-- Staines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stockport</masterLabel>
+            <translation><!-- Stockport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surrey</masterLabel>
+            <translation><!-- Surrey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sutton</masterLabel>
+            <translation><!-- Sutton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tameside</masterLabel>
+            <translation><!-- Tameside --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tower Hamlets</masterLabel>
+            <translation><!-- Tower Hamlets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walsall</masterLabel>
+            <translation><!-- Walsall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waltham Forest</masterLabel>
+            <translation><!-- Waltham Forest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wandsworth</masterLabel>
+            <translation><!-- Wandsworth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warwickshire</masterLabel>
+            <translation><!-- Warwickshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Lancs</masterLabel>
+            <translation><!-- West Lancs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Westminster</masterLabel>
+            <translation><!-- Westminster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wigan</masterLabel>
+            <translation><!-- Wigan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Woking</masterLabel>
+            <translation><!-- Woking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wolverhampton</masterLabel>
+            <translation><!-- Wolverhampton --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- he action Challengers need to take in order to take up the opportunity --></help>
+        <label><!-- Young Person sign-up action --></label>
+        <name>Challenger_sign_up_action__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the cluster the volunteering opportunity occurs in --></help>
+        <label><!-- Cluster --></label>
+        <name>Cluster__c</name>
+        <relationshipLabel><!-- Signposting Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Confirmed Involvement --></label>
+        <name>Confirmed_Involvement__c</name>
+        <picklistValues>
+            <masterLabel>Confirmed future involvement</masterLabel>
+            <translation><!-- Confirmed future involvement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Definitely not</masterLabel>
+            <translation><!-- Definitely not --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Confirmed volunteers --></label>
+        <name>Confirmed_volunteers__c</name>
+    </fields>
+    <fields>
+        <help><!-- Year cycle of the volunteering opportunity. --></help>
+        <label><!-- Cycle --></label>
+        <name>Cycle__c</name>
+        <picklistValues>
+            <masterLabel>2015</masterLabel>
+            <translation><!-- 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016 C1</masterLabel>
+            <translation><!-- 2016 C1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016 C2</masterLabel>
+            <translation><!-- 2016 C2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2017 C1</masterLabel>
+            <translation><!-- 2017 C1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2017 C2</masterLabel>
+            <translation><!-- 2017 C2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2018 C1</masterLabel>
+            <translation><!-- 2018 C1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2018 C2</masterLabel>
+            <translation><!-- 2018 C2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2019 C1</masterLabel>
+            <translation><!-- 2019 C1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2019 C2</masterLabel>
+            <translation><!-- 2019 C2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2020 C1</masterLabel>
+            <translation><!-- 2020 C1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2020 C2</masterLabel>
+            <translation><!-- 2020 C2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2021 C1</masterLabel>
+            <translation><!-- 2021 C1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2021 C2</masterLabel>
+            <translation><!-- 2021 C2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2022 C1</masterLabel>
+            <translation><!-- 2022 C1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2022 C2</masterLabel>
+            <translation><!-- 2022 C2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2023 C1</masterLabel>
+            <translation><!-- 2023 C1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2023 C2</masterLabel>
+            <translation><!-- 2023 C2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2024 C1</masterLabel>
+            <translation><!-- 2024 C1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2024 C2</masterLabel>
+            <translation><!-- 2024 C2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2025 C1</masterLabel>
+            <translation><!-- 2025 C1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2025 C2</masterLabel>
+            <translation><!-- 2025 C2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Are volunteers required to have a DBS check? --></help>
+        <label><!-- DBS check? --></label>
+        <name>DBS_check__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the DBS check paid by the partner? --></help>
+        <label><!-- DBS paid by partner? --></label>
+        <name>DBS_paid_by_partner__c</name>
+    </fields>
+    <fields>
+        <help><!-- Input date once partner definitely confirmed, they are able to support the stated number of volunteers. --></help>
+        <label><!-- Date Partner capacity confirmed --></label>
+        <name>Date_Partner_capacity_confirmed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date(s) of the volunteering opportunity --></help>
+        <label><!-- Date (s) --></label>
+        <name>Date_s__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date on which this volunteering opportunity should no longer be offered to young people --></help>
+        <label><!-- Date this opportunity expires --></label>
+        <name>Date_this_opportunity_expires__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description of organisation (from the organisation&apos;s record) --></help>
+        <label><!-- Description of organisation --></label>
+        <name>Description_of_organisation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Give details of mobility and access issues --></help>
+        <label><!-- Details of mobility and access issues --></label>
+        <name>Details_of_mobility_and_access_issues__c</name>
+    </fields>
+    <fields>
+        <help><!-- Give details of any specific safety equipment needed to be able to volunteer with the partner? --></help>
+        <label><!-- Details of safety equipment required --></label>
+        <name>Details_of_safety_equipment_required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Directions to Welcome Day 3 --></label>
+        <name>Directions_to_Welcome_Day_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Directions to Welcome Day 4 --></label>
+        <name>Directions_to_Welcome_Day_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Directions to welcome day 1 --></label>
+        <name>Directions_to_welcome_day_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Directions to welcome day 2 --></label>
+        <name>Directions_to_welcome_day_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Are there any other disability access issues with this partner? --></help>
+        <label><!-- Disability access issues? --></label>
+        <name>Disability_access_issues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display on TCS home page --></label>
+        <name>Display_on_TCS_home_page__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do-it opportunity ref --></label>
+        <name>Do_it_opportunity_ref__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filled placements --></label>
+        <name>Filled_placements__c</name>
+    </fields>
+    <fields>
+        <label><!-- Frequency --></label>
+        <name>Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Irregular</masterLabel>
+            <translation><!-- Irregular --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Full description of the opportunity --></help>
+        <label><!-- Full description --></label>
+        <name>Full_description__c</name>
+    </fields>
+    <fields>
+        <label><!-- HS Cluster --></label>
+        <name>HS_Cluster__c</name>
+        <picklistValues>
+            <masterLabel>BCHIC</masterLabel>
+            <translation><!-- BCHIC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BHEN</masterLabel>
+            <translation><!-- BHEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EALING</masterLabel>
+            <translation><!-- EALING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HIHO</masterLabel>
+            <translation><!-- HIHO --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HS Geocode last modified --></label>
+        <name>HS_Geocode_last_modified__c</name>
+    </fields>
+    <fields>
+        <help><!-- Latitude coordinates used for the HeadStart Website --></help>
+        <label><!-- HS Latitude --></label>
+        <name>HS_Latitude__c</name>
+    </fields>
+    <fields>
+        <help><!-- Longitude used for the HeadStart Website --></help>
+        <label><!-- HS Longitude --></label>
+        <name>HS_Longitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signposting Opp Owner (Systems use) --></label>
+        <name>HS_Owner_Systems_use__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signposting Opportunity Owner --></label>
+        <name>HS_Owner__c</name>
+        <relationshipLabel><!-- Signposting Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Is this Volunteering Opportunity used by Head Start? --></help>
+        <label><!-- HS Volunteering Opp. --></label>
+        <name>HS_Volunteering_Opp__c</name>
+    </fields>
+    <fields>
+        <label><!-- HeadStart Region --></label>
+        <name>HeadStart_Region__c</name>
+        <relationshipLabel><!-- Signposting Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Health &amp; Safety notes --></label>
+        <name>Health_Safety_notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Who will give the Health and Safety briefing at the start of the day to the young people? Enter the details here --></help>
+        <label><!-- Health and Safety briefing --></label>
+        <name>Health_and_Safety_briefing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image Link --></label>
+        <name>Image_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image? --></label>
+        <name>Image__c</name>
+    </fields>
+    <fields>
+        <help><!-- Image representing the volunteering opportunity --></help>
+        <label><!-- Image of opportunity --></label>
+        <name>Image_of_opportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image preview --></label>
+        <name>Image_preview__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual or Group --></label>
+        <name>Individual_or_Group__c</name>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation><!-- Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Induction Date and Time --></label>
+        <name>Induction_Date_and_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Induction Details --></label>
+        <name>Induction_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Induction Location --></label>
+        <name>Induction_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is it locked? --></label>
+        <name>Is_it_locked__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the venue in a part of town where it is safe and advisable for young people from another part of town to come to? Tick the box if yes --></help>
+        <label><!-- Is the venue in a safe area? --></label>
+        <name>Is_the_venue_in_a_safe_area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is the volunteering opportunity quality? --></label>
+        <name>Is_the_volunteering_opportunity_quality__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- LH Geo Code last modified --></label>
+        <name>LH_Geo_Code_last_modified__c</name>
+    </fields>
+    <fields>
+        <help><!-- Latitude coordinates used for the Logging Hours Website --></help>
+        <label><!-- LH Latitude --></label>
+        <name>LH_Latitude__c</name>
+    </fields>
+    <fields>
+        <help><!-- Longitude used for the Logging Hours Website --></help>
+        <label><!-- LH Longitude --></label>
+        <name>LH_Longitude__c</name>
+    </fields>
+    <fields>
+        <help><!-- What level of first aid cover is provided by the partner? --></help>
+        <label><!-- Level of first aid cover? --></label>
+        <name>Level_of_first_aid_cover__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level of public liability insurance --></label>
+        <name>Level_of_public_liability_insurance__c</name>
+    </fields>
+    <fields>
+        <help><!-- The address, excluding postcode, of the volunteering opportunity --></help>
+        <label><!-- Location (address) of opportunity --></label>
+        <name>Location_address_of_opportunity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the location and directions (if useful) of Welcome day 1.  If you require more space continue using Location of Welcome day 1b --></help>
+        <label><!-- Location of Welcome day 1a --></label>
+        <name>Location_of_Welcome_day_1a__c</name>
+    </fields>
+    <fields>
+        <help><!-- Continuation field if requiring more space for location and direction for Welcome day 1 --></help>
+        <label><!-- Location of Welcome day 1b --></label>
+        <name>Location_of_Welcome_day_1b__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location of Welcome day 2a --></label>
+        <name>Location_of_Welcome_day_2a__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location of Welcome day 2b --></label>
+        <name>Location_of_Welcome_day_2b__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location of Welcome day 3a --></label>
+        <name>Location_of_Welcome_day_3a__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location of Welcome day 3b --></label>
+        <name>Location_of_Welcome_day_3b__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location of Welcome day 4a --></label>
+        <name>Location_of_Welcome_day_4a__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location of Welcome day 4b --></label>
+        <name>Location_of_Welcome_day_4b__c</name>
+    </fields>
+    <fields>
+        <help><!-- The postcode of where the volunteering opportunity is located --></help>
+        <label><!-- Location (postcode) of the opportunity --></label>
+        <name>Location_postcode_of_the_opportunity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Signpost main contact --></help>
+        <label><!-- Main Contact --></label>
+        <name>Main_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main Opportunity Type --></label>
+        <name>Main_Opportunity_Type__c</name>
+        <picklistValues>
+            <masterLabel>Animals &amp; Wildlife</masterLabel>
+            <translation><!-- Animals &amp; Wildlife --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Art</masterLabel>
+            <translation><!-- Art --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Befriending &amp; Buddying</masterLabel>
+            <translation><!-- Befriending &amp; Buddying --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Management &amp; Research</masterLabel>
+            <translation><!-- Business Management &amp; Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campaigning &amp; lobbying</masterLabel>
+            <translation><!-- Campaigning &amp; lobbying --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Career development &amp; work experience</masterLabel>
+            <translation><!-- Career development &amp; work experience --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Children</masterLabel>
+            <translation><!-- Children --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communication &amp; public speaking</masterLabel>
+            <translation><!-- Communication &amp; public speaking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community development</masterLabel>
+            <translation><!-- Community development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Design &amp; Technology</masterLabel>
+            <translation><!-- Design &amp; Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disability</masterLabel>
+            <translation><!-- Disability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elderly</masterLabel>
+            <translation><!-- Elderly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Events and festivals</masterLabel>
+            <translation><!-- Events and festivals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fundraising</masterLabel>
+            <translation><!-- Fundraising --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gardening</masterLabel>
+            <translation><!-- Gardening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Human rights</masterLabel>
+            <translation><!-- Human rights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Life Skills</masterLabel>
+            <translation><!-- Life Skills --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mentoring</masterLabel>
+            <translation><!-- Mentoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Music &amp; Production</masterLabel>
+            <translation><!-- Music &amp; Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poverty Reduction</masterLabel>
+            <translation><!-- Poverty Reduction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practical work &amp; DIY</masterLabel>
+            <translation><!-- Practical work &amp; DIY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Management</masterLabel>
+            <translation><!-- Project Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sports Development</masterLabel>
+            <translation><!-- Sports Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teaching training &amp; coaching</masterLabel>
+            <translation><!-- Teaching training &amp; coaching --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology &amp; Computers</masterLabel>
+            <translation><!-- Technology &amp; Computers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Theatre &amp; Performance</masterLabel>
+            <translation><!-- Theatre &amp; Performance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Youth Work</masterLabel>
+            <translation><!-- Youth Work --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Main contact email --></label>
+        <name>Main_contact_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main contact number --></label>
+        <name>Main_contact_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nid --></label>
+        <name>Nid__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the TCS KO that the opportunity is being offered at --></help>
+        <label><!-- Offered at TCS KO? --></label>
+        <name>Offered_at_TCS_KO__c</name>
+        <picklistValues>
+            <masterLabel>2012 October</masterLabel>
+            <translation><!-- 2012 October --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- City in which the opportunity is taking place. --></help>
+        <label><!-- Opportunity City --></label>
+        <name>Opportunity_City__c</name>
+    </fields>
+    <fields>
+        <help><!-- Post code of where the opportunity is taking place. --></help>
+        <label><!-- Opportunity Post code --></label>
+        <name>Opportunity_Post_code__c</name>
+    </fields>
+    <fields>
+        <help><!-- 1st line of address of where the opportunity is taking place. --></help>
+        <label><!-- Opportunity Street --></label>
+        <name>Opportunity_Street__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select as many descriptions of the type of opportunity as possible --></help>
+        <label><!-- Opportunity types/filters --></label>
+        <name>Opportunity_type__c</name>
+        <picklistValues>
+            <masterLabel>Animals &amp; Wildlife</masterLabel>
+            <translation><!-- Animals &amp; Wildlife --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Art</masterLabel>
+            <translation><!-- Art --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Befriending &amp; Buddying</masterLabel>
+            <translation><!-- Befriending &amp; Buddying --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Management &amp; Research</masterLabel>
+            <translation><!-- Business Management &amp; Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campaigning &amp; lobbying</masterLabel>
+            <translation><!-- Campaigning &amp; lobbying --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Career development &amp; work experience</masterLabel>
+            <translation><!-- Career development &amp; work experience --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Children</masterLabel>
+            <translation><!-- Children --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communication &amp; public speaking</masterLabel>
+            <translation><!-- Communication &amp; public speaking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community development</masterLabel>
+            <translation><!-- Community development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Design &amp; Technology</masterLabel>
+            <translation><!-- Design &amp; Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disability</masterLabel>
+            <translation><!-- Disability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elderly</masterLabel>
+            <translation><!-- Elderly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Events and festivals</masterLabel>
+            <translation><!-- Events and festivals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fundraising</masterLabel>
+            <translation><!-- Fundraising --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gardening</masterLabel>
+            <translation><!-- Gardening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Human rights</masterLabel>
+            <translation><!-- Human rights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Life Skills</masterLabel>
+            <translation><!-- Life Skills --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mentoring</masterLabel>
+            <translation><!-- Mentoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Music &amp; Production</masterLabel>
+            <translation><!-- Music &amp; Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poverty Reduction</masterLabel>
+            <translation><!-- Poverty Reduction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practical work &amp; DIY</masterLabel>
+            <translation><!-- Practical work &amp; DIY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Management</masterLabel>
+            <translation><!-- Project Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sports Development</masterLabel>
+            <translation><!-- Sports Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teaching training &amp; coaching</masterLabel>
+            <translation><!-- Teaching training &amp; coaching --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology &amp; Computers</masterLabel>
+            <translation><!-- Technology &amp; Computers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Theatre &amp; Performance</masterLabel>
+            <translation><!-- Theatre &amp; Performance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Youth Work</masterLabel>
+            <translation><!-- Youth Work --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The organisation the volunteering opportunity is with --></help>
+        <label><!-- Organisation --></label>
+        <name>Organisation__c</name>
+        <relationshipLabel><!-- Signposting Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Other Requiements --></label>
+        <name>Other_Requiements__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does the venue have other mobility and access problems? --></help>
+        <label><!-- Other mobility and access issues? --></label>
+        <name>Other_mobility_and_access_issues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Publish to HS Website --></label>
+        <name>Publish_to_HS_Website__c</name>
+    </fields>
+    <fields>
+        <help><!-- Signposting Opportunities Name
+Organisation
+Location (address)
+Opportunity Post code
+Opportunity types
+Main Opportunity Types
+Summary description
+Full description
+Signposting Opp type
+Date(s)
+Young Person Sign-up action
+Sign. opp. Owner --></help>
+        <label><!-- Publish to LH Website --></label>
+        <name>Publish_to_LH_Website__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check box when this volunteering opportunity should be published on the website --></help>
+        <label><!-- Publish to website --></label>
+        <name>Publish_to_website__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rating --></label>
+        <name>Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reasons by not quality --></label>
+        <name>Reasons_by_not_quality__c</name>
+    </fields>
+    <fields>
+        <help><!-- Do they have a safeguarding policy? Tick the box if yes --></help>
+        <label><!-- Safeguarding policy --></label>
+        <name>Safeguarding_policy__c</name>
+    </fields>
+    <fields>
+        <label><!-- SalesforceVOId --></label>
+        <name>SalesforceVOId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will there be beneficiaries/service users involved/present on the day? --></help>
+        <label><!-- Service users present? --></label>
+        <name>Service_users_present__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signposting Opp. type --></label>
+        <name>Signposting_Opp_type__c</name>
+        <picklistValues>
+            <masterLabel>Community Group</masterLabel>
+            <translation><!-- Community Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volunteering</masterLabel>
+            <translation><!-- Volunteering --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Signposting Opportunities Name --></label>
+        <name>Signposting_Opportunities_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Are there any specific aspects we should be aware of with regard to 16-18 year olds? --></help>
+        <label><!-- Specific aspects for 16-18 year olds --></label>
+        <name>Specific_aspects_for_16_18_year_olds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specific safety equipment needed? --></label>
+        <name>Specific_safety_equipment_needed1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is there any specific safety equipment needed to be able to volunteer with the partner? --></help>
+        <label><!-- Specific safety equipment needed? --></label>
+        <name>Specific_safety_equipment_needed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will the event be suitable for a YP who has a hearing impairment? --></help>
+        <label><!-- Suitable for hearing impaired? --></label>
+        <name>Suitable_for_hearing_impaired__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will the event be suitable for a YP who has a severe learning difficulty? --></help>
+        <label><!-- Suitable for learning difficulties? --></label>
+        <name>Suitable_for_learning_difficulties__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will the event be suitable for a YP who has a severe mobility difficulty? --></help>
+        <label><!-- Suitable for mobility difficulties? --></label>
+        <name>Suitable_for_mobility_difficulties__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will the event be suitable for a YP who has a visual impairment? --></help>
+        <label><!-- Suitable for visually impaired? --></label>
+        <name>Suitable_for_visually_impaired__c</name>
+    </fields>
+    <fields>
+        <help><!-- Short summary description of the opportunity --></help>
+        <label><!-- Summary description --></label>
+        <name>Summary_description__c</name>
+    </fields>
+    <fields>
+        <help><!-- The time/s of the volunteering opportunity --></help>
+        <label><!-- Time (s) --></label>
+        <name>Time_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total HS Hours --></label>
+        <name>Total_HS_Hours__c</name>
+    </fields>
+    <fields>
+        <help><!-- total amount of hours from all contacts volunteering for this opportunity. --></help>
+        <label><!-- Total Hours volunteered --></label>
+        <name>Total_Hours_volunteered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volunteering Places Left --></label>
+        <name>Volunteering_Places_Left__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volunteering opportunity quality --></label>
+        <name>Volunteering_opportunity_quality__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Do they have a volunteers policy? Tick the checkbox if yes --></help>
+        <label><!-- Volunteers policy --></label>
+        <name>Volunteers_policy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Welcome Day 1 --></label>
+        <name>Welcome_Day_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Welcome Day 2 --></label>
+        <name>Welcome_Day_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Welcome Day 3 --></label>
+        <name>Welcome_Day_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Welcome Day 3 attachment link --></label>
+        <name>Welcome_Day_3_attachment_link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Welcome Day 4 --></label>
+        <name>Welcome_Day_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Welcome Day 4 attachment link --></label>
+        <name>Welcome_Day_4_attachment_link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Welcome Day Feedback --></label>
+        <name>Welcome_Day_Feedback__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter update here and then save --></help>
+        <label><!-- Welcome Day Feedback update --></label>
+        <name>Welcome_Day_Feedback_update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Welcome day 1 attachment link --></label>
+        <name>Welcome_day_1_attachment_link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Welcome day 2 attachment link --></label>
+        <name>Welcome_day_2_attachment_link__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is there access to all necessary areas, including lavatories, for someone in a wheelchair? Tick the checkbox if yes --></help>
+        <label><!-- Wheelchair accessibility --></label>
+        <name>Wheelchair_accessibility__c</name>
+    </fields>
+    <fields>
+        <help><!-- Who at the partner is first aid trained? --></help>
+        <label><!-- Who is first aid trained? --></label>
+        <name>Who_is_first_aid_trained__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zone --></label>
+        <name>Zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- count --></label>
+        <name>count__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Grad creation --></label>
+        <name>Grad_and_Do_It_creation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- HeadStart Creation --></label>
+        <name>HeadStart_Creation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TCN creation --></label>
+        <name>TCN_creation</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please see help text on Publish to LH Website for fields which must not be empty when publishing to website. --></errorMessage>
+        <name>All_Fields_populated_pre_LH_publish</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Add_news_item --></label>
+        <name>Add_news_item</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Upload_image --></label>
+        <name>Upload_image</name>
+    </webLinks>
+</CustomObjectTranslation>

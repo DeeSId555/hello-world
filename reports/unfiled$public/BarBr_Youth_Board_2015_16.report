@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>PHONE3</field>
+    </columns>
+    <columns>
+        <field>Contact.Assigned_Wave__c</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Action_Team_Youth_Board_Membership__c.Status__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>,Barnet Youth Board 2015-16,Hillingdon Youth Board 2015-16,Harrow Youth Board 2015-16,K&amp;C,H&amp;F,W&apos;Minst Youth Board 2015-16,HITCH Youth Board 2015-16,CAB Youth Board 2015-16</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Assigned_Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Barnet,Brent</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Action_Team_Youth_Board_Membership__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Wave Nominee,Member</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>BarBr Youth Board 2015-16</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Action_Team_Youth_Board_Membership__c@Action_Team_Youth_Board_Membership__c.Action_Team__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

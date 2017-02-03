@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_75820552</developerName>
+        <masterLabel>Zone assigned to</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>CUST_OWNER_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Helen Menczykowski</sourceValue>
+            </sourceValues>
+            <value>London North East</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Cardy Lee</sourceValue>
+            </sourceValues>
+            <value>London North West</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Holly Dowling</sourceValue>
+            </sourceValues>
+            <value>London South East</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Madeleine Auer</sourceValue>
+            </sourceValues>
+            <value>London South West</value>
+        </values>
+        <values>
+            <value>Warwickshire</value>
+        </values>
+        <values>
+            <value>Birmingham</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Ryan Shaw</sourceValue>
+            </sourceValues>
+            <value>Manchester</value>
+        </values>
+        <values>
+            <value>Lancashire</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jade Champagnie</sourceValue>
+            </sourceValues>
+            <value>B&amp;B</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Lydia Cotton</sourceValue>
+            </sourceValues>
+            <value>Surrey</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Rebekah Campbell</sourceValue>
+            </sourceValues>
+            <value>Yorkshire</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Rochelle Hadley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kate Knight</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Leke Sholuade</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lauren Whetton</sourceValue>
+            </sourceValues>
+            <value>Birmingham &amp; West Midlands</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>NCS_Data_Entry_Staging__c.YP_First_Name__c</field>
+    </columns>
+    <columns>
+        <field>NCS_Data_Entry_Staging__c.YP_Last_name__c</field>
+    </columns>
+    <columns>
+        <field>NCS_Data_Entry_Staging__c.City_Town__c</field>
+    </columns>
+    <columns>
+        <field>NCS_Data_Entry_Staging__c.Postal_Code__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>NCS_Data_Entry_Staging__c.Force_out_of_to_resolve_view__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_CREATED_DATE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>1/1/2016 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_OWNER_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>anthony mealand,brightgen,sidra</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>NCS_Data_Entry_Staging__c.Error_Messages__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Data staging errors - types</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$NCS_Data_Entry_Staging__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>NCS_Data_Entry_Staging__c.AP_received__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_93476780</developerName>
+        <masterLabel>Hours volunteered</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>HS_Activity__c.HS_Hours_Total__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>16</to>
+            </sourceValues>
+            <value>16 hours</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>16</from>
+                <to>19</to>
+            </sourceValues>
+            <value>16-19 hours</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>19</from>
+                <to>25</to>
+            </sourceValues>
+            <value>20-24 hours</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>25</from>
+                <to>30</to>
+            </sourceValues>
+            <value>25-30 hours</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>30</from>
+                <to>40</to>
+            </sourceValues>
+            <value>30-40 hours</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>40</from>
+            </sourceValues>
+            <value>40+ hours</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_Volunteering_hours__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.Date_HS_Application_form_received__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_Status__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 2 AND (3 or 4)</booleanFilter>
+        <criteriaItems>
+            <column>HS_Activity__c.Date_HS_Application_form_received__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>7/1/2014</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.Date_HS_Application_form_received__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>lessThan</operator>
+            <value>8/30/2014</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.HS_Hours_Total__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>16</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.HS_Volunteering_hours__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>16</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>HS_Activity__c.HS_Hours_Total__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_93476780</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Summer 2014 Completers by hours</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$HS_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

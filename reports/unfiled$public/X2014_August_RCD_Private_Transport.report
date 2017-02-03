@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Transport_order__c.Wave__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Transport_order__c.Journey__c</field>
+    </columns>
+    <columns>
+        <field>Transport_order__c.Method_of_Transport__c</field>
+    </columns>
+    <columns>
+        <field>Transport_order__c.Date__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Transport_order__c.Journey__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>rcd,rca,tc</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Transport_order__c.Method_of_Transport__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Private Transport</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Transport_order__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>journey ready</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2014 August RCD Private Transport</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Transport_order__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Transport_order__c.Journey__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Transport_order__c.Date__c</dateColumn>
+        <endDate>2014-08-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2014-08-01</startDate>
+    </timeFrameFilter>
+</Report>

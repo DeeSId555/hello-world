@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HS Event</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HS Events</value>
+    </caseValues>
+    <fields>
+        <label><!-- Corporate Partners --></label>
+        <name>Corporate_Partners__c</name>
+        <picklistValues>
+            <masterLabel>Berkeley Group</masterLabel>
+            <translation><!-- Berkeley Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bloomberg</masterLabel>
+            <translation><!-- Bloomberg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GLA</masterLabel>
+            <translation><!-- GLA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lloyds</masterLabel>
+            <translation><!-- Lloyds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Look</masterLabel>
+            <translation><!-- New Look --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Corporate Partner</masterLabel>
+            <translation><!-- No Corporate Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Starbucks</masterLabel>
+            <translation><!-- Starbucks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zendesk</masterLabel>
+            <translation><!-- Zendesk --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event Description --></label>
+        <name>Event_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Title --></label>
+        <name>Event_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- HS Event Type --></label>
+        <name>HS_Event_Type__c</name>
+        <relationshipLabel><!-- HS Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Publish to Website --></label>
+        <name>Publish_to_Website__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <relationshipLabel><!-- HS Events --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

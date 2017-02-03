@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>TCN Region (geographical area)</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Description_of_YPPG_travel_time_Wave1_11__c</fullName>
+        <description>Sentence describing the travel time that YP and PG should leave in order to ensure they reach venues on time. Used to merge into the timetables supplied to YP and PG for Waves 1 - 11</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sentence describing the travel time that YP and PG should leave in order to ensure they reach venues on time. Used to merge into the timetables supplied to YP and PG for Waves 1 - 11</inlineHelpText>
+        <label>Description of YPPG travel time Wave1-11</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Description_of_YPPG_travel_time_Wave_12__c</fullName>
+        <description>Sentence describing the travel time that YP and PG should leave in order to ensure they reach venues on time. Used to merge into the timetables supplied to YP and PG for Wave 12</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sentence describing the travel time that YP and PG should leave in order to ensure they reach venues on time. Used to merge into the timetables supplied to YP and PG for Wave 12</inlineHelpText>
+        <label>Description of YPPG travel time Wave 12</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>OBS_region__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field needs to be checked for the Region to show on the OBS website</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field needs to be checked for the Region to show on the OBS website</inlineHelpText>
+        <label>OBS region</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OBS_region_description__c</fullName>
+        <description>Description of region, for use in OBS when YP/PG selects school</description>
+        <externalId>false</externalId>
+        <label>OBS region description</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RCD_start_time__c</fullName>
+        <description>RCD start time for YP</description>
+        <externalId>false</externalId>
+        <inlineHelpText>RCD start time for YP</inlineHelpText>
+        <label>RCD start time YP</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Region_code__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Unique code for the region</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Unique code for the region</inlineHelpText>
+        <label>Region code</label>
+        <length>1</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Regional_lead_Programmes__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Regional lead within the Programmes dept</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Regional lead within the Programmes dept</inlineHelpText>
+        <label>Regional lead Programmes</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$User.UserType</field>
+                <operation>equals</operation>
+                <value>Standard</value>
+            </filterItems>
+            <filterItems>
+                <field>$Profile.UserType</field>
+                <operation>equals</operation>
+                <value>Standard</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Regions</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Showcase_end_time__c</fullName>
+        <externalId>false</externalId>
+        <label>Showcase end time</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Showcase_start_time__c</fullName>
+        <externalId>false</externalId>
+        <label>Showcase start time</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Regions</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Region_code__c</columns>
+        <columns>OBJECT_ID</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Showcase</fullName>
+        <columns>NAME</columns>
+        <columns>Showcase_start_time__c</columns>
+        <columns>Showcase_end_time__c</columns>
+        <columns>RCD_start_time__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Showcase and RCD</label>
+    </listViews>
+    <nameField>
+        <label>Region Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Regions</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 10.1.1 Autumn payment schedule - all staff (new template)</name>
+    <style>formalLetter</style>
+    <subject>Payment schedule for your role on the NCS Autumn programme</subject>
+    <textOnly>Please do not respond to this email. This email has been sent from an unattended mailbox and responses will not be reviewed. Please instead contact your local staffing team.
+Dear {!Job_placement__c.Contact_Name__c},
+
+Payment schedule for {!Job_placement__c.Wave__c}, clause 4.1
+
+Payment information for your employment contract with us on {!Job_placement__c.Wave__c} is listed below. This information is subject to you completing your employment with us in conjunction with the conditions in your contract.
+
+
+Payment overview
+
+You have been allocated to {!Job_placement__c.Wave__c} as a {!Job_placement__c.Role__c}.
+
+You are contracted to work on the NCS programme from {!Job_placement__c.Assignment_start_date__c} to {!Job_placement__c.Assignment_end_date__c} (&quot;Work Period&quot;), with {!Job_placement__c.Annual_Leave_entitlement__c} days (&quot;Holiday Period&quot;)] together referred to as a Wave Contract (a &quot;Wave Contract&quot;).
+
+You will be paid an amount of {!Job_placement__c.Total_gross_pay__c}.
+
+
+Staff working NCS: Real Challenge Action (November weekends)
+
+If your role is also required to work NCS: Real Challenge Action (NCS: RCA), you will be contracted to work two weekend dates in November.
+
+You will be paid the daily rate of {!Job_placement__c.Standard_daily_rate__c} for each weekend date you work (&quot;Work Period&quot;) plus {!Job_placement__c.RCA_Annual_Leave_entitlement__c} days (&quot;Holiday Period&quot;)], together referred to as a Weekend Contract (a &quot;Weekend Contract&quot;).
+
+This additional amount will be paid to you on 17/12/15.
+
+The NCS: RCA weekend dates take place on Saturday 14 November and Saturday 21 November.
+
+
+All payment amounts are calculated on the basis that you will work all days required of your role; any days of half days that you are absent or no longer required to work will be deducted from your pay.
+
+All of your pay will be subject to tax and National Insurance (NI) deductions. You will be able to review tax deductions on your payslip which is sent to you via email two days prior to your payment date. The Challenge is unable to answer or help with any tax queries; if you are concerned about your tax code, please contact HMRC directly.
+
+
+When will I receive this payment?
+
+You will be paid for your role on {!Job_placement__c.Wave__c} on {!Job_placement__c.Payroll_payment_date__c}.
+
+We pay our seasonal staff on a monthly basis, and aim to pay within 5 weeks of their completing a wave (where possible). For an overview of our Autumn payment dates please see this document.
+
+https://staffing.the-challenge.org/assets/Autumnpaymentdates_(2).pdf
+
+
+What next?
+
+You will receive a &apos;Payment Notification&apos; email outlining your approved pay at the end of your wave. If you are working over the NCS: RCA November dates, you will receive a separate payment notification email for each individual date you work.
+
+Workplace pension auto-enrollment: Due to new auto-enrollment legislation, employees of The Challenge, including a small number of seasonal staff, will be enrolled into a workplace pension scheme. Auto-enrollment does not occur until October 2015 and staff will have the opportunity to opt-out at this point. To see if you qualify for auto-enrollment, please see our FAQs.
+
+
+Any questions?
+
+If you have any questions about the payment schedule please contact your local staffing team. Alternatively, you can find information on the Autumn programme and the payment process on our FAQs.
+Best wishes,
+
+The Staffing Team
+The Challenge
+
+Email ref: CR 10.1.1</textOnly>
+    <type>html</type>
+</EmailTemplate>

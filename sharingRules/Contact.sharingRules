@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Call_centre_YP_contacts</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Call centre YP contacts</label>
+        <sharedTo>
+            <group>Call_Centre</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YP2013</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Franchise_YP2012</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Franchise YP2012</label>
+        <sharedTo>
+            <group>FranchisePartners186351</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YP2012</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Payonomy</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Payonomy</label>
+        <sharedTo>
+            <group>Payonomy</group>
+        </sharedTo>
+        <booleanFilter>1</booleanFilter>
+        <criteriaItems>
+            <field>LastModifiedById</field>
+            <operation>equals</operation>
+            <value>null</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Payonomy2</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Payonomy2</label>
+        <sharedTo>
+            <group>Payonomy</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>LastModifiedById</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Seasonal_staff_franchise</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Seasonal staff franchise</label>
+        <sharedTo>
+            <group>FranchisePartners186351</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Summer staff</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_Contacts_with_Partner_Users</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share Contacts with Partner Users</label>
+        <sharedTo>
+            <allPartnerUsers></allPartnerUsers>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>YP,YP2012A,YP2010,YP2012</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Staffing_agency</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Evolution&apos;s access to Staffing contacts</description>
+        <label>Staffing agency</label>
+        <sharedTo>
+            <role>Staffing_agency</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Summer staff</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>All_internal_users</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>All internal users</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Allexcludingfranchisepartners187091</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>All excluding franchise partners</label>
+        <sharedTo>
+            <group>Allexcludingfranchisepartners186351</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

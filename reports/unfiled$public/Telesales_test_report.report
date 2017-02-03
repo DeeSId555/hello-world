@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.NCS_Applications__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.NCS_Applications__r.Activities$Subject</field>
+    </columns>
+    <columns>
+        <field>Contact.NCS_Applications__r$Date_sign_up_received__c</field>
+    </columns>
+    <columns>
+        <field>Contact$NCS_Zone__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>(((2 AND (1 AND 3)) AND 4) AND 5) AND 6</booleanFilter>
+        <criteriaItems>
+            <column>Contact.NCS_Applications__r$Date_sign_up_received__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.NCS_Applications__r$Is_this_for_the_primary_Season__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$EOI_Priority__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>High,Medium,Low</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Waves_allocated_assign_reserve_WL__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>OBS User</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$LeadSource</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>School paper form (Marketing)</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$Id</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Telesales test report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Telesales_Contacts_and_NCS_Apps__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-11-29</startDate>
+    </timeFrameFilter>
+</Report>

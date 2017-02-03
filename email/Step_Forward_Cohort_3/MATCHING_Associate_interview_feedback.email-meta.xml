@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>8.1.16 (Workflow, Clicktools)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>MATCHING Associate interview feedback</name>
+    <style>none</style>
+    <subject>Please complete this interview feedback form today</subject>
+    <textOnly>Interview Feedback
+
+
+Hello {!Step_Forward_Associate_Attendance__c.Associate_First_Name__c},
+
+
+We hope your interview with  {!Step_Forward_Associate_Attendance__c.Employer_Name__c} went well, now it’s time to give us some feedback. This feedback is important as we want to know how well you feel you were matched.  Please complete the online feedback form today via the link below and make sure that you’re as honest as possible.
+
+
+Click here for the feedback form
+
+
+Best wishes,
+
+Step Forward Matching Team
+
+020 3542 2404. Option 5
+
+stepforward.interview@the-challenge.org
+
+(You can&apos;t reply to this email.  Please send a new email to the address above)
+
+
+
+
+
+
+
+
+
+
+www.stepforward.uk.com
+
+
+The Challenge Network is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 39 York Rd, London SE1 7NQ</textOnly>
+    <type>custom</type>
+</EmailTemplate>

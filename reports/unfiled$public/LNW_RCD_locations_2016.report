@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Wave__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$Booking_Date_Formula__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$What_date_time_should_the_wave_arrive__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r.Bookings__r$What_date_time_should_the_wave_leave__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r$Account__c</field>
+    </columns>
+    <columns>
+        <field>Account.Junctions__r$Address_to_use__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Junctions__r.Bookings__r$Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Barnet,Brent,Camden,Islington,Hammersmith &amp; Fulham,Kensington and Chelsea,Westminster,Harrow,Hillingdon</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Junctions__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Partner_or_Venue__c.RCD_Day_Venue_2016</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>LNW RCD locations 2016</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Usages_and_Bookings__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Account.Junctions__r.Bookings__r$Wave__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

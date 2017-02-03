@@ -1,0 +1,331 @@
+<!---------------------------------------------------------------------------------------------------------------------------
+Created By : Hardik Shah
+Purpose    : 1) Get direction on google map according to user selected transport mode(By Car, Public transport and Walking).
+             2) Find Transport mode of all journey time.
+Calling To : DirectionOnGoogleMapController class controller.
+Called By  : 
+---------------------------------------------------------------------------------------------------------------------------->
+<apex:page standardController="Transport_order__c" extensions="DirectionOnGoogleMapExtension" sidebar="false">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <title>Travel modes in directions</title>
+    <style>
+        html, body, #map-canvas 
+        {
+            height: 100%;
+            margin: 0px;
+            padding: 0px
+        }
+        #panel 
+        {
+            position: absolute;
+            top: 5px;
+            left: 50%;
+            margin-left: -180px;
+            z-index: 5;
+            background-color: #fff;
+            padding: 5px;
+            border: 1px solid #999;
+        }
+        <!-- This css is for all transport mode journey time -->
+        .inputFormForJourneyTime     
+        {
+            background: none repeat scroll 0 0 #F2F2F2;
+            border: 1px solid #DDDDDD;
+            margin-top: 5px;
+            padding: 5px;
+
+        }
+        .adp-placemark{margin-top:0;}
+        .adp-warnbox{display:none;}
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+    <!-- This pannel is used to show drop down menu of Transport mode -->
+    <apex:outputPanel id="panel">
+        <b>Mode of Travel: </b>
+        <select id="mode" onchange="calcRouteBetweenTwoAddress(document.getElementById('mode').value,'journeyOfGraph');">
+            <option value="TravelModeType">Select Mode Of Transport</option>
+            <option value="DRIVING">Driving</option>
+            <option value="WALKING">Walking</option>
+            <option value="TRANSIT">Public Transport</option>
+        </select>
+    </apex:outputPanel>
+    
+    <!-- This dive is used to display Google map and Journey time of all transport mode -->
+    <div>
+        <table width="100%">
+            <tr>
+                <td style ="width:30%;vertical-align:top;">
+                    <div>
+                        <h1 style = "display: block;">Journey Time:</h1>
+                        <form class = "inputFormForJourneyTime">
+                            <!-- Table of journey time of all transport mode. -->
+                            <table style ="width:100%">
+                                <tr>
+                                    <td width="35%">Driving</td>
+                                    <td><input id="DrivingID" type="text" name="DrivingTime" style ="width:100%"/></td>
+                                </tr>    
+                                <tr>
+                                    <td>Walking</td>
+                                    <td><input id="WalkingID" type="text" name="WalkingTime" style ="width:100%"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Public Transport</td>
+                                    <td><input id="TransitID" type="text" name="TransitTime" style ="width:100%"/></td>
+                                </tr>     
+                            </table>
+                            <!-- This hidden fields is used to store journey time in seconds.-->
+                            <input id = "DrivingTimeSecondsID" type="hidden" name="DrivingTimeSeconds"/>
+                            <input id = "WalkingTimeSecondsID" type="hidden" name="WalkingTimeSeconds"/>
+                            <input id = "TransitTimeSecondsID" type="hidden" name="TransitTimeSeconds"/>
+                        </form>
+                    </div>
+                    <div id = "addressInstruction" style="overflow:auto; max-height: 370px; margin-top: 10px;">
+
+                    </div>
+
+                </td>
+                <!-- This is used to show Google Map. -->
+                <td style="vertical-align:top;">
+                    <div id="map-canvas" style ="height:500px; "> </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <apex:form >
+        <!-- This action function is used to store all transport mode for journey time to respective fields of 
+        Transport order object. -->
+        <apex:actionFunction action="{!saveAllTransportModeJourneyTime}" name="journeyTimeOfAllTransportMode" rerender="">
+            <apex:param name="drivingJourney" assignTo="{!drivingJourneyTime }" value="" />
+            <apex:param name="walkingJourney" assignTo="{!walkingJourneyTime }" value="" />
+            <apex:param name="publicJourney" assignTo="{!publicTransportJourneyTime }" value="" />
+        </apex:actionFunction>
+    </apex:form>
+    <script>
+        var fromAddressTransportOrder;
+        var toAddressTransportOrder;
+        var directionsDisplay;
+        var directionsService = new google.maps.DirectionsService();
+        var map;
+        var haight = new google.maps.LatLng(52.2801241,-1.5847416);
+        var oceanBeach = new google.maps.LatLng(37.7683909618184, -122.51089453697205);
+        var departureTime;
+
+
+        /** @Purpose : Initialize Google Map.      
+          * @Param   : -
+          * @return  : -
+        */ 
+        function initialize() 
+        {
+            directionsDisplay = new google.maps.DirectionsRenderer();
+            var mapOptions ={
+                                zoom: 7,
+                                center: haight
+                            }           
+            
+           
+            map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+            directionsDisplay.setMap(map);
+            directionsDisplay.setPanel(document.getElementById('addressInstruction'));
+        }
+        
+        function getUnixtimestamp(dateTimeVal) 
+        {
+            if(dateTimeVal !='')
+                //return Math.round((new Date(dateTimeVal)).getTime() / 1000);
+                return Math.round((new Date(dateTimeVal)).getTime());
+            else
+                return '';
+        }
+        
+        /** @Purpose : Fetch source and destination address from Controller    
+          * @Param   : -
+          * @return  : -
+        */ 
+        function addressInitialize()
+        {
+            fromAddressTransportOrder = '{!fromAddressOfTransportOrder}';      
+            toAddressTransportOrder = '{!toAddressOfTransportOrder}';
+            departureTime = getUnixtimestamp('{!earliestDepartureTime}');
+        }
+         
+        /** @Purpose    : 1) According to selected transport mode show pictorial representation of source and destination 
+          *                  address on Google map.
+          *               2) Find Journey time of all transport mode.
+          *            
+          * @Param      : String selectedMode  : This is used to store Transport mode type.
+          *               String isJourneyTime : This is used to check whether this request is for Journey Time 
+          *                                      calculation or to show only direction on Google map.
+          * @Calling To : directionsService.route(request, function(response, status){}) : This Method is used
+          *               make Google API request to find journey direction and travelling time.
+        */ 
+        function calcRouteBetweenTwoAddress(selectedMode, isJourneyTime) 
+        {
+                
+                if(selectedMode != 'TravelModeType')
+                {
+                    //Check Whether address is null or not.
+                    if(fromAddressTransportOrder !='' && toAddressTransportOrder != '')
+                    {
+                        // Request string for Google API to find route according to selected transport mode.
+                        var request;
+                        if(departureTime !=''){
+                            request =    {
+                                                origin: fromAddressTransportOrder  ,
+                                                destination: toAddressTransportOrder  ,
+                                                travelMode: google.maps.TravelMode[selectedMode],
+                                                transitOptions:{
+                                                                  departureTime: new Date([departureTime])
+                                                               }
+                                         };
+                        }
+                        else {
+                            request =    {
+                                                origin: fromAddressTransportOrder  ,
+                                                destination: toAddressTransportOrder  ,
+                                                travelMode: google.maps.TravelMode[selectedMode]
+                                         };
+                        
+                        }
+                        
+                        // This is used to make Google API request and according to response display journey directions and time.
+                        // Here we are Checking whether this request is for only journey time or journey direction. According to 
+                        // that output will display.               
+                        directionsService.route(request, function(response, status) {
+                                            
+                            // This is for status code is ok or not
+                            if (status == google.maps.DirectionsStatus.OK) 
+                            {
+                                // This if condition is used to check whether request is for journey time or journey directions.
+                                // This true part is used to show journey directions
+                                if(isJourneyTime !='journeyTimeForAllMode')
+                                    directionsDisplay.setDirections(response);
+                                else // Find the distance between two address according to travel mode.
+                                {
+                                    
+                                    var instanceOfResponseGoogleAPIDuration = response.routes[0].legs[0].duration;
+                                    var journeyTimeInHumanReadableFormat = instanceOfResponseGoogleAPIDuration.text;
+                                    var journeyTimeInSeconds = instanceOfResponseGoogleAPIDuration.value;
+        
+                                    if(selectedMode == 'DRIVING')
+                                    {
+                                      document.getElementById('DrivingID').value = journeyTimeInHumanReadableFormat;
+                                      document.getElementById('DrivingTimeSecondsID').value = journeyTimeInSeconds ;
+                                    }
+                                    else
+                                    if(selectedMode == 'WALKING')
+                                    {
+                                      document.getElementById('WalkingID').value = journeyTimeInHumanReadableFormat; 
+                                      document.getElementById('WalkingTimeSecondsID').value = journeyTimeInSeconds ;
+        
+                                    }
+                                    else
+                                    if(selectedMode == 'TRANSIT')
+                                    {
+                                      document.getElementById('TransitID').value = journeyTimeInHumanReadableFormat;
+                                      document.getElementById('TransitTimeSecondsID').value = journeyTimeInSeconds;
+                                    }
+                                    
+                                }
+                                
+                            }
+                            else
+                            if(status == google.maps.DirectionsStatus.ZERO_RESULTS)
+                            {
+                                alert('No route could be found between the origin and destination');  
+                            }
+                            else
+                            if(status == google.maps.DirectionsStatus.INVALID_REQUEST )
+                            {
+                                alert('The provided request was invalid.');  
+                            }
+                            else
+                            if(status == google.maps.DirectionsStatus.NOT_FOUND )
+                            {
+                                alert("At least one of the locations specified in the request's  origin, destination, or waypoints could not be geocoded.");  
+                            }
+                            else
+                            if(status == google.maps.DirectionsStatus.UNKNOWN_ERROR )
+                            {
+                                alert("A directions request could not be processed due to a server error. \n The request may succeed if you try again.");  
+                            }
+                            else
+                            if(status == google.maps.DirectionsStatus.REQUEST_DENIED )
+                            {
+                                alert("Indicates that the service denied use of the directions service by your application.");  
+                            }
+                            else
+                            if(status == google.maps.DirectionsStatus.OVER_QUERY_LIMIT )
+                            {
+                                alert("Indicates the service has received too many requests from \n your application within the allowed time period.");  
+                            }
+                    });
+                 }
+                 else
+                 alert('From or To address should not be empty');
+             }      
+        }
+        
+        // This if will find journey time from Google API.
+        // before finding it will check whether do we need to check Journey time from Google. If yes then true part 
+        // will execute otherwise false part will fetched from Transport order object.      
+        if('{!getTimeDurationOfAllTransportMode}' == 'true')
+        {
+            
+            addressInitialize();
+            if(fromAddressTransportOrder !='' && toAddressTransportOrder != '')
+            {
+            
+                calcRouteBetweenTwoAddress('DRIVING','journeyTimeForAllMode');
+                calcRouteBetweenTwoAddress('WALKING','journeyTimeForAllMode');
+                calcRouteBetweenTwoAddress('TRANSIT','journeyTimeForAllMode');     
+                window.onload=function()
+                              {
+                                 
+                                 // After 2 seconds this will set value of all transport mode journey time to respective 
+                                 // Input text field.
+                                 setTimeout(function()
+                                 {
+                                     var drivingTimeInSeconds = parseInt(document.getElementById('DrivingTimeSecondsID').value);
+                                     var walkingTimeInSeconds = parseInt(document.getElementById('WalkingTimeSecondsID').value);
+                                     var transitTimeInSeconds = parseInt(document.getElementById('TransitTimeSecondsID').value);
+                                     
+                                     if(isNaN(drivingTimeInSeconds))
+                                           drivingTimeInSeconds = 0;
+                                     if(isNaN(walkingTimeInSeconds))
+                                           walkingTimeInSeconds = 0;
+                                     if(isNaN(transitTimeInSeconds ))
+                                           transitTimeInSeconds = 0;      
+                                     journeyTimeOfAllTransportMode( drivingTimeInSeconds,
+                                                                    walkingTimeInSeconds,
+                                                                    transitTimeInSeconds 
+                                                                  );     
+                                 },2000);           
+                                
+                              };
+           }   
+            
+           
+        }// This else will find journey time from apex controller(saved record)
+        else
+        {
+           
+           addressInitialize();
+           if(fromAddressTransportOrder !='' && toAddressTransportOrder != '')
+           {
+               window.onload=function()
+                             {
+                                  
+                                  document.getElementById('DrivingID').value = '{!drivingJourneyTimeInHumanReadable }';
+                                  document.getElementById('WalkingID').value = '{!walkingJourneyTimeInHumanReadable }';
+                                  document.getElementById('TransitID').value = '{!publicJourneyTimeInHumanReadable }';
+                             };    
+           }
+          
+        }
+        
+        // Initialize Google Map.
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script> 
+</apex:page>

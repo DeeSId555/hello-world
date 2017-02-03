@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CA 3.1 Unplaced Feb candidates - thank you for your interest - archived</name>
+    <style>formalLetter</style>
+    <subject>Thank you for your interest in the NCS February programme</subject>
+    <textOnly>Please do not reply to this email. This email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your local staffing team.
+Dear {!Contact.FirstName},
+
+
+
+Thank you for applying to work with us again on the NCS February programme. We had an incredible number of applications of the February programme, and not enough roles available to place everyone - we are sorry that we were unable to allocate you this time.
+
+
+
+2015 was the first year in which we carried out a February programme and, much like our autumn wave, it was a much smaller, scaled down version of the summer programme.
+
+
+
+Although this may be frustrating, the good news is that the recruitment process for summer is now open!
+
+
+
+2015 NCS summer programme
+
+
+
+For 2015 we are recruiting 3500 seasonal staff for the summer programme and returning staff are always hugely valued. Please ensure that, if you are interested in working the summer programme, you update your Essential Information and Availability as soon as you are offered a role. The sooner you complete this information the better your chances are for first preferences.
+
+
+
+If you have any questions please contact me, quoting the email reference number below in any correspondence. For more information on the NCS summer programme, head to our website, or read our FAQs
+
+
+
+Thank you again for your ongoing interest in The Challenge and the NCS programmes.
+
+
+
+Best wishes,
+{!Contact.OwnerFullName}
+
+{!Contact.Contact_Owner_alternative_email__c}
+
+The Challenge
+
+
+
+Email reference: CA 3.1</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Parents information evening IWL email invite 2013</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Parents info evening IWL email invite 2013</name>
+    <style>none</style>
+    <subject>Your invitation to The Challenge Information Evening</subject>
+    <textOnly>The Challenge Network
+
+Take on NCS with The Challenge this summer
+
+
+Dear Parent/Guardian of {!Contact.Name} and {!Contact.FirstName},
+
+We hope you are looking forward to the prospect of starting The Challenge!
+
+You are both warmly invited to a short information evening about NCS with The Challenge. At this event you will be able to meet fellow parents and participants, and ask us any questions you may have. Please also use this evening as an opportunity to bring any outstanding medical forms or payments. Without these we will be unable to let {!Contact.FirstName} take part in The Challenge.
+
+The information evening will take place on {!Wave_Selection__c.Info_Eve_Date__c} at {!Wave_Selection__c.Info_Eve_time__c} at {!Wave_Selection__c.Info_Eve_venue_and_address__c}.  The evening will last approximately one hour, and there will be a short presentation beginning within 15 minutes of this start time. Please arrive promptly so that we are able to start on time.
+
+We may also be holding an additional information evening on another day that week for people taking part from different areas, so if you cannot make this one, but would like to meet us, then please do contact us for details.
+
+We would be grateful if you could confirm your attendance by emailing {!Wave_Selection__c.Info_Eve_SC_email_address__c} or by calling me on {!Wave_Selection__c.Info_Eve_Mktg_mobile_number__c}. You can also use this opportunity to ask any questions you may have regarding this evening or the programme in general.
+
+Please note that attendance at this event is for parents/guardians and the participant, however if you would like to bring along anyone else you think might be interested in The Challenge we would be happy to welcome them and discuss finding them a place. Please let us know when you confirm your attendance.
+
+We are very excited about the prospect of {!Contact.FirstName} starting The Challenge and very much hope to see you at the information evening
+
+Yours sincerely,
+
+{!Wave_Selection__c.Info_Eve_Mktg_lead_name__c}
+
+The Challenge Network
+
+the-challenge.org  ncsyes.co.uk
+/thechallengenetwork    /ncs
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

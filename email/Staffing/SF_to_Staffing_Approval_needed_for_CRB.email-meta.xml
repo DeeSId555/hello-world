@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This is sent to Staffing when TNC approval needed is TRUE</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SF to Staffing: Approval needed for CRB</name>
+    <style>none</style>
+    <subject>FAO:{!Contact.Staffing_Zone__c} Staffing Manager - DBS Approval needed</subject>
+    <textOnly>Hi,
+
+Evolution have indicated that {!Job_Application__c.Contact_Name__c}&apos;s CRB requires approval from you.
+
+These are the notes they added into the CRB Notes:
+{!Job_Application__c.CRB_Issues__c}.
+
+Click on the link to view the record {!Job_Application__c.Link}.
+
+This is a standard email, sent automatically when TCN Approval needed = True</textOnly>
+    <type>custom</type>
+</EmailTemplate>

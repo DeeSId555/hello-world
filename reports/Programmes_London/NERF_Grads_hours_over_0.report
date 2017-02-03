@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>PHONE3</field>
+    </columns>
+    <columns>
+        <field>Contact.Total_hours_at_signposting_opportunities__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Calculation_of_total_hours__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Hours_required_for_CwD__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Wave_started__c</field>
+    </columns>
+    <description>To see which grads have logged hours on TCS website</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Cluster__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>NERF</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Total_hours_at_signposting_opportunities__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>NERF Grads hours over 0</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Contact.Total_hours_at_signposting_opportunities__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

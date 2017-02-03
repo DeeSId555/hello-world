@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Step Forward Account Management</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Step Forward Account Management</value>
+    </caseValues>
+    <fields>
+        <help><!-- Please enter any notes that might be relevant  to this process. --></help>
+        <label><!-- ASK notes --></label>
+        <name>ASK_notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Address --></label>
+        <name>Account_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Local Authority --></label>
+        <name>Account_Local_Authority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Owner info --></label>
+        <name>Account_Owner_info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Post Code --></label>
+        <name>Account_Post_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Step Forward Account Management --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account main Phone number --></label>
+        <name>Account_main_Phone_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account main contact name --></label>
+        <name>Account_main_contact_name__c</name>
+    </fields>
+    <fields>
+        <help><!-- A lookup to the main account email address --></help>
+        <label><!-- Account main email address --></label>
+        <name>Account_main_email_address__c</name>
+    </fields>
+    <fields>
+        <help><!-- All jobs by Accounting pathway --></help>
+        <label><!-- Accounting Jobs --></label>
+        <name>Accounting_Jobs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ask status --></label>
+        <name>Ask_status__c</name>
+        <picklistValues>
+            <masterLabel>Account owner contacted</masterLabel>
+            <translation><!-- Account owner contacted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ask in progress; no contact yet</masterLabel>
+            <translation><!-- Ask in progress; no contact yet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confirmed</masterLabel>
+            <translation><!-- Confirmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not agreed</masterLabel>
+            <translation><!-- Not agreed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable to contact account owner</masterLabel>
+            <translation><!-- Unable to contact account owner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- All jobs by Business Support Services pathway --></help>
+        <label><!-- BA Jobs --></label>
+        <name>BSS_Jobs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact responsibility --></label>
+        <name>Contact_responsibility__c</name>
+        <picklistValues>
+            <masterLabel>Champion</masterLabel>
+            <translation><!-- Champion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decision maker</masterLabel>
+            <translation><!-- Decision maker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hiring manager</masterLabel>
+            <translation><!-- Hiring manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The date the account owner was contacted, this is a very informative help text. --></help>
+        <label><!-- Date account owner contacted --></label>
+        <name>Date_account_owner_contacted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employer Recruitment Stage --></label>
+        <name>Employer_Recruitment_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Follow up call sorted</masterLabel>
+            <translation><!-- Follow up call sorted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Email</masterLabel>
+            <translation><!-- Left Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting booked</masterLabel>
+            <translation><!-- Meeting booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting held - in discussion</masterLabel>
+            <translation><!-- Meeting held - in discussion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting held -not interested</masterLabel>
+            <translation><!-- Meeting held -not interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Answer</masterLabel>
+            <translation><!-- No Answer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spoke to Decision Maker - not interested</masterLabel>
+            <translation><!-- Spoke to Decision Maker - not interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spoke to Decision Maker - not interested, contact next year</masterLabel>
+            <translation><!-- Spoke to Decision Maker - not interested, contact next year --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spoke to Decision Maker - think about it</masterLabel>
+            <translation><!-- Spoke to Decision Maker - think about it --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spoke to Gatekeeper - worth phoning again</masterLabel>
+            <translation><!-- Spoke to Gatekeeper - worth phoning again --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spoke to gatekeeper - give up</masterLabel>
+            <translation><!-- Spoke to gatekeeper - give up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vacancy confirmed</masterLabel>
+            <translation><!-- Vacancy confirmed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Employer Size --></label>
+        <name>Employer_Size__c</name>
+        <picklistValues>
+            <masterLabel>1-50</masterLabel>
+            <translation><!-- 1-50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1000+</masterLabel>
+            <translation><!-- 1000+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>251-1000</masterLabel>
+            <translation><!-- 251-1000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>51-250</masterLabel>
+            <translation><!-- 51-250 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- First Call Date --></label>
+        <name>First_Call_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- 7 days after initial contact --></help>
+        <label><!-- Follow up date --></label>
+        <name>Follow_up_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Form: Name of SF coordinator --></label>
+        <name>Form_Name_of_SF_coordinator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hospitality Jobs --></label>
+        <name>Hospitality_Jobs__c</name>
+    </fields>
+    <fields>
+        <help><!-- All jobs by IT, Software and Telecoms pathway --></help>
+        <label><!-- IT, Software Telecoms Jobs --></label>
+        <name>IT_Software_Telecoms_Jobs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Ask required? --></label>
+        <name>Is_Ask_required__c</name>
+    </fields>
+    <fields>
+        <label><!-- London borough --></label>
+        <name>London_borough__c</name>
+        <picklistValues>
+            <masterLabel>Barking And Dagenham</masterLabel>
+            <translation><!-- Barking And Dagenham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barnet</masterLabel>
+            <translation><!-- Barnet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bexley</masterLabel>
+            <translation><!-- Bexley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brent</masterLabel>
+            <translation><!-- Brent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bromley</masterLabel>
+            <translation><!-- Bromley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Camden</masterLabel>
+            <translation><!-- Camden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>City Of London</masterLabel>
+            <translation><!-- City Of London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Croydon</masterLabel>
+            <translation><!-- Croydon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ealing</masterLabel>
+            <translation><!-- Ealing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enfield</masterLabel>
+            <translation><!-- Enfield --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greenwich</masterLabel>
+            <translation><!-- Greenwich --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hackney</masterLabel>
+            <translation><!-- Hackney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hammersmith And Fulham</masterLabel>
+            <translation><!-- Hammersmith And Fulham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haringey</masterLabel>
+            <translation><!-- Haringey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Harrow</masterLabel>
+            <translation><!-- Harrow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Havering</masterLabel>
+            <translation><!-- Havering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hillingdon</masterLabel>
+            <translation><!-- Hillingdon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hounslow</masterLabel>
+            <translation><!-- Hounslow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Islington</masterLabel>
+            <translation><!-- Islington --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kensington And Chelsea</masterLabel>
+            <translation><!-- Kensington And Chelsea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kingston Upon Thames</masterLabel>
+            <translation><!-- Kingston Upon Thames --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lambeth</masterLabel>
+            <translation><!-- Lambeth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lewisham</masterLabel>
+            <translation><!-- Lewisham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merton</masterLabel>
+            <translation><!-- Merton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newham</masterLabel>
+            <translation><!-- Newham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redbridge</masterLabel>
+            <translation><!-- Redbridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Richmond Upon Thames</masterLabel>
+            <translation><!-- Richmond Upon Thames --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southwark</masterLabel>
+            <translation><!-- Southwark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sutton</masterLabel>
+            <translation><!-- Sutton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tower Hamlets</masterLabel>
+            <translation><!-- Tower Hamlets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waltham Forest</masterLabel>
+            <translation><!-- Waltham Forest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wandsworth</masterLabel>
+            <translation><!-- Wandsworth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Westminster</masterLabel>
+            <translation><!-- Westminster --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Main contact email --></label>
+        <name>Main_contact_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main contact numbers --></label>
+        <name>Main_contact_numbers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting Booked Date --></label>
+        <name>Meeting_Booked_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting Held Date --></label>
+        <name>Meeting_Held_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Method of contact --></label>
+        <name>Method_of_contact__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Face to face</masterLabel>
+            <translation><!-- Face to face --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please select all pathways this organisation is eligible for --></help>
+        <label><!-- Pathways eligible for --></label>
+        <name>Pathways_eligible_for__c</name>
+        <picklistValues>
+            <masterLabel>Accounting</masterLabel>
+            <translation><!-- Accounting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Administration</masterLabel>
+            <translation><!-- Business Administration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Early Years Education</masterLabel>
+            <translation><!-- Early Years Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitality</masterLabel>
+            <translation><!-- Hospitality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT, Software and Telecoms</masterLabel>
+            <translation><!-- IT, Software and Telecoms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media &amp; Digital Media</masterLabel>
+            <translation><!-- Social Media &amp; Digital Media --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Has there been previous contact or involvement with this account by Step Forward? --></help>
+        <label><!-- Previous StepFwd Contat/Involvement? --></label>
+        <name>Previous_StepFwd_Contat_Involvement__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Step Forward Account Management Recruitment Cycle --></help>
+        <label><!-- Recruitment cycle --></label>
+        <name>Recruitment_cycle__c</name>
+        <picklistValues>
+            <masterLabel>2014</masterLabel>
+            <translation><!-- 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2015</masterLabel>
+            <translation><!-- 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016</masterLabel>
+            <translation><!-- 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2017</masterLabel>
+            <translation><!-- 2017 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2018</masterLabel>
+            <translation><!-- 2018 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2019</masterLabel>
+            <translation><!-- 2019 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2020</masterLabel>
+            <translation><!-- 2020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2021</masterLabel>
+            <translation><!-- 2021 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2022</masterLabel>
+            <translation><!-- 2022 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2023</masterLabel>
+            <translation><!-- 2023 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2024</masterLabel>
+            <translation><!-- 2024 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2025</masterLabel>
+            <translation><!-- 2025 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Registered Organisation Address --></label>
+        <name>Registered_Organisation_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Registered Organisation Name --></label>
+        <name>Registered_Organisation_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Second Call Date --></label>
+        <name>Second_Call_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select the sector this organisation is in --></help>
+        <label><!-- Sector --></label>
+        <name>Sector__c</name>
+        <picklistValues>
+            <masterLabel>Accountancy, banking and finance</masterLabel>
+            <translation><!-- Accountancy, banking and finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business, consulting and management</masterLabel>
+            <translation><!-- Business, consulting and management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charities and voluntary work</masterLabel>
+            <translation><!-- Charities and voluntary work --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Creative arts and culture</masterLabel>
+            <translation><!-- Creative arts and culture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy and utilities</masterLabel>
+            <translation><!-- Energy and utilities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering and manufacturing</masterLabel>
+            <translation><!-- Engineering and manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environment and agriculture</masterLabel>
+            <translation><!-- Environment and agriculture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health and social care</masterLabel>
+            <translation><!-- Health and social care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitality, tourism and sport</masterLabel>
+            <translation><!-- Hospitality, tourism and sport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT and information services</masterLabel>
+            <translation><!-- IT and information services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Law</masterLabel>
+            <translation><!-- Law --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing, advertising and PR</masterLabel>
+            <translation><!-- Marketing, advertising and PR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media and publishing</masterLabel>
+            <translation><!-- Media and publishing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property and construction</masterLabel>
+            <translation><!-- Property and construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public sector</masterLabel>
+            <translation><!-- Public sector --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recruitment and HR</masterLabel>
+            <translation><!-- Recruitment and HR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Science and pharmaceuticals</masterLabel>
+            <translation><!-- Science and pharmaceuticals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teaching and education</masterLabel>
+            <translation><!-- Teaching and education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transport and logistics</masterLabel>
+            <translation><!-- Transport and logistics --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- A general summary of what the organisation is all about --></help>
+        <label><!-- Short description of account --></label>
+        <name>Short_description_of_account__c</name>
+    </fields>
+    <fields>
+        <help><!-- All jobs by Social Media &amp; Digital Marketing pathway --></help>
+        <label><!-- Social Media &amp; Digital Marketing Jobs --></label>
+        <name>Social_Media_Digital_Marketing_Jobs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please note that if the account is from an internal source, and you would like to use its contacts, you will need to go through the ASK process and contact the account owner for permission. --></help>
+        <label><!-- Source of employer opportunity --></label>
+        <name>Source_of_opportunity__c</name>
+        <picklistValues>
+            <masterLabel>Account contact</masterLabel>
+            <translation><!-- Account contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cold Call Database</masterLabel>
+            <translation><!-- Cold Call Database --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cold call</masterLabel>
+            <translation><!-- Cold call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current employer</masterLabel>
+            <translation><!-- Current employer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal lead</masterLabel>
+            <translation><!-- Internal lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job listing</masterLabel>
+            <translation><!-- Job listing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Networking Event</masterLabel>
+            <translation><!-- Networking Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal contact</masterLabel>
+            <translation><!-- Personal contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media</masterLabel>
+            <translation><!-- Social Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step Forward contact</masterLabel>
+            <translation><!-- Step Forward contact --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stage Visual --></label>
+        <name>Stage_Visual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Step Forward Notes --></label>
+        <name>Step_Forward_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Step Forward Owner --></label>
+        <name>Step_Forward_Owner__c</name>
+        <relationshipLabel><!-- Step Forward Account Management --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Main account contact --></help>
+        <label><!-- Step Forward main contact --></label>
+        <name>Step_Forward_main_contact__c</name>
+        <relationshipLabel><!-- Step Forward Account Management --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Please enter your notes here --></help>
+        <label><!-- Step Forward notes entry --></label>
+        <name>Step_Forward_notes_entry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Third Call Date --></label>
+        <name>Third_Call_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Warm or cold contact --></help>
+        <label><!-- Warm/Cold --></label>
+        <name>Warm_Cold__c</name>
+        <picklistValues>
+            <masterLabel>Cold</masterLabel>
+            <translation><!-- Cold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warm</masterLabel>
+            <translation><!-- Warm --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- All jobs by Working with Children pathway --></help>
+        <label><!-- Early Years Education --></label>
+        <name>Working_with_Children_Jobs__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please select the relevant value from the tickbox --></errorMessage>
+        <name>Ask_outcome</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the date the account owner was contacted --></errorMessage>
+        <name>Must_enter_Ask_contact_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select from the list --></errorMessage>
+        <name>Must_enter_Source</name>
+    </validationRules>
+</CustomObjectTranslation>

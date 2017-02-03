@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Connected to &apos;Send CVs, Skills &amp; Experience Email&apos;</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>*WORKFLOW CVs, Skills &amp; Experience</name>
+    <style>none</style>
+    <subject>*SUBMIT ASAP* CV templates and pathway choices</subject>
+    <textOnly>Your CV and Skills &amp; Experience Survey
+
+
+Dear {!Step_Forward_Activity__c.Associate__c},
+
+Thanks for attending yesterday&apos;s fast-track assessment for Step Forward and congratulations on receiving a conditional offer!
+
+Before you can move on to the final matching stage of the application process, you will need to submit 2 more things - firstly, a great quality CV (only the best will be accepted!) and secondly, complete a skills survey.
+
+**Remember that we are only matching candidates for interview until mid-late August, so to be in with a chance of securing an interview, you must complete both things ASAP**
+
+1) Skills &amp; Experience Survey
+
+Please complete this form below to let us know your interests and experience in relation to your pathways.
+
+{!Step_Forward_Activity__c.Link_to_Pathway_Confirmation_Form__c}
+
+(this link is personal to you so please do not forward this email to anyone else).
+
+2) Your CVs
+
+As mentioned at yesterday&apos;s assessment – the final versions of your CV (1 for each pathway) must be written in the Step Forward template and uploaded via the link below.
+
+You must show your CV to a teacher or parent and ask them for feedback before you upload it. Unchecked CVs will not be accepted and put forward to potential employers.
+
+A reminder of some key things to include on your CV:
+
+Personal Statement:
+
+3-5 key strengths
+A sentence ori two explaining why you want to do your chosen pathway
+Achievements you’re most proud of
+200 words max.
+
+Work Experience:
+
+Short concise sentences /bullet points describing not only your responsibilities, but also the skills gained in each role.
+
+Your CV Templates
+
+We&apos;ve included the templates below for you again. Download the template CV for each of your pathways, if you haven&apos;t already. Please remember that you must use these documents as a template to write your personal CV. Unfortunately we cannot accept a CV using a different format.
+
+{!Step_Forward_Activity__c.CV_Download_Links__c}
+
+Upload your CV
+
+You must save a final copy of your CV as a Word document, then upload and send it to us by selecting the below
+
+{!Step_Forward_Activity__c.Link_To_CV_Upload_Forms__c}
+
+Click here for a video with a step by step guide on writing your CV.
+
+Remember we can’t put you forward for interviews unless you have sent us your CV.
+
+If you have any questions about how to complete these, do give us a ring – we are here to help!  You can contact us on 0203 793 7333 or email step.forwar@the-challenge.org
+
+Best wishes,
+
+Step Forward
+
+step.forward@the-challenge.org</textOnly>
+    <type>custom</type>
+</EmailTemplate>

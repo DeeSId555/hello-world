@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CA 2.2 Reminder email to sign contract - archived</name>
+    <style>formalLetter</style>
+    <subject>URGENT: Please respond to your contract</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your Staffing Team.
+
+Dear {!Contact.FirstName},
+
+You will have received an email recently reminding you to sign your contract for your role on the February NCS programme.
+
+System hiccups!
+
+We experienced some technical problems on our Staffing Website, and you may have been unable to respond to your contract online - apologies for any confusion, irritation or inconvenience caused.
+
+What do I need to do now?
+
+The technical problems on the Staffing Website have now been resolved. Please login to the Staffing Website and read your full contract under the ‘My Role’ section. You will then be able to submit a response to your contract on the same page.
+
+Login to the staffing website here: https://staffing.the-challenge.org/Login.aspx?ReturnUrl=%2fsecure%2f
+
+
+Please submit a response within 24 hours.
+
+We are required to have signed contracts before you work on the programme. If you can’t agree to your contract in this time frame please contact your local Staffing team  to resolve any issues or we may need to replace you.
+
+Missing a contract?
+
+If you feel you are missing your contract please contact your local Staffing representative quoting the email reference number in any correspondence.
+
+We hope that you are excited about starting your role, and look forward to working with you on the programme!
+
+
+Many thanks for your cooperation.
+
+Best wishes,
+
+{!Contact.OwnerFirstName}
+The Challenge
+{!Contact.OwnerEmail}
+Email reference: CA 2.2
+
+VISIT NCSTHECHALLENGE.ORG NOW</textOnly>
+    <type>html</type>
+</EmailTemplate>

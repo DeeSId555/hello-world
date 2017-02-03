@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>ICC will send this email if we need consent from the YP&apos;s legal guardian.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2016 - ICC Sending Consent form</name>
+    <style>none</style>
+    <subject>NCS - Consent Statement</subject>
+    <textOnly>NCSTHECHALLENGE.ORG
+
+NCS: Consent Statement
+
+
+Dear Parent or Guardian of {!Contact.Name},
+
+Following on from our earlier telephone conversaion I have attached our consent statement to this email.
+
+This is to be signed by {!Contact.FirstName}&apos;s legal guardian, agreeing to our terms and conditions giving permission for {!Contact.FirstName} to attend NCS.
+
+After you have signed the consent statement please send a scan (or digital photo) to  inclusion.support@the-challenge.org
+
+Alternatively you can send this by post addressed to Inclusion and Support Service, Elizabeth House, 39 York Road, London, SE1 7NQ.
+
+If you have any questions, feel free to contact us by calling 0333 150 2425 or emailing  inclusion.support@the-challenge.org  - we’ll be happy to help.
+
+Yours sincerely,
+
+
+Tanya Dunne
+Head of Customer Services - The Challenge
+
+© The Challenge Network.
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This email for use with new drop down to replace &apos;under 18 reject&apos;</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>1.3.3 Staffing Rejection at screening -YP with insufficient skills</name>
+    <style>freeForm</style>
+    <subject>Re: Application for NCS with The Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+Dear {!Contact.FirstName}
+
+Thank you for applying for a role at NCS with The Challenge. Unfortunately, we will not be able to take your application further.
+
+We would, however, look forward to an application from you in the future when you have had the opportunity to develop your skills further.
+
+Thanks you for your continued interest in NCS with The Challenge and I hope we will be able to work together in the future.
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+{!Contact.Contact_Owner_alternative_email__c}
+NCS with The Challenge
+CR 1.3.3</textOnly>
+    <type>html</type>
+</EmailTemplate>

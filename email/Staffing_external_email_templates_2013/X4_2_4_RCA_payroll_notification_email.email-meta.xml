@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Copy verified and workflow active</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>4.2.4 RCA payroll notification email</name>
+    <style>freeForm</style>
+    <subject>Notification of NCS: Real Challenge Action and Graduation Payment</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Job_placement__c.Staffing_Associate_email__c}
+
+Dear {!Job_placement__c.Contact_Name__c},
+
+Many thanks for taking on the role of {!Job_placement__c.Role__c} on the NCS: Real Challenge Action (RCA) and (if applicable) NCS: Graduations days.
+
+Your total gross pay for your work on {!Job_placement__c.Assignment_end_date__c} will be {!Job_placement__c.Total_gross_pay__c}. This will be subject to tax and NI deductions.
+
+When will I receive this payment?
+
+The table below outlines when each RCA day will be paid.
+
+NCS: Real Challenge Action (RCA)
+
+RCA1 : Sat 6-Sep 2014, Sun 7-Sep 2014 PAYROLL DATE 23-Sep 2014
+
+RCA2: Sat 13-Sep 2014, Sun 14-Sep 2014 PAYROLL DATE 23-Sep 2014
+
+RCA3: Sat 20-Sep 2014, Sun 21-Sep 2014 PAYROLL DATE 22-Oct 2014
+
+RCA4: Sat 27-Sep 2014, Sun 28-Sep 2014 PAYROLL DATE 22-Oct 2014
+
+Graduation: On or before 12th October 2014 PAYROLL DATE 22-Oct 2014
+
+On your payslip (sent via email on {!Job_placement__c.Payroll_payment_date__c}), you will see the total amount which you will receive. 
+
+Due to new auto-enrolment legislation, employees of The Challenge, including summer staff, will be automatically enrolled in a workplace pension scheme. This is a way of saving for your retirement that&apos;s arranged by your employer. This affects staff who earn more than £473 per month and are aged between 22 and state pension age. You will see your pension contributions on your payslip. For further information, please go to www.gov.uk/workplace-pensions. 
+
+Further communications, including how to opt out, will be sent to you in September where we will start to process all summer staff for auto-enrolment. At that point, if you would like to opt out of the pension scheme, you will need an opt-out form from The People&apos;s Pension, which you can get from and then return to by emailing thepeoplespension@bandce.co.uk. Staff will have a one month opt-out period: this begins from the day the administration for their becoming a member is complete, i.e. one month from the date of enrolment, which will not take place until September.
+
+If you have any questions, do let us know.
+
+We very much hope you enjoyed working on NCS with The Challenge.
+
+Yours sincerely,
+
+{!Job_placement__c.Staffing_Associate__c}
+{!Job_placement__c.Staffing_Associate_email__c}
+NCS with The Challenge
+CR 4.2.4</textOnly>
+    <type>html</type>
+</EmailTemplate>

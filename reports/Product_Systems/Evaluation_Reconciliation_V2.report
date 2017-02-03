@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Job_placement__c$Name</field>
+    </columns>
+    <columns>
+        <field>Job_placement__c$Job_Application__c.Id</field>
+    </columns>
+    <columns>
+        <field>Job_placement__c$Contact__c</field>
+    </columns>
+    <columns>
+        <field>Job_placement__c$Wave__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Job_placement__c$Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Confirmed,Withdrew from wave (during programme) - available for ad hoc days,Withdrew from TCN (during programme) - see withdrawal date,Dismissed - see dismissal date,Role finished</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_placement__c$Contact__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>test,Staffing</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Evaluation Reconciliation V2</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Job_Placements__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Job_placement__c$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Job_placement__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

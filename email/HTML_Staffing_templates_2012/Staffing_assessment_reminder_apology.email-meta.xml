@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>reminder to assessment with link and apology</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Staffing assessment reminder/apology</name>
+    <style>none</style>
+    <subject>Assessment booking</subject>
+    <textOnly>APOLOGIES FOR THE RECENT EMAIL SENT
+
+Dear {!Contact.FirstName}
+ 
+Please accept my apologies for the &quot;Project Volunteer&quot; email that was sent in error to you recently. 
+ 
+I have noticed that you have not yet booked an assessment date. If you still would like to proceed with your application, please click on the link below and submit your booking as soon as possible. 
+
+http://thechallenge.secure.force.com/AvailableDates?key={!Job_Application__c.ContactId__c}&amp;Type={!Job_Application__c.00NC0000005EVyp}&amp;JType={!Job_Application__c.Id}
+ 
+If you no longer wish to be part of the assessment process, please email me at this email address to confirm that you would like to withdraw. 
+ 
+Apologies once again for any confusion caused and thank you for your interest in The Challenge.
+ 
+Best wishes, 
+ 
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.OwnerEmail}
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

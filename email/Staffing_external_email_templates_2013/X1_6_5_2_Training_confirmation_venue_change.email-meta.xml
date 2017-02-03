@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>DS 08/01/14: Modified merge fields for update to HR Event. Ao to check</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>1.6.5.2 Training confirmation (venue change)</name>
+    <style>freeForm</style>
+    <subject>Training confirmation - venue changed</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!HR_Event_Attendance__c.HR_Event_Owner_email__c}
+
+Dear {!HR_Event_Attendance__c.Candidate_Name__c},
+
+See below the details of your training session with us. Please note these details may have changed from your original booking.
+
+{!HR_Event__c.Date_time_location__c}
+
+The sessions will include various lively group activities. Please be prepared for training with the following:-.
+
+Bring a notepad and pen along with you.
+Some activities may take place outdoors, so please wear appropriate clothing.
+Prepare two icebreaker games/exercises to share with the group.
+Bring your passport/proof of identity along with you to training for DBS verification.
+
+Lunch will be provided. Please let us know if you have any specific dietary requirements.
+
+{!HR_Event_Attendance__c.Extra_info__c}
+{!HR_Event_Attendance__c.Packing_list__c}.
+
+Click on the button below for directions to the training venue.
+{!HR_Event_Attendance__c.Directions__c} 
+
+We look forward to seeing you again!
+
+Best wishes,
+
+{!HR_Event_Attendance__c.HR_event_Owner__c}
+{!HR_Event_Attendance__c.HR_Event_Owner_email__c}
+The Challenge Network
+
+
+
+
+CR 1.6.5</textOnly>
+    <type>html</type>
+</EmailTemplate>

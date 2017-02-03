@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>HeadStart Find Own Placement Confirmation - West</name>
+    <style>none</style>
+    <subject>HeadStart Confirmation</subject>
+    <textOnly>HeadStart | The Challenge
+
+Welcome to HeadStart London!
+
+This is a confirmation of your place on the programme
+
+
+Dear {!Contact.FirstName},
+
+Thank you for your application and welcome to HeadStart London.
+
+We’re really impressed you have decided to find your own volunteering placement. Whether you’re continuing with a volunteering placement you are already in, or you are finding something new, we have created this guide to help you.
+
+Logging hours
+
+Here is your unique login number that will enable you to log your hours. We ask everyone to log their hours so we can see how your volunteering is going. If you don’t log your hours we won’t know what your progress is and may assume you aren’t taking part in HeadStart.
+
+Your username and password to log your hours
+
+{!HS_Activity__c.YP_email_lookup__c}
+
+
+{!HS_Activity__c.Website_Login_Password__c}
+
+Remember, RESPECT is key. Treat your volunteering like you would a job. The more you put into it the more you will gain.
+
+Be there on time, don’t be late and plan ahead
+
+Give the organiser your contact details and vice-versa
+
+Arrange your next sessions
+
+Log your hours straight after
+
+
+If you haven’t already, please sign up to the HeadStart Kick Off on Saturday 25th!
+
+HeadStart London invites you to…….
+
+HeadStart Kick Off - 25th October 2014
+
+
+There are three options for you to attend - please click on your chosen time and follow the instructions on the Eventbrite page:
+
+9.30am - 12pm
+
+11.45am - 2.45pm
+
+1.30pm - 4.30pm
+
+
+
+The Kick Off will include an introduction to HeadStart, and the first HeadStart Workshop. You will also automatically receive your first volunteering hour by attending kick off
+
+University of West London Students&apos; Union, St Mary&apos;s Rd, Ealing, London W5 5RF
+
+Welcome to HeadStart London, see you next Saturday the 25th October at University of West London Students&apos; Union!
+
+HeadStart London Team
+
+LIKE:Facebook: /Londonheadstart
+
+EMAIL:headstart@the-challenge.org
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subsribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

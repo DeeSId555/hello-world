@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>CONNECTED TO WORKFLOW.  Sent 21/09/15</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Autumn 15 - Hours Verification</name>
+    <style>none</style>
+    <subject>HeadStart - Volunteering hours verification request</subject>
+    <textOnly>*|MC:SUBJECT|*
+
+This email is from HeadStart, asking you to verify volunteering hours.
+
+Hello.
+
+Hopefully you will have received an email from HeadStart on Wednesday regarding our verifying of hours process. This will have informed you about this email, asking you to verify if our young people did in fact complete 16 hours or more of volunteering with you. Thank you in advance for supporting us with this process.
+
+{!HS_Activity__c.Young_Person__c} has told us they have been volunteering with you
+
+Volunteering Hours logged by {!HS_Activity__c.Young_Person__c}: {!HS_Activity__c.HS_Hours_Total__c}
+
+
+We would be extremely grateful if you could please confirm whether the above volunteering hours {!HS_Activity__c.Young_Person__c} has logged are an accurate representation of the time they have spent assisting you since October. It is vital that we are able to verify these hours. This will ensure that everyone who volunteered for 16 hours will gain access to their guaranteed job interview.
+
+
+Please note: If the hours above are not correct, please answer &apos;NO&apos; and, in the comments box, input the correct number of hours you believe {!HS_Activity__c.Young_Person__c} has completed. We will then follow up with {!HS_Activity__c.Young_Person__c} directly.
+
+
+A huge thank you again for offering a young volunteer the opportunity to gain invaluable new skills and experiences. We sincerely hope that the time they have dedicated to your organisation has been beneficial and that you have enjoyed having them work with you. If you have any queries about this process, please get in touch with your HeadStart contact directly or the Central team via headstart@the-challenge.org. If you would like to give us any feedback on your HeadStart experience, we would greatly appreciate any comments in our Autumn 2016 Partner Survey.
+
+
+
+Kind regards,
+
+The HeadStart team
+
+
+
+Any questions? Email the HeadStart team, check out our website or get in touch on facebook
+
+
+follow on Twitter | friend on Facebook | website</textOnly>
+    <type>custom</type>
+</EmailTemplate>

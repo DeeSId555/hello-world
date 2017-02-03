@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Directing staff to SAW for Autumn Roles</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>CR 15 Autumn Availability Live</name>
+    <style>freeForm</style>
+    <subject>Let us know your availability for Autumn Programme!</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please contact your local staffing team.
+
+Dear {!Contact.FirstName},
+
+Thank you for working on NCS with The Challenge. We hope that you enjoyed your work with us this summer.
+
+AUTUMN PROGRAMME
+
+We are now recruiting for our autumn programme which runs over the last week of October and the 2 following weekends. For more information on dates for your role please see follow the link to Staffing Website (FAQ 4.13)
+https://staffing.the-challenge.org/frequently-asked-questions/
+
+The Autumn programme is a more compact version of the Summer programme and we will be delivering this to around 2000 young people and recruiting around 400 staff members.
+
+If you would like to work on the autumn programme please submit your availability via the  Staffing Website.ideally by the 15 September. We have limited roles so early submission of availability is recommend.
+https://staffing.the-challenge.org/secure/Jobs.aspx
+
+If you have any questions about the autumn programme, please do not hesitate to get in touch with your local staffing team.
+
+
+Best wishes,
+
+NCS with The Challenge
+
+CR 15</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,11 @@
+Dear {!Contact.OwnerFullName},
+
+One or both of the referees for {!Job_Application__c.Contact_Name__c} have given a negative reference. 
+Referee 1: {!Job_Application__c.Referee_1_response__c}
+Referee 2: {!Job_Application__c.Referee_2_response__c}
+
+Please review and decide whether the references given are acceptable or not {!Job_Application__c.Link}
+
+----------------------
+
+This is an automated email, sent when Referee 1 response = No and/or Referee 2 response = No

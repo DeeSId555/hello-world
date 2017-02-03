@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 10.7 Payment notification (waves with no advance)</name>
+    <style>formalLetter</style>
+    <subject>Payment notification for {!Job_placement__c.Wave__c}</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Job_placement__c.Staffing_Associate_email__c}.
+
+Dear {!Job_placement__c.Contact_Name__c},
+
+We hope that you had a great time on the programme! We have now processed payroll for your work on {!Job_placement__c.Wave__c}
+
+Summary of your approved payroll for {!Job_placement__c.Wave__c}
+
+Your gross pay is {!Job_placement__c.Total_Amount_Paid__c}. This payment covers a total of {!Job_placement__c.days_worked__c} days.
+
+This payment constitutes your work between the dates of {!Job_placement__c.Assignment_start_date__c} and {!Job_placement__c.Assignment_end_date__c}. You will receive this payment on {!Job_placement__c.Payroll_payment_date__c}.
+
+Your gross pay will be subject to tax and National Insurance (NI) deductions. On your payslip (sent via email on {!Job_placement__c.Payroll_payment_date__c}) you will see the total amount which you will receive with any tax deductions listed.
+
+Workplace pension auto-enrollment
+
+Due to new auto-enrollment legislation, employees of The Challenge, including a small number of seasonal staff, will be enrolled into a workplace pension scheme. Auto-enrollment does not occur until October 2015 and staff will have the opportunity to opt-out at this point. To see if you qualify for auto-enrollment, please see our FAQs.
+
+Additional payments
+
+You will receive a separate payment notification for each wave you work over the summer.
+
+If you feel that you are missing additional communications concerning your payment, please contact your local staffing team.
+
+Any questions?
+
+If you have any further questions about your payment, please contact your local staffing team quoting the email reference number in correspondence. Alternatively, information is available on our FAQs.
+
+Best wishes,
+The Challenge
+
+NCS Programme
+
+
+
+Email reference: CR 10.7</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Amount --></label>
+        <name>npe03__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>npe03__Contact__c</name>
+        <relationshipLabel><!-- Recurring Donations &amp; Pledges --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date Established --></label>
+        <name>npe03__Date_Established__c</name>
+    </fields>
+    <fields>
+        <label><!-- Installment Amount --></label>
+        <name>npe03__Installment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Installment Period --></label>
+        <name>npe03__Installment_Period__c</name>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yearly</masterLabel>
+            <translation><!-- Yearly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- # of Installments --></label>
+        <name>npe03__Installments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization --></label>
+        <name>npe03__Organization__c</name>
+        <relationshipLabel><!-- Recurring Donations &amp; Pledges --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Schedule Type --></label>
+        <name>npe03__Schedule_Type__c</name>
+        <picklistValues>
+            <masterLabel>Divide By</masterLabel>
+            <translation><!-- Divide By --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiply By</masterLabel>
+            <translation><!-- Multiply By --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total --></label>
+        <name>npe03__Total__c</name>
+    </fields>
+</CustomObjectTranslation>

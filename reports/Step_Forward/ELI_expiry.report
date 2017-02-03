@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Step_Forward_Job_Placement__c$Associate__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job_Placement__c$Employer__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job_Placement__c$Mentor__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job_Placement__c$Step_Forward_Job__c.Employer_liability_insurance_expiry__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Step_Forward_Job_Placement__c$Step_Forward_Placement_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>&quot;Attended, Successful - Job Offer&quot;,Contracts started,Contracts completed</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>ELI expiry</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Step_Forward_Job_Placements__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Step_Forward_Job_Placement__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

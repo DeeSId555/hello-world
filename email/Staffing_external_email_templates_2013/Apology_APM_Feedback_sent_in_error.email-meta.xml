@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>Apology - APM Feedback sent in error</name>
+    <style>freeForm</style>
+    <subject>Apology for the recent feedback email you received</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+We hope that you enjoyed working on wave one with NCS powered by The Challenge. Many apologies for the email that you were accidentally sent out earlier asking for feedback on your own performance.
+
+We collect feedback on our summer staff so that we can recommend them for future roles with us, but this feedback is put together by the Programme Manager and Assistant Programme Manager. We are sorry that it was sent to you in error.
+
+We will be writing to you separately so that you can give your own feedback on the programme. We hope that you very much enjoyed your role.
+
+Yours sincerely,
+
+Ivan Wise
+Head of Staffing
+summer2013@the-challenge.org
+The Challenge Network</textOnly>
+    <type>html</type>
+</EmailTemplate>

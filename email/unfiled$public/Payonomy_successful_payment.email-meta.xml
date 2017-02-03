@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Payonomy: successful payment</name>
+    <style>none</style>
+    <subject>Thank you for your payment for NCS</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTHECHALLENGE.ORG
+
+Thank you for your payment
+
+
+Dear {!PAYBASE2__Payment__c.PAYCP2__Name_On_Card__c},
+
+Thank you for your payment for NCS (National Citizen Service). We can confirm that we have received {!PAYBASE2__Payment__c.PAYBASE2__Amount__c}.
+
+Please note that payment does not guarantee a place on NCS. Your teenager&apos;s application is currently being processed. We’ll be in touch soon with an update or to let you know if we need any more information.
+
+In the meantime, if you would like more information or have any questions, please visit questions.ncsthechallenge.org or contact us on 0203 542 2400. We will be happy to help.
+
+For your records, your transaction ID is: {!PAYBASE2__Payment__c.PAYCP2__Vendor_Transaction_Id__c}
+The status of this transaction is: {!PAYBASE2__Payment__c.PAYBASE2__Status__c}
+
+Yours sincerely,
+
+
+Tanya Dunne
+Head of Customer Service
+The Challenge (largest provider of NCS)
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451.  Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Explains to staff member (PL,APL,SW&amp;CM) how they will be paid, if they are not receiving an advance</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>SFP 2.1 Spring Payment Schedule</name>
+    <style>freeForm</style>
+    <subject>Payment schedule for your role on the February programme</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your staffing representative on {!Job_placement__c.Staffing_Associate_email__c}.
+
+
+
+Dear {!Job_placement__c.Contact_Name__c},
+
+
+
+
+Welcome back and we are glad you are working on our February (Spring) Programme.
+
+
+
+What do you need to know about payment for your role?
+
+
+
+The pay for your role on the February Programme for work between the dates of
+
+{!Job_placement__c.Assignment_start_date__c} and {!Job_placement__c.Assignment_end_date__c} will be {!Job_placement__c.Total_gross_pay__c}. This payment covers a total of {!Job_placement__c.Standard_days_for_role__c} working days. This allotment of work falls under payment period one.
+
+
+
+If you are contracted to work NCS: Real Challenge Action and Graduation as a {!Job_placement__c.Role__c}, for each day you work, you will receive {!Job_placement__c.Standard_daily_rate__c}. This allotment of work falls under payment period two.*
+
+
+The above includes pay for {!Job_placement__c.Annual_Leave_entitlement__c} day(s) “Holiday Period” per Wave Contract.
+
+
+
+*If you are not contracted to work these parts of the programme but you are offered a a role in these works dates - the pay rates may differ to the ones listed above. Please confirm your role and pay rates with your local staffing team.
+
+
+
+All of your pay is subject to tax and national insurance deductions.
+
+
+
+The amounts are calculated on the basis that you will work all days required to carry out your role; any days that you are absent will be deducted from your pay at the daily rate.
+
+
+
+
+
+When will I be paid and what does it cover?
+
+
+
+The information listed above covers your work for {!Job_placement__c.Wave__c} as a {!Job_placement__c.Role__c} with The Challenge on the NCS Programme.
+
+
+
+There are two payment periods for different sections of the programme.
+
+
+
+Payment Period 1: Pay date 13 March
+
+This takes into account any work completed between 14 February and 1 March.
+
+
+
+Payment Period 2: Pay date 9 April
+
+This takes into account any work completed between 7 March and 31 March.
+
+Not all parts of the programme are applicable to your role.If you are unsure of what parts you are working please review this document here - which is also available on our FAQs.
+
+https://staffing.the-challenge.org/assets/SeasonalProgrammes-KeyInformation2015.pdf
+
+Why am I paid this way?
+
+
+
+
+
+This payment structure has two principles:
+
+
+To ensure that staff members pay the appropriate level of tax in the correct month;
+To enable staff members to receive payment in reasonable time.
+
+
+If you have any further questions about your payment schedule please contact your staffing associate quoting the email reference number in any correspondence.
+
+
+
+
+
+Best wishes,
+
+
+The Challenge
+
+Email reference: SFP 2.1</textOnly>
+    <type>html</type>
+</EmailTemplate>

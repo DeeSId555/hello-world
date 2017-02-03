@@ -1,0 +1,155 @@
+<apex:page sidebar="false" standardStylesheets="true" showHeader="false" standardController="Contact">
+
+<html>
+    <head>
+        <style>
+.button1{
+        
+        height:65px;
+        border: solid 4px; 
+        border-color:#B31217; 
+        font : 18px "Dirty", Arial, Helvetica; 
+        background :white;
+        border-radius:15px;
+        hover:grey;
+        }
+       
+        </style>
+    </head>
+    
+    <body>    
+        
+     <!--   <apex:form >-->
+        <apex:composition template="PortalTemplate">
+        
+            <apex:define name="TopDiv">
+            </apex:define>
+            
+            <apex:define name="MidDiv">
+            
+             <apex:variable var="call" value="{!0}" /> 
+          <apex:repeat value="{!Contact.TCS_Attendance_records__r}" var="tcs">
+              <apex:variable var="call" value="{!call+1}"/>
+          </apex:repeat>
+               <!--------------- Mid Div ------------------>
+               <div style="margin:2%;">
+              
+                   <!--NO RECORDS--->
+                   <apex:outputPanel rendered="{!IF(call<=0,true,false)}">
+                       <apex:pageBlock >    
+                          <apex:outputLabel styleClass="optext"> There are no tcs attandences  </apex:outputLabel>
+                        </apex:pageBlock>   
+                   </apex:outputPanel>
+                   <!--/NO RECORDS--->
+                   
+                   <!--DISPLAY RECORD-->
+                   <apex:outputPanel rendered="{!IF(call > 0,true,false)}">
+                       <apex:pageBlock >
+                           <apex:pageBlockSection columns="1" >
+                               <apex:relatedList pageSize="{!call}" list="TCS_Attendance_records__r" subject="{!$CurrentPage.parameters.id}"/>
+                           </apex:pageBlockSection>
+                            
+                       </apex:pageBlock>
+                   </apex:outputPanel>
+                   <!--/ DISPLAY RECORD-->
+                   
+              
+               </div>
+               
+               
+              <!-- <table style="width:100%;">
+                   <tr>
+                      <td rowspan="2" valign="top" style="width:20%;">
+                           <apex:outputText styleClass="optext" value="Recent Contacts"></apex:outputText>
+                      </td>
+                      
+                      <td valign="top" style="width:80%;">
+                        <div style="margin-top:1%;">
+               
+                      <table class="table table-striped" style="100%;">
+                          <th>{!$ObjectType.TCS_Attendance_record__c.Fields.Name.Label}</th>
+                          <th>{!$ObjectType.TCS_Attendance_record__c.Fields.Volunteering_Opportunity__c.Label}</th>
+                          <th>{!$ObjectType.TCS_Attendance_record__c.Fields.Total_Attendance_in_a_year__c.Label}</th>
+                          <th>{!$ObjectType.TCS_Attendance_record__c.Fields.Vol_Opps_Dates__c.Label}</th>
+                          <th>{!$ObjectType.TCS_Attendance_record__c.Fields.Vol_Opp_Time_s__c.Label}</th>
+                     
+                         <apex:repeat value="{!TCSAtt}" var="tcs">
+                             <apex:outputPanel rendered="{!IF(tcs.Contact__c==$CurrentPage.parameters.cid,true,false)}">
+                                 <tr style="width:100%;">
+                                     <td> <apex:outputLink value="{!$Page.TCSPortal_TCSAttDetail}?id={!tcs.id}">{!tcs.Name}</apex:outputLink>  </td>
+                                      <td> <apex:outputLink value="{!$Page.TCSPortal_TCSAttDetail}?id={!tcs.Volunteering_Opportunity__c}">{!tcs.Volunteering_Opportunity__r.Name}</apex:outputLink>  </td>
+                                     <td> <apex:outputText value="{!tcs.Total_Attendance_in_a_year__c}"></apex:outputText>  </td>
+                                    <td>  <apex:outputText value="{!tcs.Vol_Opps_Dates__c}"/>
+                                       
+                                    </td>
+                                     <td> <apex:outputText value="{0,date,dd'/'MM'/'yyyy}">
+                                            <apex:param value="{!tcs.Vol_Opp_Time_s__c}" /> 
+                                        </apex:outputText>
+                                    </td>
+                                 </tr>
+                             </apex:outputPanel>
+                         </apex:repeat>
+                         </table>
+                       
+                       </div>   
+                      </td>
+                              
+                   </tr>
+                          
+               </table>-->
+            </apex:define>
+            
+             <apex:define name="BotDiv"> 
+               <center>
+                   <div style="margin:2%;">
+                        <a style="margin-right:5%;" href="{!$Page.TCSPortal_ContactDetail}?id={!Contact.id}"><button class="button1">back to<br/> {!Contact.Name}</button></a>
+                        <a href="a1W/e?CF00NC0000005FT9e={!Contact.Name}&CF00NC0000005FT9e_lkid={!Contact.id}&saveURL=/TCSPortal_TCSAttList?id={!Contact.id}&retURL=/TCSPortal_ContactDetail?id={!Contact.id}"><button class="button1">Add a <br/>new TCS Attendance</button></a>
+                      
+                   <!--    <apex:outputLink value="{!$Page.TCSPortal_VolunteeringOpportunityDetail}?id={!TCSAtt[0].Volunteering_opportunity__c}" styleClass="optext btn button2">go to signposting opportunity</apex:outputLink>-->
+                   </div>  
+               </center>
+               
+           </apex:define>
+           
+        </apex:composition>
+      <!--  </apex:form>   -->
+        
+    </body>
+     
+    <style>
+ .headerRow th:nth-child(2){
+     display:none;
+ }
+ .headerRow th:nth-child(3){
+     display:none;
+ }
+ .dataRow td:nth-child(3){
+     display:none;
+ }
+ .dataRow th{
+     display:none;
+ }
+ .actionColumn{
+     display:none;
+     } 
+ .listHeader{
+     display:none;
+ }
+ .pbButton{
+     display:none;
+ }
+ .bPageBlock .pbHeader, .bGeneratedReport .bPageBlock .pbSubheader{
+     background-color:white;
+ }   
+ .bPageBlock, .individualPalette .bPageBlock{
+     border:0px;
+     
+ }
+    .scrollspy-example {
+height: 250px;
+overflow: auto;
+position: relative;
+    }
+    </style>
+</html>
+</apex:page>

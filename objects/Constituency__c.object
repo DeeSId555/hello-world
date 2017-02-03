@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Clusters__c</fullName>
+        <externalId>false</externalId>
+        <formula>if( Local_Authority_1__c&lt;&gt;&quot;&quot;,Local_Authority_1__r.Cluster__r.Name &amp; Br(),&quot;&quot;)&amp;
+if( Local_Authority_2__c&lt;&gt;&quot;&quot;,Local_Authority_2__r.Cluster__r.Name &amp; Br(),&quot;&quot;)&amp;
+if( Local_Authority_3__c&lt;&gt;&quot;&quot;,Local_Authority_3__r.Cluster__r.Name &amp; Br(),&quot;&quot;)</formula>
+        <label>Clusters</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Authority_1__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Local Authority 1</label>
+        <referenceTo>Local_Authority__c</referenceTo>
+        <relationshipLabel>Constituencies</relationshipLabel>
+        <relationshipName>Constituencies</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Local_Authority_2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Local Authority 2</label>
+        <referenceTo>Local_Authority__c</referenceTo>
+        <relationshipLabel>Constituencies (Local Authority 2)</relationshipLabel>
+        <relationshipName>Constituencies1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Local_Authority_3__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Local Authority 3</label>
+        <referenceTo>Local_Authority__c</referenceTo>
+        <relationshipLabel>Constituencies (Local Authority 3)</relationshipLabel>
+        <relationshipName>Constituencies2</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Top_Charity_1__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Top Charity 1</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>You must choose a Charity Account</errorMessage>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Programmes</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Constituencies (Top Charity 1)</relationshipLabel>
+        <relationshipName>Constituencies3</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Top_Charity_2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Top Charity 2</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Programmes</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Constituencies (Top Charity 2)</relationshipLabel>
+        <relationshipName>Constituencies4</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Top_Charity_3__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Top Charity 3</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>You must choose a Charity Account</errorMessage>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Programmes</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Constituencies (Top Charity 3)</relationshipLabel>
+        <relationshipName>Constituencies5</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Top_School_1__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Top School 1</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>You must pick a School Account</errorMessage>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Schools</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Constituencies</relationshipLabel>
+        <relationshipName>Constituencies</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Top_School_2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Top School 2</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>You must choose a School Account</errorMessage>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Schools</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Constituencies (Top School 2)</relationshipLabel>
+        <relationshipName>Constituencies1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Top_School_3__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Top School 3</label>
+        <lookupFilter>
+            <active>false</active>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Schools</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Constituencies (Top School 3)</relationshipLabel>
+        <relationshipName>Constituencies2</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Constituency</label>
+    <listViews>
+        <fullName>All_Constituencies</fullName>
+        <columns>NAME</columns>
+        <columns>Local_Authority_1__c</columns>
+        <columns>Local_Authority_2__c</columns>
+        <columns>Local_Authority_3__c</columns>
+        <columns>Clusters__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Constituencies</label>
+    </listViews>
+    <nameField>
+        <label>Constituency Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Constituencies</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Top_Charity_3_Filter</fullName>
+        <active>true</active>
+        <errorConditionFormula>and(Top_Charity_3__r.RecordType.Name&lt;&gt;&quot;Programmes&quot;,
+Top_Charity_3__r.RecordType.Name&lt;&gt;&quot;&quot;)</errorConditionFormula>
+        <errorMessage>You must choose a Charity</errorMessage>
+    </validationRules>
+</CustomObject>

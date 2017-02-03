@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 2.3.2 Notification of Submitted Application (New Applicants)</name>
+    <style>formalLetter</style>
+    <subject>Thank you for applying to work on the NCS programme</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed.  Please instead contact the Staffing Team on seasonalroles@the-challenge.org
+Dear {!Contact.FirstName},
+
+
+
+Thank you for submitting an application to work on the NCS programme this autumn.
+
+
+
+We aim to review applications within 3 weeks of receiving them. If you do not hear back from us within this period, please contact us on seasonalroles@the-challenge.org quoting the email reference below in any correspondence.
+
+
+
+Again, thank you for taking the time to fill out an application, and for your interest in The Challenge and the NCS programme.
+
+
+
+Best wishes,
+The Challenge
+
+seasonalroles@the-challenge.org
+
+
+
+Email Reference: CR 2.3.2</textOnly>
+    <type>html</type>
+</EmailTemplate>

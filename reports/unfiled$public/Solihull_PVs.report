@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>PHONE1</field>
+    </columns>
+    <columns>
+        <field>URL</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.ADDRESS1_LINE1</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.ADDRESS1_LINE2</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.ADDRESS1_LINE3</field>
+    </columns>
+    <description>PV potentials in Solihull</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Local_Authority__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>startsWith</operator>
+            <value>Solihull</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Account.Programmes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Potential_role_in_our_programme__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Professional Visit</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Solihull PVs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Personal Coach</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Personal Coaching</value>
+    </caseValues>
+    <fields>
+        <label><!-- Did YP accept offer of Personal Coaching --></label>
+        <name>APM_call_outcome__c</name>
+        <picklistValues>
+            <masterLabel>Selected for TCN coaching</masterLabel>
+            <translation><!-- Selected for TCN coaching --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Selected for referral elsewhere</masterLabel>
+            <translation><!-- Selected for referral elsewhere --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YP does not want coaching</masterLabel>
+            <translation><!-- YP does not want coaching --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Link to the YP&apos;s Personal Coach Champion --></help>
+        <label><!-- Zonal Champion --></label>
+        <name>Champion__c</name>
+        <relationshipLabel><!-- Personal Coaching (Zonal Champion) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If the Personal Coach is a TCS Mentor, please add them here. --></help>
+        <label><!-- Coach (TCS Mentor) --></label>
+        <name>Coach_TCS_Mentor__c</name>
+        <relationshipLabel><!-- Personal Coaching (Coach (TCS Mentor)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Link to the YP&apos;s coach --></help>
+        <label><!-- Coach --></label>
+        <name>Coach__c</name>
+        <relationshipLabel><!-- Personal Coaching (Coach) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Date coaching period is scheduled to end --></help>
+        <label><!-- Suggested date of last meeting --></label>
+        <name>Coaching_end_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date coaching period is scheduled to start --></help>
+        <label><!-- Did the YP and coach meet at RCA 4? --></label>
+        <name>Coaching_start_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please write a couple of paragraphs to summarise whether the YP has reached their goals, and on what skills they have gained --></help>
+        <label><!-- Conclusion summary --></label>
+        <name>Conclusion_summary__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter date when YP was referred elsewhere --></help>
+        <label><!-- Date YP was referred elsewhere --></label>
+        <name>Date_YP_was_referred_elsewhere__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of first meeting after RCA 4 --></label>
+        <name>Date_of_first_meeting_after_RCA_4__c</name>
+    </fields>
+    <fields>
+        <help><!-- Email address of YP (as it appears on their Contact record) --></help>
+        <label><!-- Email of YP --></label>
+        <name>Email_of_YP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email of coach --></label>
+        <name>Email_of_coach__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please summarise the YP&apos;s 3 steps towards their goal --></help>
+        <label><!-- Personal Goal: 3 steps --></label>
+        <name>Goal_3_personal_steps__c</name>
+    </fields>
+    <fields>
+        <help><!-- The YP&apos;s TCS goal (all YP have this same goal) --></help>
+        <label><!-- TCS Goal --></label>
+        <name>Goal_TCS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please describe the YP&apos;s goal --></help>
+        <label><!-- Personal Goal: description --></label>
+        <name>Goal_desciption__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meetings attended --></label>
+        <name>Meetings_attended__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meetings not attended --></label>
+        <name>Meetings_not_attended__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meetings scheduled --></label>
+        <name>Meetings_scheduled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Mobile number of Coach (as it appears on their Salesforce User record) --></help>
+        <label><!-- Mobile phone of Coach --></label>
+        <name>Mobile_phone_of_Coach__c</name>
+    </fields>
+    <fields>
+        <help><!-- YP&apos;s mobile phone number (as it appears on their Contact record) --></help>
+        <label><!-- Mobile phone of YP --></label>
+        <name>Mobile_phone_of_YP__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter notes of YP&apos;s referral elsewhere --></help>
+        <label><!-- Notes of referral elsewhere --></label>
+        <name>Notes_of_referral_elsewhere__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Offer Status --></label>
+        <name>RCA_Offer_Status__c</name>
+        <picklistValues>
+            <masterLabel>Offer at RCA 1 (1st choice)</masterLabel>
+            <translation><!-- Offer at RCA 1 (1st choice) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer at RCA 2 (backup)</masterLabel>
+            <translation><!-- Offer at RCA 2 (backup) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Step 1 achieved? --></label>
+        <name>Step_1_achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Step 2 achieved? --></label>
+        <name>Step_2_achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Step 3 achieved? --></label>
+        <name>Step_3_achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave --></label>
+        <name>Wave__c</name>
+        <relationshipLabel><!-- Personal Coaching --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Benefit to YP from Personal Coaching --></label>
+        <name>Why_1_of_the_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1 of 6? --></label>
+        <name>X1_of_6__c</name>
+    </fields>
+    <fields>
+        <help><!-- What goals have been achieved? --></help>
+        <label><!-- End of Coaching Review --></label>
+        <name>X6_monthly_end_of_period_revew__c</name>
+        <picklistValues>
+            <masterLabel>Coaching to end as planned</masterLabel>
+            <translation><!-- Coaching to end as planned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New coaching period has been agreed</masterLabel>
+            <translation><!-- New coaching period has been agreed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YP has withdrawn from coaching</masterLabel>
+            <translation><!-- YP has withdrawn from coaching --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- YP&apos;s coaching preferences --></label>
+        <name>YP_s_coaching_preferences__c</name>
+    </fields>
+    <fields>
+        <help><!-- Link to the young person being coached --></help>
+        <label><!-- Young person --></label>
+        <name>Young_person__c</name>
+        <relationshipLabel><!-- Personal Coaching --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

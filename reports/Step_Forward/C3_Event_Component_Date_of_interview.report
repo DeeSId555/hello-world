@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Step_Forward_Job__c$Name</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job__c.Step_Forward_Event_Components__r$Name</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job__c.Step_Forward_Event_Components__r$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job__c$Pathway__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job__c$Employer__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job__c$SF_Account_Owner__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job__c$Interview_Availability__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job__c$Date_to_contact_employer_again__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job__c.Step_Forward_Event_Components__r$Event_Cancelled__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job__c.Step_Forward_Event_Components__r$Event_Date_Matching__c</field>
+    </columns>
+    <description>Employer name, Account Manager and date of interview</description>
+    <filter>
+        <criteriaItems>
+            <column>Step_Forward_Job__c$Job_cycle__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Step_Forward_Job__c.Step_Forward_Event_Components__r$Employer__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Lord Mosca Inc.</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Step_Forward_Job__c$Job_Matching_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Ready for Interview</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Step_Forward_Job__c$Job_Difficult_to_Match_reason__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Candidate shortage due to postcode,Candidate shortage in this pathway,Candidate shortage for person specification,Lack of interest in JD from candidates,Other</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Step_Forward_Job__c$Successful_Job_offer_accepted__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Step_Forward_Job__c$Job_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>4. Closed: Job confirmation unsuccessful</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>C3 Event Component - Date of interview</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SF_Jobs_with_or_without_SF_Event_Component__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Step_Forward_Job__c.Step_Forward_Event_Components__r$Event_Date_Matching__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Step_Forward_Job__c.Step_Forward_Event_Components__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

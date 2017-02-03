@@ -1,0 +1,136 @@
+<apex:page sidebar="false" standardStylesheets="false" showHeader="false" standardController="Action_Team_Youth_Board_Membership__c">
+
+<html>
+    <head>
+        <style>   
+.button1{
+        
+        height:65px; 
+        width:175px;  
+        border: solid 4px; 
+        border-color:#B31217; 
+        font : 18px "Dirty", Arial, Helvetica; 
+        background :white;
+        border-radius:15px;
+        }
+        </style>
+    </head>
+    
+    <body>    
+      
+        <apex:composition template="PortalTemplate">
+        
+            <apex:define name="TopDiv">
+            <!---------------- MENU -------------------------->
+            </apex:define>
+            
+            <apex:define name="MidDiv">
+               <!--------------- Mid Div ------------------>
+              
+   <table style="height:100%; width:100%; ">
+     
+       <tr >
+
+<!---------------------------------------------- CAT/YB MEMBERSHIP INFO. ---------------------------------------------->
+           <td valign="top" style="border-left:solid 8px; border-color:#D9D9D9; width:50%;">
+       <div style="margin-left:2%; margin-top:1%;">
+               <apex:outputText styleClass="optext" value="cat/yb membership information"/><br />
+               
+            <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+               <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Action_Team_Youth_Board_Membership__c.Fields.Action_Team__c.Label}"/>
+                  </td>
+              <td><apex:outputText value="{!Action_Team_Youth_Board_Membership__c.Action_Team__r.Name}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+              <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+              <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Action_Team_Youth_Board_Membership__c.Fields.Contact__c.Label}"/>
+                  </td>
+              <td><apex:outputText value="{!Action_Team_Youth_Board_Membership__c.Contact__r.Name}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+              <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+               <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Action_Team_Youth_Board_Membership__c.Fields.Status__c.Label}"/>
+                    </td>
+              <td><apex:outputText value="{!Action_Team_Youth_Board_Membership__c.Status__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+         </div>
+           </td>
+<!----------------------------------------------/ CAT/YB MEMBERSHIP INFO. ---------------------------------------------->           
+           
+           
+<!---------------------------------------------- SYSTEM INFO. ---------------------------------------------->           
+           <td valign="top" style="height:100%; border-left:solid 4px; border-color:#D9D9D9; width:50%;">
+           <div style="margin-left:2%; margin-top:1%;">
+               <apex:outputText styleClass="optext" value="system information"/><br />
+                <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+               <apex:outputText styleClass="fieldLabel" value="Created By"/>
+                  </td>
+              <td><apex:outputText value="{!Action_Team_Youth_Board_Membership__c.CreatedBy.Name}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+              <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+             <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Action_Team_Youth_Board_Membership__c.Fields.Name.Label}"/>
+                   </td>
+              <td><apex:outputText value="{!Action_Team_Youth_Board_Membership__c.Name}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+               <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+             <apex:outputText styleClass="fieldLabel" value="Last Modified By"/>
+                   </td>
+              <td><apex:outputText value="{!Action_Team_Youth_Board_Membership__c.Status__c}"/>
+              </td> 
+              </tr>
+             </table></div><br/>
+               <a style="float:right; margin-bottom:2%; margin-right:2%;" href="{!Action_Team_Youth_Board_Membership__c.id}/e?retURL=/TCSPortal_CATYBMembershipDetail?id={!Action_Team_Youth_Board_Membership__c.id}"><button type="button" style="margin-top:10px; height:35px; width:100px;" class="button1">Edit</button></a>
+         </div>
+           </td>
+       </tr>
+<!----------------------------------------------/ SYSTEM INFO. ---------------------------------------------->    
+
+</table>
+
+    </apex:define>
+           
+           <apex:define name="BotDiv"> 
+               <center>
+                   <div style="margin-top:2%;">
+                       <apex:outputLink value="{!$Page.TCSPortal_ContactDetail}?id={!Action_Team_Youth_Board_Membership__c.Contact__c}&editmode=n" styleClass="optext btn button1">go to young persons contact page</apex:outputLink>
+                   </div>  
+               </center>
+               
+           </apex:define>
+           
+           
+        </apex:composition> 
+        
+    </body>
+      <style>
+    .scrollspy-example {
+                height: 400px;
+                overflow: auto;
+                position: relative;
+    </style>
+</html>
+</apex:page>

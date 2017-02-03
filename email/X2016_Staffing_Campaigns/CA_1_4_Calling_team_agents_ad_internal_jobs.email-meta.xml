@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>Calling team agents ad (internal jobs)</name>
+    <style>formalLetter</style>
+    <subject>Join us in our Manchester Office as a Calling Team Agent!</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}.
+
+Dear {!Contact.FirstName},
+
+Following your excellent work in the summer, we’d like to offer you an exciting opportunity in our growing Calling Team in our Manchester office!
+
+The North West team are recruiting a large number of vacancies to sit in our charity contact centre in the Manchester Office as Calling Team Agents. Calling Team Agents play an important role in helping us to attract as many young people as possible to the NCS programme, and will effectively manage the relationship with young people and their parents or guardians who have expressed interest in summer 2016.
+
+We’re looking to recruit for a range of Calling Team Agents, and as such we are able to offer both full and part-time roles with varying contract lengths. You can even opt to work both evenings and weekends that allow you to fit the role in with other commitments! The wage is £18,000 per annum pro rata.
+
+Please follow this link to find out more information about the role and how to apply: https://staffing.the-challenge.org/assets/Calling_Team_Agent_JD_(1).docx
+
+We look forward to hearing from you!
+
+Best Wishes,
+
+The Manchester Office</textOnly>
+    <type>html</type>
+</EmailTemplate>

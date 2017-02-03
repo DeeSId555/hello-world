@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent to new user who has registered on the site for the first time</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>New registration details</name>
+    <style>none</style>
+    <subject>Welcome to NCS with The Challenge</subject>
+    <textOnly>Thanks for registering!
+
+Your login code is {!Contact.Account_s_TCN_Id__c} 
+Your login password is {!Contact.Login_PIN__c}
+
+If you have any questions about The Challenge, we are happy to help. Please do contact us on contact@the-challenge.org or call us 020 7921 4404 or on 0330 111 0101 (free from mobiles).
+
+The Challenge
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451.
+Registered charity no. 1129239.
+Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

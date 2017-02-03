@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.Assigned_Wave__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Parent_Name__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Parent_Email__c</field>
+    </columns>
+    <description>Surrey parents email</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Assigned_Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Woking B,Guildford A,Staines B,Epsom B,Reigate A,Mole Valley B,Waverley A</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Inclusion_Details__c.Assigned_Reserved_Cluster__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>WSurrey,ESurrey</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>Surrey PG Email 2015</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Inclusion_Details__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

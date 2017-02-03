@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Updated for 2014 SN. AO approved</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>1.3.2 Staffing Rejection at screening</name>
+    <style>freeForm</style>
+    <subject>Re: Application to The Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+
+Dear {!Contact.FirstName}
+
+Thank you for applying for a role on our NCS with The Challenge programme.
+
+Unfortunately, we will not be taking your application further. We have received a great many applications and the quality has been very high this year.
+
+Unfortunately due to the scale of our recruitment we cannot provide feedback at this stage.
+
+Thank you for your interest in NCS with The Challenge.
+
+
+Best Wishes,
+
+NCS with The Challenge
+
+
+CR 1.3.2</textOnly>
+    <type>html</type>
+</EmailTemplate>

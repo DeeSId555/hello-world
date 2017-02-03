@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Payonomy: unsuccessful payment</name>
+    <style>none</style>
+    <subject>Unsuccessful payment for NCS</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTHECHALLENGE.ORG
+
+Unsuccessful payment
+
+
+Dear {!PAYBASE2__Payment__c.PAYCP2__Name_On_Card__c},
+
+We are aware that you tried to pay for a place on NCS (National Citizen Service). Unfortunately your payment of {!PAYBASE2__Payment__c.PAYBASE2__Amount__c} was not successful this time.
+
+We kindly ask you to make the payment again.
+
+If you would like to pay over the phone instead, or if you have any questions, please call us on 0203 542 2400. We will be happy to help.
+
+For your records, the transaction ID for your unsuccessful payment is: {!PAYBASE2__Payment__c.PAYCP2__Vendor_Transaction_Id__c}
+The status of this transaction is: {!PAYBASE2__Payment__c.PAYBASE2__Status__c}
+
+Yours sincerely,
+
+
+
+Tanya Dunne
+Head of Customer Service
+The Challenge (largest provider of NCS)
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451.  Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

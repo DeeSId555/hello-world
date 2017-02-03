@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>OWNER_FULL_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Louise Shute</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_ID</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>001C000000wirSq,001C000000wirZE,001C000000wisab,001C000000x15V3,001C000000x1Lfn,001C000000x2PBI,001C000000xQAXP,001C000000xRWN7,001C000000zmHPM,001C000000nDgJR,001C000000oh1C1,001C000000ohMgk,001C000000peHcz,001C000000rPQhO,001C000000rvOyi,001C000000rvhiK,001C000000rvhkQ,001C000000voF5n,001C000000vq5oD,001C000000x1LA7,001C000000xkuHZ,001C000000xlCC3,0018000000egHxE,001C000000zMCWd,001C000000znvIM,001C000000zoLTZ,001C000000zoLnD,001C000000zoa0a,001C000000zpcb1,001C000000zpdNi,001C0000011smDt</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Louise Shute - Mass email mess</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

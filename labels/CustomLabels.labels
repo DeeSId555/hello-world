@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>NCS_Data_Entry_Default_Record_Types_Account</fullName>
+        <categories>NCS Data Entry Record Types</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry - Default Record Types - Account</shortDescription>
+        <value>Family</value>
+    </labels>
+    <labels>
+        <fullName>NCS_Data_Entry_Default_Record_Types_Inclusion</fullName>
+        <categories>NCS Data Entry Record Types</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry - Default Record Types - Inclusion</shortDescription>
+        <value>Current</value>
+    </labels>
+    <labels>
+        <fullName>NCS_Data_Entry_Default_Record_Types_Parent_Guardian_Contact</fullName>
+        <categories>NCS Data Entry Record Types</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry - Default Record Types - Parent Guardian Contact</shortDescription>
+        <value>Parent_Guardian</value>
+    </labels>
+    <labels>
+        <fullName>NCS_Data_Entry_Default_Record_Types_Young_Person_Contact</fullName>
+        <categories>NCS Data Entry Record Types</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry - Default Record Types - Young Person Contact</shortDescription>
+        <value>Young_Person</value>
+    </labels>
+    <labels>
+        <fullName>NCS_Data_Entry_Error_Duplicate_Matching_Seasons</fullName>
+        <categories>NCS Data Entry Staging</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry Error - Duplicate Matching Seasons</shortDescription>
+        <value>More then 1 NCS Application exists for this Young Person for the Season specified.</value>
+    </labels>
+    <labels>
+        <fullName>NCS_Data_Entry_Error_Matched_Contacts_Limit</fullName>
+        <categories>NCS Data Entry Staging</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry Error - Matched Contacts Limit</shortDescription>
+        <value>This Staging Object matched against too many Young Person Contact based on the information provided</value>
+    </labels>
+    <labels>
+        <fullName>NCS_Data_Entry_Error_Medical_Data_Entry_Started</fullName>
+        <categories>NCS Data Entry Staging</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry Error - Medical Data Entry Started</shortDescription>
+        <value>An Inclusion Detail record for the Contact related to this Staging Object is marked as having medical info data populated.</value>
+    </labels>
+    <labels>
+        <fullName>NCS_Data_Entry_Error_Missing_EMAIL</fullName>
+        <categories>NCS Data Entry Staging</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry Error - Missing EMAIL</shortDescription>
+        <value>You have specified an NCS Id without supplying a Young Person or Parents Email address, please populate these.</value>
+    </labels>
+    <labels>
+        <fullName>NCS_Data_Entry_Error_Missing_NCS_and_EMAIL</fullName>
+        <categories>NCS Data Entry Staging</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry Error - Missing NCS and EMAIL</shortDescription>
+        <value>This Staging Object is missing the minimum required information to process. It needs either an NCS ID, Young Person or Parents Email address.</value>
+    </labels>
+    <labels>
+        <fullName>NCS_Data_Entry_Error_Multiple_Key_Relationships_Found</fullName>
+        <categories>NCS Data Entry Staging</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry Error - Multiple Key Relationships Found</shortDescription>
+        <value>There is more than 1 key relationship set up for the matched Young Person and Parent Guardians.</value>
+    </labels>
+    <labels>
+        <fullName>NCS_Data_Entry_Error_Multiple_Matching_Skills</fullName>
+        <categories>NCS Data Entry Staging</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry Error - Multiple Matching Skills</shortDescription>
+        <value>The Staging Object has more than 1 skill marked for either of the first three choices.</value>
+    </labels>
+    <labels>
+        <fullName>NCS_Data_Entry_Error_NCS_Application_Marked_As_Do_Not_Overwrite</fullName>
+        <categories>NCS Data Entry Staging</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry Error - NCS Application Marked As Do Not Overwrite</shortDescription>
+        <value>The NCS Application for the current season on the matched Young Person Contact that exists is marked as Do Not Overwrite (NCS Overwrite = None)</value>
+    </labels>
+    <labels>
+        <fullName>NCS_Data_Entry_Error_NCS_Id_Provided_No_Match_Found</fullName>
+        <categories>NCS Data Entry Staging</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry Error - NCS Id Provided No Match Found</shortDescription>
+        <value>An NCS Id was provided but no match was found, please check the NCS Id provided.</value>
+    </labels>
+    <labels>
+        <fullName>NCS_Data_Entry_Error_NCS_Match_Email_missmatch</fullName>
+        <categories>NCS Data Entry Staging</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry Error - NCS Match Email missmatch</shortDescription>
+        <value>The Young Person contact that matches the NCS ID on the Staging Object has a different email address.</value>
+    </labels>
+    <labels>
+        <fullName>NCS_Data_Entry_Error_Too_Many_Inclusions</fullName>
+        <categories>NCS Data Entry Staging</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry Error - Too Many Inclusions</shortDescription>
+        <value>A Young Person contact related to this Staging Object had more then one Inclusion Detail record.</value>
+    </labels>
+    <labels>
+        <fullName>NCS_Data_Entry_Error_YP_Contact_Marked_As_Do_Not_Overwrite</fullName>
+        <categories>NCS Data Entry Staging</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry Error - YP Contact Marked As Do Not Overwrite</shortDescription>
+        <value>The Young Person Contact that exists is marked as Do Not Overwrite (NCS Overwrite = None)</value>
+    </labels>
+    <labels>
+        <fullName>NCS_Data_Entry_Filed_Mapping_Error_Object</fullName>
+        <categories>NCS Data Entry Staging</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry Filed Mapping Error - Object</shortDescription>
+        <value>A NCS Data Entry Field Mapping Target Object either does not exist or is misspelt:</value>
+    </labels>
+    <labels>
+        <fullName>NCS_Data_Entry_Filed_Mapping_Error_Source</fullName>
+        <categories>NCS Data Entry Staging</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry Filed Mapping Error - Source</shortDescription>
+        <value>A NCS Data Entry Staging Source Field either does not exist or is misspelt:</value>
+    </labels>
+    <labels>
+        <fullName>NCS_Data_Entry_Filed_Mapping_Error_Target</fullName>
+        <categories>NCS Data Entry Staging</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry Filed Mapping Error - Target</shortDescription>
+        <value>A NCS Data Entry Field Mapping Target Field either does not exist or is misspelt:</value>
+    </labels>
+    <labels>
+        <fullName>NCS_Data_Entry_Matches_Record_Across_Multiple_Staging</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry Matches Record Across Multiple Staging</shortDescription>
+        <value>This Staging object matched against a Contact or NCS Application along with another Staging object in the same batch. Record Id :</value>
+    </labels>
+    <labels>
+        <fullName>NCS_Data_Entry_Target_Type_INC</fullName>
+        <categories>NCS Data Entry Target Types</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry - Target Type - INC</shortDescription>
+        <value>INC</value>
+    </labels>
+    <labels>
+        <fullName>NCS_Data_Entry_Target_Type_NCS</fullName>
+        <categories>NCS Data Entry Target Types</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry - Target Type - NCS</shortDescription>
+        <value>NCS</value>
+    </labels>
+    <labels>
+        <fullName>NCS_Data_Entry_Target_Type_PGCon</fullName>
+        <categories>NCS Data Entry Target Types</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry - Target Type - PGCon</shortDescription>
+        <value>PGCON</value>
+    </labels>
+    <labels>
+        <fullName>NCS_Data_Entry_Target_Type_YPCon</fullName>
+        <categories>NCS Data Entry Target Types</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry - Target Type - YPCon</shortDescription>
+        <value>YPCON</value>
+    </labels>
+    <labels>
+        <fullName>NCS_Data_Entry_Target_Type_YP_PGCon</fullName>
+        <categories>NCS Data Entry Target Types</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS Data Entry - Target Type - YP&amp;PGCon</shortDescription>
+        <value>YP&amp;PGCON</value>
+    </labels>
+    <labels>
+        <fullName>NCS_OVERWRITE_FULL</fullName>
+        <categories>NCS Data Entry Overwrite</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS_OVERWRITE_FULL</shortDescription>
+        <value>Full</value>
+    </labels>
+    <labels>
+        <fullName>NCS_OVERWRITE_NONE</fullName>
+        <categories>NCS Data Entry Overwrite</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NCS_OVERWRITE_NONE</shortDescription>
+        <value>None</value>
+    </labels>
+    <labels>
+        <fullName>signupOppRecordTypeId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>signupOppRecordTypeId</shortDescription>
+        <value>012C0000000Q3FAIA0</value>
+    </labels>
+    <labels>
+        <fullName>signupOppStagePaymentCancelled</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>signupOppStagePaymentCancelled</shortDescription>
+        <value>Cancelled</value>
+    </labels>
+    <labels>
+        <fullName>signupOppStagePaymentMethod</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>signupOppStagePaymentMethod</shortDescription>
+        <value>Credit or debit card online Worldpay</value>
+    </labels>
+    <labels>
+        <fullName>signupOppStagePaymentMethodPB2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>signup card payment label</shortDescription>
+        <value>Credit or debit card online Sage Pay</value>
+    </labels>
+    <labels>
+        <fullName>signupOppStagePaymentPending</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>signupOppStagePaymentPending</shortDescription>
+        <value>Online application, card payment due</value>
+    </labels>
+    <labels>
+        <fullName>signupOppStagePaymentReceived</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>signupOppStagePaymentReceived</shortDescription>
+        <value>Received</value>
+    </labels>
+    <labels>
+        <fullName>signupOppStagePaymentRefunded</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>signupOppStagePaymentRefunded</shortDescription>
+        <value>Refunded</value>
+    </labels>
+    <labels>
+        <fullName>signupPgRecordTypeId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>signupPgRecordTypeId</shortDescription>
+        <value>012C0000000Q2H5IAK</value>
+    </labels>
+    <labels>
+        <fullName>signupYpRecordTypeId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>signupYpRecordTypeId</shortDescription>
+        <value>012C0000000Q2H0IAK</value>
+    </labels>
+</CustomLabels>

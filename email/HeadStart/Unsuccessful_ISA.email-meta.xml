@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Post Comm for YP unsuccessful at ISA</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Unsuccessful ISA</name>
+    <style>none</style>
+    <subject>HeadStart - Another employment opportunity</subject>
+    <textOnly>*|MC:SUBJECT|*
+
+Another employment opportunity!
+
+Dear X.
+
+Once again, congratulations for coming this far in the HeadStart process.  What you have achieved up until this point is something to be very proud of:
+
+{!HS_Activity__c.HS_Hours_Total__c} hours of volunteering
+Enhanced employability skills through HeadStart workshops
+Successfully passed your {!HS_Activity__c.Interview_preference__c} interview with flying colours
+Completed a difficult in store assessment
+
+These experiences are what make you more employable and set you apart from your peers!
+
+Great news
+
+Not passing your in store assessment doesn’t mean it’s the end of the road! You’ll be happy to hear we have 2 very exclusive opportunities, only offered to HeadStart candidates.
+
+
+
+
+
+HeadStart plan to host a Graduate Event for candidates who did not secure a HeadStart job in December, to celebrate all of your achievements and to support you in your next steps, with potential workshops on LinkedIn and CV building. If you would like to register your interest, please click here.  Spaces are limited.
+
+
+We hope to hear from you very soon.
+
+
+If you have any queries, please email headstart@the-challenge.org</textOnly>
+    <type>custom</type>
+</EmailTemplate>

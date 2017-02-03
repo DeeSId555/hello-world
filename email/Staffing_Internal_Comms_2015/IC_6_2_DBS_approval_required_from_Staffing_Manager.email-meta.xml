@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>IC 6.2 DBS approval required from Staffing Manager</name>
+    <style>formalLetter</style>
+    <subject>Candidate in {!Staffing_Region__c.Name} with Listed DBS</subject>
+    <textOnly>This is an automated internal email sent from Salesforce when one of your candidates DBS is listed. Email reference: IC 6.2
+Hi Staffing Manager,
+
+
+DBS certificate to be reviewed for {!Contact.Name} for the {!Job_Application__c.Role_to_assess_for__c} role.
+
+
+{!Job_Application__c.Contact__c} has received a listed DBS certificate which needs to be reviewed and authorised.
+
+
+What do you need to do?
+
+
+Using this link : [link] please review DBS scan under ‘google docs, notes and attachments.
+
+
+Approved Listed DBS: please update ‘TCN approval’ field to ‘Approved by Staffing Manager’. As soon as you press save this will automatically update on SAW for the candidate.
+
+
+Rejected Listed DBS: please contact the candidate to inform them they are unsuitable to work on our programme. Once you have made this call update ‘TCN approval’ field to ‘Reject due to DBS’. This will automatically update once you save this on salesforce, which is why you should call the candidate first.
+
+
+
+What else do you need to know?
+
+
+Further information about how the DBS was obtained - e.g external or through GB Group can be found in the DBS section.
+
+
+If the DBS scan has not been uploaded you will need to contact the following people
+
+
+DBS obtained by GB group: Abby Lamb on abby.lamb@the-challenge.org (mark it as a high priority DBS)
+
+External DBS: Evolution on staffing.support@the-challenge.org (mark it as high priority DBS)
+
+
+
+
+Best wishes,
+
+Salesforce
+
+
+IC 6.2?
+This is an automated internal email sent from Salesforce when one of your candidates DBS is listed. Email reference: IC 6.2</textOnly>
+    <type>html</type>
+</EmailTemplate>

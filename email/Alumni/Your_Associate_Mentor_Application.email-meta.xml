@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Your Associate Mentor Application</name>
+    <style>none</style>
+    <subject>Your Associate Mentor Application</subject>
+    <textOnly>Hi {!Lead.FirstName}
+
+Thank you for your application to become an Associate Mentor. I am happy to confirm your application has been successful, pending your attendance of the Associate Mentor training event. We had a lot of strong applications and are really excited for you to come back as an Associate Mentor this summer. We will be sending out more information early next week to confirm the training and summer dates, and give you more details about the role. Well done!
+
+All the best,
+Helen</textOnly>
+    <type>custom</type>
+</EmailTemplate>

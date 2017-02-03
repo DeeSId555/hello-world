@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>AM Application Extended Deadline</name>
+    <style>freeForm</style>
+    <subject>I AM the Challenge! Don&apos;t MISS out!</subject>
+    <textOnly>{!Contact.FirstName}
+
+If you cannot see this image, please see attached flyer.
+
+The deadline to apply to be an Associate Mentor on the Graduate Summer Programme has been extended to 12th May. Please do not miss out! Contact phil.gurney@the-challenge.org for more info or to be sent an application form.
+
+There are only a handful of spaces left! Act now! Take the Challenge to the next level!</textOnly>
+    <type>html</type>
+</EmailTemplate>

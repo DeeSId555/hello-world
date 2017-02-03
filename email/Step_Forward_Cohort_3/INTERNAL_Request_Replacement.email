@@ -1,0 +1,48 @@
+<h2><big><strong>INTERNAL EMAIL ALERT</strong></big></h2>
+
+<div>
+<hr />
+<p>&nbsp;</p>
+</div>
+
+<h2><strong>Subject: Request Replacement YP</strong></h2>
+
+<p><strong>SF Associate Attendace:</strong> &nbsp; &nbsp; &nbsp; &nbsp;<a href="https://na8.salesforce.com/a4D/o">{!Step_Forward_Associate_Attendance__c.Name}</a></p>
+
+<p>&nbsp;</p>
+
+<p>Dear Matching Team,</p>
+
+<p>Please shortlist an additional candidate for the following job then:</p>
+
+<ol>
+	<li>Select a candidate from the &#39;<strong>Shortlisted - Reserve</strong>&#39; list</li>
+	<li><strong>Call YP</strong> to invite to interview slot</li>
+	<li><strong>Send </strong>interview slot and JD email</li>
+	<li>Update<strong> Interview status</strong></li>
+	<li><strong>Inform account manager</strong> of new YP so they can send a CV to the Employer.</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p><u>This is the candidate who should be replaced</u></p>
+
+<p><strong>Associate First name:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {!Step_Forward_Associate_Attendance__c.Associate_First_Name__c}</p>
+
+<p><strong>Associate Last name:</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;{!Step_Forward_Associate_Attendance__c.Associate_Last_Name__c}</p>
+
+<p><strong>Associate interview time:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {!Step_Forward_Associate_Attendance__c.Time_Slot_Allocated__c}</p>
+
+<p><b>Interview Status: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</b>{!Step_Forward_Associate_Attendance__c.Interview_Status__c}</p>
+
+<p><strong>Event day: </strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{!Step_Forward_Associate_Attendance__c.Event_Day__c}</p>
+
+<p><strong>Pathway: </strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;{!Step_Forward_Associate_Attendance__c.Pathway__c}</p>
+
+<p><strong>SF Owner: &nbsp; &nbsp;</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{!Step_Forward_Event_Component__c.SF_Account_Owner__c}</p>
+
+<p>&nbsp;</p>
+
+<p>Best wishes,</p>
+
+<p>Account Manager</p>

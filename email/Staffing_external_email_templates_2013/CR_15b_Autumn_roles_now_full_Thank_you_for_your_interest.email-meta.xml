@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Advice to applicants that all roles are full and we may contact some staff as and when we need them</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>CR 15b Autumn roles now full - Thank you for your interest</name>
+    <style>freeForm</style>
+    <subject>Thank you for applying to work on NCS with The Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+
+Dear {!Contact.FirstName}
+
+
+
+Thank you for taking the time to apply to work on NCS with The Challenge this Autumn. Unfortunately, we had a large number of applications and all of our roles have now been filled.
+
+
+
+Applications will open again for our Spring programme in December. Please continue to check our website for more information and be sure to send us your application early!
+
+
+Thank you again for your interest in NCS with The Challenge.
+
+
+
+
+Best wishes,
+
+
+
+{!Contact.OwnerFullName}
+
+NCS with The Challenge
+
+{!Contact.Contact_Owner_alternative_email__c}
+
+
+
+CR: 15b</textOnly>
+    <type>html</type>
+</EmailTemplate>

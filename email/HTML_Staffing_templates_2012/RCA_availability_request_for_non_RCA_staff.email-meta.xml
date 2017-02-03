@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>RCA availability request to be sent to non-RCA contracted staff</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>RCA availability request for non-RCA staff</name>
+    <style>none</style>
+    <subject>Would you like to work during The Real Challenge?</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Over the four weekends in September, all 10,000 young people who took part in The Challenge will undertake a series of volunteering days.
+
+In case of last minute illness or unavailability, we would like to have a small number of back-up staff to work as Autumn Mentors on those days. Attached is the role description.
+
+If you would like to be considered for the Autumn Mentor role, to work on either four Saturdays (8, 15, 22, 29 September) or four Sundays (9, 16, 23, 30 September), please contact us, and we will let you know further details.
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.OwnerEmail}
+
+WWW.THE-CHALLENGE.ORG    /thechallengeNETWORK
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

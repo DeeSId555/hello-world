@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Case_sharing_Staffing</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Case sharing: Staffing</label>
+        <sharedTo>
+            <group>Staffing_2013</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Systems support</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Innovation_Case_Access</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>To provide access to Systems cases to the Innovation team</description>
+        <label>Innovation Case Access</label>
+        <sharedTo>
+            <group>Innovation_Group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Systems support</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Innovation_Read_Only</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Provide innovation read access to The Challenge cases (cases for CS)</description>
+        <label>Innovation Read Only</label>
+        <sharedTo>
+            <group>Innovation_Group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>TheChallenge</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Staffing_cases</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Staffing cases</label>
+        <sharedTo>
+            <group>Staffing_2013</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Staffing SouthLon/Surrey,Staffing - general,Staffing North London,Staffing West Midlands,Staffing NW,Staffing West London</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Systems_Support_cases</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Gives Systems Associates edit rights on Cases that are not owned by them.</description>
+        <label>Systems Support cases</label>
+        <sharedTo>
+            <role>Systems_Associate_Projects</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Systems support</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

@@ -1,0 +1,9 @@
+Hi {!Contact.OwnerFirstName},
+
+Programmes have made a dismissal call to {!Contact.Name}. Please urgently update their Job Application by putting the date of dismissal (not today's date, if it was done before today) in the field "Date dismissed" and check that the status on all Job Placements has been changed to "Dismissed - see dismissal date".
+
+This call was  {!Job_Application__c.Withdrawal_Call_Details__c}
+
+
+---------------------------------------------------------------------------
+This is an auto-email, sent when Job Application: Dismissal Call Made? EQUALS True

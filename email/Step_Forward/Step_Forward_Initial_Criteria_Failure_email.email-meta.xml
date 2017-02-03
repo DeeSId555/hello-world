@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Connected to &apos;Date initial check failure email sent&apos;</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>*WORKFLOW Application Initial Criteria Failure email</name>
+    <style>none</style>
+    <subject>Please review your Step Forward application!</subject>
+    <textOnly>Step Forward
+
+Please review your Step Forward application!
+
+Dear {!Contact.FirstName},
+
+Thank you for applying for Step Forward and we’re glad you’re interested in the programme.
+
+Unfortunately your application has indicated that you may not be eligible to apply for Step Forward.
+
+During the application process we understand that you answered &apos;No&apos; to at least one of the following questions:
+
+Do you have the right to work in the UK?
+Have you lived in the UK (or EU) for the past 3 years?
+Do you have GCSE English Grade C or above or equivalent (for example Level 2 Functional Skills)?
+Do you have GCSE Maths Grade C or above or equivalent (for example Level 2 Functional Skills)?
+I am available for Induction Week
+I am available for my first day at work
+
+If you answered ‘No’ to at least one of the questions above then unfortunately we will not be able to take your application any further.
+
+We will keep you on our database and if your circumstances change, please do contact us.
+
+If you think there has been a mistake or you have a question regarding your application, please email us at step.forward@the-challenge.org or call 0203 542 2400.
+
+Best wishes,
+
+Step Forward
+
+WWW.STEPFORWARD.UK.COM    /thestepforward
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

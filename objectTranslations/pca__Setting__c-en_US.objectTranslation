@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Code --></label>
+        <name>pca__Account_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allow the use of BACS data to validate UK bank account details. --></help>
+        <label><!-- Payment Validation --></label>
+        <name>pca__BACS_Validation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Your Postcode Anywhere Key suitable for internal web service transactions. It should be in the format AA11-AA11-AA11-AA11. --></help>
+        <label><!-- Key --></label>
+        <name>pca__Click_License__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country List --></label>
+        <name>pca__Country_List__c</name>
+    </fields>
+    <fields>
+        <help><!-- Change how country names are saved, either the full name (United States of America, Canada, United Kingdom), the ISO3 code (USA, CAN, GBR) or the ISO2 code (US, CA, GB) can be selected. --></help>
+        <label><!-- Country Name Style --></label>
+        <name>pca__Country_Name_Style__c</name>
+        <picklistValues>
+            <masterLabel>2 Character ISO Code</masterLabel>
+            <translation><!-- 2 Character ISO Code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 Character ISO Code</masterLabel>
+            <translation><!-- 3 Character ISO Code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Country Name (default)</masterLabel>
+            <translation><!-- Full Country Name (default) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If selected the control will attempt to use the user country as the default --></help>
+        <label><!-- Default User Country --></label>
+        <name>pca__Default_User_Country__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked the control will not show the search dialogue for the city field --></help>
+        <label><!-- Disable City Search --></label>
+        <name>pca__Disable_City_Search__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked the control will not show the search dialogue for the company field --></help>
+        <label><!-- Disable Company Search --></label>
+        <name>pca__Disable_Company_Search__c</name>
+    </fields>
+    <fields>
+        <help><!-- When ticked the app will not replace the standard country field with a picklist. Choose this option if you wish to use your own picklist. --></help>
+        <label><!-- Disable Country List --></label>
+        <name>pca__Disable_Country_List__c</name>
+    </fields>
+    <fields>
+        <help><!-- When ticked the app will not rearrange standard address fields. Custom address fields will not be rearranged regardless of this setting, and should be arranged manually for address lookup. --></help>
+        <label><!-- Disable Standard Field Rearrange --></label>
+        <name>pca__Disable_Field_Rearrange__c</name>
+    </fields>
+    <fields>
+        <help><!-- When ticked the app will not add an &apos;Other&apos; option to the country list. The &apos;Other&apos; option is used to enter a free text country name when the desired country does not appear in the list. --></help>
+        <label><!-- Disable Other Country Option --></label>
+        <name>pca__Disable_Other_Country_Option__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked the control will not show the search dialogue for the zip / postalcode field --></help>
+        <label><!-- Disable Postcode Search --></label>
+        <name>pca__Disable_Postcode_Search__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked the control will not show the search dialogue for the state / province field --></help>
+        <label><!-- Disable State Search --></label>
+        <name>pca__Disable_State_Search__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked the control will not show the search dialogue for the street field --></help>
+        <label><!-- Disable Street Search --></label>
+        <name>pca__Disable_Street_Search__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allow the use of advanced email validation which checks for the mail exchanger (MX) records of the responsible email server to catch spelling mistakes and incorrect domains. --></help>
+        <label><!-- Email Validation --></label>
+        <name>pca__Email_Validation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Selecting this option will hide the Postcode Anywhere sidebar component while allowing the app to still function on edit pages. --></help>
+        <label><!-- Hide Sidebar Component --></label>
+        <name>pca__Hide_Sidebar_Component__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked the company field specified in the address integration will be updated with the company name from the Royal Mail record. --></help>
+        <label><!-- Royal Mail Update Company --></label>
+        <name>pca__Royal_Mail_Company__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable reverse lookups so that company or partial addresses can be used to search for address records rather than just postcode. This can be used by filling out the company name or partial address and clicking &apos;Find&apos;. --></help>
+        <label><!-- Royal Mail Reverse Lookup --></label>
+        <name>pca__Royal_Mail_Reverse__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable reverse lookups so that company and partial addresses can be used to search for address records rather than just zip code. This can be used by filling out a partial address and clicking &apos;Find&apos;. --></help>
+        <label><!-- USPS Reverse Lookup --></label>
+        <name>pca__USPS_Reverse__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable Dun &amp; Bradstreet business data searches. This will add a Postcode Anywhere icon next to the company name field specified in the business integration record to initiate the search. --></help>
+        <label><!-- Business Data --></label>
+        <name>pca__Use_Business_Data__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable hierarchy data to imported for Dun &amp; Bradstreet business data records. This includes parent DUNS, global ultimate DUNS and domestic DUNS for building account hierarchies. --></help>
+        <label><!-- Business Hierarchy Data --></label>
+        <name>pca__Use_Hierarchy_Data__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allow the system to use International address data for searches. --></help>
+        <label><!-- International Searches --></label>
+        <name>pca__Use_International_Data__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allow the system to use the more accurate Royal Mail Postcode Address data for UK searches. --></help>
+        <label><!-- Royal Mail Searches --></label>
+        <name>pca__Use_Royal_Mail_UK_Data__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allow the system to use the more accurate USPS data for US searches. --></help>
+        <label><!-- USPS Searches --></label>
+        <name>pca__Use_USPS_Data__c</name>
+    </fields>
+    <fields>
+        <help><!-- Your Postcode Anywhere Key suitable for Royal Mail transactions (required if Royal Mail Searches are selected). It should be in the format AA11-AA11-AA11-AA11. If you are unsure or use internal credits then use your standard key here as well. --></help>
+        <label><!-- Royal Mail Key (UK Only) --></label>
+        <name>pca__User_License__c</name>
+    </fields>
+</CustomObjectTranslation>

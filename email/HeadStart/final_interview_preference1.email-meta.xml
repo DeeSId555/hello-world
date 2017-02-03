@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>YP choosing which employer they want to interview with</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>final interview preference</name>
+    <style>none</style>
+    <subject>HeadStart - choose your interview preference!</subject>
+    <textOnly>*|MC:SUBJECT|*
+
+Final chance to choose your interview preference!
+
+Dear {!HS_Activity__c.YP_First_name_from_HS_Application_Form__c},
+
+We hope you&apos;re having a great time volunteering and a huge well done if you&apos;ve given 16 hours or more!
+
+This is your chance to make a final decision on which employer you want to interview with. We know it might be hard to decide between all our fantastic opportunites (including our new partner, the Berkeley Group). We have therefore created a handy Employer Guide to give you the lowdown on the different jobs/internships available and when you will need to be free. Make sure you read it carefully!
+
+Once you have made your choice, you need to let us know by clicking here.
+
+You have until 15th December to decide.
+
+Good luck!
+
+The HeadStart Team
+
+If you have any queries, please email headstart@the-challenge.org</textOnly>
+    <type>custom</type>
+</EmailTemplate>

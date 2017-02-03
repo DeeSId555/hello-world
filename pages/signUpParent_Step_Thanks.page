@@ -1,0 +1,67 @@
+<apex:page >
+Defunct: Old card payment
+<!-- Comment out prior to delete 
+controller="PAYCP1.WorldpayPaymentResponseController" showHeader="false" action="{!processAction}"> 
+	
+	<style>
+	body {
+		padding: 0px;
+		margin: 0px;
+		background:  #a8a59e url(http://www.the-challenge.org/wp-content/themes/the-challenge-2011/images/the-challenge-background.jpg) no-repeat 50% 0%;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 76%;
+	}
+	#header {
+		padding: 0;
+		background-image:  url(http://www.the-challenge.org/wp-content/themes/the-challenge-2011/images/challenge-header.gif);
+		background-repeat: no-repeat;
+		background-position: 0px 0px;
+		height: 156px;
+		position: relative;
+	}
+	.dataEntryForm {
+		background-color: #ffffff;
+		width: 600px;
+		margin: auto;
+		border: 0px solid #000000;
+		padding: 10px;
+	}
+	.sectionHeaderFirst {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12pt;
+		font-weight: bold;
+		color: #b31217;
+	}
+	</style>
+	
+	<div id="header">&nbsp;</div>
+
+    <!-- <wpdisplay payment="test-check" contents="true">
+      <tr valign="top">
+        <td class="bannererror"><wpdisplay msg="ban.notLive" stylize="banner.error" /></td>
+      </tr>
+      <tr><td>&nbsp;</td></tr>
+    </wpdisplay>  - ->
+
+	<div class="dataEntryForm">
+    <apex:outputPanel layout="none" rendered="{! authorized }" >
+		<div class="sectionHeaderFirst">Payment successfully processed</div>
+		<br/>
+		<!-- Your merchant's reference is: <wpdisplay item="cartId" /><br/> - ->
+		The authorisation code is&nbsp;<wpdisplay item="transId" /> please use this if you have any queries over the payment.<br/><br/>
+		The transaction amount was: <wpdisplay item="authAmount" /> <wpdisplay item="currency" /><br/><br/>
+		You can now close this window.
+    </apex:outputPanel>  
+
+    <apex:outputPanel layout="none" rendered="{! cancelled }" >
+		<div class="sectionHeaderFirst">The payment has been cancelled</div>
+		Your reference is <wpdisplay item="cartId" />
+    </apex:outputPanel>
+
+    <apex:outputPanel layout="none" rendered="{! ReturnURL != null }" >
+		To return to the originating record, click <a href="{! ReturnURL}" target="_top" >here</a>
+    </apex:outputPanel>
+    </div>
+    
+  -->
+</apex:page>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_75612410</developerName>
+        <masterLabel>Meeting</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>School_Activities__c.StatusNew__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Meeting Held</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Meeting Arranged</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Assembly Held</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Assembly Arranged</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Presentation Booked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Presentation Held</sourceValue>
+            </sourceValues>
+            <value>Meeting Arranged</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Contacted</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Not Contacted</sourceValue>
+            </sourceValues>
+            <value>Meeting Not Arranged</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Subcluster__c</field>
+    </columns>
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>School_Activities__c.Started__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>School_Activities__c.School_Activity_2016_Summer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>School_Activities__c.Cluster_current__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>2016 West Surrey,2016 East Surrey</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>School_Activities__c.Current_Target_School__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>School_Activities__c.School_s_segment_number__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1,2,3</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2015 Turn Up numbers and Boroughs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$School_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

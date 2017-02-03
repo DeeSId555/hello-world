@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <filter>
+        <criteriaItems>
+            <column>Step_Forward_Activity__c.Cohort__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Cohort 3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Step_Forward_Activity__c.PW_Working_with_Children__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>I would really like a job in this Pathway,I am interested in hearing about a job in this Pathway</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Step_Forward_Activity__c.PW_Working_with_Children__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <name>C3 Working with Children</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Step_Forward_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

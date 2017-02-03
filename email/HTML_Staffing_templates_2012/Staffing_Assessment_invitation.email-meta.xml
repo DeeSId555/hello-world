@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Test assessment booking email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Staffing Assessment invitation</name>
+    <style>none</style>
+    <subject>Book your assessment with The Challenge</subject>
+    <textOnly>BOOK YOUR ASSESSMENT FOR YOUR ROLE 
+
+Dear {!Contact.FirstName} 
+
+Congratuations, you have reached the next stage of the assessment process for the Challenge summer programme
+
+Please click on the link below and select the date that you are available for assessment. 
+
+TEST Here is the link for you to click on TEST 
+
+
+If you are not available for any of the dates shown, please select the check box &quot;I cannot do any of these dates&quot;. We will then contact you to see if we can arrange a suitable arrangement. 
+
+Best wishes, 
+
+{!Contact.OwnerFullName} 
+
+WWW.THE-CHALLENGE.ORG</textOnly>
+    <type>custom</type>
+</EmailTemplate>

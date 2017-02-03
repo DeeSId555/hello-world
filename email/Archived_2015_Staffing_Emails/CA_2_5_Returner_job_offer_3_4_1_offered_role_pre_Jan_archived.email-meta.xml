@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CA 2.5 Returner job offer (3.4.1)offered role pre-Jan - archived</name>
+    <style>formalLetter</style>
+    <subject>Your role on the NCS programme</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+Dear {!Contact.Name}
+
+
+Welcome back! We emailed you recently inviting you to return to your role as a {!Job_Application__c.Role_to_assess_for__c}. We hope you are looking forward to working with us again – please see below for details on what you will need to do now.
+
+
+This provisional job offer is dependent on you meeting all of the following criteria :
+
+
+
+DBS - Prompt completion and submission of an Enhanced DBS application*.
+
+References - Provision of satisfactory references.
+
+Essential Information -The completion of your details on the Staffing Website, which
+includes bank and tax details and Health and Safety information.
+
+Availability - Your being matched to a vacant role which fits your available work
+dates and location.
+
+Training - Your attendance at training.
+
+
+
+
+*This does not apply to candidates who have submitted a valid and in-date Enhanced DBS - subject to authorisation by The Challenge.
+
+
+What do you need to do now?
+
+
+
+The following sections in the ‘Placement Stage’ of our website is now available:
+
+
+DBS application - Instructions and directions to the DBS application website can be found on the Staffing Website. Please read these instructions carefully before starting your DBS application.
+
+References - you will be able to provide contact details for two referees. We contact these referees to confirm your suitability to work with young people - please read our FAQs for further information
+
+Select your available dates - you are encouraged to outline any dates you know you will be unavailable, and select which work schedules you would like to be considered for. Please note that candidates with greater availability will have a better choice of work schedules and locations available to them.
+
+
+
+What will be available later?
+
+
+
+Further sections of the placement stage will be available from March onwards*. This includes:
+
+
+Updating your bank and tax information - this is essential for ensuring that you are paid correctly for your work with us.
+
+Completing your health, safety and emergency contact details - this is needed at least two weeks before your employment with The Challenge commences, and will be shared with relevant partner organisations (e.g. outdoors activity venues, catering companies).
+
+Booking yourself on to a training day - training day(s) are mandatory for all candidates. You will be given a choice of dates to choose from for any training sessions relevant to your role.
+
+
+
+*If you are working on the February programme we will collect this information from you at an earlier date.
+
+
+In the meantime, if you have any questions please contact me quoting the email reference number below in any correspondence or alternatively, look at our FAQs.
+
+
+We hope you are looking forward to working on the programme!
+
+
+Best Wishes
+NCS with The Challenge
+
+{!Contact.OwnerFullName}
+
+{!Contact.Contact_Owner_alternative_email__c}
+
+Email Reference: CA 2.5</textOnly>
+    <type>html</type>
+</EmailTemplate>

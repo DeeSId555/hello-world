@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <description>18th and 25th</description>
+    <filter>
+        <criteriaItems>
+            <column>HS_Activity__c.Attended_Workshop_3__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>18 October 2014,25 October 2014</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>AGL Workshop Attendees 2014</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$HS_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

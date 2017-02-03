@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>HTML general template for The Challenge Society</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>The Challenge Society HeadStart</name>
+    <style>none</style>
+    <subject>HeadStart. Volunteer 16 hours... get a guaranteed job interview!</subject>
+    <textOnly>HeadStart: Give Time. Get Ahead.
+
+Hi {!Contact.FirstName}
+
+It was lovely to meet you at your Real Challenge Action weekend. Thanks a lot for signing up to be involved in HeadStart – we are excited to have you on board.
+
+Looking to make some money this Christmas? Can&apos;t find a job? Perhaps we can help...
+
+If you volunteer 16 hours of your time before the 13th November we will invite you to an interview where you will have a chance of getting a paid part time role with a high street retailer.
+Yes, that&apos;s right, we want to help you find a job!
+
+We have some inspiring charities you can get involved with to complete your hours, including your chance to design your own project with The Challenge.
+And, even better, to help you get started we’ll take off 4 hours of volunteering if you attend your fourth Real Challenge Action day. So you’re already a quarter of the way there!
+
+HeadStart is a great opportunity to develop key skills, boost your CV and get professional interview experience.
+
+All you need to do is check out the volunteering opportunities available and let us know what your interested in by clicking on the link below
+
+https://docs.google.com/forms/d/1lZJQc727GhSQGyeR_oQfj3FRC-iUYp1-lRcoBG4YXCU/viewform
+
+To be invited to assessment you must record your volunteering hours by logging onto The Challenge Society website -www.thechallengesociety.org
+Login name: {!Contact.Email}
+Password: {!Contact.Login_Password__c}
+
+Questions?
+Check out this link for more info...
+https://docs.google.com/file/d/0B9hFOgl73KM3QUdmVVBQRTZqdGs/edit?usp=sharing
+
+Or get in touch...
+headstart@the-challenge.org
+07908907391
+
+We look forward to hearing from you!
+
+Helen
+
+WWW.THECHALLENGESOCIETY.ORG  
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

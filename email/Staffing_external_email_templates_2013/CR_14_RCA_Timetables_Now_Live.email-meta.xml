@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Directing staff to SAT</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>CR 14 RCA Timetables Now Live</name>
+    <style>freeForm</style>
+    <subject>Timetables for NCS: Real Challenge Action</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed.
+
+Dear {!Contact.FirstName},
+
+Hope you have had a a great time working on NCS with The Challenge programme.
+
+Your timetable and further information for NCS: Real Challenge Action September weekends is now available; please login to the Staffing Website to view this information.
+
+Click here to login to the website
+https://staffing.the-challenge.org/secure/MyRole.aspx
+
+Pilot Waves
+
+If you have worked on a pilot and completed the last section of the program, NCS: Real Challenge Action, please let your staffing associate know if you are able to work on any of the September weekends.
+
+Any questions, please contact your staffing associate.
+
+Best wishes,
+
+
+NCS with The Challenge</textOnly>
+    <type>html</type>
+</EmailTemplate>

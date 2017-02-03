@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>AO approved.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>1.2.1f DBS file unreadable</name>
+    <style>freeForm</style>
+    <subject>Your application to work for NCS with the Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+
+
+Dear {!Contact.FirstName},
+
+
+
+Thank you for your application to work for NCS with The Challenge.
+
+
+
+You stated that you have a current DBS but unfortunately we have either
+
+
+
+a) Not received a copy of your DBS (formerly named CRB).
+
+b) Or the DBS that you have sent through was unreadable or incomplete.
+
+
+
+Please either scan or photograph your whole DBS document and send it to staffing.support@the-challenge.org
+
+
+
+NB. You will need to take a picture of the whole document and take two close ups - please ensure that that the photographs are as clear as possible.
+
+
+
+Once we have received this and confirmed its validity we will be in touch.
+
+
+
+Thank you for your interest in NCS with The Challenge.
+
+
+Best wishes,
+
+
+Staffing Department
+
+The Challenge
+
+e: staffing.support@the-challenge.org
+
+
+
+CR 1.2.1f</textOnly>
+    <type>html</type>
+</EmailTemplate>

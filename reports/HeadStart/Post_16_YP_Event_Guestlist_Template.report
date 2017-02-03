@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>HS_Activity__c.HS_YP_Attendances__r$YP_Name__c</field>
+    </columns>
+    <description>A template for Post 16 to create guestlists for our partners.</description>
+    <filter>
+        <criteriaItems>
+            <column>HS_Activity__c.HS_YP_Attendances__r$Send_Invite__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.HS_YP_Attendances__r$YP_Attending_Event__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Yes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.HS_YP_Attendances__r$HS_Event_Day__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Zendesk</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.HS_YP_Attendances__r$YP_Name__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>test</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Post 16 - YP Event Guestlist Template</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>HS_Events_with_Attendance_and_HS_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>HS_Activity__c.HS_YP_Attendances__r$YP_Name__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>HS_Activity__c$Generic_email_sent__c</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

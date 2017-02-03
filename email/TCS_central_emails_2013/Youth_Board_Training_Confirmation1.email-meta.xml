@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>2013 Youth Board Training invitation</name>
+    <style>freeForm</style>
+    <subject>Your Youth Board Training</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Congratulations on successfully getting onto the Youth Board. This is a fantastic achievement and we’re really excited to have you involved.
+
+
+
+All Youth Board members need to attend training, and we need you to book on to this as soon as possible.
+
+
+
+Please log in to The Challenge Society website with your log in details that are below:
+
+
+
+Log in: {!Contact.Email}
+Password: {!Contact.Login_Password__c}
+
+You can then book on to training and get started with the Youth Board!
+
+Many thanks,
+
+The Challenge Society</textOnly>
+    <type>html</type>
+</EmailTemplate>

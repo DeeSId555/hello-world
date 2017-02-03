@@ -1,0 +1,445 @@
+<html>
+<head><!--  -->
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" /><!-- Facebook sharing information tags -->
+	<meta content="*|MC:SUBJECT|*" property="og:title" />
+	<title>*|MC:SUBJECT|*</title>
+	<style type="text/css">#outlook a{
+			padding:0;
+		}
+		body{
+			width:100% !important;
+		}
+		body{
+			-webkit-text-size-adjust:none;
+		}
+		body{
+			margin:0;
+			padding:0;
+		}
+		img{
+			border:none;
+			font-size:14px;
+			font-weight:bold;
+			height:auto;
+			line-height:100%;
+			outline:none;
+			text-decoration:none;
+			text-transform:capitalize;
+		}
+		#backgroundTable{
+			height:100% !important;
+			margin:0;
+			padding:0;
+			width:100% !important;
+		}
+	/*
+	@tab Page
+	@section background color
+	@tip Set the background color for your email. You may want to choose one that matches your company's branding.
+	@theme page
+	*/
+		body,.backgroundTable{
+			/*@editable*/background-color:#cccccc;
+		}
+	/*
+	@tab Page
+	@section email border
+	@tip Set the border for your email.
+	*/
+		#templateContainer{
+			/*@editable*/border:1px solid #DDDDDD;
+		}
+	/*
+	@tab Page
+	@section heading 1
+	@tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+	@theme heading1
+	*/
+		h1,.h1{
+			/*@editable*/color:#202020;
+			display:block;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:34px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:100%;
+			margin-bottom:10px;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Page
+	@section heading 2
+	@tip Set the styling for all second-level headings in your emails.
+	@theme heading2
+	*/
+		h2,.h2{
+			/*@editable*/color:#202020;
+			display:block;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:30px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:100%;
+			margin-bottom:10px;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Page
+	@section heading 3
+	@tip Set the styling for all third-level headings in your emails.
+	@theme heading3
+	*/
+		h3,.h3{
+			/*@editable*/color:#202020;
+			display:block;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:26px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:100%;
+			margin-bottom:10px;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Page
+	@section heading 4
+	@tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+	@theme heading4
+	*/
+		h4,.h4{
+			/*@editable*/color:#202020;
+			display:block;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:22px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:100%;
+			margin-bottom:10px;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Header
+	@section preheader style
+	@tip Set the background color for your email's preheader area.
+	@theme page
+	*/
+		#templatePreheader{
+			/*@editable*/background-color:#FAFAFA;
+		}
+	/*
+	@tab Header
+	@section preheader text
+	@tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
+	*/
+		.preheaderContent div{
+			/*@editable*/color:#505050;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:10px;
+			/*@editable*/line-height:100%;
+			/*@editable*/text-align:center;
+		}
+	/*
+	@tab Header
+	@section preheader link
+	@tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
+	*/
+		.preheaderContent div a:link,.preheaderContent div a:visited{
+			/*@editable*/color:#336699;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+		.preheaderContent div img{
+			height:auto;
+			max-width:600px;
+		}
+	/*
+	@tab Header
+	@section header style
+	@tip Set the background color and border for your email's header area.
+	@theme header
+	*/
+		#templateHeader{
+			/*@editable*/background-color:#FFFFFF;
+			/*@editable*/border-bottom:0;
+		}
+	/*
+	@tab Header
+	@section header text
+	@tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+	*/
+		.headerContent{
+			/*@editable*/color:#202020;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:34px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:100%;
+			/*@editable*/padding:0;
+			/*@editable*/text-align:center;
+			/*@editable*/vertical-align:middle;
+		}
+	/*
+	@tab Header
+	@section header link
+	@tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
+	*/
+		.headerContent a:link,.headerContent a:visited{
+			/*@editable*/color:#336699;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+		#headerImage{
+			height:auto;
+			max-width:600px !important;
+		}
+	/*
+	@tab Body
+	@section body style
+	@tip Set the background color for your email's body area.
+	*/
+		#templateContainer,.bodyContent{
+			/*@editable*/background-color:#FDFDFD;
+		}
+	/*
+	@tab Body
+	@section body text
+	@tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+	@theme main
+	*/
+		.bodyContent div{
+			/*@editable*/color:#505050;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:14px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Body
+	@section body link
+	@tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+	*/
+		.bodyContent div a:link,.bodyContent div a:visited{
+			/*@editable*/color:#336699;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+		.bodyContent img{
+			display:inline;
+			margin-bottom:10px;
+		}
+	/*
+	@tab Footer
+	@section footer style
+	@tip Set the background color and top border for your email's footer area.
+	@theme footer
+	*/
+		#templateFooter{
+			/*@editable*/background-color:#FDFDFD;
+			/*@editable*/border-top:0;
+		}
+	/*
+	@tab Footer
+	@section footer text
+	@tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+	@theme footer
+	*/
+		.footerContent div{
+			/*@editable*/color:#707070;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:12px;
+			/*@editable*/line-height:125%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Footer
+	@section footer link
+	@tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+	*/
+		.footerContent div a:link,.footerContent div a:visited{
+			/*@editable*/color:#336699;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+		.footerContent img{
+			display:inline;
+		}
+	/*
+	@tab Footer
+	@section social bar style
+	@tip Set the background color and border for your email's footer social bar.
+	*/
+		#social{
+			/*@editable*/background-color:#FAFAFA;
+			/*@editable*/border:1px solid #F5F5F5;
+		}
+	/*
+	@tab Footer
+	@section social bar style
+	@tip Set the background color and border for your email's footer social bar.
+	*/
+		#social div{
+			/*@editable*/text-align:center;
+		}
+	/*
+	@tab Footer
+	@section utility bar style
+	@tip Set the background color and border for your email's footer utility bar.
+	*/
+		#utility{
+			/*@editable*/background-color:#FDFDFD;
+			/*@editable*/border-top:1px solid #F5F5F5;
+		}
+	/*
+	@tab Footer
+	@section utility bar style
+	@tip Set the background color and border for your email's footer utility bar.
+	*/
+		#utility div{
+			/*@editable*/text-align:center;
+		}
+		#monkeyRewards img{
+			max-width:160px;
+		}
+	</style>
+</head>
+<body leftmargin="0" marginheight="0" marginwidth="0" offset="0" topmargin="0">
+<center>
+<table border="0" cellpadding="0" cellspacing="0" height="100%" id="backgroundTable" width="100%">
+	<tbody>
+		<tr>
+			<td align="center" valign="top"><br />
+			<!-- // Begin Template Preheader \\ -->
+			<table border="0" cellpadding="10" cellspacing="0" id="templatePreheader" width="600">
+				<tbody>
+					<tr>
+						<td class="preheaderContent" valign="top"><!-- // Begin Module: Standard Preheader \\ -->
+						<table border="0" cellpadding="10" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+									<td valign="top">
+									<div mc:edit="std_preheader_content">&nbsp;</div>
+									</td>
+									<td valign="top" width="180">
+									<div mc:edit="std_preheader_links"><br />
+									<!-- *|END:IF|* --></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- // End Module: Standard Preheader \\ --></td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- // End Template Preheader \\ -->
+
+			<table border="0" cellpadding="0" cellspacing="0" id="templateContainer" width="600">
+				<tbody>
+					<tr>
+						<td align="center" valign="top"><!-- // Begin Template Header \\ -->
+						<table border="0" cellpadding="0" cellspacing="0" id="templateHeader" width="600">
+							<tbody>
+								<tr>
+									<td class="headerContent"><!-- // Begin Module: Standard Header Image \\ -->
+									<div mc:edit="header_image" style="text-align: center;"><img align="left" height="381" src="https://gallery.mailchimp.com/9bdf30bab1a41fb4af2c66fb9/images/40c1ee8e-9b80-499b-ae65-97a15c45c2f7.png" style="width: 700px; height: 381px; margin: 0px;" width="700" /></div>
+									<!-- // End Module: Standard Header Image \\ --></td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- // End Template Header \\ --></td>
+					</tr>
+					<tr>
+						<td align="center" valign="top"><!-- // Begin Template Body \\ -->
+						<table border="0" cellpadding="10" cellspacing="0" id="templateBody" width="600">
+							<tbody>
+								<tr>
+									<td class="bodyContent" valign="top"><!-- // Begin Module: Standard Content \\ -->
+									<table border="0" cellpadding="10" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td valign="top">
+												<div mc:edit="std_content00">
+												<p dir="ltr" style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 15px; line-height: 1.15; margin-top: 0pt; margin-bottom: 0pt; background-color: rgb(255, 255, 255);"><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">{!Contact.FirstName},</span></span></span></p>
+
+												<p dir="ltr" style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 15px; line-height: 1.15; margin-top: 0pt; margin-bottom: 0pt; background-color: rgb(255, 255, 255);">&nbsp;</p>
+
+												<p dir="ltr" style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 15px; line-height: 1.15; margin-top: 0pt; margin-bottom: 0pt; text-align: center; background-color: rgb(255, 255, 255);"><span style="font-size:22px;"><b style="color: rgb(255, 0, 0); font-family: Arial; font-size: 20px; line-height: 25.0909px; text-align: center; white-space: pre-wrap; background-color: rgb(255, 255, 255);">Applications for HeadStart </b><b style="color: rgb(255, 0, 0); font-family: Arial; font-size: 20px; line-height: 25.0909px; text-align: center; white-space: pre-wrap; background-color: rgb(255, 255, 255);">are now open!</b></span></p>
+
+												<p dir="ltr" style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 15px; line-height: 1.15; margin-top: 0pt; margin-bottom: 0pt; text-align: center; background-color: rgb(255, 255, 255);"><br />
+												<span style="font-size:14px;"><span style="color:#000000;"><span style="font-family: Arial, Helvetica, Verdana, sans-serif;"><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">Click </span></span></span><a href="http://www.headstart-thechallenge.org"><span style="color:#4B0082;"><span style="font-family: Arial, Helvetica, Verdana, sans-serif;"><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap;"><strong>HERE</strong></span></span></span></a><span style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, Verdana, sans-serif;"><span style="font-family: Arial; color: rgb(62, 62, 62); vertical-align: baseline; white-space: pre-wrap;"> </span></span><span style="color:#000000;"><span style="font-family: Arial, Helvetica, Verdana, sans-serif;"><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">to apply. </span></span></span></span></p>
+
+												<p dir="ltr" style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 15px; line-height: 1.15; margin-top: 0pt; margin-bottom: 0pt; text-align: center; background-color: rgb(255, 255, 255);">&nbsp;</p>
+
+												<p dir="ltr" style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 15px; line-height: 1.15; margin-top: 0pt; margin-bottom: 0pt; text-align: center; background-color: rgb(255, 255, 255);"><span style="font-size:14px;"><span style="font-family: Arial, Helvetica, Verdana, sans-serif;"><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">The deadline for applications is midnight <strong>Sunday 22nd November 2015</strong>. Places with HeadStart partners are limited so apply early to avoid disappointment. You will need either your email address or your NCS ID, and the below PIN to log in to the site. If you have logged in to a NCS site before, you can use your current password to log in: </span></span></span></p>
+
+												<p dir="ltr" style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 15px; line-height: 1.15; margin-top: 0pt; margin-bottom: 0pt; text-align: center; background-color: rgb(255, 255, 255);">&nbsp;</p>
+
+												<p dir="ltr" style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 15px; line-height: 1.15; margin-top: 0pt; margin-bottom: 0pt; text-align: center; background-color: rgb(255, 255, 255);"><span style="font-size:14px;"><strong><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">Email Address:</span></strong><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap;"> {!Contact.Email} </span></span></p>
+
+												<p dir="ltr" style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 15px; line-height: 1.15; margin-top: 0pt; margin-bottom: 0pt; text-align: center; background-color: rgb(255, 255, 255);"><span style="font-size:14px;"><strong><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">NCS ID:</span></strong><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap;"> </span></span>{!Contact.NCS_ID__c}</p>
+
+												<p dir="ltr" style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 15px; line-height: 1.15; margin-top: 0pt; margin-bottom: 0pt; text-align: center; background-color: rgb(255, 255, 255);"><span style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, Verdana, sans-serif; text-align: center; font-size: 14px;"><strong><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap;">PIN:</span></strong><span style="font-family: Arial; vertical-align: baseline; white-space: pre-wrap;"> </span></span><span style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 15px; line-height: 17.25px; text-align: center; background-color: rgb(255, 255, 255);">{!Contact.Login_Password__c}</span></p>
+
+												<p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt; text-align: center; background-color: rgb(255, 255, 255);"><br />
+												<span style="font-size:14px;"><span style="font-family: Arial; line-height: 13.8px; white-space: pre-wrap;"><span style="color:#000000;">If you have any difficulties or need to ask us a question, please email us at headstart@the-challenge.org</span></span></span></p>
+
+												<p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt; text-align: center; background-color: rgb(255, 255, 255);">&nbsp;</p>
+
+												<p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt; text-align: center; background-color: rgb(255, 255, 255);"><span style="color:#000000;">We look forward to receiving your application!</span></p>
+
+												<p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt; text-align: center; background-color: rgb(255, 255, 255);">&nbsp;</p>
+
+												<p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt; text-align: center; background-color: rgb(255, 255, 255);"><span style="color:#000000;"><strong>The HeadStart team</strong></span></p>
+												</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- // End Module: Standard Content \\ --></td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- // End Template Body \\ --></td>
+					</tr>
+					<tr>
+						<td align="center" valign="top"><!-- // Begin Template Footer \\ -->
+						<table border="0" cellpadding="10" cellspacing="0" id="templateFooter" width="600">
+							<tbody>
+								<tr>
+									<td class="footerContent" valign="top"><!-- // Begin Module: Standard Footer \\ -->
+									<table border="0" cellpadding="10" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td colspan="2" id="social" valign="middle">
+												<div mc:edit="std_social">
+												<div style="text-align: center;">&nbsp;<a href="https://twitter.com/HeadStartLondon" target="_blank">follow on Twitter</a><a href="https://twitter.com/HeadStartLondon" target="_blank"> </a>| <a href="https://www.facebook.com/Londonheadstart-1570591483167105/timeline?ref=page_internal" target="_blank">friend on Facebook</a></div>
+												</div>
+												</td>
+											</tr>
+											<tr>
+												<td valign="top" width="370">&nbsp;
+												<div mc:edit="std_footer"><br />
+												<br />
+												<span style="font-size:11px;"><span style="color:rgb(0, 0, 0); font-family:arial,helvetica,sans-serif; line-height:normal">The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.</span><br style="color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; line-height: normal; background-color: rgb(231, 231, 231);" />
+												<span style="color:rgb(0, 0, 0); font-family:arial,helvetica,sans-serif; line-height:normal">&copy; The Challenge Network.</span></span></div>
+												</td>
+												<td id="monkeyRewards" valign="top" width="170">&nbsp;
+												<div mc:edit="monkeyrewards"><img align="none" height="100" src="https://gallery.mailchimp.com/9bdf30bab1a41fb4af2c66fb9/images/0e38293d-845e-4bfa-845f-3bc4a16dab69.png" style="width: 165px; height: 100px; margin: 0px;" width="165" /></div>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2" id="utility" valign="middle">
+												<div mc:edit="std_utility">&nbsp;</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- // End Module: Standard Footer \\ --></td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- // End Template Footer \\ --></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+</body>
+</html>

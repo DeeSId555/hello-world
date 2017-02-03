@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto-email sent to YP when APM has verified Hours for CwD</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Confirmation of CwD achieved</name>
+    <style>none</style>
+    <subject>You have been awarded the Challenge with Distinction!</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Congratulations! We are very pleased to let you know you have been awarded the prestigious Challenge with Distinction! We are really impressed with the excellent work you have accomplished and the dedication you have shown along the way.
+
+The Challenge with Distinction award is a fantastic way to recognise the key skills you have demonstrated a commitment to developing over the past few months including leadership, teamwork and communication. You will now be able to show future employers and Universities what you are capable of.
+
+It is also an opportunity for us to thank you for your long term participation and assistance in your community.
+
+We would love to formally congratulate you for this great achievement at our Graduation ceremony in October, where you will receive your Challenge with Distinction certificate. We will be sending you more details about this in September... so watch this space!
+
+Looking forward to seeing you soon!
+
+Best wishes,
+
+The Challenge Society Team!</textOnly>
+    <type>custom</type>
+</EmailTemplate>

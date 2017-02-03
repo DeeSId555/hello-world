@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Usage_Type__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Usage Type</label>
+        <referenceTo>Usage_Type__c</referenceTo>
+        <relationshipName>Wave_Dates</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Wave_Template__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Wave Template</label>
+        <referenceTo>Wave_Template__c</referenceTo>
+        <relationshipName>Wave_Dates</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Wave Components</label>
+    <listViews>
+        <fullName>All_Wave_Components</fullName>
+        <columns>NAME</columns>
+        <columns>Usage_Type__c</columns>
+        <columns>Wave_Template__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>RECORDTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Wave Components</label>
+    </listViews>
+    <listViews>
+        <fullName>Autumn_Waves</fullName>
+        <columns>NAME</columns>
+        <columns>Usage_Type__c</columns>
+        <columns>Wave_Template__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Wave_Dates__c.X2015</value>
+        </filters>
+        <filters>
+            <field>Wave_Template__c</field>
+            <operation>equals</operation>
+            <value>2015 Wave 12</value>
+        </filters>
+        <label>Autumn Waves</label>
+    </listViews>
+    <listViews>
+        <fullName>Wave_1</fullName>
+        <columns>NAME</columns>
+        <columns>Wave_Template__c</columns>
+        <columns>Usage_Type__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>RECORDTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Wave_Template__c</field>
+            <operation>equals</operation>
+            <value>2013 Wave 1</value>
+        </filters>
+        <label>Wave 1</label>
+        <sharedTo>
+            <group>Systems</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Wave_10</fullName>
+        <columns>NAME</columns>
+        <columns>Usage_Type__c</columns>
+        <columns>Wave_Template__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Wave_Template__c</field>
+            <operation>equals</operation>
+            <value>Wave 10</value>
+        </filters>
+        <label>Wave 10</label>
+    </listViews>
+    <listViews>
+        <fullName>Wave_1A</fullName>
+        <columns>NAME</columns>
+        <columns>Usage_Type__c</columns>
+        <columns>Wave_Template__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>12/1/2013 12:00 AM</value>
+        </filters>
+        <label>Wave 1A</label>
+    </listViews>
+    <listViews>
+        <fullName>Wave_9</fullName>
+        <columns>NAME</columns>
+        <columns>Usage_Type__c</columns>
+        <columns>Wave_Template__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Wave_Template__c</field>
+            <operation>equals</operation>
+            <value>Wave 9</value>
+        </filters>
+        <label>Wave 9</label>
+    </listViews>
+    <listViews>
+        <fullName>Wave_Components_2016</fullName>
+        <columns>NAME</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Usage_Type__c</columns>
+        <columns>Wave_Template__c</columns>
+        <columns>RECORDTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Wave_Dates__c.X2016</value>
+        </filters>
+        <label>Wave Components - 2016</label>
+    </listViews>
+    <listViews>
+        <fullName>X2012A</fullName>
+        <columns>NAME</columns>
+        <columns>Usage_Type__c</columns>
+        <columns>Wave_Template__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Wave_Template__c</field>
+            <operation>equals</operation>
+            <value>Wave 1A</value>
+        </filters>
+        <label>Wave 1A</label>
+    </listViews>
+    <listViews>
+        <fullName>X2013_Wave_A_Non_Res</fullName>
+        <columns>NAME</columns>
+        <columns>Usage_Type__c</columns>
+        <columns>Wave_Template__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Wave_Template__c</field>
+            <operation>contains</operation>
+            <value>2013 Wave A (Non-Res)</value>
+        </filters>
+        <label>2013 Wave A (Non-Res)</label>
+    </listViews>
+    <listViews>
+        <fullName>X2013_Wave_A_res</fullName>
+        <columns>NAME</columns>
+        <columns>Usage_Type__c</columns>
+        <columns>Wave_Template__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Wave_Template__c</field>
+            <operation>contains</operation>
+            <value>2013 Wave A (Res)</value>
+        </filters>
+        <label>2013 Wave A (Res)</label>
+    </listViews>
+    <listViews>
+        <fullName>X2013_Wave_B_Non_Res</fullName>
+        <columns>NAME</columns>
+        <columns>Usage_Type__c</columns>
+        <columns>Wave_Template__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Wave_Template__c</field>
+            <operation>equals</operation>
+            <value>2013 Wave B (Non-Res)</value>
+        </filters>
+        <label>2013 Wave B (Non-Res)</label>
+    </listViews>
+    <listViews>
+        <fullName>X2013_Wave_B_Res</fullName>
+        <columns>NAME</columns>
+        <columns>Usage_Type__c</columns>
+        <columns>Wave_Template__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Wave_Template__c</field>
+            <operation>equals</operation>
+            <value>2013 Wave B (Res)</value>
+        </filters>
+        <label>2013 Wave B (Res)</label>
+    </listViews>
+    <listViews>
+        <fullName>X2013_Wave_C</fullName>
+        <columns>NAME</columns>
+        <columns>Usage_Type__c</columns>
+        <columns>Wave_Template__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Wave_Template__c</field>
+            <operation>equals</operation>
+            <value>2013 Wave C</value>
+        </filters>
+        <label>2013 Wave C</label>
+    </listViews>
+    <listViews>
+        <fullName>X2013_Wave_C_Non_Res</fullName>
+        <columns>NAME</columns>
+        <columns>Usage_Type__c</columns>
+        <columns>Wave_Template__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Wave_Template__c</field>
+            <operation>equals</operation>
+            <value>2013 Wave C (Non-Res)</value>
+        </filters>
+        <label>2013 Wave C (Non-Res)</label>
+    </listViews>
+    <listViews>
+        <fullName>X2013_Wave_C_Res</fullName>
+        <columns>NAME</columns>
+        <columns>Usage_Type__c</columns>
+        <columns>Wave_Template__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Wave_Template__c</field>
+            <operation>equals</operation>
+            <value>2013 Wave C (Res)</value>
+        </filters>
+        <label>2013 Wave C (Res)</label>
+    </listViews>
+    <listViews>
+        <fullName>X2013_Wave_components</fullName>
+        <columns>NAME</columns>
+        <columns>Wave_Template__c</columns>
+        <columns>Usage_Type__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>RECORDTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Wave_Dates__c.X2013</value>
+        </filters>
+        <label>2013_Wave_components</label>
+        <sharedTo>
+            <group>Systems</group>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>Date-{0000}</displayFormat>
+        <label>Wave Dates Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Wave Components</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>A</fullName>
+        <active>true</active>
+        <description>Autumn wave components</description>
+        <label>A</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>X2013</fullName>
+        <active>true</active>
+        <description>2013 Wave Componentss</description>
+        <label>2013</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>X2014</fullName>
+        <active>true</active>
+        <label>2014</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>X2015</fullName>
+        <active>true</active>
+        <label>2015</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>X2016</fullName>
+        <active>true</active>
+        <label>2016</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>X2017</fullName>
+        <active>true</active>
+        <description>2017 Wave Component</description>
+        <label>2017</label>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Usage_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Wave_Template__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Start_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>End_Date__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Start_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>End_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Usage_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Wave_Template__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Wave_Template__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Usage_Type__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Start_Date__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>End_Date__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchResultsAdditionalFields>Usage_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Wave_Template__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Start_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>End_Date__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+</CustomObject>

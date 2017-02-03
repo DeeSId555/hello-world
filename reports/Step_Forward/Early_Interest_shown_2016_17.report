@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Step_Forward_School_Activity__c.Is_this_a_Step_Forward_School__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Step_Forward_School_Activity__c.Is_this_a_Step_Forward_School__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>2016 - 2017</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Step_Forward_School_Activity__c.Early_Status_of_School__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Interest Shown,Meeting Booked,Meeting Held,Assembly Booked,Assembly Held</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Step_Forward_School_Activity__c.Early_Status_of_School__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Step_Forward_School_Activity__c.Step_Forward_SC__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Early Interest shown 2016-17</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$Step_Forward_School_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

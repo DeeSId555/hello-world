@@ -1,0 +1,1283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object is where all of the column, row and other information for the Staffing Allocation tool are stored.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Allow_on_girl_only_waves__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>This is TRUE as default and unticked when a role cannot be allocated to a girl-only wave. Only on “Column” record type.</inlineHelpText>
+        <label>Allow on girl-only waves</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Cluster_record_type__c</fullName>
+        <externalId>false</externalId>
+        <label>Cluster record type</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cluster_s__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Use the Clusters multipicklist to choose which clusters this role should be available for, so that regional differences can be taken into account in the tool.</inlineHelpText>
+        <label>Cluster(s)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>BAM</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BANT</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BAP</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Barnet</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BB</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BCHIC</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BHEN</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BlackCountry</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BWELL</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CAB</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CAS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CAW</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EEB</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ESurrey</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>GEM</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Greenwich</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HABAN</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HEAL</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HEN</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HIHO</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hillingdon</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HITCH</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hounslow</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lanc</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LG</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MRK</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NBham</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NCBirm</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NManc</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>RAW</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SBham</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SBirm</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SL</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SLL</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SoCo</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>STORM</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SWarkS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TRIW</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Warks</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>WEB</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>WHR</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>WSurrey</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016 3BIC</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016 BBLG</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016 BHARN</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016 Birmingham</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016 BlackCountry</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016 Brad</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016 CLS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016 East Surrey</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016 EBB</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016 Greater Manchester North &amp; Central</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016 HER</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016 HEWT</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016 HiHaB</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016 Lancs</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016 LaW</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016 SCAW</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016 SMWK</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016 STORM</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016 WEB</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016 West Surrey</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CombinedCell__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates cells are combined for team roles.</description>
+        <externalId>false</externalId>
+        <label>CombinedCell</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Enable_for_Autumn__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Enable for Autumn</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Freeze_priority_2_JPs__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Ticking this checkbox prevents users of the SAT from allocating Priority 2 Job Placements</inlineHelpText>
+        <label>Freeze priority 2 JPs</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Freeze_priority_3_JPs__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Ticking this checkbox prevents users of the SAT from allocating Priority 3 Job Placements</inlineHelpText>
+        <label>Freeze priority 3 JPs</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>JP_record_type__c</fullName>
+        <externalId>false</externalId>
+        <formula>Role__r.JP_Record_type__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The Job Placement record type for this record</inlineHelpText>
+        <label>JP record type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Min_number_of_rest_days__c</fullName>
+        <externalId>false</externalId>
+        <formula>Role__r.Min_number_of_rest_days__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This would give us the ability to set the number of days between the end of one role and the start of the next. This could be different from role to role and from year to year. Only on “Column” record type.</inlineHelpText>
+        <label>Min number of rest days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The number in this fields determines the order this record appears in the SAT</inlineHelpText>
+        <label>Order</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Role__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>This field creates the link between the SAT and the role-specific data that is held in Role</inlineHelpText>
+        <label>Role</label>
+        <referenceTo>Role__c</referenceTo>
+        <relationshipLabel>Allocation Tool Settings</relationshipLabel>
+        <relationshipName>Allocation_Tool_Settings</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Role_end__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Role__r.End_day__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This looks at the corresponding fields on the Job record to see which other Waves the Contact can be allocated to. Only on “Column” record type.</inlineHelpText>
+        <label>Role end</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Role_length__c</fullName>
+        <externalId>false</externalId>
+        <formula>Role__r.work_days__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This gives us the ability to set the standard number of days that each role type works. This is different from role to role and could change from year to year. Only on “Column” record type.</inlineHelpText>
+        <label>Role length</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Role_start__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Role__r.Start_day__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This looks at the corresponding fields on the Job record to see which other Waves the Contact can be allocated to. Only on “Column” record type.</inlineHelpText>
+        <label>Role start</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TeamName__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>In “Column” records, TeamName will be used to determine the Team allocation for Job Placements that require this</inlineHelpText>
+        <label>TeamName</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Team_is_fixed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box when the Team is fixed for the role, eg Practitioners (except Practitioner Plus, which is not tied to a team</inlineHelpText>
+        <label>Team is fixed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>VisibleName__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the text of the column/rows headers in the Allocation Tool. These need to be unique values.</inlineHelpText>
+        <label>VisibleName</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Allocation Tool Settings</label>
+    <listViews>
+        <fullName>Row_records_status</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Allocation_Tool_Settings__c.Row_2014</value>
+        </filters>
+        <label>Row records (status)</label>
+    </listViews>
+    <nameField>
+        <label>SettingName</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Allocation Tool Settings</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Admin_2014</fullName>
+        <active>true</active>
+        <description>This record type is used for general admin settings of the SAT</description>
+        <label>Admin 2014</label>
+        <picklistValues>
+            <picklist>Cluster_s__c</picklist>
+            <values>
+                <fullName>BANT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BCHIC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BHEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BlackCountry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ESurrey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Greenwich</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HEAL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HIHO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lanc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MRK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NCBirm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NManc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBirm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SLL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SWarkS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRIW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WHR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WSurrey</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Admin_2015</fullName>
+        <active>true</active>
+        <label>Admin 2015</label>
+        <picklistValues>
+            <picklist>Cluster_s__c</picklist>
+            <values>
+                <fullName>BB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BlackCountry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ESurrey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HEAL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hillingdon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hounslow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MRK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NBham</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBham</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SoCo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRIW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WSurrey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warks</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Admin_2016</fullName>
+        <active>true</active>
+        <label>Admin 2016</label>
+        <picklistValues>
+            <picklist>Cluster_s__c</picklist>
+            <values>
+                <fullName>2016 3BIC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 BBLG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 BHARN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 Birmingham</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 BlackCountry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 Brad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 CLS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 EBB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 East Surrey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 Greater Manchester North %26 Central</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 HER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 HEWT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 HiHaB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 LaW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 Lancs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 SCAW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 SMWK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 STORM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 WEB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 West Surrey</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Column_2014</fullName>
+        <active>true</active>
+        <description>The number of records with this record type would determine the number of columns on the Allocation Tool – ie. If there are 5 records with the record type “Column” then there should be 5 columns.</description>
+        <label>Column 2014</label>
+        <picklistValues>
+            <picklist>Cluster_s__c</picklist>
+            <values>
+                <fullName>BAM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BWELL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Barnet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BlackCountry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EEB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ESurrey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HABAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HIHO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HITCH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hillingdon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hounslow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MRK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NBham</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NManc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBham</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>STORM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SoCo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRIW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WEB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WSurrey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warks</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Column_2015</fullName>
+        <active>true</active>
+        <label>Column 2015</label>
+        <picklistValues>
+            <picklist>Cluster_s__c</picklist>
+            <values>
+                <fullName>BAM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BWELL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Barnet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BlackCountry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EEB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ESurrey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HABAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HEAL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HITCH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hillingdon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hounslow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MRK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NBham</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RAW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBham</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>STORM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SoCo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRIW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WEB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WSurrey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warks</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Column_2016</fullName>
+        <active>true</active>
+        <label>Column 2016</label>
+        <picklistValues>
+            <picklist>Cluster_s__c</picklist>
+            <values>
+                <fullName>2016 3BIC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 BBLG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 BHARN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 Birmingham</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 BlackCountry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 Brad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 CLS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 EBB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 East Surrey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 Greater Manchester North %26 Central</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 HER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 HEWT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 HiHaB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 LaW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 Lancs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 SCAW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 SMWK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 STORM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 WEB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 West Surrey</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Row_2014</fullName>
+        <active>true</active>
+        <description>The number of records with this record type will determine the number of rows on the Allocation Tool.</description>
+        <label>Row 2014</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Row_2015</fullName>
+        <active>true</active>
+        <label>Row 2015</label>
+        <picklistValues>
+            <picklist>Cluster_s__c</picklist>
+            <values>
+                <fullName>BB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BlackCountry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ESurrey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HEAL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hillingdon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hounslow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MRK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NBham</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBham</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SoCo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRIW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WSurrey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warks</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Row_2016</fullName>
+        <active>true</active>
+        <label>Row 2016</label>
+        <picklistValues>
+            <picklist>Cluster_s__c</picklist>
+            <values>
+                <fullName>2016 3BIC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 BBLG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 BHARN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 Birmingham</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 BlackCountry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 Brad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 CLS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 EBB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 East Surrey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 Greater Manchester North %26 Central</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 HER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 HEWT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 HiHaB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 LaW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 Lancs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 SCAW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 SMWK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 STORM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 WEB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 West Surrey</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
+</CustomObject>

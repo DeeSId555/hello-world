@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Wave__c.Online_places_available__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Places Available</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>1 - Wave__c.Support_level_5_assigned_reserved__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Space for SL4</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Wave__c.Total_On_Waiting_List_del__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA3</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total on Waiting List</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_26910259</developerName>
+        <masterLabel>Cluster</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Wave__c$Name</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Redbridge B 10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Redbridge B 13</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Redbridge B 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Redbridge B 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Redbridge B 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Redbridge B 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Redbridge B 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Redbridge B 9</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 14</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 9</sourceValue>
+            </sourceValues>
+            <value>RAW</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Havering A 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Havering A 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Havering A 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barking A 13</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barking A 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barking A 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barking A 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barking A 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barking A 9</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Newham B 13</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Newham B 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Newham B 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Newham B 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Newham B 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Newham B 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Newham B 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Newham B 9</sourceValue>
+            </sourceValues>
+            <value>HABAN</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_95199413</developerName>
+        <masterLabel>SL5 Availability</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Wave__c$At_support_level_5_capacity__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>BELOW capacity - 1 space available</sourceValue>
+            </sourceValues>
+            <value>1</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>BELOW capacity - 2 spaces available</sourceValue>
+            </sourceValues>
+            <value>2</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA3</column>
+        </chartSummaries>
+        <chartType>VerticalColumnStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Wave__c$PC_KO_day__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>Wave__c$Wave_Cluster__c</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisManualRangeEnd>6.0</summaryAxisManualRangeEnd>
+        <summaryAxisManualRangeStart>0.0</summaryAxisManualRangeStart>
+        <summaryAxisRange>Manual</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Wave__c$Online_places_available__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c$Total_On_Waiting_List_del__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Wave__c$PC_KO_day__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>6/22/2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave__c$PC_KO_day__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>8/15/2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave__c$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>test</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Wave__c$PC_KO_day__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Wave__c$Wave_Cluster__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>2015Sales WL&apos;s</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Waves__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Wave__c$Big_Challenge_date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,44 @@
+<apex:page standardController="PAYBASE2__Refund__c" extensions="PAYBASE2.NewRefundRedirectExtension" action="{! if (isImmediateRedirect, immediateRedirect, null) }">
+  <apex:sectionHeader title="New Refund" subtitle="Select Refund Record Type"/>
+  <apex:form >
+    <apex:pageBlock title="Select Refund Record Type" mode="edit">
+      <apex:pageBlockSection title="" columns="1">
+        <apex:pageBlockSectionItem >
+          <apex:outputLabel value="Record Type of new record" for="record_types"/>
+          <apex:selectList id="record_types" value="{!selectedRecordTypeId}" multiselect="false">
+            <apex:selectOptions value="{!options}"/>
+          </apex:selectList>
+      	</apex:pageBlockSectionItem>
+
+      </apex:pageBlockSection>
+        <apex:facet name="footer">
+            <apex:outputPanel layout="block" >
+                <img class="minWidth pbTitle" width="1" height="1" title="" alt="" src="/s.gif"/>
+            	<apex:commandButton action="{! selectRecordType }" value="Continue" />&nbsp;<apex:commandButton action="{! cancel }" value="Cancel" />        		
+        	</apex:outputPanel>
+        </apex:facet>
+    </apex:pageBlock>
+  </apex:form>
+  
+  <h3 class="recordTypesHeading">Available Refund Record Types</h3>
+
+  <apex:dataTable value="{!recordTypes}" var="recType" id="theTable" styleClass="recordTypeInfo infoTable" headerClass="headerRow" rules="cols">
+
+		<apex:column >
+
+		        <apex:facet name="header">Record Type Name</apex:facet>
+
+			<apex:outputText value="{!recType.name}"/>
+
+		</apex:column>
+
+		<apex:column >
+
+			<apex:facet name="header">Description</apex:facet>
+
+			<apex:outputText value="{!recType.description}"/>
+
+		</apex:column>
+
+	</apex:dataTable>
+</apex:page>

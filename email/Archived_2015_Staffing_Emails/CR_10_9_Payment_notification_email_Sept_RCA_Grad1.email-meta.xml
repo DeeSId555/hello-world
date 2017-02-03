@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 10.9 Payment notification email (Sept RCA &amp; Grad)</name>
+    <style>formalLetter</style>
+    <subject>Payment notification for your work on NCS: Real Challenge Action and NCS: Graduation.</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Job_placement__c.Staffing_Associate_email__c}.
+
+
+Dear {!Job_placement__c.Contact_Name__c},
+
+Payment notification for your work on {!Job_placement__c.Assignment_end_date__c} only - please read carefully!
+
+We hope that you had a great time on the programme! We have now processed payroll for {!Job_placement__c.Wave__c} for the following sections (you may not have worked all of the sections so one or more will be applicable to you).
+
+NCS: Real Challenge Action (September weekends)
+NCS: Graduation
+
+Summary of your approved payroll for work on {!Job_placement__c.Assignment_end_date__c}
+
+Your gross pay for the above section(s) is {!Job_placement__c.Total_Amount_Paid__c}. This payment covers a total of {!Job_placement__c.days_worked__c} days.
+
+Staff working on NCS: Graduation will receive their gross pay over two payment dates. You will receive a 70% advance payment on 27th October.
+
+You will then receive the remaining 30% on 24th November 2015. Any remaining NCS: RCA payments will also be paid on this day.
+
+Your gross pay will be subject to tax and National Insurance (NI) deductions. On your payslip, you will see the total amount which you will receive with any tax deductions listed.
+
+What else?
+
+Workplace pension auto-enrollment: Due to new auto-enrollment legislation, employees of The Challenge, including a small number of seasonal staff, will be enrolled into a workplace pension scheme. Auto-enrollment does not occur until October 2015 and staff will have the opportunity to opt-out at this point. To see if you qualify for auto-enrollment, please see our FAQs.
+
+Additional payments: You will receive a separate payment notification for each day of NCS: Real Challenge Action and NCS:Graduation you work.If you feel that you are missing additional communications concerning your payment, please contact your local staffing team.
+
+Any questions?
+
+If you have any further questions about your payment, please contact your local staffing team quoting the email reference number in correspondence. Alternatively, information is available on our FAQs.
+
+
+Best wishes,
+
+The Challenge
+NCS Programme
+
+
+
+Email reference: CR 10.9</textOnly>
+    <type>html</type>
+</EmailTemplate>

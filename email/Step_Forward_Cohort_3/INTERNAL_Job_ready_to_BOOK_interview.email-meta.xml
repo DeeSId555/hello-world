@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>MT sends to AM when they are happy for interview to be booked</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>INTERNAL: Job ready to BOOK interview</name>
+    <style>none</style>
+    <subject>INTERNAL: Job ready to BOOK Interview</subject>
+    <textOnly>INTERNAL EMAIL ALERT
+
+
+Subject: Job ready to BOOK interview
+
+SF job number: {!Step_Forward_Job__c.Id}
+
+
+Dear Account Manager, {!Step_Forward_Job__c.SF_Account_Owner__c},
+
+
+The following job is now ready to be booked for an interview.  The matching team are satisfied that they have sufficient capacity and availability of candidates for this job.  Please follow the next steps:
+
+Contact the employer to book interview date, time and duration for each interview (include contact name and number if there is somebody for the YP to meet at the interview)
+Send a confirmation email to the employer adivsing Cvs to follow 5 days before interview
+Create a Step Forward Event Component and input the interview details
+*When you have all the details, check the box &apos;Ready to Match&apos;
+
+
+*Please note, you must leave at least 2-3 weeks notice between &apos;Ready to Match&apos; and the interview date.
+
+
+Step Forward Job details
+
+SF job number:                        {!Step_Forward_Job__c.Name}
+
+Employer {!Step_Forward_Job__c.Employer__c}
+
+SF job name  {!Step_Forward_Job__c.Step_Forward_Job_Name__c}
+
+Pathway {!Step_Forward_Job__c.Pathway__c}
+
+Job Postcode {!Step_Forward_Job__c.Job_Postcode__c}
+
+
+
+
+Best wishes,
+
+
+Matching Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

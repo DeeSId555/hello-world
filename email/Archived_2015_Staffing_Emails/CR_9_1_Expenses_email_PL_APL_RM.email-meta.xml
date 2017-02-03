@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 9.1 Expenses email - PL/APL/RM</name>
+    <style>formalLetter</style>
+    <subject>Claiming your expenses - NCS expense form for {!Job_placement__c.Wave__c}</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Job_placement__c.Staffing_Associate_email__c}.
+
+
+Dear {!Job_placement__c.Contact_Name__c},
+
+Expenses related to {!Job_placement__c.Wave__c}
+
+We hope that you are excited to start your wave on the NCS programme! It is possible that you will incur expenses during your work with us. This email gives you the opportunity to submit any expenses which fall in line with our policy.
+
+
+What expenses can I submit?
+
+We will only authorise expenses for essential travel during the programme. This does not cover your travel to or from your place of residence and NCS programme venues.
+
+We occasionally cover other expenses in exceptional circumstances - these are dealt with on a case by case basis. You should speak to your Assistant Programme Manager before you submit a claim.
+
+Please submit your autumn expenses by 8 December 2015!
+
+
+How do I submit an expense?
+
+Click here to access the expense form for {!Job_placement__c.Wave__c}:
+
+http://survey.clicktools.com/app/survey/go.jsp?iv=hl8kxfyebuyp&amp;q1={!Job_Application__c.Id}&amp;q2={!Job_placement__c.Id}
+
+
+This link is only valid for {!Job_placement__c.Wave__c} and is specific to your job placement, and should not be used for other waves or. Please do not send this link to other seasonal staff.
+
+Please ensure you read the instructions on the form carefully; claims submitted incorrectly will not be processed. You can reuse this form as many times as you need to fit all your expenses for {!Job_placement__c.Wave__c}.
+
+This expense form is only valid for costs incurred on {!Job_placement__c.Wave__c} - you will receive a new expense form for each wave you work. If you need another form for a different wave please contact your local Staffing team.
+
+Make sure that you attach clear photographed or scanned copies of all relevant receipts, and keep the original copies until your expenses are reviewed. Paper receipts handed in or posted will not be processed.
+
+Each expense claim is subject to approval by your programmes team.
+
+
+**Summer programme expenses**
+
+If you also worked on this year&apos;s summer programme, you still have the option to submit expenses for your former wave(s) until 31 October 2015. Summer expenses submitted after this date will not be processed.
+
+Please ensure that you use the corresponding expense form for whichever wave you are submitting expenses for. Do not use this form for summer expenses!
+
+
+
+When will I get reimbursed?
+
+Your local programmes team will review all expenses at the end of each wave (last day of NCS:RCD). Therefore we would advise you to submit all your expenses for {!Job_placement__c.Wave__c} within 3-4 days of your role ending.
+
+We aim to pay all expenses within two weeks of authorisation - and you will receive a notification of when your expense will be processed. In the event you have not received any communications from The Challenge about submitted expense claims with 3 weeks of your role ending, please contact your local staffing team.
+
+Expenses will be processed on a fortnightly basis thereafter. Expense payment dates will be listed on the Staffing Website FAQs.
+
+The deadline for autumn expenses is 8 December 2015 but we encourage you to submit your expenses as soon as your wave ends.
+
+If you have any questions please contact your local staffing representative quoting the email reference number below in any correspondence.
+
+
+
+Best wishes,
+
+The Challenge
+NCS Programme
+
+Email Reference: CR 9.1
+VISIT NCSTHECHALLENGE.ORG NOW</textOnly>
+    <type>html</type>
+</EmailTemplate>

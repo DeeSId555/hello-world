@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SN Updated 12.13</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>9b.1 Feedback to summer staff: invite to apply again</name>
+    <style>freeForm</style>
+    <subject>Feedback from your role this summer</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+Dear {!Contact.FirstName},
+
+Many thanks for your contribution to NCS with The Challenge. Following the feedback received on your performance, we would like to invite you to re-apply for the same role of {!Job_Application__c.Recommendation_for_next_year__c} for 2014.
+
+
+We feel that it is important to continue to improve our roles year on year; and in order to improve the quality of our programme, changes have been made to some of the roles so we will require a re-assessment for you to apply for this position.
+
+
+Please follow the link below and complete the application form. An assessment date will be sent to you in due course.*
+
+
+http://thechallenge.force.com/TCN/New_Job_Application
+
+
+Thank you for your ongoing interest in NCS with The Challenge.
+
+ 
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+The Challenge Network
+e: {!Contact.Contact_Owner_alternative_email__c}
+CR 9.1
+
+*Please note the Community Mentor role is now called Community Facilitator.</textOnly>
+    <type>html</type>
+</EmailTemplate>

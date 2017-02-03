@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Test?</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>Ola Test</name>
+    <style>newsletter</style>
+    <subject>TCS NEWSLETTER ON SALESFORCE</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+We&apos;re trialing sending emails via salesforce in our G-Co meeting. Check out how it went below.
+
+
+Check this out now!</textOnly>
+    <type>html</type>
+</EmailTemplate>

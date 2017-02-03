@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_93687694</developerName>
+        <masterLabel>Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>School_Activities__c.StatusNew__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Presentation Booked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Presentation Held</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Meeting Arranged</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Meeting Held</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>School Accessed</sourceValue>
+            </sourceValues>
+            <value>School accessed</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Not Contacted</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Contacted</sourceValue>
+            </sourceValues>
+            <value>Not accessed</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>School_Activities__c.StatusNew__c</field>
+    </columns>
+    <columns>
+        <field>School_Activities__c.CT_meeting_date__c</field>
+    </columns>
+    <columns>
+        <field>School_Activities__c.Assembly_date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Borough_or_area__c</field>
+    </columns>
+    <columns>
+        <field>School_Activities__c.of_EOIs__c</field>
+    </columns>
+    <columns>
+        <field>School_Activities__c.Paid_Overall__c</field>
+    </columns>
+    <columns>
+        <field>School_Activities__c.Started__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Account.Schools</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Borough_or_area__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Hammersmith &amp; Fulham,Camden,Kensington &amp; Chelsea,Westminster</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Current_target_school_2012__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>School_Activities__c.School_Activity_2016_Summer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.School_s_segment_number__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>7</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>USERS.NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Derrick Otchere</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_93687694</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>USERS.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Derrick&apos;s schools</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$School_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>ACCOUNT.NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

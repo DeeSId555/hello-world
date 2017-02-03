@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2014 Was Reserved - now on Waiting List Email</name>
+    <style>none</style>
+    <subject>NCS with The Challenge - you are now on the waiting list</subject>
+    <textOnly>NCS POWERED BY THE CHALLENGE
+
+NCS with The Challenge:
+You are now on the waiting list
+
+
+Dear Parent/Guardian of {!Contact.Name},
+
+We contacted you on {!Contact.Date_CAL_Created__c} asking you to provide the missing item(s) from {!Contact.FirstName}’s application for NCS with The Challenge. As places on our programme are in high demand, and we did not receive the item(s) within the two-week timeframe, {!Contact.FirstName} has now been moved to the waiting list.
+
+What if {!Contact.FirstName} still wants to attend the programme?
+Please log in to their account online to provide the missing item(s), which will be clearly marked ‘!’ when you log in. This will speed up the process should another place become available between now and the programme start date. We will call you if another place becomes available.
+
+How can I increase the chances of getting a place now?
+Parents/guardians can select more than one programme date, giving {!Contact.FirstName} a greater chance of securing a place for this once-in-a-lifetime opportunity. Please log in to your account online or contact us to do so. Alternatively, if you are willing to travel to a programme which is further away and may have spaces available, please contact us to discuss this.
+
+Yours sincerely,
+
+
+
+Rebecca Carter - Director at The Challenge
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

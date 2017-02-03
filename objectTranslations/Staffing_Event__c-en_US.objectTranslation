@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Staffing Event</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Staffing Events</value>
+    </caseValues>
+    <fields>
+        <label><!-- Autumn event --></label>
+        <name>Autumn_event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Type --></label>
+        <name>Event_Type__c</name>
+        <relationshipLabel><!-- Staffing Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Event description --></label>
+        <name>Event_description__c</name>
+    </fields>
+    <fields>
+        <label><!-- First date of event --></label>
+        <name>First_date_of_event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is back-up event --></label>
+        <name>Is_back_up_event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last date of event --></label>
+        <name>Last_date_of_event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Publish to SAW (whole event) --></label>
+        <name>Publish_to_SAW_whole_event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spring event --></label>
+        <name>Spring_event__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Assessments 2014 --></label>
+        <name>Assessments_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Assessments 2015 --></label>
+        <name>Assessments_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Assessments 2016 --></label>
+        <name>Assessments_2016</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Training 2014 --></label>
+        <name>Training_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Training 2015 --></label>
+        <name>Training_2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Training 2016 --></label>
+        <name>Training_2016</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- It is not possible to set this Staffing Event to Autumn and Spring at the same time. --></errorMessage>
+        <name>Prevent_simultaneous_autumn_and_spring</name>
+    </validationRules>
+</CustomObjectTranslation>

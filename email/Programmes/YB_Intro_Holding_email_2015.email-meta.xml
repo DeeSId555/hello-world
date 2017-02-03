@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>YB Intro/Holding email 2015</name>
+    <style>freeForm</style>
+    <subject>Welcome to Youth Board</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+Congratulations on being selected for Youth Board!
+
+We are currently working out the details of your youth board induction, a chance for you to meet the other NCS Graduates who will make up the Youth Board.
+
+Youth Board induction will be on Saturday 7th November. More details, including time and location will be sent out in a few weeks.
+
+Hope you are as excited as we are about the exciting year ahead. In case you are interested click the link below to see a video of an event that last years youth board ran.
+
+https://www.youtube.com/watch?v=1EBZA_nfB7k
+
+Thanks,
+
+Liam</textOnly>
+    <type>html</type>
+</EmailTemplate>

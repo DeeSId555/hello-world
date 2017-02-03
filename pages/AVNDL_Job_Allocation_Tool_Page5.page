@@ -1,0 +1,808 @@
+<apex:page docType="html-5.0" standardStylesheets="false" showheader="false"  sidebar="false" controller="AVNDL_Job_Allocation_Tool_Controller3">
+<apex:form >
+    <html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TCN Job Allocation Tool</title>
+<!-- STYLESHEETS -->
+<link href="{!URLFOR($Resource.AllocationTool,'css/bootstrap.css')}"
+    rel="stylesheet" />
+<link
+    href="{!URLFOR($Resource.AllocationTool,'css/sticky-footer-navbar.css')}"
+    rel="stylesheet" />
+<link
+    href="{!URLFOR($Resource.AllocationTool,'font-awesome/css/font-awesome.min.css')}"
+    rel="stylesheet" />
+<!-- Avandel Custom -->
+<link
+    href="{!URLFOR($Resource.AllocationTool,'css/avandel-custom.css')}"
+    rel="stylesheet" />
+<!-- JQUERY -->
+<script
+    src="{!URLFOR($Resource.AllocationTool,'js/jquery-1.10.2.min.js')}"></script>
+<!-- Need for reload bar -->
+<script src="{!URLFOR($Resource.AllocationTool,'js/jquery.blockUI.js')}"></script>
+</head>
+<script>
+        var jpid;
+        var name;
+        var status2;
+        var status;
+        var team;
+        var test;
+        var cname;
+        var ch;
+        var clickNo=true;
+        
+      </script>
+<style type="text/css">
+.messageStyle {
+    font-size: 25px;
+    list-style-type: none;
+}
+</style>
+<apex:variable var="chnumber" value="{!0}" />
+<body>
+    <apex:outputPanel id="allPage">
+
+        <!-- Wrap all page content here -->
+        <div id="wrap">
+            <!-- Fixed topbar -->
+            <div id="gold_box" class="navbar navbar-default navbar-fixed-top">
+                <div class="container full-width">
+                    <div class="row"
+                        style="background-color: #1797C0; min-height: 30px;">
+                    
+                        <div id="logotitle">
+                            <apex:image url="{!URLFOR($Resource.AllocationTool, 'images/buildingBlock64.png')}"
+                                width="32" height="32" />
+                            JOB ALLOCATION TOOL
+                        </div>
+                        <div style="float: right; margin-right: 30px; margin-top: 10px;">
+                            <a href="/a19/o" style="color: #fff;"> &lt;&lt; Back to
+                                Salesforce</a>
+                        </div>
+                    </div>
+                    <!-- /row -->
+                </div>
+                <!-- /container -->
+                <!-- ================== SORTING BOX ============================ -->
+
+                <apex:outputPanel id="sBox">
+                    <div class="searchBox">
+                        <div class="row "
+                            style="width: 1460px; margin: auto; padding: 4px;">
+                                <apex:outputPanel id="renderWave">
+               <div class="col-md-2 calendar-scroll" style=" height:110px; border:2px dashed #C0C0C0;">
+               
+                  <apex:outputpanel >
+                   <div id="relatedWaveProcess" style="display:none;padding-left:30px;padding-top:2px;padding-bottom:2px;font-weight:bold;margin-bottom:2px">
+             
+                            PROCESSING...
+                </div>
+                </apex:outputpanel> 
+                <apex:repeat value="{!relatedWaveNumbers[relatedKey]}" var="rwn">
+                <div style="display:block;padding-left:30px;padding-top:2px;padding-bottom:2px;font-weight:bold;background-color:orange;margin-bottom:2px">
+             
+                Wave {!rwn} 
+                </div>
+               </apex:repeat>  
+                </div>
+                </apex:outputPanel>
+                            <div class="col-md-2">
+                                <div class="form-group" style="margin-bottom: 5px;">
+                                    <label>Select Zone</label>
+                                    <apex:selectList styleClass="form-control" size="1"
+                                        value="{!selectedZone}">
+                                        <apex:selectOptions value="{!allZones}" />
+                                        <apex:actionSupport event="onchange"
+                                            action="{!unselectclickAll2}" rerender="c,wPanel" />
+                                    </apex:selectList>
+                                </div>
+                                <!-- class="form-group" -->
+
+                                <div class="form-group">
+                                    <label>Select Cluster</label>
+                                    <apex:selectList id="c" styleClass="form-control" size="1"
+                                        value="{!selectedCluster}">
+                                        <apex:selectOptions value="{!Clusters}" />
+                                        <apex:actionSupport event="onchange"
+                                            action="{!unselectclickAll}" onComplete="ssss()"
+                                            rerender="wPanel" />
+                                    </apex:selectList>
+                                </div>
+                                <!-- class="form-group" -->
+                                <apex:actionFunction name="ssss" rerender="wPanel" />
+                            </div>
+                            <!-- class="col-md-2" -->
+
+                            <div class="col-md-4">
+                                <apex:outputPanel >
+                                    <apex:outputPanel id="wPanel">
+                                        <div class="form-group" style="margin-bottom: 0px;">
+                                            <label>Select Wave</label>
+                                            <apex:panelGrid columns="3" id="abcd">
+                                                <apex:selectList id="sel1" value="{!selectedWave}"
+                                                    multiselect="true"
+                                                    style="width:170px;margin-right:7px;height:80px;">
+                                                    <apex:selectOptions value="{!Waves}" />
+                                                </apex:selectList>
+                                                <apex:panelGroup >
+                                                    <apex:commandButton action="{!selectclick}" value="Add"
+                                                        reRender="abcd" styleClass="btn btn-xs"
+                                                        style="margin-bottom:3px;width:70px;background-color:#5CB57C; color:#FFF" />
+                                                    <br />
+                                                    <apex:commandButton action="{!unselectclick}"
+                                                        value="Remove" reRender="abcd"
+                                                        styleClass="btn btn-danger btn-xs"
+                                                        style="margin-bottom:3px;width:70px;;" />
+                                                    <br />
+                                                    <apex:commandButton action="{!selectclickAll}"
+                                                        value="Add All" reRender="abcd" styleClass="btn btn-xs"
+                                                        style="margin-bottom:3px;width:70px;background-color:#5CB57C; color:#FFF" />
+                                                    <br />
+                                                    <apex:commandButton action="{!unselectclickAll}"
+                                                        value="Remove All" reRender="abcd"
+                                                        styleClass="btn btn-danger btn-xs"
+                                                        style="margin-bottom:3px;width:70px;" />
+                                                </apex:panelGroup>
+                                                <apex:selectList id="sel2" styleclass="selectedWaves" value="{!rightselected}"
+                                                    multiselect="true"
+                                                    style="width:170px;margin-left:7px;height:80px;">
+                                                    <apex:selectOptions value="{!selectedValues}" />
+                                                </apex:selectList>
+                                                  <script>
+
+                        var wavelength = $('.selectedWaves').children('option').length;
+                                if(wavelength>0){
+                                    $('#listButton').prop('disabled', false);
+                                    
+                                }
+                                else{
+                                    $('#listButton').prop('disabled', true);
+                                }
+                         </script>
+                                            </apex:panelGrid>
+                                        </div>
+                                        <!-- class="form-group" -->
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                            </div>
+                            <!-- class="col-md-5" -->
+                            <div class="col-md-1">
+                                <div class="form-group">
+                                    <label>Priority</label>
+                                    <apex:selectList id="selPrior" value="{!selectedPriority}"
+                                        multiselect="false" size="1"
+                                        styleclass="selPrior form-control"
+                                        onchange="setCurrentPrior(this.value)">
+                                        <apex:selectOptions value="{!priorityValues}" />
+                                    </apex:selectList>
+                                </div>
+                                <!-- class="form-group" -->
+                            </div>
+                            <!-- class="col-md-1" -->
+
+                            <div class="col-md-1">
+                                <div class="form-group">
+
+                                    <button id="listButton" class="btn btn-primary btn-md"
+                                        type="button" onClick="savecontrol()"
+                                        style="margin-top: 20px; margin-left: 12px;" disabled="true">Show Waves</button>
+
+                                </div>
+                                <!-- class="form-group" -->
+                            </div>
+                            <!-- class="col-md-1" -->
+                        </div>
+                        <!-- class="row" -->
+                      
+
+                        <!-- WARNING MESSAGE BOX -->
+                 <apex:outputPanel id="failMessage">
+              <div style="{!IF(changeBg,'margin-left:auto;margin-right:auto;width:25%;padding:5px;background-color:#ff9933;border:2px dashed #52565E;',' ')}">
+              <div style="margin-left:22px;">
+             <apex:messages id="showMessage" styleClass="messageStyle"></apex:messages>
+             </div>
+              </div>
+         </apex:outputPanel>
+
+                    </div>
+                    <!-- class="searchBox" -->
+                </apex:outputPanel>
+                <!-- ====================== /SORTING BOX ======================== -->
+            </div>
+            <!-- class="navbar navbar-default navbar-fixed-top" -->
+            <!-- /////////////////////////////////////////// BODY CONTENT START /////////////////////////////////////////////////// -->
+            <div class="container"
+                style="padding-left: 15px; padding-right: 15px;">
+                <!-- ================= WAVE BOX REPEAT START =================== -->
+                <apex:outputpanel id="allTable">
+                    <apex:outputpanel id="allPanel">
+                        <script>
+                var a = document.getElementsByName('j_id0:j_id1:selectt');
+                var b = document.getElementsByName('j_id0:j_id1:selectt2');
+                a = $(a);
+                b = $(b);
+                a.each(function(){this.checked = false;})
+                b.each(function(){this.checked = false;})
+              </script>
+                        <apex:repeat value="{!allWaves}" var="z" rows="1">
+                            <table class="table table-curved"
+                                style="background-color: #8F8F8F; margin-bottom: 20px; margin-top: 40px;">
+                                <tr>
+                                    <td
+                                        style="padding-left: 15px; padding-top: 5px; padding-bottom: 5px; font-weight: bold; background-color: #1797C0; color: #fff">{!z.wave_cluster__r.zone__r.name}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 5px;"><apex:repeat value="{!allWaves}"
+                                            var="z1" rows="1">
+                                            <table class="table table-curved"
+                                                style="background-color: #616161; margin-bottom: 0px;">
+                                                <tr>
+                                                    <td
+                                                        style="padding-left: 45px; padding-top: 5px; padding-bottom: 5px; font-weight: bold; background-color: #D9650B; color: #ffffff;">{!z1.wave_cluster__r.name}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 5px; background-color: #ED8A41;">
+                                                        <apex:repeat value="{!allWaves}" var="w">
+                                                            <table class="table table-curved"
+                                                                style="margin-bottom: 12px;">
+                                                                <tr>
+                                                                    <td class="Wave-box-title"
+                                                                        style="padding-left: 40px; padding-top: 5px; padding-bottom: 5px; background-color: #CDE8F0; color: #000;">{!w.name}
+                                                                        <span style="font-size: 12px; margin-left: 60px;">Start
+                                                                            Date:
+                                                                            {!DAY(w.PC_KO_day__c)}/{!MONTH(w.PC_KO_day__c)}/{!YEAR(w.PC_KO_day__c)}</span><span
+                                                                        style="font-size: 12px; margin-left: 60px;">End
+                                                                            Date:
+                                                                            {!DAY(w.RCD_end_date__c)}/{!MONTH(w.RCD_end_date__c)}/{!YEAR(w.RCD_end_date__c)}</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="background-color: #C4EAFF;"><apex:outputpanel id="deneme">
+                                                                            <table id="watab" class="table table-bordered">
+                                                                                <tbody>
+                                                                                    <apex:repeat value="{!controlSettingWrapperList}"
+                                                                                        var="ars" rows="1">
+                                                                                        <tr>
+                                                                                            <th class="tableTDheader"></th>
+                                                                                            <!-- Empty Role Name Cell -->
+                                                                                            <apex:repeat value="{!ars.columns}" var="acs">
+                                                                                                <th class="tableTDheader">{!acs.VisibleName__c}</th>
+                                                                                                <!-- Role Names -->
+                                                                                            </apex:repeat>
+                                                                                        </tr>
+                                                                                    </apex:repeat>
+                                                                                    <apex:variable var="cnt" value="{!0}" />
+                                                                                    <apex:repeat value="{!controlSettingWrapperList}"
+                                                                                        var="ars1">
+                                                                                        <apex:variable var="cnt" value="{!cnt+1}" />
+
+                                                                                        <tr>
+                                                                                            <td class="tableTD rowTitle">{!ars1.rowSettings.name}</td>
+                                                                                            <!-- Status Names -->
+
+                                                                                            <apex:repeat value="{!ars1.columns}" var="acs1">
+                                                                                                <td
+                                                                                                    colspan="{!if(AND(ars1.rowSettings.CombinedCell__c==true,acs1.TeamName__c!=null,!acs1.Team_is_fixed__c),ars1.columnSize,1)}"
+                                                                                                    class="tableTD">
+                                                                                                    <div
+                                                                                                        class="{!IF(cnt==1 || cnt==2,'col-md-12','col-md-12 calendar-scroll')}">
+                                                                                                        <apex:outputPanel rendered="{!waveHasValue[w.Name][acs1.Name+IF(ars1.rowSettings.name=='Allocated',acs1.TeamName__c,'')+ars1.rowSettings.name]}"> 
+                                                                                                            <apex:repeat value="{!cellJobPlacementMap[w.Name+acs1.Name+IF(ars1.rowSettings.name=='Allocated',acs1.TeamName__c,'')+ars1.rowSettings.name]}"
+                                                                                                                var="jp">
+                                                                                                                <div
+                                                                                                                    id="{!jp.currentJp.Contact__r.id+SUBSTITUTE(acs1.name,' ','')}"
+                                                                                                                    class="normalbadge {!jp.currentJp.Contact__r.id+SUBSTITUTE(acs1.name,' ','')}" data-name="{!jp.currentJp.Contact__r.id+jp.currentJp.Role__c}" >
+                                                                                                                     <span class="jp number-badge">{!relatedSizeMap[jp.currentJp.Contact__r.id+jp.currentJp.Role__c]}</span>
+                                                                                                                    <div id="{!jp.currentJp.id}" class="jobbadge"
+                                                                                                                    	style="background-color:{!IF(jp.realPriority=='1','#5DC3DB',IF(jp.realPriority=='2','#EDE46F','#F67B37'))}"
+                                                                                                                        data-toggle="modal"
+                                                                                                                        value="{!jp.currentJp.Contact__r.name}"
+                                                                                                                        href="{!IF(ars1.rowSettings.CombinedCell__c == true && acs1.TeamName__c!=null && !acs1.Team_is_fixed__c,IF(cnt==3,'#box-config2',IF(cnt != 4,'#question','')),IF(cnt==3,'#box-config',IF(cnt != 4,'#question','')))}">
+                                                                                                                        {!jp.currentJp.Contact__r.name}</div>
+                                                                                                                    <i
+                                                                                                                        class="fa fa-{!LOWER(jp.currentJp.Contact__r.Gender__c)}"
+                                                                                                                        style="color: #4C494B; font-size: 16px;"></i><span class="number-badge" style="margin-left:3px;background-color:darkblue;color:white;border-radius:0px;padding:2px">{!relatedAbsenceDaysCount[jp.currentJp.Contact__r.id]}</span>
+                                                                                                                </div>
+                                                                                                            </apex:repeat>
+                                                                                                        </apex:outputPanel>
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                            </apex:repeat>
+                                                                                        </tr>
+                                                                                    </apex:repeat>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            </apex:outputPanel>
+                                                                            <!-- ================= /WAVE BOX REPEAT END =================== --></td>
+                                                                </tr>
+                                                            </table>
+                                                        </apex:repeat> <!-- ================= /WAVE BOX REPEAT END ===================     -->
+                                                        <!-- ===================== /CLUSTER BOX ========================= -->
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </apex:repeat> <!-- ===================== /CLUSTER BOX ========================= -->
+                                        <!-- ===================== /ZONE BOX ========================= -->
+                                    </td>
+                                </tr>
+                            </table>
+                        </apex:repeat>
+
+                        <script type="text/javascript">
+                $(".jobbadge").click(function() {
+                    jpid = $(this).attr('id');
+                    cname=$(this).attr('value');
+                    document.getElementById('{!$Component.IHName}').value = cname;
+                    
+                    document.getElementById('{!$Component.IHjpid}').value = jpid;
+                   // console.log(document.getElementById('{!$Component.IHTeam}').value);
+                    console.log('******SelectedID '+document.getElementById('{!$Component.IHjpid}').value);
+                
+                  //  sendId(jpid,name);
+                });
+                
+                    /* multi highlight JPs with same role */    
+                      $(".jp").click(function() {
+                      console.log("*********???"+document.getElementById('{!$Component.IHrkey}').value);
+                      if(document.getElementById('{!$Component.IHrkey}').value == ''   ){
+                    $("#relatedWaveProcess").css("display", "block");
+                    id = $(this).parent().attr('id');
+                    document.getElementById('{!$Component.IHrkey}').value = $(this).parent().attr('data-name');
+                    renderWaveNum();
+                    $("."+id).css("background-color","orange");
+                    
+                        }
+                        
+                        else if(document.getElementById('{!$Component.IHrkey}').value == $(this).parent().attr('data-name') ){
+                     id = $(this).parent().attr('id');
+                    $("."+id).css("background-color", "");
+                    document.getElementById('{!$Component.IHrkey}').value ="";
+                    renderWaveNum();
+                    
+                        }
+                        else
+                        {
+                        
+                        }
+                    
+                    }); 
+                    
+                  /*  $(".jp").dblclick(function() { 
+                 
+                    id = $(this).parent().attr('id');
+                    $("."+id).css("background-color", "");
+                    document.getElementById('{!$Component.IHrkey}').value ="";
+                    renderWaveNum();
+                    
+                    }); */
+                  function selectJp2(idd){
+                        ch = {!chnumber+1};
+                        if(document.getElementById('{!$Component.IHTeam}').value=='' && document.getElementById('{!$Component.IHStatus}').value=='Confirmed' && idd=='TeamRole'){
+                                document.getElementById('{!$Component.IHTeam}').value='Ward';
+                                console.log(document.getElementById('{!$Component.IHTeam}').value);
+                        }
+                        if(document.getElementById('{!$Component.IHStatus2}').value=='Confirmed' || document.getElementById('{!$Component.IHStatus2}').value=='On back-up list'){
+                            document.getElementById('{!$Component.IHTeam}').value='';
+                        }
+                        var myElement = document.getElementById("gold_box"); 
+                        //myElement.style.position = "relative"; 
+                        myElement.style.zIndex = "500";
+                        var myElement2 = document.getElementById("gold_box2"); 
+                        //myElement2.style.position = "absolute"; 
+                        myElement2.style.zIndex = "500";
+                  
+                    $.blockUI({
+
+                  
+                        message: '<img src="{!URLFOR($Resource.AllocationTool, 'images/4.gif')}"/><br/>Processing !!!', 
+                        css: { background: '#FFF8C6',
+                               border: '3px solid #ccc',
+                               padding:'20px'
+                               
+                        } 
+                        
+                    }); 
+                
+                  onDBLaction();
+                  
+                    $('#box-config').modal('hide');
+                    $('#box-config2').modal('hide');
+                    $("input:radio").attr("checked", false);
+                    $('.teamPanel').addClass('hide');  
+                    $('.selectTeam').prop('selectedIndex',0);
+                    document.getElementById('{!$Component.IHTeam}').value = null;
+                  }
+                  
+
+                 
+                </script>
+                    </apex:outputpanel>
+
+                </apex:outputpanel>
+                <!-- <apex:actionFunction name="sendId" action="{!takeJpid}"  status="myStatus" onComplete="$.unblockUI();" rerender="#box-config,#box-config2">
+              <apex:param name="jobpId" assignTo="{!selectedJp}" value="" />
+            </apex:actionFunction> -->
+
+
+            </div>
+            <!-- class="container" -->
+            <!-- /////////////////////////////////////////// BODY CONTENT END /////////////////////////////////////////////////// -->
+        </div>
+
+
+        <!-- id="wrap" -->
+        <!-- ========== FOOTER ======================== -->
+        <nav id="gold_box2" class="navbar  navbar-fixed-bottom"
+            style="background: linear-gradient(#E5F2F6, #CDE8F0) repeat scroll 0 0 rgba(0, 0, 0, 0); border-top-width: 1px; border-top-style: solid; border-top-color: #1797C0; -moz-box-shadow: 0px -1px 1px #1797C0; -webkit-box-shadow: 0px -1px 1px #1797C0; box-shadow: 0px -1px 1px #1797C0;">
+            <div class="container">
+                <div class="row"
+                    style="padding-right: 30px; padding-bottom: 10px; padding-top: 10px;">
+
+                    <div class="col-md-2" style="float: right;">
+                        <apex:commandButton styleclass="btn btn-primary btn-md"
+                            style="width:200px;" action="{!saveAll}" value="Save"
+                            id="theButton" onclick="savepro()"
+                            oncomplete="$.unblockUI();setZIndexes();" />
+                    </div>
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </nav>
+        <script>
+               function savepro (){
+               ch=0;
+                        $('#question2').modal('hide');
+                        $('#question').modal('hide');
+                        var myElement = document.getElementById("gold_box"); 
+                        //myElement.style.position = "relative"; 
+                        myElement.style.zIndex = "500";
+                        var myElement2 = document.getElementById("gold_box2"); 
+                        //myElement2.style.position = "absolute"; 
+                        myElement2.style.zIndex = "500";
+            $.blockUI({
+           
+                  
+                        message: '<img src="{!URLFOR($Resource.AllocationTool, 'images/4.gif')}"/><br/>Processing !!!', 
+                        css: { background: '#FFF8C6',
+                               border: '3px solid #ccc',
+                               padding:'40px'
+                        } 
+                        
+                    }); 
+                    }
+       </script>
+        <!-- ============ /FOOTER ================== -->
+
+        <!-- Priority Question -->
+
+        <div id="question2" class="modal fade" tabindex="-1" role="dialog"
+            aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" style="padding-left: 90px;">WOULD YOU
+                            LIKE TO CONTINUE ?</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div style="margin: auto; width: 450px;">
+                            <p style="font-weight: bold; width: 100%;">Make sure all
+                                "Priority 1" Job Placaments are allocated first !!!</p>
+                            <div style="margin: auto; width: 125px;">
+                                <input class="btn btn-success" type="button" id="yes"
+                                    value="Yes" onclick="blockPan()" /> <input
+                                    class="btn btn-danger" style="margin-left: 15px;" type="button"
+                                    id="no" value="No" onClick="$('#question2').modal('hide');" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="isNotSaved" class="modal fade" tabindex="-1" role="dialog"
+            aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" style="padding-left: 90px;">Allocations
+                            are not saved</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div style="margin: auto; width: 450px;">
+                            <p style="font-weight: bold; width: 100%;">Do you want to
+                                continue without saving?</p>
+                            <div style="margin: auto; width: 125px;">
+                                <input class="btn btn-success" type="button" id="yes"
+                                    value="Yes" onclick="blockPan()" /> <input
+                                    class="btn btn-danger" style="margin-left: 15px;" type="button"
+                                    id="no" value="No" onClick="$('#isNotSaved').modal('hide');" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Progress Bar Message -->
+        <div id="question" class="modal fade" tabindex="-1" role="dialog"
+            aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" sytle="padding-left:90px;">Would you
+                            like to remove this Job Placement?</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div style="margin: auto; width: 125px;">
+                            <apex:commandButton styleClass="btn btn-success" id="yes"
+                                value="Yes" action="{!removeAllocation}" onclick="savepro()"
+                                oncomplete="$.unblockUI();setZIndexes();" rerender="allPanel,renderWave">
+
+                            </apex:commandButton>
+                            <input class="btn btn-danger" style="margin-left: 15px;"
+                                type="button" id="no" value="No"
+                                onClick="$('#question').modal('hide');" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Progress Bar Message -->
+
+        <!-- POPUP BOX for SINGLE ROLES -->
+        <div class="modal fade" id="box-config" tabindex="-1" role="dialog"
+            aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"
+                            aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Status Settings</h4>
+                    </div>
+                    <apex:outputpanel id="modalbbc">
+                        <div class="modal-body">
+                            <script type="text/javascript">
+                  $(document).ready(function() {    
+                    $(function() {
+                        $('input[type="radio"]').each(function(){$($(this.parentElement.children).get(0)).attr('style','padding-left:5px;padding-right:5px;margin-left:45px;')});
+                        $('input[type="radio"]').each(function(){$($(this.parentElement.children).get(1)).attr('style','padding-left:5px;')});
+                     });        
+                  });
+               
+                  
+                </script>
+                            <apex:selectRadio styleclass="selectt" value="{!selectedStatus}"
+                                onclick="setCurrentStatus(this.value)" style="margin-left:70px;">
+                                <apex:selectOptions value="{!Status}" />
+                            </apex:selectRadio>
+                        </div>
+                    </apex:outputpanel>
+                    <script type="text/javascript">
+                          $(document).ready(function() {    
+                            $(function() {
+                                $('input[type="radio"]').each(function(){$($(this.parentElement.children).get(0)).attr('style','padding-left:5px;padding-right:5px;margin-left:45px;')});
+                                $('input[type="radio"]').each(function(){$($(this.parentElement.children).get(1)).attr('style','padding-left:5px;')});
+                                
+                             });        
+                          });
+                        </script>
+                    <div class="modal-footer">
+                        <button id="singleRole" Class="btn btn-primary modalOk"
+                            type="button" onClick="selectJp2('SingleRole')">Change</button>
+                    </div>
+
+                    <apex:actionfunction action="{!onDBL}" name="onDBLaction"
+                        onComplete="$.unblockUI();setZIndexes()"
+                        rerender="allPanel,failMessage,renderWave" />
+                    <apex:actionfunction action="{!getJobPlacements}" name="getJobs"
+                        onComplete=" $.unblockUI(); " rerender="allPage" />
+                        <apex:actionfunction action="{!renderWaveNumbers}" name="renderWaveNum"  rerender="renderWave"/>
+
+                </div>
+            </div>
+        </div>
+        <!-- /POPUP BOX for SINGLE ROLES -->
+        <!--POPUP BOX for TEAM ROLES-->
+        <div class="modal fade" id="box-config2" tabindex="-1" role="dialog"
+            aria-labelledby="myModalLabel" aria-hidden="true">
+
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"
+                            aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Status Settings</h4>
+                    </div>
+                    <apex:outputpanel id="modalbb">
+                        <div id="modalb" class="modal-body">
+                            <div style="width: 450px; margin: auto;">
+                                <script type="text/javascript">
+                      $(document).ready(function() {    
+                        $(function() {
+                            $('input[type="radio"]').each(function(){$($(this.parentElement.children).get(0)).attr('style','padding-left:5px;padding-right:5px;margin-left:45px;')});
+                            $('input[type="radio"]').each(function(){$($(this.parentElement.children).get(1)).attr('style','padding-left:5px;')});
+                         });        
+                      });
+         
+                    </script>
+                                <apex:selectRadio styleclass="selectt2"
+                                    value="{!selectedStatus}"
+                                    onclick="setCurrentStatus(this.value)">
+                                    <apex:selectOptions value="{!Status}" />
+                                </apex:selectRadio>
+                                <div style="width: 450px; margin: auto;">
+                                    <apex:outputpanel styleClass="teamPanel hide">
+                                        <script type="text/javascript">
+                          $(document).ready(function() {    
+                            $(function() {
+                                $('input[type="radio"]').each(function(){$($(this.parentElement.children).get(0)).attr('style','padding-left:5px;padding-right:5px;margin-left:45px;')});
+                                $('input[type="radio"]').each(function(){$($(this.parentElement.children).get(1)).attr('style','padding-left:5px;')});
+                                
+                             });        
+                          });
+                      </script>
+                                        <div style="margin-left: 125px; margin-top: 5px;">
+                                            <label>Team: </label>
+                                            <apex:selectList styleclass="selectTeam"
+                                                value="{!selectedTeam}" size="1"
+                                                onchange="setCurrentTeam(this.value)">
+                                                <apex:selectOptions value="{!Teams}" />
+                                            </apex:selectList>
+                                        </div>
+                                    </apex:outputpanel>
+                                </div>
+                            </div>
+                        </div>
+                    </apex:outputpanel>
+                    <script type="text/javascript">
+              
+              
+                $(document).ready(function() {  
+
+                    $(function() { 
+                        $('input[type="radio"]').each(function(){$($(this.parentElement.children).get(0)).attr('style','padding-left:5px;padding-right:5px;margin-left:45px;')});
+                        $('input[type="radio"]').each(function(){$($(this.parentElement.children).get(1)).attr('style','padding-left:5px;')});
+                   }); 
+                });
+                    
+                    function setCurrentPrior(value){
+                    prior = value;
+                    document.getElementById('{!$Component.IHPrior}').value = prior;
+                    }
+                    
+                    function savecontrol(){
+                        console.log(ch);
+                        if(ch>0 ){
+                            $('#isNotSaved').modal('show');
+                        }
+                        else{
+                            listprog();
+                        }
+                        
+                    }
+                
+                   function listprog(){
+                     /*   if(document.getElementById('{!$Component.IHPrior}').value == ''){
+                            document.getElementById('{!$Component.IHPrior}').value =1;
+                        }
+                        if(document.getElementById('{!$Component.IHPrior}').value != 1){
+                            $('#question2').modal('show');
+                        }
+                        else{*/
+                            blockPan();
+                       // }
+                    }
+                    function setZIndexes(){
+                    
+                        var myElement = document.getElementById("gold_box"); 
+                        //myElement.style.position = "relative"; 
+                        myElement.style.zIndex = "1000";
+                        /*var myElementjp = document.getElementByClassName("jobbadge"); 
+                        myElementjp.style.zIndex="1";*/
+                        var myElement2 = document.getElementById("gold_box2"); 
+                        //myElement2.style.position = "absolute"; 
+                        myElement2.style.position = "fixed"; 
+                        myElement2.style.zIndex = "1000";
+                        
+                        }
+                    function blockPan(){
+                        $('#question2').modal('hide');
+                        $('#isNotSaved').modal('hide');
+                        ch=0;
+                        var myElement = document.getElementById("gold_box"); 
+                    /*  var myElementjp = document.getElementsByClassName('jobbadge'); 
+                        console.log(myElementjp);
+                            for (var i = 0; i < myElementjp.length; i++) {
+                                var myElementjp = myElementjp[i];
+                                 myElementjp[i].style.zIndex="-1000";
+                            }*/
+                        
+                        //myElement.style.position = "relative"; 
+                        myElement.style.zIndex = "500";
+                        var myElement2 = document.getElementById("gold_box2"); 
+                        //myElement2.style.position = "absolute"; 
+                        myElement2.style.zIndex = "500";
+                        $.blockUI({
+
+                      
+                            message: '<img src="{!URLFOR($Resource.AllocationTool, 'images/4.gif')}"/><br/>Processing !!!',
+                            
+                            css: { background: '#FFF8C6',
+                                   border: '3px solid #ccc',
+                                   padding:'20px',
+                            }
+                            
+                            
+                        }); 
+                        
+                        getJobs();
+                        
+                        $('#box-config').modal('hide');
+                        $('#box-config2').modal('hide');
+                        
+                        $("input:radio").attr("checked", false);
+                        $('.teamPanel').addClass('hide');  
+                        $('.selectTeam').prop('selectedIndex',0);
+                        document.getElementById('{!$Component.IHTeam}').value = null;
+                        
+                    }  
+                
+                    $('.close').click(function(){
+                    $('#box-config').modal('hide');
+                    $('#box-config2').modal('hide');
+                    $("input:radio").attr("checked", false);
+                    $('.teamPanel').addClass('hide');  
+                    $('.selectTeam').prop('selectedIndex',0);
+                    document.getElementById('{!$Component.IHTeam}').value = null;
+                      });
+         
+                     function setCurrentStatus(value) {
+                    status =value;
+                    document.getElementById('{!$Component.IHStatus}').value = status;
+                       if(value=='Confirmed'){
+                        $('.teamPanel').removeClass('hide');
+                        }
+                        else{
+                          $('.teamPanel').addClass('hide');  
+                        }
+                    console.log('*****SelectedStatus '+status);
+                }
+                     
+               function setCurrentTeam(value){
+                    team = value;
+                    document.getElementById('{!$Component.IHTeam}').value = team;
+                    console.log('*****SelectedTeam '+team);
+                }
+              </script>
+                    <div class="modal-footer">
+                        <button id="TeamRole" Class="btn btn-primary modalOk"
+                            type="button" onClick="selectJp2('TeamRole')">Change</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <apex:inputHidden value="{!selectedJp}" id="IHjpid" />
+        <apex:inputHidden value="{!selectedStatus2}" id="IHStatus2" />
+        <apex:inputHidden value="{!selectedStatus}" id="IHStatus" />
+        <apex:inputHidden value="{!selectedTeam}" id="IHTeam" />
+        <apex:inputHidden value="{!selectedPriority}" id="IHprior" />
+        <apex:inputHidden value="{!Cname}" id="IHName" />
+        <apex:inputHidden value="{!relatedKey}" id="IHrkey" />
+        <!-- /POPUP BOX for TEAM ROLES-->
+        <!-- Bootstrap core JavaScript
+          ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <!-- <script src="js/bootstrap.min.js"></script> -->
+        <script
+            src="{!URLFOR($Resource.AllocationTool,'js/bootstrap.min.js')}"></script>
+
+    </apex:outputPanel>
+</body>
+        </html>
+    </apex:form>
+</apex:page>

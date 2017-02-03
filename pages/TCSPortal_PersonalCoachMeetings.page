@@ -1,0 +1,153 @@
+<apex:page sidebar="false" standardStylesheets="false" showHeader="false" standardController="Personal_Coach_Meetings__c">
+
+<html>
+    <head>
+        <style>   
+.button1{
+        
+        height:70px; 
+        width:170px; 
+        border: solid 4px; 
+        border-color:#B31217; 
+        font : 18px "Dirty", Arial, Helvetica; 
+        background :white;
+        border-radius:15px;
+        }
+        </style>
+    </head>
+    
+    <body>    
+        
+        
+        <apex:composition template="PortalTemplate">
+        
+            <apex:define name="TopDiv">
+            <!---------------- MENU -------------------------->
+             
+                  
+            </apex:define>
+            
+            <apex:define name="MidDiv">
+               <!--------------- Mid Div ------------------>
+               
+      <table style="width:100%;">                 
+                   <tr >
+                  
+          
+          
+<!-------------------------------------------- ABOUT MEETING ------------------------------------------->
+       <td valign="top" width="600" style="border-left:solid 8px; border-color:#D9D9D9; ">
+       <div style="margin-left:2%;  margin-top:1%;">
+           <apex:outputText styleClass="optext" value="about the meeting"/><br />
+           
+    <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+          <td style="width:40%;">
+                   <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach_Meetings__c.Fields.Meeting_date__c.Label}"/>
+           </td>
+      <td><apex:outputText value="{0,date,dd'/'MM'/'yyyy}">
+            <apex:param value="{!Personal_Coach_Meetings__c.Meeting_date__c}" /> 
+        </apex:outputText>
+      </td> 
+      </tr>
+     </table></div>
+     
+   <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+                       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach_Meetings__c.Fields.Meeting_number__c.Label}"/>
+                   </td>
+      <td><apex:outputText value="{!Personal_Coach_Meetings__c.Meeting_number__c}"/>
+      </td> 
+      </tr>
+     </table></div> 
+            
+   <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+                   <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach_Meetings__c.Fields.Meeting_attendance__c.Label}"/>
+                 </td>
+      <td><apex:outputText value="{!Personal_Coach_Meetings__c.Meeting_attendance__c}"/>
+      </td> 
+      </tr>
+     </table></div> 
+       
+   <div>  <table style="width:100%;">
+     <tr style="width:100%;">
+          <td style="width:40%;">
+                   <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach_Meetings__c.Fields.Meeting_summary__c.Label}"/> 
+               </td>
+      <td><apex:outputText value="{!Personal_Coach_Meetings__c.Meeting_summary__c}"/>
+      </td> 
+      </tr>
+     </table></div> 
+               </div>
+               </td>
+ <!--------------------------------------------/ ABOUT MEETING ------------------------------------------->                      
+                       
+                       
+ <!-------------------------------------------- SYSTEM MEETING ------------------------------------------->                      
+   <td valign="top" width="600" style="border-left:solid 4px; border-color:#D9D9D9; ">
+    <div style="margin-left:2%; margin-top:1%;">
+       <apex:outputText styleClass="optext" value="system information"/><br />
+       
+        <div>  <table style="width:100%;">
+     <tr style="width:100%;">
+          <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach_Meetings__c.Fields.Name.Label}"/>
+           </td>
+      <td><apex:outputText value="{!Personal_Coach_Meetings__c.Name}"/>
+      </td> 
+      </tr>
+     </table></div> 
+     
+       <div>  <table style="width:100%;">
+     <tr style="width:100%;">
+          <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="Created By"/> 
+           </td>
+      <td><apex:outputText value="{!Personal_Coach_Meetings__c.CreatedBy.Name}"/>
+      </td> 
+      </tr>
+     </table></div> 
+     
+       <div>  <table style="width:100%;">
+     <tr style="width:100%;">
+          <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="Last Modified By"/>
+       </td>
+      <td><apex:outputText value="{!Personal_Coach_Meetings__c.LastModifiedBy.Name}"/>
+      </td> 
+      </tr>
+     </table></div>
+     <a style="float:right;  margin-bottom:2%;  margin-right:2%;" href="{!Personal_Coach_Meetings__c.id}/e?retURL=/TCSPortal_PersonalCoachMeetings?id={!Personal_Coach_Meetings__c.id}"><button type="button" style="margin-top:10px; height:35px; width:100px;" class="button1">Edit</button></a>
+           </div>
+       </td> 
+   </tr>
+<!--------------------------------------------/ SYSTEM INFO. ------------------------------------------->                  
+                   
+               </table>
+        
+            </apex:define>
+           
+           <apex:define name="BotDiv"> 
+               <center>
+                   <div style="margin-top:2%;">
+                       <apex:outputLink value="{!$Page.TCSPortal_PersonalCoachDetail}?id={!Personal_Coach_Meetings__c.Personal_Coaching__c}" styleClass="optext btn button1">go to personal coaching page</apex:outputLink>
+                   </div>  
+               </center>
+               
+           </apex:define>
+           
+           
+        </apex:composition> 
+        
+    </body>
+      <style>
+    .scrollspy-example {
+                height: 400px;
+                overflow: auto;
+                position: relative;
+    </style>
+</html>
+</apex:page>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>16 PG Acceptance MERGEFORMULA TEST</name>
+    <style>none</style>
+    <subject>Confirmed Place on NCS!</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTHECHALLENGE.ORG
+
+{!Contact.FirstName}&apos;s place on NCS is confirmed!
+
+{!IF(Contact.Parent_Name__c=&quot;&quot;,&quot;Parent or Guardian of&quot;,&quot;Contact.Parent_Name&quot;)}
+
+
+{!IF(Wave_Selection__c.Wave_number__c=&quot;211&quot;,&quot;3 PART TEXT FOR WAVE 11&quot;,IF(  Wave_Selection__c.Wave_number__c=&quot;212&quot;,&quot;3 PART TEXT FOR WAVE 12&quot;,IF(    Wave_Selection__c.Wave_s_zone__c=&quot;Birmingham&quot;,&quot;3 PART TEXT FOR BIRMINGHAM&quot;,IF(Wave_Selection__c.Wave_s_zone__c=&quot;Warwickshire&quot;,&quot;3 PART TEXT FOR WARWICKSHIRE&quot;,&quot;4 PART TEXT FOR ALL OTHER WAVES&quot;))))}
+
+{!IF(Wave_Selection__c.All_girl_wave__c=&quot;TRUE&quot;,&quot;ALL GIRL WAVE TEXT&quot;,&quot;BOYS ALLOWED&quot;)}
+
+
+{!IF(ISBLANK(Contact.Date_Full_Payment_Received_New__c),&quot;PLZ PAY&quot;,&quot;THX&quot;)}
+
+Yours sincerely,
+
+
+Tanya Dunne
+Head of Customer Service
+The Challenge (largest provider of NCS)
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network is a charity registered in England and Wales with charity no. 1129239 and company no. 6845451, whose registered office is at Elizabeth House, 39 York Road, London SE1 7NQ.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

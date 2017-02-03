@@ -1,0 +1,145 @@
+<apex:page sidebar="false" standardStylesheets="true" showHeader="false" standardController="Contact">
+
+<html>
+    <head>
+        <style>
+.button2{
+         
+        height:65px; 
+        width:130px; 
+        border: solid 4px; 
+        border-color:#B31217; 
+        font : 32px "Dirty", Arial, Helvetica; 
+        background :white;
+        border-radius:15px;
+    }
+.button1{
+   
+    //width:170px;
+    height:65px;   
+    border: solid 4px; 
+    border-color:#B31217; 
+    font : 18px "Dirty", Arial, Helvetica; 
+    background :white;
+    border-radius:15px;
+    hover:grey;
+    }
+       
+        </style>
+    </head>
+    
+    <body>    
+        
+       <!-- <apex:form >-->
+        <apex:composition template="PortalTemplate">
+        
+            <apex:define name="TopDiv">
+            <!---------------- MENU -------------------------->
+            </apex:define>
+            
+            <apex:define name="MidDiv">
+         
+           <apex:variable var="call" value="{!0}" />
+           <apex:repeat value="{!Contact.Hours__r}" var="tcs">
+              <apex:variable var="call" value="{!call+1}"/>
+           </apex:repeat>
+              
+           
+           <!--NO RECORDS--->
+           <apex:outputPanel rendered="{!IF(call<=0,true,false)}">
+               <apex:pageBlock >    
+                  <apex:outputLabel styleClass="optext"> There are no hours  </apex:outputLabel>
+                </apex:pageBlock>   
+           </apex:outputPanel>
+           <!--/NO RECORDS--->
+           
+            <!--DISPLAY RECORDS--->
+           <apex:outputPanel rendered="{!IF(call > 0,true,false)}"> 
+                <apex:pageBlock >
+                    <apex:pageBlockSection columns="1" >
+                        <apex:relatedList pageSize="{!call}" list="Hours__r"/>
+                    </apex:pageBlockSection>
+                   
+                 </apex:pageBlock>
+             </apex:outputPanel>
+           <!--/ DISPLAY RECORDS--->    
+                 
+               <!--------------- Mid Div ------------------>
+             <!--  <table style="width:100%;">
+                   <tr>
+                      <td rowspan="2" valign="top" style="width:20%;">
+                           <apex:outputText styleClass="optext" value="Recent Contacts"></apex:outputText>
+                      </td>
+                      
+                      <td valign="top" style="width:80%;">
+                       
+                       
+               
+                      <table class="table table-striped" style="100%;">
+                          <th>{!$ObjectType.Hours__c.Fields.Name.Label}</th>
+                          <th>{!$ObjectType.Hours__c.Fields.Hours_of_volunteering__c.Label}</th>
+                          <th>{!$ObjectType.Hours__c.Fields.Verified__c.Label}</th>
+                         <apex:repeat value="{!Hrs}" var="hr">
+                             <apex:outputPanel rendered="{!IF(hr.Challenger__c==$CurrentPage.parameters.cid,true,false)}">
+                                 <tr style="width:100%;">
+                                     <td> <apex:outputLink value="{!$Page.TCSPortal_HourDetail}?id={!hr.id}">{!hr.Name}</apex:outputLink>  </td>
+                                     <td> <apex:outputText value="{!hr.Hours_of_volunteering__c}"></apex:outputText>  </td>
+                                     <td> <apex:outputText value="{!hr.Verified__c}"/> </td>
+                                 </tr>
+                            </apex:outputPanel>
+                         </apex:repeat>
+                         </table>
+                       
+                         
+                      </td>
+                              
+                   </tr>
+                          
+               </table>-->
+            </apex:define>
+            
+             <apex:define name="BotDiv"> 
+               <center>
+                   <div style="margin-top:1%;">
+                   <apex:outputLink styleClass="optext btn button1" style="margin-right:5%;" value="{!$Page.TCSPortal_ContactDetail}?id={!Contact.id}">back to<br/> {!Contact.Name}</apex:outputLink>
+                      <apex:outputLink value="/a0q/e?CF00NC0000005E41h={!$CurrentPage.parameters.cname}&CF00NC0000005E41h_lkid={!$CurrentPage.parameters.cid}&saveURL=/TCSPortal_ContactDetail?id={!$CurrentPage.parameters.cid}&retURL=/TCSPortal_ContactDetail?id={!$CurrentPage.parameters.cid}" styleClass="optext btn button2" style="text-align:center;">add a new Hour</apex:outputLink>
+                   </div>  
+               </center>
+               
+           </apex:define>
+           
+        </apex:composition>
+      <!--  </apex:form>   -->
+        
+    </body>
+    
+    <style>
+ .headerRow th:nth-child(2){
+     display:none;
+ }
+ .dataRow th{
+     display:none;
+ } 
+ .actionColumn{
+     display:none;
+     } 
+ .listHeader{
+     display:none;
+ }
+ .pbButton{
+     display:none;
+ }
+ .bPageBlock .pbHeader, .bGeneratedReport .bPageBlock .pbSubheader{
+     background-color:white;
+ }   
+ .bPageBlock, .individualPalette .bPageBlock{
+     border:0px;
+ }
+.scrollspy-example {
+height: 250px;
+overflow: auto;
+position: relative;
+    }
+    </style>
+</html>
+</apex:page>

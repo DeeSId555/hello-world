@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email to confirm which WSO are selected</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Confirmation of work schedule options selected PL</name>
+    <style>none</style>
+    <subject>Confirmation of the dates that you have chosen</subject>
+    <textOnly>The Challenge Network
+
+CONFIRMATION OF YOUR AVAILABILITY
+
+Dear {!Contact.FirstName}
+
+Thank you for letting us know the waves dates that you will be available for this summer.
+
+Please see confirmation of the dates that you have selected below:
+
+{!Job_Application__c.00NC0000005Ear6}
+
+If any of these dates are incorrect, please contact me as soon as possible on the number below. We will contact you in due course with your contract and your work schedule.
+
+Best wishes,
+
+{!Contact.OwnerFullName} 
+The Challenge Network 
+t: {!Contact.OwnerPhone} 
+e: {!Contact.OwnerEmail}
+
+WWW.THE-CHALLENGE.ORG    /thechallengeNETWORK
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

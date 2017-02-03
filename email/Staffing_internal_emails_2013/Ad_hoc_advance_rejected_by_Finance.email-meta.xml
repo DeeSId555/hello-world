@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sends to Staffing contact owner when Finance rejects an ad hoc advance request</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Ad hoc advance: rejected by Finance</name>
+    <style>none</style>
+    <subject>The ad hoc advance request for {!Job_placement__c.Contact__c} has been declined</subject>
+    <type>text</type>
+</EmailTemplate>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto-notification sent to Lyndsey Price when school agrees to work to Champion School Status</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>School agreed to work to Champion School status</name>
+    <style>none</style>
+    <subject>School has agreed to work towards Champion School status.</subject>
+    <textOnly>Hi Lyndsey
+
+{!Account.Name} has agreed to work towards Champion School status.  Click on this link to see the school activity:  {!School_Activities__c.Link}
+
+This is a standard email, sent automatically whenever a school has been recorded as agreeing to work toward Champion School status.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

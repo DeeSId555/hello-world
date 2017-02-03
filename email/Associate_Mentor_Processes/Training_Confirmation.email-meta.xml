@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>3. Training Confirmation</name>
+    <style>freeForm</style>
+    <subject>Your Associate Mentor Training</subject>
+    <textOnly>Hi {!HR_Event_Attendance__c.Candidate_Name__c},
+
+Thank you so much for registering to attend an Associate Mentor training session. We’re really excited to have you on board.
+
+The details of your training session are below:
+
+{!HR_Event__c.Date_time_location__c}
+
+You can find a link to the exact address below:
+
+{!HR_Event__c.Directions__c}
+
+Please bring with you a notebook and pen and wear anything you feel comfortable in.
+
+If you have any questions or you can no longer make the training session, please email grads@the-challenge.org
+
+Click on the button below for directions to the training venue.
+
+We look forward to seeing you again!
+
+Best wishes,
+
+The Challenge Society
+grads@the-challenge.org
+The Challenge</textOnly>
+    <type>html</type>
+</EmailTemplate>

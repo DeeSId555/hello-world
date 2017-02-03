@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CA 5.2 Assessment Invite error email - staff awaiting results - archived</name>
+    <style>formalLetter</style>
+    <subject>Sorry for the confusion! Assessment email sent in error.</subject>
+    <textOnly>Please do not reply to this email. This email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your local staffing team.
+
+Dear {!Contact.FirstName},
+
+Sorry for the confusion! We’re aware that you’ve recently received an email from us inviting you to assessment…. again! Although we would love to see you once more, sadly we must admit that the email was sent in error.
+
+Please disregard the email and rest assured that we won’t be asking for anymore icebreakers anytime soon! We will be in contact shortly regarding the results of your assessment and next steps.
+
+If you have any further questions, please contact your local staffing team, quoting the email reference number below, or see our FAQs page.
+
+Best wishes,
+
+The Challenge
+NCS Programme
+seasonalroles@the-challenge.org
+
+Email reference: CR 5.2</textOnly>
+    <type>html</type>
+</EmailTemplate>

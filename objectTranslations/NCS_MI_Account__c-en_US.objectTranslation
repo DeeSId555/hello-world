@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>NCS MI Account</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>NCS MI Accounts</value>
+    </caseValues>
+    <fields>
+        <help><!-- When &apos;access agreed&apos; by the School. This equates to Head meeting date, or, if blank, the ST meeting date, or, if blank, the CT meeting date. If School has a &apos;Reason not participating&apos;, then the field is blank --></help>
+        <label><!-- Access agreed --></label>
+        <name>Access_agreed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Link to Account --></help>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- NCS MI Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Formula, returning &apos;Assembly&apos; whenever there is a date in the Assembly field in Account --></help>
+        <label><!-- Event1 type --></label>
+        <name>Event1_type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula, returning &apos;Parent evening&apos; whenever there is a date in the Piggyback PG Eve field in Account --></help>
+        <label><!-- Event3 type --></label>
+        <name>Event3_type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula, returning &apos;Parent evening&apos; whenever there is a date in theTCN-specific PG Eve field in Account --></help>
+        <label><!-- Event4 type --></label>
+        <name>Event4_type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula, returning &apos;Other&apos; whenever there is a date in the Hoody handout field in Account --></help>
+        <label><!-- Event5 type --></label>
+        <name>Event5_type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Currently no data to report to NCS for this --></help>
+        <label><!-- Event7 type --></label>
+        <name>Event7_type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date of event 1, pulled from Account --></help>
+        <label><!-- Event 1 date --></label>
+        <name>Event_1_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- As provided by Cabinet Office from Edubase --></help>
+        <label><!-- Headteacher first name --></label>
+        <name>Headteacher_first_name__c</name>
+    </fields>
+    <fields>
+        <help><!-- As provided by Cabinet Office from Edubase --></help>
+        <label><!-- Headteacher phone --></label>
+        <name>Headteacher_phone__c</name>
+    </fields>
+    <fields>
+        <help><!-- As provided by Cabinet Office from Edubase --></help>
+        <label><!-- Headteacher surname --></label>
+        <name>Headteacher_surname__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason if not participating --></label>
+        <name>Reason_if_not_participating__c</name>
+    </fields>
+    <fields>
+        <help><!-- As provided by Cabinet Office from Edubase --></help>
+        <label><!-- School name --></label>
+        <name>School_name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Notes field (not mandatory) for reporting to NCS --></help>
+        <label><!-- School notes --></label>
+        <name>School_notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of pupils who are aged 15, from Cabinet Office from Edubase --></help>
+        <label><!-- No. of pupils age 15 --></label>
+        <name>Year_group_15_size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of pupils who are aged 16, from Cabinet Office from Edubase --></help>
+        <label><!-- No. of pupils age 16 --></label>
+        <name>Year_group_16_size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of pupils who are aged 17, from Cabinet Office from Edubase --></help>
+        <label><!-- No. of pupils age 17 --></label>
+        <name>Year_group_17_size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula, returning &apos;Lunch event&apos; whenever there is a date in the P1 event held field in Account --></help>
+        <label><!-- Event2 type --></label>
+        <name>event2_type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Currently no data to report to NCS for this --></help>
+        <label><!-- Event6 type --></label>
+        <name>event6_type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Currently no data to report to NCS on this --></help>
+        <label><!-- Event8 type --></label>
+        <name>event8_type__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

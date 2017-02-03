@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 3.1.1 Rejected screened YP candidates</name>
+    <style>formalLetter</style>
+    <subject>Your application for the NCS programmes 2015</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}.
+
+Dear {!Contact.Name}
+
+Thank you for submitting an application to work on the 2015 NCS programmes. Unfortunately, we will not be taking your application further.
+
+We do not feel that you currently have enough experience to take on one of our paid seasonal roles. However, we would welcome an application from you in the future once you have had a chance to develop your skills further.
+
+I still want to be involved, what else can I do?
+
+If you&apos;re still looking to get involved in our seasonal programmes, the Associate Mentor and Senior Associate Mentor roles are available.
+
+Associate Mentor: this role is for those who have graduated from NCS within the past two years.
+
+Senior Associate Mentor: this role is for those who have completed a role as an Associate Mentor within the past year.
+
+These voluntary roles can help you gain valuable experience and skills required for youth and community work, and may lead on to a paid role with us in the future.
+
+
+Sounds great, how do I apply?
+If you are interested in either the Associate Mentor or Senior Associate Mentor roles, you will need to register your interest by emailing graduates@the-challenge.org.
+
+N.B. Candidates who are over 18 will be required to complete our DBS process.
+
+Thank you for your interest in The Challenge and the NCS programmes, and we hope to work with you in the future.
+
+Best Wishes
+
+The Challenge
+{!Contact.OwnerFullName}
+{!Contact.Contact_Owner_alternative_email__c}
+
+Email Reference: CR 3.1.1</textOnly>
+    <type>html</type>
+</EmailTemplate>

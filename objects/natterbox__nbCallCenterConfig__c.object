@@ -1,0 +1,1616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Natterbox Call Center configuration settings. These settings are hierarchical - organisation-wide defaults can be overridden for different Profiles or different individual Users.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>natterbox__CTI_Service_Host__c</fullName>
+        <defaultValue>&quot;https://cti.redmatter.com&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Name of the notifier host that the CTI app should connect to.</description>
+        <externalId>false</externalId>
+        <label>CTI Service Host</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>natterbox__Call_List_Template_2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of call list template if the template is too big to fit in a single field (255 chararacters maximum)</description>
+        <externalId>false</externalId>
+        <label>Call List Template 2</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Call_List_Template_3__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of template from call list template 2</description>
+        <externalId>false</externalId>
+        <label>Call List Template 3</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Call_List_Template_4__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of template from call list template 3</description>
+        <externalId>false</externalId>
+        <label>Call List Template 4</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Call_List_Template__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Use this field to customize the recent call list in the CTI user interface</description>
+        <externalId>false</externalId>
+        <label>Call List Template</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Callback_Post_Call_Action__c</fullName>
+        <defaultValue>&quot;none&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Callback Task Post Call Action</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>natterbox__Custom_Callback_Template_2__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Custom Callback Template 2</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Custom_Callback_Template_3__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Custom Callback Template 3</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Custom_Callback_Template_4__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Custom Callback Template 4</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Custom_Callback_Template__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Custom Callback Template</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Custom_Log_Template_2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of template for customization of Logging. Space in this field is limited to 255 characters. If more is required, overflow into Custom Log Template 3</description>
+        <externalId>false</externalId>
+        <label>Custom Log Template 2</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Custom_Log_Template_3__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of template for customization of Logging.</description>
+        <externalId>false</externalId>
+        <label>Custom Log Template 3</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Custom_Log_Template_4__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of template for customization of Logging.</description>
+        <externalId>false</externalId>
+        <label>Custom Log Template 4</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Custom_Log_Template__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Template for customization of Logging. Space in this field is limited to 255 characters. If more is required, overflow into Custom Log Template 2</description>
+        <externalId>false</externalId>
+        <label>Custom Log Template</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Disable_Callback__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked, UI for creating a callback task from call wrapup is hidden.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this to hide fields during wrapup for creating a callback task.</inlineHelpText>
+        <label>Disable Callback</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Disable_Withhold_Caller_ID__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked, &apos;Withhold my caller ID&apos; is not shown in the UI as an option under &apos;My caller ID&apos;</description>
+        <externalId>false</externalId>
+        <label>Disable Withhold Caller ID</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Disable_wrapup_for_unknown_numbers__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Disable notes and wrap-up for numbers not found in SalesForce</description>
+        <externalId>false</externalId>
+        <label>Disable wrapup for unknown numbers</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Display_Recording_UI__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked, users will see a &apos;this call is being recorded&apos; UI displayed in their CTI user interface</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, users will see a &apos;this call is being recorded&apos; UI displayed in their CTI user interface</inlineHelpText>
+        <label>Display Recording UI</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Enable_Wrapup__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked, users will be required to add a wrapup code and log message for each call.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this to enable wrapup code logging.</inlineHelpText>
+        <label>Enable Wrapup</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Enable_star_code_buttons__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Check this to have selected star code actions appear as buttons in the CTI</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this to have selected star code actions appear as buttons in the CTI</inlineHelpText>
+        <label>Enable star code buttons</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Groups_Support__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Check this box to enable login/logout to/from hunt groups, call queues etc from the CTI</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box to enable login/logout to/from hunt groups, call queues etc from the CTI</inlineHelpText>
+        <label>Groups Support</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Offer_Skip_Wrapup_Conditions__c</fullName>
+        <defaultValue>&quot;never&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When should CTI wrapup show the &apos;disregard call&apos; button which when pressed skips logging the call in SF</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When should CTI wrapup show the &apos;disregard call&apos; button which when pressed skips logging the call in SF</inlineHelpText>
+        <label>Offer Skip Wrapup Conditions</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>natterbox__Outbound_Call_Wrapup_Limit__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Prevent making new outbound calls if count of outbound calls in wrapup reach this limit (0 or blank for no limit)</inlineHelpText>
+        <label>Outbound Call Wrapup Limit</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>natterbox__Pop_Query__c</fullName>
+        <defaultValue>&quot;FIND {%1%} IN PHONE FIELDS&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>SOSL query to look up salesforce objects that match phone numbers. The phone number in the query will be substituted for the string %1%.</description>
+        <externalId>false</externalId>
+        <label>Pop Query</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Query_Label_Map__c</fullName>
+        <defaultValue>&quot;Account:Name|Contact:FirstName,LastName&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field describes which fields to fetch for different objects (eg account, contact), in the order in which they should be displayed, one object type per line, or separated by the | symbol. Each list item consists of the object type followed by a colon, then a list of object fields to be displayed in the label. Eg: &quot;Account:AccountName|Case:Contact.Name&quot;</description>
+        <externalId>false</externalId>
+        <label>Query label map</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Show_Edit_Wrapup_Subject__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Allows the subject of the call to be modified when logged in SF</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Allows the subject of the call to be modified when logged in SF</inlineHelpText>
+        <label>Show Edit Wrapup Subject</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Show_Features_Under_Development__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Show Features Under Development</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Specify_default_wrapup_button__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Specify default wrapup button</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__UpdateLog__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If you are adding logs via your dialplan policy and wish users&apos; wrapup codes and notes to be added to this existing record, check this box. Otherwise the CTI will create its own logs.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this if your dialplan policy is generating logs, or leave unchecked to have the CTI generate its own logs.</inlineHelpText>
+        <label>Update Policy Generated Log</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrap_Call_Info_Content__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Wraps call information content across multiple lines</inlineHelpText>
+        <label>Wrap Call Info Content</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_10__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 11</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 10</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_11__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 12</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 11</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_12__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 13</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 12</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_13__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 14</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 13</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_14__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 15</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 14</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_15__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 16</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 15</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_16__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 17</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 16</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_17__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 18</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 17</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_18__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 19</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 18</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_19__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 20</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 19</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_20__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 21</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 20</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_21__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 22</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 21</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_22__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 23</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 22</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_23__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 24</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 23</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_24__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 25</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 24</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_25__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 26</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 25</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_26__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 27</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 26</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_27__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 28</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 27</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_28__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 29</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 28</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_29__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 30</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 29</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 3</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 2</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_30__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 31</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 30</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_31__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 32</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 31</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_32__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 33</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 32</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_33__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 34</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 33</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_34__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 35</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 34</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_35__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 36</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 35</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_36__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 37</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 36</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_37__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 38</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 37</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_38__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 39</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 38</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_39__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 40</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 39</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_3__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 4</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 3</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_40__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 41</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 40</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_41__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 42</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 41</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_42__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 43</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 42</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_43__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 44</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 43</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_44__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 45</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 44</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_45__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 46</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 45</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_46__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 47</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 46</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_47__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 48</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 47</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_48__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 49</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 48</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_49__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 50</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 49</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_4__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 5</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 4</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_50__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 51</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 50</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_51__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 52</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 51</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_52__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 53</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 52</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_53__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 54</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 53</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_54__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 55</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 54</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_55__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 56</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 55</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_56__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 57</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 56</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_57__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 58</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 57</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_58__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 59</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 58</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_59__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 60</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 59</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_5__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 6</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 5</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_60__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 61</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 60</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_61__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 62</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 61</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_62__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 63</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 62</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_63__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 64</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 63</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_64__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 65</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 64</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_6__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 7</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 6</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_7__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 8</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 7</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_8__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 9</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 8</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound_9__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for inbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Inbound 10</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls) 9</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Inbound__c</fullName>
+        <defaultValue>&quot;Call successful:0,Appointment set:3,Able to pitch:4,Decision maker not reached:5&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Wrapup codes to be used in the call logs. Comma or newline separated list of text codes, with a numric identifier appended after a colon, eg: &quot;Call Successful:0,Call Failed:1&quot;</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (inbound calls)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_10__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 11</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 10</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_11__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 12</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 11</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_12__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 13</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 12</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_13__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 14</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 13</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_14__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 15</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 14</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_15__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 16</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 15</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_16__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 16</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_17__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 18</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 17</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_18__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 19</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 18</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_19__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 20</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 19</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_20__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 21</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 20</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_21__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 22</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 21</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_22__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 23</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 22</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_23__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 24</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 23</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_24__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 25</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 24</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_25__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 26</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 25</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_26__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 27</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 26</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_27__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 28</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 27</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_28__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 29</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 28</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_29__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 30</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 29</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 3</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 2</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_30__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 31</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 30</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_31__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 32</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 31</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_32__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 33</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 32</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_33__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 34</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 33</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_34__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 35</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 34</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_35__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 36</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 35</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_36__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 37</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 36</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_37__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 38</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 37</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_38__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 39</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 38</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_39__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 40</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 39</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_3__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 4</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 3</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_40__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 41</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 40</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_41__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 42</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 41</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_42__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 43</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 42</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_43__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 44</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 43</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_44__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 45</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 44</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_45__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 46</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 45</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_46__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 47</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 46</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_47__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 48</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 47</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_48__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 49</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 48</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_49__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 50</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 49</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_4__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters.</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 4</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_50__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 51</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 50</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_51__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 52</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 51</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_52__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 53</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 52</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_53__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 54</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 53</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_54__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 55</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 54</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_55__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 56</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 55</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_56__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 57</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 56</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_57__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 58</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 57</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_58__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 59</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 58</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_59__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 60</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 59</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_5__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 6</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 5</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_60__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 61</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 60</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_61__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 62</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 61</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_62__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 63</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 62</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_63__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 64</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 63</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_64__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 65</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 64</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_6__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 7</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 6</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_7__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 8</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 7</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_8__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 9</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 8</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound_9__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Continuation of wrapup codes for outbound calls. Space in this field is limited to 255 characters. If more is required, overflow into Wrapup Codes Outbound 10</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls) 9</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_Codes_Outbound__c</fullName>
+        <defaultValue>&quot;Call successful:0,Left voicemail:1,Appointment set:2,Able to pitch:3,Decision maker not reached:4&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Wrapup codes to be used in the call logs. Comma or newline separated list of text codes, with a numric identifier appended after a colon, eg: &quot;Call Successful:1,Call Failed:2&quot;</description>
+        <externalId>false</externalId>
+        <label>Wrapup codes (outbound calls)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>natterbox__Wrapup_and_Notes_available_during_call__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Make the wrapup radio buttons and notes field available during the call instead of just when complete</description>
+        <externalId>false</externalId>
+        <label>Wrapup and Notes available during call</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Natterbox Call Center</label>
+    <visibility>Public</visibility>
+</CustomObject>

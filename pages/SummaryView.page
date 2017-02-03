@@ -1,0 +1,338 @@
+<apex:page controller="SummaryViewController" standardStylesheets="false" action="{!FetchMetrics}" showHeader="false" sidebar="false" cache="false">
+ <apex:stylesheet value="{!URLFOR($Resource.Bootstrap,'css/bootstrap.css')}" /> <!--bootstrap-->
+    <apex:includeScript value="{!URLFOR($Resource.Bootstrap,'js/bootstrap.js')}"/> <!--bootstrap-->
+    <apex:includeScript value="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"/> <!-- jquery js-->
+    <!---------MAIN TABLE----------------------------->
+    <apex:outputPanel id="Maintable" styleClass="well muted" >
+    
+           <div style="margin-top:20%; margin-left:10%;"> Please check your e-mail in a few minutes ! </div>
+   <!-- <table>
+    <tr>
+    <apex:form >
+       <a href="/apex/SummaryViewReadOnly?cid={!cid}&Name={!objName}&id={!objidencoded}"> <button type="button">Download</button> </a>
+     </apex:form>
+     </tr>
+     <tr>
+         <h3> Metrics for {!s}</h3>
+     </tr>
+        <tr>
+      
+            <td valign="top">-->
+    <!-----------FIRST TABLE---------------------->
+    
+<!--  <table class="table table-striped">
+    <tr style="height:35px;"><td colspan="4"></td></tr>
+    <tr style="height:71px;">
+  
+         <th>
+            Metric
+        </th>
+    </tr>
+   
+    <apex:repeat value="{!ListMetric}" var="w">
+       <tr >
+        <td > 
+           <div style="width:250px;">
+               {!w}
+          </div>
+        </td>
+   </tr>
+    </apex:repeat>
+</table>
+        </td>-->
+<!----------- \ FIRST TABLE---------------------->
+
+
+<!-----------SECOND TABLE---------------------->
+     <!--   <td valign="top"> 
+<table class="table table-striped">
+ <tr> 
+      <td colspan="3" style="border-left:solid 2px #ddd; border-right:solid 2px #ddd; font-size:12px; font-weight:bold;"><center>Gender</center></td>
+      <td colspan="6" style="border-left:solid 2px #ddd; border-right:solid 2px #ddd; font-size:12px; font-weight:bold;"><center>Ethnicity</center></td>
+      <td colspan="1" ></td>
+      <td colspan="1" ></td>
+      <td colspan="1" ></td>
+      <td colspan="1" ></td>
+      <td colspan="1" ></td>
+      <td colspan="7" style="border-left:solid 2px #ddd; border-right:solid 2px #ddd; font-size:12px; font-weight:bold;"><center>Religion</center></td>
+      <td colspan="5" style="border-left:solid 2px #ddd; border-right:solid 2px #ddd; font-size:12px; font-weight:bold;"><center>YP Occupation</center></td>
+      <td colspan="5" style="border-left:solid 2px #ddd; border-right:solid 2px #ddd; font-size:12px; font-weight:bold;"><center>School Category</center></td>
+  </tr>
+  <tr>
+        <th>
+            Total
+        </th>
+         <th>
+            Female
+        </th>
+         <th>
+            Male
+        </th>
+        <th>
+            Black
+        </th>
+        <th>
+            White
+        </th>
+        <th>
+            Asian
+        </th>
+        <th>
+            Chinese
+        </th>
+        <th>
+            Mixed
+        </th>
+        <th>
+         <center>
+          <div>
+           Other<br />
+            Ethnicity
+           </div>
+       </center>
+        </th>
+        <th>
+        <center>
+            Free<br />School<br /> Meals
+          </center>
+        </th>
+        <th>
+            In care
+        </th>
+        <th>
+            Disability
+        </th>
+        <th>
+        <center>
+            Support<br />Level
+            </center>
+        </th>
+        <th>
+        <center>
+        <div>  Com.<br />involvement<br />before TCN</div>
+        </center>
+           
+        </th>
+         <th>
+           Christian
+        </th>
+         <th>
+         Buddhist
+        </th>
+         <th>
+           Hindu
+        </th>
+         <th>
+           Sikh
+        </th>
+         <th>
+            Jewish
+        </th>
+         <th>
+            Muslim
+        </th>
+         <th>
+          None
+        </th>
+        <th>
+        <center>
+          Studying at<br />school/<br />college
+      </center>
+        </th>
+        <th>
+          In training
+        </th>
+        <th>
+          Working
+        </th>
+        <th>
+          Unemployed
+        </th>
+        <th>
+          Unknown
+        </th>
+         <th>
+          State
+        </th>
+         <th>
+          Independent
+        </th>
+         <th>
+          PRU
+        </th>
+         <th>
+          SEN
+        </th>
+         <th>
+          Other
+        </th>
+    </tr>
+    <apex:repeat value="{!ListWrapper2}" var="w2">
+    <tr>
+        <td ><center>
+            {!w2.Total}
+            </center>
+        </td>
+        <td class = "{!IF(w2.Female<=0,'muted','')}">
+        <center>
+            {!w2.Female}
+         </center>
+        </td>
+         <td class = "{!IF(w2.Male<=0,'muted','')}">
+           <center>
+            {!w2.Male}
+            </center>
+        </td>
+        <td class = "{!IF(w2.Black<=0,'muted','')}">
+            <center>
+            {!w2.Black}
+            </center>
+        </td>
+        <td class = "{!IF(w2.White<=0,'muted','')}">
+           <center>
+            {!w2.White}
+            </center>
+        </td>
+        <td class = "{!IF(w2.Asian<=0,'muted','')}">
+           <center>
+            {!w2.Asian}
+            </center>
+        </td>
+        <td class = "{!IF(w2.Chinese<=0,'muted','')}">
+            <center>
+            {!w2.Chinese}
+            </center>
+        </td>
+        <td class = "{!IF(w2.Mixed<=0,'muted','')}">
+            <center>
+            {!w2.Mixed}
+            </center>
+        </td>
+        <td class = "{!IF(w2.OtherEthnicity<=0,'muted','')}">
+           <center>
+            {!w2.OtherEthnicity}
+            </center>
+        </td>
+         <td class = "{!IF(w2.FreeSchoolMeals<=0,'muted','')}">
+            <center>
+            {!w2.FreeSchoolMeals}
+            </center>
+        </td>
+         <td class = "{!IF(w2.LookedAfterChild<=0,'muted','')}">
+            <center>
+            {!w2.LookedAfterChild}
+            </center>
+        </td>
+         <td class = "{!IF(w2.Disability<=0,'muted','')}">
+            <center>
+            {!w2.Disability}
+            </center>
+        </td>
+         <td class = "{!IF(w2.SupportLevel<=0,'muted','')}">
+            <center>
+            {!w2.SupportLevel}
+            </center>
+        </td>
+         <td class = "{!IF(w2.VolunteeringInvolvement<=0,'muted','')}">
+            <center>
+            {!w2.VolunteeringInvolvement}
+            </center>
+        </td>
+         <td class = "{!IF(w2.Christian<=0,'muted','')}">
+            <center>
+            {!w2.Christian}
+            </center>
+        </td>
+         <td class = "{!IF(w2.Buddhist<=0,'muted','')}">
+            <center>
+            {!w2.Buddhist}
+            </center>
+        </td>
+         <td class = "{!IF(w2.Hindu<=0,'muted','')}">
+            <center>
+            {!w2.Hindu}
+            </center>
+        </td>
+         <td class = "{!IF(w2.Sikh<=0,'muted','')}">
+            <center>
+            {!w2.Sikh}
+            </center>
+        </td>
+         <td class = "{!IF(w2.Jewish<=0,'muted','')}">
+            <center>
+            {!w2.Jewish}
+            </center>
+        </td>
+         <td class = "{!IF(w2.Muslim<=0,'muted','')}">
+            <center>
+            {!w2.Muslim}
+            </center>
+        </td>
+         <td class = "{!IF(w2.None<=0,'muted','')}">
+            <center>
+            {!w2.None}
+            </center>
+        </td>
+          <td class = "{!IF(w2.Studyingschool_collegene<=0,'muted','')}">
+            <center>
+            {!w2.Studyingschool_collegene}
+            </center>
+        </td>
+          <td class = "{!IF(w2.Intraining<=0,'muted','')}">
+            <center>
+            {!w2.Intraining}
+            </center>
+        </td>
+          <td class = "{!IF(w2.Working<=0,'muted','')}">
+            <center>
+            {!w2.Working}
+            </center>
+        </td>
+          <td class = "{!IF(w2.Unemployed<=0,'muted','')}">
+            <center>
+            {!w2.Unemployed}
+            </center>
+        </td>
+          <td class = "{!IF(w2.Unknown<=0,'muted','')}">
+            <center>
+            {!w2.Unknown}
+            </center>
+        </td>
+          <td class = "{!IF(w2.State<=0,'muted','')}">
+            <center>
+            {!w2.State}
+            </center>
+        </td>
+          <td class = "{!IF(w2.Independent<=0,'muted','')}">
+            <center>
+            {!w2.Independent}
+            </center>
+        </td>
+          <td class = "{!IF(w2.PRU<=0,'muted','')}">
+            <center>
+            {!w2.PRU}
+            </center>
+        </td>
+          <td class = "{!IF(w2.SEN<=0,'muted','')}">
+            <center>
+            {!w2.SEN}
+            </center>
+        </td>
+          <td class = "{!IF(w2.OtherSchoolType<=0,'muted','')}">
+            <center>
+            {!w2.OtherSchoolType}
+            </center>
+        </td>
+    </tr>
+</apex:repeat>
+</table>
+<apex:form >
+<apex:commandButton value="Fetch for Males" action="{!FetchMenMetrics}" reRender="Maintable"/></apex:form>
+</td>-->
+<!-----------\ SECOND TABLE---------------------->
+<!--</tr>
+</table>-->
+</apex:outputPanel>
+
+<!-------------------- \ MAIN TABLE------------------->
+</apex:page>

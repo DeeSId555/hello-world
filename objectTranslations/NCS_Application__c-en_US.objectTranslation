@@ -1,0 +1,1766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>NCS Application</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>NCS Applications</value>
+    </caseValues>
+    <fields>
+        <label><!-- AP Source --></label>
+        <name>AP_Source__c</name>
+        <picklistValues>
+            <masterLabel>Paper form</masterLabel>
+            <translation><!-- Paper form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telephone call with CS</masterLabel>
+            <translation><!-- Telephone call with CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telephone call with Sales</masterLabel>
+            <translation><!-- Telephone call with Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website</masterLabel>
+            <translation><!-- Website --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- AP received --></label>
+        <name>AP_received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active (for dupe checking) --></label>
+        <name>Active_for_dupe_checking__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pulls through the value of Active Season from the Season object --></help>
+        <label><!-- Active season --></label>
+        <name>Active_season__c</name>
+    </fields>
+    <fields>
+        <label><!-- Add new notes --></label>
+        <name>Add_new_notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Added to waiting list --></label>
+        <name>Added_to_waiting_list__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age At First Call --></label>
+        <name>Age_At_First_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age At First Successful Call --></label>
+        <name>Age_At_First_Successful_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agree to main consent --></label>
+        <name>Agree_to_main_consent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount due outstanding --></label>
+        <name>Amount_due_outstanding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application letter sent --></label>
+        <name>Application_Pack_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assembly date --></label>
+        <name>Assembly_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assembly presenter --></label>
+        <name>Assembly_presenter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned wave PC KO Day --></label>
+        <name>Assigned_wave_PC_KO_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned wave --></label>
+        <name>Assigned_wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned wave cluster --></label>
+        <name>Assigned_wave_cluster__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned waves --></label>
+        <name>Assigned_waves__c</name>
+    </fields>
+    <fields>
+        <help><!-- After contact, please update this field with your name. --></help>
+        <label><!-- Attempt 1: Agent name --></label>
+        <name>Attempt_1_Agent_name__c</name>
+        <relationshipLabel><!-- NCS Applications (Attempt 1: Agent name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- After contact, please update this field with your name. --></help>
+        <label><!-- Attempt 2: Agent name --></label>
+        <name>Attempt_2_Agent_name__c</name>
+        <relationshipLabel><!-- NCS Applications (Attempt 2: Agent name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- After contact, please update this field with your name. --></help>
+        <label><!-- Attempt 3: Agent name --></label>
+        <name>Attempt_3_Agent_name__c</name>
+        <relationshipLabel><!-- NCS Applications (Attempt 3: Agent name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Auto wave sel. attempted date --></label>
+        <name>Auto_wave_sel_attempted_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto wave sel. bypass --></label>
+        <name>Auto_wave_sel_bypass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto wave sel. created outcome --></label>
+        <name>Auto_wave_sel_created_outcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto wave sel. outcome override --></label>
+        <name>Auto_wave_sel_outcome_override__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto wave sel. status change date --></label>
+        <name>Auto_wave_sel_status_change_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto wave sel. status correct? --></label>
+        <name>Auto_wave_sel_status_correct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Birthdate --></label>
+        <name>Birthdate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reduced Fee Offered --></label>
+        <name>Bursary_offered__c</name>
+    </fields>
+    <fields>
+        <label><!-- CAL Missing Items/Criteria Paragraph --></label>
+        <name>CAL_Missing_Items_Criteria_Paragraph__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Centre Hold COMMS --></label>
+        <name>Call_Centre_Hold_COMMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Centre Notes --></label>
+        <name>Call_Centre_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS Campaign Call Centre Status --></label>
+        <name>Call_Centre_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Centre hot lead rating --></label>
+        <name>Call_Centre_hot_lead_rating__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Call follow on email PG --></label>
+        <name>Call_follow_on_email_PG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call follow on email YP --></label>
+        <name>Call_follow_on_email_YP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Champion School YP? --></label>
+        <name>Champion_School_YP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Circumstances for Override --></label>
+        <name>Circumstances_for_Override__c</name>
+        <picklistValues>
+            <masterLabel>Additional needs</masterLabel>
+            <translation><!-- Additional needs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Override Needed</masterLabel>
+            <translation><!-- No Override Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Put forward a year</masterLabel>
+            <translation><!-- Put forward a year --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Communication method preference --></label>
+        <name>Communication_method_preference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact NCS App count (dupe checking) --></label>
+        <name>Contact_NCS_App_count_dupe_checking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contacted re.refund, awaiting PG respons --></label>
+        <name>Contacted_re_refund_awaiting_PG_respons__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count of date preferences (paper form) --></label>
+        <name>Count_of_date_preferences_paper_form__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Services Call opt out --></label>
+        <name>Customer_Services_Call_opt_out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Acceptence Comms Sent --></label>
+        <name>Date_Acceptence_Comms_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Autumn Acceptance Email created --></label>
+        <name>Date_Autumn_Acceptance_Email_created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Payment Chaser letter created --></label>
+        <name>Date_CAL_created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date CS acted on WL conversation notes --></label>
+        <name>Date_CS_acted_on_WL_conversation_notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pulls through from Contact the content of Date Full Payment Received --></help>
+        <label><!-- Date Full Payment Received --></label>
+        <name>Date_Full_Payment_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date IWL Programme Pack sent --></label>
+        <name>Date_IWL_Programme_Pack_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date IWL letter created --></label>
+        <name>Date_IWL_letter_created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date MASI form Started --></label>
+        <name>Date_MASI_form_Started__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Missing Letter Items letter created --></label>
+        <name>Date_Missing_Letter_Items_letter_created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date PIE letter sent --></label>
+        <name>Date_PIE_letter_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Prog Pack Sent --></label>
+        <name>Date_Prog_Pack_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Prog Pack Sent to Reserved YP --></label>
+        <name>Date_Prog_Pack_Sent_to_Reserved_YP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Requested Paper AP form sent --></label>
+        <name>Date_Requested_Paper_AP_form_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Spring Acceptance Email created --></label>
+        <name>Date_Spring_Acceptance_Email_created__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date/time of 1st attempt to contact by Call Centre --></help>
+        <label><!-- Date/Time attempt 1 made --></label>
+        <name>Date_Time_attempt_1_made__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date/time of 2nd attempt to contact by Call Centre. --></help>
+        <label><!-- Date/Time attempt 2 made --></label>
+        <name>Date_Time_attempt_2_made__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date/time of 3rd attempt to contact by Call Centre. --></help>
+        <label><!-- Date/Time attempt 3 made --></label>
+        <name>Date_Time_attempt_3_made__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Waiting List Letter created --></label>
+        <name>Date_Waiting_List_Letter_created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date &quot;Was reserved, now on waiting list&quot; --></label>
+        <name>Date_Was_reserved_now_on_waiting_list__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Summer Acceptance Email created --></label>
+        <name>Date_acceptance_email_created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date acceptance letter created --></label>
+        <name>Date_acceptance_letter_created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date agreed other waves and/or other WLs --></label>
+        <name>Date_agreed_other_waves_and_or_other_WLs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date agreed to remain on WL-Send Letter --></label>
+        <name>Date_agreed_to_remain_on_WL_Send_Letter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date choice: Wave 10 --></label>
+        <name>Date_choice_Wave_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date choice: Wave 11 --></label>
+        <name>Date_choice_Wave_11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date choice: Wave 12 --></label>
+        <name>Date_choice_Wave_12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date choice: Wave 13 --></label>
+        <name>Date_choice_Wave_13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date choice: Wave 14 --></label>
+        <name>Date_choice_Wave_14__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date choice: Wave 15 --></label>
+        <name>Date_choice_Wave_15__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date choice: Wave 1 --></label>
+        <name>Date_choice_Wave_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date choice: Wave 2 --></label>
+        <name>Date_choice_Wave_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date choice: Wave 3 --></label>
+        <name>Date_choice_Wave_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date choice: Wave 4 --></label>
+        <name>Date_choice_Wave_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date choice: Wave 5 --></label>
+        <name>Date_choice_Wave_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date choice: Wave 6 --></label>
+        <name>Date_choice_Wave_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date choice: Wave 7 --></label>
+        <name>Date_choice_Wave_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date choice: Wave 8 --></label>
+        <name>Date_choice_Wave_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date choice: Wave 9 --></label>
+        <name>Date_choice_Wave_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date full application received --></label>
+        <name>Date_full_application_received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Birth Approval Formula --></label>
+        <name>Date_of_Birth_Approval_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Birth Approval? --></label>
+        <name>Date_of_Birth_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of withdrawal notification --></label>
+        <name>Date_of_YPPG_withdrawal_notification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of first call attempt --></label>
+        <name>Date_of_first_call_attempt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of first successful call attempt --></label>
+        <name>Date_of_first_successful_call_attempt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of latest activity --></label>
+        <name>Date_of_latest_activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date programme pack created --></label>
+        <name>Date_programme_pack_created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date sign up received --></label>
+        <name>Date_sign_up_received__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date when YP indicates they want their place (WL, Assigned, Reserved) restored after previously withdrawing their application --></help>
+        <label><!-- Date unwithdrawn --></label>
+        <name>Date_unwithdrawn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days between AP Recd &amp; Added to WL --></label>
+        <name>Days_between_AP_Recd_Added_to_WL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days since YPPG requested withdrawal --></label>
+        <name>Days_since_YPPG_requested_withdrawal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days till School Discount Deadline is reached.  Will be negative if SDD is passed. --></help>
+        <label><!-- Days to School DD --></label>
+        <name>Days_to_School_DD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Done NCS before (YP EOI)? --></label>
+        <name>Done_NCS_before_YP_EOI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due Date for Reports --></label>
+        <name>Due_Date_for_Reports_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- EOI Priority --></label>
+        <name>EOI_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- EOI age at call 1 (days) --></label>
+        <name>EOI_age_at_call_1_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- EOI age at call 2 (days) --></label>
+        <name>EOI_age_at_call_2_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- EOI age at call 3 (days) --></label>
+        <name>EOI_age_at_call_3_days__c</name>
+    </fields>
+    <fields>
+        <help><!-- Box will be ticked when EOI data entry has been checked --></help>
+        <label><!-- EOI data entry checked --></label>
+        <name>EOI_data_entry_checked__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contains copy used for merging into the Conditional Waiting List aka CWL email. The school&apos;s discount deadline is merged in. --></help>
+        <label><!-- Email WL DD payment due --></label>
+        <name>Email_WL_DD_payment_due__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- ExO End Date --></label>
+        <name>ExO_End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Exploding Offer price --></help>
+        <label><!-- ExO Price --></label>
+        <name>ExO_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- ExO Start Date --></label>
+        <name>ExO_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Previously calculated on Contact, now changed to use NCS Application fields exclusively. --></help>
+        <label><!-- Unpaid, Financial Assistance requested --></label>
+        <name>Fee_due_and_Finance_Assistance_requested__c</name>
+    </fields>
+    <fields>
+        <help><!-- Call Outcome --></help>
+        <label><!-- Financial Assistance Call Outcome --></label>
+        <name>Financial_Assistance_Call_Outcome__c</name>
+        <picklistValues>
+            <masterLabel>Not Approved</masterLabel>
+            <translation><!-- Not Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PG receives income support</masterLabel>
+            <translation><!-- PG receives income support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Receives FSM&apos;s</masterLabel>
+            <translation><!-- Receives FSM&apos;s --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single-income household</masterLabel>
+            <translation><!-- Single-income household --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unemployment</masterLabel>
+            <translation><!-- Unemployment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YP attends a non-mainstream school</masterLabel>
+            <translation><!-- YP attends a non-mainstream school --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YP does not live with parents</masterLabel>
+            <translation><!-- YP does not live with parents --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Financial Assistance call made --></label>
+        <name>Financial_Assistance_call_made__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial ass/fee reduction requested --></label>
+        <name>Financial_ass_fee_reduction_requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial assistance reason --></label>
+        <name>Financial_assistance_reason__c</name>
+        <picklistValues>
+            <masterLabel>Low family income</masterLabel>
+            <translation><!-- Low family income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other reason</masterLabel>
+            <translation><!-- Other reason --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parent/guardian receives benefits</masterLabel>
+            <translation><!-- Parent/guardian receives benefits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YP eligible for FSM</masterLabel>
+            <translation><!-- YP eligible for FSM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YP in care</masterLabel>
+            <translation><!-- YP in care --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Friend requests --></label>
+        <name>Friend_requests__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full payment received date --></label>
+        <name>Full_payment_received_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Happy to send AP cover letter? --></label>
+        <name>Happy_to_send_AP_cover_letter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hold comms values --></label>
+        <name>Hold_comms_values__c</name>
+    </fields>
+    <fields>
+        <label><!-- Home Phone --></label>
+        <name>Home_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Source --></label>
+        <name>Initial_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is this for the primary Season? --></label>
+        <name>Is_this_for_the_primary_Season__c</name>
+    </fields>
+    <fields>
+        <help><!-- Records the user who last modified the record when using The Challenge website to update records --></help>
+        <label><!-- Last modified by website user --></label>
+        <name>Last_modified_by_website_user__c</name>
+        <relationshipLabel><!-- NCS Applications (Last modified by website user) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last name letters (dupe checking) --></label>
+        <name>Last_name_letters_dupe_checking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest attempted call date --></label>
+        <name>Latest_attempted_call_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Letter/email date reserved place lost --></label>
+        <name>Letter_email_date_reserved_place_lost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Authority ID --></label>
+        <name>Local_Authority_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MASI &amp; Consent taken by TS --></label>
+        <name>MASI_Consent_taken_by_TS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medical AND support complete? --></label>
+        <name>Medical_AND_support_complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medical info received by us --></label>
+        <name>Medical_info_received_by_us__c</name>
+    </fields>
+    <fields>
+        <label><!-- Missing Item - Consent --></label>
+        <name>Missing_Item_Consent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Missing Item - DOB --></label>
+        <name>Missing_Item_DOB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Missing Item - MASI --></label>
+        <name>Missing_Item_MASI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Missing Item - School --></label>
+        <name>Missing_Item_School__c</name>
+    </fields>
+    <fields>
+        <help><!-- Missing payment, finance assistance requested and bursary call has been made. --></help>
+        <label><!-- Missing Payment Bursary Call Made --></label>
+        <name>Missing_Payment_Bursary_Call_Made__c</name>
+    </fields>
+    <fields>
+        <help><!-- Missing payment but SDD not past, finance text for acceptance letter. --></help>
+        <label><!-- Missing Payment SDD Not in Past --></label>
+        <name>Missing_Payment_SDD_Not_in_Past__c</name>
+    </fields>
+    <fields>
+        <help><!-- Acceptance letter finance paragraph if Bursary/financial assistance has been requested --></help>
+        <label><!-- Missing Payment with Bursary Call Due --></label>
+        <name>Missing_Payment_with_Bursary_Call_Due__c</name>
+    </fields>
+    <fields>
+        <label><!-- Missing items paragraph --></label>
+        <name>Missing_items_paragraph__c</name>
+    </fields>
+    <fields>
+        <help><!-- Text to drop in to Acceptance letter/email regarding finance &amp; payments where SDD is already past or has &apos;No School&apos;/&apos;No SDD&apos;. --></help>
+        <label><!-- Missing payment paragraph SDD in past --></label>
+        <name>Missing_payment_paragraph__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile Phone --></label>
+        <name>Mobile_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- More than 5 days to discount deadline --></label>
+        <name>More_than_5_days_to_discount_deadline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Date YP Assigned --></label>
+        <name>Most_Recent_Date_YP_Assigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Move YP from wave to WL --></label>
+        <name>Move_YP_from_wave_to_WL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Moved from Reserved to WL Waves --></label>
+        <name>Moved_from_Reserved_to_WL_Waves__c</name>
+    </fields>
+    <fields>
+        <label><!-- Telesales NCS Application link --></label>
+        <name>NCS_Application_link__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS Campaign Date Local Call Made --></label>
+        <name>NCS_Campaign_Date_Local_Call_Made__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date the NCS Trust&apos;s Call Centre processed the refund request that had been passed to them. --></help>
+        <label><!-- NCS Campaign Date Trust Refund Processed --></label>
+        <name>NCS_Campaign_Date_Trust_Refund_Processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS Campaign Date Trust Refund Requested --></label>
+        <name>NCS_Campaign_Date_Trust_Refund_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS Campaign Email/Letter Sent --></label>
+        <name>NCS_Campaign_Email_Letter_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS Campaign Local Call Result --></label>
+        <name>NCS_Campaign_Local_Call_Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS Campaign Notes --></label>
+        <name>NCS_Campaign_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS Campaign Reason Declined --></label>
+        <name>NCS_Campaign_Reason_Declined__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS Campaign School --></label>
+        <name>NCS_Campaign_School__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS Campaign Timing First Preference --></label>
+        <name>NCS_Campaign_Timing_First_Preference__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS Campaign Timing Second Preference --></label>
+        <name>NCS_Campaign_Timing_Second_Preference__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS Campaign Timing Third Preference --></label>
+        <name>NCS_Campaign_Timing_Third_Preference__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS Overwrite --></label>
+        <name>NCS_Overwrite__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS Payment Trial --></label>
+        <name>NCS_Payment_Trial__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date the new contact (YP) was sent a Welcome email.  Auto populates on creation of NCS Application. --></help>
+        <label><!-- New Contact Welcome Email Sent Date --></label>
+        <name>New_Contact_Welcome_Email_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Contact Welcome SMS Sent Date --></label>
+        <name>New_Contact_Welcome_SMS_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of times EOI Upload --></label>
+        <name>No_of_times_EOI_Upload__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total no of times EOI upload --></label>
+        <name>No_of_times_EOI__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of wave selections --></label>
+        <name>No_of_wave_selections__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes of CS action --></label>
+        <name>Notes_of_CS_action__c</name>
+    </fields>
+    <fields>
+        <label><!-- OBS MASI Form Status --></label>
+        <name>OBS_MASI_Form_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- OBS PG My Programme --></label>
+        <name>OBS_PG_My_Programme__c</name>
+    </fields>
+    <fields>
+        <label><!-- OBS PG completed MASI --></label>
+        <name>OBS_PG_completed_MASI__c</name>
+    </fields>
+    <fields>
+        <label><!-- OBS PG completed PIE --></label>
+        <name>OBS_PG_completed_PIE__c</name>
+    </fields>
+    <fields>
+        <label><!-- OBS PG completed choose dates --></label>
+        <name>OBS_PG_completed_choose_dates__c</name>
+    </fields>
+    <fields>
+        <label><!-- OBS PG completed payment --></label>
+        <name>OBS_PG_completed_payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- OBS PG completed registration --></label>
+        <name>OBS_PG_completed_registration__c</name>
+    </fields>
+    <fields>
+        <label><!-- OBS PG completed skills --></label>
+        <name>OBS_PG_completed_skills__c</name>
+    </fields>
+    <fields>
+        <label><!-- OBS TCU My Programme --></label>
+        <name>OBS_TCU_My_Programme__c</name>
+    </fields>
+    <fields>
+        <help><!-- MASI completed by Challenge User. --></help>
+        <label><!-- OBS TCU completed MASI --></label>
+        <name>OBS_TCU_completed_MASI__c</name>
+    </fields>
+    <fields>
+        <label><!-- OBS TCU completed PIE --></label>
+        <name>OBS_TCU_completed_PIE__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose dates completed by Challenge user. --></help>
+        <label><!-- OBS TCU completed choose dates --></label>
+        <name>OBS_TCU_completed_choose_dates__c</name>
+    </fields>
+    <fields>
+        <help><!-- Payment completed by Challenge user. --></help>
+        <label><!-- OBS TCU completed payment --></label>
+        <name>OBS_TCU_completed_payment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Registration completed by Challenge user. --></help>
+        <label><!-- OBS TCU completed registration --></label>
+        <name>OBS_TCU_completed_registration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Skills section completed by Challenge User --></help>
+        <label><!-- OBS TCU completed skills --></label>
+        <name>OBS_TCU_completed_skills__c</name>
+    </fields>
+    <fields>
+        <label><!-- OBS YP My Programme --></label>
+        <name>OBS_YP_My_Programme__c</name>
+    </fields>
+    <fields>
+        <label><!-- OBS YP completed PIE --></label>
+        <name>OBS_YP_completed_PIE__c</name>
+    </fields>
+    <fields>
+        <label><!-- OBS YP completed registration --></label>
+        <name>OBS_YP_completed_registration__c</name>
+    </fields>
+    <fields>
+        <label><!-- OBS YP completed skills --></label>
+        <name>OBS_YP_completed_skills__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates if a YP was recruited from an organisation other than their school --></help>
+        <label><!-- Non-School Referral --></label>
+        <name>OSA_Referral__c</name>
+        <relationshipLabel><!-- Non-School Referral --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- On All Girl Wave? --></label>
+        <name>On_All_Girl_Wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- On waiting lists, Sales to contact --></label>
+        <name>On_waiting_lists_Sales_to_contact__c</name>
+    </fields>
+    <fields>
+        <help><!-- Outcome of 1st attempt to contact. --></help>
+        <label><!-- Sales Outcome of Call --></label>
+        <name>Outcome_of_attempt_1__c</name>
+        <picklistValues>
+            <masterLabel>Agreed to sign up online</masterLabel>
+            <translation><!-- Agreed to sign up online --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call back arranged</masterLabel>
+            <translation><!-- Call back arranged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dead number</masterLabel>
+            <translation><!-- Dead number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ineligible (too old)</masterLabel>
+            <translation><!-- Ineligible (too old) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ineligible (too young)</masterLabel>
+            <translation><!-- Ineligible (too young) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>More info requested</masterLabel>
+            <translation><!-- More info requested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not interested (log why on NCS App)</masterLabel>
+            <translation><!-- Not interested (log why on NCS App) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Took application details</masterLabel>
+            <translation><!-- Took application details --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Took basic info</masterLabel>
+            <translation><!-- Took basic info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable to leave Voicemail</masterLabel>
+            <translation><!-- Unable to leave Voicemail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong number</masterLabel>
+            <translation><!-- Wrong number --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Call Who Contacted? --></label>
+        <name>Outcome_of_attempt_2__c</name>
+        <picklistValues>
+            <masterLabel>Left voicemail</masterLabel>
+            <translation><!-- Left voicemail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No contact</masterLabel>
+            <translation><!-- No contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spoke to PG</masterLabel>
+            <translation><!-- Spoke to PG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spoke to YP</masterLabel>
+            <translation><!-- Spoke to YP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spoke to both YP and PG</masterLabel>
+            <translation><!-- Spoke to both YP and PG --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Outcome of 3rd attempt to contact by Call Centre --></help>
+        <label><!-- Outcome of attempt 3 --></label>
+        <name>Outcome_of_attempt_3__c</name>
+        <picklistValues>
+            <masterLabel>CB Requested by PG</masterLabel>
+            <translation><!-- CB Requested by PG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CB Requested by YP</masterLabel>
+            <translation><!-- CB Requested by YP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Answered - Spoke to PG</masterLabel>
+            <translation><!-- Call Answered - Spoke to PG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Answered - Spoke to PG &amp; YP</masterLabel>
+            <translation><!-- Call Answered - Spoke to PG &amp; YP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Answered - Spoke to YP</masterLabel>
+            <translation><!-- Call Answered - Spoke to YP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Answered - Spoke to other</masterLabel>
+            <translation><!-- Call Answered - Spoke to other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Answer - Dead number</masterLabel>
+            <translation><!-- No Answer - Dead number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Answer - Left voicemail</masterLabel>
+            <translation><!-- No Answer - Left voicemail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Answer - Unable to leave voicemail</masterLabel>
+            <translation><!-- No Answer - Unable to leave voicemail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Answer - Wrong number</masterLabel>
+            <translation><!-- No Answer - Wrong number --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date the PG was sent an email warning that School Deadline Date is 5 days away. --></help>
+        <label><!-- PG DD Warning email sent --></label>
+        <name>PG_DD_Warning_email_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- PG followup email sent --></label>
+        <name>PG_followup_email_sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Updated via a workflow before sending out Telesales emails --></help>
+        <label><!-- PG Email --></label>
+        <name>Parent_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- PG email --></label>
+        <name>Parent_Guardian_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- PG Home Phone --></label>
+        <name>Parent_Home_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- PG Mobile Phone --></label>
+        <name>Parent_Mobile_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- PG Name --></label>
+        <name>Parent_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- PG Work Phone --></label>
+        <name>Parent_Work_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partial refund amount --></label>
+        <name>Partial_refund_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Amount Agreed by MM --></label>
+        <name>Payment_Amount_Agreed_by_MM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Paragraph (end) --></label>
+        <name>Payment_Paragraph_end__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Paragraph (=&lt;5 days) --></label>
+        <name>Payment_Paragraph_less_5_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Paragraph (&gt;5 days) --></label>
+        <name>Payment_Paragraph_more_5_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Paragraph (no discount) --></label>
+        <name>Payment_Paragraph_no_discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment taken by TS --></label>
+        <name>Payment_taken_by_TS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postcode (for dupe checking) --></label>
+        <name>Postcode_for_dupe_checking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Season Changed --></label>
+        <name>Primary_Season_Changed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary season activated date --></label>
+        <name>Primary_season_activated_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotions code --></label>
+        <name>Promotions_code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Options on the NCS application form regarding YPs availability for September RCA weekend dates --></help>
+        <label><!-- RCA weekend availability --></label>
+        <name>RCA_weekend_availability__c</name>
+        <picklistValues>
+            <masterLabel>Neither</masterLabel>
+            <translation><!-- Neither --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No preference</masterLabel>
+            <translation><!-- No preference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saturdays</masterLabel>
+            <translation><!-- Saturdays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sundays</masterLabel>
+            <translation><!-- Sundays --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reasons if not interested in NCS --></label>
+        <name>Reasons_if_not_interested_in_NCS__c</name>
+        <picklistValues>
+            <masterLabel>Exams</masterLabel>
+            <translation><!-- Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Friends not attending</masterLabel>
+            <translation><!-- Friends not attending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Holiday booked</masterLabel>
+            <translation><!-- Holiday booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not interested</masterLabel>
+            <translation><!-- Not interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School trip clash</masterLabel>
+            <translation><!-- School trip clash --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RAF Code Used --></label>
+        <name>Refer_a_friend_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- &quot;Refer a friend&quot; code provided by --></label>
+        <name>Referred_by__c</name>
+        <relationshipLabel><!-- NCS Applications (!&quot;Refer a friend&quot; code provided by) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Refund Reason --></label>
+        <name>Refund_Reason__c</name>
+        <picklistValues>
+            <masterLabel>First 14 days</masterLabel>
+            <translation><!-- First 14 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hardship / other</masterLabel>
+            <translation><!-- Hardship / other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price match</masterLabel>
+            <translation><!-- Price match --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable to match YP timing</masterLabel>
+            <translation><!-- Unable to match YP timing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable to meet additional support needs.</masterLabel>
+            <translation><!-- Unable to meet additional support needs. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Refund Status --></label>
+        <name>Refund_Status__c</name>
+        <picklistValues>
+            <masterLabel>Discretionary refund agreed by CS Manager</masterLabel>
+            <translation><!-- Discretionary refund agreed by CS Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discretionary refund agreed by Sales Manager</masterLabel>
+            <translation><!-- Discretionary refund agreed by Sales Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eligible - turned up at KO and didn&apos;t get  place</masterLabel>
+            <translation><!-- Eligible - turned up at KO and didn&apos;t get  place --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eligible - unable to give YP a place</masterLabel>
+            <translation><!-- Eligible - unable to give YP a place --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eligible - withdrew within 14 days</masterLabel>
+            <translation><!-- Eligible - withdrew within 14 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eligible, but donated money to TCN</masterLabel>
+            <translation><!-- Eligible, but donated money to TCN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moved to Autumn</masterLabel>
+            <translation><!-- Moved to Autumn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moved to Spring</masterLabel>
+            <translation><!-- Moved to Spring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moved to Summer</masterLabel>
+            <translation><!-- Moved to Summer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NCS Campaign - Discretionary Refund</masterLabel>
+            <translation><!-- NCS Campaign - Discretionary Refund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NCS campaign - Eligible - Change of mind within 14 days</masterLabel>
+            <translation><!-- NCS campaign - Eligible - Change of mind within 14 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NCS campaign - Eligible - Exceptional circumstances of hardship</masterLabel>
+            <translation><!-- NCS campaign - Eligible - Exceptional circumstances of hardship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NCS campaign - Eligible - Unable to accommodate support needs</masterLabel>
+            <translation><!-- NCS campaign - Eligible - Unable to accommodate support needs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NCS campaign - Eligible - Unable to offer a place</masterLabel>
+            <translation><!-- NCS campaign - Eligible - Unable to offer a place --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NCS campaign - Eligible for partial refund - Price match</masterLabel>
+            <translation><!-- NCS campaign - Eligible for partial refund - Price match --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not eligible</masterLabel>
+            <translation><!-- Not eligible --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Request Acceptance letter/email re-send --></label>
+        <name>Request_Acceptance_letter_email_re_send__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request callback from Sales --></label>
+        <name>Request_call_back_from_TCN_Marketing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request help to fill in AP --></label>
+        <name>Request_help_to_fill_in_AP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request home borough allocation --></label>
+        <name>Request_home_borough_allocation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to activate workflow that will generate a paper Application form send-out --></help>
+        <label><!-- Request paper AP form mailout --></label>
+        <name>Request_paper_AP_form_mailout__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reserved Wave Programme Booklet --></label>
+        <name>Reserved_Wave_Programme_Booklet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reserved Wave Programme Timetable --></label>
+        <name>Reserved_Wave_Programme_Timetable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reserved Waves --></label>
+        <name>Reserved_Waves__c</name>
+    </fields>
+    <fields>
+        <label><!-- Result of call --></label>
+        <name>Result_of_call__c</name>
+    </fields>
+    <fields>
+        <label><!-- School --></label>
+        <name>School__c</name>
+        <relationshipLabel><!-- NCS Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- School&apos;s borough or area --></label>
+        <name>School_s_borough_or_area__c</name>
+    </fields>
+    <fields>
+        <label><!-- School&apos;s cluster --></label>
+        <name>School_s_cluster__c</name>
+    </fields>
+    <fields>
+        <label><!-- School&apos;s code --></label>
+        <name>School_s_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- School&apos;s discount deadline --></label>
+        <name>School_s_discount_deadline__c</name>
+    </fields>
+    <fields>
+        <label><!-- School&apos;s subcluster --></label>
+        <name>School_s_subcluster__c</name>
+    </fields>
+    <fields>
+        <label><!-- School&apos;s type --></label>
+        <name>School_s_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- School&apos;s zone --></label>
+        <name>School_s_zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- School year --></label>
+        <name>School_year__c</name>
+        <picklistValues>
+            <masterLabel>Home schooled</masterLabel>
+            <translation><!-- Home schooled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In year 10 or below</masterLabel>
+            <translation><!-- In year 10 or below --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not in education</masterLabel>
+            <translation><!-- Not in education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year 11</masterLabel>
+            <translation><!-- Year 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year 12 (college or sixth form)</masterLabel>
+            <translation><!-- Year 12 (college or sixth form) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Search Key A --></label>
+        <name>Search_Key_A__c</name>
+    </fields>
+    <fields>
+        <label><!-- Search Key B --></label>
+        <name>Search_Key_B__c</name>
+    </fields>
+    <fields>
+        <label><!-- Season --></label>
+        <name>Season__c</name>
+        <relationshipLabel><!-- NCS Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Send Payment Chaser Email --></label>
+        <name>Send_Acceptance_Letter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Prog Pack for Reserved YPs --></label>
+        <name>Send_Prog_Pack_for_Reserved_YPs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send unable to contact letter --></label>
+        <name>Send_unable_to_contact_letter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skills Option 1 --></label>
+        <name>Skills_Option_1__c</name>
+        <picklistValues>
+            <masterLabel>Art</masterLabel>
+            <translation><!-- Art --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drama</masterLabel>
+            <translation><!-- Drama --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise</masterLabel>
+            <translation><!-- Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Music</masterLabel>
+            <translation><!-- Music --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Photography</masterLabel>
+            <translation><!-- Photography --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sport</masterLabel>
+            <translation><!-- Sport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[None selected]</masterLabel>
+            <translation><!-- [None selected] --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Skills Option 2 --></label>
+        <name>Skills_Option_2__c</name>
+        <picklistValues>
+            <masterLabel>Art</masterLabel>
+            <translation><!-- Art --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drama</masterLabel>
+            <translation><!-- Drama --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise</masterLabel>
+            <translation><!-- Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Music</masterLabel>
+            <translation><!-- Music --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Photography</masterLabel>
+            <translation><!-- Photography --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sport</masterLabel>
+            <translation><!-- Sport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[None selected]</masterLabel>
+            <translation><!-- [None selected] --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Skills Option 3 --></label>
+        <name>Skills_Option_3__c</name>
+        <picklistValues>
+            <masterLabel>Art</masterLabel>
+            <translation><!-- Art --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drama</masterLabel>
+            <translation><!-- Drama --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise</masterLabel>
+            <translation><!-- Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Music</masterLabel>
+            <translation><!-- Music --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Photography</masterLabel>
+            <translation><!-- Photography --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sport</masterLabel>
+            <translation><!-- Sport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[None selected]</masterLabel>
+            <translation><!-- [None selected] --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TS Call done by Sales --></label>
+        <name>TS_Call_done_by_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- T-Shirt size --></label>
+        <name>T_Shirt_size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Due Date Override --></label>
+        <name>Task_Due_Date_Override__c</name>
+    </fields>
+    <fields>
+        <help><!-- To record whether the YPPG got their Application Pack and whether they were of the Discount Deadline. --></help>
+        <label><!-- TeleS: App Pack received and aware DD --></label>
+        <name>TeleS_App_Pack_received_and_aware_DD__c</name>
+        <picklistValues>
+            <masterLabel>Did not receive Application Pack. Aware of Discount Deadline.</masterLabel>
+            <translation><!-- Did not receive Application Pack. Aware of Discount Deadline. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did not receive Application Pack. Unaware of Discount Deadline.</masterLabel>
+            <translation><!-- Did not receive Application Pack. Unaware of Discount Deadline. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Received Application Pack. Aware of Discount Deadline.</masterLabel>
+            <translation><!-- Received Application Pack. Aware of Discount Deadline. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Received Application Pack. Unaware of Discount Deadline.</masterLabel>
+            <translation><!-- Received Application Pack. Unaware of Discount Deadline. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Telesales Summary --></label>
+        <name>Telesales_Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Telesales: Will they be attending --></label>
+        <name>Telesales_Will_they_be_attending__c</name>
+        <picklistValues>
+            <masterLabel>Maybe</masterLabel>
+            <translation><!-- Maybe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No: Exams</masterLabel>
+            <translation><!-- No: Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No: Friends not attending</masterLabel>
+            <translation><!-- No: Friends not attending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No: Holiday booked</masterLabel>
+            <translation><!-- No: Holiday booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No: Not interested</masterLabel>
+            <translation><!-- No: Not interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No: Other</masterLabel>
+            <translation><!-- No: Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No: School trip</masterLabel>
+            <translation><!-- No: School trip --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Telesales cut off date --></label>
+        <name>Telesales_cut_off_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Telesales cut off date --></label>
+        <name>Telesales_cut_off_date_formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Telesales record expired: Lost cause? --></label>
+        <name>Telesales_record_expired_Lost_cause__c</name>
+    </fields>
+    <fields>
+        <label><!-- Too young status --></label>
+        <name>Too_young_status__c</name>
+        <picklistValues>
+            <masterLabel>In year 10</masterLabel>
+            <translation><!-- In year 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In year 11 or above</masterLabel>
+            <translation><!-- In year 11 or above --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Call Attempts --></label>
+        <name>Total_Call_Attempts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total payment received --></label>
+        <name>Total_payment_received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total successful call attempts --></label>
+        <name>Total_successful_call_attempts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total unsuccessful call attempts --></label>
+        <name>Total_unsuccessful_call_attempts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Waiting list conversation notes --></label>
+        <name>Waiting_list_conversation_notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Waiting list priority --></label>
+        <name>Waiting_list_priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Waiting list waves --></label>
+        <name>Waiting_list_waves__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave Selection taken by TS --></label>
+        <name>Wave_Selection_taken_by_TS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave Started --></label>
+        <name>Wave_Started__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave --></label>
+        <name>Wave__c</name>
+        <relationshipLabel><!-- NCS Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Send PG followup email --></label>
+        <name>We_tried_to_contact_you_email_PG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send YP followup email --></label>
+        <name>We_tried_to_contact_you_email_YP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Why interested in NCS? --></label>
+        <name>Why_interested_in_NCS__c</name>
+        <picklistValues>
+            <masterLabel>Develop new skills</masterLabel>
+            <translation><!-- Develop new skills --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do challenging activities</masterLabel>
+            <translation><!-- Do challenging activities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do something exciting</masterLabel>
+            <translation><!-- Do something exciting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Improve my CV</masterLabel>
+            <translation><!-- Improve my CV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meet new people</masterLabel>
+            <translation><!-- Meet new people --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Show what I’m capable of</masterLabel>
+            <translation><!-- Show what I’m capable of --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Willing to travel further --></label>
+        <name>Willing_to_travel_further__c</name>
+    </fields>
+    <fields>
+        <label><!-- Withdrawal confirmed by Owner --></label>
+        <name>Withdrawal_confirmed_by_Owner__c</name>
+    </fields>
+    <fields>
+        <help><!-- Why has YP withdrawn? --></help>
+        <label><!-- Withdrawal reason --></label>
+        <name>Withdrawal_reason__c</name>
+        <picklistValues>
+            <masterLabel>Conflict with holiday</masterLabel>
+            <translation><!-- Conflict with holiday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conflict with job</masterLabel>
+            <translation><!-- Conflict with job --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conflict with other commitment</masterLabel>
+            <translation><!-- Conflict with other commitment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conflicts with exam timetable</masterLabel>
+            <translation><!-- Conflicts with exam timetable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Does not want to attend</masterLabel>
+            <translation><!-- Does not want to attend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed to show up at KO</masterLabel>
+            <translation><!-- Failed to show up at KO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Heard negative programme feedback</masterLabel>
+            <translation><!-- Heard negative programme feedback --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not interested in TCS</masterLabel>
+            <translation><!-- Not interested in TCS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PG will not allow them ot attend</masterLabel>
+            <translation><!-- PG will not allow them ot attend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown or other reason</masterLabel>
+            <translation><!-- Unknown or other reason --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unwell</masterLabel>
+            <translation><!-- Unwell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>We offered them a waiting list place</masterLabel>
+            <translation><!-- We offered them a waiting list place --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Details of why the YP withdrew --></help>
+        <label><!-- Withdrawal reason details --></label>
+        <name>Withdrawal_reason_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- 18+ Status Formula --></label>
+        <name>X18_Status_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- 18+ Status --></label>
+        <name>X18_Status__c</name>
+        <picklistValues>
+            <masterLabel>18+ for entire season</masterLabel>
+            <translation><!-- 18+ for entire season --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOB OK</masterLabel>
+            <translation><!-- DOB OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turns 18+ During Season</masterLabel>
+            <translation><!-- Turns 18+ During Season --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date the YP was sent a warning that School Deadline Date is 5 days away. --></help>
+        <label><!-- YP DD Warning email sent --></label>
+        <name>YP_DD_Warning_email_sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date YP Low Priority 2nd reminder email sent --></help>
+        <label><!-- YP Low Prio 2nd reminder email sent --></label>
+        <name>YP_Low_Prio_2nd_reminder_email_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- YP done NCS before? --></label>
+        <name>YP_done_NCS_before__c</name>
+        <picklistValues>
+            <masterLabel>HAS NOT done NCS</masterLabel>
+            <translation><!-- HAS NOT done NCS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAS done NCS</masterLabel>
+            <translation><!-- HAS done NCS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- YP followup email sent --></label>
+        <name>YP_followup_email_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Young Person --></label>
+        <name>YoungPerson__c</name>
+        <relationshipLabel><!-- NCS Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Updated through workflow before sending Telesales email --></help>
+        <label><!-- Young Person Email --></label>
+        <name>Young_Person_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Young person first name --></label>
+        <name>Young_person_first_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Young person last name --></label>
+        <name>Young_person_last_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Duplicate Check --></label>
+        <name>dc3DisableDuplicateCheck__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- LOOP_Plus --></label>
+        <name>LOOP_Plus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_LOOP_Plus --></label>
+        <name>Mass_LOOP_Plus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Bulk_SMS --></label>
+        <name>Send_Bulk_SMS</name>
+    </webLinks>
+</CustomObjectTranslation>

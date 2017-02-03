@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>EOI email sent 01/02</name>
+    <style>none</style>
+    <subject>Looking for 12 months paid experience?</subject>
+    <textOnly>Apply now to get ahead
+
+
+Dear {!Contact.FirstName},
+
+There is still time to sign up for Step Forward, a 12 month paid work placement programme starting in August 2016.
+
+www.stepforward.uk.com
+
+
+What would you be doing?
+
+We work with a diverse range of employers from fast-paced big businesses and government departments to small creative start-ups and independent nurseries. You can see a selection of our employers here.
+
+With roles in Business, IT, Social Media, Accounting and Early Years Education we have something to suit everyone. Whether you plan to go to university, straight into the world of work or are still making your decision, Step Forward gives you the skills required to succeed in your future career.
+
+Did you know...
+
+In the world of work, qualifications alone aren’t always enough to get you your first job and almost half of university graduates end up taking non-graduate jobs. Getting onto the job ladder is hard whether you have a degree or not; Step Forward is an opportunity for aspirational school leavers to get ahead.
+
+
+What next?
+
+We have 4 assessments coming up in February which are filling up fast. We will begin matching successful applicants in March. Take 10 minutes today to apply by logging in to our website using your email address and and pin/password below.
+
+www.stepforward.uk.com
+
+
+Email: {!Contact.Email}
+
+Password: {!Contact.Login_Password__c}
+
+If this is your first time logging in you will need to use your pin.
+
+Pin: {!Contact.Login_PIN__c}
+
+Our deadline for February assessments is midnight on Friday 5th February 2016.
+
+
+Good luck and we look forward to seeing you at the February assessments!
+
+
+Best wishes,
+
+Step Forward
+
+
+
+
+
+
+
+
+
+
+www.stepforward.uk.com
+
+
+The Challenge Network is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 39 York Rd, London SE1 7NQ</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email to ask successful applicants to invite friends to apply</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Invite your friends to work at TCN</name>
+    <style>none</style>
+    <subject>Invite your friends to work with The Challenge</subject>
+    <textOnly>The Challenge Network
+
+Dear {!Contact.FirstName},
+
+Congratulations on being appointed to work with The Challenge. We hope that you are looking forward to the summer.
+
+We are still looking for mentors, leaders and practitioners, so if you have any friends or colleagues who would like to work with young people, and are available for at least 4 days this summer, they are welcome to apply at www.the-challenge.org/jobs.
+
+We have roles available across our three regions, in London, the West Midlands and the North West, to work with us in July and August. We are looking for staff with excellent communication skills, who are able to build a rapport with young people and who have great enthusiasm and energy.
+
+The final assessments for all roles will be taking place over the next month, and the earlier candidates apply, the more choice they will have about where and when they work.
+
+If you haven&apos;t heard back about the dates you will be working this summer or if you have any other queries, please contact your local team.
+
+Best wishes,
+
+The Staffing Team
+The Challenge Network
+
+WWW.THE-CHALLENGE.ORG    /thechallengeNETWORK
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

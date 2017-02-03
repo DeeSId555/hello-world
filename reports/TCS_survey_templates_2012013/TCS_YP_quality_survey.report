@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Survey__c.Event_rating_0_10__c:AVG</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Average quality score</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Survey__c.Desire_to_remain_involved_0_10__c:AVG /10</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Desire to remain involved %</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>Survey__c$Name</field>
+    </columns>
+    <columns>
+        <field>Survey__c$Event_rating_0_10__c</field>
+    </columns>
+    <columns>
+        <field>Survey__c$Desire_to_remain_involved_0_10__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Survey__c$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Survey__c.TCS_event_YP</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>TCS YP quality survey</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Surveys__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Survey__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

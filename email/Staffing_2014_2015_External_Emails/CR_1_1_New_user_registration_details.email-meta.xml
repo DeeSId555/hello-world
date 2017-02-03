@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 1.1 Registration - new user (2016)</name>
+    <style>formalLetter</style>
+    <subject>Thanks for registering with The Challenge - your login details</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact the Staffing Team on seasonalroles@the-challenge.org.
+
+Dear {!Contact.FirstName}
+
+Welcome to The Challenge! Thank you for registering on the staffing website for one of our seasonal roles on the 2016 NCS programme.
+
+Logging in to the staffing website
+
+Below are your personal login details. The password we have provided is temporary, and we would encourage you to change it once you have successfully logged in to the staffing website. Once you&apos;re logged in you&apos;ll be able to fill out the &apos;My Profile&apos; section and then move onto the application form!
+
+Username: {!Contact.Email}
+
+Password: {!Contact.Login_Password__c}
+
+
+Click here to login to the staffing website: https://staffing.the-challenge.org/Login.aspx
+
+
+Our application form is available in different formats!
+
+If you have any additional needs and require some assistance throughout the application process, we can make reasonable adjustments. We can provide the application form in a different format (for example in Braille or in the form of a phone conversation) and provide you with a confidential point of contact to help with your application.
+
+If you require any adjustments to be made, or would like more information about how we support seasonal staff with additional needs, please get in touch with the Inclusion Staffing Team on inclusion.ss@the-challenge.org. Any information you disclose will be treated confidentially, and will not be used in any decision making in regards to your application.
+
+
+Any questions?
+
+If you have any questions, please feel free to contact us on our general helpline: seasonalroles@the-challenge.org. You will also find guidance on the staffing website and the application process on our FAQs.
+
+Thank you again for your interest in The Challenge - we look forward to receiving your application soon!
+
+Best wishes,
+
+The Staffing Team
+seasonalroles@the-challenge.org</textOnly>
+    <type>html</type>
+</EmailTemplate>

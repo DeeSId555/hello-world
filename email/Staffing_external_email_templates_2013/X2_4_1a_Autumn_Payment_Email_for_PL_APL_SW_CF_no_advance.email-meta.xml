@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Explains to staff member (PL,APL,SW&amp;CM) how they will be paid, if they are not receiving an advance</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>2.4.5a Autumn Payment Email</name>
+    <style>freeForm</style>
+    <subject>Payment schedule for your role on NCS with The Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your staffing representative on {!Job_placement__c.Staffing_Associate_email__c}.
+
+
+
+Dear {!Job_placement__c.Contact_Name__c},
+
+
+
+Congratulations on being appointed as {!Job_placement__c.Role__c} on NCS with The Challenge on {!Job_placement__c.Wave__c}.
+
+
+
+The pay for your autumn role will be {!Job_placement__c.Total_gross_pay__c} for work between the dates of {!Job_placement__c.Assignment_start_date__c} and {!Job_placement__c.Assignment_end_date__c}. This payment covers a total of {!Job_placement__c.Standard_days_for_role__c} working days.
+
+This includes pay for {!Job_placement__c.Annual_Leave_entitlement__c} day(s) “Holiday Period” per Wave Contract which is subject to tax and national insurance deductions.
+
+
+
+
+Your first pay date is 19 November where you will receive your pay for the first three elements of the programme (NCS: Personal Challenge, NCS: Team Challenge and NCS: Real Challenge Design). One or more of these will be applicable to your role.
+
+
+
+
+On the 16 December you will receive your pay for the NCS: Real Challenge Action and Graduation elements of the programme (if applicable to your role). For each NCS: RCA and/or Graduation day you work, you will receive {!Job_placement__c.Standard_daily_rate__c}.This is also subject to tax and NI deductions.
+
+
+
+
+
+This payment structure has two principles:
+
+
+
+To ensure that staff members pay the appropriate level of tax in the correct month;
+
+To enable staff members to receive payment in reasonable time.
+
+
+
+If you have any further questions about your payment schedule please contact your staffing associate quoting the email reference number in any correspondence.
+
+
+
+
+
+
+Best wishes,
+
+
+
+NCS with The Challenge
+
+CR 2.4.5a</textOnly>
+    <type>html</type>
+</EmailTemplate>

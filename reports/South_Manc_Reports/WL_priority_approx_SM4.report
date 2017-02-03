@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Wave_Selections__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$Date_Full_Payment_Received_New__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Wave_Selections__r$Status__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Date_YPPG_has_requested_wave_date_change__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Date_P2_data_form_received_by_CO__c</field>
+    </columns>
+    <columns>
+        <field>Contact$School_s_code_display__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Gender__c</field>
+    </columns>
+    <columns>
+        <field>Contact$School__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Wave_Selections__r$Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Southmanc 4</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Wave_Selections__r$Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Waiting list</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>WL priority approx SM4</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_Cluster_Wave__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Contact$Date_Full_Payment_Received_New__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

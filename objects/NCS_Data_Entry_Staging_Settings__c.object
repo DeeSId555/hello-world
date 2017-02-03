@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Source_Field__c</fullName>
+        <description>NCS Data Entry Staging Field (Mapping from)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the API name of the field on the NCS Data Entry Staging Object ie; yp_first_name__c</inlineHelpText>
+        <label>Source Field</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Target_Field__c</fullName>
+        <description>Target field, this is the field the Source Field maps to on the related Salesforce object</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Target Field on Target Object, uses the Salesforce API name ie, firstName, ap_recieved__c</inlineHelpText>
+        <label>Target Field</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Target_Object__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce Object API name ie, Contact, Inclusion_Details__c</inlineHelpText>
+        <label>Target Object</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Target_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Target type is used to specify the target object for use within the APEX classes bg_NCSDataEntry
+
+ENSURE ALL CAPITALS
+
+Values are;
+INC
+NCS
+YPCON
+PGCON
+YP&amp;PGCON</inlineHelpText>
+        <label>Target Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>NCS Data Entry Staging Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

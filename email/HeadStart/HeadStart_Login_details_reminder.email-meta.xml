@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>06.11.2014</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>HeadStart Login details reminder</name>
+    <style>none</style>
+    <subject>IMPORTANT: HeadStart username and password to log your hours</subject>
+    <textOnly>HeadStart | The Challenge
+
+Remember to Log in your hours
+
+
+Dear {!Contact.FirstName},
+
+We hope you are enjoying your time on HeadStart and have now started volunteering to complete your 16 hours.
+
+It is important that you log your hours regularly so as to keep track of when you are volunteering and so we know you are on track to complete your 16 hours.
+
+You must have logged your hours by January 31st 2015 so as to be eligible for a guaranteed part-time/seasonal role with Starbucks, New Look or Lloyds.   If you don’t log your hours we won’t know what your progress is and may assume you aren’t taking part in HeadStart.
+
+We have attached a short step by step of how to log your hours.  You must log into www.thechallengesociety.org using your unique username and password
+
+Username
+
+{!HS_Activity__c.YP_email_lookup__c}
+
+Password
+
+{!HS_Activity__c.Website_Login_Password__c}
+
+If you are having any problems please contact us at headstart@the-challenge.org
+
+We will be in touch soon to invite you to our second workshop ‘Customer Service in Action’.  Keep an eye on our facebook for regular updates!
+
+HeadStart London Team
+
+LIKE:Facebook: /Londonheadstart
+
+EMAIL:headstart@the-challenge.org
+
+WEBSITE: www.thechallengesociety.org
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subsribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

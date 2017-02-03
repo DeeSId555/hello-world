@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>16 PG Acceptance Email WS</name>
+    <style>none</style>
+    <subject>Confirmed Place on NCS!</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTHECHALLENGE.ORG
+
+{!Contact.FirstName}&apos;s place on NCS is confirmed!
+
+
+
+
+Dear Parent or Guardian of {!Contact.Name},
+
+Congratulations! {!Contact.FirstName} now has a confirmed place on National Citizen Service (NCS) and a once-in-a-lifetime opportunity to develop skills and meet new people.
+
+Their programme will be starting on {!Wave_Selection__c.PC_KO_Day__c} and their meeting points will be in {!Wave_Selection__c.Demand_smoothing_acc_comm_line__c}{!Wave_Selection__c.Programme_Pack_Girls_Only_Wave__c}. We have sent {!Contact.FirstName} an email to let them know that they have a confirmed place too.
+
+The dates {!Contact.FirstName} will be on NCS are:
+
+Part 1 - Get Active
+Staying away from home: {!Wave_Selection__c.PC_KO_Day__c} until {!Wave_Selection__c.PC_Return_Day__c}
+
+Part 2 - Get Involved
+Staying away from home: {!Wave_Selection__c.TC_KO_Day__c} until {!Wave_Selection__c.TC_End_Day__c}
+
+Part 3a - Make Your Mark
+{!Wave_Selection__c.Acc_prog_length_PART3A_copy__c} {!Wave_Selection__c.RCD_Start_Date__c} until {!Wave_Selection__c.RCD_End_Date__c}
+
+Part 3b - Make Your Mark
+Daily activities, staying at home at night: {!Wave_Selection__c.RCA1_Sat__c}, {!Wave_Selection__c.RCA_2_Sat__c}, {!Wave_Selection__c.RCA3_Sat__c} and {!Wave_Selection__c.RCA_4_Sat__c}
+
+
+If these dates don&apos;t work for {!Contact.FirstName} please click here to see your next steps.
+
+What will happen next?
+
+Approximately one month before the start date, we will send you:
+
+An information pack for {!Contact.FirstName}’s NCS programme. This will give you meeting points, times and other important information, such as a packing list.
+
+An invitation to an information evening happening a week or two before {!Contact.FirstName}  starts NCS. Here you and {!Contact.FirstName} will have the chance to meet us and ask any questions.
+
+{!Contact.FirstName} will receive their free NCS T-shirt – exclusively for NCS participants - either when we visit their school or college again or on the first day of NCS.
+
+How you can find out more about NCS:
+
+How long each programme lasts, and what activities will take place on each part of NCS, can vary from programme to programme. To see information about the activities on {!Contact.FirstName}’s particular programme, please go to {!Wave_Selection__c.Acc_comm_prog_variation_URL__c}.
+You can search questions.ncsthechallenge.org for more information, such as example meals and packing lists.
+You can read our terms and conditions at www.ncsthechallenge.org/terms.
+And of course, you can call us on 0203 542 2400 or email us at contact@ncsthechallenge.org – we’re always happy to help!
+
+We are really looking forward to seeing {!Contact.FirstName} on NCS this summer.
+
+Yours sincerely,
+
+
+Tanya Dunne
+Head of Customer Service
+The Challenge (largest provider of NCS)
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network is a charity registered in England and Wales with charity no. 1129239 and company no. 6845451, whose registered office is at Elizabeth House, 39 York Road, London SE1 7NQ.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

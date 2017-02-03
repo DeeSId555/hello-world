@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Contains the rules for each Template - IE, If &apos;EOI&apos; Template then Create Contacts only. (This isn&apos;t the OVERWRITE check)</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Upsert_Guardian_Contact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>For the template type - Do we create a new Guardian Contact</inlineHelpText>
+        <label>Upsert Guardian Contact</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Upsert_Inclusion_Detail__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>For the template type - Do we create a new Inclusion Details record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For the template type - Do we create a new Inclusion Details record</inlineHelpText>
+        <label>Upsert Inclusion Detail</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Upsert_NCS_Application__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>For the template type - Do we create a new NCS Application</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For the template type - Do we create a new NCS Application</inlineHelpText>
+        <label>Upsert NCS Application</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Upsert_Young_Contact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>For the template type - Do we create a new Young Contact?</inlineHelpText>
+        <label>Upsert Young Contact</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>NCS Data Entry Template Type Rules</label>
+    <visibility>Protected</visibility>
+</CustomObject>

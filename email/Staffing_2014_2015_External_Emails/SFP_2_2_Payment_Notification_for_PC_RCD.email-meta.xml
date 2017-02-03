@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>SFP 2.2 Payment Notification for PC-RCD</name>
+    <style>formalLetter</style>
+    <subject>Payment notification for your work between the dates of 14th Feb - 1st March</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Job_placement__c.Staffing_Associate_email__c}.
+
+
+Payment notification for your work between the dates of 14 Feb to 1st March.
+
+Dear {!Job_placement__c.Contact_Name__c},
+
+We hope that you have enjoyed your role on the NCS programme. We have processed payroll for your work on NCS: Personal Challenge - Get Active, NCS: Team Challenge - Get Involved, NCS: Real Challenge Design - Make Your Mark (one or more will be applicable to you).
+
+Below is a summary of your approved payroll.
+
+Pay for {!Job_placement__c.Wave__c}
+
+Your pay has been approved and your gross pay for this part of the role is {!Job_placement__c.Total_Amount_Paid__c}. This payment covers a total of {!Job_placement__c.days_worked__c} days. This is subject to tax and National Insurance contributions.
+
+This pay constitutes your work between the dates of {!Job_placement__c.Assignment_start_date__c} and {!Job_placement__c.Assignment_end_date__c}. This allotment of work dates falls under payment period 1. Payroll date for this period is {!Job_placement__c.Payroll_payment_date__c}.
+
+On your payslip (sent via email on {!Job_placement__c.Payroll_payment_date__c}), you will see the total amount which you will receive with any tax deductions listed.
+
+Additional payments
+
+If you are involved in working on the NCS: Real Challenge Action and/or NCS: Graduation for the February (Spring) programme, you will receive further payments and communications through our later payrolls.
+
+Please note that you will receive a separate payment email for each day of NCS: Real Challenge Action and NCS: Graduation that you work. If you feel you should have received additional communications have but have not, please contact your local staffing team.
+
+Due to new auto-enrolment legislation, employees of The Challenge, including seasonal staff, may be enrolled in a workplace pension scheme. For more information, including how to opt out, please see FAQs.
+
+Any questions?
+
+If you have any further questions about our payroll and payment schedules. please let us know quoting the email reference number in any correspondence.
+Best Wishes
+
+
+The Challenge
+
+Email Reference: SFP 2.1</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Invitation to TCS Sports Day</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Sports Day - Solihull, Coventry and Warwickshire</name>
+    <style>none</style>
+    <subject>The Challenge Society: Your invitation to Sports Day!</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+We are proud to announce our final Big Challenge Day of the year – Sports Day! This event will take place over the Easter holidays and will give you the chance to reunite with your team mates from Summer 2012 and get involved with different activities – both competitive and just for fun.
+
+Your Sports Day will take place on Friday 5th April at Woodlands Academy, Broad Lane, Coventry, CV5 7FFB at 12.30pm.
+
+Check out your video invite by clicking here.
+
+Find out more and reserve your place now at www.thechallengesociety.org with your personal login details below:
+
+Username: {!Contact.Email}
+Password: {!Contact.Login_PIN__c}
+
+If you have any questions, please contact us at sportsday@the-challenge.org. Remember to visit facebook.com/thechallengesociety and follow us on twitter @UK_TCS for all the latest news and opportunities!
+
+We look forward to seeing you at Sports Day!
+
+The Challenge Team
+
+the-challenge.org  ncsyes.co.uk
+/thechallengenetwork    /ncs
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

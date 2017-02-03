@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Local_Authority__c$Cluster__c</field>
+    </columns>
+    <columns>
+        <field>Local_Authority__c$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Local_Authority__c$Cluster__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>2016</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>8. Local Authorities</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Local_Authority__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Local_Authority__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

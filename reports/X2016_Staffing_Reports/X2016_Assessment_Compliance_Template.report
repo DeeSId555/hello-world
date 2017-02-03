@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$Birthdate</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r$Disclosuredate__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r$Disclosurenumber__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r$DBS_status_del__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Job_Applications__r.Staffing_Event_attendances__r$Staffing_Event_Day__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>INSERT STAFFING EVENT DAY HERE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Job_Applications__r.Staffing_Event_attendances__r$Requested_new_date__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Job_Applications__r.Staffing_Event_attendances__r$Registration_status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Registered</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2016 Assessment Compliance Template</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_Job_Apps_and_Staffing_Event_Attendance__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

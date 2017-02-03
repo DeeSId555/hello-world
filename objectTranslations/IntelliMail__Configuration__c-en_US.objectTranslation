@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Use this setting to disable/enable the IntelliMail service. --></help>
+        <label><!-- Active? --></label>
+        <name>IntelliMail__Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- 6 digit hexadecimal code to change the default banner colour. --></help>
+        <label><!-- Banner Colour --></label>
+        <name>IntelliMail__Banner_Colour__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days --></label>
+        <name>IntelliMail__Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deletion Range --></label>
+        <name>IntelliMail__Deletion_Range__c</name>
+        <picklistValues>
+            <masterLabel>1 Week Old</masterLabel>
+            <translation><!-- 1 Week Old --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12 Weeks Old</masterLabel>
+            <translation><!-- 12 Weeks Old --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 Weeks Old</masterLabel>
+            <translation><!-- 2 Weeks Old --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 Weeks Old</masterLabel>
+            <translation><!-- 4 Weeks Old --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 Weeks Old</masterLabel>
+            <translation><!-- 8 Weeks Old --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Change the URL that the text on the IntelliMail footer points to. --></help>
+        <label><!-- Footer Link Right --></label>
+        <name>IntelliMail__Footer_Link_Right__c</name>
+    </fields>
+    <fields>
+        <help><!-- Provides the option to change the footer text on IntelliMail reports --></help>
+        <label><!-- Footer Text Left --></label>
+        <name>IntelliMail__Footer_Text_Left__c</name>
+    </fields>
+    <fields>
+        <help><!-- Provides the option to change the footer text on IntelliMail reports --></help>
+        <label><!-- Footer Text Right --></label>
+        <name>IntelliMail__Footer_Text_Right__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allows the customisation of the email From Name. --></help>
+        <label><!-- From Name --></label>
+        <name>IntelliMail__From_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Provides the option to add custom header text to IntelliMail reports --></help>
+        <label><!-- Header Text --></label>
+        <name>IntelliMail__Header_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- Which instance is this Salesforce org running on? (e.g. ap1, ap2, eu0...) --></help>
+        <label><!-- Instance --></label>
+        <name>IntelliMail__Instance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Removes the filter information from reports --></help>
+        <label><!-- Remove Filters --></label>
+        <name>IntelliMail__Remove_Filters__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to remove hyperlinks from all reports and dashboards. --></help>
+        <label><!-- Remove Hyperlinks --></label>
+        <name>IntelliMail__Remove_Hyperlinks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule Id --></label>
+        <name>IntelliMail__Schedule_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Provides the option to remove the link from footer text on IntelliMail emails. --></help>
+        <label><!-- Show Footer Link --></label>
+        <name>IntelliMail__Show_Footer_Link__c</name>
+    </fields>
+    <fields>
+        <help><!-- Provides the option to remove the footer from IntelliMail reports --></help>
+        <label><!-- Show Footer --></label>
+        <name>IntelliMail__Show_Footer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Provides the option to remove header from IntelliMail reports --></help>
+        <label><!-- Show Header --></label>
+        <name>IntelliMail__Show_Header__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hide or show the header logo. --></help>
+        <label><!-- Show Logo --></label>
+        <name>IntelliMail__Show_Logo__c</name>
+    </fields>
+    <fields>
+        <help><!-- Change the Subject of the outgoing email. --></help>
+        <label><!-- Subject --></label>
+        <name>IntelliMail__Subject__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hexadecimal value to change the text colour on IntelliMail reports. --></help>
+        <label><!-- Text Colour --></label>
+        <name>IntelliMail__Text_Colour__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Please enter your 6 digit hexadecimal code without the # symbol --></errorMessage>
+        <name>IntelliMail__Banner_Colour</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter your 6 digit hexadecimal code without the # symbol --></errorMessage>
+        <name>IntelliMail__Text_Colour</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please ensure your URL beings with http:// or https:// --></errorMessage>
+        <name>IntelliMail__Validate_Link_URL</name>
+    </validationRules>
+</CustomObjectTranslation>

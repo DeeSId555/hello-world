@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Year 12 NCS Grads 07/03</name>
+    <style>none</style>
+    <subject>The Challenge Presents: 12 Months Paid Experience</subject>
+    <textOnly>The Challenge Presents: Step Forward
+
+
+Dear {!Contact.FirstName},
+
+As an NCS Graduate, we wanted to tell you about Step Forward, a school leavers programme designed to help you get ahead. Are you leaving school or college soon and want experience to get you noticed? Looking for support from a team of friends as well as your own personal mentor? Want to get paid?
+
+Make sure you apply today to be considered for our next assessment event!
+
+www.stepforward.uk.com
+
+&quot;We value highly the transferable and personal skills developed on programmes such as Step Forward&quot;
+
+- Partner at Hogan Lovells, International Law Firm
+
+Remind me again, what is Step Forward?
+
+Step Forward is a 12 month full-time programme for school and college leavers. Whether you plan to go to university after a gap year, straight into the world of work or are still making your decision, it gives you the skills required to succeed in your future career.
+
+Young people who are accepted onto Step Forward gain:
+
+Invaluable experience with quality employers
+Comprehensive personal and professional development training
+A nationally recognised qualification
+The advice and support of a trained mentor
+£9000 salary
+
+What next?
+
+You can secure your future today by filling out our 10 minute application. Please login to our website using your email address and pin/password below.
+
+www.stepforward.uk.com
+
+Email: {!Contact.Email}
+
+Password: {!Contact.Login_Password__c}
+
+If this is your first time logging in you will need to use your pin.
+
+Pin: {!Contact.Login_PIN__c}
+
+
+Starting the programme in September 2016?
+
+In order to be considered for our next assessment events on Saturday 12th and 19th March we must receive your application by midnight on the Thursday before the event. Step Forward is a competitive programme, and places are limited so don’t miss out!
+
+Starting the programme in September 2017?
+
+Stay one step ahead of the crowd and apply now to be invited to our assessments in October 2016. You can apply to Step Forward alongside any UCAS or other job applications so keep your options open and secure your future today.
+
+
+Best wishes,
+
+Step Forward
+
+If you wish to unsubscribe from news and updates from Step Forward, please email step.forward@the-challenge.org with the subject heading &apos;Unsubscribe&apos;.
+
+
+
+
+
+
+
+
+
+
+
+www.stepforward.uk.com
+
+
+The Challenge Network is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 39 York Rd, London SE1 7NQ</textOnly>
+    <type>custom</type>
+</EmailTemplate>

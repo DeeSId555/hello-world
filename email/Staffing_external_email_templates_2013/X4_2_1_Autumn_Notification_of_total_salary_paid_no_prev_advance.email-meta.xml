@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Refers to Sept Weekends</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>4.2.3 Autumn: Notification of payment</name>
+    <style>freeForm</style>
+    <subject>Notification of Payment for {!Job_placement__c.Wave__c}</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Job_placement__c.Staffing_Associate_email__c}
+
+Dear {!Job_placement__c.Contact_Name__c},
+
+Payment notification for NCS: PC, NCS: TC and NCS: RCD.
+
+We hope that you enjoyed your role on NCS with The Challenge.
+
+You will receive your pay for {!Job_placement__c.Wave__c} on {!Job_placement__c.Payroll_payment_date__c}. This pay constitutes your work between the dates of {!Job_placement__c.Assignment_start_date__c} and {!Job_placement__c.Assignment_end_date__c} for {!Job_placement__c.Wave__c}.
+
+Your full gross pay for this part of the role is {!Job_placement__c.Total_Amount_to_Pay__c}. This payment covers a total of
+{!Job_placement__c.days_worked__c} working days. This is subject to tax and National Insurance contributions.
+
+If you are involved in working on the NCS: Real Challenge Action and/or NCS: Graduation for the autumn programme, you will receive further payments through our later payrolls.
+
+On your payslip (sent via email on {!Job_placement__c.Payroll_payment_date__c}), you will see the total amount which you will receive.
+
+
+
+Due to new auto-enrolment legislation, employees of The Challenge, including seasonal staff, may be enrolled in a workplace pension scheme. This is a way of saving for your retirement that&apos;s arranged by your employer. For further information, please go to www.gov.uk/workplace-pensions.
+Further information about workplace pensions and how to opt-out can be found on the staffing website under FAQs.
+
+If you have any questions please let us know quoting the email reference number in any correspondence.
+
+Yours sincerely,
+
+NCS with The Challenge
+{!Job_placement__c.Staffing_Associate_email__c}
+CR 4.2.3</textOnly>
+    <type>html</type>
+</EmailTemplate>

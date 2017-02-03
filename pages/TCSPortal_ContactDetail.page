@@ -1,0 +1,904 @@
+<apex:page sidebar="false" standardStylesheets="true" showHeader="false" standardController="Contact" extensions="TCSPortal_ContactHomeController">
+
+<html>
+    <head>
+        <style>
+ .optextcon{
+            font : 20px "Dirty", Arial, Helvetica;
+        }           
+.button1{
+        
+        height:90px; 
+        width:140px;  
+        border: solid 4px; 
+        border-color:#B31217; 
+        font : 18px "Dirty", Arial, Helvetica; 
+        background :white;
+        border-radius:15px;
+        hover:grey;
+        }
+        </style>
+    </head>
+    
+    <body>    
+        
+        
+        <apex:composition template="PortalTemplate">
+        
+            <apex:define name="TopDiv">
+            <!---------------- MENU -------------------------->
+                
+                  
+            </apex:define>
+            
+            <apex:define name="MidDiv">
+               <!--------------- Mid Div ------------------>
+         <!-- <apex:pageblock mode="inlineEdit"> ****************************************************INLINE EDIT*********************************************************
+                <apex:pageBlockButtons >
+                    <apex:commandButton action="{!edit}" id="editButton" value="Edit"/>
+                    <apex:commandButton action="{!save}" id="saveButton" value="Save"/>
+                    <apex:commandButton onclick="resetInlineEdit()" id="cancelButton" value="Cancel"/>
+                </apex:pageBlockButtons>
+                <apex:pageBlockSection>
+                    <apex:outputField value="{!contact.gender__c}">
+                            <apex:inlineEditSupport showOnEdit="saveButton, cancelButton"  hideOnEdit="editButton" event="ondblclick"  changedStyleClass="myBoldClass" resetFunction="resetInlineEdit"/>
+                    </apex:outputField>   
+                </apex:pageBlockSection>
+            </apex:pageblock> -->
+          
+                <table style="width:100%;">  
+      <tr>
+                       
+ <!----------------------------------------- ABOUT THE YOUNG PERSON --------------------------------------------->  
+     <td  valign="top" style="width:33%; border-left:solid 8px; border-color:#D9D9D9;">
+     <div style="margin-left:2%; margin-top:1%;">
+        <apex:outputText styleClass="optextcon" value="about the young person"/><br />
+               
+                     
+             <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+                     <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Account.Fields.Name.Label} "/>
+                  </td>
+                  <td><apex:outputText value="{!Contact.Account.Name}"/>
+                  </td> 
+              </tr>
+             </table></div>
+                     
+                             
+             <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+             <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Name.Label} "/>
+              </td>
+              <td><apex:outputText value="{!Contact.Name}"/>
+              </td>
+              </tr>
+             </table></div>
+             
+             
+             <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+             <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.First_name_known_by__c.Label} "/>
+              </td>
+                  <td><apex:outputText value="{!Contact.First_name_known_by__c}"/>
+                  </td>
+                   </tr>
+             </table></div>
+             
+             
+             <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+             <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Status__c.Label} "/>
+              </td>
+                  <td><apex:outputText value="{!Contact.Status__c}"/>
+                  </td>
+                   </tr>
+             </table></div>
+             
+             
+             <div>  <table style="width:100%;">
+               <tr style="width:100%;">
+                  <td style="width:40%;">
+             <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Gender__c.Label} "/>
+              </td>
+              <td><apex:outputText value="{!Contact.Gender__c}"/>
+              </td>
+               </tr>
+             </table></div>
+             
+             
+             <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+             <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Birthdate.Label} "/>
+              </td>
+                      <td><apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+                            <apex:param value="{!Contact.Birthdate}" /> 
+                        </apex:outputText>
+                      </td>
+                       </tr>
+             </table></div>
+             
+             
+             <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td valign="top" style="width:40%;">
+             <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Image_preview__c.Label}"/>
+              </td>
+                  <td>
+                    <apex:image width="120" height="120" rendered="{!IF(Contact.Image__c==true,true,false)}" value="http://challenge.brix.fatbeehive.com/data/images/contact/{!LEFT(Contact.Id,15)}.jpg"/>
+                    <apex:outputText rendered="{!IF(Contact.Image__c==true,false,true)}" value=""/>
+                  </td>
+                   </tr>
+             </table></div>
+          </div>   
+              </td>
+<!-----------------------------------------/ ABOUT THE YOUNG PERSON --------------------------------------------->  
+
+
+<!------------------------------------  ACCOUNT OWNERSHIP ----------------------------------------------->
+          <td valign="top" style="border-left:solid 4px; border-color:#D9D9D9; width:33%;">
+      <div style="margin-left:2%; margin-top:1%;">
+          <apex:outputText styleClass="optextcon" value="Account ownership details"/><br />
+         
+                  <div> <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:60%;">  <apex:outputText styleClass="fieldLabel" value="Contact Owner "/>
+                   </td>
+                  <td>  <apex:outputText value="{!Contact.Owner.Name}"/></td>
+                   </tr>
+                   </table></div>
+                  
+                  
+                  <div> <table style="width:100%;">
+                     <tr style="width:100%;">
+                  <td style="width:60%;">
+                   <apex:outputText styleClass="fieldLabel" value="Last Modified By "/>
+                    </td>
+                      <td>
+                       <apex:outputText value="{!Contact.LastModifiedBy.Name}"/></td>
+                        </tr>
+                    </table></div>
+                    
+                    <br/>
+                  
+            <!------------------------------------------ CALL LOGGING------------------------------------------------------->  
+        <div>
+           <apex:outputText styleClass="optextcon" value="Call Logging"/><br />
+           
+            <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:60%;">
+                   <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.TCS_Mentor_most_recent_call__c.Label} "/><br />
+          </td>
+        <td>
+           <apex:outputText value="{!Contact.TCS_Mentor_most_recent_call__c}"/>
+           </td>
+       </tr>
+   </table></div>
+   
+    <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:60%;">
+                   <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.TCS_Mentor_most_recent_call_date__c.Label} "/><br />
+          </td>
+        <td>
+        <apex:outputText value="{0,date,dd'/'MM'/'yyyy}">
+           <apex:param value="{!Contact.TCS_Mentor_most_recent_call_date__c}"/>
+    </apex:outputText>
+           </td>
+       </tr>
+   </table></div>
+   
+    <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:60%;">
+                   <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Nove__c.Label} "/><br />
+          </td>
+        <td>
+           <apex:outputText value="{!Contact.Nove__c}"/>
+           </td>
+       </tr>
+   </table></div>
+   
+    <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:60%;">
+                   <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.February_event_call__c.Label} "/><br />
+          </td>
+        <td>
+           <apex:outputText value="{!Contact.February_event_call__c}"/>
+           </td>
+       </tr>
+   </table></div>
+   
+    <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:60%;">
+                   <apex:outputText styleClass="fieldLabel" value="{.} "/><br />
+          </td>
+        <td>
+           <apex:outputText value="{.}"/>
+           </td>
+       </tr>
+   </table></div>
+   
+    <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:60%;">
+                   <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Marketing_Ambassador_call__c.Label} "/><br />
+          </td>
+        <td>
+           <apex:outputText value="{!Contact.Marketing_Ambassador_call__c}"/>
+           </td>
+       </tr>
+   </table></div>
+   
+    <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:60%;">
+                   <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Staffing_Assessor_call__c.Label} "/><br />
+          </td>
+        <td>
+           <apex:outputText value="{!Contact.Staffing_Assessor_call__c}"/>
+           </td>
+       </tr>
+   </table></div>
+         </div>
+      </div>   
+<!------------------------------------------/ CALL LOGGING-------------------------------------------------------> 
+
+
+              </td>
+<!------------------------------------/  ACCOUNT OWNERSHIP ----------------------------------------------->      
+                       
+                       
+                       
+<!------------------------------------ CONTACT METRICS --------------------------------------------------->
+      <td valign="top" style="border-left:solid 4px; border-color:#D9D9D9; width:33%;">
+        <div style="margin-left:2%; margin-top:1%;"> 
+        
+           <apex:outputText styleClass="optextcon" value="metrics"/><br />
+          
+           <apex:repeat value="{!Contact.Metrics__r}" var="m">
+           
+               <div><table style="width:100%;">
+               <tr style="width:100%;">
+                  <td style="width:70%;">
+                <apex:outputText styleClass="fieldLabel" value="Active " />
+                 </td>
+                      <td>
+                       <apex:outputText value="{!IF(m.Active__c=='Yes','Yes','No')}"/></td>
+               </tr>
+                 </table></div>
+                 
+               <div><table style="width:100%;">
+               <tr style="width:100%;">
+                  <td style="width:70%;">
+                <apex:outputText styleClass="fieldLabel" value="Total Involvement "/>
+                 </td>
+                      <td>
+                       <apex:outputText value="{!m.Total_TCS_Events_Attended__c}"/></td>
+                </tr>
+                 </table></div>
+                 
+               <div><table style="width:100%;">
+               <tr style="width:100%;">
+                  <td style="width:70%;">
+                <apex:outputText styleClass="fieldLabel" value="YB/CAT attendances" />
+                 </td>
+                      <td>
+                      <apex:outputText value="{!m.YB_Meetings_Attended__c}"/></td>
+               </tr>
+                 </table></div>
+                 
+               <div><table style="width:100%;">
+               <tr style="width:100%;">
+                  <td style="width:70%;">
+                <apex:outputText styleClass="fieldLabel" value="Signposting opptys attended" />
+                 </td>
+                  <td>
+                   <apex:outputText value="{!m.Total_SignPosting_Oppty_Meetings_Attend__c}"/></td>
+                    </tr>
+                 </table></div>
+                 
+               <div><table style="width:100%;">
+               <tr style="width:100%;">
+                  <td style="width:70%;">
+                <apex:outputText styleClass="fieldLabel" value="TCS Event attendances" />
+                 </td>
+                      <td>
+                       <apex:outputText value="{!m.Total_TCS_Events_Attended__c}"/></td>
+                        </tr>
+                 </table></div>
+                 
+               <div><table style="width:100%;">
+               <tr style="width:100%;">
+                  <td style="width:70%;">
+                <apex:outputText styleClass="fieldLabel" value="Ambassador attendances" />
+                 </td>
+                      <td>
+                       <apex:outputText value="{!m.Marketing_Ambassador_Events_Attended1__c + m.Media_Ambassador_Events_Attended__c}"/></td>
+                        </tr>
+                 </table></div>
+                 
+               <div><table style="width:100%;">
+               <tr style="width:100%;">
+                  <td style="width:70%;">
+                <apex:outputText styleClass="fieldLabel" value="Personal Coach attendances" />
+                 </td>
+                      <td>
+                       <apex:outputText value="{!m.PC_Meetings_Attended__c}"/></td>
+                        </tr>
+                 </table></div>
+               
+          </apex:repeat>
+             </div>
+         </td>
+   </tr>
+<!---------------------------------------/  CONTACT METRICS --------------------------------------------------->
+
+
+
+<!---------------------------------------  CONTACT DETAILS--------------------------------------------------->
+     <tr>
+              
+         <td valign="top"  style=" border-left:solid 8px; border-color:#D9D9D9;">
+         <div style="margin-left:2%;">    
+     <apex:outputText styleClass="optextcon" value="contact details"/><br />
+      <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.MobilePhone.Label}"/></td>
+           <td>
+           <apex:outputText value="{!Contact.MobilePhone}"/>
+           </td>
+       </tr>
+   </table></div>
+   
+    <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.HomePhone.Label}"/></td>
+       <td>
+           <apex:outputText value="{!Contact.HomePhone}"/>
+           </td>
+       </tr>
+   </table></div>
+   
+   <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Email.Label} "/></td>
+       <td>
+           <apex:outputText value="{!Contact.Email}"/>
+           </td>
+       </tr>
+   </table></div>
+   
+   <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Email_bounced__c.Label} "/></td>
+       <td> 
+            <apex:image width="21" styleClass="checkImg" height="16" value="https://cs14.salesforce.com/img/checkbox_checked.gif" rendered="{!IF(Contact.Email_bounced__c==true,true,false)}"/>
+            <apex:image width="21" styleClass="checkImg" height="16" value="https://cs14.salesforce.com/img/checkbox_unchecked.gif" rendered="{!IF(Contact.Email_bounced__c==true,false,true)}"/>
+           
+           </td>
+       </tr>
+   </table></div>
+   
+   <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Address_1__c.Label} "/></td>
+        <td>
+           <apex:outputText value="{!Contact.Address_1__c}"/>
+           </td>
+       </tr>
+   </table></div>
+      
+      <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Address_2__c.Label} "/></td>
+        <td>
+           <apex:outputText value="{!Contact.Address_2__c}"/>
+           </td>
+       </tr>
+   </table></div>
+      
+      <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Address_3__c.Label} "/></td>
+        <td>
+           <apex:outputText value="{!Contact.Address_3__c}"/>
+           </td>
+       </tr>
+   </table></div>
+      
+      <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Town_City__c.Label} "/></td>
+        <td>
+           <apex:outputText value="{!Contact.Town_City__c}"/>
+           </td>
+       </tr>
+   </table></div>
+      
+      <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.County_region__c.Label} "/></td>
+        <td>
+           <apex:outputText value="{!Contact.County_region__c}"/>
+           </td>
+       </tr>
+   </table></div>
+      
+        <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Post_code__c.Label} "/></td>
+        <td>
+           <apex:outputText value="{!Contact.Post_code__c}"/>
+           </td>
+       </tr>
+   </table></div>
+           </div>     
+     </td>
+<!---------------------------------------------\  CONTACT DETAILS----------------------------------------------->
+                  
+                  
+   <!------------------------------------------ TCS NOTES-------------------------------------------------------> 
+       <td valign="top" style=" border-left:solid 4px; border-color:#D9D9D9;">
+     <div style="margin-left:2%;">
+      
+     <apex:outputText styleClass="optextcon" value="TCS Notes"/><br />
+         <div><table style="width:100%;">
+       <tr style="width:100%;">
+        <td style="width:100%;">
+           <apex:outputText value="{!Contact.Notes_TCS__c}"/>
+           </td>
+       </tr>
+   </table></div>
+   </div>
+     </td>
+<!------------------------------------------/ TCS NOTES------------------------------------------------------->                
+                      
+
+<!------------------------------------------ HOURS------------------------------------------------------->            
+         <td valign="top" style=" border-left:solid 4px; border-color:#D9D9D9;">
+         
+         <div style="margin-left:2%;">
+           <apex:outputText styleClass="optextcon" value="Hours"/><br />
+           <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:70%;">
+                   <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Total_hours_at_signposting_opportunities__c.Label} "/><br />
+          </td>
+        <td>
+           <apex:outputText value="{!Contact.Total_hours_at_signposting_opportunities__c}"/>
+           </td>
+       </tr>
+   </table></div>
+           
+   <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:70%;">
+                   <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Hours_required_for_graduation__c.Label} "/><br />
+          </td>
+        <td>
+           <apex:outputText value="{!Contact.Hours_required_for_graduation__c}"/>
+           </td>
+       </tr>
+   </table></div>
+            
+  <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:70%;">
+                   <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Hours_required_for_CwD__c.Label} "/><br />
+          </td>
+        <td>
+           <apex:outputText value="{!Contact.Hours_required_for_CwD__c}"/>
+           </td>
+       </tr>
+   </table></div>
+           
+   <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:70%;">
+                   <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Nominated_for__c.Label} "/><br /> 
+            </td>
+        <td>
+           <apex:outputText value="{!Contact.Nominated_for__c}"/>
+           </td>
+       </tr>
+   </table></div>
+         </div>   
+  </td>      
+ </tr>
+<!------------------------------------------/ HOURS-------------------------------------------------------> 
+
+<!------------------------------------------ ACTIVITIES AND INTEREST-------------------------------------------------------> 
+         <tr>
+    
+             <td valign="top"  style=" border-left:solid 8px; border-color:#D9D9D9;">
+             
+             <div style="margin-left:2%;">
+                <apex:outputText styleClass="optextcon" value="activities and areas of interest"/><br />
+                 <div><table style="width:100%;">
+                   <tr style="width:100%;">
+                      <td style="width:40%;">
+                <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.What_I_m_up_to__c.Label} "/><br />
+                       </td>
+                    <td>
+                       <apex:outputText value="{!Contact.What_I_m_up_to__c}"/>
+                       </td>
+                   </tr>
+               </table></div>
+               
+               <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:40%;">
+                <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Other_what_i_m_up_to__c.Label} "/><br />
+           </td>
+        <td>
+           <apex:outputText value="{!Contact.Other_what_i_m_up_to__c}"/>
+           </td>
+       </tr>
+   </table></div>
+      
+              <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:40%;">
+                <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Interested_in_further_involvement__c.Label} "/><br />
+           </td>
+        <td>
+           <apex:outputText value="{!Contact.Interested_in_further_involvement__c}"/>
+           </td>
+       </tr>
+   </table></div>
+      
+              <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:40%;">
+                <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Activities_and_areas_of_interest__c.Label} "/><br />
+            </td>
+        <td>
+           <apex:outputText value="{!Contact.Activities_and_areas_of_interest__c}"/>
+           </td>
+       </tr>
+   </table></div>
+   </div>
+</td>
+           
+<!------------------------------------------/ ACTIVITIES AND INTEREST-------------------------------------------------------> 
+
+
+
+<!------------------------------------------ TCS WEBSITE ACCESS------------------------------------------------------->                          
+     <td valign="top" style=" border-left:solid 4px; border-color:#D9D9D9;">
+     
+     <div style="margin-left:2%;">
+         <apex:outputText styleClass="optextcon" value="TCS Website access"/><br />
+           <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:60%;">
+             <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Login_first_instance__c.Label} "/><br />
+              </td>
+        <td>
+           <apex:outputText value="{!Contact.Login_first_instance__c}"/>
+           </td>
+       </tr>
+   </table></div>
+     
+             <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:60%;">
+             <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Login_Password__c.Label} "/><br />
+            </td>
+        <td>
+           <apex:outputText value="{!Contact.Login_Password__c}"/>
+           </td>
+       </tr>
+   </table></div>
+     </div>
+ <!------------------------------------------/ TCS WEBSITE ACCESS------------------------------------------------------->
+         </td>
+
+
+
+<!------------------------------------------ OPT OUT-------------------------------------------------------> 
+     <td valign="top" style=" border-left:solid 4px; border-color:#D9D9D9;">
+     
+     <div style="margin-left:2%;">
+         <apex:outputText styleClass="optextcon" value="Opt Out"/><br />
+             <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:70%;">
+             <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.DoNotCall.Label} "/><br />
+          </td>
+        <td>
+           <apex:image width="21" styleClass="checkImg" height="16" value="/img/checkbox_checked.gif" rendered="{!IF(Contact.DoNotCall==true,true,false)}"/>
+           <apex:image width="21" styleClass="checkImg" height="16" value="/img/checkbox_unchecked.gif" rendered="{!IF(Contact.DoNotCall==true,false,true)}"/>
+           </td>
+       </tr>
+   </table></div>
+   
+   
+    <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:70%;">
+             <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.SMS_Opt_Out__c.Label} "/><br />
+         </td>
+        <td>
+            <apex:image width="21" styleClass="checkImg" height="16" value="/img/checkbox_checked.gif" rendered="{!IF(Contact.SMS_Opt_Out__c==true,true,false)}"/>
+            <apex:image width="21" styleClass="checkImg" height="16" value="/img/checkbox_unchecked.gif" rendered="{!IF(Contact.SMS_Opt_Out__c==true,false,true)}"/>
+           </td>
+       </tr>
+   </table></div>
+   
+   
+          <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:70%;">
+             <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.HasOptedOutOfEmail.Label} "/><br />
+         </td>
+        <td>
+           <apex:image width="21" styleClass="checkImg" height="16" value="/img/checkbox_checked.gif" rendered="{!IF(Contact.HasOptedOutOfEmail==true,true,false)}"/>
+           <apex:image width="21" styleClass="checkImg" height="16" value="/img/checkbox_unchecked.gif" rendered="{!IF(Contact.HasOptedOutOfEmail==true,false,true)}"/>
+           </td>
+       </tr>
+   </table></div>
+   
+          <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:70%;">
+         <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.DO_NOT_CONTACT__c.Label} "/><br />
+          </td>
+        <td>
+          <apex:image width="21" styleClass="checkImg" height="16" value="/img/checkbox_checked.gif" rendered="{!IF(Contact.DO_NOT_CONTACT__c==true,true,false)}"/>
+          <apex:image width="21" styleClass="checkImg" height="16" value="/img/checkbox_unchecked.gif" rendered="{!IF(Contact.DO_NOT_CONTACT__c==true,false,true)}"/>
+           </td>
+       </tr>
+   </table></div>
+   </div>
+  </td>
+          
+</tr>
+<!------------------------------------------/ OPT OUT------------------------------------------------------->                      
+                     
+                     
+<!------------------------------------------ TCS LOCATION------------------------------------------------------->                      
+ <tr>
+  
+     <td valign="top" style=" border-left:solid 8px; border-color:#D9D9D9;">
+     
+     <div style="margin-left:2%;">
+        <apex:outputText styleClass="optextcon" value="TCS Location"/><br />
+          <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:40%;">
+        <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Cluster__c.Label} "/>
+             </td>
+        <td>
+           <apex:outputText value="{!Contact.Cluster__r.Name}"/>
+           </td>
+       </tr>
+   </table></div>
+   
+      <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:40%;">
+        <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Borough_area__c.Label} "/><br />
+              </td>
+        <td>
+           <apex:outputText value="{!Contact.Borough_area__c}"/>
+           </td>
+       </tr>
+   </table></div>
+   
+       <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:40%;">
+        <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Wave_started__c.Label} "/><br />
+             </td>
+        <td>
+           <apex:outputText value="{!Contact.Wave_started__c}"/>
+           </td>
+       </tr>
+   </table></div>
+   
+      <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:40%;">
+        <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Team__c.Label} "/><br />
+              </td>
+        <td>
+           <apex:outputText value="{!Contact.Team__c}"/>
+           </td>
+       </tr>
+   </table></div>
+   
+       <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:40%;">
+        <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.TCSKO_sign_up__c.Label} "/><br />
+              </td>
+        <td>
+           <apex:outputText value="{!Contact.TCSKO_sign_up__c}"/>
+           </td>
+       </tr>
+   </table></div>
+       </div>
+</td>
+<!------------------------------------------/ TCS LOCATION------------------------------------------------------->                          
+                         
+                         
+                         
+<!------------------------------------------ WTBW WEBSITE ACCESS-------------------------------------------------------> 
+     <td valign="top" style=" border-left:solid 4px; border-color:#D9D9D9;">
+     
+     <div style="margin-left:2%;">
+             <apex:outputText styleClass="optextcon" value="WTBW Website access"/><br />
+      <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:60%;">
+             <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Login_PIN__c.Label} "/><br />
+             </td>
+        <td>
+           <apex:outputText value="{!Contact.Login_PIN__c}"/>
+           </td>
+       </tr>
+   </table></div>
+         </div>    
+     <!--  <apex:outputText styleClass="optextcon" value="TCS Notes"/><br />
+         <div><table style="width:100%;">
+       <tr style="width:100%;">
+        <td style="width:100%;">
+           <apex:outputText value="{!Contact.Notes_TCS__c}"/>
+           </td>
+       </tr>
+   </table></div>-->
+       
+     </td>
+<!------------------------------------------/ WTBW WEBSITE ACCESS-------------------------------------------------------> 
+ 
+<!------------------------------------------ WITHDRAWAL FROM TCS------------------------------------------------------->                          
+         <td valign="top" style=" border-left:solid 4px; border-color:#D9D9D9;">
+         
+         <div style="margin-left:2%;">
+             <apex:outputText styleClass="optextcon" value="Withdrawal from TCS"/><br />
+              <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:70%;">
+             <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Date_of_YPPG_withdrawal_notification__c.Label} "/><br />
+             </td>
+        <td><apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+                <apex:param value="{!Contact.Date_of_YPPG_withdrawal_notification__c}" /> 
+            </apex:outputText>
+           </td>
+       </tr>
+   </table></div>
+     
+              <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:70%;">
+             <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Withdrawal_reason__c.Label} "/><br />
+            </td>
+        <td>
+           <apex:outputText value="{!Contact.Withdrawal_reason__c}"/>
+           </td>
+       </tr>
+   </table></div>
+     
+             <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:70%;">
+             <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Withdrawal_reason_details__c.Label} "/><br />
+            </td>
+        <td>
+           <apex:outputText value="{!Contact.Withdrawal_reason_details__c}"/>
+           </td>
+       </tr>
+   </table></div>
+           </div>
+     </td>
+</tr>
+<!------------------------------------------/ WITHDRAWAL FROM TCS------------------------------------------------------->                          
+                     
+                     
+<!------------------------------------------ WTBW WEBSITE ACCESS------------------------------------------------------->                                              
+     <tr>
+      <td style="border-left:solid 4px; border-color:#D9D9D9;"></td>
+       <td style="border-left:solid 4px; border-color:#D9D9D9;"></td>
+<!------------------------------------------/ WTBW WEBSITE ACCESS------------------------------------------------------->                                                                     
+                         
+                         
+<!------------------------------------------MISC. CHALLENGE HISTORY------------------------------------------------------->                                                                       
+         <td valign="top" style="border-left:solid 4px; border-color:#D9D9D9;">
+         
+         <div style="margin-left:2%;">
+             <apex:outputText styleClass="optextcon" value="Misc. Challenge History"/><br />
+             
+               <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:70%;">
+             <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.SCHOOL_S_NAME__c.Label} "/><br />
+           </td>
+        <td>
+           <apex:outputText value="{!Contact.SCHOOL_S_NAME__c}"/>
+           </td>
+       </tr>
+   </table></div>
+   
+           <div><table style="width:100%;">
+       <tr style="width:100%;">
+          <td style="width:70%;">
+             <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Contact.Fields.Description.Label} "/><br />
+           </td>
+        <td>
+           <apex:outputText value="{!Contact.Description}"/>
+           </td>
+       </tr>
+   </table></div> <br/>
+            <a style="float:right; margin-right:2%; margin-bottom:2%;" href="{!Contact.id}/e?retURL=/TCSPortal_ContactDetail?id={!Contact.id}"><button type="button" style="margin-top:10px; height:35px; width:100px;" class="button1">Edit</button></a><br/>
+   </div> 
+             </td>
+            
+ </tr>
+<!------------------------------------------/ MISC. CHALLENGE HISTORY------------------------------------------------------->                                              
+
+ </table>
+</apex:define>
+            
+   <apex:define name="BotDiv">
+       <center>
+       <div style="margin-top:2%;">
+           <apex:outputPanel >
+               <a href="{!$Page.TCSPortal_IntermediateSelection}?name=SignpostingOpportunity&cid={!Contact.Id}&cname={!Contact.Name}"><button class="button1">signposting opportunities</button></a>
+               <a href="{!$Page.TCSPortal_IntermediateSelection}?name=Hours&id={!Contact.Id}&cid={!Contact.Id}&cname={!Contact.Name}"><button class="button1">hours</button></a>
+               <a href="{!$Page.TCSPortal_IntermediateSelection}?name=MeetingEvent&cid={!$CurrentPage.parameters.id}&cname={!Contact.Name}"><button class="button1">meeting &#38; events</button></a>
+             <apex:outputPanel rendered="{!IF(AND(hasPC==1,isPCProfile==true),true,false)}">
+                 <a href="{!$Page.TCSPortal_PersonalCoachDetail}?id={!PCid}&cid={!Contact.id}"><button class="button1">personal coach</button></a>
+             </apex:outputPanel>
+               <a href="{!$Page.TCSPortal_AccountDetail}?id={!Contact.Account.Id}&cid={!Contact.Id}&programmee=a"><button class="button1">marketing ambassador events</button></a>
+               <a href="{!$Page.TCSPortal_StaffingAssessorEventList}?id={!Contact.id}&cid={!Contact.id}"><button class="button1">staffing assessor events</button></a>
+               <a href="{!$Page.TCSPortal_JobApplication}?id={!Contact.id}&cid={!Contact.id}"><button class="button1">am/sam application</button></a>
+               <a href="{!$Page.TCSPortal_CATYBMembershipList}?id={!Contact.id}&cid={!Contact.id}"><button class="button1">yb/cat membership</button></a>
+           </apex:outputPanel>
+       </div>
+       </center>
+   </apex:define>
+           
+</apex:composition> 
+        
+    </body>
+     <script>
+       $(document).ready(function(){
+       $(".list").removeClass('list').addClass('table table-striped');
+       $(".pbHeader").removeClass('pbHeader').css('margin-left','2%');
+       $("td.pbTitle").css('width','0%');
+       
+           $("td.pbButton").css('display','none');
+           $(".listHeader").css('display','none');
+           $(".actionColumn").each(function(index){
+               $(this).css('display','none');
+           });
+       });
+
+   </script>
+        <style>
+    .scrollspy-example {
+                height: 400px;
+                overflow: auto;
+                position: relative;
+    </style>
+</html>
+</apex:page>

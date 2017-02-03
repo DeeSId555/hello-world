@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Grad invite Warks 1.30pm</name>
+    <style>none</style>
+    <subject>The Challenge invitation</subject>
+    <textOnly>INVITATION TO YOUR GRADUATION
+	
+ 
+Dear {!Contact.FirstName},
+ 
+Congratulations on your commitment and contribution to The Challenge this summer.
+ 
+You are warmly invited to The Challenge Graduation ceremony.
+ 
+We&apos;d love to know if you are coming.
+ 
+RSVP by clicking on the following link: 
+http://www.clicktools.com/survey?iv=3a132cae1853d4e&amp;q1={!Contact.Id}&amp;q2=1 
+ 
+Where:
+Coventry Central Hall
+Warwick Lane
+Coventry
+CV1 2HA
+
+When:
+26/10/2011
+
+13:30 - 16:30
+	
+ 
+www.the-challenge.org 
+
+facebook.com/thechallengenetwork 
+
+ 
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

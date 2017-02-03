@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_66514162</developerName>
+        <masterLabel>School type simplified</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Contact.School_type__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Independent Selective</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Independent Standard</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Other Independent School</sourceValue>
+            </sourceValues>
+            <value>Independent</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Independent PRU</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>State PRU</sourceValue>
+            </sourceValues>
+            <value>PRU</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Independent SEN</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>State SEN</sourceValue>
+            </sourceValues>
+            <value>SEN</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>State comprehensive</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>State selective</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Academy Sponsor Led</sourceValue>
+            </sourceValues>
+            <value>State</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Further Education</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Further education Independent</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Further education SEN</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Further education State</sourceValue>
+            </sourceValues>
+            <value>Further</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Date_P2_data_form_received_by_CO__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CONTACT_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.YP2013</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Date_P2_data_form_received_by_CO__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.School_s_zone__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>s london &amp; surrey</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.School_s_cluster__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_66514162</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>YP2013 P2 school type S London &amp; Surrey</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2012-10-28</startDate>
+    </timeFrameFilter>
+</Report>

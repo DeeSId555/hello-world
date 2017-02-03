@@ -1,0 +1,86 @@
+<apex:page standardController="PAYBASE2__Payment__c" extensions="PAYSPCP1.SagePayNewPaymentController" action="{!checkAndSave}" cache="false" id="singlePayment" showHeader="false" sidebar="false">
+
+  <apex:outputPanel layout="none" rendered="{! hasLicenceCheck }" id="hasLicenceCheck">
+    <apex:outputPanel layout="none" rendered="{! LicenceCheck.canUse }" id="hasLicenceCheckCanUse">
+
+      <apex:outputPanel layout="none" rendered="{! hasLicenceMessage }" > 
+        <font color="red">
+          <br/>
+          Message from Licence Manager: {! LicenceCheck.messages }
+          <br/>
+          <br/>
+        </font>
+      </apex:outputPanel>
+
+      <apex:outputPanel layout="none" rendered="{! hasLicenceMessages }" >
+        <font color="red">
+          <br/>
+          Messages from Licence Manager: 
+          <br/>
+          <apex:dataList value="{! LicenceCheck.messages }" var="msg">
+                <apex:outputText value="{!msg}"/>
+          </apex:dataList>
+        
+          <br/>
+        </font>
+      </apex:outputPanel>
+
+      <apex:pageMessages />
+      
+      <apex:outputPanel layout="block" id="contentsPanel">
+
+          <apex:outputPanel layout="none" rendered="{! state==STATE_GET_NEXT_URL }">
+              <apex:form >
+                  <apex:actionFunction name="getNextUrl" action="{!getNextUrlFromSagePay}" rerender="contentsPanel"/>
+              </apex:form>
+              
+              <script>getNextUrl()</script>
+              
+              Connecting to SagePay...
+          </apex:outputPanel>
+
+          <apex:outputPanel layout="none" rendered="{! state==STATE_GET_NEXT_URL_FAILED }">
+             Failed to get URL from SagePay: {!sagePayURLError}
+          </apex:outputPanel>
+
+          <apex:outputPanel layout="none" rendered="{! state==STATE_GO_TO_PAYMENT_GATEWAY }">
+              <apex:iframe width="100%" height="1200px" src="{! paymentPageUrl }" scrolling="false" id="PaymentFrame"/>
+          </apex:outputPanel>
+
+      </apex:outputPanel>
+    </apex:outputPanel>
+  
+    <apex:outputPanel layout="none" rendered="{! !LicenceCheck.canUse }" >
+      You do not have a licence for this product.
+
+      <apex:outputPanel layout="none" rendered="{! hasLicenceMessage }" >
+        <font color="red">
+          <br/>
+          Message from Licence Manager: {! LicenceCheck.messages }
+          <br/>
+          <br/>
+        </font>
+      </apex:outputPanel>
+
+      <apex:outputPanel layout="none" rendered="{! hasLicenceMessages }" >
+        <font color="red">
+          <br/>
+          Messages from Licence Manager: 
+          <br/>
+          <apex:dataList value="{! LicenceCheck.messages }" var="msg">
+                <apex:outputText value="{!msg}"/>
+          </apex:dataList>
+        
+          <br/>
+        </font>
+      </apex:outputPanel>
+    </apex:outputPanel>
+  </apex:outputPanel>
+
+  <apex:outputPanel layout="none" rendered="{! !hasLicenceCheck }" >
+    <font color="red">
+      Failed to check licence
+    </font>
+  </apex:outputPanel>
+  
+</apex:page>

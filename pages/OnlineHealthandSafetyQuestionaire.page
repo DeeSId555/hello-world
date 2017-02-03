@@ -1,0 +1,111 @@
+<apex:page standardStylesheets="false" showHeader="false" sidebar="false" standardController="Job_Application__c" extensions="OnlineHealthSafetyQuestionaireExtension"> 
+  <apex:form styleClass="form-horizontal">
+    <apex:stylesheet value="{!URLFOR($Resource.Bootstrap,'css/bootstrap.css')}"/>
+    <style type="text/css">
+          html,body{background-color:#eee;}
+          html,body{background-color:#454545;}
+           body{padding-top:40px;/* 40px to make the container go all the way to the bottom of the topbar */}
+                .container > footer p{text-align:center; padding-top: 20px;/* center align it with the container */}
+                .container{width: 960px;/* downsize our container to make the content feel a bit tighter and more cohesive. NOTE:this removes two full columns from the grid,meaning you only go to 14 columns and not 16. */}
+                .container > .content{background-color:#fff;padding:30px;margin:0 -20px 0 -20px;/* negative indent the amount of the padding to maintain the grid system */
+                -webkit-border-radius:6px 6px 6px 6px;-moz-border-radius:6px 6px 6px 6px;border-radius:6px 6px 6px 6px;-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,.15);-moz-box-shadow:0px 1px 2px rgba(0,0,0,.15);box-shadow:0px 1px 2px rgba(0,0,0,.15);}
+                .page-header{background-color:#fff;padding:10px 20px 10px;margin:-30px -30px 30px;border-bottom: 1px solid #bbb;}
+                .form-actions {background-color:#fff;}
+     </style> 
+      
+     <div class="container">
+       <div class="content">
+            <apex:outputPanel rendered="true">
+               <apex:image value="{!$Resource.TC_Logo}" width="35%" height="30%"/>
+               <hr style="border-top: 3px solid #3C3B3B ;"></hr>
+                
+               
+               <legend style="font-weight:bolder;">Health, Safety and Inclusion Questionnaire</legend>
+               
+               <p style="font-weight:bolder;">The following questionnaire is to help us ensure your safety while you are working with The Challenge and meet any specific needs you may have to the best of our ability.</p>
+               <p style="font-weight:bolder;">Please enter 'No' or 'Not Applicable' in any field that is not relevant. All fields must be completed in order to submit the form.</p>
+               
+               <div style="font-weight:bolder; color:red;">
+               <center>
+               <apex:PageMessages id="TopMsg" ></apex:PageMessages>
+               </center>
+               </div>
+               
+               <apex:outputPanel >
+                   <br/> <p> Are you allergic to anything? Eg. foods (such as gluten, dairy, sea-food), drugs (such as aspirin, antibiotics) or environmental things (such as hay fever, bee-stings etc.). 
+                                 Please state in in the space below.
+                   </p>
+    
+                   <apex:inputField value="{!Job_Application__c.Allergies__c}"/>
+                   
+                   <br/><br/> <p>Do you carry an Epi pen? </p>
+                   <apex:inputField value="{!Job_Application__c.Epi_pen_carrier__c}"/>
+                   
+                   <br/><br/><p>Do you suffer from or need any special treatment for any of the following: asthma, epilepsy, a heart condition, migraines, fainting or fits, travel sickness? Please give details of these or any other conditions in the space below.</p>
+                   <apex:inputField value="{!Job_Application__c.Other_disclosed_conditions__c}" />
+                   
+                   <br/><br/><p>Do you have any disability that may require reasonable adjustment during any part of the time you work on The Challenge. </p>
+                   <p>Please give details in the space below. If you are uncertain if this is relevant to you, please contact us to discuss your case. </p>
+                   <apex:inputField value="{!Job_Application__c.Disabilty__c}"/>
+                    
+                   <br/><br/> <p>Please indicate any special dietary requirements, eg. vegetarian, vegan, halal, celiac etc. </p>
+                   <apex:inputField value="{!Job_Application__c.Special_dietary_requirements__c}"/>
+                   
+                   <br/><br/> <p>Do you have an up-to-date tetanus injection (within 10 years)?</p>
+                   <apex:inputField value="{!Job_Application__c.Up_to_date_tetanus_vaccination__c}"/>
+                   
+                   <br/><br/> <p>Are you pregnant?</p>
+                   <apex:inputField value="{!Job_Application__c.Pregnant__c}"/>
+                   
+                   <br/><br/> <p>Do you have an valid and up to date First Aid certificate?</p>
+                   
+                   <apex:actionRegion >
+                   
+                       <apex:inputField value="{!Job_Application__c.Valid_First_Aid_certificate__c}">
+                           <apex:actionSupport action="{!empty}" event="onchange" rerender="ExpiryDate"/>
+                       </apex:inputField>
+                 
+                       
+                       <apex:outputPanel id="ExpiryDate">
+                           <apex:outputPanel rendered="{!Job_Application__c.Valid_First_Aid_certificate__c == 'Yes'}">
+                               <br/><br/> <p>Please provide the certificate number here. </p>
+                               <apex:inputField value="{!Job_Application__c.First_Aid_certificate_no__c}" rendered="{!Job_Application__c.Valid_First_Aid_certificate__c == 'Yes'}"/> <!--required="{!Job_Application__c.Valid_First_Aid_certificate__c == 'Yes'}-->
+                                <br/><br/> <p>Please provide the expiry date here. </p>
+                               <apex:inputField value="{!Job_Application__c.First_Aid_certificate_expiry_date__c}" rendered="{!Job_Application__c.Valid_First_Aid_certificate__c == 'Yes'}"/> <!--required="{!Job_Application__c.Valid_First_Aid_certificate__c == 'Yes'}-->
+                           </apex:outputPanel>
+                       </apex:outputPanel>
+                   
+                    </apex:actionRegion>
+               </apex:outputPanel>
+               
+               <apex:outputPanel >
+                   <br/><br/><br/><p style="font-weight:bolder;">Please provide the details of someone who should be contacted in case of an emergency.</p> 
+                   <br/> <p>Name</p>
+                   <apex:inputField value="{!Job_Application__c.Emergency_contact_name__c}"/>
+                   
+                    <br/><br/> <p>Relationship</p>
+                   <apex:inputField value="{!Job_Application__c.Relationship_to_emergency_contact__c}"/>
+                   
+                    <br/><br/> <p>Telephone</p>
+                   <apex:inputField value="{!Job_Application__c.Emergency_contact_phone__c}"/>
+                   
+                    <br/><br/> <p>Mobile</p>
+                   <apex:inputField value="{!Job_Application__c.Emergency_contact_mobile__c}"/>
+                   
+                    <br/><br/> <p>Address</p>
+                   <apex:inputField value="{!Job_Application__c.Emergency_contact_address__c}"/>
+                </apex:outputPanel>
+                 <br/><br/><p style="font-weight:bolder;">Please notify us of any changes in your circumstances or answers to any of the questions above as soon as possible.</p>
+                  <div style="font-weight:bolder; color:red;">
+                    <center> 
+                        <apex:commandButton action="{!SaveThis}" value="Submit Form" style="background:#B31217; color:white;" styleClass="btn-large" reRender="TopMsg,BottomMsg"/>
+                        <apex:pageMessages id="BottomMsg"></apex:pageMessages>
+                    </center>
+                   </div>  
+                
+            </apex:outputPanel>
+       </div> <!--/ content -->
+     </div> <!--/ container -->
+  </apex:form>
+
+</apex:page>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CONTACT_ID</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CONTACT_ID</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,003C000001npARI,003C000001oDNf7,003C000001uv4IE,003C000001qpHU5,003C000001dXOgp,003C000001dWSVB,003C000001qpIs7,003C000001pNj3Q,003C000001p1X17,003C000001qoXJk,003C000001qCcRJ,003C000001cATcY,003C000001nPDue,003C000001KP5Cv,003C000001b7FIU,003C000001cuPK8,003C000001Hk8c4,003C000001pmz4l</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Brand Ambassadors - North London</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Job_Application__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>FIRST_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

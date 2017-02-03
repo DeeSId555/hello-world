@@ -1,0 +1,34 @@
+{!IF(Contact.Term_time_wave__c = TRUE),"", "&(NCS_Application__c.Missing_payment_paragraph__c)&""&(NCS_Application__c.Missing_Payment_SDD_Not_in_Past__c)&""&(NCS_Application__c.Missing_Payment_with_Bursary_Call_Due__c)&""&(NCS_Application__c.Missing_Payment_Bursary_Call_Made__c)&"}
+
+
+
+<BR><BR><BR><BR><BR>
+
+
+
+{!IF(Contact.Term_time_wave__c = 1,"Please complete "&(Contact.FirstName)&"’s application as soon as possible so they can take part in this NCS programme as part of their course.","Places are filling up fast, so please complete "&(Contact.FirstName)&"’s application as soon as possible to increase their chances of benefiting from this once-in-a-lifetime experience.")}
+
+
+
+<BR><BR><BR><BR><BR>
+This one <BR><BR>
+
+
+{!IF((Contact.Term_time_wave__c == TRUE),"Please complete "&(Contact.FirstName)&"’s application as soon as possible so they can take part in this NCS programme as part of their course.","Places are filling up fast, so please complete "&(Contact.FirstName)&"’s application as soon as possible to increase their chances of benefiting from this once-in-a-lifetime experience.")}
+
+
+
+<BR><BR><BR><BR><BR>
+
+
+
+{!IF(Contact.Days_until_discount_deadline__c >1," if you pay before "&TEXT(DAY(Contact.School_s_discount_deadline__c))&"/"& 
+TEXT(MONTH(Contact.School_s_discount_deadline__c))&"/"&(TEXT(YEAR(Contact.School_s_discount_deadline__c)))&", or up to £50 after this date","")}
+
+
+<BR><BR><BR><BR><BR>
+
+
+
+{!IF(Contact.Days_until_discount_deadline__c >1," if you pay before "&TEXT(DAY(Contact.School_s_discount_deadline__c))&"/"& 
+TEXT(MONTH(Contact.School_s_discount_deadline__c))&"/"&(TEXT(YEAR(Contact.School_s_discount_deadline__c)))&", or "& IF(NCS_Application__c.AP_Source__c = "Website","& (Contact.Current_website_NCS_fee__c) &","& (Contact.Current_non_website_NCS_fee__c) &") &" after this date","")}

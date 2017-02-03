@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 4.4 Manual assessment booking - confirmation</name>
+    <style>formalLetter</style>
+    <subject>Your booked assessment with The Challenge</subject>
+    <textOnly>Please do not reply to this email. This email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your local staffing team.
+Dear {!Staffing_Event_attendance__c.Contact__c},
+
+
+
+Thank you for completing an ‘Alternative Dates Form’ online for an assessment or training - based on your availability your staffing team has booked you onto a Staffing Event for the {!Job_Application__c.Role_to_assess_for__c} role on {!Staffing_Event_Day__c.Day_date__c}.
+
+
+
+
+
+What do I need to do now?
+
+
+
+Please login to the Staffing Website to view your event details - this can be found under ‘My Registered Events’ on the &apos;Booking Assessments&apos; or &apos;Booking Training&apos; page. Here, you will find details on where and when your event will take place, and what you will need to prepare and bring.
+
+
+
+The Challenge is an equal opportunities employer. If you have not already done so, please notify us of any disability that you have that may require reasonable adjustment on our part during the assessment.
+
+
+
+If you have any problems on the day of your event, please contact your local staffing team.
+
+
+
+
+
+
+What if I cannot attend this date?
+
+
+
+Please contact us as soon as possible so that we can give your place to another candidate. We will try to offer you an alternative date, but this is not always possible.
+
+
+
+Please note: if you do not let us know in advance that you will not be attending your event, we may not be able to take your application any further.
+
+
+
+
+If you have any questions please get in contact, quoting the email reference number below in any correspondence.
+
+
+
+Best wishes,
+{!Contact.OwnerFullName}
+
+{!Contact.Contact_Owner_alternative_email__c}
+
+{!Contact.OwnerPhone}
+
+The Challenge
+
+
+
+Email reference: CR 4.4</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Houses year-on-year data for the Local Authority</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Asian_Ethnicity_of_Local_Authority__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data source: PBR report</inlineHelpText>
+        <label>Asian Ethnicity of Local Authority</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Asian_Ethnicity_of_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <formula>of_Asian_Ethnicity_on_NCS_Programme__c  /  Number_of_YPs_on_NCS_Programme__c</formula>
+        <label>Asian Ethnicity of NCS Programme</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Black_Ethnicity_of_Local_Authority__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data source: PBR report</inlineHelpText>
+        <label>Black Ethnicity of Local Authority</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Black_Ethnicity_of_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <formula>of_Black_Ethnicity_on_NCS_Programme__c  /   Number_of_YPs_on_NCS_Programme__c</formula>
+        <label>Black Ethnicity of NCS Programme</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Chinese_Ethnicity_of_Local_Authority__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data source: PBR data</inlineHelpText>
+        <label>Chinese Ethnicity of Local Authority</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Chinese_Ethnicity_of_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <formula>of_Chinese_Ethnicity_on_NCS_Programme__c  /  Number_of_YPs_on_NCS_Programme__c</formula>
+        <label>Chinese Ethnicity of NCS Programme</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>FSM_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <formula>Num_FSM_NCS_Programme__c  /  Number_of_YPs_on_NCS_Programme__c</formula>
+        <label>FSM - NCS Programme</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>FSM_of_Local_Authority__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data source: PBR report</inlineHelpText>
+        <label>FSM % of Local Authority</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>History_of_offending_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <formula>History_of_offending_in_NCS_Programme__c  /  Number_of_YPs_on_NCS_Programme__c</formula>
+        <label>History of offending NCS Programme</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>History_of_offending_in_Local_Authority__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data source: PBR report</inlineHelpText>
+        <label>History of offending in Local Authority</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>History_of_offending_in_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data source: Salesforce
+Post programme analysis - October/November. Determined by YP home postcode</inlineHelpText>
+        <label># History of offending on NCS Programme</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>In_or_recently_in_care_in_Local_Authorit__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data source: PBR report</inlineHelpText>
+        <label>In/recently in care in Local Authority</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>In_or_recently_in_care_in_NCS_Programm__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data source: Salesforce
+Post programme analysis - October/November. Determined by YP home postcode</inlineHelpText>
+        <label># In/recently in care on NCS Programme</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>In_or_recently_on_care_in_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <formula>In_or_recently_in_care_in_Local_Authorit__c  /  Number_of_YPs_on_NCS_Programme__c</formula>
+        <label>In or recently on care in NCS Programme</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Independent_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <formula>Num_Independent_NCS_Programme__c  /  Number_of_YPs_on_NCS_Programme__c</formula>
+        <label>Independent - NCS Programme</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Local_Authority__c</fullName>
+        <externalId>false</externalId>
+        <label>Local Authority</label>
+        <referenceTo>Local_Authority__c</referenceTo>
+        <relationshipLabel>Local Authority Data</relationshipLabel>
+        <relationshipName>Local_Authority_Data</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Mixed_Ethnicity_of_Local_Authority__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data source: PBR report</inlineHelpText>
+        <label>Mixed Ethnicity of Local Authority</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Mixed_Ethnicity_of_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <formula>of_Mixed_Ethnicity_on_NCS_Programme__c  /  Number_of_YPs_on_NCS_Programme__c</formula>
+        <label>Mixed Ethnicity of NCS Programme</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Num_FSM_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data source: Salesforce
+Post programme analysis - October/November. Determined by YP home postcode</inlineHelpText>
+        <label># FSM - NCS Programme</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Num_Independent_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data source: Salesforce
+Post programme analysis - October/November. Determined by YP home postcode</inlineHelpText>
+        <label># Independent - NCS Programme</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Num_PRU_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data source: Salesforce
+Post programme analysis - October/November. Determined by YP home postcode</inlineHelpText>
+        <label># PRU - NCS Programme</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Num_SEN_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data source: Salesforce
+Post programme analysis - October/November. Determined by YP home postcode</inlineHelpText>
+        <label># SEN - NCS Programme</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Num_State_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data source: Salesforce
+Post programme analysis - October/November. Determined by YP home postcode</inlineHelpText>
+        <label># State - NCS Programme</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_15_17_year_olds_in_LA__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data source: Salesforce
+Post programme analysis - October/November. Determined by YP home postcode</inlineHelpText>
+        <label>Number of 15-17 year olds in LA</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_YPs_on_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data source: Salesforce
+Post programme analysis - October/November. Determined by YP home postcode</inlineHelpText>
+        <label>Number of YPs on NCS Programme</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_YPs_submitted_EOI__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data source: Salesforce
+Post programme analysis - October/November. Determined by YP home postcode</inlineHelpText>
+        <label>Number of YPs submitted EOI</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PRU_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <formula>Num_PRU_NCS_Programme__c  /  Number_of_YPs_on_NCS_Programme__c</formula>
+        <label>PRU - NCS Programme</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SEN_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <formula>Num_SEN_NCS_Programme__c  /  Number_of_YPs_on_NCS_Programme__c</formula>
+        <label>SEN - NCS Programme</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SEN_of_Local_Authority__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data source: PBR report</inlineHelpText>
+        <label>SEN % of Local Authority</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SEN_statement__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the number of YPs that have a statement of SEN</inlineHelpText>
+        <label># SEN statement NCS programme</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>State_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <formula>Num_State_NCS_Programme__c  /  Number_of_YPs_on_NCS_Programme__c</formula>
+        <label>State - NCS Programme</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Statement_of_SEN_NCS__c</fullName>
+        <externalId>false</externalId>
+        <formula>SEN_statement__c / Number_of_YPs_on_NCS_Programme__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Statement of SEN - NCS programme</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>White_Ethnicity_of_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <formula>of_White_Ethnicity_on_NCS_Programme__c  /  Number_of_YPs_on_NCS_Programme__c</formula>
+        <label>White Ethnicity of NCS Programme</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>of_Asian_Ethnicity_on_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data source: Salesforce
+Post programme analysis - October/November. Determined by YP home postcode</inlineHelpText>
+        <label># of Asian Ethnicity on NCS Programme</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>of_Black_Ethnicity_on_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data source: Salesforce
+Post programme analysis - October/November. Determined by YP home postcode</inlineHelpText>
+        <label># of Black Ethnicity on NCS Programme</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>of_Chinese_Ethnicity_on_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data source: Salesforce
+Post programme analysis - October/November. Determined by YP home postcode</inlineHelpText>
+        <label># of Chinese Ethnicity on NCS Programme</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>of_Mixed_Ethnicity_on_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data source: Salesforce
+Post programme analysis - October/November. Determined by YP home postcode</inlineHelpText>
+        <label># of Mixed Ethnicity on NCS Programme</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>of_White_Ethnicity_on_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data source: Salesforce
+Post programme analysis - October/November. Determined by YP home postcode</inlineHelpText>
+        <label># of White Ethnicity on NCS Programme</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Local Authority Data</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Local_Authority__c</columns>
+        <columns>Asian_Ethnicity_of_Local_Authority__c</columns>
+        <columns>Black_Ethnicity_of_Local_Authority__c</columns>
+        <columns>Chinese_Ethnicity_of_Local_Authority__c</columns>
+        <columns>FSM_of_Local_Authority__c</columns>
+        <columns>History_of_offending_in_Local_Authority__c</columns>
+        <columns>In_or_recently_in_care_in_Local_Authorit__c</columns>
+        <columns>Mixed_Ethnicity_of_Local_Authority__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>2015</value>
+        </filters>
+        <label>All 2015</label>
+    </listViews>
+    <nameField>
+        <displayFormat>{YYYY} Data {0}</displayFormat>
+        <label>Local Authority Data Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Local Authority Data</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>X2013</fullName>
+        <active>true</active>
+        <description>Local Authority data from 2013</description>
+        <label>2013</label>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

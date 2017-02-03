@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Feedback__c$Name</field>
+    </columns>
+    <columns>
+        <field>Feedback__c$Contact_Name__c</field>
+    </columns>
+    <columns>
+        <field>Feedback__c$Job_placement__c.Wave_APM__c</field>
+    </columns>
+    <columns>
+        <field>Feedback__c$Job_placement__c</field>
+    </columns>
+    <columns>
+        <field>Feedback__c$Job_placement__c.Id</field>
+    </columns>
+    <columns>
+        <field>Feedback__c$CreatedDate</field>
+    </columns>
+    <description>All confirmed feedback received by Sarah Jones</description>
+    <filter>
+        <criteriaItems>
+            <column>Feedback__c$Job_placement__c.Wave_APM__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Sarah Jones</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Feedback__c$Job_Application__c.Role_to_assess_for__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Senior Associate Mentor,Associate Mentor</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>All Sarah Jones Feedback</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Feedback__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Feedback__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

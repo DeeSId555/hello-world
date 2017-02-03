@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>AM applications open for three more days</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>AM  - 3 days to go</name>
+    <style>formalLetter</style>
+    <subject>{!Contact.FirstName}, 3 days until Associate Mentor applications close!</subject>
+    <textOnly>Do you want to volunteer on NCS, {!Contact.FirstName}?
+Applications close in 3 days!
+
+Get yours in now.
+
+CLICK HERE TO APPLY
+
+What are we looking for in an Associate Mentor?
+
+· Reliability: Can you commit to at least four days in a row this summer? You can choose exactly when and where this would be!
+
+· Professionalism: Can you be a role model for current NCS particpants, and work as part of our staff team?
+
+· Positivity: Can you use your NCS experiences to motivate others?
+
+Your application form is specific to you, and you can only submit it once.
+
+Please make sure that you do not share the link to your form with anyone else - they must access it through the email they receive from The Challenge.
+Good luck!
+
+NCS Graduates Team
+The Challenge</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Action Team or Youth Board Membership</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Action Team or Youth Board Membership</value>
+    </caseValues>
+    <fields>
+        <label><!-- Action Team/Youth Board Membership Name --></label>
+        <name>Action_Team_Membership_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action Team/Youth Board --></label>
+        <name>Action_Team__c</name>
+        <relationshipLabel><!-- Action Team or Youth Board Membership --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Action Team or Youth Board Membership --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This shows that the email informing the YP that their application has been successful has been sent. --></help>
+        <label><!-- Date successful YB app email sent --></label>
+        <name>Date_successful_YB_app_email_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile number --></label>
+        <name>Mobile_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Associate Mentor</masterLabel>
+            <translation><!-- Associate Mentor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ex-Associate Mentor</masterLabel>
+            <translation><!-- Ex-Associate Mentor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grad Rep</masterLabel>
+            <translation><!-- Grad Rep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grad ex-member (asked to leave)</masterLabel>
+            <translation><!-- Grad ex-member (asked to leave) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member</masterLabel>
+            <translation><!-- Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NCS Leader</masterLabel>
+            <translation><!-- NCS Leader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Team Coach</masterLabel>
+            <translation><!-- Team Coach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Team Director</masterLabel>
+            <translation><!-- Team Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsuccessful applicant</masterLabel>
+            <translation><!-- Unsuccessful applicant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wave Nominee</masterLabel>
+            <translation><!-- Wave Nominee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrawn</masterLabel>
+            <translation><!-- Withdrawn --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label><!-- Action Team Membership --></label>
+        <name>Action_Team_Membership</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <webLinks>
+        <label><!-- Send_Bulk_SMS --></label>
+        <name>Send_Bulk_SMS</name>
+    </webLinks>
+</CustomObjectTranslation>

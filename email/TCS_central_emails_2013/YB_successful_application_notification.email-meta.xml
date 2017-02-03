@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>2013: YB successful application notification</name>
+    <style>freeForm</style>
+    <subject>Your Youth Board application</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+
+Congratulations on joining the Youth Board!
+
+
+
+As a member of the Youth Board you are taking on a very important role in The Challenge Society.
+
+
+
+What happens next?
+
+
+
+There will be a training &amp; induction session for new Youth Board members.
+
+
+
+We will email you details about this nearer the time. So, if you change your email address, make sure you let us know!
+
+
+
+We hope you are looking forward to being part of the Youth Board.
+
+
+
+The Challenge Society</textOnly>
+    <type>html</type>
+</EmailTemplate>

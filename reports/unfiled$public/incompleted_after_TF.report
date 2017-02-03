@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Reserved_Wave__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Assigned_Wave__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 2 AND (3 or 4)</booleanFilter>
+        <criteriaItems>
+            <column>Inclusion_Details__c.P3_received_date__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>12/1/2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Inclusion_Details__c.do_we_have_full_inclusion_information__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>&quot;Was complete, now incomplete due to additional sales/teacher feedback&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Assigned_Wave__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>5,6,7,8,9,10,11,12</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Reserved_Wave__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>5,6,7,8,9,10,11,12</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>incompleted after TF</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Inclusion_Details__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

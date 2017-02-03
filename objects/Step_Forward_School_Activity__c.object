@@ -1,0 +1,2030 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used by Step Forward&apos;s Marketing department to record activities with schools</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>A_level_exams_date__c</fullName>
+        <externalId>false</externalId>
+        <label>A-level exams: start of period</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>A_level_exams_end_of_period__c</fullName>
+        <externalId>false</externalId>
+        <label>A-level exams: end of period</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Assembly_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Assembly Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Borough_or_area__c</fullName>
+        <description>Formula. Pulls field through from the school&apos;s Account record and converts to text (the original is a picklist)</description>
+        <externalId>false</externalId>
+        <formula>TEXT(School__r.Borough_or_area__c )</formula>
+        <inlineHelpText>As shown on the school&apos;s Account record. This field is editable on the school&apos;s Account record.</inlineHelpText>
+        <label>Borough or area</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cluster__c</fullName>
+        <externalId>false</externalId>
+        <formula>School__r.Cluster__r.Name</formula>
+        <label>Cluster</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comms_Sent_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Late Comms Sent Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Comms_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Late Comms Sent</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flyer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Poster</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Screen Teaser</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tutor Email</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>PG Email</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Student Email</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Date_PG_Intro_Letter_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Date PG Intro Letter Sent</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Early_Comms_Sent_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Early Comms Sent Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Early_Comms_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Early Comms Sent</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flyer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Poster</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Screen Teaser</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tutor Email</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>PG Email</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Student Email</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Early_Recruitment_Assembly_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Early Recruitment Assembly Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Early_Recruitment_Email_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Early Recruitment Email Sent</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Early_Status_of_School__c</fullName>
+        <externalId>false</externalId>
+        <label>Early Status of School</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Interest Shown</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting Booked</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting Held</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Assembly Booked</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Assembly Held</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Follow_up_1_event_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Follow up 1 event date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Follow_up_1_event_description__c</fullName>
+        <externalId>false</externalId>
+        <label>Follow up 1 event description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Assembly</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Whole year PSHE/citizenship lesson</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NCS event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tutor time</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>PSHE/citizenship class</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EOI event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Piggyback parents&apos; evening</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SF-specific parents&apos; evening</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Careers fair</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>College open day</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Freshers&apos; fair</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Networking event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Teacher conference</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Workshop</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Small group event</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Follow_up_2_event_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Follow up 2 event date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Follow_up_2_event_description__c</fullName>
+        <externalId>false</externalId>
+        <label>Follow up 2 event description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Assembly</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Whole year PSHE/citizenship lesson</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NCS event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tutor time</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>PSHE/citizenship class</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EOI event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Piggyback parents&apos; evening</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SF-specific parents&apos; evening</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Careers fair</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>College open day</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Freshers&apos; fair</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Networking event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Teacher conference</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Workshop</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Small group event</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Follow_up_3_event_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Follow up 3 event date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Follow_up_3_event_description__c</fullName>
+        <externalId>false</externalId>
+        <label>Follow up 3 event description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Assembly</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Whole year PSHE/citizenship lesson</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NCS event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tutor time</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>PSHE/citizenship class</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EOI event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Piggyback parents&apos; evening</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SF-specific parents&apos; evening</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Careers fair</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>College open day</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Freshers&apos; fair</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Networking event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Teacher conference</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Workshop</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Small group event</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Follow_up_4_event_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Follow up 4 event date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Follow_up_4_event_description__c</fullName>
+        <externalId>false</externalId>
+        <label>Follow up 4 event description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Assembly</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Whole year PSHE/citizenship lesson</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NCS event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tutor time</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>PSHE/citizenship class</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EOI event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Piggyback parents&apos; evening</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SF-specific parents&apos; evening</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Careers fair</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>College open day</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Freshers&apos; fair</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Networking event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Teacher conference</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Workshop</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Small group event</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Follow_up_5_event_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Follow up 5 event date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Follow_up_5_event_description__c</fullName>
+        <externalId>false</externalId>
+        <label>Follow up 5 event description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Assembly</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Whole year PSHE/citizenship lesson</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>NCS event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tutor time</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>PSHE/citizenship class</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EOI event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Piggyback parents&apos; evening</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SF-specific parents&apos; evening</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Careers fair</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>College open day</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Freshers&apos; fair</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Networking event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Teacher conference</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Workshop</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Small group event</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Generic_Email_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Generic Email Sent</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Introductory_email_sent_by__c</fullName>
+        <externalId>false</externalId>
+        <label>Introductory email sent by</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>NCS SC</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Step Forward SC</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Introductory_email_sent_to__c</fullName>
+        <externalId>false</externalId>
+        <label>Introductory email sent to (job title)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_a_college__c</fullName>
+        <externalId>false</externalId>
+        <formula>School__r.Is_a_college__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Information from the school&apos;s Account record</inlineHelpText>
+        <label>Is a college?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_this_a_Step_Forward_School__c</fullName>
+        <externalId>false</externalId>
+        <label>Is this a Step Forward School?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>2013 - 2014</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2014 - 2015</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2015 - 2016</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2016 - 2017</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2017 - 2018</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Is_this_a_sixth_form_account__c</fullName>
+        <externalId>false</externalId>
+        <formula>School__r.Is_a_sixth_form_account__c</formula>
+        <inlineHelpText>Information from the school&apos;s Account record</inlineHelpText>
+        <label>Is this a sixth form account?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Late_Recruitment_Assembly_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Late Recruitment Assembly Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Late_Recruitment_Email_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Late Recruitment Email Sent</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Meeting_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Meeting Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Meeting_arranged_with__c</fullName>
+        <externalId>false</externalId>
+        <label>Meeting arranged with</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mock_A_level_exams_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Mock A-level exams: start of period</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Mock_A_level_exams_end_of_period__c</fullName>
+        <externalId>false</externalId>
+        <label>Mock A-level exams: end of period</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>NCS_CT_email__c</fullName>
+        <externalId>false</externalId>
+        <formula>School__r.Champion_Teacher__r.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>NCS CT email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NCS_CT_first_name__c</fullName>
+        <externalId>false</externalId>
+        <formula>School__r.Champion_Teacher__r.FirstName</formula>
+        <label>NCS CT first name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NCS_CT_gender__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( School__r.Champion_Teacher__r.Gender__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>NCS CT gender</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NCS_CT_last_name__c</fullName>
+        <externalId>false</externalId>
+        <formula>School__r.Champion_Teacher__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>NCS CT last name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NCS_CT_mobile__c</fullName>
+        <externalId>false</externalId>
+        <formula>School__r.Champion_Teacher__r.MobilePhone</formula>
+        <label>NCS CT mobile</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NCS_CT_phone__c</fullName>
+        <externalId>false</externalId>
+        <formula>School__r.Champion_Teacher__r.Phone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>NCS CT phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NCS_CT_relationship_history__c</fullName>
+        <externalId>false</externalId>
+        <formula>School__r.Champion_Teacher__r.Relationship_History__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>NCS CT relationship history</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NCS_CT_title__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( School__r.Champion_Teacher__r.Salutation )</formula>
+        <label>NCS CT title</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NCS_School_owner__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>NCS school owner</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_year_13s__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of year 13s</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>School__c</fullName>
+        <description>Master-detail relationship to the school Account that these activities relate to.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The school that these activities relate to.</inlineHelpText>
+        <label>School</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Schools</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Step Forward School Activities</relationshipLabel>
+        <relationshipName>Step_Forward_School_Activities</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>School_type__c</fullName>
+        <description>Formula. Pulls this field through from the school Account record and converts it to text, as the original field is a picklist.</description>
+        <externalId>false</externalId>
+        <formula>TEXT(School__r.School_type__c)</formula>
+        <inlineHelpText>As shown on the school&apos;s Account record. This field is editable on the school&apos;s Account record.</inlineHelpText>
+        <label>School type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Send_Generic_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Provide the capability to send generic emails to SF Schools</description>
+        <externalId>false</externalId>
+        <label>Send Generic Email</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Sixth_form__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(School__r.Sixth_form__c)</formula>
+        <inlineHelpText>Information from the school&apos;s Account record</inlineHelpText>
+        <label>Sixth form?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sixth_form_proportion__c</fullName>
+        <externalId>false</externalId>
+        <formula>School__r.Sixth_form_proportion__c</formula>
+        <label>Sixth form proportion</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>State_of_play_current__c</fullName>
+        <description>Users enter the current state of play; via workflow this data is added to the &apos;State of play notes&apos; field and this field is cleared.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the current state of play</inlineHelpText>
+        <label>State of play (current)</label>
+        <length>1000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>State_of_play_notes__c</fullName>
+        <description>Populated by workflow, using the contents of &apos;State of play (current)&apos; field, plus the date and user alias of the user.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Stores the history of the &apos;State of play (current)&apos; field, adding the user alias of the person who entered this information and the date on which they did this.</inlineHelpText>
+        <label>State of play notes</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Email sent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Interest shown</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting booked</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting held</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Assembly booked</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Assembly held</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rejected by School</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_of_School__c</fullName>
+        <externalId>false</externalId>
+        <label>Late Status of School</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Interest Shown</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting Booked</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting Held</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Assembly Booked</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Assembly Held</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>StepFwd_CT_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>StepFwd CT Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>StepFwd_CT_email__c</fullName>
+        <externalId>false</externalId>
+        <label>StepFwd CT email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>StepFwd_CT_first_name__c</fullName>
+        <externalId>false</externalId>
+        <label>StepFwd CT first name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>StepFwd_CT_gender__c</fullName>
+        <externalId>false</externalId>
+        <label>StepFwd CT gender</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Male</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Female</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>StepFwd_CT_last_name__c</fullName>
+        <externalId>false</externalId>
+        <label>StepFwd CT last name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>StepFwd_CT_mobile__c</fullName>
+        <externalId>false</externalId>
+        <label>StepFwd CT mobile</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>StepFwd_CT_notes__c</fullName>
+        <externalId>false</externalId>
+        <label>StepFwd CT notes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>StepFwd_CT_title__c</fullName>
+        <externalId>false</externalId>
+        <label>StepFwd CT title</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Step_Forward_CT__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Step Forward CT</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Schools</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Step Forward School Activities</relationshipLabel>
+        <relationshipName>Step_Forward_School_Activities</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Step_Forward_CT_details_obtained_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Step Forward CT details obtained date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Step_Forward_SC__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Step Forward account owners/name of the SF SC that will be working with the school</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Step Forward account owners/name of the SF SC that will be working with the school</inlineHelpText>
+        <label>Step Forward SC</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Step_Forward_School_Activities2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Step_Forward_staff_1_attending_meeting__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Step Forward staff (1) attending meeting</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Step_Forward_School_Activities</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Step_Forward_staff_2_attending_meeting__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Step Forward staff (2) attending meeting</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Step_Forward_School_Activities1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>With_Step_Forward_attachment__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>With Step Forward attachment?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Zone__c</fullName>
+        <externalId>false</externalId>
+        <formula>School__r.Zone__c</formula>
+        <label>Zone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Step Forward School Activity</label>
+    <listViews>
+        <fullName>All_Schools_2015_16</fullName>
+        <columns>School__c</columns>
+        <columns>NAME</columns>
+        <columns>Step_Forward_SC__c</columns>
+        <columns>Status__c</columns>
+        <columns>Borough_or_area__c</columns>
+        <columns>Meeting_Date__c</columns>
+        <columns>Assembly_Date__c</columns>
+        <columns>Follow_up_1_event_date__c</columns>
+        <columns>Follow_up_1_event_description__c</columns>
+        <columns>Follow_up_2_event_date__c</columns>
+        <columns>Follow_up_2_event_description__c</columns>
+        <columns>Follow_up_3_event_date__c</columns>
+        <columns>Follow_up_3_event_description__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Is_this_a_Step_Forward_School__c</field>
+            <operation>equals</operation>
+            <value>2015 - 2016</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_SC__c</field>
+            <operation>equals</operation>
+            <value>Madiha Bukhari</value>
+        </filters>
+        <label>MSB School Events 2015 -16</label>
+    </listViews>
+    <listViews>
+        <fullName>BMT_Step_Forward_Schools_2014_15</fullName>
+        <booleanFilter>1 AND (2 OR 3 OR 4 OR 5)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Borough_or_area__c</columns>
+        <columns>School__c</columns>
+        <columns>Is_a_college__c</columns>
+        <columns>School_type__c</columns>
+        <columns>StepFwd_CT_email__c</columns>
+        <columns>StepFwd_CT_first_name__c</columns>
+        <columns>StepFwd_CT_last_name__c</columns>
+        <columns>Status__c</columns>
+        <columns>With_Step_Forward_attachment__c</columns>
+        <columns>Is_this_a_Step_Forward_School__c</columns>
+        <columns>Step_Forward_SC__c</columns>
+        <columns>Introductory_email_sent_to__c</columns>
+        <columns>Introductory_email_sent_by__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Is_this_a_Step_Forward_School__c</field>
+            <operation>equals</operation>
+            <value>2014 - 2015</value>
+        </filters>
+        <filters>
+            <field>Borough_or_area__c</field>
+            <operation>equals</operation>
+            <value>Richmond</value>
+        </filters>
+        <filters>
+            <field>Borough_or_area__c</field>
+            <operation>contains</operation>
+            <value>Wandsworth</value>
+        </filters>
+        <filters>
+            <field>Borough_or_area__c</field>
+            <operation>equals</operation>
+            <value>City of London</value>
+        </filters>
+        <filters>
+            <field>Borough_or_area__c</field>
+            <operation>contains</operation>
+            <value>Chelsea</value>
+        </filters>
+        <label>BMT Step Forward Schools 2014-15</label>
+    </listViews>
+    <listViews>
+        <fullName>BMT_Step_Forward_Schools_2015_16</fullName>
+        <booleanFilter>1 and 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Borough_or_area__c</columns>
+        <columns>NCS_CT_email__c</columns>
+        <columns>School__c</columns>
+        <columns>Is_a_college__c</columns>
+        <columns>School_type__c</columns>
+        <columns>Status__c</columns>
+        <columns>Meeting_Date__c</columns>
+        <columns>Assembly_Date__c</columns>
+        <columns>StepFwd_CT_email__c</columns>
+        <columns>StepFwd_CT_first_name__c</columns>
+        <columns>StepFwd_CT_last_name__c</columns>
+        <columns>With_Step_Forward_attachment__c</columns>
+        <columns>Is_this_a_Step_Forward_School__c</columns>
+        <columns>Step_Forward_SC__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Step_Forward_SC__c</field>
+            <operation>equals</operation>
+            <value>Ben Thomas</value>
+        </filters>
+        <filters>
+            <field>Is_this_a_Step_Forward_School__c</field>
+            <operation>equals</operation>
+            <value>2015 - 2016</value>
+        </filters>
+        <label>BMT Step Forward Schools 2015-16</label>
+    </listViews>
+    <listViews>
+        <fullName>BMT_Step_Forward_Schools_2015_161</fullName>
+        <columns>NAME</columns>
+        <columns>Borough_or_area__c</columns>
+        <columns>Step_Forward_SC__c</columns>
+        <columns>Send_Generic_Email__c</columns>
+        <columns>Generic_Email_Sent__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Is_this_a_Step_Forward_School__c</field>
+            <operation>equals</operation>
+            <value>2015 - 2016</value>
+        </filters>
+        <label>All Step Forward Schools 2015-16</label>
+    </listViews>
+    <listViews>
+        <fullName>BMT_Step_Forward_Schools_2016_17</fullName>
+        <booleanFilter>1 and 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Borough_or_area__c</columns>
+        <columns>School__c</columns>
+        <columns>School_type__c</columns>
+        <columns>Status__c</columns>
+        <columns>Early_Status_of_School__c</columns>
+        <columns>StepFwd_CT_email__c</columns>
+        <columns>Early_Recruitment_Email_Sent__c</columns>
+        <columns>Assembly_Date__c</columns>
+        <columns>Meeting_Date__c</columns>
+        <columns>StepFwd_CT_first_name__c</columns>
+        <columns>StepFwd_CT_last_name__c</columns>
+        <columns>With_Step_Forward_attachment__c</columns>
+        <columns>Is_this_a_Step_Forward_School__c</columns>
+        <columns>Step_Forward_SC__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Step_Forward_SC__c</field>
+            <operation>equals</operation>
+            <value>Ben Thomas</value>
+        </filters>
+        <filters>
+            <field>Is_this_a_Step_Forward_School__c</field>
+            <operation>equals</operation>
+            <value>2016 - 2017</value>
+        </filters>
+        <label>BMT Step Forward Schools 2016-17</label>
+    </listViews>
+    <listViews>
+        <fullName>GGL_Step_Forward_Schools_2014_15</fullName>
+        <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 or 8 OR 9)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Borough_or_area__c</columns>
+        <columns>School__c</columns>
+        <columns>StepFwd_CT_email__c</columns>
+        <columns>StepFwd_CT_first_name__c</columns>
+        <columns>StepFwd_CT_last_name__c</columns>
+        <columns>Is_a_college__c</columns>
+        <columns>Is_this_a_Step_Forward_School__c</columns>
+        <columns>School_type__c</columns>
+        <columns>Step_Forward_SC__c</columns>
+        <columns>Cluster__c</columns>
+        <columns>Assembly_Date__c</columns>
+        <columns>Introductory_email_sent_to__c</columns>
+        <columns>Meeting_arranged_with__c</columns>
+        <columns>StepFwd_CT_Phone__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Is_this_a_Step_Forward_School__c</field>
+            <operation>equals</operation>
+            <value>2014 - 2015</value>
+        </filters>
+        <filters>
+            <field>Borough_or_area__c</field>
+            <operation>equals</operation>
+            <value>Greenwich</value>
+        </filters>
+        <filters>
+            <field>Borough_or_area__c</field>
+            <operation>equals</operation>
+            <value>Tower Hamlets</value>
+        </filters>
+        <filters>
+            <field>Borough_or_area__c</field>
+            <operation>equals</operation>
+            <value>City of London</value>
+        </filters>
+        <filters>
+            <field>Borough_or_area__c</field>
+            <operation>equals</operation>
+            <value>Newham</value>
+        </filters>
+        <filters>
+            <field>Borough_or_area__c</field>
+            <operation>contains</operation>
+            <value>Hammersmith</value>
+        </filters>
+        <filters>
+            <field>Borough_or_area__c</field>
+            <operation>contains</operation>
+            <value>Wandsworth</value>
+        </filters>
+        <filters>
+            <field>Borough_or_area__c</field>
+            <operation>equals</operation>
+            <value>Enfield</value>
+        </filters>
+        <filters>
+            <field>Borough_or_area__c</field>
+            <operation>contains</operation>
+            <value>Chelsea</value>
+        </filters>
+        <label>GGL Step Forward Schools 2014-15</label>
+    </listViews>
+    <listViews>
+        <fullName>GGL_Step_Forward_Schools_2015_16</fullName>
+        <columns>NAME</columns>
+        <columns>Borough_or_area__c</columns>
+        <columns>School__c</columns>
+        <columns>Cluster__c</columns>
+        <columns>Is_a_college__c</columns>
+        <columns>School_type__c</columns>
+        <columns>StepFwd_CT_email__c</columns>
+        <columns>StepFwd_CT_first_name__c</columns>
+        <columns>StepFwd_CT_last_name__c</columns>
+        <columns>Status__c</columns>
+        <columns>With_Step_Forward_attachment__c</columns>
+        <columns>Is_this_a_Step_Forward_School__c</columns>
+        <columns>Step_Forward_SC__c</columns>
+        <columns>Introductory_email_sent_to__c</columns>
+        <columns>Introductory_email_sent_by__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Step_Forward_SC__c</field>
+            <operation>contains</operation>
+            <value>Greta</value>
+        </filters>
+        <label>GGL Step Forward Schools 2015-16</label>
+    </listViews>
+    <listViews>
+        <fullName>HAF_Step_Forward_Schools_2014_15_correct</fullName>
+        <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5) and 6</booleanFilter>
+        <columns>School__c</columns>
+        <columns>NAME</columns>
+        <columns>Assembly_Date__c</columns>
+        <columns>Step_Forward_SC__c</columns>
+        <columns>Introductory_email_sent_to__c</columns>
+        <columns>Is_a_college__c</columns>
+        <columns>Is_this_a_Step_Forward_School__c</columns>
+        <columns>School_type__c</columns>
+        <columns>StepFwd_CT_email__c</columns>
+        <columns>StepFwd_CT_first_name__c</columns>
+        <columns>StepFwd_CT_last_name__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Cluster__c</field>
+            <operation>equals</operation>
+            <value>Hounslow</value>
+        </filters>
+        <filters>
+            <field>Cluster__c</field>
+            <operation>equals</operation>
+            <value>HEAL</value>
+        </filters>
+        <filters>
+            <field>Cluster__c</field>
+            <operation>equals</operation>
+            <value>MRK</value>
+        </filters>
+        <filters>
+            <field>Cluster__c</field>
+            <operation>equals</operation>
+            <value>Hillingdon</value>
+        </filters>
+        <filters>
+            <field>Cluster__c</field>
+            <operation>equals</operation>
+            <value>CAS</value>
+        </filters>
+        <filters>
+            <field>Is_this_a_Step_Forward_School__c</field>
+            <operation>equals</operation>
+            <value>2014 - 2015</value>
+        </filters>
+        <label>HAF Step Forward Schools 2014-15 correct</label>
+    </listViews>
+    <listViews>
+        <fullName>HAF_Step_Forward_Schools_2015_16</fullName>
+        <columns>School__c</columns>
+        <columns>Introductory_email_sent_by__c</columns>
+        <columns>Introductory_email_sent_to__c</columns>
+        <columns>Status__c</columns>
+        <columns>With_Step_Forward_attachment__c</columns>
+        <columns>NAME</columns>
+        <columns>Borough_or_area__c</columns>
+        <columns>Assembly_Date__c</columns>
+        <columns>Meeting_Date__c</columns>
+        <columns>Step_Forward_SC__c</columns>
+        <columns>School_type__c</columns>
+        <columns>StepFwd_CT_email__c</columns>
+        <columns>StepFwd_CT_first_name__c</columns>
+        <columns>StepFwd_CT_last_name__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Step_Forward_SC__c</field>
+            <operation>equals</operation>
+            <value>Holly Farmer</value>
+        </filters>
+        <filters>
+            <field>Is_this_a_Step_Forward_School__c</field>
+            <operation>equals</operation>
+            <value>2015 - 2016</value>
+        </filters>
+        <label>HAF Step Forward Schools 2015-16</label>
+    </listViews>
+    <listViews>
+        <fullName>HAF_Step_Forward_Schools_2016_17</fullName>
+        <columns>School__c</columns>
+        <columns>Introductory_email_sent_by__c</columns>
+        <columns>Introductory_email_sent_to__c</columns>
+        <columns>Status__c</columns>
+        <columns>Early_Status_of_School__c</columns>
+        <columns>Early_Recruitment_Email_Sent__c</columns>
+        <columns>With_Step_Forward_attachment__c</columns>
+        <columns>NAME</columns>
+        <columns>Borough_or_area__c</columns>
+        <columns>Assembly_Date__c</columns>
+        <columns>Meeting_Date__c</columns>
+        <columns>Step_Forward_SC__c</columns>
+        <columns>StepFwd_CT_email__c</columns>
+        <columns>StepFwd_CT_last_name__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Step_Forward_SC__c</field>
+            <operation>equals</operation>
+            <value>Holly Farmer</value>
+        </filters>
+        <filters>
+            <field>Is_this_a_Step_Forward_School__c</field>
+            <operation>equals</operation>
+            <value>2016 - 2017</value>
+        </filters>
+        <label>HAF Step Forward Schools 2016-17</label>
+    </listViews>
+    <listViews>
+        <fullName>JL_Step_Forward_Schools_2015_16</fullName>
+        <columns>NAME</columns>
+        <columns>School__c</columns>
+        <columns>Step_Forward_SC__c</columns>
+        <columns>Status__c</columns>
+        <columns>Assembly_Date__c</columns>
+        <columns>Borough_or_area__c</columns>
+        <columns>School_type__c</columns>
+        <columns>Follow_up_1_event_date__c</columns>
+        <columns>Follow_up_1_event_description__c</columns>
+        <columns>Follow_up_2_event_date__c</columns>
+        <columns>Follow_up_2_event_description__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Step_Forward_SC__c</field>
+            <operation>equals</operation>
+            <value>Jessica Lincoln</value>
+        </filters>
+        <filters>
+            <field>Is_this_a_Step_Forward_School__c</field>
+            <operation>equals</operation>
+            <value>2015 - 2016</value>
+        </filters>
+        <label>JL Step Forward Schools 2015-16</label>
+    </listViews>
+    <listViews>
+        <fullName>KIH_Step_Forward_Schools_2015_16</fullName>
+        <booleanFilter>1 and 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Assembly_Date__c</columns>
+        <columns>School__c</columns>
+        <columns>Introductory_email_sent_by__c</columns>
+        <columns>Introductory_email_sent_to__c</columns>
+        <columns>Status__c</columns>
+        <columns>With_Step_Forward_attachment__c</columns>
+        <columns>Borough_or_area__c</columns>
+        <columns>Is_a_college__c</columns>
+        <columns>School_type__c</columns>
+        <columns>Step_Forward_SC__c</columns>
+        <columns>StepFwd_CT_email__c</columns>
+        <columns>StepFwd_CT_first_name__c</columns>
+        <columns>StepFwd_CT_last_name__c</columns>
+        <columns>Step_Forward_CT__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Is_this_a_Step_Forward_School__c</field>
+            <operation>equals</operation>
+            <value>2015 - 2016</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_SC__c</field>
+            <operation>contains</operation>
+            <value>Katya</value>
+        </filters>
+        <label>KIH Step Forward Schools 2015-16</label>
+    </listViews>
+    <listViews>
+        <fullName>KIH_Step_Forward_Schools_2016_17</fullName>
+        <booleanFilter>1 and 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Assembly_Date__c</columns>
+        <columns>School__c</columns>
+        <columns>Introductory_email_sent_by__c</columns>
+        <columns>Introductory_email_sent_to__c</columns>
+        <columns>Early_Recruitment_Email_Sent__c</columns>
+        <columns>Early_Status_of_School__c</columns>
+        <columns>Status__c</columns>
+        <columns>Borough_or_area__c</columns>
+        <columns>School_type__c</columns>
+        <columns>Step_Forward_SC__c</columns>
+        <columns>StepFwd_CT_email__c</columns>
+        <columns>StepFwd_CT_first_name__c</columns>
+        <columns>StepFwd_CT_last_name__c</columns>
+        <columns>Step_Forward_CT__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Is_this_a_Step_Forward_School__c</field>
+            <operation>equals</operation>
+            <value>2016 - 2017</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_SC__c</field>
+            <operation>contains</operation>
+            <value>Katya</value>
+        </filters>
+        <label>KIH Step Forward Schools 2016-17</label>
+    </listViews>
+    <listViews>
+        <fullName>MSB_Step_Forward_Schools_2015_16</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>With_Step_Forward_attachment__c</columns>
+        <columns>Status__c</columns>
+        <columns>Assembly_Date__c</columns>
+        <columns>StepFwd_CT_email__c</columns>
+        <columns>Introductory_email_sent_to__c</columns>
+        <columns>Introductory_email_sent_by__c</columns>
+        <columns>School__c</columns>
+        <columns>NAME</columns>
+        <columns>Borough_or_area__c</columns>
+        <columns>Step_Forward_SC__c</columns>
+        <columns>StepFwd_CT_first_name__c</columns>
+        <columns>StepFwd_CT_last_name__c</columns>
+        <columns>Follow_up_1_event_date__c</columns>
+        <columns>Follow_up_2_event_date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Is_this_a_Step_Forward_School__c</field>
+            <operation>equals</operation>
+            <value>2015 - 2016</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_SC__c</field>
+            <operation>contains</operation>
+            <value>Madiha</value>
+        </filters>
+        <label>MSB Step Forward Schools 2015-16</label>
+    </listViews>
+    <listViews>
+        <fullName>MSB_Step_Forward_Schools_2015_161</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>With_Step_Forward_attachment__c</columns>
+        <columns>Status__c</columns>
+        <columns>Introductory_email_sent_to__c</columns>
+        <columns>NAME</columns>
+        <columns>Introductory_email_sent_by__c</columns>
+        <columns>School__c</columns>
+        <columns>StepFwd_CT_email__c</columns>
+        <columns>Borough_or_area__c</columns>
+        <columns>Step_Forward_SC__c</columns>
+        <columns>Is_a_college__c</columns>
+        <columns>Is_this_a_Step_Forward_School__c</columns>
+        <columns>School_type__c</columns>
+        <columns>StepFwd_CT_first_name__c</columns>
+        <columns>StepFwd_CT_last_name__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Is_this_a_Step_Forward_School__c</field>
+            <operation>equals</operation>
+            <value>2015 - 2016</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_SC__c</field>
+            <operation>contains</operation>
+            <value>Madiha</value>
+        </filters>
+        <label>MSB Step Forward Schools 2015-16</label>
+    </listViews>
+    <listViews>
+        <fullName>MSB_Step_Forward_Schools_2015_162</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>With_Step_Forward_attachment__c</columns>
+        <columns>Status__c</columns>
+        <columns>Introductory_email_sent_to__c</columns>
+        <columns>Introductory_email_sent_by__c</columns>
+        <columns>School__c</columns>
+        <columns>NAME</columns>
+        <columns>Borough_or_area__c</columns>
+        <columns>Step_Forward_SC__c</columns>
+        <columns>Is_a_college__c</columns>
+        <columns>Is_this_a_Step_Forward_School__c</columns>
+        <columns>School_type__c</columns>
+        <columns>StepFwd_CT_email__c</columns>
+        <columns>StepFwd_CT_first_name__c</columns>
+        <columns>StepFwd_CT_last_name__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Is_this_a_Step_Forward_School__c</field>
+            <operation>equals</operation>
+            <value>2015 - 2016</value>
+        </filters>
+        <filters>
+            <field>Step_Forward_SC__c</field>
+            <operation>contains</operation>
+            <value>Madiha</value>
+        </filters>
+        <label>MSB Step Forward Schools 2015-16</label>
+    </listViews>
+    <listViews>
+        <fullName>PSO_Step_Forward_Schools_2014_15</fullName>
+        <booleanFilter>(1 OR 2 OR 3 OR 4 OR 6 OR 7 OR 8) and 5</booleanFilter>
+        <columns>School__c</columns>
+        <columns>NAME</columns>
+        <columns>Assembly_Date__c</columns>
+        <columns>Borough_or_area__c</columns>
+        <columns>Step_Forward_SC__c</columns>
+        <columns>Is_a_college__c</columns>
+        <columns>School_type__c</columns>
+        <columns>StepFwd_CT_email__c</columns>
+        <columns>StepFwd_CT_first_name__c</columns>
+        <columns>StepFwd_CT_last_name__c</columns>
+        <columns>State_of_play_notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Borough_or_area__c</field>
+            <operation>equals</operation>
+            <value>Havering</value>
+        </filters>
+        <filters>
+            <field>Cluster__c</field>
+            <operation>equals</operation>
+            <value>RAW</value>
+        </filters>
+        <filters>
+            <field>Borough_or_area__c</field>
+            <operation>contains</operation>
+            <value>Barking</value>
+        </filters>
+        <filters>
+            <field>Cluster__c</field>
+            <operation>equals</operation>
+            <value>BB</value>
+        </filters>
+        <filters>
+            <field>Is_this_a_Step_Forward_School__c</field>
+            <operation>equals</operation>
+            <value>2014 - 2015</value>
+        </filters>
+        <filters>
+            <field>Borough_or_area__c</field>
+            <operation>equals</operation>
+            <value>Hackney</value>
+        </filters>
+        <filters>
+            <field>Borough_or_area__c</field>
+            <operation>equals</operation>
+            <value>Southwark</value>
+        </filters>
+        <filters>
+            <field>Borough_or_area__c</field>
+            <operation>equals</operation>
+            <value>Lewisham</value>
+        </filters>
+        <label>PSO Step Forward Schools 2014-15</label>
+    </listViews>
+    <listViews>
+        <fullName>PSO_Step_Forward_Schools_2015_16</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>With_Step_Forward_attachment__c</columns>
+        <columns>Status__c</columns>
+        <columns>Assembly_Date__c</columns>
+        <columns>Meeting_Date__c</columns>
+        <columns>Follow_up_1_event_date__c</columns>
+        <columns>School__c</columns>
+        <columns>NAME</columns>
+        <columns>Borough_or_area__c</columns>
+        <columns>Step_Forward_SC__c</columns>
+        <columns>Is_a_college__c</columns>
+        <columns>Is_this_a_Step_Forward_School__c</columns>
+        <columns>School_type__c</columns>
+        <columns>StepFwd_CT_email__c</columns>
+        <columns>StepFwd_CT_first_name__c</columns>
+        <columns>StepFwd_CT_last_name__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Step_Forward_SC__c</field>
+            <operation>contains</operation>
+            <value>Pamela</value>
+        </filters>
+        <filters>
+            <field>Is_this_a_Step_Forward_School__c</field>
+            <operation>equals</operation>
+            <value>2015 - 2016</value>
+        </filters>
+        <label>PSO Step Forward Schools 2015-16</label>
+    </listViews>
+    <listViews>
+        <fullName>RJT_Step_Forward_Schools_2015_16</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Borough_or_area__c</columns>
+        <columns>School__c</columns>
+        <columns>Status__c</columns>
+        <columns>StepFwd_CT_email__c</columns>
+        <columns>Assembly_Date__c</columns>
+        <columns>Meeting_Date__c</columns>
+        <columns>Follow_up_1_event_date__c</columns>
+        <columns>StepFwd_CT_Phone__c</columns>
+        <columns>With_Step_Forward_attachment__c</columns>
+        <columns>School_type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Step_Forward_SC__c</field>
+            <operation>contains</operation>
+            <value>Robyn</value>
+        </filters>
+        <filters>
+            <field>Is_this_a_Step_Forward_School__c</field>
+            <operation>equals</operation>
+            <value>2015 - 2016</value>
+        </filters>
+        <label>RJT Step Forward Schools 2015-16</label>
+    </listViews>
+    <listViews>
+        <fullName>RJT_Step_Forward_Schools_2016_17</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Borough_or_area__c</columns>
+        <columns>School__c</columns>
+        <columns>Early_Status_of_School__c</columns>
+        <columns>Early_Recruitment_Assembly_Date__c</columns>
+        <columns>Follow_up_1_event_date__c</columns>
+        <columns>StepFwd_CT_email__c</columns>
+        <columns>Follow_up_2_event_date__c</columns>
+        <columns>Early_Recruitment_Email_Sent__c</columns>
+        <columns>StepFwd_CT_Phone__c</columns>
+        <columns>Meeting_Date__c</columns>
+        <columns>With_Step_Forward_attachment__c</columns>
+        <columns>School_type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Step_Forward_SC__c</field>
+            <operation>contains</operation>
+            <value>Robyn</value>
+        </filters>
+        <filters>
+            <field>Is_this_a_Step_Forward_School__c</field>
+            <operation>equals</operation>
+            <value>2016 - 2017</value>
+        </filters>
+        <label>RJT Step Forward Schools 2016-17</label>
+    </listViews>
+    <listViews>
+        <fullName>RMR_Step_Forward_Schools_2014_15</fullName>
+        <booleanFilter>(1 OR 2 OR 3 OR 4 OR 6 OR 7 ) and 5</booleanFilter>
+        <columns>NAME</columns>
+        <columns>School__c</columns>
+        <columns>Assembly_Date__c</columns>
+        <columns>Borough_or_area__c</columns>
+        <columns>Introductory_email_sent_by__c</columns>
+        <columns>Introductory_email_sent_to__c</columns>
+        <columns>Step_Forward_SC__c</columns>
+        <columns>StepFwd_CT_email__c</columns>
+        <columns>StepFwd_CT_first_name__c</columns>
+        <columns>StepFwd_CT_last_name__c</columns>
+        <columns>Is_a_college__c</columns>
+        <columns>School_type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Borough_or_area__c</field>
+            <operation>equals</operation>
+            <value>Haringey</value>
+        </filters>
+        <filters>
+            <field>Cluster__c</field>
+            <operation>equals</operation>
+            <value>CAB</value>
+        </filters>
+        <filters>
+            <field>Cluster__c</field>
+            <operation>equals</operation>
+            <value>Barnet</value>
+        </filters>
+        <filters>
+            <field>Borough_or_area__c</field>
+            <operation>equals</operation>
+            <value>Islington</value>
+        </filters>
+        <filters>
+            <field>Is_this_a_Step_Forward_School__c</field>
+            <operation>equals</operation>
+            <value>2014 - 2015</value>
+        </filters>
+        <filters>
+            <field>Borough_or_area__c</field>
+            <operation>equals</operation>
+            <value>Lambeth</value>
+        </filters>
+        <filters>
+            <field>Borough_or_area__c</field>
+            <operation>equals</operation>
+            <value>westminster</value>
+        </filters>
+        <label>RMR Step Forward Schools 2014-15</label>
+    </listViews>
+    <nameField>
+        <displayFormat>SFS-{000000}</displayFormat>
+        <label>Step Forward School Activity Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Step Forward School Activities</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

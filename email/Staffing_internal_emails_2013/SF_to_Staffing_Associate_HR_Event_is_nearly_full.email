@@ -1,0 +1,9 @@
+Hi {!HR_Event__c.OwnerFirstName},
+<br class="blank" />
+<br class="blank" />
+The HR Event "{!HR_Event__c.Name}" has reached {!HR_Event__c.Attendee__c}, which is nearly full capacity. When it has reached {!HR_Event__c.MaxAttendee__c}, this date will no longer appear on the assessment form. You will receive an email when this occurs.
+<br class="blank" />
+Click on the link to view the record {!HR_Event__c.Link}
+<br class="blank" />
+<br class="blank" />
+This is a standard email, sent automatically whenever Attendee = MaxAttendee - 3 on an HR Event

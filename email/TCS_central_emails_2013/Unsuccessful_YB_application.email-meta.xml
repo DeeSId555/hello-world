@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>2013 Unsuccessful YB application</name>
+    <style>freeForm</style>
+    <subject>Your Youth Board application</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Thanks so much for applying to be on the Youth Board with The Challenge Society. We’re sorry that you were unsuccessful on this occasion but we would love you to stay involved. We would like to invite you to become a Challenge Ambassador – read on to find out more.
+
+
+
+Challenge Ambassadors are Graduates of The Challenge who support the work of the Marketing, Staffing and Advocacy departments. This is an amazing way to stay involved with The Challenge Society, and will be an opportunity to access a range of new skills and experiences.
+
+
+
+We’ll offer you training and support and you can get involved as much or as little as you wish. Log on to the TCS website using the details below and look for Challenge Ambassadors for more info!
+
+
+Website: http://www.thechallengesociety.org/
+Login: {!Contact.Email}
+Password: {!Contact.Login_Password__c}
+
+
+
+We look forward to hearing from you,
+
+
+
+The Challenge Society</textOnly>
+    <type>html</type>
+</EmailTemplate>

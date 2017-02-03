@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>AM sends to MT when interview booked and ready for shortlist</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>INTERNAL: Job ready to MATCH</name>
+    <style>none</style>
+    <subject>INTERNAL: Job ready to MATCH</subject>
+    <textOnly>INTERNAL EMAIL ALERT
+
+
+Subject: Job ready to MATCH
+
+SF event component number: {!Step_Forward_Event_Component__c.Name}
+
+Sf Job: {!Step_Forward_Event_Component__c.Step_Forward_Job__c}
+
+
+Dear Matching Team,
+
+The event component is now ready to match.  The interview slots have been confirmed with the Employer. Follow the next steps:
+
+Find the matching info for job on SF Job (list is below)
+Create a report in SF Activities. Filter the right YPs by checking the matching info on SF Job*
+Use the matching tool to find the right YPs
+Attach each SF Activity to the SF Event Component using SF Activity View called &apos;YP Cvs ready for review&apos;
+When you have attached all the SF Activities, check the box &apos;YP CVs ready for review&apos; to alert the Account Manager to review the CVs
+
+
+Step Forward Event Component details
+
+SF event component number: {!Step_Forward_Event_Component__c.Name}
+
+SF Job:  {!Step_Forward_Event_Component__c.Step_Forward_Job__c}
+
+Event Date {!Step_Forward_Event_Component__c.Event_Date_Matching__c}
+
+Interview Start and Finish times {!Step_Forward_Event_Component__c.Interview_start_and_finish_times__c}
+
+Suggested no of YP to review {!Step_Forward_Event_Component__c.Suggested_number_of_CVs_to_review__c}
+
+Pathway:                                   {!Step_Forward_Event_Component__c.Pathway__c}
+
+
+*Matching info to check on SF Job when using the Matching tool:
+
+Pathway
+Job Postcode
+Employer Special Requests
+Job specific interests
+Exclusive Candidates?
+Only candidates NOT intending on going to Uni?
+This is a customer facing role
+Suggested number of YPs to review
+
+
+
+Best wishes,
+
+Account Management [created by]</textOnly>
+    <type>custom</type>
+</EmailTemplate>

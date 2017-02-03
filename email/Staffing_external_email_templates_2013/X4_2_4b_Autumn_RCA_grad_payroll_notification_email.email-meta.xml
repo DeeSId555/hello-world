@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Copy verified and workflow active</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>4.2.4b Autumn RCA/Grad payroll notification email</name>
+    <style>freeForm</style>
+    <subject>Notification of Payment for NCS: Real Challenge Action and Graduation</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Job_placement__c.Staffing_Associate_email__c}
+
+Dear {!Job_placement__c.Contact_Name__c},
+
+Many thanks for taking on the role of {!Job_placement__c.Role__c} on the NCS: Real Challenge Action (RCA) and (if applicable) NCS: Graduations days.
+
+The total gross pay for your work on {!Job_placement__c.Assignment_end_date__c} will be {!Job_placement__c.Total_gross_pay__c} for {!Job_placement__c.Wave__c}. This will be subject to tax and NI deductions. You will receive your pay for this on 16 December 2014.
+
+On your payslip (sent via email on {!Job_placement__c.Payroll_payment_date__c}), you will see the total amount which you will receive.
+
+
+
+Due to new auto-enrolment legislation, employees of The Challenge, including seasonal staff, may be enrolled in a workplace pension scheme. This is a way of saving for your retirement that&apos;s arranged by your employer. For further information, please go to www.gov.uk/workplace-pensions.
+Further information about workplace pensions and how to opt-out can be found on the staffing website under FAQs.
+
+If you have any questions, please contact your staffing associate. Please quote the email reference number in any correspondence.
+
+
+
+Yours sincerely,
+
+NCS with The Challenge
+{!Job_placement__c.Staffing_Associate_email__c}
+CR 4.2.4b</textOnly>
+    <type>html</type>
+</EmailTemplate>

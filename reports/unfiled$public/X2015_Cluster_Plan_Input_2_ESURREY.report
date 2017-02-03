@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.Gender__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Date_of_YPPG_withdrawal_notification__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Total_payment_received__c</field>
+    </columns>
+    <columns>
+        <field>Contact.P3_completion_date__c</field>
+    </columns>
+    <columns>
+        <field>Contact.School_Borough_First_Application__c</field>
+    </columns>
+    <columns>
+        <field>Contact.School_code__c</field>
+    </columns>
+    <description>esurrey</description>
+    <filter>
+        <criteriaItems>
+            <column>CONTACT_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Young_Person,Contact.YP2014</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Date_of_YPPG_withdrawal_notification__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Season__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Summer 2014</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.School_Borough_First_Application__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Mole Valley,Tandridge. Elmbridge,Reigate,Banstead,Epsom,Ewell</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2015 Cluster Plan Input 2 ESURREY</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

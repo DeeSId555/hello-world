@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Activity__c.Date_Step_Forward_EOI_received__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Activity__c.Date_Step_Forward_Application_received__c</field>
+    </columns>
+    <columns>
+        <field>CUST_ID</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Activity__c.Name_on_ID__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Activity__c.Date_of_birth__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Activity__c.Date_of_birth_StepFwd_check__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Activity__c.DOB_check__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Activity__c.Final_assessment_result__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Step_Forward_Activity__c.Cohort__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Cohort 3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Step_Forward_Activity__c.DOB_Discrepancy_final_check__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>No Match</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>Step Forward Website Bug</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Step_Forward_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Step_Forward_Activity__c.Date_Step_Forward_Application_received__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

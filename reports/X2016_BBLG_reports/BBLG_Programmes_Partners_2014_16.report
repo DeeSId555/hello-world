@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <description>BBLG partners filtered by L.A cluster and name</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Local_Authority_s_Cluster__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>LG,BB,BBLG</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Greenwich,Bexley,Bromley,Lewisham</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>BBLG Programmes Partners 2014-16</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountPartner@Account.Local_Authority__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_PREVCUR2Y</interval>
+    </timeFrameFilter>
+</Report>

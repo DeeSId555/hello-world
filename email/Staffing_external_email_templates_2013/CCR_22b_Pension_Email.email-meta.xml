@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>P45 email Autumn</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>CCR 22b Autumn Tax Dec</name>
+    <style>freeForm</style>
+    <subject>Your tax declaration for your work on the autumn programme</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+We hope you are looking forward to starting your role on the autumn programme.
+
+
+At the end of the summer programme we process P45s for all staff - this concludes your employment with us. As we have processed your P45 you will need to submit a new tax declaration outlining your current circumstances.
+
+
+What are the next steps?
+
+
+You will need to respond to this email confirming in writing what your current situation is. The statement should represent your circumstances as they will be on the day you commence work with us.
+
+
+Please use the following sentence as the body of the email
+
+
+The tax declaration statement which applies to my present circumstances is STATEMENT [insert statement letter A/B/C].
+
+NAME: [Insert name]
+
+DATE: [insert date]
+
+
+What are the tax declarations?
+
+
+Your tax declaration can be one of the following options:
+
+
+A - This is my first job since last 6 April and I have not been receiving taxable Jobseeker’s Allowance or taxable Incapacity Benefit or a state or occupational pension.
+
+
+B - This is now my only job, but since last 6 April I have had another job, or have received taxable Jobseeker’s Allowance or Incapacity Benefit. I do not receive a state or occupational pension.
+
+
+C - I have another job or receive a state or occupation pension.
+
+
+When do I need to do this by?
+
+
+You will need to send an email back by no later than 31st October. If you do not respond to this email you will be put on a tax code specifically for people whose current circumstances are unknown - which could mean you are taxed more than you should be.
+
+More information on tax can be found on HMRC or GOV.UK website.
+
+If you have any questions please email us back.
+
+
+
+Best wishes,
+
+
+NCS with The Challenge
+CCR 22b</textOnly>
+    <type>html</type>
+</EmailTemplate>

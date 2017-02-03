@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Job__c.Max_APLs__c:SUM + Job__c.Max_Community_Mentors__c:SUM + Job__c.Max_Mentors__c:SUM + Job__c.Max_Practitioners__c:SUM + 1</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total needed for wave (not SW/LO/RAM)</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <columns>
+        <field>Job__c$All_confirmed_core_staff__c</field>
+    </columns>
+    <columns>
+        <field>Job__c$Staff_payroll_approved__c</field>
+    </columns>
+    <columns>
+        <field>Job__c$All_payroll_approved__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Job__c$Cluster__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Job__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>TEMPLATE cluster approval status</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Jobs__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Job__c$PCKO_Date__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Above_Limit_YP_Per_School__c</fullName>
+        <description>Raise red flag if Assigned/Reserved total (Yp&apos;s per School) is &gt; 10</description>
+        <externalId>false</externalId>
+        <formula>IMAGE(
+   (IF(Assigned_Reserved_Total__c &gt; 10, 
+       &quot;/img/samples/flag_red.gif&quot;,&quot;/s.gif&quot;) ), 
+&quot;&lt;-- Above Limit&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Flags red if there are more than 10 YP&apos;s per school</inlineHelpText>
+        <label>Above Limit</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>School Totals</relationshipLabel>
+        <relationshipName>School_Totals</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>All_places_inc_overbooking_available__c</fullName>
+        <description>The number of remaining places</description>
+        <externalId>false</externalId>
+        <formula>Wave__r.All_places_inc_overbooking_available__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The number of remaining places</inlineHelpText>
+        <label>All places (inc overbooking) available</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Assigned_Reserved_Combined_School__c</fullName>
+        <externalId>false</externalId>
+        <label>Assigned/Reserved - Combined School</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Assigned_Reserved_Total__c</fullName>
+        <externalId>false</externalId>
+        <label>Assigned/Reserved - Single School</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_this_school_filled_on_the_wave__c</fullName>
+        <externalId>false</externalId>
+        <formula>If(ROUND(Single_school_capacity_inc_overbooking__c,0)  -  Assigned_Reserved_Total__c = 0, &quot;Yes&quot;,&quot;No&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is this school filled on the wave?</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>On_Waiting_List_Total__c</fullName>
+        <externalId>false</externalId>
+        <label>On Waiting List</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Online_places_available__c</fullName>
+        <description>The total number of remaining places on the wave</description>
+        <externalId>false</externalId>
+        <formula>Wave__r.Online_places_available__c</formula>
+        <inlineHelpText>The total number of remaining places on the wave</inlineHelpText>
+        <label>Online places available</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Online_single_school_capacity__c</fullName>
+        <description>Formula, pulling through online school capacity from wave</description>
+        <externalId>false</externalId>
+        <formula>Wave__r.Online_single_school_capacity__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The wave&apos;s online school capacity</inlineHelpText>
+        <label>Online single school capacity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Online_single_school_places_available__c</fullName>
+        <description>Formula, returns the smallest of all places available or places available for this particular school</description>
+        <externalId>false</externalId>
+        <formula>MIN(  Online_places_available__c  ,  Online_single_school_capacity__c  -  Assigned_Reserved_Total__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Formula, returns the smallest of all places available or places available for this particular school</inlineHelpText>
+        <label>Online single school places available</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <description>Formula, pulling through name of the wave&apos;s region</description>
+        <externalId>false</externalId>
+        <formula>Wave__r.Region__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The name of the wave&apos;s region</inlineHelpText>
+        <label>Region</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>School_Borough_or_area__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Account__r.Borough_or_area__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>School Borough or area</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>School_Cluster__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Cluster__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>School Cluster</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>School_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>School Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>School__c</fullName>
+        <externalId>false</externalId>
+        <formula>School_Name__c</formula>
+        <label>School</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Single_school_capacity_inc_overbooking__c</fullName>
+        <description>Formula, pulling through single school capacity from wave</description>
+        <externalId>false</externalId>
+        <formula>Wave__r.Single_school_capacity_inc_overbooking__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The wave&apos;s single school capacity (including overbooking)</inlineHelpText>
+        <label>Single school capacity inc overbooking</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Waiting_List__c</fullName>
+        <externalId>false</externalId>
+        <formula>On_Waiting_List_Total__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Waiting List</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Wave__c</fullName>
+        <externalId>false</externalId>
+        <label>Wave</label>
+        <referenceTo>Wave__c</referenceTo>
+        <relationshipLabel>School Totals</relationshipLabel>
+        <relationshipName>School_Totals</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>School Total</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>OBJECT_ID</columns>
+        <columns>Account__c</columns>
+        <columns>Wave__c</columns>
+        <columns>School_Name__c</columns>
+        <columns>Assigned_Reserved_Total__c</columns>
+        <columns>On_Waiting_List_Total__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Wave__c</field>
+            <operation>contains</operation>
+            <value>BEN,BADHAV</value>
+        </filters>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All1</fullName>
+        <columns>OBJECT_ID</columns>
+        <columns>Account__c</columns>
+        <columns>Wave__c</columns>
+        <columns>School_Name__c</columns>
+        <columns>Assigned_Reserved_Total__c</columns>
+        <columns>On_Waiting_List_Total__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Wave__c</field>
+            <operation>contains</operation>
+            <value>Birmingham</value>
+        </filters>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All_NW</fullName>
+        <columns>Wave__c</columns>
+        <columns>School__c</columns>
+        <columns>School_Name__c</columns>
+        <columns>Assigned_Reserved_Total__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Assigned_Reserved_Total__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Wave__c</field>
+            <operation>notContain</operation>
+            <value>2011</value>
+        </filters>
+        <filters>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>NorthWest</value>
+        </filters>
+        <label>All NW</label>
+    </listViews>
+    <listViews>
+        <fullName>School_with_2_School_Totals</fullName>
+        <columns>NAME</columns>
+        <columns>School__c</columns>
+        <columns>School_Name__c</columns>
+        <columns>Wave__c</columns>
+        <columns>Online_places_available__c</columns>
+        <columns>Online_single_school_capacity__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Wave__c</field>
+            <operation>notContain</operation>
+            <value>2011</value>
+        </filters>
+        <filters>
+            <field>Wave__c</field>
+            <operation>contains</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Wave__c</field>
+            <operation>notContain</operation>
+            <value>10,11,12</value>
+        </filters>
+        <label>School with 2+ School Totals</label>
+        <sharedTo>
+            <group>Central_Comms</group>
+            <group>Central_Comms_Admins</group>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>ST-{0000000000}</displayFormat>
+        <label>School Totals Id</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>School Totals</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

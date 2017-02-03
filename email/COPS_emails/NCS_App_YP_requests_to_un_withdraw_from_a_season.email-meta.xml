@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto-notification sent to CCT when YP un-withdraws from a season</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>NCS App:YP requests to un-withdraw from a season</name>
+    <style>none</style>
+    <subject>YP requests to restore the application after withdrawal: {!Contact.School_s_cluster__c}</subject>
+    <textOnly>Hi
+
+Please look at {!Contact.Name}&apos;s record as they have changed their mind and no longer wants to withdraw their season application. Please urgently restore their wave selections to their previous status before withdrawal if possible and if not please contact the SC.  Also, please clear the field &quot;Withdrawal reason&quot; on NCS Application .  Please also check that a refund has not been made and if one has, please contact YP for payment Click on this link to see the record: {!NCS_Application__c.Link}
+
+This email has been sent to all CS, so please can whoever gets to this first notify everyone else that this has been dealt with.
+
+This is a standard email, sent automatically whenever a YP requests to cancel their withdrawal</textOnly>
+    <type>custom</type>
+</EmailTemplate>

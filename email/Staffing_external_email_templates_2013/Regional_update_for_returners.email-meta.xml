@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Regional update email - with clicktools link</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>Regional update for returners</name>
+    <style>freeForm</style>
+    <subject>Regional preferences form</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Further to the email we sent last week,(see text below) if we have not heard from you by 12 March 2013 we will assume that you are happy to work in the same region as you worked last year, or one close by, and place you accordingly.
+
+&apos;Thank you for your application to work with us again this summer.
+
+In order to  make you an offer and a job placement please could you indicate the area you would like to work in.
+
+Please click on the link below and complete the online form.
+
+http://www.clicktools.com/survey?iv=padtuovy2z15&amp;q1={!Contact.Id}
+
+Once we have this information we will send you a conditional offer form and go on to make your job placement.&apos;
+
+Thanks for your continued interest int he Challenge.
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.Contact_Owner_alternative_email__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

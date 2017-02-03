@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>Incomplete apps - all time (p.1+2)</name>
+    <style>formalLetter</style>
+    <subject>NCS seasonal roles - get your application in before it&apos;s too late!</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact us on seasonalroles@the-challenge.org.
+
+Dear {!Contact.FirstName},
+
+Our NCS seasonal roles are the perfect way to spend your summer gaining experience, earning some money and truly making a difference within your local community. If you&apos;re still considering applying for one of our roles, time is running out to get your application in!
+
+Our seasonal roles are filling up fast!
+
+This summer we&apos;re hiring over 4,500 paid seasonal staff to support 42,000 young people while they take part in the NCS programme. We&apos;ve already offered more than half of these roles, but there are still around 2,000 roles available for the right candidates - whether you&apos;re a confident leader, or more suited to supporting and mentoring young people pastorally, we&apos;re bound to have a role which suits you.
+
+Need more information on the NCS programme and our seasonal roles? Have a look through all the roles on summer this summer: 
+
+http://www.ncsthechallenge.org/jobs/#available-opportunities
+
+What do I need to do?
+
+Just use the username and password below to login to the staffing website and continue to fill out your application.
+
+Username: {!Contact.Email}
+Password: {!Contact.Login_Password__c}
+
+
+Click here to login to the staffing website: https://staffing.the-challenge.org/Login.aspx?ReturnUrl=%2fsecure%2f
+
+
+Submit your application before midnight 31st April, and we will fast-track your application!
+
+Any questions?
+
+If you have any questions about the NCS programme or the application process, please do get in touch - you an email us on our general helpline (seasonalroles@the-challenge.org) or contact inclusion.ss@the-challenge.org if you have any additional support needs to complete your application.
+
+
+We hope to receive your application soon!
+
+Best wishes,
+
+The Staffing Team
+The Challenge</textOnly>
+    <type>html</type>
+</EmailTemplate>

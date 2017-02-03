@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 3.2b Manual assessment booking confirmation</name>
+    <style>formalLetter</style>
+    <subject>MUST READ: Important information enclosed - assessment confirmation</subject>
+    <textOnly>Please do not reply to this email. This email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your local staffing team.
+Dear {!Contact.FirstName},
+
+
+
+You have been booked onto one of our group assessments by a member of our Staffing Team. Your assessment will be on {!Staffing_Event_Day__c.Day_date__c} for the role of {!Job_Application__c.Role_to_assess_for__c}.
+
+
+
+
+How to find out more about your assessment?
+
+
+
+To see the event details for your chosen assessment, please head to the Booking Assessments page on the staffing website and click on the title of your assessment. You will then be able to access:
+
+
+
+Date and time of your assessment
+
+Venue information
+
+Documents you must bring to assessments
+
+What you will need to prepare for assessment
+
+
+
+
+
+Please check for any changes to this information the night before your assessment. Any updates to venue or date/time details will be uploaded to the staffing website no later than a day before the event.
+
+
+
+What else?
+
+
+
+The Challenge is an equal opportunities employer. If you have not already done so, please notify us of any disability that you have which may require reasonable adjustment on our part at assessment. This will not affect your application.
+
+
+
+If you have any questions about the assessment, please contact your local staffing team. You can also find information on our group assessments on our FAQs.
+
+
+
+We look forward to meeting you!
+
+
+
+Best wishes,
+
+
+
+The Staffing Team
+
+The Challenge
+
+
+
+seasonalroles@the-challenge.org</textOnly>
+    <type>html</type>
+</EmailTemplate>

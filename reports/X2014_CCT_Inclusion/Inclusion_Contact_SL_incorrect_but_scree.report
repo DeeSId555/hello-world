@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$Id</field>
+    </columns>
+    <columns>
+        <field>Contact.Inclusion_Details__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Inclusion_Details__r$Id</field>
+    </columns>
+    <columns>
+        <field>Contact.Inclusion_Details__r$Date_P3_Screened__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND ((6 AND 7) OR (8 AND 9) OR (10 AND 11) OR (12 AND 13) OR (14 AND 15) OR (16 AND 17) OR (18 AND 19))</booleanFilter>
+        <criteriaItems>
+            <column>Contact$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.YP2014</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Inclusion_Details__r$Date_P3_Screened__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Inclusion_Details__r$OBS_P3_form_status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Completed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$LastName</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Date_of_YPPG_withdrawal_notification__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Inclusion_Details__r$Support_Level__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1 - no extra support</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Access_category_2_6__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>1 - no extra support</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Inclusion_Details__r$Support_Level__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>2 - medical conditions</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Access_category_2_6__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>2 - medical conditions</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Inclusion_Details__r$Support_Level__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>3a - extra mentor support for learning difficulties</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Access_category_2_6__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>3a - extra mentor support for learning difficulties</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Inclusion_Details__r$Support_Level__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>3b - extra mentor support for challenging behaviour or mental health conditions</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Access_category_2_6__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>3b - extra mentor support for challenging behaviour or mental health conditions</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Inclusion_Details__r$Support_Level__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>&quot;4a – Extra APL support for YPs with restricted mobility, language barrier or learning difficulties&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Access_category_2_6__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>&quot;4a – Extra APL support for YPs with restricted mobility, language barrier or learning difficulties&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Inclusion_Details__r$Support_Level__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>4b - extra APL support for challenging behaviour or mental health conditions</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Access_category_2_6__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>4b - extra APL support for challenging behaviour or mental health conditions</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Inclusion_Details__r$Support_Level__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>5.1 - full-time support worker required</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Access_category_2_6__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>5.1 - full-time support worker required</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$Access_category_2_6__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.Inclusion_Details__r$Support_Level__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Inclusion Contact SL wrong but screened</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_Inclusion_Details__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

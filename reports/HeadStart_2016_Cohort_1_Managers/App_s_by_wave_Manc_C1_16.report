@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_80693933</developerName>
+        <masterLabel>NCS Season</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>HS_Activity__c.NCS_Season__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Summer 2015</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Autumn 2015</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Feb 2015</sourceValue>
+            </sourceValues>
+            <value>2015</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Summer 2016</sourceValue>
+            </sourceValues>
+            <value>2016</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_46813003</developerName>
+        <masterLabel>Wave Started</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>HS_Activity__c.NCS_Wave_Started__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Merton A 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bromley B 10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bromley B 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bromley B 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bromley B 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bromley B 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bromley B 9</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bexley A 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bexley A 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bexley A 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bexley A 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bexley A 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bexley A 7</sourceValue>
+            </sourceValues>
+            <value>Bromley &amp; Bexley</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Lewisham A 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lewisham A 10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lewisham A 13</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lewisham A 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lewisham A 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lewisham A 9</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Southwark A 13</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Southwark A 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Southwark A 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Southwark A 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Southwark C Su 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lambeth B 10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lambeth B 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lambeth B 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lambeth B Su 2</sourceValue>
+            </sourceValues>
+            <value>Southwark, Lewisham &amp; Lambeth</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Greenwich A Su 1</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Greenwich B 10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Greenwich B 13</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Greenwich B 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Greenwich B 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Greenwich B 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Greenwich B 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Greenwich B 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Greenwich B 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Greenwich B Su 2</sourceValue>
+            </sourceValues>
+            <value>Greenwich</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.District__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.NCS_Wave_number__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Date_HS_Application_pack_triggered__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>6/27/2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Date_HS_Application_pack_triggered__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>lessThan</operator>
+            <value>9/27/2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>EMAIL</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>the-challenge</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LAST_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.Region__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>manchester</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>HS_Activity__c.HS_Application_Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_80693933</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>HS_Activity__c.NCS_Wave_Started__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>App&apos;s by wave, Manc, C1:16</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$HS_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

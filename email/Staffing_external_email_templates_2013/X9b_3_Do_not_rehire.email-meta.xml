@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>****NOT TO BE USED****</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>9b.3 Do not rehire</name>
+    <style>freeForm</style>
+    <subject>Feedback from your role this summer</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+**** NO COPY SUPPLIED ****
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit porta arcu, eu aliquam lacus convallis egestas. Suspendisse potenti. Aliquam erat volutpat. Aliquam pretium, libero id fringilla tempor, orci tellus semper sapien, a sagittis nisi velit a ligula. Sed vel purus vel risus vulputate tincidunt eget vel nisl. Sed dapibus, lorem vel eleifend pulvinar, felis felis pharetra arcu, non posuere augue erat sed elit. Curabitur nec neque eu neque pretium mattis sit amet vel sapien. Mauris scelerisque diam iaculis erat semper sed egestas nulla ullamcorper. Curabitur elementum vulputate massa rutrum ultricies. Nam dignissim aliquet pulvinar. Nunc et velit ipsum. Mauris elementum, mi sit amet tempus lacinia, ante arcu vulputate elit, elementum fringilla tortor eros id sapien. Phasellus ut libero libero.
+
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.Contact_Owner_alternative_email__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

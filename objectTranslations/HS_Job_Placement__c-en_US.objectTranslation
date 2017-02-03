@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HS Job Placement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HS Job Placements</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Address --></label>
+        <name>Account_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date OJE starts --></label>
+        <name>Date_OJE_starts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Placement Starts --></label>
+        <name>Date_Placement_Starts__c</name>
+    </fields>
+    <fields>
+        <label><!-- HS Activity --></label>
+        <name>HS_Activity__c</name>
+        <relationshipLabel><!-- HS Job Placements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HS Store Opportunity --></label>
+        <name>HS_Store_Opportunity__c</name>
+        <relationshipLabel><!-- HS Job Placements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Location of OJE --></label>
+        <name>Location_of_OJE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Name --></label>
+        <name>Partner_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Placement Status --></label>
+        <name>Placement_Status__c</name>
+        <picklistValues>
+            <masterLabel>OJE</masterLabel>
+            <translation><!-- OJE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OJE Unsuccessful</masterLabel>
+            <translation><!-- OJE Unsuccessful --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Placement Confirmed</masterLabel>
+            <translation><!-- Placement Confirmed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Placement confirmed by HS --></label>
+        <name>Placement_confirmed_by_HS__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will send an email to YP when ticked --></help>
+        <label><!-- Send Placement confirmation --></label>
+        <name>Send_Placement_confirmation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time OJE Starts --></label>
+        <name>Time_OJE_Starts__c</name>
+    </fields>
+    <fields>
+        <label><!-- YP Email Address --></label>
+        <name>YP_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- YP Name --></label>
+        <name>YP_Name__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

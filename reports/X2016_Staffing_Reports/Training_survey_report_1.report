@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r.Staffing_Event_attendances__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r.Staffing_Event_attendances__r$Attendance_status__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Job_Applications__r.Staffing_Event_attendances__r$Staffing_Event_Day__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>,London New Staff Training Paddington(Day 1) - 21/05/16 - 9:00 am - 5:00 pm,London New Staff Training (Day 2) - 20/05/16 - 9:00 am - 5:30 pm,London New Staff Training (Day 1) - 19/05/16 - 9:00 am - 5:00 pm,London New Staff Training (Day 2) - 15/05/16 - 9:00 am - 5:30 pm,London New Staff Training Paddington(Day 2) - 15/05/16 - 9:00 am - 5:30 pm,London New Staff Training (Day 1) - 14/05/16 - 9:00 am - 5:00 pm,London New Staff Training Paddington (Day 1) - 14/05/16 - 9:00 am - 5:00 pm,London New Staff Training (Day 2) - 08/05/16 - 9:00 am - 5:30 pm Spotlight,London New Staff Training Paddington (Day 2) - 08/05/16 - 9:00 am - 5:30 pm,London New Staff Training (Day 1) - 07/05/16 - 9:00 am - 5:00 pm,London New Staff Training Paddington (Day 1) - 07/05/16 - 9:00 am - 5:00 pm,London New RM and Practitioner Training - 21/05/16 -1.30 pm - 5:00pm</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Job_Applications__r.Staffing_Event_attendances__r$Attendance_status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Attended</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Job_Applications__r.Staffing_Event_attendances__r$Registration_status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Registered</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.Job_Applications__r.Staffing_Event_attendances__r$Staffing_Event_Day__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Training survey report 1</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_Job_Apps_and_Staffing_Event_Attendance__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

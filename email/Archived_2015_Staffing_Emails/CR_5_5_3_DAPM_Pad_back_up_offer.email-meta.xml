@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 5.5.3 DAPM/Pad back-up offer</name>
+    <style>formalLetter</style>
+    <subject>Feedback from your assessment with The Challenge</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}.
+
+Dear {!Contact.FirstName},
+
+Congratulations! Following your recent assessment with us, we’d like to offer you a role this summer as a {!Job_Application__c.Role_to_assess_for__c}.
+
+In the interest of fairness. we offer our roles on a first-come-first-serve basis. Unfortunately, we have currently allocated all of our roles for the upcoming seasonal programme. However, we would like to offer you a place on our back-up staff, and hope to be able to confirm a work placement for you soon.
+
+What happens now?
+
+Your programmes team will be in touch soon to discuss your role with you, and when a role becomes available, you will be contacted immediately.
+
+In the meantime, if you have any questions about your role or the back-up staff process, please contact seasonalroles@the-challenge.org.
+
+Thank you for your patience - we hope to be able to offer you a confirmed role soon!
+
+Best wishes,
+
+The Challenge
+NCS Programme
+seasonalroles@the-challenge.org
+Email Reference: CR 5.5.3</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>HTML invitation template for The Challenge Society</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Wave 6 reunion invite</name>
+    <style>none</style>
+    <subject>Wave 6 Reunion - CAT launch &amp; staff assessors</subject>
+    <textOnly>The Challenge Network Society
+
+WAVE 6 REUNION! - CAT LAUNCH &amp; STAFF ASSESSORS
+
+{!Contact.FirstName}
+
+How would you improve your community with £300?
+
+This is an opportunity for the grads of wave 6 to get together and have some fun, think of great ways to improve our communities, eat some pizza and help us choose next years mentors!
+
+we will be forming an &apos;action team&apos; who will come up with a great idea to improve their communities and apply to the O2 think big for £300 funding. We are also needing graduates to help us assess mentors and team leaders to work with us in the summer. This is a great chance to get everone together, have a laugh and do something positive - EVERYBODY WINS!!
+
+We&apos;d love to know if you are coming.
+Please RSVP by clicking on this link and logging in to your TCS profile:
+http://www.thechallengesociety.org/login.php?reason=1&amp;continue=%2Findex.php%3F
+
+Username: {!Contact.Email}
+Password: {!Contact.Login_Password__c}
+
+Looking forward to seeing you!
+
+Rob Whiteside
+robert.whiteside@the-challenge.org
+07785 623 392
+
+Where:
+The Challenge Head Office
+75 Westminster Bridge Road
+London
+SE1 7HS
+
+When:
+Saturday 10th March 2012
+
+13:00 - 15:00 (17:00)
+
+WWW.THE-CHALLENGE.ORG/GRADUATES    /thechallengesociety
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

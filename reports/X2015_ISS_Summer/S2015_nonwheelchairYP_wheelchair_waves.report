@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Inclusion_Details__r$restricted_mobility_wheelchair_user__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Inclusion_Details__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Inclusion_Details__r$Support_Level__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Inclusion_Details__r$P3_COMPLETE__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Reserved_Wave__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Assigned_Wave__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Inclusion_Details__r$Call_assigned_to__c</field>
+    </columns>
+    <columns>
+        <field>Contact$P3_completion_date__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND (5 or 6)</booleanFilter>
+        <criteriaItems>
+            <column>Contact$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Young_Person</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Season__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>includes</operator>
+            <value>Autumn 2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Inclusion_Details__r$Support_Level__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>&quot;5.05 - support worker required, can share with another YP&quot;,5.1 - full-time support worker required,5.2 - requires 2 full time support workers</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Inclusion_Details__r$restricted_mobility_wheelchair_user__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>No,Yes but is not a wheelchair user</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Reserved_Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>central manc a 7,central manc a 9,dudley b 5,ealing a 6,greenwich b 5,greenwich b 7,greenwich b 8,haringey b 9,kingston b 3,kingston b 5,lambeth b 5,lambeth b 7,lambeth b 8,newham b 7,newham b 9,n warks a 9,oldham b 10,preston a 7,preston a 8,redbridge b 4,redbridge b 5,redbridge b 6,redbridge b 7,redbridge b 8,redbridge b 9,sandwell b 6,s birmingham b 3,s birmingham b 4,s birmingham b 5,s birmingham b 7,s birmingham b 8,s birmingham b 9,staines b 6,swarks a 1,wandsworth b 10,wandsworth b 7,wandsworth b 8,woking b 9</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Assigned_Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>central manc a 7,central manc a 9,dudley b 5,ealing a 6,greenwich b 5,greenwich b 7,greenwich b 8,haringey b 9,kingston b 3,kingston b 5,lambeth b 5,lambeth b 7,lambeth b 8,newham b 7,newham b 9,n warks a 9,oldham b 10,preston a 7,preston a 8,redbridge b 4,redbridge b 5,redbridge b 6,redbridge b 7,redbridge b 8,redbridge b 9,sandwell b 6,s birmingham b 3,s birmingham b 4,s birmingham b 5,s birmingham b 7,s birmingham b 8,s birmingham b 9,staines b 6,swarks a 1,wandsworth b 10,wandsworth b 7,wandsworth b 8,woking b 9</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>S2015 nonwheelchairYP + wheelchair waves</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_Inclusion_Details__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

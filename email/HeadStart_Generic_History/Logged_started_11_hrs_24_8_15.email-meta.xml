@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>workshops &amp; invitations sent 26/08/15</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Logged/started COMPLETED 24/8/15</name>
+    <style>none</style>
+    <subject>HeadStart - Congratulations for logging 16+ hours of volunteering!</subject>
+    <textOnly>HeadStart login details:
+
+Email Address {!Contact.Email}
+
+NCS ID
+
+{!Contact.NCS_ID__c}
+
+PIN {!Contact.Login_Password__c}
+
+HeadStart Website
+
+Congratulations on logging 16+ hours of volunteering!
+
+Hi {!Contact.FirstName},
+
+Well done on logging {!HS_Activity__c.HS_Hours_Total__c} hours of volunteering! This is such a great achievement ! Not only have you learnt new skills which will be useful for your future, you have also given up your time to help your local community so you should feel very proud.
+
+The interview stage….
+
+We are pleased to let you know we can now invite you to an interview with {!HS_Activity__c.Interview_preference__c}. Look out for an invitation from us with details about your interview.
+
+Found your own placement?
+
+Remember, if you have found your own placement and haven’t yet told us about it, please email headstart@the-challenge.org to let us know where you have been volunteering as we will need to verify your hours.
+
+Get your voice heard!
+
+We would love hear about your HeadStart experience so far. This is so we can share it with prospective HeadStarters to give them an insight into the programme.
+
+This is a fantastic opportunity to have some experience of writing for a large audience and have a big impact on future HeadStart participants! Share your stories here.
+
+Any questions? Email the HeadStart team, check out our website or get in touch on facebook.
+
+
+The HeadStart team
+
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subsribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

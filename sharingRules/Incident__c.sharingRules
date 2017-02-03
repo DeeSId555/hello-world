@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>APM_access</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>APM access</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Head_of_Programmes</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Data Loss,Health and safety,Behaviour</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>CCT_Read_Access</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>CCT Read-Access to all except Disclosures</label>
+        <sharedTo>
+            <role>Central_Comms_Agent_2</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Data Loss,Health and safety,Behaviour</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Disclosure_Review_Team_Read_Access_for_All</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Disclosure Review Team -  Read Access for All</label>
+        <sharedTo>
+            <group>Prog2014_Disclosure_Review</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Data Loss,Health and safety,Behaviour,Disclosures and safeguarding</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Incident_Zone_Text_Hidden_EQUALSBirmingham</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Incident: Zone (Text &amp; Hidden)EQUALSBirmingham</label>
+        <sharedTo>
+            <group>PAMs_Birmingham</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Zone_Text_Hidden__c</field>
+            <operation>equals</operation>
+            <value>Birmingham</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Incident_Zone_Text_Hidden_EQUALSLancashire</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Incident: Zone (Text &amp; Hidden)EQUALSLancashire</label>
+        <sharedTo>
+            <group>PAMs_Lancashire</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Zone_Text_Hidden__c</field>
+            <operation>equals</operation>
+            <value>Lancashire</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Incident_Zone_Text_Hidden_EQUALSLondonNorthEast</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Incident: Zone (Text &amp; Hidden)EQUALSLondonNorthEast</label>
+        <sharedTo>
+            <group>PAMs_London_North_East</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Zone_Text_Hidden__c</field>
+            <operation>equals</operation>
+            <value>London North East</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Incident_Zone_Text_Hidden_EQUALSLondon_North_West</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Incident: Zone (Text &amp; Hidden)EQUALSLondon North West</label>
+        <sharedTo>
+            <group>PAMs_London_North_West</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Zone_Text_Hidden__c</field>
+            <operation>equals</operation>
+            <value>London North West</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Incident_Zone_Text_Hidden_EQUALSLondon_South_East</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Incident: Zone (Text &amp; Hidden)EQUALSLondon South East</label>
+        <sharedTo>
+            <group>PAMs_London_South_East</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Zone_Text_Hidden__c</field>
+            <operation>equals</operation>
+            <value>London South East</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Incident_Zone_Text_Hidden_EQUALSLondon_South_West</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Incident: Zone (Text &amp; Hidden)EQUALSLondon South West</label>
+        <sharedTo>
+            <group>PAMs_London_South_West</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Zone_Text_Hidden__c</field>
+            <operation>equals</operation>
+            <value>London South West</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Incident_Zone_Text_Hidden_EQUALSManchester</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Incident: Zone (Text &amp; Hidden)EQUALSManchester</label>
+        <sharedTo>
+            <group>PAMs_Manchester</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Zone_Text_Hidden__c</field>
+            <operation>equals</operation>
+            <value>Manchester</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Incident_Zone_Text_Hidden_EQUALSSurrey</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Incident: Zone (Text &amp; Hidden)EQUALSSurrey</label>
+        <sharedTo>
+            <group>PAMs_Surrey</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Zone_Text_Hidden__c</field>
+            <operation>equals</operation>
+            <value>Surrey</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Incident_Zone_Text_Hidden_EQUALSWest_London</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Incident: Zone (Text &amp; Hidden)EQUALSWarwickshire</label>
+        <sharedTo>
+            <group>PAMs_Warwickshire</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Zone_Text_Hidden__c</field>
+            <operation>equals</operation>
+            <value>Warwickshire</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Incident_Zone_Text_Hidden_EQUALSYorkshire</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Incident: Zone (Text &amp; Hidden)EQUALSYorkshire</label>
+        <sharedTo>
+            <group>PAMs_Yorkshire</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Zone_Text_Hidden__c</field>
+            <operation>equals</operation>
+            <value>Yorkshire</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Incident_sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Incident sharing</label>
+        <sharedTo>
+            <role>Mental_Health_Advisor_1</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Disclosures and safeguarding</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Legal_data_loss</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Legal data loss</label>
+        <sharedTo>
+            <role>Legal_Assistant</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Data Loss</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Pa_PM_Write_Access_Bucks_Berks</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Pa/ PM Write Access - Bucks &amp; Berks</label>
+        <sharedTo>
+            <group>Prog_2015_Bucks_Berks_Managers</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Zone_Text_Hidden__c</field>
+            <operation>equals</operation>
+            <value>Bucks &amp; Berks</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Pa_PM_Write_Access_Midlands</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Pa/ PM Write Access - Midlands</label>
+        <sharedTo>
+            <group>Prog2014_Midlands_Managers</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Zone_Text_Hidden__c</field>
+            <operation>equals</operation>
+            <value>Midlands</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Pa_PM_Write_Access_NorthEastLondon</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Pa/ PM Write Access - NorthEastLondon</label>
+        <sharedTo>
+            <group>Prog2014_NorthEast_Manager</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Zone_Text_Hidden__c</field>
+            <operation>equals</operation>
+            <value>North East London</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Pa_PM_Write_Access_NorthWest</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Pa/ PM Write Access - NorthWest</label>
+        <sharedTo>
+            <group>Prog2014_NorthWest_Managers</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Zone_Text_Hidden__c</field>
+            <operation>equals</operation>
+            <value>North West</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Pa_PM_Write_Access_SLondonSurrey</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Pa/ PM Write Access - SLondonSurrey</label>
+        <sharedTo>
+            <group>Prog2014_South_Managers</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Zone_Text_Hidden__c</field>
+            <operation>equals</operation>
+            <value>S London &amp; Surrey</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Pa_PM_Write_Access_WestLondon</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Pa/ PM Write Access - WestLondon</label>
+        <sharedTo>
+            <group>Prog2014_West_Managers</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Zone_Text_Hidden__c</field>
+            <operation>equals</operation>
+            <value>West London</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SuM_SPM_Midlands_Read_Access_for_All</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SuM/ SPM Midlands -  Read Access for All</label>
+        <sharedTo>
+            <role>West_Midlands_SPM</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Data Loss,Health and safety,Disclosures and safeguarding,Behaviour</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SuM_SPM_NorthEastLondon_Read_Access_for_All</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SuM/ SPM NorthEastLondon -  Read Access for All</label>
+        <sharedTo>
+            <role>North_East_London_SPM</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Data Loss,Health and safety,Disclosures and safeguarding,Behaviour</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SuM_SPM_NorthWest_Read_Access_for_All</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SuM/ SPM NorthWest -  Read Access for All</label>
+        <sharedTo>
+            <role>North_West_SPM</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Data Loss,Health and safety,Disclosures and safeguarding,Behaviour</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SuM_SPM_SouthLondon_Read_Access_for_All</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SuM/ SPM SouthLondon -  Read Access for All</label>
+        <sharedTo>
+            <role>south_London_SPM</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Data Loss,Health and safety,Disclosures and safeguarding,Behaviour</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SuM_SPM_WestLondon_Read_Access_for_All</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SuM/ SPM WestLondon  -  Read Access for All</label>
+        <sharedTo>
+            <role>West_London_SPM</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Data Loss,Health and safety,Disclosures and safeguarding,Behaviour</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SuM_SPM_Yorkshire_Read_Access_for_All</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SuM/ SPM Yorkshire -  Read Access for All</label>
+        <sharedTo>
+            <role>SPM_Yorkshire</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Disclosures and safeguarding,Health and safety,Behaviour,Data Loss</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

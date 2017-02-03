@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>AUTO_Event_Invite(Focus Group)</name>
+    <style>none</style>
+    <subject>Confirm your Focus Group attendance</subject>
+    <textOnly>Hello there,  Confirm your attendance to: {!HS_YP_Attendance__c.HS_Event_Day__c}  On {!HS_Event_Day__c.Event_Day_Date__c}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

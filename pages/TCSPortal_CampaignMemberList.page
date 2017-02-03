@@ -1,0 +1,134 @@
+<apex:page sidebar="false" standardStylesheets="true" showHeader="false" standardController="Campaign">
+
+<html>
+    <head>
+    <script>
+                 
+        function showModal(){
+        $('#forgot').modal({
+            show : true
+        });
+        }
+        function hideModal(){
+        $('#forgot').modal('hide');
+        }
+    </script>
+        <style>
+.button2{
+         
+        height:65px; 
+        //width:170px; 
+        margin-top:2%;
+        border: solid 4px; 
+        border-color:#B31217; 
+        font : 32px "Dirty", Arial, Helvetica; 
+        background :white;
+        border-radius:15px;
+    }
+       
+        </style>
+    </head>
+    
+    <body>    
+        
+     <!--   <apex:form >-->
+        <apex:composition template="PortalTemplate">
+        
+            <apex:define name="TopDiv">
+            <!---------------- MENU -------------------------->
+               
+                  
+            </apex:define>
+            
+            <apex:define name="MidDiv">
+            
+             <apex:variable var="call" value="{!0}" />
+           <apex:repeat value="{!Campaign.CampaignMembers}" var="tcs">
+              <apex:variable var="call" value="{!call+1}"/>
+           </apex:repeat>
+           
+              <div style="margin:2%;">
+                  <apex:pageBlock >
+                      <apex:pageBlockSection columns="1">
+                          <apex:relatedList pageSize="{!call}" list="CampaignMembers"/>
+                      </apex:pageBlockSection>
+                  </apex:pageBlock>
+              </div>
+    
+               <!--------------- Mid Div ------------------>
+             <!--  <table style="width:100%;">
+                   <tr>
+                      <td rowspan="2" valign="top" style="width:20%;">
+                           <apex:outputText styleClass="optext" value="Recent Contacts"></apex:outputText>
+                      </td>
+                      
+                      <td valign="top" style="width:80%;">
+                        <div style="margin-top:1%;">
+               
+                      <table class="table table-striped" style="100%;">
+                          <th>CampaignMember</th>
+                          <th>Campaign</th>
+                          <th>Record Type</th>
+                          <th>{!$ObjectType.CampaignMember.Fields.Status.Label}</th>
+                     
+                         <apex:repeat value="{!Campaign.CampaignMembers}" var="cmp">
+                             <apex:outputPanel rendered="{!IF(cmp.CampaignId==$CurrentPage.parameters.id,true,false)}">
+                                 <tr style="width:100%;">
+                                     <td> <apex:outputLink value="/{!cmp.id}">{!cmp.Contact.Name}</apex:outputLink>  </td>
+                                     <td> <apex:outputLink value="{!$Page.TCSPortal_CampaignDetail}?id={!cmp.CampaignId}">{!cmp.Campaign.Name}</apex:outputLink>  </td>
+                                     <td> <apex:outputText value="{!cmp.Campaign.RecordType.Name}"/> </td>
+                                     <td> <apex:outputText value="{!cmp.Status}"/> </td>
+                                 </tr>
+                                 
+                             </apex:outputPanel> 
+                         </apex:repeat>
+                         </table>
+                       
+                       </div>   
+                      </td>
+                              
+                   </tr>
+                          
+               </table>-->
+            </apex:define>
+            
+             <apex:define name="BotDiv"> 
+               <center>
+                   <div style="margin-top:2%;">
+   
+                       <apex:outputLink style="margin-right:5%;" value="{!$Page.TCSPortal_CampaignDetail}?id={!$CurrentPage.parameters.id}" styleClass="optext btn button2">go to <br/>{!Campaign.Name}</apex:outputLink>
+                       <apex:outputLink value="{!$Page.TCSPortal_CampHistCreation}?campid={!$CurrentPage.parameters.id}" styleClass="optext btn button2">add a <br/>new Campaign Member</apex:outputLink>
+                   </div>  
+               </center>
+               
+           </apex:define>
+           
+        </apex:composition>
+      <!--  </apex:form>   -->
+        
+    </body>
+    
+    <style>
+ .actionColumn{
+     display:none;
+     } 
+ .listHeader{
+     display:none;
+ }
+ .pbButton{
+     display:none;
+ }
+ .bPageBlock .pbHeader, .bGeneratedReport .bPageBlock .pbSubheader{
+     background-color:white;
+ }   
+ .bPageBlock, .individualPalette .bPageBlock{
+     border:0px;
+ }
+.scrollspy-example {
+height: 250px;
+overflow: auto;
+position: relative;
+    }
+    </style>
+</html>
+</apex:page>

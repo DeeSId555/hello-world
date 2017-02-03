@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Please only clone this template.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>Template with button: DO NOT EDIT</name>
+    <style>freeForm</style>
+    <subject>ADD A SUBJECT</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+
+
+
+
+http://thechallenge.secure.force.com/AvailableDates?key={!Job_Application__c.ContactId__c}&amp;Type=2&amp;JType={!Job_Application__c.Id}</textOnly>
+    <type>html</type>
+</EmailTemplate>

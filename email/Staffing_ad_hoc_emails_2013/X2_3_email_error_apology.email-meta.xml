@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>2.3 email error apology</name>
+    <style>freeForm</style>
+    <subject>URGENT IMPORTANT - RE EMAIL SENT IN ERROR</subject>
+    <textOnly>URGENT IMPORTANT- RE EMAIL 2.3 SENT IN ERROR
+
+Dear {!Contact.FirstName},
+
+You have recently received an email, CR No. 2.3 , advising that you have been withdrawn form your role. This email was sent in error and should be ignored.
+
+Please arrive for your role as previously advised.
+
+Please accept our apologies for any problems arising from this systems error.
+
+If you have any queries please contact me on the number below.
+
+Kind regards,
+
+{!Contact.OwnerFullName}
+0207 921 4405
+The Challenge Network</textOnly>
+    <type>html</type>
+</EmailTemplate>

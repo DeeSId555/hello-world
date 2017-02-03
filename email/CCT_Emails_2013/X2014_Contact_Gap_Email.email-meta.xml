@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2014 Contact Gap Email</name>
+    <style>none</style>
+    <subject>An update on your application to NCS</subject>
+    <textOnly>NCSTHECHALLENGE.ORG
+
+An update on your application to NCS
+
+
+
+Dear Parent/Guardian of {!Contact.Name},
+
+Thank you for submitting {!Contact.FirstName}’s application for NCS.
+
+We know you are still waiting to hear from us, but applications this year are very high and we wanted to reassure you that your application is being processed and we will contact you as soon as possible.
+
+As part of our application process, we may call you over the coming weeks to gather any further information we need about the medical and support information you provided. This is so we can understand any staff support or logistical adjustments {!Contact.FirstName} might need on the programme.
+
+In the meantime, you can visit our Questions page which contains lots of useful information about our programme: http://questions.ncsthechallenge.org/
+
+Yours sincerely,
+
+
+Tanya Dunne
+Head of Customer Services - The Challenge
+
+© The Challenge Network.
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Updated 2014 - CURRENTLY NOT BEING USED</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>1.6.7b Missing references request</name>
+    <style>freeForm</style>
+    <subject>Urgent request for information</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed.
+
+Dear {!Contact.FirstName},
+
+Congratulations on being offered a role to work on NCS with The Challenge.
+
+We are missing one or more pieces of information required to confirm your work schedule with us.
+
+We are missing your
+{!Job_Application__c.Missing_info__c}
+
+Please log into the Staffing Website account, check your statuses and update all the relevant sections in the Essential Information Section.
+
+Click here to go to website.
+https://staffing.the-challenge.org/secure/EssentialInformation.aspx
+
+Please do the above as soon as possible as we want to confirm your work schedule as soon as possible. If you are unclear about any of the above please email staffing.support@the-challenge.org
+
+
+Best wishes,
+
+Staffing Team
+staffing.support@the-challenge.org
+The Challenge
+CR 1.6.7a</textOnly>
+    <type>html</type>
+</EmailTemplate>

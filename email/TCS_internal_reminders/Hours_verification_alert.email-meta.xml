@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Hours verification alert</name>
+    <style>none</style>
+    <subject>YP has reached Challenge with Distinction</subject>
+    <textOnly>Hi {!Contact.OwnerFirstName}
+
+{!Contact.Name} has accumulated enough hours to earn the Challenge with Distinction. Please verify their hours if you have not already done so and then put a date into the CwD verified by APM field in their record.
+
+Click on this link {!Contact.Link} to see the {!Contact.Name}&apos;s record
+
+This is a standard automatic email, sent whenever a YP reaches Challenge with Distinction.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_59772059</developerName>
+        <masterLabel>Ethnicity</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>NCS_Contacts__c.Ethnicity__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Black African</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Black Caribbean</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Any other Black background</sourceValue>
+            </sourceValues>
+            <value>Black</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Any other Asian background</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Indian</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pakistani</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bangladeshi</sourceValue>
+            </sourceValues>
+            <value>Asian</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Any other Mixed background</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>White and Asian</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>White and Black African</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>White and Black Caribbean</sourceValue>
+            </sourceValues>
+            <value>Mixed</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>White British</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Irish</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Any other White background</sourceValue>
+            </sourceValues>
+            <value>white</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Any other ethnic group</sourceValue>
+            </sourceValues>
+            <value>Other</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Prefer not to say</sourceValue>
+            </sourceValues>
+            <value>prefer not to say</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Chinese</sourceValue>
+            </sourceValues>
+            <value>Chinese</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>NCS_Contacts__c.Local_Authority__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_59772059</field>
+    </columns>
+    <columns>
+        <field>CUST_LAST_UPDATE_ALIAS</field>
+    </columns>
+    <columns>
+        <field>NCS_Contacts__c.SEN__c</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_ROLE</field>
+    </columns>
+    <columns>
+        <field>NCS_Contacts__c.FSM__c</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_ALIAS</field>
+    </columns>
+    <columns>
+        <field>NCS_Contacts__c.History_of_offending__c</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>NCS_Contacts__c.In_Care__c</field>
+    </columns>
+    <columns>
+        <field>CUST_LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>NCS_Contacts__c.Programme__c</field>
+    </columns>
+    <columns>
+        <field>NCS_Contacts__c.Ethnicity__c</field>
+    </columns>
+    <columns>
+        <field>NCS_Contacts__c.NCS_Provider__c</field>
+    </columns>
+    <columns>
+        <field>NCS_Contacts__c.Graduated__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>NCS_Contacts__c.Started_Phase_2__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>NCS_Contacts__c.Time_of_prog_started__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Spring,Autumn</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Partners Critical PbR Analysis</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$NCS_Contacts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>NCS_Contacts__c.NCS_Provider__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

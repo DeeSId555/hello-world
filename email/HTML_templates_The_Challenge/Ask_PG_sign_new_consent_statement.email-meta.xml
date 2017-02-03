@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email asking PG to sign the new consent statement</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Ask PG sign new consent statement</name>
+    <style>none</style>
+    <subject>NCS with The Challenge - Our new consent statement</subject>
+    <textOnly>The Challenge Network
+
+Take on The Challenge this summer
+
+
+Dear Parent/Guardian of {!Contact.Name},
+
+We hope {!Contact.FirstName} is excited about the prospect of taking on NCS with The Challenge this autumn!
+
+As part of our continued efforts to keep up-to-date with all relevant legislation in the fields that we work in, including and most importantly for us, keeping the safety of your child as our primary concern; we have updated our parental consent statement.
+
+It is now essential that we receive your acceptance of this new statement in order for {!Contact.FirstName} to continue with their application.  Please take a few minutes to read through the statement now and accept it.  You can do this by logging into our website with your log in details below and follow the steps to the consent section.
+
+Challenge ID: {!Contact.Account_s_TCN_Id__c}
+Password:  {!Contact.Login_PIN__c}
+
+Alternatively if you would prefer to sign a printed consent statement, please contact us on 020 3542 2400 or at contact@the-challenge.org. You can also contact us if you have any questions or require any further information.
+
+Yours sincerely,
+
+Rebecca Carter
+Director at The Challenge Network
+
+the-challenge.org  ncsyes.co.uk
+/thechallengenetwork    /ncs
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

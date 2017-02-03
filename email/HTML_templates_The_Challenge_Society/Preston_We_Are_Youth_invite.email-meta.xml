@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>HTML invitation template for The Challenge Society</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Preston We Are Youth invite</name>
+    <style>none</style>
+    <subject>Your Challenge Society invitation: 19th Nov first reunion</subject>
+    <textOnly>Dear {!Contact.FirstName}
+
+    On 19th November as part of the We are Youth campaign we are holding an event in Preston for a limited number of lucky graduates. Are you up for a real challenge and getting your hands a bit dirty? 
+
+The day will involve two exciting community-based challenges which incorporate art and photography and you will get a chance to take part in both of them, with the assistance of some of your mentors from this summer. 
+
+Gill, the artist you&apos;ll be working with is an expert in the field of constructing community art projects. This project will be all about celebrating the environment and natural beauty.
+
+This will be an opportunity to reunite with your Challenge mates, but don&apos;t forget to invite any non-Challenge friends who are interested in the event! A free hot lunch will be provided for everyone at 1pm.
+
+You can RSVP by clicking on the following link:
+    http://www.clicktools.com/survey?iv=3b13392871f60e1&amp;q1={!Contact.Id}
+
+Places are limited so sign up now before it&apos;s too late! Only those who have RSVP&apos;d will be allowed in.
+
+Where: 
+Avenham Pavilion
+Avenham Park
+South Meadow Lane
+Preston
+PR1 8JT
+
+
+When:
+19/11/2011
+
+10:30 - 17:30
+
+Hope you can make it!
+
+Best wishes,
+The Challenge
+
+www.the-challenge.org
+
+facebook.com/thechallengenetwork
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

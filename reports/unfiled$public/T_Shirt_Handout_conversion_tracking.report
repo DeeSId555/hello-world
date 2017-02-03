@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.School__c</field>
+    </columns>
+    <columns>
+        <field>Account.Date_of_first_payment__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Date_of_YPPG_withdrawal_notification__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Date_signed_up__c</field>
+    </columns>
+    <columns>
+        <field>Contact.School_s_cluster__c</field>
+    </columns>
+    <description>to see the impact of T-Shirt handout events per school</description>
+    <filter>
+        <criteriaItems>
+            <column>CONTACT_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Young_Person</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.NCS_Application_Primary_Season__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Summer 2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.School__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Broughton High School</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Date_of_first_payment__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>4/15/2015</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>T-Shirt Handout - conversion tracking</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Account.Date_of_first_payment__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

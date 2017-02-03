@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Staffing_Event_Day__c$Name</field>
+    </columns>
+    <columns>
+        <field>Staffing_Event_Day__c.Staffing_Event_attendances__r$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Staffing_Event_Day__c$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Staffing_Event_Day__c.X2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Staffing_Event_Day__c$Day_date__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Staffing_Event_Day__c$Name</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>test,cancel</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Remaining Assessments</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Staffing_Event_Days_with_Staffing_Event_Attendance__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Staffing_Event_Day__c$Day_date__c</dateColumn>
+        <endDate>2016-07-01</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-11-01</startDate>
+    </timeFrameFilter>
+</Report>

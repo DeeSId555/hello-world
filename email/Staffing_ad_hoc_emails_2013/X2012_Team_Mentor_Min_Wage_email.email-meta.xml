@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email informing 2012 TMs that they are owed</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>2012 Team Mentor Min Wage email</name>
+    <style>freeForm</style>
+    <subject>Additional payment for Summer 2012</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+
+We are writing to you because you were a Team Mentor with The Challenge Network in the summer of 2012.
+
+You will recall that the first week of your role was the Team Challenge, a particularly long week, and we have been advised that as we paid you on a weekly basis, we should have paid you more salary for that particular week.
+
+This error occurred as we calculated the Team Mentor salary on the basis of the entire period worked (including both the Team Challenge week and the Real Challenge week). However, as we paid you weekly and the Team Challenge is longer, we should have allocated these funds so you were paid slightly more for the Team Challenge week and slightly less for the Real Challenge week.
+
+It is important to us that all Challenge Network staff are paid the right amount.  We would therefore like to correct our error and pay you an extra £40 for each Team Challenge week you completed. This sum is taxable and tax will be deducted in line with the tax details we hold for you.
+
+From our records we believe you worked on {!Contact.00NC0000005FMpC} Team Challenge week(s) and that we would therefore like to make a payment of {!Contact.00NC0000005FStM}.
+
+We also have the following bank details for you:
+
+Sort code: {!Contact.Dragon_Next_Step__c}
+
+Account Number: {!Contact.Dragon_state_of_play__c}
+
+If any of the above details are incorrect, or you have any other queries, please let us know by sending an email to summerpay2012@the-challenge.org by 17 September 2013
+
+If the above details are correct you need take no further action.
+
+We will be paying all outstanding sums to you on 23 September 2013.
+
+Once again we would like to apologise for the underpayment made to you last year.
+
+Yours sincerely,
+
+
+R. Ovens
+
+Chief Financial Officer
+
+The Challenge Network</textOnly>
+    <type>html</type>
+</EmailTemplate>

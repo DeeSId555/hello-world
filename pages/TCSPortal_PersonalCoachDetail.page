@@ -1,0 +1,405 @@
+<apex:page sidebar="false" standardStylesheets="false" showHeader="false" standardController="Personal_Coach__c">
+
+<html>
+    <head>
+        <style>   
+.button1{
+        
+        height:70px; 
+        width:170px; 
+        border: solid 4px; 
+        border-color:#B31217; 
+        font : 18px "Dirty", Arial, Helvetica; 
+        background :white;
+        border-radius:15px;
+        }
+        </style>
+    </head>
+    
+    <body>    
+        
+        
+        <apex:composition template="PortalTemplate">
+        
+            <apex:define name="TopDiv">
+            <!---------------- MENU -------------------------->
+            </apex:define>
+   
+  
+            <apex:define name="MidDiv">
+               <!--------------- Mid Div ------------------>
+   
+       <table style="width:100%;">
+           <tr >
+<!---------------------------------------- YOUNG PERSON --------------------------------------->  
+   <td  style="border-left:solid 8px; border-color:#D9D9D9; width:50%;">
+   <div style="margin-left:2%; margin-top:1%;">
+       <apex:outputText styleClass="optext" value="young person"/><br />
+       
+        <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach__c.Fields.Name.Label}"/> 
+              </td>
+              <td><apex:outputText value="{!Personal_Coach__c.Name}"/>
+              </td> 
+              </tr>
+             </table></div>
+            
+      <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach__c.Fields.Wave__c.Label}"/>
+               </td>
+              <td><apex:outputText value="{!Personal_Coach__c.Wave__r.Name}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+      
+       <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+                   <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach__c.Fields.Mobile_phone_of_YP__c.Label}"/>
+                </td>
+              <td><apex:outputText value="{!Personal_Coach__c.Mobile_phone_of_YP__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+              <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach__c.Fields.Email_of_YP__c.Label}"/>
+                </td>
+              <td><apex:outputText value="{!Personal_Coach__c.Email_of_YP__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+   </div>
+   </td>
+<!----------------------------------------/ YOUNG PERSON --------------------------------------->                      
+                       
+                       
+<!---------------------------------------- PERIOD OF COACHING --------------------------------------->                         
+       <td valign="top" width="600" style="border-left:solid 4px; border-color:#D9D9D9; width:50%;">
+       
+       <div style="margin-left:2%; margin-top:1%;">
+           <apex:outputText styleClass="optext" value="period of coaching"/><br />
+           
+            <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach__c.Fields.Coaching_start_date__c.Label}"/>
+                 </td>
+              <td><apex:outputText value="{0,date,dd'/'MM'/'yyyy}">
+                    <apex:param value="{!Personal_Coach__c.Coaching_start_date__c}" /> 
+                </apex:outputText>
+              </td> 
+              </tr>
+             </table></div>
+             
+            <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach__c.Fields.Coaching_end_date__c.Label}"/> 
+                </td>
+              <td><apex:outputText value="{0,date,dd'/'MM'/'yyyy}">
+                    <apex:param value="{!Personal_Coach__c.Coaching_end_date__c}" /> 
+                </apex:outputText>
+              </td> 
+              </tr>
+             </table></div>
+             </div>
+       </td>
+   </tr>
+<!----------------------------------------/ PERIOD OF COACHING --------------------------------------->                    
+  
+  
+  
+<!---------------------------------------- COACH --------------------------------------->                   
+   <tr>
+   
+       <td style="border-left:solid 8px; border-color:#D9D9D9; ">
+       <div style="margin-left:2%;">
+            <apex:outputText styleClass="optext" value="coach"/><br />
+             <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+            <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach__c.Fields.Coach__c.Label}"/>
+              </td>
+              <td>
+                  <apex:outputText value="{!Personal_Coach__c.Coach__r.Name}"/>
+              </td> 
+              </tr>
+             </table></div>
+         </div>
+       </td>
+<!----------------------------------------/ COACH --------------------------------------->                         
+                       
+                       
+<!---------------------------------------- COACHING GOAL --------------------------------------->                         
+       <td style="border-left:solid 4px; border-color:#D9D9D9; ">
+       <div style="margin-left:2%;">
+            <apex:outputText styleClass="optext" value="coaching goal"/><br />
+             <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+            <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach__c.Fields.Goal_TCS__c.Label}"/>
+                 </td>
+                 <td>
+                  <apex:outputText value="{!Personal_Coach__c.Goal_TCS__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+             <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+            <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach__c.Fields.Goal_desciption__c.Label}"/>
+                 </td>
+                 <td>
+                  <apex:outputText value="{!Personal_Coach__c.Goal_desciption__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+             <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+            <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach__c.Fields.Goal_3_personal_steps__c.Label}"/>
+                 </td>
+                 <td>
+                  <apex:outputText value="{!Personal_Coach__c.Goal_3_personal_steps__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+         </div>
+       </td>
+<!----------------------------------------/ COACHING GOAL --------------------------------------->                     </tr>
+                   
+ 
+ <!---------------------------------------- CHAMPION --------------------------------------->                    
+   <tr >
+   
+       <td style="border-left:solid 8px; border-color:#D9D9D9; ">
+       <div style="margin-left:2%;">
+           <apex:outputText styleClass="optext" value="champion"/><br />
+         
+          <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach__c.Fields.Champion__c.Label}"/>
+           </td>
+           <td>
+                  <apex:outputText value="{!Personal_Coach__c.Champion__r.Name}"/>
+              </td> 
+              </tr>
+               </table></div>
+           </div>
+       </td>
+<!----------------------------------------/ CHAMPION --------------------------------------->                        
+                       
+                       
+                       
+<!---------------------------------------- MEETING --------------------------------------->                        
+       <td style="border-left:solid 4px; border-color:#D9D9D9; ">
+       
+       <div style="margin-left:2%;">
+           <apex:outputText styleClass="optext" value="meetings"/><br />
+           
+           <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach__c.Fields.Meetings_scheduled__c.Label}"/>
+                </td>
+           <td>
+                  <apex:outputText value="{!Personal_Coach__c.Meetings_scheduled__c}"/>
+              </td> 
+              </tr>
+               </table></div>
+               
+           <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach__c.Fields.Meetings_attended__c.Label}"/>
+         </td>
+           <td>
+                  <apex:outputText value="{!Personal_Coach__c.Meetings_attended__c}"/>
+              </td> 
+              </tr>
+               </table></div>
+           </div>
+       </td>
+   </tr>
+<!----------------------------------------/ MEETING--------------------------------------->                   
+    
+    
+<!---------------------------------------- ELIGIBILITY AND COCHING--------------------------------------->                    
+   <tr >
+   
+       <td style="border-left:solid 8px; border-color:#D9D9D9; ">
+       <div style="margin-left:2%; margin-bottom:5%;">
+           <apex:outputText styleClass="optext" value="eligibility and coaching goal"/><br />  
+           
+            <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach__c.Fields.Why_1_of_the_6__c.Label}"/> 
+                  </td>
+           <td>
+                  <apex:outputText value="{!Personal_Coach__c.Why_1_of_the_6__c}"/>
+              </td> 
+              </tr>
+               </table></div>
+               
+          <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach__c.Fields.YP_s_coaching_preferences__c.Label}"/>
+            </td>
+           <td>
+                  <apex:outputText value="{!Personal_Coach__c.YP_s_coaching_preferences__c}"/>
+              </td> 
+              </tr>
+               </table></div>
+           </div>
+       </td>
+<!---------------------------------------- ELIGIBILITY AND COCHING--------------------------------------->  
+                       
+                       
+                       
+<!---------------------------------------- CONCLUSION--------------------------------------->                        
+                       
+   <td style="border-left:solid 4px; border-color:#D9D9D9; ">
+  <div style="margin-left:2%; margin-bottom:5%;">
+       <apex:outputText styleClass="optext" value="conclusion"/><br />
+       
+         <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach__c.Fields.Step_1_achieved__c.Label}"/>
+                </td>
+           <td>
+                  <apex:outputText value="{!Personal_Coach__c.Step_1_achieved__c}"/>
+              </td> 
+              </tr>
+               </table></div>
+               
+         <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach__c.Fields.Step_2_achieved__c.Label}"/>
+                </td>
+           <td>
+                  <apex:outputText value="{!Personal_Coach__c.Step_2_achieved__c}"/>
+              </td> 
+              </tr>
+               </table></div>
+               
+         <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach__c.Fields.Step_3_achieved__c.Label}"/> 
+                </td>
+           <td>
+                  <apex:outputText value="{!Personal_Coach__c.Step_3_achieved__c}"/>
+              </td> 
+              </tr>
+               </table></div>
+               
+         <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+       <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach__c.Fields.Conclusion_summary__c.Label}"/>
+             </td>
+           <td>
+                  <apex:outputText value="{!Personal_Coach__c.Conclusion_summary__c}"/>
+              </td> 
+              </tr>
+               </table></div>
+           </div>
+   </td>
+</tr>
+<!----------------------------------------/ CONCLUSION--------------------------------------->          
+
+
+<!---------------------------------------- SYSTEM INFO.--------------------------------------->            
+    <tr >
+   <td style="border-left:solid 8px; border-color:#D9D9D9; ">
+       </td>
+       <td style="border-left:solid 4px; border-color:#D9D9D9; ">
+   <div style="margin-left:2%;">
+           <apex:outputText styleClass="optext" value="system information"/><br />
+           
+            <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Personal_Coach__c.Fields.Name.Label}"/> 
+                   </td>
+           <td>
+                  <apex:outputText value="{!Personal_Coach__c.Name}"/>
+              </td> 
+              </tr>
+               </table></div>
+               
+           <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="Created By"/>
+                   </td>
+           <td>
+                  <apex:outputText value="{!Personal_Coach__c.CreatedBy.name}"/>
+              </td> 
+              </tr>
+               </table></div>
+               
+           <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="Last Modified By"/>
+                 </td>
+           <td>
+                  <apex:outputText value="{!Personal_Coach__c.LastModifiedBy.Name}"/>
+              </td> 
+              </tr>
+               </table></div>
+                <a style="float:right;  margin-right:2%;  margin-bottom:2%;" href="{!Personal_Coach__c.id}/e?retURL=/TCSPortal_PersonalCoachDetail?id={!Personal_Coach__c.id}"><button type="button" style="margin-top:10px; height:35px; width:100px;" class="button1">Edit</button></a><br/>
+               </div>
+       </td>
+       
+       
+     
+   </tr>
+  
+<!----------------------------------------/ SYSTEM INFO.--------------------------------------->                     
+               </table>
+ 
+            </apex:define>
+           
+           <apex:define name="BotDiv"> 
+               <center>
+                   <div style="margin-top:2%;">
+                   <apex:outputLink value="{!$Page.TCSPortal_ContactDetail}?id={!Personal_Coach__c.Young_person__c}" styleClass="optext btn button1" style="margin-right:2%;">back to<br/>{!Personal_Coach__c.Young_person__r.Name}</apex:outputLink>
+                      <apex:outputLink value="{!$Page.TCSPortal_IntermediateSelection}?name=PersonalCoach&cid={!Personal_Coach__c.Young_person__c}&cname={!Personal_Coach__c.Young_person__r.Name}&pid={!Personal_Coach__c.id}&pname={!Personal_Coach__c.Name}" styleClass="optext btn button1" style="margin-right:2%;">add a personal coach meeting</apex:outputLink>
+                      <apex:outputLink value="{!$Page.TCSPortal_PersonalCoachMeetingList}?id={!Personal_Coach__c.id}&cid={!Personal_Coach__c.Young_person__c}&pcname={!Personal_Coach__c.Name}" styleClass="optext btn button1">see<br/> all meetings</apex:outputLink>
+                      
+                       
+                     <!--      <apex:outputLink value="{!$Page.TCSPortal_IntermediateSelection}?name=PersonalCoach&cid={!Contact.id}&cname={!Contact.Name}&pid={!pc.id}&pname={!pc.Name}" styleClass="optext btn button1" style="margin-right:2%;">add a personal coach meeting</apex:outputLink>
+                        <apex:outputLink value="{!$Page.TCSPortal_PersonalCoachMeetingList}?id={!pc.id}&cid={!Contact.id}&pcname={!pc.Name}" styleClass="optext btn button1">see<br/> all meetings</apex:outputLink>
+                   --> </div>  
+               </center>
+               
+           </apex:define>       
+           
+        </apex:composition> 
+        
+    </body>
+      <style>
+    .scrollspy-example {
+                height: 400px;
+                overflow: auto;
+                position: relative;
+    </style>
+</html>
+</apex:page>

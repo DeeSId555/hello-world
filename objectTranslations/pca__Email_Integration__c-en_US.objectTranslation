@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Email Field --></label>
+        <name>pca__Email_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Setting --></label>
+        <name>pca__Setting__c</name>
+        <relationshipLabel><!-- Email Integrations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This should ideally be a check box. We can populate this field for you with the validation state of the email address. Specifying this field and adding it into a validation rule allows you to force users to enter validated addresses. --></help>
+        <label><!-- Validation Field --></label>
+        <name>pca__Validation_Field__c</name>
+    </fields>
+</CustomObjectTranslation>

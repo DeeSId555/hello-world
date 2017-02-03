@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Autumn 15 - extension of hours email</name>
+    <style>none</style>
+    <subject>Extension of HeadStart hours deadline: We’ve made an exception, just for you!</subject>
+    <textOnly>Extension of HeadStart hours deadline: We’ve made an exception, just for you!
+
+
+Dear {!HS_Activity__c.YP_First_name_from_HS_Application_Form__c},
+
+We’re guessing you must be really busy with School, College or just general life stuff.  That’s why we’ve decided to extend the time limit you have to complete 16 hours of volunteering.
+
+Yep, we’re that nice!  We also don’t want you to miss this unique opportunity to get ahead and take advantage of all the great workshops HeadStart has to offer, not to mention the added bonus of a guaranteed interview with your chosen employer.
+
+You now have until the [insert date here] to complete at least 16 hours of volunteering.  Remember to log your hours on the HS website each time you volunteer.
+
+Trouble logging your volunteering hours or have a question to ask?
+
+Email: HeadStart@the-challenge.org
+
+Good luck!
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

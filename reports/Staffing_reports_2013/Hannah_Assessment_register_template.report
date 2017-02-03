@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>HR_Event_Attendance__c.HR_Event_Date__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Job_Application__c.Contact_Name__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Job_Application__c.Role_to_assess_for__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Job_Application__c.Gender2__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Job_Application__c.Screening_notes__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Job_Application__c.Staff_type__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>esurrey leader assessment 1,esurrey/wsurrey leader assessment 1,esurrey/bbg leader assessment 1,sll leader assessment 1</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Hannah Assessment register template</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$HR_Event__c$HR_Event_Attendance__c@HR_Event_Attendance__c.Job_Application__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>FK_$Job_Application__c.Screening_notes__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>HR_Event__c.Event_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2013-01-01</startDate>
+    </timeFrameFilter>
+</Report>

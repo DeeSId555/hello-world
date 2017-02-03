@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Wave__c$Name</field>
+    </columns>
+    <columns>
+        <field>Wave__c$All_female_places_inc_over_available__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c$All_male_places_inc_over_available__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c$SL_4a_Place_Taken__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c$SL_4b_Place_Taken__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c$Remaining_SL5_Places_Available__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Wave__c$Wave_Cluster__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>2016 lancs</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave__c$Boroughs_or_areas__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Blackpool,West Lancashire,Preston</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Places Remaining</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Waves__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Wave__c$Big_Challenge_date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

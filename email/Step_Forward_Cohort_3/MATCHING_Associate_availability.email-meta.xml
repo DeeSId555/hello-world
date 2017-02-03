@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>8.1.16 (Workflow, Clicktools)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>MATCHING Associate availability</name>
+    <style>none</style>
+    <subject>Confirm your availability for interview</subject>
+    <textOnly>Availability for Interview
+
+
+Hello {!Step_Forward_Associate_Attendance__c.Associate_First_Name__c},
+
+
+Congratulations, you have been matched for an interview! Please find the details of your interview below.
+
+
+Date:  {!Step_Forward_Associate_Attendance__c.Event_Day__c}
+
+Interview start and finish times: {!Step_Forward_Associate_Attendance__c.Interview_start_and_finish_times__c}
+
+Interview duration (approx.): {!Step_Forward_Associate_Attendance__c.Duration_of_Interview__c}
+
+Pathway:  {!Step_Forward_Associate_Attendance__c.Pathway__c}
+
+Employer:  {!Step_Forward_Associate_Attendance__c.Employer_Name__c}
+
+Address: (please check your journey time):
+
+{!Step_Forward_Associate_Attendance__c.Job_Address__c}
+
+Postcode:  {!Step_Forward_Associate_Attendance__c.Job_Postcode__c}
+
+What next?
+
+We need to know your availability for this interview. Please confirm that you are available for these interview times via the link below in the next 2 days. Please note, if you don&apos;t respond within the next 2 days then we may offer this interview space to another candidate.
+
+Confirm availability here
+
+We’ll be back in touch shortly with more details of the role and what will happen on the day of the interview so make sure that you check your emails and keep your phone nearby. If you have any questions until then please don’t hesitate to get in touch.
+
+
+All the best,
+
+Step Forward Matching Team
+
+020 3542 2404
+
+stepforward.interview@the-challenge.org
+
+(You can&apos;t reply to this email, please send a new email to the address above)
+
+
+
+
+
+
+
+
+
+
+
+www.stepforward.uk.com
+
+
+The Challenge Network is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 39 York Rd, London SE1 7NQ</textOnly>
+    <type>custom</type>
+</EmailTemplate>

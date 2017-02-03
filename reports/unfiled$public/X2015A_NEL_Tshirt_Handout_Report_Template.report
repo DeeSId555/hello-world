@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Assigned_waves__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Reserved_waves__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Waiting_list_waves__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Date_Full_Payment_Received_New__c</field>
+    </columns>
+    <columns>
+        <field>Contact.COMPLETE_and_support_level_is_correct__c</field>
+    </columns>
+    <columns>
+        <field>NCS_Application__c.T_Shirt_size__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Date_given_hoodie__c</field>
+    </columns>
+    <columns>
+        <field>Contact.School__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND (4 or 5)</booleanFilter>
+        <criteriaItems>
+            <column>CONTACT_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Young_Person</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.NCS_Application_Primary_Season__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Autumn 2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>NCS_Application__c.Season__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Autumn 2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Assigned_Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>newham B 13</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Reserved_Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Newham B 13</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2015A NEL Tshirt Handout Report Template</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$NCS_Application__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>FIRST_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

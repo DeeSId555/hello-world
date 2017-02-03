@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>signed off by RO please add buttons merg feild etc. AO</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>2.1.3 wave dates/contract/LO</name>
+    <style>freeForm</style>
+    <subject>Work dates/contract/LO</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Job_placement__c.Staffing_Associate_email__c}
+
+Date: as per date of email
+
+
+Dear {!Job_placement__c.Contact__c}
+
+
+1. I am pleased to be able to offer you a contract of employment with The Challenge Network, which is part of the National Citizen Service programme.  Each contract is for a fixed term and the beginning and end date for each fixed term is set out below:
+
+
+Your start date: {!Job__c.LO_start_date__c}
+
+Your end date: {!Job__c.LO_RAM_end_date__c}
+
+For your individual work schedule please see your When to be Where document sent to you in a separate communication..
+
+3. This employment contract is made up from the applicable parts of this email, and The Challenge Network Terms of Employment attached to this email.
+
+4. Please note that the Work Period of your contract(s) will be the only time that you will be required to report for work.  The Holiday Period of the contract(s) is when you will be expected to take holiday leave. For more information on holiday, please see The Challenge Network Terms of Employment.
+
+5. You cannot start any employment contract with TCN until you have completed the necessary pre employment training applicable to that contract, details of which will be sent to you separately.
+
+6. Your role will be {!Job_placement__c.Role__c}.
+
+7. Your payment rates and the date of payment for each contract is set out in the  Payment Schedule that will be sent to you separately.
+
+Your place of work will be as set out in the Where to be When Guide (‘WWG’). The log in to this portal will be sent to you separately.
+
+8. Details of your duties are set out in the Role Guide and who you report to (your &quot;Reporting Manager&quot;) will be communicated to you prior to the commencement of your role.
+
+9. Your employment cannot commence until we have received (1) two satisfactory references and an enhanced DBS check; (2) a copy of the enclosed terms confirming your acceptance of each contract; and (3) satisfactory evidence that you are not prohibited from working in the UK.  Please see the checklist attached to this email for details of what constitutes satisfactory evidence.  If you fail to do so you will be unable to commence employment.  If this is problematic please contact me for further options.
+
+
+
+To accept your contract please click on the &quot;Yes&quot; button.  If you are interested in working with The Challenge Network but do not wish to accept the contract because you want to explore different work schedules please click on the &quot;No, I would like to change my work schedule&quot; button. Should you not wish to accept the contract at all please click on the &quot;No, I do not want to work for The Challenge Network&quot; button.
+
+Note: if you do not click on any button by the date that is 7 days before the beginning of the Work Period this offer of employment will lapse and you cannot accept it late, unless the Challenge Network agrees otherwise.
+
+Please use this link to respond to this email: http://www.clicktools.com/survey?iv=6n28fx5wuas9&amp;q1={!Job_placement__c.Id} 
+
+Yours sincerely,
+{!Job_placement__c.Staffing_Associate__c}
+For and on behalf of The Challenge Network
+e: {!Job_placement__c.Staffing_Associate_email__c}
+
+
+2.1.3 LOG</textOnly>
+    <type>html</type>
+</EmailTemplate>

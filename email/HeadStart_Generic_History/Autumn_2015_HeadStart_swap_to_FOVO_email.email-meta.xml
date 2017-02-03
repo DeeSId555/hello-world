@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>AUTO Send to yps who we have had to switch to FOVO</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Autumn 2015 HeadStart swap to FOVO email</name>
+    <style>none</style>
+    <subject>HeadStart - application update</subject>
+    <textOnly>HeadStart | The Challenge
+
+
+
+
+HeadStart login details:
+
+Email Address {!Contact.Email}
+
+NCS ID
+
+{!Contact.NCS_ID__c}
+
+PIN {!Contact.Login_Password__c}
+
+HeadStart Website
+
+Hi {!Contact.FirstName}!
+
+Thank you for your application to HeadStart!
+
+We were, unfortunately, unable to match you to one of our HeadStart partners but you are still able to take part in the programme by finidng your own volunteering opportunity!
+
+Here&apos;s some information about finding your own volunteering opportunity. There are many benefits to finding your own volunteering placement, you can:
+
+Find a placement close to where you live
+
+Use your initiative and talk about it during an interview
+
+Persue your interests and get creative with your search
+
+Show your leadership through proactively finding your own placement.
+
+
+Whether your family and friends know somewhere, there’s a local charity shop down the road, or you are finding something completely new, we have created a brief guide to help you with your search.
+
+We’ve also written a short letter of introduction for you to print and take with you to any potential charity to explain what HeadStart is.
+
+Once you have found a placement please update and edit your profile on the HeadStart website, your login details are at the top of this email. If you’re having trouble please get in touch at headstart@the-challenge.org and we can try and help
+
+Before you start your volunteering, please complete our baseline survey - this should be nice and easy to do on your phone!
+
+We are here to support you in finding a placement so please do get in touch if you&apos;d like to talk it through or would like some extra advice. We&apos;ll also send you an invitation to the Kick Off event, where we&apos;ll be on hand to help you with any questions or queries.
+
+See you soon,
+
+The HeadStart team
+
+Facebook: /Londonheadstart
+
+headstart@the-challenge.org
+
+www.headstart-thechallenge.org/
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subsribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Grad Reminder N London 10.30am</name>
+    <style>none</style>
+    <subject>REMINDER: Graduation on 28 October</subject>
+    <textOnly>REMINDER OF INVITATION TO YOUR GRADUATION 
+
+Dear {!Contact.FirstName}, 
+
+Congratulations on your commitment and contribution to The Challenge this summer. It would be great to see you at the graduation. 
+
+If you have not yet let us know if you are coming, please RSVP by clicking on the following link: 
+http://www.clicktools.com/survey?iv=3a132cae1853d4e&amp;q1={!Contact.Id}&amp;q2=1 
+ 
+ 
+ Where:
+Stationers&apos; Hall
+Ave Maria Lane
+London
+EC4M 7DD
+ 
+ When:
+ 28/10/2011
+ 
+ 10:30 - 12:00
+	
+www.the-challenge.org 
+
+facebook.com/thechallengenetwork 
+ 
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

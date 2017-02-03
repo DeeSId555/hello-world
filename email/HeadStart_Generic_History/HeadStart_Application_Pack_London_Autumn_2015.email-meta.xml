@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>For AUTO email on 25/09/15</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Autumn 2015 HeadStart Application Pack London</name>
+    <style>none</style>
+    <subject>HeadStart - Your invite to apply!</subject>
+    <textOnly>HeadStart | The Challenge
+
+
+An exclusive opportunity for YOU from The Challenge…
+
+
+Dear {!Contact.FirstName}
+
+
+We hope you had a fantastic time on your NCS journey in the summer and Real Challenge Action weekends.
+
+
+You are now eligible to apply for HeadStart - a new programme The Challenge has developed in partnership with the Mayor of London to give you the skills and experience to get ahead. HeadStart offers an exciting way for you to build on the experiences you’ve gained over the last three weeks, whilst getting back together with friends from your wave.
+
+The HeadStart programme is made up of three simple steps:
+
+Volunteer for at least 16 hours with a local charity. We’ll help you find the volunteering opportunity that fits with your interests and your free time.
+
+Engage in exclusive skills workshops, developed with leading employers to give you the right skills and aptitude to get ahead.
+
+Get a guaranteed interview for a paid part-time/seasonal job with New Look, Starbucks or Lloyd’s Banking Group, or an exclusive paid internship with the Mayor of London’s office or Zendesk.
+
+
+HeadStart will help you:
+
+Gain skills and experience
+
+Be more employable
+
+Stand out on your UCAS form
+
+Meet new people and get back together with friends from NCS
+
+
+Click HERE to apply. The deadline for applications is midnight Sunday 11th October 2015. Places with HeadStart charity partners are limited so apply early to avoid disappointment. You will need your either your email address or your NCS ID, and the below PIN to log in to the site, if you have logged in to a NCS site before, you can use your current password to log in:
+
+
+Email Address: {!Contact.Email}
+
+NCS ID: {!Contact.NCS_ID__c}
+
+PIN: {!Contact.Login_Password__c}
+
+Any questions? Email the HeadStart team, check out our website or get in touch on facebook.
+
+We look forward to receiving your application!
+
+The HeadStart team
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subsribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

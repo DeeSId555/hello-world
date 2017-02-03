@@ -1,0 +1,89 @@
+<apex:page sidebar="false" standardStylesheets="true" showHeader="false" standardController="Campaign" extensions="TCSPortal_CampMemCreation" >
+
+<html>
+    <head>
+        <style>
+.button2{
+        
+        float:right;
+        height:70px; 
+        margin-top:10%; 
+        margin-right:2%;
+        border: solid 8px; 
+        border-color:#B31217; 
+        font : 32px "Dirty", Arial, Helvetica; 
+        background :white;
+        border-radius:15px;
+        
+        }
+  .button1{
+         
+        margin-top:2%;
+        border: solid 4px; 
+        border-color:#B31217; 
+        font : 20px "Dirty", Arial, Helvetica; 
+        background :white;
+        border-radius:15px;
+        }         
+        </style>
+    </head>
+    
+    <body>    
+        
+        <apex:form >
+        <apex:composition template="PortalTemplate">
+        
+            <apex:define name="TopDiv">
+            <!---------------- MENU -------------------------->
+               
+                  
+            </apex:define>
+            <apex:define name="MidDiv">
+               
+               <!--------------- Mid Div ------------------>
+               
+               <div style="margin-top:2%; margin-left:2%; width:100%;">
+               <apex:pageMessages id="Error"></apex:pageMessages>
+               <apex:outputText styleClass="optext" value="select event/meeting status"></apex:outputText> <br /><br />
+               
+                       
+                       <apex:outputText style="font-weight:bold;" value="Contact Name  "/><br/>
+                           <apex:outputField value="{!contact.Name}" rendered="{!IF(AND(conid!='',conid!=null),true,false)}" />
+                           <apex:inputField value="{!campmem.Contactid}" required="true" rendered="{!IF(AND(conid!='',conid!=null),false,true)}"/><br /><br />
+                           
+                       <apex:outputText style="font-weight:bold;" value="Meeting/Event name  "/><br/>
+                           <apex:outputText value="{!campname}" rendered="{!IF($CurrentPage.parameters.campid!=null,true,false)}"/>
+                           <apex:inputField value="{!campmem.CampaignID}" rendered="{!IF($CurrentPage.parameters.campid==null,true,false)}">
+                               <apex:actionSupport action="{!getStatus}" event="onchange" reRender="myStatus"/>
+                           </apex:inputField>
+                           <br /><br />
+                           
+                       <apex:outputText style="font-weight:bold;" value="Status   "/><br/>
+                       <apex:selectList value="{!selectedStatus}" size="1" id="myStatus">
+                           <apex:selectOptions value="{!ListStatus}"></apex:selectOptions>
+                       </apex:selectList><br />
+              <apex:commandButton style="width:15%;" styleClass="button2" value="Save" action="{!Save2}"/>
+               </div>      
+            </apex:define>
+            
+             <apex:define name="BotDiv">
+            <center>
+                <apex:outputLink rendered="{!IF($CurrentPage.parameters.contactid!=null,true,false)}" styleClass="optext btn button1" value="{!$Page.TCSPortal_ContactDetail}?id={!$CurrentPage.parameters.contactid}">back to <br/> {!contact.Name}</apex:outputLink>
+                <apex:outputLink rendered="{!IF($CurrentPage.parameters.campid!=null,true,false)}" styleClass="optext btn button1" value="{!$Page.TCSPortal_CampaignDetail}?id={!$CurrentPage.parameters.campid}">back to <br/> {!campname}</apex:outputLink>
+            </center>
+            </apex:define>
+        </apex:composition>
+        </apex:form>   
+        
+    </body>
+    
+    <style>
+    
+    .scrollspy-example {
+height: 250px;
+overflow: auto;
+position: relative;
+    
+    </style>
+</html>
+</apex:page>

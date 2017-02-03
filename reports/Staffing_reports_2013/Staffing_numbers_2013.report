@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <aggregates>
+        <calculatedFormula>RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA4</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>No of applications</masterLabel>
+        <reportType>Job_applications__c</reportType>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Job_Application__c.Invite_to_Assessment__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA5</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>No. invited to assessment</masterLabel>
+        <reportType>Job_applications__c</reportType>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Job_Application__c.Attended_assessment__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA6</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>No. attended assessment</masterLabel>
+        <reportType>Job_applications__c</reportType>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Job_Application__c.Invite_to_Training__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA7</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>No. offered role</masterLabel>
+        <reportType>Job_applications__c</reportType>
+        <scale>0</scale>
+    </aggregates>
+    <block>
+        <blockInfo>
+            <aggregateReferences>
+                <aggregate>FORMULA4</aggregate>
+            </aggregateReferences>
+            <aggregateReferences>
+                <aggregate>FORMULA5</aggregate>
+            </aggregateReferences>
+            <aggregateReferences>
+                <aggregate>FORMULA6</aggregate>
+            </aggregateReferences>
+            <aggregateReferences>
+                <aggregate>FORMULA7</aggregate>
+            </aggregateReferences>
+            <blockId>B0</blockId>
+            <joinTable>Job_Application__c</joinTable>
+        </blockInfo>
+        <columns>
+            <field>Job_Application__c$Name</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>Job_Application__c$Contact_Name__c</column>
+                <isUnlocked>false</isUnlocked>
+                <operator>notContain</operator>
+                <value>test</value>
+            </criteriaItems>
+            <criteriaItems>
+                <column>Job_Application__c$RecordType</column>
+                <isUnlocked>false</isUnlocked>
+                <operator>equals</operator>
+                <value>Job_Application__c.Job_Application_post_screen_2013</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Application to allocation</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>Job_applications__c</reportType>
+        <scope>organization</scope>
+        <timeFrameFilter>
+            <dateColumn>Job_Application__c$CreatedDate</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId xsi:nil="true"/>
+        <joinTable>Job_Application__c</joinTable>
+    </blockInfo>
+    <format>MultiBlock</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Job_Application__c$Cluster_selected__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Overview: Staffing numbers 2013</name>
+    <reportType>Job_applications__c</reportType>
+    <showDetails>true</showDetails>
+</Report>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>Feedback Email - Project Volunteers OLD</name>
+    <style>formalLetter</style>
+    <subject>something</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+Dear {!Contact.Name}
+
+
+
+Many thanks for your contribution on the NCS with The Challenge Programme.
+
+We hope you have enjoyed your experience with us and would like to work with us again in the future.
+
+
+
+Our applications are now open and we would like you to apply to work with us again. We would also like to take this opportunity to provide feedback about your performance over the programme and suggest suitable roles for 2015.
+
+
+
+Why do I have feed back?
+
+Feedback is a vital part of our ongoing efforts to develop the young people’s experience of NCS with The Challenge. It also allows us to develop our seasonal staff, who are so important to the success of the programme.
+
+
+How was your performance over the duration of the programme?
+
+
+
+Your overall feedback for your role was {!Feedback__c.Feedback_rating__c}.
+
+
+
+This feedback is generated from your performance in a number of different categories relevant to your role. Please see below for a full list of how you performed in each category.
+
+
+
+N.B if your performance is listed as NA then it is a category that is not relevant to your role
+
+
+
+
+Punctuality &amp; Organisation
+
+{!Feedback__c.Punctuality_Organisation__c}
+
+5/5
+
+Engaging Young People
+
+{!Feedback__c.Engaging_Young_People__c}
+
+5/5
+
+Facilitation of Groups
+
+{!Feedback__c.Facilitation_of_Groups__c}
+
+5/5
+
+Teamwork (With other Staff)
+
+{!Feedback__c.Teamwork_With_other_Staff__c}
+
+5/5
+
+Managing Challenging Behaviour
+
+{!Feedback__c.Managing_Challenging_Behaviour__c}
+
+5/5
+
+Professional and Role
+
+{!Feedback__c.Acting_as_a_Role_Model__c}
+
+5/5
+
+Responsiveness to Feedback
+
+{!Feedback__c.Responsiveness_to_Feedback__c}
+
+5/5
+
+Managing Staff
+
+{!Feedback__c.Managing_Staff__c}
+
+NA
+
+Inclusiveness (Sympathetic to all YP)
+
+{!Feedback__c.Inclusiveness_Sympathetic_to_all_YP__c}
+
+5/5
+
+Proactive, Self-Starter
+
+{!Feedback__c.Proactive_Self_Starter__c}
+
+5/5
+
+
+
+What role can I do next year?
+
+Following recommendations from your programmes team we would like you to apply for  {!Feedback__c.Suggested_role_for_next_year__c} role.
+
+
+
+Do I need to be re-assessed?
+
+If you choose to apply for this role you will need to attend an assessment. Alternatively, you can reapply for your previous role without assessment. All role offers will be conditional on your attendance to training.
+
+
+
+What do I need to do next?
+
+Please follow the link to the Staffing Website where some of your details will already have been transferred from your previous application. Please check these details are correct, and add any additional information if needed.
+
+
+
+Want to know more?
+
+If you have any questions about this year’s application process please refer to the FAQ’s [insert FAQ reference number] on the website. Alternatively, you can contact your staffing associate quoting the CR number below in any correspondence.
+
+
+
+Thank you for your ongoing interest in NCS with The Challenge and we look forward to working with you again.
+
+
+Best Wishes
+NCS with The Challenge
+
+{!Contact.OwnerFullName}
+
+{!Contact.OwnerPhone}
+
+{!Contact.Contact_Owner_alternative_email__c}
+
+Email Reference: CR 1.3</textOnly>
+    <type>html</type>
+</EmailTemplate>

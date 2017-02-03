@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HR Event Attendance YP</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HR Event Attendance YPs</value>
+    </caseValues>
+    <fields>
+        <help><!-- Update this field after the event --></help>
+        <label><!-- Attendance status --></label>
+        <name>Attendance_status__c</name>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did not attend</masterLabel>
+            <translation><!-- Did not attend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planning to attend</masterLabel>
+            <translation><!-- Planning to attend --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <lookupFilter>
+            <errorMessage><!-- This record is the wrong record type. Only YP, YP2010, YP2012 and YP2012A can be added here. --></errorMessage>
+        </lookupFilter>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- HR Event Attendance YPs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HR Event --></label>
+        <name>HR_Event__c</name>
+        <relationshipLabel><!-- HR Event Attendance YPs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Shows number of hours that YP is needed at an Assessment --></help>
+        <label><!-- No of hours required --></label>
+        <name>No_of_hours_required__c</name>
+    </fields>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

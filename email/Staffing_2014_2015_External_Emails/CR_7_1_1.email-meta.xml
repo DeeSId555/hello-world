@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 7.1.1 	Reference status change: Referee one, Call Log: Number does not exist</name>
+    <style>formalLetter</style>
+    <subject>URGENT - Check your Reference status on the Staffing Website</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your local staffing team.
+Dear {!Contact.FirstName},
+
+
+
+Invalid Number for Referee One - Requires immediate action.
+
+
+
+We have encountered a problem with your referee one. The phone number you have provided for {!Job_Application__c.Referee_1__c} does not work.
+
+
+
+This is the number you provided: {!Job_Application__c.Referee_1_tel__c}
+
+
+
+What do I need to do?
+
+
+
+With the programme fast approaching it is imperative that we obtain valid references in advance of your start date.
+
+
+
+Please either update the reference details with a correct number or provide a new reference altogether on the Staffing Website.
+
+
+
+If we are encountering problems with both of your references you will receive another email detailing that specific issue.
+
+
+
+All or some of the references section has been unlocked for you to make changes to your referee(s) details.
+
+
+
+For further assistance with your references section please contact your local staffing team, quoting the email reference number below in any correspondence.
+Best wishes,
+
+
+
+The Challenge
+
+
+
+Email reference: CR 7.1.1</textOnly>
+    <type>html</type>
+</EmailTemplate>

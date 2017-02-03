@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2015 Unconditional WL Email</name>
+    <style>none</style>
+    <subject>You are on the waiting list for NCS</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTHECHALLENGE.ORG
+
+{!Contact.FirstName} is on the waiting list for NCS
+
+
+Dear Parent or Guardian of {!Contact.Name},
+
+{!Contact.FirstName} is on the waiting list for NCS (National Citizen Service)
+
+Thank you for {!Contact.FirstName}’s application for NCS. It is a popular programme so at the moment {!Contact.FirstName} is on the waiting list. However, they still have a good chance of getting a place.
+
+How can I increase {!Contact.FirstName}’s chances of getting a place?
+
+Simply log in to your online account at https://bookings.the-challenge.org to see if there are other programme dates that may be suitable for {!Contact.FirstName}. The website will let you add extra dates. Or, you can contact us directly to discuss this by calling 0203 542 2400. The more dates you add, the greater {!Contact.FirstName}’s chance of taking part in NCS. If you are happy for {!Contact.FirstName} to travel to a programme which is further away and may have places available, you can also contact us to discuss this.
+
+When will I find out more?
+
+We will call you if a place becomes available. Places can become available at any time, right up to the programme start date. If we are not able to offer {!Contact.FirstName} a place, you can of course get a full refund.
+
+We hope to be able to offer {!Contact.FirstName} a place soon.
+
+Yours sincerely,
+
+
+Tanya Dunne
+Head of Customer Services - The Challenge
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

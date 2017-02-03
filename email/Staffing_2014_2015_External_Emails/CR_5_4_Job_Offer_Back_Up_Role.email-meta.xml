@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 4.6 Job Offer - Back Up Role (2016)</name>
+    <style>formalLetter</style>
+    <subject>Your assessment for the NCS programme</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}.
+
+
+Dear {!Contact.FirstName},
+
+Congratulations! Following your assessment we are delighted to offer you a role with us this summer as a {!Job_Application__c.Role_to_assess_for__c}.
+
+Back-up roles this summer
+
+As we are now at an advanced stage of our recruitment cycle, we only have a limited number of vacant positions left. As a result, we’d like to offer you a place in our back-up workforce. If we cannot allocate you a work placement immediately, you will be offered a role as soon as one becomes available.
+
+We’ll be working with over 4,500 seasonal staff this summer and naturally, for a variety of reasons, some of those allocated will not be able to undertake their role as planned. Therefore, it’s highly likely that we’ll be able to offer you a placement in the coming weeks. In the interest of fairness. we will offer vacancies on a first-come-first-served basis.
+
+
+What now?
+
+This role offer is still dependent on you completing the following steps. The sooner you do this, the greater chance you will have of being placed in a role:
+
+
+DBS applications
+
+All seasonal staff working on the NCS programme must have an ‘Enhanced DBS certificate with Children&apos;s Barred List check’ dated from 1 January 2015.
+
+If you don’t have a valid certificate and haven’t already started an application for a new DBS, click here for instructions on how to apply for one. Please note, you’ll need up to 4 forms of ID to hand to do your application. DBS applications can sometimes take up to 6 weeks to process - make sure you start your application as soon as possible!
+
+https://staffing.the-challenge.org/assets/2016DBSinstructionspostoffer.pdf
+
+
+If you already have an existing DBS certificate dated from 1 January 2015 and you didn’t upload it to your application form, you can upload a scanned/photographed copy on the ‘Essential Information’ page of the staffing website.
+
+
+Essential Information
+
+Each section of the Essential Information page should be completed before you start your role. This includes:
+
+Providing contact details for 2 referees
+Making a tax declaration and providing your bank details (from April)
+Filling out our health, safeguarding &amp; inclusion form
+Providing details for your emergency contact
+Checking your DBS status
+
+You can also now access the ‘Choosing when I can work’ and ‘Dates when I can’t work’ sections on the staffing website - this is where you let us know your availability over the summer. We’ll use this information to try to match you to any vacant work placements.
+
+
+What else?
+
+You’ll also need to attend up to 3 days of (unpaid) compulsory training for your role. Our training dates will take place from May until July, and you can book onto your training sessions on the &apos;Booking Training&apos; page on the staffing website.
+
+We’ll call you in the coming weeks to discuss your availability and talk through any questions you might have about your role. In the meantime, if you have any urgent questions, please contact me using the details below, or check through our FAQs.
+
+Congratulations again, and thank you for your patience - we hope to be able to offer you a placement soon.
+
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+
+{!Contact.Owner_Owner_alternative_email__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

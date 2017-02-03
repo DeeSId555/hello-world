@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>AM 3.8 DBS Login Info</name>
+    <style>formalLetter</style>
+    <subject>Associate Mentor DBS: Login Info</subject>
+    <textOnly>DBS CHECK REQUIRED
+Dear {!Contact.FirstName},
+
+Following our earlier email about your DBS check, please see below for the login information needed to use the online application (secret word updated):
+
+1: The Online Application
+
+
+Click here to go to our DBS provider, GB Group
+(https://gbg.onlinedisclosures.co.uk)
+
+Click REGISTER
+
+You need to provide an organisation PIN &amp; secret word. These are:
+
+- Organisation PIN: 140118
+- Secret Word: Z4LQX
+
+YOU MUST APPLY USING THE SAME EMAIL ADDRESS THAT THIS EMAIL WAS SENT TO
+otherwise we will not be able to match your DBS to your records.
+
+2: The Documents
+
+
+
+You will need to take some documents to be checked at a local Post Office
+
+
+You will be told what documents you need when you apply
+Not all post offices can check the documents.
+- you can ask at your nearest Post Office whether they offer &quot;DBS Verification Service&quot;
+- or click here for a full list of Post Offices you can use
+
+
+You can click here for a full guide on the DBS process.
+
+
+It can take several weeks for a DBS to returned, so please make sure you complete the process as soon as possible.
+
+All the best,
+NCS Graduates Team
+
+The Challenge Society
+
+The Challenge is a major provider of NCS (National Citizen Service)</textOnly>
+    <type>html</type>
+</EmailTemplate>

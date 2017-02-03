@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Autumn 15 - congrats for completing your hours</name>
+    <style>none</style>
+    <subject>Congratulations for completing your volunteering hours!</subject>
+    <textOnly>Dear {!HS_Activity__c.YP_First_name_from_HS_Application_Form__c},
+
+
+A massive well done for completing your volunteering hours! You should be extremely proud of your achievements so far.  Not only have you given up your free time to help &amp; support your local community by volunteering, you have gained the essential skills to help you get ahead.
+
+Your next steps:
+
+We need to verify your hours with your charity partner. If you’ve not yet given us the details of where you have been volunteering, please email headstart@the-challenge.org
+
+Once we have verified your hours, you will be invited to your [insert employer here]  workshop and a communication coaching session on  [insert date here] to help you stand out in your interview and give you a head start for the future.
+
+You will then be invited to your guaranteed job interview with your chosen employer.  Take another look at our Employer Guide to remind yourself of key dates.
+
+
+Congratulations on completing your 16 hours or more!  Volunteering is valued by employers, colleges and universities so we would encourage you to keep going and show your commitment to your community and log it on the HeadStart website so you can keep track of the impact you are making.
+
+Best wishes
+
+HeadStart Team
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

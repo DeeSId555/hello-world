@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sends offer and training form to LO</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Offer and training email LO</name>
+    <style>none</style>
+    <subject>Re: Your assessment with The Challenge</subject>
+    <textOnly>The Challenge Network
+
+Dear {!Contact.FirstName}
+
+Thank you for attending the assessment at The Challenge.
+We very much enjoyed meeting you and I am pleased to offer you the role of {!Job_Application__c.Role_to_assess_for__c}.
+
+TRAINING
+The training will take place from the 18th to the 20th of June. The 18th and 19th will be in Birmingham and the 20th in your regional TCN office.
+
+During training, you will learn all you need to know about The Challenge and your role. You will also meet the people that you will be working with this summer. Please note that accommodation and travel will be provided for those travelling to Birmingham from London and the North West.
+
+The details of times and venues will follow in due course. Please contact me on the email address below if there are any problems.
+
+WORK DATES
+The role lasts from {!Job_Application__c.00NC0000005EnMk} to 03/10/2012
+
+Days off: 12th, 16th, 21st, 26th, 31st July
+Days off: 5th, 10th, 11th, 16th, 20th, 25th, 30th August
+Days off: 6th, 11th, 12th, 18th, 19th, 25th, 26th September and 1st October
+
+In September you will work from Thursday to Monday each week, and have Tuesdays and Wednesdays off.
+
+CRB
+Your role is subject to a enhanced CRB or List 99 check. We will require scanned documents from you in order to process this. It is very important that you send these documents as soon as possible as your role with us is dependant on a satisfactory CRB.
+
+In order to apply for your CRB, please follow these instructions. Please note that you do not need to enter a password.
+
+Visit www.carecheck.co.uk
+Click on the Applicant tab
+Please read all the notes and instructions
+Click on Click here to continue
+Click on Criminal Records Bureau (CRB) Application Form
+Click on Start a New Application
+Enter the Organisation Reference:  evolutionrecruitment
+Enter your personal information to apply for the CRB check.
+
+Please submit your documents for verification on the below form. Please go to http://carecheck.arrangementcms.co.uk/index.php?node=ID-Rules for information on which documents can be accepted. We also request that you submit your dietary requirements and any medical information (such as allergies) that we need to know about, so that we can cater for you during training and during your role on The Challenge.
+
+Please click on the link below to submit your scanned documents and any information that we need to know in order meet your medical and dietary needs while you are with us.
+
+If you already have an enhanced CRB, we will accept it if the document is dated 1 September 2011 or later. Please submit a scanned copy through the online form.
+
+http://www.clicktools.com/survey?iv=3b1353e7938ac86&amp;q1={!Contact.Id}&amp;q2={!Job_Application__c.Id}
+
+If, after repeated attempts, you are not able to upload your documents, please email them to crb@the-challenge.org
+
+
+
+Congratulations on your success and we look forward to working with you on The Challenge.
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.OwnerEmail}
+
+WWW.THE-CHALLENGE.ORG    /thechallengeNETWORK
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

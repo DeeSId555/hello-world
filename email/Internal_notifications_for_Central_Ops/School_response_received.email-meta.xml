@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto-notification sent to CentralOps when a school response has been received</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>School response received</name>
+    <style>none</style>
+    <subject>Notification re {!Contact.School_s_cluster__c} YP: teacher response received</subject>
+    <textOnly>Hi 
+
+Re a YP in {!Contact.School_s_cluster__c}:
+
+Re {!Contact.Name}&apos;s record. The SC has ticked either the response or further response received from teacher box, or added info to the teacher response notes field. The notes in the Teacher Response Problem Notes field say: {!Contact.Teacher_problem_notes__c}
+
+Click on this link to see the record: {!Contact.Link}
+
+This is a standard email, sent automatically</textOnly>
+    <type>custom</type>
+</EmailTemplate>

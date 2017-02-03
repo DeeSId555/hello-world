@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Volunteering hours earned by Challengers</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Challenger__c</fullName>
+        <description>Link to the Challenger the hours relate to</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Theyoung person the hours relate to</inlineHelpText>
+        <label>Contact</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Value does not exist. Please check the spelling is correct.</errorMessage>
+            <filterItems>
+                <field>Contact.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>YP2014, Young Person</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Hours</relationshipLabel>
+        <relationshipName>Hours</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Contact_email__c</fullName>
+        <description>Email address of volunteering contact</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Email address of volunteering contact</inlineHelpText>
+        <label>Contact email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_name__c</fullName>
+        <description>Name of volunteering contact</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of volunteering contact</inlineHelpText>
+        <label>Contact name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_telephone_number__c</fullName>
+        <description>Telephone number of volunteering contact</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Telephone number of volunteering contact</inlineHelpText>
+        <label>Contact telephone number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Count__c</fullName>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_hours_submitted__c</fullName>
+        <description>Date on which the Young Person submitted their hours</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date on which the Young Personsubmitted their hours</inlineHelpText>
+        <label>Date hours submitted</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_Volunteering__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of Volunteering</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Hours_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&apos;TCSPortal_HourDetail?id=&apos;+Id, Name,&apos;_top&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Hours Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hours__c</fullName>
+        <description>Number of volunteering hours</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of volunteering hours</inlineHelpText>
+        <label>LH Hours</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hours_of_volunteering__c</fullName>
+        <description>Picklist for YP to select the hours they spent volunteering</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Picklist for YP to select the hours they spent volunteering</inlineHelpText>
+        <label>Hours of volunteering</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>6</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Initial_sign_up_date__c</fullName>
+        <description>Date young person initially signed up for the volunteering opportunity</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date young person initially signed up for the volunteering opportunity</inlineHelpText>
+        <label>Initial sign-up date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Interest_Shown__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Interest Shown</label>
+        <referenceTo>Interest_Shown__c</referenceTo>
+        <relationshipLabel>Hours</relationshipLabel>
+        <relationshipName>Hours</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Organisation_volunteering_with__c</fullName>
+        <description>Name of organisation, pulled through from Volunteering Opportunity</description>
+        <externalId>false</externalId>
+        <formula>Volunteering_Opportunity__r.Organisation__r.Name</formula>
+        <inlineHelpText>Name of organisation the volunteering opportunity is with</inlineHelpText>
+        <label>Organisation volunteering with</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Other_organisation_volunteering_with__c</fullName>
+        <description>Name of organisation Challenger is volunteering with, if this cannot be looked up</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of organisation Challenger is volunteering with, if this cannot be looked up</inlineHelpText>
+        <label>Other organisation volunteering with</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Own_Vol_Borough__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(Interest_Shown__r.Own_Vol_Borough__c)</formula>
+        <label>Own Vol - Borough</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Own_Vol_Contact_details__c</fullName>
+        <externalId>false</externalId>
+        <formula>Interest_Shown__r.Own_Vol_Contact_details__c</formula>
+        <label>Own Vol - Contact details</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Own_Vol_Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Interest_Shown__r.Own_Vol_Email__c</formula>
+        <label>Own Vol - Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Own_Vol_Manager_s_name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Interest_Shown__r.Own_Vol_Manager_s_name__c</formula>
+        <label>Own Vol - Manager&apos;s name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Own_Vol_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Interest_Shown__r.Own_Vol_Number__c</formula>
+        <label>Own Vol - Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Own_Vol_Organisation_name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Interest_Shown__r.Own_Vol_Organisation_name__c</formula>
+        <label>Own Vol - Organisation name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Own_opportunity__c</fullName>
+        <externalId>false</externalId>
+        <formula>Interest_Shown__r.Own_opportunity__c</formula>
+        <label>Own opportunity?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Rating__c</fullName>
+        <externalId>false</externalId>
+        <label>Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Rating_as_number__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Rating__c , &quot;1&quot;, 1, &quot;2&quot;, 2, &quot;3&quot;, 3, &quot;4&quot;, 4, &quot;5&quot;, 5, NULL)</formula>
+        <label>Rating as number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Signposting_Opportunity_Removed__c</fullName>
+        <externalId>false</externalId>
+        <formula>Interest_Shown__r.Signposting_Opportunity_Removed__c</formula>
+        <label>Signposting Opportunity Removed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Signposting_Opportunity_Unpublished__c</fullName>
+        <externalId>false</externalId>
+        <formula>Interest_Shown__r.Signposting_Opportunity_Unpublished__c</formula>
+        <label>Signposting Opportunity Unpublished</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Travelled_for_over_30_minutes__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checked by the YP when they travelled for more than 30 minutes to reach the volunteering opportunity</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Box checked by the YP when they travelled for more than 30 minutes to reach the volunteering opportunity</inlineHelpText>
+        <label>Travelled for over 30 minutes?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Verification_notes__c</fullName>
+        <description>Any notes you wish to make about why you verified these hours</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Any notes you wish to make about why you verified these hours</inlineHelpText>
+        <label>Verification notes</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Verified__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Please tick if you agree with the volunteering hours</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please tick if you agree with the volunteering hours</inlineHelpText>
+        <label>Verified?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Volunteering_Opportunity__c</fullName>
+        <description>Opportunity to which the hours relate</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Opportunity to which the hours relate</inlineHelpText>
+        <label>Signposting Opportunity</label>
+        <referenceTo>Volunteering_Opportunity__c</referenceTo>
+        <relationshipLabel>Challenger Hours</relationshipLabel>
+        <relationshipName>Hours</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Volunteering_description__c</fullName>
+        <description>A description of the activities the YP took part in during the day.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A description of the activities the YP took part in during the day.</inlineHelpText>
+        <label>Volunteering description</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <label>Hours</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All2</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Volunteering_Opportunity__c</field>
+            <operation>contains</operation>
+            <value>HeadStart</value>
+        </filters>
+        <label>All2</label>
+    </listViews>
+    <nameField>
+        <displayFormat>H#{00000000}</displayFormat>
+        <label>Hours Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Hours</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

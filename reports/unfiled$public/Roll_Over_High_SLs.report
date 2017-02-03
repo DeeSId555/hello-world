@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Access_category_2_6__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Total_payment_received__c</field>
+    </columns>
+    <columns>
+        <field>Contact.P3_status__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Reserved_Wave__c</field>
+    </columns>
+    <columns>
+        <field>NCS_Application__c.Assigned_wave__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>NCS_Application__c.Refund_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Moved to Autumn</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Access_category_2_6__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>&quot;4a – Extra APL support for YPs with restricted mobility, language barrier or learning difficulties&quot;,4b - extra APL support for challenging behaviour or mental health conditions,5.1 - full-time support worker required,&quot;5.05 - support worker required, can share with another YP&quot;,5.2 - requires 2 full time support workers,3a - extra mentor support for learning difficulties,3b - extra mentor support for challenging behaviour or mental health conditions</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.School_s_zone__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Roll Over - High SLs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$NCS_Application__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

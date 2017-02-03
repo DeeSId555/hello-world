@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 8.2 Training reminder 5 days before</name>
+    <style>formalLetter</style>
+    <subject>Reminder - your training with The Challenge is coming up!</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}.
+Dear {!Staffing_Event_attendance__c.Contact__c},
+
+
+
+Your training day is less than a week away! Please read on for important details for your event on {!Staffing_Event_Day__c.Day_date__c}.
+
+
+
+Please note: If you&apos;re booked onto multiple training days, you&apos;ll get a copy of this email for each training day!
+
+
+
+What do I need to do?
+
+
+
+Please log into the Staffing Website and go to &apos;Booking Training&apos; section. Here, you&apos;ll be able to review:
+
+
+
+The time and location of the training session.
+
+The type of ID documents you will need to bring
+
+
+
+If we haven&apos;t already seen your ID and Right To Work documents at an assessment, you&apos;ll need to bring the original copies to your first day of training.
+
+What else?
+
+
+
+
+If you&apos;re with us for a full day, we&apos;ll provide lunch for you -we can offer vegetarian options but unfortunately, we are unable to accommodate other specific dietary requirements. If you have specific dietary requirements please bring your own lunch!
+
+
+If you have not already done so, please let us know of any additional needs you have that may require reasonable adjustment on our part during the training. Please email the Inclusion Staffing Team on inclusion.ss@the-challenge.org. Anything you disclose will be treated confidentially.
+
+
+Please ensure that you check for any changes to the training details the night before. These will be updated on the &apos;Training Booking Details&apos; page no later than a day before the event.
+
+
+
+
+What if I can no longer attend?
+
+
+
+
+Please contact your local staffing team as soon as possible if you are unable to attend the training. We will endeavour to offer you an alternative training date, but unfortunately this may not always be possible.
+Best wishes,
+
+
+
+{!Contact.OwnerFullName}
+
+{!Contact.Contact_Owner_alternative_email__c}
+
+{!Contact.OwnerPhone}</textOnly>
+    <type>html</type>
+</EmailTemplate>

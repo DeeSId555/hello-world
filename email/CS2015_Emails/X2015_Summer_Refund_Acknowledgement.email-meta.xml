@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2015 Summer Refund Acknowledgement</name>
+    <style>none</style>
+    <subject>Your refund from NCS has been processed</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTHECHALLENGE.ORG
+
+Your refund for NCS has been processed
+
+
+Dear Parent or Guardian of {!Contact.Name},
+
+As {!Contact.FirstName} did not get a place on NCS, we have refunded your payment for {!Contact.FirstName}&apos;s NCS programme.
+
+Please allow 3-5 working days for the refund to reach the account you originally paid with.
+
+If you have not received your refund after 5 working days, or have any other questions, please contact us by emailing  contact@the-challenge.org or by calling 0203 542 2400.
+
+Yours sincerely,
+
+Jo Lunt
+Customer Services Manager
+The Challenge
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451.  Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>CR 5.1 Apology Email: Post Screen/Post Assessment Rejects</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 5.1 Apology Email: Post Screen/Post Assessment Rejects</name>
+    <style>formalLetter</style>
+    <subject>Oops! We emailed you by accident</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox and replies are not reviewed.
+
+Dear {!Contact.FirstName}
+
+First we would like to apologise for any confusion or inconvenience caused; due to a technical error you were sent an email: &quot;NCS with The Challenge - Missing Information&quot; by accident.  This was an automated email sent to you in error.
+
+We previously informed you that we will not be taking your application any further, please note that this still stands. Therefore, we kindly ask that you ignore the email sent to you: &quot;NCS with The Challenge - Missing Information&quot;. Following receipt of this email; you are not required to do anything further.
+
+Again, please accept our most sincere apologies for this error.
+
+Best Wishes,
+
+The Challenge
+
+
+
+CR 5.1</textOnly>
+    <type>html</type>
+</EmailTemplate>

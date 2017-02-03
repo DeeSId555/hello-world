@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Copy added. workflow active</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>6.1 RCA confirmation</name>
+    <style>freeForm</style>
+    <subject>Real Challenge Action</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+We hope that you are looking forward to working on the Real Challenge Action with NCS powered by The Challenge this September. The Real Challenge Action weekends take place over 7-8, 14-15, 21-22 and 28-29 September.
+
+For your When to be Where schedule, please go to http://staff.the-challenge.org. You can login there to access your schedule by inputting your email address and the password sent to you earlier this summer. You will then be able to see the dates, times and venues for your role.
+
+We are running additional optional training sessions on the evening of 27 August for staff in North East London and on 29 August in all other zones. Your Staffing Associate will be able to give you further information about these.
+
+Your Assistant Programme Manager will then contact you in early September with further information about the role.
+
+Many thanks,
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.Contact_Owner_alternative_email__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

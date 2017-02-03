@@ -1,0 +1,131 @@
+<html>
+<body bgcolor="#00aef0" text="#000000" style="background-color: #00aef0; background-repeat:repeat; background-position: center top; color: #252A2E; margin: 0px; padding:0px; -webkit-text-size-adjust:none; font-size:100%; font-family: 'Quicksand', sans-serif, Arial, Helvetica, sans-serif; margin:0; padding:0; width:100%; @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300,700);" yahoo="fix"><style type="text/css">
+div.preheader 
+{ display: none !important; } 
+</style>
+<div class="preheader" style="font-size: 1px; display: none !important;">Your experience is just round the corner</div>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#00aef0" style="background-color: #00aef0; background-repeat:repeat; background-position: center top; color: #252A2E; margin: 0px; padding:0px; -webkit-text-size-adjust:none; font-size:100%; font-family: 'Quicksand', sans-serif, Arial, Helvetica, sans-serif; margin:0; padding:0; width:100%; @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300,700);">
+<tr>
+	<td align="center" width=600"" valign="top" style="background:none;" height="50" class="header">
+	 
+	</td>
+</tr>
+  <tr>
+    <td>
+      <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+        <tr>
+          <td align="center" valign="middle" bgcolor="#252a2e">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td align="center" valign="bottom" height="10">
+							<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor=""><tr><td><table width="100%" bgcolor="" border="0" cellpadding="0" cellspacing="0"><tr><td style="font-size:13px"><p style="margin:0px;padding:0px;text-align:center">
+<p></td></tr></table></td></tr></table>
+						</td>
+					</tr>
+<tr>
+						<td align="center" valign="middle" height="20">
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+				<td align="left" valign="top" bgcolor="#ffffff" style="font-family:&#39;Quicksand&#39;,sans-serif,Arial,Helvetica,sans-serif;font-size:14px;font-weight:400;line-height:17px;margin:0;color:#fff">
+					<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor=""><tr><td valign="top" align="center"><p style="margin-top:0px;margin-bottom:0px" align="center"><table width="100%" bgcolor="" border="0" cellpadding="0" cellspacing="0"><tr><td style="font-family:Arial;font-size:13px"><p style="margin-top:0px;margin-bottom:0px" align="center">
+<a href="http://www.ncsthechallenge.org/" title="" target="_blank"><img src="http://74.208.70.104/57002/gnwinhxxsv57002/images/baner_img.jpg" border="0" title="baner_img"></a>
+</p></td></tr></table></p></td></tr></table>
+				</td>
+              </tr>
+		<tr>
+				<td align="left" valign="top" bgcolor="#ffffff" style="font-family:&#39;Quicksand&#39;,sans-serif,Arial,Helvetica,sans-serif;line-height:normal;padding:30px">
+					<table width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td style="font-family:&#39;Quicksand&#39;,sans-serif,Arial,Helvetica,sans-serif;font-weight:700;text-align: center; font-size:28px;color:#00aeef;padding-bottom:30px">
+NCS application - your next steps
+    </td>
+  </tr>
+  <tr>
+    <td style="font-family:&#39;Quicksand&#39;,sans-serif,Arial,Helvetica,sans-serif;font-weight:500;font-size:15px;line-height:25px;color:#242a2e;padding-bottom:0px">
+Dear {!IF(Contact.Parent_Name__c <> ""," "& ( Contact.Parent_Name__c ) &" ","Parent or Guardian of (Contact.FirstName)")},<br>
+<br>
+<b><u>Please complete {!Contact.FirstName}’s application for NCS</b></u>
+<br><br>
+Thank you for starting {!Contact.FirstName} application for NCS, which is part of their course. At the moment, parts of this are not complete and <b>we cannot give {!Contact.FirstName} a place until we have received and reviewed these parts. So, we need you ({!Contact.FirstName}’s parent or legal guardian) to provide:</b>
+
+<P>{!NCS_Application__c.Missing_Item_MASI__c}{!NCS_Application__c.Missing_Item_Consent__c}</P>
+<P>{!NCS_Application__c.Missing_Item_DOB__c}</P>
+<P>{!NCS_Application__c.Missing_Item_School__c}</P>
+<P>{!NCS_Application__c.Missing_payment_paragraph__c}{!NCS_Application__c.Missing_Payment_SDD_Not_in_Past__c}{!NCS_Application__c.Missing_Payment_with_Bursary_Call_Due__c}{!NCS_Application__c.Missing_Payment_Bursary_Call_Made__c}</P>
+
+The easiest way to do this and complete {!Contact.FirstName}'s application is by logging in to your at <a href = "https://bookings.ncsthechallenge.org"target="_blank"><b>online account </b></a>. If you are unable to complete it online or have any questions, please contact us using the details below – we’re always happy to help.
+<br><br>
+Please complete {!Contact.FirstName}’s application as soon as possible so they can take part in this NCS programme as part of their course.
+<br><br>
+Yours sincerely,
+<br><br>
+The NCS Team - The Challenge
+</table>
+	<tr>
+				<td align="left" valign="top" bgcolor="#00AEEF" style="font-family: 'Quicksand', sans-serif,Arial, Helvetica, sans-serif; font-weight:400; margin:0; color:#fff" class="font-resize">
+<table cellpadding="0" cellspacing="0" border="0" bordercolor="" width="100%" bgcolor=""><tr><td><table  width="100%" bgcolor="" border="0" bordercolor="" cellpadding="0" cellspacing="0"><tr><td style="font-family:Arial; font-size:12px"><p style="margin: 0px auto; padding: 0px; text-align: left;">
+<td class="yahooinn" bgcolor="#00aeef" align="center" valign="center" style="font-family: 'Quicksand', sans-serif, Arial, Helvetica, sans-serif; font-weight:700; color:#ffffff; text-align:center; font-size:18px; line-height:23px;padding-top: 10px; padding-bottom: 5px; color:#ffffff;background-color: #FAB142;">Phone: <b>0203 542 2400<b><br> Email: <b><a href ="mailto:contact@ncsthechallenge.org "target="_blank"style="color:#ffffff;">contact@ncsthechallenge.org</b></a><br> Our opening hours are 9am - 7pm Monday to Friday<br>and 9am - 3pm on Saturdays and Sundays.</a>
+</p></td></tr></table></td></tr></table>
+				</td>
+              </tr>
+	<tr>
+				
+	<tr>
+						<td bgcolor="#252a2e" style="color:#ffffff;">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%">
+								<tr>
+									<td height="30" align="center">&nbsp;</td>
+								</tr><tr>
+						<td align="center" valign="bottom" height="60" class="logo">
+							<table cellpadding="0" cellspacing="0" border="0" bordercolor="" width="100%" bgcolor=""><tr><td><table  width="100%" bgcolor="" border="0" bordercolor="" cellpadding="0" cellspacing="0"><tr><td style="font-family:Bebas,'Quicksand', sans-serif,Arial, Helvetica, sans-serif; font-size:13px"><p style="margin: 0px; padding: 0px; text-align: center;">
+<a href="https://www.facebook.com/ncsthechallenge" target="_blank" style="color: #ffffff; text-decoration: none; display: inline-block; line-height: 30px; margin-left: 10px;">
+<img src="http://74.208.70.104/57139/fa7bv9wd257139/images/social_img1.png" alt="facebook" border="0" style="line-height: 30px; vertical-align: middle; padding-right: 6px;" />
+NCS THE CHALLENGE
+</a>
+<a href="https://twitter.com/NCSTheChallenge?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" style="color: #ffffff; text-decoration: none; display: inline-block; line-height: 30px; margin-left: 10px;">
+<img src="http://74.208.70.104/57139/fa7bv9wd257139/images/social_img2.png" alt="twitter" border="0" style="line-height: 30px; vertical-align: middle; padding-right: 6px;" />
+@NCSTheChallenge
+</a><br>
+<a href="https://www.youtube.com/user/NCStheChallenge" target="_blank" style="color: #ffffff; text-decoration: none; display: inline-block; line-height: 30px; margin-left: 10px;">
+<img src="http://74.208.70.104/57139/fa7bv9wd257139/images/social_img3.png" alt="youtube" border="0" style="line-height: 30px; vertical-align: middle; padding-right: 6px;" />
+NCSThe Challenge
+</a>
+<a href="https://www.instagram.com/ncsthechallenge/" target="_blank" style="color: #ffffff; text-decoration: none; display: inline-block; line-height: 30px; margin-left: 10px;">
+<img src="http://74.208.70.104/57139/fa7bv9wd257139/images/social_img4.png" alt="instagram" border="0" style="line-height: 30px; vertical-align: middle; padding-right: 6px;" />
+@NCSTheChallenge	
+</a><a href="http://www.ncsthechallenge.org/" target="_blank" style="color: #ffffff; text-decoration: none; display: inline-block; line-height: 30px; margin-left: 10px;">
+<img src="http://www.ncsthechallenge.org/site/uploads/2016/03/NCS-PoweredBy-TCN-lockup-2014-White.png" height=50"" alt="the challenge" border="0" style="line-height: 30px; vertical-align: middle; padding-right: 6px;" />
+</a>
+</p></td></tr></table></td></tr></table>
+						</td>
+					</tr><tr>
+									<td align="center" style="font-family: 'Quicksand', sans-serif, Arial, Helvetica, sans-serif; font-weight:normal; font-size:10px; color:#fff;">
+									<br>Copyright &copy; 2016 <a style="font-family: 'Quicksand', sans-serif, Arial, Helvetica, sans-serif; font-weight:normal; font-size:10px; color:#fff; text-decoration:none;" href="http://www.ncsthechallenge.org/" target="_blank">The Challenge Network</a>, All rights reserved.<br>									The Challenge Network is a charity registered in England and Wales with charity no. 1129239 <br>and company no. 6845451, whose registered office is at Elizabeth House, 39 York Road, London SE1 7NQ.<br>
+									<br>
+									You are receiving this email because you have registered your interest for NCS.<br>Want to update your preferences or unsubscribe? Please <a style="font-family: 'Quicksand', sans-serif, Arial, Helvetica, sans-serif; font-weight:normal; font-size:10px; color:#fff; text-decoration:none;" href="mailto:contact@ncsthechallenge.org" target="_blank">contact us.</a><br>
+								</td>
+								</tr><tr>
+									<td height="30" align="center">&nbsp;</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td height="100">
+						
+						</td>
+					</tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+	<td valign="top"> </td>
+</tr>
+</table>
+<img src="http://click.ncs-email.co.uk/open.aspx?ffcb10-fe9815707365007e7d-fe2e177071610379751678-fe9a13727561067974-ff021576706405-fe301572766c027f741c70-ffcf14" width="1" height="1">
+</body>
+</html>

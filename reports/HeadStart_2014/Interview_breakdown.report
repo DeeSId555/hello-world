@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_93648720</developerName>
+        <masterLabel>2013 Cluster</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Contact.Wave_started__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>BEN 1</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BEN 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BEN 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BEN 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BEN 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BEN 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BEN 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BEN 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BEN 9</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BEN 10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BEN 11</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BEN 12</sourceValue>
+            </sourceValues>
+            <value>BEN</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>BRICC 1</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BRICC 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BRICC 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BRICC 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BRICC 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BRICC 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BRICC 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BRICC 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BRICC 9</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BRICC 10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BRICC 11</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BRICC 12</sourceValue>
+            </sourceValues>
+            <value>BRICC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>TH3 1</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>TH3 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>TH3 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>TH3 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>TH3 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>TH3 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>TH3 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>TH3 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>TH3 9</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>TH3 10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>TH3 11</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>TH3 12</sourceValue>
+            </sourceValues>
+            <value>TH3</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.Find_own_volunteering_opportunity__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.Attended_KO__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.Volunteering_Placement__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.Date_HS_Application_form_received__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_Volunteering_hours__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>HS_Activity__c.Date_HS_Application_form_received__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LAST_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.HS_Volunteering_hours__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>15</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>HS_Activity__c.Attendance_at_Interview_Day_confirmed__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>HS_Activity__c.HS_Post_Interview_Result__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>HS_Activity__c.Interview_preference__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Interview breakdown</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$HS_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

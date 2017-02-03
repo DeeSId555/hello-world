@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2016 Phone Consent Followup</name>
+    <style>none</style>
+    <subject>NCS: Thank you for providing consent by telephone</subject>
+    <textOnly>NCSTHECHALLENGE.ORG
+
+Thank you for providing consent for
+National Citizen Service (NCS)
+
+
+
+Dear Parent or Guardian of {!Contact.Name},
+
+Thank you for confirming that you agree to the NCS consent statement read to you over the telephone recently.
+
+This will now enable us to progress with {!Contact.FirstName}’s application for NCS.
+
+You can find a full copy of the consent statement here: http://www.ncsthechallenge.org/site/uploads/2016/02/2016-Consent-Statement.pdf
+
+If you have any questions or concerns, please do not hesitate to contact us by sending an email to
+inclusion.support@the-challenge.org or by calling us on 0203 542 2400.
+
+Yours sincerely,
+
+
+Tanya Dunne
+Head of Customer Services
+The Challenge (largest provider of NCS)
+
+
+© The Challenge Network.
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

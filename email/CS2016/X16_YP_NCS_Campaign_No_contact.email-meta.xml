@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>16 YP NCS Campaign - No contact</name>
+    <style>none</style>
+    <subject>Say YES to NCS</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTheChallenge.org
+
+Don&apos;t miss out on NCS
+
+
+
+Dear {!Contact.FirstName},
+
+As you told us you&apos;re interested in NCS, we wanted to introduce ourselves.  We are The Challenge and we are running NCS in your area next summer. We have tried to contact you to tell you more about NCS but haven&apos;t managed to speak to you yet.
+
+Here&apos;s a taster of what NCS is all about...
+https://youtu.be/c3dJB-K8nBY
+
+NCS is a once-in-a-lifetime opportunity to meet new people, make new friends and build the skills and confidence to help you get ahead. Over 130,000 young people have already taken part - don&apos;t miss your chance this summer!
+
+What do you do on NCS?
+Part 1 – Get Active: Five days (four nights) staying away from home in the countryside doing outdoor adventure activities.
+Part 2 - Get Involved: Five days (four nights) staying away from home developing valuable skills. 
+Part 3- Make Your Mark: Community activity days (staying at home at night) where you will create and deliver a project to benefit the local area.
+
+Is there a cost?
+Even though each place is valued at over £1000, government backing means NCS costs you no more than a £50 admin fee.  Plus, you get an extra £5 discount when you sign up online.
+
+How do I apply?
+Go to www.NCSTheChallenge.org and use the following unique login details to apply:
+
+NCS ID: {!Contact.NCS_ID__c}
+Password: {!Contact.Login_PIN__c}
+
+The website will tell you that some parts of your application must be completed by your parent or guardian. Please ask your parent or guardian to complete these parts. 
+
+It is quicker to apply online but if your parent or guardian would like a paper copy of the application form instead, please call us on 0203 542 2400 and we’ll send one out in the post.
+
+Any questions?
+If you have any questions, take a look at questions.ncsthechallenge.org, or get in touch by calling 020 3542 2400 or emailing  contact@the-challenge.org.
+
+Places are filling up fast for this once-in-a-lifetime opportunity so make sure you don&apos;t miss out! We&apos;ll be in touch once we&apos;ve received your application.
+
+Yours sincerely,
+
+Tanya Dunne
+Head of Customer Services - The Challenge
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

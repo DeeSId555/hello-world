@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 7.1.4	Reference status change: Referee one, Call Log: Not Happy to give refer</name>
+    <style>formalLetter</style>
+    <subject>URGENT - Check your Reference status on the Staffing Website</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your local staffing team.
+Dear {!Contact.FirstName},
+
+
+
+We have encountered a problem with your Referee One. This requires immediate action.
+
+
+
+We have contacted {!Job_Application__c.Referee_1__c}, and they feel that they are unable to provide a reference confirming your suitability to work on the programme.
+
+
+
+What do I need to do?
+
+
+
+With the programme fast approaching it is imperative that we obtain valid references in advance of your start date. Please provide new referee details on the Staffing Website.
+
+
+
+If we are encountering problems with both of your references then you will receive another email detailing that specific issue.
+
+
+
+All or some of the references section has been unlocked for you to make changes to your referee(s) details.
+
+
+
+For further assistance with your references section please contact your local staffing team, quoting the email reference number below in any correspondence.
+Best wishes,
+
+
+
+The Challenge
+
+
+
+Email reference: CR 7.1.4</textOnly>
+    <type>html</type>
+</EmailTemplate>

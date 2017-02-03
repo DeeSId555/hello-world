@@ -1,0 +1,422 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head><!-- This is a simple example template that you can edit to create your own custom templates -->
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" /><!-- Facebook sharing information tags -->
+	<meta content="*|MC:SUBJECT|*" property="og:title" />
+	<title>*|MC:SUBJECT|*</title>
+	<style type="text/css">#outlook a{
+			padding:0;
+		}
+		body{
+			width:100% !important;
+		}
+		body{
+			-webkit-text-size-adjust:none;
+		}
+		body{
+			margin:0;
+			padding:0;
+		}
+		img{
+			border:none;
+			font-size:14px;
+			font-weight:bold;
+			height:auto;
+			line-height:100%;
+			outline:none;
+			text-decoration:none;
+			text-transform:capitalize;
+		}
+		#backgroundTable{
+			height:100% !important;
+			margin:0;
+			padding:0;
+			width:100% !important;
+		}
+	/*
+	@tab Page
+	@section background color
+	@tip Set the background color for your email. You may want to choose one that matches your company's branding.
+	@theme page
+	*/
+		body,.backgroundTable{
+			/*@editable*/background-color:#FAFAFA;
+		}
+	/*
+	@tab Page
+	@section email border
+	@tip Set the border for your email.
+	*/
+		#templateContainer{
+			/*@editable*/border:1px solid #DDDDDD;
+		}
+	/*
+	@tab Page
+	@section heading 1
+	@tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+	@theme heading1
+	*/
+		h1,.h1{
+			/*@editable*/color:#202020;
+			display:block;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:34px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:100%;
+			margin-bottom:10px;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Page
+	@section heading 2
+	@tip Set the styling for all second-level headings in your emails.
+	@theme heading2
+	*/
+		h2,.h2{
+			/*@editable*/color:#202020;
+			display:block;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:30px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:100%;
+			margin-bottom:10px;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Page
+	@section heading 3
+	@tip Set the styling for all third-level headings in your emails.
+	@theme heading3
+	*/
+		h3,.h3{
+			/*@editable*/color:#202020;
+			display:block;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:26px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:100%;
+			margin-bottom:10px;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Page
+	@section heading 4
+	@tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+	@theme heading4
+	*/
+		h4,.h4{
+			/*@editable*/color:#202020;
+			display:block;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:22px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:100%;
+			margin-bottom:10px;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Header
+	@section preheader style
+	@tip Set the background color for your email's preheader area.
+	@theme page
+	*/
+		#templatePreheader{
+			/*@editable*/background-color:#FAFAFA;
+		}
+	/*
+	@tab Header
+	@section preheader text
+	@tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
+	*/
+		.preheaderContent div{
+			/*@editable*/color:#505050;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:10px;
+			/*@editable*/line-height:100%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Header
+	@section preheader link
+	@tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
+	*/
+		.preheaderContent div a:link,.preheaderContent div a:visited{
+			/*@editable*/color:#336699;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+		.preheaderContent div img{
+			height:auto;
+			max-width:600px;
+		}
+	/*
+	@tab Header
+	@section header style
+	@tip Set the background color and border for your email's header area.
+	@theme header
+	*/
+		#templateHeader{
+			/*@editable*/background-color:#FFFFFF;
+			/*@editable*/border-bottom:0;
+		}
+	/*
+	@tab Header
+	@section header text
+	@tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+	*/
+		.headerContent{
+			/*@editable*/color:#202020;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:34px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:100%;
+			/*@editable*/padding:0;
+			/*@editable*/text-align:center;
+			/*@editable*/vertical-align:middle;
+		}
+	/*
+	@tab Header
+	@section header link
+	@tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
+	*/
+		.headerContent a:link,.headerContent a:visited{
+			/*@editable*/color:#336699;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+		#headerImage{
+			height:auto;
+			max-width:600px !important;
+		}
+	/*
+	@tab Body
+	@section body style
+	@tip Set the background color for your email's body area.
+	*/
+		#templateContainer,.bodyContent{
+			/*@editable*/background-color:#ffffff;
+		}
+	/*
+	@tab Body
+	@section body text
+	@tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+	@theme main
+	*/
+		.bodyContent div{
+			/*@editable*/color:#505050;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:14px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Body
+	@section body link
+	@tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+	*/
+		.bodyContent div a:link,.bodyContent div a:visited{
+			/*@editable*/color:#336699;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+		.bodyContent img{
+			display:inline;
+			margin-bottom:10px;
+		}
+	/*
+	@tab Footer
+	@section footer style
+	@tip Set the background color and top border for your email's footer area.
+	@theme footer
+	*/
+		#templateFooter{
+			/*@editable*/background-color:#FDFDFD;
+			/*@editable*/border-top:0;
+		}
+	/*
+	@tab Footer
+	@section footer text
+	@tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+	@theme footer
+	*/
+		.footerContent div{
+			/*@editable*/color:#707070;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:12px;
+			/*@editable*/line-height:125%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Footer
+	@section footer link
+	@tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+	*/
+		.footerContent div a:link,.footerContent div a:visited{
+			/*@editable*/color:#336699;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+		.footerContent img{
+			display:inline;
+		}
+	/*
+	@tab Footer
+	@section social bar style
+	@tip Set the background color and border for your email's footer social bar.
+	*/
+		#social{
+			/*@editable*/background-color:#FAFAFA;
+			/*@editable*/border:1px solid #F5F5F5;
+		}
+	/*
+	@tab Footer
+	@section social bar style
+	@tip Set the background color and border for your email's footer social bar.
+	*/
+		#social div{
+			/*@editable*/text-align:center;
+		}
+	/*
+	@tab Footer
+	@section utility bar style
+	@tip Set the background color and border for your email's footer utility bar.
+	*/
+		#utility{
+			/*@editable*/background-color:#FDFDFD;
+			/*@editable*/border-top:1px solid #F5F5F5;
+		}
+	/*
+	@tab Footer
+	@section utility bar style
+	@tip Set the background color and border for your email's footer utility bar.
+	*/
+		#utility div{
+			/*@editable*/text-align:center;
+		}
+		#monkeyRewards img{
+			max-width:160px;
+		}
+	</style>
+</head>
+<body leftmargin="0" marginheight="0" marginwidth="0" offset="0" topmargin="0">
+<center>
+<table border="0" cellpadding="0" cellspacing="0" height="100%" id="backgroundTable" width="100%">
+	<tbody>
+		<tr>
+			<td align="center" valign="top"><!-- // Begin Template Preheader \\ -->
+			<table border="0" cellpadding="10" cellspacing="0" id="templatePreheader" width="600">
+				<tbody>
+					<tr>
+						<td class="preheaderContent" valign="top"><!-- // Begin Module: Standard Preheader \\ -->
+						<table border="0" cellpadding="10" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+									<td valign="top">
+									<div mc:edit="std_preheader_content">&nbsp;</div>
+									</td>
+									<td valign="top" width="180">
+									<div mc:edit="std_preheader_links"><!-- *|END:IF|* --></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- // End Module: Standard Preheader \\ --></td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- // End Template Preheader \\ -->
+
+			<table border="0" cellpadding="0" cellspacing="0" id="templateContainer" width="600">
+				<tbody>
+					<tr>
+						<td align="center" valign="top"><!-- // Begin Template Header \\ -->
+						<table border="0" cellpadding="0" cellspacing="0" id="templateHeader" width="600">
+							<tbody>
+								<tr>
+									<td class="headerContent"><!-- // Begin Module: Standard Header Image \\ --><img alt="" border="0" height="326" mc:edit="header_image" src="https://gallery.mailchimp.com/b137e98c9da54ed77d9672518/images/770c4788-e625-4f17-8578-41eef50cfc8a.png" style="height: 326px; width: 600px; margin: 0; padding: 0;" width="600" /> <!-- // End Module: Standard Header Image \\ --></td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- // End Template Header \\ --></td>
+					</tr>
+					<tr>
+						<td align="center" valign="top"><!-- // Begin Template Body \\ -->
+						<table border="0" cellpadding="10" cellspacing="0" id="templateBody" width="600">
+							<tbody>
+								<tr>
+									<td class="bodyContent" valign="top"><!-- // Begin Module: Standard Content \\ -->
+									<table border="0" cellpadding="10" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td valign="top">
+												<div mc:edit="std_content00">
+												<p dir="ltr" style="text-align: center;"><span style="font-size:22px"><span style="color:#6BC8C7">Final chance to choose your interview preference!</span></span></p>
+
+												<p dir="ltr" style="text-align: center;"><span style="color:#666666"><span style="font-size:14px">Dear&nbsp;</span>{!HS_Activity__c.YP_First_name_from_HS_Application_Form__c},</span></p>
+
+												<div dir="ltr" style="text-align: center;"><span style="color:#666666">We hope you&#39;re having a great time volunteering and a huge well done</span></div>
+
+												<div dir="ltr" style="text-align: center;"><span style="color:#666666">&nbsp;if you&#39;ve given 16 hours or more!</span></div>
+
+												<p dir="ltr" style="text-align: center;"><span style="color:#666666">This is your chance to make a final decision&nbsp;on&nbsp;which employer you want to interview with. We know it might be hard to decide&nbsp;between&nbsp;all our fantastic opportunites (including our new partner,&nbsp;the Berkeley Group).&nbsp;To make it easier, we have&nbsp;created a handy<strong> <a href="https://drive.google.com/a/the-challenge.org/file/d/0BwLRKj-bK-vxWHNDQTY1U2Ixb2xHNUtNTVRJS2F5MUtXVUpJ/view" target="_blank"><u>Employer Guide</u></a></strong>&nbsp;to give you the lowdown on the different jobs/internships available and when you will need to be free. You can also find this attached.&nbsp;<br />
+												<br />
+												Make sure you read it carefully!</span></p>
+
+												<p dir="ltr" style="text-align: center;"><span style="color:#666666">Once you have made your choice, </span><strong><u><span style="color:#0000CD"> </span><a href="http://survey.clicktools.com/app/survey/go.jsp?iv=231ekvhdgwjuq&amp;q1={!HS_Activity__c.Id}"><span style="color:#0000CD">click here</span></a><span style="color:#666666"> </span></u></strong><span style="color:#666666">to confirm your final interview preference</span><br />
+												&nbsp;</p>
+
+												<hr />
+												<p dir="ltr" style="text-align: center;"><strong style="color:rgb(0, 0, 0); font-family:tinos; line-height:normal"><span style="font-family:arial; line-height:21px">You have until&nbsp;15th December&nbsp;to decide.</span></strong></p>
+
+												<p dir="ltr" style="color: rgb(0, 0, 0); font-family: Tinos; font-size: medium; line-height: normal; text-align: center;"><span style="font-family:arial,helvetica,sans-serif;"><span style="color:rgb(105, 105, 105)">Good luck!</span></span></p>
+
+												<p dir="ltr" style="color: rgb(0, 0, 0); font-family: Tinos; font-size: medium; line-height: normal; text-align: center;"><span style="font-family:arial,helvetica,sans-serif;"><strong>The HeadStart Team</strong></span></p>
+
+												<table border="0" cellpadding="10" cellspacing="0" id="templateFooter" style="color: rgb(0, 0, 0); font-family: Tinos; font-size: medium; line-height: normal;" width="600">
+													<tbody>
+														<tr>
+															<td class="footerContent" valign="top">
+															<table border="0" cellpadding="10" cellspacing="0" width="100%">
+																<tbody>
+																	<tr>
+																		<td colspan="2" id="social" valign="middle">
+																		<div align="center" id="social-icons" style="line-height: 15px;"><a href="https://twitter.com/HeadStartLondon"><img alt="Twitter" height="48" src="http://www.iconsdb.com/icons/preview/gray/twitter-xxl.png" style="line-height: 14px;" width="48" /></a>&nbsp;<a href="https://www.facebook.com/Londonheadstart-1570591483167105/"><img alt="LinkedIn" height="48" src="http://www.blueclawrestaurant.com/images/Round_Facebook_Icon_3.png" style="line-height: 14px;" width="48" /></a></div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td colspan="2" id="utility" valign="centre">
+																		<div id="uniqName_19_4" mc:type="text" style="line-height: 15px;" widgetid="uniqName_19_4">
+																		<div style="width: 560px; position: relative; line-height: 15px;">
+																		<div style="cursor: pointer; padding: 4px; line-height: 15px; border: none !important;">If you have any queries, please email headstart@the-challenge.org</div>
+																		</div>
+																		</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p>. <!-- // End Module: Standard Content \\ --></p>
+</body>
+</html>

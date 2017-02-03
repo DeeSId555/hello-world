@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>CAL HTML email template for The Challenge</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Conditional WL Email</name>
+    <style>none</style>
+    <subject>Thank you for your application to The Challenge - here are your next steps</subject>
+    <textOnly>The Challenge Network
+
+CONDITIONAL ACCEPTANCE
+
+Dear {!Contact.FirstName} and Parent/Guardian of {!Contact.FirstName},
+
+Thank you for beginning {!Contact.FirstName}’s application for a place on The Challenge.
+
+Unfortunately we have not yet received all the information we need to confirm {!Contact.FirstName}’s place on the programme. Due to high demand for places on The Challenge we have temporarily placed {!Contact.FirstName} on a waiting list until we receive the information we require.
+
+All we need in order to finish processing {!Contact.FirstName}’s place is:
+
+{!Contact.CAL_Missing_Items_Criteria_Paragraph__c}
+Call us: 020 7921 4404 / Email us: contact@the-challenge.org /
+Log into our website at: www.the-challenge.org
+
+Once we have received this, we will be able to continue processing the application and will contact you if we need any further information. If you have any questions, please do get in touch with us so that we can assist you. Once the application process is complete, we will do our very best to ensure we can confirm {!Contact.FirstName}’s place as soon as possible. In the event that {!Contact.FirstName} remains on a waiting list we will let you know as soon as a place becomes available. In the unlikely situation that we are not able to offer {!Contact.FirstName} a place, and provided that they have not previously given up a place we have offered, we will of course issue you a full refund.
+
+As places are filling up very rapidly across the country, we would urge {!Contact.FirstName} to remind friends to take part in this exciting and unique opportunity.
+
+Yours sincerely,
+
+
+Rebecca Carter
+Director at The Challenge Network
+
+WWW.THE-CHALLENGE.ORG    /thechallengeNETWORK
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

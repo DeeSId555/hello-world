@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>AF2014 Autumn Acceptance Email</name>
+    <style>none</style>
+    <subject>Your place on NCS is confirmed!</subject>
+    <textOnly>NCS POWERED BY THE CHALLENGE
+
+Congratulations!
+
+
+
+Dear Parent/Guardian of {!Contact.FirstName} and {!Contact.FirstName},
+
+
+Congratulations – you have completed {!Contact.FirstName}’s application for NCS! {!Contact.FirstName} now has a confirmed place, starting on 25/10/2014.
+
+The dates {!Contact.FirstName} will be on the programme are:
+
+Part 1 (residential): {!Wave_Selection__c.PC_KO_Day__c} until {!Wave_Selection__c.PC_Return_Day__c}
+
+Part 2 (non-residential - young people travel to and from a local venue each day): {!Wave_Selection__c.TC_KO_Day__c} until {!Wave_Selection__c.TC_End_Day__c}
+
+Part 3 {!Wave_Selection__c.RCD_paragraph_part_1_new__c} {!Wave_Selection__c.RCD_paragraph_part_2_new__c} {!Wave_Selection__c.RCA_paragraph_part_2_new__c}If you are unable to attend any of these specific dates, please read the absence policy on our website for guidance on what to do. If you would like to move to a different set of programme dates, you can log in to your account online to see if there are other programmes available to you. The sooner you do so, the greater your chance of moving. Please note that you may have to go on the waiting list for some programmes, and would need to give up your current place to do this.
+
+If {!Contact.FirstName} is unable to attend the programme at all, please contact us as soon as possible. You can call us on 0203 542 2400 or email us at contact@the-challenge.org.
+
+More information about the programme:
+We will email you a detailed information pack for {!Contact.FirstName}’s programme approximately one month before the start date. This will include meeting point locations, times, and further essential information, such as a packing list.
+
+We will also email you an invitation to an information evening taking place approximately one to two weeks before {!Contact.FirstName} begins NCS. Here you will have the chance to meet us and ask any questions you may have.
+
+In the meantime, in the Questions section of our website, you can search for further information such as a sample menu and packing list. If you have any questions not answered by our website, you can email us at contact@the-challenge.org, or call us on 0203 542 2400.
+
+For more information on our absence policy, and our terms and conditions, please visit www.NCSTheChallenge.org. To stay connected, you can also check out Facebook.com/ NCSTheChallenge and follow us on Twitter @NCSTheChallenge.
+
+Do you have any friends who would also like to go on NCS over half-term?[1]
+
+Tell them about the programme and get them to sign up atwww.NCSTheChallenge.org using your unique code: 467789. If they do so, you will earn yourself a £20 Love2shop voucher[2]. If you successfully sign up 3 friends, you&apos;ll automatically be entered into our prize draw to win an iPad! Let your friends know soon though, as we have limited places available.
+
+It’s great that you’ve managed to secure your place and we hope you are excited about this once-in-a-lifetime opportunity to get ahead and make new friends.
+
+
+Yours sincerely,
+
+
+
+Rebecca Carter - Director at The Challenge
+
+[1] We cannot guarantee that friends will be on the same programme or team.
+
+[2] Terms and conditions apply - visit www.ncsthechallenge.org/terms for more information.
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

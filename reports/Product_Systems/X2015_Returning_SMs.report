@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Job_Application__c$Account_number__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c$Contact__c.Id</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c$Name</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c$Roles_also_suitable_for_Internal__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Job_Application__c$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Job_Application__c.Post_screen_2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c$Role_to_assess_for__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Senior Mentor</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c$Roles_also_suitable_for_Internal__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>excludes</operator>
+            <value>Senior Mentor - Behavioural Specialist</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c$Contact_Name__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c$Staff_type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Returner - same role</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2015 Returning SMs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Job_applications__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Job_Application__c$Assignment_end_date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Transport order</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Transport orders</value>
+    </caseValues>
+    <fields>
+        <label><!-- APM Email --></label>
+        <name>APM_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- From address Override --></label>
+        <name>Address_Override__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ant --></label>
+        <name>Ant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Arrival/ Departure --></label>
+        <name>Arrival_Departure__c</name>
+        <picklistValues>
+            <masterLabel>arrive at...</masterLabel>
+            <translation><!-- arrive at... --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>depart at...</masterLabel>
+            <translation><!-- depart at... --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cluster --></label>
+        <name>Cluster__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Hidden --></label>
+        <name>Date_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Optimised --></label>
+        <name>Date_Optimised__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of travel --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date cancelled --></label>
+        <name>Date_cancelled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Travel --></label>
+        <name>Date_of_Travel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reset order --></label>
+        <name>De_optimise__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deadline DateTime --></label>
+        <name>Deadline_DateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Departure Address --></label>
+        <name>Departure_Address_Private__c</name>
+    </fields>
+    <fields>
+        <label><!-- Departure Time --></label>
+        <name>Departure_Time_Private__c</name>
+    </fields>
+    <fields>
+        <label><!-- Private Journey time (google) --></label>
+        <name>Driving_Journey_length_mins__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due date --></label>
+        <name>Due_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due this Friday --></label>
+        <name>Due_this_this_Friday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Earliest Arrival Time --></label>
+        <name>Earliest_Arrival_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Earliest departure time --></label>
+        <name>Earliest_departure_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated cost --></label>
+        <name>Estimated_cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Private transport time --></label>
+        <name>Final_private_transport_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Public transport time --></label>
+        <name>Final_public_transport_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Walking time --></label>
+        <name>Final_walking_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fixed Visit Duration --></label>
+        <name>Fixed_Visit_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- From Account --></label>
+        <name>From_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- From Address (Geocode) --></label>
+        <name>From_Address_Geocode__c</name>
+    </fields>
+    <fields>
+        <label><!-- From Address --></label>
+        <name>From_Address_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- From Address (for google) --></label>
+        <name>From_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- From Booking Date --></label>
+        <name>From_Booking_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- From Booking Start Time --></label>
+        <name>From_Booking_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- From Booking --></label>
+        <name>From_Booking__c</name>
+        <relationshipLabel><!-- Transport orders (From Booking) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HEREMAPS From Postcode (Hidden) --></label>
+        <name>From_Postcode_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- From booking confirmation date --></label>
+        <name>From_booking_confirmation_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- HEREMAPS Latest Arrival (Hidden) --></label>
+        <name>HEREMAPS_Latest_Arrival_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsAddressChanged --></label>
+        <name>IsAddressChanged__c</name>
+    </fields>
+    <fields>
+        <label><!-- Journey Length (mins) --></label>
+        <name>Journey_Length_mins__c</name>
+    </fields>
+    <fields>
+        <label><!-- Journey --></label>
+        <name>Journey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest arrival time --></label>
+        <name>Latest_Arrival_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest departure time --></label>
+        <name>Latest_departure_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leg1 Arrival Time --></label>
+        <name>Leg1_Arrival_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leg1 Destination --></label>
+        <name>Leg1_Destination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leg2 Arrival Time --></label>
+        <name>Leg2_Arrival_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leg2 Destination --></label>
+        <name>Leg2_Destination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leg3 Arrival Time --></label>
+        <name>Leg3_Arrival_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leg3 Destination --></label>
+        <name>Leg3_Destination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leg4 Arrival Time --></label>
+        <name>Leg4_Arrival_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leg4 Destination --></label>
+        <name>Leg4_Destination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leg5 Arrival Time --></label>
+        <name>Leg5_Arrival_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leg5 Destination --></label>
+        <name>Leg5_Destination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leg6 Arrival Time --></label>
+        <name>Leg6_Arrival_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leg6 Destination --></label>
+        <name>Leg6_Destination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Link to provider website --></label>
+        <name>Link_to_provider_website__c</name>
+    </fields>
+    <fields>
+        <label><!-- Luggage --></label>
+        <name>Luggage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Split --></label>
+        <name>Maximum_Split__c</name>
+    </fields>
+    <fields>
+        <label><!-- HERE MAPS Method of Transport (Hidden) --></label>
+        <name>Method_of_Transport_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Method of Transport --></label>
+        <name>Method_of_Transport__c</name>
+        <picklistValues>
+            <masterLabel>Private Transport</masterLabel>
+            <translation><!-- Private Transport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public transport</masterLabel>
+            <translation><!-- Public transport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walking</masterLabel>
+            <translation><!-- Walking --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Not in use --></label>
+        <name>Not_in_use__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Waypoints --></label>
+        <name>Number_of_Waypoints__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optimisation Checked --></label>
+        <name>Optimisation_Checked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Journey ready (number) --></label>
+        <name>Optimised_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order upgraded --></label>
+        <name>Order_upgraded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override? --></label>
+        <name>Override__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override private journey time --></label>
+        <name>Override_private_journey_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override public journey time --></label>
+        <name>Override_public_journey_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override walking journey time --></label>
+        <name>Override_walking_journey_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- PAX (Old) --></label>
+        <name>PAX__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM Approval --></label>
+        <name>PM_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM Rejection --></label>
+        <name>PM_Rejection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Programmes User View --></label>
+        <name>PM_check__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM email --></label>
+        <name>PM_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM rejection notes --></label>
+        <name>PM_rejection_notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Passengers --></label>
+        <name>Passengers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous vehicle --></label>
+        <name>Previous_vehicle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Programme Manager --></label>
+        <name>Programme_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider Link address --></label>
+        <name>Provider_Link_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Running Board Link --></label>
+        <name>Provider_URL_formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Public transport time (google) --></label>
+        <name>Public_transport_Journey_length_mins__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Journey Submitted --></label>
+        <name>Resubmit_rejected_journey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Running Board Link --></label>
+        <name>Running_Board_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submit Journey --></label>
+        <name>Submit_Journey__c</name>
+    </fields>
+    <fields>
+        <label><!-- TMS Status --></label>
+        <name>TMS_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team --></label>
+        <name>Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Teams missing from journey --></label>
+        <name>Teams_missing_from_journey__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the time in 24-hour format --></help>
+        <label><!-- Time --></label>
+        <name>Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- To Account --></label>
+        <name>To_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- To Address (Geocode) --></label>
+        <name>To_Address_Geocode__c</name>
+    </fields>
+    <fields>
+        <label><!-- To Address --></label>
+        <name>To_Address_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- To Address (for google) --></label>
+        <name>To_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- To Booking Start Time --></label>
+        <name>To_Booking_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- To Booking --></label>
+        <name>To_Booking__c</name>
+        <relationshipLabel><!-- Transport orders (To Booking) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HERE MAPS To Postcode (Hidden) --></label>
+        <name>To_Postcode_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- To address override --></label>
+        <name>To_address_override__c</name>
+    </fields>
+    <fields>
+        <label><!-- To booking confirmation date --></label>
+        <name>To_booking_confirmation_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transport Provider ID --></label>
+        <name>Transport_Provider_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Journey --></label>
+        <name>Type_of_Journey__c</name>
+        <picklistValues>
+            <masterLabel>Mixed</masterLabel>
+            <translation><!-- Mixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PC - PCR</masterLabel>
+            <translation><!-- PC - PCR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PCKO - PC</masterLabel>
+            <translation><!-- PCKO - PC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC Accom - TC Showcase</masterLabel>
+            <translation><!-- TC Accom - TC Showcase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC Accom - TC Venue</masterLabel>
+            <translation><!-- TC Accom - TC Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC Partner - TC Accom</masterLabel>
+            <translation><!-- TC Partner - TC Accom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC Partner - TC Venue</masterLabel>
+            <translation><!-- TC Partner - TC Venue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC Venue - TC Partner</masterLabel>
+            <translation><!-- TC Venue - TC Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCKO - TC Accom</masterLabel>
+            <translation><!-- TCKO - TC Accom --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Walking Journey time (google) --></label>
+        <name>Walking_Journey_length__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave formula --></label>
+        <name>WaveNew__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave APM: Cell --></label>
+        <name>Wave_APM_Cell__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave APM --></label>
+        <name>Wave_APM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave ID --></label>
+        <name>Wave_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave --></label>
+        <name>Wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave number --></label>
+        <name>Wave_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wheelchair user on journey --></label>
+        <name>Wheelchair_user_on_journey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zone --></label>
+        <name>Zone__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Transport Plan --></label>
+        <name>Transport_Plan</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Im afraid you can&apos;t override the address of a booking that is not confirmed. Please confirm your booking before completing you transport order. --></errorMessage>
+        <name>Prevent_Changes_to_dummy_booking_orders</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sorry! You need to enter a To or From booking or override address before submitting this Transport Order --></errorMessage>
+        <name>Prevent_Walking_PubT_subs_w_no_details</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can&apos;t make changes to journeys less than two working days prior to the date of travel. --></errorMessage>
+        <name>Prevent_changes_less_than_two_days_prior</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sorry! departure and arrival times cannot be greater than 1 hour! --></errorMessage>
+        <name>Prevent_departuresarrivals1hour</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Unfortunately there is not enough time to complete this journey :-( --></errorMessage>
+        <name>Prevent_journeys_that_are_too_long</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sorry! You need to compete all of the field in the &apos;Journey details&apos; Section before submitting --></errorMessage>
+        <name>Prevent_submissions_without_all_details</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Whoa there, you can&apos;t edit this field if the journey&apos;s status is optimised. --></errorMessage>
+        <name>Transport_Order_Lock_A</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Halt! You can not edit an approved order without first removing the approval (Reset Checkbox). --></errorMessage>
+        <name>Transport_Order_Lock_B</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent 24/09/15 using &apos;placements and general update&apos;</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Summer 15 - NON completers follow up</name>
+    <style>none</style>
+    <subject>Thank you for taking part in HeadStart</subject>
+    <textOnly>HeadStart login details:
+
+Email Address {!Contact.Email}
+
+NCS ID
+
+{!Contact.NCS_ID__c}
+
+PIN {!Contact.Login_Password__c}
+
+HeadStart Website
+
+Well done from HeadStart!
+
+Hi {!Contact.FirstName},
+
+Thank you for taking part in the HeadStart programme.
+
+Unfortunately, the deadline for logging your hours to be eligible for a job interview has now passed.
+
+You can, however, use your hours towards the Challenge with Distinction award, as well as accessing all sorts of amazing opportunities through The Challenge Society.  Check out what is happening in your area here:
+
+TCS West London
+
+TCS South London
+
+TCS North East London
+
+Remember that the HeadStart programme is about developing employability skills through volunteering and that you can use your experience for any future job you may apply to.
+
+You have made such a difference to your community and the charity you have given your time to - well done and thank you!
+
+Best wishes
+
+The HeadStart Team
+
+Any questions? Email the HeadStart team, check out our website or get in touch on facebook.
+
+
+The HeadStart team
+
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subsribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

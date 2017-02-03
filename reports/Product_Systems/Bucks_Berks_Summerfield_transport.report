@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Transport_order__c.Wave__c</field>
+    </columns>
+    <columns>
+        <field>CUST_ID</field>
+    </columns>
+    <columns>
+        <field>Transport_order__c.Journey__c</field>
+    </columns>
+    <columns>
+        <field>Transport_order__c.Team__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Transport_order__c.Zone__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>bucks</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Transport_order__c.Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>reading a 3,reading a 5,reading a 6,newbury a 7,newbury a 10</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Transport_order__c.Team__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Summerfield</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Bucks &amp; Berks Summerfield transport</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Transport_order__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Transport_order__c.Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

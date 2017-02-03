@@ -1,0 +1,150 @@
+<apex:page sidebar="false" standardStylesheets="true" showHeader="false" standardController="Personal_Coach__c">
+
+<html>
+    <head>
+        <style>
+.button2{
+        height:70px; 
+        width:170px; 
+        border: solid 4px; 
+        border-color:#B31217; 
+        font : 32px "Dirty", Arial, Helvetica; 
+        background :white;
+        border-radius:15px;
+    }
+    .button1{
+    
+    height:50px; 
+    width:170px;  
+    border: solid 4px; 
+    border-color:#B31217; 
+    font : 18px "Dirty", Arial, Helvetica; 
+    background :white;
+    border-radius:15px;
+    hover:grey;
+    }
+       
+        </style>
+    </head>
+    
+    <body>    
+        
+      <!--  <apex:form >-->
+        <apex:composition template="PortalTemplate">
+        
+            <apex:define name="TopDiv">
+            <!---------------- MENU -------------------------->
+                
+                  
+            </apex:define>
+            
+            <apex:define name="MidDiv">
+            
+              <apex:variable var="call" value="{!0}" /> 
+              <apex:repeat value="{!Personal_Coach__c.Personal_Coach_Meetings__r}" var="pcm">
+                  <apex:variable var="call" value="{!call+1}"/>
+              </apex:repeat>
+              
+                <!--NO RECORDS--->
+                <apex:outputPanel rendered="{!IF(call<=0,true,false)}">
+                   <apex:pageBlock >    
+                      <apex:outputLabel styleClass="optext"> There are no personal coach meetings</apex:outputLabel>
+                    </apex:pageBlock>   
+                </apex:outputPanel>
+                <!--/NO RECORDS--->
+                
+                <!--DISPLAY RECORD-->
+                <apex:outputPanel rendered="{!IF(call > 0,true,false)}">
+                    <apex:pageBlock >
+                        <apex:pageBlockSection columns="1" >
+                            <apex:relatedList list="Personal_Coach_Meetings__r" pageSize="{!call}"/>
+                        </apex:pageBlockSection>
+                   
+                   </apex:pageBlock>
+                </apex:outputPanel>
+                <!--/ DISPLAY RECORD-->
+         
+            
+               <!--------------- Mid Div ------------------>
+            <!--   <table style="width:100%; height:100%">
+                   <tr>
+                      <td rowspan="2" valign="top" style="width:20%;">
+                           <apex:outputText styleClass="optext" value="Recent Contacts"></apex:outputText>
+                      </td>
+                      
+                      <td valign="top" style="width:80%;">
+                        <div style="margin-top:1%;">
+               
+                      <table class="table table-striped" style="100%;">
+                          <th>{!$ObjectType.Personal_Coach_Meetings__c.Fields.Name.Label}</th>
+                          <th>{!$ObjectType.Personal_Coach_Meetings__c.Fields.Meeting_date__c.Label}</th>
+                          <th>{!$ObjectType.Personal_Coach_Meetings__c.Fields.Meeting_attendance__c.Label}</th>
+                     
+                         <apex:repeat value="{!PerCoachMeetList}" var="pcm">
+                             <apex:outputPanel rendered="{!IF(pcm.Personal_Coaching__r.Young_person__c==$CurrentPage.parameters.cid,true,false)}">
+                                 <tr style="width:100%;">
+                                    
+                                     <td> <apex:outputLink value="{!$Page.TCSPortal_PersonalCoachMeetings}?id={!pcm.id}">{!pcm.Name}</apex:outputLink>  </td>
+                                    <td> <apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+                                            <apex:param value="{!pcm.Meeting_date__c}" /> 
+                                        </apex:outputText>
+                                    </td>
+                                     <td> <apex:outputText value="{!pcm.Meeting_attendance__c}"/> </td>
+                                 </tr>
+                             </apex:outputPanel>
+                         </apex:repeat>
+                         </table>
+                       
+                       </div>   
+                      </td>
+                              
+                   </tr>
+                          
+               </table>-->
+            </apex:define>
+            
+             <apex:define name="BotDiv"> 
+               <center>
+                   <div style="margin-top:2%;">  
+                      <apex:outputLink style="margin-right:5%;" value="{!$Page.TCSPortal_PersonalCoachDetail}?id={!Personal_Coach__c.id}" styleClass="optext btn button2">back to<br/> {!Personal_Coach__c.Name}</apex:outputLink>
+                      <apex:outputLink value="a1R/e?CF00NC0000005Ex4w={!$CurrentPage.parameters.pcname}&CF00NC0000005Ex4w_lkid={!$CurrentPage.parameters.pcid}&saveURL=%2FTCSPortal_PersonalCoachMeetingList?pcid={!$CurrentPage.parameters.pcid}%26cid%3D{!$CurrentPage.parameters.cid}" styleClass="optext btn button2">Add a new Personal Meeting</apex:outputLink>
+                   </div>  
+               </center>
+           </apex:define>
+           
+        </apex:composition>
+      <!--  </apex:form>   -->
+        
+    </body>
+    
+   <style>
+ .headerRow th:nth-child(5){
+     display:none;
+ }
+  .dataRow td:nth-child(5){
+     display:none;
+ } 
+ .actionColumn{
+     display:none;
+     } 
+ .listHeader{
+     display:none;
+ }
+ .pbButton{
+     display:none;
+ }
+ .bPageBlock .pbHeader, .bGeneratedReport .bPageBlock .pbSubheader{
+     background-color:white;
+ }   
+ .bPageBlock, .individualPalette .bPageBlock{
+     border:0px;
+ }
+.scrollspy-example {
+height: 250px;
+overflow: auto;
+position: relative;
+    }
+    </style>
+</html>
+
+</apex:page>

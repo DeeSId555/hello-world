@@ -1,0 +1,172 @@
+<apex:page sidebar="false" standardStylesheets="true" showHeader="false" standardController="Contact" extensions="TCSPortal_NewCampaignController" >
+
+<html>
+    <head>
+    
+    <script>
+                 
+        function showModal(){
+        $('#forgot').modal({
+            show : true
+        });
+        }
+        function hideModal(){
+        $('#forgot').modal('hide');
+        }
+    </script>
+    
+        <style>
+.bPageBlock .pbTitle{
+
+        width:100%;
+    }
+.button2{
+        height:50px; 
+        width:230px; 
+        margin-top:2%;
+        border: solid 8px; 
+        border-color:#B31217; 
+        font : 32px "Dirty", Arial, Helvetica; 
+        background :white;
+        border-radius:15px;
+    }
+    .button1{
+    
+    height:65px; 
+    border: solid 4px; 
+    border-color:#B31217; 
+    font : 18px "Dirty", Arial, Helvetica; 
+    background :white;
+    border-radius:15px;
+    hover:grey;
+    }
+  
+       
+        </style>
+    </head>
+    
+    <body>    
+        
+       <!-- <apex:form >-->
+        <apex:composition template="PortalTemplate">
+        
+            <apex:define name="TopDiv">
+            <!---------------- MENU -------------------------->
+            </apex:define>
+            
+            <apex:define name="MidDiv">
+            <div >
+               <apex:outputPanel rendered="{!IF($CurrentPage.parameters.cid==null,true,false)}">
+                   <apex:pageBlock >
+                       <apex:pageBlockSection columns="1">
+                            <apex:listViews type="Campaign" />
+                       </apex:pageBlockSection>
+                   </apex:pageBlock>
+                </apex:outputPanel>
+                
+                <apex:outputPanel rendered="{!IF($CurrentPage.parameters.cid!=null,true,false)}">
+                
+                  <apex:variable var="call" value="{!0}" /> 
+                  <apex:repeat value="{!Contact.CampaignMembers}" var="tcs">
+                      <apex:variable var="call" value="{!call+1}"/>
+                  </apex:repeat>
+                        
+                     <!--NO RECORDS--->
+                    <apex:outputPanel rendered="{!IF(call<=0,true,false)}">
+                       <apex:pageBlock >    
+                          <apex:outputLabel styleClass="optext"> There are no campaign members</apex:outputLabel>
+                        </apex:pageBlock>   
+                    </apex:outputPanel>
+                    <!--/NO RECORDS--->
+                    
+                    <!--DISPLAY RECORD-->
+                        <apex:outputPanel rendered="{!IF(call > 0,true,false)}">
+                            <apex:pageBlock >
+                               <apex:pageBlockSection columns="1">
+                                    <apex:relatedList pageSize="{!call}" list="CampaignMembers" />
+                                </apex:pageBlockSection>
+                               
+                           </apex:pageBlock>
+                        </apex:outputPanel>
+                    <!--/ DISPLAY RECORD-->   
+                 </apex:outputPanel>
+                 
+          <apex:form >        
+               <div id="forgot" class="modal hide fade in">
+                            <div class="modal-body">
+                               
+                                <p class="optext">select the event or meeting type </p>
+                                
+                                 <apex:selectList value="{!SelectedEventType}" size="1" style="width:400px;" >
+                                     <apex:actionSupport event="onchange" action="{!getEventTypes}" reRender="mymodal"/>
+                                       <apex:selectOptions value="{!options}"/>
+                                 </apex:selectList>
+                              <apex:outputPanel id="mymodal" style="float:left;" >
+                                 <apex:pageBlock title="Matching Events">
+                                     <apex:pageBlockTable value="{!ListCampaign}" var="campaign">
+                                         <apex:column >
+                                             <apex:outputLink value="{!$Page.TCSPortal_CampHistCreation}?campid={!campaign.id}&contactid={!$CurrentPage.parameters.id}">{!campaign.Name}</apex:outputLink>
+                                         </apex:column>
+                                     </apex:pageBlockTable>
+                                 </apex:pageBlock>
+                          </apex:outputPanel>
+                                </div>
+                               
+                                <div class="modal-footer">
+                                    <a data-dismiss="modal" href="#" class="btn btn-medium btn-danger">Cancel</a>
+                                </div>
+                  </div>
+          </apex:form> 
+           </div>
+             
+            </apex:define>
+            
+             <apex:define name="BotDiv"> 
+               <center>
+                <apex:outputPanel layout="block" style="margin-top:2%;" rendered="{!IF($CurrentPage.parameters.cid!=null,true,false)}">
+                   <apex:outputLink style="margin-right:5%;" styleClass="optext btn button1" value="{!$Page.TCSPortal_ContactDetail}?id={!Contact.id}">back to <br/>{!Contact.Name}</apex:outputLink>
+ <!-- {!$Page.TCSPortal_CampHistCreation}?contactid={!$CurrentPage.parameters.cid}--> 
+  <apex:outputLink onclick="showModal();" value="#" styleClass="optext btn button1">add a <br/>new Campaign Member</apex:outputLink>
+               </apex:outputPanel>
+               </center>
+               
+           </apex:define>
+           
+        </apex:composition>
+     <!--   </apex:form>   -->
+        
+    </body>
+   
+<style>
+  .bFilterView{
+      margin-left:2%; 
+   }
+ .headerRow th:nth-child(2){
+     display:none;
+ }
+ .dataRow th{
+     display:none;
+ } 
+ .actionColumn{
+     display:none;
+ } 
+ .listHeader{
+     display:none;
+ }
+ .pbButton{
+     display:none;
+ }
+ .bPageBlock .pbHeader, .bGeneratedReport .bPageBlock .pbSubheader{
+     background-color:white;
+ }   
+ .bPageBlock, .individualPalette .bPageBlock{
+     border:0px;
+ }
+ .scrollspy-example {
+    height: 250px;
+    overflow: auto;
+    position: relative;
+ }
+</style>
+</html>
+</apex:page>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>AF2014 Conditional Reserved Email</name>
+    <style>none</style>
+    <subject>NCS with The Challenge - next steps for your application</subject>
+    <textOnly>NCS POWERED BY THE CHALLENGE
+
+Next steps for your application
+
+
+Dear Parent/ Guardian of {!Contact.Name},
+
+Thank you for starting your application for {!Contact.FirstName} to take part in NCS with The Challenge! You&apos;re almost there, but part(s) of your application are missing. We have reserved {!Contact.FirstName} a provisional place for one week only whilst you complete these missing parts. Demand for places is high, so  if your application is not fully complete by  {!Contact.Letter_email_date_reserved_place_lost__c}, we will give the place to another young person and {!Contact.FirstName} will be moved to the waiting list.
+
+All we need to continue processing {!Contact.FirstName}&apos;s application is:
+
+{!Contact.CAL_Missing_Items_Criteria_Paragraph__c}
+
+If you have forgotten your log in details, you can recover them here to access your account.
+
+If there is a reason that you will be unable to complete your application within one week, please contact us. If {!Contact.FirstName} can no longer take part, please let us know straight away so that we can give this space to another young person. You can email us at contact@the-challenge.org or call us on 0203 542 2400.
+
+Remember, we can only confirm a place after we have received and reviewed your complete application. We will let you know in writing if you have a confirmed place. Thank you in advance for taking these steps to complete {!Contact.FirstName}’s application for this once-in-a-lifetime experience.
+
+Yours sincerely,
+
+
+
+Rebecca Carter - Director at The Challenge
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

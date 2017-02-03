@@ -1,0 +1,233 @@
+<apex:page >
+Defunct: old card payment
+<!-- controller="PAYCP1.WorldpayPaymentResponseController" showHeader="false" action="{!processAction}"> 
+  
+    <apex:stylesheet value="{!URLFOR($Resource.signUpFiles, 'signUpPageCSS.css')}" />
+    <style>
+    @font-face {
+        font-family: 'BebasRegular';
+        src: url('http://tcnpaymentassets.sc6.s-digital.net/fonts/BEBAS___-webfont.eot');
+        src: url('http://tcnpaymentassets.sc6.s-digital.net/fonts/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+            url('http://tcnpaymentassets.sc6.s-digital.net/fonts/BEBAS___-webfont.woff') format('woff'),
+            url('http://tcnpaymentassets.sc6.s-digital.net/fonts/BEBAS___-webfont.ttf') format('truetype'),
+            url('http://tcnpaymentassets.sc6.s-digital.net/fonts/BEBAS___-webfont.svg#BebasRegular') format('svg');
+        font-weight: normal;
+        font-style: normal; 
+    } 
+    
+    h1 {
+        line-height: 1.5;
+        font-family: 'BebasRegular', impact, Arial, sans-serif;
+        letter-spacing: 0.5px;
+        word-spacing: 2px;
+        margin-top:20px;
+        margin-bottom:20px;
+        font-size:24px;
+        font-weight:normal;
+        color: #00adee;
+        text-transform:uppercase;
+    }
+
+    h2 {
+        line-height: 1.5;
+        font-family: 'BebasRegular', impact, Arial, sans-serif;
+        letter-spacing: 0px;
+        word-spacing: 2px;
+        margin-top:20px;
+        margin-bottom:20px;
+        font-size:18px;
+        font-weight:normal;
+        color: #5f5f5f;
+        text-transform:uppercase;
+    }
+    
+    a {
+        color: #01a9ed;
+        cursor:pointer;
+    }    
+    
+    .backlink a img {
+        border: none;
+    }
+    .sectionHeaderFirst {
+        font-family: 'Century Gothic', 'Avenir Book', sans-serif;
+        font-size: 12pt;
+        font-weight: bold;
+        color: #333333;
+    }
+    .wrapper {
+        border: 1px solid #000000;
+        background:  #a8a59e url(http://www.the-challenge.org/wp-content/themes/the-challenge-2011/images/the-challenge-background.jpg) no-repeat 50% 0%;
+        width: 700px;
+        margin: auto;
+        padding-top: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 100px;
+    }
+    .dataEntryFormThanks {
+        width: 500px;
+        margin: auto;
+        border: 0px solid #000000;
+        background-color: #ffffff;
+        margin-top: 25px;
+        padding: 10px;
+    }
+    .msgTitle {
+        font-weight: bold;
+        font-size: 15pt;
+        padding-bottom: 10px;
+    }
+    
+    body {
+        background-color: #f6f6f6;
+        font-family: 'Century Gothic', 'Avenir Book', sans-serif;
+        font-size: 14px;
+        line-height: 1.428571429;
+        color: #5f5f5f;     
+    }
+    #tcn-wrapper {
+        padding: 30px;
+        margin:0px auto;
+        margin-top:20px;
+        color: inherit;
+        width:70%;
+        max-width:600px;
+        background-color:#ffffff;
+        border: 10px solid rgb(118, 118, 118);
+        border: 10px solid rgba(237, 237, 237, .50);
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+    }
+</style>
+
+    <table cellspacing="0" border="0" width="100%">
+        <tr>
+            <td class="bannererror">
+                <wpdisplay payment="test-check" contents="true">
+                    <wpdisplay msg="ban.notLive" stylize="banner.error" />
+                </wpdisplay>
+            </td>
+        </tr>
+    </table>
+  
+    
+    
+    <!-- This section displays only when a single card payment has been made from Salesforce.  - ->
+    <!-- It checks the ReturnURL parameter, if there is a value then we came from Salesforce.  - ->
+    <!-- If not then we came from the e-commerce website.  - ->
+    <apex:outputPanel layout="none" rendered="{!AND( authorized, ReturnURL != null )}" >
+
+    <table cellspacing="0" border="0" width="400px">
+        <tr>
+            <td class="msgTitle">
+                The card payment has been successfully processed
+            </td>
+        </tr>
+        <tr>
+            <td width="66%">
+                Your merchant's reference is: <span style="font-weight: bold;"><wpdisplay item="cartId" /></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                The authorisation code is: <span style="font-weight: bold;"><wpdisplay item="transId" /></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                The transaction amount was: <span style="font-weight: bold;"><wpdisplay item="authAmount" /></span>
+            </td>
+        </tr>
+    </table>
+    
+    </apex:outputPanel>  
+
+    
+    
+    <apex:outputPanel layout="none" rendered="{!AND( cancelled, ReturnURL != null )}" >
+    
+    <table cellspacing="0" border="0" width="600px">
+        <tr>
+            <td class="msgTitle" colspan="2">
+                The card payment has been cancelled
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Your merchant's reference is:
+            </td>
+            <td>
+                <wpdisplay item="cartId" />
+            </td>
+        </tr>
+    </table>
+    
+    </apex:outputPanel>  
+    
+    
+    
+    <apex:outputPanel layout="none" rendered="{! ReturnURL != null }" >
+    
+    <br/>
+    
+    <table cellspacing="0" border="0" width="100%">
+        <tr>
+            <td class="msgTitleAuthorised">
+                To return to the originating record, click <a href="{! ReturnURL}" target="_top" >here</a>
+            </td>
+        </tr>
+    </table>
+    
+    </apex:outputPanel>    
+    
+    
+    
+    <apex:outputPanel layout="none" rendered="{!AND( showBranding, ReturnURL != null )}" >
+    
+    <br/>
+    
+    <table border="0">
+        <tr>
+            <td>Powered by:</td>
+            <td><img src="https://<wpdisplay item=MC_sourceHost>{!URLFOR($Resource.PAYCP1__payonomy)}" /></td>
+        </tr>
+    </table>
+    
+    </apex:outputPanel>
+
+
+  
+
+
+    <!-- This section displays only when a single card payment has been made from the e-commerce site.  - ->
+    <!-- It checks the ReturnURL parameter, if there is NOT a value then we came from the e-commerce site.  - ->
+    <!-- If there is a value then we came from Salesforce.  -  ->
+    
+    <apex:outputPanel layout="none" rendered="{!AND( cancelled, ReturnURL == null )}" >
+        
+        <div id="tcn-wrapper">
+          <h1>Payment cancelled</h1>
+          <p>Your payment was declined or cancelled. <wpdisplay item="cartId" /> </p>
+          <p>Please follow the link below to return to the booking site.</p>
+          <p><a target="_top" href="https://bookings.ncsthechallenge.org/secure/pg/PaymentGatewayReturn.aspx">Continue</a> </p>
+        </div>
+        
+    </apex:outputPanel>  
+
+
+
+    <apex:outputPanel layout="none" rendered="{!AND( authorized, ReturnURL == null )}" >
+        
+        <div id="tcn-wrapper">
+          <h1>Payment approved</h1>
+          <p>Thank you for your payment of <strong><wpdisplay item="authAmount" /> <wpdisplay item="currency" /></strong>. Your reference number for this transaction is <wpdisplay item="transId" />. Please use this reference number if you contact us with a query regarding this payment.</p>
+          <p>Please follow the link below to return to the booking site.</p>
+          <p><a target="_top" href="https://bookings.ncsthechallenge.org/secure/pg/PaymentGatewayReturn.aspx">Continue</a> </p>
+        </div>
+          
+    </apex:outputPanel>  
+
+    
+    -->
+</apex:page>

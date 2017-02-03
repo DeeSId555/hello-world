@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>EOI reminder campaign (monthly)</name>
+    <style>formalLetter</style>
+    <subject>Remember us? Work placements on the NCS summer programme are filling up fast!</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact us on seasonalroles@the-challenge.org.
+
+Dear {!Contact.FirstName},
+
+We loved really meeting you recently and wanted to thank you again for registering your interest in becoming a seasonal staff member on the NCS programme.
+
+Just to refresh your memory:
+
+This summer The Challenge is hiring over 4,500 paid seasonal staff to support the 42,000 15-17 year olds that will take part in the programme. So whether you’re a confident leader, or more suited to supporting and mentoring young people in a pastoral setting, we have a role suitable for everyone’s skill and level of experience.
+
+Our seasonal roles are filling up fast!
+
+We’ve almost offered half of these roles already to successful applicants so we encourage you to get your application to us as soon as possible to have a better choice of work dates and locations.
+
+Still want further information about the roles that interested you? Have a look at all the seasonal roles on offer this summer.
+
+http://www.ncsthechallenge.org/jobs/
+
+
+What next?
+
+A profile has already been made for you on our staffing website based on the information you have already given us. All you need to do is use the login details below to access the ‘My Profile’ section to submit your personal details and then continue to the application form.
+
+Username: {!Contact.Email}
+Password: {!Contact.Login_Password__c}
+
+You can leave the application at any time and come back to it later - just remember to ‘save and exit’.
+
+Click here to login to the staffing website!
+
+https://staffing.the-challenge.org/Login.aspx?ReturnUrl=%2fsecure%2f
+
+
+Any questions?
+
+Don’t forget, if you’d like more information on the NCS programme or our seasonal roles, all the details and job descriptions can be found here and in FAQs.
+
+For specific queries about our seasonal roles or the application form, contact us on our general helpline: seasonalroles@the-challenge.org.
+
+We look forward to receiving your application!
+
+
+Best wishes,
+
+The Staffing Team
+The Challenge
+seasonalroles@the-challenge.org</textOnly>
+    <type>html</type>
+</EmailTemplate>

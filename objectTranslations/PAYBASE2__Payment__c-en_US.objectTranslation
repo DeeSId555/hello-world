@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account ID --></label>
+        <name>Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Help text --></label>
+        <name>Help_text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Refunded --></label>
+        <name>PAYBASE2__Amount_Refunded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>PAYBASE2__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Balance --></label>
+        <name>PAYBASE2__Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created From Account --></label>
+        <name>PAYBASE2__Created_From_Account__c</name>
+        <relationshipLabel><!-- Payonomy Payments (Created From Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created From Contact --></label>
+        <name>PAYBASE2__Created_From_Contact__c</name>
+        <relationshipLabel><!-- Payonomy Payments (Created From Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created From Lead --></label>
+        <name>PAYBASE2__Created_From_Lead__c</name>
+        <relationshipLabel><!-- Payonomy Payments (Created From Lead) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created From Opportunity --></label>
+        <name>PAYBASE2__Created_From_Opportunity__c</name>
+        <relationshipLabel><!-- Payonomy Payments (Created From Opportunity) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is Paid --></label>
+        <name>PAYBASE2__Is_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pay Date --></label>
+        <name>PAYBASE2__Pay_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Text --></label>
+        <name>PAYBASE2__Status_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>PAYBASE2__Status__c</name>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Address Check --></label>
+        <name>PAYCP2__Address_Check__c</name>
+        <picklistValues>
+            <masterLabel>Matched</masterLabel>
+            <translation><!-- Matched --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Checked</masterLabel>
+            <translation><!-- Not Checked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Matched</masterLabel>
+            <translation><!-- Not Matched --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Supplied</masterLabel>
+            <translation><!-- Not Supplied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Supported</masterLabel>
+            <translation><!-- Not Supported --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial Match</masterLabel>
+            <translation><!-- Partial Match --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>PAYCP2__Address_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>PAYCP2__Address_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- County --></label>
+        <name>PAYCP2__Address_County__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postcode --></label>
+        <name>PAYCP2__Address_Postcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>PAYCP2__Address_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorisation Code --></label>
+        <name>PAYCP2__Authorisation_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- CVV Check --></label>
+        <name>PAYCP2__CVV_Check__c</name>
+        <picklistValues>
+            <masterLabel>Matched</masterLabel>
+            <translation><!-- Matched --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Checked</masterLabel>
+            <translation><!-- Not Checked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Matched</masterLabel>
+            <translation><!-- Not Matched --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Supplied</masterLabel>
+            <translation><!-- Not Supplied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Supported</masterLabel>
+            <translation><!-- Not Supported --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial Match</masterLabel>
+            <translation><!-- Partial Match --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Card Expiry --></label>
+        <name>PAYCP2__Card_Expiry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Type --></label>
+        <name>PAYCP2__Card_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Created From Account --></label>
+        <name>PAYCP2__Created_From_Account__c</name>
+        <relationshipLabel><!-- Payonomy Payments (Old Created From Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Old Created From Contact --></label>
+        <name>PAYCP2__Created_From_Contact__c</name>
+        <relationshipLabel><!-- Payonomy Payments (Old Created From Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Old Created From Lead --></label>
+        <name>PAYCP2__Created_From_Lead__c</name>
+        <relationshipLabel><!-- Payonomy Payments (Old Created From Lead) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Old Created From Opportunity --></label>
+        <name>PAYCP2__Created_From_Opportunity__c</name>
+        <relationshipLabel><!-- Payonomy Payments (Old Created From Opportunity) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>PAYCP2__Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- FI Recipient Account Number --></label>
+        <name>PAYCP2__FI_Recipient_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- FI Recipient Date Of Birth --></label>
+        <name>PAYCP2__FI_Recipient_Date_Of_Birth__c</name>
+    </fields>
+    <fields>
+        <label><!-- FI Recipient Postcode --></label>
+        <name>PAYCP2__FI_Recipient_Postcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- FI Recipient Surname --></label>
+        <name>PAYCP2__FI_Recipient_Surname__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gateway Id --></label>
+        <name>PAYCP2__Gateway_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gateway Transaction Id --></label>
+        <name>PAYCP2__Gateway_Transaction_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Test --></label>
+        <name>PAYCP2__Is_Test__c</name>
+    </fields>
+    <fields>
+        <label><!-- Masked PAN --></label>
+        <name>PAYCP2__Masked_PAN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name On Card --></label>
+        <name>PAYCP2__Name_On_Card__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Description --></label>
+        <name>PAYCP2__Payment_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postcode Check --></label>
+        <name>PAYCP2__Postcode_Check__c</name>
+        <picklistValues>
+            <masterLabel>Matched</masterLabel>
+            <translation><!-- Matched --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Checked</masterLabel>
+            <translation><!-- Not Checked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Matched</masterLabel>
+            <translation><!-- Not Matched --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Supplied</masterLabel>
+            <translation><!-- Not Supplied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Supported</masterLabel>
+            <translation><!-- Not Supported --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial Match</masterLabel>
+            <translation><!-- Partial Match --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Vendor Transaction Id --></label>
+        <name>PAYCP2__Vendor_Transaction_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Status --></label>
+        <name>PAYSPCP1__Address_Status__c</name>
+        <picklistValues>
+            <masterLabel>Confirmed</masterLabel>
+            <translation><!-- Confirmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unconfirmed</masterLabel>
+            <translation><!-- Unconfirmed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bank Authorisation Code --></label>
+        <name>PAYSPCP1__Bank_Authorisation_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- CAVV --></label>
+        <name>PAYSPCP1__CAVV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decline Code --></label>
+        <name>PAYSPCP1__Decline_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fraud Response --></label>
+        <name>PAYSPCP1__Fraud_Response__c</name>
+        <picklistValues>
+            <masterLabel>Accept</masterLabel>
+            <translation><!-- Accept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Challenge</masterLabel>
+            <translation><!-- Challenge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deny</masterLabel>
+            <translation><!-- Deny --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Checked</masterLabel>
+            <translation><!-- Not Checked --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gift Aid --></label>
+        <name>PAYSPCP1__Gift_Aid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payer Status --></label>
+        <name>PAYSPCP1__Payer_Status__c</name>
+        <picklistValues>
+            <masterLabel>Unverified</masterLabel>
+            <translation><!-- Unverified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verified</masterLabel>
+            <translation><!-- Verified --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Redirect Parent --></label>
+        <name>PAYSPCP1__Redirect_Parent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Redirect URL --></label>
+        <name>PAYSPCP1__Redirect_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Security Key --></label>
+        <name>PAYSPCP1__Security_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Type --></label>
+        <name>PAYSPCP1__Transaction_Type__c</name>
+        <picklistValues>
+            <masterLabel>MOTO</masterLabel>
+            <translation><!-- MOTO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eCommerce</masterLabel>
+            <translation><!-- eCommerce --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- 3D Secure Status --></label>
+        <name>PAYSPCP1__X3D_Secure_Status__c</name>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incomplete</masterLabel>
+            <translation><!-- Incomplete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Authorised</masterLabel>
+            <translation><!-- Not Authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Available</masterLabel>
+            <translation><!-- Not Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Checked</masterLabel>
+            <translation><!-- Not Checked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ok</masterLabel>
+            <translation><!-- Ok --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The date/time that the email with the payment transaction ID, amount and payment status was sent to the cardholder --></help>
+        <label><!-- Payment status email sent to cardholder --></label>
+        <name>Payment_status_email_sent_to_cardholder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Receipt Email Address --></label>
+        <name>Receipt_Email_Address__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Base --></label>
+        <name>Base</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Cash --></label>
+        <name>Cash</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Cheque --></label>
+        <name>Cheque</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SagePay --></label>
+        <name>SagePay</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standing Order --></label>
+        <name>Standing_Order</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Worldpay --></label>
+        <name>Worldpay</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Amount must be greater than zero --></errorMessage>
+        <name>PAYBASE2__Amount_greater_than_zero</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Amount cannot be less than 1 --></errorMessage>
+        <name>PAYSPCP1__Amount_greater_than_1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Amount cannot be greater than 100,000 --></errorMessage>
+        <name>PAYSPCP1__Amount_less_than_100001</name>
+    </validationRules>
+</CustomObjectTranslation>

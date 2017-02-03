@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Updated for 2014 SN, check links in Jan</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>1.4.1 Staffing confirmation of assessment</name>
+    <style>freeForm</style>
+    <subject>Confirmation of assessment at NCS with The Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!HR_Event_Attendance__c.HR_Event_Owner_email__c}
+
+Dear {!HR_Event_Attendance__c.Candidate_Name__c},
+
+Thank you for booking onto your assessment,
+
+{!HR_Event__c.Date_time_location__c}
+
+In preparation for the assessment please:
+
+- Prepare two icebreaker games/exercises to share with the group. The ice breakers need to be no more than 2 minutes long and for a group size of 12.
+- Wear smart/casual comfortable clothing and appropriate footwear as there will be various group activities to undertake.
+- It is good to eat lunch before you come as there will only be a short break mid-afternoon with drinks and biscuits.
+-Due to the nature of the assessment it is difficult to admit late comers. If you are late it will be at our discretion if you are allowed to join the assessment on that day.
+- However, if you arrive very early we may have to ask you to wait outside due to space constraints at the venue.
+
+Click on the button below for directions to the assessment venue.
+https://na8.salesforce.com/email/{!HR_Event_Attendance__c.Directions__c}
+
+NCS with The Challenge is an equal opportunities employer. Please notify us of any disability that you have that may require reasonable adjustment on our part during the assessment.
+
+We look forward to meeting you!
+
+Best wishes,
+
+{!HR_Event__c.OwnerFullName}
+{!HR_Event_Attendance__c.HR_Event_Owner_email__c}
+{!HR_Event_Attendance__c.Contact_Owner_Phone__c}
+NCS with The Challenge
+
+CR 1.4.1</textOnly>
+    <type>html</type>
+</EmailTemplate>

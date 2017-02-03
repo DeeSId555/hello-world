@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Wave__c.Teams__r$Id</field>
+    </columns>
+    <columns>
+        <field>Wave__c$Zone__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c$Wave_Cluster__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c$Half_Clusters__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c$Boroughs_or_areas__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c$Name</field>
+    </columns>
+    <columns>
+        <field>Wave__c.Teams__r$Wave_Number__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c.Teams__r$Name</field>
+    </columns>
+    <columns>
+        <field>Wave__c.Teams__r$Team__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <column>Wave__c$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Wave__c.X2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave__c.Teams__r$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Bradford A Su 2 Ward,West Lancashire C Su 2 Ward,West Lancashire C Su 2 Sabesan,North Warwickshire B Su 2 Edwards,Wandsworth A Su 1 Ward,Richmond C Su 2 Reiss,Richmond C Su 2 Edwards,Hounslow B Su 2 Sabesan,Woking A Su 1 Perham,Hillingdon A Su 1 Edwards,Hillingdon A Su 2 Sabesan,Redbridge A Su 1 Ward,Southwark C Su 2 Ward,Greenwich A Su 3 Edwards,South Birmingham B Su 1 Ward,Kensington and Chelsea C Su 1 Reiss</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave__c$Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Leeds B Su 12,Bradford B Su 5,Wakefield C 4,Elmbridge A Su 7,Reigate &amp; Banstead B Su 2,Epsom &amp; Ewell A Su 1,Tandridge B Su 5,Bexley A Su 2,Lambeth B Su 11,Southwark c 12,Wandsworth A Su 2,Wandsworth A Su 11,Greenwich B Su 4,Merton A 12,Bexley A Su 11,Hammersmith &amp; Fulham C Su 11,West Lancashire C Su 2</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2016 Team Cancellations</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Waves_and_Teams__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Wave__c$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Wave__c$Big_Challenge_date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

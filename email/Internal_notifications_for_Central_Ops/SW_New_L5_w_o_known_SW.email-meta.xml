@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SW: New L5 w/o known SW</name>
+    <style>none</style>
+    <subject>New L5 w/o a known SW - Please seek a new SW</subject>
+    <textOnly>Hi
+
+Please see {!Contact.Name}&apos;s account. They are a level 5 w/o a previously known SW. Please seek a new SW for this account.
+
+Click on the link to view the record {!Contact.Link}
+
+This is a standard email, sent automatically whenever a level 5 is is shown to not already know a SW.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>Incomplete apps - all time (last page)</name>
+    <style>formalLetter</style>
+    <subject>NCS seasonal roles - get your application in before it&apos;s too late!</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact us on seasonalroles@the-challenge.org.
+
+Dear {!Contact.FirstName},
+
+Our NCS seasonal roles are the perfect way to spend your summer gaining experience, earning some money and truly making a difference within your local community. If you&apos;re still considering applying for one of our roles, what are you waiting for?
+
+You&apos;re just a few clicks away from a challenging, fun and rewarding summer - log into the staffing website now to complete your application.
+
+https://staffing.the-challenge.org/Login.aspx?ReturnUrl=%2fsecure%2f
+
+In case you need reminding, here are your login details:
+
+Username: {!Contact.Email}
+Password: {!Contact.Login_Password__c}
+
+Submit your application before midnight 31st April, and we will fast-track your application!
+
+Why should you get your application in soon?
+
+We&apos;ve offered over half our seasonal roles so far - get your application in soon to secure your preferred role
+Flexible roles - work a few days or a few months
+Gain valuable leadership skills and get paid during the summer months
+We have a huge variety of roles - we&apos;re bound to have one which suits you!
+
+Why the rush?
+
+We have just 2,000 roles left across the country, and less than two months left in our recruitment cycle - finish and submit your application as soon as possible to secure your preferred role and location.
+
+Any questions?
+
+If you have any questions about the NCS programme or the application process, please do get in touch - you an email us on our general helpline (seasonalroles@the-challenge.org) or contact inclusion.ss@the-challenge.org if you have any additional support needs to complete your application.
+
+
+We hope to receive your application soon!
+
+Best wishes,
+
+The Staffing Team
+The Challenge</textOnly>
+    <type>html</type>
+</EmailTemplate>

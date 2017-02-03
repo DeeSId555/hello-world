@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>MP Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>MP Requests</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- For &quot;Support on Constituency website&quot; requests, please enter the website here. --></help>
+        <label><!-- Constituency website --></label>
+        <name>Constituency_website__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please choose the MP for which this request relates to. --></help>
+        <label><!-- Contact --></label>
+        <lookupFilter>
+            <errorMessage><!-- Please choose an MP contact. --></errorMessage>
+        </lookupFilter>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- MP Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter the date the MP is attending --></help>
+        <label><!-- Date of visit --></label>
+        <name>Date_of_visit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please indicate whether the MP attended the programme. --></help>
+        <label><!-- Did they attend? --></label>
+        <name>Did_they_attend__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the Endorsement Quote of the MP here. --></help>
+        <label><!-- Endorsement Quote --></label>
+        <name>Endorsement_Quote__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Date 1 --></label>
+        <name>Event_Date_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Date 2 --></label>
+        <name>Event_Date_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Date 3 --></label>
+        <name>Event_Date_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Type 1 --></label>
+        <name>Event_Type_1__c</name>
+        <picklistValues>
+            <masterLabel>Assembly</masterLabel>
+            <translation><!-- Assembly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dinner/awards ceremony (guest)</masterLabel>
+            <translation><!-- Dinner/awards ceremony (guest) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dinner/awards ceremony (speaker)</masterLabel>
+            <translation><!-- Dinner/awards ceremony (speaker) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduation (guest)</masterLabel>
+            <translation><!-- Graduation (guest) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduation (speaker)</masterLabel>
+            <translation><!-- Graduation (speaker) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programme visit (dragon)</masterLabel>
+            <translation><!-- Programme visit (dragon) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programme visit (guest)</masterLabel>
+            <translation><!-- Programme visit (guest) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event Type 2 --></label>
+        <name>Event_Type_2__c</name>
+        <picklistValues>
+            <masterLabel>Assembly</masterLabel>
+            <translation><!-- Assembly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dinner/awards ceremony (guest)</masterLabel>
+            <translation><!-- Dinner/awards ceremony (guest) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dinner/awards ceremony (speaker)</masterLabel>
+            <translation><!-- Dinner/awards ceremony (speaker) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduation (guest)</masterLabel>
+            <translation><!-- Graduation (guest) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduation (speaker)</masterLabel>
+            <translation><!-- Graduation (speaker) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programme visit (dragon)</masterLabel>
+            <translation><!-- Programme visit (dragon) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programme visit (guest)</masterLabel>
+            <translation><!-- Programme visit (guest) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event Type 3 --></label>
+        <name>Event_Type_3__c</name>
+        <picklistValues>
+            <masterLabel>Assembly</masterLabel>
+            <translation><!-- Assembly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dinner/awards ceremony (guest)</masterLabel>
+            <translation><!-- Dinner/awards ceremony (guest) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dinner/awards ceremony (speaker)</masterLabel>
+            <translation><!-- Dinner/awards ceremony (speaker) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduation (guest)</masterLabel>
+            <translation><!-- Graduation (guest) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduation (speaker)</masterLabel>
+            <translation><!-- Graduation (speaker) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programme visit (dragon)</masterLabel>
+            <translation><!-- Programme visit (dragon) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programme visit (guest)</masterLabel>
+            <translation><!-- Programme visit (guest) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Previously called &quot; Has MP been contacted?&quot; --></help>
+        <label><!-- Invitation 1 sent? --></label>
+        <name>Has_MP_been_contacted__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Help Text --></label>
+        <name>Help_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select who from TCN is hosting the MP. --></help>
+        <label><!-- Host --></label>
+        <name>Host__c</name>
+        <relationshipLabel><!-- MP Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invitation 2 sent? --></label>
+        <name>Invitation_2_sent__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Invitation 3 sent? --></label>
+        <name>Invitation_3_sent__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MP Account --></label>
+        <name>MP_Account__c</name>
+        <relationshipLabel><!-- MP Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MP&apos;s Support Level --></label>
+        <name>MP_s_Support_Level__c</name>
+        <picklistValues>
+            <masterLabel>1 (fairly against NCS)</masterLabel>
+            <translation><!-- 1 (fairly against NCS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 (neutral)</masterLabel>
+            <translation><!-- 2 (neutral) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 (some lukewarm support)</masterLabel>
+            <translation><!-- 3 (some lukewarm support) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 (supportive)</masterLabel>
+            <translation><!-- 4 (supportive) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 (very supportive - contact for public statements on NCS)</masterLabel>
+            <translation><!-- 5 (very supportive - contact for public statements on NCS) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please choose a request --></help>
+        <label><!-- Request --></label>
+        <name>Request__c</name>
+        <picklistValues>
+            <masterLabel>Attend Graduation</masterLabel>
+            <translation><!-- Attend Graduation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attend RCA Day</masterLabel>
+            <translation><!-- Attend RCA Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dragon</masterLabel>
+            <translation><!-- Dragon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Endorsement quote</masterLabel>
+            <translation><!-- Endorsement quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Visit</masterLabel>
+            <translation><!-- General Visit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Community Leader</masterLabel>
+            <translation><!-- Local Community Leader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional Visit</masterLabel>
+            <translation><!-- Professional Visit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send letter to schools</masterLabel>
+            <translation><!-- Send letter to schools --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support on constituency website</masterLabel>
+            <translation><!-- Support on constituency website --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Season --></label>
+        <name>Season__c</name>
+        <picklistValues>
+            <masterLabel>Autumn</masterLabel>
+            <translation><!-- Autumn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring</masterLabel>
+            <translation><!-- Spring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summer</masterLabel>
+            <translation><!-- Summer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please choose an option for why the MP Request was unsuccessful. --></help>
+        <label><!-- Unsuccessful reason --></label>
+        <name>Unsuccessful_reason__c</name>
+        <picklistValues>
+            <masterLabel>Couldn&apos;t get through</masterLabel>
+            <translation><!-- Couldn&apos;t get through --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Not Attend</masterLabel>
+            <translation><!-- Did Not Attend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not available for any dates</masterLabel>
+            <translation><!-- Not available for any dates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not interested</masterLabel>
+            <translation><!-- Not interested --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please indicate whether the MP has agreed.  
+Previously called &quot;Visit agreed?&quot; --></help>
+        <label><!-- Visit or meeting 1 confirmed? --></label>
+        <name>Visit_agreed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Visit or meeting 2 confirmed? --></label>
+        <name>Visit_or_meeting_2_confirmed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Visit or meeting 3 confirmed? --></label>
+        <name>Visit_or_meeting_3_confirmed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please choose a wave that the MP is attending. --></help>
+        <label><!-- Wave attending --></label>
+        <name>Wave_attending__c</name>
+        <relationshipLabel><!-- MP Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Please select who initiated this request. --></help>
+        <label><!-- Who initiated the request --></label>
+        <name>Who_initiated_the_request__c</name>
+        <picklistValues>
+            <masterLabel>MP&apos;s office</masterLabel>
+            <translation><!-- MP&apos;s office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCN</masterLabel>
+            <translation><!-- TCN --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Advocacy --></label>
+        <name>X2013</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2013 Marketing --></label>
+        <name>X2013_Marketing</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Programmes --></label>
+        <name>X2013_Programmes_2</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- As you have put an address into constituency website you must select ‘support on constituency website’ or remove the address. --></errorMessage>
+        <name>Constituency_website_enforcement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please remove this date. --></errorMessage>
+        <name>Date_attending_programme</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Choose this option once the MP has attended the programme. --></errorMessage>
+        <name>Did_they_attend</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please ensure you have selected the right request. --></errorMessage>
+        <name>Endorsement_Quote_enforcement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please choose an option. --></errorMessage>
+        <name>Request_mandatory_field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select who initiated this request --></errorMessage>
+        <name>Who_initiated_request</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New_MP_Request --></label>
+        <name>New_MP_Request</name>
+    </webLinks>
+</CustomObjectTranslation>

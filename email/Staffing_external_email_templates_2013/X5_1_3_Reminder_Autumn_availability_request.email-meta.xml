@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Summer Staff with JP availability for the Autumn</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>5.1.3 Reminder Autumn availability request</name>
+    <style>freeForm</style>
+    <subject>Reminder to register for Work Opportunities</subject>
+    <textOnly>,Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+Dear {!Contact.FirstName},
+REMINDER
+
+WORK OPPORTUNITIES
+ 
+We emailed you last week to invite you to register your interest in working on our Autumn programme.
+
+If you haven&apos;t done this yet or would like to change your response please follow the link.
+
+NB. You will not be required to attend training.
+
+New Availability form: http://www.clicktools.com/survey?iv=1b49htgah35ov&amp;q1={!Job_Application__c.Id}
+
+CORE ROLES/YEAR ROUND ROLES
+
+For full time roles please follow the link to the web site and look under &apos;Year round roles&apos; for job description and application process.
+
+Details of all the roles and dates can be found on our web site here.
+
+http://www.the-challenge.org/index.php/support-us/work-for-us
+
+If you have any questions, please feel free to contact me. 
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.Contact_Owner_alternative_email__c}
+5.1.3 Reminder/ Autumn/Core</textOnly>
+    <type>html</type>
+</EmailTemplate>

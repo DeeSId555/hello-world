@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>B - PG Agreed future callback followup</name>
+    <style>none</style>
+    <subject>NCS - thanks for talking to us &amp; how to apply</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTheChallenge.org
+
+Thanks for talking to us...
+
+
+
+Dear Parent or Guardian of {!Contact.FirstName},
+
+Thank you for taking the time to talk to us about NCS today. We hope you are excited about this opportunity for {!Contact.FirstName} to develop skills which look great on a CV or UCAS application - and to have fun along the way!
+
+How do I apply?
+As we discussed on the phone, it’s easy to sign up online, and online applications receive a £5 discount. Parents or guardians should follow this link and use these parent or guardian specific login details to start their application:
+
+NCS ID: {!Contact.NCS_ID__c}
+Temporary password: {!Contact.PG_NCS_PIN__c}
+
+Once you log in, you will be asked to set you own password which will replace the above details. If you forget the password which you set yourself, you can recover your log in details through the &quot;Forgotten password?&quot; link on the log in page, by entering your email address.
+
+Young people have separate log in details to parents or guardians, as parts of the application can only be done by parents or guardians. Young people will be sent their own log in details separately and can also recover them through the &quot;Forgotten password?&quot; link, by using their own email addresses if they need to.
+
+When is the programme running?
+The programme has four parts which run over 18 days in the summer, usually with beaks in between each part. The programme structure is as follows:
+
+Part 1 Get Active - residential (5 days, 4 nights)
+Part 2 Get Involved - residential (5 days, 4 nights)
+Part 3a Make your Mark - non-residential (4 days)
+Part 3b Make your Mark - non residential, social action days (4 days)
+
+
+There are plenty of programme dates throughout the summer for you to chose from.
+
+The meeting points for NCS will generally be based in the area of the young person&apos;s school or a nearby area.
+
+How much does it cost?
+Government funding means that NCS costs you no more than a £50 admin fee, even though each place is valued at over £1000.  Plus, you get an extra £5 discount when you sign up online. This cost covers accommodation, food and transport when staying away from home during Part 1, as well as all activities and equipment throughout NCS. As we believe that cost should never be a barrier to taking part, financial assistance can also be requested when signing up.
+
+What are the benefits?
+NCS is an exciting, part-residential youth programme that builds skills and confidence in 16-17 year olds to help them get ahead in work and life. It’s the perfect opportunity to develop skills which look great on a CV or UCAS application - and to make friends along the way! Over 130,000 young people have already taken part in NCS. To find out more information about the benefits of the programme visit our website.
+
+More questions?
+If you have any queries before sign-up, take a look at our Questions page, or contact us at contact@ncsthechallenge.org or on 0203 542 2400. We’d be happy to hear from you.
+
+Places are limited so apply soon - don’t miss out on this once-in-a-lifetime opportunity!
+
+Yours sincerely,
+
+Tanya Dunne
+Head of Customer Services
+The Challenge (largest provider of NCS)
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

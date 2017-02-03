@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Batching board transaction delay in ms --></label>
+        <name>TASKRAY__trChangeItemDebounceDelay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deprecated (Do Not Use) --></label>
+        <name>TASKRAY__trCompletionPercentageInFuture__c</name>
+    </fields>
+    <fields>
+        <help><!-- This toggles TaskRay&apos;s checks for updates from other users. Disabling it will have less impact on Salesforce servers, but there may be issues regarding multiple users updating the same tasks.
+
+Default value is &quot;Checked&quot; --></help>
+        <label><!-- Notification Polling Enabled --></label>
+        <name>TASKRAY__trConcurrency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Contact Support link --></label>
+        <name>TASKRAY__trContactSupportOverride__c</name>
+    </fields>
+    <fields>
+        <label><!-- Create repeat tasks in the future --></label>
+        <name>TASKRAY__trCreateRepeatInFuture__c</name>
+    </fields>
+    <fields>
+        <label><!-- trCustomCSSURL --></label>
+        <name>TASKRAY__trCustomCSSURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Dependencies --></label>
+        <name>TASKRAY__trEnableDependencyUpdates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retry transaction on lock exceptions --></label>
+        <name>TASKRAY__trEnableRecordLockRetry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Slack Integration --></label>
+        <name>TASKRAY__trEnableSlackIntegration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Time Tracking --></label>
+        <name>TASKRAY__trEnableTimeTracking__c</name>
+    </fields>
+    <fields>
+        <label><!-- trGridBuddyURLForProject --></label>
+        <name>TASKRAY__trGridBuddyURLForProject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hide Contact Support link --></label>
+        <name>TASKRAY__trHideContactSupport__c</name>
+    </fields>
+    <fields>
+        <label><!-- List Color 1 --></label>
+        <name>TASKRAY__trListColor_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- List Color 2 --></label>
+        <name>TASKRAY__trListColor_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- List Color 3 --></label>
+        <name>TASKRAY__trListColor_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- List Color 4 --></label>
+        <name>TASKRAY__trListColor_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- List Color 5 --></label>
+        <name>TASKRAY__trListColor_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- List Color 6 --></label>
+        <name>TASKRAY__trListColor_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- List Color 7 --></label>
+        <name>TASKRAY__trListColor_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- List Color 8 --></label>
+        <name>TASKRAY__trListColor_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- List Color 9 --></label>
+        <name>TASKRAY__trListColor_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lock Down Sharing on New Projects --></label>
+        <name>TASKRAY__trLockDownSharingOnNewProjects__c</name>
+    </fields>
+    <fields>
+        <label><!-- Public group hierarchy query level --></label>
+        <name>TASKRAY__trNestedGroupHierarchy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Toggle off locking for board transaction --></label>
+        <name>TASKRAY__trNoLockChangeItemUpdates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opt out of TaskRay Sort Order updates --></label>
+        <name>TASKRAY__trOptOutOfSortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opt out of standard TaskRay sharing --></label>
+        <name>TASKRAY__trOptOutOfTRSharing__c</name>
+    </fields>
+    <fields>
+        <help><!-- This value is the interval that TaskRay checks for updates from other users. This value can range from 5 to 99 seconds, with a default value of 10. Higher values reduce Salesforce server impact but increase the time period between update notifications. --></help>
+        <label><!-- Polling Interval --></label>
+        <name>TASKRAY__trPollingInterval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Run transactions via worker --></label>
+        <name>TASKRAY__trRunTransactionsInWorker__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deprecated (Do Not Use) --></label>
+        <name>TASKRAY__trRunTransactionsOnMainThread__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Label Color 1 --></label>
+        <name>TASKRAY__trTaskLabelColor_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Label Color 2 --></label>
+        <name>TASKRAY__trTaskLabelColor_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Label Color 3 --></label>
+        <name>TASKRAY__trTaskLabelColor_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Label Color 4 --></label>
+        <name>TASKRAY__trTaskLabelColor_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Label Color 5 --></label>
+        <name>TASKRAY__trTaskLabelColor_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Label Color 6 --></label>
+        <name>TASKRAY__trTaskLabelColor_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Label Color 7 --></label>
+        <name>TASKRAY__trTaskLabelColor_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Label Color 8 --></label>
+        <name>TASKRAY__trTaskLabelColor_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Label Color 9 --></label>
+        <name>TASKRAY__trTaskLabelColor_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- trTasksOnBoardLimit --></label>
+        <name>TASKRAY__trTasksOnBoardLimit__c</name>
+    </fields>
+</CustomObjectTranslation>

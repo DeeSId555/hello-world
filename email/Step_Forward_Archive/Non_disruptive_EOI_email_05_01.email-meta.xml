@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to all EOIs who are yet to submit an application</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Non-disruptive EOI email 05/01</name>
+    <style>none</style>
+    <subject>Apply now to secure your future!</subject>
+    <textOnly>Step Forward into 2016!
+
+
+Dear {!Contact.FirstName},
+
+The UCAS deadline is fast approaching and we wanted to make sure that you don’t miss out on Step Forward. Our 12 month paid work placement will help you get ahead whether you plan to go onto uni after a year with us, straight into the world of work or if you’re just not sure.
+
+Take the next step and make sure you apply today to be considered for our next assessment event!
+
+www.stepforward.uk.com
+
+“There is another path - the school leaver path - that is just as beneficial, just as developed, just as qualified as university”
+- Shereez Dharsey, Future Foundations
+
+
+Remind me again, what is Step Forward?
+
+Step Forward is a London based 12 month programme for school and college leavers. People who graduate from Step Forward will gain:
+
+Invaluable experience with quality employers
+Comprehensive personal and professional development training
+A nationally recognised qualification
+The advice and support of a trained mentor
+£9000 salary
+
+
+
+And don&apos;t just take our word for it...
+
+Roisin is an Associate on our Early Years Education pathway and also one of our resident bloggers. She shared her journey to the Step Forward programme.
+
+“After perhaps the 20th pros and cons list, I decided that Step Forward would be the best option for me. Three months into the programme and I know I made the right decision, even though I still want to explore other careers after university. Step Forward is a brilliant option for all types of people, especially for those who have no real idea about what to do after school. Bring on the rest of the year!”
+
+
+To read more of Roisin’s story and other hints tips and stories visit our blog now.
+
+
+What next?
+
+You can secure your future today by filling out our 10 minute application. Please login to our website using your email address and the password below.
+
+www.stepforward.uk.com
+
+Email: {!Contact.Email}
+
+Password: {!Contact.Login_Password__c}
+
+If this is your first time logging in you will need to use your pin.
+
+Pin: {!Contact.Login_PIN__c}
+
+In order to be considered for our next assessment events in the New Year we must receive your application by midnight on Sunday 10th January. Step Forward is a competitive programme, and places are limited so don’t miss out!
+
+If you have any problems logging in please contact step.forward@the-challenge.org or call us on 020 3542 2404 and we are option 5.
+
+Best wishes,
+
+Step Forward
+
+The Challenge Network is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 39 York Rd, London SE1 7NQ</textOnly>
+    <type>custom</type>
+</EmailTemplate>

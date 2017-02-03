@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Job_Application__c$Name</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c$Contact__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c$Staffing_Zone__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Job_placements__r$Status__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c$Feedback_decision__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c$Recommendation_for_next_year__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c$Send_feedback_invite_to_reapply__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Job_Application__c$Role_to_assess_for__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Senior Associate Mentor,Associate Mentor</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Job_Application__c.Job_Application_post_screen_2013</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c$Contact__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>test,staffing</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2013 Feedback (invite to apply) list</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Job_Applications_Job_Placements_and_Feedback__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Job_Application__c$Assignment_end_date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

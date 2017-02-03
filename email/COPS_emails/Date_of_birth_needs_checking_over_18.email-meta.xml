@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto-notification sent to Anna Grace when Birthdate LESS THAN 31/08/1995)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Date of birth needs checking over 18</name>
+    <style>none</style>
+    <subject>YP has date of birth outside of age limit</subject>
+    <textOnly>Hi Anna,
+
+Please look at {!Contact.Name}&apos;s record as their date of birth  indicates that they are over 18.
+Click on this link to see the record: {!Contact.Link}
+
+This is a standard email, sent automatically when a date of birth is flagged to be over 18</textOnly>
+    <type>custom</type>
+</EmailTemplate>

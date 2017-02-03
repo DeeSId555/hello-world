@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sends to Finance when Date adhoc advance requested is entered</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Ad hoc advance: approval request</name>
+    <style>none</style>
+    <subject>Please review a {!Job_placement__c.Ad_hoc_advance_urgency__c} priority ad hoc advance request from {!Job_placement__c.Staffing_Associate__c}</subject>
+    <type>text</type>
+</EmailTemplate>

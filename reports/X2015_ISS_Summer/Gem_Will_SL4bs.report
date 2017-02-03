@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Inclusion_Details__c.Details_of_mental_heath_condition__c</field>
+    </columns>
+    <columns>
+        <field>Inclusion_Details__c.Mental_health_condition__c</field>
+    </columns>
+    <columns>
+        <field>Inclusion_Details__c.Other_learning_difficulties__c</field>
+    </columns>
+    <columns>
+        <field>Inclusion_Details__c.Statement_of_SEN__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Inclusion_Details__c.Mental_health_condition__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>includes</operator>
+            <value>Anxiety,Panic Attacks</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Inclusion_Details__c.Mental_health_condition__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>excludes</operator>
+            <value>Obsessive compulsive disorder (OCD),Depression,Other mental health condition</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Inclusion_Details__c.Mental_health_history__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Current,Recent (happened within the last year)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Inclusion_Details__c.Date_P3_Screened__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.Access_category_2_6__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Gem:Will SL4bs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Inclusion_Details__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

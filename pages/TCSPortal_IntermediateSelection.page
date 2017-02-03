@@ -1,0 +1,108 @@
+<apex:page cache="false" sidebar="false" standardStylesheets="false" showHeader="false" controller="TCSPortal_IntermediateSelection">
+ <script>
+                 
+    function showModal(){
+    $('#forgot').modal({
+        show : true
+    });
+    }
+    function hideModal(){
+    $('#forgot').modal('hide');
+    }
+        </script>
+<html>
+    <head>
+        <style>
+.button2{
+         
+        height:170px; 
+        width:260px; 
+        margin-top:2%;
+        border: solid 8px; 
+        border-color:#B31217; 
+        font : 32px "Dirty", Arial, Helvetica; 
+        background :white;
+        border-radius:15px;
+        }
+  .button1{
+        height:65px;
+        margin-top:2%;
+        border: solid 4px; 
+        border-color:#B31217; 
+        font : 20px "Dirty", Arial, Helvetica; 
+        background :white;
+        border-radius:15px;
+        }     
+        </style>
+    </head>
+    
+    <body>    
+        
+        <apex:form >
+        <apex:composition template="PortalTemplate">
+        
+            <apex:define name="TopDiv">
+            <!---------------- MENU -------------------------->
+               
+                  
+            </apex:define>
+            <apex:define name="MidDiv">
+               
+               <!--------------- Mid Div ------------------>
+               <center>
+               <div style="margin-top:2%; margin-bottom:4%;">          
+                <apex:outputText styleClass="optext" value="what would you like to do?"></apex:outputText> <br />
+                <apex:outputPanel >
+                    <a href="{!CASE(id,'SignpostingOpportunity','a1W/e?CF00NC0000005FT9e='+$CurrentPage.parameters.cname+'&CF00NC0000005FT9e_lkid='+$CurrentPage.parameters.cid+'&saveURL=/TCSPortal_TCSAttList?id='+$CurrentPage.parameters.cid+'&retURL=/TCSPortal_ContactDetail?id='+$CurrentPage.parameters.cid,'PersonalCoach','a1R/e?CF00NC0000005Ex4w='+$CurrentPage.parameters.pname+'&CF00NC0000005Ex4w_lkid='+$CurrentPage.parameters.pid+'&retURL=/TCSPortal_ContactDetail?id='+$CurrentPage.parameters.cid, 'Hours', 'a0q/e?CF00NC0000005E41h='+$CurrentPage.parameters.cname+'&CF00NC0000005E41h_lkid='+$CurrentPage.parameters.cid+'&retURL=/TCSPortal_ContactDetail?id='+$CurrentPage.parameters.cid, '#')}" onclick="{!IF(id=='MeetingEvent', 'showModal();','')}" class="btn btn-large button2" style="margin-right:10%;">
+                        <table style="height:100%; width:100%"><center><tr><td valign="middle" style="text-align:center;">add a new {!EventType}</td></tr></center></table></a>
+                    <a href="{!CASE(id,'SignpostingOpportunity','TCSPortal_TCSAttList?id='+$CurrentPage.parameters.cid+'&cid='+$CurrentPage.parameters.cid,'PersonalCoach','TCSPortal_PersonalCoachMeetingList?id='+$CurrentPage.parameters.pid+'&cid='+$CurrentPage.parameters.cid+'&pcname='+$CurrentPage.parameters.pname+'&pcid='+$CurrentPage.parameters.pid,'Hours','TCSPortal_HoursList?id='+$CurrentPage.parameters.cid+'&cid='+$CurrentPage.parameters.cid+'&cname='+$CurrentPage.parameters.cname, 'MeetingEvent', 'TCSPortal_MeetingEventList?id='+$CurrentPage.parameters.cid+'&cid='+$CurrentPage.parameters.cid, '')}" class="btn btn-large button2">
+                        <table style="height:100%;"><tr><td valign="middle">view existing {!EventType}s</td></tr></table></a>
+               </apex:outputPanel>
+                  <div id="forgot" class="modal hide fade in">
+                            <div class="modal-body">
+                               
+                                <p class="optext">select the event or meeting type </p>
+                                
+                                 <apex:selectList value="{!SelectedEventType}" size="1" style="width:400px;" >
+                                     <apex:actionSupport event="onchange" action="{!getEventTypes}" reRender="mymodal"/>
+                                       <apex:selectOptions value="{!options}"/>
+                                 </apex:selectList>
+                              <apex:outputPanel id="mymodal" style="float:left;" >
+                                 <apex:pageBlock title="Matching Events">
+                                     <apex:pageBlockTable value="{!ListCampaign}" var="campaign">
+                                         <apex:column >
+                                             <apex:outputLink value="{!$Page.TCSPortal_CampHistCreation}?campid={!campaign.id}&contactid={!$CurrentPage.parameters.cid}">{!campaign.name}</apex:outputLink>
+                                         </apex:column>
+                                     </apex:pageBlockTable>
+                                 </apex:pageBlock>
+                          </apex:outputPanel>
+                                </div>
+                               
+                                <div class="modal-footer">
+                                    <a data-dismiss="modal" href="#" class="btn btn-medium btn-danger">Cancel</a>
+                                </div>
+                  </div>
+                  
+               </div> 
+               </center>      
+            </apex:define>
+            <apex:define name="BotDiv">
+            <center>
+                <apex:outputLink styleClass="optext btn button1" value="{!$Page.TCSPortal_ContactDetail}?id={!$CurrentPage.parameters.cid}">back to <br/> {!$CurrentPage.parameters.cname}</apex:outputLink>
+            </center>
+            </apex:define>
+        </apex:composition>
+      </apex:form> 
+        
+    </body>
+    
+    <style>
+    
+    .scrollspy-example {
+height: 250px;
+overflow: auto;
+position: relative;
+    
+    </style>
+</html>
+</apex:page>

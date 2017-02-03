@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent to campaign owner when Challenger overbooking maximum is reached</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Campaign 120% overbooking max warning</name>
+    <style>none</style>
+    <subject>Alert: {!Campaign.Name} grad attendance registration has reached 120% overbooking max</subject>
+    <type>text</type>
+</EmailTemplate>

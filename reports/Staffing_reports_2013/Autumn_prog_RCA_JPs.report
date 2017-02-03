@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Job_placement__c$Name</field>
+    </columns>
+    <columns>
+        <field>Job_placement__c$Contact__c</field>
+    </columns>
+    <columns>
+        <field>Job_placement__c$Role__c</field>
+    </columns>
+    <columns>
+        <field>Job_placement__c$RCA_day__c</field>
+    </columns>
+    <columns>
+        <field>Job_placement__c$Team_lookup__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Job_placement__c$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>RCA 1,Job_placement__c.RCA_2</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Job_placement__c$Job__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Job_placement__c$RecordType</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Autumn prog RCA JPs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Job_Placements__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Job_placement__c$Assignment_end_date__c</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Feedback__c$Name</field>
+    </columns>
+    <columns>
+        <field>Feedback__c$Contact_Name__c</field>
+    </columns>
+    <columns>
+        <field>Feedback__c$Feedback_rating__c</field>
+    </columns>
+    <columns>
+        <field>Feedback__c$Submitted_by__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Feedback__c$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Feedback__c.APM_Feedback_summer_staff</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Feedback__c$Feedback_rating__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Feedback__c$CreatedDate</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>6/1/2013 12:00 AM</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2013 Core Staff ratings of Summer Staff</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Feedback__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Feedback__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

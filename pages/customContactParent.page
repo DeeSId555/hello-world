@@ -1,0 +1,10 @@
+<apex:page controller="contactControllerExtension">    
+    <apex:form id="idForm"> 
+        <apex:pageBlock title="Parent/Guardian">            
+                <apex:detail subject="{!$User.ContactId}" title="false"/>            
+        </apex:pageBlock>
+        <apex:pageBlock title="Young Person">
+                <apex:detail subject="{!contactoYoung.Id}" title="false"/>    
+        </apex:pageBlock>        
+    </apex:form>    
+</apex:page>

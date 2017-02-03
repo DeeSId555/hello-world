@@ -1,0 +1,143 @@
+<apex:page sidebar="false" standardStylesheets="false" showHeader="false" >
+<html>
+    <head>
+        <apex:includeScript value="{!URLFOR($Resource.Bootstrap,'js/bootstrap.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.Bootstrap,'jquery-1.7.2.js')}"/>
+        <apex:stylesheet value="{!URLFOR($Resource.Bootstrap,'css/bootstrap.css')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.BootstrapModal,'bootstrap-modal.js')}"/>
+   
+    <style>
+    @font-face{
+            font-family : "Dirty";
+            src: url("{!URLFOR($Resource.dirtyfont, 'DirtyFont/fonts/DirtyHeadline.ttf')}") format('truetype');
+          }
+    .optext{
+            font : 20px "Dirty", Arial, Helvetica;
+            text-align:center;
+            color: #130C0E;
+            
+        }
+    
+    .topdiv{
+            width:1200px;
+            height:175px;
+            border:solid 1px;
+            border-bottom:solid 8px;
+            border-color:#D9D9D9;
+            margin-top:20px;
+            }
+    .middiv{
+            width:1200px;
+           // height:400px;
+            position:relative;
+            border:solid 1px;
+            border-top:solid 4px;
+            border-bottom:solid 8px;
+            border-color:#D9D9D9;
+            }
+    .botdiv{
+            position:obsolute;
+            width:1200px;
+            height:150px;
+            border:solid 1px;
+            border-top:solid 4px;
+            border-color:#D9D9D9;
+            }
+    .logo{
+            float:left; 
+            margin:20px;
+            width:300px;
+          }
+   .buttonTemp{
+            height:120px; 
+            width:240px;
+            border: solid 4px; 
+            border-color:#B31217; 
+            background :white;
+            border-radius:10px;
+            font-size:18px;
+         }
+ .buttonTempHead{
+            background :white;
+            font-size:18px;
+            text-color: #130C0E;
+            font-size:32px;
+            display:block;
+           
+         }
+ .fieldLabel{
+         font-weight:bold; 
+         float:right;
+         text-align:right;
+         margin-right:10%;
+ }   
+ a:hover{
+     color: #130C0E;
+     text-decoration:none; 
+ }    
+    </style>
+     </head>
+    <body>
+    <apex:outputPanel rendered="{!IF(ISPICKVAL($User.UserType,'Guest'),true,false)}"> 
+       <div style="margin-left:42%; margin-top:20%;"> 
+         <a style="font-size:42px;" class="btn buttonTemp optext" href="{!$Page.Login}"> You need to log in</a>
+        </div>
+      </apex:outputPanel>
+      <apex:outputPanel rendered="{!IF(ISPICKVAL($User.UserType,'Guest'),false,true)}"> 
+        <!-- ------------------First Part Of The Page----------------------- -->
+        
+     <div class="container topdiv">
+        <div style="margin-left:2%;">
+           <table style="width:100%; height:100%;">
+               <tr>
+                   <td style="width:30%; height:100%; margin-right:5%;"><apex:image value="{!$Resource.TCNLogo}"/></td>
+                  
+                   <td style="width:10%;"><center><a style="hover:" class="buttonTempHead optext" href="{!$Page.TCNPortal_Home}">Home</a>
+                    <br/>  <apex:image height="15px" value="{!$Resource.TCS_HomeLine}"/></center>   
+                   </td>
+                   <td><apex:image style="margin-top:-25px;" value="{!$Resource.TCSPortal_Separator}"/></td>
+                   
+                   <td style="width:15%;"><center><a  class="buttonTempHead optext" href="{!$Page.TCNPortal_ContactHome}?j_id0%3Aj_id2%3Aj_id29%3Afcf=00BC0000008mrsA">Contacts</a>
+                   <br/> <apex:image height="15px" value="{!$Resource.TCS_ContactLine}"/></center>
+                   </td>
+                   <td><apex:image style="margin-top:-25px;" value="{!$Resource.TCSPortal_Separator}"/></td>
+                   
+                  
+                   <td style="width:20%;"><apex:outputPanel layout="block" style="margin-top:-10px;"><center><a href="{!$Page.TCSPortal_VolunteeringOpportunity}" class="buttonTempHead optext">
+                   signposting<h3 class="buttonTempHead optext" style="line-height:10px;"> opportunities</h3> </a>
+                   <br/> <apex:image height="15px" value="{!$Resource.TCS_SignpostingLine}"/></center>
+                   </apex:outputPanel></td>
+                   
+                   <td><apex:image style="margin-top:-25px;" value="{!$Resource.TCSPortal_Separator}"/></td>
+                   <td style="width:15%;"><center><a class="buttonTempHead optext" href="{!$Page.TCSPortal_MeetingEventList}">events</a>
+                   <br/> <apex:image height="15px" value="{!$Resource.TCS_EventLine}"/></center>
+                       
+                   </td>
+                   <td style="width:10%;" valign="top"><a style="margin-right:4%; margin-top:4%; float:right;" href="/TCS/secur/logout.jsp">
+                   <apex:image value="{!$Resource.TCS_logout}"/></a></td>
+               </tr>
+                  
+              
+           </table> 
+        </div>
+
+                <apex:insert name="TopDiv"/>
+            </div>
+            
+        <!-- ------------------Second Part Of The Page---------------------- -->    
+        
+            <div class="container middiv">
+                 <apex:insert name="MidDiv"/>
+            </div>
+            
+        <!-- ------------------Third Part Of The Page----------------------- -->    
+        
+            <div class="container botdiv">
+                 <apex:insert name="BotDiv"/>
+            </div>
+    
+     </apex:outputPanel>
+     
+    </body>
+</html>
+</apex:page>

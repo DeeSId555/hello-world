@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>CCT: please do not delete or use this email template. It has been created to help resolve an issue with iContact</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Template for testing: iCONTACT SUPPORT</name>
+    <style>none</style>
+    <subject>Thank you for registering interest in NCS with The Challenge!</subject>
+    <textOnly>NCS POWERED BY THE CHALLENGE
+
+Complete your application for
+NCS with The Challenge today!
+
+
+Dear {!Contact.FirstName},
+
+Thank you for expressing an interest in NCS with The Challenge!
+
+We recently gave an assembly at your school in which you gave us some contact details. However, we did not receive a home address and so are unable to post you an application form.
+
+The quickest way to apply is online. We already have an account for you, so to continue your application please log in here to complete your application.
+
+Your log in details are as follows:
+
+ChallengeID: {!Account.TCNAccountID__c}
+Password: {!Contact.Login_Password__c}
+
+Submitting your application online will give you a £5 online discount!
+
+NCS with The Challenge is a fun and action packed part-residential programme designed exclusively for 15-17 year olds. On the programme, you will build self-confidence as well as skills in leadership, teamwork and communication. Employers and universities also recognise the unique value of the programme, helping you to stand out in the future.
+
+While we offer a wide range of start dates, there are a limited number of places available on each date. The quickest and easiest way to confirm a place is through our website. Please visit NCSTheChallenge.org for more information about the programme and to sign up today!
+
+If you have any further questions, please visit our online FAQs. Alternatively you can email us at contact@the-challenge.org.
+
+Yours sincerely,
+
+
+
+Rebecca Carter
+Director at The Challenge
+
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Copy checked and new work flow please (AO)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>1.6.6.a PV Offer, training</name>
+    <style>freeForm</style>
+    <subject>Re: Your assessment with The Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+Dear {!Contact.FirstName}
+
+Following your assessment at The Challenge we are delighted to offer you the role of {!Job_Application__c.Role_to_assess_for__c}.
+
+
+
+This role will allow you to gain experience working with young people that could lead to paid employment in the future.
+
+
+
+This offer is conditional upon the completion of your essential information which includes the receipt of a satisfactory enhanced DBS and references
+
+
+
+What do you need to do now?
+
+
+
+We have now created a profile for you on our Staffing Website so that you can update and monitor all the information we need from you.
+
+NB This website is for all staff and so some parts may not be applicable to the Project Volunteer role. Please read the heading for each page carefully. You will find further information in the FAQ&apos;s.
+
+
+
+
+Your login details are:
+
+
+
+Username: {!Contact.Email}
+
+
+
+Password: {!Contact.Login_Password__c}
+
+
+
+Once you have logged in, click on ‘My Profile’. At the bottom of your profile there is an option to update your password.
+
+
+
+Click here to go to the Staffing Website
+
+
+
+Training
+
+
+
+Please use the bookings page to register for your training session at the end of August. Training is compulsory and it will give you a chance to meet the team you will be working with in September.
+
+
+http://thechallenge.secure.force.com/AvailableDates?key={!Job_Application__c.ContactId__c}&amp;Type={!Job_Application__c.00NC0000005EVyp}&amp;JType={!Job_Application__c.Id}
+
+
+
+Congratulations again, on your success and we look forward to working with you on NCS with The Challenge.
+
+
+Best wishes,
+
+
+
+{!Contact.OwnerFullName}
+{!Contact.OwnerPhone}
+{!Contact.Contact_Owner_alternative_email__c}
+NCS with The Challenge
+
+CR 1.6.6 a</textOnly>
+    <type>html</type>
+</EmailTemplate>

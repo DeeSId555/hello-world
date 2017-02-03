@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Step Forward Associate Attendance</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Step Forward Associates Attendance</value>
+    </caseValues>
+    <fields>
+        <label><!-- Areas of Development --></label>
+        <name>Areas_of_Development__c</name>
+    </fields>
+    <fields>
+        <label><!-- Areas of Strength --></label>
+        <name>Areas_of_Strength__c</name>
+    </fields>
+    <fields>
+        <label><!-- Associate Email --></label>
+        <name>Associate_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Associate First Name --></label>
+        <name>Associate_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Associate Last Name --></label>
+        <name>Associate_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Associate StepFwd Mobile --></label>
+        <name>Associate_StepFwd_Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Availability Request Reason Not Availabl --></label>
+        <name>Availability_Request_Reason_Not_Availabl__c</name>
+    </fields>
+    <fields>
+        <help><!-- used as a part of the workflow to prevent YPs from changing the status --></help>
+        <label><!-- Availability Request Response --></label>
+        <name>Availability_Request_Response__c</name>
+        <picklistValues>
+            <masterLabel>Available for Interview</masterLabel>
+            <translation><!-- Available for Interview --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>unavailable for Interview</masterLabel>
+            <translation><!-- unavailable for Interview --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Briefing Call Result --></label>
+        <name>Briefing_Call_Result__c</name>
+        <picklistValues>
+            <masterLabel>Call Successful</masterLabel>
+            <translation><!-- Call Successful --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response</masterLabel>
+            <translation><!-- No Response --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Call notes --></label>
+        <name>Call_notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call notes input --></label>
+        <name>Call_notes_input__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact telephone number --></label>
+        <name>Contact_telephone_number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Creates Step Forward Job Placement --></help>
+        <label><!-- Create Step Forward Job Placement --></label>
+        <name>Create_Step_Forward_Job_Placement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Availability Request Sent --></label>
+        <name>Date_Availability_Request_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Availability Response received --></label>
+        <name>Date_Availability_Response_received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Interview details sent --></label>
+        <name>Date_Interview_details_sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Call YP within 1 day of JD email. --></help>
+        <label><!-- Date JD Warm up call made --></label>
+        <name>Date_JD_Warm_up_call_made__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date/Time into Text Converter --></label>
+        <name>Date_Time_into_Text_Converter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date briefing call made --></label>
+        <name>Date_briefing_call_made__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date feedback form completed by Employer --></label>
+        <name>Date_feedback_form_completed_by_Employer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date feedback form completed by YP --></label>
+        <name>Date_feedback_form_completed_by_YP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date feedback form sent to Employer --></label>
+        <name>Date_feedback_form_sent_to_Employer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Auto email sent 2 hours after the interview. --></help>
+        <label><!-- Date feedback form sent to YP --></label>
+        <name>Date_feedback_form_sent_to_YP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date replied to Time Slot+ JD email --></label>
+        <name>Date_replied_to_Time_Slot_JD_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration of Interview --></label>
+        <name>Duration_of_Interview__c</name>
+    </fields>
+    <fields>
+        <help><!-- Employer Interview Feedback: Attitude: The candidate was enthusiastic about the role --></help>
+        <label><!-- EIF Attitude --></label>
+        <name>EIF_Attitude__c</name>
+        <picklistValues>
+            <masterLabel>1 – Strongly disagree</masterLabel>
+            <translation><!-- 1 – Strongly disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 – Disagree</masterLabel>
+            <translation><!-- 2 – Disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 – Neither agree nor disagree</masterLabel>
+            <translation><!-- 3 – Neither agree nor disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 – Agree</masterLabel>
+            <translation><!-- 4 – Agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 – Strongly agree</masterLabel>
+            <translation><!-- 5 – Strongly agree --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Employer Interview Feedback: Culture: The candidate understood our workplace culture and would fit in well --></help>
+        <label><!-- EIF Culture --></label>
+        <name>EIF_Culture__c</name>
+        <picklistValues>
+            <masterLabel>1 – Strongly disagree</masterLabel>
+            <translation><!-- 1 – Strongly disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 – Disagree</masterLabel>
+            <translation><!-- 2 – Disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 – Neither agree nor disagree</masterLabel>
+            <translation><!-- 3 – Neither agree nor disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 – Agree</masterLabel>
+            <translation><!-- 4 – Agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 – Strongly agree</masterLabel>
+            <translation><!-- 5 – Strongly agree --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Employer Interview Feedback: If candidate is unsuccessful(i.e. not 1st choice)] What is the main reason this candidate was unsuccessful? --></help>
+        <label><!-- EIF: Notes --></label>
+        <name>EIF_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Employer Interview Feedback:Employer preference: Of the candidates interviewed, which preference is this candidate? --></help>
+        <label><!-- EIF: Preference --></label>
+        <name>EIF_Preference__c</name>
+        <picklistValues>
+            <masterLabel>1st choice</masterLabel>
+            <translation><!-- 1st choice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2nd choice</masterLabel>
+            <translation><!-- 2nd choice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3rd choice</masterLabel>
+            <translation><!-- 3rd choice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4th choice</masterLabel>
+            <translation><!-- 4th choice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5th choice</masterLabel>
+            <translation><!-- 5th choice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did not attend</masterLabel>
+            <translation><!-- Did not attend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Veto</masterLabel>
+            <translation><!-- Veto --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Employer Interview Feedback: Candidate preparation: The candidate presented themselves well, i.e. appropriate smart dress and introduction --></help>
+        <label><!-- EIF:  Prep presentation --></label>
+        <name>EIF_Prep_presentation__c</name>
+        <picklistValues>
+            <masterLabel>1 – Strongly disagree</masterLabel>
+            <translation><!-- 1 – Strongly disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 – Disagree</masterLabel>
+            <translation><!-- 2 – Disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 – Neither agree nor disagree</masterLabel>
+            <translation><!-- 3 – Neither agree nor disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 – Agree</masterLabel>
+            <translation><!-- 4 – Agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 – Strongly agree</masterLabel>
+            <translation><!-- 5 – Strongly agree --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Employer Interview Feedback: Candidate preparation: The candidate arrived in good time for the interview --></help>
+        <label><!-- EIF: Prep punctuality --></label>
+        <name>EIF_Prep_punctuality__c</name>
+        <picklistValues>
+            <masterLabel>1 – Strongly disagree</masterLabel>
+            <translation><!-- 1 – Strongly disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 – Disagree</masterLabel>
+            <translation><!-- 2 – Disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 – Neither agree nor disagree</masterLabel>
+            <translation><!-- 3 – Neither agree nor disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 – Agree</masterLabel>
+            <translation><!-- 4 – Agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 – Strongly agree</masterLabel>
+            <translation><!-- 5 – Strongly agree --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Employer Interview Feedback: Candidate preparation: The candidate was well prepared for their interview, e.g. understood role, had done some research on the company --></help>
+        <label><!-- EIF: Prep research --></label>
+        <name>EIF_Prep_research__c</name>
+        <picklistValues>
+            <masterLabel>1 – Strongly disagree</masterLabel>
+            <translation><!-- 1 – Strongly disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 – Disagree</masterLabel>
+            <translation><!-- 2 – Disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 – Neither agree nor disagree</masterLabel>
+            <translation><!-- 3 – Neither agree nor disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 – Agree</masterLabel>
+            <translation><!-- 4 – Agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 – Strongly agree</masterLabel>
+            <translation><!-- 5 – Strongly agree --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Employer InterviewFeedback: Any specific comments or feedback? --></help>
+        <label><!-- EIF Specific feedback --></label>
+        <name>EIF_Specific_feedback__c</name>
+    </fields>
+    <fields>
+        <help><!-- Employer Interview Feedback: Candidate preparation: The candidate arrived in good time for the interview --></help>
+        <label><!-- EIF non-verbal communication skills --></label>
+        <name>EIF_non_verbal_communication_skills__c</name>
+        <picklistValues>
+            <masterLabel>1 – Strongly disagree</masterLabel>
+            <translation><!-- 1 – Strongly disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 – Disagree</masterLabel>
+            <translation><!-- 2 – Disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 – Neither agree nor disagree</masterLabel>
+            <translation><!-- 3 – Neither agree nor disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 – Agree</masterLabel>
+            <translation><!-- 4 – Agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 – Strongly agree</masterLabel>
+            <translation><!-- 5 – Strongly agree --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Employer Interview Feedback: Experience and skills:  The candidate showed an ability to take the initiative or be pro-active --></help>
+        <label><!-- EIF  pro-active --></label>
+        <name>EIF_pro_active__c</name>
+        <picklistValues>
+            <masterLabel>1 – Strongly disagree</masterLabel>
+            <translation><!-- 1 – Strongly disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 – Disagree</masterLabel>
+            <translation><!-- 2 – Disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 – Neither agree nor disagree</masterLabel>
+            <translation><!-- 3 – Neither agree nor disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 – Agree</masterLabel>
+            <translation><!-- 4 – Agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 – Strongly agree</masterLabel>
+            <translation><!-- 5 – Strongly agree --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Employer Interview Feedback: Experience and skills:  The candidate  had the relevant experience and skills for the role --></help>
+        <label><!-- EIF relevant experience --></label>
+        <name>EIF_relevant_experience__c</name>
+        <picklistValues>
+            <masterLabel>1 – Strongly disagree</masterLabel>
+            <translation><!-- 1 – Strongly disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 – Disagree</masterLabel>
+            <translation><!-- 2 – Disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 – Neither agree nor disagree</masterLabel>
+            <translation><!-- 3 – Neither agree nor disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 – Agree</masterLabel>
+            <translation><!-- 4 – Agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 – Strongly agree</masterLabel>
+            <translation><!-- 5 – Strongly agree --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Employer Interview Feedback: Interview responses: The candidate gave clear answers to interview questions --></help>
+        <label><!-- EIF response answers --></label>
+        <name>EIF_response_answers__c</name>
+        <picklistValues>
+            <masterLabel>1 – Strongly disagree</masterLabel>
+            <translation><!-- 1 – Strongly disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 – Disagree</masterLabel>
+            <translation><!-- 2 – Disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 – Neither agree nor disagree</masterLabel>
+            <translation><!-- 3 – Neither agree nor disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 – Agree</masterLabel>
+            <translation><!-- 4 – Agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 – Strongly agree</masterLabel>
+            <translation><!-- 5 – Strongly agree --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Employer interview Feedback: Interview responses: The candidate used appropriate examples to support their answers --></help>
+        <label><!-- EIF response examples --></label>
+        <name>EIF_response_examples__c</name>
+        <picklistValues>
+            <masterLabel>1 – Strongly disagree</masterLabel>
+            <translation><!-- 1 – Strongly disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 – Disagree</masterLabel>
+            <translation><!-- 2 – Disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 – Neither agree nor disagree</masterLabel>
+            <translation><!-- 3 – Neither agree nor disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 – Agree</masterLabel>
+            <translation><!-- 4 – Agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 – Strongly agree</masterLabel>
+            <translation><!-- 5 – Strongly agree --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Employer Interview Feedback: Communication skills: The candidate had good verbal communication skills --></help>
+        <label><!-- EIF verbal communication skills --></label>
+        <name>EIF_verbal_communication_skills__c</name>
+        <picklistValues>
+            <masterLabel>1 – Strongly disagree</masterLabel>
+            <translation><!-- 1 – Strongly disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 – Disagree</masterLabel>
+            <translation><!-- 2 – Disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 – Neither agree nor disagree</masterLabel>
+            <translation><!-- 3 – Neither agree nor disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 – Agree</masterLabel>
+            <translation><!-- 4 – Agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 – Strongly agree</masterLabel>
+            <translation><!-- 5 – Strongly agree --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Employer interview Feedback: Communication skills: The candidate had good written communication skills --></help>
+        <label><!-- EIF written communication skills --></label>
+        <name>EIF_written_communication_skills__c</name>
+        <picklistValues>
+            <masterLabel>1 – Strongly disagree</masterLabel>
+            <translation><!-- 1 – Strongly disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 – Disagree</masterLabel>
+            <translation><!-- 2 – Disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 – Neither agree nor disagree</masterLabel>
+            <translation><!-- 3 – Neither agree nor disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 – Agree</masterLabel>
+            <translation><!-- 4 – Agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 – Strongly agree</masterLabel>
+            <translation><!-- 5 – Strongly agree --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Employer Name --></label>
+        <name>Employer_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Main Contact email - SFAM --></help>
+        <label><!-- Employer email --></label>
+        <name>Employer_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Day &amp; Time --></label>
+        <name>Event_Day_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Day --></label>
+        <name>Event_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exclusive? --></label>
+        <name>Exclusive__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Interview Status --></label>
+        <name>Interview_Status__c</name>
+        <picklistValues>
+            <masterLabel>Available for Interview</masterLabel>
+            <translation><!-- Available for Interview --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Review</masterLabel>
+            <translation><!-- In Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response</masterLabel>
+            <translation><!-- No Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Shortlisted</masterLabel>
+            <translation><!-- Not Shortlisted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not attending</masterLabel>
+            <translation><!-- Not attending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shortlisted</masterLabel>
+            <translation><!-- Shortlisted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shortlisted - reserve</masterLabel>
+            <translation><!-- Shortlisted - reserve --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Successful - Job offer accepted</masterLabel>
+            <translation><!-- Successful - Job offer accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unavailable for interview</masterLabel>
+            <translation><!-- Unavailable for interview --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsuccessful - Did not attend</masterLabel>
+            <translation><!-- Unsuccessful - Did not attend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsuccessful - Interview cancelled</masterLabel>
+            <translation><!-- Unsuccessful - Interview cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsuccessful - No offer</masterLabel>
+            <translation><!-- Unsuccessful - No offer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsuccessful - YP not accepted</masterLabel>
+            <translation><!-- Unsuccessful - YP not accepted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Interview start and finish times --></label>
+        <name>Interview_start_and_finish_times__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Address --></label>
+        <name>Job_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Postcode --></label>
+        <name>Job_Postcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level of Engagement --></label>
+        <name>Level_of_Engagement__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Link to JD --></label>
+        <name>Link_to_JD__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pathway taken form the Job --></help>
+        <label><!-- Pathway --></label>
+        <name>Pathway__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request replacement --></label>
+        <name>Request_replacement__c</name>
+    </fields>
+    <fields>
+        <label><!-- SF Job Name --></label>
+        <name>SF_Job_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled date for briefing call --></label>
+        <name>Scheduled_date_for_briefing_call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Availability Request --></label>
+        <name>Send_Availability_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Interview slot and JD --></label>
+        <name>Send_Interview_slot_and_JD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send copy of Employer feedback --></label>
+        <name>Send_copy_of_Employer_feedback__c</name>
+    </fields>
+    <fields>
+        <help><!-- Account Manager calls employer to get feedback or checks this box after interview. --></help>
+        <label><!-- Send feedback form to employer --></label>
+        <name>Send_feedback_form_to_employer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Matching check this box only after ares of strength and ares of development fields completed. --></help>
+        <label><!-- Send result of interview email to YP --></label>
+        <name>Send_result_of_interview_email_to_YP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Step Forward Activity --></label>
+        <name>Step_Forward_Activity__c</name>
+        <relationshipLabel><!-- Step Forward Associates Attendance --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Step Forward Event Component --></label>
+        <name>Step_Forward_Event_Component__c</name>
+        <relationshipLabel><!-- Step Forward Associates Attendance --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Time Slot Allocated --></label>
+        <name>Time_Slot_Allocated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Slot and JD Acknowledgement --></label>
+        <name>Time_Slot_and_JD_Acknowledgement__c</name>
+    </fields>
+    <fields>
+        <help><!-- YP Interview Feedback: Commute: I can see myself doing this commute 4 days a week for a year --></help>
+        <label><!-- YPIF: Commute --></label>
+        <name>YPIF_Commute__c</name>
+        <picklistValues>
+            <masterLabel>1 – Strongly disagree</masterLabel>
+            <translation><!-- 1 – Strongly disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 – Disagree</masterLabel>
+            <translation><!-- 2 – Disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 – Agree</masterLabel>
+            <translation><!-- 3 – Agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 – Strongly agree</masterLabel>
+            <translation><!-- 4 – Strongly agree --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- YP Interview Feedback: Feeling: My interview made me feel excited --></help>
+        <label><!-- YPIF: Feeling --></label>
+        <name>YPIF_Feeling__c</name>
+        <picklistValues>
+            <masterLabel>1 – Strongly disagree</masterLabel>
+            <translation><!-- 1 – Strongly disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 – Disagree</masterLabel>
+            <translation><!-- 2 – Disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 – Agree</masterLabel>
+            <translation><!-- 3 – Agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 – Strongly agree</masterLabel>
+            <translation><!-- 4 – Strongly agree --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- YP Interview Feedback: Other comments or feedback? E.g. Any specific concerns you may have about the commute, questions about the role. --></help>
+        <label><!-- YPIF: Other Comments --></label>
+        <name>YPIF_Other_Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- YP Interview Feedback: People: I got on well with the people I met --></help>
+        <label><!-- YPIF: People --></label>
+        <name>YPIF_People__c</name>
+        <picklistValues>
+            <masterLabel>1 - Strongly disagree</masterLabel>
+            <translation><!-- 1 - Strongly disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - Disagree</masterLabel>
+            <translation><!-- 2 - Disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - Agree</masterLabel>
+            <translation><!-- 3 - Agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 - Strongly Agree</masterLabel>
+            <translation><!-- 4 - Strongly Agree --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- YP Interview Feedback: Quality check: The location where my interview took place was safe and clean --></help>
+        <label><!-- YPIF: Quality check --></label>
+        <name>YPIF_Quality_check__c</name>
+        <picklistValues>
+            <masterLabel>1 – Strongly disagree</masterLabel>
+            <translation><!-- 1 – Strongly disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 – Disagree</masterLabel>
+            <translation><!-- 2 – Disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 – Agree</masterLabel>
+            <translation><!-- 3 – Agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 – Strongly agree</masterLabel>
+            <translation><!-- 4 – Strongly agree --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- YP Interview Feedback:The role: I could imagine enjoying this role for a year --></help>
+        <label><!-- YPIF: The Role --></label>
+        <name>YPIF_The_Role__c</name>
+        <picklistValues>
+            <masterLabel>1- Strongly disagree</masterLabel>
+            <translation><!-- 1- Strongly disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - Disagree</masterLabel>
+            <translation><!-- 2 - Disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - Agree</masterLabel>
+            <translation><!-- 3 - Agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4- Strongly Agree</masterLabel>
+            <translation><!-- 4- Strongly Agree --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- YP Interview Feedback: The workplace: I could imagine working there --></help>
+        <label><!-- YPIF: The workplace --></label>
+        <name>YPIF_The_workplace__c</name>
+        <picklistValues>
+            <masterLabel>1 - Strongly disagree</masterLabel>
+            <translation><!-- 1 - Strongly disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - Disagree</masterLabel>
+            <translation><!-- 2 - Disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - Agree</masterLabel>
+            <translation><!-- 3 - Agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 - Strongly Agree</masterLabel>
+            <translation><!-- 4 - Strongly Agree --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- YP Accepted Job Offer --></label>
+        <name>YP_Accepted_Job_Offer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yp at risk? --></label>
+        <name>Yp_at_risk__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

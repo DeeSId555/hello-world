@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent 29/09/15 using &apos;surveys&apos;</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Autumn 15 - Defer to Autumn app invite</name>
+    <style>none</style>
+    <subject>HeadStart - sorry for the confusing emails!</subject>
+    <textOnly>&lt;
+
+HeadStart | The Challenge
+
+
+
+HeadStart login details:
+
+Email Address {!Contact.Email}
+
+NCS ID
+
+{!Contact.NCS_ID__c}
+
+PIN {!Contact.Login_Password__c}
+
+HeadStart Website
+
+Hi {!Contact.FirstName}!
+
+Complete your application for our Autumn programme.
+
+You told us in summer that you wanted to defer your HeadStart application to our autumn programme. Now is your chance to apply!
+
+You simply need to log in, tell us where you are volunteering and confirm your application.
+
+Priority for placements with our volunteering partners will be given to young people who were not offered the programme in the summer so we would strongly encourage you to find your own volunteering opportunity.
+
+Here&apos;s some information about findning your own volunteering opportunity to help you. There are many benefits to finding your own volunteering placement, you can:
+
+Find a placement close to where you live
+
+Use your initiative and talk about it during an interview
+
+Persue your interests and get creative with your search
+
+Show your leadership through proactively finding your own placement.
+
+
+Whether your family and friends know somewhere, there’s a local charity shop down the road, or you are finding something completely new, we have created a brief guide to help you with your search.
+
+We’ve also written a short letter of introduction for you to print and take with you to any potential charity to explain what HeadStart is.
+
+If you’re having trouble please get in touch at headstart@the-challenge.org and we can try and help
+
+Before you start your volunteering, please complete our baseline survey - this should be nice and easy to do on your phone!
+
+Your HeadStart kick off event will be happening on the 24th or 26th October. Save these dates in your diary so you don&apos;t miss out! Event invites will be sent out shortly.
+
+See you soon,
+
+The HeadStart team
+
+(London) Facebook: /Londonheadstart
+
+(Birmingham) Facebook: /Headstartwm
+
+headstart@the-challenge.org
+
+www.headstart-thechallenge.org/
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subsribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

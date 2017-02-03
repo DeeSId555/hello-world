@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>16 YP NCS Campaign - Stated additional needs</name>
+    <style>none</style>
+    <subject>Joining NCS - your next steps</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTheChallenge.org
+
+Joining NCS - your next steps
+
+
+
+Dear {!Contact.FirstName},
+
+Thanks for letting us know you&apos;re interested in NCS. We are The Challenge, and we&apos;ll be running NCS in your area next summer. We understand you may need some additional support on NCS so we wanted to let you know your next steps.
+
+How to tell us about your additional needs
+Please complete the online application, giving us as much information as possible about your needs.
+
+As part of this application, we need your parent or guardian to complete a medical and support information section.  Please ask them to log in to complete this part, and the other parts of the application which are for parents or guardians. This is the best place to put all the information about your needs. It will really help us understand and cater for them.
+
+Go to www.NCSTheChallenge.org and use the following unique login details to move forward with your application:
+
+NCS ID: {!Contact.NCS_ID__c}
+Password: {!Contact.Login_PIN__c}
+
+It is quicker to apply online but if your parent or guardian would like a paper copy of the application form instead, please call us on 020 3542 2400 and we’ll send one out in the post.
+
+What happens once we receive your application
+We will use the information you give us to understand what support you may need during NCS and will be in touch.
+
+Who to contact with questions
+In the meantime, you can get in touch with us by calling 020 3542 2400 or emailing  contact@the-challenge.org.
+
+Yours sincerely,
+
+Tanya Dunne
+Head of Customer Services - The Challenge
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

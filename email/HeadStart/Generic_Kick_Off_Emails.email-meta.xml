@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Current template - yps swapped to FOVO - LB</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>*Generic: Kick Off Emails</name>
+    <style>none</style>
+    <subject>HeadStart: There&apos;s still time to start volunteering</subject>
+    <textOnly>It’s not too late to volunteer with HeadStart
+
+{!HS_Activity__c.YP_First_name_from_HS_Application_Form__c}, missed your Welcome Session?
+
+Well don’t panic, because it’s not the end of your journey with HeadStart. Follow the guidance below to achieve your 16+ hours of volunteering, which will allow you to access exclusive skill-building workshops and a guaranteed job interview!
+
+Option One
+
+Contact your Charity to arrange another introductory session
+
+Use the details below to contact your charity. Remember to cover the following things:
+
+Explain who you are and that you’re taking part in HeadStart
+Apologise for not being able to attend the initial session
+Ask if it would be possible to arrange another induction
+
+Manager’s name: {!HS_Activity__c.Main_Contact__c}
+Manager’s Email address: {!HS_Activity__c.Main_contact_email__c}
+Manager’s telephone number: {!HS_Activity__c.Main_contact_number__c}
+
+Option Two
+
+Find your own volunteering opportunity
+
+Don’t feel like volunteering with your charity partner any more? Prefer to find your own volunteering opportunity with a local charity instead? No problem, just follow the steps below to register this information:
+
+Email us at headstart@the-challenge.org to let us know
+Tell us the details of the charity you will volunteer with (name, address, email)
+Start logging hours online on the HeadStart Website using your details below
+
+Log Your Hours
+
+Remember to log your volunteering hours regularly on the HeadStart website using your log-in details below:
+
+Username: {!Contact.Email}
+Password: {!Contact.Login_Password__c}
+
+
+If you have any difficulties or need to ask us a question, please email us at headstart@the-challenge.org.
+Enjoy getting stuck in to your volunteering soon!
+
+follow on Twitter | friend on Facebook
+
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

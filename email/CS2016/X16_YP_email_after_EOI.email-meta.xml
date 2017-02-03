@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to YP after upload of EOI</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>16 YP email after EOI</name>
+    <style>none</style>
+    <subject>NCS - get signed up!</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTHECHALLENGE.ORG
+
+Don’t miss out on a life changing experience for £50 or less
+
+
+
+Hi {!Contact.FirstName},
+
+After you told us you were interested in National Citizen Service (NCS), we wanted to remind  you to get signed up as soon as possible so you have the best chance of getting a place!
+
+What&apos;s NCS again?
+
+✔ An exciting way to spend part of your summer.
+
+✔ A chance for 15-17 year olds1 like you to make new friends and try new things – including activities which allow you to make a difference in the community.
+
+✔ An opportunity to build the skills and confidence you need to help you in your future, for example when applying for jobs or university.
+
+What does the NCS programme look like?*
+
+Part 1 - Get Active:
+Five days (four nights) staying away from home in the countryside doing outdoor adventure activities like canoeing, hiking, and rock climbing with your new teammates.
+
+Part 2 - Get Involved:
+Five days (four nights) living independently away from home developing skills in either drama, enterprise, media, music, photography, art or sport. You will also work with organisations or local businesses to get involved in the community around you.
+
+Part 3- Make Your Mark:
+Community activity days (staying at home at night) where you and your team create your own project to benefit the local area and pitch your ideas to a panel of judges to win funding for it. You then use this funding to make your ideas come to life by carrying out your team project in the local community.
+
+So don&apos;t miss out! This is what you could be looking forward to...
+
+https://www.youtube.com/watch?v=a591P6wYiGU
+
+*Some of our programmes have a slightly different structure and activities may vary. They still have the same key benefits though!
+
+How do I get signed up?
+You can kick-start your application by filling in some details. Go to www.NCSTheChallenge.org, click ‘login’ and use the following unique login details to start your application:
+
+Your NCS ID: {!Contact.NCS_ID__c}
+Your young person password: {!Contact.Login_PIN__c}
+
+Your parent or guardian will then need to complete the main part of your application using their own login details. Please contact us if you&apos;re not sure who can complete your application form and we&apos;ll have a chat.
+
+Alternatively, If your parent or guardian would like a paper application form, they can call us on 0203 542 2400 and we’ll send one in the post.
+
+Remember that we have discounts available for signing up early. Plus, as we would never want the cost to stop you taking part, your parent or guardian can ask for financial support when completing the application.
+
+Where can I find out more?
+
+Check out www.NCSTheChallenge.org
+Search for answers to your questions at questions.ncsthechallenge.org
+Email us at contact@ncsthechallenge.org or call 0203 542 2400. We&apos;re happy to help!
+
+We hope to be seeing you on NCS this summer!
+
+
+
+Tanya Dunne
+Head of Customer Service
+The Challenge (largest provider of NCS)
+
+
+
+
+1To be eligible, your date of birth must be on or between 1 September 1998 and 31 August 2000 - see www.ncsthechallenge.org/terms for details.
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network is a charity registered in England and Wales with charity no. 1129239 and company no. 6845451, whose registered office is at Elizabeth House, 39 York Road, London SE1 7NQ.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

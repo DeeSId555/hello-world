@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>5.1 New availability request</name>
+    <style>freeForm</style>
+    <subject>Request for further availability this summer</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+Dear {!Job_placement__c.Contact__c},
+
+Thank you for working with The Challenge. We hope that you enjoyed your wave.
+
+We are always interested in having a supply of back-up staff over the rest of the summer in case our contracted staff members become unavailable.
+
+If you are interested in being considered to work again for The Challenge this summer, please click on the link and provide any availability over the remainder of this summer.
+
+New Availability form: http://www.clicktools.com/survey?iv=10snegtxtxgt9v&amp;q1={!Job_Application__c.Id}
+
+If any relevant opportunities then arise, we will contact you to check if you might be interested in working for us again.
+
+If you have any questions, please feel free to contact me.
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.Contact_Owner_alternative_email__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

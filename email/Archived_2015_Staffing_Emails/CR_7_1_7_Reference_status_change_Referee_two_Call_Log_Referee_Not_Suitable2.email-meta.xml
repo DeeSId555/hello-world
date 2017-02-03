@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 7.1.7	Reference status change: Referee two, Call Log: Referee Not Suitable</name>
+    <style>formalLetter</style>
+    <subject>URGENT - Check your Reference status on the Staffing Website</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your local staffing team.
+Dear {!Contact.FirstName},
+
+
+
+Referee Two Unsuitable - Requires Immediate Action.
+
+
+
+We have encountered a problem with your referee two: {!Job_Application__c.Referee_2__c}.
+
+
+
+Prior to contacting your referees we check the details provided to ensure that they are suitable to comment on your ability to work on the NCS programme. Referees are deemed unsuitable if:
+
+
+
+a) We have not been able to contact your referee over a period of two weeks.
+
+
+
+b) You have provided a referee which is not one of the following: employment reference (paid or volunteer); or academic (outlining the nature of the relationship).
+
+
+
+c) You have provided an employment reference and the email listed is personal and does not correlate with any employer or organisation.
+
+
+
+d) The referee you have submitted is unable to provide us with enough quality information about you (this could be due to the organisation&apos;s references policy)
+
+
+
+e)Your referee is from The Challenge - returning seasonal staff must provide a referee from outside of The Challenge.
+
+
+
+
+
+What do I need to do?
+
+
+
+With the programme fast approaching it is imperative that we obtain valid references in advance of your start date.
+
+
+
+Please input details for an alternative referee that meets all of the above criteria on the Staffing Website.
+
+
+
+If you feel the reference you provided is suitable and in line with the above conditions then please re-submit this referee, choose the relationship &apos;other&apos; and fully detail why they are appropriate, the nature of your relationship and the information about contact details.
+
+
+
+If we are encountering problems with both of your references, you will receive another email detailing that specific issue.
+
+
+
+All or some of the references section has been unlocked for you to make changes to your referee(s) details.
+
+
+
+For further assistance with your references section please contact your local staffing team, quoting the email reference number below in any correspondence.
+Best wishes,
+
+
+
+The Challenge
+
+
+
+Email reference: CR 7.1.7</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Step Forward Survey</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Step Forward Surveys</value>
+    </caseValues>
+    <fields>
+        <label><!-- Career Pathway --></label>
+        <name>Career_Pathway__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Barometer Survey Received --></label>
+        <name>Date_Barometer_Survey_Received__c</name>
+    </fields>
+    <fields>
+        <help><!-- If you have answered &apos;No&apos; to any of the above please explain why. --></help>
+        <label><!-- Explain Not Enough Support --></label>
+        <name>Explain_Not_Enough_Support__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate Last Month Training --></label>
+        <name>Rate_Last_Month_Training__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rate Last Month Work Placement --></label>
+        <name>Rate_Last_Month_Work_Placement__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Do you feel that you are receiving enough support? --></help>
+        <label><!-- Receiving Support General --></label>
+        <name>Receiving_Support_General__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Do you feel that you are receiving enough support? --></help>
+        <label><!-- Receiving Support Training --></label>
+        <name>Receiving_Support_Training__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Do you feel that you are receiving enough support? --></help>
+        <label><!-- Receiving Support Work --></label>
+        <name>Receiving_Support_Work__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SF Activity --></label>
+        <name>SF_Activity__c</name>
+        <relationshipLabel><!-- Step Forward Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SF Job Placement --></label>
+        <name>SF_Job_Placement__c</name>
+        <relationshipLabel><!-- Step Forward Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Any other thoughts or questions about the Step Forward programme --></help>
+        <label><!-- Thoughts Questions SF Programme --></label>
+        <name>Thoughts_Questions_SF_Programme__c</name>
+    </fields>
+    <fields>
+        <help><!-- How challenging are you finding training? --></help>
+        <label><!-- Training Challenge --></label>
+        <name>Training_Challenge__c</name>
+        <picklistValues>
+            <masterLabel>Appropriately challenging</masterLabel>
+            <translation><!-- Appropriately challenging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not challenging enough</masterLabel>
+            <translation><!-- Not challenging enough --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too challenging</masterLabel>
+            <translation><!-- Too challenging --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Identify any areas for improvement related to training --></help>
+        <label><!-- Training Improvement Areas --></label>
+        <name>Training_Improvement_Areas__c</name>
+    </fields>
+    <fields>
+        <help><!-- How challenging are you finding work? --></help>
+        <label><!-- Working Challenge --></label>
+        <name>Working_Challenge__c</name>
+        <picklistValues>
+            <masterLabel>Appropriately challenging</masterLabel>
+            <translation><!-- Appropriately challenging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not challenging enough</masterLabel>
+            <translation><!-- Not challenging enough --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too challenging</masterLabel>
+            <translation><!-- Too challenging --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Identify any areas for improvement related to your workplace --></help>
+        <label><!-- Workplace Improvement Areas --></label>
+        <name>Workplace_Improvement_Areas__c</name>
+    </fields>
+    <fields>
+        <label><!-- YP Name --></label>
+        <name>YP_Name__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Step Forward Barometer Survey --></label>
+        <name>Step_Forward_Barometer_Survey</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

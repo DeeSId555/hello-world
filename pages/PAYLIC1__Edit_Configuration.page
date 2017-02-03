@@ -1,0 +1,26 @@
+<apex:page standardController="PAYLIC1__Configuration__c" extensions="PAYLIC1.EditConfigurationExtension" >
+
+  <apex:sectionHeader title="Configuration Edit" subtitle="{! Configuration__c.Name }"/>
+
+  <apex:form >
+    <apex:inputHidden value="{!PAYLIC1__Configuration__c.Name}"/>
+    <apex:inputHidden value="{!PAYLIC1__Configuration__c.PAYLIC1__Is_Encrypted__c}"/>
+
+    <apex:pageBlock title="Configuration Edit" mode="edit">
+      <apex:pageBlockButtons >
+        <apex:commandButton action="{!save}" value="Save"/>
+        <apex:commandButton action="{!cancel}" value="Cancel"/>
+      </apex:pageBlockButtons>
+      <apex:pageBlockSection title="Information" columns="2">
+        <apex:pageBlockSectionItem rendered="{! isSecure }">
+          <apex:outputLabel value="Value" for="valueSecret" />
+          <apex:inputSecret value="{!PAYLIC1__Configuration__c.PAYLIC1__Value__c}" id="valueSecret"/>
+        </apex:pageBlockSectionItem>
+
+        <apex:inputField value="{!PAYLIC1__Configuration__c.PAYLIC1__Value__c}" rendered="{! !isSecure }"/>
+      </apex:pageBlockSection>
+    </apex:pageBlock>
+  </apex:form>
+
+
+</apex:page>

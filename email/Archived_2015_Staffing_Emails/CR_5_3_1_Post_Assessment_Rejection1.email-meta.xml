@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 5.3.1 Post- Assessment Rejection</name>
+    <style>formalLetter</style>
+    <subject>Your assessment for the NCS programme</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}.
+
+
+Dear {!Contact.FirstName},
+
+Thank you for attending our assessment for a seasonal role on the NCS programme. Unfortunately, we will not be taking your application further.
+
+We look for candidates who meet a range of criteria and on this occasion you did not meet the standard required in all sections. If, in the future, you feel you have gained additional experience that would meet the needs of our challenging youth and community programme please do feel free to apply again.
+
+Due to the high number of applications we receive, we regret that we are unable to provide feedback for individual applicants.
+
+We appreciate you taking the time to apply to work with us and thank you for your interest in the NCS programme.
+
+
+Best Wishes
+
+The Challenge
+NCS Programme
+Email Reference: CR 5.3.1</textOnly>
+    <type>html</type>
+</EmailTemplate>

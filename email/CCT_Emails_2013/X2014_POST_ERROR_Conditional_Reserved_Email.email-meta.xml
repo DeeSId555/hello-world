@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2014 POST-ERROR Conditional Reserved Email</name>
+    <style>none</style>
+    <subject>NCS with The Challenge - Next steps for your application</subject>
+    <textOnly>NCS POWERED BY THE CHALLENGE
+
+Next steps for your application
+
+
+Dear Parent/ Guardian of {!Contact.Name},
+
+Summer is nearly upon us! We have received part of your application for {!Contact.FirstName}  to take part in NCS with The Challenge this summer, but we still need some further item(s) from you to complete their application.
+
+To avoid {!Contact.FirstName} missing out on this chance to get ahead, we will keep their reserved place for one week longer whilst you get the item(s) to us. Places are very high in demand, so if we have not received the missing item(s) by &lt;&gt;, we will have to give the place to another young person and {!Contact.FirstName} will be moved to the waiting list.
+
+All we need to continue processing {!Contact.FirstName}’s application is:
+{!Contact.CAL_Missing_Items_Criteria_Paragraph__c}
+If you have any questions, please get in touch. You can email us at contact@the-challenge.org or call us on 0203 542 2400.
+
+If you have forgotten your password, you can recover it here.
+
+If there is a reason that you will be unable to provide the item(s) within one week, please contact us to discuss any exceptions. Equally, if {!Contact.FirstName} can no longer take part, please let us know straight away so that we can give this space to another young person.
+
+Remember, we can only confirm a place once we have received and reviewed the complete application. Act now to avoid {!Contact.FirstName} missing out on this once-in-a-lifetime experience!
+
+Yours sincerely,
+
+
+
+Rebecca Carter - Director at The Challenge
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

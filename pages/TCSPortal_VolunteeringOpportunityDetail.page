@@ -1,0 +1,358 @@
+<apex:page cache="false" standardController="Volunteering_Opportunity__c" sidebar="false" standardStylesheets="false" showHeader="false" >
+<html>
+    <head>
+        <!-- <script>
+         var newWin=null;
+         function openLookupPopup(name, id)
+         {
+          var url="/apex/LookupExamplePopup?namefield=" + name + "&idfield=" + id;
+          newWin=window.open(url, 'Popup','height=500,width=600,left=100,top=100,resizable=no,scrollbars=yes,toolbar=no,status=no');
+          if (window.focus) 
+          {
+           newWin.focus();
+          }
+            
+             return false;
+            }
+               
+         function closeLookupPopup()
+         {
+            if (null!=newWin)
+            {
+               newWin.close();
+            }  
+         }
+        </script> -->
+        <style>
+
+        .button1{
+            height:65px; 
+            width:180px;
+            margin-right:5%; 
+            border: solid 4px; 
+            border-color:#B31217; 
+            background :white;
+            border-radius:10px;
+            font-size:16px;
+            text-align:center;
+         }
+        </style>
+    </head>
+    
+    <body>    
+        
+        <apex:form id="edit">
+        <apex:composition template="PortalTemplate">
+            <apex:define name="TopDiv">
+            </apex:define>
+            <apex:define name="MidDiv">
+            
+<table style="width:100%;">
+<tr>
+
+<td style="width:55%; border-left:solid 8px; border-color:#D9D9D9; ">
+    <div style="margin-left:2%; margin-bottom:5%; margin-top:1%;">
+        <apex:outputText styleClass="optext" value="opportunity information"/><br />
+        
+         <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Name.Label}"/>
+                  </td>
+                  <td><apex:outputText value="{!Volunteering_Opportunity__c.Name}"/>
+                  </td>
+              </tr>
+          </table>  
+      </div>
+      
+      <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Opportunity_type__c.Label}"/>
+                  </td>
+                  <td><apex:outputText value="{!Volunteering_Opportunity__c.Opportunity_type__c}"/>
+                  </td>
+              </tr>
+          </table>  
+      </div>
+        
+       <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Cluster__c.Label}"/>
+                  </td>
+                  <td><apex:outputText value="{!Volunteering_Opportunity__c.Cluster__r.Name}"/>
+                  </td>
+              </tr>
+          </table>  
+      </div>
+        
+      <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Borough_area_this_applies_to__c.Label}"/>
+                  </td>
+                  <td><apex:outputText value="{!Volunteering_Opportunity__c.Borough_area_this_applies_to__c}"/>
+                  </td>
+              </tr>
+          </table>  
+      </div>
+      
+     
+     <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Challenger_sign_up_action__c.Label}"/>
+                  </td>
+                  <td><apex:outputText value="{!Volunteering_Opportunity__c.Challenger_sign_up_action__c}"/>
+                  </td>
+              </tr>
+          </table>  
+      </div>   
+</div>         
+  </td>
+  
+  
+   <td valign="top" style="width:40%; border-left:solid 4px; border-color:#D9D9D9;">
+    <div style="margin-left:2%; margin-bottom:5%; margin-top:1%;">
+     <apex:outputText styleClass="optext" value="image preview"/><br />
+     <div>
+        <table style="width:100%;">
+              <tr>
+                
+               <td><apex:image rendered="{!IF(Volunteering_Opportunity__c.Image__c,true,false)}" width="150" height="120" value="http://challenge.brix.fatbeehive.com/data/images/opportunity/{!LEFT(Volunteering_Opportunity__c.Id,15)}.jpg"/>
+                  </td>
+              </tr>
+          </table>  
+      </div> 
+  </div> 
+   </td>
+</tr> 
+
+<tr>
+  <td style="border-left:solid 8px; border-color:#D9D9D9;">
+   <div style="margin-left:2%; margin-bottom:5%;">
+      <apex:outputText styleClass="optext" value="opportunity details"/><br />
+      
+       <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Summary_description__c.Label}"/>
+                  </td>
+                  <td><apex:outputText value="{!Volunteering_Opportunity__c.Summary_description__c}"/>
+                  </td>
+              </tr>
+          </table>  
+      </div>  
+     
+     
+      <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Date_this_opportunity_expires__c.Label}"/>
+                  </td>
+                  <td> <apex:outputText value="{0,date,dd'/'MM'/'yyyy}">
+                        <apex:param value="{!Volunteering_Opportunity__c.Date_this_opportunity_expires__c}" /> 
+                    </apex:outputText>
+                  </td>
+              </tr>
+          </table>  
+      </div>
+      
+      <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Organisation__c.Label}"/>
+                  </td>
+                  <td><apex:outputText value="{!Volunteering_Opportunity__c.Organisation__r.name}"/>
+                  </td>
+              </tr>
+          </table>  
+      </div> 
+        
+      <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Description_of_organisation__c.Label}"/>
+                  </td>
+                  <td><apex:outputText value="{!Volunteering_Opportunity__c.Description_of_organisation__c}"/>
+                  </td>
+              </tr>
+          </table>  
+      </div> 
+      
+      <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Date_s__c.Label}"/>
+                  </td>
+                  <td><apex:outputText value="{!Volunteering_Opportunity__c.Date_s__c}"/>
+                  </td>
+              </tr>
+          </table>  
+      </div> 
+      
+      
+      <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Time_s__c.Label}"/>
+                  </td>
+                  <td><apex:outputText value="{!Volunteering_Opportunity__c.Time_s__c}"/>
+                  </td>
+              </tr>
+          </table>  
+      </div>  
+      
+      
+      <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Location_address_of_opportunity__c.Label}"/>
+                  </td>
+                  <td><apex:outputText value="{!Volunteering_Opportunity__c.Location_address_of_opportunity__c}"/>
+                  </td>
+              </tr>
+          </table>  
+      </div> 
+     
+     <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Location_postcode_of_the_opportunity__c.Label}"/>
+                  </td>
+                  <td><apex:outputText value="{!Volunteering_Opportunity__c.Location_postcode_of_the_opportunity__c}"/>
+                  </td>
+              </tr>
+          </table>  
+      </div> 
+      
+       <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Approx_number_of_volunteering_places__c.Label}"/>
+                  </td>
+                  <td><apex:outputText value="{!Volunteering_Opportunity__c.Approx_number_of_volunteering_places__c}"/>
+                  </td>
+              </tr>
+          </table>  
+      </div> 
+  </div>
+ </td>
+ 
+ 
+  <td valign="top" style="border-left:solid 4px; border-color:#D9D9D9;">
+   <div style="margin-left:2%; margin-bottom:5%;">
+      <apex:outputText styleClass="optext" value="full description of event"/><br />
+      
+       <div><table style="width:100%;">
+              <tr>
+                  <!--<td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Full_description__c.Label}"/>
+                  </td>-->
+                  <td><apex:outputText value="{!Volunteering_Opportunity__c.Full_description__c}"/>
+                  </td>
+              </tr>
+          </table>  
+      </div> 
+      </div>
+ </td>
+</tr>
+
+
+<tr>
+  <td style="border-left:solid 8px; border-color:#D9D9D9;">
+      <div style="margin-left:2%; margin-bottom:5%;">
+           <apex:outputText styleClass="optext" value="system information"/><br />
+           
+           <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Publish_to_website__c.Label}"/>
+                  </td>
+                  <td>
+                      <apex:image width="21" styleClass="checkImg" height="16" value="/img/checkbox_checked.gif" rendered="{!IF(Volunteering_Opportunity__c.Publish_to_website__c==true,true,false)}"/>
+                      <apex:image width="21" styleClass="checkImg" height="16" value="/img/checkbox_unchecked.gif" rendered="{!IF(Volunteering_Opportunity__c.Publish_to_website__c==true,false,true)}"/>
+                  </td>
+              </tr>
+          </table>  
+      </div> 
+      
+       <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Display_on_TCS_home_page__c.Label}"/>
+                  </td>
+                  <td>
+                      <apex:image width="21" styleClass="checkImg" height="16" value="/img/checkbox_checked.gif" rendered="{!IF(Volunteering_Opportunity__c.Display_on_TCS_home_page__c==true,true,false)}"/>
+                      <apex:image width="21" styleClass="checkImg" height="16" value="/img/checkbox_unchecked.gif" rendered="{!IF(Volunteering_Opportunity__c.Display_on_TCS_home_page__c==true,false,true)}"/>
+                  </td>
+              </tr>
+          </table>  
+      </div>    
+      
+       <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="Created By"/>
+                  </td>
+                  <td><apex:outputText value="{!Volunteering_Opportunity__c.CreatedBy.Name}"/>
+                  </td>
+              </tr>
+          </table>  
+      </div>  
+      
+       <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="Last Modified By"/>
+                  </td>
+                  <td><apex:outputText value="{!Volunteering_Opportunity__c.LastModifiedBy.Name}"/>
+                  </td>
+              </tr>
+          </table>  
+      </div> 
+  </div>
+ </td>
+                         
+                          
+      <td style="border-left:solid 4px; border-color:#D9D9D9;">
+      </td>
+  </tr>
+</table> 
+</apex:define>      
+
+             <apex:define name="BotDiv"> 
+               <center>
+                   <div style="margin-top:2%;">
+                 
+                       <apex:outputLink value="/a1W/e?CF00NC0000005FT9j={!Volunteering_Opportunity__c.Name}&CF00NC0000005FT9j_lkid={!$CurrentPage.parameters.id}&saveURL={!$Page.TCSPortal_TCSAttListForVO}?id={!$CurrentPage.parameters.id}&retURL={!$Page.TCSPortal_VolunteeringOpportunityDetail}?id={!$CurrentPage.parameters.id}" styleClass="optext btn button1">add a young person to this opportunity</apex:outputLink>
+                       <apex:outputLink value="{!$Page.TCSPortal_AccountDetail}?id={!Volunteering_Opportunity__c.Organisation__c}&Programmee=p&editmdode=n" styleClass="optext btn button1">go to partner account page</apex:outputLink>
+                       <apex:outputLink value="{!$Page.TCSPortal_TCSAttListForVO}?id={!$CurrentPage.parameters.id}" styleClass="optext btn button1">see all<br /> attendees</apex:outputLink>
+                   </div>  
+               </center>
+               
+           </apex:define>   
+                        
+                         <!-- ------------------------------------------EDIT MODE (Two <td>'s) --------------------------------------------- -->
+                       
+                              <!-- ---------burak's comment
+                              <apex:inputHidden value="{!Volunteering_Opportunity__c.Cluster__c}" id="targetId" />
+
+                              <a href="#" onclick="openLookupPopup('{!$Component.targetName}', '{!$Component.targetId}'); return false">Lookup</a>
+
+                              <apex:inputField style="font-weight:bold;" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Description_of_organisation__c.Label} : "/>{!Volunteering_Opportunity__c.Description_of_organisation__c}<br/><br/>
+
+                              <apex:inputField style="font-weight:bold;" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Opportunity_type__c.Label} : "/>{!Volunteering_Opportunity__c.Opportunity_type__c}<br/>
+                              <apex:inputField style="font-weight:bold;" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Borough_area_this_applies_to__c.Label} : "/>{!Volunteering_Opportunity__c.Borough_area_this_applies_to__c}<br/><br/>
+                              <apex:inputField style="font-weight:bold;" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Date_s__c.Label} : "/>{!Volunteering_Opportunity__c.Date_s__c}<br/>
+                              <apex:inputField style="font-weight:bold;" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Time_s__c.Label} : "/>{!Volunteering_Opportunity__c.Time_s__c}<br/>
+                              <b>Date this opportunity expires :</b> 
+                              <apex:inputField value="{0,date,MM'/'dd'/'yyyy}">
+                                    <apex:param value="{!Volunteering_Opportunity__c.Date_this_opportunity_expires__c}" /> 
+                              </apex:inputField ><br/><br/>
+                              <apex:inputField style="font-weight:bold;" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Location_address_of_opportunity__c.Label} : "/>{!Volunteering_Opportunity__c.Location_address_of_opportunity__c}<br/>
+                              <apex:inputField style="font-weight:bold;" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Location_postcode_of_the_opportunity__c.Label} : "/>{!Volunteering_Opportunity__c.Location_postcode_of_the_opportunity__c}<br/><br/>
+                               burak's comment --------->               
+                         
+                            
+                              <!-- burak's comment 
+                              <apex:inputField style="font-weight:bold;" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Display_on_TCS_home_page__c.Label} : "/>{!Volunteering_Opportunity__c.Display_on_TCS_home_page__c}<br/><br/>
+                              <apex:inputField style="font-weight:bold;" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Full_description__c.Label} : "/>{!Volunteering_Opportunity__c.Full_description__c}<br/><br/>
+                              <apex:inputField style="font-weight:bold;" value="{!$ObjectType.Volunteering_Opportunity__c.Fields.Summary_description__c.Label} : "/>{!Volunteering_Opportunity__c.Summary_description__c}<br/>
+                              burak's comment  -->
+                        
+                          <!-- ------------------------------------------/END -- EDIT MODE (Two <td>'s) --------------------------------------------- -->
+                     
+        </apex:composition>
+        </apex:form>   
+    <style>
+    .scrollspy-example {
+                height: 400px;
+                overflow: auto;
+                position: relative;
+    </style>    
+    </body>
+</html>
+</apex:page>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Explains to staff member how they will be paid, if they are receiving an advance</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>2.4.2b Payment Email for SM (with advance)</name>
+    <style>freeForm</style>
+    <subject>How you will be paid for your role on NCS with The Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Job_placement__c.Staffing_Associate_email__c}
+
+Dear {!Job_placement__c.Contact_Name__c},
+
+Congratulations on being appointed as {!Job_placement__c.Role__c} on NCS with The Challenge on {!Job_placement__c.Wave__c}.
+
+Your total pay for this part of the role will be {!Job_placement__c.Total_gross_pay__c}, this includes pay for  {!Job_placement__c.Annual_Leave_entitlement__c} day(s), &quot;Holiday Period&quot;; per &quot;Wave Contract&quot;, which is subject to tax and national insurance deductions. We reserve the right to deduct pay for any unauthorised absences. This payment will cover the following parts of the programme -  NCS: Personal Challenge, NCS: Team Challenge and NCS: Real Challenge Design (one or more will be relevant to your role). Payments for NCS: The Real Challenge Action will be communicated to you at a later date once you have completed them.
+
+Your payment structure for this wave will be based on the principal that no one should wait longer than 5 weeks after they have completed their wave for payment therefore:
+
+1. 70% of the gross pay will be paid on {!Job_placement__c.Advance_payment_date__c}.
+(NB: Gross pay refers to the amount of salary that is paid to you for each wave you complete before any deductions of any type (Tax and NI) are made from the pay).
+
+2. The remaining 30% of your gross pay will be paid on {!Job_placement__c.Payroll_payment_date__c} with Tax and NI deductions made from this payment.
+
+Depending on your tax situation, this payment could be a very small amount.
+
+You will receive a separate payment email for each wave you complete.
+This payment structure has two principles: (a) to ensure that staff members pay the appropriate level of tax in the correct month and (b) to enable staff members to receive timely payment.
+
+Yours sincerely,
+
+
+NCS with The Challenge
+{!Job_placement__c.Staffing_Associate_email__c}
+2.4.2b</textOnly>
+    <type>html</type>
+</EmailTemplate>

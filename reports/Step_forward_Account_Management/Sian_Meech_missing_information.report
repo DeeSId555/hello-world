@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Step_Forward_Job__c$Pathway__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job__c$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job__c$Name</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job__c$Step_Forward_Account_Management_Name__c.Account__c.Name</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job__c$Job_Postcode__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job__c$Job_main_contact__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job__c$Registered_Company_Number__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job__c$Registered_Charity_Number__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job__c$MOU__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job__c$Full_job_description__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job__c$Group_11__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job__c$Group_21__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job__c$Group_31__c</field>
+    </columns>
+    <description>Company missing information</description>
+    <filter>
+        <criteriaItems>
+            <column>Step_Forward_Job__c$Pathway__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Business Support Services,Accounting,&quot;IT, Software and Telecoms&quot;,Social Media &amp; Digital Marketing,Working with Children</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Step_Forward_Job__c$Job_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>4. Closed: Job confirmation unsuccessful</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Step_Forward_Job__c$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Sian meech</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Sian Meech missing information</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Step_Forward_Jobs__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Step_Forward_Job__c$Step_Forward_Account_Management_Name__c.Account__c.Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Step_Forward_Job__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

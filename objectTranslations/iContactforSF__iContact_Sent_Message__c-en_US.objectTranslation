@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The HTML body of the email template that was sent to iContact. --></help>
+        <label><!-- Body HTML --></label>
+        <name>iContactforSF__Body_HTML__c</name>
+    </fields>
+    <fields>
+        <help><!-- The text body of the email template that was sent to iContact. --></help>
+        <label><!-- Body Text --></label>
+        <name>iContactforSF__Body_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- The first success threshold for bounce rate, where green becomes yellow on the dashboard gauge. --></help>
+        <label><!-- Bounce Rate Caution % --></label>
+        <name>iContactforSF__Bounce_Rate_Warning_Threshold_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- The second warning threshold for bounce rate, where yellow becomes red on the dashboard gauge. --></help>
+        <label><!-- Bounce Rate Warning % --></label>
+        <name>iContactforSF__Bounce_Rate_Warning_Threshold_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- The bounce rate is the ratio of the number of bounces per recipients. --></help>
+        <label><!-- Bounce Rate --></label>
+        <name>iContactforSF__Bounce_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bounces reports the number of times the message was not successfully delivered to an email address, which is usually due to a full email inbox, a down email server, or an invalid email address. --></help>
+        <label><!-- Bounces --></label>
+        <name>iContactforSF__Bounces__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of campaign members the campaign had when this message was sent. --></help>
+        <label><!-- Campaign Member Count --></label>
+        <name>iContactforSF__Campaign_Member_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- The SFDC campaign this message was sent from. --></help>
+        <label><!-- Campaign --></label>
+        <name>iContactforSF__Campaign__c</name>
+        <relationshipLabel><!-- iContact Sent Messages --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The first success threshold for click rate, where red becomes yellow on the dashboard gauge. --></help>
+        <label><!-- Click Rate Caution % --></label>
+        <name>iContactforSF__Click_Rate_Success_Threshold_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- The second success threshold for click rate, where yellow becomes green on the dashboard gauge. --></help>
+        <label><!-- Click Rate Success % --></label>
+        <name>iContactforSF__Click_Rate_Success_Threshold_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- The click rate is the ratio of individual clicks per recipients, which indicates the activity rate of your recipients. A high click rate (~8% or more) means people are frequently viewing and interacting with your message. --></help>
+        <label><!-- Click Rate --></label>
+        <name>iContactforSF__Click_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total clicks reports the total number of times that anyone has clicked on a link in your message. For instance, if 5 people click on one link and one more person clicks on 5 links, the total clicks would be 10. --></help>
+        <label><!-- Total Clicks --></label>
+        <name>iContactforSF__Clicks__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of message comments as reported from iContact. --></help>
+        <label><!-- Comments --></label>
+        <name>iContactforSF__Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- The complaint rate is the ratio of the number of people who reported your message as spam per number of recipients. --></help>
+        <label><!-- Complaint Rate --></label>
+        <name>iContactforSF__Complaint_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of complaints refers to the number of people who reported your message as spam in their email client. --></help>
+        <label><!-- Complaints --></label>
+        <name>iContactforSF__Complaints__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the number of emails that successfully reached recipients&apos; email inboxes. This can be less than the number of attempted sends due to bounced emails or unsubscribed contacts. --></help>
+        <label><!-- Delivered --></label>
+        <name>iContactforSF__Delivered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Template ID --></label>
+        <name>iContactforSF__Email_Template_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Template --></label>
+        <name>iContactforSF__Email_Template__c</name>
+    </fields>
+    <fields>
+        <help><!-- The forward rate is the ratio of forwards per number of recipients. --></help>
+        <label><!-- Forward Rate --></label>
+        <name>iContactforSF__Forward_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the number of times the &quot;Forward to a friend&quot; link was clicked in the iContact message you sent. --></help>
+        <label><!-- Forwards --></label>
+        <name>iContactforSF__Forwards__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hidden field, used for pagination --></help>
+        <label><!-- IdString --></label>
+        <name>iContactforSF__IdString__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date/time of the most recent statistics update for this message. --></help>
+        <label><!-- Deprecated --></label>
+        <name>iContactforSF__Last_Update_Statistics_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The first success threshold for open rate, where red becomes yellow on the dashboard gauge. --></help>
+        <label><!-- Open Rate Caution % --></label>
+        <name>iContactforSF__Open_Rate_Success_Threshold_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- The second success threshold for open rate, where yellow becomes green on the dashboard gauge. --></help>
+        <label><!-- Open Rate Success % --></label>
+        <name>iContactforSF__Open_Rate_Success_Threshold_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- The open rate is the ratio of individual opens per recipients, which indicates the percentage of people who are viewing your message. --></help>
+        <label><!-- Open Rate --></label>
+        <name>iContactforSF__Open_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total opens reports the total number of times that any recipient has opened your message. For instance, if 5 people open the message once and one more person opens the message 5 times, the total opens would be 10. --></help>
+        <label><!-- Total Opens --></label>
+        <name>iContactforSF__Opens__c</name>
+    </fields>
+    <fields>
+        <help><!-- The time the send request was completed. --></help>
+        <label><!-- Released Time --></label>
+        <name>iContactforSF__Released_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the number of messages that iContact attempted to send. --></help>
+        <label><!-- Released --></label>
+        <name>iContactforSF__Released__c</name>
+    </fields>
+    <fields>
+        <help><!-- The time the send request was started for processing. --></help>
+        <label><!-- Scheduled Time --></label>
+        <name>iContactforSF__Scheduled_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Displays whether this message was sent to all campaign members, or was targeted using the &quot;Targeted Send&quot; option. --></help>
+        <label><!-- Sent to --></label>
+        <name>iContactforSF__Sent_to__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spam Check Details --></label>
+        <name>iContactforSF__Spam_Check_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spam Check Score --></label>
+        <name>iContactforSF__Spam_Check_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicator for status of the statistic updates for this message. --></help>
+        <label><!-- Update Statistics Status --></label>
+        <name>iContactforSF__StatisticsStatus__c</name>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not In Progress</masterLabel>
+            <translation><!-- Not In Progress --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- StatusSummary --></label>
+        <name>iContactforSF__StatusSummary__c</name>
+    </fields>
+    <fields>
+        <help><!-- The status of the message being sent. --></help>
+        <label><!-- Status --></label>
+        <name>iContactforSF__Status__c</name>
+        <picklistValues>
+            <masterLabel>Released</masterLabel>
+            <translation><!-- Released --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled</masterLabel>
+            <translation><!-- Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sending</masterLabel>
+            <translation><!-- Sending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Targeted Join Date 1 --></label>
+        <name>iContactforSF__Targeted_Join_Date1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Targeted Join Date 2 --></label>
+        <name>iContactforSF__Targeted_Join_Date2__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this was a targeted send, contains a link to the message that the targets were based on. --></help>
+        <label><!-- Targeted Message --></label>
+        <name>iContactforSF__Targeted_Message__c</name>
+        <relationshipLabel><!-- Targeted Sent Messages --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If checked, this message was sent using the &quot;Targeted Send&quot; feature. --></help>
+        <label><!-- Targeted --></label>
+        <name>iContactforSF__Targeted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique clicks reports the number of recipients that clicked on your message. --></help>
+        <label><!-- Unique Clicks --></label>
+        <name>iContactforSF__Unique_Clicks__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique opens reports the number of recipients that opened your message. --></help>
+        <label><!-- Unique Opens --></label>
+        <name>iContactforSF__Unique_Opens__c</name>
+    </fields>
+    <fields>
+        <help><!-- The first success threshold for unsubscribe rate, where green becomes yellow on the dashboard gauge. --></help>
+        <label><!-- Unsubscribe Rate Caution % --></label>
+        <name>iContactforSF__Unsubscribe_Rate_Warning_Threshold_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- The second warning threshold for unsubscribe rate, where yellow becomes red on the dashboard gauge. --></help>
+        <label><!-- Unsubscribe Rate Warning % --></label>
+        <name>iContactforSF__Unsubscribe_Rate_Warning_Threshold_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- The unsubscribe rate is the ratio of the number of unsubscribed campaign members per recipients sent the message. --></help>
+        <label><!-- Unsubscribe Rate --></label>
+        <name>iContactforSF__Unsubscribe_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unsubscribes reports the number of contacts who unsubscribed from a particular message. --></help>
+        <label><!-- Unsubscribes --></label>
+        <name>iContactforSF__Unsubscribed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Version --></label>
+        <name>iContactforSF__Version__c</name>
+        <picklistValues>
+            <masterLabel>Lite</masterLabel>
+            <translation><!-- Lite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation><!-- Normal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- iContact Asynchronous Send Id --></label>
+        <name>iContactforSF__iContact_Asynchronous_Send_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- The ID of the iContact campaign that this message was sent for. --></help>
+        <label><!-- iContact Campaign ID --></label>
+        <name>iContactforSF__iContact_Campaign_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- The ID of the iContact Message that was created and sent out. --></help>
+        <label><!-- iContact Message ID --></label>
+        <name>iContactforSF__iContact_Message_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- The ID of the iContact Send that was created. --></help>
+        <label><!-- iContact Send ID --></label>
+        <name>iContactforSF__iContact_Send_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Most recent time that updating statistics finished for this message. --></help>
+        <label><!-- Last Update Statistics Time --></label>
+        <name>iContactforSF__update_statistics_date__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- You cannot modify the status or version of a sent message. --></errorMessage>
+        <name>iContactforSF__CannotModifyStatusOrVersion</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Cancel_Send --></label>
+        <name>iContactforSF__Cancel_Send</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_iContact_Message --></label>
+        <name>iContactforSF__Send_iContact_Message</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Targeted_Send --></label>
+        <name>iContactforSF__Targeted_Send</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Update_Statistics --></label>
+        <name>iContactforSF__Update_Statistics</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Message_Body --></label>
+        <name>iContactforSF__View_Message_Body</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- iContact_Help --></label>
+        <name>iContactforSF__iContact_Help</name>
+    </webLinks>
+</CustomObjectTranslation>

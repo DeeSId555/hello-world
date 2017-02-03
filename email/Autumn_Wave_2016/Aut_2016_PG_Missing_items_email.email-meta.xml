@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Autumn 2016 PG  Missing Items Email - Non Term Time</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Aut 2016 PG - Missing items email (Standard)</name>
+    <style>none</style>
+    <subject>NCS application - your next steps</subject>
+    <textOnly>NCS powered by The Challenge 
+
+NCSTHECHALLENGE.ORG 
+
+NCS application - your next steps
+
+Dear {!IF(Contact.Parent_Name__c &lt;&gt; &quot;&quot;,&quot; &quot;&amp; ( Contact.Parent_Name__c ) &amp;&quot; &quot;,&quot;Parent or Guardian of (Contact.FirstName)&quot;)},
+
+Please complete {!Contact.FirstName}’s application for NCS
+
+Thank you for starting {!Contact.FirstName}’s application for National Citizen Service (NCS). At the moment, parts of this are not complete and we cannot give {!Contact.FirstName} a place until we have received and reviewed these parts. So, we need you ({!Contact.FirstName}&apos;s parent or legal guardian) to provide:
+
+{!NCS_Application__c.Missing_Item_MASI__c}{!NCS_Application__c.Missing_Item_Consent__c}
+
+{!NCS_Application__c.Missing_Item_DOB__c}
+
+{!NCS_Application__c.Missing_Item_School__c}
+
+{!IF((Contact.Term_time_wave__c == TRUE),&quot;&quot;, &quot;&amp;(NCS_Application__c.Missing_payment_paragraph__c)&amp;&quot;&quot;&amp;(NCS_Application__c.Missing_Payment_SDD_Not_in_Past__c)&amp;&quot;&quot;&amp;(NCS_Application__c.Missing_Payment_with_Bursary_Call_Due__c)&amp;&quot;&quot;&amp;(NCS_Application__c.Missing_Payment_Bursary_Call_Made__c)&amp;&quot;)}
+
+The easiest way to do this and complete {!Contact.FirstName}&apos;s application is by logging in to your online account at bookings.ncsthechallenge.org. If you are unable to complete it online or have any questions, please call us on 0203 542 2400 – we’re always happy to help.
+
+{!IF((Contact.Term_time_wave__c == TRUE),&quot;Please complete &quot;&amp;(Contact.FirstName)&amp;&quot;’s application as soon as possible so they can take part in this NCS programme as part of their course.&quot;,&quot;Places are filling up fast, so please complete &quot;&amp;(Contact.FirstName)&amp;&quot;’s application as soon as possible to increase their chances of benefiting from this once-in-a-lifetime experience.&quot;)}
+
+Yours sincerely,
+
+The NCS Team - The Challenge
+
+NCS THE CHALLENGE    @NCSTheChallenge
+NCSThe Challenge    @NCSTheChallenge
+
+
+Copyright © 2016 The Challenge Network, All rights reserved.
+The Challenge Network is a charity registered in England and Wales with charity no. 1129239
+and company no. 6845451, whose registered office is at Elizabeth House, 39 York Road, London SE1 7NQ.
+
+You are receiving this email because you have registered your interest for NCS.
+Want to update your preferences or unsubscribe? Please contact us.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

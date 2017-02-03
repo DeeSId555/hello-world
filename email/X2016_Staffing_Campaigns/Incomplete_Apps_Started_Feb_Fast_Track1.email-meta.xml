@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email to all applicants who started an application in Feb and didn&apos;t finish</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>Incomplete Apps - fast-track push</name>
+    <style>formalLetter</style>
+    <subject>New fast-track deadline - apply by midnight Monday for a seasonal role!</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact us on seasonalroles@the-challenge.org.
+
+Dear {!Contact.FirstName},
+
+Remember! You need to get your seasonal roles application in by our upcoming deadline to ensure that you&apos;re fast-tracked through our screening stage. Fast-tracking your application gives you the very best chance of getting the role and location you want this summer.
+
+As it&apos;s a Bank Holiday weekend, we&apos;ve extended the deadline to the 2nd May! Get your application in by Midnight on Monday and we&apos;ll fast-track your application.
+
+Why should you submit your application now?
+
+In the interest of fairness, we allocate our seasonal roles on a first-come, first-served basis. Getting your application in by the end of the month means that:
+
+You’ll be more likely to be offered one of our seasonal roles
+You’ll have a better choice of assessment dates to choose from
+You’ll have a better choice of dates and locations in the summer
+
+Click here to continue your application: https://staffing.the-challenge.org/Login.aspx?ReturnUrl=%2fsecure%2f
+
+Our application form is available in different formats! If you have any additional needs and would like us to make our application process more accessible to you, please contact our Inclusion Staffing team on inclusion.ss@the-challenge.org as soon as possible.
+
+If you have any other questions about the application process, please get in touch with us on seasonalroles@the-challenge.org. We look forward to receiving your application!
+
+Best wishes,
+
+The Staffing Team
+The Challenge
+seasonalroles@the-challenge.org</textOnly>
+    <type>html</type>
+</EmailTemplate>

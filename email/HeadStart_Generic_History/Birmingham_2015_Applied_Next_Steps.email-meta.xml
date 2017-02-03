@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>YP who have completed application, sent 25/09/15</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Birmingham 2015 Applied Next Steps</name>
+    <style>none</style>
+    <subject>Thanks for Joining HeadStart!</subject>
+    <textOnly>HeadStart login details:
+
+Email Address {!Contact.Email}
+
+NCS ID
+
+{!Contact.NCS_ID__c}
+
+PIN {!Contact.Login_Password__c}
+
+HeadStart Website
+
+Thanks for Joining HeadStart!
+
+Hi {!Contact.FirstName},
+
+Thanks for joining HeadStart! We&apos;re really excited to have you on the programme, and just wanted to send you a little email saying &quot;what happens next&quot;
+
+In the next two weeks we&apos;ll be assigning you to one of your volunteer choices, after this you&apos;ll get a call from us confirming your charity and first day of volunteering.
+You will then get an email with all the details you need and some information on how to get a ticket for our HeadStart Kick Off event.
+
+SAVE THE DATE
+
+HeadStart Kick Off
+
+Saturday 24th October or Monday 26th October
+
+
+We hope you&apos;re really excited for HeadStart, don&apos;t forget to check out our Twitter or Facebook for updates and competitions.
+
+
+CLICK HERE to access the HeadStart Website.
+
+
+Any questions? Email the HeadStart team, check out our website or get in touch on Twitter or Facebook
+
+
+The HeadStart team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

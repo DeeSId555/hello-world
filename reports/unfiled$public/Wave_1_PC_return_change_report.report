@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CONTACT_ID</field>
+    </columns>
+    <columns>
+        <field>Contact.Send_one_off_email_to_PG__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Parent_Email__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Assigned_Wave__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>((1 or 2 or 3) AND 4 AND 5)</booleanFilter>
+        <criteriaItems>
+            <column>Contact.Assigned_Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>BANT B 4,BB A 1,BB A 2,BB A 4,BCHIC A 3,BHEN A 4,BHEN B 3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Assigned_Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>BlackCountry A 3,BlackCountry A 4,BlackCountry B 4,CAS A 1,CAS B 4,CAW A 1,Greenwich A 3,Heal B 3,NCBirm B 3,SBirm A 4,SLL A 2,SLL A 4,SLL B 2,SLL B 4</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Assigned_Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>SWarks A 2,TRIW A 2,TRIW A 3,TRIW A 4,WHR A 4,WSurrey A 2,WSurrey B 2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Assigned_Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.YP2014</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Wave 1 PC return change report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

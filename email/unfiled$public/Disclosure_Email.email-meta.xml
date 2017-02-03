@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>Disclosure Email</name>
+    <style>formalLetter</style>
+    <subject>Disclosure Agreement  - NCS The Challenge</subject>
+    <textOnly>{!Contact.MailingStreet}
+{!Contact.MailingCity}
+{!Contact.MailingPostalCode}
+9th June 2014
+
+Dear {!Contact.Name},
+I am pleased that you have accepted a conditional position to act as a Support Worker this summer on NCS with the Challenge.
+
+As part of the conditions we need to match you with a young person. In order to do this I need to send you anonymised, sensitive information about the them. As you are not yet contractually employed by The Challenge we will need you to sign a confidentiality agreement before we can send this information to you. You will not be able to be considered for a match with a young person without this agreement returned.
+
+I would be grateful if you would print, read and return a scanned signed copy of the attached agreement no later than 7 days from the date noted above. A scanned copy with your signature fulfils the requirements. Please ensure the file is less than 5 MB otherwise we will not be able to use the file.
+
+Please do not hesitate to call if there is anything you would like to clarify.
+
+
+
+Warm Regards,
+
+Sherry Kimball
+Senior Staffing Associate for Support Workers
+The Challenge
+London Waterloo Office
+sherry.kimball@the-challenge.org
+07785 623400
+0203 6918723
+Support Worker Confidentiality Agreement
+
+Confidentiality &amp; Data Protection
+
+You acknowledge that in the course of your conditional hiring You will have access to confidential information. You will not disclose or use or cause to be disclosed or used, at any time during or subsequent to this agreement, any secret or confidential information of TCN or any of its participants except as required by TCN in the connection with your performance or as required by law.
+
+For the purpose of the Data Protection Act 1998 (“DPA 1998”) You consent to the processing of all or any personal data relevant to their engagement by TCN. Processing includes but is not limited to obtaining, recording, using and holding data.
+
+
+
+Signed by
+
+Conditional Support Worker
+
+{!Contact.Name}    ____________________________________  Signature
+
+____________________________________
+
+Date</textOnly>
+    <type>html</type>
+</EmailTemplate>

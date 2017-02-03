@@ -1,0 +1,483 @@
+<apex:page standardController="Contact" extensions="treeControllerDLoading" showHeader="false" sidebar="false">
+  <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.DhtmlxTreePRO, 'codebase/dhtmlxtree.css')}" />
+  <link rel="stylesheet" type="text/css" href="/sCSS/12.0/Theme2/allCustom.css" />
+  <script type="text/javascript" src="{!URLFOR($Resource.DhtmlxTreePRO, 'sources/dhtmlxcommon.js')}" /><!-- application/x-javascript -->
+  <script type="text/javascript" src="{!URLFOR($Resource.DhtmlxTreePRO, 'sources/dhtmlxtree.js')}" />
+<style type="text/css">
+  .dtl {
+    border: 1px solid rgb(0, 0, 0); 
+    overflow: auto; 
+    background-color: rgb(255, 255, 255); 
+    padding: 5px 5px 5px 5px;
+    height: 315px;
+  }
+  
+  .dtlT {
+    border: 1px solid rgb(0, 0, 0); 
+    overflow: auto; 
+    background-color: rgb(255, 255, 255); 
+    padding: 5px 0px 5px 5px;
+    height: 315px;
+  }
+  
+  .dtlEdtrel {
+    border: 1px solid rgb(0, 0, 0); 
+    overflow: auto; 
+    background-color: rgb(255, 255, 255); 
+    padding: 5px 5px 5px 5px;
+    height: 315px;
+  }
+    
+  .lbl {
+    font-weight:bold;
+    color:#333333;
+    padding-right:4px;
+  }
+  
+  .requiredBlock {
+    background-color:#CC0000;
+    bottom:1px;
+    left:-4px;
+    top:1px;
+    width:3px;
+  }
+  
+  .headerLbl {
+    font-weight:bold;   
+    font-size:14px;
+    color:#333333;
+    padding-bottom:10px;
+    text-decoration: underline;
+  }
+  
+  .detailLbl {
+    padding:0px 0px 0px 5px;
+    color:#333333;
+    font-size:98%;
+    width:70%;
+  }
+  
+  .lblEle { 
+    font-weight:bold;
+    color:#333333;
+    font-size:91%;
+    width: 30%;
+    white-space: nowrap;    
+  }
+  
+  .mainDiv {
+    background-color:#E7E7E2;
+    border:1px solid #000000;
+    width:98%;
+    margin:5px auto;
+    text-align:left;
+  }
+  .rightTableDtl {
+    padding-left:10px;
+    text-align:left; 
+    padding-right: 10px;
+  }
+  .leftTableDtl {
+    padding-left:10px;
+    text-align:left;
+  }
+  
+</style>
+<apex:form >
+<!-- TREE AND DETAIL SECTION -->
+<apex:pageBlock mode="edit">
+<apex:outputPanel id="opnlMain">
+<div id="treeDetSecDIV" class="mainDiv">
+    <table border="0" width="100%" cellpadding="0" cellspacing="0" style="margin:5px auto;">
+        <tr>
+            <td colspan="2">
+                <apex:outputPanel id="opnlNewRel">
+                <table cellpadding="0" cellspacing="0" style="display:{!IF(propShowPnl1, 'block', 'none')};padding:0px 0px 0px 10px">
+                    <tr>
+                        <td>
+                          <apex:commandButton value="New Relationship" action="{!NewRelationship1}"/>
+                        </td>
+                        <td>
+                          <span style="display:{!IF(propShowPnl1, 'block', 'none')};padding-left:5px;">{!propTotals}</span>
+                        </td>
+                    </tr>
+                </table>
+                </apex:outputPanel>      
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding:4px 0px 4px 33px">
+                <div id="cBoxWrapper">
+                    <input id="L1" type="checkbox" name="L1" value="Group by Relationship Type" onclick="jsGetSelectedCBox();"/>Group by Relationship Type&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="L2" type="checkbox" name="L2" value="List Key Relationship(s) First" onclick="jsGetSelectedCBox();"/>List Key Relationship(s) First&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="L3" type="checkbox" name="L3" value="Active Relationship(s)" onclick="jsGetSelectedCBox();"/>Active Relationship(s)
+                </div>
+                <!--apex:outputPanel id="opnlSelRdo" style="display:{!IF(propShowPnl1, 'block', 'none')};">
+                    <apex:selectCheckboxes value="{!propCriteriass}" onchange="actFuncChangeCriteria(this.value);">
+                        <apex:selectOption itemValue="L0" itemLabel="Group by Relationship Type"/>
+                        <apex:selectOption itemValue="L2" itemLabel="List Key Relationship(s) First"/>
+                        <apex:selectOption itemValue="L3" itemLabel="Active Relationship(s)"/>
+                    </apex:selectCheckboxes>
+                </apex:outputPanel --> 
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" colspan="2">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                        <td class="leftTableDtl" width="50%">
+                            <apex:outputPanel id="opnlTree">
+                            <!-- Tree Container -->
+                            <div id="treeBox" class="dtlT"  style="display:{!IF(propShowPnl1, 'block', 'none')};"></div><!-- style="width:200;height:200" -->
+                            </apex:outputPanel>
+                        </td>
+                        <td class="rightTableDtl" width="50%">
+                            <apex:outputPanel id="opDetails">
+                            <div id="treeRecDetailDummy" class="dtl" style="overflow:auto;display:{!IF(AND(propShowPnl1,NOT(propShowPnl2)), 'block', 'none')};" />
+                            <div id="treeRecDetail" class="dtl" style="overflow:auto;display:{!IF(propShowPnl2, 'block', 'none')};">
+                                <table id="tblAccount" border="0" cellpadding="0" cellspacing="3" style="width:100%;display:{!IF(propBInsti, 'block', 'none')}">
+                                    <tr style="width:100%;">
+                                        <td colspan="2" class="headerLbl">
+                                            <a href='/{!propId}' target="_parent" >{!propName}</a>                   
+                                        </td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td class="lblEle" align="left" valign="top">Relationship:</td>
+                                        <td class="detailLbl" align="left">{!propRel1}</td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td></td>
+                                        <td class="detailLbl" align="left">{!propRel2}</td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td class="lblEle" align="left">Phone:</td>
+                                        <td class="detailLbl" align="left">{!propPhone}</td>
+                                    </tr>                                    
+                                    <tr style="width:100%;">
+                                        <td class="lblEle" align="left">City:</td>
+                                        <td class="detailLbl" align="left">{!propCity}</td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td class="lblEle" align="left">Email:</td>
+                                        <td class="detailLbl" align="left"><apex:outputLink value="mailto:{!propEmail}" rendered="{!IF(NOT(ISNULL(propEmail)), true, false)}">{!propEmail}</apex:outputLink></td>
+                                    </tr>
+                                    
+                                    <tr style="width:100%;">
+                                        <td class="lblEle" align="left">Key Relationship:</td>
+                                        <td class="detailLbl" align="left">{!propKeyRel}</td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td class="lblEle" align="left">Start Date:</td>
+                                        <td class="detailLbl" align="left">{!propStartDate}</td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td class="lblEle" align="left">End Date:</td>
+                                        <td class="detailLbl" align="left">{!propEndDate}</td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td style="padding-top:15px;" colspan="2" align="left">
+                                            <apex:commandButton value="Edit Relationship" action="{!EditRelationship1}">
+                                                <apex:param name="eventId" value="{!propRelId}" assignTo="{!propRelId}"/>
+                                            </apex:commandButton>
+                                            <!-- input type="button" value="Edit Relationship" class="btn" onclick="jsEditRelationship('{!propRelId}');"/ -->
+                                            <input type="button" value="Delete Relationship" class="btn" onclick="if(confirm('The Relationship record will be deleted, are you sure?')){jsDeleteRelationship('{!propRelId}');}"/>                               
+                                        </td>
+                                    </tr>
+                                </table><!-- Table Account -->
+                                <table id="tblContact" border="0" cellpadding="0" cellspacing="3" style="width:100%;display:{!IF(propBIndiv, 'block', 'none')}">
+                                    <tr style="width:100%;">
+                                        <td colspan="2" class="headerLbl">
+                                            <a href='/{!propId}' target="_parent" >{!propName}</a>                   
+                                        </td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td class="lblEle" align="left" valign="top">Relationship:</td>
+                                        <td class="detailLbl" align="left">{!propRel1}</td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td></td>
+                                        <td class="detailLbl" align="left">{!propRel2}</td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td class="lblEle" align="left">Institution Name:</td>
+                                        <td class="detailLbl" align="left"  nowrap="true">{!propAccName}</td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td class="lblEle" align="left">Home Phone:</td>
+                                        <td class="detailLbl" align="left">{!propPhone}</td>
+                                    </tr>
+                                     <tr style="width:100%;">
+                                        <td class="lblEle" align="left">Mobile Phone:</td>
+                                        <td class="detailLbl" align="left">{!propMPhone}</td>
+                                    </tr>                                  
+                                    <tr style="width:100%;">
+                                        <td class="lblEle" align="left">Town/City:</td>
+                                        <td class="detailLbl" align="left">{!propTownCity}</td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td class="lblEle" align="left">Country Region:</td>
+                                        <td class="detailLbl" align="left">{!propCountryRegion}</td>
+                                    </tr>
+                                
+                                    <tr style="width:100%;">
+                                        <td class="lblEle" align="left">Email:</td>
+                                        <td class="detailLbl" align="left"><apex:outputLink value="mailto:{!propEmail}" rendered="{!IF(NOT(ISNULL(propEmail)), true, false)}">{!propEmail}</apex:outputLink></td>
+                                    </tr>
+                                   
+                                    <tr style="width:100%;">
+                                        <td class="lblEle" align="left">Key Relationship:</td>
+                                        <td class="detailLbl" align="left">{!propKeyRel}</td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td class="lblEle" align="left">Start Date:</td>
+                                        <td class="detailLbl" align="left">{!propStartDate}</td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td class="lblEle" align="left">End Date:</td>
+                                        <td class="detailLbl" align="left">{!propEndDate}</td>
+                                    </tr>
+                                    <tr style="width:100%;">
+                                        <td style="padding-top:15px;" colspan="2" align="left">
+                                            <apex:commandButton value="Edit Relationship" action="{!EditRelationship1}">
+                                                <apex:param name="eventId" value="{!propRelId}" assignTo="{!propRelId}"/>
+                                            </apex:commandButton>
+                                            <!-- input type="button" value="Edit Relationship" class="btn" onclick="jsEditRelationship('{!propRelId}');"/ -->
+                                            <input type="button" value="Delete Relationship" class="btn" onclick="if(confirm('The Relationship record will be deleted, are you sure?')){jsDeleteRelationship('{!propRelId}');}"/>                               
+                                        </td>
+                                    </tr>
+                                </table><!-- Table Contact -->                              
+                                <table style="padding-left:10px;display:{!IF(AND(NOT(propDisplay),propDisplay_L0), 'block', 'none')}">
+                                    <tr>
+                                        <td class="headerLbl">
+                                            <a href='/{!propId}' target="_blank" >{!propName}</a>                   
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            </apex:outputPanel><!--End opDetails-->
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div id="salesforceSource_blurybackground_New" style="display:none;z-index: 9998; position:absolute; left:1px; top:1px; width:97%; height:97%; text-align:center; vertical-align: middle;opacity:0.7;filter:alpha(opacity=75);background-image: url({!$Resource.Busy2});background-position:36% 30%;background-repeat:no-repeat;background-color: #dcdcdc;"></div><!--  background-color: #dcdcdc; -->
+<script>
+    function Shadow()
+    {
+        var AgreementForm = document.getElementById("salesforceSource_blurybackground_New");
+        AgreementForm.style.height = window.screen.availHeight + "px";
+        AgreementForm.style.width = window.screen.availWidth + "px";
+        AgreementForm.style.display = "block";
+    }//End Func Shadow
+</script>
+<!-- END TREE AND DETAIL SECTION -->
+
+<!-- PROCESSING SCREEN --> 
+<apex:actionStatus id="processingStatus">
+    <apex:facet name="start">
+        <c:processing BackColor="#efefef" borderColor="#336699" borderSize="3" height="100px" width="200px" ImageUrl=""  Message="test" messageStyle="color:darkred;font-size:11pt;font-weight:bold;"/>
+    </apex:facet>
+</apex:actionStatus>
+<!-- END PROCESSING SCREEN -->
+ 
+<!-- ACTIONFUNCTION SECTION -->
+<apex:actionFunction name="actFuncChangeCriteria" action="{!CriteriaChange}" rerender="opnlMain" status="processingStatus">
+    <apex:param name="paramCri" assignTo="{!propCriteria}" value="" />
+</apex:actionFunction>
+
+<apex:actionFunction name="actFuncResetCriteria" action="{!ResetChange}" rerender="opnlMain" status="processingStatus" />
+
+<apex:actionFunction name="GetDetailsDLoading" action="{!SelectedNodeDetailsDLoading}" rerender="opDetails" status="processingStatus">
+    <apex:param name="paramIds" assignTo="{!propSelectedNode}" value="" />
+    <apex:param name="paramIdRel" assignTo="{!propSelectedNodeRel}" value="" />
+</apex:actionFunction>
+
+<apex:actionFunction name="DeleteRelationship" action="{!DeleteRelationship}" rerender="lblDummy" status="processingStatus" oncomplete="alert('Record deleted successfully.');">
+    <apex:param name="paramrelToDel" assignTo="{!propRelToEditDelete}" value="" />
+</apex:actionFunction>
+<apex:actionFunction name="FetchChild" action="{!FetchChild}" rerender="atHdnBox" status="processingStatus" oncomplete="Shadow();">
+    <apex:param name="paramFetchChild" assignTo="{!propFetchChildURL}" value="" />
+    <apex:param name="paramChkBInfo" assignTo="{!propChkBInfo}" value="" />
+</apex:actionFunction>
+<!-- apex:actionFunction name="FetchChildGB" action="{!FetchChildGB}" rerender="atHdnBox" status="processingStatus" oncomplete="Shadow();">
+    <apex:param name="paramFetchChild" assignTo="{!propFetchChildURL}" value="" />
+    <apex:param name="paramChkBInfo" assignTo="{!propChkBInfo}" value="" />    
+</apex:actionFunction -->
+
+
+<apex:inputHidden id="atHdnBox" value="{!propFetchChild}"/>
+
+<!-- END ACTIONFUNCTION SECTION -->   
+<script>
+    var id18Dig = "{!Contact.Id}" + "__0";
+
+    var tree = new dhtmlXTreeObject("treeBox","100%","100%",0);
+    tree.setSkin('dhx_skyblue');
+    tree.setImagePath("{!URLFOR($Resource.DhtmlxTreePRO, 'codebase/imgs/')}");
+    tree.setIconSize(13,13);
+    tree.enableMultiLineItems(true);
+    
+    tree.setXMLAutoLoadingBehaviour("function");
+    tree.setXMLAutoLoading(function(id){
+        var arr = id.split("__");
+        var v = document.getElementById('cBoxWrapper').getElementsByTagName('*')
+        var sel = "";
+        for(var i=0; i < v.length; i++)
+        {
+          if(v[i].type == "checkbox")
+          {
+            if(v[i].checked)
+              sel = sel + v[i].id + ":";
+          }
+        }
+        if(sel.length != '' && sel.length > 2)
+        {
+          sel = sel.substring(0,sel.length -1);
+        }
+              
+        if(arr.length > 1)
+        {
+          if(arr[arr.length -1] == "GB")
+          {
+            var f = '';
+            for(var i = 0; i < (arr.length - 1); i++)
+              f = f + arr[i] + '__';
+            f = f.substring(0, f.lastIndexOf("__"));
+//alert("Clicked Node for Child GB >>>\n\n" + "/apex/tXMLGBDetails?idSel=" + f + "&idSelPar=" + tree.getParentId(id) + "&par=" + "{!Contact.Id}" + "\n\n" + sel);                   
+            //FetchChildGB(("/apex/tXMLGBDetails?idSel=" + f + "&idSelPar=" + tree.getParentId(id) + "&par=" + "{!Contact.Id}"), sel);
+            setTimeout("GetChilds()",5000);  
+          }
+          else
+          {
+//alert("Clicked Node for Child >>>\n\n" + "/apex/tXMLDetails?idSel=" + id + "&par=" + "{!Contact.Id}" + "\n\n" + sel);          
+            FetchChild(('/apex/tXMLDetails?idSel=' + id + "&par=" + "{!Contact.Id}"), sel);
+            setTimeout("GetChilds()",8000);
+          }
+        }     
+    });
+
+    tree.loadXMLString('{!treeData}');
+    
+    tree.setOnClickHandler(tonclick);
+    tree.openItem(id18Dig);
+    
+    var onemoreTry = true;
+    function GetChilds()
+    {
+//alert("Result>>>\n\n" + document.getElementById('{!$Component.atHdnBox}').value);      
+      tree.loadXMLString(document.getElementById('{!$Component.atHdnBox}').value);
+      document.getElementById("salesforceSource_blurybackground_New").style.display = "none";
+      //if(tree.loadXMLString(document.getElementById('{!$Component.atHdnBox}').value) == "" && onemoreTry){ alert("Called Again");    
+      //    setTimeout("tree.loadXMLString(document.getElementById('{!$Component.atHdnBox}').value)",3000);
+      //    onemoreTry = false;
+      //}
+    }//End Func GetChilds 
+    
+    function tonclick(id) 
+    {
+//alert("SELECTED NODE ID >>>\n\n " + tree.getSelectedItemId());
+        var arr = tree.getSelectedItemId().split('__');
+        if(arr.length > 1)
+        {
+          if(arr[arr.length -1] == "GB")//If GroupBy
+          {
+            var recIdAccOrCon = "--";
+            var recIdRel = "--";
+            for(var i = 0; i < arr.length; i++)
+            {
+              if(arr[i].length == 15 || arr[i].length == 18)
+              {
+                if(i == 0)
+                  recIdAccOrCon = arr[i];
+                if(i == 1)
+                  recIdRel = arr[i];
+              }
+            }
+            GetDetailsDLoading(recIdAccOrCon, recIdRel);
+          }//End If GroupBy
+          else//If Normal
+          {
+            var recIdAccOrCon = "--";
+            var recIdRel = "--";
+            for(var i = 0; i < arr.length; i++)
+            {
+              if(arr[i].length == 15 || arr[i].length == 18)
+              {
+                if(i == 0)
+                  recIdAccOrCon = arr[i];
+                if(i == 1)
+                  recIdRel = arr[i];
+              }
+            }
+            GetDetailsDLoading(recIdAccOrCon, recIdRel);            
+          }//End If Normal
+        }  
+    };
+    
+    function closeAllRoots() 
+    {
+        var rootsAr = tree.getSubItems(0).split(",");        
+        for (var i = 0; i < rootsAr.length; i++) 
+        {
+            tree.closeAllItems(rootsAr[i]);
+        }
+    }//End Func closeAllRoots
+    
+    function jsDeleteRelationship(relId)
+    {
+        tree.deleteItem(tree.getSelectedItemId(),true);
+        DeleteRelationship(relId);
+    }//End Func jsDeleteRelationship
+    
+    function jsGetSelectedCBox()
+    {
+      var v = document.getElementById('cBoxWrapper').getElementsByTagName('*')
+      var sel = "";
+      for(var i=0; i < v.length; i++)
+      {
+        if(v[i].type == "checkbox")
+        {
+          if(v[i].checked)
+            sel = sel + v[i].id + ":";
+        }
+      }
+      if(sel.length != '' && sel.length > 2)
+      {
+        actFuncChangeCriteria(sel.substring(0,sel.length -1));
+      }
+      else
+      {
+        actFuncResetCriteria();
+      }
+    }//End Func jsGetSelectedCBox
+    
+    //Retain checkbox selection
+    if("{!propCriteria}" != "")
+    {
+      var val = "{!propCriteria}";
+      var arrSel = val.split(":");
+      if(arrSel.length > 0)
+      {
+        var v = document.getElementById('cBoxWrapper').getElementsByTagName('*')
+      
+        for(var i = 0; i < arrSel.length; i++)
+        {
+          for(var j=0; j < v.length; j++)
+          {
+            if(v[j].type == "checkbox" && v[j].id == arrSel[i])
+              v[j].checked = true;
+          }
+        }
+      }
+    }
+    //End Retain checkbox selection 
+</script>
+</apex:outputPanel><!-- End opnlMain -->
+</apex:pageBlock>
+
+</apex:form>
+</apex:page>

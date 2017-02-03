@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Alert_to_Owner_record_has_been_edited</fullName>
+        <description>Alert to Owner: record has been edited</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>api.user@the-challenge.org</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Staffing_internal_emails_2013/Alert_to_Owner_record_has_been_edited</template>
+    </alerts>
+    <alerts>
+        <fullName>Automatic_ST_meeting_arranged</fullName>
+        <description>Automatic email ST meeting arranged</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderAddress>contact@the-challenge.org</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Internal_notifications_for_Marketing/ST_meeting_arranged_reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Automatic_email_Assembly_arranged_2012</fullName>
+        <description>Automatic email  Assembly arranged 2012</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderAddress>no-reply@the-challenge.org</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Internal_notifications_for_Marketing/Assembly_arranged_reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Automatic_email_CT_meeting_arranged</fullName>
+        <description>Automatic email CT meeting arranged</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderAddress>contact@the-challenge.org</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Internal_notifications_for_Marketing/CT_meeting_arranged_reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Automatic_email_ST_meeting_arranged</fullName>
+        <description>Automatic email ST meeting arranged</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderAddress>contact@the-challenge.org</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Internal_notifications_for_Marketing/ST_meeting_arranged_reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Automatic_email_for_hoody_handout_date</fullName>
+        <description>Automatic email for hoody handout date</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderAddress>contact@the-challenge.org</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Internal_notifications_for_Marketing/Hoody_handout_arranged</template>
+    </alerts>
+    <alerts>
+        <fullName>New_VIS_paid_account</fullName>
+        <description>New VIS paid account</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderAddress>contact@the-challenge.org</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Internal_notifications_for_Marketing/VIS_paid_account</template>
+    </alerts>
+    <alerts>
+        <fullName>Payment_request_email_alert</fullName>
+        <description>Payment request email alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Internal_notifications_for_Marketing/Bursary_request</template>
+    </alerts>
+    <alerts>
+        <fullName>School_type_has_changed</fullName>
+        <description>School type has changed</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>alexis.meech@the-challenge.org</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Internal_notifications_for_Central_Ops/School_type_has_been_changed</template>
+    </alerts>
+    <alerts>
+        <fullName>automatic_email_HT_meeting_arranged</fullName>
+        <description>automatic email HT meeting arranged</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderAddress>contact@the-challenge.org</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Internal_notifications_for_Marketing/HT_meeting_arranged_reminder</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Billing_City_Update</fullName>
+        <field>BillingCity</field>
+        <formula>City__c</formula>
+        <name>Billing City Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Billing_County_Update</fullName>
+        <field>BillingState</field>
+        <formula>County_or_region__c</formula>
+        <name>Billing County Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Billing_Post_Code_Update</fullName>
+        <field>BillingPostalCode</field>
+        <formula>Postcode__c</formula>
+        <name>Billing Post Code Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Billing_Street_Update</fullName>
+        <field>BillingStreet</field>
+        <formula>IF( NOT(ISBLANK(Address_line_1__c)) , 
+IF( AND(NOT( ISBLANK(Address_line_2__c) ), NOT( ISBLANK(Address_line_3__c) ) ), 
+Address_line_1__c &amp;&quot; &quot;&amp; Address_line_2__c &amp; &quot; &quot; &amp; Address_line_3__c, 
+IF( AND(ISBLANK(Address_line_2__c), ISBLANK(Address_line_3__c) ) , 
+Address_line_1__c, 
+IF(AND( ISBLANK(Address_line_2__c) , NOT( ISBLANK(Address_line_3__c) ) ) , 
+Address_line_1__c &amp;&quot; &quot;&amp; Address_line_3__c, 
+Address_line_1__c &amp;&quot; &quot;&amp; Address_line_2__c 
+)) ), &quot;To Be Confirmed &quot; )</formula>
+        <name>Billing Street Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_Date_of_Next_Step</fullName>
+        <field>Date_of_next_step__c</field>
+        <name>Clear Date of Next Step</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_Next_Step</fullName>
+        <field>Next_Step__c</field>
+        <name>Clear Next Step</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_Next_Steps_Complete</fullName>
+        <field>Next_step_complete__c</field>
+        <literalValue>0</literalValue>
+        <name>Clear Next Steps Complete</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_State_of_Play_2013</fullName>
+        <field>State_of_play_2012__c</field>
+        <name>Clear State of Play 2013</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_date_of_Next_stepA</fullName>
+        <field>Date_of_next_step__c</field>
+        <name>Clear date of Next step</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_next_steps</fullName>
+        <field>Next_Steps__c</field>
+        <name>Clear next steps</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_prog_state_of_play</fullName>
+        <field>PROG_State_of_Play__c</field>
+        <name>Clear prog state of play</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Hoody_handout_held</fullName>
+        <field>Status_number__c</field>
+        <formula>11</formula>
+        <name>Hoody handout held`</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Insert_NCA_LA</fullName>
+        <field>NCS_Local_Authority__c</field>
+        <formula>TEXT(Borough_or_area__c)</formula>
+        <name>Insert NCA LA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Next_Step_Locked_Update</fullName>
+        <field>Next_Step_2013_Notes__c</field>
+        <formula>Text( NOW() ) &amp; &quot; &quot; &amp;  Next_Step__c  &amp; &quot; (&quot; &amp; $User.Alias &amp; &quot;)&quot; &amp; BR() &amp; PRIORVALUE( Next_Step_2013_Notes__c )</formula>
+        <name>Next Step Locked Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Next_Step_Log_Update</fullName>
+        <field>Next_step_log__c</field>
+        <formula>Next_Step__c &amp; &quot;,&quot; &amp; $User.Alias &amp; &quot;,&quot; &amp; Text( NOW() ) &amp; &quot;,&quot; &amp;   TEXT(Date_of_next_step__c) &amp; TEXT(Programmes_Status__c) &amp; PRIORVALUE(  Next_step_log__c  )</formula>
+        <name>Next Step Log Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Next_Step_Log_Update_Proper</fullName>
+        <field>Next_step_log__c</field>
+        <formula>Next_Steps__c &amp; &quot;,&quot; &amp; $User.Alias &amp; &quot;,&quot; &amp; Text( NOW() ) &amp; &quot;,&quot; &amp; TEXT(Date_of_next_step__c) &amp; TEXT(Programmes_Status__c) &amp; BR() &amp; PRIORVALUE( Next_step_log__c )</formula>
+        <name>Next Step Log Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Previous_Steps_Update</fullName>
+        <field>Previous_steps__c</field>
+        <formula>Next_Steps__c &amp; &quot; (&quot; &amp; $User.Alias &amp; &quot; &quot; &amp; Text( NOW() ) &amp; &quot;)&quot; &amp; BR() &amp; PRIORVALUE( Previous_steps__c )</formula>
+        <name>Previous Steps Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Prog_State_of_play_2013_locked_update</fullName>
+        <field>PROG_State_of_play_2013_notes__c</field>
+        <formula>Text( NOW() ) &amp; &quot; &quot; &amp;  PROG_State_of_Play__c  &amp; &quot; (&quot; &amp; $User.Alias &amp; &quot;)&quot; &amp; BR() &amp; PRIORVALUE( PROG_State_of_play_2013_notes__c )</formula>
+        <name>Prog State of play 2013 locked update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Remove_TMS_override</fullName>
+        <field>Override_TMS_validation__c</field>
+        <literalValue>0</literalValue>
+        <name>Remove TMS override</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Remove_TMS_overrideA</fullName>
+        <field>Override_TMS_validation__c</field>
+        <literalValue>0</literalValue>
+        <name>Remove TMS override</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>State_of_play_2013_locked_update</fullName>
+        <field>State_of_play_notes__c</field>
+        <formula>Text( NOW() ) &amp; &quot; &quot; &amp; State_of_play_2012__c &amp; &quot; (&quot; &amp; $User.Alias &amp; &quot;)&quot; &amp; BR() &amp; PRIORVALUE(State_of_play_notes__c)</formula>
+        <name>State of play 2013 locked update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_number_existing_value</fullName>
+        <description>Returns status number to its original number if a decrease is attempted</description>
+        <field>Status_number__c</field>
+        <formula>PRIORVALUE( Status_number__c )</formula>
+        <name>Status number existing value</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_update_1</fullName>
+        <field>Status_number__c</field>
+        <formula>1</formula>
+        <name>Status update 1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_update_10a</fullName>
+        <field>Status_number__c</field>
+        <formula>10</formula>
+        <name>Status update 10a</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_update_10b</fullName>
+        <field>Status_number__c</field>
+        <formula>10</formula>
+        <name>Status update 10b</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_update_12</fullName>
+        <field>Status_number__c</field>
+        <formula>12</formula>
+        <name>Status update 12</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_update_13</fullName>
+        <field>Status_number__c</field>
+        <formula>13</formula>
+        <name>Status update 13</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_update_2</fullName>
+        <field>Status_number__c</field>
+        <formula>2</formula>
+        <name>Status update 2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_update_3</fullName>
+        <field>Status_number__c</field>
+        <formula>3</formula>
+        <name>Status update 3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_update_4</fullName>
+        <field>Status_number__c</field>
+        <formula>4</formula>
+        <name>Status update 4</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_update_5</fullName>
+        <field>Status_number__c</field>
+        <formula>5</formula>
+        <name>Status update 5</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_update_6</fullName>
+        <field>Status_number__c</field>
+        <formula>6</formula>
+        <name>Status update 6</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_update_7</fullName>
+        <field>Status_number__c</field>
+        <formula>7</formula>
+        <name>Status update 7</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_update_8</fullName>
+        <field>Status_number__c</field>
+        <formula>8</formula>
+        <name>Status update 8</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_update_8a</fullName>
+        <field>Status_number__c</field>
+        <formula>8</formula>
+        <name>Status update 8a</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_update_9</fullName>
+        <field>Status_number__c</field>
+        <formula>9</formula>
+        <name>Status update 9</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_updates_11</fullName>
+        <field>Status_number__c</field>
+        <formula>11</formula>
+        <name>Status updates 11</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_date_account_cant_work_with_us</fullName>
+        <field>Date_Can_t_work_with_us__c</field>
+        <formula>now()</formula>
+        <name>Update date account cant work with us</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_date_account_contacted</fullName>
+        <field>Date_Account_status_Contacted__c</field>
+        <formula>now()</formula>
+        <name>Update date account contacted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_date_account_meeting_arranged</fullName>
+        <field>Date_Account_status_Meeting_arranged__c</field>
+        <formula>now()</formula>
+        <name>Update date account meeting arranged</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_date_account_want_to_work_with_us</fullName>
+        <field>Date_Want_to_work_with_us__c</field>
+        <formula>now()</formula>
+        <name>Update date account want to work with us</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_last_prog_member</fullName>
+        <field>Last_prog_update__c</field>
+        <formula>$User.Id</formula>
+        <name>Update last prog member</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_state_of_play_field</fullName>
+        <field>State_of_play_2012__c</field>
+        <formula>Text( NOW() ) &amp; &quot; &quot; &amp;  State_of_play_2012__c  &amp; &quot; (&quot; &amp; $User.Alias &amp; &quot;)&quot; &amp; BR() &amp; PRIORVALUE(Description)</formula>
+        <name>Update state of play field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>field_updated</fullName>
+        <field>Status_number__c</field>
+        <formula>8</formula>
+        <name>field updated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Alert to Owner%3A record has been edited</fullName>
+        <actions>
+            <name>Alert_to_Owner_record_has_been_edited</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Alert to Staffing Account Owner when the account is edited</description>
+        <formula>AND( RecordType.Id = &quot;012C0000000QFt8&quot;,OwnerId &lt;&gt; LastModifiedById)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Assembly arranged %28notification email%29</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Assembly_date_2012__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Automatic_email_Assembly_arranged_2012</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.Assembly_date_2012__c</offsetFromField>
+            <timeLength>-1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Change of school%27s type</fullName>
+        <actions>
+            <name>School_type_has_changed</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Sends notification when a school&apos;s type is changed</description>
+        <formula>ISCHANGED( School_type__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>HT meeting arranged %28notification email%29</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Head_meeting_date2012__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>automatic_email_HT_meeting_arranged</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.Head_meeting_date2012__c</offsetFromField>
+            <timeLength>-1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Hoody handout event tomorrow %28notification email%29</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Hoody_handout_date_2012__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Automatic_email_for_hoody_handout_date</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.Hoody_handout_date_2012__c</offsetFromField>
+            <timeLength>-1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Insert NCA LA</fullName>
+        <actions>
+            <name>Insert_NCA_LA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.NCS_Local_Authority__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Next Step Log %26 Previous Steps Update</fullName>
+        <actions>
+            <name>Clear_Next_Steps_Complete</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Clear_date_of_Next_stepA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Clear_next_steps</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Next_Step_Log_Update_Proper</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Previous_Steps_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Next_step_complete__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Remove TMS validation</fullName>
+        <actions>
+            <name>Remove_TMS_overrideA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Override_TMS_validation__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>ST meeting arranged %28notification email%29</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.ST_meeting_date_2012__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Automatic_ST_meeting_arranged</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.ST_meeting_date_2012__c</offsetFromField>
+            <timeLength>-1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>School Address fields to Billing</fullName>
+        <actions>
+            <name>Billing_City_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Billing_County_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Billing_Post_Code_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Billing_Street_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( OR(RecordType.DeveloperName =&apos;Schools&apos;,RecordType.DeveloperName =&apos;Marketing not schools&apos;,RecordType.DeveloperName =&apos;Fundraising&apos;,RecordType.DeveloperName =&apos;Personal Challenge&apos;), 
+OR( ISCHANGED( Address_line_1__c ) ,ISCHANGED( Address_line_2__c ) , ISCHANGED( Address_line_3__c ),  ISCHANGED( City__c ),  ISCHANGED( Postcode__c ), ISCHANGED( County_or_region__c ) 
+) 
+)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Status field 1 - email sent</fullName>
+        <actions>
+            <name>Status_update_1</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Email_sent_2012__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status_number__c</field>
+            <operation>lessThan</operation>
+            <value>1</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Status field 2 - interest shown</fullName>
+        <actions>
+            <name>Status_update_2</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Interest_shown__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status_number__c</field>
+            <operation>lessThan</operation>
+            <value>2</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Status field 3 - HT%2FST meeting arranged</fullName>
+        <actions>
+            <name>Status_update_3</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 or 2) and 3</booleanFilter>
+        <criteriaItems>
+            <field>Account.Head_meeting_date2012__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.ST_meeting_date_2012__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status_number__c</field>
+            <operation>lessThan</operation>
+            <value>3</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Status field 4a NEW - HT%2FST meeting held past</fullName>
+        <actions>
+            <name>Status_update_4</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Head_meeting_date2012__c</field>
+            <operation>lessThan</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status_number__c</field>
+            <operation>lessThan</operation>
+            <value>4</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Head_meeting_date2012__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Status field 4a NEW - HT%2FST meeting held present or future</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Head_meeting_date2012__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status_number__c</field>
+            <operation>lessThan</operation>
+            <value>4</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Head_meeting_date2012__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Status_update_4</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Account.Head_meeting_date2012__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Status field 4b NEW - HT%2FST meeting held past</fullName>
+        <actions>
+            <name>Status_update_4</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.ST_meeting_date_2012__c</field>
+            <operation>lessThan</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.ST_meeting_date_2012__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status_number__c</field>
+            <operation>lessThan</operation>
+            <value>4</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Status field 4b NEW - HT%2FST meeting held present and future</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.ST_meeting_date_2012__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.ST_meeting_date_2012__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status_number__c</field>
+            <operation>lessThan</operation>
+            <value>4</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Status_update_4</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Account.ST_meeting_date_2012__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Status field 5 - CT meeting arranged</fullName>
+        <actions>
+            <name>Status_update_5</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.CT_meeting_date_2012__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status_number__c</field>
+            <operation>lessThan</operation>
+            <value>5</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Status field 6 NEW - CT meeting held past</fullName>
+        <actions>
+            <name>Status_update_6</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.CT_meeting_date_2012__c</field>
+            <operation>lessThan</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.CT_meeting_date_2012__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status_number__c</field>
+            <operation>lessThan</operation>
+            <value>6</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Status field 6 NEW - CT meeting held present and future</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Status_number__c</field>
+            <operation>lessThan</operation>
+            <value>6</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.CT_meeting_date_2012__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.CT_meeting_date_2012__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Status_update_6</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Account.CT_meeting_date_2012__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Status field 7 - assembly arranged</fullName>
+        <actions>
+            <name>Status_update_7</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Assembly_date_2012__c</field>
+            <operation>greaterThan</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status_number__c</field>
+            <operation>lessThan</operation>
+            <value>7</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Status field 8 NEW - assembly held past</fullName>
+        <actions>
+            <name>Status_update_8</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Status_number__c</field>
+            <operation>lessThan</operation>
+            <value>8</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Assembly_date_2012__c</field>
+            <operation>lessThan</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Assembly_date_2012__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Status field 9 NEW - P1 event held past</fullName>
+        <actions>
+            <name>Status_update_9</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.P1_event_date2012__c</field>
+            <operation>lessThan</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.P1_event_date2012__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status_number__c</field>
+            <operation>lessThan</operation>
+            <value>9</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Status fields 10a NEW - Follow-up held past</fullName>
+        <actions>
+            <name>Status_update_10b</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Piggyback_PG_eve_date_2012__c</field>
+            <operation>lessThan</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Piggyback_PG_eve_date_2012__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status_number__c</field>
+            <operation>lessThan</operation>
+            <value>10</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Status fields 10a NEW - Follow-up held present and future</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Piggyback_PG_eve_date_2012__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Piggyback_PG_eve_date_2012__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status_number__c</field>
+            <operation>lessThan</operation>
+            <value>10</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Status_update_10a</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Account.Piggyback_PG_eve_date_2012__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Status fields 10b NEW - Follow-up held past</fullName>
+        <actions>
+            <name>Status_update_10b</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.TCN_specific_PG_eve_date2012__c</field>
+            <operation>lessThan</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.TCN_specific_PG_eve_date2012__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status_number__c</field>
+            <operation>lessThan</operation>
+            <value>10</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Status fields 10b NEW - Follow-up held present and future</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.TCN_specific_PG_eve_date2012__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.TCN_specific_PG_eve_date2012__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status_number__c</field>
+            <operation>lessThan</operation>
+            <value>10</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Status_update_10b</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Account.TCN_specific_PG_eve_date2012__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Status fields 11 NEW - Hoody handout held past</fullName>
+        <actions>
+            <name>Hoody_handout_held</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Hoody_handout_date_2012__c</field>
+            <operation>lessThan</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status_number__c</field>
+            <operation>lessThan</operation>
+            <value>11</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Hoody_handout_date_2012__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Status fields 11 NEW - Hoody handout held present and future</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Hoody_handout_date_2012__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Hoody_handout_date_2012__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status_number__c</field>
+            <operation>lessThan</operation>
+            <value>11</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Hoody_handout_held</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Account.Hoody_handout_date_2012__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Status fields 12 - Rejected by school</fullName>
+        <actions>
+            <name>Status_update_12</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Rejected_by_school_2012__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status_number__c</field>
+            <operation>lessThan</operation>
+            <value>12</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Status fields 13 - Re-contact 2013</fullName>
+        <actions>
+            <name>Status_update_13</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Try_again_2013__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Status_number__c</field>
+            <operation>lessThan</operation>
+            <value>13</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Status%3A return to priorvalue</fullName>
+        <actions>
+            <name>Status_number_existing_value</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Restores status number to the priorvalue if the number is decreased. This is the case as long as the Status Incorrect field is false - making this field true provides users with the ability to manually change the status number</description>
+        <formula>AND((PRIORVALUE( Status_number__c ) &gt; Status_number__c), (Status_incorrect__c = FALSE))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update date account cant work with us</fullName>
+        <actions>
+            <name>Update_date_account_cant_work_with_us</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Programmes_Status__c</field>
+            <operation>equals</operation>
+            <value>Can&apos;t work with us this year</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update date account contacted</fullName>
+        <actions>
+            <name>Update_date_account_contacted</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Programmes_Status__c</field>
+            <operation>equals</operation>
+            <value>Contacted</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update date account meeting arranged</fullName>
+        <actions>
+            <name>Update_date_account_meeting_arranged</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Programmes_Status__c</field>
+            <operation>equals</operation>
+            <value>Meeting arranged</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update date account want to work with us</fullName>
+        <actions>
+            <name>Update_date_account_want_to_work_with_us</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Programmes_Status__c</field>
+            <operation>equals</operation>
+            <value>Want to work with us</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update progs owner</fullName>
+        <actions>
+            <name>Update_last_prog_member</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Next_Steps__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Updates Next Step Field</fullName>
+        <actions>
+            <name>Clear_Next_Step</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Next_Step_Locked_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Next_Step__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Add&apos;s date and user alias to State of play field</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Updates Prog State of play field</fullName>
+        <actions>
+            <name>Clear_prog_state_of_play</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Prog_State_of_play_2013_locked_update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.PROG_State_of_Play__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Add&apos;s date and user alias to State of play field</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Updates State of play field</fullName>
+        <actions>
+            <name>Clear_State_of_Play_2013</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>State_of_play_2013_locked_update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.State_of_play_2012__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Add&apos;s date and user alias to State of play field</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

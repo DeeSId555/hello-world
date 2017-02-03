@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Activity__c.Address_Post_Code__c</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Activity__c.Borough_of_most_recent_school_college__c</field>
+    </columns>
+    <description>YP split by Pathway to show the strongest locations</description>
+    <filter>
+        <criteriaItems>
+            <column>Step_Forward_Activity__c.Final_assessment_result__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Make a conditional offer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Step_Forward_Activity__c.Step_Forward_initial_check__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Meets initial criteria</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Step_Forward_Activity__c.Final_Favourite_Pathway__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Step_Forward_Activity__c.Cohort_Year__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Step_Forward_Activity__c.Placement_Contracting_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Step_Forward_Activity__c.Final_Favourite_Pathway__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>C3 YP by borough /  location</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Step_Forward_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

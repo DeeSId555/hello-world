@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.ADDRESS1_ZIP</field>
+    </columns>
+    <columns>
+        <field>Account.Boroughs_or_areas__c</field>
+    </columns>
+    <columns>
+        <field>Account.Local_Authority_s_Cluster__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Boroughs_or_areas__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>includes</operator>
+            <value>West Surrey</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Account.Programmes</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Local_Authority__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Surrey Contacts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

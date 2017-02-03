@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2014 ERROR Programme Pack Cover Email V2 BANT 10a</name>
+    <style>none</style>
+    <subject>Important: NCS timetable change</subject>
+    <textOnly>NCS POWERED BY THE CHALLENGE
+
+Important: NCS timetable change
+
+
+Dear Parent/Guardian of {!Contact.Name} and {!Contact.FirstName},
+
+We are writing to let you know that the locations on the timetable we sent you before were wrong. We have now changed these to show your programme&apos;s correct locations.
+
+Please ignore the timetable you were sent before and see below for your correct timetable.
+
+{!Contact.FirstName}’s new timetable can be found by clicking here. Please check this carefully as the details have changed. You will need to arrange travel between home and the meeting points at the start and return times shown.
+
+If you have any questions about your new timetable, please call Niamh Grego  on 07876 836466. Alternatively, you can email her at niamh.grego@the-challenge.org.
+
+We are really sorry for any confusion this has caused and are looking forward to welcoming {!Contact.FirstName} to NCS with The Challenge!
+
+Yours sincerely,
+
+
+
+Rebecca Carter
+Director at The Challenge
+
+
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

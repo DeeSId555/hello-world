@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Inclusion_Details__c.Support_Level__c</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Reserved_Wave__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Assigned_Wave__c</field>
+    </columns>
+    <columns>
+        <field>Inclusion_Details__c.restricted_mobility_wheelchair_user__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND (7 OR 8 OR 9 OR 10)</booleanFilter>
+        <criteriaItems>
+            <column>CONTACT_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Young_Person</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.NCS_Application_Primary_Season__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Summer 2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Date_of_YPPG_withdrawal_notification__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LAST_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Inclusion_Details__c.restricted_mobility_wheelchair_user__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>No,Yes but is not a wheelchair user</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Inclusion_Details__c.Support_Level__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>&quot;5.05 - support worker required, can share with another YP&quot;,5.1 - full-time support worker required,5.2 - requires 2 full time support workers,5b - personal coach required</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Reserved_Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>North Birmingham A Su 7,North Birmingham A Su 9,North Birmingham A Su 12,North Birmingham C Su 6,South Birmingham C Su 7,North Birmingham C Su 8,South Birmingham C Su 9,North Birmingham C Su 10,South Birmingham C Su 11,Sandwell C Su 3,Dudley C Su 8,Sandwell C Su 9,Dudley C Su 10,Sandwell C Su 11,Dudley C Su 12,Blackburn B Su 3,Burnley B Su 4,Blackburn B Su 5,Burnley B Su 6,Blackburn B Su 7,Burnley B Su 8,Blackburn B Su 9,Burnley B Su 10,Burnley B Su 12,Hackney C Su 8,Tower Hamlets C Su 9,Hackney C Su 10,Tower Hamlets C Su 11,Barking and Dagenham B Su 7,Havering B Su 8,Barking and Dagenham B Su 9,Havering B Su 10,Barking and Dagenham B Su 12</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Assigned_Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>North Birmingham A Su 7,North Birmingham A Su 9,North Birmingham A Su 12,North Birmingham C Su 6,South Birmingham C Su 7,North Birmingham C Su 8,South Birmingham C Su 9,North Birmingham C Su 10,South Birmingham C Su 11,Sandwell C Su 3,Dudley C Su 8,Sandwell C Su 9,Dudley C Su 10,Sandwell C Su 11,Dudley C Su 12,Blackburn B Su 3,Burnley B Su 4,Blackburn B Su 5,Burnley B Su 6,Blackburn B Su 7,Burnley B Su 8,Blackburn B Su 9,Burnley B Su 10,Burnley B Su 12,Hackney C Su 8,Tower Hamlets C Su 9,Hackney C Su 10,Tower Hamlets C Su 11,Barking and Dagenham B Su 7,Havering B Su 8,Barking and Dagenham B Su 9,Havering B Su 10,Barking and Dagenham B Su 12</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Reserved_Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Newham C Su 7,Newham C Su 8,Newham C Su 9,Newham C Su 10,Newham C Su 11,Newham C Su 12,Camden B Su 4,Lewisham C Su 10,Lewisham C Su 11,Stockport A Su 2,Stockport A Su 4,Stockport A Su 5,Oldham A Su 6,Stockport A Su 7,Stockport A Su 8,Oldham A Su 9,Stockport A Su 10,Oldham A Su 11,Stockport A Su 12,Woking A Su 1,Guildford A Su 2,Guildford A Su 8,Woking A Su 9,Woking A Su 11,Woking A Su 12,South Warwickshire C Su 5,South Warwickshire C Su 6,South Warwickshire C Su 7,South Warwickshire C Su 10,South Warwickshire C Su 11</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Assigned_Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Newham C Su 7,Newham C Su 8,Newham C Su 9,Newham C Su 10,Newham C Su 11,Newham C Su 12,Camden B Su 4,Lewisham C Su 10,Lewisham C Su 11,Stockport A Su 2,Stockport A Su 4,Stockport A Su 5,Oldham A Su 6,Stockport A Su 7,Stockport A Su 8,Oldham A Su 9,Stockport A Su 10,Oldham A Su 11,Stockport A Su 12,Woking A Su 1,Guildford A Su 2,Guildford A Su 8,Woking A Su 9,Woking A Su 11,Woking A Su 12,South Warwickshire C Su 5,South Warwickshire C Su 6,South Warwickshire C Su 7,South Warwickshire C Su 10,South Warwickshire C Su 11</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Non Wheelchair YPs on Wheelchair Waves</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Inclusion_Details__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

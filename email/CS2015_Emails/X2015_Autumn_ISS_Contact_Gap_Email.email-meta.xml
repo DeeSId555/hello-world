@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2015 Autumn ISS Contact Gap Email</name>
+    <style>none</style>
+    <subject>An update on your NCS application</subject>
+    <textOnly>NCSTHECHALLENGE.ORG
+
+An update on your NCS application
+
+
+
+Dear Parent or Guardian of {!Contact.Name},
+
+Thank you for submitting {!Contact.FirstName}’s application to take part in NCS (National Citizen Service) this autumn.
+
+We wanted to let you know that we have received your application and are processing it.
+
+We will call you as we get closer to the programme start date to gather further details about the medical and support information you gave us about {!Contact.FirstName}. This is so we can get an up-to-date understanding of any staff support or logistical adjustments {!Contact.FirstName} might need on the programme.
+
+In the meantime, you can visit our Questions page at : http://questions.ncsthechallenge.org/ which contains lots of useful information about our programme. Or, if you would like to get in touch with us directly, please email us at contact@ncsthechallenge.org or call 0203 542 2400.
+
+Yours sincerely,
+
+
+Tanya Dunne
+Head of Customer Services - The Challenge
+
+© The Challenge Network.
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

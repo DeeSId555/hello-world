@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Job__c$Name</field>
+    </columns>
+    <columns>
+        <field>Job__c.Job_placements__r$Contact__c</field>
+    </columns>
+    <columns>
+        <field>Job__c.Job_placements__r$Name</field>
+    </columns>
+    <columns>
+        <field>Job__c.Job_placements__r$Contact_email__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Job__c.Job_placements__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>,Job_placement__c.AM_2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job__c.Job_placements__r$Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Stockport,Blackburn B 10,Blackburn B 7,Blackburn B 9,Blackpool A 4,Blackpool A 6,Blackpool A 9,Burnley A 10,Burnley A 3,Burnley A 5,Burnley A 7,Burnley A 8,Bury A 2,Bury B 6,Bury B 7,Bury B 8,Bury B 9,Central Manc A 10,Central Manc A 3,Central Manc A 4,Central Manc A 6,Central Manc A 7,Central Manc A 8,Central Manc A 9,Central Manc B 10,Central Manc B 5,Chorley A 9,Leigh B 9,Oldham B 10,Oldham B 5,Oldham B 8,Preston A 10,Preston A 2,Preston A 3,Preston A 5,Preston A 6,Preston A 7,Preston A 8,Rochdale A 4,Rochdale A 6,Rochdale A 8,Rochdale A 9,Tameside A 10,Tameside A 2,Tameside A 3,Tameside A 5,Tameside A 7,Wigan B 4,Wigan B 6,Wigan B 8,W Lancs B 3,W Lancs B 5</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>S(AM)s 2015</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Jobs_with_Job_Placements__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Job__c$TCKO_Date__c</dateColumn>
+        <endDate>2015-10-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-05-01</startDate>
+    </timeFrameFilter>
+</Report>

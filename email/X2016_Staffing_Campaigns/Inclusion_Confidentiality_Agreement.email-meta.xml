@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>Inclusion Confidentiality Agreement</name>
+    <style>formalLetter</style>
+    <subject>IMPORTANT: Confidentiality Agreement enclosed!</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact us on seasonalroles@the-challenge.org.
+
+Dear {!Contact.FirstName},
+
+Congratulations on being provisionally offered one of our inclusion roles for Summer 2016!
+
+&apos;Matching&apos; you to a young person
+
+As our Inclusion roles generally work on a 1-2-1 basis with a young person, in order to be allocated to a work placement in the summer, we&apos;ll need to match you to a young person. We match young people to support staff based on the young person&apos;s needs and your background, experience and abilities.
+
+In order to do this, we&apos;ll need to send you anonymous, sensitive information about your young person. As you are not contractually employed by The Challenge yet, we ask that you sign a confidentiality agreement ahead of us sending this information to you.
+
+What do I need to do?
+
+Please download the Confidentiality Agreement and print, read and return a signed copy to us no later than 3 June 2016.
+
+https://staffing.the-challenge.org/assets/INCLUSION_DISCLOSURE_AGREEMENT_2016_(2).docx
+
+Return your signed and scanned copy to inclusionroles@the-challenge.org. Your signed agreement will then be added to your profile, and we&apos;ll be able to start the matching process!
+
+Any questions?
+
+If you&apos;d like any further information or clarification, please don&apos;t hesitate to get in touch using the contact details below - we&apos;ll be in touch in the coming weeks when the matching process is underway.
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+{!Contact.OwnerPhone}
+inclusionroles@the-challenge.org</textOnly>
+    <type>html</type>
+</EmailTemplate>

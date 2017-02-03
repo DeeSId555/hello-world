@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>16 YP Payment Chaser email</name>
+    <style>none</style>
+    <subject>Don’t miss out on NCS – your admin fee</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTHECHALLENGE.ORG
+
+Don’t miss out on NCS - your admin fee
+
+
+Hi {!Contact.FirstName},
+
+It’s great that you want to take part in National Citizen Service (NCS) – but we don’t want you to miss out because of a missing admin fee!
+
+We’ve contacted your parent or guardian to explain that we’ve temporarily saved you a provisional place on NCS but they need to pay your admin fee to keep your provisional place. Remember, your NCS admin fee will be a maximum of £50.
+
+We also explained how they can ask for financial assistance if they need help with the cost, because we would never want the cost to stop you taking part.
+
+We can only save your provisional place on NCS until {!NCS_Application__c.Letter_email_date_reserved_place_lost__c} without this payment, so please ask your parent or guardian to pay or to contact us if they need any help with the payment so we can have a chat. They can pay by:
+
+logging in to their account on our website at bookings.ncsthechallenge.org, or
+calling us on 0203 542 2400 to pay over the phone, or arrange sending us a cheque.
+
+Any questions?
+Get in touch by emailing us at contact@ncsthechallenge.org or calling us on 0203 542 2400.
+
+Speak to your parent or guardian as soon as you can to give yourself the best chance of taking part in this once-in-a-lifetime experience.
+
+Kind regards,
+
+
+Tanya Dunne
+Head of Customer Service
+The Challenge (largest provider of NCS)
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

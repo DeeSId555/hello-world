@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_37441010</developerName>
+        <masterLabel>Stage summary</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Ask__c.Stage_position__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Stage 1</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stage 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stage 3</sourceValue>
+            </sourceValues>
+            <value>Stages 1-3</value>
+        </values>
+        <values>
+            <value>Stages 4-6</value>
+        </values>
+        <values>
+            <value>Stage 7</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Ask__c.Stage_position__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Ask__c.Weighted_ask__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Ask__c.Total_amount_s_committed__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Ask__c.Account__c</field>
+    </columns>
+    <columns>
+        <field>CUST_ID</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Ask__c.Corporate</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_37441010</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Corporates requested and received</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Ask__c$Amount__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

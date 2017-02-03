@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HS Partner Attendance</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HS Partner Attendances</value>
+    </caseValues>
+    <fields>
+        <label><!-- Event Day --></label>
+        <name>Event_Day__c</name>
+        <relationshipLabel><!-- HS Partner Attendances --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Event Type --></label>
+        <name>Event_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invited Contact --></label>
+        <name>Invited_Contact__c</name>
+        <relationshipLabel><!-- HS Partner Attendances --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- How many people attending from the organisation? --></help>
+        <label><!-- Number of People attending --></label>
+        <name>Number_of_People_attending__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unconfirmed Value --></help>
+        <label><!-- Number of vacancies available --></label>
+        <name>Number_of_vacancies_available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Attending? --></label>
+        <name>Partner_Attending__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response</masterLabel>
+            <translation><!-- No Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partner Contact Email --></label>
+        <name>Partner_Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Engagement --></label>
+        <name>Partner_Engagement__c</name>
+        <relationshipLabel><!-- HS Partner Attendances --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If Ticked - invite sent
+If Unticked - invite hasn&apos;t been sent --></help>
+        <label><!-- Send Invite --></label>
+        <name>Send_Invite__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

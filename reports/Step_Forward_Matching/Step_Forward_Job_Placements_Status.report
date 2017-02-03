@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Step_Forward_Job_Placement__c$Name</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job_Placement__c$Step_Forward_Activity__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job_Placement__c$Step_Forward_Activity__c.Associate__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job_Placement__c$Step_Forward_Job_Name__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job_Placement__c$Step_Forward_Placement_Status__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job_Placement__c$Step_Forward_Job__c.Job_main_contact__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job_Placement__c$Employer_Contact_Name__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job_Placement__c$Step_Forward_Activity__c.Matching_date_Assoc_allocated_to__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job_Placement__c$Step_Forward_Job__c.Matching_date_Empl_allocated_to__c</field>
+    </columns>
+    <description>This shows us all Step Forward Job Placement Objects and some details of both the Employer and the young person.</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Step_Forward_Job_Placement__c$Employer__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Step Forward Job Placements Status</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Step_Forward_Job_Placements__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Step_Forward_Job_Placement__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

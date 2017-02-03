@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>HeadStart Hours Extension</name>
+    <style>none</style>
+    <subject>We want to give you time!</subject>
+    <textOnly>*|MC:SUBJECT|*
+
+{!HS_Activity__c.YP_First_name_from_HS_Application_Form__c}! We can see you’ve almost logged the magic 16 hours of volunteering, but you need just a little more time, so we&apos;re extending the deadline for an extra week!
+
+
+We&apos;ve had a few people ask us if they can use hours they&apos;re volunteering outside of their HeadStart placement to access the interviews and workshops. The Answer? OF COURSE YOU CAN! Any volunteering you are doing counts.
+
+-----------------------------------------------------------------------------
+
+Also if you still need to volunteer a few more hours you can come and volunteer on an exclusive HeadStart project Saturday 30th January and Saturday 6th February.
+Sign up Here!</textOnly>
+    <type>custom</type>
+</EmailTemplate>

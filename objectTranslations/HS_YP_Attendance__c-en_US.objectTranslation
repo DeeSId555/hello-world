@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HS YP Attendance</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HS YP Attendances</value>
+    </caseValues>
+    <fields>
+        <label><!-- Application form completed --></label>
+        <name>Application_form_completed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Website populates this field once the YP selects/accepts an invitation --></help>
+        <label><!-- Date Event Selected --></label>
+        <name>Date_Event_Selected__c</name>
+    </fields>
+    <fields>
+        <help><!-- 11.07.2016 . This date will show the date an invitation was sent to the YP --></help>
+        <label><!-- Date YP Event Invite Sent --></label>
+        <name>Date_YP_Event_Invite_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Did YP attend the event? --></label>
+        <name>Did_YP_attend_the_event__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event Date &amp; Time --></label>
+        <name>Event_Date_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- This picklist is to help create rollups with this filtered. This is connected to a process which updates it depending on the Event type --></help>
+        <label><!-- Event Type Selection --></label>
+        <name>Event_Type_Selection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Type --></label>
+        <name>Event_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- HS Activity --></label>
+        <name>HS_Activity__c</name>
+        <relationshipLabel><!-- HS YP Attendances --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HS Event Day Date --></label>
+        <name>HS_Event_Day_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- HS Event Day --></label>
+        <name>HS_Event_Day__c</name>
+        <relationshipLabel><!-- HS YP Attendances --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HS Hours Total --></label>
+        <name>HS_Hours_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Link to YP Event Invite Form --></label>
+        <name>Link_to_YP_Event_Invite_Form__c</name>
+    </fields>
+    <fields>
+        <label><!-- Result of Interview --></label>
+        <name>Result_of_Interview__c</name>
+        <picklistValues>
+            <masterLabel>Successful - Attend OJE</masterLabel>
+            <translation><!-- Successful - Attend OJE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Successful - No OJE. Holding</masterLabel>
+            <translation><!-- Successful - No OJE. Holding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsuccessful</masterLabel>
+            <translation><!-- Unsuccessful --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Result of application --></label>
+        <name>Result_of_application__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passed</masterLabel>
+            <translation><!-- Passed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If Ticked - invite sent
+If Unticked - invite not sent --></help>
+        <label><!-- Send Invite --></label>
+        <name>Send_Invite__c</name>
+    </fields>
+    <fields>
+        <label><!-- YP Attending Event? --></label>
+        <name>YP_Attending_Event__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response</masterLabel>
+            <translation><!-- No Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- YP Email --></label>
+        <name>YP_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- YP Name --></label>
+        <name>YP_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- YP Number --></label>
+        <name>YP_Number__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Send_SMS --></label>
+        <name>Send_SMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_bulk_SMS --></label>
+        <name>Send_bulk_SMS</name>
+    </webLinks>
+</CustomObjectTranslation>

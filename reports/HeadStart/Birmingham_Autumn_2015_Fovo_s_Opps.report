@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>HS_Activity__c$YP_First_name_from_HS_Application_Form__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c$YP_Last_name_from_HS_Application_Form__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_Hours__r$HS_Hours__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c$Name</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c$Find_own_volunteering_opportunity__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c$Own_Vol_Organisation_name__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>HS_Activity__c$Find_own_volunteering_opportunity__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c$HS_Owner__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Ben Toney</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Birmingham Autumn 2015 Fovo&apos;s Opps</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>HS_Hours_with_HS_Activities_and_Signposting_Opps__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>HS_Activity__c$Generic_email_sent__c</dateColumn>
+        <endDate>2016-04-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-08-31</startDate>
+    </timeFrameFilter>
+</Report>

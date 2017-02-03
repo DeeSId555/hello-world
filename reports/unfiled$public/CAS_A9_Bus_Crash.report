@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Incident__c.Date_and_time_of_incident__c</field>
+    </columns>
+    <columns>
+        <field>FK_CNTC_FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Incident__c.Wave__c</field>
+    </columns>
+    <columns>
+        <field>Incident__c.Description_of_incident__c</field>
+    </columns>
+    <description>All incidents on A9 including the bus crash</description>
+    <filter>
+        <criteriaItems>
+            <column>Incident__c.Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>croydon a 9</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Incident__c.Severity_of_incident_health__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>CAS A9 Bus Crash</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Incident__c@Incident__c.Contact__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Incident__c.Date_and_time_incident_reported_to_PL__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

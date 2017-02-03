@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>PV training invite - workflow active</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>1.6.5.3 PV Training confirmation</name>
+    <style>freeForm</style>
+    <subject>Confirmation of your training for NCS with The Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!HR_Event_Attendance__c.HR_Event_Owner_email__c}
+
+Dear {!HR_Event_Attendance__c.Candidate_Name__c},
+
+I am writing to you in order to confirm the details of your training session with us.
+
+{!HR_Event__c.Date_time_location__c}
+
+The training session will include various lively group activities and role specific training. As some activities may take place outdoors, please wear appropriate clothing and footwear.
+
+What do you need to bring and prepare?
+
+Depending on which option applies to you: staff must bring ALL of the following documents for DBS verification
+
+Option 1) You have an existing enhanced DBS dated after April 30th 2013, please bring
+
+- Your original DBS certificate with you to training
+
+Option 2) You have applied for a DBS through The Challenge, please bring
+
+- Your DBS certificate (if you have received this)
+
+- All three documents that you uploaded to process your DBS
+
+ALL Staff must bring the following ID documents for Right To Work verification
+
+Either
+A Passport (with a valid visa where appropriate) or National Identity Card;
+
+OR
+Original birth certificate AND your National Insurance Card
+
+If you do not have documents for either of these options please contact staffing.support@the-challenge.org
+
+Click on the button below for directions to the training venue.
+
+Get directions
+
+We look forward to seeing you!
+
+
+Best wishes,
+
+{!HR_Event_Attendance__c.HR_event_Owner__c}
+{!HR_Event_Attendance__c.HR_Event_Owner_email__c}
+NCS with The Challenge
+
+CR 1.6.5.3</textOnly>
+    <type>html</type>
+</EmailTemplate>

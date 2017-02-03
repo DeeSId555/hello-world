@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>2016 YP Post-RCD Ineligible to graduate emails</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2016 YP Post RCD ITG Email</name>
+    <style>none</style>
+    <subject>NCS - attendance update</subject>
+    <textOnly>NCS powered by The Challenge 
+
+NCSTHECHALLENGE.ORG 
+
+NCS - attendance update
+
+Hi {!Contact.Name} 
+
+We hope you’re having a great time on NCS!
+
+We wanted to let you know that, based on our records of your attendance, you have missed too much of the programme to become an official NCS graduate. Unfortunately, this means you won’t be able to receive a certificate at the graduation ceremony. 
+
+However, we hope you will continue to join us for the rest of NCS so you can get the best out of the experience. 
+
+You are still very welcome to come along to the graduation ceremony with a guest on {!Wave_Selection__c.Graduation_Date__c} to celebrate your achievements. You will receive an invite with full details soon, if you haven’t already. 
+
+If you have any questions or need to get in touch with us about this, please contact us using the details below. 
+
+We hope to see you during the rest of NCS! 
+
+Kind regards, 
+
+Josie Whitworth
+Head of Programmes and Staffing
+The Challenge
+
+Copyright © 2016 The Challenge Network, All rights reserved.
+The Challenge Network is a charity registered in England and Wales with charity no. 1129239 
+and company no. 6845451, whose registered office is at Elizabeth House, 39 York Road, London SE1 7NQ.
+
+You are receiving this email because you have registered your interest for NCS.
+Want to update your preferences or unsubscribe? Please email us at contact@ncsthechallenge.org or call us on 0203 542 2400.
+
+E: contact@ncsthechallenge.org T: 0203 542 2400 www.NCSTheChallenge.org</textOnly>
+    <type>custom</type>
+</EmailTemplate>

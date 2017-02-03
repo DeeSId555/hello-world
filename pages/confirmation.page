@@ -1,0 +1,72 @@
+<apex:page standardController="Account" contentType="text/html" docType="html-5.0" extensions="ContractForm" sidebar="false" renderAs="PDF">
+ <head>
+ 
+     <style>
+             @page {
+              size:landscape;
+           }
+        </style>
+    <apex:stylesheet value="{!URLFOR($Resource.xtablecss2)}"/>
+ </head>
+       <apex:pageBlock >
+     <!--   title="Contract: Venue or Partner" <p>Welcome to The Challenge.  The Challenge exists to 'inspire and connect young people to strengthen their community', 
+        and we are delighted that you can be part of it.  This document provides final confirmation details for us working together. 
+        Please check the details and then sign your name to confirm that they are correct.  Please then post this form to our address below.  
+        Do get in touch if you have any concerns or we can help in any way!</p><br />
+            <apex:pageBlockSection title="Partner Contact Details" columns="1">
+                     
+                    <apex:outputLabel > <b style="font-size:small;">Organization Name:</b> {!account.Name} 
+                    </apex:outputLabel>
+                    
+                    <apex:outputLabel ><b style="font-size:small;"> Address: </b>{!account.Address_line_1__c},{!account.Address_line_2__c} {!account.Address_line_3__c}<br />{!account.City__c},{!account.County_or_region__c} {!account.Postcode__c}
+                    </apex:outputLabel>
+                    
+                   <h4 >Main Contact Name:</h4> {!account.Main_Contact__r.Name}
+                    <ul>
+                      <li><h4>Work Phone:</h4> {!account.Main_Contact__r.npe01__WorkPhone__c}</li>
+                      <li><h4>Mobile Phone:</h4> {!account.Main_Contact__r.MobilePhone}</li>
+                      <li><h4>Email Address:</h4> {!account.Main_Contact__r.Email}</li>
+                    </ul>
+            </apex:pageBlockSection>
+             <apex:pageBlockSection title="The Challenge Contact Details" columns="1">
+                <apex:outputLabel > <b style="font-size:small;">Organization Name: The Challenge Network</b>
+                    </apex:outputLabel>
+                    
+                    <apex:outputLabel ><b style="font-size:small;">Address:</b><br />{!account.Owner.Street} {!account.Owner.City},{!account.Owner.State} {!account.Owner.PostalCode}<br />{!account.Owner.Country} </apex:outputLabel> 
+                    
+                   
+                   <h4>Main Contact Name: </h4>{!account.Owner.Name}
+                    <ul>
+                      <li><h4>Position in the organization:</h4> {!account.Owner.UserRole.Name}</li>
+                      <li><h4>Phone Number:</h4> {!account.Owner.Phone}</li>
+                      <li><h4>Email Address:</h4> {!account.Owner.Email}</li>
+                    </ul>
+            </apex:pageBlockSection>-->
+             <apex:pageBlockSection title="Booking Specifics" columns="1" rendered="{!IF(usages.size>0,true,false)}" >
+                <apex:pageBlockTable value="{!usages}" var="b" styleClass="xtable" >
+                   
+                <!--    <apex:column width="40%" headerValue="Plan" value="{!b.Partner_or_Venue__r.Usage_Type__r.Plan__c}"/>
+                    <apex:column headerValue="Start Date" value="{!b.Wave_Dates__r.Start_Date__c}"/>
+                    <apex:column width="50%" headerValue="What are the other key things staff need" value="{!b.Partner_or_Venue__r.What_are_the_other_key_things_staff_need__c}"/>
+                    <apex:column headerValue="Partner Contact Name" value="{!b.Partner_Contact__r.Name}"/> 
+                    <apex:column headerValue="Partner Contact Phone" value="{!b.Partner_Contact__r.MobilePhone}" />
+                    <apex:column width="40%" headerValue="Location to Meet" value="{!b.Location_to_meet__c}" />
+                    <apex:column headerValue="Timings" value="{!b.Booking_Timings__c}" />-->
+                    <apex:column style="width:10%; text-align:center;" value="{!b.Wave_Dates__r.Start_Date__c}"/>
+                    <apex:column style="width:10%; text-align:center;" value="{!b.Wave_Dates__r.End_Date__c}"/>
+                    <apex:column style="width:10%; text-align:center;" value="{!b.Booking_Timings__c}"/> 
+                    <apex:column style="width:55%;" value="{!b.Booking_details__c}" />
+                    <apex:column style="width:10%; text-align:center;" value="{!b.Cost__c}" />
+                    <apex:column style="width:10%; text-align:center;" value="{!b.Cost_including_VAT__c}" />
+                    
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+           <!--  <apex:pageBlockSection title="Signatures" columns="1">
+                 <apex:outputLabel style="font-size:small; font-weight:bold;"> Community Partner Signature: </apex:outputLabel>
+                 <apex:outputLabel style="font-size:small; font-weight:bold;">Name of Signee: </apex:outputLabel>
+                 <apex:outputLabel style="font-size:small; font-weight:bold;">Role in Organization: </apex:outputLabel>
+                 <apex:outputLabel style="font-size:small; font-weight:bold;">Signature: </apex:outputLabel>
+            </apex:pageBlockSection>-->
+        </apex:pageBlock>
+      
+</apex:page>

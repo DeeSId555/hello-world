@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 4.7 Job offer - general (DAPM/PAD) (2016)</name>
+    <style>formalLetter</style>
+    <subject>Your assessment for the NCS seasonal roles</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}.
+
+
+Dear {!Contact.FirstName},
+
+Congratulations! Following your assessment we are delighted to provisionally offer you a role with us this summer as a {!Job_Application__c.Role_to_assess_for__c}.
+
+If you&apos;d like to refresh your memory and learn more about your role, please have a look at your role&apos;s job description on the link below:
+
+http://www.ncsthechallenge.org/jobs/#available-opportunities
+
+What now?
+
+As you’ll be joining us in one of our regional offices for your role, you won’t need to go through the same online process as our other seasonal roles. Instead, we’ll be in touch soon to go through the process from here and take your availability and essential information.
+
+DBS applications
+
+In order to support the NCS programme, you will need to obtain an ‘Enhanced DBS with Children&apos;s Barred List check’. If you already have a valid certificate dated from 1 January 2015, please upload a scanned or photographed copy to the Essential Information page.
+
+If you don’t already own a DBS certificate you can apply for a new one, paid for by us. The DBS process can sometimes take up to 6 weeks to process - make sure you start your application as soon as possible. Please follow these instructions on how to apply for a DBS certificate.
+
+https://staffing.the-challenge.org/assets/2016DBSinstructionspostoffer.pdf
+
+
+Essential Information
+
+Now you&apos;ve got your job offer, you will also be able to access the Essential Information page. Here you will need to:
+
+Provide contact details for 2 referees
+Make a tax declaration and providing your bank details (from April)
+Fill out our health, safeguarding &amp; inclusion form
+Provide details for your emergency contact
+Check your DBS status
+
+Any questions?
+
+We’ll be in touch soon, but in the meantime if you have any questions please don’t hesitate to contact me using the email address below. You can also find general information about the NCS programme on our FAQs.
+
+We look forward to working with you this summer!
+
+Best wishes,
+
+
+{!Contact.OwnerFullName}
+
+{!Contact.Owner_Owner_alternative_email__c}.</textOnly>
+    <type>html</type>
+</EmailTemplate>

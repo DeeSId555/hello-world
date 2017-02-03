@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>LNE Youth Assessor assessment dates</name>
+    <style>freeForm</style>
+    <subject>Congratulations on becoming an NCS Youth Assessor - choose your dates!</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+Thank you very much for attending NCS Youth Assessor training this week. Now you&apos;re all set to start attending real-life NCS Staffing Assessments!
+
+To chose your assessments, click here (https://docs.google.com/spreadsheets/d/1iuffjN6UU73HCOpA5XdJvsTkmgxAdU02osP2W3FfUHI/edit#gid=0) and add your name to the assessments you would like to attend. Please make sure you read the guidance in the top right-hand corner of the sheet before filling it in.
+
+PLEASE NOTE - At training, you may have added your name to a paper sheet of assessment dates. Unfortunately, the times of certain assessments have since changed, so please disregard any assessments you chose. Allocation of assessments will be based solely on the sheet above, and we will contact you with confirmed details of your allocations once you have filled in it.
+
+We can&apos;t wait to see you at assessments!
+
+Kind regards,
+
+The Challenge Society
+www.tcsnorthlondon.co.uk</textOnly>
+    <type>html</type>
+</EmailTemplate>

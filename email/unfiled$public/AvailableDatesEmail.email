@@ -1,0 +1,10 @@
+Dear {!Job_Application__c.Contact_Name__c}, 
+
+Your job application has been received. Job Role and Job Location that you have selected are as follow; 
+
+Job Role : {!Job_Application__c.Role_to_assess_for__c}, 
+Job Location : {!Contact.Cluster_2012__c}. 
+
+Here is the link that you can view one or more assesment dates according to your Job Role and Job Cluster choices if they are available 
+
+http://thechallenge.secure.force.com/AvailableDates?key={!Job_Application__c.ContactId__c}&Type={!Job_Application__c.00NC0000005EVyp}

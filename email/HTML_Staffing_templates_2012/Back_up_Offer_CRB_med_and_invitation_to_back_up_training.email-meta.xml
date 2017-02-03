@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Back-up Role offer, CRB med, and back-up training</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Back-up Offer, CRB&amp;med and invitation to back-up training</name>
+    <style>none</style>
+    <subject>Re: Your assessment with The Challenge</subject>
+    <textOnly>Dear {!Contact.FirstName}
+
+Thank you for coming to your assessment with The Challenge.
+We were very impressed by your performance and are pleased to tell you that you achieved the standard of the {!Job_Application__c.Role_to_assess_for__c} role.
+
+Unfortunately, there are currently no available slots for that role this summer, so we would like to place you on the back-up staff list and invite you to one-day back-up training. This means we cannot guarantee you a job offer, but we will contact you as and when staff withdraw from or become otherwise unavailable for the role. Last year, almost all candidates on the back-up staff list were offered a full role later in the summer.
+
+In order to be a member of The Challenge back-up list, please select a training date and venue by clicking on the link below:
+
+http://thechallenge.secure.force.com/AvailableDates?key={!Job_Application__c.ContactId__c}&amp;Type={!Job_Application__c.00NC0000005EVyp}&amp;JType={!Job_Application__c.Id}
+
+WORK DATES
+Please let us know your current availability for the summer. 
+By being offered a back-up role, you are not under obligation to accept a position if it is offered: this is merely an indication of your current availability.
+
+Please double check the Where You Can Work webpage as the programme only runs in certain locations on specific wave dates: 
+http://www.the-challenge.org/work-with-us/summer-roles/where-you-can-work/ 
+
+Please click on the link below to select all the dates for which you will be available. 
+http://www.clicktools.com/survey?iv=3b1350f0a6dc7af&amp;q1={!Job_Application__c.Id} 
+
+CRB
+Your role is subject to a enhanced CRB or List 99 check. We will require scanned documents from you in order to process this. 
+
+In order to apply for your CRB, please follow these instructions. Please note that you do not need to enter a password. 
+Visit www.carecheck.co.uk
+Click on the Applicant tab
+Please read all the notes and instructions
+Click on Click here to continue
+Click on Criminal Records Bureau (CRB) Application Form
+Click on Start a New Application
+Enter the Organisation Reference: evolutionrecruitment
+Enter your personal information to apply for the CRB check.
+Please submit your documents for verification on the below form. Please go to http://www.crbcheck.info/Documents.aspx for information on which documents can be accepted. We also request that you submit your dietary requirements and any medical information (such as allergies) that we need to know about, so that we can cater for you during training and during your role on The Challenge. 
+
+Please click on the link below to submit your scanned documents and any information that we need to know in order meet your medical and dietary needs while you are with us.
+
+http://www.clicktools.com/survey?iv=3b1353e7938ac86&amp;q1={!Contact.Id}&amp;q2={!Job_Application__c.Id} 
+
+If you already have an enhanced CRB, we will accept it if the document is dated 1 September 2011 or later. Please submit a scanned copy through the online form.
+
+If, after repeated attempts, you are not able to upload your documents, please email them to crb@the-challenge.org
+
+If you have any questions, please feel free to contact me.
+
+Looking forward to seeing you again soon!
+
+Best wishes, 
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.OwnerEmail}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

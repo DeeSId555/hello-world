@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Connected to &apos;Send assessment result email&apos;</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>*WORKFLOW Conditional Offer</name>
+    <style>none</style>
+    <subject>Step Forward: Congratulations!</subject>
+    <textOnly>Congratulations!
+
+
+Dear {!Contact.FirstName},
+
+
+We are delighted to let you know you have been successful in passing the first stage of the Step Forward assessment process!
+
+Step Forward is a competitive programme with very limited places and the standard of applicants has been extremely high, so well done for reaching this stage of the process.
+
+What pathway/s have you been selected for?
+
+You have been selected for:
+
+
+{!Step_Forward_Activity__c.Other_Pathways__c}
+
+
+This is based on the results you achieved on your pathway test and in your interview. We will be calling you to discuss your assessment results to help you choose the right pathway for the year ahead if you&apos;re unsure.
+
+What should you do next?
+
+1. Click here to accept your conditional offer as soon as possible.
+
+*You need to accept your conditional offer before you can move onto the next stage of the process.
+
+2. Confirm you are eligible
+
+You must provide us with copies of the following documents if you haven&apos;t already done so:
+
+- GCSE/Level 2 Functional Skills certificates in English AND Maths AND IT (if you have one)
+
+- UK birth certificate OR passport (UK or EU) OR provisional/full driving license with birthplace in section 3 (UK)
+
+- National Insurance number
+
+3. Let us know what BTEC Level 3 Qualifications you are working towards.
+
+If you have or are studying a BTEC Level 3 that is similar to your any of your pathways, you may not be eligible (for example, most candidates with a BTEC in Health &amp; Social Care will not be able to continue with the Early Years pathway).
+
+Next steps...
+
+
+CV/Interview Preparation workshop
+
+Employers are keen to help develop Step Forward Associates once they start the programme, but they also have high expectations of who they&apos;re going to hire before the programme starts.
+
+It&apos;s important to make sure you&apos;re ready for any interview you go to and to give you the best chance of being successful we will give you free compulsory training at our CV and interview preparation workshops to be the best you can be in front of any Employer!
+
+
+The matching and interview process
+
+Once you have given us all the necessary information and attend the complusory workshop you will be put forward for matching with an Employer.
+
+The interview process will take place from March - July* 2016.
+
+Please note that whilst we endeavour to match you with a suitable employer, we cannot guarantee you will be offered a work placement and therefore a place on Step Forward.
+
+SAVE THE DATE: If you are successfully matched onto the programme our residential induction is Tuesday 30 August - Friday 2 September 2016. We expect all matched associates to attend this so put it in your calendar!
+
+
+Finally, in the meantime like us on facebook and follow us on twitter for more information and handy tips for the next stage!
+
+
+Best wishes,
+
+
+Step Forward
+
+*a small number of interviews may take place before or after these dates
+
+
+
+
+
+
+
+
+
+
+www.stepforward.uk.com
+
+
+The Challenge Network is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 39 York Rd, London SE1 7NQ
+
+&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

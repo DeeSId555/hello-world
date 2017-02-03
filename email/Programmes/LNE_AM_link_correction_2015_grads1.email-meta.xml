@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>LNE AM link correction 2014 grads</name>
+    <style>freeForm</style>
+    <subject>NCS Associate Mentor application - correct form link!</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+On Friday 6th May, we sent you an email to let you know that, as a 2014 NCS Graduate, you are now able to apply to volunteer as an NCS Associate Mentor this summer.
+
+Unfortunately, some people had some trouble opening the link to the application form included in that email. If that includes you, please click HERE ((http://survey.clicktools.com/app/survey/go.jsp?iv=2bbhwytrbxr8v) ) in order to access the form. We apologise for any inconvenience. The deadline for applications remains Sunday 15th May.
+
+Kind regards,
+
+NCS Graduates Team
+The Challenge</textOnly>
+    <type>html</type>
+</EmailTemplate>

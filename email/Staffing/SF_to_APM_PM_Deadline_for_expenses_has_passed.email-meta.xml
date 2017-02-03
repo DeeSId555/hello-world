@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This is sent to APMs when deadline for all expenses has passed</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SF to APM/PM: Deadline for expenses has passed</name>
+    <style>none</style>
+    <subject>Please check any remaining expenses</subject>
+    <textOnly>Hi {!Wave__c.APM_first_name_del__c},
+
+The deadline for all summer staff expenses from the programme was the 31st Oct.
+
+Please could you check your reports for the final time and approve any remaining expenses claims.
+
+To review your expenses, please go to your views on Expenses: https://na8.salesforce.com/a1P/o
+
+
+
+This is a standard email, sent automatically on 1st November</textOnly>
+    <type>custom</type>
+</EmailTemplate>

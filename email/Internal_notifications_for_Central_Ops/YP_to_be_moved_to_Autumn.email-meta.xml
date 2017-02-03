@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto-notification sent to CCT when a summer YP applicant decides to do Autumn</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>YP to be moved to Autumn</name>
+    <style>none</style>
+    <subject>Autumn applicant in {!Contact.School_s_cluster__c} - confirmed by Schools Coordinator</subject>
+    <textOnly>Hi
+
+Re a YP applicant in {!Contact.School_s_cluster__c}:
+
+Please look at {!Contact.Name}&apos;s record. They have agreed with the Schools Coordinator  to go on an Autumn wave.  Please urgently reallocate them based on this information. Click on this link to see the record: {!Contact.Link}
+
+This is a standard email, sent automatically whenever a Schools Coordinator receives information that a YP wants to go on an Autumn wave</textOnly>
+    <type>custom</type>
+</EmailTemplate>

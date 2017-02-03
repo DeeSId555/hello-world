@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Wave__c$Boroughs_or_areas__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c$Id</field>
+    </columns>
+    <columns>
+        <field>Wave__c$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Wave__c$Season__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Autumn 2015</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Waves, filtered by season</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Waves__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Wave__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

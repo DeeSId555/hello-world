@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Cluster__c</fullName>
+        <externalId>false</externalId>
+        <label>Cluster</label>
+        <referenceTo>Cluster__c</referenceTo>
+        <relationshipLabel>Vehicles</relationshipLabel>
+        <relationshipName>Vehicles</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Cluster_total_Budget__c</fullName>
+        <externalId>false</externalId>
+        <formula>Cluster__r.Transport_Budget__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cluster total Budget</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Counter_del__c</fullName>
+        <externalId>false</externalId>
+        <formula>100</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Counter</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Daily_vehicle_priceNEW__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Fine_Vehicle__c =TRUE , 
+
+IF(ISPICKVAL( Vehicle_Type__c , &quot;16 Seater&quot;) ,  Cluster__r.X16_seater_cost__c*1.2,
+IF(ISPICKVAL( Vehicle_Type__c , &quot;48 Seater&quot;) ,  Cluster__r.X48_seater__c*1.2,
+IF(ISPICKVAL( Vehicle_Type__c , &quot;74 Seater&quot;) ,  Cluster__r.X74__c*1.2 ,1000000
+)))
+
+,
+
+IF(ISPICKVAL( Vehicle_Type__c , &quot;16 Seater&quot;) ,  Cluster__r.X16_seater_cost__c ,
+IF(ISPICKVAL( Vehicle_Type__c , &quot;48 Seater&quot;) ,  Cluster__r.X48_seater__c  ,
+IF(ISPICKVAL( Vehicle_Type__c , &quot;74 Seater&quot;) ,  Cluster__r.X74__c 
+,
+ Cluster__r.X81_seater_cost__c ))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Daily vehicle price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Fine_Vehicle__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Fine Vehicle</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Luggage__c</fullName>
+        <externalId>false</externalId>
+        <label>Luggage</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Unique_Dates__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Unique Dates</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAX__c</fullName>
+        <externalId>false</externalId>
+        <label>PAX</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_vehicle_expenditure__c</fullName>
+        <externalId>false</externalId>
+        <formula>Number_of_Unique_Dates__c *  Daily_vehicle_priceNEW__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total vehicle expenditure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Vehicle_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Vehicle Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>16 Seater</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>16 Seater - Accessible</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>48 Seater</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>48 Seater - Accessible</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>74 Seater</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>74 Seater - Accessible</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>81 Seater</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>81 Seater - Accessible</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Vehicle</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>Cluster__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>4/1/2016 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>fine</value>
+        </filters>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Fine_Vehicles1</fullName>
+        <columns>NAME</columns>
+        <columns>Cluster__c</columns>
+        <columns>Daily_vehicle_priceNEW__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Fine_Vehicle__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Cluster__c</field>
+            <operation>notContain</operation>
+            <value>2014</value>
+        </filters>
+        <label>Fine Vehicles</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Head_of_Procurement_Innovation</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <label>vehicle Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Vehicles</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

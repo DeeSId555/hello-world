@@ -1,0 +1,60 @@
+<h2><big><strong>INTERNAL EMAIL ALERT</strong></big></h2>
+
+<div>
+<hr />
+<p>&nbsp;</p>
+</div>
+
+<h2><strong>Subject: Job ready to interview</strong></h2>
+
+<p><strong style="line-height: 20.8px;">SF job number</strong><span style="line-height: 20.8px;">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="https://na8.salesforce.com/">{!Step_Forward_Job__c.Name}</a></p>
+
+<p>&nbsp;</p>
+
+<p>Dear Matching Team,</p>
+
+<p>&nbsp;</p>
+
+<p>The following job is now &#39;ready to interview&#39;.&nbsp; All the job criteria have been met. &nbsp;<strong>Please check availability of candidates</strong> (postcode, pathway, employer special requests) <strong>and capacity in the matching team.</strong></p>
+
+<p>When you are confident you can match this job with sufficient candidates:</p>
+
+<p><strong>Check the box on SF&nbsp;Job &lsquo;Account Manager to book interview&rsquo;.</strong></p>
+
+<p>If you do not have sufficient candidates:</p>
+
+<p><strong>Check the box oin SF Job &#39;Job difficult to match&#39; and give a reason.</strong></p>
+
+<p>&nbsp;</p>
+
+<p><u>Step Forward Job details</u></p>
+
+<p><strong style="line-height: 20.8px;">SF job number</strong><span style="line-height: 20.8px;">:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="https://na8.salesforce.com/" style="line-height: 20.8px;">{!Step_Forward_Job__c.Name}</a></p>
+
+<p><strong>Employer</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {!Step_Forward_Job__c.Employer__c}</p>
+
+<p><strong>SF job name&nbsp;&nbsp;&nbsp; </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {!Step_Forward_Job__c.Step_Forward_Job_Name__c}</p>
+
+<p><strong>Pathway</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {!Step_Forward_Job__c.Pathway__c}</p>
+
+<p><strong>Job Postcode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>{!Step_Forward_Job__c.Job_Postcode__c}</p>
+
+<p><strong>Employer Special Requests</strong>&nbsp;&nbsp;&nbsp;&nbsp; {!Step_Forward_Job__c.Employer_Special_Requests__c}</p>
+
+<p><b>Job specific interests</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{!Step_Forward_Job__c.Job_Specific_interests__c}</p>
+
+<p><strong>Exclusive Candidates? &nbsp; &nbsp; &nbsp;&nbsp;</strong>{!Step_Forward_Job__c.Exclusive__c}</p>
+
+<p><strong>Only candidates NOT intending on going to Uni? &nbsp;&nbsp;</strong>{!Step_Forward_Job__c.Candidates_NOT_intending_to_go_to_uni__c}</p>
+
+<p><strong>This is a customer facing role &nbsp;&nbsp;</strong>{!Step_Forward_Job__c.This_is_a_customer_facing_role__c}</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Best wishes,</p>
+
+<p>{!Step_Forward_Job__c.SF_Account_Owner__c}</p>
+
+<p>Account manager,&nbsp;</p>

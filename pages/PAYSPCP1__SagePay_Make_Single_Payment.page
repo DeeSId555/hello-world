@@ -1,0 +1,274 @@
+<apex:page standardController="PAYBASE2__Payment__c" extensions="PAYSPCP1.SagePayNewSinglePaymentController" action="{!checkLicence}" cache="false" id="singlePayment">
+
+  <apex:outputPanel layout="none" rendered="{! hasLicenceCheck }" id="hasLicenceCheck">
+    <apex:outputPanel layout="none" rendered="{! LicenceCheck.canUse }" id="hasLicenceCheckCanUse">
+
+      <apex:outputPanel layout="none" rendered="{! hasLicenceMessage }" > 
+        <font color="red">
+          <br/>
+          Message from Licence Manager: {! LicenceCheck.messages }
+          <br/>
+          <br/>
+        </font>
+      </apex:outputPanel>
+
+      <apex:outputPanel layout="none" rendered="{! hasLicenceMessages }" >
+        <font color="red">
+          <br/>
+          Messages from Licence Manager: 
+          <br/>
+          <apex:dataList value="{! LicenceCheck.messages }" var="msg">
+                <apex:outputText value="{!msg}"/>
+          </apex:dataList>
+        
+          <br/>
+        </font>
+      </apex:outputPanel>
+
+      <apex:pageMessages />
+      
+      <apex:outputPanel layout="block" id="contentsPanel">
+          <apex:outputPanel layout="none" rendered="{! state==STATE_SHOW_PAYMENT }">
+      
+              <apex:form onsubmit="populateFields();" id="singlePaymentForm">
+                  <apex:pageBlock title="Make Single Payment" mode="edit" id="singlePaymentFormBlock">
+                      <apex:pageBlockButtons >
+                          <apex:commandButton action="{!spproceed}" value="Proceed" rerender="contentsPanel"/>
+                          <apex:outputPanel rendered="{! CancelURL != null }" layout="none">
+                              <input type="button" class="btn" value="Cancel" onclick="window.location='{! JSENCODE(CancelURL) }';" />
+                          </apex:outputPanel>
+                      </apex:pageBlockButtons>
+          
+                      <apex:pageBlockSection title="Linked To" columns="2" > 
+                          <apex:repeat value="{!inputLinkFields}" var="f" rendered="{! inputLinkFields!=null}">
+                              <apex:inputField value="{!PAYBASE2__Payment__c[f]}"/>
+                          </apex:repeat>
+                          <apex:repeat value="{!outputLinkFields}" var="f" rendered="{! outputLinkFields!=null}">
+                              <apex:outputField value="{!PAYBASE2__Payment__c[f]}"/>
+                          </apex:repeat>
+                      </apex:pageBlockSection>
+          
+                      <apex:pageBlockSection title="Payment Details" columns="1" id="payDetailsSection">
+          	              <apex:pageBlockSectionItem id="nameItem">
+          		              <label for="firstName">First Name</label>
+          		              <apex:outputPanel layout="none">
+
+					              <span class="requiredInput">
+						              <span class="requiredBlock"></span>
+		                              <apex:inputText id="firstName" size="20" value="{!firstName}" required="true" label="First Name"/>
+		                          </span>
+                	              <span class="labelCol">
+	          			              <label for="lastName">Last Name</label>
+	          		              </span>
+	          		              &nbsp;
+					              <span class="requiredInput">
+						              <span class="requiredBlock"></span>
+		                              <apex:inputText id="lastName" size="20" value="{!lastName}"/>
+					              </span>
+				              </apex:outputPanel>
+			              </apex:pageBlockSectionItem>
+
+		              </apex:pageBlockSection>
+		  
+                      <apex:pageBlockSection title="Payment Details" columns="1" showHeader="false">
+                          <apex:inputField value="{!CardPayment.PAYCP2__Payment_Description__c}" required="true"/>
+                          <apex:pageBlockSectionItem >
+            	              <apex:outputLabel value="Amount" for="amount"/>
+            	              <apex:outputPanel layout="inline">
+            		              <table>
+            			              <tr>
+            				              <td>
+			            		              <apex:inputField value="{!CardPayment.PAYBASE2__Amount__c}" required="true" id="amount"/>
+			            	              </td>
+			            	              <td>
+			            		              <apex:selectList value="{!selectedCurrencyIsoCode}" multiselect="false" rendered="{!isMultiCurrencyOrganization}" size="1">
+            						              <apex:selectOptions value="{!currencies}"/>
+        						              </apex:selectList>
+        					              </td>
+        				              </tr>            				
+            		              </table>
+            	              </apex:outputPanel>
+                          </apex:pageBlockSectionItem>
+                          <apex:inputField value="{!CardPayment.PAYCP2__Email__c}"/>
+
+          	              <apex:pageBlockSectionItem >
+          		              <apex:outputLabel value="Address"/>
+          		              <apex:outputPanel layout="none">
+          			              <table>
+          				              <tr>
+          					              <td>
+		    	            	              <span class="labelCol">
+	    			      			              <label for="town">House/Street</label>
+		          				              </span>
+	          				              </td>
+          					
+          					              <td>
+					                          <apex:inputField value="{!CardPayment.PAYCP2__Address_Street__c}" required="true"/>
+          					              </td>
+        	  			              </tr>
+
+          				              <tr>
+          					              <td>
+		    	            	              <span class="labelCol">
+	    			      			              <label for="town">Town</label>
+		          				              </span>
+	          				              </td>
+          					
+          					              <td>
+					                          <apex:inputField value="{!CardPayment.PAYCP2__Address_City__c}" required="true"/>
+          					              </td>
+        	  			              </tr>
+
+    	      			              <tr>
+	          				              <td>
+		                		              <span class="labelCol">
+	    		      				              <label for="county">County</label>
+	          					              </span>
+          					              </td>
+          				
+          					              <td>
+					                          <apex:inputField value="{!CardPayment.PAYCP2__Address_County__c}" />
+    	      				              </td>
+	          			              </tr>
+
+          				              <tr>
+          					              <td>
+		    	            	              <span class="labelCol">
+	    			      			              <label for="country">Country</label>
+		          				              </span>
+	          				              </td>
+          				
+          					              <td>
+								              <span class="requiredInput">
+									              <span class="requiredBlock"></span>
+									              <apex:selectList value="{!CardPayment.PAYCP2__Address_Country__c}" size="1" >
+										              <apex:selectOptions value="{!countries}"/>
+								                  </apex:selectList>           						
+		            			              </span>    
+          					              </td>
+          				              </tr>
+
+        	  			              <tr>
+    	      				              <td>
+			                	              <span class="labelCol">
+	    		      				              <label for="postcode">Postcode</label>
+	          					              </span>
+          					              </td>
+          					
+          					              <td>
+				    	                      <apex:inputField value="{!CardPayment.PAYCP2__Address_Postcode__c}" required="true"/>
+        	  				              </td>
+    	      			              </tr>
+	          		              </table>
+          		              </apex:outputPanel>
+			              </apex:pageBlockSectionItem>
+
+                      </apex:pageBlockSection>
+
+                      <apex:pageBlockSection title="FI Recipient" columns="2" rendered="{!fiRequired}">
+			            <apex:inputField value="{!CardPayment.PAYCP2__FI_Recipient_Surname__c}" required="true"/>
+			            <apex:inputField value="{!CardPayment.PAYCP2__FI_Recipient_Account_Number__c}" required="true"/>
+			            <apex:inputField value="{!CardPayment.PAYCP2__FI_Recipient_Date_Of_Birth__c}" required="true"/>
+			            <apex:inputField value="{!CardPayment.PAYCP2__FI_Recipient_Postcode__c}" required="true"/>
+                      </apex:pageBlockSection> 
+
+                  </apex:pageBlock>
+
+
+        
+                  <apex:inputHidden value="{!CardPayment.PAYCP2__Name_On_Card__c}" id="nameOnCard"/>
+        
+                  <script>
+			          function trim ( text ) {
+				          return (text || "").replace( /^\s+|\s+$/g, "" );
+			          }
+			        
+        	          function populateFields() {
+        		          document.getElementById ('{!$Component.nameOnCard}').value = trim(document.getElementById('singlePayment:singlePaymentForm:singlePaymentFormBlock:payDetailsSection:nameItem:firstName').value) + ' ' + trim(document.getElementById('singlePayment:singlePaymentForm:singlePaymentFormBlock:payDetailsSection:nameItem:lastName').value);
+        	          }
+/*        	
+        	function initialiseFields() {
+        		var name = trim(document.getElementById ('{!$Component.nameOnCard}').value);
+        		var parts = name.split(" ");
+        		if (parts.length>0) {
+        			if ((parts[0]=='Mr') || (parts[0]=='Mrs') || (parts[0]=='Ms') || (parts[0]=='Miss') ) {
+        				if (parts.length==1) {
+        				} else if (parts.length==2) {
+        					document.getElementById('last_name').value = trim(parts[0]);
+        				} else {
+        					document.getElementById('first_name').value = trim(parts[0]);
+        					document.getElementById('last_name').value = trim(parts[parts.length-1]);
+        				}
+        			
+        			} else {
+        				if (parts.length==1) {
+        					document.getElementById('last_name').value = trim(parts[0]);
+        				} else {
+        					document.getElementById('first_name').value = trim(parts[0]);
+        					document.getElementById('last_name').value = trim(parts[parts.length-1]);
+        				}
+        			}
+        		}
+        	}
+        	
+        	initialiseFields();
+*/        	
+                  </script>
+              </apex:form>
+          </apex:outputPanel>
+
+          <apex:outputPanel layout="none" rendered="{! state==STATE_GET_NEXT_URL }">
+              <apex:form >
+                  <apex:actionFunction name="getNextUrl" action="{!getNextUrlFromSagePay}" rerender="contentsPanel"/>
+              </apex:form>
+              
+              <script>getNextUrl()</script>
+              
+              Connecting to SagePay...
+          </apex:outputPanel>
+
+          <apex:outputPanel layout="none" rendered="{! state==STATE_GET_NEXT_URL_FAILED }">
+             Failed to get URL from SagePay: {!sagePayURLError}
+          </apex:outputPanel>
+
+          <apex:outputPanel layout="none" rendered="{! state==STATE_GO_TO_PAYMENT_GATEWAY }">
+              <apex:iframe width="100%" height="1200px" src="{! paymentPageUrl }" scrolling="false" id="PaymentFrame"/>
+          </apex:outputPanel>
+
+      </apex:outputPanel>
+    </apex:outputPanel>
+  
+    <apex:outputPanel layout="none" rendered="{! !LicenceCheck.canUse }" >
+      You do not have a licence for this product.
+
+      <apex:outputPanel layout="none" rendered="{! hasLicenceMessage }" >
+        <font color="red">
+          <br/>
+          Message from Licence Manager: {! LicenceCheck.messages }
+          <br/>
+          <br/>
+        </font>
+      </apex:outputPanel>
+
+      <apex:outputPanel layout="none" rendered="{! hasLicenceMessages }" >
+        <font color="red">
+          <br/>
+          Messages from Licence Manager: 
+          <br/>
+          <apex:dataList value="{! LicenceCheck.messages }" var="msg">
+                <apex:outputText value="{!msg}"/>
+          </apex:dataList>
+        
+          <br/>
+        </font>
+      </apex:outputPanel>
+    </apex:outputPanel>
+  </apex:outputPanel>
+
+  <apex:outputPanel layout="none" rendered="{! !hasLicenceCheck }" >
+    <font color="red">
+      Failed to check licence
+    </font>
+  </apex:outputPanel>
+  
+</apex:page>

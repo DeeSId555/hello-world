@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.YP_First_name_from_HS_Application_Form__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.YP_Last_name_from_HS_Application_Form__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_Application_form_Email__c</field>
+    </columns>
+    <description>All NON New Look YPs.</description>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>HS_Activity__c.HS_Activity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.Date_congratulations_email_sent__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>9/1/2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.HS_Hours_Total__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>16</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.Attended_Workshop_3__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.HS_Owner__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>ben toney</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.Final_Employer_choice__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>New Look</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Possum - AGL Invite 29/03/16</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$HS_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

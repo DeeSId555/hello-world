@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>EOI_completed_autumn__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>EOI completed (autumn)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EOI_completed_summer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>EOI completed (summer)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ethnicity__c</fullName>
+        <externalId>false</externalId>
+        <label>Ethnicity</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FSM__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>FSM</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Full_Payment_Received__c</fullName>
+        <externalId>false</externalId>
+        <label>Full Payment Received</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Graduated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Graduated</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>History_of_offending__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>History of offending</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>In_Care__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>In Care</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Interested_in_Autumn__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Interested in Autumn</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Interested_in_Spring__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Interested in Spring</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Interested_in_Summer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Interested in Summer</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Local_Authority__c</fullName>
+        <externalId>false</externalId>
+        <label>Local Authority</label>
+        <length>25</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NCS_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>NCS Provider</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AFC Bournemouth</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Aldershot</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bolton Lads and Girls Club</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Portsmouth</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Salford Foundation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Southampton (Youth Options)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>The Mountbatten School</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Programme__c</fullName>
+        <externalId>false</externalId>
+        <label>Programme</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Registration_Complete__c</fullName>
+        <externalId>false</externalId>
+        <label>Registration Complete</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SEN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>SEN</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Started_Phase_2__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Rules out YPs who have started phase two</description>
+        <externalId>false</externalId>
+        <label>Started Phase 2</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Team__c</fullName>
+        <externalId>false</externalId>
+        <label>Team</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_of_prog_started__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( OR( 
+Programme__c = &quot;MouProg01&quot;,
+Programme__c = &quot;SouProg01&quot;,
+Programme__c = &quot;Spring 2013&quot;,
+Programme__c = &quot;Spring 2013 1&quot;,
+Programme__c = &quot;Spring 2013 2&quot;
+),&quot;Spring&quot;,
+IF( OR( 
+Programme__c = &quot;MouProg02&quot;,
+Programme__c = &quot;MouProg03&quot;,
+Programme__c = &quot;MouProg04&quot;,
+Programme__c = &quot;MouProg05&quot;,
+Programme__c = &quot;MouProg06&quot;,
+Programme__c = &quot;MouProg07&quot;,
+Programme__c = &quot;MouProg08&quot;,
+Programme__c = &quot;MouProg09&quot;,
+Programme__c = &quot;MouProg10&quot;,
+Programme__c = &quot;12th August 2013&quot;,
+Programme__c = &quot;15th July 2013&quot;,
+Programme__c = &quot;19th August 2013&quot;,
+Programme__c = &quot;1st July 2013&quot;,
+Programme__c = &quot;29th July 2013&quot;,
+Programme__c = &quot;8th July 2013&quot;,
+Programme__c = &quot;AldProg01&quot;,
+Programme__c = &quot;BouProg01&quot;,
+Programme__c = &quot;PorProg01&quot;,
+Programme__c = &quot;PorProg02&quot;,
+Programme__c = &quot;SouProg02&quot;,
+Programme__c = &quot;SouProg03&quot;,
+Programme__c = &quot;Summer 2013 1&quot;,
+Programme__c = &quot;Summer 2013 2&quot;,
+Programme__c = &quot;Summer 2013 3&quot;,
+Programme__c = &quot;Summer 2013 4&quot;,
+Programme__c = &quot;Summer 2013 5&quot;,
+Programme__c = &quot;Wave 1&quot;,
+Programme__c = &quot;Wave 2&quot;,
+Programme__c = &quot;Wave 3&quot;
+),&quot;Summer&quot;,
+IF( OR( 
+Programme__c = &quot;25th October 2013&quot;,
+Programme__c = &quot;28th October 2013&quot;,
+Programme__c = &quot;Autumn 2013 1&quot;,
+Programme__c = &quot;Autumn13&quot;,
+Programme__c = &quot;MouProg11&quot;,
+Programme__c = &quot;MouProg12&quot;,
+Programme__c = &quot;PorProg03&quot;,
+Programme__c = &quot;PorProg3&quot;,
+Programme__c = &quot;SFAutumn&quot;,
+Programme__c = &quot;SouProg04&quot;
+),&quot;Autumn&quot;,&quot;&quot;)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Time of Prog started</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Year__c</fullName>
+        <externalId>false</externalId>
+        <label>Year</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>2013</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2014</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>NCS Contact</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>NCS Contacts Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>NCS Contact</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
+</CustomObject>

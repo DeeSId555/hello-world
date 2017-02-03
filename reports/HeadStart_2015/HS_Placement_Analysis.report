@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>HS_Placement__c$Name</field>
+    </columns>
+    <columns>
+        <field>HS_Placement__c$HS_Activity__c</field>
+    </columns>
+    <columns>
+        <field>HS_Placement__c$Placement_Choice__c</field>
+    </columns>
+    <columns>
+        <field>HS_Placement__c$Placement_Confirmed_Chosen__c</field>
+    </columns>
+    <columns>
+        <field>HS_Placement__c$HS_Activity__c.District__c</field>
+    </columns>
+    <columns>
+        <field>HS_Placement__c$Partner_Name__c</field>
+    </columns>
+    <columns>
+        <field>HS_Placement__c$HS_Activity__c.YP_Last_name_from_HS_Application_Form__c</field>
+    </columns>
+    <columns>
+        <field>HS_Placement__c$HS_Activity__c.YP_First_name_from_HS_Application_Form__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>HS_Placement__c$Placement_Choice__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>First Choice</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>HS_Placement__c$Signposting_Opportunity__c.Borough_of_Signposting_Opp__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>HS Placement Analysis</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>HS_Placements_with_Signposting_and_HS_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>HS_Placement__c$Partner_Name__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>HS_Placement__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

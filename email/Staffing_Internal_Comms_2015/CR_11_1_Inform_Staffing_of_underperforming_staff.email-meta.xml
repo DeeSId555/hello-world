@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 11.1: Inform Staffing of underperforming staff</name>
+    <style>freeForm</style>
+    <subject>Low Feedback received for {!Feedback__c.Contact_Name__c} on {!Feedback__c.Wave__c}</subject>
+    <textOnly>The feedback score submitted by Programmes for {!Feedback__c.Contact_Name__c} on {!Feedback__c.Wave__c} was:
+
+{!Feedback__c.Feedback_rating__c}
+
+If this score was a &quot;3: Scope for improvement&quot; and {!Feedback__c.Contact_Name__c} is due to work again then please ensure the Programmes team are aware of this.
+
+If {!Feedback__c.Contact_Name__c} score was a &quot;2: Unsatisfactory&quot; or &quot;1:Dismissed&quot; then this staff member should have been dismissed by Programmes, please check this is the case and that you record this on Salesforce. Please also ensure they are removed from future waves and are replaced.</textOnly>
+    <type>html</type>
+</EmailTemplate>

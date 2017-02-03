@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2015 YP Acceptance Email</name>
+    <style>none</style>
+    <subject>Your place on NCS is confirmed!</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTHECHALLENGE.ORG
+
+Your place on NCS is confirmed!
+
+
+
+
+Dear {!Contact.Name},
+
+Congratulations&lt;/B&gt; – You now have a confirmed place on NCS, starting on {!Wave_Selection__c.PC_KO_Day__c}. You will receive a free NCS T-shirt either when we visit your school or college again or on the first day of NCS. We have also sent your parent or guardian an email or letter confirming your dates, so they will have this information too.
+
+{!Wave_Selection__c.Girl_only_wave_prog_email_sentence__c}
+
+The dates you will be on NCS are:
+
+Part 1 - staying away from home: {!Wave_Selection__c.PC_KO_Day__c} until {!Wave_Selection__c.PC_Return_Day__c}
+
+Part 2 - staying away from home: {!Wave_Selection__c.TC_KO_Day__c} until {!Wave_Selection__c.TC_End_Day__c}
+
+Part 3 - {!Wave_Selection__c.RCD_paragraph_part_1_new__c} {!Wave_Selection__c.RCD_paragraph_part_2_new__c}
+
+{!Wave_Selection__c.RCA_paragraph_part_1_new__c} {!Wave_Selection__c.RCA_paragraph_part_2_new__c}
+
+{!Wave_Selection__c.Non_Pilot_RCA_end_info_text__c}
+
+If you can’t attend one or more of these dates, please read the absence policy on our website to find out your next steps. Your parent or guardian will need to tell us about any absences in advance so please check this as soon as you can.
+
+If you would like to change your programme dates, please ask your parent or guardian to log in to their online account to see other possible dates in your area. The sooner you do so, the greater your chance of changing dates. The website will let your parent or guardian change dates and will tell them if the dates you select are full. If you choose to move to dates which the website says are full, you&apos;ll be added to a waiting list. This will mean giving up the place you already have.
+
+If  you can&apos;t take part in NCS anymore, please contact us as soon as possible so someone else can take part.
+
+More information about your programme:
+
+We will send you a detailed information pack for your NCS programme approximately one month before the start date. This will include meeting point addresses, times and other important information, such as a packing list.
+
+We will also email you an invitation to an information evening taking place approximately one to two weeks before you start NCS. Here you will have the chance to meet us and ask any questions.
+
+How you can find out even more about NCS:
+
+- Go online to questions.ncsthechallenge.org where you can search for more information about NCS, such as a sample menu and packing list
+
+- Call us on 0203 542 2400 or email us at contact@ncsthechallenge.org
+
+- Read our terms and conditions: http://www.ncsthechallenge.org/terms
+
+- Check out our Facebook page at Facebook.com/NCSTheChallenge and follow us on Twitter @NCSTheChallenge
+
+We hope that you are excited about this once-in-a-lifetime opportunity.
+
+Yours sincerely,
+
+
+Tanya Dunne
+Head of Customer Services - The Challenge
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

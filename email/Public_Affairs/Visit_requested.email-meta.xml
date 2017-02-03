@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>visit requested internal email for Richard Bell</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Visit requested</name>
+    <style>none</style>
+    <subject>Visit has been Requested!</subject>
+    <textOnly>A new Visit request for {!MP_Request__c.MP_Account__r.Name} has been created.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Step_Forward_Survey__c.Rate_Last_Month_Training__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Barometer training</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Step_Forward_Survey__c@Step_Forward_Survey__c.SF_Job_Placement__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Step_Forward_Survey__c.Date_Barometer_Survey_Received__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

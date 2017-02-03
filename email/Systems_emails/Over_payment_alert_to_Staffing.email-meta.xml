@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Over-payment alert to Staffing</name>
+    <style>none</style>
+    <subject>URGENT: a staff member on {!Job_placement__c.Wave__c} has been over-paid</subject>
+    <type>text</type>
+</EmailTemplate>

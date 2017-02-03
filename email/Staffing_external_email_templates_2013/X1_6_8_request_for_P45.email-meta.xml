@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>1.6.8 request for P45</name>
+    <style>freeForm</style>
+    <subject>Request for P45</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+Dear {!Contact.FirstName}
+
+Thank you for submitting your tax information.
+
+You have indicated that you have a current P45. This needs to be submitted to us to ensure we put you on the correct tax code.
+Please note the P45 is only current if it meets the following criteria:
+
+It is dated in the current tax year which commenced on 6 April 2014. (If the P45 relates to any previous tax year it is not valid for employment in this tax year).
+The P45 relates to your most recent employment and you have not carried out any paid work since you received it.
+
+If your P45 meets the above criteria, please send it to Mandy Nicolls at the following address:
+
+Evolution Recruitment Ltd
+11A Hillgate Place
+London
+SW12 9ER
+
+N.B If your P45 was issued electronically please email this to staffing.support@the-challenge.org
+
+Best wishes,
+
+e. staffing.support@the-challenge.org
+The Challenge
+
+CR 1.6.8</textOnly>
+    <type>html</type>
+</EmailTemplate>

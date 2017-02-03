@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sends to Lucy and Mandy when an urgent ad hoc advance is approved by Finance and the record has not been modified after 1 days</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Ad hoc advance: urgent payment request reminder</name>
+    <style>none</style>
+    <subject>REMINDER: Please urgently pay an ad hoc advance to {!Job_placement__c.Contact__c}</subject>
+    <type>text</type>
+</EmailTemplate>

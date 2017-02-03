@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Status_2012__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Refund_Status__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Total_payment_received__c</field>
+    </columns>
+    <columns>
+        <field>Contact.School_s_borough_or_area__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CONTACT_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.YP2012A</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Refund_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Eligible - withdrew within 14 days,Discretionary refund agreed by MM,Eligible - unable to give YP a place,Eligible - turned up at KO and didn&apos;t get place,&quot;Eligible, but donated money to TCN&quot;,Discretionary refund agreed by COH or COM</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2012A Withdrawals refunded/to be refunde</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

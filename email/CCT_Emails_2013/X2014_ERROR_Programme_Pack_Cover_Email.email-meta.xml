@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2014 ERROR Programme Pack Cover Email</name>
+    <style>none</style>
+    <subject>Important: NCS timetable change &amp; Info Pack - Your Next Steps</subject>
+    <textOnly>NCS POWERED BY THE CHALLENGE
+
+Important: NCS timetable change -
+your next steps before the start of
+NCS
+
+
+Dear Parent/Guardian of {!Contact.Name} and {!Contact.FirstName},
+
+We are writing to let you know that the locations on the timetable we sent you before were wrong. We have now changed these to show your programme&apos;s correct locations.
+
+Please ignore the timetable you were sent before and see below for your correct timetable. We are really sorry for any confusion this has caused. If you have any questions about your new timetable after reading it, please call {!Wave__c.PCKO_Mktg_Lead__c} on {!Wave__c.PCKO_Mktg_lead_mobile__c}.
+
+This email is your correct information pack in which you will find:
+
+• {!Contact.FirstName}’s correct timetable, showing the meeting points, venues and times for the programme. This can be found by clicking here. Please check your new timetable carefully, as the locations have changed. You will need to arrange travel between home and the meeting points at the start and return times shown.
+
+• An online information booklet containing essential information, such as a detailed packing list and frequently asked questions. This can be found by clicking here. More information about {!Contact.FirstName}’s specific programme can be found below.
+
+
+There are a few things you need to do before the programme starts:
+
+1. {!Wave_Selection__c.Programme_Pack_emergency_phone_paragraph__c}
+In the event of an emergency on the programme, we will use this number to contact parents/guardians. It is your responsibility to ensure that we have a correct number, that someone will be available to take calls on it, and that all of the contact information you have provided is up-to-date. Please make sure you notify us of any changes.
+
+2. Please call or e-mail us if there have been any changes to {!Contact.FirstName}’s medical, support or dietary information since you provided it, or if you need to provide any other details.
+It is your responsibility to ensure we have full, correct and up-to-date medical, support and dietary information, including details of any medication*. If you have any questions about this, please call us.
+
+3. Please read all the information in this pack carefully and contact us if you have any questions.
+
+You can call us on 0203 542 2400 or e-mail us at contact@the-challenge.org
+
+
+Additional information about {!Contact.FirstName}’s specific programme:
+
+{!Wave_Selection__c.Programme_Pack_Girls_Only_Wave__c}{!Contact.FirstName} will need to wear a helmet to participate in some activities. We recommend that participants who usually wear religious headwear (e.g. headscarves, turbans, etc.) bring some which can be worn under a helmet.
+
+{!Wave_Selection__c.CAS_10c_kit_sentence__c} Accomodation: You will notice that the booklet says that accommodation varies. On {!Contact.FirstName}’s programme, {!Wave_Selection__c.Programme_pack_accommodation_paragraph__c}
+
+If a venue or time is shown on {!Contact.FirstName}’s timetable as &quot;TBC&quot; or “to be confirmed&quot;, or if there is an unavoidable venue change, we will provide new information as soon as the details are finalised.
+
+If {!Contact.FirstName} can no longer attend, please let us know as soon as possible so that we can try to offer this once-in-a-lifetime place to another young person.
+
+We are looking forward to welcoming {!Contact.FirstName} to NCS with The Challenge!
+
+Yours sincerely,
+
+
+
+Rebecca Carter
+Director at The Challenge
+
+
+*As standard, The Challenge does not accept any responsibility for any medication that a young person brings on the programme. The Challenge is not responsible for administering medication. See our consent statement for further details.
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

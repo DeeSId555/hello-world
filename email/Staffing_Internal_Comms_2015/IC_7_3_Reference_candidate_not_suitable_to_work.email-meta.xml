@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>IC 7.3 Reference - candidate not suitable to work</name>
+    <style>formalLetter</style>
+    <subject>Reference - [candidate name] not suitable to work on programme</subject>
+    <textOnly>This email was sent from Salesforce - please do not respond. For more information please contact staffing.support@the-challenge.org.
+
+Hi,
+
+Poor reference for {!Contact.Name}.
+
+A referee for {!Contact.Name} has indicated on the online reference form that this candidate is not suitable to work with young people on the programme.
+
+What do you need to do?
+
+Review this JA link here : to see why the referee does not feel the candidate is suitable. If you feel there is enough information to make an informed decision, please do the following -
+
+Call the candidate to explain why they are not suitable to work on the programme
+
+Update the following field (field name) with ‘rejected due to unacceptable references).
+
+Once this field is updated a rejection email to the candidate will be triggered
+
+
+Thanks,
+Salesforce</textOnly>
+    <type>html</type>
+</EmailTemplate>

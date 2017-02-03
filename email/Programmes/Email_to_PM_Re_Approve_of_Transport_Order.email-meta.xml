@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>Email to PM - Re-Approve of Transport Order</name>
+    <style>freeForm</style>
+    <subject>Approval of Transport Order</subject>
+    <textOnly>Dear PM,
+
+A transport order requires your approval. Please check and approve the below as soon as possible:
+
+{!Transport_order__c.Link}
+
+If you have any problems completing this process please email innovation.support@the-challenge.org.
+
+Thank you,
+
+Central Transport</textOnly>
+    <type>html</type>
+</EmailTemplate>

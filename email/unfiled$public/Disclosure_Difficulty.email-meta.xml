@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>Disclosure Difficulty</name>
+    <style>freeForm</style>
+    <subject>Difficulty with Disclosure - NCS The Challenge</subject>
+    <textOnly>Dear {!Contact.Name},
+
+
+Apologies that the last email did not have the correct attachment. This was an error in the system, it is being looked into and as soon as it is corrected I will re-send.
+
+Thank you for your diligence and on-going commitment.
+
+Warm Regards,
+
+
+Sherry Kimball
+Senior Staffing Associate for Support Workers
+The Challenge
+London Waterloo Office
+sherry.kimball@the-challenge.org
+07785 623400
+0203 6918723</textOnly>
+    <type>html</type>
+</EmailTemplate>

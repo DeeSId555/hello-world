@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>AUTO send to Non FOVOs upon completion of application</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Autumn 2015 HeadStart Non-FOVO congratulations</name>
+    <style>none</style>
+    <subject>Welcome to HeadStart!</subject>
+    <textOnly>HeadStart | The Challenge
+
+
+
+HeadStart login details:
+
+Email Address {!Contact.Email}
+
+NCS ID
+
+{!Contact.NCS_ID__c}
+
+PIN {!Contact.Login_Password__c}
+
+HeadStart Website
+
+Thank you for your application!
+
+
+Dear {!Contact.FirstName},
+
+We are currently reviewing everyone’s volunteering choices, and will send you information about your assigned volunteering opportunity soon so please keep checking your emails. If we can’t place you with one of the HeadStart charity partners in your area, you can still take part on the programme by finding your own volunteering.
+
+What next?!
+
+
+We will be in touch via email and a phone call within the next 2 weeks with invites to Kick off events and your first workshop sessions. Keep an eye out for more information coming your way. You don&apos;t have to do anything until then.
+
+
+If you have any questions about HeadStart, get in touch via email at headstart@the-challenge.org
+
+
+See you soon,
+
+
+The HeadStart team
+
+Facebook: /Londonheadstart
+
+headstart@the-challenge.org
+
+www.headstart-thechallenge.org/
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subsribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

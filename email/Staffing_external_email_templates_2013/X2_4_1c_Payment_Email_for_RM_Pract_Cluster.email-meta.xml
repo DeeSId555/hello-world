@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Explains to SLR how they will be paid</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>2.4.1c Payment Email for RM, Pract (Cluster)</name>
+    <style>freeForm</style>
+    <subject>How you will be paid for your role with The Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Job_placement__c.Staffing_Associate_email__c}
+
+
+
+Dear {!Job_placement__c.Contact_Name__c},
+
+
+Congratulations on being appointed as {!Job_placement__c.Role__c} on NCS with The Challenge.
+
+
+Your total pay for each full week of work (a wave) will be {!Job_placement__c.Total_gross_pay__c}, this includes pay for {!Job_placement__c.Annual_Leave_entitlement__c} day(s) &quot;Holiday Period&quot;; per &quot;Wave Contract&quot;, which is subject to tax and national insurance deductions.
+
+
+You will be paid monthly. Tax and NI deductions will be made from this payment. We reserve the right to deduct pay for any unauthorised absences.
+
+
+Please see payment schedule below
+
+
+
+Wave
+
+Start
+
+End
+
+Advance (70% of gross pay for the wave) date
+
+Pay date
+
+1
+
+30/06/2014
+
+04/07/2014
+
+
+29-Jul
+
+2
+
+07/07/2014
+
+11/07/2014
+
+
+29-Jul
+
+3
+
+14/07/2014
+
+18/07/2014
+
+12-Aug
+
+27-Aug
+
+4
+
+21/07/2014
+
+25/07/2014
+
+12-Aug
+
+27-Aug
+
+5
+
+28/07/2014
+
+01/08/2014
+
+
+27-Aug
+
+6
+
+04/08/2014
+
+08/08/2014
+
+
+27-Aug
+
+7
+
+11/08/2014
+
+15/08/2014
+
+11-Sep
+
+23-Sep
+
+8
+
+18/08/2014
+
+22/08/2014
+
+11-Sep
+
+23-Sep
+
+9
+
+23/08/2014
+
+27/08/2014
+
+11-Sep
+
+23-Sep
+
+
+
+· Waves 3, 4, 7, 8, 9 will have an advance. A wave that is advanced is paid on the specified advance date as listed above. This advance will be 70% of the gross pay for a specified ‘wave’. Gross pay refers to the amount of salary that is paid to you for each wave you complete before any deductions of any type (Tax and NI) are made from the pay.
+
+· The remaining 30% of the gross pay for this specified wave will be paid on the ‘Pay Date’ with Tax and NI deductions made from this payment. Depending on your tax situation, this payment could be a very small amount.
+
+
+This payment structure has two principles: (a) to ensure that staff members pay the appropriate level of tax in the correct month and (b) to enable staff members to receive payment in reasonable time.
+
+
+
+Yours sincerely,
+
+
+NCS with The Challenge
+
+{!Job_placement__c.Staffing_Associate_email__c}
+
+
+
+2.4.1c</textOnly>
+    <type>html</type>
+</EmailTemplate>

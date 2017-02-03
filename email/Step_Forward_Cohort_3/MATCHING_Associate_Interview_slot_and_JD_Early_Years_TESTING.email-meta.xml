@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>13.1.16 (Workflow, clicktools x 2, attachment) TESTING - CLICKTOOLS NOT WORKING</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>MATCHING Associate Interview slot and JD (Early Years) TESTING</name>
+    <style>none</style>
+    <subject>Invite to interview - please RSVP</subject>
+    <textOnly>Confirm you have read the Job Description
+
+
+Dear {!Step_Forward_Associate_Attendance__c.Associate_First_Name__c},
+
+Thank you for confirming your attendance at an employer interview and trial. We’d now like to confirm a few details with you so make sure that you read them over carefully. Please confirm you have received this email and the Job Description via the link below.
+
+Confirm by clicking here
+
+Please find the details of your interview below. We’ve also attached a link to the job description below.
+
+Date: {!Step_Forward_Associate_Attendance__c.Event_Day__c}
+
+Interview start time (you should arrive 10 minutes early): {!Step_Forward_Associate_Attendance__c.Time_Slot_Allocated__c}
+
+Approximate duration of interview and trial: {!Step_Forward_Associate_Attendance__c.Duration_of_Interview__c}
+
+Employer:  {!Step_Forward_Associate_Attendance__c.Employer_Name__c}
+
+Pathway: {!Step_Forward_Associate_Attendance__c.Pathway__c}
+
+Address:
+
+{!Step_Forward_Associate_Attendance__c.Job_Address__c}
+
+Postcode: {!Step_Forward_Associate_Attendance__c.Job_Postcode__c}
+
+Click here to download the Job Description
+
+Contact name:  {!Step_Forward_Associate_Attendance__c.Contact_Name__c}
+
+Contact telephone number: {!Step_Forward_Associate_Attendance__c.Contact_telephone_number__c}
+
+Please note: you should check your commute to the employers address which can be found on the job description (it may be different to the one at which you will have your interview). We recommend a maximum commute of 1 hour to and from work. If your journey is longer than this please contact us to let us know.
+
+What next?
+
+There are a few things you need to do to prepare for the interview. The employer will want you to show that you have researched their organisation well and will also ask you questions about yourself. You can make sure that you are as prepared as possible by ensuring that you do the following:
+
+Read the job description carefully
+Research the employer by looking at their website
+Read the interview preparation document attached to this email
+Read over your CV
+We will call you within the next few days to run a mock interview. This is a really valuable opportunity to practise your technique so make sure that you are prepared.
+
+What happens on the day?
+
+You should arrive 10 minutes before the interview time.  Do not arrive more than 10 minutes early as the employer may not be ready for you.
+
+You will have an interview followed by a supervised trial.  The trial will involve you interacting with the children and taking part in their activities.
+Make sure you have the contact information above so that you know who to ask for on the day.
+The dress code is formal and confortable. Remember that you are attending a professional interview and also interacting with children.
+Once you have completed your interview send us your feedback Click here for the feedback form. Please ensure that this is completed the same day as your interview
+
+When do I find out the result of the interview?
+
+We will contact you within 5 days of the event to let you know the outcome of your interview. Step Forward makes the final decision on job offers based on feedback.
+
+We endeavour to ensure that you have as much support as possible in order to prepare for your interviews; however, we cannot guarantee that you will be made an offer of employment. If you are unsuccessful we will contact you to give feedback on your interview which will include your strengths as well as some areas for improvement.
+
+What happens if I have been placed with an employer?
+
+As soon as we have placed you with an employer we will call you to let you know the good news. There are then a number of things that you need to do before starting work, such as your contract, and we will support you with everything that you need to complete.
+
+Congratulations on securing an interview.  Please contact the Step Forward team if you have any questions.
+
+
+Good luck!
+
+Step Forward Matching Team
+
+020 3542 2404. Option 5.
+
+stepforward.interview@the-challenge.org
+
+
+Please note that nurseries may not offer a 9am-5pm working day and hours may vary
+
+
+
+
+
+
+
+
+
+
+
+www.stepforward.uk.com
+
+
+The Challenge Network is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 39 York Rd, London SE1 7NQ</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Invitation to training with link for SMs, TMs and SWs</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Staffing SM/TM/SW invitation to training</name>
+    <style>none</style>
+    <subject>Book your training for The Challenge</subject>
+    <textOnly>REGISTER FOR TRAINING 
+
+Dear {!Contact.FirstName}
+ 
+Further to my previous emails, I am writing to invite you to the training event for your role. Not only will you learn all you need to know about The Challenge and your role, but you will also meet the people that you will be working with this summer. 
+Please note that the training event lasts for 2 days. 
+
+Please click on the link below to register for training. 
+
+http://thechallenge.secure.force.com/AvailableDates?key={!Job_Application__c.ContactId__c}&amp;Type={!Job_Application__c.00NC0000005EVyp}&amp;JType={!Job_Application__c.Id}
+
+Looking forward to meeting you soon!
+ 
+Best wishes, 
+ 
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.OwnerEmail}
+
+ 
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

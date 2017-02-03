@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email prompting candidate to start their DBS application</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>AM 3.7 DBS Prompt</name>
+    <style>formalLetter</style>
+    <subject>Congratulations! You are invited to an Associate Mentor Assessment</subject>
+    <textOnly>INVITATION TO ASSESSMENT
+Dear {!Contact.FirstName},
+
+Congratulations! We have been impressed by your application and would like to invite you to attend your Associate Mentor assessment.
+
+How do I sign up to an assessment?
+
+· Register for a free ticket on your local Graduate Team’s Eventbrite page with the password &apos;AM2016&apos;
+
+· Wait for an email from your local team giving you all the information you need to attend
+
+· No need to prepare anything – just arrive on time to the session you signed up to!
+
+
+
+CLICK HERE TO REGISTER FOR A PLACE AT AN ASSESSMENT EVENT
+
+
+
+You will need to use the password &apos;AM2016&apos; in order to register for your assessment.
+
+
+You must complete an assessment to be an Associate Mentor. If you are unable to attend then please let us know – we’ll do our best to find another assessment for you to attend, but please be aware that this may not be possible.
+
+What happens at the assessment event?
+
+Assessment lasts about four hours (don&apos;t worry - there will be breaks!), and give you an opportunity to:
+
+
+· Get to know other applicants and staff in your area
+
+· Learn about the Associate Mentor role and receive training in volunteering on NCS
+
+· Let us know when you are available to volunteer
+
+· Ask questions about the role and get answers
+
+Your DBS check:
+
+Since you&apos;ll be 18 or over by the time you start your Associate Mentor placement, you need to have a Disclosure and Barring Service (DBS) check. DBS checks take up to 12 weeks to come through, so get yours started now! Click here for more information.
+
+Need to get in touch with us?
+
+Send an email to your local Graduate Team. Make sure that you include your name, and either the borough that you completed NCS in or your postcode.
+
+Well done once again for making it through the initial application - we&apos;ll see you at your assessment!
+All the best,
+
+{!Contact.OwnerFullName}
+Graduate Team
+The Challenge</textOnly>
+    <type>html</type>
+</EmailTemplate>

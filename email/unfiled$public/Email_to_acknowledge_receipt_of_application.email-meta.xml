@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Email to acknowledge receipt of application</name>
+    <style>none</style>
+    <subject>Thank you for your application for NCS</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTHECHALLENGE.ORG
+
+Thank you for your application
+
+
+Dear {!Contact.FirstName} and Parent/Guardian,
+
+Thank you for submitting your application for NCS. We will be in touch if we need any further information or to confirm the status of your application.
+
+In the meantime, you can log into your account online to check if you have completed all parts of the application (please note that this needs to be completed by {!Contact.FirstName}&apos;s legal guardian). If you have forgotten your login details, you can recover them here: https://bookings.the-challenge.org/login-password.php
+
+If you would like to find out more about the programme, please visit our website: www.NCStheChallenge.org/
+
+Yours sincerely,
+
+
+Tanya Dunne
+Head of Customer Services - The Challenge
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

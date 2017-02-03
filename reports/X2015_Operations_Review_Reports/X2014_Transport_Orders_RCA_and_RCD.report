@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Transport_order__c.Journey__c</field>
+    </columns>
+    <columns>
+        <field>Transport_order__c.Method_of_Transport__c</field>
+    </columns>
+    <columns>
+        <field>Transport_order__c.Cluster__c</field>
+    </columns>
+    <columns>
+        <field>Transport_order__c.Zone__c</field>
+    </columns>
+    <columns>
+        <field>Transport_order__c.Wave__c</field>
+    </columns>
+    <columns>
+        <field>Transport_order__c.Journey_Length_mins__c</field>
+    </columns>
+    <description>Report used to determine method of transport journey mix for partner transport.</description>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>Transport_order__c.Journey__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>RCD Sponsorship Partner</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Transport_order__c.Journey__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>RCA Partner Challenge</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2014 Transport Orders RCA and RCD</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Transport_order__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Transport_order__c.Journey__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Transport_order__c.Date__c</dateColumn>
+        <endDate>2014-09-27</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2014-06-22</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2015 PIE correction template</name>
+    <style>none</style>
+    <subject>IMPORTANT CORRECTION - Your NCS Parents&apos; Information Evening</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTHECHALLENGE.ORG
+
+Your NCS Parents’ Information Evening
+CORRECTION
+
+
+Dear Parent/Guardian of {!Contact.Name} and {!Contact.FirstName},
+
+Please ignore the NCS Parents’ Information Evening invitation email we sent to you {{last week/ on DATE}}. There was an error with the date in this. We are really sorry for any confusion caused.
+
+The correct details for {!Contact.FirstName}&apos;s Parents&apos; Information Evening are as follows:
+
+Date: {{CORRECT DATE}}
+Time:{{CORRECT TIME}}
+Address: {{CORRECT ADDRESS}}
+
+TIt will last for around one hour, with a short presentation starting within the first 15 minutes. It really helps us if you can arrive promptly so we can start on time. At this Parents’ Information Evening, you will have the chance to find out more about NCS, ask us questions, and meet other parents or guardians and young people who have signed up to the programme.
+
+Please let us know if you are coming by emailing {{CORRECT SALES LEAD EMAIL}} or by calling  {{CORRECT SALES LEAD NUMBER}}.
+
+If you can’t make it but would still like to meet us, we will be holding other Parents’ Information Evenings for NCS programmes running in different areas, or on different dates. Please contact us for details of these alternative evenings.
+
+We hope to see you at the Parents&apos; Information Evening.
+
+Yours sincerely,
+
+{{CORRECT SALES LEAD}}
+The Challenge
+
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451.  Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

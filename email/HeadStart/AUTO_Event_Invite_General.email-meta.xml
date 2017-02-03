@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>11.07.2016</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>AUTO - Event Invite General</name>
+    <style>none</style>
+    <subject>It&apos;s time to sign up to Kick Off!</subject>
+    <textOnly>Dear {!HS_Activity__c.YP_First_name_from_HS_Application_Form__c},
+
+What?  {!HS_Event_Day__c.Name}
+
+Where? {!HS_Event_Day__c.Event_Day_Location__c}
+
+When? {!HS_Event_Day__c.Event_Day_Date__c}
+
+Time? {!HS_Event_Day__c.Event_Day_Time__c}
+
+What will be covered?
+
+{!HS_Event_Day__c.Event_Day_Description__c}
+
+
+Confirm your attendance
+
+
+
+
+HeadStart
+
+
+Any questions? Email us at headstart@the-challenge.org</textOnly>
+    <type>custom</type>
+</EmailTemplate>

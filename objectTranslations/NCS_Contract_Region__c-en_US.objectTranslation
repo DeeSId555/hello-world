@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>NCS Contract Region</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>NCS Contract Regions</value>
+    </caseValues>
+    <fields>
+        <label><!-- NCS Prime --></label>
+        <name>NCS_Prime__c</name>
+        <relationshipLabel><!-- NCS Contract Regions (NCS Prime) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- NCS Provider --></label>
+        <name>NCS_Provider__c</name>
+        <relationshipLabel><!-- NCS Contract Regions --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

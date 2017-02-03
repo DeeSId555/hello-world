@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_School_Activity__c.NCS_CT_title__c</field>
+    </columns>
+    <columns>
+        <field>Account.CT_first_name__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_School_Activity__c.NCS_CT_last_name__c</field>
+    </columns>
+    <columns>
+        <field>Account.CT_email_address__c</field>
+    </columns>
+    <description>The second tranche of Step Forward schools</description>
+    <filter>
+        <criteriaItems>
+            <column>Step_Forward_School_Activity__c.Is_this_a_Step_Forward_School__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>2015 - 2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Step_Forward_School_Activity__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_CREATED_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Marie</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Step_Forward_School_Activity__c.Borough_or_area__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>New new Step Forward Schools</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$Step_Forward_School_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

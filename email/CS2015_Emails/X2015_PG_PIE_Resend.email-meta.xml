@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>2015Sales PIE resend</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2015 PG PIE Resend</name>
+    <style>none</style>
+    <subject>Your NCS Parents’ Information Evening</subject>
+    <textOnly>NCS powered by The Challenge
+
+NCSTHECHALLENGE.ORG
+
+Your NCS Parents’ Information Evening
+
+
+
+
+Dear Parent or Guardian of {!Contact.Name},
+
+{!Contact.FirstName}’s NCS (National Citizen Service) programme is almost here! Before it starts,  we would like you and {!Contact.FirstName} to come to a short Parents’ Information Evening  about the programme. Here you will have the chance to find out more about NCS, ask us questions, and meet other parents or guardians and young people who have signed up to the  programme. All the details you need are below:
+
+Date: {!Wave__c.Info_Eve_date__c}
+Time: {!Wave__c.Info_Eve_time__c}
+Address: {!Wave__c.Info_Eve_venue_name__c}, {!Wave__c.Info_Eve_venue_address__c}  {!Wave__c.Info_eve_additional_info__c}
+
+It will last for around one hour, with a short presentation starting within the first 15 minutes. It really helps us if you can arrive promptly so we can start on time.
+
+Please let us know if you are coming by emailing  {!Wave__c.Info_Eve_Mktg_lead_email__c} or by calling {!Wave__c.Info_Eve_Mktg_lead_mobile__c}.
+
+If you can’t make it but would still like to meet us, we will be holding other Parents’ Information Evenings for NCS programmes running in different areas, or on different dates. Please contact us for details of these alternative evenings.
+
+We hope to see you at the Parents&apos; Information Evening.
+
+Yours sincerely,
+
+{!Wave__c.Info_Eve_Mktg_lead__c}
+The Challenge
+
+VISIT NCSTHECHALLENGE.ORG NOW
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451.  Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

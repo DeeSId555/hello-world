@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$Parent_Name__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Parent_Email__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Parent_Phone__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Parent_Mobile_Phone__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact$School__c.School_code__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>IWF</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>BCHIC Woodfield Parents Evening Session</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_Schools__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$School_s_assembly_date__c</dateColumn>
+        <endDate>2014-01-20</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2014-01-20</startDate>
+    </timeFrameFilter>
+</Report>

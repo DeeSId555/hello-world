@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Personal_Coach__c$Name</field>
+    </columns>
+    <columns>
+        <field>Personal_Coach__c.Personal_Coach_Meetings__r$Name</field>
+    </columns>
+    <columns>
+        <field>Personal_Coach__c$Champion__c</field>
+    </columns>
+    <columns>
+        <field>Personal_Coach__c.Personal_Coach_Meetings__r$Location__c</field>
+    </columns>
+    <columns>
+        <field>Personal_Coach__c.Personal_Coach_Meetings__r$Time_of_meeting__c</field>
+    </columns>
+    <columns>
+        <field>Personal_Coach__c.Personal_Coach_Meetings__r$Meeting_date__c</field>
+    </columns>
+    <columns>
+        <field>Personal_Coach__c.Personal_Coach_Meetings__r$Meeting_successful__c</field>
+    </columns>
+    <columns>
+        <field>Personal_Coach__c.Personal_Coach_Meetings__r.Activities$Subject</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Personal Coach - &quot;Meeting&quot; emails sent</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Personal_Coach_Meetings_and_Activity_History__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Personal_Coach__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

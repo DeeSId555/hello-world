@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sends CRB and med/diet info request reminder 2</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CRB and med/diet info request reminder 2</name>
+    <style>none</style>
+    <subject>Reminder: CRB and dietary information needed</subject>
+    <textOnly>The Challenge Network
+
+Dear {!Contact.FirstName}
+
+I sent you an email on  {!Job_Application__c.00NC0000005ESgH} and again on {!Job_Application__c.00NC0000005ESgT} in order to request scanned copies of the documents that we need in order to process your enhanced CRB check.
+As the deadline for submitting these documents is today ({!Job_Application__c.00NC0000005EjGJ}), it is now vital that you submit these as soon as possible to secure your role..
+
+Please submit your documents for verification on the below form. Please go to http://carecheck.arrangementcms.co.uk/index.php?node=ID-Rules for information on which documents can be accepted. We also request that you submit your dietary requirements and any medical information (such as allergies) that we need to know about, so that we can cater for you during training and during your role on The Challenge.
+
+Please click on the link below to submit your scanned documents and any information that we need to know in order meet your medical and dietary needs while you are with us. If you already have an enhanced CRB, we will accept it if the document is dated 1 September 2011 or later. Please submit a scanned copy through the online form.
+
+http://www.clicktools.com/survey?iv=3b1353e7938ac86&amp;q1={!Contact.Id}&amp;q2={!Job_Application__c.Id}
+
+If, after repeated attempts, you are not able to upload your documents, please email them to crb@the-challenge.org
+
+If you have not yet submitted your CRB Care Check information, please do so by following these instructions. Please note that you do not need to enter a password.
+
+Visit www.carecheck.co.uk
+Click on the Applicant tab
+Please read all the notes and instructions
+Click on Click here to continue
+Click on Criminal Records Bureau (CRB) Application Form
+Click on Start a New Application
+Enter the Organisation Reference:  evolutionrecruitment
+Enter your personal information to apply for the CRB check.
+
+We look forward to seeing you again at training on {!Job_Application__c.00NC0000005Eh4l}
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.OwnerEmail}
+
+WWW.THE-CHALLENGE.ORG    /thechallengeNETWORK
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

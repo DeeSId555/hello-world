@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>ICC will send this email if we are requesting doctor&apos;s feedback</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2016 - ICC Requesting Doctor&apos;s Note</name>
+    <style>none</style>
+    <subject>NCS - Doctor&apos;s feedback form</subject>
+    <textOnly>NCSTHECHALLENGE.ORG
+
+NCS: Doctor&apos;s Feedback Form
+
+
+Dear Parent or Guardian of {!Contact.Name},
+
+As discussed during our telephone conversation today, I have attached to this email the feedback form to give to the medical professional working with {!Contact.FirstName} to complete. The information provided on this feedback form will be used to best support  {!Contact.FirstName} during NCS.
+
+Once completed, please make a copy of the form to keep for your records and send the original back to us either by scan (or digital photo of each page) to  inclusion.support@the-challenge.org
+
+Alternatively you can send this by post addressed to Inclusion and Support Service, Elizabeth House, 39 York Road, London, SE1 7NQ.
+
+If you have any questions, feel free to contact us by calling 0333 150 2425 or emailing  inclusion.support@the-challenge.org  - we’ll be happy to help.
+
+Yours sincerely,
+
+
+Tanya Dunne
+Head of Customer Services - The Challenge
+
+© The Challenge Network.
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

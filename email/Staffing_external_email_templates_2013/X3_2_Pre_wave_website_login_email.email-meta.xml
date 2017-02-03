@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>3.2 Pre-wave website login email</name>
+    <style>freeForm</style>
+    <subject>Role Guide and where to be when information</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Job_placement__c.Staffing_Associate_email__c}
+
+Dear {!Job_placement__c.Contact_Name__c},
+
+I am writing to you with further information about your work with The Challenge.
+
+Enclosed are the login details to the staff section of The Challenge website. This will allow you to view and download the Where to be When document which outlines the key times and venues for your programme. This information is subject to change, and we will let you know if any of the details change prior to your starting.
+Visit the Staffing website using the details below.
+
+Website:  http://staff.the-challenge.org/
+Username: {!Job_placement__c.Contact_email__c}
+Login pin: {!Job_placement__c.Staffing_website_login_PIN__c}
+
+Occasionally, unavoidable changes are made to the staff schedules, and so we would encourage you to check again before your role starts. If any changes are made after this point, we will contact you directly. You will receive a phone call from your Assistant Programme Manager shortly before starting to confirm details.
+
+If you have any questions, please feel free to contact me on the below address.
+
+Best wishes,
+
+{!Job_placement__c.Staffing_Associate__c}
+The Challenge Network
+e: {!Job_placement__c.Staffing_Associate_email__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

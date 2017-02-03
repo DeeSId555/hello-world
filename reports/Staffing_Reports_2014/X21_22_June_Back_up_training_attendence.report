@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>HR_Event_Attendance__c.HR_Event_Date__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Job_Application__c.Cluster_selected__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Job_Application__c.Contact_Name__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Job_Application__c.Role_to_assess_for__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Job_Application__c.Gender2__c</field>
+    </columns>
+    <columns>
+        <field>HR_Event_Attendance__c.Attended_Day_2__c</field>
+    </columns>
+    <columns>
+        <field>HR_Event_Attendance__c.Attended_Day_3__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>21/06 London Back Up Mentor Training 1 SAT,22/06 London Back Up Mentor Training 2 SUN</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$Job_Application__c.Cluster_selected__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>BANT,WHR,BCHIC,BHEN</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>21-22 June Back up training attendence</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$HR_Event__c$HR_Event_Attendance__c@HR_Event_Attendance__c.Job_Application__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>HR_Event__c.Event_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2013-01-01</startDate>
+    </timeFrameFilter>
+</Report>

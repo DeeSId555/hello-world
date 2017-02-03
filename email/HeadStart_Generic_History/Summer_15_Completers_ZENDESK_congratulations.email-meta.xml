@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent 24/09/15 using &apos;interviews&apos;</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Summer 15 - Completers ZENDESK congratulations</name>
+    <style>none</style>
+    <subject>HeadStart - Congratulations!</subject>
+    <textOnly>HeadStart login details:
+
+Email Address {!Contact.Email}
+
+NCS ID
+
+{!Contact.NCS_ID__c}
+
+PIN {!Contact.Login_Password__c}
+
+HeadStart Website
+
+Well done from HeadStart!
+
+Hi {!Contact.FirstName},
+
+Congratulations for logging your volunteering hours! You have made such a difference to your local community and the charity that you have been supporting and should be really proud of your achievements.
+
+We now have some additional placements available with Zendesk, due to take place in the Easter holidays. As you logged your hours before the deadline, you are now eligible to attend these second round of interviews.
+
+Your next steps:
+
+We will be verifying your hours with your charity partner. If you’ve not yet given us the details of where you have been volunteering please email headstart@the-challenge.org
+We will invite you to reapply for the Zendesk role, when applications open
+
+Congratulations again and remember you can continue volunteering if you wish to and keep logging those hours on the HeadStart website!
+
+We will be in touch with more information as it becomes available.
+
+
+Best wishes
+
+HeadStart Team
+
+Any questions? Email the HeadStart team, check out our website or get in touch on facebook.
+
+
+The HeadStart team
+
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subsribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

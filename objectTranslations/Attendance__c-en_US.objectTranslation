@@ -1,0 +1,4434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Attendance</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Attendance</value>
+    </caseValues>
+    <fields>
+        <label><!-- APM email --></label>
+        <name>APM_email__c</name>
+    </fields>
+    <fields>
+        <help><!-- &quot;Late &lt; 1.5 hours&quot; means: &quot;Was less than 1.5 hours late&quot;
+&quot;Late &gt; 3 Hours&quot; means: &quot;Was more than 3 hours late&quot; --></help>
+        <label><!-- Status 1 --></label>
+        <name>Absence_1__c</name>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late &lt; 1.5 hours</masterLabel>
+            <translation><!-- Late &lt; 1.5 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late &gt; 3 Hours</masterLabel>
+            <translation><!-- Late &gt; 3 Hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late between 1.5 and 3 hours</masterLabel>
+            <translation><!-- Late between 1.5 and 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Absence 1 approval status --></label>
+        <name>Absence_1_approval_status__c</name>
+        <picklistValues>
+            <masterLabel>Absence approved</masterLabel>
+            <translation><!-- Absence approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unapproved</masterLabel>
+            <translation><!-- Absence unapproved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yet to be reviewed</masterLabel>
+            <translation><!-- Yet to be reviewed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the date in here as well if relevant (i.e. if different from the start date) 
+e.g. 2pm 
+OR 
+e.g. 2pm on 18th July (if start of absence was on 17th July) --></help>
+        <label><!-- Absence 1 end time --></label>
+        <name>Absence_1_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence 1 reason --></label>
+        <name>Absence_1_reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence 1 start time --></label>
+        <name>Absence_1_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence 2 approval status --></label>
+        <name>Absence_2_approval_status__c</name>
+        <picklistValues>
+            <masterLabel>Absence approved</masterLabel>
+            <translation><!-- Absence approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unapproved</masterLabel>
+            <translation><!-- Absence unapproved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yet to be reviewed</masterLabel>
+            <translation><!-- Yet to be reviewed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the date in here as well if relevant (i.e. if different from the start date) 
+e.g. 2pm 
+OR 
+e.g. 2pm on 18th July (if start of absence was on 17th July) --></help>
+        <label><!-- Absence 2 end time --></label>
+        <name>Absence_2_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence 2 reason --></label>
+        <name>Absence_2_reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence 2 start time --></label>
+        <name>Absence_2_start_time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Details of option 2 should be included by the PG in the notes about transport methods --></help>
+        <label><!-- Absence 2 transport arrangements --></label>
+        <name>Absence_2_transport_arrangements__c</name>
+        <picklistValues>
+            <masterLabel>Another adult with collect YP</masterLabel>
+            <translation><!-- Another adult with collect YP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PG wil collect YP</masterLabel>
+            <translation><!-- PG wil collect YP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YP will travel independently</masterLabel>
+            <translation><!-- YP will travel independently --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Absence 3 approval status --></label>
+        <name>Absence_3_approval_status__c</name>
+        <picklistValues>
+            <masterLabel>Absence approved</masterLabel>
+            <translation><!-- Absence approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unapproved</masterLabel>
+            <translation><!-- Absence unapproved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yet to be reviewed</masterLabel>
+            <translation><!-- Yet to be reviewed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Absence 3 details of transport arrangmts --></label>
+        <name>Absence_3_details_of_transport_arrangmts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence 4 approval status --></label>
+        <name>Absence_4_approval_status__c</name>
+        <picklistValues>
+            <masterLabel>Absence approved</masterLabel>
+            <translation><!-- Absence approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unapproved</masterLabel>
+            <translation><!-- Absence unapproved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yet to be reviewed</masterLabel>
+            <translation><!-- Yet to be reviewed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Absence 4 details of transport arrangmts --></label>
+        <name>Absence_4_details_of_transport_arrangmts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence 5 approval status --></label>
+        <name>Absence_5_approval_status__c</name>
+        <picklistValues>
+            <masterLabel>Absence approved</masterLabel>
+            <translation><!-- Absence approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unapproved</masterLabel>
+            <translation><!-- Absence unapproved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yet to be reviewed</masterLabel>
+            <translation><!-- Yet to be reviewed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Absence 5 details of transport arrangmts --></label>
+        <name>Absence_5_details_of_transport_arrangmts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence 6 approval status --></label>
+        <name>Absence_6_approval_status__c</name>
+        <picklistValues>
+            <masterLabel>Absence approved</masterLabel>
+            <translation><!-- Absence approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unapproved</masterLabel>
+            <translation><!-- Absence unapproved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yet to be reviewed</masterLabel>
+            <translation><!-- Yet to be reviewed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Absence 6 details of transport arrangmts --></label>
+        <name>Absence_6_details_of_transport_arrangmts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence 7 approval status --></label>
+        <name>Absence_7_approval_status__c</name>
+        <picklistValues>
+            <masterLabel>Absence approved</masterLabel>
+            <translation><!-- Absence approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unapproved</masterLabel>
+            <translation><!-- Absence unapproved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yet to be reviewed</masterLabel>
+            <translation><!-- Yet to be reviewed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Absence 7 details of transport arrangmts --></label>
+        <name>Absence_7_details_of_transport_arrangmts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence 8 approval status --></label>
+        <name>Absence_8_approval_status__c</name>
+        <picklistValues>
+            <masterLabel>Absence approved</masterLabel>
+            <translation><!-- Absence approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unapproved</masterLabel>
+            <translation><!-- Absence unapproved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yet to be reviewed</masterLabel>
+            <translation><!-- Yet to be reviewed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Absence 8 details of transport arrangmts --></label>
+        <name>Absence_8_details_of_transport_arrangmts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence policy URL --></label>
+        <name>Absence_policy_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence policy rules --></label>
+        <name>Absence_policy_rules__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the name of the parent/ legal guardian submitting the request --></help>
+        <label><!-- Absence request submitted by --></label>
+        <name>Absence_request_submitted_by__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please note the date, stage of the programme and as many details on the additional absence(s) as possible. --></help>
+        <label><!-- Additional Absences --></label>
+        <name>Additional_Absences__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ant Spaces on wave --></label>
+        <name>Ant_Spaces_on_wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ant --></label>
+        <name>Ant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence 1 approval status --></label>
+        <name>Approval_status__c</name>
+        <picklistValues>
+            <masterLabel>Absence approved</masterLabel>
+            <translation><!-- Absence approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unapproved</masterLabel>
+            <translation><!-- Absence unapproved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yet to be reviewed</masterLabel>
+            <translation><!-- Yet to be reviewed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Assigned/Reserved on Different Wave --></label>
+        <name>Assigned_Reserved_on_Different_Wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned Zone --></label>
+        <name>Assigned_Zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attendance complete RCA --></label>
+        <name>Attendance_complete_RCA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attendance complete RCD --></label>
+        <name>Attendance_complete_RCD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorised Absences Hours Allowed wf --></label>
+        <name>Authorised_Absences_Hours_Allowed_wf__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorised absences --></label>
+        <name>Authorised_absences__c</name>
+    </fields>
+    <fields>
+        <label><!-- Autumn Spring percentage complete --></label>
+        <name>Autumn_Spring_percentage_complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Autumn wave --></label>
+        <name>Autumn_wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Autumn/Spring wave --></label>
+        <name>Autumn_wave_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cluster --></label>
+        <name>Cluster__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Attendance --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact details --></label>
+        <name>Contact_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Phase --></label>
+        <name>Current_Phase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Phase number --></label>
+        <name>Current_Phase_number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date that you shredded the SM&apos;s set of medical forms. --></help>
+        <label><!-- Date APL Medical forms shredded TC --></label>
+        <name>Date_AM_Medical_forms_shredded_TC__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date that you shredded the medical forms after RCA --></help>
+        <label><!-- Date APM Medical Forms shredded RCA --></label>
+        <name>Date_APM_Medical_Froms_shredded_RCA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date that the PL&apos;s set of medical forms is returned to you after PC --></help>
+        <label><!-- Date PL Medical Forms Returned PC --></label>
+        <name>Date_PL_Medical_Froms_Returned_PC__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date that the PL&apos;s set of medical forms is returned to you after RCD --></help>
+        <label><!-- Date PL Medical Forms Returned RCD --></label>
+        <name>Date_PL_Medical_Froms_Returned_RCD__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date that the PL&apos;s set of medical forms is returned to you after TC --></help>
+        <label><!-- Date PL Medical Forms Returned TC --></label>
+        <name>Date_PL_Medical_Froms_Returned_TC__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date that the SM&apos;s set of medical forms is returned to you after PC --></help>
+        <label><!-- Date APL Medical Forms Returned PC --></label>
+        <name>Date_SM_Medical_Froms_Returned_PC__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date the request was received --></help>
+        <label><!-- Date PG submitted absence rqst --></label>
+        <name>Date_absence_request_received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of absence 2 --></label>
+        <name>Date_of_Absence_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Absence 3 --></label>
+        <name>Date_of_Absence_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Absence 4 --></label>
+        <name>Date_of_Absence_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Absence 5 --></label>
+        <name>Date_of_Absence_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Absence 6 --></label>
+        <name>Date_of_Absence_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Absence 7 --></label>
+        <name>Date_of_Absence_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Absence 8 --></label>
+        <name>Date_of_Absence_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of RCA 2nd absence --></label>
+        <name>Date_of_RCA_2nd_absence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of RCA absence --></label>
+        <name>Date_of_RCA_Absence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of absence 1 --></label>
+        <name>Date_of_absence_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day left the programme --></label>
+        <name>Day_left_the_programme__c</name>
+        <picklistValues>
+            <masterLabel>PC 1</masterLabel>
+            <translation><!-- PC 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PC 2</masterLabel>
+            <translation><!-- PC 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PC 3</masterLabel>
+            <translation><!-- PC 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PC 4</masterLabel>
+            <translation><!-- PC 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PC 5</masterLabel>
+            <translation><!-- PC 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA 1</masterLabel>
+            <translation><!-- RCA 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA 2</masterLabel>
+            <translation><!-- RCA 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA 3</masterLabel>
+            <translation><!-- RCA 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA 4</masterLabel>
+            <translation><!-- RCA 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD 1</masterLabel>
+            <translation><!-- RCD 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD 2</masterLabel>
+            <translation><!-- RCD 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD 3</masterLabel>
+            <translation><!-- RCD 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD 4</masterLabel>
+            <translation><!-- RCD 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC 1</masterLabel>
+            <translation><!-- TC 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC 2</masterLabel>
+            <translation><!-- TC 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC 3</masterLabel>
+            <translation><!-- TC 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC 4</masterLabel>
+            <translation><!-- TC 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC 5</masterLabel>
+            <translation><!-- TC 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Day YP left or received red card --></label>
+        <name>Day_on_programme_that_red_card_awarded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Absent --></label>
+        <name>Days_Absent_WF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Attended --></label>
+        <name>Days_Attended__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days on wave --></label>
+        <name>Days_on_wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details of absence 1 --></label>
+        <name>Details_of_absence_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details of absence 2 --></label>
+        <name>Details_of_absence_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details of absence 3 --></label>
+        <name>Details_of_absence_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details of absence 4 --></label>
+        <name>Details_of_absence_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details of absence 5 --></label>
+        <name>Details_of_absence_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details of absence 6 --></label>
+        <name>Details_of_absence_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details of absence 7 --></label>
+        <name>Details_of_absence_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details of absence 8 --></label>
+        <name>Details_of_absence_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drop Out Date --></label>
+        <name>Drop_Out_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drop Out Reason --></label>
+        <name>Drop_Out_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Didn&apos;t like NCS / staff member / their team</masterLabel>
+            <translation><!-- Didn&apos;t like NCS / staff member / their team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family emergency</masterLabel>
+            <translation><!-- Family emergency --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Elligable for Graduation --></label>
+        <name>Elligable_for_Graduation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a valid date --></help>
+        <label><!-- End date of absence 1 --></label>
+        <name>End_date_of_absence_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter a valid date --></help>
+        <label><!-- End date of absence 2 --></label>
+        <name>End_date_of_absence_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will allow YPs to graduate REGARDLESS of their attendance. Only to be ticked by Head of programmes and head of innovation. May also be referred to as &quot;Special Case Approved&quot; --></help>
+        <label><!-- Allow to graduate despite no. absences? --></label>
+        <name>Graduate_despite_no_of_absences__c</name>
+    </fields>
+    <fields>
+        <help><!-- A checked box indicates the YP has attended graduation. --></help>
+        <label><!-- Graduation Attendance --></label>
+        <name>Graduation_Attendance__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date when the YP was confirmed that they became Eligible to graduate --></help>
+        <label><!-- Graduation Eligibility confirmed date --></label>
+        <name>Graduation_Eligibility_confirmed_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation Letter Field SWM --></label>
+        <name>Graduation_Letter_Field_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation Letter Field Pilot --></label>
+        <name>Graduation_Letter_Field_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation: SL 5 Variation 2 --></label>
+        <name>Graduation_SL_5_Variation_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation: SL 5 Variation --></label>
+        <name>Graduation_SL_5_Variation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation Surrey Variation --></label>
+        <name>Graduation_Surrey_Variation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation date --></label>
+        <name>Graduation_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation status OLD --></label>
+        <name>Graduation_status1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation status --></label>
+        <name>Graduation_status__c</name>
+    </fields>
+    <fields>
+        <label><!-- HTMU deadline --></label>
+        <name>HTMU_deadline__c</name>
+    </fields>
+    <fields>
+        <label><!-- HTMU possible? --></label>
+        <name>HTMU_possible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Wave Begun --></label>
+        <name>Has_Wave_Begun__c</name>
+    </fields>
+    <fields>
+        <label><!-- Have they left? --></label>
+        <name>Have_they_left__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours 1 --></label>
+        <name>Hours_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours 2 --></label>
+        <name>Hours_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours Modify Trigger --></label>
+        <name>Hours_Modify_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Hours Required for 100% --></label>
+        <name>Hours_for_100__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional hours required for grad --></label>
+        <name>Hours_required_for_graduation_form__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours missed from NCS --></label>
+        <name>Hours_to_be_made_up__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours to make up 1 --></label>
+        <name>Hours_to_make_up_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours to make up 2 --></label>
+        <name>Hours_to_make_up_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours to make up 3 --></label>
+        <name>Hours_to_make_up_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours to make up 4 --></label>
+        <name>Hours_to_make_up_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours to make up 5 --></label>
+        <name>Hours_to_make_up_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours to make up 6 --></label>
+        <name>Hours_to_make_up_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours to make up 7 --></label>
+        <name>Hours_to_make_up_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours to make up 8 --></label>
+        <name>Hours_to_make_up_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorised hours missed from NCS --></label>
+        <name>Hours_to_make_up__c</name>
+    </fields>
+    <fields>
+        <help><!-- Calculates the number of hours to be made up due to authorised absences.
+Will show &quot;0&quot; if the YP has had too many authorised absences to graduate --></help>
+        <label><!-- Hours to make up due to auth. absences --></label>
+        <name>Hours_to_make_up_due_to_absences1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours available to make up --></label>
+        <name>Hours_to_make_up_due_to_lateness__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Hrs to make up (inc hrs submitted) --></label>
+        <name>Hrs_to_make_up_inc_hrs_submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- *Is graduation possible --></label>
+        <name>Is_graduation_possible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day that the card was given/YP left --></label>
+        <name>Max_Day_that_card_was_given_YP_left__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will be tick if the YP is going straight to the Residential Accommodation, and not going to the TCKO. --></help>
+        <label><!-- Not going to the TCKO? --></label>
+        <name>Not_going_to_the_TCKO__c</name>
+    </fields>
+    <fields>
+        <help><!-- Details of why the YP should be allowed to graduate despite the number of absences --></help>
+        <label><!-- Eligibility notes --></label>
+        <name>Notes_of_Eligibility__c</name>
+    </fields>
+    <fields>
+        <label><!-- # PC absences/latenesses --></label>
+        <name>Number_of_PC_absences__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of PC days attended --></label>
+        <name>Number_of_PC_days_attended__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of PC days missed --></label>
+        <name>Number_of_PC_days_missed__c</name>
+    </fields>
+    <fields>
+        <label><!-- # RCA absences/latenesses --></label>
+        <name>Number_of_RCA_absences__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of RCA days attended --></label>
+        <name>Number_of_RCA_days_attended__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of RCA days missed --></label>
+        <name>Number_of_RCA_days_missed__c</name>
+    </fields>
+    <fields>
+        <label><!-- # RCD absences/latenesses --></label>
+        <name>Number_of_RCD_absences__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of RCD days attended --></label>
+        <name>Number_of_RCD_days_attended__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of RCD days missed --></label>
+        <name>Number_of_RCD_days_missed__c</name>
+    </fields>
+    <fields>
+        <label><!-- # TC absences/latenesses --></label>
+        <name>Number_of_TC_absences__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of TC days attended --></label>
+        <name>Number_of_TC_days_attended__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of TC days missed --></label>
+        <name>Number_of_TC_days_missed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of YPs started program --></label>
+        <name>Number_of_YPs_started_program__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner --></label>
+        <name>Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC1 attendance --></label>
+        <name>PC1_attendance__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC2 attendance --></label>
+        <name>PC2_attendance__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC3 attendance --></label>
+        <name>PC3_attendance__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC4 attendance --></label>
+        <name>PC4_attendance__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC5 attendance --></label>
+        <name>PC5_attendance__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC6 attendance --></label>
+        <name>PC6_attendance__c</name>
+    </fields>
+    <fields>
+        <label><!-- PCKO --></label>
+        <name>PCKO__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC 1 Absence number --></label>
+        <name>PC_1_Absence_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC 1 --></label>
+        <name>PC_1__c</name>
+        <picklistValues>
+            <masterLabel>Absence authorised</masterLabel>
+            <translation><!-- Absence authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unauthorised</masterLabel>
+            <translation><!-- Absence unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half day</masterLabel>
+            <translation><!-- Half day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - 1.5 to 3 hours</masterLabel>
+            <translation><!-- Late - 1.5 to 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - more than 3 hours</masterLabel>
+            <translation><!-- Late - more than 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PC 2 Absence --></label>
+        <name>PC_2_Absence__c</name>
+        <picklistValues>
+            <masterLabel>1. Bereavement</masterLabel>
+            <translation><!-- 1. Bereavement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Illness</masterLabel>
+            <translation><!-- 2. Illness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Serious injury</masterLabel>
+            <translation><!-- 3. Serious injury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Job interviews</masterLabel>
+            <translation><!-- 4. Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Commencement of employment</masterLabel>
+            <translation><!-- 5. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Sixth Form Collgege inductions</masterLabel>
+            <translation><!-- 6. Sixth Form Collgege inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Religious festivals</masterLabel>
+            <translation><!-- 7. Religious festivals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Exams and GCSE (Only) exam results</masterLabel>
+            <translation><!-- 8. Exams and GCSE (Only) exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Other (Unauthorised)</masterLabel>
+            <translation><!-- 9. Other (Unauthorised) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PC 2 Absence number --></label>
+        <name>PC_2_Absence_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC 2 --></label>
+        <name>PC_2__c</name>
+        <picklistValues>
+            <masterLabel>Absence authorised</masterLabel>
+            <translation><!-- Absence authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unauthorised</masterLabel>
+            <translation><!-- Absence unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half day</masterLabel>
+            <translation><!-- Half day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - 1.5 to 3 hours</masterLabel>
+            <translation><!-- Late - 1.5 to 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - more than 3 hours</masterLabel>
+            <translation><!-- Late - more than 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PC 3 Absence --></label>
+        <name>PC_3_Absence__c</name>
+        <picklistValues>
+            <masterLabel>1. Bereavement</masterLabel>
+            <translation><!-- 1. Bereavement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Illness</masterLabel>
+            <translation><!-- 2. Illness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Serious injury</masterLabel>
+            <translation><!-- 3. Serious injury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Job interviews</masterLabel>
+            <translation><!-- 4. Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Commencement of employment</masterLabel>
+            <translation><!-- 5. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Sixth Form Collgege inductions</masterLabel>
+            <translation><!-- 6. Sixth Form Collgege inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Religious festivals</masterLabel>
+            <translation><!-- 7. Religious festivals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Exams and GCSE (Only) exam results</masterLabel>
+            <translation><!-- 8. Exams and GCSE (Only) exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Other (Unauthorised)</masterLabel>
+            <translation><!-- 9. Other (Unauthorised) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PC 3 Absence number --></label>
+        <name>PC_3_Absence_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC 3 --></label>
+        <name>PC_3__c</name>
+        <picklistValues>
+            <masterLabel>Absence authorised</masterLabel>
+            <translation><!-- Absence authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unauthorised</masterLabel>
+            <translation><!-- Absence unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half day</masterLabel>
+            <translation><!-- Half day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - 1.5 to 3 hours</masterLabel>
+            <translation><!-- Late - 1.5 to 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - more than 3 hours</masterLabel>
+            <translation><!-- Late - more than 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PC 4 Absence --></label>
+        <name>PC_4_Absence__c</name>
+        <picklistValues>
+            <masterLabel>1. Bereavement</masterLabel>
+            <translation><!-- 1. Bereavement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Illness</masterLabel>
+            <translation><!-- 2. Illness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Serious injury</masterLabel>
+            <translation><!-- 3. Serious injury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Job interviews</masterLabel>
+            <translation><!-- 4. Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Commencement of employment</masterLabel>
+            <translation><!-- 5. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Sixth Form Collgege inductions</masterLabel>
+            <translation><!-- 6. Sixth Form Collgege inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Religious festivals</masterLabel>
+            <translation><!-- 7. Religious festivals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Exams and GCSE (Only) exam results</masterLabel>
+            <translation><!-- 8. Exams and GCSE (Only) exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Other (Unauthorised)</masterLabel>
+            <translation><!-- 9. Other (Unauthorised) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PC 4 Absence number --></label>
+        <name>PC_4_Absence_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC 4 --></label>
+        <name>PC_4__c</name>
+        <picklistValues>
+            <masterLabel>Absence authorised</masterLabel>
+            <translation><!-- Absence authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unauthorised</masterLabel>
+            <translation><!-- Absence unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half day</masterLabel>
+            <translation><!-- Half day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - 1.5 to 3 hours</masterLabel>
+            <translation><!-- Late - 1.5 to 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - more than 3 hours</masterLabel>
+            <translation><!-- Late - more than 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PC 5 Absence --></label>
+        <name>PC_5_Absence__c</name>
+        <picklistValues>
+            <masterLabel>1. Bereavement</masterLabel>
+            <translation><!-- 1. Bereavement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Illness</masterLabel>
+            <translation><!-- 2. Illness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Serious injury</masterLabel>
+            <translation><!-- 3. Serious injury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Job interviews</masterLabel>
+            <translation><!-- 4. Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Commencement of employment</masterLabel>
+            <translation><!-- 5. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Sixth Form Collgege inductions</masterLabel>
+            <translation><!-- 6. Sixth Form Collgege inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Religious festivals</masterLabel>
+            <translation><!-- 7. Religious festivals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Exams and GCSE (Only) exam results</masterLabel>
+            <translation><!-- 8. Exams and GCSE (Only) exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Other (Unauthorised)</masterLabel>
+            <translation><!-- 9. Other (Unauthorised) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PC 5 Absence number --></label>
+        <name>PC_5_Absence_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC 5 --></label>
+        <name>PC_5__c</name>
+        <picklistValues>
+            <masterLabel>Absence authorised</masterLabel>
+            <translation><!-- Absence authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unauthorised</masterLabel>
+            <translation><!-- Absence unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half day</masterLabel>
+            <translation><!-- Half day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - 1.5 to 3 hours</masterLabel>
+            <translation><!-- Late - 1.5 to 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - more than 3 hours</masterLabel>
+            <translation><!-- Late - more than 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PC 6 --></label>
+        <name>PC_6__c</name>
+        <picklistValues>
+            <masterLabel>Absence authorised</masterLabel>
+            <translation><!-- Absence authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unauthorised</masterLabel>
+            <translation><!-- Absence unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - 1.5 to 3 hours</masterLabel>
+            <translation><!-- Late - 1.5 to 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - more than 3 hours</masterLabel>
+            <translation><!-- Late - more than 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PC 1 Absence --></label>
+        <name>PC_Absence__c</name>
+        <picklistValues>
+            <masterLabel>1. Bereavement</masterLabel>
+            <translation><!-- 1. Bereavement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Illness</masterLabel>
+            <translation><!-- 2. Illness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Serious injury</masterLabel>
+            <translation><!-- 3. Serious injury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Job interviews</masterLabel>
+            <translation><!-- 4. Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Commencement of employment</masterLabel>
+            <translation><!-- 5. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Sixth Form Collgege inductions</masterLabel>
+            <translation><!-- 6. Sixth Form Collgege inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Religious festivals</masterLabel>
+            <translation><!-- 7. Religious festivals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Exams and GCSE (Only) exam results</masterLabel>
+            <translation><!-- 8. Exams and GCSE (Only) exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Other (Unauthorised)</masterLabel>
+            <translation><!-- 9. Other (Unauthorised) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PC Authorised Absence Notes --></label>
+        <name>PC_Authorised_Absence_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Authorised Absence Type --></label>
+        <name>PC_Authorised_Absence_Type__c</name>
+        <picklistValues>
+            <masterLabel>Bereavement of close friend/family</masterLabel>
+            <translation><!-- Bereavement of close friend/family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exams</masterLabel>
+            <translation><!-- Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family holidays</masterLabel>
+            <translation><!-- Family holidays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funeral of close friend/family</masterLabel>
+            <translation><!-- Funeral of close friend/family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job interviews</masterLabel>
+            <translation><!-- Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signing-on</masterLabel>
+            <translation><!-- Signing-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sixth Form College inductions</masterLabel>
+            <translation><!-- Sixth Form College inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wedding of immediate family</masterLabel>
+            <translation><!-- Wedding of immediate family --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PC Completed --></label>
+        <name>PC_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Status --></label>
+        <name>PC_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Unauthorised Absence Notes --></label>
+        <name>PC_Unauthorised_Absence_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of authorised absences recorded during PC --></help>
+        <label><!-- # PC authorised absences --></label>
+        <name>PC_authorised_absences__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC days to make up (unauth) --></label>
+        <name>PC_days_to_make_up__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC return --></label>
+        <name>PC_return__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of unauthorised absences recorded during PC --></help>
+        <label><!-- # PC unauthorised absences --></label>
+        <name>PC_unauthorised_absences__c</name>
+    </fields>
+    <fields>
+        <label><!-- Programmes User View --></label>
+        <name>PM_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM check TEST --></label>
+        <name>PM_check_TEST__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Email --></label>
+        <name>Parent_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent or legal guardian? --></label>
+        <name>Parent_or_legal_guardian__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Summer % complete - Attended/Auth. Abs. --></label>
+        <name>Percentage_complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percentage of Days Attended - HIDDEN --></label>
+        <name>Percentage_of_Days_Attended_HIDDEN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pilot Wave? --></label>
+        <name>Pilot_Wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence 1 reason for authorisation --></label>
+        <name>Pre_Summer_Authorised_Absence_1__c</name>
+        <picklistValues>
+            <masterLabel>Bereavement of close friend/family</masterLabel>
+            <translation><!-- Bereavement of close friend/family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exams</masterLabel>
+            <translation><!-- Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family holidays</masterLabel>
+            <translation><!-- Family holidays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funeral of close friend/family</masterLabel>
+            <translation><!-- Funeral of close friend/family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job interviews</masterLabel>
+            <translation><!-- Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signing-on</masterLabel>
+            <translation><!-- Signing-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sixth Form College inductions</masterLabel>
+            <translation><!-- Sixth Form College inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wedding of immediate family</masterLabel>
+            <translation><!-- Wedding of immediate family --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Absence 2 reason for authorisation --></label>
+        <name>Pre_Summer_Authorised_Absence_2__c</name>
+        <picklistValues>
+            <masterLabel>Bereavement of close friend/family</masterLabel>
+            <translation><!-- Bereavement of close friend/family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exams</masterLabel>
+            <translation><!-- Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family holidays</masterLabel>
+            <translation><!-- Family holidays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funeral of close friend/family</masterLabel>
+            <translation><!-- Funeral of close friend/family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job interviews</masterLabel>
+            <translation><!-- Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signing-on</masterLabel>
+            <translation><!-- Signing-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sixth Form College inductions</masterLabel>
+            <translation><!-- Sixth Form College inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wedding of immediate family</masterLabel>
+            <translation><!-- Wedding of immediate family --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Prog absence update status --></label>
+        <name>Prog_absence_update_status__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA1 attendance --></label>
+        <name>RCA1_attendance__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA2 attendance --></label>
+        <name>RCA2_attendance__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA3 attendance --></label>
+        <name>RCA3_attendance__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA4 attendance --></label>
+        <name>RCA4_attendance__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 1 Absence --></label>
+        <name>RCA_1_Absence__c</name>
+        <picklistValues>
+            <masterLabel>1. Bereavement</masterLabel>
+            <translation><!-- 1. Bereavement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Illness</masterLabel>
+            <translation><!-- 2. Illness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Serious injury</masterLabel>
+            <translation><!-- 3. Serious injury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Job interviews</masterLabel>
+            <translation><!-- 4. Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Commencement of employment</masterLabel>
+            <translation><!-- 5. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Sixth Form Collgege inductions</masterLabel>
+            <translation><!-- 6. Sixth Form Collgege inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Religious festivals</masterLabel>
+            <translation><!-- 7. Religious festivals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Exams and GCSE (Only) exam results</masterLabel>
+            <translation><!-- 8. Exams and GCSE (Only) exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Other (Unauthorised)</masterLabel>
+            <translation><!-- 9. Other (Unauthorised) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCA 1 Absence number --></label>
+        <name>RCA_1_Absence_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 1 --></label>
+        <name>RCA_1__c</name>
+        <picklistValues>
+            <masterLabel>Absence authorised</masterLabel>
+            <translation><!-- Absence authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unauthorised</masterLabel>
+            <translation><!-- Absence unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half day</masterLabel>
+            <translation><!-- Half day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - 1.5 to 3 hours</masterLabel>
+            <translation><!-- Late - 1.5 to 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - more than 3 hours</masterLabel>
+            <translation><!-- Late - more than 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCA 2 Absence --></label>
+        <name>RCA_2_Absence__c</name>
+        <picklistValues>
+            <masterLabel>1. Bereavement</masterLabel>
+            <translation><!-- 1. Bereavement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Illness</masterLabel>
+            <translation><!-- 2. Illness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Serious injury</masterLabel>
+            <translation><!-- 3. Serious injury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Job interviews</masterLabel>
+            <translation><!-- 4. Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Commencement of employment</masterLabel>
+            <translation><!-- 5. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Sixth Form Collgege inductions</masterLabel>
+            <translation><!-- 6. Sixth Form Collgege inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Religious festivals</masterLabel>
+            <translation><!-- 7. Religious festivals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Exams and GCSE (Only) exam results</masterLabel>
+            <translation><!-- 8. Exams and GCSE (Only) exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Other (Unauthorised)</masterLabel>
+            <translation><!-- 9. Other (Unauthorised) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCA 2 Absence number --></label>
+        <name>RCA_2_Absence_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 2 --></label>
+        <name>RCA_2__c</name>
+        <picklistValues>
+            <masterLabel>Absence authorised</masterLabel>
+            <translation><!-- Absence authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unauthorised</masterLabel>
+            <translation><!-- Absence unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half day</masterLabel>
+            <translation><!-- Half day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - 1.5 to 3 hours</masterLabel>
+            <translation><!-- Late - 1.5 to 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - more than 3 hours</masterLabel>
+            <translation><!-- Late - more than 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCA 3 Absence --></label>
+        <name>RCA_3_Absence__c</name>
+        <picklistValues>
+            <masterLabel>1. Bereavement</masterLabel>
+            <translation><!-- 1. Bereavement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Illness</masterLabel>
+            <translation><!-- 2. Illness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Serious injury</masterLabel>
+            <translation><!-- 3. Serious injury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Job interviews</masterLabel>
+            <translation><!-- 4. Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Commencement of employment</masterLabel>
+            <translation><!-- 5. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Sixth Form Collgege inductions</masterLabel>
+            <translation><!-- 6. Sixth Form Collgege inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Religious festivals</masterLabel>
+            <translation><!-- 7. Religious festivals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Exams and GCSE (Only) exam results</masterLabel>
+            <translation><!-- 8. Exams and GCSE (Only) exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Other (Unauthorised)</masterLabel>
+            <translation><!-- 9. Other (Unauthorised) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCA 3 Absence number --></label>
+        <name>RCA_3_Absence_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 3 --></label>
+        <name>RCA_3__c</name>
+        <picklistValues>
+            <masterLabel>Absence authorised</masterLabel>
+            <translation><!-- Absence authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unauthorised</masterLabel>
+            <translation><!-- Absence unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half day</masterLabel>
+            <translation><!-- Half day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - 1.5 to 3 hours</masterLabel>
+            <translation><!-- Late - 1.5 to 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - more than 3 hours</masterLabel>
+            <translation><!-- Late - more than 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCA 4 Absence --></label>
+        <name>RCA_4_Absence__c</name>
+        <picklistValues>
+            <masterLabel>1. Bereavement</masterLabel>
+            <translation><!-- 1. Bereavement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Illness</masterLabel>
+            <translation><!-- 2. Illness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Serious injury</masterLabel>
+            <translation><!-- 3. Serious injury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Job interviews</masterLabel>
+            <translation><!-- 4. Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Commencement of employment</masterLabel>
+            <translation><!-- 5. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Sixth Form Collgege inductions</masterLabel>
+            <translation><!-- 6. Sixth Form Collgege inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Religious festivals</masterLabel>
+            <translation><!-- 7. Religious festivals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Exams and GCSE (Only) exam results</masterLabel>
+            <translation><!-- 8. Exams and GCSE (Only) exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Other (Unauthorised)</masterLabel>
+            <translation><!-- 9. Other (Unauthorised) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCA 4 Absence number --></label>
+        <name>RCA_4_Absence_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA 4 --></label>
+        <name>RCA_4__c</name>
+        <picklistValues>
+            <masterLabel>Absence authorised</masterLabel>
+            <translation><!-- Absence authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unauthorised</masterLabel>
+            <translation><!-- Absence unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half day</masterLabel>
+            <translation><!-- Half day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - 1.5 to 3 hours</masterLabel>
+            <translation><!-- Late - 1.5 to 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - more than 3 hours</masterLabel>
+            <translation><!-- Late - more than 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCA Absence1 --></label>
+        <name>RCA_Absence_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Absence 2 --></label>
+        <name>RCA_Absence_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Absence 3 --></label>
+        <name>RCA_Absence_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Absence 4 --></label>
+        <name>RCA_Absence_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Absence 5 --></label>
+        <name>RCA_Absence_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Absence 6 --></label>
+        <name>RCA_Absence_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Absence 7 --></label>
+        <name>RCA_Absence_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Absence 8 --></label>
+        <name>RCA_Absence_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Authorised Absence Notes --></label>
+        <name>RCA_Authorised_Absence_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Authorised Absence Type --></label>
+        <name>RCA_Authorised_Absence_Type__c</name>
+        <picklistValues>
+            <masterLabel>Bereavement close friend/family member</masterLabel>
+            <translation><!-- Bereavement close friend/family member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exams</masterLabel>
+            <translation><!-- Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family holidays</masterLabel>
+            <translation><!-- Family holidays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funeral of close friend/family member</masterLabel>
+            <translation><!-- Funeral of close friend/family member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job interviews</masterLabel>
+            <translation><!-- Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signing-on</masterLabel>
+            <translation><!-- Signing-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sixth Form College inductions</masterLabel>
+            <translation><!-- Sixth Form College inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wedding of immediate family</masterLabel>
+            <translation><!-- Wedding of immediate family --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCA Completed --></label>
+        <name>RCA_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA HTMU email sent --></label>
+        <name>RCA_HTMU_email_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Ineligible email sent --></label>
+        <name>RCA_Ineligible_email_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Status --></label>
+        <name>RCA_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Unauthorised Absence Notes --></label>
+        <name>RCA_Unauthorised_Absence_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA absence approval status --></label>
+        <name>RCA_absence_approval_status__c</name>
+        <picklistValues>
+            <masterLabel>Absence approved</masterLabel>
+            <translation><!-- Absence approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unapproved</masterLabel>
+            <translation><!-- Absence unapproved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yet to be reviewed</masterLabel>
+            <translation><!-- Yet to be reviewed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCA absence end time --></label>
+        <name>RCA_absence_end_time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only needs to be filled in when the form is completed online by PG --></help>
+        <label><!-- RCA absence reason --></label>
+        <name>RCA_absence_reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA absence reason for authorisation --></label>
+        <name>RCA_absence_reason_for_authorisation__c</name>
+        <picklistValues>
+            <masterLabel>Bereavement of close friend/family</masterLabel>
+            <translation><!-- Bereavement of close friend/family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exams</masterLabel>
+            <translation><!-- Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family holidays</masterLabel>
+            <translation><!-- Family holidays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funeral of close friend/family</masterLabel>
+            <translation><!-- Funeral of close friend/family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job interviews</masterLabel>
+            <translation><!-- Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signing-on</masterLabel>
+            <translation><!-- Signing-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sixth Form College inductions</masterLabel>
+            <translation><!-- Sixth Form College inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wedding of immediate family</masterLabel>
+            <translation><!-- Wedding of immediate family --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCA absence start time --></label>
+        <name>RCA_absence_start_time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Notes about option 2 should be included by the PG in the notes about transport methods. --></help>
+        <label><!-- RCA absence transport arrangements --></label>
+        <name>RCA_absence_transport_arrangements__c</name>
+        <picklistValues>
+            <masterLabel>Another adult with collect YP</masterLabel>
+            <translation><!-- Another adult with collect YP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PG wil collect YP</masterLabel>
+            <translation><!-- PG wil collect YP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YP will travel independently</masterLabel>
+            <translation><!-- YP will travel independently --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCA absnce details of transport arrngmts --></label>
+        <name>RCA_absence_transport_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA days calculation --></label>
+        <name>RCA_days_calculation__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA days to make up (unauth) --></label>
+        <name>RCA_days_to_make_up_auth__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of unauthorised absences recorded during RCA --></help>
+        <label><!-- # RCA unauthorised absences --></label>
+        <name>RCA_unauthorised_absences__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of authorised absences recorded during RCA --></help>
+        <label><!-- # RCA authorised absences --></label>
+        <name>RCAauthorisedabsences__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD1 attendance --></label>
+        <name>RCD1_attendance__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD2 attendance --></label>
+        <name>RCD2_attendance__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD3 attendance --></label>
+        <name>RCD3_attendance__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD4 attendance --></label>
+        <name>RCD4_attendance__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCDKO --></label>
+        <name>RCDKO__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD 1 Absence --></label>
+        <name>RCD_1_Absence__c</name>
+        <picklistValues>
+            <masterLabel>1. Bereavement</masterLabel>
+            <translation><!-- 1. Bereavement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Illness</masterLabel>
+            <translation><!-- 2. Illness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Serious injury</masterLabel>
+            <translation><!-- 3. Serious injury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Job interviews</masterLabel>
+            <translation><!-- 4. Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Commencement of employment</masterLabel>
+            <translation><!-- 5. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Sixth Form Collgege inductions</masterLabel>
+            <translation><!-- 6. Sixth Form Collgege inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Religious festivals</masterLabel>
+            <translation><!-- 7. Religious festivals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Exams and GCSE (Only) exam results</masterLabel>
+            <translation><!-- 8. Exams and GCSE (Only) exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Other (Unauthorised)</masterLabel>
+            <translation><!-- 9. Other (Unauthorised) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCD 1 Absence number --></label>
+        <name>RCD_1_Absence_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD 1 --></label>
+        <name>RCD_1__c</name>
+        <picklistValues>
+            <masterLabel>Absence authorised</masterLabel>
+            <translation><!-- Absence authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unauthorised</masterLabel>
+            <translation><!-- Absence unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half day</masterLabel>
+            <translation><!-- Half day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - 1.5 to 3 hours</masterLabel>
+            <translation><!-- Late - 1.5 to 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - more than 3 hours</masterLabel>
+            <translation><!-- Late - more than 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCD 2 Absence --></label>
+        <name>RCD_2_Absence__c</name>
+        <picklistValues>
+            <masterLabel>1. Bereavement</masterLabel>
+            <translation><!-- 1. Bereavement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Illness</masterLabel>
+            <translation><!-- 2. Illness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Serious injury</masterLabel>
+            <translation><!-- 3. Serious injury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Job interviews</masterLabel>
+            <translation><!-- 4. Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Commencement of employment</masterLabel>
+            <translation><!-- 5. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Sixth Form Collgege inductions</masterLabel>
+            <translation><!-- 6. Sixth Form Collgege inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Religious festivals</masterLabel>
+            <translation><!-- 7. Religious festivals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Exams and GCSE (Only) exam results</masterLabel>
+            <translation><!-- 8. Exams and GCSE (Only) exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Other (Unauthorised)</masterLabel>
+            <translation><!-- 9. Other (Unauthorised) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCD 2 Absence number --></label>
+        <name>RCD_2_Absence_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD 2 --></label>
+        <name>RCD_2__c</name>
+        <picklistValues>
+            <masterLabel>Absence authorised</masterLabel>
+            <translation><!-- Absence authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unauthorised</masterLabel>
+            <translation><!-- Absence unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half day</masterLabel>
+            <translation><!-- Half day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - 1.5 to 3 hours</masterLabel>
+            <translation><!-- Late - 1.5 to 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - more than 3 hours</masterLabel>
+            <translation><!-- Late - more than 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCD 3 Absence --></label>
+        <name>RCD_3_Absence__c</name>
+        <picklistValues>
+            <masterLabel>1. Bereavement</masterLabel>
+            <translation><!-- 1. Bereavement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Illness</masterLabel>
+            <translation><!-- 2. Illness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Serious injury</masterLabel>
+            <translation><!-- 3. Serious injury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Job interviews</masterLabel>
+            <translation><!-- 4. Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Commencement of employment</masterLabel>
+            <translation><!-- 5. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Sixth Form Collgege inductions</masterLabel>
+            <translation><!-- 6. Sixth Form Collgege inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Religious festivals</masterLabel>
+            <translation><!-- 7. Religious festivals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Exams and GCSE (Only) exam results</masterLabel>
+            <translation><!-- 8. Exams and GCSE (Only) exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Other (Unauthorised)</masterLabel>
+            <translation><!-- 9. Other (Unauthorised) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCD 3 Absence number --></label>
+        <name>RCD_3_Absence_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD 3 --></label>
+        <name>RCD_3__c</name>
+        <picklistValues>
+            <masterLabel>Absence authorised</masterLabel>
+            <translation><!-- Absence authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unauthorised</masterLabel>
+            <translation><!-- Absence unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half day</masterLabel>
+            <translation><!-- Half day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - 1.5 to 3 hours</masterLabel>
+            <translation><!-- Late - 1.5 to 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - more than 3 hours</masterLabel>
+            <translation><!-- Late - more than 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCD 4 Absence --></label>
+        <name>RCD_4_Absence__c</name>
+        <picklistValues>
+            <masterLabel>1. Bereavement</masterLabel>
+            <translation><!-- 1. Bereavement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Illness</masterLabel>
+            <translation><!-- 2. Illness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Serious injury</masterLabel>
+            <translation><!-- 3. Serious injury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Job interviews</masterLabel>
+            <translation><!-- 4. Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Commencement of employment</masterLabel>
+            <translation><!-- 5. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Sixth Form Collgege inductions</masterLabel>
+            <translation><!-- 6. Sixth Form Collgege inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Religious festivals</masterLabel>
+            <translation><!-- 7. Religious festivals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Exams and GCSE (Only) exam results</masterLabel>
+            <translation><!-- 8. Exams and GCSE (Only) exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Other (Unauthorised)</masterLabel>
+            <translation><!-- 9. Other (Unauthorised) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCD 4 Absence number --></label>
+        <name>RCD_4_Absence_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD 4 --></label>
+        <name>RCD_4__c</name>
+        <picklistValues>
+            <masterLabel>Absence authorised</masterLabel>
+            <translation><!-- Absence authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unauthorised</masterLabel>
+            <translation><!-- Absence unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half day</masterLabel>
+            <translation><!-- Half day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - 1.5 to 3 hours</masterLabel>
+            <translation><!-- Late - 1.5 to 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - more than 3 hours</masterLabel>
+            <translation><!-- Late - more than 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCD Authorised Absence Notes --></label>
+        <name>RCD_Authorised_Absence_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD Authorised Absence Type --></label>
+        <name>RCD_Authorised_Absence_Type__c</name>
+        <picklistValues>
+            <masterLabel>Bereavement close friend/family</masterLabel>
+            <translation><!-- Bereavement close friend/family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family holidays</masterLabel>
+            <translation><!-- Family holidays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funeral of close friend/family</masterLabel>
+            <translation><!-- Funeral of close friend/family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job interviews</masterLabel>
+            <translation><!-- Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signing-on, Exams</masterLabel>
+            <translation><!-- Signing-on, Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sixth Form College inductions</masterLabel>
+            <translation><!-- Sixth Form College inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wedding of immediate family</masterLabel>
+            <translation><!-- Wedding of immediate family --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCD Completed --></label>
+        <name>RCD_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD Days to make up (unauth) --></label>
+        <name>RCD_Days_to_make_up_auth__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD End --></label>
+        <name>RCD_End__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD HTMU email sent --></label>
+        <name>RCD_HTMU_email_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD Status --></label>
+        <name>RCD_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD Unauthorised Absence Notes --></label>
+        <name>RCD_Unauthorised_Absence_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of authorised absences recorded during RCD --></help>
+        <label><!-- # RCD authorised absences --></label>
+        <name>RCD_authorised_absences__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD days FINAL 1 --></label>
+        <name>RCD_days_FINAL_1_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD days FINAL 2 --></label>
+        <name>RCD_days_FINAL_2_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD days calculation --></label>
+        <name>RCD_days_calculation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of unauthorised absences recorded during RCD --></help>
+        <label><!-- # RCD unauthorised absences --></label>
+        <name>RCD_unauthorised_absences__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorised Reason for Absence 1 --></label>
+        <name>Reason_for_Absence_1__c</name>
+        <picklistValues>
+            <masterLabel>1. Wedding of immediate family member</masterLabel>
+            <translation><!-- 1. Wedding of immediate family member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10. Exam results</masterLabel>
+            <translation><!-- 10. Exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11. Serious Personal Emergency (Please give details and PL initials for sign off)</masterLabel>
+            <translation><!-- 11. Serious Personal Emergency (Please give details and PL initials for sign off) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12. Other authorised</masterLabel>
+            <translation><!-- 12. Other authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13. Commencement of employment</masterLabel>
+            <translation><!-- 13. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Family Holiday</masterLabel>
+            <translation><!-- 2. Family Holiday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Bereavement or funeral</masterLabel>
+            <translation><!-- 3. Bereavement or funeral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Sixth Form College inductions</masterLabel>
+            <translation><!-- 4. Sixth Form College inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Job Interview</masterLabel>
+            <translation><!-- 5. Job Interview --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Signing-on</masterLabel>
+            <translation><!-- 6. Signing-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Exams</masterLabel>
+            <translation><!-- 7. Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Illness with notification from parent</masterLabel>
+            <translation><!-- 8. Illness with notification from parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Serious personal emergency</masterLabel>
+            <translation><!-- 9. Serious personal emergency --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Authorised Reason for Absence 2 --></label>
+        <name>Reason_for_Absence_2__c</name>
+        <picklistValues>
+            <masterLabel>1. Wedding of immediate family member</masterLabel>
+            <translation><!-- 1. Wedding of immediate family member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10. Exam results</masterLabel>
+            <translation><!-- 10. Exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11. Serious Personal Emergency (Please give details and PL initials for sign off)</masterLabel>
+            <translation><!-- 11. Serious Personal Emergency (Please give details and PL initials for sign off) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12. Other authorised</masterLabel>
+            <translation><!-- 12. Other authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13. Commencement of employment</masterLabel>
+            <translation><!-- 13. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Family Holiday</masterLabel>
+            <translation><!-- 2. Family Holiday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Bereavement or funeral</masterLabel>
+            <translation><!-- 3. Bereavement or funeral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Sixth Form College inductions</masterLabel>
+            <translation><!-- 4. Sixth Form College inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Job Interview</masterLabel>
+            <translation><!-- 5. Job Interview --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Signing-on</masterLabel>
+            <translation><!-- 6. Signing-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Exams</masterLabel>
+            <translation><!-- 7. Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Illness with notification from parent</masterLabel>
+            <translation><!-- 8. Illness with notification from parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Serious personal emergency</masterLabel>
+            <translation><!-- 9. Serious personal emergency --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Authorised Reason for Absence 3 --></label>
+        <name>Reason_for_Absence_3__c</name>
+        <picklistValues>
+            <masterLabel>1. Wedding of immediate family member</masterLabel>
+            <translation><!-- 1. Wedding of immediate family member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10. Exam results</masterLabel>
+            <translation><!-- 10. Exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11. Serious Personal Emergency (Please give details and PL initials for sign off)</masterLabel>
+            <translation><!-- 11. Serious Personal Emergency (Please give details and PL initials for sign off) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12. Other authorised</masterLabel>
+            <translation><!-- 12. Other authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13. Commencement of employment</masterLabel>
+            <translation><!-- 13. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Family Holiday</masterLabel>
+            <translation><!-- 2. Family Holiday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Bereavement or funeral</masterLabel>
+            <translation><!-- 3. Bereavement or funeral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Sixth Form College inductions</masterLabel>
+            <translation><!-- 4. Sixth Form College inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Job Interview</masterLabel>
+            <translation><!-- 5. Job Interview --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Signing-on</masterLabel>
+            <translation><!-- 6. Signing-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Exams</masterLabel>
+            <translation><!-- 7. Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Illness with notification from parent</masterLabel>
+            <translation><!-- 8. Illness with notification from parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Serious personal emergency</masterLabel>
+            <translation><!-- 9. Serious personal emergency --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Authorised Reason for Absence 4 --></label>
+        <name>Reason_for_Absence_4__c</name>
+        <picklistValues>
+            <masterLabel>1. Wedding of immediate family member</masterLabel>
+            <translation><!-- 1. Wedding of immediate family member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10. Exam results</masterLabel>
+            <translation><!-- 10. Exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11. Serious Personal Emergency (Please give details and PL initials for sign off)</masterLabel>
+            <translation><!-- 11. Serious Personal Emergency (Please give details and PL initials for sign off) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12. Other authorised</masterLabel>
+            <translation><!-- 12. Other authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13. Commencement of employment</masterLabel>
+            <translation><!-- 13. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Family Holiday</masterLabel>
+            <translation><!-- 2. Family Holiday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Bereavement or funeral</masterLabel>
+            <translation><!-- 3. Bereavement or funeral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Sixth Form College inductions</masterLabel>
+            <translation><!-- 4. Sixth Form College inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Job Interview</masterLabel>
+            <translation><!-- 5. Job Interview --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Signing-on</masterLabel>
+            <translation><!-- 6. Signing-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Exams</masterLabel>
+            <translation><!-- 7. Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Illness with notification from parent</masterLabel>
+            <translation><!-- 8. Illness with notification from parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Serious personal emergency</masterLabel>
+            <translation><!-- 9. Serious personal emergency --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Authorised Reason for Absence 5 --></label>
+        <name>Reason_for_Absence_5__c</name>
+        <picklistValues>
+            <masterLabel>1. Wedding of immediate family member</masterLabel>
+            <translation><!-- 1. Wedding of immediate family member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10. Exam results</masterLabel>
+            <translation><!-- 10. Exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11. Serious Personal Emergency (Please give details and PL initials for sign off)</masterLabel>
+            <translation><!-- 11. Serious Personal Emergency (Please give details and PL initials for sign off) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12. Other authorised</masterLabel>
+            <translation><!-- 12. Other authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13. Commencement of employment</masterLabel>
+            <translation><!-- 13. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Family Holiday</masterLabel>
+            <translation><!-- 2. Family Holiday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Bereavement or funeral</masterLabel>
+            <translation><!-- 3. Bereavement or funeral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Sixth Form College inductions</masterLabel>
+            <translation><!-- 4. Sixth Form College inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Job Interview</masterLabel>
+            <translation><!-- 5. Job Interview --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Signing-on</masterLabel>
+            <translation><!-- 6. Signing-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Exams</masterLabel>
+            <translation><!-- 7. Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Illness with notification from parent</masterLabel>
+            <translation><!-- 8. Illness with notification from parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Serious personal emergency</masterLabel>
+            <translation><!-- 9. Serious personal emergency --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Authorised Reason for Absence 6 --></label>
+        <name>Reason_for_Absence_6__c</name>
+        <picklistValues>
+            <masterLabel>1. Wedding of immediate family member</masterLabel>
+            <translation><!-- 1. Wedding of immediate family member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10. Exam results</masterLabel>
+            <translation><!-- 10. Exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11. Serious Personal Emergency (Please give details and PL initials for sign off)</masterLabel>
+            <translation><!-- 11. Serious Personal Emergency (Please give details and PL initials for sign off) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12. Other authorised</masterLabel>
+            <translation><!-- 12. Other authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13. Commencement of employment</masterLabel>
+            <translation><!-- 13. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Family Holiday</masterLabel>
+            <translation><!-- 2. Family Holiday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Bereavement or funeral</masterLabel>
+            <translation><!-- 3. Bereavement or funeral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Sixth Form College inductions</masterLabel>
+            <translation><!-- 4. Sixth Form College inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Job Interview</masterLabel>
+            <translation><!-- 5. Job Interview --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Signing-on</masterLabel>
+            <translation><!-- 6. Signing-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Exams</masterLabel>
+            <translation><!-- 7. Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Illness with notification from parent</masterLabel>
+            <translation><!-- 8. Illness with notification from parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Serious personal emergency</masterLabel>
+            <translation><!-- 9. Serious personal emergency --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Authorised Reason for Absence 7 --></label>
+        <name>Reason_for_Absence_7__c</name>
+        <picklistValues>
+            <masterLabel>1. Wedding of immediate family member</masterLabel>
+            <translation><!-- 1. Wedding of immediate family member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10. Exam results</masterLabel>
+            <translation><!-- 10. Exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11. Serious Personal Emergency (Please give details and PL initials for sign off)</masterLabel>
+            <translation><!-- 11. Serious Personal Emergency (Please give details and PL initials for sign off) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12. Other authorised</masterLabel>
+            <translation><!-- 12. Other authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13. Commencement of employment</masterLabel>
+            <translation><!-- 13. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Family Holiday</masterLabel>
+            <translation><!-- 2. Family Holiday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Bereavement or funeral</masterLabel>
+            <translation><!-- 3. Bereavement or funeral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Sixth Form College inductions</masterLabel>
+            <translation><!-- 4. Sixth Form College inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Job Interview</masterLabel>
+            <translation><!-- 5. Job Interview --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Signing-on</masterLabel>
+            <translation><!-- 6. Signing-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Exams</masterLabel>
+            <translation><!-- 7. Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Illness with notification from parent</masterLabel>
+            <translation><!-- 8. Illness with notification from parent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Authorised Reason for Absence 8 --></label>
+        <name>Reason_for_Absence_8__c</name>
+        <picklistValues>
+            <masterLabel>1. Wedding of immediate family member</masterLabel>
+            <translation><!-- 1. Wedding of immediate family member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10. Exam results</masterLabel>
+            <translation><!-- 10. Exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11. Serious Personal Emergency (Please give details and PL initials for sign off)</masterLabel>
+            <translation><!-- 11. Serious Personal Emergency (Please give details and PL initials for sign off) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12. Other authorised</masterLabel>
+            <translation><!-- 12. Other authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13. Commencement of employment</masterLabel>
+            <translation><!-- 13. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Family Holiday</masterLabel>
+            <translation><!-- 2. Family Holiday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Bereavement or funeral</masterLabel>
+            <translation><!-- 3. Bereavement or funeral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Sixth Form College inductions</masterLabel>
+            <translation><!-- 4. Sixth Form College inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Job Interview</masterLabel>
+            <translation><!-- 5. Job Interview --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Signing-on</masterLabel>
+            <translation><!-- 6. Signing-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Exams</masterLabel>
+            <translation><!-- 7. Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Illness with notification from parent</masterLabel>
+            <translation><!-- 8. Illness with notification from parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Serious personal emergency</masterLabel>
+            <translation><!-- 9. Serious personal emergency --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reason for ineligibility --></label>
+        <name>Reason_for_ineligibility__c</name>
+    </fields>
+    <fields>
+        <label><!-- Red card day as a number --></label>
+        <name>Red_card_day_as_a_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship to YP --></label>
+        <name>Relationship_to_YP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request for authorisation RCA --></label>
+        <name>Request_for_authorisation_RCA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request for authorisation RCD --></label>
+        <name>Request_for_authorisation_RCD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request for authorisation TC --></label>
+        <name>Request_for_authorisation_TC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request for authorisation PC --></label>
+        <name>Request_for_authorisation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tick this box to request from your SPM that the YP is allowed to graduate despite the number of absences of the YP --></help>
+        <label><!-- Request to allow to grad despite absence --></label>
+        <name>Request_to_allow_to_grad_despite_absence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request to graduate status --></label>
+        <name>Request_to_graduate_status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Approved</masterLabel>
+            <translation><!-- Not Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SPM Email --></label>
+        <name>SPM_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPM Review - RCA request to graduate --></label>
+        <name>SPM_Review_RCA_request_to_graduate__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SPM Review - RCD request to graduate --></label>
+        <name>SPM_Review_RCD_request_to_graduate__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SPM Review - TC request to graduate --></label>
+        <name>SPM_Review_TC_request_to_graduate__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SPM Review - PC request to graduate --></label>
+        <name>SPM_Review_request_to_graduate__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The SPM checks this box to indicate that they have approved the request for Benny to take to the Cabinet Office.
+When the CO has approved, Benny will check the &quot;Allow to graduate despite no. absences?&quot; checkbox --></help>
+        <label><!-- SPM: approved graduation request --></label>
+        <name>SPM_approved_graduation_request__c</name>
+    </fields>
+    <fields>
+        <label><!-- School&apos;s cluster --></label>
+        <name>Schools_cluster__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please tick this box if a PG requests an absence form - this will trigger an email containing a link to the online form. --></help>
+        <label><!-- Send absence form email --></label>
+        <name>Send_absence_form_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage of absence 1 --></label>
+        <name>Stage_of_absence_1__c</name>
+        <picklistValues>
+            <masterLabel>PC</masterLabel>
+            <translation><!-- PC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA</masterLabel>
+            <translation><!-- RCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD</masterLabel>
+            <translation><!-- RCD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC</masterLabel>
+            <translation><!-- TC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stage of absence 2 --></label>
+        <name>Stage_of_absence_2__c</name>
+        <picklistValues>
+            <masterLabel>PC</masterLabel>
+            <translation><!-- PC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA</masterLabel>
+            <translation><!-- RCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD</masterLabel>
+            <translation><!-- RCD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC</masterLabel>
+            <translation><!-- TC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stage of absence 3 --></label>
+        <name>Stage_of_absence_3__c</name>
+        <picklistValues>
+            <masterLabel>PC</masterLabel>
+            <translation><!-- PC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA</masterLabel>
+            <translation><!-- RCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD</masterLabel>
+            <translation><!-- RCD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC</masterLabel>
+            <translation><!-- TC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stage of absence 4 --></label>
+        <name>Stage_of_absence_4__c</name>
+        <picklistValues>
+            <masterLabel>PC</masterLabel>
+            <translation><!-- PC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA</masterLabel>
+            <translation><!-- RCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD</masterLabel>
+            <translation><!-- RCD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC</masterLabel>
+            <translation><!-- TC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stage of absence 5 --></label>
+        <name>Stage_of_absence_5__c</name>
+        <picklistValues>
+            <masterLabel>PC</masterLabel>
+            <translation><!-- PC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA</masterLabel>
+            <translation><!-- RCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD</masterLabel>
+            <translation><!-- RCD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC</masterLabel>
+            <translation><!-- TC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stage of absence 6 --></label>
+        <name>Stage_of_absence_6__c</name>
+        <picklistValues>
+            <masterLabel>PC</masterLabel>
+            <translation><!-- PC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA</masterLabel>
+            <translation><!-- RCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD</masterLabel>
+            <translation><!-- RCD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC</masterLabel>
+            <translation><!-- TC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stage of absence 7 --></label>
+        <name>Stage_of_absence_7__c</name>
+        <picklistValues>
+            <masterLabel>PC</masterLabel>
+            <translation><!-- PC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA</masterLabel>
+            <translation><!-- RCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD</masterLabel>
+            <translation><!-- RCD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC</masterLabel>
+            <translation><!-- TC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stage of absence 8 --></label>
+        <name>Stage_of_absence_8__c</name>
+        <picklistValues>
+            <masterLabel>PC</masterLabel>
+            <translation><!-- PC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCA</masterLabel>
+            <translation><!-- RCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCD</masterLabel>
+            <translation><!-- RCD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC</masterLabel>
+            <translation><!-- TC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- &quot;Late &lt; 1.5 hours&quot; means: &quot;Was less than 1.5 hours late&quot;
+&quot;Late &gt; 3 Hours&quot; means: &quot;Was more than 3 hours late&quot; --></help>
+        <label><!-- Status 2 --></label>
+        <name>Status_2__c</name>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late &lt; 1.5 Hours</masterLabel>
+            <translation><!-- Late &lt; 1.5 Hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late &gt; 3 hours</masterLabel>
+            <translation><!-- Late &gt; 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late between 1.5 and 3 hours</masterLabel>
+            <translation><!-- Late between 1.5 and 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- &quot;Late &lt; 1.5 hours&quot; means: &quot;Was less than 1.5 hours late&quot;
+&quot;Late &gt; 3 Hours&quot; means: &quot;Was more than 3 hours late&quot; --></help>
+        <label><!-- Status 3 --></label>
+        <name>Status_3__c</name>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late &lt; 1.5 hours</masterLabel>
+            <translation><!-- Late &lt; 1.5 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late &gt; 3 hours</masterLabel>
+            <translation><!-- Late &gt; 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late between 1.5 and 3 hours</masterLabel>
+            <translation><!-- Late between 1.5 and 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- &quot;Late &lt; 1.5 hours&quot; means: &quot;Was less than 1.5 hours late&quot;
+&quot;Late &gt; 3 Hours&quot; means: &quot;Was more than 3 hours late&quot; --></help>
+        <label><!-- Status 4 --></label>
+        <name>Status_4__c</name>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late &lt; 1.5 hours</masterLabel>
+            <translation><!-- Late &lt; 1.5 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late &gt; 3 hours</masterLabel>
+            <translation><!-- Late &gt; 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late between 1.5 and 3 hours</masterLabel>
+            <translation><!-- Late between 1.5 and 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- &quot;Late &lt; 1.5 hours&quot; means: &quot;Was less than 1.5 hours late&quot;
+&quot;Late &gt; 3 Hours&quot; means: &quot;Was more than 3 hours late&quot; --></help>
+        <label><!-- Status 5 --></label>
+        <name>Status_5__c</name>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late &lt; 1.5 hours</masterLabel>
+            <translation><!-- Late &lt; 1.5 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late &gt; 3 hours</masterLabel>
+            <translation><!-- Late &gt; 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late between 1.5 and 3 hours</masterLabel>
+            <translation><!-- Late between 1.5 and 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- &quot;Late &lt; 1.5 hours&quot; means: &quot;Was less than 1.5 hours late&quot;
+&quot;Late &gt; 3 Hours&quot; means: &quot;Was more than 3 hours late&quot; --></help>
+        <label><!-- Status 6 --></label>
+        <name>Status_6__c</name>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late &lt; 1.5 hours</masterLabel>
+            <translation><!-- Late &lt; 1.5 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late &gt; 3 hours</masterLabel>
+            <translation><!-- Late &gt; 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late between 1.5 and 3 hours</masterLabel>
+            <translation><!-- Late between 1.5 and 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- &quot;Late &lt; 1.5 hours&quot; means: &quot;Was less than 1.5 hours late&quot;
+&quot;Late &gt; 3 Hours&quot; means: &quot;Was more than 3 hours late&quot; --></help>
+        <label><!-- Status 7 --></label>
+        <name>Status_7__c</name>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late &lt; 1.5 hours</masterLabel>
+            <translation><!-- Late &lt; 1.5 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late &gt; 3 hours</masterLabel>
+            <translation><!-- Late &gt; 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late between 1.5 and 3 hours</masterLabel>
+            <translation><!-- Late between 1.5 and 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- &quot;Late &lt; 1.5 hours&quot; means: &quot;Was less than 1.5 hours late&quot;
+&quot;Late &gt; 3 Hours&quot; means: &quot;Was more than 3 hours late&quot; --></help>
+        <label><!-- Status 8 --></label>
+        <name>Status_8__c</name>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late &lt; 1.5 hours</masterLabel>
+            <translation><!-- Late &lt; 1.5 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late &gt; 3 hours</masterLabel>
+            <translation><!-- Late &gt; 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late between 1.5 and 3 hours</masterLabel>
+            <translation><!-- Late between 1.5 and 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summer Manager email --></label>
+        <name>Summer_Manager_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC1 attendance --></label>
+        <name>TC1_attendance__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC2 attendance --></label>
+        <name>TC2_attendance__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC3 attendance --></label>
+        <name>TC3_attendance__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC4 attendance --></label>
+        <name>TC4_attendance__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC4 attendance formula 1 --></label>
+        <name>TC4_attendance_formula_1_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC5 attendance --></label>
+        <name>TC5_attendance__c</name>
+    </fields>
+    <fields>
+        <label><!-- TCKO --></label>
+        <name>TCKO__c</name>
+    </fields>
+    <fields>
+        <help><!-- This contains any notes describing how and when the YP are getting to the Residential Accommodation. --></help>
+        <label><!-- TCKO turn up Notes --></label>
+        <name>TCKO_turn_up_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC 1 Absence --></label>
+        <name>TC_1_Absence__c</name>
+        <picklistValues>
+            <masterLabel>1. Bereavement</masterLabel>
+            <translation><!-- 1. Bereavement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Illness</masterLabel>
+            <translation><!-- 2. Illness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Serious injury</masterLabel>
+            <translation><!-- 3. Serious injury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Job interviews</masterLabel>
+            <translation><!-- 4. Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Commencement of employment</masterLabel>
+            <translation><!-- 5. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Sixth Form Collgege inductions</masterLabel>
+            <translation><!-- 6. Sixth Form Collgege inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Religious festivals</masterLabel>
+            <translation><!-- 7. Religious festivals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Exams and GCSE (Only) exam results</masterLabel>
+            <translation><!-- 8. Exams and GCSE (Only) exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Other (Unauthorised)</masterLabel>
+            <translation><!-- 9. Other (Unauthorised) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TC 1 Absence number --></label>
+        <name>TC_1_Absence_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC 1 --></label>
+        <name>TC_1__c</name>
+        <picklistValues>
+            <masterLabel>Absence authorised</masterLabel>
+            <translation><!-- Absence authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unauthorised</masterLabel>
+            <translation><!-- Absence unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half day</masterLabel>
+            <translation><!-- Half day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - 1.5 to 3 hours</masterLabel>
+            <translation><!-- Late - 1.5 to 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - more than 3 hours</masterLabel>
+            <translation><!-- Late - more than 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TC 2 Absence --></label>
+        <name>TC_2_Absence__c</name>
+        <picklistValues>
+            <masterLabel>1. Bereavement</masterLabel>
+            <translation><!-- 1. Bereavement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Illness</masterLabel>
+            <translation><!-- 2. Illness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Serious injury</masterLabel>
+            <translation><!-- 3. Serious injury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Job interviews</masterLabel>
+            <translation><!-- 4. Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Commencement of employment</masterLabel>
+            <translation><!-- 5. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Sixth Form Collgege inductions</masterLabel>
+            <translation><!-- 6. Sixth Form Collgege inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Religious festivals</masterLabel>
+            <translation><!-- 7. Religious festivals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Exams and GCSE (Only) exam results</masterLabel>
+            <translation><!-- 8. Exams and GCSE (Only) exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Other (Unauthorised)</masterLabel>
+            <translation><!-- 9. Other (Unauthorised) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TC 2 Absence number --></label>
+        <name>TC_2_Absence_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC 2 --></label>
+        <name>TC_2__c</name>
+        <picklistValues>
+            <masterLabel>Absence authorised</masterLabel>
+            <translation><!-- Absence authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unauthorised</masterLabel>
+            <translation><!-- Absence unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half day</masterLabel>
+            <translation><!-- Half day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - 1.5 to 3 hours</masterLabel>
+            <translation><!-- Late - 1.5 to 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - more than 3 hours</masterLabel>
+            <translation><!-- Late - more than 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TC 3 Absence --></label>
+        <name>TC_3_Absence__c</name>
+        <picklistValues>
+            <masterLabel>1. Bereavement</masterLabel>
+            <translation><!-- 1. Bereavement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Illness</masterLabel>
+            <translation><!-- 2. Illness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Serious injury</masterLabel>
+            <translation><!-- 3. Serious injury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Job interviews</masterLabel>
+            <translation><!-- 4. Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Commencement of employment</masterLabel>
+            <translation><!-- 5. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Sixth Form Collgege inductions</masterLabel>
+            <translation><!-- 6. Sixth Form Collgege inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Religious festivals</masterLabel>
+            <translation><!-- 7. Religious festivals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Exams and GCSE (Only) exam results</masterLabel>
+            <translation><!-- 8. Exams and GCSE (Only) exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Other (Unauthorised)</masterLabel>
+            <translation><!-- 9. Other (Unauthorised) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TC 3 Absence number --></label>
+        <name>TC_3_Absence_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC 3 --></label>
+        <name>TC_3__c</name>
+        <picklistValues>
+            <masterLabel>Absence authorised</masterLabel>
+            <translation><!-- Absence authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unauthorised</masterLabel>
+            <translation><!-- Absence unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half day</masterLabel>
+            <translation><!-- Half day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - 1.5 to 3 hours</masterLabel>
+            <translation><!-- Late - 1.5 to 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - more than 3 hours</masterLabel>
+            <translation><!-- Late - more than 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TC 4 Absence --></label>
+        <name>TC_4_Absence__c</name>
+        <picklistValues>
+            <masterLabel>1. Bereavement</masterLabel>
+            <translation><!-- 1. Bereavement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Illness</masterLabel>
+            <translation><!-- 2. Illness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Serious injury</masterLabel>
+            <translation><!-- 3. Serious injury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Job interviews</masterLabel>
+            <translation><!-- 4. Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Commencement of employment</masterLabel>
+            <translation><!-- 5. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Sixth Form Collgege inductions</masterLabel>
+            <translation><!-- 6. Sixth Form Collgege inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Religious festivals</masterLabel>
+            <translation><!-- 7. Religious festivals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Exams and GCSE (Only) exam results</masterLabel>
+            <translation><!-- 8. Exams and GCSE (Only) exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Other (Unauthorised)</masterLabel>
+            <translation><!-- 9. Other (Unauthorised) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TC 4 Absence number --></label>
+        <name>TC_4_Absence_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC 4 --></label>
+        <name>TC_4__c</name>
+        <picklistValues>
+            <masterLabel>Absence authorised</masterLabel>
+            <translation><!-- Absence authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unauthorised</masterLabel>
+            <translation><!-- Absence unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half day</masterLabel>
+            <translation><!-- Half day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - 1.5 to 3 hours</masterLabel>
+            <translation><!-- Late - 1.5 to 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - more than 3 hours</masterLabel>
+            <translation><!-- Late - more than 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TC 5 Absence --></label>
+        <name>TC_5_Absence__c</name>
+        <picklistValues>
+            <masterLabel>1. Bereavement</masterLabel>
+            <translation><!-- 1. Bereavement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Illness</masterLabel>
+            <translation><!-- 2. Illness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. Serious injury</masterLabel>
+            <translation><!-- 3. Serious injury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. Job interviews</masterLabel>
+            <translation><!-- 4. Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. Commencement of employment</masterLabel>
+            <translation><!-- 5. Commencement of employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Sixth Form Collgege inductions</masterLabel>
+            <translation><!-- 6. Sixth Form Collgege inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Religious festivals</masterLabel>
+            <translation><!-- 7. Religious festivals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8. Exams and GCSE (Only) exam results</masterLabel>
+            <translation><!-- 8. Exams and GCSE (Only) exam results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9. Other (Unauthorised)</masterLabel>
+            <translation><!-- 9. Other (Unauthorised) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TC 5 Absence number --></label>
+        <name>TC_5_Absence_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC 5 --></label>
+        <name>TC_5__c</name>
+        <picklistValues>
+            <masterLabel>Absence authorised</masterLabel>
+            <translation><!-- Absence authorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absence unauthorised</masterLabel>
+            <translation><!-- Absence unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absent all day</masterLabel>
+            <translation><!-- Absent all day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half day</masterLabel>
+            <translation><!-- Half day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - 1.5 to 3 hours</masterLabel>
+            <translation><!-- Late - 1.5 to 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late - more than 3 hours</masterLabel>
+            <translation><!-- Late - more than 3 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TC Authorised Absence Notes --></label>
+        <name>TC_Authorised_Absence_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC Authorised Absence Type --></label>
+        <name>TC_Authorised_Absence_Type__c</name>
+        <picklistValues>
+            <masterLabel>Bereavement of close friend/family</masterLabel>
+            <translation><!-- Bereavement of close friend/family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exams</masterLabel>
+            <translation><!-- Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family holidays</masterLabel>
+            <translation><!-- Family holidays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funeral of close friend/family</masterLabel>
+            <translation><!-- Funeral of close friend/family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job interviews</masterLabel>
+            <translation><!-- Job interviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signing-on</masterLabel>
+            <translation><!-- Signing-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sixth Form College inductions</masterLabel>
+            <translation><!-- Sixth Form College inductions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wedding of immediate family</masterLabel>
+            <translation><!-- Wedding of immediate family --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TC Completed --></label>
+        <name>TC_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC Return --></label>
+        <name>TC_Return__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC Status --></label>
+        <name>TC_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC Unauthorised Absence Notes --></label>
+        <name>TC_Unauthorised_Absence_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of authorised absences recorded during TC --></help>
+        <label><!-- # TC authorised absences --></label>
+        <name>TC_authorised_absences__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC days calculation --></label>
+        <name>TC_days_calculation__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC days to make up (unauth) --></label>
+        <name>TC_days_to_make_up_auth__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of unauthorised absences recorded during TC --></help>
+        <label><!-- # TC unauthorised absences --></label>
+        <name>TC_unauthorised_absences__c</name>
+    </fields>
+    <fields>
+        <label><!-- TEXT PC1 --></label>
+        <name>TEXT_PC1__c</name>
+    </fields>
+    <fields>
+        <label><!-- TEXT PC2 --></label>
+        <name>TEXT_PC2__c</name>
+    </fields>
+    <fields>
+        <label><!-- TEXT PC3 --></label>
+        <name>TEXT_PC3__c</name>
+    </fields>
+    <fields>
+        <label><!-- TEXT PC4 --></label>
+        <name>TEXT_PC4__c</name>
+    </fields>
+    <fields>
+        <label><!-- TEXT PC5 --></label>
+        <name>TEXT_PC5__c</name>
+    </fields>
+    <fields>
+        <label><!-- TEXT PC6 --></label>
+        <name>TEXT_PC6__c</name>
+    </fields>
+    <fields>
+        <label><!-- TEXT RCA1 --></label>
+        <name>TEXT_RCA1__c</name>
+    </fields>
+    <fields>
+        <label><!-- TEXT RCA2 --></label>
+        <name>TEXT_RCA2__c</name>
+    </fields>
+    <fields>
+        <label><!-- TEXT RCA3 --></label>
+        <name>TEXT_RCA3__c</name>
+    </fields>
+    <fields>
+        <label><!-- TEXT RCA4 --></label>
+        <name>TEXT_RCA4__c</name>
+    </fields>
+    <fields>
+        <label><!-- TEXT RCD1 --></label>
+        <name>TEXT_RCD1__c</name>
+    </fields>
+    <fields>
+        <label><!-- TEXT RCD2 --></label>
+        <name>TEXT_RCD2__c</name>
+    </fields>
+    <fields>
+        <label><!-- TEXT RCD3 --></label>
+        <name>TEXT_RCD3__c</name>
+    </fields>
+    <fields>
+        <label><!-- TEXT RCD4 --></label>
+        <name>TEXT_RCD4__c</name>
+    </fields>
+    <fields>
+        <label><!-- TEXT TC1 --></label>
+        <name>TEXT_TC1__c</name>
+    </fields>
+    <fields>
+        <label><!-- TEXT TC2 --></label>
+        <name>TEXT_TC2__c</name>
+    </fields>
+    <fields>
+        <label><!-- TEXT TC3 --></label>
+        <name>TEXT_TC3__c</name>
+    </fields>
+    <fields>
+        <label><!-- TEXT TC4 --></label>
+        <name>TEXT_TC4__c</name>
+    </fields>
+    <fields>
+        <label><!-- TEXT TC5 --></label>
+        <name>TEXT_TC5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team --></label>
+        <name>Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test 1 --></label>
+        <name>Test_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test 2 --></label>
+        <name>Test_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Too many pre-RCA absences --></label>
+        <name>Too_many_pre_RCA_absences__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total number of days attended --></label>
+        <name>Total_Attendance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Hours Required For 85% WORKFLOW --></label>
+        <name>Total_Hours_Required_For_85_WORKFLOW__c</name>
+    </fields>
+    <fields>
+        <help><!-- Calculates the number of hours to be made up due to unauthorised absences.
+Will show &quot;0&quot; if the YP has had too many unauthorised absences to graduate --></help>
+        <label><!-- Hours to make up due to unauth. absences --></label>
+        <name>Total_Hours_to_make_up__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the total number of hours that the YP has submitted - through hours and TCS events (campaigns) --></help>
+        <label><!-- Total hours submitted --></label>
+        <name>Total_hours_submitted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total hours required by the Cabinet Office for YP graduation.
+Made up of total number of hours due to authorised and unauthorised absences --></help>
+        <label><!-- Total hours to make up for grad (C.O) --></label>
+        <name>Total_hours_to_make_up_for_grad_C_O__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total hours required by TCN for YP graduation.
+Made up of total number of hours due to authorised, unauthorised absences and latenesses of over 1.5 hours --></help>
+        <label><!-- Total hours to make up for grad (TCN) --></label>
+        <name>Total_hours_to_make_up_for_grad_TCN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Hours required for 85% --></label>
+        <name>Total_number_of_recorded_absences__c</name>
+    </fields>
+    <fields>
+        <help><!-- Details of option 2 should be included by the PG in the notes about transport methods. --></help>
+        <label><!-- Absence 1 transport arrangements --></label>
+        <name>Transport_arrangements__c</name>
+        <picklistValues>
+            <masterLabel>Another adult with collect YP</masterLabel>
+            <translation><!-- Another adult with collect YP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PG wil collect YP</masterLabel>
+            <translation><!-- PG wil collect YP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YP will travel independently</masterLabel>
+            <translation><!-- YP will travel independently --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unauthorised Reason for Absence 1 --></label>
+        <name>Unauthorised_Reason_for_Absence_1__c</name>
+        <picklistValues>
+            <masterLabel>1. Wedding of immediate family member</masterLabel>
+            <translation><!-- 1. Wedding of immediate family member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13. Wedding of non-immediate family</masterLabel>
+            <translation><!-- 13. Wedding of non-immediate family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14. Family days</masterLabel>
+            <translation><!-- 14. Family days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15. University open day</masterLabel>
+            <translation><!-- 15. University open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16. Parties</masterLabel>
+            <translation><!-- 16. Parties --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17. Other Programmes/Courses</masterLabel>
+            <translation><!-- 17. Other Programmes/Courses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18. School Graduation/Valedictories/Proms</masterLabel>
+            <translation><!-- 18. School Graduation/Valedictories/Proms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>19. Illness without notification by parent</masterLabel>
+            <translation><!-- 19. Illness without notification by parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Family Holiday</masterLabel>
+            <translation><!-- 2. Family Holiday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20. Other unauthorised</masterLabel>
+            <translation><!-- 20. Other unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Signing-on</masterLabel>
+            <translation><!-- 6. Signing-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Exams</masterLabel>
+            <translation><!-- 7. Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Centrally set</masterLabel>
+            <translation><!-- Centrally set --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unauthorised Reason for Absence 2 --></label>
+        <name>Unauthorised_Reason_for_Absence_2__c</name>
+        <picklistValues>
+            <masterLabel>1. Wedding of immediate family member</masterLabel>
+            <translation><!-- 1. Wedding of immediate family member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13. Wedding of non-immediate family</masterLabel>
+            <translation><!-- 13. Wedding of non-immediate family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14. Family days</masterLabel>
+            <translation><!-- 14. Family days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15. University open day</masterLabel>
+            <translation><!-- 15. University open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16. Parties</masterLabel>
+            <translation><!-- 16. Parties --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17. Other Programmes/Courses</masterLabel>
+            <translation><!-- 17. Other Programmes/Courses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18. School Graduation/Valedictories/Proms</masterLabel>
+            <translation><!-- 18. School Graduation/Valedictories/Proms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>19. Illness without notification by parent</masterLabel>
+            <translation><!-- 19. Illness without notification by parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Family Holiday</masterLabel>
+            <translation><!-- 2. Family Holiday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20. Other unauthorised</masterLabel>
+            <translation><!-- 20. Other unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Signing-on</masterLabel>
+            <translation><!-- 6. Signing-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Exams</masterLabel>
+            <translation><!-- 7. Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Centrally set</masterLabel>
+            <translation><!-- Centrally set --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unauthorised Reason for Absence 3 --></label>
+        <name>Unauthorised_Reason_for_Absence_3__c</name>
+        <picklistValues>
+            <masterLabel>1. Wedding of immediate family member</masterLabel>
+            <translation><!-- 1. Wedding of immediate family member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13. Wedding of non-immediate family</masterLabel>
+            <translation><!-- 13. Wedding of non-immediate family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14. Family days</masterLabel>
+            <translation><!-- 14. Family days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15. University open day</masterLabel>
+            <translation><!-- 15. University open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16. Parties</masterLabel>
+            <translation><!-- 16. Parties --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17. Other Programmes/Courses</masterLabel>
+            <translation><!-- 17. Other Programmes/Courses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18. School Graduation/Valedictories/Proms</masterLabel>
+            <translation><!-- 18. School Graduation/Valedictories/Proms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>19. Illness without notification by parent</masterLabel>
+            <translation><!-- 19. Illness without notification by parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Family Holiday</masterLabel>
+            <translation><!-- 2. Family Holiday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20. Other unauthorised</masterLabel>
+            <translation><!-- 20. Other unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Signing-on</masterLabel>
+            <translation><!-- 6. Signing-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Exams</masterLabel>
+            <translation><!-- 7. Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Centrally set</masterLabel>
+            <translation><!-- Centrally set --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unauthorised Reason for Absence 4 --></label>
+        <name>Unauthorised_Reason_for_Absence_4__c</name>
+        <picklistValues>
+            <masterLabel>1. Wedding of immediate family member</masterLabel>
+            <translation><!-- 1. Wedding of immediate family member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13. Wedding of non-immediate family</masterLabel>
+            <translation><!-- 13. Wedding of non-immediate family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14. Family days</masterLabel>
+            <translation><!-- 14. Family days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15. University open day</masterLabel>
+            <translation><!-- 15. University open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16. Parties</masterLabel>
+            <translation><!-- 16. Parties --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17. Other Programmes/Courses</masterLabel>
+            <translation><!-- 17. Other Programmes/Courses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18. School Graduation/Valedictories/Proms</masterLabel>
+            <translation><!-- 18. School Graduation/Valedictories/Proms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>19. Illness without notification by parent</masterLabel>
+            <translation><!-- 19. Illness without notification by parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Family Holiday</masterLabel>
+            <translation><!-- 2. Family Holiday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20. Other unauthorised</masterLabel>
+            <translation><!-- 20. Other unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Signing-on</masterLabel>
+            <translation><!-- 6. Signing-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Exams</masterLabel>
+            <translation><!-- 7. Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Centrally set</masterLabel>
+            <translation><!-- Centrally set --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unauthorised Reason for Absence 5 --></label>
+        <name>Unauthorised_Reason_for_Absence_5__c</name>
+        <picklistValues>
+            <masterLabel>1. Wedding of immediate family member</masterLabel>
+            <translation><!-- 1. Wedding of immediate family member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13. Wedding of non-immediate family</masterLabel>
+            <translation><!-- 13. Wedding of non-immediate family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14. Family days</masterLabel>
+            <translation><!-- 14. Family days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15. University open day</masterLabel>
+            <translation><!-- 15. University open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16. Parties</masterLabel>
+            <translation><!-- 16. Parties --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17. Other Programmes/Courses</masterLabel>
+            <translation><!-- 17. Other Programmes/Courses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18. School Graduation/Valedictories/Proms</masterLabel>
+            <translation><!-- 18. School Graduation/Valedictories/Proms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>19. Illness without notification by parent</masterLabel>
+            <translation><!-- 19. Illness without notification by parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Family Holiday</masterLabel>
+            <translation><!-- 2. Family Holiday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20. Other unauthorised</masterLabel>
+            <translation><!-- 20. Other unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Signing-on</masterLabel>
+            <translation><!-- 6. Signing-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Exams</masterLabel>
+            <translation><!-- 7. Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Centrally set</masterLabel>
+            <translation><!-- Centrally set --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unauthorised Reason for Absence 6 --></label>
+        <name>Unauthorised_Reason_for_Absence_6__c</name>
+        <picklistValues>
+            <masterLabel>1. Wedding of immediate family member</masterLabel>
+            <translation><!-- 1. Wedding of immediate family member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13. Wedding of non-immediate family</masterLabel>
+            <translation><!-- 13. Wedding of non-immediate family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14. Family days</masterLabel>
+            <translation><!-- 14. Family days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15. University open day</masterLabel>
+            <translation><!-- 15. University open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16. Parties</masterLabel>
+            <translation><!-- 16. Parties --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17. Other Programmes/Courses</masterLabel>
+            <translation><!-- 17. Other Programmes/Courses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18. School Graduation/Valedictories/Proms</masterLabel>
+            <translation><!-- 18. School Graduation/Valedictories/Proms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>19. Illness without notification by parent</masterLabel>
+            <translation><!-- 19. Illness without notification by parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Family Holiday</masterLabel>
+            <translation><!-- 2. Family Holiday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20. Other unauthorised</masterLabel>
+            <translation><!-- 20. Other unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Signing-on</masterLabel>
+            <translation><!-- 6. Signing-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Exams</masterLabel>
+            <translation><!-- 7. Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Centrally set</masterLabel>
+            <translation><!-- Centrally set --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unauthorised Reason for Absence 7 --></label>
+        <name>Unauthorised_Reason_for_Absence_7__c</name>
+        <picklistValues>
+            <masterLabel>1. Wedding of immediate family member</masterLabel>
+            <translation><!-- 1. Wedding of immediate family member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13. Wedding of non-immediate family</masterLabel>
+            <translation><!-- 13. Wedding of non-immediate family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14. Family days</masterLabel>
+            <translation><!-- 14. Family days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15. University open day</masterLabel>
+            <translation><!-- 15. University open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16. Parties</masterLabel>
+            <translation><!-- 16. Parties --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17. Other Programmes/Courses</masterLabel>
+            <translation><!-- 17. Other Programmes/Courses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18. School Graduation/Valedictories/Proms</masterLabel>
+            <translation><!-- 18. School Graduation/Valedictories/Proms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>19. Illness without notification by parent</masterLabel>
+            <translation><!-- 19. Illness without notification by parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Family Holiday</masterLabel>
+            <translation><!-- 2. Family Holiday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20. Other unauthorised</masterLabel>
+            <translation><!-- 20. Other unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Signing-on</masterLabel>
+            <translation><!-- 6. Signing-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Exams</masterLabel>
+            <translation><!-- 7. Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Centrally set</masterLabel>
+            <translation><!-- Centrally set --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unauthorised Reason for Absence 8 --></label>
+        <name>Unauthorised_Reason_for_Absence_8__c</name>
+        <picklistValues>
+            <masterLabel>1. Wedding of immediate family member</masterLabel>
+            <translation><!-- 1. Wedding of immediate family member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13. Wedding of non-immediate family</masterLabel>
+            <translation><!-- 13. Wedding of non-immediate family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14. Family days</masterLabel>
+            <translation><!-- 14. Family days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15. University open day</masterLabel>
+            <translation><!-- 15. University open day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16. Parties</masterLabel>
+            <translation><!-- 16. Parties --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17. Other Programmes/Courses</masterLabel>
+            <translation><!-- 17. Other Programmes/Courses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18. School Graduation/Valedictories/Proms</masterLabel>
+            <translation><!-- 18. School Graduation/Valedictories/Proms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>19. Illness without notification by parent</masterLabel>
+            <translation><!-- 19. Illness without notification by parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. Family Holiday</masterLabel>
+            <translation><!-- 2. Family Holiday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20. Other unauthorised</masterLabel>
+            <translation><!-- 20. Other unauthorised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. Signing-on</masterLabel>
+            <translation><!-- 6. Signing-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7. Exams</masterLabel>
+            <translation><!-- 7. Exams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Centrally set</masterLabel>
+            <translation><!-- Centrally set --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unauthorised absences --></label>
+        <name>Unauthorised_absences__c</name>
+    </fields>
+    <fields>
+        <label><!-- User view --></label>
+        <name>User_view__c</name>
+    </fields>
+    <fields>
+        <label><!-- Using Challenge for DofE --></label>
+        <name>Using_Challenge_for_DofE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave APM/PM check --></label>
+        <name>Wave_APM_PM_check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave Model --></label>
+        <name>Wave_Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave Selection --></label>
+        <name>Wave_Selection__c</name>
+        <relationshipLabel><!-- Attendance --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Wave --></label>
+        <name>Wave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave lookup --></label>
+        <name>Wave_lookup__c</name>
+        <relationshipLabel><!-- Attendance --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Wave number --></label>
+        <name>Wave_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Workflow force change --></label>
+        <name>Workflow_force_change__c</name>
+    </fields>
+    <fields>
+        <label><!-- YP Name --></label>
+        <name>YP_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- YP email --></label>
+        <name>YP_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zone --></label>
+        <name>Zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence 1 details of transport arrangmts --></label>
+        <name>absence_1_transport_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Absence 2 details of transport arrangmts --></label>
+        <name>absence_2_transport_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- % of RCA days absent --></label>
+        <name>of_RCA_days_absent__c</name>
+    </fields>
+    <fields>
+        <label><!-- % of RCD days absent --></label>
+        <name>of_RCD_days_absent__c</name>
+    </fields>
+    <fields>
+        <label><!-- % of TC days absent --></label>
+        <name>of_TC_days_absent__c</name>
+    </fields>
+    <fields>
+        <label><!-- % of PC days absent --></label>
+        <name>percentage_of_PC_days_absent__c</name>
+    </fields>
+    <fields>
+        <label><!-- # recorded absences during prog --></label>
+        <name>recorded_absences_during_prog__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Autumn/Spring --></label>
+        <name>Autumn_Spring</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Spring/Autumn --></label>
+        <name>Spring_Autumn</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Summer Staff --></label>
+        <name>Summer_Staff</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2012 --></label>
+        <name>X2012</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2012A --></label>
+        <name>X2012A</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2013 --></label>
+        <name>X2013</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Summer --></label>
+        <name>X2014</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- You have marked the YP as &quot;Attended&quot; -  Please clear the Absence field for the related day --></errorMessage>
+        <name>No_Absence_Reason_Needed_PC</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You have marked the YP as &quot;Attended&quot; -  Please clear the Absence field for the related day --></errorMessage>
+        <name>No_Absence_Reason_Needed_RCA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You have marked the YP as &quot;Attended&quot; -  Please clear the Absence field for the related day --></errorMessage>
+        <name>No_Absence_Reason_Needed_RCD</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You have marked the YP as &quot;Attended&quot; -  Please clear the Absence field for the related day --></errorMessage>
+        <name>No_Absence_Reason_Needed_TC</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sorry if a YP has been absent - a reason is needed --></errorMessage>
+        <name>PC_abesences</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This day is not part of the pilot wave model - please keep the following fields clear:
+
+TC 4
+TC 5
+RCD 3
+RCD 4 --></errorMessage>
+        <name>Prevent_nonpilot_days_for_pilot_waves</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sorry if a YP has been absent - a reason is needed --></errorMessage>
+        <name>RCA_abesences</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sorry if a YP has been absent - a reason is needed --></errorMessage>
+        <name>RCD_abesences</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sorry if a YP has been absent - a reason is needed --></errorMessage>
+        <name>TC_abesences</name>
+    </validationRules>
+</CustomObjectTranslation>

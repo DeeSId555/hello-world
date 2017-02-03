@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#666666</backgroundEndColor>
+    <backgroundFadeDirection>TopToBottom</backgroundFadeDirection>
+    <backgroundStartColor>#DDDDDD</backgroundStartColor>
+    <dashboardFilters>
+        <dashboardFilterOptions>
+            <operator>contains</operator>
+            <values>Birmingham,Warwickshire</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>contains</operator>
+            <values>London South East,Surrey</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>London South West</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>London North East</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>London North West</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Manchester</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Yorkshire</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Bucks &amp; Berks</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Lancashire</values>
+        </dashboardFilterOptions>
+        <name>Zone</name>
+    </dashboardFilters>
+    <dashboardFilters>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>,Support Worker,Learning and Behaviour Mentor,Personal Coach</values>
+        </dashboardFilterOptions>
+        <name>Inclusion Tracking</name>
+    </dashboardFilters>
+    <dashboardFilters>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Olivia Zeltner</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Vicky Buttery</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Bethanie Browne</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Lucy Gilkes</values>
+        </dashboardFilterOptions>
+        <name>Inclusion Associate</name>
+    </dashboardFilters>
+    <dashboardType>SpecifiedUser</dashboardType>
+    <description>2016 CRM</description>
+    <isGridLayout>false</isGridLayout>
+    <leftSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Column</componentType>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CONTACT_OWNER</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Shows offered role but not yet contacted. Once staff have been contacted they will fall off this report!</footer>
+            <header>Starting the CRM with your Seasonal Staff</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>X2016_Staffing_CRM_Dashboard_Report/X2016_Offered_not_yet_contacted</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>2016 Offered, Not Yet Contacted</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CONTACT_OWNER</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <footer>Shows all staff who have received a welcome call and now need to move into allocation</footer>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>X2016_Staffing_CRM_Dashboard_Report/X2016_Welcomed_Ready_For_Allocation_Car</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Welcomed - Ready for Allocation</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CONTACT_OWNER</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <header>Zonal Variation for Allocation</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>X2016_Staffing_CRM_Dashboard_Report/X2016_Welcomed_Ready_For_Allocation_Car</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Welcomed - Ready for Allocation (Car)</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CONTACT_OWNER</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <footer>Shows all staff who have received an allocation call or further in the CRM process</footer>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>X2016_Staffing_CRM_Dashboard_Report/X2016_Allocation_Call_Complete</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>2016 Allocation Call Complete</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CONTACT_OWNER</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <header>2016 Allocation Call Overdue</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>X2016_Staffing_CRM_Dashboard_Report/X2016_No_Allocation_4_Weeks_After_Offer</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>No Allocation Call - 4 Weeks After Offer</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CREATED_BY</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <header>2016 Overdue Call</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>X2016_Staffing_CRM_Dashboard_Report/X2016_Overdue_Calls</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Call due date is in the past</title>
+        </components>
+    </leftSection>
+    <middleSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CONTACT_OWNER</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <header>2016 Welcome Call Overdue</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>X2016_Staffing_CRM_Dashboard_Report/X2016_No_Welcome_2_Weeks_After_Offer</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>No Welcome Call - 2 Weeks After Offer</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CONTACT_OWNER</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <header>Tracking Compliance CRM and Inactivity</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>X2016_Staffing_CRM_Dashboard_Report/X2016_CRM_Stage_Other</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Staff who are CRM Stage Other</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CONTACT_OWNER</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>X2016_Staffing_CRM_Dashboard_Report/X2016_Not_logged_into_SAW_1_month</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Staff not logged into SAW (last 28 days)</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CONTACT_OWNER</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <header>2016 Inactivty</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>X2016_Staffing_CRM_Dashboard_Report/X2016_No_Activity_in_SAW_1_month</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Not Active on SAW</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Pie</componentType>
+            <dashboardFilterColumns>
+                <column>Contact$Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Contact.Job_Applications__r$Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Contact$Owner</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <legendPosition>Bottom</legendPosition>
+            <report>X2016_Staffing_CRM_Dashboard_Report/X2016_No_Contract_Response</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>No Contract Response</title>
+            <useReportChart>false</useReportChart>
+        </components>
+    </middleSection>
+    <rightSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CONTACT_OWNER</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <header>Inclusion Tracking - Offered Not Yet Contacted</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>X2016_Staffing_CRM_Dashboard_Report/X2016_Inclusion_Offered_not_yet_contacte</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Not Yet Contacted</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardFilterColumns>
+                <column>Contact.Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Job_Application__c.Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>CONTACT_OWNER</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <header>2016 Welcome Call or Beyond Stage</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>X2016_Staffing_CRM_Dashboard_Report/X2016_Inclusion_Welcome_Call_or_Beyond</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowLabelAscending</sortBy>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardFilterColumns>
+                <column>Contact$Staffing_Zone__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Contact.Job_Applications__r$Role_to_assess_for__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Contact$Owner</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <header>2016 Inclusion Allocation Complete</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>X2016_Staffing_CRM_Dashboard_Report/X2016_Inclusion_Allocation_Complete</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>JP Created</title>
+        </components>
+    </rightSection>
+    <runningUser>sharmin.nahar@the-challenge.org</runningUser>
+    <textColor>#000000</textColor>
+    <title>2016 CRM Dashboards</title>
+    <titleColor>#000099</titleColor>
+    <titleSize>10</titleSize>
+</Dashboard>

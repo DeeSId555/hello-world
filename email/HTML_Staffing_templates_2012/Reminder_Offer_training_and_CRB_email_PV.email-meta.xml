@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Reminder Offer, training and CRB email to Project Volunteer</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Reminder: Offer, training and CRB email PV</name>
+    <style>none</style>
+    <subject>Reminder: Please register for training with The Challenge</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+We wrote to you on {!Job_Application__c.00NC0000005ESh2}, offering you the role of {!Job_Application__c.Role_to_assess_for__c}. Please confirm your attendance at your training session as soon as possible to confirm that you would like to accept this offer. 
+This role is dependant on your availability and on the receipt of a satisfactory enhanced CRB check. 
+
+TRAINING
+Please click on the link below to register for the training session in your region. 
+
+http://thechallenge.secure.force.com/AvailableDates?key={!Job_Application__c.ContactId__c}&amp;Type={!Job_Application__c.00NC0000005EVyp}&amp;JType={!Job_Application__c.Id}
+
+During training, you will learn all you need to know about The Challenge and your role. You will also meet the people that you will be working with over the Real Challenge Action weekends. 
+
+CRB
+In order to apply for your CRB, please follow these instructions. Please note that you do not need to enter a password. 
+
+Visit www.carecheck.co.uk
+Click on the Applicant tab
+Please read all the notes and instructions
+Click on Click here to continue
+Click on Criminal Records Bureau (CRB) Application Form
+Click on Start a New Application
+Enter the Organisation Reference: evolutionrecruitment
+Enter your personal information to apply for the CRB check.
+
+Please submit your documents for verification on the below form. Please go to http://carecheck.arrangementcms.co.uk/index.php?node=ID-Rules for information on which documents can be accepted. We also request that you submit your dietary requirements and any medical information (such as allergies) that we need to know about, so that we can cater for you during training and during your role on The Challenge. 
+
+Please click on the link below to submit your scanned documents and any information that we need to know in order meet your medical and dietary needs while you are with us.
+
+If you already have an enhanced CRB, we will accept it if the document is dated 30 September 2011 or later. Please submit a scanned copy through the online form.
+
+http://www.clicktools.com/survey?iv=3b1353e7938ac86&amp;q1={!Contact.Id}&amp;q2={!Job_Application__c.Id} 
+
+If, after repeated attempts, you are not able to upload your documents, please email them to crb@the-challenge.org
+If you cannot access either of the links above for any reason, please call me on the number below.
+
+Congratulations on your success and we look forward to working with you on The Challenge.
+
+Best wishes, 
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.OwnerEmail}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

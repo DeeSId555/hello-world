@@ -1,0 +1,359 @@
+<apex:page sidebar="false" standardStylesheets="true" showHeader="false" standardController="Account">
+
+<html>
+    <head>
+        <style>
+         
+.button1{
+        
+        height:90px; 
+        width:140px; 
+        margin-bottom:20px; 
+        border: solid 4px; 
+        border-color:#B31217; 
+        font : 18px "Dirty", Arial, Helvetica; 
+        background :white;
+        border-radius:15px;
+        }
+        </style>
+    </head>
+    
+    <body>    
+        
+        
+        <apex:composition template="PortalTemplate">
+        
+            <apex:define name="TopDiv">
+            <!---------------- MENU -------------------------->
+                
+                  
+            </apex:define>
+            
+            <apex:define name="MidDiv">
+               <apex:variable value="{!IF($CurrentPage.parameters.Programmee=null,'',$CurrentPage.parameters.Programmee)}" var="programmee"/>
+               
+ <!------------------------------------------- PROGRAMMEE = P --------------------------------------------------->                 
+               
+         <!-------------------------------- EDIT LINE ------------------------------------------>         
+               <apex:outputPanel rendered="{!IF($CurrentPage.parameters.Programmee=='p',true,false)}">
+                   <table style="height:100%; width:100%;">
+                   
+                  
+         <!--------------------------------/ EDIT LINE ------------------------------------------>  
+                   
+                       <tr>  
+        
+        
+        <!-------------------------------- ACCOUNT INFORMATION ------------------------------------------>                  
+                           <td valign="top" style="width:50%; border-left:solid 8px; border-color:#D9D9D9;">
+                           
+                           <div style="margin-left:2%; margin-top:1%;">
+                               <apex:outputText value="account information" styleClass="optext"/><br />
+                               
+                               <div><table style="width:100%;">
+                                  <tr>
+                                      <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Account.Fields.Name.Label}"/>
+                                      </td>
+                                      <td><apex:outputText value="{!Account.Name}"/>
+                                      </td>
+                                  </tr>
+                              </table>  
+                          </div>
+                          
+                          <div><table style="width:100%;">
+                                  <tr>
+                                      <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="Account Owner"/>
+                                      </td>
+                                      <td><apex:outputText value="{!Account.Owner.Name}"/>
+                                      </td>
+                                  </tr>
+                              </table>  
+                          </div>
+                          
+                           <div><table style="width:100%;">
+                                  <tr>
+                                      <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Account.Fields.Type.Label}"/>
+                                      </td>
+                                      <td><apex:outputText value="{!Account.Type}"/>
+                                      </td>
+                                  </tr>
+                              </table>  
+                          </div>
+                          </div>
+                           </td>
+       <!--------------------------------/ ACCOUNT INFORMATION ------------------------------------------>
+       
+       
+       <!-------------------------------- NOTES ------------------------------------------>
+                           <td valign="top" style="height:100%; border:4px; border-left:solid 4px; border-color:#D9D9D9;">
+                           
+                           <div style="margin-left:2%; margin-top:1%;">
+                               <apex:outputText value="Notes" styleClass="optext"/><br />
+                               <div><table style="width:100%;">
+                                  <tr>
+                                      <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Account.Fields.Challenge_Ambassador_notes__c.Label}"/>
+                                      </td>
+                                      <td>
+                                      <apex:outputText value="{!Account.Challenge_Ambassador_notes__c}"/><br />
+                                     </td>
+                                  </tr>
+                              </table>  
+                          </div>
+                          </div>
+                          </td>
+                      </tr>
+      <!--------------------------------/ NOTES ------------------------------------------>  
+                     
+                       
+      <!-------------------------------- CHALLENGE SOCIETY KO INFO. ------------------------------------------>                  
+                       <tr >
+                        <td rowspan="2" valign="top" style=" height:100%; border-left:solid 8px; border-color:#D9D9D9;">
+                        <div style="margin-left:2%; margin-top:1%; margin-bottom:2%;">
+                          <apex:outputText value="challenge society ko information" styleClass="optext"/><br />
+                          <div><table style="width:100%;">
+                                  <tr>
+                              <!--        <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Account.Fields.TCSKO_Clusters__c.Label}"/> 
+                                      </td>
+                                      <td>
+                                      <apex:outputText value="{!Account.TCSKO_Clusters__c}"/><br />
+                                     </td> -->
+                                  </tr>
+                              </table>  
+                          </div>
+                          
+                           <div><table style="width:100%;">
+                                  <tr>
+                                   <!--   <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Account.Fields.TCSKO_Contact__c.Label}"/>
+                                      </td>
+                                      <td>
+                                      <apex:outputText value="{!Account.TCSKO_Contact__r.Name}"/><br />
+                                     </td>-->
+                                  </tr>
+                              </table>  
+                          </div>
+                          
+                           <div><table style="width:100%;">
+                                  <tr>
+                                      <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Account.Fields.Date_of_first_payment__c.Label}"/>
+                                      </td>
+                                      <td>
+                                      <apex:outputText value="{!Account.Date_of_first_payment__c}"/><br />
+                                     </td>
+                                  </tr>
+                              </table>  
+                          </div>
+                          
+                           <div><table style="width:100%;">
+                                  <tr>
+                                    <!--   <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Account.Fields.TCSKO_Phone__c.Label}"/>
+                                      </td>
+                                      <td>
+                                      <apex:outputText value="{!Account.TCSKO_Phone__c}"/><br />
+                                     </td> -->
+                                  </tr>
+                              </table>  
+                          </div>
+                          
+                          <div><table style="width:100%;">
+                                  <tr>
+                                      <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Account.Fields.Time_of_first_meeting__c.Label}"/>
+                                      </td>
+                                      <td>
+                                      <apex:outputText value="{!Account.Time_of_first_meeting__c}"/><br />
+                                     </td>
+                                  </tr>
+                              </table>  
+                          </div>
+                          
+                           <div><table style="width:100%;">
+                                  <tr>
+                                   <!--    <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Account.Fields.TCSKO_Email__c.Label}"/>
+                                      </td>
+                                      <td>
+                                      <apex:outputText value="{!Account.TCSKO_Email__c}"/><br />
+                                     </td> -->
+                                  </tr>
+                              </table>  
+                          </div>
+                         
+                          <div><table style="width:100%;">
+                                  <tr>
+                                      <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Account.Fields.Address_of_first_meeting_venue__c.Label}"/>
+                                      </td>
+                                      <td>
+                                      <apex:outputText value="{!Account.Address_of_first_meeting_venue__c}"/><br />
+                                     </td>
+                                  </tr>
+                              </table>  
+                          </div>
+                          
+                          <div><table style="width:100%;">
+                                  <tr>
+                                     <!--  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Account.Fields.TCSKO_special_contact_instructions__c.Label}"/>
+                                      </td>
+                                      <td>
+                                      <apex:outputText value="{!Account.TCSKO_special_contact_instructions__c}"/><br />
+                                     </td> -->
+                                  </tr>
+                              </table>  
+                          </div>
+                         </div> 
+                </td>
+         <!--------------------------------/ CHALLENGE SOCIETY KO INFO. ------------------------------------------>           
+                   <td valign="top" style="border-left:solid 4px; border-color:#D9D9D9;">
+                   </td>
+                       </tr>
+                   </table>
+               </apex:outputPanel>
+<!-------------------------------------------/ PROGRAMMEE = P ---------------------------------------------------> 
+
+
+<!------------------------------------------- PROGRAMMEE = A --------------------------------------------------->                   
+            
+             
+               <apex:outputPanel rendered="{!IF(programmee=='a',true,false)}">
+                   <table style="width:100%;">
+                     
+            
+            
+                       <tr>
+                          
+            
+            <!------------------------------- ACCOUNT INFO ------------------------------------->             
+                           <td valign="top" style="width:40%; border:4px; border-left:solid 4px; border-color:#D9D9D9;">
+                           
+                       <div style="margin-left:2%; margin-top:1%;">
+                           <apex:outputText value="account information" styleClass="optext"/><br />
+                               <div><table style="width:100%;">
+                                  <tr>
+                                      <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Account.Fields.Name.Label}"/>
+                                      </td>
+                                      <td>
+                                      <apex:outputText value="{!Account.Name}"/><br />
+                                     </td>
+                                  </tr>
+                              </table>  
+                          </div>
+                      </div>            
+                    </td>
+            <!-------------------------------/ ACCOUNT INFO ------------------------------------->
+                    
+                           <td style="width:50%; border:4px; border-left:solid 4px; border-color:#D9D9D9">
+                               <apex:outputText value="" styleClass="optext"/>
+                           </td>
+                       </tr>
+                       
+           <!------------------------------- MARKETING AMBASSADOR 1------------------------------------->            
+                       <tr>
+                        <td valign="top" style="padding-top:5%; border:4px; border-left:solid 4px; border-color:#D9D9D9;">
+                    <div style="margin-left:2%; margin-top:1%;">
+                        <apex:outputText value="marketing ambassador assembly 1" styleClass="optext"/><br />
+                         <div><table style="width:100%;">
+                                  <tr>
+                                      <!-- <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Account.Fields.attending_assembly_at__c.Label}"/>
+                                      </td>
+                                      <td>
+                                      <apex:outputText value="{!Account.attending_assembly_at__r.Name}"/><br />
+                                     </td> -->
+                                  </tr>
+                              </table>  
+                          </div>
+                          
+                           <div><table style="width:100%;">
+                                  <tr>
+                                     <!-- <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Account.Fields.grad_Assembly_date__c.Label}"/>
+                                      </td>
+                                      <td>
+                                      <apex:outputText value="{!Account.grad_Assembly_date__c}"/><br />
+                                     </td> -->
+                                  </tr>
+                              </table>  
+                          </div>
+                          
+                           <div><table style="width:100%;">
+                                  <tr>
+                                      <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Account.Fields.Date_agreed_to_Assembly_1__c.Label}"/>
+                                      </td>
+                                      <td>
+                                       <apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+                                           <apex:param value="{!Account.Date_agreed_to_Assembly_1__c}" /> 
+                                     </apex:outputText><br />
+                                     </td>
+                                  </tr>
+                              </table>  
+                          </div>
+                      </div>
+                    </td>
+            <!-------------------------------/ MARKETING AMBASSADOR 1  ------------------------------------->
+            
+            
+            <!------------------------------- MARKETING AMBASSADOR 2 ------------------------------------->
+                           <td valign="top" style="padding-top:5%; width:40%; border:4px; border-left:solid 4px; border-color:#D9D9D9;">
+                       <div style="margin-left:2%; margin-top:1%;">
+                               <apex:outputText value="marketing ambassador assembly 2" styleClass="optext"/><br />
+                               
+                            <div><table style="width:100%;">
+                                  <tr>
+                                    <!--  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Account.Fields.Attending_Assembly_2__c.Label}"/>
+                                      </td>
+                                      <td>
+                                      <apex:outputText value="{!Account.Attending_Assembly_2__r.Name}"/><br />
+                                     </td> -->
+                                  </tr>
+                              </table>  
+                          </div>
+                          
+                           <div><table style="width:100%;">
+                                  <tr>
+                                     <!-- <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Account.Fields.Assembly_date_2__c.Label}"/>
+                                      </td>
+                                      <td>
+                                       <apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+                                           <apex:param value="{!Account.Assembly_date_2__c}" /> 
+                                     </apex:outputText><br /> 
+                                     </td>-->
+                                  </tr>
+                              </table>  
+                          </div>
+                          
+                          <div><table style="width:100%;">
+                                  <tr>
+                                      <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Account.Fields.Date_agreed_to_Assembly_2__c.Label}"/>
+                                      </td>
+                                      <td>
+                                       <apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+                                           <apex:param value="{!Account.Date_agreed_to_Assembly_2__c}" /> 
+                                     </apex:outputText><br />
+                                     </td>
+                                  </tr>
+                              </table>  
+                          </div>
+                      </div>
+                      <br/><a style="float:right;" href="{!Account.id}/e?retURL=/TCSPortal_AccountDetail?id={!Account.id}%26Programmee=a%26cid={!$CurrentPage.parameters.cid}"><button type="button" style="margin-top:10px; height:35px; width:100px;" class="button1">Edit</button></a>
+                    </td>
+            <!-------------------------------/ MARKETING AMBASSADOR 2 ------------------------------------->
+                  </tr> 
+                      </table>
+               </apex:outputPanel>
+<!-------------------------------------------/ PROGRAMMEE = A --------------------------------------------------->                
+              
+            </apex:define>
+            <apex:define name="BotDiv">
+            
+            <apex:outputPanel layout="block" style="margin-top:2%;" rendered="{!IF(Account.RecordType.Name=='Programmes',false,true)}"> 
+                    <center><a href="{!$Page.TCSPortal_ContactDetail}?id={!$CurrentPage.parameters.cid}&editmode=n"><button class="button1">go to contact</button></a></center>
+             </apex:outputPanel>
+            </apex:define>
+            
+           
+        </apex:composition> 
+        
+    </body>
+        <style>
+    .scrollspy-example {
+                height: 400px;
+                overflow: auto;
+                position: relative;
+    </style>
+</html>
+</apex:page>

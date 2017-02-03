@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Permanent link inserted [DS]</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>2.5.1 HS&amp;I request</name>
+    <style>freeForm</style>
+    <subject>Health Safety &amp; Inclusion request</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+Dear {!Contact.FirstName},
+
+Following your job placement with us please complete the Health, Safety and Inclusion form by following the link below.
+
+http://thechallenge.force.com/AvailableDates/OnlineHealthandSafetyQuestionaire?id={!Job_Application__c.Id}
+
+We need this information to pass to our partner organisations that provide the Personal Challenge and for our records for the Team Challenge and Real Challenge so that we can make any reasonable adjustment required to meet your needs.
+
+If you will be following Ramadan please include this information in the section relating to dietary requirements.
+
+You may receive this email more than once. Please only complete it again if your circumstances have changed. If you have not completed it at all please do so, as it is a requirement for you and the Challenge that we have this information.
+
+Thanks and regards
+
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.Contact_Owner_alternative_email__c}
+CR 2.5.1</textOnly>
+    <type>html</type>
+</EmailTemplate>

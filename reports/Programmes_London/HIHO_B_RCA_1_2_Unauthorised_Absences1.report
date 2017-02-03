@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>PHONE3</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>OWNER_FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Attendance__c.RCA_1__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Absence unauthorised,Absent all day</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Wave_started__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>startsWith</operator>
+            <value>HIHO B</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Attendance__c.RCA_2__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Absence unauthorised,Absent all day</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Attendance__c.RCA_1_Absence__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>9. Other (Unauthorised)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Attendance__c.RCA_2_Absence__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>9. Other (Unauthorised)</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>HIHO B RCA 1&amp;2 Unauthorised Absences</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Attendance__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

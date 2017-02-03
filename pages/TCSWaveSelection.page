@@ -1,0 +1,77 @@
+<apex:page controller="TCS_WaveSelectionController" sidebar="false" showHeader="false" standardStylesheets="false">
+
+<apex:stylesheet value="{!URLFOR($Resource.Bootstrap,'css/bootstrap.css')}"/>
+
+                    
+        <center>
+        <table class="table table-striped" style="border:solid 1px; margin-top:3%; width:80%;">
+            <tr style="border:solid 1px;">
+                <td style="border:solid 1px;">
+                </td>
+                <td style="border:solid 1px; width:5%;"><center>Priority 1</center>
+                </td>
+                <td style="border:solid 1px; width:5%;"><center>Priority 2</center>
+                </td>
+            </tr>
+           
+                    
+        <apex:variable var="i" value="{!-1}"/>
+        
+            <apex:repeat value="{!wavenames}" var="wave">
+            
+            <apex:variable var="i" value="{!i+1}"/>
+            
+            <tr style="border:solid 1px; height:10%;">
+                <td style="border:solid 1px; width:5%;" >{!wave}
+                </td>
+                
+                <td style="border-right:solid 1px; border-bottom:solid 1px;">
+                <apex:repeat value="{!waves}" var="locs">
+               
+                    <apex:outputPanel rendered="{!IF(AND(locs.Wave_Name__c==wave,locs.Priority__c=='1'),true,false)}">
+                        <div>
+                            <center>
+                                {!actualnames1[i]}/
+                                <apex:outputText value="{!locs.Wave_Location__c}"/>
+                                <br/>{!placesavailable1[i]}<apex:outputText value="{!CASE(placesavailable1[i],'Not Available',' ','1',' space',' spaces')}"/>
+                                <br/>{!waveselectionstatus1[i]}
+                            </center>
+                        </div>
+                    </apex:outputPanel>
+                </apex:repeat>
+                </td>
+                    
+                        <!-- ***************************************************************************************************************************************************** -->
+                        <!-- ******************************************************* Fix For Only Priority 2 TDs START *********************************************************** -->
+                        <!--
+                        <apex:repeat value="{!secuniquelist}" var="seclist">
+                            <apex:outputPanel rendered="{!IF(AND(seclist.Wave_Name__c==wave,locs.Wave_Name__c==wave),true,false)}">
+                                <td style="border-right:solid 1px; border-bottom:solid 1px;">
+                                </td>
+                            </apex:outputPanel>
+                        </apex:repeat>
+                         -->
+                        <!-- ******************************************************* Fix For Only Priority 2 TDs END ************************************************************* -->
+                        <!-- ***************************************************************************************************************************************************** -->
+                
+                <td style="border-right:solid 1px; border-bottom:solid 1px;">
+                <apex:repeat value="{!waves}" var="locs">
+                        <apex:outputPanel rendered="{!IF(AND(locs.Wave_Name__c==wave,locs.Priority__c=='2'),true,false)}">
+                            <div>
+                                <center>
+                                    {!actualnames2[i]}/
+                                    <apex:outputText value="{!locs.Wave_Location__c}"/>
+                                    <br/>{!placesavailable2[i]}<apex:outputText value="{!CASE(placesavailable2[i],'Not Available',' ','1',' space',' spaces')}"/>
+                                    <br/>{!waveselectionstatus2[i]}
+                                </center>
+                            </div>
+                        </apex:outputPanel>
+                </apex:repeat>
+                </td>
+                
+            </tr>
+
+            </apex:repeat>
+        </table>
+        </center>
+</apex:page>

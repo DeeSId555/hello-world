@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>29.06.2015</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>HeadStart Application Pack Template 2015 (Newham &amp; Redbridge W4)</name>
+    <style>none</style>
+    <subject>Exclusive opportunity for Redbridge and Newham NCS graduates...</subject>
+    <textOnly>HeadStart | The Challenge
+
+
+An exclusive opportunity for YOU from The Challenge…
+
+
+Dear {!Contact.FirstName}
+
+
+As an NCS graduate from Newham or Redbridge, you are eligible to apply for HeadStart - a new programme The Challenge has developed in partnership with the Mayor of London to give you the skills and experience to get ahead.
+
+The HeadStart programme is made up of three simple steps:
+
+Volunteer for at least 16 hours with a local charity. In Redbridge and Newham, the best way to complete your hours is through The Challenge’s &apos;Reaching Communities&apos; programme - reunite with your NCS mates and receive £400 to design a social action project to change your community for the better. The programme will run in weekly weekend/evening sessions from October 17th until just before Christmas at a location near you, and you&apos;ll learn how to design and run your project from industry professionals! Just search for ‘Reaching Communities’ on the HeadStart website. If you aren&apos;t able to take part in Reaching Communities, you can still participate in the HeadStart programme but you will be expected to find your own placement.
+
+Engage in exclusive skills workshops, developed with leading employers to give you the right skills and aptitude to get ahead.
+
+Get a guaranteed interview for a paid part-time/seasonal job with New Look, Starbucks or Lloyd’s Banking Group, or an exclusive paid internship with the Mayor of London’s office or Zendesk.
+
+
+HeadStart will help you:
+
+Gain skills and experience
+
+Be more employable
+
+Stand out on your UCAS form
+
+Meet new people and get back together with friends from NCS
+
+
+Click HERE to apply. The deadline for applications is midnight on Sunday 11th October. Places with the Reaching Communities project are very limited so apply early to avoid disappointment. You will need either your email address or your NCS ID, and the PIN below to log into the site. If you have logged into an NCS site before, you can use your current password to log in:
+
+
+Email Address: {!Contact.Email}
+
+NCS ID: {!Contact.NCS_ID__c}
+
+PIN: {!Contact.Login_PIN__c}
+
+Any questions? Email the HeadStart team, check out our website or get in touch on facebook.
+
+We look forward to receiving your application!
+
+The HeadStart team
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subsribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

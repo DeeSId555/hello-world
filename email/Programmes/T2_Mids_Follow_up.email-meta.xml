@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>T2 Mids Follow up</name>
+    <style>freeForm</style>
+    <subject>Take 2 Programme - Last Few Places Available</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+If you haven&apos;t yet signed up for the Take Two programme, it&apos;s your last chance. There are only a few places left so make sure you get your application in soon.
+
+The link to apply is: https://docs.google.com/forms/d/1N9N0j39zB4ijNf1TVTtXM8y-Z_5fpeygo8GO7uNc6oM/viewform?usp=send_form
+
+If you don&apos;t take this space up in the next two days it will be offered out to more people and you will lose your opportunity.
+
+If you want a reminder of what Take 2 is about, watch this Youtube vid.
+
+If you have already applied, we will be in touch soon with more info.
+
+Have a great day,
+
+Liam</textOnly>
+    <type>html</type>
+</EmailTemplate>

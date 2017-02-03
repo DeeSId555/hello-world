@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_75665218</developerName>
+        <masterLabel>Support Level</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Contact.Access_category_2_6__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1 No extra support</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1 - no extra support</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2 - medical conditions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2A(medical) Some extra Mentor support</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2B(behavioural) Some extra Mentor support</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2A &amp; 2B Some extra Mentor support</sourceValue>
+            </sourceValues>
+            <value>One / Two</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>3 Significant extra Mentor support</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3a (medical) Moderate extra support needed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3b (behavioural) Moderate extra support needed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3a - extra mentor support for learning difficulties</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3b - extra mentor support for challenging behaviour or mental health conditions</sourceValue>
+            </sourceValues>
+            <value>Three</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>4 Requires APL support</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4a – Extra APL support for YPs with restricted mobility, language barrier or learning difficulties</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4b - extra APL support for challenging behaviour or mental health conditions</sourceValue>
+            </sourceValues>
+            <value>Four</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>5 Full-time support worker</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5:0.5 Requires support worker - could share with another YP</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5:1 Requires full time support worker</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5:2 Requires 2 full time support workers</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5.05 - support worker required, can share with another YP</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5.1 - full-time support worker required</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5.2 - requires 2 full time support workers</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5b - personal coach required</sourceValue>
+            </sourceValues>
+            <value>Five</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>6 Case-by-case - potential non-accept</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6 - case-by-case, potential non-accept</sourceValue>
+            </sourceValues>
+            <value>Potential Non-Accept</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_61076090</developerName>
+        <masterLabel>Support Levels</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Contact.Access_category_2_6__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1 No extra support</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1 - no extra support</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2 - medical conditions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2A(medical) Some extra Mentor support</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2B(behavioural) Some extra Mentor support</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2A &amp; 2B Some extra Mentor support</sourceValue>
+            </sourceValues>
+            <value>One / Two</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>3 Significant extra Mentor support</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3a (medical) Moderate extra support needed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3b (behavioural) Moderate extra support needed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3a - extra mentor support for learning difficulties</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3b - extra mentor support for challenging behaviour or mental health conditions</sourceValue>
+            </sourceValues>
+            <value>Three</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>4 Requires APL support</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4a – Extra APL support for YPs with restricted mobility, language barrier or learning difficulties</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4b - extra APL support for challenging behaviour or mental health conditions</sourceValue>
+            </sourceValues>
+            <value>Four</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>5 Full-time support worker</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5:0.5 Requires support worker - could share with another YP</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5:1 Requires full time support worker</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5:2 Requires 2 full time support workers</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5.1 - full-time support worker required</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5.05 - support worker required, can share with another YP</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5.2 - requires 2 full time support workers</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5b - personal coach required</sourceValue>
+            </sourceValues>
+            <value>Five</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>6 Case-by-case - potential non-accept</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6 - case-by-case, potential non-accept</sourceValue>
+            </sourceValues>
+            <value>Potential non accept</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Agree_to_main_consent_statement__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Total_payment_received__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Welcome_call_made__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Size_of_hoodie_given__c</field>
+    </columns>
+    <columns>
+        <field>Wave_Selection__c.Info_eve_coming__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Pre_wave_call_held__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Access_category_2_6__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CONTACT_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Young_Person</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Wave_Selection__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Assigned,Reserved,Waiting list</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>newham b 3</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Wave_Selection__c.Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_75665218</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>2015SALES Wave Health Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Wave_Selection__c@Wave_Selection__c.Wave__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

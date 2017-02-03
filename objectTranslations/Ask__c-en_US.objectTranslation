@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ask</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Asks</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Asks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- # Accountancy places --></label>
+        <name>Accountancy_places__c</name>
+    </fields>
+    <fields>
+        <help><!-- £ amount requested in Ask --></help>
+        <label><!-- Amount requested --></label>
+        <name>Amount_requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- BSS Roles --></label>
+        <name>BSS_Roles__c</name>
+        <picklistValues>
+            <masterLabel>Admin</masterLabel>
+            <translation><!-- Admin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Computer</masterLabel>
+            <translation><!-- Computer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR</masterLabel>
+            <translation><!-- HR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- # BSS places --></label>
+        <name>BSS_places__c</name>
+    </fields>
+    <fields>
+        <label><!-- Borough --></label>
+        <name>Borough__c</name>
+        <picklistValues>
+            <masterLabel>Barking and Dagenham</masterLabel>
+            <translation><!-- Barking and Dagenham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barnet</masterLabel>
+            <translation><!-- Barnet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bexley</masterLabel>
+            <translation><!-- Bexley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brent</masterLabel>
+            <translation><!-- Brent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bromley</masterLabel>
+            <translation><!-- Bromley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Camden</masterLabel>
+            <translation><!-- Camden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Croydon</masterLabel>
+            <translation><!-- Croydon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ealing</masterLabel>
+            <translation><!-- Ealing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enfield</masterLabel>
+            <translation><!-- Enfield --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greenwich</masterLabel>
+            <translation><!-- Greenwich --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hackney</masterLabel>
+            <translation><!-- Hackney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hammersmith and Fulham</masterLabel>
+            <translation><!-- Hammersmith and Fulham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haringey</masterLabel>
+            <translation><!-- Haringey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Harrow</masterLabel>
+            <translation><!-- Harrow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Havering</masterLabel>
+            <translation><!-- Havering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hillingdon</masterLabel>
+            <translation><!-- Hillingdon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hounslow</masterLabel>
+            <translation><!-- Hounslow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Islington</masterLabel>
+            <translation><!-- Islington --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kensington and Chelsea</masterLabel>
+            <translation><!-- Kensington and Chelsea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kingston upon Thames</masterLabel>
+            <translation><!-- Kingston upon Thames --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lambeth</masterLabel>
+            <translation><!-- Lambeth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lewisham</masterLabel>
+            <translation><!-- Lewisham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merton</masterLabel>
+            <translation><!-- Merton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newham</masterLabel>
+            <translation><!-- Newham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redbridge</masterLabel>
+            <translation><!-- Redbridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Richmond upon Thames</masterLabel>
+            <translation><!-- Richmond upon Thames --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southwark</masterLabel>
+            <translation><!-- Southwark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sutton</masterLabel>
+            <translation><!-- Sutton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tower Hamlets</masterLabel>
+            <translation><!-- Tower Hamlets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waltham Forest</masterLabel>
+            <translation><!-- Waltham Forest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wandsworth</masterLabel>
+            <translation><!-- Wandsworth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Westminster</masterLabel>
+            <translation><!-- Westminster --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Close date --></label>
+        <name>Close_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field automatically counts how many reports are required, as specified in the &apos;Reporting&apos; section below --></help>
+        <label><!-- Count of all reports required --></label>
+        <name>Count_of_all_reports_required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date their answer is expected --></help>
+        <label><!-- Date answer expected --></label>
+        <name>Date_answer_expected__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date of their response to our ask --></help>
+        <label><!-- Date answer given --></label>
+        <name>Date_answer_given__c</name>
+    </fields>
+    <fields>
+        <help><!-- The funder&apos;s submission date for the application --></help>
+        <label><!-- Date application is due (funder) --></label>
+        <name>Date_application_is_due__c</name>
+    </fields>
+    <fields>
+        <help><!-- The internal deadline date for the application --></help>
+        <label><!-- Date application is due (internal) --></label>
+        <name>Date_application_is_due_internal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date application was submitted --></help>
+        <label><!-- Date application submitted --></label>
+        <name>Date_application_submitted__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date when we can apply again --></help>
+        <label><!-- Date for reapplication --></label>
+        <name>Date_for_reapplication__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days at Stage 0 --></label>
+        <name>Days_at_Stage_0__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days at Stage 1 --></label>
+        <name>Days_at_Stage_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days at Stage 2 --></label>
+        <name>Days_at_Stage_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days at Stage 3 --></label>
+        <name>Days_at_Stage_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days at Stage 4 --></label>
+        <name>Days_at_Stage_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days at Stage 5 --></label>
+        <name>Days_at_Stage_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days at Stage 6 --></label>
+        <name>Days_at_Stage_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days at Stage 7 --></label>
+        <name>Days_at_Stage_7__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of days that the Ask has been at its current stage. The information is automatically calculated. --></help>
+        <label><!-- Days at current stage --></label>
+        <name>Days_at_current_stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days on hold --></label>
+        <name>Days_on_hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days since closed --></label>
+        <name>Days_since_closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deadline for Next Step --></label>
+        <name>Deadline_for_Next_Step__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details of other relationship type --></label>
+        <name>Details_of_other_relationship_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee engagement --></label>
+        <name>Employee_engagement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Have Learners been placed? --></label>
+        <name>Have_Learners_been_placed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Have we met with the Head Teacher? --></label>
+        <name>Have_we_met_with_the_Head_Teacher__c</name>
+    </fields>
+    <fields>
+        <label><!-- Have we met with the head of year 13? --></label>
+        <name>Have_we_met_with_the_head_of_year_13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hold date --></label>
+        <name>Hold_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issues --></label>
+        <name>Issues__c</name>
+    </fields>
+    <fields>
+        <help><!-- Link to the key Contact --></help>
+        <label><!-- Key Contact --></label>
+        <name>Key_Contact__c</name>
+        <relationshipLabel><!-- Asks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Learner Details --></label>
+        <name>Learner_Details__c</name>
+    </fields>
+    <fields>
+        <help><!-- Percentage likelihood that the Ask will be successful --></help>
+        <label><!-- Likelihood % --></label>
+        <name>Likelihood__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main Contact --></label>
+        <name>Main_Contact__c</name>
+        <relationshipLabel><!-- Asks (Main Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Meeting booked --></label>
+        <name>Meeting_booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Newsletter? --></label>
+        <name>Newsletter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Step --></label>
+        <name>Next_Step__c</name>
+    </fields>
+    <fields>
+        <help><!-- What are the next steps? --></help>
+        <label><!-- Next steps --></label>
+        <name>Next_steps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Overview of the Ask --></help>
+        <label><!-- Overview --></label>
+        <name>Overview__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quality control completed --></label>
+        <name>Quality_control_completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reapplication due with 60 days --></label>
+        <name>Reapplication_due_with_60_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for rejection or not applying --></label>
+        <name>Reason_for_rejection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship type --></label>
+        <name>Relationship_type__c</name>
+        <picklistValues>
+            <masterLabel>COTY</masterLabel>
+            <translation><!-- COTY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSR</masterLabel>
+            <translation><!-- CSR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR</masterLabel>
+            <translation><!-- HR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SF Relationship Manager --></label>
+        <name>SF_Relationship_Manager__c</name>
+        <relationshipLabel><!-- Asks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sector --></label>
+        <name>Sector__c</name>
+        <picklistValues>
+            <masterLabel>Arts</masterLabel>
+            <translation><!-- Arts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business</masterLabel>
+            <translation><!-- Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>People/communicates</masterLabel>
+            <translation><!-- People/communicates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sciences/numbers</masterLabel>
+            <translation><!-- Sciences/numbers --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stage 0: Identified: date --></label>
+        <name>Stage_0_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage 1: Researching: date --></label>
+        <name>Stage_1_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage 2: Contacted: date --></label>
+        <name>Stage_2_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage 3: Cultivating: date --></label>
+        <name>Stage_3_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage 4: Proposal: date --></label>
+        <name>Stage_4_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage 5: Verbal Agreement: date --></label>
+        <name>Stage_5_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage 6: Terms Agreed: date --></label>
+        <name>Stage_6_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage 7: Stewarding: date --></label>
+        <name>Stage_7_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Stage the Ask is at (calculated from the date fields) --></help>
+        <label><!-- Stage position --></label>
+        <name>Stage_position__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage position text --></label>
+        <name>Stage_position_text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status 2013/14 --></label>
+        <name>Status_2013_14__c</name>
+        <picklistValues>
+            <masterLabel>Assembly Booked</masterLabel>
+            <translation><!-- Assembly Booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assembly Done</masterLabel>
+            <translation><!-- Assembly Done --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initial letter sent out</masterLabel>
+            <translation><!-- Initial letter sent out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Booked</masterLabel>
+            <translation><!-- Meeting Booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Completed</masterLabel>
+            <translation><!-- Meeting Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not interested</masterLabel>
+            <translation><!-- Not interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable to get through</masterLabel>
+            <translation><!-- Unable to get through --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Applied</masterLabel>
+            <translation><!-- Applied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Committed</masterLabel>
+            <translation><!-- Committed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decided not to apply</masterLabel>
+            <translation><!-- Decided not to apply --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned</masterLabel>
+            <translation><!-- Planned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Target --></label>
+        <name>Target__c</name>
+        <picklistValues>
+            <masterLabel>Target</masterLabel>
+            <translation><!-- Target --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Time (in hours) spent on Ask by lead --></help>
+        <label><!-- Time spent by lead --></label>
+        <name>Time_spent_by_lead__c</name>
+    </fields>
+    <fields>
+        <help><!-- Time (in hours) spent on the Ask by those who are not the lead --></help>
+        <label><!-- Time spent by other/s --></label>
+        <name>Time_spent_by_other_s__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum of amounts committed to TCN in Amounts --></help>
+        <label><!-- Total amount(s) committed --></label>
+        <name>Total_amount_s_committed__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total amounts received in Amount, when the money has actually been received by TCN (i.e. &apos;Date amount received&apos; is not blank) --></help>
+        <label><!-- Total amount(s) received --></label>
+        <name>Total_amount_s_received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Corporate</masterLabel>
+            <translation><!-- Corporate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family</masterLabel>
+            <translation><!-- Family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lottery</masterLabel>
+            <translation><!-- Lottery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Statutory</masterLabel>
+            <translation><!-- Statutory --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- ONnly tick this box when VRF and Contract are uploaded to the Ask --></help>
+        <label><!-- Employer Confirmed --></label>
+        <name>Vacancy_form_completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vacancy form sent out --></label>
+        <name>Vacancy_form_sent_out__c</name>
+    </fields>
+    <fields>
+        <help><!-- The weighted ask is the sum amount requested, multiplied by the percentage likelihood that the Ask will be successful --></help>
+        <label><!-- Weighted ask --></label>
+        <name>Weighted_ask__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year of desired receipt --></label>
+        <name>Year_of_desired_receipt__c</name>
+        <picklistValues>
+            <masterLabel>2009-10</masterLabel>
+            <translation><!-- 2009-10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2010-11</masterLabel>
+            <translation><!-- 2010-11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2011-12</masterLabel>
+            <translation><!-- 2011-12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2012-13</masterLabel>
+            <translation><!-- 2012-13 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2013-14</masterLabel>
+            <translation><!-- 2013-14 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2014-15</masterLabel>
+            <translation><!-- 2014-15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2015-16</masterLabel>
+            <translation><!-- 2015-16 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016-17</masterLabel>
+            <translation><!-- 2016-17 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2017-18</masterLabel>
+            <translation><!-- 2017-18 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2018-19</masterLabel>
+            <translation><!-- 2018-19 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- # Youthwork places --></label>
+        <name>Youthwork_places__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Corporate --></label>
+        <name>Corporate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Grant &amp; Statutory --></label>
+        <name>Grant_Statutory</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Step Forward Employer --></label>
+        <name>Step_Forward_Employer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Target --></label>
+        <name>Target</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please specify the nature of the &apos;Other&apos; relationship type --></errorMessage>
+        <name>Details_of_other_relationship_type</name>
+    </validationRules>
+</CustomObjectTranslation>

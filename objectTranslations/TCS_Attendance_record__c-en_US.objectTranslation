@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>TCS Attendance record</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>TCS Attendance records</value>
+    </caseValues>
+    <fields>
+        <help><!-- Make notes here about any times/days that the YP is not available --></help>
+        <label><!-- Availability notes --></label>
+        <name>Availability_notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- TCS Attendance records --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date of final meeting --></label>
+        <name>Date_of_final_meeting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of first meeting --></label>
+        <name>Date_of_first_meeting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date this Signposting Opp expires --></label>
+        <name>Date_this_Vol_Opp_expires__c</name>
+    </fields>
+    <fields>
+        <label><!-- First meeting details --></label>
+        <name>First_meeting_details__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter any relevant information regarding this YP and volunteering opportunity here --></help>
+        <label><!-- General notes --></label>
+        <name>General_notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the number of meetings attended to date in the months of November and December --></help>
+        <label><!-- Meetings attended: Nov - Dec --></label>
+        <name>Meetings_attended_Dec__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the number of meetings attended in the months of July and August --></help>
+        <label><!-- Meetings attended: Jul - Aug --></label>
+        <name>Meetings_attended_Jul_Aug__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the amount of meetings attended to date in the months of March and April --></help>
+        <label><!-- Meetings attended: Mar - Apr --></label>
+        <name>Meetings_attended_Mar_Apr__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the number of meetings attended to date in the months of May and June --></help>
+        <label><!-- Meetings attended: May - Jun --></label>
+        <name>Meetings_attended_May_Jun__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the number of meetings attended to date in the months of January and February --></help>
+        <label><!-- Meetings attended: Jan - Feb --></label>
+        <name>Meetings_attended_Nov_Dec__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reason for end of meetings --></label>
+        <name>Reason_for_end_of_meetings__c</name>
+        <picklistValues>
+            <masterLabel>Opportunity ended</masterLabel>
+            <translation><!-- Opportunity ended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner unhappy with YP</masterLabel>
+            <translation><!-- Partner unhappy with YP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YP dropped out - not interested</masterLabel>
+            <translation><!-- YP dropped out - not interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YP dropped out - other commitments</masterLabel>
+            <translation><!-- YP dropped out - other commitments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YP dropped out - reason unknown</masterLabel>
+            <translation><!-- YP dropped out - reason unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YP dropped out - would like to try a different opp</masterLabel>
+            <translation><!-- YP dropped out - would like to try a different opp --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TCS Attendance Name --></label>
+        <name>TCS_Attendance_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total # Attendance in a year --></label>
+        <name>Total_Attendance_in_a_year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signposting Opp Time(s) --></label>
+        <name>Vol_Opp_Time_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signposting Opp Date(s) --></label>
+        <name>Vol_Opps_Dates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signposting Opportunity --></label>
+        <name>Volunteering_Opportunity__c</name>
+        <relationshipLabel><!-- TCS Attendance records --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- YP sign up action --></label>
+        <name>YP_sign_up_action__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

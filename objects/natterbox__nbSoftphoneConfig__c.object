@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Configuration settings for the Natterbox softphone</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>natterbox__Auto_Pop_Enable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If this setting is checked, when a single record matches a number it will automatically be popped into a separate window.</description>
+        <externalId>false</externalId>
+        <label>Enable Auto Pop</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Natterbox Softphone</label>
+    <visibility>Public</visibility>
+</CustomObject>

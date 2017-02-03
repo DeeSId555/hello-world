@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 4.5 Job Offer Post Assessment - Calibre of Candidate (2016)</name>
+    <style>formalLetter</style>
+    <subject>Your assessment for the NCS programme</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}.
+
+Dear {!Contact.FirstName},
+
+Congratulations! Following your assessment we’re delighted to offer you a role with us this summer as a {!Job_Application__c.Role_to_assess_for__c}.
+
+This may not be one of the roles you originally applied for - however, we feel that your skills and experience will make you a strong candidate for the {!Job_Application__c.Role_to_assess_for__c} role, and we hope that you do too!
+
+After meeting you at assessment, we also thought you’d be a great candidate for the {!Job_Application__c.Calibre_of_candidate__c} role. We don’t currently have any vacancies for this role, but if any more become available we will contact you directly.
+
+Your {!Job_Application__c.Role_to_assess_for__c} role offer is conditional upon your completion of the following:
+
+
+DBS certificate
+
+All seasonal staff working on the NCS programme must have an ‘Enhanced DBS certificate with Children&apos;s Barred List check’ dated from 1 January 2015. This is a legal requirement, and you won’t be offered any work dates without one.
+
+If you don’t already have a valid certificate click on the link below for instructions on how to apply for one. Please note, you’ll need up to 4 forms of ID to hand to do your application. DBS applications can take up to 6 weeks to process - make sure you start your application as soon as possible!
+
+https://staffing.the-challenge.org/assets/2016DBSinstructionspostoffer.pdf
+
+
+If you already have an existing DBS certificate dated from 1 January 2015 and you didn’t upload it to your application form, you can upload a scanned/photographed copy to the ‘Essential Information’ page.
+
+
+Essential Information
+
+Each section of the Essential Information page should be completed before you start your role. This includes:
+
+Providing contact details for 2 referees
+Making a tax declaration and providing your bank details (from April)
+Filling out our health, safeguarding &amp; inclusion form
+Providing details for your emergency contact
+Checking your DBS status
+
+You can also now access the ‘Choosing when I can work’ and ‘Dates when I can’t work’ sections on the staffing website - this is where you let us know your availability over the summer.
+
+
+What else?
+
+You’ll also need to attend up to 3 days of (unpaid) compulsory training for your role. Our training dates will take place from May until July, and you can book onto your training sessions on the &apos;Booking Training&apos; page on the staffing website.
+
+We’ll call you in the coming weeks to discuss your availability and talk through any questions you might have about your role. In the meantime, if you have any urgent questions, please contact me using the details below, or check through our FAQs.
+
+
+Congratulations again and best wishes,
+
+{!Contact.OwnerFullName}
+{!Contact.Owner_Owner_alternative_email__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

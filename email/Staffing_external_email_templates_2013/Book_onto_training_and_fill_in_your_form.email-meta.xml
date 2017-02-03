@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>Book onto training and fill in your form</name>
+    <style>freeForm</style>
+    <subject>Challenge Training Information</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+You are receiving this email because you have not registered for training and/or not submitted your work dates. I have resent the offer email for your convenience which includes the training registration link and the Essential Information Form. Please complete and return as soon as possible in order to be placed.
+
+Training for all roles takes place this weekend, please ensure you notify us if you are not able to attend.
+
+Programme Leaders and Assistant Programme Leaders
+7th, 8th &amp; 9th June
+
+Senior Mentors
+8th &amp; 9th June
+
+Community Mentors
+9th June
+
+Please confirm your attendance at the training session and/or select your available work dates as soon as possible. All training details will be made available to you when you have signed on to the event.
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.Contact_Owner_alternative_email__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

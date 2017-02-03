@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>AM applications open for one more day</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>AM 1.4 - one day to go</name>
+    <style>formalLetter</style>
+    <subject>{!Contact.FirstName}, ASSOCIATE MENTOR APPLICATIONS CLOSE TOMORROW!</subject>
+    <textOnly>Do you want to volunteer on NCS, {!Contact.FirstName}?
+Applications close tomorrow!
+
+Get yours in now.
+
+CLICK HERE TO APPLY
+
+Your application form is specific to you, and you can only submit it once.
+
+Please make sure that you do not share the link to your form with anyone else - they must access it through the email they receive from The Challenge.
+Good luck!
+
+NCS Graduates Team
+The Challenge</textOnly>
+    <type>html</type>
+</EmailTemplate>

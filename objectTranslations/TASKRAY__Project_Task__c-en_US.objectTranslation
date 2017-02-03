@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Total Checklist items --></label>
+        <name>CUSTOM_Count_Checklist__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incomplete Checklist items --></label>
+        <name>CUSTOM_Incomplete_Checklist_items__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required items --></label>
+        <name>CUSTOM_Required_items__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason(s) for delay --></label>
+        <name>Reason_s_for_delay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Archived --></label>
+        <name>TASKRAY__Archived__c</name>
+    </fields>
+    <fields>
+        <label><!-- Blocked --></label>
+        <name>TASKRAY__Blocked__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>TASKRAY__Deadline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependent On --></label>
+        <name>TASKRAY__Dependent_On__c</name>
+        <relationshipLabel><!-- TaskRay Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Dependent Update Pending --></label>
+        <name>TASKRAY__Dependent_Update_Pending__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>TASKRAY__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- List --></label>
+        <name>TASKRAY__List__c</name>
+        <picklistValues>
+            <masterLabel>Finished</masterLabel>
+            <translation><!-- Finished --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Holding</masterLabel>
+            <translation><!-- Holding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prioritized</masterLabel>
+            <translation><!-- Prioritized --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Started</masterLabel>
+            <translation><!-- Started --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>TASKRAY__Priority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation><!-- Normal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>TASKRAY__Project__c</name>
+        <relationshipLabel><!-- TaskRay Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Repeat Created --></label>
+        <name>TASKRAY__RepeatCreated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repeat End Date --></label>
+        <name>TASKRAY__Repeat_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repeat Every --></label>
+        <name>TASKRAY__Repeat_Every__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repeat Interval Type --></label>
+        <name>TASKRAY__Repeat_Interval_Type__c</name>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Does not repeat</masterLabel>
+            <translation><!-- Does not repeat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yearly</masterLabel>
+            <translation><!-- Yearly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Repeat Week Days --></label>
+        <name>TASKRAY__Repeat_Week_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>TASKRAY__SortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deprecated (Do Not Use) --></label>
+        <name>TASKRAY__Status__c</name>
+        <picklistValues>
+            <masterLabel>Finished</masterLabel>
+            <translation><!-- Finished --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Yet Started</masterLabel>
+            <translation><!-- Not Yet Started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Started</masterLabel>
+            <translation><!-- Started --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Completed --></label>
+        <name>TASKRAY__trCompleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependency Offset --></label>
+        <name>TASKRAY__trDepOffset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration --></label>
+        <name>TASKRAY__trDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Time (hrs) --></label>
+        <name>TASKRAY__trEstimatedHours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hidden --></label>
+        <name>TASKRAY__trHidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hide Until (Days Before Start) --></label>
+        <name>TASKRAY__trHideUntilOffset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hide Until --></label>
+        <name>TASKRAY__trHideUntil__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone --></label>
+        <name>TASKRAY__trIsMilestone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Sort Order --></label>
+        <name>TASKRAY__trProjectSortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>TASKRAY__trStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Entry Count --></label>
+        <name>TASKRAY__trTime_Entry_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Time (hrs) --></label>
+        <name>TASKRAY__trTotalTimeOnTask__c</name>
+    </fields>
+    <sharingReasons>
+        <label><!-- Project Contributor added in TaskRay --></label>
+        <name>TASKRAY__Project_Member_added_in_TaskRay</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- This task cannot be completed because it has a predecessor task which is not complete. --></errorMessage>
+        <name>TASKRAY__Prevent_Complete_If_Dependent_Incomplete</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- View_in_TaskRay --></label>
+        <name>TASKRAY__View_in_TaskRay</name>
+    </webLinks>
+</CustomObjectTranslation>

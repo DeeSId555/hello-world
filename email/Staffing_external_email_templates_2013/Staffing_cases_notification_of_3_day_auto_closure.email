@@ -1,0 +1,14 @@
+Hi {!Case.Contact},
+
+Has the question you asked in the email, our case number {!Case.CaseNumber}, you sent to us on {!Case.CreatedDate} been answered?
+
+We have responded but haven't heard back from you regarding the following case:
+
+{!Case.Description}
+
+If you need further assistance please let us know, otherwise we will take it that you no longer require assistance and will close the case.
+
+Best wishes,
+
+{!Case.OwnerFullName}
+{!Organization.Name}

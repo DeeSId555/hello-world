@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>IC 4.2.2 Notification to SA - staff cannot attend event date</name>
+    <style>formalLetter</style>
+    <subject>Candidate cannot attend an event date (assessment or training) - please review on SF</subject>
+    <textOnly>This is an automated internal email sent from Salesforce when one of your candidates submits an alternative dates form. Please speak to your line manager if you feel you should not have received this email or have any queries. Email reference: IC 4.2.2
+Hi
+
+Alternative Dates Form Submitted by {!Contact.Name}.
+
+{!Job_Application__c.Contact__c} has indicated that they are either:
+
+a) Unavailable for assessment/training dates they have been offered or
+b) They are no longer able to attend an assessment/training they booked onto.
+
+To see the exact details and reasons for why they are requesting alternative dates please view their Job Application (links below)
+
+Name of Seasonal Staff: {!Job_Application__c.Contact__c}
+Link to Job Application: {!Job_Application__c.Link}
+
+Once you click onto the AER, you can see what event they have decline.
+
+What do you need to do now?
+
+- Call the candidate on {!Job_Application__c.Summer_Staff_mobile__c} to discuss why they could not attend - they should have given a valid reason. You can challenge this if you feel it is invalid.
+
+- If a valid reason is given, offer alternative dates to them. The availability and the amount of dates offered will be on a case by case basis and locally set. Please discuss with your local staffing manager if you are unsure.
+
+- In the event that the candidate cannot attend any future dates, as they are unsure of schedule, prompt them to contact you when they have more information. Update this on Salesforce and this will send out holding email 4.3.
+
+Any questions - please ask your local staffing manager.
+This is an automated internal email sent from Salesforce when one of your candidates submits an alternative dates form. Please speak to your line manager if you feel you should not have received this email or have any queries. Email reference: IC 4.2.2</textOnly>
+    <type>html</type>
+</EmailTemplate>

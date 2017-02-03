@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>kick off emails sent 26/8/15 (after other retention emails)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>HS 2015 19/08/15 comms - Starbucks NCS grads</name>
+    <style>none</style>
+    <subject>Invite to Starbucks Compulsory Workshop and AGL Workshop</subject>
+    <textOnly>HeadStart login details:
+
+Email Address {!Contact.Email}
+
+NCS ID
+
+{!Contact.NCS_ID__c}
+
+PIN {!Contact.Login_Password__c}
+
+HeadStart Website
+
+HeadStart Invite to Starbucks Compulsory Workshop
+
+
+Good Afternoon {!Contact.FirstName},
+
+We hope your HeadStart journey is going well.  This email is your invite to sign up to the Starbucks Compulsory Workshop and AGL Communications workshop happening in September.
+
+Get your ticket here!
+
+
+Starbucks Compulsory Workshop
+Do you REALLY want to work for Starbuck??? Then I strongly suggest you attend this workshop!
+
+We will discuss key questions to prepare for Interview
+In depth research of the company so you really understand its values
+Watch some Starbucks video&apos;s - on customer service and good practice
+Go through the application form, so you don&apos;t slip up!
+
+AGL Communications Coaching
+
+Delivered by AGL - this exceptional Communication Company will work alongside you to explore the secrets of having a &apos;good interview&apos;. The Workshop will cover:
+
+What makes authentic communication?
+Physical aspects of good communication
+How to answer an Interview Question
+Interview Top Tips
+
+This masterclass is in fact used for high profile businesses such as Vodafone, British Airways and has even trained The Prime Minster.
+
+Miss It. Miss Out!
+
+
+If you have any further questions please go get in contact with us. Otherwise, keep clocking up those volunteering hours and get yourself booked on your workshops as soon as possible! We look forward to seeing you all next week!
+
+
+Any questions? Email the HeadStart team, check out our website or get in touch on facebook.
+
+
+The HeadStart team
+
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subsribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

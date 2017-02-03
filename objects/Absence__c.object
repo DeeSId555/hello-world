@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Gives details of an absences on a YPs Attendance record</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Absence_on_PCKO_day__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+OR( Date_of_Absence__c =  Contact__r.Assigned_Wave__r.PC_KO_day__c  ,
+Date_of_Absence__c =  Contact__r.Reserved_Wave__r.PC_KO_day__c )
+, TRUE , FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Absence on PCKO day</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Absences</relationshipLabel>
+        <relationshipName>Absences</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Date_Time_YP_will_leave_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <label>Date/Time YP will leave NCS Programme</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_Time_YP_will_return_toNCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <label>Date/Time YP will return toNCS Programme</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_of_Absence__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of absence</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Half_day_up_to__c</fullName>
+        <externalId>false</externalId>
+        <label>Length of absence</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Half day (2 - 4 hours)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Full day (4+ hours)</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>How_YP_leaves_NCS_Programme__c</fullName>
+        <externalId>false</externalId>
+        <label>How YP leaves NCS Programme</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1. The young person will leave on their own</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2. Someone will collect the young person</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Length_in_days__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL( Half_day_up_to__c , &quot;Full day (4+ hours)&quot;),1,0.5)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Length in days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please provide details on how the YP will travel to/from the programme to/form the absence</inlineHelpText>
+        <label>Travel Instructions</label>
+        <length>10000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>PCKO__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK( Contact__r.Assigned_Wave__c ), Contact__r.Reserved_Wave__r.PC_KO_day__c , Contact__r.Assigned_Wave__r.PC_KO_day__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PCKO</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Part_of_NCS_programme_Absence_falls_in__c</fullName>
+        <externalId>false</externalId>
+        <label>Part of NCS programme Absence falls in</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Part 1: Get active (staying away from home)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Part 2: Get involved (staying at home at night)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Part 3: Make your mark (staying at home at night)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Residential absence</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Non-residential absence</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Reason_for_absence__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason for absence</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1. Bereavement/funeral</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2. Illness</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3. Serious injury</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>4. Job interview</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>5. Commencement of employment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>6. Sixth form college inductions</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>7. Religious Festivals</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>8. Exams</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>9. Wedding</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>10. Holiday</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>11. University open day</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>12. Party</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>13. Other programmes/courses</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>14. School graduations/proms</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>15. Collecting Exam Results (half a day or less)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>16. Signing on</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>17. Court appearance</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>18. Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Requested_by_PG__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Requested by PG</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TCKO__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK( Contact__r.Assigned_Wave__c ), Contact__r.Reserved_Wave__r.TC_KO_day__c , Contact__r.Assigned_Wave__r.TC_KO_day__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TCKO</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Wave__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK( Contact__r.Assigned_Wave__c ), Contact__r.Reserved_Wave__r.Name , Contact__r.Assigned_Wave__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Wave</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Absence</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>{00000000}</displayFormat>
+        <label>Absence Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Absences</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>Absence_requires_date</fullName>
+        <active>true</active>
+        <errorConditionFormula>isblank( Date_of_Absence__c )</errorConditionFormula>
+        <errorMessage>Absence requires a date</errorMessage>
+    </validationRules>
+</CustomObject>

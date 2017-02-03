@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Amount_committed__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Amount promised to TCN</inlineHelpText>
+        <label>Amount committed</label>
+        <precision>9</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Areas_of_activity__c</fullName>
+        <description>Areas of activity the funding applies to</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The area(s) of activity the funding applies to</inlineHelpText>
+        <label>Areas of activity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Action Teams</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AMs</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Challenge Ambassador</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Challenge Days</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Development Ambassador</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Events Marketer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Extra Opportunity Fund</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Personal Coach</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Signposting Mentor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Staffing Advisor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Summer Opportunities Fund</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Youth Board</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Ask__c</fullName>
+        <externalId>false</externalId>
+        <label>Ask</label>
+        <referenceTo>Ask__c</referenceTo>
+        <relationshipName>Amounts</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Count__c</fullName>
+        <description>Count of 1 per record. Used for reporting purposes</description>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <inlineHelpText>Count of 1 per record. Used for reporting purposes</inlineHelpText>
+        <label>Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_amount_expected__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The date TCN expect to receive the payment</inlineHelpText>
+        <label>Date amount expected</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_amount_received__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The date TCN actually received the amount</inlineHelpText>
+        <label>Date amount received</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Local_authorities__c</fullName>
+        <description>Local authorities the funding applies to</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Local authority (or authorities) the funding applies to</inlineHelpText>
+        <label>Local authorities</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Barking and Dagenham</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Barnet</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bexley</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Birmingham</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Brent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bromley</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bury</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Camden</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>City of London</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Coventry</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Croydon</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Dudley</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ealing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Enfield</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Greenwich</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hackney</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hammersmith and Fulham</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Haringey</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Harrow</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Havering</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hillingdon</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hounslow</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Islington</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Kensington and Chelsea</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Kingston Upon Thames</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lambeth</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lewisham</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Manchester</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Merton</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Newham</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Oldham</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Redbridge</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Richmond Upon Thames</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rochdale</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sandwell</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Solihull</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Southwark</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Stockport</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Surrey</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sutton</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tameside</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tower Hamlets</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Walsall</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Waltham Forest</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wandsworth</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Warwickshire</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Westminster</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wigan</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wolverhampton</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Other_restriction__c</fullName>
+        <description>Details of other restriction which applies to the funding</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Details of other restriction which applies to the funding</inlineHelpText>
+        <label>Other restriction</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Request_time_period__c</fullName>
+        <externalId>false</externalId>
+        <label>Request time period</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>2013 Q1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2013 Q2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2013 Q3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2013 Q4</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2014 Q1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2014 Q2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2014 Q3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2014 Q4</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Time_period_covered__c</fullName>
+        <externalId>false</externalId>
+        <label>Time period covered</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Year_amount_applies_to__c</fullName>
+        <externalId>false</externalId>
+        <label>Year amount applies to</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>2012-13</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2013-14</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2014-15</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Fundraising Payment</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>AA{000000}</displayFormat>
+        <label>Fundraising Payment Ref Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Fundraising Payments</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

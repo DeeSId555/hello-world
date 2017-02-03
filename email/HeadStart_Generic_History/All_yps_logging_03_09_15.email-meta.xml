@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Generic email to all YPs logging</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>All yps logging 03/09/15</name>
+    <style>none</style>
+    <subject>HeadStart - Keep logging your hours, 2 weeks left!</subject>
+    <textOnly>HeadStart login details:
+
+Email Address {!Contact.Email}
+
+NCS ID
+
+{!Contact.NCS_ID__c}
+
+PIN {!Contact.Login_Password__c}
+
+HeadStart Website
+
+2 weeks left to log 16 hours of volunteering!
+
+Deadline is 18th September
+
+Hi {!Contact.FirstName},
+
+Your Hours
+
+Well done on completing {!HS_Activity__c.HS_Hours_Total__c} hours of volunteering! We hope you’re enjoying your volunteering and learning a range of transferable skills that will be useful during your interview.
+
+If you think your hours are incorrect try submitting again here or email headstart@the-challenge.org and let us know.
+
+
+Top Tips
+
+We understand you’re back to college/school so here’s some tips on how to manage your time. We don’t want you to compromise studies but equally don’t want you to miss out on your interview!
+
+
+Let your volunteering placement know you’re studying and ask if there are any other sessions available.
+
+Work out which weekend days/evenings you might be able to volunteer in advance (asap!) and arrange with your volunteering contact.
+
+Keep logging your hours so we can invite you to an interview.
+
+
+
+Keep logging your hours, you can do this!
+
+Any questions? Email the HeadStart team, check out our website or get in touch on facebook.
+
+
+The HeadStart team
+
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subsribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

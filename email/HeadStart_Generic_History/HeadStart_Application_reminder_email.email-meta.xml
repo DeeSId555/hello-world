@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent manually via Icontact 09/10/15</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>HeadStart Application reminder email</name>
+    <style>none</style>
+    <subject>HeadStart - Last opportunity to Apply!</subject>
+    <textOnly>HeadStart login details:
+
+Email Address {!Contact.Email}
+
+NCS ID
+
+{!Contact.NCS_ID__c}
+
+PIN {!Contact.Login_Password__c}
+
+HeadStart Website
+
+Applications close midnight Sunday 11th October!
+
+Hi {!Contact.FirstName},
+
+Don&apos;t miss your opportunity to take part in the HeadStart programme run by The Challenge. Through the programme you can:
+
+Volunteer in your local community
+Attend exlusive employability workshops
+Access a job interview with one of our corporate sponsors
+
+Be part of the 2000 young people taking advantage of the opportunity this year!
+
+CLICK HERE to access the HeadStart Website and use your login details above to register.
+
+
+Any questions? Email the HeadStart team, check out our website or get in touch on Twitter or Facebook
+
+
+The HeadStart team
+
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subsribe for communications from The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

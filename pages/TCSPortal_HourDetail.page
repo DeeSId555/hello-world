@@ -1,0 +1,300 @@
+<apex:page sidebar="false" standardStylesheets="false" showHeader="false" standardController="Hours__c">
+
+<html>
+    <head>
+        <style>   
+.button1{
+        
+        height:65px; 
+        width:175px; 
+        border: solid 4px; 
+        border-color:#B31217; 
+        font : 18px "Dirty", Arial, Helvetica; 
+        background :white;
+        border-radius:15px;
+        }
+        </style>
+    </head>
+    
+    <body>    
+        
+        
+        <apex:composition template="PortalTemplate">
+        
+            <apex:define name="TopDiv">
+            <!---------------- MENU -------------------------->
+            </apex:define>
+            
+            <apex:define name="MidDiv">
+               <!--------------- Mid Div ------------------>
+              
+               <table style="height:100%;">
+                    <tr>
+                   
+               
+<!----------------------------------------- YOUNG PERSON ----------------------------------------->                          
+<td valign="top" width="600" style="border-left:solid 8px; border-color:#D9D9D9; ">
+    
+    <div style="margin-left:2%; margin-top:1%;">
+   <apex:outputText styleClass="optext" value="young person"/><br />
+   <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+               <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Hours__c.Fields.Challenger__c.Label}"/>
+                 </td>
+              <td><apex:outputText value="{!Hours__c.Challenger__r.Name}"/>
+              </td> 
+              </tr>
+             </table></div>
+</div>
+</td>
+<!----------------------------------------/ YOUNG PERSON ----------------------------------------->                            
+                       
+                       
+<!----------------------------------------- HOURS ----------------------------------------->                            
+       <td valign="top" width="600" style="border-left:solid 4px; border-color:#D9D9D9; ">
+       
+        <div style="margin-left:2%;  margin-top:1%;">
+           <apex:outputText styleClass="optext" value="hours"/><br />
+           
+            <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Hours__c.Fields.Date_hours_submitted__c.Label}"/>
+                   </td>
+              <td><apex:outputText value="{0,date,dd'/'MM'/'yyyy}">
+                    <apex:param value="{!Hours__c.Date_hours_submitted__c}" /> 
+                </apex:outputText>
+              </td> 
+              </tr>
+             </table></div>
+             
+            <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Hours__c.Fields.Hours__c.Label}"/>
+                 </td>
+              <td><apex:outputText value="{!Hours__c.Hours__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+          <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Hours__c.Fields.Volunteering_description__c.Label}"/>
+                  </td>
+              <td><apex:outputText value="{!Hours__c.Volunteering_description__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+           <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Hours__c.Fields.Rating__c.Label}"/>
+                </td>
+              <td><apex:outputText value="{!Hours__c.Rating__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+             </div>
+       </td>
+   </tr>
+<!-----------------------------------------/ HOURS ----------------------------------------->   
+
+
+<!----------------------------------------- ABOUT THE OPPORTUNITY ----------------------------------------->                      
+   <tr >
+   
+       <td valign="top" width="600" style="border-left:solid 8px; border-color:#D9D9D9; ">
+       
+        <div style="margin-left:2%;">
+           <apex:outputText styleClass="optext" value="about the opportunity"/><br />
+           
+            <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Hours__c.Fields.Volunteering_Opportunity__c.Label}"/>
+                </td>
+              <td><apex:outputText value="{!Hours__c.Volunteering_Opportunity__r.Name}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+            <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Hours__c.Fields.Challenger__c.Label}"/>
+               </td>
+              <td><apex:outputText value="{!Hours__c.Challenger__r.Name}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+           <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Hours__c.Fields.Initial_sign_up_date__c.Label}"/>
+                </td>
+              <td><apex:outputText value="{0,date,dd'/'MM'/'yyyy}">
+    <apex:param value="{!Hours__c.Initial_sign_up_date__c}" /> 
+</apex:outputText>
+             
+              </td> 
+              </tr>
+             </table></div>
+             
+            <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Hours__c.Fields.Contact_email__c.Label}"/>
+                </td>
+              <td><apex:outputText value="{!Hours__c.Contact_email__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+            <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Hours__c.Fields.Organisation_volunteering_with__c.Label}"/>
+                 </td>
+              <td><apex:outputText value="{!Hours__c.Organisation_volunteering_with__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+             <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Hours__c.Fields.Contact_telephone_number__c.Label}"/>
+                </td>
+              <td><apex:outputText value="{!Hours__c.Contact_telephone_number__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+            <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Hours__c.Fields.Other_organisation_volunteering_with__c.Label}"/>
+                </td>
+              <td><apex:outputText value="{!Hours__c.Other_organisation_volunteering_with__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+            <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Hours__c.Fields.Travelled_for_over_30_minutes__c.Label}"/>
+              </td>
+              <td><apex:outputText value="{!Hours__c.Travelled_for_over_30_minutes__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+         </div>
+       </td>
+<!-----------------------------------------/ ABOUT THE OPPORTUNITY ----------------------------------------->       
+       
+       
+<!-----------------------------------------/ VERIFICATION ----------------------------------------->
+       <td valign="top" width="600" style="border-left:solid 4px; border-color:#D9D9D9; ">
+       
+        <div style="margin-left:2%;">
+           <apex:outputText styleClass="optext" value="verification"/><br />
+           
+            <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Hours__c.Fields.Verified__c.Label}"/>
+               </td>
+              <td><apex:outputText value="{!Hours__c.Verified__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+            <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Hours__c.Fields.Verification_notes__c.Label}"/> 
+                </td>
+              <td><apex:outputText value="{!Hours__c.Verification_notes__c}"/>
+              </td> 
+              </tr>
+             </table></div>
+         </div>
+       </td>
+   </tr>
+<!-----------------------------------------/ VERIFICATION ----------------------------------------->   
+
+
+<!-----------------------------------------/ SYSTEM INFO. ----------------------------------------->                  
+   <tr>
+     
+       <td style="border-left:solid 8px; border-color:#D9D9D9; ">
+    <div style="margin-left:2%; margin-bottom:2%;">
+           <apex:outputText styleClass="optext" value="system information"/><br />
+           
+            <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="Created By"/>
+                </td>
+              <td><apex:outputText value="{!Hours__c.Createdby.Name}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+            <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Hours__c.Fields.Name.Label}"/>
+                   </td>
+              <td><apex:outputText value="{!Hours__c.Name}"/>
+              </td> 
+              </tr>
+             </table></div>
+             
+           <div>  <table style="width:100%;">
+             <tr style="width:100%;">
+                  <td style="width:40%;">
+           <apex:outputText styleClass="fieldLabel" value="Last Modified By"/>
+                 </td>
+              <td><apex:outputText value="{!Hours__c.LastModifiedBy.Name}"/>
+              </td> 
+              </tr>
+             </table></div>
+             </div>
+            <td valign="bottom" style="border-left:solid 4px; border-color:#D9D9D9;">
+                <a style="float:right; margin-right:2%;  margin-bottom:2%;" href="{!Hours__c.id}/e?retURL=/TCSPortal_HourDetail?id={!Hours__c.id}"><button type="button" style="margin-top:10px; height:35px; width:100px;" class="button1">Edit</button></a><br/>
+            </td>
+       </td>
+   </tr>
+<!-----------------------------------------/ SYSTEM INFO. ----------------------------------------->                    
+                   
+     </table>
+</apex:define>
+           
+           <apex:define name="BotDiv"> 
+               <center>
+                   <div style="margin-top:2%;">
+                       <apex:outputLink value="{!$Page.TCSPortal_ContactDetail}?id={!Hours__c.Challenger__c}&editmode=n" styleClass="optext btn button1">go to<br/> {!Hours__c.Challenger__r.Name}</apex:outputLink>
+                   </div>  
+               </center>
+               
+           </apex:define>
+           
+           
+        </apex:composition> 
+        
+    </body>
+      <style>
+    .scrollspy-example {
+                height: 400px;
+                overflow: auto;
+                position: relative;
+    </style>
+</html>
+</apex:page>

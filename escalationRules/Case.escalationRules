@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EscalationRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <escalationRule>
+        <fullName>Standard</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <businessHours>Standard business hours</businessHours>
+            <businessHoursSource>Static</businessHoursSource>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Staffing SouthLon/Surrey,Staffing West London</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>notEqual</operation>
+                <value>Awaiting response from case originator</value>
+            </criteriaItems>
+            <escalationAction>
+                <minutesToEscalation>1920</minutesToEscalation>
+                <notifyCaseOwner>true</notifyCaseOwner>
+                <notifyToTemplate>Case_emails/Staffing_case_32hr_notification</notifyToTemplate>
+            </escalationAction>
+            <escalationStartTime>CaseLastModified</escalationStartTime>
+        </ruleEntry>
+        <ruleEntry>
+            <businessHours>Standard business hours</businessHours>
+            <businessHoursSource>Static</businessHoursSource>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Staffing North London,Staffing NW</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Subject</field>
+                <operation>notEqual</operation>
+                <value>Awaiting response from case originator</value>
+            </criteriaItems>
+            <escalationAction>
+                <minutesToEscalation>1920</minutesToEscalation>
+                <notifyCaseOwner>true</notifyCaseOwner>
+                <notifyToTemplate>Case_emails/Staffing_case_32hr_notification</notifyToTemplate>
+            </escalationAction>
+            <escalationAction>
+                <minutesToEscalation>2880</minutesToEscalation>
+                <notifyCaseOwner>true</notifyCaseOwner>
+                <notifyTo>richard.miles@the-challenge.org</notifyTo>
+                <notifyToTemplate>Case_emails/Staffing_case_48hr_notification</notifyToTemplate>
+            </escalationAction>
+            <escalationStartTime>CaseLastModified</escalationStartTime>
+        </ruleEntry>
+        <ruleEntry>
+            <businessHours>Standard business hours</businessHours>
+            <businessHoursSource>Static</businessHoursSource>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Staffing West Midlands</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>notEqual</operation>
+                <value>Awaiting response from case originator</value>
+            </criteriaItems>
+            <escalationAction>
+                <minutesToEscalation>1920</minutesToEscalation>
+                <notifyCaseOwner>true</notifyCaseOwner>
+                <notifyToTemplate>Case_emails/Staffing_case_32hr_notification</notifyToTemplate>
+            </escalationAction>
+            <escalationAction>
+                <minutesToEscalation>2880</minutesToEscalation>
+                <notifyCaseOwner>true</notifyCaseOwner>
+                <notifyTo>agne.kinduryte@the-challenge.org</notifyTo>
+                <notifyToTemplate>Case_emails/Staffing_case_48hr_notification</notifyToTemplate>
+            </escalationAction>
+            <escalationStartTime>CaseLastModified</escalationStartTime>
+        </ruleEntry>
+        <ruleEntry>
+            <businessHours>Central Comms Hours</businessHours>
+            <businessHoursSource>Static</businessHoursSource>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>TheChallenge</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Priority</field>
+                <operation>equals</operation>
+                <value>High</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New message</value>
+            </criteriaItems>
+            <escalationAction>
+                <assignedTo>Central_Comms_Tier_2</assignedTo>
+                <assignedToTemplate>Case_emails/CCT_High_priority_case_1_business_day_ACCOM_escalation_notification</assignedToTemplate>
+                <assignedToType>Queue</assignedToType>
+                <minutesToEscalation>660</minutesToEscalation>
+                <notifyCaseOwner>false</notifyCaseOwner>
+                <notifyEmail>accoms@the-challenge.org</notifyEmail>
+                <notifyToTemplate>Case_emails/CCT_High_priority_case_1_business_day_ACCOM_escalation_notification</notifyToTemplate>
+            </escalationAction>
+            <escalationStartTime>CaseCreation</escalationStartTime>
+        </ruleEntry>
+        <ruleEntry>
+            <businessHours>Central Comms Hours</businessHours>
+            <businessHoursSource>Static</businessHoursSource>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>TheChallenge</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Priority</field>
+                <operation>equals</operation>
+                <value>Medium,Low</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New message</value>
+            </criteriaItems>
+            <escalationAction>
+                <assignedTo>Central_Comms_Tier_2</assignedTo>
+                <assignedToTemplate>Case_emails/CCT_Low_med_priority_2_business_days_escalation_internal_notification</assignedToTemplate>
+                <assignedToType>Queue</assignedToType>
+                <minutesToEscalation>1980</minutesToEscalation>
+                <notifyCaseOwner>false</notifyCaseOwner>
+                <notifyEmail>accoms@the-challenge.org</notifyEmail>
+                <notifyToTemplate>Case_emails/CCT_Low_med_priority_2_business_days_escalation_internal_notification</notifyToTemplate>
+            </escalationAction>
+            <escalationStartTime>CaseCreation</escalationStartTime>
+        </ruleEntry>
+    </escalationRule>
+</EscalationRules>

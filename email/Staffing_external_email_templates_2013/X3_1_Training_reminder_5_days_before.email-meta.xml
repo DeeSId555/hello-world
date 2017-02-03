@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Updated by AO 8/5</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>3.1 Training reminder (5 days before)</name>
+    <style>freeForm</style>
+    <subject>Your training starts on {!HR_Event_Attendance__c.HR_Event_Start_Date__c}</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!HR_Event_Attendance__c.HR_Event_Owner_email__c}
+
+
+
+Dear {!HR_Event_Attendance__c.Candidate_Name__c},
+
+
+
+I am writing to you in order to confirm the details of your training session with us.
+
+
+
+{!HR_Event__c.Date_time_location__c}
+
+
+
+The training session will include various lively group activities and role specific training, so please wear appropriate clothing. Please bring a notepad and pen along with you and prepare two icebreaker games/exercises to share with the group.
+
+
+
+Lunch will be provided; we can offer vegetarian options but unfortunately we cannot accommodate other specific dietary requirements. If you have specific dietary requirements please bring your own lunch.
+
+
+
+What do you need to bring for your DBS and Right to Work verification?
+
+
+
+All staff must bring all the following documents for DBS verification depending on which option applies to you
+
+
+
+Option 1) You have an existing enhanced DBS dated after April 30th 2013, please bring
+
+
+
+- Your original DBS certificate with you to training
+
+
+
+Option 2) You have applied for a DBS through The Challenge, please bring
+
+
+
+- Your DBS certificate (if you have received this)
+
+
+
+- All three documents used to process your DBS
+
+
+
+All staff must bring all the following ID documents for Right To Work verification depending on which option applies to you
+
+
+
+Option 1) Passport (with a valid visa where appropriate) or National Identity Card
+
+
+
+Option 2) Original birth certificate AND National Insurance Card
+
+
+
+N.B we are in the process of allocating staff so we will be in touch soon to discuss work schedules.
+
+
+
+Please click on the link below for directions:
+
+
+
+{!HR_Event_Attendance__c.Extra_info__c}
+
+
+
+{!HR_Event_Attendance__c.Packing_list__c}.
+
+
+
+We look forward to seeing you again!
+
+
+
+
+Best wishes,
+
+
+
+{!HR_Event_Attendance__c.HR_Event_Owner_email__c}
+
+
+
+NCS with The Challenge
+
+
+
+CR 3.1</textOnly>
+    <type>html</type>
+</EmailTemplate>

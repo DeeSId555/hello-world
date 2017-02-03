@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>1.6.1b Offer, training and necessary info request for returners-skip assessment</name>
+    <style>freeForm</style>
+    <subject>Returning to work on NCS with The Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}.
+
+
+Dear {!Contact.FirstName}
+
+
+Thank you for returning to work on NCS with The Challenge programme.We would like to provisionally offer you a role as {!Job_Application__c.Role_to_assess_for__c}.
+
+
+This offer is conditional upon
+
+The completion of your essential information which includes the receipt of satisfactory enhanced DBS and references.
+Your being matched to a vacant role which fits your available work dates and location.
+
+What do you need to do now?
+
+Staffing Website Login
+
+
+Each year you will need to update all your information on the Staffing Website. It is very important that you update all your information and availability so that we can process your enhanced DBS application and work schedules. Your job offer will remain conditional until we have received satisfactory information and documents from you, and once you have attended training.
+
+Your login details are:
+
+Username: {!Contact.Email}
+
+Password: {!Contact.Login_Password__c}
+
+Once you have logged in, click on ‘My Profile’. At the bottom of your profile there is an option to update your password.
+
+Click here to go to the Staffing Website.
+
+N.B please complete all the required information as soon as you can. Any delay could affect whether we can confirm a work schedule for you.
+
+
+
+Training for your role
+
+
+Training is compulsory for all staff who work on NCS with The Challenge programme. To book onto your training day please contact me on the details below!
+
+Congratulations again on your success and we look forward to working with you on NCS with The Challenge.
+
+Best Wishes,
+
+
+{!Contact.OwnerFullName}
+
+{!Contact.OwnerPhone}
+
+{!Contact.Contact_Owner_alternative_email__c}
+
+NCS with The Challenge
+
+
+
+Follow us on Twitter and Facebook</textOnly>
+    <type>html</type>
+</EmailTemplate>

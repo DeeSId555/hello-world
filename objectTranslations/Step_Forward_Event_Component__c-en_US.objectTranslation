@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Step Forward Event Component</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Step Forward Event Components</value>
+    </caseValues>
+    <fields>
+        <label><!-- Additional Information --></label>
+        <name>Additional_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Job Title --></label>
+        <name>Contact_Job_Title__c</name>
+    </fields>
+    <fields>
+        <help><!-- Person to ask for at the interview. --></help>
+        <label><!-- Contact Name --></label>
+        <name>Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Phone number --></label>
+        <name>Contact_Phone_number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Approximate length of each interview. e.g. 45 minutes --></help>
+        <label><!-- Duration of interview --></label>
+        <name>Duration_of_interview__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employer --></label>
+        <name>Employer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tick to cancel the event and update all attached SFAAs status. --></help>
+        <label><!-- Event Cancelled --></label>
+        <name>Event_Cancelled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used for Interviews, and as an override if different from the Event Day Object --></help>
+        <label><!-- Event Date (Matching) --></label>
+        <name>Event_Date_Matching__c</name>
+    </fields>
+    <fields>
+        <help><!-- Taken from the Event Date Object --></help>
+        <label><!-- Event Date --></label>
+        <name>Event_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exclusive? --></label>
+        <name>Exclusive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interview address --></label>
+        <name>Interview_address__c</name>
+    </fields>
+    <fields>
+        <help><!-- Start and finish time for the whole day. e.g. 9:00 to 13:00 --></help>
+        <label><!-- Interview start and finish times --></label>
+        <name>Interview_start_and_finish_times__c</name>
+    </fields>
+    <fields>
+        <help><!-- Matching check this box and reason on SF Job. --></help>
+        <label><!-- Job Difficult to match --></label>
+        <name>Job_Difficult_to_match__c</name>
+    </fields>
+    <fields>
+        <label><!-- No offer made by employer --></label>
+        <name>No_offer_made_by_employer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Shortlisted YPs --></label>
+        <name>Number_of_Shortlisted_YPs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pathway --></label>
+        <name>Pathway__c</name>
+    </fields>
+    <fields>
+        <help><!-- Account Manager checks this box to alert matching 2 to 3 weeks notice before the date of interview. --></help>
+        <label><!-- Ready to Match --></label>
+        <name>Ready_to_Match__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Availability All Shortlisted --></label>
+        <name>Request_Availability_All_Shortlisted__c</name>
+    </fields>
+    <fields>
+        <label><!-- SF Account Owner --></label>
+        <name>SF_Account_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- SF Owner Email --></label>
+        <name>SF_Owner_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Matching check this box, when all available YPs have allocated time slot. --></help>
+        <label><!-- Send Interview slot and JD to all --></label>
+        <name>Send_Interview_slot_and_JD_to_all__c</name>
+    </fields>
+    <fields>
+        <label><!-- Step Forward Event Day --></label>
+        <name>Step_Forward_Event_Day__c</name>
+        <relationshipLabel><!-- Step Forward Event Components --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Step Forward Job Name --></label>
+        <name>Step_Forward_Job_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Step Forward Job --></label>
+        <name>Step_Forward_Job__c</name>
+        <relationshipLabel><!-- Step Forward Event Components --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Shows all &quot;Successful - Job offer accepted&quot; status from attached SFAA --></help>
+        <label><!-- Successful - Job offer accepted --></label>
+        <name>Successful_Job_offer_accepted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Account Manager to suggest how many CVs they wish to see --></help>
+        <label><!-- Suggested number of CVs to review --></label>
+        <name>Suggested_number_of_CVs_to_review__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Slot 10: Allocation --></label>
+        <name>Time_Slot_10_Allocation__c</name>
+        <relationshipLabel><!-- Step Forward Event Components (Time Slot 10: Allocation) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Time Slot 10 --></label>
+        <name>Time_Slot_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Slot 1: Allocation --></label>
+        <lookupFilter>
+            <errorMessage><!-- Records must be related. --></errorMessage>
+        </lookupFilter>
+        <name>Time_Slot_1_Allocation__c</name>
+        <relationshipLabel><!-- Step Forward Event Components --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Correct Time format examples: 12:30 or 06:13 or 23:59 --></help>
+        <label><!-- Time Slot 1 --></label>
+        <name>Time_Slot_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Slot 2: Allocation --></label>
+        <lookupFilter>
+            <errorMessage><!-- Records must be related. --></errorMessage>
+        </lookupFilter>
+        <name>Time_Slot_2_Allocation__c</name>
+        <relationshipLabel><!-- Step Forward Event Components (Time Slot 2: Allocation) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Correct format examples: 12:30 or 06:13 or 23:59 --></help>
+        <label><!-- Time Slot 2 --></label>
+        <name>Time_Slot_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Slot 3: Allocation --></label>
+        <lookupFilter>
+            <errorMessage><!-- Records must be related. --></errorMessage>
+        </lookupFilter>
+        <name>Time_Slot_3_Allocation__c</name>
+        <relationshipLabel><!-- Step Forward Event Components (Time Slot 3: Allocation) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Time Slot 3 --></label>
+        <name>Time_Slot_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Slot 4: Allocation --></label>
+        <lookupFilter>
+            <errorMessage><!-- Records must be related. --></errorMessage>
+        </lookupFilter>
+        <name>Time_Slot_4_Allocation__c</name>
+        <relationshipLabel><!-- Step Forward Event Components (Time Slot 4: Allocation) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Time Slot 4 --></label>
+        <name>Time_Slot_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Slot 5: Allocation --></label>
+        <name>Time_Slot_5_Allocation__c</name>
+        <relationshipLabel><!-- Step Forward Event Components (Time Slot 5: Allocation) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Time Slot 5 --></label>
+        <name>Time_Slot_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Slot 6: Allocation --></label>
+        <name>Time_Slot_6_Allocation__c</name>
+        <relationshipLabel><!-- Step Forward Event Components (Time Slot 6: Allocation) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Time Slot 6 --></label>
+        <name>Time_Slot_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Slot 7: Allocation --></label>
+        <name>Time_Slot_7_Allocation__c</name>
+        <relationshipLabel><!-- Step Forward Event Components (Time Slot 7: Allocation) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Time Slot 7 --></label>
+        <name>Time_Slot_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Slot 8: Allocation --></label>
+        <name>Time_Slot_8_Allocation__c</name>
+        <relationshipLabel><!-- Step Forward Event Components (Time Slot 8: Allocation) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Time Slot 8 --></label>
+        <name>Time_Slot_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Slot 9: Allocation --></label>
+        <name>Time_Slot_9_Allocation__c</name>
+        <relationshipLabel><!-- Step Forward Event Components (Time Slot 9: Allocation) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Time Slot 9 --></label>
+        <name>Time_Slot_9__c</name>
+    </fields>
+    <fields>
+        <help><!-- Single Time Slot --></help>
+        <label><!-- Time Slot --></label>
+        <name>Time_Slot__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows all &quot;Unsuccessful - YP not accepted&quot; status from attached SFAA --></help>
+        <label><!-- Unsuccessful - YP not accepted --></label>
+        <name>Unsuccessful_YP_not_accepted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Matching check this box when SFAAs created. --></help>
+        <label><!-- YP CVs ready for review --></label>
+        <name>YP_CVs_ready_for_review__c</name>
+    </fields>
+    <fields>
+        <help><!-- MT check this box when all YPs allocated to time slot. 5-7 days before interview date. Alerts AM to send email to EMP. --></help>
+        <label><!-- YPs allocated - CVs to EMP reminder --></label>
+        <name>YPs_allocated_CVs_to_EMP_reminder__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- All Day --></label>
+        <name>All_Day</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Individual Time Slot --></label>
+        <name>Individual_Time_Slot</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- YP must be related to the event. --></errorMessage>
+        <name>Allocation_10_Forced_Filter</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- YP must be related to the Event --></errorMessage>
+        <name>Allocation_6_Forced_Filter</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- YP must be related to the event --></errorMessage>
+        <name>Allocation_7_Forced_Filter</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- YP must be related to the event. --></errorMessage>
+        <name>Allocation_8_Forced_Filter</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- YP must be related to the event. --></errorMessage>
+        <name>Allocation_9_Forced_Filter</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wrong time format! Correct Time format examples: 12:30 or 06:13 or 23:59 --></errorMessage>
+        <name>Time_Slot_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wrong time format! Correct Time format examples: 12:30 or 06:13 or 23:59 --></errorMessage>
+        <name>Time_Slot_Format10</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wrong time format! Correct Time format examples: 12:30 or 06:13 or 23:59 --></errorMessage>
+        <name>Time_Slot_Format2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wrong time format! Correct Time format examples: 12:30 or 06:13 or 23:59 --></errorMessage>
+        <name>Time_Slot_Format3</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wrong time format! Correct Time format examples: 12:30 or 06:13 or 23:59 --></errorMessage>
+        <name>Time_Slot_Format4</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wrong time format! Correct Time format examples: 12:30 or 06:13 or 23:59 --></errorMessage>
+        <name>Time_Slot_Format5</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wrong time format! Correct Time format examples: 12:30 or 06:13 or 23:59 --></errorMessage>
+        <name>Time_Slot_Format6</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wrong time format! Correct Time format examples: 12:30 or 06:13 or 23:59 --></errorMessage>
+        <name>Time_Slot_Format7</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wrong time format! Correct Time format examples: 12:30 or 06:13 or 23:59 --></errorMessage>
+        <name>Time_Slot_Format8</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wrong time format! Correct Time format examples: 12:30 or 06:13 or 23:59 --></errorMessage>
+        <name>Time_Slot_Format9</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wrong time format! Correct Time format examples: 12:30 or 06:13 or 23:59 --></errorMessage>
+        <name>Time_Slot_Format_Single</name>
+    </validationRules>
+</CustomObjectTranslation>

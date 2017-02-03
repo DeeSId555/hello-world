@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>DS: cloned 1.7.1. Copy needs to be modified for PV. Workflow not activated</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>1.7.2 Unconditional offer email PV</name>
+    <style>freeForm</style>
+    <subject>Unconditional offer notification</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+
+Dear {!Contact.FirstName},
+
+Thank you for completing your Essential Information Form with your Payroll and Tax information and DBS documentation. We are now able to move to the next stage of Job allocation and will be in touch in due course with your job placement. You will receive a separate contract with each job placement.
+
+In the mean time please could you:-
+
+Bring the originals of your DBS documents to Training (a further reminder will be sent out)
+let us know if your circumstances change
+invite your friends and colleagues to apply - we still have roles available and applications close in a couple of weeks!
+
+Look out for further communications from us in respect of:-
+
+Job placement/s
+Confirmation of Training When to be Where
+Health, Safety and Inclusion questionnaire
+Payroll and expenses information
+Personal Website log in to collect your When to be Where for your Summer role and other helpful information.
+
+In the mean time we are really looking forward to working with you this summer and hope you&apos;re looking forward to it too!
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.Contact_Owner_alternative_email__c}
+
+CR 1.7.1</textOnly>
+    <type>html</type>
+</EmailTemplate>

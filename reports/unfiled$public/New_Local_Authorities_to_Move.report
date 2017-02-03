@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Local_Authority__c$Name</field>
+    </columns>
+    <columns>
+        <field>Local_Authority__c$Cluster__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Local_Authority__c$Cluster__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>2013 Autumn Midlands...</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>New Local Authorities to Move</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Local_Authority__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Local_Authority__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

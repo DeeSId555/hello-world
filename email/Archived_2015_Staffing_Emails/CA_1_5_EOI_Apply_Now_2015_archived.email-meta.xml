@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>COPY NOT READY AO</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CA 1.5 EOI - Apply Now 2015 -archived</name>
+    <style>formalLetter</style>
+    <subject>The Challenge 2015 - Up to 3,500 roles available this year!</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact the Staffing Team on seasonalroles@the-challenge.org.
+
+THE CHALLENGE 2015 - UP TO 3,500 ROLES AVAILABLE THIS YEAR!
+
+
+
+Dear {!Contact.Name}
+
+Applications open!
+
+You told us you were interested in working on the NCS 2015 programmes. Applications for our seasonal roles are still open!
+
+What is The Challenge?
+
+We are the UK&apos;s largest provider of NCS - an exciting youth and community programme which combines outdoor activities, skill development and community volunteering.
+
+In 2015, we aim to reach 25,000 young people who will be supported by 3,500 seasonal staff members. Want to be a part of this? Read on for more information.
+
+
+What opportunities do you have available?
+
+We have paid positions available for all entry levels, from those wishing to gain further experience working with young people, to experienced Project Managers, Teachers and Youth Workers.
+
+
+I&apos;m in! How do I apply?
+
+You will need to complete an application form on our new Staffing Website. Our website allows you to manage and monitor your information easily.
+
+https://staffing.the-challenge.org/Login.aspx?ReturnUrl=%2fsecure%2f
+
+Login Details
+
+As you previously registered your interest with us, you will already have a profile in our system; your login details are below.
+
+Username: {!Contact.Email}
+Password: {!Contact.Login_Password__c}
+
+
+Once you have logged in, simply change your password, update your profile and begin your application!
+
+
+
+Any Questions?
+
+If you have any questions please contact us on seasonalroles@the-challenge.org quoting the email reference number below in any correspondence.
+
+We look forward to receiving your application!
+
+Best Wishes
+
+The Challenge
+seasonalroles@the-challenge.org
+
+Email Reference: CA 1.5
+
+VISIT NCSTHECHALLENGE.ORG NOW</textOnly>
+    <type>html</type>
+</EmailTemplate>

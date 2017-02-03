@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>HS_Activity__c$Name</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_YP_Attendances__r$Name</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_YP_Attendances__r$YP_Name__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c$HS_Post_code__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_YP_Attendances__r$YP_Email__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_YP_Attendances__r$YP_Number__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_YP_Attendances__r$YP_Attending_Event__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_YP_Attendances__r$Send_Invite__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_YP_Attendances__r$Did_YP_attend_the_event__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_YP_Attendances__r$Result_of_Interview__c</field>
+    </columns>
+    <description>Showing YP attendance at interview days for Starbucks</description>
+    <filter>
+        <criteriaItems>
+            <column>HS_Activity__c.HS_YP_Attendances__r$HS_Event_Day__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Interview Day - Starbucks - 09/03/16</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>HS_Activity__c.HS_YP_Attendances__r$HS_Event_Day__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>15 A SB - Interview Attendance</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>HS_Events_with_Attendance_and_HS_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>HS_Activity__c$Generic_email_sent__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

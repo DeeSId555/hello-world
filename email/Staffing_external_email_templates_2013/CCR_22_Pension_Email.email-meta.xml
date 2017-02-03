@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Pension Email - October</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>CCR 22 Pension Email</name>
+    <style>freeForm</style>
+    <subject>Auto Enrollment with The Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your local staffing team.
+
+Dear {!Contact.FirstName},
+
+I am writing to inform you that you have been entered into the workplace pension scheme. This is new legislation which the government has introduced this year - it is a way of saving for your retirement that&apos;s arranged by your employer. For further information about the scheme, please go to www.gov.uk/workplace-pensions
+
+All staff are entered into the pension scheme if they fulfill the criteria for auto-enrollment. For a full list of criteria please refer to the Staffing Website FAQ 7.3.
+
+Further details, including amounts deducted, customer reference numbers and how to opt-out, will be communicated to you within the next few days along with your payslip.
+
+If you have any queries about any of the above please email our recruitment support team on staffing.support@the-challenge.org  quoting the email reference number in any correspondence.
+
+We hope you have enjoyed your time on the NCS with The Challenge summer programme.
+
+
+Best wishes,
+
+
+NCS with The Challenge
+CCR 22</textOnly>
+    <type>html</type>
+</EmailTemplate>

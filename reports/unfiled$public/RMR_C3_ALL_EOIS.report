@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Activity__c.Associate_StepFwd_Mobile__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Activity__c.Address_Post_Code__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Activity__c.Borough_of_most_recent_school_college__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Activity__c.London_Borough__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Activity__c.PW_Working_with_Children__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Step_Forward_Activity__c.Start_date_applied_for1__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>August 2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Step_Forward_Activity__c.Date_Step_Forward_Application_received__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>RMR C3 ALL EOIS</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$Step_Forward_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

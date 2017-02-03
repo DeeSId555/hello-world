@@ -1,0 +1,100 @@
+<apex:page cache="false" controller="TCSPortal_LoginController" sidebar="false" standardStylesheets="false" showHeader="false" >
+<html>
+    <head>
+        <script>
+                 
+            function showModal(){
+            $('#forgot').modal({
+                show : true
+            });
+            }
+            function hideModal(){
+            $('#forgot').modal('hide');
+            }
+        </script>
+        <style>
+        .loginheadline{
+                    float:right; 
+                    margin-right:20px; 
+                    margin-top:175px; 
+                    font-size:40px;
+                       }
+        .logindiv{
+                    width:500px;
+                    height:220px;
+                    border:solid 8px;
+                    border-color:#D9D9D9;
+                    margin-left:30%;
+                  }
+        .button1{
+                    height:40px; 
+                    width:60px;
+                    float:right;
+                    margin-right:80px; 
+                    margin-bottom:20px; 
+                    border: solid 4px; 
+                    border-color:#B31217; 
+                    background :white;
+                    border-radius:10px;
+                    font-size:18px;
+                 }
+        </style>
+    </head>
+    
+    <body>    
+        
+        <apex:form forceSSL="true">
+        
+        <apex:composition template="PortalTemplateLogin">
+            <apex:define name="TopDiv">
+                    <p class="loginheadline">Grad Mentor portal</p>
+            </apex:define>
+            <apex:define name="MidDiv">
+            <apex:outputPanel id="re">
+                <apex:outputPanel rendered="{!showLogin}" >
+                    <div style="margin-left:30%; margin-top:3%;">
+                        <p style="font-size:18px;">Login to your Challenge account</p>
+                    </div>
+                    <div class="span8 logindiv">
+                    <br/><br/>
+                        <p style="text-align:center; font-size:18px;">Email address&nbsp;
+                        <apex:inputText value="{!username}"/></p>
+                        <p style="margin-left:115px; margin-bottom:0px; font-size:18px;">Password&nbsp;
+                        <apex:inputSecret value="{!password}"/></p>
+                        <h3 style="margin-left:80px; bold:none; font-size:11px;"><a style="text-decoration:none; color:#B31217;" href="#" onclick="showModal();">Forgot your password?</a></h3>
+                        <apex:commandButton styleClass="btn btn-small button1" action="{!login}" value="Login" />
+                        <p><apex:messages globalOnly="false" /></p>
+                    </div>
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{!showResent}">
+                    <div class="span8 logindiv" style="margin-top:3%;">
+                        <div style="margin-left:20%; margin-top:10%; margin-right:20%;">
+                            <p style="font-size:22px;">Your password has been resent to your challenge email address</p>
+                            <a class="btn btn-small button1" style="margin-right:10%; width:220px; height:20px;" href="{!$Page.Login}">Return to the login page</a>
+                        </div>
+                    </div>
+                </apex:outputPanel>
+                </apex:outputPanel>  
+                             <div id="forgot" class="modal hide fade in">
+                                <div class="modal-body">
+                                    <p style="font-size:18px;">Enter your username</p>
+                                    <apex:inputText value="{!fusername}"/>
+                                   <apex:commandButton styleClass="btn btn-small button1" style="font-size:15px;" action="{!passwordResent}" reRender="re,fpanel" value="Resend password" />   
+                                    <br/><apex:outputPanel id="fpanel">
+                                    {!errormessage}
+                                    </apex:outputPanel>
+                                </div>
+                                
+                                <div class="modal-footer">
+                                    <a data-dismiss="modal" href="#" class="btn btn-medium btn-danger">Cancel</a>
+                                </div>
+                              </div>
+            </apex:define>
+           
+           
+        </apex:composition>
+        </apex:form>   
+        
+    </body>
+</html>
+</apex:page>

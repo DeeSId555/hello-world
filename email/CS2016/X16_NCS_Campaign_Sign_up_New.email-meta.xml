@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>NCS Campaign - Sign up New</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>16 NCS Campaign - Sign up - New</name>
+    <style>none</style>
+    <subject>Your NCS application - next steps</subject>
+    <textOnly>NCS powered by The Challenge 
+
+NCSTHECHALLENGE.ORG 
+
+Your NCS application - next steps
+
+Hi {!Contact.FirstName},
+
+Thanks for starting your application for National Citizen Service (NCS)! We are The Challenge and we&apos;ll be running NCS in your area this summer. Here&apos;s a reminder of what NCS is about... 
+
+Video
+https://www.youtube.com/watch?v=a591P6wYiGU
+ 
+Completing your NCS application
+You&apos;ve already made a start on your application, but there are still some more parts to be done. Go to www.NCSTheChallenge.org click ‘login’ and use your unique login details shown below to fill in some more details for your application: 
+
+Your NCS ID: {!Contact.NCS_ID__c}
+Your young person password: {!Contact.Login_PIN__c}
+
+Your parent or guardian will need to fill in the main part of your application. Please ask your parent or guardian to do this. If you’re not sure who can complete your application form, please get in touch with us and we’ll have a chat (our contact details are at the end of this email). 
+
+It is quicker to apply online but if your parent or guardian would like a paper application form, they can call us on 0203 542 2400 and we’ll send one to them in the post. 
+
+Any questions? If you have any questions, take a look at questions.ncsthechallenge.org, or get in touch by calling 0203 542 2400 or by emailing contact@ncsthechallenge.org. 
+
+Places are filling up fast so make sure you don&apos;t miss out! We&apos;ll be in touch once we&apos;ve received your application. 
+
+The NCS Team - The Challenge
+
+For more info, click on the link below: 
+http://www.ncsthechallenge.org/programme/ 
+
+Or, Sign Up Now! 
+https://bookings.ncsthechallenge.org/ 
+
+
+VISIT NCSTHECHALLENGE.ORG NOW 
+
+
+Copyright © 2016 The Challenge Network, All rights reserved. 
+The Challenge Network is a charity registered in England and Wales with charity no. 1129239 and company no. 6845451, whose registered office is at Elizabeth House, 39 York Road, London SE1 7NQ. 
+
+You are receiving this email because you have registered your interest for NCS. 
+Want to update your preferences or unsubscribe? Please email us at contact@ncsthechallenge.org or call us on 0203 542 2400.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

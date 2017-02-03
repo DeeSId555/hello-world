@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Booking</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Bookings</value>
+    </caseValues>
+    <fields>
+        <label><!-- APM Assigned --></label>
+        <name>APM_Assigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Address --></label>
+        <name>Account_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account created datetime --></label>
+        <name>Account_ID_WF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account_ID --></label>
+        <name>Account_ID_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Appears on logistics form. This is the time the group should arrive at the partner on the first day. --></help>
+        <label><!-- Day 1 arrival time --></label>
+        <name>Arrival_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Autumn Wave --></label>
+        <name>Autumn_Wave__c</name>
+    </fields>
+    <fields>
+        <help><!-- Blue? --></help>
+        <label><!-- Blue --></label>
+        <name>Blue__c</name>
+    </fields>
+    <fields>
+        <help><!-- A lookup to find the names of the user who has confirmed this particular booking --></help>
+        <label><!-- Booked By --></label>
+        <name>Booked_By__c</name>
+        <relationshipLabel><!-- Bookings (Booked By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Booking Date Formula Text --></label>
+        <name>Booking_Date_Formula_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking Date --></label>
+        <name>Booking_Date_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking Date. --></label>
+        <name>Booking_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking Status --></label>
+        <name>Booking_Status__c</name>
+        <picklistValues>
+            <masterLabel>Logistics form uploaded</masterLabel>
+            <translation><!-- Logistics form uploaded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Risk assessment complete</masterLabel>
+            <translation><!-- Risk assessment complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transport booked</masterLabel>
+            <translation><!-- Transport booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transport plan uploaded</masterLabel>
+            <translation><!-- Transport plan uploaded --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the timings of your booking/visit here e.g.4pm-6pm.  This will go onto the contract sheet. --></help>
+        <label><!-- Timings of booking --></label>
+        <name>Booking_Timings__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the details of your booking/visit here.  This will go onto the contract sheet. --></help>
+        <label><!-- Booking details --></label>
+        <name>Booking_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking type check --></label>
+        <name>Booking_type_check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bookings --></label>
+        <name>Bookings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Challenge Contact --></label>
+        <name>Challenge_Contact__c</name>
+        <relationshipLabel><!-- Bookings (Challenge Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cluster --></label>
+        <name>Cluster_Pull__c</name>
+    </fields>
+    <fields>
+        <help><!-- This confirms that the booking can adhere to the new guidelines for waves 5-9 --></help>
+        <label><!-- Confirmed Venue (Waves 5-9) --></label>
+        <name>Confirmed_Venue_Waves_5_9__c</name>
+    </fields>
+    <fields>
+        <help><!-- Appears on logistics form. This pulls from the Contact&apos;s Salesforce page. --></help>
+        <label><!-- Contact Phone --></label>
+        <name>Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <help><!-- Appears on logistics form. Selecting a contact will automatically pull through the phone number provided on their Contact page. --></help>
+        <label><!-- Who will be the on site contact? --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Bookings (Contact on the Day) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact on the Day Mobile --></label>
+        <name>Contact_on_the_Day_Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact on the day WorkPhone --></label>
+        <name>Contact_on_the_day_WorkPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact on the day name --></label>
+        <name>Contact_on_the_day_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost --></label>
+        <name>Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost including VAT --></label>
+        <name>Cost_including_VAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Booked --></label>
+        <name>Date_Booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of event: --></label>
+        <name>Date_of_event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date planned --></label>
+        <name>Date_planned__c</name>
+    </fields>
+    <fields>
+        <help><!-- Appears on logistics form. This is the time the group should arrive at the partner on the second day. --></help>
+        <label><!-- Day 2 arrival time --></label>
+        <name>Day_2_arrival_time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Appears on logistics form. This is the time the group should depart from the partner on the second day. --></help>
+        <label><!-- Day 2 departure time --></label>
+        <name>Day_2_departure_time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Appears on logistics form. This is the time the group should depart from the partner on the first day. --></help>
+        <label><!-- Day 1 departure time --></label>
+        <name>Departure_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Include which rooms and the timings --></help>
+        <label><!-- Details of weekend 1 booking --></label>
+        <name>Details_of_weekend_1_booking__c</name>
+    </fields>
+    <fields>
+        <help><!-- Include which rooms and the timings --></help>
+        <label><!-- Details of weekend 2 booking --></label>
+        <name>Details_of_weekend_2_booking__c</name>
+    </fields>
+    <fields>
+        <help><!-- Include which rooms and the timings --></help>
+        <label><!-- Details of weekend 3 booking --></label>
+        <name>Details_of_weekend_3_booking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details of weekend 4 booking --></label>
+        <name>Details_of_weekend_4_booking__c</name>
+    </fields>
+    <fields>
+        <label><!-- End time --></label>
+        <name>End_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation end time --></label>
+        <name>Graduation_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation start time --></label>
+        <name>Graduation_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Cluster --></label>
+        <name>Half_Cluster__c</name>
+    </fields>
+    <fields>
+        <label><!-- How much money are we giving to them? --></label>
+        <name>How_much_money_are_we_giving_to_them__c</name>
+    </fields>
+    <fields>
+        <help><!-- Appears on logistics form. Info for SMs/practitioners e.g. notes on the location/contact, or how the different teams will be managed. --></help>
+        <label><!-- Info to NCS Staff --></label>
+        <name>Info_to_NCS_Staff__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is TC KO venue for Staff --></label>
+        <name>Is_TC_KO_venue_for_Staff__c</name>
+    </fields>
+    <fields>
+        <help><!-- This should be a clear description of where Summer Staff go on the day.  If it&apos;s a new address then enter the address, if it&apos;s at the main address then enter &quot;Main address&quot;.  This information is not used for Young People --></help>
+        <label><!-- Meeting point on the day --></label>
+        <name>Location_to_meet__c</name>
+    </fields>
+    <fields>
+        <help><!-- For bookings relating to MPs only - please choose the MP Request this Booking is fulfilling --></help>
+        <label><!-- MP Request --></label>
+        <name>MP_Request__c</name>
+        <relationshipLabel><!-- Bookings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Max YP rooms --></label>
+        <name>Max_YP_rooms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max staff rooms --></label>
+        <name>Max_staff_rooms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max storage/other rooms --></label>
+        <name>Max_storage_other_rooms__c</name>
+    </fields>
+    <fields>
+        <help><!-- What does the practitioner need to know about this partner? And what should their group be  creating/doing with the Community group?
+
+  e.g. &quot;A promotional video for the Elderly Centre&quot; or &quot;Impact of spending cuts on the Playgroup&quot;. --></help>
+        <label><!-- Info to Practitioners --></label>
+        <name>Media_Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking Name. --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Optimised Journeys --></label>
+        <name>Number_of_Optimised_Journeys__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of teams --></label>
+        <name>Number_of_teams__c</name>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Appears on logistics form. Please provide detailed visit plans. Tip: for the best formatting results, copy and paste the template found on the Operations Portal. --></help>
+        <label><!-- Overview of the visit --></label>
+        <name>Overview_of_the_visit__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC KO day --></label>
+        <name>PC_KO_day__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Return day --></label>
+        <name>PC_Return_day__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Venue Address line 1 --></label>
+        <name>PC_Venue_Address_line_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Venue Address line 2 --></label>
+        <name>PC_Venue_Address_line_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Venue Address line 3 --></label>
+        <name>PC_Venue_Address_line_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Venue County or region --></label>
+        <name>PC_Venue_County_or_region__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Venue Postcode --></label>
+        <name>PC_Venue_Postcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Venue --></label>
+        <name>PC_Venue__c</name>
+    </fields>
+    <fields>
+        <label><!-- PLEASE NOTE --></label>
+        <name>PLEASE_NOTE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Programmes User View --></label>
+        <name>PM_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Contact Mobile --></label>
+        <name>Partner_Contact_Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Contact --></label>
+        <name>Partner_Contact__c</name>
+        <relationshipLabel><!-- Bookings (Partner Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partner Contact - email --></label>
+        <name>Partner_Contact_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Logistics --></label>
+        <name>Partner_Logistics__c</name>
+        <picklistValues>
+            <masterLabel>Confirmation received in writing</masterLabel>
+            <translation><!-- Confirmation received in writing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logistical q&apos;s answered, forms created</masterLabel>
+            <translation><!-- Logistical q&apos;s answered, forms created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Risk assessment complete</masterLabel>
+            <translation><!-- Risk assessment complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TImetable of day sent</masterLabel>
+            <translation><!-- TImetable of day sent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Usage --></label>
+        <name>Partner_or_Venue__c</name>
+        <relationshipLabel><!-- Bookings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Planned Account 1 --></label>
+        <name>Planned_Account_1__c</name>
+        <relationshipLabel><!-- Bookings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Planned Account 2 --></label>
+        <name>Planned_Account_2__c</name>
+        <relationshipLabel><!-- Bookings (!Planned Account 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Planned Account 3 --></label>
+        <name>Planned_Account_3__c</name>
+        <relationshipLabel><!-- Bookings (!Planned Account 3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Planned Account 4 --></label>
+        <name>Planned_Account_4__c</name>
+        <relationshipLabel><!-- Bookings (!Planned Account 4) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Partner Logistics --></label>
+        <name>Project_Partner_Logistics__c</name>
+        <picklistValues>
+            <masterLabel>Confirmation received in writing</masterLabel>
+            <translation><!-- Confirmation received in writing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equipment list complete</masterLabel>
+            <translation><!-- Equipment list complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice sent to Finance</masterLabel>
+            <translation><!-- Invoice sent to Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logistical q&apos;s answered, forms created</masterLabel>
+            <translation><!-- Logistical q&apos;s answered, forms created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Risk assessment complete</masterLabel>
+            <translation><!-- Risk assessment complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timetable of the day sent</masterLabel>
+            <translation><!-- Timetable of the day sent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project plan for the day --></label>
+        <name>Project_plan_for_the_day__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCA Booking User --></label>
+        <name>RCA_Booking_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCD Booking User --></label>
+        <name>RCD_Booking_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recognising a &apos;job well done&apos; planned? --></label>
+        <name>Recognising_a_job_well_done_planned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Residential TC Wave Autumn --></label>
+        <name>Residential_TC_Wave_Autumn__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field to add any instructions that need to go to Staff or YP regarding this venue change. --></help>
+        <label><!-- Split Site Fix --></label>
+        <name>Split_Site_Fix__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start time --></label>
+        <name>Start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Confirmed</masterLabel>
+            <translation><!-- Confirmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not confirmed</masterLabel>
+            <translation><!-- Not confirmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not in use this year</masterLabel>
+            <translation><!-- Not in use this year --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned</masterLabel>
+            <translation><!-- Planned --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Suitable media/photography partner? --></label>
+        <name>Suitable_media_photography_partner__c</name>
+    </fields>
+    <fields>
+        <label><!-- TC Booking User --></label>
+        <name>TC_Booking_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team Name --></label>
+        <name>Team_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team Record type --></label>
+        <name>Team_Record_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team Skill --></label>
+        <name>Team_Skill__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team --></label>
+        <name>Team__c</name>
+        <relationshipLabel><!-- Bookings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Team for --></label>
+        <name>Team_for__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total rooms max --></label>
+        <name>Total_rooms_max__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is the transport plan? e.g. if minibus , where should the minibus park? etc --></help>
+        <label><!-- Transport plan --></label>
+        <name>Transport_plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Usage Account ID --></label>
+        <name>Usage_Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Usage RT (name) --></label>
+        <name>Usage_RT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Usage TypeL --></label>
+        <name>Usage_TypeLOOK__c</name>
+        <relationshipLabel><!-- Bookings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Usage Type --></label>
+        <name>Usage_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Venue Logistics --></label>
+        <name>Venue_Logistics__c</name>
+        <picklistValues>
+            <masterLabel>Confirmation completed, printed, sent</masterLabel>
+            <translation><!-- Confirmation completed, printed, sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confirmation received in writing</masterLabel>
+            <translation><!-- Confirmation received in writing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice paid</masterLabel>
+            <translation><!-- Invoice paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice received and sent to Finance</masterLabel>
+            <translation><!-- Invoice received and sent to Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venue booking on PO Log</masterLabel>
+            <translation><!-- Venue booking on PO Log --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wave APM --></label>
+        <name>Wave_APM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave Component End Date --></label>
+        <name>Wave_Component_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave Component Start Date --></label>
+        <name>Wave_Component_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave Dates --></label>
+        <name>Wave_Dates__c</name>
+        <relationshipLabel><!-- Bookings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Wave --></label>
+        <name>Wave__c</name>
+        <relationshipLabel><!-- Bookings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Wave number --></label>
+        <name>Wave_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wave record type --></label>
+        <name>Wave_record_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- What are we using this partner for? --></label>
+        <name>What_are_we_using_this_partner_for__c</name>
+    </fields>
+    <fields>
+        <help><!-- Appears on logistics form. --></help>
+        <label><!-- what time does the booking start --></label>
+        <name>What_date_time_should_the_wave_arrive__c</name>
+    </fields>
+    <fields>
+        <help><!-- Appears on logistics form. --></help>
+        <label><!-- what time does the booking end --></label>
+        <name>What_date_time_should_the_wave_leave__c</name>
+    </fields>
+    <fields>
+        <label><!-- What equipment will the venue provide? --></label>
+        <name>What_equipment_will_the_venue_provide__c</name>
+    </fields>
+    <fields>
+        <label><!-- What is the purpose of the day? --></label>
+        <name>What_is_the_purpose_of_the_day__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is the transport plan? If minibus , where should the minibus park? --></help>
+        <label><!-- What is the transport plan? If minibus , --></label>
+        <name>What_is_the_transport_plan_If_minibus__c</name>
+    </fields>
+    <fields>
+        <help><!-- Appears on logistics form. Leave blank if not applicable. --></help>
+        <label><!-- What is the wet weather plan? --></label>
+        <name>What_is_the_wet_weather_plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- What time are we meeting? --></label>
+        <name>What_time_are_we_meeting__c</name>
+    </fields>
+    <fields>
+        <label><!-- What time is the booking for? --></label>
+        <name>What_time_is_the_booking_for__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the time as you would want it displayed on an external Document --></help>
+        <label><!-- When should we arrive? --></label>
+        <name>When_should_we_arrive__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the Time here as it should be written on an external Document. --></help>
+        <label><!-- When should we leave? --></label>
+        <name>When_should_we_leave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Where should staff meet --></label>
+        <name>Where_should_staff_meet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Which Team is this for? --></label>
+        <name>Which_Team_is_this_for__c</name>
+        <picklistValues>
+            <masterLabel>d</masterLabel>
+            <translation><!-- d --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Which Wave is this for? --></label>
+        <name>Which_Wave_is_this_for__c</name>
+        <picklistValues>
+            <masterLabel>Birmingham 1</masterLabel>
+            <translation><!-- Birmingham 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birmingham 2</masterLabel>
+            <translation><!-- Birmingham 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birmingham 3</masterLabel>
+            <translation><!-- Birmingham 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birmingham 4</masterLabel>
+            <translation><!-- Birmingham 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birmingham 5</masterLabel>
+            <translation><!-- Birmingham 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birmingham 6</masterLabel>
+            <translation><!-- Birmingham 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birmingham 7</masterLabel>
+            <translation><!-- Birmingham 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birmingham 8</masterLabel>
+            <translation><!-- Birmingham 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birmingham 9</masterLabel>
+            <translation><!-- Birmingham 9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North London 1</masterLabel>
+            <translation><!-- North London 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North London 2</masterLabel>
+            <translation><!-- North London 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North London 3</masterLabel>
+            <translation><!-- North London 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North London 4</masterLabel>
+            <translation><!-- North London 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North London 5</masterLabel>
+            <translation><!-- North London 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North London 6</masterLabel>
+            <translation><!-- North London 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North London 7</masterLabel>
+            <translation><!-- North London 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North London 8</masterLabel>
+            <translation><!-- North London 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North London 9</masterLabel>
+            <translation><!-- North London 9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North West 1</masterLabel>
+            <translation><!-- North West 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North West 2</masterLabel>
+            <translation><!-- North West 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North West 3</masterLabel>
+            <translation><!-- North West 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North West 4</masterLabel>
+            <translation><!-- North West 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North West 5</masterLabel>
+            <translation><!-- North West 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North West 6</masterLabel>
+            <translation><!-- North West 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North West 7</masterLabel>
+            <translation><!-- North West 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North West 8</masterLabel>
+            <translation><!-- North West 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North West 9</masterLabel>
+            <translation><!-- North West 9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South London 1</masterLabel>
+            <translation><!-- South London 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South London 2</masterLabel>
+            <translation><!-- South London 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South London 3</masterLabel>
+            <translation><!-- South London 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South London 4</masterLabel>
+            <translation><!-- South London 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South London 5</masterLabel>
+            <translation><!-- South London 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South London 6</masterLabel>
+            <translation><!-- South London 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South London 7</masterLabel>
+            <translation><!-- South London 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South London 8</masterLabel>
+            <translation><!-- South London 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South London 9</masterLabel>
+            <translation><!-- South London 9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warwickshire 1</masterLabel>
+            <translation><!-- Warwickshire 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warwickshire 2</masterLabel>
+            <translation><!-- Warwickshire 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warwickshire 3</masterLabel>
+            <translation><!-- Warwickshire 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warwickshire 4</masterLabel>
+            <translation><!-- Warwickshire 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warwickshire 5</masterLabel>
+            <translation><!-- Warwickshire 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warwickshire 6</masterLabel>
+            <translation><!-- Warwickshire 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warwickshire 7</masterLabel>
+            <translation><!-- Warwickshire 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warwickshire 8</masterLabel>
+            <translation><!-- Warwickshire 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warwickshire 9</masterLabel>
+            <translation><!-- Warwickshire 9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West London 1</masterLabel>
+            <translation><!-- West London 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West London 2</masterLabel>
+            <translation><!-- West London 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West London 3</masterLabel>
+            <translation><!-- West London 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West London 4</masterLabel>
+            <translation><!-- West London 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West London 5</masterLabel>
+            <translation><!-- West London 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West London 6</masterLabel>
+            <translation><!-- West London 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West London 7</masterLabel>
+            <translation><!-- West London 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West London 8</masterLabel>
+            <translation><!-- West London 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West London 9</masterLabel>
+            <translation><!-- West London 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Which cluster is this for? --></label>
+        <name>Which_cluster_is_this_for_del__c</name>
+        <picklistValues>
+            <masterLabel>Birmingham</masterLabel>
+            <translation><!-- Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North London</masterLabel>
+            <translation><!-- North London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North West</masterLabel>
+            <translation><!-- North West --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South London</masterLabel>
+            <translation><!-- South London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warwickshire</masterLabel>
+            <translation><!-- Warwickshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West London</masterLabel>
+            <translation><!-- West London --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Which rooms have been booked? --></label>
+        <name>Which_rooms_have_been_booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Who are the Dragons? --></label>
+        <name>Who_are_the_Dragons__c</name>
+    </fields>
+    <fields>
+        <label><!-- booking status value --></label>
+        <name>booking_status_value__c</name>
+    </fields>
+    <fields>
+        <label><!-- challenge contact email --></label>
+        <name>challenge_contact_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- challenge contact mobile --></label>
+        <name>challenge_contact_mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- count --></label>
+        <name>count__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Big Challenge Partner --></label>
+        <name>Big_Challenge_Partner</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Dragon --></label>
+        <name>Dragon</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Dragon 1 --></label>
+        <name>Dragon_1</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Dragon 2 --></label>
+        <name>Dragon_2</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Dragon 3 --></label>
+        <name>Dragon_3</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Fundraising Partner --></label>
+        <name>Fundraising_Partner</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Graduation Usage --></label>
+        <name>Graduation_Usage</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Local Community Leader --></label>
+        <name>Local_Community_Leader</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PCKO --></label>
+        <name>PCKO</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PCKO Venue --></label>
+        <name>PCKO_Venue_2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PC Return --></label>
+        <name>PC_Return</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PC Return Venue --></label>
+        <name>PC_Return_Venue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PC Venue --></label>
+        <name>PC_Venue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Professional Visit --></label>
+        <name>Professional_Visit</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCA Big Challenge Partner --></label>
+        <name>RCA_Big_Challenge</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCA Partner --></label>
+        <name>RCA_Community_Partner</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCA Day Venue --></label>
+        <name>RCA_Day_Venue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCD Social Action Partner --></label>
+        <name>RCA_Partner_Challenge</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCA Usage --></label>
+        <name>RCA_Usage</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCD Campaign Expert --></label>
+        <name>RCD_Campaign_Expert</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCD Celebration --></label>
+        <name>RCD_Celebration</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCD Day Venue --></label>
+        <name>RCD_Day_Venue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCD Sponsorship Partner --></label>
+        <name>RCD_Fundraising_Partner</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCD Professional Partner --></label>
+        <name>RCD_Professional_Visit</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCD Usage --></label>
+        <name>RCD_Usage</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Res Acc --></label>
+        <name>Res_Acc</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sat RCA --></label>
+        <name>Sat_RCA</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sat RCA Day Venue --></label>
+        <name>Sat_RCA_Day_Venue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Showcase Usage --></label>
+        <name>Showcase_Usage</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TC Showcase Venue --></label>
+        <name>Showcase_Venue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Split RCD Venue --></label>
+        <name>Split_RCD_Venue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sponsorship Partner --></label>
+        <name>Sponsorship_Partner</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sports Usage --></label>
+        <name>Sports_Usage</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sun RCA --></label>
+        <name>Sun_RCA</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sun RCA Day Venue --></label>
+        <name>Sun_RCA_Day_Venue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TCKO --></label>
+        <name>TCKO</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TCKO Venue --></label>
+        <name>TCKO_Venue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TC Community Partner --></label>
+        <name>TC_Community_Partner</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TC Day Venue --></label>
+        <name>TC_Day_Venue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TC Evening Session Space Venue --></label>
+        <name>TC_Evening_Session_Space_Venue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TC Return Venue --></label>
+        <name>TC_Return_Venue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TC Sports Venue --></label>
+        <name>TC_Sports_Venue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TC Usage --></label>
+        <name>TC_Usage</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Test-Programmes --></label>
+        <name>Test_Programmes</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Team cannot be selected, this usage is for group event. --></errorMessage>
+        <name>Check_for_Group_Event</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Both dates entered must be on the same date. --></errorMessage>
+        <name>Graduation_datetimes_on_same_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Usage for this Booking is not connected to an MP Account. You therefore cannot add an MP Request --></errorMessage>
+        <name>MP_Booking</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You have tried to attach a Booking to a Usage with a differing Record Type. Please check the Type of both Usage and Booking and re-attach correctly. --></errorMessage>
+        <name>Prevent_attachment_to_incorrect_Usage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change the usage attached to this booking as there are journeys already ready for use. Please reset the transport orders before amending the booking. --></errorMessage>
+        <name>Prevent_changes_for_transport_orders</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sorry! You cannot change a booking name --></errorMessage>
+        <name>Prevent_name_changes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sorry - this booking appears to be of a different type to the usage attached to it. --></errorMessage>
+        <name>prevent_bookings_on_incorrect_usages</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Clone --></label>
+        <name>Clone</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Booking --></label>
+        <name>New_Booking</name>
+    </webLinks>
+</CustomObjectTranslation>

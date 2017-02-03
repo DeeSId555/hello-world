@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Sent to YP from Summer Cycle who didn&apos;t attend 3/11/2015</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Corporate: Didn&apos;t attend interviews</name>
+    <style>none</style>
+    <subject>HeadStart - Another employment opportunity</subject>
+    <textOnly>*|MC:SUBJECT|*
+
+Great news - Another employment opportunity!
+
+Dear {!HS_Activity__c.Young_Person__c},
+
+We hope you enjoyed half term.
+
+We were sorry you couldn&apos;t attend the interview with your chosen employer and wanted to tell you about 2 very exclusive opportunities, only offered to HeadStart candidates.
+
+
+
+
+
+HeadStart plan to host a Graduate Event for candidates who did not secure a HeadStart job in December, to celebrate all of your achievements and to support you in your next steps, with potential workshops on LinkedIn and CV building. If you would like to register your interest, please click here.  Spaces are limited.
+
+
+We hope to hear from you very soon.
+
+
+If you have any queries, please email headstart@the-challenge.org</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_$Job_Application__c.Date_applied__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$Job_Application__c.Contact_Name__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Job_Application__c.AM_HR_event_attendance__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>HR_Event__c.HR_Event_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Training Event</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$Job_Application__c.AM_HR_event_attendance__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$Job_Application__c.Date_applied__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>12/12/2012</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Job_Application__c.Senior_Associate_Mentor_Application_2012</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Ams trained</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$HR_Event__c$HR_Event_Attendance__c@HR_Event_Attendance__c.Job_Application__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>HR_Event__c.Event_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

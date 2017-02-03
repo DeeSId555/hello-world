@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>Speedmatching Panel Email</name>
+    <style>freeForm</style>
+    <subject>Be a Dragon with The Challenge</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+Tomorrow is your opportunity to be a Dragon in a Dragons Den with The Challenge.
+
+Charities and organisations from across the Midlands are coming to us to pitch. They want to be part of the summer programme, pitching their volunteering or development offer to NCS grads this summer. You can help decide whether they get to pitch on the programme or not!
+
+The pitch is taking place during the afternoon at our main base in the Jewellery Quarter of Birmingham.
+
+If you would like to take part please email liam.roseblade@the-challenge.org. There are only 6 spaces available so it is first come first serve. If you are successful I will email you with your time slot (either 1.40pm-2.50pm or 2.50pm-4.10pm).
+
+
+
+Have a great day!
+
+Liam</textOnly>
+    <type>html</type>
+</EmailTemplate>

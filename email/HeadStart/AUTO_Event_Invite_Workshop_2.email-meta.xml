@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>AUTO_Event_Invite(Workshop 2)</name>
+    <style>none</style>
+    <subject>Your Zendesk workshop is here!</subject>
+    <textOnly>Dear {!HS_Activity__c.YP_First_name_from_HS_Application_Form__c},
+
+We really hope you enjoyed volunteering! By giving up your free time and challenging yourself, you have gained the skills needed to help you stand out from your peers in job interviews and important applications such as UCAS. On top of that, you’ve managed to help make your local community a better place.
+
+By volunteering, you gain access to a series of HeadStart workshops designed to enhance your skills further and provide practical insights into working with {!HS_Activity__c.Final_Employer_choice__c}.
+
+
+
+
+
+What?  {!HS_YP_Attendance__c.HS_Event_Day__c}
+
+Where? {!HS_Event_Day__c.Event_Day_Location__c}
+
+When? {!HS_Event_Day__c.Event_Day_Date__c}
+
+Time? {!HS_Event_Day__c.Event_Day_Time__c}
+
+What’s it all about?
+
+{!HS_Event_Day__c.Event_Day_Description__c}
+
+Confirm your attendance
+
+
+Even if you can’t attend, select NO.  This will allow us to update your profile and trigger an invite to the next available workshop.
+
+Please note, we cannot guarantee that there will another workshop.
+
+
+
+We hope you enjoy the workshop.
+
+HeadStart</textOnly>
+    <type>custom</type>
+</EmailTemplate>

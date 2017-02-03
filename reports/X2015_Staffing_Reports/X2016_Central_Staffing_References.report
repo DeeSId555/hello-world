@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Job__c$Name</field>
+    </columns>
+    <columns>
+        <field>Job__c.Job_placements__r$Name</field>
+    </columns>
+    <columns>
+        <field>Job__c$PCKO_Date__c</field>
+    </columns>
+    <columns>
+        <field>Job__c$TCKO_Date__c</field>
+    </columns>
+    <columns>
+        <field>Job__c$TC_end_day__c</field>
+    </columns>
+    <columns>
+        <field>Job__c$RCD_End_date__c</field>
+    </columns>
+    <columns>
+        <field>Job__c.Job_placements__r$Role__c</field>
+    </columns>
+    <columns>
+        <field>Job__c.Job_placements__r$Standard_days_for_role__c</field>
+    </columns>
+    <columns>
+        <field>Job__c.Job_placements__r$RecordType</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Job__c.Job_placements__r$Contact__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Steph Muldoon</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job__c.Job_placements__r$Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Confirmed,Role finished</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2016 Central Staffing References</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Jobs_with_Job_Placements__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Job__c.Job_placements__r$RecordType</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Job__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

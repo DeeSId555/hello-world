@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_96463218</developerName>
+        <masterLabel>NCS Year</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>HS_Activity__c.NCS_Season__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Summer 2015</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Autumn 2015</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Feb 2015</sourceValue>
+            </sourceValues>
+            <value>2015</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Summer 2016</sourceValue>
+            </sourceValues>
+            <value>2016</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_60720698</developerName>
+        <masterLabel>Year</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>HS_Activity__c.NCS_Season__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Summer 2015</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Autumn 2015</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Feb 2015</sourceValue>
+            </sourceValues>
+            <value>2015</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Summer 2016</sourceValue>
+            </sourceValues>
+            <value>2016</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBarGrouped</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>HS_Activity__c.HS_Application_Status__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>BucketField_60720698</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>HS_Activity__c.NCS_Season__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.NCS_Wave_Started__c</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.NCS_Wave_number__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_96463218</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Date_HS_Application_pack_triggered__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>6/29/2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Date_HS_Application_pack_triggered__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>8/8/2016</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_60720698</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>HS_Activity__c.HS_Application_Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>HS 2016 C1 App status by year</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$HS_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

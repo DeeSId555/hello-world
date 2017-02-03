@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.School_s_zone__c</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_ZIP</field>
+    </columns>
+    <columns>
+        <field>Contact.NCS_ID__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3) AND (4 OR 5)</booleanFilter>
+        <criteriaItems>
+            <column>Contact.Season__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Summer 2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Assigned_Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Preston,Blackburn,Burnley,West Lancashire,Blackpool</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Reserved_Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Preston,Blackburn,Burnley,West Lancashire,Blackpool</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ADDRESS2_ZIP</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>M5,M60,M7,M8,M9,OL1,OL10,OL11,OL12,OL15,OL16,OL2,OL3,OL4,OL5,OL6,OL7,OL8,OL9,SK1,SK14,SK15,SK16,SK2,SK4,SK5,SK6,SK7,SK8,WA13,WA14,WA15,WA3,WN1,WN2,WN3,WN4,WN5,WN6,WN7</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ADDRESS2_ZIP</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>BL0,BL1,BL2,BL3,BL4,BL5,BL6,BL7,BL8,BL9,M1,M12,M13,M17,M18,M19,M2,M20,M21,M22,M23,M24,M25,M26,M27,M28,M29,M3,M30,M31,M32,M33,M34,M35,M38,M41,M43,M44,M45,M46</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Manc home address on Lanc wave</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

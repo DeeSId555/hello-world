@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email confirming job placement details</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>AM 6.1a (Pilot) TC Where to be when</name>
+    <style>formalLetter</style>
+    <subject>Your {!Job_placement__c.Role__c} role</subject>
+    <textOnly>Dear {!Job_placement__c.Contact_Name__c},
+
+Congratulations on joining our NCS team for 2016!
+
+You can have a huge impact on the success of our NCS programme this year.
+
+Just like our paid staff, it&apos;s important that the right people are in the right role. You&apos;ve done very well to successfully complete the application and assessment process.
+
+Here are the details for your placement:
+
+Role:
+
+{!Job_placement__c.Role__c}
+
+Your Wave:
+
+{!Job_placement__c.Job__c}
+
+Start Date:
+
+{!Job_placement__c.TC_KO_date__c} at 09:00am
+
+Location:
+
+{!Job_placement__c.AM_Address__c}
+
+Contact:
+
+{!Job_placement__c.Wave_APM__c}
+
+We&apos;ll call you before you start the role.
+
+If you have any questions in the meantime though, email or text me (details below).
+
+I hope you&apos;re excited about getting started!
+All the best,
+
+{!Job__c.Wave_APM__c}
+Assistant Programme Manager
+The Challenge
+{!Job_placement__c.APM_email1__c}
+{!Job_placement__c.APM_Number__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

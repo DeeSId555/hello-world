@@ -1,0 +1,4874 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChangeStatus</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloneAsChild</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloseCase</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MassClose</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewCase</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <businessProcesses>
+        <fullName>Central Comms</fullName>
+        <description>Managing comms that go via Central Communications</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Awaiting response from case originator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New email received %28case closed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New email received from case originator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New message</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Passed to TCS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passed to another department</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passed to finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passed to marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passed to other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passed to programmes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passed to staffing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reopened by them</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>We have responded to them %28closed%29</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <businessProcesses>
+        <fullName>GoogleApps support</fullName>
+        <description>For managing GoogleApps support cases</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Auto-closed due to lack of response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting response from case originator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting response from third party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed - Related to Open Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed - duplicate case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New email received %28case closed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New email received from case originator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New message</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>On hold %28non-urgent%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>We have responded to them %28closed%29</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <businessProcesses>
+        <fullName>Internal support</fullName>
+        <description>For managing internal support cases</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Auto-closed due to lack of response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting response from case originator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting response from third party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change request - completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed - Related to Open Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed - change request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed - duplicate case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New email received %28case closed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New email received from case originator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New message</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>New message - and assigned owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold %28non-urgent%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>We have responded to them %28closed%29</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <businessProcesses>
+        <fullName>Staffing</fullName>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Auto-closed due to lack of response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting response from case originator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting response from third party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New email received from case originator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New message</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>New message - and assigned owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reopened by them</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>We have responded to them %28closed%29</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <businessProcesses>
+        <fullName>YP</fullName>
+        <description>Young people messages support process</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>In progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New message</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>New message - and assigned owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reopened by them</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>We have responded to them %28closed%29</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AssetId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BusinessHoursId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Case_Age_In_Business_Hours__c</fullName>
+        <description>The total case age in business hours from open to close.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total case age in business hours from open to close.</inlineHelpText>
+        <label>Case Age In Business Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Comment_Updated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Case Comment Updated</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Case_Owner_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Case Owner Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ClosedDate</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Comments</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactFax</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContactMobile</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Contact_mobile_number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact.MobilePhone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact mobile number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Criticism__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Box checked if a criticism (not a proper complaint) is made</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check box if a criticism (not a proper complaint) is made. Example of criticism is saying that we did not call them back quickly</inlineHelpText>
+        <label>Criticism?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Date_auto_close_email_sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Date auto-close email sent</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_notification_of_existing_case_sent__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Date that the case was linked to an existing case. An email will have been sent to the case originator</inlineHelpText>
+        <label>Date notification of existing case sent</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_status_change_email_sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Date status change email sent</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_time_of_first_response__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows when the first response was sent</inlineHelpText>
+        <label>Date/time of first response</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Days_taken_to_close_case__c</fullName>
+        <externalId>false</externalId>
+        <formula>ClosedDate - CreatedDate</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days taken to close case</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Department__c</fullName>
+        <externalId>false</externalId>
+        <label>Department</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Central Inclusion</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Central Marketing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Curriculum</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customer Services</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Evolution</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Finance</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fundraising</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HeadStart</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HR</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Innovation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Legal</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Procurement</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Programmes - delivery</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Programmes - set up</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Programmes - TCS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Public Affairs</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Staffing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>StepForward</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Systems</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Hours_required__c</fullName>
+        <defaultValue>0.0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Notes the number of hours needed to resolve this case.
+Default is 5 minutes</inlineHelpText>
+        <label>Hours required</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Include_in_systems_review__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box, if the case and/or the resolution should be included in the review of the system</inlineHelpText>
+        <label>Include in systems review</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsClosedOnCreate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsEscalated</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsSelfServiceClosed</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsVisibleInSelfService</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Key_parent_case__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box if the parent case should appear in the Key Parent Case view</inlineHelpText>
+        <label>Key parent case</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Last_Status_Change__c</fullName>
+        <description>Stores the last time the status changed -- used by the Case Business Hours Tools package.</description>
+        <externalId>false</externalId>
+        <label>Last Status Change</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Last_comment_outgoing_email_sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Last comment/outgoing email sent</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Official_Complaint__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Box checked if it is a complaint</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check box if it is a complaint</inlineHelpText>
+        <label>Official Complaint?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Opt_out_of_escalations__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box if you do not want this case to be flagged up through the escalation rules. This should only be used when the case is receiving a lot of attention and does not need to be flagged.</inlineHelpText>
+        <label>Opt out of escalations</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Origin</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>QuestionId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Reason</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Response_time__c</fullName>
+        <externalId>false</externalId>
+        <formula>Date_time_of_first_response__c -  CreatedDate</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Response time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SLA_response_time_check__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Updates from Time with Support when case is first modified - this captures the first response time, regardless of the length of time needed to resolve the case.</inlineHelpText>
+        <label>SLA response time check</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Send_status_change_notification__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Tick this box to notify case originator of amendments to the case status</inlineHelpText>
+        <label>Send status change notification</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SourceId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedCompany</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedName</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Time_With_Customer__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>The time in business hours that this case spent in the hands of the customer.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The time in business hours that this case spent in the hands of the customer.</inlineHelpText>
+        <label>Time With Customer</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_With_Support__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>The time in business hours that this case spent with support.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The time in business hours that this case spent with support.</inlineHelpText>
+        <label>Time With Support</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Triage__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>For innovation team to indicate what priority a case has.</inlineHelpText>
+        <label>Triage</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <listViews>
+        <fullName>Alex_cases_checker</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <operation>equals</operation>
+            <value>Ruth</value>
+        </filters>
+        <filters>
+            <field>OWNER_NAME</field>
+            <operation>equals</operation>
+            <value>Ruth</value>
+        </filters>
+        <label>Alex cases checker</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Booking_System_cases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>TCN Booking System Website</value>
+        </filters>
+        <label>All Booking System cases</label>
+        <sharedTo>
+            <group>Central_Comms</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Ants_View_2</fullName>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>PARENT.CASE_NUMBER</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CREATED_DATE_DATE_ONLY</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <label>**Ants View 2</label>
+        <sharedTo>
+            <group>Systems</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Auto_Internal</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Auto Internal</label>
+        <queue>Auto_Internal</queue>
+    </listViews>
+    <listViews>
+        <fullName>Cases_date_search</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CREATED_DATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>8/13/2015 12:01 AM</value>
+        </filters>
+        <filters>
+            <field>CASES.CREATED_DATE</field>
+            <operation>lessOrEqual</operation>
+            <value>8/13/2015 11:59 PM</value>
+        </filters>
+        <label>Cases date search</label>
+    </listViews>
+    <listViews>
+        <fullName>Central_Comms_Tier_1</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CASES.EMAIL</field>
+            <operation>notEqual</operation>
+            <value>yes@ncsyes.co.uk</value>
+        </filters>
+        <label>***Contact Centre Tier 1</label>
+        <queue>Central_Comms_Tier_1</queue>
+        <sharedTo>
+            <group>Central_Comms</group>
+            <roleAndSubordinatesInternal>Telesales_Agent</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Central_Comms_Tier_3</fullName>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>***Contact Centre Tier 4</label>
+        <queue>Central_Comms_Tier_3</queue>
+        <sharedTo>
+            <group>Central_Comms</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Change_requests_Staffing</fullName>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.REASON</field>
+            <operation>equals</operation>
+            <value>Request for change to system</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>Closed - change request</value>
+        </filters>
+        <filters>
+            <field>Department__c</field>
+            <operation>equals</operation>
+            <value>Staffing</value>
+        </filters>
+        <label>Change requests - Staffing</label>
+        <sharedTo>
+            <group>Systems</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Closed_cases</fullName>
+        <columns>CASES.CLOSED_DATE</columns>
+        <columns>PARENT.CASE_NUMBER</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.REASON</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>OWNER_NAME</field>
+            <operation>contains</operation>
+            <value>Jacob Williams</value>
+        </filters>
+        <filters>
+            <field>CASES.CLOSED_DATE</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>Closed cases!</label>
+        <queue>Central_Comms_Tier_1</queue>
+        <sharedTo>
+            <group>Systems</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Closed_cases1</fullName>
+        <columns>CASES.CLOSED_DATE</columns>
+        <columns>PARENT.CASE_NUMBER</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.REASON</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.TheChallenge</value>
+        </filters>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>We have responded to them (closed),New email received (case closed)</value>
+        </filters>
+        <filters>
+            <field>OWNER_NAME</field>
+            <operation>contains</operation>
+            <value>Zainab</value>
+        </filters>
+        <label>Closed cases!</label>
+        <sharedTo>
+            <group>Systems</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Contact_Centre_Complaint</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.LAST_NAME</field>
+            <operation>contains</operation>
+            <value>Tang</value>
+        </filters>
+        <label>**Contact Centre -  left over cases</label>
+    </listViews>
+    <listViews>
+        <fullName>Contact_Centre_Date_Changes</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>CASES.SUBJECT</field>
+            <operation>contains</operation>
+            <value>date change</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>New message</value>
+        </filters>
+        <label>**Contact Centre - Date Changes</label>
+        <queue>Central_Comms_Tier_2</queue>
+    </listViews>
+    <listViews>
+        <fullName>Contact_Centre_Friend_Reuqests</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>CASES.SUBJECT</field>
+            <operation>contains</operation>
+            <value>friend,share,accommodation,group</value>
+        </filters>
+        <filters>
+            <field>CASES.SUBJECT</field>
+            <operation>notContain</operation>
+            <value>bursary,emergency</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>New message</value>
+        </filters>
+        <label>**Contact Centre - Friend Reuqests</label>
+        <queue>Central_Comms_Tier_2</queue>
+    </listViews>
+    <listViews>
+        <fullName>Contact_Centre_Programme_pack</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>CASES.SUBJECT</field>
+            <operation>contains</operation>
+            <value>absence</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>New message</value>
+        </filters>
+        <label>**Contact Centre - Absence Requests</label>
+        <queue>Central_Comms_Tier_2</queue>
+    </listViews>
+    <listViews>
+        <fullName>Contact_Centre_Programme_pack2</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>CASES.SUBJECT</field>
+            <operation>contains</operation>
+            <value>pack,packing list,programme pack,timetable,information</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>New message</value>
+        </filters>
+        <label>**Contact Centre - Programme pack</label>
+        <queue>Central_Comms_Tier_2</queue>
+    </listViews>
+    <listViews>
+        <fullName>Contact_Centre_Tier_1_NCST</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CASES.EMAIL</field>
+            <operation>contains</operation>
+            <value>yes@ncsyes.co.uk</value>
+        </filters>
+        <label>***Contact Centre Tier 1 NCST</label>
+        <queue>Central_Comms_Tier_1</queue>
+        <sharedTo>
+            <group>Central_Comms</group>
+            <roleAndSubordinatesInternal>Telesales_Agent</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Contact_Centre_Tier_2</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>NAME</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>CASES.EMAIL</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>CASES.CREATED_DATE</field>
+            <operation>lessOrEqual</operation>
+            <value>N_DAYS_AGO:2</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>New message</value>
+        </filters>
+        <label>***Contact Centre Tier 2</label>
+        <queue>Central_Comms_Tier_2</queue>
+        <sharedTo>
+            <group>Central_Comms</group>
+            <roleAndSubordinatesInternal>Telesales_Agent</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Contact_Centre_Tier_21</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>NAME</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>CASES.EMAIL</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>CASES.CREATED_DATE</field>
+            <operation>lessOrEqual</operation>
+            <value>5/4/2016 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>New message</value>
+        </filters>
+        <label>***Contact Centre Tier 2 KA Test</label>
+        <queue>Central_Comms_Tier_2</queue>
+        <sharedTo>
+            <group>Central_Comms</group>
+            <roleAndSubordinatesInternal>Telesales_Agent</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Contact_Centre_Tier_2_Received_7_Day</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>NAME</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>CASES.EMAIL</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>CASES.CREATED_DATE</field>
+            <operation>lessOrEqual</operation>
+            <value>N_DAYS_AGO:7</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>notEqual</operation>
+            <value>We have responded to them (closed),Passed to another department</value>
+        </filters>
+        <label>***Contact Centre Tier 2 Received &gt;7 Day</label>
+        <queue>Central_Comms_Tier_2</queue>
+        <sharedTo>
+            <group>Central_Comms</group>
+            <roleAndSubordinatesInternal>Telesales_Agent</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Contact_Centre_Urgent</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>CASES.SUBJECT</field>
+            <operation>contains</operation>
+            <value>urgent,important,complaint,upset,frustrated,annoyed</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>New message</value>
+        </filters>
+        <label>**Contact Centre - Urgent</label>
+        <queue>Central_Comms_Tier_2</queue>
+    </listViews>
+    <listViews>
+        <fullName>Contact_Centre_Withdrawals</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>CASES.SUBJECT</field>
+            <operation>contains</operation>
+            <value>cancelling,cant come,withdraw,attend,not going</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>New message</value>
+        </filters>
+        <label>**Contact Centre - Withdrawals</label>
+        <queue>Central_Comms_Tier_2</queue>
+    </listViews>
+    <listViews>
+        <fullName>Incoming_SMS_Cases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CASES.RECORDTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.SUBJECT</field>
+            <operation>contains</operation>
+            <value>SMS Case -</value>
+        </filters>
+        <label>Incoming SMS Cases</label>
+        <sharedTo>
+            <group>Central_Comms</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Internal_Support_CCT_Mktg</fullName>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <columns>CASES.SUBJECT</columns>
+        <columns>PARENT.CASE_NUMBER</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>Department__c</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <filters>
+            <field>Department__c</field>
+            <operation>equals</operation>
+            <value>CCT,Marketing</value>
+        </filters>
+        <filters>
+            <field>Department__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Internal Support - CCT Mktg</label>
+        <sharedTo>
+            <group>Systems</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Internal_Support_Open_Cases_All</fullName>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>Department__c</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>PARENT.CASE_NUMBER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <label>Internal Support - Open Cases - All</label>
+        <sharedTo>
+            <group>Systems</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Internal_Support_Open_Cases_All1</fullName>
+        <columns>CASES.SUBJECT</columns>
+        <columns>PARENT.CASE_NUMBER</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>Department__c</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>Hours_required__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <label>Internal Support - Open Cases - All</label>
+        <sharedTo>
+            <group>Systems</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Internal_Support_Open_Cases_All_Mo</fullName>
+        <columns>CASES.SUBJECT</columns>
+        <columns>PARENT.CASE_NUMBER</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>Department__c</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>Hours_required__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <filters>
+            <field>OWNER_NAME</field>
+            <operation>equals</operation>
+            <value>Mosleh Chowdhury</value>
+        </filters>
+        <label>Internal Support - Open Cases - All - Mo</label>
+        <sharedTo>
+            <group>Systems</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Internal_Support_Staffing_cases_open</fullName>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>PARENT.CASE_NUMBER</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>Department__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <filters>
+            <field>Department__c</field>
+            <operation>equals</operation>
+            <value>Staffing</value>
+        </filters>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Internal Support - Staffing cases (open)</label>
+        <sharedTo>
+            <group>Staffing_2013</group>
+            <group>Systems</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Internal_Support_Unassigned_Cases</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>Department__c</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>Date_time_of_first_response__c</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED_DATE</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Date_time_of_first_response__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <label>Internal Support - Cases without respons</label>
+        <sharedTo>
+            <group>Systems</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Internal_Support_Unassigned_Cases1</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>Department__c</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>Date_time_of_first_response__c</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>PARENT.CASE_NUMBER</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <label>Internal Support - Unassigned Cases</label>
+        <queue>Internal_Support_tier_1</queue>
+        <sharedTo>
+            <group>Systems</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Internal_Support_all_cases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>Department__c</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>OWNER_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>contains</operation>
+            <value>New message,Reopened by them,New message - and assigned owner,New email recei</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>notEqual</operation>
+            <value>New email received (case closed)</value>
+        </filters>
+        <filters>
+            <field>Department__c</field>
+            <operation>notEqual</operation>
+            <value>Staffing</value>
+        </filters>
+        <filters>
+            <field>Department__c</field>
+            <operation>notEqual</operation>
+            <value>Marketing</value>
+        </filters>
+        <label>Internal Support - all cases</label>
+        <sharedTo>
+            <group>Systems</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Internal_Support_closed_cases</fullName>
+        <columns>OWNER_NAME</columns>
+        <columns>PARENT.CASE_NUMBER</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CLOSED_DATE</columns>
+        <columns>CASES.REASON</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <label>Internal Support - closed cases</label>
+        <sharedTo>
+            <group>Systems</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Internal_Support_closed_cases_CCT_Mktg</fullName>
+        <booleanFilter>1 AND 2 AND (3 or 4) and 5</booleanFilter>
+        <columns>CASES.SUBJECT</columns>
+        <columns>PARENT.CASE_NUMBER</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>Department__c</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <filters>
+            <field>Department__c</field>
+            <operation>equals</operation>
+            <value>CCT,Marketing</value>
+        </filters>
+        <filters>
+            <field>Department__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>CASES.EMAIL</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>Internal Support - closed cases CCT Mktg</label>
+        <sharedTo>
+            <group>Systems</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Internal_Support_closed_cases_Ellen</fullName>
+        <columns>PARENT.CASE_NUMBER</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CLOSED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <filters>
+            <field>CASES.EMAIL</field>
+            <operation>equals</operation>
+            <value>ellen.rutherford@the-challenge.org</value>
+        </filters>
+        <filters>
+            <field>CASES.SUBJECT</field>
+            <operation>contains</operation>
+            <value>call list</value>
+        </filters>
+        <label>Internal Support - closed cases Ellen</label>
+        <sharedTo>
+            <group>Systems</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Internal_Support_closed_new_email</fullName>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>Department__c</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CLOSED_DATE</columns>
+        <columns>CASES.REASON</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>New email received (case closed)</value>
+        </filters>
+        <label>Internal Support - closed (new email)</label>
+        <sharedTo>
+            <group>Systems</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Internal_Support_closed_new_email_SN</fullName>
+        <columns>PARENT.CASE_NUMBER</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>Department__c</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CLOSED_DATE</columns>
+        <columns>CASES.REASON</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>New email received (case closed)</value>
+        </filters>
+        <filters>
+            <field>Department__c</field>
+            <operation>equals</operation>
+            <value>CCT,Marketing</value>
+        </filters>
+        <label>Internal Support - closed (new email) SN</label>
+        <sharedTo>
+            <group>Systems</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Internal_Support_new_cases</fullName>
+        <columns>PARENT.CASE_NUMBER</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>Department__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>New message,New message - and assigned owner</value>
+        </filters>
+        <label>Internal Support - new cases</label>
+        <sharedTo>
+            <group>Systems</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Internal_Support_open_cases_CCT</fullName>
+        <booleanFilter>1 AND 2 AND (3 or 4)</booleanFilter>
+        <columns>CASES.SUBJECT</columns>
+        <columns>PARENT.CASE_NUMBER</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>Department__c</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <filters>
+            <field>Department__c</field>
+            <operation>equals</operation>
+            <value>CCT,Customer Services</value>
+        </filters>
+        <filters>
+            <field>Department__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Internal Support - open cases CCT</label>
+        <sharedTo>
+            <group>Systems</group>
+            <role>Assistant_Central_Comms_Manager</role>
+            <role>Head_of_Central_Comms</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Internal_Support_open_cases_CCT_Mktg</fullName>
+        <booleanFilter>1 AND (2 or 3 or 5) and 4</booleanFilter>
+        <columns>CASES.SUBJECT</columns>
+        <columns>PARENT.CASE_NUMBER</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>Department__c</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <filters>
+            <field>Department__c</field>
+            <operation>equals</operation>
+            <value>Central Marketing,Customer Services,Sales</value>
+        </filters>
+        <filters>
+            <field>Department__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>New message</value>
+        </filters>
+        <label>Internal Support - open cases CCT Mktg</label>
+        <sharedTo>
+            <group>Systems</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Internal_Support_open_cases_Marketing</fullName>
+        <booleanFilter>1 AND 2 AND (3 or 4)</booleanFilter>
+        <columns>CASES.SUBJECT</columns>
+        <columns>PARENT.CASE_NUMBER</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>Department__c</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <filters>
+            <field>Department__c</field>
+            <operation>equals</operation>
+            <value>Marketing</value>
+        </filters>
+        <filters>
+            <field>Department__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Internal Support - open cases Marketing</label>
+        <sharedTo>
+            <group>Systems</group>
+            <role>MarketingManager</role>
+            <role>Marketing_Associate_Manager</role>
+            <role>Sales_Marketing_Director</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_open_cases2</fullName>
+        <booleanFilter>1 OR 2 OR 3 or 4</booleanFilter>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CONTACT.ACCOUNT</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>Department__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>New message,Awaiting response from case originator</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>Awaiting response from third party,New email received from case originator,New</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>In progress</value>
+        </filters>
+        <label>*****My open cases</label>
+    </listViews>
+    <listViews>
+        <fullName>My_reopened_cases_Systems_Support</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>PARENT.CASE_NUMBER</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>Department__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>New email received (case closed)</value>
+        </filters>
+        <label>My reopened cases (Systems Support)</label>
+        <sharedTo>
+            <group>Systems</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_unanswered_messages_KT_CHECK</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <operation>equals</operation>
+            <value>Natalie</value>
+        </filters>
+        <label>My unanswered messages_KT CHECK</label>
+    </listViews>
+    <listViews>
+        <fullName>New_email_received_Closed</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>New email received from case originator,New email received (case closed)</value>
+        </filters>
+        <label>New email received (Closed or Not)</label>
+    </listViews>
+    <listViews>
+        <fullName>Reopened_cases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CORE.USERS.FIRST_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.CLOSED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.TheChallenge</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>In progress,New email received (case closed)</value>
+        </filters>
+        <label>***Contact Centre Tier 3</label>
+    </listViews>
+    <listViews>
+        <fullName>Systems_Support_CS_Closed</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>PARENT.CASE_NUMBER</columns>
+        <columns>CASES.CLOSED</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.NAME</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.CLOSED_DATE</columns>
+        <columns>OWNER_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <filters>
+            <field>Department__c</field>
+            <operation>equals</operation>
+            <value>Customer Services</value>
+        </filters>
+        <filters>
+            <field>CASES.CLOSED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>N_DAYS_AGO:10</value>
+        </filters>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Systems Support - CS Closed</label>
+        <sharedTo>
+            <role>CS_Associate_Manager_Systems_Reporting</role>
+            <role>CS_Manager_Communications_Applications_Management</role>
+            <role>Head_of_Customer_Services</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Systems_Support_CS_Open</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.NAME</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.CLOSED_DATE</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.CLOSED</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <filters>
+            <field>Department__c</field>
+            <operation>equals</operation>
+            <value>Customer Services</value>
+        </filters>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>notEqual</operation>
+            <value>1</value>
+        </filters>
+        <label>Systems Support - CS Open</label>
+        <sharedTo>
+            <role>CS_Associate_Manager_Systems_Reporting</role>
+            <role>CS_Manager_Communications_Applications_Management</role>
+            <role>Head_of_Customer_Services</role>
+            <roleAndSubordinatesInternal>Head_of_Procurement_Innovation</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Systems_Support_Sales_Closed</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>PARENT.CASE_NUMBER</columns>
+        <columns>CASES.CLOSED</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.NAME</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.CLOSED_DATE</columns>
+        <columns>OWNER_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <filters>
+            <field>Department__c</field>
+            <operation>equals</operation>
+            <value>Sales</value>
+        </filters>
+        <filters>
+            <field>CASES.CLOSED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>N_DAYS_AGO:10</value>
+        </filters>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Systems Support - Sales Closed</label>
+        <sharedTo>
+            <role>CS_Associate_Manager_Systems_Reporting</role>
+            <role>CS_Manager_Communications_Applications_Management</role>
+            <role>Head_of_Customer_Services</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Systems_Support_Sales_Open</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>PARENT.CASE_NUMBER</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.NAME</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.CLOSED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <filters>
+            <field>Department__c</field>
+            <operation>equals</operation>
+            <value>Sales</value>
+        </filters>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>notEqual</operation>
+            <value>1</value>
+        </filters>
+        <label>Systems Support - Sales Open</label>
+        <sharedTo>
+            <role>CS_Associate_Manager_Systems_Reporting</role>
+            <role>CS_Manager_Communications_Applications_Management</role>
+            <role>Head_of_Customer_Services</role>
+            <role>MarketingManager</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Systems_Support_Staffing_Closedcases</fullName>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>PARENT.CASE_NUMBER</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>Department__c</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <filters>
+            <field>Department__c</field>
+            <operation>equals</operation>
+            <value>Staffing</value>
+        </filters>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Systems Support - Staffing Closed</label>
+        <sharedTo>
+            <group>Staffing_2013</group>
+            <group>Systems</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Systems_Support_Staffing_Open</fullName>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>PARENT.CASE_NUMBER</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>Department__c</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Systems_support</value>
+        </filters>
+        <filters>
+            <field>Department__c</field>
+            <operation>equals</operation>
+            <value>Staffing</value>
+        </filters>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Systems Support - Staffing Open</label>
+        <sharedTo>
+            <group>Staffing_2013</group>
+            <group>Systems</group>
+        </sharedTo>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>GoogleApps_support</fullName>
+        <active>true</active>
+        <businessProcess>GoogleApps support</businessProcess>
+        <description>For managing GoogleApps support</description>
+        <label>GoogleApps support</label>
+        <picklistValues>
+            <picklist>Department__c</picklist>
+            <values>
+                <fullName>Central Inclusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Central Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Curriculum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Evolution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fundraising</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HeadStart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Innovation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Legal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Procurement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programmes - TCS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programmes - delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programmes - set up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Affairs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staffing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>StepForward</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Created By Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Person</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telephone conversation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Voicemail message</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Data change request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Didn%27t read guidance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to error in guidance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to human error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to insufficient SF knowledge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to insufficient guidance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to insufficient training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Request for change to system</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent to us in error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Systems%27 error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical issue - SF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical issue - non-SF</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Accounts %26 Contacts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Allocation Tool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Apex trigger</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attendance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Available Dates Booking Form %28Staffing%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bookings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CCT dashboard changes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campaigns</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cases - CCT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cases - Staffing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clicktools</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conga - Document generation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conga - Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conga - Programmes Target Tracking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conga - Staffing Target Tracking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dashboard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data entry issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DataLoader</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dedupe request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DemandTools</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Drawloop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Essential Info Form %28Staffing%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expenses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Feedback %28summer staff and AMs%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Formula%2FField Work</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General user functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Graduation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incidents</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Job Applications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jobs and Job Placements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistics Forms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Upload</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing booking website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing dashboard changes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metrics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NCS Data Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NCS Payments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non SF - other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-SF - Google Apps</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OBS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Password re-set</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payroll approvals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payroll processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Permissions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PostCode Finder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programmes dashboard changes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Group Membership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reports</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAW - Application form</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAW - CMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAW - Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAW - SEBS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAW - Timetables</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAW - Work preference selection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SF User Admin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMS Magic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signposting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staffing dashboard changes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staffing website %28aka WTBW%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surveys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCS Associate Mentors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCS Cluster change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCS Mentor Portal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCS Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Teams</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transport Orders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Usages</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Views</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wave Priorities</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waves</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Workflows</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>iContact</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Staffing</fullName>
+        <active>true</active>
+        <businessProcess>Staffing</businessProcess>
+        <label>Staffing SouthLon/Surrey</label>
+        <picklistValues>
+            <picklist>Department__c</picklist>
+            <values>
+                <fullName>Customer Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fundraising</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programmes - set up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staffing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telephone conversation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Text message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Voicemail message</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Due to lack of info in email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to lack of info on website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to misunderstanding of info given</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to technical error in system</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Feedback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent to us in error</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Assessment query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRB query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expenses query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General enquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NCS Payments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payroll%2Ftax query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejection query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Status of my application</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wave allocation query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Withdrawal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Work dates query</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Staffing_NW</fullName>
+        <active>true</active>
+        <businessProcess>Staffing</businessProcess>
+        <label>Staffing NW</label>
+        <picklistValues>
+            <picklist>Department__c</picklist>
+            <values>
+                <fullName>Customer Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fundraising</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programmes - set up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staffing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telephone conversation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Text message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Voicemail message</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Due to lack of info in email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to lack of info on website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to misunderstanding of info given</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to technical error in system</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Feedback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent to us in error</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Assessment query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRB query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expenses query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General enquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NCS Payments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payroll%2Ftax query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejection query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Status of my application</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wave allocation query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Withdrawal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Work dates query</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Staffing_North_London</fullName>
+        <active>true</active>
+        <businessProcess>Staffing</businessProcess>
+        <label>Staffing North London</label>
+        <picklistValues>
+            <picklist>Department__c</picklist>
+            <values>
+                <fullName>Customer Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fundraising</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programmes - set up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staffing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telephone conversation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Text message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Voicemail message</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Due to lack of info in email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to lack of info on website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to misunderstanding of info given</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to technical error in system</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Feedback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent to us in error</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Assessment query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRB query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expenses query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General enquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payroll%2Ftax query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejection query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Status of my application</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wave allocation query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Withdrawal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Work dates query</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Staffing_West_London</fullName>
+        <active>true</active>
+        <businessProcess>Staffing</businessProcess>
+        <label>Staffing West London</label>
+        <picklistValues>
+            <picklist>Department__c</picklist>
+            <values>
+                <fullName>Customer Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fundraising</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programmes - set up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staffing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telephone conversation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Text message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Voicemail message</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Due to lack of info in email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to lack of info on website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to misunderstanding of info given</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to technical error in system</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Feedback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent to us in error</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Assessment query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRB query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expenses query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General enquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payroll%2Ftax query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejection query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Status of my application</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wave allocation query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Withdrawal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Work dates query</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Staffing_West_Midlands</fullName>
+        <active>true</active>
+        <businessProcess>Staffing</businessProcess>
+        <label>Staffing West Midlands</label>
+        <picklistValues>
+            <picklist>Department__c</picklist>
+            <values>
+                <fullName>Customer Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fundraising</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programmes - set up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staffing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telephone conversation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Text message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Voicemail message</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Due to lack of info in email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to lack of info on website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to misunderstanding of info given</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to technical error in system</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Feedback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent to us in error</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Assessment query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRB query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expenses query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General enquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payroll%2Ftax query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejection query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Status of my application</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wave allocation query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Withdrawal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Work dates query</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Staffing_general</fullName>
+        <active>true</active>
+        <businessProcess>Staffing</businessProcess>
+        <label>Staffing - general</label>
+        <picklistValues>
+            <picklist>Department__c</picklist>
+            <values>
+                <fullName>Customer Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fundraising</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programmes - set up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staffing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telephone conversation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Text message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Voicemail message</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Due to lack of info in email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to lack of info on website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to misunderstanding of info given</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to technical error in system</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Feedback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent to us in error</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Assessment query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRB query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expenses query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General enquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NCS Payments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payroll%2Ftax query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejection query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Status of my application</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wave allocation query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Withdrawal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Work dates query</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Systems_support</fullName>
+        <active>true</active>
+        <businessProcess>Internal support</businessProcess>
+        <description>Internal support cases</description>
+        <label>Systems support</label>
+        <picklistValues>
+            <picklist>Department__c</picklist>
+            <values>
+                <fullName>Central Inclusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Central Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Curriculum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Evolution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fundraising</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HeadStart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Innovation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Legal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Procurement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programmes - TCS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programmes - delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programmes - set up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Affairs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staffing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>StepForward</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Created By Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Person</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telephone conversation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Voicemail message</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Data change request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Didn%27t read guidance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to error in guidance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to human error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to insufficient SF knowledge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to insufficient guidance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Due to insufficient training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Request for change to system</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent to us in error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Systems%27 error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical issue - SF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical issue - non-SF</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Triage__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Accounts %26 Contacts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Allocation Tool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Apex trigger</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attendance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Available Dates Booking Form %28Staffing%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bookings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CCT dashboard changes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campaigns</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cases - CCT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cases - Staffing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clicktools</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conga - Document generation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conga - Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conga - Programmes Target Tracking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conga - Staffing Target Tracking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dashboard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data entry issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DataLoader</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dedupe request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DemandTools</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Drawloop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Essential Info Form %28Staffing%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expenses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Feedback %28summer staff and AMs%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Formula%2FField Work</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General user functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Geographic Sharing Rules</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Graduation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incidents</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inclusions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Job Applications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jobs and Job Placements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistics Forms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Upload</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing booking website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing dashboard changes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metrics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NCS Data Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NCS Payments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natterbox</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non SF - other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-SF - Google Apps</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OBS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Password re-set</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payroll approvals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payroll processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Permissions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PostCode Finder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programmes dashboard changes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Group Membership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reports</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAW - Application form</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAW - CMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAW - Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAW - SEBS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAW - Timetables</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAW - Work preference selection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SF User Admin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMS Magic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signposting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staffing dashboard changes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staffing website %28aka WTBW%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surveys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCS Associate Mentors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCS Cluster change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCS Mentor Portal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCS Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Teams</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transport Orders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Usages</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Views</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wave Priorities</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waves</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Workflows</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>iContact</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>TCS</fullName>
+        <active>true</active>
+        <businessProcess>YP</businessProcess>
+        <label>TCS</label>
+        <picklistValues>
+            <picklist>Department__c</picklist>
+            <values>
+                <fullName>Customer Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fundraising</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programmes - set up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staffing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Passed on by teacher</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCN Main Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCS Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telephone conversation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Text message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Voicemail message</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Breakdown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Equipment Complexity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Equipment Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Feedback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Installation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>General enquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Graduation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NCS Payments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Status of my application</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timing of my Challenge</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>TheChallenge</fullName>
+        <active>true</active>
+        <businessProcess>Central Comms</businessProcess>
+        <description>The Challenge</description>
+        <label>TheChallenge</label>
+        <picklistValues>
+            <picklist>Department__c</picklist>
+            <values>
+                <fullName>Customer Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fundraising</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programmes - set up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staffing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Passed on by teacher</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCN Booking System Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCN Main Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCS Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telephone conversation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Text message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Voicemail message</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Breakdown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Equipment Complexity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Equipment Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Feedback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Installation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Absence Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Application</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Date changes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Friend Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General enquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Graduation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Graduation Certificates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Headstart%2FStepforward</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inclusion%2Fmedical%2Fbehavioural</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Info Packs%2FIE inquiries</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Junk%2FSpam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistics of my Challenge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NCS Payments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NCS Trust issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not their NCS provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OBS help%2Fissues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Department</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programmes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refunds</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staffing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Status of my application</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test emails</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Withdrawal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>CASES.SUBJECT</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.PRIORITY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.STATUS</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.SUBJECT</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.CREATED_DATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.PRIORITY</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.STATUS</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.SUBJECT</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.STATUS</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.PRIORITY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.CASE_NUMBER</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>Force_case_owner_change</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( OwnerId = &quot;00GC0000002BjIQ&quot;, NOT(ISPICKVAL(  Status , &quot;New message&quot;)))</errorConditionFormula>
+        <errorMessage>Please change the Case Owner over to yourself or the relevant person.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Hours_required</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(NOT(ISBLANK(TEXT( Reason ))),  OR(ISPICKVAL(Department__c , &quot;Programmes - Summer prog&quot;), ISPICKVAL( Department__c , &quot;Staffing&quot;)),  Hours_required__c = 0.0)</errorConditionFormula>
+        <errorDisplayField>Hours_required__c</errorDisplayField>
+        <errorMessage>Please enter an estimate of how long it took you to investigate and resolve the case</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>APXTConga4__Conga_Composer_OAuth</fullName>
+        <availability>online</availability>
+        <description>*** DO NOT USE THIS BUTTON ON A PAGE LAYOUT *** 
+
+OAuth buttons require additional setup. Please see the Composer Installation Guide for more details.
+
+COPY THE URL FROM THIS BUTTON and paste it into your own custom button or link. Then add optional parameters to finely tune the button&apos;s behavior. See the Composer Configuration Guide for details.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>660</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Conga Composer (OAuth)</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/APXTConga4__Conga_Composer
+?id={!Case.Id}</url>
+        <width>900</width>
+    </webLinks>
+    <webLinks>
+        <fullName>APXTConga4__Conga_Mail_Merge</fullName>
+        <availability>online</availability>
+        <description>*** DO NOT USE THIS BUTTON ON A PAGE LAYOUT *** 
+
+COPY THE URL FROM THIS BUTTON and paste it into your own custom button or link. Then add optional parameters to finely tune the button&apos;s behavior. See the Conga Configuration Guide for details.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>false</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>450</height>
+        <isResizable>false</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Conga Composer</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!Case.Id}</url>
+        <width>625</width>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__LOOP</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>800</height>
+        <linkType>url</linkType>
+        <masterLabel>Create PDF</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/loop__loop?eid={!Case.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__LOOP_Merge</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>1000</height>
+        <linkType>url</linkType>
+        <masterLabel>Deprecated LM</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/loop__loopmerge?eid={!Case.Id}&amp;accountId={!Case.AccountId}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__LOOPlus</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>1200</height>
+        <linkType>url</linkType>
+        <masterLabel>Run DDP</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/loop__looplus?eid={!Case.Id}&amp;accountId={!Case.AccountId}&amp;sessionId={!$Api.Session_ID}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__Mass_LOOP_Merge</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Deprecated Mass LM</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)}
+var ids = {!GETRECORDIDS($ObjectType.Case)};
+var url = &quot;/apex/loop__loopmerge?retURL=&quot;+encodeURI(window.location.pathname+window.location.search);
+url += &quot;&amp;recordIds=&quot;+ids.join(&apos;,&apos;);
+window.location.href = url;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__Mass_LOOPlus</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Run DDP</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)}
+var ids = {!GETRECORDIDS($ObjectType.Case)};
+if (!ids || ids.length &lt; 1)
+    alert(&apos;Please select at least one record.&apos;);
+else
+{
+    var url = &quot;/apex/loop__masslooplus?retURL=&quot; + encodeURI(window.location.pathname+window.location.search) + &quot;&amp;contactfield=&quot;;
+    url += &quot;&amp;recordIds=&quot;+ids.join(&apos;,&apos;);
+    url += &quot;&amp;sessionId={!$Api.Session_ID}&quot;;
+    window.location.href = url;
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Send_SMS</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Send SMS</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/apex.js&quot;)}
+
+var packagePrefix = &quot;smagicinteract__&quot;;
+var recordType = &apos;Case&apos;;
+var idToUpdate = &apos;{!Case.Id}&apos;
+var nameField = &apos;CaseNumber&apos;;
+var mobileField = &apos;Contact_mobile_number__c&apos;; 
+var queryString = parent.window.location.pathname;
+if (parent.window.location.search){
+queryString = queryString + parent.window.location.search
+}
+
+var url = &quot;/apex/&quot;+packagePrefix+&quot;BulkSendSMS?retURL=&quot;+queryString+&quot;&amp;nameField=&quot; +nameField +&quot;&amp;phoneField=&quot;+ mobileField + &quot;&amp;objectType=&quot;+recordType+&quot;&amp;recordIds=&quot;+ idToUpdate;
+
+parent.window.location = url;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>UpsellCrosssellOpportunity</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Up-sell / Cross-sell Opportunity</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>https://na1.salesforce.com/opp/oppedit.jsp?accid={!Account_ID}&amp;opp3=Up-sell+/+Cross-sell&amp;opp5=Existing+Customer&amp;opp6=Customer+Support</url>
+    </webLinks>
+    <webLinks>
+        <fullName>dsfs__Send_with_DocuSign</fullName>
+        <availability>online</availability>
+        <description>This button will initiate a DocuSign Envelope that is linked to the Case</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Send with DocuSign</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/apex/dsfs__DocuSign_JavaScript&quot;)}
+DocuSign_CreateEnvelope();</url>
+    </webLinks>
+</CustomObject>

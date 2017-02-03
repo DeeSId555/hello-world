@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>MT sends to AM when a shortlist of CVs are ready for review</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>INTERNAL: Candidate CVs ready for review</name>
+    <style>none</style>
+    <subject>INTERNAL: Candidate CVs ready for review</subject>
+    <textOnly>INTERNAL EMAIL ALERT
+
+
+Subject: Candidate CVs ready for review  - 36 hour turnaround
+
+SF event component: {!Step_Forward_Event_Component__c.Name}
+
+Dear Account Manager, {!Step_Forward_Event_Component__c.SF_Account_Owner__c},
+
+
+The matching team have suggested a number of candidates for the following job.  Please review their CVs and update ‘Interview Status’ in SF Associate Attendance object in the next 36 hours with
+
+&apos;Shortlisted&apos; OR
+&apos;Shortlisted - Reserve&apos; OR
+&apos;Not Shortlisted&apos;
+
+IF you have selected ‘Not Shortlisted’ you can chose to check the box for ‘Request Replacement’ in SFAA if you would like Matching Team to find another candidate.
+
+IF you have selected &apos;Shortlisted - Reserve&apos;, the matching team will invite one of these YPs should another candidate not be available to attend.
+
+
+Step Forward Event Component details
+
+SF event component: {!Step_Forward_Event_Component__c.Name}
+
+Employer: {!Step_Forward_Event_Component__c.Employer__c}
+
+Event Date {!Step_Forward_Event_Component__c.Event_Date_Matching__c}
+
+Suggested no of YP to review {!Step_Forward_Event_Component__c.Suggested_number_of_CVs_to_review__c}
+
+
+Best wishes,
+
+
+Matching Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

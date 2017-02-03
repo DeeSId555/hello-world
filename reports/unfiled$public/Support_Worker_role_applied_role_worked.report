@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.Job_Applications__r$Id</field>
+    </columns>
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r$Staffing_Zone__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r$Role_to_assess_for__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r.Job_placements__r$Role__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r.Job_placements__r$Status__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r$RecordType</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Applications__r.Job_placements__r$RecordType</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Job_Applications__r$Role_to_assess_for__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Support Worker</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Job_Applications__r.Job_placements__r$Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Confirmed,Dismissed - see dismissal date,Role finished,Started during wave - see ad hoc start date</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Job_Applications__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Job_Application__c.Pre_screen_2014,Job_Application__c.Post_screen_2014</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Job_Applications__r$Staffing_Zone__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>North West,Midlands</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Support Worker role applied/role worked</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_Job_Applications_with_Job_Placements__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact.Job_Applications__r.Job_placements__r$Assignment_start_date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

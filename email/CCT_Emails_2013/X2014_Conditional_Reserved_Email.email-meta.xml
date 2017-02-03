@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2014 Conditional Reserved Email</name>
+    <style>none</style>
+    <subject>NCS with The Challenge - Next steps for your application</subject>
+    <textOnly>NCS POWERED BY THE CHALLENGE
+
+Next steps for your application
+
+
+Dear Parent/ Guardian of {!Contact.Name},
+
+Thank you for starting your application for {!Contact.FirstName} to take part in NCS with The Challenge. We have temporarily reserved a provisional place for {!Contact.FirstName}, but you still need to provide the following missing items:
+
+{!Contact.CAL_Missing_Items_Criteria_Paragraph__c}
+If you have any questions, you can email us at contact@the-challenge.org or call us on 0203 542 2400.
+
+Please provide these items as soon as possible. We will let you know if you have a confirmed place on the programme once we have received and reviewed all items and information for your application. Please note that temporarily reserved places are not confirmed and may be withdrawn. Your place is not confirmed until you receive confirmation in writing from us by either email or letter.
+
+If {!Contact.FirstName} can no longer take part, please let us know straight away so that we can give this provisional place to another young person.
+
+We hope to hear from you very soon so we can progress with your application.
+
+Yours sincerely,
+
+
+
+Rebecca Carter - Director at The Challenge
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Job_Application__c$Contact__c.Id</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c$Contact_Name__c</field>
+    </columns>
+    <columns>
+        <field>Job_Application__c.Activities$Subject</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Job_Application__c$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Job_Application__c.Job_Application_post_screen_2012</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Job_Application__c$Date_staff_thank_you_email_sent__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Invited to reapply 2012</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Job_Apps_with_Activity_History__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Job_Application__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

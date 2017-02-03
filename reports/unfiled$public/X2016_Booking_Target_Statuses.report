@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_43477099</developerName>
+        <masterLabel>Booking Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Cluster__c.Waves__r.Bookings__r$Status__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Confirmed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Not in use this year</sourceValue>
+            </sourceValues>
+            <value>Confirmed</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Not confirmed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Planned</sourceValue>
+            </sourceValues>
+            <value>Not Confirmed</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_47447987</developerName>
+        <masterLabel>Booking Type</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Cluster__c.Waves__r.Bookings__r$Usage_Type__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Graduation Usage 2016</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>PC Return Venue 2016</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>PC Venue 2016</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>PCKO Venue 2016</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>RCA Day Venue 2016</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>RCD Day Venue 2016</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Res Acc 2016</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>TC Day Venue 2016</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>TC Evening Session Space Venue 2016</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>TC Showcase Venue 2016</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>TC Sports Venue 2016</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>TCKO Venue 2016</sourceValue>
+            </sourceValues>
+            <value>Venues</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Dragon 2016</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>RCA Partner 2016</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>RCD Professional Partner 2016</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>RCD Social Action Partner 2016</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>TC Community Partner 2016</sourceValue>
+            </sourceValues>
+            <value>Partners</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Cluster__c.Waves__r$Id</field>
+    </columns>
+    <columns>
+        <field>Cluster__c.Waves__r.Bookings__r$Id</field>
+    </columns>
+    <columns>
+        <field>Cluster__c.Waves__r$Zone__c</field>
+    </columns>
+    <columns>
+        <field>Cluster__c.Waves__r$Half_Clusters__c</field>
+    </columns>
+    <columns>
+        <field>Cluster__c.Waves__r$Name</field>
+    </columns>
+    <columns>
+        <field>Cluster__c.Waves__r$Wave_number__c</field>
+    </columns>
+    <columns>
+        <field>Cluster__c.Waves__r.Bookings__r$Team__c</field>
+    </columns>
+    <columns>
+        <field>Cluster__c.Waves__r.Bookings__r$Name</field>
+    </columns>
+    <columns>
+        <field>Cluster__c.Waves__r.Bookings__r$Partner_or_Venue__c</field>
+    </columns>
+    <columns>
+        <field>Cluster__c.Waves__r.Bookings__r$RecordType</field>
+    </columns>
+    <columns>
+        <field>Cluster__c.Waves__r.Bookings__r$Booking_Date_Formula__c</field>
+    </columns>
+    <columns>
+        <field>Cluster__c.Waves__r.Bookings__r$Wave_Component_Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>Cluster__c.Waves__r.Bookings__r$Wave_Component_End_Date__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Cluster__c.Waves__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Wave__c.X2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Cluster__c.Waves__r.Bookings__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Booking__c.Res_Acc,Booking__c.PC_Venue</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_47447987</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_43477099</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Cluster__c.Waves__r.Bookings__r$Cluster_Pull__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>2016 Booking Target Statuses</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Clusters_waves_and_bookings__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Cluster__c$Challenge_Action_Leader_Training_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

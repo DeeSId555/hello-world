@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Step_Forward_Job_Placement__c$Step_Forward_Activity__c.Associate__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job_Placement__c$Step_Forward_Activity__c.Current_Pathway__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job_Placement__c$Step_Forward_Placement_Status__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job_Placement__c$Date_General_Info_returned_from_Assoc__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job_Placement__c$Date_Learning_Agreement_returned_from_YP__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job_Placement__c$Date_Code_of_Conduct_returned_frm_Assoc__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Job_Placement__c$Date_BKSB_completed_by_Associate__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Step_Forward_Job_Placement__c$Step_Forward_Activity__c.Matching_date_Assoc_allocated_to__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>8/5/2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Step_Forward_Job_Placement__c$Step_Forward_Activity__c.Outcome_call_result__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Spoke to YP - accepted</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Step_Forward_Job_Placement__c$Step_Forward_Placement_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contracts started,Contracts completed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Step_Forward_Job_Placement__c$Step_Forward_Activity__c.Current_Pathway__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Working with Children</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>YPs matched after info eve</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Step_Forward_Job_Placements__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Step_Forward_Job_Placement__c$CreatedDate</dateColumn>
+        <endDate>2016-07-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-04-01</startDate>
+    </timeFrameFilter>
+</Report>

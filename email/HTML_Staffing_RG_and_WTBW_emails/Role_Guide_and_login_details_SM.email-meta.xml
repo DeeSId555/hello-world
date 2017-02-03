@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Role guide and logins for SM</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Role Guide and login details SM</name>
+    <style>none</style>
+    <subject>Role Guide and where to be when information</subject>
+    <textOnly>The Challenge Network
+
+Dear {!Contact.FirstName},
+
+I am writing to you with further information about your work with The Challenge this summer.
+
+Enclosed are the login details to the staff section of The Challenge website. This will allow you to view and download the Where to be When document which outlines the key times and venues for your programme. This information is subject to change, and we will let you know if any of the details change prior to your starting.
+
+Username: {!Contact.Email}
+Login pin: {!Contact.Login_PIN__c}
+
+Please find your Role Guide attached for your {!Job_Application__c.Role_to_assess_for__c} position with The Challenge this summer.  Please read this carefully so that you have a good understanding of the role and of the aims of The Challenge programme.  Further information on this will be provided at your training session.
+
+If you have any questions, please feel free to contact me.
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.OwnerEmail}
+
+WWW.THE-CHALLENGE.ORG    /thechallengeNETWORK
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

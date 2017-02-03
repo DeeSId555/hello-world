@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>PAYBASE2__Payment__c$PAYBASE2__Created_From_Contact__c.Name</field>
+    </columns>
+    <columns>
+        <field>PAYBASE2__Payment__c$Name</field>
+    </columns>
+    <columns>
+        <field>PAYBASE2__Payment__c$PAYBASE2__Status__c</field>
+    </columns>
+    <description>YPs who have attempted to make payment but it did not go through.</description>
+    <filter>
+        <criteriaItems>
+            <column>PAYBASE2__Payment__c$PAYBASE2__Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>CANCELLED</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PAYBASE2__Payment__c$PAYCP2__Address_Postcode__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>B</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>PAYBASE2__Payment__c$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>PAYBASE2__Payment__c$PAYCP2__Address_County__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>PAYBASE2__Payment__c$PAYCP2__Address_Postcode__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Payonomy Status Cancelled YP 2016</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Payonomy_Payments_with_Contacts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>PAYBASE2__Payment__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-01-01</startDate>
+    </timeFrameFilter>
+</Report>

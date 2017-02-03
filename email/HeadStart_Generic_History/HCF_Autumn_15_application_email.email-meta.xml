@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>HCF Autumn 15 - application email</name>
+    <style>none</style>
+    <subject>HeadStart applications are open!</subject>
+    <textOnly>*|MC:SUBJECT|*
+
+
+
+{!Contact.FirstName},
+
+
+Applications for HeadStart are now open!
+
+
+Click HERE to apply.
+
+
+The deadline for applications is midnight Sunday 22nd November 2015. Places with HeadStart partners are limited so apply early to avoid disappointment. You will need either your email address or your NCS ID, and the below PIN to log in to the site. If you have logged in to a NCS site before, you can use your current password to log in:
+
+
+Email Address: {!Contact.Email}
+
+NCS ID: {!Contact.NCS_ID__c}
+
+PIN: {!Contact.Login_Password__c}
+
+
+If you have any difficulties or need to ask us a question, please email us at headstart@the-challenge.org
+
+
+We look forward to receiving your application!
+
+
+The HeadStart team
+
+follow on Twitter | friend on Facebook
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. _Registered charity no. 1129239.
+© The Challenge Network.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

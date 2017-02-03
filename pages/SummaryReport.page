@@ -1,0 +1,325 @@
+<apex:page sidebar="false" showHeader="false" controller="SummaryMetricController" standardStylesheets="false">
+<apex:stylesheet value="{!URLFOR($Resource.Bootstrap,'css/bootstrap.css')}" /> <!--bootstrap css-->
+<apex:includeScript value="{!URLFOR($Resource.Bootstrap,'js/bootstrap.js')}"/> <!--bootstrap js-->
+<apex:outputPanel id="Maintable">
+    <table>
+   <tr>
+    <apex:form >
+      <!-- <a href="/apex/SummaryViewReadOnly?cid={!cid}&Name={!objName}&id={!objidencoded}"> <button type="button">Download</button> </a>-->
+       <a href="/apex/SummaryViewReadOnly"> <button type="button">Download</button> </a>
+     </apex:form>
+     </tr>
+     <tr>
+         <h3> Metrics for</h3>
+     </tr>
+        <tr>
+      
+            <td valign="top">
+    <!-----------FIRST TABLE---------------------->
+    <table class="table table-striped">
+        <tr style="height:35px;"><td colspan="4"></td></tr>
+        <tr style="height:89px;">
+             <th>
+                Metric
+            </th>
+        </tr>
+        
+   <apex:repeat value="{!Metrics}" var="w">
+       <tr >
+        <td > 
+           <div style="width:250px;">
+               {!w}
+          </div>
+        </td>
+   </tr>
+    </apex:repeat>
+   </table>
+   </td>
+   
+    <td valign="top"> 
+<table class="table table-striped">
+ <tr> 
+      <td colspan="3" style="border-left:solid 2px #ddd; border-right:solid 2px #ddd; font-size:12px; font-weight:bold;"><center>Gender</center></td>
+      <td colspan="6" style="border-left:solid 2px #ddd; border-right:solid 2px #ddd; font-size:12px; font-weight:bold;"><center>Ethnicity</center></td>
+      <td colspan="1" ></td>
+      <td colspan="1" ></td>
+      <td colspan="1" ></td>
+      <td colspan="1" ></td>
+      <td colspan="1" ></td>
+      <td colspan="7" style="border-left:solid 2px #ddd; border-right:solid 2px #ddd; font-size:12px; font-weight:bold;"><center>Religion</center></td>
+      <td colspan="5" style="border-left:solid 2px #ddd; border-right:solid 2px #ddd; font-size:12px; font-weight:bold;"><center>YP Occupation</center></td>
+      <td colspan="5" style="border-left:solid 2px #ddd; border-right:solid 2px #ddd; font-size:12px; font-weight:bold;"><center>School Category</center></td>
+  </tr>
+  <tr>
+        <th>
+            Total
+        </th>
+         <th>
+            Female
+        </th>
+         <th>
+            Male
+        </th>
+        <th>
+            Black
+        </th>
+        <th>
+            White
+        </th>
+        <th>
+            Asian
+        </th>
+        <th>
+            Chinese
+        </th>
+        <th>
+            Mixed
+        </th>
+        <th>
+         <center>
+          <div>
+           Other<br />
+            Ethnicity
+           </div>
+       </center>
+        </th>
+        <th>
+        <center>
+            Free<br />School<br /> Meals
+          </center>
+        </th>
+        <th>
+            In care
+        </th>
+        <th>
+            Disability
+        </th>
+        <th>
+        <center>
+            Support<br />Level
+            </center>
+        </th>
+        <th>
+        <center>
+        <div>  Com.<br />involvement<br />before TCN</div>
+        </center>
+           
+        </th>
+         <th>
+           Christian
+        </th>
+         <th>
+         Buddhist
+        </th>
+         <th>
+           Hindu
+        </th>
+         <th>
+           Sikh
+        </th>
+         <th>
+            Jewish
+        </th>
+         <th>
+            Muslim
+        </th>
+         <th>
+          None
+        </th>
+        <th>
+        <center>
+          Studying at<br />school/<br />college
+      </center>
+        </th>
+        <th>
+          In training
+        </th>
+        <th>
+          Working
+        </th>
+        <th>
+          Unemployed
+        </th>
+        <th>
+          Unknown
+        </th>
+         <th>
+          State
+        </th>
+         <th>
+          Independent
+        </th>
+         <th>
+          PRU
+        </th>
+         <th>
+          SEN
+        </th>
+         <th>
+          Other
+        </th>
+    </tr>
+      <apex:repeat value="{!SummaryMetircList}" var="w2">
+    <tr>
+        <td ><center>
+            {!w2.Total__c}
+            </center>
+        </td>
+        <td class = "{!IF(w2.Female__c<=0,'muted','')}">
+        <center>
+            {!w2.Female__c}
+         </center>
+        </td>
+         <td class = "{!IF(w2.Male__c<=0,'muted','')}">
+           <center>
+            {!w2.Male__c}
+            </center>
+        </td>
+        <td class = "{!IF(w2.Black__c<=0,'muted','')}">
+            <center>
+            {!w2.Black__c}
+            </center>
+        </td>
+        <td class = "{!IF(w2.White__c<=0,'muted','')}">
+           <center>
+            {!w2.White__c}
+            </center>
+        </td>
+        <td class = "{!IF(w2.Asian__c<=0,'muted','')}">
+           <center>
+            {!w2.Asian__c}
+            </center>
+        </td>
+        <td class = "{!IF(w2.Chinese__c<=0,'muted','')}">
+            <center>
+            {!w2.Chinese__c}
+            </center>
+        </td>
+        <td class = "{!IF(w2.Mixed__c<=0,'muted','')}">
+            <center>
+            {!w2.Mixed__c}
+            </center>
+        </td>
+        <td class = "{!IF(w2.Other_Ethnicity__c<=0,'muted','')}">
+           <center>
+            {!w2.Other_Ethnicity__c}
+            </center>
+        </td>
+         <td class = "{!IF(w2.FreeSchoolMeals__c<=0,'muted','')}">
+            <center>
+            {!w2.FreeSchoolMeals__c}
+            </center>
+        </td>
+         <td class = "{!IF(w2.LookedAfterChild__c<=0,'muted','')}">
+            <center>
+            {!w2.LookedAfterChild__c}
+            </center>
+        </td>
+         <td class = "{!IF(w2.Disability__c<=0,'muted','')}">
+            <center>
+            {!w2.Disability__c}
+            </center>
+        </td>
+         <td class = "{!IF(w2.SupportLevel__c<=0,'muted','')}">
+            <center>
+            {!w2.SupportLevel__c}
+            </center>
+        </td>
+         <td class = "{!IF(w2.VolunteeringInvolvement__c<=0,'muted','')}">
+            <center>
+            {!w2.VolunteeringInvolvement__c}
+            </center>
+        </td>
+         <td class = "{!IF(w2.Christian__c<=0,'muted','')}">
+            <center>
+            {!w2.Christian__c}
+            </center>
+        </td>
+         <td class = "{!IF(w2.Buddhist__c<=0,'muted','')}">
+            <center>
+            {!w2.Buddhist__c}
+            </center>
+        </td>
+         <td class = "{!IF(w2.Hindu__c<=0,'muted','')}">
+            <center>
+            {!w2.Hindu__c}
+            </center>
+        </td>
+         <td class = "{!IF(w2.Sikh__c<=0,'muted','')}">
+            <center>
+            {!w2.Sikh__c}
+            </center>
+        </td>
+         <td class = "{!IF(w2.Jewish__c<=0,'muted','')}">
+            <center>
+            {!w2.Jewish__c}
+            </center>
+        </td>
+         <td class = "{!IF(w2.Muslim__c<=0,'muted','')}">
+            <center>
+            {!w2.Muslim__c}
+            </center>
+        </td>
+         <td class = "{!IF(w2.None__c<=0,'muted','')}">
+            <center>
+            {!w2.None__c}
+            </center>
+        </td>
+          <td class = "{!IF(w2.Studyingschool_collegene__c<=0,'muted','')}">
+            <center>
+            {!w2.Studyingschool_collegene__c}
+            </center>
+        </td>
+          <td class = "{!IF(w2.Intraining__c<=0,'muted','')}">
+            <center>
+            {!w2.Intraining__c}
+            </center>
+        </td>
+          <td class = "{!IF(w2.Working__c<=0,'muted','')}">
+            <center>
+            {!w2.Working__c}
+            </center>
+        </td>
+          <td class = "{!IF(w2.Unemployed__c<=0,'muted','')}">
+            <center>
+            {!w2.Unemployed__c}
+            </center>
+        </td>
+          <td class = "{!IF(w2.Unknown__c<=0,'muted','')}">
+            <center>
+            {!w2.Unknown__c}
+            </center>
+        </td>
+          <td class = "{!IF(w2.State__c<=0,'muted','')}">
+            <center>
+            {!w2.State__c}
+            </center>
+        </td>
+          <td class = "{!IF(w2.Independent__c<=0,'muted','')}">
+            <center>
+            {!w2.Independent__c}
+            </center>
+        </td>
+          <td class = "{!IF(w2.PRU__c<=0,'muted','')}">
+            <center>
+            {!w2.PRU__c}
+            </center>
+        </td>
+          <td class = "{!IF(w2.SEN__c<=0,'muted','')}">
+            <center>
+            {!w2.SEN__c}
+            </center>
+        </td>
+          <td class = "{!IF(w2.OtherSchoolType__c<=0,'muted','')}">
+            <center>
+            {!w2.OtherSchoolType__c}
+            </center>
+        </td>
+    </tr>
+</apex:repeat>
+    </table>
+    </td>
+    </tr>
+    </table>
+</apex:outputPanel>
+</apex:page>

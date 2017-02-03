@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Staffing Event attendance</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Staffing Event attendances</value>
+    </caseValues>
+    <fields>
+        <label><!-- Applicant Mobile Phone --></label>
+        <name>Applicant_Mobile_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attendance status --></label>
+        <name>Attendance_status__c</name>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did not attend</masterLabel>
+            <translation><!-- Did not attend --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Booking Confirmation Email Sent --></label>
+        <name>Booking_Confirmation_Email_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact email --></label>
+        <name>Contact_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Reminder Sent --></label>
+        <name>Date_Reminder_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date non-attendance email (5.1) sent --></label>
+        <name>Date_non_attendance_email_5_1_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Type (from SE) --></label>
+        <name>Event_Type_from_SE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Application --></label>
+        <name>Job_Application__c</name>
+        <relationshipLabel><!-- Staffing Event attendances --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Sends email to candidate confirming registration for training. --></help>
+        <label><!-- Manual confirmation: Training Registered --></label>
+        <name>Manual_confirmation_Training_Registered__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field will automatically update for Training event attendance based on whether a staff member attended or not. --></help>
+        <label><!-- Registration status --></label>
+        <name>Registration_status__c</name>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Registered</masterLabel>
+            <translation><!-- Registered --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Requested new date --></label>
+        <name>Requested_new_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role from JA --></label>
+        <name>Role_from_JA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Manual confirmation --></label>
+        <name>Send_Manual_confirmation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Staffing Event Day Date --></label>
+        <name>Staffing_Event_Day_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Staffing Event Day --></label>
+        <name>Staffing_Event_Day__c</name>
+        <relationshipLabel><!-- Staffing Event attendances --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Staffing Event ID --></label>
+        <name>Staffing_Event_ID__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- 2014 --></label>
+        <name>X2014</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2015 --></label>
+        <name>X2015</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 2016 --></label>
+        <name>X2016</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Send_Bulk_SMS --></label>
+        <name>Send_Bulk_SMS</name>
+    </webLinks>
+</CustomObjectTranslation>

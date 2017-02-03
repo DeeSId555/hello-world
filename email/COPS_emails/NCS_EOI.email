@@ -1,0 +1,18 @@
+Hi {!Contact.OwnerFirstName},
+
+We have received a new expression of interest in your area from the NCS website! 
+
+Please can someone in your team contact {!Contact.Name} to acquire more information about them? We need to gather enough details to send out a P2 form and introductory letter (so we need at least the YP and PG’s names, and their address). There are two steps to this:
+
+1) Please enter these details on their Salesforce record: {!Contact.Account_s_TCN_Id__c}. Please note that the information we have received may be in the PG section of the account (and the YP may currently have a substitute name of 'NCS' which will need changing). You will need to gather information about both the YP and the PG (it may be that you will need to create one of these contacts from scratch). Please ensure that the Contact Record Type is correct for each person (e.g. YP2012 for a YP).
+
+2) Please tick either 'P1 Data Entry Checked' OR 'Send Letter Despite Data Issue' (tick the latter if there is a slight issue with the data).
+
+Their basic contact details are:
+Name: {!Contact.Name}
+Phone Number: {!Contact.HomePhone}
+Email Address: {!Contact.Email}
+
+Thanks very much!
+
+Central Ops.

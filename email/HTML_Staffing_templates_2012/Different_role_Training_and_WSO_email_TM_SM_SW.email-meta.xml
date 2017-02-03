@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sends training and WSO form to TM/SM/SW if different role offered</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Different role - Training and WSO email TM/SM/SW</name>
+    <style>none</style>
+    <subject>Re: Your assessment with The Challenge</subject>
+    <textOnly>The Challenge Network
+
+YOUR ASSESSMENT WITH THE CHALLENGE NETWORK
+
+Dear {!Contact.FirstName}
+
+Thank you for attending the assessment at The Challenge.
+We very much enjoyed meeting you and having discussed which role would be suitable for you, I am writing to offer you the role of {!Job_Application__c.Role_to_assess_for__c}. This role is dependant on your availability and on the receipt of a satisfactory enhanced CRB check.
+Please confirm your attendance at your training session and select your available dates as soon as possible to confirm that you would like to accept this offer.
+
+TRAINING
+Please click on the button below to register for the training session in your region.
+http://thechallenge.secure.force.com/AvailableDates?key={!Job_Application__c.ContactId__c}&amp;Type={!Job_Application__c.00NC0000005EVyp}&amp;JType={!Job_Application__c.Id}
+
+During training, you will learn all you need to know about The Challenge and your role. You will also meet the people that you will be working with this summer. Please note that the training event lasts for 2 days.
+
+WORK DATES
+There are a variety of dates available for you to work in this role. 
+Please double check the Where You Can Work webpage as the programme only runs in certain locations on specific wave dates: 
+http://www.the-challenge.org/work-with-us/summer-roles/where-you-can-work/ 
+
+Please click on the link below to select all the dates for which you will be available. 
+http://www.clicktools.com/survey?iv=3b1350f0a6dc7af&amp;q1={!Job_Application__c.Id} 
+
+CRB
+Your role is subject to a enhanced CRB or List 99 check. We will require scanned documents from you in order to process this. Please visit http://carecheck.arrangementcms.co.uk/index.php?node=ID-Rules for information on which documents are needed. We will contact you in the near future with further information.
+
+Congratulations on your success and we look forward to working with you on The Challenge.
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+The Challenge Network
+t: {!Contact.OwnerPhone}
+e: {!Contact.OwnerEmail}
+
+WWW.THE-CHALLENGE.ORG    /thechallengeNETWORK
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

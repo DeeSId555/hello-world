@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This is send to Staffing Associate record owner when no medical info has been submitted</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SF to Staffing Associate medical info call needed</name>
+    <style>none</style>
+    <subject>{!Contact.FirstName} {!Contact.LastName} has not submitted medical or dietary info</subject>
+    <textOnly>Hi {!Contact.OwnerFirstName},
+
+{!Contact.FirstName} {!Contact.LastName} has not yet submitted their dietary and medical information. Please follow up with a call.
+Click on the link to view the record {!Contact.Link}.
+
+This is a standard email, sent automatically when a candidate has not submitted their medical information.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

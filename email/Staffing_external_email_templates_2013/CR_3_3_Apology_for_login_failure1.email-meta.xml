@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Apology for login failure</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>CR 3.3 Apology for login failure</name>
+    <style>freeForm</style>
+    <subject>Apology for Login failure</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact summer2014@the-challenge.org
+
+Dear {!Contact.FirstName}
+
+
+
+Further to our email today supplying you with your login and password to the Staffing Website, if you have been unable to Login, please accept our apologies.
+
+
+
+We have now rectified the fault and for the vast majority of people this will now work. If you are still having problems please contact us on summer2014@the-challenge.org to resolve your login issue.
+
+
+
+Thank you for your patience and once again apologies for any inconvenience caused.
+
+
+
+Best wishes,
+
+
+The Challenge
+
+
+CR: 3.3.</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HR Event Attendance</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HR Event Attendance</value>
+    </caseValues>
+    <fields>
+        <label><!-- Applicant Name --></label>
+        <name>Applicant_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicant mobile number --></label>
+        <name>Applicant_mobile_number__c</name>
+    </fields>
+    <fields>
+        <help><!-- This pulls through from &quot;Staff type&quot; on the Job Application --></help>
+        <label><!-- Applicant type --></label>
+        <name>Applicant_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assessment notes --></label>
+        <name>Assessment_notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attendance Status --></label>
+        <name>Attendance_Status__c</name>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attending</masterLabel>
+            <translation><!-- Attending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Attending</masterLabel>
+            <translation><!-- Not Attending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrew</masterLabel>
+            <translation><!-- Withdrew --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Leaders Only --></help>
+        <label><!-- Attended Day 1 --></label>
+        <name>Attended_Day_1__c</name>
+        <picklistValues>
+            <masterLabel>No - not attended</masterLabel>
+            <translation><!-- No - not attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unavailable</masterLabel>
+            <translation><!-- Unavailable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - attended</masterLabel>
+            <translation><!-- Yes - attended --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Attended Day 2 --></label>
+        <name>Attended_Day_2__c</name>
+        <picklistValues>
+            <masterLabel>No - not attended</masterLabel>
+            <translation><!-- No - not attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unavailable</masterLabel>
+            <translation><!-- Unavailable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - attended</masterLabel>
+            <translation><!-- Yes - attended --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Attended Day 3 --></label>
+        <name>Attended_Day_3__c</name>
+        <picklistValues>
+            <masterLabel>No - not attended</masterLabel>
+            <translation><!-- No - not attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unavailable</masterLabel>
+            <translation><!-- Unavailable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - attended</masterLabel>
+            <translation><!-- Yes - attended --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Attended Day 4 --></label>
+        <name>Attended_Day_4__c</name>
+        <picklistValues>
+            <masterLabel>No - not attended</masterLabel>
+            <translation><!-- No - not attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unavailable</masterLabel>
+            <translation><!-- Unavailable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - attended</masterLabel>
+            <translation><!-- Yes - attended --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Candidate First Name --></label>
+        <name>Candidate_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate attended all training days --></label>
+        <name>Candidate_attended_all_training_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate attended training? --></label>
+        <name>Candidate_attended_training__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cluster --></label>
+        <name>Cluster__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contac__c</name>
+        <relationshipLabel><!-- HR Event Attendance --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact Owner Phone --></label>
+        <name>Contact_Owner_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date YP Assessor confirmation email sent --></label>
+        <name>Date_YP_Assessor_confirmation_email_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date as text --></label>
+        <name>Date_as_text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date assessment reminder sent --></label>
+        <name>Date_assessment_reminder_sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field updates everytime the email is successfully sent --></help>
+        <label><!-- Date last confirmation email sent --></label>
+        <name>Date_last_confirmation_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Directions --></label>
+        <name>Directions__c</name>
+    </fields>
+    <fields>
+        <label><!-- End date --></label>
+        <name>End_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- End time --></label>
+        <name>End_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra info --></label>
+        <name>Extra_info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+    </fields>
+    <fields>
+        <label><!-- HR Event Date --></label>
+        <name>HR_Event_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Calculates based on Cluster, which regional email address should be used --></help>
+        <label><!-- HR Event Owner email --></label>
+        <name>HR_Event_Owner_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- HR Event Type --></label>
+        <name>HR_Event_Type2__c</name>
+    </fields>
+    <fields>
+        <label><!-- HR Event --></label>
+        <name>HR_Event__c</name>
+        <relationshipLabel><!-- HR Event Attendance --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This is based on the owner of the HR Event. Will need to be updated every autumn --></help>
+        <label><!-- HR event Owner --></label>
+        <name>HR_event_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Application --></label>
+        <name>Job_Application__c</name>
+        <relationshipLabel><!-- HR Event Attendance --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last time email sent --></label>
+        <name>Last_time_email_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Packing list --></label>
+        <name>Packing_list__c</name>
+    </fields>
+    <fields>
+        <label><!-- Roles --></label>
+        <name>Roles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send YP Assessor confirmation email --></label>
+        <name>Send_YP_Assessor_confirmation_email__c</name>
+    </fields>
+    <fields>
+        <help><!-- This checkbox triggers the HR event details confirmation email to be resent. It will uncheck itself when the email has sent. --></help>
+        <label><!-- Resend confirmation email --></label>
+        <name>Send_confirmation_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start time --></label>
+        <name>Start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trigger T-10 email (venue change --></label>
+        <name>Trigger_T_10_email_venue_change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Venue --></label>
+        <name>Venue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Venue address --></label>
+        <name>Venue_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- YP Hours required --></label>
+        <name>YP_Hours_required__c</name>
+    </fields>
+    <fields>
+        <label><!-- YP end time --></label>
+        <name>YP_end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- YP start time --></label>
+        <name>YP_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- isAttended --></label>
+        <name>isAttended__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- HR Event Attendance 2012 --></label>
+        <name>HR_Event_Attendance_2012</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- This person&apos;s role and staff type means they are not required to attend one of the days that you have listed them as attending. --></errorMessage>
+        <name>Staff_unavailable_for_incorrect_training</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This person&apos;s role and staff type means they are not required to attend one or more days that you have listed them as attending. --></errorMessage>
+        <name>Stop_staff_attending_incorrect_training</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Send_Bulk_SMS --></label>
+        <name>Send_Bulk_SMS</name>
+    </webLinks>
+</CustomObjectTranslation>

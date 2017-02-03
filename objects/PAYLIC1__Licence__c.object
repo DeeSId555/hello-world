@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Holds information about the Payonomy product licences that you have.  
+
+You should not edit the contents unless instructed to by Payonomy, or you could render the application unusable</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>PAYLIC1__Expires__c</fullName>
+        <deprecated>false</deprecated>
+        <description>When does the current licence expire</description>
+        <externalId>false</externalId>
+        <label>Expires</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>PAYLIC1__Next_Check__c</fullName>
+        <deprecated>false</deprecated>
+        <description>When is the next licence check due</description>
+        <externalId>false</externalId>
+        <label>Next Check</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>PAYLIC1__Product__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the product that the licence is for</description>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <length>50</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYLIC1__Signature__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Digest of this record, used for security purposes</description>
+        <externalId>false</externalId>
+        <label>Signature</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAYLIC1__Valid_Until__c</fullName>
+        <deprecated>false</deprecated>
+        <description>When is this licence check valid until</description>
+        <externalId>false</externalId>
+        <label>Valid Until</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>PAYLIC1__Version__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The version of the product that this licence is for</description>
+        <externalId>false</externalId>
+        <label>Version</label>
+        <length>20</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Payonomy Licence</label>
+    <nameField>
+        <label>Payonomy Licence Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Payonomy Licences</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>PAYLIC1__Product__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PAYLIC1__Version__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PAYLIC1__Expires__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PAYLIC1__Next_Check__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PAYLIC1__Signature__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PAYLIC1__Valid_Until__c</customTabListAdditionalFields>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>PAYLIC1__Product__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PAYLIC1__Version__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PAYLIC1__Expires__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PAYLIC1__Next_Check__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PAYLIC1__Signature__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PAYLIC1__Valid_Until__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PAYLIC1__Product__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PAYLIC1__Version__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PAYLIC1__Expires__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PAYLIC1__Next_Check__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PAYLIC1__Signature__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PAYLIC1__Valid_Until__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>PAYLIC1__Product__c</searchFilterFields>
+        <searchFilterFields>PAYLIC1__Version__c</searchFilterFields>
+        <searchFilterFields>PAYLIC1__Expires__c</searchFilterFields>
+        <searchFilterFields>PAYLIC1__Next_Check__c</searchFilterFields>
+        <searchFilterFields>PAYLIC1__Signature__c</searchFilterFields>
+        <searchFilterFields>PAYLIC1__Valid_Until__c</searchFilterFields>
+        <searchResultsAdditionalFields>PAYLIC1__Product__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PAYLIC1__Version__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PAYLIC1__Expires__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PAYLIC1__Next_Check__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PAYLIC1__Signature__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PAYLIC1__Valid_Until__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

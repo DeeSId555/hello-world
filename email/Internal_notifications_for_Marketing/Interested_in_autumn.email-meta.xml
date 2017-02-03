@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto-notification sent to Contact Owner when YPPG expresses an interest in the Autumn programme</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Interested in autumn</name>
+    <style>none</style>
+    <subject>YPPG has expressed in the Autumn Programme</subject>
+    <textOnly>Hi {!Contact.OwnerFirstName}
+
+{!Contact.Name} has notified us that they would like a call about signing up to the Autumn Programme.  Please call YPPG to discuss this.
+
+Once discussed, please complete the Autumn Programme 2013 section on the Young Person Contact in Salesforce
+
+This is a standard email, sent automatically whenever a YPPG indicate their interest in the Autumn Programme</textOnly>
+    <type>custom</type>
+</EmailTemplate>

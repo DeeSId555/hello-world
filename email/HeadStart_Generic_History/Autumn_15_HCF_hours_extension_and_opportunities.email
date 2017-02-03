@@ -1,0 +1,522 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head><!-- This is a simple example template that you can edit to create your own custom templates -->
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"><!-- Facebook sharing information tags -->
+	<meta content="*|MC:SUBJECT|*" property="og:title">
+	<title>*|MC:SUBJECT|*</title>
+	
+<style type="text/css">
+		#outlook a{
+			padding:0;
+		}
+		body{
+			width:100% !important;
+		}
+		body{
+			-webkit-text-size-adjust:none;
+		}
+		body{
+			margin:0;
+			padding:0;
+		}
+		img{
+			border:none;
+			font-size:14px;
+			font-weight:bold;
+			height:auto;
+			line-height:100%;
+			outline:none;
+			text-decoration:none;
+			text-transform:capitalize;
+		}
+		#backgroundTable{
+			height:100% !important;
+			margin:0;
+			padding:0;
+			width:100% !important;
+		}
+	/*
+	@tab Page
+	@section background color
+	@tip Set the background color for your email. You may want to choose one that matches your company's branding.
+	@theme page
+	*/
+		body,.backgroundTable{
+			/*@editable*/background-color:#FAFAFA;
+		}
+	/*
+	@tab Page
+	@section email border
+	@tip Set the border for your email.
+	*/
+		#templateContainer{
+			/*@editable*/border:1px solid #DDDDDD;
+		}
+	/*
+	@tab Page
+	@section heading 1
+	@tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+	@theme heading1
+	*/
+		h1,.h1{
+			/*@editable*/color:#202020;
+			display:block;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:34px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:100%;
+			margin-bottom:10px;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Page
+	@section heading 2
+	@tip Set the styling for all second-level headings in your emails.
+	@theme heading2
+	*/
+		h2,.h2{
+			/*@editable*/color:#202020;
+			display:block;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:30px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:100%;
+			margin-bottom:10px;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Page
+	@section heading 3
+	@tip Set the styling for all third-level headings in your emails.
+	@theme heading3
+	*/
+		h3,.h3{
+			/*@editable*/color:#202020;
+			display:block;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:26px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:100%;
+			margin-bottom:10px;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Page
+	@section heading 4
+	@tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+	@theme heading4
+	*/
+		h4,.h4{
+			/*@editable*/color:#202020;
+			display:block;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:22px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:100%;
+			margin-bottom:10px;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Header
+	@section preheader style
+	@tip Set the background color for your email's preheader area.
+	@theme page
+	*/
+		#templatePreheader{
+			/*@editable*/background-color:#FAFAFA;
+		}
+	/*
+	@tab Header
+	@section preheader text
+	@tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
+	*/
+		.preheaderContent div{
+			/*@editable*/color:#505050;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:10px;
+			/*@editable*/line-height:100%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Header
+	@section preheader link
+	@tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
+	*/
+		.preheaderContent div a:link,.preheaderContent div a:visited{
+			/*@editable*/color:#336699;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+		.preheaderContent div img{
+			height:auto;
+			max-width:600px;
+		}
+	/*
+	@tab Header
+	@section header style
+	@tip Set the background color and border for your email's header area.
+	@theme header
+	*/
+		#templateHeader{
+			/*@editable*/background-color:#FFFFFF;
+			/*@editable*/border-bottom:0;
+		}
+	/*
+	@tab Header
+	@section header text
+	@tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+	*/
+		.headerContent{
+			/*@editable*/color:#202020;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:34px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:100%;
+			/*@editable*/padding:0;
+			/*@editable*/text-align:center;
+			/*@editable*/vertical-align:middle;
+		}
+	/*
+	@tab Header
+	@section header link
+	@tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
+	*/
+		.headerContent a:link,.headerContent a:visited{
+			/*@editable*/color:#336699;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+		#headerImage{
+			height:auto;
+			max-width:600px !important;
+		}
+	/*
+	@tab Body
+	@section body style
+	@tip Set the background color for your email's body area.
+	*/
+		#templateContainer,.bodyContent{
+			/*@editable*/background-color:#FDFDFD;
+		}
+	/*
+	@tab Body
+	@section body text
+	@tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+	@theme main
+	*/
+		.bodyContent div{
+			/*@editable*/color:#505050;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:14px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Body
+	@section body link
+	@tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+	*/
+		.bodyContent div a:link,.bodyContent div a:visited{
+			/*@editable*/color:#336699;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+		.bodyContent img{
+			display:inline;
+			margin-bottom:10px;
+		}
+	/*
+	@tab Footer
+	@section footer style
+	@tip Set the background color and top border for your email's footer area.
+	@theme footer
+	*/
+		#templateFooter{
+			/*@editable*/background-color:#FDFDFD;
+			/*@editable*/border-top:0;
+		}
+	/*
+	@tab Footer
+	@section footer text
+	@tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+	@theme footer
+	*/
+		.footerContent div{
+			/*@editable*/color:#707070;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:12px;
+			/*@editable*/line-height:125%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Footer
+	@section footer link
+	@tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+	*/
+		.footerContent div a:link,.footerContent div a:visited{
+			/*@editable*/color:#336699;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+		.footerContent img{
+			display:inline;
+		}
+	/*
+	@tab Footer
+	@section social bar style
+	@tip Set the background color and border for your email's footer social bar.
+	*/
+		#social{
+			/*@editable*/background-color:#FAFAFA;
+			/*@editable*/border:1px solid #F5F5F5;
+		}
+	/*
+	@tab Footer
+	@section social bar style
+	@tip Set the background color and border for your email's footer social bar.
+	*/
+		#social div{
+			/*@editable*/text-align:center;
+		}
+	/*
+	@tab Footer
+	@section utility bar style
+	@tip Set the background color and border for your email's footer utility bar.
+	*/
+		#utility{
+			/*@editable*/background-color:#FDFDFD;
+			/*@editable*/border-top:1px solid #F5F5F5;
+		}
+	/*
+	@tab Footer
+	@section utility bar style
+	@tip Set the background color and border for your email's footer utility bar.
+	*/
+		#utility div{
+			/*@editable*/text-align:center;
+		}
+		#monkeyRewards img{
+			max-width:160px;
+		}
+</style></head>
+<body leftmargin="0" marginheight="0" marginwidth="0" offset="0" topmargin="0">
+<center>
+<table border="0" cellpadding="0" cellspacing="0" height="100%" id="backgroundTable" width="100%">
+	<tbody>
+		<tr>
+			<td align="center" valign="top"><!-- // Begin Template Preheader \\ -->
+			<table border="0" cellpadding="10" cellspacing="0" id="templatePreheader" width="600">
+				<tbody>
+					<tr>
+						<td class="preheaderContent" valign="top"><!-- // Begin Module: Standard Preheader \\ -->
+						<table border="0" cellpadding="10" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+									<td valign="top">
+									<div mc:edit="std_preheader_content">&nbsp;</div>
+									</td>
+									<td valign="top" width="180">
+									<div mc:edit="std_preheader_links"><!-- *|END:IF|* --></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- // End Module: Standard Preheader \\ --></td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- // End Template Preheader \\ -->
+
+			<table border="0" cellpadding="0" cellspacing="0" id="templateContainer" width="600">
+				<tbody>
+					<tr>
+						<td align="center" valign="top"><!-- // Begin Template Header \\ -->
+						<table border="0" cellpadding="0" cellspacing="0" id="templateHeader" width="600">
+							<tbody>
+								<tr>
+									<td class="headerContent"><!-- // Begin Module: Standard Header Image \\ --><img alt="" border="0" mc:edit="header_image" src="https://gallery.mailchimp.com/b137e98c9da54ed77d9672518/images/c26fd30e-0963-4d02-b797-406f3d30d1b6.png" style="margin: 0; padding: 0;"> <!-- // End Module: Standard Header Image \\ --></td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- // End Template Header \\ --></td>
+					</tr>
+					<tr>
+						<td align="center" valign="top"><!-- // Begin Template Body \\ -->
+						<table border="0" cellpadding="10" cellspacing="0" id="templateBody" width="600">
+							<tbody>
+								<tr>
+									<td class="bodyContent" valign="top"><!-- // Begin Module: Standard Content \\ -->
+									<table border="0" cellpadding="10" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td valign="top">
+												<div mc:edit="std_content00"><span style="font-family:verdana,geneva,sans-serif"><span style="font-size:18px"><span style="font-size:28px"><span id="docs-internal-guid-802221d9-7e5f-71f9-fe52-997bb3dad1d9"><span style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); vertical-align:baseline; white-space:pre-wrap">It&rsquo;s never too late to give your time!</span></span></span></span></span><br>
+&nbsp;
+<p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size:16px"><span id="docs-internal-guid-802221d9-7e6a-4aaa-5608-1d35f222718f"><span style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-family:arial,helvetica neue,helvetica,sans-serif; line-height:1.38; vertical-align:baseline; white-space:pre-wrap">Your HeadStart hours deadline has been </span><span style="color:rgb(107, 200, 199); font-family:arial,helvetica neue,helvetica,sans-serif; line-height:1.38"><span style="background-color:rgb(255, 255, 255); vertical-align:baseline; white-space:pre-wrap"><strong>EXTENDED</strong></span></span><span style="background-color:rgb(255, 255, 255); vertical-align:baseline"><font color="#222222" face="arial, helvetica neue, helvetica, sans-serif"><span style="line-height:1.38; white-space:pre-wrap"> to 21st February! This is your chance to catch up on your 16 hours of volunteering during </span></font><strong style="color:rgb(34, 34, 34); font-family:arial,helvetica neue,helvetica,sans-serif; font-size:18px; line-height:1.38; white-space:pre-wrap">February half term</strong><font color="#222222" face="arial, helvetica neue, helvetica, sans-serif"><span style="line-height:1.38; white-space:pre-wrap">. Whether you&rsquo;re on 0 hours or 15 hours, we want you to get involved and complete HeadStart.</span></font></span></span></span></p>
+
+<p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><br>
+<span><span style="background-color:rgb(255, 255, 255); vertical-align:baseline"><span style="font-size:16px"><font color="#222222" face="arial, helvetica neue, helvetica, sans-serif"><span style="line-height:1.38; white-space:pre-wrap"><strong>WHY?</strong> Well, don&#39;t forget, if you complete 16 hours, you get the chance to interview with your chosen employer AND get a signed certificate from us </span><span style="line-height:24.84px; white-space:pre-wrap">which</span><span style="line-height:1.38; white-space:pre-wrap"> looks really good on future application forms for jobs and UCAS. </span></font></span><br>
+<br>
+<font color="#222222" face="arial, helvetica neue, helvetica, sans-serif"><span style="font-size:18px; line-height:1.38; white-space:pre-wrap"><span style="font-size:16px">Sign up to these opportunities now before spaces go. </span></span></font></span></span><br>
+<br>
+&nbsp;</p>
+&nbsp;
+
+<table class="GeneratedTable" style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-size: medium; line-height: normal; width: 600px;">
+	<thead>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;"><img align="none" height="152" src="https://gallery.mailchimp.com/b137e98c9da54ed77d9672518/images/57912410-f09e-4d65-8acc-a71d64a2052f.png" style="height: 152px; line-height: 14px; margin: 0px; color: rgb(80, 80, 80); font-family: Arial; text-align: center; width: 200px;" width="200"></td>
+			<td><img align="none" height="138" src="https://gallery.mailchimp.com/b137e98c9da54ed77d9672518/images/f4f40fc5-9116-4f2f-81f4-218489dd21b4.png" style="height: 138px; line-height: 14px; margin: 0px; color: rgb(80, 80, 80); font-family: Arial; text-align: center; width: 300px;" width="300"></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top;">
+			<div dir="ltr" style="color: rgb(80, 80, 80); font-family: Arial; font-size: 14px; line-height: 1.38; text-align: center; margin-top: 0pt; margin-bottom: 0pt; background-color: rgb(253, 253, 253);"><span style="font-size:16px"><strong>Tea Party at Downhurst&nbsp;<br>
+			Care Home</strong></span></div>
+
+			<div dir="ltr" style="color: rgb(80, 80, 80); font-family: Arial; font-size: 14px; line-height: 1.38; text-align: center; margin-top: 0pt; margin-bottom: 0pt; background-color: rgb(253, 253, 253);">&nbsp;</div>
+
+			<div dir="ltr" style="color: rgb(80, 80, 80); font-family: Arial; font-size: 14px; line-height: 1.38; text-align: center; margin-top: 0pt; margin-bottom: 0pt; background-color: rgb(253, 253, 253);">
+			<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span id="docs-internal-guid-802221d9-7e7f-8200-7502-e37c61c77884"><strong style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-family:arial; font-size:12.6667px; font-weight:700; vertical-align:baseline; white-space:pre-wrap">When: </strong><span style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-family:arial; font-size:12.6667px; vertical-align:baseline; white-space:pre-wrap">Tuesday 16th Feb &amp; Wednesday 17th Feb, 10am-5pm</span></span></p>
+
+			<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">&nbsp;</p>
+
+			<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span id="docs-internal-guid-802221d9-7e7f-8200-7502-e37c61c77884"><strong style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-family:arial; font-size:12.6667px; font-weight:700; vertical-align:baseline; white-space:pre-wrap">Where</strong><span style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-family:arial; font-size:12.6667px; vertical-align:baseline; white-space:pre-wrap">: Downhurst Care Home, </span></span></p>
+
+			<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-family:arial; font-size:12.6667px; vertical-align:baseline; white-space:pre-wrap">76 Castlebar Road, </span></p>
+
+			<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-family:arial; font-size:12.6667px; vertical-align:baseline; white-space:pre-wrap">Ealing, London W5 2DD</span></p>
+
+			<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">&nbsp;</p>
+
+			<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span id="docs-internal-guid-802221d9-7e7f-8200-7502-e37c61c77884"><strong style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-family:arial; font-size:12.6667px; font-weight:700; vertical-align:baseline; white-space:pre-wrap">What:</strong><span style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-family:arial; font-size:12.6667px; vertical-align:baseline; white-space:pre-wrap"> Volunteer at Downhurst Care Home </span></span></p>
+
+			<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-family:arial; font-size:12.6667px; vertical-align:baseline; white-space:pre-wrap">and host a Tea Party for the elderly residents.</span></p>
+
+			<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">&nbsp;</p>
+
+			<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span id="docs-internal-guid-802221d9-7e7f-8200-7502-e37c61c77884"><a href="https://docs.google.com/forms/d/1k5a30DlD4f7SlEJOLATeJb5MtheqNyj3A-RaDl_iNNM/viewform" style="color: rgb(51, 102, 153); text-decoration: none;"><u style="background-color:rgb(255, 255, 255); color:rgb(17, 85, 204); font-family:arial; font-size:12.6667px; font-weight:700; vertical-align:baseline; white-space:pre-wrap">Sign up here</u></a><strong style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-family:arial; font-size:12.6667px; font-weight:700; vertical-align:baseline; white-space:pre-wrap"> </strong></span></p>
+			</div>
+			</td>
+			<td>
+			<div dir="ltr" style="color: rgb(80, 80, 80); font-family: Arial; font-size: 14px; line-height: 1.38; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size:16px"><strong>Sports club for disabled people at Feltham Bees</strong></span></div>
+
+			<div dir="ltr" style="color: rgb(80, 80, 80); font-family: Arial; font-size: 14px; line-height: 1.38; text-align: center; margin-top: 0pt; margin-bottom: 0pt;">&nbsp;</div>
+
+			<div dir="ltr" style="color: rgb(80, 80, 80); font-family: Arial; font-size: 14px; line-height: 1.38; text-align: center; margin-top: 0pt; margin-bottom: 0pt;">
+			<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; background-color: rgb(253, 253, 253);"><span id="docs-internal-guid-802221d9-7e85-861f-8d6d-c531a647f613"><strong style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-size:12.6667px; font-weight:700; vertical-align:baseline; white-space:pre-wrap">When: </strong><span style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-size:12.6667px; vertical-align:baseline; white-space:pre-wrap">Wednesday 17th Feb, </span></span></p>
+
+			<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; background-color: rgb(253, 253, 253);"><span style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-size:12.6667px; vertical-align:baseline; white-space:pre-wrap">Thursday 18th Feb &amp; </span></p>
+
+			<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; background-color: rgb(253, 253, 253);"><span style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-size:12.6667px; vertical-align:baseline; white-space:pre-wrap">Friday 19th Feb, 9.30am-3.30pm</span></p>
+
+			<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; background-color: rgb(253, 253, 253);">&nbsp;</p>
+
+			<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; background-color: rgb(253, 253, 253);"><span id="docs-internal-guid-802221d9-7e85-861f-8d6d-c531a647f613"><strong style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-size:12.6667px; font-weight:700; vertical-align:baseline; white-space:pre-wrap">Where: </strong><span style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-size:12.6667px; vertical-align:baseline; white-space:pre-wrap">Feltham Community College, </span></span></p>
+
+			<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; background-color: rgb(253, 253, 253);"><span style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-size:12.6667px; vertical-align:baseline; white-space:pre-wrap">Browells Lane, TW13 7ES</span></p>
+
+			<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; background-color: rgb(253, 253, 253);">&nbsp;</p>
+
+			<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; background-color: rgb(253, 253, 253);"><span id="docs-internal-guid-802221d9-7e85-861f-8d6d-c531a647f613"><strong style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-size:12.6667px; font-weight:700; vertical-align:baseline; white-space:pre-wrap">What:</strong><span style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-size:12.6667px; vertical-align:baseline; white-space:pre-wrap"> Get involved with sports activities and </span></span></p>
+
+			<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; background-color: rgb(253, 253, 253);"><span style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-size:12.6667px; vertical-align:baseline; white-space:pre-wrap">creative arts sessions for disabled people </span></p>
+
+			<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; background-color: rgb(253, 253, 253);"><span style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-size:12.6667px; vertical-align:baseline; white-space:pre-wrap">at Feltham Bees.</span></p>
+
+			<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; background-color: rgb(253, 253, 253);">&nbsp;</p>
+
+			<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; background-color: rgb(253, 253, 253);"><span id="docs-internal-guid-802221d9-7e85-861f-8d6d-c531a647f613"><a href="https://docs.google.com/forms/d/1Pq6SqtSd2RH1zcr8PN6FEsNei92VrbOsypDzZFHNtj8/viewform" style="color: rgb(51, 102, 153); text-decoration: none;"><u style="background-color:rgb(255, 255, 255); color:rgb(17, 85, 204); font-size:12.6667px; font-weight:700; text-decoration:underline; vertical-align:baseline; white-space:pre-wrap">Sign up here</u></a><strong style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-size:12.6667px; font-weight:700; vertical-align:baseline; white-space:pre-wrap"> </strong></span></p>
+
+			<div>&nbsp;</div>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<div style="text-align: center;">&nbsp;</div>
+
+<div>
+<table border="0" cellpadding="1" cellspacing="1" style="width:600px;">
+	<tbody>
+		<tr>
+			<td style="width: 20px;"><img align="none" height="194" src="https://gallery.mailchimp.com/b137e98c9da54ed77d9672518/images/884b16f0-2019-4805-8ea4-b43fbd69298e.png" style="height: 194px; line-height: 14px; display: inline; margin: 0px; color: rgb(80, 80, 80); font-family: Arial; width: 130px; background-color: rgb(253, 253, 253);" width="130"></td>
+			<td style="vertical-align: middle;">
+			<p dir="ltr" style="color: rgb(80, 80, 80); font-family: Arial; font-size: 14px; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; background-color: rgb(253, 253, 253);"><span id="docs-internal-guid-802221d9-7e96-22b1-65f5-9aa4f8668402"><strong style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-size:12.6667px; font-weight:700; vertical-align:baseline; white-space:pre-wrap">When</strong><span style="background-color:rgb(255, 255, 255); color:rgb(34, 34, 34); font-size:12.6667px; vertical-align:baseline; white-space:pre-wrap">: Saturday 13th February</span></span></p>
+
+			<p dir="ltr" style="color: rgb(80, 80, 80); font-family: Arial; font-size: 14px; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; background-color: rgb(253, 253, 253);">&nbsp;</p>
+
+			<p dir="ltr" style="color: rgb(80, 80, 80); font-family: Arial; font-size: 14px; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; background-color: rgb(253, 253, 253);"><span id="docs-internal-guid-802221d9-7e96-22b1-65f5-9aa4f8668402"><strong style="background-color:rgb(255, 255, 255); font-size:12.6667px; font-weight:700; vertical-align:baseline; white-space:pre-wrap">Where:</strong><span style="background-color:rgb(255, 255, 255); font-size:12.6667px; vertical-align:baseline; white-space:pre-wrap"> King George&#39;s Field, Southall, UB1 2NL</span></span></p>
+
+			<p dir="ltr" style="color: rgb(80, 80, 80); font-family: Arial; font-size: 14px; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; background-color: rgb(253, 253, 253);">&nbsp;</p>
+
+			<p dir="ltr" style="color: rgb(80, 80, 80); font-family: Arial; font-size: 14px; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; background-color: rgb(253, 253, 253);"><span id="docs-internal-guid-802221d9-7e96-22b1-65f5-9aa4f8668402"><strong style="background-color:rgb(255, 255, 255); font-size:12.6667px; font-weight:700; vertical-align:baseline; white-space:pre-wrap">What</strong><span style="background-color:rgb(255, 255, 255); font-size:12.6667px; vertical-align:baseline; white-space:pre-wrap">: For the love of trees, come down and help plant trees to create an Edible Urban Woodland in Ealing.</span></span></p>
+
+			<p dir="ltr" style="color: rgb(80, 80, 80); font-family: Arial; font-size: 14px; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; background-color: rgb(253, 253, 253);">&nbsp;</p>
+
+			<p dir="ltr" style="color: rgb(80, 80, 80); font-family: Arial; font-size: 14px; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; background-color: rgb(253, 253, 253);"><span id="docs-internal-guid-802221d9-7e96-22b1-65f5-9aa4f8668402"><u style="background-color:rgb(255, 255, 255); color:rgb(17, 85, 204); font-size:12.6667px; font-weight:700; text-decoration:underline; vertical-align:baseline; white-space:pre-wrap"><a href="http://www.treesforcities.org/about-us/projects/uk-projects/london/king-george-s-field/" style="color: rgb(51, 102, 153); font-weight: normal; text-decoration: none;">Sign up here</a></u></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+</div>
+
+<div style="text-align: center;">&nbsp;</div>
+</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- // End Module: Standard Content \\ --></td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- // End Template Body \\ --></td>
+					</tr>
+					<tr>
+						<td align="center" valign="top"><!-- // Begin Template Footer \\ -->
+						<table border="0" cellpadding="10" cellspacing="0" id="templateFooter" width="600">
+							<tbody>
+								<tr>
+									<td class="footerContent" valign="top"><!-- // Begin Module: Standard Footer \\ -->
+									<table border="0" cellpadding="10" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td colspan="2" id="social" valign="middle">
+												<div mc:edit="std_social"><a href="https://twitter.com/HeadStartLondon" style="font-size: 12px; line-height: 15px;"><img alt="Twitter" height="48" src="http://www.iconsdb.com/icons/preview/gray/twitter-xxl.png" style="line-height: 14px;" width="48"></a><span style="font-size:12px; line-height:15px">&nbsp;</span><a href="https://www.facebook.com/Londonheadstart-1570591483167105/" style="font-size: 12px; line-height: 15px;"><img alt="LinkedIn" height="48" src="http://www.blueclawrestaurant.com/images/Round_Facebook_Icon_3.png" style="line-height: 14px;" width="48"></a></div>
+												</td>
+											</tr>
+											<tr>
+												<td valign="top" width="370">&nbsp;
+												<div mc:edit="std_footer">&nbsp;</div>
+												</td>
+												<td id="monkeyRewards" valign="top" width="170">&nbsp;
+												<div mc:edit="monkeyrewards">&nbsp;</div>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2" id="utility" valign="middle">
+												<div mc:edit="std_utility">&nbsp;</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- // End Module: Standard Footer \\ --></td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- // End Template Footer \\ --></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+</body>
+</html>

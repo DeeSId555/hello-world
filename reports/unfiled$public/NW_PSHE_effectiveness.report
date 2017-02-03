@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.School_code__c</field>
+    </columns>
+    <description>2014</description>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 9 OR 10 OR 11 OR 12) AND 8</booleanFilter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>School_Activities__c.School_Activity_2014_S</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>School_Activities__c.Event_1_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Whole year PSHE/citizenship lesson,PSHE/citizenship class</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>School_Activities__c.Event_2_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Whole year PSHE/citizenship lesson,PSHE/citizenship class</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>School_Activities__c.Event_3_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Whole year PSHE/citizenship lesson,PSHE/citizenship class</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>School_Activities__c.Event_4_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Whole year PSHE/citizenship lesson,PSHE/citizenship class</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>School_Activities__c.Event_5_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Whole year PSHE/citizenship lesson,PSHE/citizenship class</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>School_Activities__c.Event_6_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Whole year PSHE/citizenship lesson,PSHE/citizenship class</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>School_Activities__c.Zone_current__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>North West</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>School_Activities__c.Event_7_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Whole year PSHE/citizenship lesson,PSHE/citizenship class</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>School_Activities__c.Event_8_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Whole year PSHE/citizenship lesson,PSHE/citizenship class</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>School_Activities__c.Event_9_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Whole year PSHE/citizenship lesson,PSHE/citizenship class</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>School_Activities__c.Event_10_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Whole year PSHE/citizenship lesson,PSHE/citizenship class</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Cluster__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Borough_or_area__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>NW PSHE effectiveness</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$School_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

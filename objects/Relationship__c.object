@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Relationship records for relationship widget.Keeps relationships  between contact account,account contact,account account,contact contact.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Leave blank if no end.</inlineHelpText>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>First_Relationship_Type__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>First Relationship Type</label>
+        <referenceTo>Relationship_Type__c</referenceTo>
+        <relationshipLabel>Relationships (First Relationship Type)</relationshipLabel>
+        <relationshipName>First_Relationship_Type</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>From_Account_ID_dupe_check__c</fullName>
+        <description>Pulls PG Account ID (18 digit, case insensitive) on to the Relationship record, so that the correct Key Relationship record can be identified during deduping</description>
+        <externalId>false</externalId>
+        <formula>CASESAFEID( From_Individual__r.Account.Id )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>From Account ID (dupe check)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>From_Contact_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>From_Individual__r.Id</formula>
+        <label>From Contact ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>From_Contact_ID_dupe_check__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(From_Individual__r.Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>From Contact ID (dupe check)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>From_Individual__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Pick only ONE &quot;From&quot;, either Institution or Individual</inlineHelpText>
+        <label>From Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Relationships (From Individual)</relationshipLabel>
+        <relationshipName>Relationships</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>From_Institution__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Pick only ONE &quot;From&quot;, either Institution OR Individual.</inlineHelpText>
+        <label>From Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Relationships (From Institution)</relationshipLabel>
+        <relationshipName>Relationships</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>From_Relationship_Entity__c</fullName>
+        <externalId>false</externalId>
+        <label>From Relationship Entity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Institution</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Individual</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Key_Relationship__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Is this a KEY relationship? Used in reports.</inlineHelpText>
+        <label>Key Relationship</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Last_name_letters_dupe_checking__c</fullName>
+        <externalId>false</externalId>
+        <formula>LEFT( To_Individual__r.LastName , 1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Last name letters (dupe checking)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NCS_Overwrite__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( From_Individual__r.RecordTypeId = &apos;012C0000000QaYz&apos; , &apos;Full&apos;,  
+IF( To_Individual__r.RecordTypeId = &apos;012C0000000QaYz&apos; , &apos;Full&apos;, &apos;None&apos;) 
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>NCS Overwrite</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Second_Relationship_Type__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Second Relationship Type</label>
+        <referenceTo>Relationship_Type__c</referenceTo>
+        <relationshipLabel>Second Relationship Type</relationshipLabel>
+        <relationshipName>Relationships</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <defaultValue>today()</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>When did this relationship start?</inlineHelpText>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>To_Account_ID_dupe_check__c</fullName>
+        <description>Pulls YP Account ID (18 digit, case insensitive) on to the Relationship record, so that the correct Key Relationship record can be identified during deduping</description>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(To_Individual__r.Account.Id)</formula>
+        <label>To Account ID (dupe check)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>To_Contact_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>To_Individual__r.Id</formula>
+        <label>To Contact ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>To_Contact_ID_dupe_check__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(To_Individual__r.Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>To Contact ID (dupe check)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>To_Individual__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>To Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Relationships (To Individual)</relationshipLabel>
+        <relationshipName>Affiliations</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>To_Institution__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Pick only ONE To, either Institution OR Individual.</inlineHelpText>
+        <label>To Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Relationships (To Institution)</relationshipLabel>
+        <relationshipName>Affiliations</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>To_Relationship_Entity__c</fullName>
+        <externalId>false</externalId>
+        <label>To Relationship Entity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Individual</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Institution</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Wave__c</fullName>
+        <externalId>false</externalId>
+        <formula>To_Individual__r.Assigned_Wave__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Wave</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>dc3DisableDuplicateCheck__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used in Duplicate Check trigger dc3RelationshipsTrigger</description>
+        <externalId>false</externalId>
+        <label>Disable Duplicate Check</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Relationship</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>First_Relationship_Type__c</columns>
+        <columns>Second_Relationship_Type__c</columns>
+        <columns>To_Individual__c</columns>
+        <columns>From_Individual__c</columns>
+        <columns>To_Institution__c</columns>
+        <columns>From_Institution__c</columns>
+        <columns>To_Relationship_Entity__c</columns>
+        <columns>From_Relationship_Entity__c</columns>
+        <columns>Start_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>3/14/2016 12:00 AM</value>
+        </filters>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All1</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Relationship_Management_View</fullName>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>To_Contact_ID__c</field>
+            <operation>equals</operation>
+            <value>003C0000021E5js</value>
+        </filters>
+        <filters>
+            <field>From_Contact_ID__c</field>
+            <operation>equals</operation>
+            <value>003C0000021E5js</value>
+        </filters>
+        <label>Relationship Management View</label>
+    </listViews>
+    <listViews>
+        <fullName>Test_issue</fullName>
+        <columns>NAME</columns>
+        <columns>To_Contact_ID_dupe_check__c</columns>
+        <columns>From_Contact_ID_dupe_check__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>From_Individual__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>To_Contact_ID__c</field>
+            <operation>equals</operation>
+            <value>003C000001pljwS</value>
+        </filters>
+        <label>Test issue</label>
+    </listViews>
+    <nameField>
+        <label>Relationship Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Relationships</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>First_Relationship_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Second_Relationship_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>To_Individual__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>From_Individual__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>To_Institution__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>From_Institution__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>To_Relationship_Entity__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>From_Relationship_Entity__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

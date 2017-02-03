@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Autumn 2016 PG  Payment Chaser Email - Non Term Time</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Aut 2016 PG - Payment Chaser email (Standard)</name>
+    <style>none</style>
+    <subject>NCS application - your next steps</subject>
+    <textOnly>NCS powered by The Challenge 
+
+NCSTHECHALLENGE.ORG 
+
+NCS application - your next steps
+
+Dear {!IF(Contact.Parent_Name__c &lt;&gt; &quot;&quot;,&quot; &quot;&amp; ( Contact.Parent_Name__c ) &amp;&quot; &quot;,&quot;Parent or Guardian of &quot;&amp;(Contact.FirstName))},
+
+{!IF((Contact.Term_time_wave__c == TRUE),&quot;Your admin fee for &quot;&amp;(Contact.FirstName)&amp;&quot;’s&quot;,&quot;Your payment deadline for &quot;&amp;(Contact.FirstName)&amp;&quot;’s NCS application&quot;)}
+
+{!IF((Contact.Term_time_wave__c == TRUE),&quot;&quot;,&quot;Places on NCS are in high demand so if we have not received the payment by &quot;+TEXT(NCS_Application__c.Letter_email_date_reserved_place_lost__c)+&quot;, we may have to move &quot;&amp;(Contact.FirstName)&amp;&quot; to the waiting list and give the place to another young person.
+
+&quot;)} {!IF((Contact.Term_time_wave__c == TRUE),&quot;Thank you for your application for &quot;&amp;(Contact.FirstName)&amp;&quot; to take part in National Citizen Service (NCS) as part of their course. We have temporarily saved them a provisional place on the programme but you now need to pay your admin fee, which will be a maximum of £50.&quot;,&quot;Thank you for your application for &quot;&amp;(Contact.FirstName)&amp;&quot; to take part in National Citizen Service (NCS). We have temporarily saved them a provisional place on the programme but you need to pay your admin fee by &quot;+TEXT(NCS_Application__c.Letter_email_date_reserved_place_lost__c)+&quot; to keep &quot;&amp;(Contact.FirstName)&amp;&quot;’s provisional place. Remember your NCS admin fee will be a maximum of £50.&quot;)}
+
+To pay, please:
+
+- log in to our website at bookings.ncsthechallenge.org (If you have forgotten your log in details, you can recover them by clicking &apos;login&apos; and then clicking the &quot;Forgotten password?&quot; button), or
+- call us on 0203 542 2400 to pay over the phone or arrange sending us a cheque.
+
+We will then be able to continue processing {!Contact.FirstName}’s application.
+
+We wouldn’t want the cost to stop {!Contact.FirstName} taking part. If finding the money is a problem for you, we may be able to help. Please log in to your online account, go to the payment section and select the option to ask for financial assistance. Alternatively, give us a call and we will be happy to advise you.
+
+Yours sincerely,
+
+The NCS Team - The Challenge
+
+
+NCS THE CHALLENGE    @NCSTheChallenge
+NCSThe Challenge    @NCSTheChallenge
+
+
+Copyright © 2016 The Challenge Network, All rights reserved.
+The Challenge Network is a charity registered in England and Wales with charity no. 1129239
+and company no. 6845451, whose registered office is at Elizabeth House, 39 York Road, London SE1 7NQ.
+
+You are receiving this email because you have registered your interest for NCS.
+Want to update your preferences or unsubscribe? Please contact us.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Step_Forward_Account_Management__c$Name</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Account_Management__c$Account__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Account_Management__c$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Account_Management__c.Step_Forward_Jobs__r$Pathway__c</field>
+    </columns>
+    <columns>
+        <field>Step_Forward_Account_Management__c$CreatedBy</field>
+    </columns>
+    <description>Meetings booked - Rick</description>
+    <filter>
+        <criteriaItems>
+            <column>Step_Forward_Account_Management__c$Employer_Recruitment_Stage__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Meeting booked,Meeting held - in discussion,Meeting held -not interested,Vacancy confirmed</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Meetings booked - Rick</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Step_Forward_Employers_with_Without_Jobs__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Step_Forward_Account_Management__c$LastModifiedDate</dateColumn>
+        <interval>INTERVAL_LAST120</interval>
+    </timeFrameFilter>
+</Report>

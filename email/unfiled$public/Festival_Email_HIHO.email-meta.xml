@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Festival Email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Festival Email HIHO</name>
+    <style>none</style>
+    <subject>The Big {!Wave_Selection__c.Assigned_team_name__c} Reunion@ The Challenge Festival</subject>
+    <textOnly>MEET UP WITH YOUR TEAM THIS WEEKEND AND WIN A MEAL OUT FOR ALL OF YOU
+
+Hi, {!Contact.FirstName}
+
+Are you going to the Big Reunion on Saturday? 
+
+The Challenge are hosting a Festival on Saturday in West Thames College and we want you and all your mates from the summer to get back together and relive a fantastic summer. 
+
+We want to see as many of Team {!Wave_Selection__c.Assigned_team_name__c} as possible back together. If 8 or more people from your Team {!Wave_Selection__c.Assigned_team_name__c} are there then you get entered into a draw. The winning Team get a meal out on the Challenge.
+
+To get your name on on the guest list email me back or log on to you Challenge Society page and click attending. 
+
+See you Saturday.....
+
+WWW.THECHALLENGESOCIETY.ORG    
+
+www.facebook.com/events/404336942993961/
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239. Registered address: 75 Westminster Bridge Road, London SE1 7HS</textOnly>
+    <type>custom</type>
+</EmailTemplate>

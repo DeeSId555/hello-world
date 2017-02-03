@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>NCS Data Entry Staging Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>NCS Data Entry Staging Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- This is the API name of the field on the NCS Data Entry Staging Object ie; yp_first_name__c --></help>
+        <label><!-- Source Field --></label>
+        <name>Source_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Target Field on Target Object, uses the Salesforce API name ie, firstName, ap_recieved__c --></help>
+        <label><!-- Target Field --></label>
+        <name>Target_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Salesforce Object API name ie, Contact, Inclusion_Details__c --></help>
+        <label><!-- Target Object --></label>
+        <name>Target_Object__c</name>
+    </fields>
+    <fields>
+        <help><!-- Target type is used to specify the target object for use within the APEX classes bg_NCSDataEntry
+
+ENSURE ALL CAPITALS
+
+Values are;
+INC
+NCS
+YPCON
+PGCON
+YP&amp;PGCON --></help>
+        <label><!-- Target Type --></label>
+        <name>Target_Type__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

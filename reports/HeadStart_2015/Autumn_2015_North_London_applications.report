@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_2948627</developerName>
+        <masterLabel>YP Wave Area</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Contact.Wave_started__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Barnet A 10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barnet A 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barnet A 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barnet A 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barnet A 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barnet A 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barnet A 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Barnet A 9</sourceValue>
+            </sourceValues>
+            <value>Barnet</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Enfield A 1</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enfield A 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enfield A 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enfield A 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enfield A 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enfield A 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enfield A 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enfield A 8</sourceValue>
+            </sourceValues>
+            <value>Enfield</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Haringey B 1</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Haringey B 10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Haringey B 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Haringey B 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Haringey B 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Haringey B 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Haringey B 9</sourceValue>
+            </sourceValues>
+            <value>Haringey</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Tower Hamlets A 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tower Hamlets A 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tower Hamlets A 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tower Hamlets A 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tower Hamlets A 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tower Hamlets A 9</sourceValue>
+            </sourceValues>
+            <value>Tower Hamlets</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>W Forest A 10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 7</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>W Forest A 9</sourceValue>
+            </sourceValues>
+            <value>Waltham Forest</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Islington B 10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Islington B 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Islington B 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Islington B 8</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Islington B 9</sourceValue>
+            </sourceValues>
+            <value>Islington</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBarGrouped</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_2948627</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>HS_Activity__c.HS_Application_Status__c</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>HS_Activity__c.HS_Status__c</field>
+    </columns>
+    <description>Application review for North London - in progress, submitted - HS Owner Elly and Bevan</description>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <column>CONTACT_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Young_Person</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Date_HS_Application_pack_triggered__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>9/24/2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HS_Activity__c.HS_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>autumn</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Wave_started__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>barnet,islington,tower hamlets,hackney,w forest,haringey,enfield</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>HS_Activity__c.HS_Application_Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_2948627</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Autumn 2015 KT Zone A applications</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$HS_Activity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

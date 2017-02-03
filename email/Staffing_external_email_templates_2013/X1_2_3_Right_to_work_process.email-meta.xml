@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Updated for 2014 SN</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>1.2.3 Right to work process</name>
+    <style>freeForm</style>
+    <subject>Re: your application to NCS with The Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+Dear {!Contact.FirstName}
+
+Thank you for your interest in NCS with The Challenge.
+
+We understand that you do not have the right to work in the UK. In order to do so, you may need to apply for permission under the points-based system. To find out about the different tiers, and what you will need for your application, please go to the DirectGov website and search for &quot;Permission to work in the UK&quot;.
+
+Best wishes,
+
+Staffing Department
+The Challenge
+e: staffing.support@the-challenge.org
+
+
+CR 1.2.3</textOnly>
+    <type>html</type>
+</EmailTemplate>

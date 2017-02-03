@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>CR 4.3 Offer role - general (2016)</name>
+    <style>formalLetter</style>
+    <subject>Your assessment for the NCS seasonal roles</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Contact.Contact_Owner_alternative_email__c}.
+
+Dear {!Contact.FirstName},
+
+
+
+Congratulations! Following your assessment we are delighted to provisionally offer you a role with us this summer as a {!Job_Application__c.Role_to_assess_for__c}.
+
+
+
+This offer is conditional upon your completion of the following:
+
+
+
+DBS certificate
+
+
+
+All seasonal staff working on the NCS programme must have an ‘Enhanced DBS certificate with Children&apos;s Barred List check’ dated from 1 January 2015. This is a legal requirement, and you won’t be offered any work dates without one.
+
+
+
+If you don’t already have a valid DBS certificate click here for instructions on how to apply for one. Please note, you’ll need up to 4 forms of ID to hand to do your application. DBS applications can sometimes take up to 6 weeks to process - make sure you start your application as soon as possible!
+
+https://staffing.the-challenge.org/assets/2016DBSinstructionspostoffer.pdf
+
+
+
+If you already have an existing DBS certificate dated from 1 January 2015 and you didn’t upload it to your application form, please upload a scanned or photographed copy to the Essential Information page now!
+
+
+
+Essential Information
+
+
+
+Each section of the Essential Information page should be completed before you start your role. This includes:
+
+
+
+Providing contact details for 2 referees
+
+Making a tax declaration and providing your bank details (from April)
+
+Filling out our health, safeguarding &amp; inclusion form
+
+Providing details for your emergency contact
+
+Checking your DBS status
+
+
+This offer is conditional upon availability and your completion of the following:
+
+Availability and Training
+
+You&apos;ll now also have access to the &apos;Choosing when I can work&apos; and &apos;Dates when I can&apos;t work&apos; pages. Here, you&apos;ll be able to choose which work dates you&apos;d like to be considered for, and indicate days when you won&apos;t be available to work. 
+
+The sooner you submit this information, the sooner we may be able to provisionally allocate you to a work placement! Please note that in some instances your availability may not match the placements that we still have available and we may initially offer you a place on our reserve list. 
+
+The &apos;Booking Training&apos; page is also now open - here, you&apos;ll find a choice of dates to choose from for your training sesions. This training is compulsory, and we can&apos;t let you work on the programme without it. Our training sessions fill up fast - login and book your training as soon as possible to secure your place!
+
+
+
+What else?
+
+
+
+Depending upon your role, you’ll need to attend up to 3 days of unpaid compulsory training for your role. Our training dates will take place from May until July, and you’ll be able to pick your dates from late April.
+
+
+
+We’ll call you in the coming weeks to discuss your availability and talk through any questions you might have about your role. In the meantime, if you have any urgent questions, please contact me using the details below, or check through our FAQs.
+
+
+
+Congratulations again, and best wishes,
+
+
+
+{!Contact.OwnerFullName}
+
+
+{!Contact.Owner_Owner_alternative_email__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

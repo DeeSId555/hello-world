@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Hours</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Hours</value>
+    </caseValues>
+    <fields>
+        <help><!-- Theyoung person the hours relate to --></help>
+        <label><!-- Contact --></label>
+        <lookupFilter>
+            <errorMessage><!-- Value does not exist. Please check the spelling is correct. --></errorMessage>
+        </lookupFilter>
+        <name>Challenger__c</name>
+        <relationshipLabel><!-- Hours --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Email address of volunteering contact --></help>
+        <label><!-- Contact email --></label>
+        <name>Contact_email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of volunteering contact --></help>
+        <label><!-- Contact name --></label>
+        <name>Contact_name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Telephone number of volunteering contact --></help>
+        <label><!-- Contact telephone number --></label>
+        <name>Contact_telephone_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count --></label>
+        <name>Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date on which the Young Personsubmitted their hours --></help>
+        <label><!-- Date hours submitted --></label>
+        <name>Date_hours_submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Volunteering --></label>
+        <name>Date_of_Volunteering__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours Number --></label>
+        <name>Hours_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of volunteering hours --></help>
+        <label><!-- LH Hours --></label>
+        <name>Hours__c</name>
+    </fields>
+    <fields>
+        <help><!-- Picklist for YP to select the hours they spent volunteering --></help>
+        <label><!-- Hours of volunteering --></label>
+        <name>Hours_of_volunteering__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date young person initially signed up for the volunteering opportunity --></help>
+        <label><!-- Initial sign-up date --></label>
+        <name>Initial_sign_up_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Shown --></label>
+        <name>Interest_Shown__c</name>
+        <relationshipLabel><!-- Hours --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of organisation the volunteering opportunity is with --></help>
+        <label><!-- Organisation volunteering with --></label>
+        <name>Organisation_volunteering_with__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of organisation Challenger is volunteering with, if this cannot be looked up --></help>
+        <label><!-- Other organisation volunteering with --></label>
+        <name>Other_organisation_volunteering_with__c</name>
+    </fields>
+    <fields>
+        <label><!-- Own Vol - Borough --></label>
+        <name>Own_Vol_Borough__c</name>
+    </fields>
+    <fields>
+        <label><!-- Own Vol - Contact details --></label>
+        <name>Own_Vol_Contact_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Own Vol - Email --></label>
+        <name>Own_Vol_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Own Vol - Manager&apos;s name --></label>
+        <name>Own_Vol_Manager_s_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Own Vol - Number --></label>
+        <name>Own_Vol_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Own Vol - Organisation name --></label>
+        <name>Own_Vol_Organisation_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Own opportunity? --></label>
+        <name>Own_opportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rating --></label>
+        <name>Rating__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rating as number --></label>
+        <name>Rating_as_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signposting Opportunity Removed --></label>
+        <name>Signposting_Opportunity_Removed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signposting Opportunity Unpublished --></label>
+        <name>Signposting_Opportunity_Unpublished__c</name>
+    </fields>
+    <fields>
+        <help><!-- Box checked by the YP when they travelled for more than 30 minutes to reach the volunteering opportunity --></help>
+        <label><!-- Travelled for over 30 minutes? --></label>
+        <name>Travelled_for_over_30_minutes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Any notes you wish to make about why you verified these hours --></help>
+        <label><!-- Verification notes --></label>
+        <name>Verification_notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please tick if you agree with the volunteering hours --></help>
+        <label><!-- Verified? --></label>
+        <name>Verified__c</name>
+    </fields>
+    <fields>
+        <help><!-- Opportunity to which the hours relate --></help>
+        <label><!-- Signposting Opportunity --></label>
+        <name>Volunteering_Opportunity__c</name>
+        <relationshipLabel><!-- Challenger Hours --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- A description of the activities the YP took part in during the day. --></help>
+        <label><!-- Volunteering description --></label>
+        <name>Volunteering_description__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

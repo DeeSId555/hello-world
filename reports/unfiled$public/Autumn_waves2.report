@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CHILD_NAME</field>
+    </columns>
+    <columns>
+        <field>Wave__c.Total_Reserved_Assigned__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c.Total_Assigned__c</field>
+    </columns>
+    <columns>
+        <field>Wave__c.Total_unpaid_reserved_or_assigned__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Wave__c.Autumn_wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CHILD_RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Wave__c.X2014</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Autumn waves</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Cluster__c$Wave__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Cluster__c.Challenge_Action_Leader_Training_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

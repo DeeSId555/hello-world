@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Reaching Communities Email to confirm KO attendance</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TCS_template</letterhead>
+    <name>Reaching communities Spring 2016 confirmation email</name>
+    <style>freeForm</style>
+    <subject>The Challenge Society Reaching Communities Programme</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+
+
+Thank you for signing up to the Reaching Communities Programme.
+
+
+
+The programme will be starting this weekend.
+
+
+
+Please come to: Pastures Youth Centre, E11 3DR, on Saturday 6th February at 13:45. Make sure you get there in time of a prompt start.
+
+
+
+Could you please respond to this email telling us if you are or are not coming, so we know how many people to expect.
+
+
+
+
+If you have any questions feel free to email Ed, edward.mann@the-challenge.org
+
+
+
+We really look forward to starting this amazing programme with you!
+
+Ed Mann
+
+Assistant Graduate Manager
+The Challenge</textOnly>
+    <type>html</type>
+</EmailTemplate>

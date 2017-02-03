@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>SFP 2.3 Payment Notification for RCA/Grad</name>
+    <style>formalLetter</style>
+    <subject>Payment notification for your work on {!Job_placement__c.Assignment_end_date__c}</subject>
+    <textOnly>Please do not respond to this email. The email was sent from an unattended mailbox and responses are not reviewed. Please instead contact your staffing representative on {!Job_placement__c.Staffing_Associate_email__c}.
+
+
+Payment notification for your work between the dates of 7 March to 31 March
+
+Dear {!Job_placement__c.Contact_Name__c},
+
+Many thanks for taking on the role of {!Job_placement__c.Role__c} on the NCS: Real Challenge Action - Make Your Mark and (if applicable) NCS: Graduations days.
+
+Below is a summary of your approved payroll for your work on  {!Job_placement__c.Assignment_end_date__c} only.
+
+On 9 April you will receive your total gross pay for your work on {!Job_placement__c.Assignment_end_date__c} for {!Job_placement__c.Wave__c}. Your gross pay will be {!Job_placement__c.Total_Amount_Paid__c}, constituting {!Job_placement__c.days_worked__c} day’s work. This will be subject to tax and NI deductions.
+
+On your payslip (sent via email on 9 April), you will see the total amount which you will receive.
+
+Additional payments
+
+Please note that you will receive this email for each separate day of NCS: Real Challenge Action  and NCS: Graduation that you work. This means that you could receive this email up to three times. If you feel you should have received additional communications but have not, please contact your local staffing team.
+
+Due to new auto-enrolment legislation, employees of The Challenge, including seasonal staff, may be enrolled in a workplace pension scheme. For more information, including how to opt out, please see FAQs.
+
+If you have any questions, please contact your local staffing team. Please quote the email reference number in any correspondence.
+
+
+Best Wishes
+
+The Challenge
+{!Job_placement__c.Staffing_Associate_email__c}
+
+Email Reference: SFP 2.3</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This is sent to PMs when  payroll has to be approved before the deadline</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SF to PM: Payroll to approve all reminder1</name>
+    <style>none</style>
+    <subject>Payroll reminder for {!Wave__c.Name}</subject>
+    <textOnly>Hi,
+
+If you haven&apos;t done it already, please approve all payroll for your RAMs and  LOs as soon as possible.  Evolution will process payments this coming Monday.
+
+Please go to your views in Job Applications to approve their payroll. Click on the link below to get to the Job Applications home page:
+For LOs, Rams and Practitioners go to the view  &quot;Payroll approvals Summer-long roles {!Wave__c.Wave_Cluster__c}&quot;.
+
+
+Thanks!
+
+This is an automatic email, sent when a Challenge week comes to an end.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

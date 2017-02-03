@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SN Updated 12.13. AO Approved</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>1.1a Thanks for your application and Request for Care Check (pre-screen)</name>
+    <style>freeForm</style>
+    <subject>Your application to work for NCS with the Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+
+
+Dear {!Contact.FirstName},
+
+
+
+Thank you for completing your application form for a summer role at NCS with The Challenge. As we are close to the end of our recruitment cycle, most roles have already been filled. We will prioritise applications with maximum flexibility regarding roles, dates and locations. We aim to respond to all applications within three weeks
+
+
+
+Thank you for your interest in NCS with The Challenge.
+
+
+
+Best Wishes
+
+
+
+{!Contact.OwnerFullName}
+
+e: {!Contact.Contact_Owner_alternative_email__c}
+
+The Challenge
+
+
+
+
+
+CR 1.1a</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,270 @@
+<apex:page sidebar="false" standardStylesheets="false" showHeader="false" standardController="Campaign">
+
+<html>
+    <head>
+        <style>   
+.button1{
+        
+        height:70px; 
+        width:170px; 
+        border: solid 4px; 
+        border-color:#B31217; 
+        font : 18px "Dirty", Arial, Helvetica; 
+        background :white;
+        border-radius:15px;
+        }
+        </style>
+    </head>
+    
+    <body>    
+        
+        
+        <apex:composition template="PortalTemplate">
+        
+            <apex:define name="TopDiv">
+            <!---------------- MENU -------------------------->
+            </apex:define>
+            
+            <apex:define name="MidDiv">
+               <!--------------- Mid Div ------------------>
+           
+               <table style="height:100%;">
+                   <tr >
+
+<!------------------------------------------- EVENT NFORMATION --------------------------------------------------->                    
+   <td valign="top" style="border-left:solid 8px; border-color:#D9D9D9; width:50%; ">
+   <div style="margin-left:2%; margin-top:1%;">
+       <apex:outputText styleClass="optext" value="event information"/> 
+       
+      <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Campaign.Fields.Name.Label}"/>
+                  </td>
+                  <td><apex:outputText value="{!Campaign.Name}"/>
+                  </td>
+              </tr>
+          </table>  
+      </div>
+      
+      <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Campaign.Fields.Cluster__c.Label}"/> 
+                  </td>
+                  <td><apex:outputText value="{!Campaign.Cluster__r.Name}"/>
+                  </td>
+              </tr>
+          </table>  
+          </div>
+          
+      <div> <table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Campaign.Fields.Borough_or_area__c.Label}"/>
+                  </td>
+                  <td><apex:outputText value="{!Campaign.Borough_or_area__c}"/>
+                  </td>
+              </tr>
+          </table>
+          </div>
+          
+      <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"> <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Campaign.Fields.Challenger_Action__c.Label}"/>
+                  </td>
+                  <td><apex:outputText value="{!Campaign.Challenger_Action__c}"/>
+                  </td>
+              </tr>
+          </table>
+          </div>
+          
+      <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Campaign.Fields.Action_Team_or_Youth_Board__c.Label}"/>
+                  </td>
+                  <td><apex:outputText value="{!Campaign.Action_Team_or_Youth_Board__r.Name}"/>
+                  </td>
+              </tr>
+          </table>
+        </div>
+    </div>
+ </td>
+ <!-------------------------------------------/ EVENT INFORMATION ---------------------------------------------------> 
+                            
+                            
+ <!------------------------------------------- IMAGE PREVIEW --------------------------------------------------->                            
+       <td valign="top" style="border-left:solid 4px; border-color:#D9D9D9; width:50%;">
+       <div style="margin-left:2%; margin-top:1%;">
+           <apex:outputText styleClass="optext" value="image preview"/><br />
+        
+               <div><table style="width:100%;">
+                  <tr>
+                     <!-- <td valign="top" style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Campaign.Fields.Image_preview__c.Label}"/>  
+                      </td>-->
+                      <td><apex:image rendered="{!IF(Campaign.Image__c,true,false)}" width="150" height="120" value="http://challenge.brix.fatbeehive.com/data/images/campaign/{!LEFT(Campaign.Id,15)}.jpg"/>
+                      </td>
+                  </tr>
+              </table>
+              </div>
+          </div>
+           </td>
+     </tr>
+<!-------------------------------------------/ IMAGE PREVIEW --------------------------------------------------->  
+
+
+<!------------------------------------------- EVENT DETAILS --------------------------------------------------->                   
+<tr >
+
+   <td valign="top" width="600" style="border-left:solid 8px; border-color:#D9D9D9; ">
+   <div style="margin-left:2%;">
+        <apex:outputText styleClass="optext" value="event details"/><br />
+        
+       <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"> <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Campaign.Fields.Summary_description__c.Label}"/> 
+                  </td>
+                  <td><apex:outputText value="{!Campaign.Summary_description__c}"/>
+                  </td>
+              </tr>
+          </table>
+          </div>
+          
+       <div> <table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Campaign.Fields.Date_of_event__c.Label}"/>
+                  </td>
+                  <td><apex:outputText value="{0,date,dd'/'MM'/'yyyy}">
+                        <apex:param value="{!Campaign.Date_of_event__c}" /> 
+                    </apex:outputText>
+                  </td>
+              </tr>
+          </table>
+          </div>
+          
+       <div><table style="width:100%;" >
+              <tr>
+                  <td style="width:40%;"> <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Campaign.Fields.Start_time__c.Label}"/> 
+                  </td>
+                  <td><apex:outputText value="{!Campaign.Start_time__c}"/>
+                  </td>
+              </tr>
+          </table>
+          </div> 
+          
+       <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Campaign.Fields.End_time__c.Label}"/>
+                  </td>
+                  <td><apex:outputText value="{!Campaign.End_time__c}"/>
+                  </td>
+              </tr>
+          </table>
+        </div>
+        
+       <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" style="width:100%;" value="{!$ObjectType.Campaign.Fields.Location_postcode_of_event__c.Label}"/>
+                  </td>
+                  <td><apex:outputText value="{!Campaign.Location_postcode_of_event__c}"/>
+                  </td>
+              </tr>
+          </table>  
+          </div>
+          
+       <div><table style="width:100%;">
+              <tr>
+                  <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Campaign.Fields.Location_address_of_event__c.Label}"/>
+                  </td>
+                  <td><apex:outputText value="{!Campaign.Location_address_of_event__c}"/>
+                  </td>
+              </tr>
+          </table> 
+       </div>
+   </div>
+</td>
+<!-------------------------------------------/ EVENT DETAILS ---------------------------------------------------> 
+
+
+<!------------------------------------------- FULL DESCRIPTION OF EVENT--------------------------------------------------->                  
+   <td valign="top" width="600" style="border-left:solid 4px; border-color:#D9D9D9; ">
+  <div style="margin-left:2%;">
+       <apex:outputText styleClass="optext" value="full description of event"/><br />
+      <div><table style="width:100%;">
+              <tr>
+                  <!--<td style="width:40%;"> <apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Campaign.Fields.Description.Label}"/> 
+                  </td>-->
+                  <td><apex:outputText value="{!Campaign.Description}"/>
+                  </td>
+              </tr>
+          </table>
+          </div>
+      </div>
+ </td>
+  </tr>
+<!-------------------------------------------/ FULL DESCRIPTION OF EVENT --------------------------------------------------->
+
+
+<!------------------------------------------- SYSTEM INFORAMTION --------------------------------------------------->  
+   <tr>
+      
+       <td style="border-left:solid 8px; border-color:#D9D9D9; ">
+     <div style="margin-left:2%; margin-bottom:2%;">
+           <apex:outputText styleClass="optext" value="system information"/><br />
+          
+            <div><table style="width:100%;">
+                  <tr>
+                      <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Campaign.Fields.Display_on_website__c.Label}"/>
+                      </td>
+                      <td><apex:image width="21" styleClass="checkImg" height="16" value="/img/checkbox_checked.gif" rendered="{!IF(Campaign.Display_on_website__c==true,true,false)}"/>
+                           <apex:image width="21" styleClass="checkImg" height="16" value="/img/checkbox_unchecked.gif" rendered="{!IF(Campaign.Display_on_website__c==true,false,true)}"/>
+                     
+                      </td>
+                  </tr>
+              </table>
+              </div> 
+              
+           <div><table style="width:100%;">
+                  <tr>
+                      <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="{!$ObjectType.Campaign.Fields.Display_on_TCS_home_page__c.Label}"/>
+                      </td>
+                      <td> <apex:image width="21" styleClass="checkImg" height="16" value="/img/checkbox_checked.gif" rendered="{!IF(Campaign.Display_on_TCS_home_page__c==true,true,false)}"/>
+                           <apex:image width="21" styleClass="checkImg" height="16" value="/img/checkbox_unchecked.gif" rendered="{!IF(Campaign.Display_on_TCS_home_page__c==true,false,true)}"/>
+           </td>
+                      
+                  </tr>
+              </table> 
+              </div>
+              
+          <div><table style="width:100%;">
+                  <tr>
+                      <td style="width:40%;"><apex:outputText styleClass="fieldLabel" value="Created By"/> 
+                      </td>
+                      <td><apex:outputText value="{!Campaign.CreatedBy.Name}"/>
+                      </td>
+                  </tr>
+              </table> </div> 
+           </div>
+</td>
+        <td style="border-left:solid 4px; border-color:#D9D9D9; "/>
+        
+ </tr>
+<!-------------------------------------------/ SYSTEM INFORMATION --------------------------------------------------->             
+   </table>
+
+</apex:define>
+           
+           <apex:define name="BotDiv"> 
+               <center>
+                   <div style="margin-top:2%;">
+                       <apex:outputLink value="{!$Page.TCSPortal_CampHistCreation}?contactid=&campid={!Campaign.id}" styleClass="optext btn button1" style="margin-right:5%;">add a young person to this event</apex:outputLink>
+                       <apex:outputLink value="{!$Page.TCSPortal_CampaignMemberList}?id={!$CurrentPage.parameters.id}" styleClass="optext btn button1">see<br/> all attendees</apex:outputLink>
+                   </div>  
+               </center>
+               
+           </apex:define>
+           
+           
+        </apex:composition> 
+        
+    </body>
+      
+</html>
+</apex:page>

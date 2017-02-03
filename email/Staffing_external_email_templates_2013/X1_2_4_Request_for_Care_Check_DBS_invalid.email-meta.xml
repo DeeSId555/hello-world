@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>I have cloned 1.1 and added a bit - please check/edit etc thanks. updated sn 2014. AO approved</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_template</letterhead>
+    <name>1.2.4 Request for Care Check (DBS invalid)</name>
+    <style>freeForm</style>
+    <subject>1.2.4 New Care Check request</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+
+
+Dear {!Contact.FirstName},
+
+
+
+Thank you for completing your application form for a summer role at NCS with The Challenge.
+
+Unfortunately, the DBS (formerly named CRB) you submitted is not valid for the summer programme.
+
+We therefore require a Care Check to be carried out.
+
+Care Check is the first step in the process to obtaining a full DBS (formerly CRB).This process will be completed when a conditional job offer is made.
+
+
+Please note you do not need to enter a password.
+
+
+Visit www.carecheck.co.uk
+Click on the Applicant tab
+Please read all the notes and instructions
+Click on Click here to continue to your application
+Go to Disclosure and Barring Service (DBS) Application
+Click on Start Application
+Enter the Organisation Reference: evolutionrecruitment
+You do not need a password, press enter to continue with your application
+Enter your personal information to apply for the DBS.
+
+
+N.B You will be asked to upload your documents if and when you are offered a role.
+
+Thank you for taking the time to complete the Care Check. You will be notified when this process is complete.
+
+Best Wishes,
+
+{!Contact.OwnerFullName}
+t: {!Contact.OwnerPhone}
+e: {!Contact.Contact_Owner_alternative_email__c}
+The Challenge
+
+
+Please Note:-
+We employ a third party organisation to carry out our tax, referencing and DBS applications.This process has no bearing on selection and assessment outcomes and is only followed up on post assessment decision. The purpose of starting this process at this stage is to due to a high percentage of successful candidates and the high volume of candidates we need to process.
+
+
+CR 1.2.4</textOnly>
+    <type>html</type>
+</EmailTemplate>

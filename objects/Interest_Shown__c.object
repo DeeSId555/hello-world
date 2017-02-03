@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Own_Vol_Borough__c</fullName>
+        <externalId>false</externalId>
+        <label>Own Vol - Borough</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Barking and Dagenham</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Barnet</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bexley</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Brent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bromley</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Camden</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Croydon</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ealing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Enfield</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Greenwich</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hackney</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hammersmith and Fulham</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Haringey</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Harrow</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Havering</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hillingdon</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hounslow</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Islington</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Kensington and Chelsea</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Kingston upon Thames</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lambeth</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lewisham</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Merton</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Newham</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Redbridge</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Richmond upon Thames</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Southwark</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sutton</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tower Hamlets</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Waltham Forest</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wandsworth</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Westminster</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Own_Vol_Contact_details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Own volunteering - contact details</inlineHelpText>
+        <label>Own Vol - Contact details</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Own_Vol_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Own Vol - Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Own_Vol_Manager_s_name__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Own volunteering - name of manager</inlineHelpText>
+        <label>Own Vol - Manager&apos;s name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Own_Vol_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Own Vol - Number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Own_Vol_Organisation_name__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Own volunteering - Name of organisation</inlineHelpText>
+        <label>Own Vol - Organisation name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Own_opportunity__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Own opportunity?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Signposting_Opportunity_ID__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Signposting Opportunity ID</label>
+        <referenceTo>Volunteering_Opportunity__c</referenceTo>
+        <relationshipLabel>Interests Shown</relationshipLabel>
+        <relationshipName>Interests_Shown</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Signposting_Opportunity_Removed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Signposting Opportunity Removed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Signposting_Opportunity_Unpublished__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Signposting Opportunity Unpublished</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Young_Person__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Young Person</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Interests Shown</relationshipLabel>
+        <relationshipName>Interests_Shown</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Interest Shown</label>
+    <nameField>
+        <displayFormat>IS-{0000000}</displayFormat>
+        <label>Interest Shown Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Interests Shown</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Signposting_Opportunity_Unpublished</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+Signposting_Opportunity_ID__r.Publish_to_LH_Website__c = FALSE
+,
+Signposting_Opportunity_Unpublished__c = FALSE
+)</errorConditionFormula>
+        <errorMessage>This Signposting Opportunity (SO) is not currently published. Interest Shown records must either have Signposting Opportunity Unpublished checked if they are created after SO is unpublished or not be created until after the SO has been published.</errorMessage>
+    </validationRules>
+</CustomObject>

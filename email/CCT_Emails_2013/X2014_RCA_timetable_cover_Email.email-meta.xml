@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2014 RCA timetable cover Email</name>
+    <style>none</style>
+    <subject>NCS with The Challenge - Timetable for the September Weekend Days</subject>
+    <textOnly>NCS POWERED BY THE CHALLENGE
+
+Your timetable for the final part of NCS
+
+
+
+Dear Parent/Guardian of {!Contact.Name} and {!Contact.FirstName},
+
+{!Wave_Selection__c.Comm_para_RCA_Timetable_cover_letter_P1__c} Your timetable for the final part of the programme (the non-residential social action days in September) can be found by clicking here.
+
+Please check this timetable to find the dates, meeting points and times for {!Contact.FirstName}’s team. You will need to arrange travel between home and the meeting points at the start and return times shown.
+
+When {!Contact.FirstName} has attended these social action days and completed the programme, they will be invited to a graduation ceremony in October and will receive a certificate signed by the Prime Minister. You will be sent an invitation nearer the time. Graduates will also be able to take part in The Challenge Society, which offers exciting events and opportunities to those who have completed NCS with The Challenge.
+
+If {!Contact.FirstName} is unable to attend any of the dates listed for their team, please contact us to ask for an absence request form. You can do this by emailing contact@the-challenge.org or by calling us on 020 3542 2400. If you have any other questions, please contact us using the contact details above.
+
+We look forward to seeing {!Contact.FirstName} in September.
+
+Yours sincerely,
+
+
+
+Rebecca Carter
+Director at The Challenge
+
+
+
+The Challenge Network Ltd is registered in England and Wales, no 6845451. Registered charity no. 1129239.
+© The Challenge Network.
+
+You are receiving this email because you opted to subscribe for communications from The Challenge.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

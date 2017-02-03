@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>2014: Email response to Initial Application with DBS, stating we need to validate and will repsond. AO updated</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Staffing_Template_for_2_1_2013</letterhead>
+    <name>1.1c Initial Application with DBS, validation needed</name>
+    <style>freeForm</style>
+    <subject>Your application to work for NCS with the Challenge</subject>
+    <textOnly>Please do not respond to this email. This email was sent from an unattended mailbox, and replies are not reviewed. Please instead contact your Staffing representative on {!Contact.Contact_Owner_alternative_email__c}
+
+
+Dear {!Contact.FirstName},
+
+Thank you for completing your application form for a summer role at NCS with The Challenge. As we are close to the end of our recruitment cycle, most roles have already been filled. We will prioritise applications with maximum flexibility regarding roles, dates and locations. We aim to respond to all applications within three weeks
+
+Thank you for your interest in NCS with The Challenge.
+
+Best wishes,
+
+{!Contact.OwnerFullName}
+e: {!Contact.Contact_Owner_alternative_email__c}
+The Challenge
+
+
+
+
+CR 1.1c</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Incident__c.Date_and_time_of_incident__c</field>
+    </columns>
+    <columns>
+        <field>FK_CNTC_FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Incident__c.Wave__c</field>
+    </columns>
+    <columns>
+        <field>Incident__c.Description_of_incident__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Incident__c.Wave__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>croydon A 2,croydon A 3,croydon A 4,croydon A 5,croydon A 6,croydon A 7,croydon A 8,croydon A 9,croydon A 10,Sutton b 3,Sutton b 4,Sutton b 5,Sutton b 6,Sutton b 7,Sutton b 8,Sutton b 9</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Incident__c.Severity_of_incident_health__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>CAS Ticks at TC 2015</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Incident__c@Incident__c.Contact__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Incident__c.Date_and_time_of_incident__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Incident__c.Date_and_time_incident_reported_to_PL__c</dateColumn>
+        <endDate>2015-08-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-06-29</startDate>
+    </timeFrameFilter>
+</Report>

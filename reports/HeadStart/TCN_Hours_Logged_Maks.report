@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Id</field>
+    </columns>
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Hours__r$Volunteering_Opportunity__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Hours__r$Date_hours_submitted__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact$Id</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>003C000001b7F0k,003C000001aiOd0,003C000001pmgE9,003C000001ce80M,003C000001b49fK,003C000001oo5WL,003C000001kIYBD,003C000001dqlPT,003C000001b48RW,003C000001bgJ99,003C000001b4auy,003C000001aii9Y,003C000001bfmp8,003C000001ahDg3,003C000001dXOmE,003C000001k18Y7,003C000001fhjQ1,003C000001aiQPF,003C000001e9HnV,003C000001bgHD0,003C000001ahDQe,003C000001aezBV,003C000001bhGOH,003C000001bgJH3,003C000001b7hnu,003C000001jfmBN,003C000001ahzoN,003C000001boVAX</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.Hours__r$Contact_name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>TCN Hours Logged - Maks</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_hours__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$Added_to_waiting_list__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

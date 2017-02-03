@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Standard Rule</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Systems support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Priority</field>
+                <operation>equals</operation>
+                <value>High</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>systems.support@the-challenge.org</replyToEmail>
+            <senderEmail>api.user@the-challenge.org</senderEmail>
+            <senderName>Systems Support</senderName>
+            <template>Case_emails/Internal_Support_notification_of_case_created_High_priority</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Systems support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Priority</field>
+                <operation>equals</operation>
+                <value>Medium</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>systems.support@the-challenge.org</replyToEmail>
+            <senderEmail>api.user@the-challenge.org</senderEmail>
+            <senderName>Systems Support</senderName>
+            <template>Case_emails/Internal_Support_notification_of_case_created_medium_priority</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>TheChallenge</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>contact@the-challenge.org</replyToEmail>
+            <senderEmail>no-reply@the-challenge.org</senderEmail>
+            <senderName>The Challenge</senderName>
+            <template>CCT_Emails_2013/Auto_response_Email_Acknowledgment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Staffing NW</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <senderEmail>no.reply@the-challenge.org</senderEmail>
+            <senderName>Staffing The Challenge Network</senderName>
+            <template>Staffing_internal_emails_2013/Staffing_case_created</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Staffing North London</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>staffingnortheastlondon@b-eqxmuwmb5yt41da5rgzlze4infa79vi7si2kal48s343k93h8.8-zk</replyToEmail>
+            <senderEmail>no.reply@the-challenge.org</senderEmail>
+            <senderName>Staffing The Challenge Network</senderName>
+            <template>Staffing_internal_emails_2013/Staffing_case_created</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Staffing SouthLon/Surrey</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>staffingsouthlondon@1z51ty73k3y468y6frjanfht270b8hk26dgvp1q33wrfhr83cq.8-zk1feag</replyToEmail>
+            <senderEmail>no.reply@the-challenge.org</senderEmail>
+            <senderName>Staffing The Challenge Network</senderName>
+            <template>Staffing_internal_emails_2013/Staffing_case_created</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Staffing West London</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>staffingwestlondon@5-214e9m5pnyye0tmxwdli8iwv8nlymwnnniaz44vwgarv1vlc25.8-zk1fea</replyToEmail>
+            <senderEmail>no.reply@the-challenge.org</senderEmail>
+            <senderName>Staffing The Challenge Network</senderName>
+            <template>Staffing_internal_emails_2013/Staffing_case_created</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Staffing West Midlands</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>staffingwestmidlands@8du3cnmjai7xb26nwkb9inoe4ptqtbbew8njg6pt7790ij35f.8-zk1feag</replyToEmail>
+            <senderEmail>no.reply@the-challenge.org</senderEmail>
+            <senderName>Staffing The Challenge Network</senderName>
+            <template>Staffing_internal_emails_2013/Staffing_case_created</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Local Authority</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Local Authorities</value>
+    </caseValues>
+    <fields>
+        <label><!-- Cluster --></label>
+        <name>Cluster__c</name>
+        <relationshipLabel><!-- Local Authorities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Local Authority Type --></label>
+        <name>Local_Authority_Type__c</name>
+        <picklistValues>
+            <masterLabel>County</masterLabel>
+            <translation><!-- County --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>District</masterLabel>
+            <translation><!-- District --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unitary</masterLabel>
+            <translation><!-- Unitary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The NCS Contract Region this local authority forms part of. --></help>
+        <label><!-- NCS Contract Region --></label>
+        <name>NCS_Contract_Region__c</name>
+        <relationshipLabel><!-- Local Authorities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Zone --></label>
+        <name>Zone__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
