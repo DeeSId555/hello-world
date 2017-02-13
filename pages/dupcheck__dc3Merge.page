@@ -100,7 +100,7 @@
 							    <div class="slds-icon__container slds-icon-utility-search">
 								    <div class="slds-text-selected-focus">
 								    	<span class="slds-button__icon--stateful slds-button__icon slds-button__icon--inverse slds-button__icon--left">
-								        	<img class="slds-button__icon slds-button__icon--large slds-button__icon--small" ng-src="{!URLFOR($Resource.slds,'')}/assets/icons/utility/close_60.png"/>
+								        	<img class="slds-button__icon slds-button__icon--large slds-button__icon--small" ng-src="{!URLFOR($Resource.slds,'')}/assets/icons/utility/clear_60.png"/>
 								      	</span>Read Only
 									</div>
 								</div>							
@@ -124,7 +124,7 @@
 							    <div class="slds-icon__container slds-icon-utility-search">
 								    <div class="slds-text-selected-focus">
 								    	<span class="slds-button__icon--stateful slds-button__icon slds-button__icon--inverse slds-button__icon--left">
-								        	<img class="slds-button__icon slds-button__icon--large slds-button__icon--small" ng-src="{!URLFOR($Resource.slds,'')}/assets/icons/utility/close_60.png"/>
+								        	<img class="slds-button__icon slds-button__icon--large slds-button__icon--small" ng-src="{!URLFOR($Resource.slds,'')}/assets/icons/utility/clear_60.png"/>
 								      	</span>Empty
 									</div>
 								</div>							
@@ -148,17 +148,17 @@
 							    <div class="slds-icon__container slds-icon-utility-search">
 								    <div class="slds-text-selected-focus">
 								    	<span class="slds-button__icon--stateful slds-button__icon slds-button__icon--inverse slds-button__icon--left">
-								        	<img class="slds-button__icon slds-button__icon--large slds-button__icon--small" ng-src="{!URLFOR($Resource.slds,'')}/assets/icons/utility/close_60.png"/>
+								        	<img class="slds-button__icon slds-button__icon--large slds-button__icon--small" ng-src="{!URLFOR($Resource.slds,'')}/assets/icons/utility/clear_60.png"/>
 								      	</span>Equal
 									</div>
 								</div>							
 							</button>
 			           		
-			           		<button class="slds-button slds-not-selected slds-button--icon-border-filled" ng-click="openUrl('{!mergeCheckUrl}');">
+			           		<button class="slds-button slds-not-selected slds-button--icon-border-filled" ng-click="openMergeCheck('{!mergeCheckUrl}', '{!settings.OpenTarget}');">
 								<img class="slds-button__icon " ng-src="{!URLFOR($Resource.slds,'')}/assets/icons/utility/shield_120.png" />
 							</button>	
 
-	           				<button ng-if="endpoint.returnUrl" class="slds-button slds-not-selected slds-button--icon-border-filled" ng-click="doReturn()">
+	           				<button class="slds-button slds-not-selected slds-button--icon-border-filled" ng-click="doReturn()">
 								<img class="slds-button__icon " ng-src="{!URLFOR($Resource.slds,'')}/assets/icons/utility/back_120.png" />
 							</button>
 	           			
@@ -480,7 +480,7 @@
 											<td class="slds-form-element {{data.selected['{!mergeList[row].fieldName}'] == '{!record}' ? 'dc-merge-selectedField' : ''}}" ng-click="selectField('{!mergeList[row].fieldName}', '{!mergeList[row].fieldType}')">
 													<apex:outputPanel rendered="{!mergeList[row].fieldType == 'BOOLEAN'}" layout="none">
 														<div class="slds-form-element__control">
-															<img class="slds-icon slds-icon slds-icon--x-small slds-icon-utility-right" ng-src="{!URLFOR($Resource.slds,'')}/assets/icons/utility/{!IF(mergeList[row].recordValues[record].value == 'true', 'check','close')}_60.png" />
+															<img class="slds-icon slds-icon slds-icon--x-small slds-icon-utility-right" ng-src="{!URLFOR($Resource.slds,'')}/assets/icons/utility/{!IF(mergeList[row].recordValues[record].value == 'true', 'check','clear')}_60.png" />
 														</div>
 													</apex:outputPanel>
 													<apex:outputPanel rendered="{!mergeList[row].fieldType == 'TEXTAREA'}" layout="none">

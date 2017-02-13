@@ -16,7 +16,7 @@
 	<apex:includeScript value="{!IF(isDev,AssetsUrl,URLFOR($Resource.dupcheck__dupcheckAssets,'/dupcheckAssets'))}/lightning/js/dupcheck.ng.services.js" />
 	<apex:includeScript value="{!IF(isDev,AssetsUrl,URLFOR($Resource.dupcheck__dupcheckAssets,'/dupcheckAssets'))}/lightning/js/dupcheck.ng.audit.js" />
  
-	<div id="dataStore" data-sf-get-audit-data="{!$RemoteAction.dc3ControllerAudit.getAuditData}" data-sf-related="{!$RemoteAction.dc3ControllerAudit.getRelatedTypeAheadAdvanced}" data-sf-delete-audit="{!$RemoteAction.dc3ControllerAudit.doDeleteAudit}" />
+	<div id="dataStore" data-page-dc-settings="{!URLFOR($Page.dc3Setup,null)}" data-sf-get-audit-data="{!$RemoteAction.dc3ControllerAudit.getAuditData}" data-sf-related="{!$RemoteAction.dc3ControllerAudit.getRelatedTypeAheadAdvanced}" data-sf-delete-audit="{!$RemoteAction.dc3ControllerAudit.doDeleteAudit}" />
 	
 	<c:dc3Welcome version="LIGHTNING"/>
 	
@@ -39,6 +39,11 @@
 				</div>
 				<div class="slds-col slds-size--1-of-1 slds-medium-size--4-of-6 slds-large-size--4-of-6 slds-align-bottom">
 					<div class="slds-grid slds-float--right">
+						<div class="slds-button-group" role="group">
+							<button class="slds-button slds-not-selected slds-button--icon-border-filled" ng-click="doReturn()">
+								<img class="slds-button__icon " ng-src="{!URLFOR($Resource.slds,'')}/assets/icons/utility/back_120.png" />
+							</button>
+						</div> 
 						<div class="slds-button-group " role="group" >
 							<button class="slds-button slds-not-selected slds-button--icon-border-filled " ng-click="doRefresh();" ng-if="!meta.loadingData">
 								<img class="slds-button__icon " ng-src="{!URLFOR($Resource.slds,'')}/assets/icons/utility/refresh_120.png" />
@@ -349,13 +354,16 @@
                 <div aria-hidden="false" role="dialog" class="slds-modal " ng-class="{'slds-fade-in-open': meta.ModalDelete}">
 					<div class="slds-modal__container">
 						<div class="slds-modal__header">
-							<h2 class="slds-text-heading--medium">Delete Audit Logs</h2>
+							<h2 class="slds-text-heading--medium slds-grid slds-grid--vertical-align-center slds-grid--align-center">
+								<img class="slds-icon slds-icon--small slds-m-right--xx-small" ng-src="{!URLFOR($Resource.slds,'')}/assets/icons/utility/delete_120.png"/>
+								Delete Audit Logs
+							</h2>
 							<button class="slds-button slds-button--icon-inverse slds-modal__close" ng-click="meta.ModalDelete = false;">
 								<img class="slds-button__icon slds-button__icon--large" src="{!URLFOR($Resource.slds,'')}/assets/icons/action/close_120.png" /> <span class="slds-assistive-text">Close</span>
 							</button>
 						</div>
-						<div class="slds-modal__content">
-							<p>
+						<div class="slds-modal__content slds-p-vertical--small slds-p-horizontal--small">
+							<p class="slds-m-around--small">
                                 All Audit Logs older than now will be deleted. Deletion will be asynchronous, which means that it could take some before you'll see the deletion of the autdit logs. 
                             </p>
 						</div>
@@ -365,7 +373,7 @@
 									<button class="slds-button slds-button--neutral" ng-click="meta.ModalDelete = false;" ng-disabled="meta.loadingDelete">Cancel</button>
 								</div>
 								<div class="slds-col slds-text-align--right">
-									<button class="slds-button slds-button--neutral slds-button--brand" ng-click="doDeleteAudit()" ng-hide="meta.loadingDelete">Delete</button>
+									<button class="slds-button slds-button--neutral slds-button--destructive" ng-click="doDeleteAudit()" ng-hide="meta.loadingDelete">Delete</button>
                                     <button class="slds-button slds-button--neutral slds-button--brand" disabled="disabled" ng-show="meta.loadingDelete">
                                     	<div class="slds-spinner--small" ><img src="{!URLFOR($Resource.slds,'')}/assets/images/spinners/slds_spinner_inverse.gif" alt="Loading..." /></div>
                                     </button>
@@ -377,7 +385,7 @@
 				<div class="slds-backdrop " ng-class="{'slds-backdrop--open': meta.ModalDelete}"></div>
                 
 				<div aria-hidden="false" role="dialog" class="slds-modal " ng-class="{'slds-fade-in-open': meta.ModalFilter}">
-					<div class="slds-modal__container">
+					<div class="slds-modal__container" style="position:relative">
 						<div class="slds-modal__header">
 							<h2 class="slds-text-heading--medium">Filter Audit Logs</h2>
 							<button class="slds-button slds-button--icon-inverse slds-modal__close" ng-click="meta.ModalFilter = false;">
@@ -386,35 +394,12 @@
 						</div>
 						<div class="slds-modal__content">
 							<div class="slds-form--stacked slds-m-around--small">
-								<div class="slds-grid slds-no-wrap">
-									<div class="slds-col--padded slds-size--1-of-1 slds-medium-size--1-of-1 slds-large-size--1-of-2">
-										<div class="slds-form-element">
-											<label class="slds-form-element__label" for="startDate">Start Date</label>
-											<div class="slds-form-element__control">
-												<plauti-datetimepicker date-format="dd MMMM yyyy" name="startDate" ng-model="filter.startDate" start-year="1991" end-year="2099" svg-path="{!URLFOR($Resource.slds,'')}/assets/icons/utility-sprite/svg/symbols.svg" is-meridian-format="true" min-step="1">
-												</plauti-datetimepicker>
-    			
-											</div>
-										</div>
-									</div>
-									<div class="slds-col--padded slds-size--1-of-1 slds-medium-size--1-of-1 slds-large-size--1-of-2">
-										<div class="slds-form-element">
-											<label class="slds-form-element__label" for="endDate">End Date</label>
-											<div class="slds-form-element__control">
-												<plauti-datetimepicker date-format="dd MMMM yyyy" name="endDate" ng-model="filter.endDate" start-year="1991" end-year="2099" svg-path="{!URLFOR($Resource.slds,'')}/assets/icons/utility-sprite/svg/symbols.svg" is-meridian-format="true" min-step="1">
-												</plauti-datetimepicker>
-											</div>
-										</div>
-									</div>
-								</div>
 								<div class="slds-grid slds-no-wrap slds-m-top--medium">
 									<div class="slds-col--padded slds-size--1-of-1 slds-medium-size--1-of-1 slds-large-size--1-of-2">
 										<div class="slds-form-element">
 											<label class="slds-form-element__label" for="userId">User</label>
 											<div class="slds-form-element__control">
-												<plauti-typeahead no-modal="true" object-list-meta="meta.userLookupObject" object-label="meta.ownerId" id="userId" typeahead-min-length="2" typeahead-wait-ms="1" options="lookupData['userId']" typeahead-options-method="getLookup(objectItem,searchText,'userId', fields);" ng-model="filter.userId" ng-model-display="referenceData['userId']" name-attr="name" value-attr="id" typeahead-select-on-blur="true" svg-path="{!URLFOR($Resource.slds,'')}"></plauti-typeahead>
-<!-- <plauti-typeahead  object-list-meta="data.fieldMeta[fieldItem.value].RelatedObjectMeta" object-label="fieldElement.label" typeahead-min-length="2" typeahead-wait-ms="0" options="lookupData[fieldItem.value]" typeahead-options-method="getLookup(objectItem,searchText,fieldItem.value,fields);" typeahead-on-select="fieldChange(fieldItem.value);" ng-model="data.objectData[fieldItem.value]" ng-model-display="referenceData[fieldItem.value]" ng-init="referenceData[fieldItem.value]=$eval('data.objectData.' + data.fieldMeta[fieldItem.value].RelatedField)"name-attr="name" value-attr="id" typeahead-select-on-blur="true" ng-disabled="(meta.recordId ? fieldElement.editableForUpdate == 'false' :  fieldElement.editableForNew == 'false')" svg-path="{!URLFOR($Resource.slds,'')}"></plauti-typeahead>
--->											 
+												<plauti-typeahead no-modal="true" object-list-meta="meta.userLookupObject" object-label="meta.ownerId" id="userId" typeahead-min-length="2" typeahead-wait-ms="1" options="lookupData['userId']" typeahead-options-method="getLookup(objectItem,searchText,'userId', fields);" ng-model="filter.userId" ng-model-display="referenceData['userId']" name-attr="name" value-attr="id" typeahead-select-on-blur="true" svg-path="{!URLFOR($Resource.slds,'')}"></plauti-typeahead>										 
 											</div>
 										</div>
 									</div>
@@ -460,6 +445,27 @@
 										</div>
 									</div>
 								</div>
+								<div class="slds-grid slds-wrap">
+									<div class="slds-col--padded slds-size--1-of-1 slds-m-top--medium">
+										<div class="slds-form-element">
+											<label class="slds-form-element__label" for="startDate">Start Date</label>
+											<div class="slds-form-element__control">
+												<plauti-datetimepicker modal="{'position':'fixed', 'left':'10rem'}" date-format="dd MMMM yyyy" name="startDate" ng-model="filter.startDate" start-year="1991" end-year="2099" svg-path="{!URLFOR($Resource.slds,'')}/assets/icons/utility-sprite/svg/symbols.svg" is-meridian-format="true" min-step="1">
+												</plauti-datetimepicker>
+    			
+											</div>
+										</div>
+									</div>
+									<div class="slds-col--padded slds-size--1-of-1 slds-m-vertical--medium">
+										<div class="slds-form-element">
+											<label class="slds-form-element__label" for="endDate">End Date</label>
+											<div class="slds-form-element__control">
+												<plauti-datetimepicker modal="{'position':'fixed', 'left':'10rem'}" date-format="dd MMMM yyyy" name="endDate" ng-model="filter.endDate" start-year="1991" end-year="2099" svg-path="{!URLFOR($Resource.slds,'')}/assets/icons/utility-sprite/svg/symbols.svg" is-meridian-format="true" min-step="1">
+												</plauti-datetimepicker>
+											</div>
+										</div>
+									</div>
+								</div>								
 							</div>
 						</div>
 						<div class="slds-modal__footer">

@@ -19,7 +19,7 @@
 	<apex:includeScript value="{!IF(isDev,AssetsUrl,URLFOR($Resource.dupcheck__dupcheckAssets,'/dupcheckAssets'))}/lightning/js/dupcheck.ng.merge-check.js" />
 
 	<div id="dataStore" data-sf-id-list="{!idListString}" data-sf-related-list="{!relateldListString}" data-sf-related-count="{!$RemoteAction.dc3ControllerMergeCheck.getRelatedCount}"/>
-
+ 
 	<c:dc3Welcome version="LIGHTNING" />
 
 	<div class="plauti dc-body" ng-app="dcApp"
@@ -27,7 +27,7 @@
 		<div class="slds-page-header slds-m-bottom--medium " role="banner">
 			<div class="slds-grid slds-wrap">
 				<div
-					class="slds-col slds-size--1-of-1 slds-medium-size--4-of-6 slds-large-size--4-of-6">
+					class="slds-col slds-size--1-of-1 slds-medium-size--2-of-6 slds-large-size--1-of-6">
 					<div class="slds-media">
 						<div class="slds-media__figure">
 							<img class="slds-icon slds-icon--large "
@@ -44,15 +44,17 @@
 						</div> 
 					</div>
 				</div>
-				<div
-					class="slds-col slds-size--1-of-1 slds-medium-size--2-of-6 slds-large-size--2-of-6 slds-align-bottom">
+				<div class="slds-col slds-size--1-of-1 slds-medium-size--4-of-6 slds-large-size--5-of-6 slds-align-bottom">
 
 					<div class="slds-grid slds-float--right">
-						<div
-							class="slds-button-group slds-float--right slds-button-space-left"
-							role="group">
-							<c:dc3WelcomeLink version="LIGHTNING"
-								helpLink="https://support.duplicatecheck.com/article/usage-guide/dc-audit?utm_source=dcApp&utm_medium=app&utm_campaign=help_link" />
+						<div class="slds-button-group" role="group" ng-if="data.showReturn">              
+	              			<button class="slds-button slds-not-selected slds-button--icon-border-filled" ng-click="doReturn()">
+	                			<img class="slds-button__icon " ng-src="{!URLFOR($Resource.slds,'')}/assets/icons/utility/back_120.png" />
+	              			</button>
+	            		</div>
+
+						<div class="slds-button-group slds-float--right slds-button-space-left" role="group">
+							<c:dc3WelcomeLink version="LIGHTNING" helpLink="https://support.duplicatecheck.com/article/usage-guide/dc-audit?utm_source=dcApp&utm_medium=app&utm_campaign=help_link" />
 						</div>
 					</div>
 				</div>
@@ -60,7 +62,7 @@
 			</div>
 		</div>
 		<h3 class="slds-section-title--divider">{!$ObjectType[ObjectName].Label} Settings</h3>
-		<div class="slds-grid slds-wrap slds-m-bottom--medium">
+		<div class="slds-grid slds-wrap slds-m-bottom--medium slds-m-top--small">
 			<div class="slds-p-horizontal--small slds-size--1-of-1 slds-medium-size--1-of-1 slds-large-size--1-of-2 slds-m-bottom--small">
 				<div class="slds-form-element">
 			  		<span class="slds-form-element__label">Object Label</span>
@@ -140,15 +142,15 @@
 			<tbody>
 				<apex:repeat value="{!ObjectList}" var="object">
 					<tr>
-						<td>
+						<td data-label="Record">
 							{!object.Id}
 						</td>
-						<td>
+						<td data-label="Name">
 							{!object['Name']}
 						</td>
-						<td>{!object['Owner.Name']}</td>
-						<td>{!object['OwnerId']}</td>
-						<td>
+						<td data-label="Owner">{!object['Owner.Name']}</td>
+						<td data-label="Owner ID">{!object['OwnerId']}</td>
+						<td data-label="Sharing Rules">
 							{!object['UserRecordAccess.MaxAccessLevel']}
 						</td>
 					</tr>
@@ -184,22 +186,22 @@
 				
 					<apex:repeat value="{!FieldList}" var="field">
 					<tr>
-						<td>
+						<td data-label="Label">
 							{!field.Label}
 						</td>
-						<td>
+						<td data-label="Field Name">
 							{!field.Name}
 						</td>
-						<td>
+						<td data-label="Type">
 							{!field.Type}
 						</td>
-						<td>
+						<td data-label="Accessible">
 							<img class="slds-button__icon " src="{!URLFOR($Resource.slds,'')}/assets/icons/utility/{!IF(field.isAccessible, 'check','clear')}_120.png" />
 						</td>
-						<td>
+						<td data-label="Updateable">
 							<img class="slds-button__icon " src="{!URLFOR($Resource.slds,'')}/assets/icons/utility/{!IF(field.isUpdateable, 'check','clear')}_120.png" />
 						</td>
-						<td>
+						<td data-label="Creatable">
 							<img class="slds-button__icon " src="{!URLFOR($Resource.slds,'')}/assets/icons/utility/{!IF(field.isCreateable, 'check','clear')}_120.png" />
 						</td>
 					</tr>
@@ -246,32 +248,32 @@
 				<tbody>
 					<apex:repeat value="{!RelatedList}" var="rel">
 						<tr>
-							<td>{!rel.ObjectLabel}</td>
-							<td>{!rel.ObjectName}</td>
-							<td>
+							<td data-label="Object Label">{!rel.ObjectLabel}</td>
+							<td data-label="Object Name">{!rel.ObjectName}</td>
+							<td data-label="Accessible">
 								<img class="slds-button__icon " src="{!URLFOR($Resource.slds,'')}/assets/icons/utility/{!IF(rel.ObjectIsAccessible, 'check','clear')}_120.png" />
 							</td>
-							<td>
+							<td data-label="Createable">
 								<img class="slds-button__icon " src="{!URLFOR($Resource.slds,'')}/assets/icons/utility/{!IF(rel.ObjectIsCreateable, 'check','clear')}_120.png" />
 							</td>
-							<td>
+							<td data-label="Updateable">
 								<img class="slds-button__icon " src="{!URLFOR($Resource.slds,'')}/assets/icons/utility/{!IF(rel.ObjectIsUpdateable, 'check','clear')}_120.png" />
 							</td>
-							<td>
+							<td data-label="Deleteable">
 								<img class="slds-button__icon " src="{!URLFOR($Resource.slds,'')}/assets/icons/utility/{!IF(rel.ObjectIsDeleteable, 'check','clear')}_120.png" />
 							</td>
-							<td>{!rel.FieldLabel}</td>
-							<td>{!rel.FieldName}</td>
-							<td>
+							<td data-label="Field Label">{!rel.FieldLabel}</td>
+							<td data-label="Field Name">{!rel.FieldName}</td>
+							<td data-label="Accessible">
 								<img class="slds-button__icon " src="{!URLFOR($Resource.slds,'')}/assets/icons/utility/{!IF(rel.FieldIsAccessible, 'check','clear')}_120.png" />
 							</td>
-							<td>
+							<td data-label="Updateable">
 								<img class="slds-button__icon " src="{!URLFOR($Resource.slds,'')}/assets/icons/utility/{!IF(rel.FieldIsCreateable, 'check','clear')}_120.png" />
 							</td>
-							<td>
+							<td data-label="Createable">
 								<img class="slds-button__icon " src="{!URLFOR($Resource.slds,'')}/assets/icons/utility/{!IF(rel.FieldIsUpdateable, 'check','clear')}_120.png" />
 							</td>
-							<td>
+							<td data-label="Record Count">
 								<span ng-bind-html="data.count['{!rel.ObjectName}#{!rel.FieldName}']"/>
 							</td>
 						</tr>

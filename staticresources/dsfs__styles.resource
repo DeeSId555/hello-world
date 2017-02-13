@@ -20,6 +20,8 @@
 .docusign-container h3 { font-size: 16px; padding-bottom: 10px; display: block; }
 .docusign-container p { font-size: 12px; line-height: 18px; color: #333; padding-bottom: 10px; }
 .docusign-container p.break { word-break: break-all; }
+.docusign-container p.breakword { word-wrap: break-word; }
+.docusign-container p.clickable { font-size: 12px; line-height: 18px; color: #333; padding-bottom: 10px; cursor: pointer;color: #2A94D6;font-weight: bold;}
 .docusign-container .col p:last-child { padding-bottom: 0; }
 .docusign-container hr { border: 0; height: 1px; background: #EAEAEA; margin: 20px 0 20px 0; }
 .docusign-container .title { font-size: 18px; margin: 0 0 24px; line-height: 26px; }
@@ -54,6 +56,7 @@
 .docusign-container .expandable-content section { margin: 0; padding: 15px; background: #fff; border-radius: 2px; }
 .docusign-container .expandable-content .content { display: none; padding-top: 16px; }
 .docusign-container .expandable-content.expanded .content { display: block; }
+
 .docusign-container .expandable-content.expanded .section-title:after { border-right: solid transparent 6px; border-top: solid #6D6E70 8px; border-left: solid transparent 6px; border-bottom: none; }
 .docusign-container #documents, .docusign-container #recipients, .docusign-container #email-settings { float: left; margin: 0; padding: 0; }
 .docusign-container #documents section, .docusign-container #recipients section, .docusign-container #email-settings section { background: #fff; padding: 15px; border-radius: 2px; }
@@ -66,7 +69,7 @@
 .docusign-container #documents .document p, .docusign-container #email-settings .document p { font-size: 12px; }
 .docusign-container #documents .document .move, .docusign-container #email-settings .document .move { position: absolute; top: 10px; left: 10px; cursor: move; }
 .docusign-container #documents .document .name, .docusign-container #email-settings .document .name { padding: 0 0 0 50px; margin: -5px 0 0 15px; width: 80%; }
-.docusign-container #documents .document .name .sub-text, .docusign-container #email-settings .document .name .sub-text { display: block; font-size: 12px; color: #999; }
+.docusign-container #documents .document .name .sub-text, .docusign-container #email-settings .document .name .sub-text { display: block; font-size: 12px; color: #999; word-wrap: break-word; }
 .docusign-container #documents .document .delete, .docusign-container #email-settings .document .delete { float: right; margin-top: 8px; }
 .docusign-container #documents .document .number, .docusign-container #email-settings .document .number { width: 30px; height: 25px; margin-left: 20px; float: left; border: none; border-radius: 2px; text-align: center; padding-left: 0px; }
 .docusign-container #recipients { margin: 0; width: 60%; padding-left: 15px; }
@@ -88,21 +91,29 @@
 .docusign-container #recipients .recipient .edit { float: right; margin-top: 8px; margin-right: 20px; color: #B0B4B6; font-size: 13px; text-decoration: none; }
 .docusign-container #recipients .recipient .edit:hover { color: #666; }
 .docusign-container #recipients .recipient .number { width: 30px; height: 25px; margin-left: 30px; float: left; border: none; border-radius: 2px; text-align: center; padding-left: 0px; }
-.docusign-container #message, .docusign-container #settings, .docusign-container #chatter-setting, .docusign-container #recipient-role-setting, .docusign-container #send-setting, .docusign-container #docusign-account-info, .docusign-container #connect-docusign { margin-bottom: 30px; }
-.docusign-container #message .document-title, .docusign-container #settings .document-title, .docusign-container #chatter-setting .document-title, .docusign-container #recipient-role-setting .document-title, .docusign-container #send-setting .document-title, .docusign-container #docusign-account-info .document-title, .docusign-container #connect-docusign .document-title { position: relative; margin: 0; cursor: pointer; }
-.docusign-container #message .document-title:after, .docusign-container #settings .document-title:after, .docusign-container #chatter-setting .document-title:after, .docusign-container #recipient-role-setting .document-title:after, .docusign-container #send-setting .document-title:after, .docusign-container #docusign-account-info .document-title:after, .docusign-container #connect-docusign .document-title:after { content: ""; display: block; width: 0; height: 0; position: absolute; top: 0; right: 0; border-right: solid #6D6E70 7px; border-top: solid transparent 5px; border-bottom: solid transparent 5px; }
-.docusign-container #message section, .docusign-container #settings section, .docusign-container #chatter-setting section, .docusign-container #recipient-role-setting section, .docusign-container #send-setting section, .docusign-container #docusign-account-info section, .docusign-container #connect-docusign section { margin: 0; padding: 15px; background: #fff; border-radius: 2px; }
-.docusign-container #message .content, .docusign-container #settings .content, .docusign-container #chatter-setting .content, .docusign-container #recipient-role-setting .content, .docusign-container #send-setting .content, .docusign-container #docusign-account-info .content, .docusign-container #connect-docusign .content { display: none; padding-top: 16px; }
-.docusign-container #message.expanded .content, .docusign-container #settings.expanded .content, .docusign-container #chatter-setting.expanded .content, .docusign-container #recipient-role-setting.expanded .content, .docusign-container #send-setting.expanded .content, .docusign-container #docusign-account-info.expanded .content, .docusign-container #connect-docusign.expanded .content { display: block; }
-.docusign-container #message.expanded .document-title:after, .docusign-container #settings.expanded .document-title:after, .docusign-container #chatter-setting.expanded .document-title:after, .docusign-container #recipient-role-setting.expanded .document-title:after, .docusign-container #send-setting.expanded .document-title:after, .docusign-container #docusign-account-info.expanded .document-title:after, .docusign-container #connect-docusign.expanded .document-title:after { border-right: solid transparent 6px; border-top: solid #6D6E70 8px; border-left: solid transparent 6px; border-bottom: none; }
-.docusign-container #message .form { background: #E8EBED; border-radius: 2px; padding: 7px; }
-.docusign-container #message .form label { margin: 10px 0 2px 0; display: block; color: #666666; font-size: 12px; }
-.docusign-container #message .form label:first-child { margin-top: 0; }
+.docusign-container #message, .docusign-container #envelopeCustomFields,.docusign-container #settings, .docusign-container #chatter-setting, .docusign-container #recipient-role-setting, .docusign-container #send-setting, .docusign-container #docusign-account-info, .docusign-container #connect-docusign { margin-bottom: 30px; }
+.docusign-container #message  .document-title, .docusign-container #envelopeCustomFields .document-title,.document-title, .docusign-container #settings .document-title, .docusign-container #chatter-setting .document-title, .docusign-container #recipient-role-setting .document-title, .docusign-container #send-setting .document-title, .docusign-container #docusign-account-info .document-title, .docusign-container #connect-docusign .document-title { position: relative; margin: 0; cursor: pointer; }
+.docusign-container #message .document-title:after, .docusign-container #envelopeCustomFields .document-title:after, .docusign-container #settings .document-title:after, .docusign-container #chatter-setting .document-title:after, .docusign-container #recipient-role-setting .document-title:after, .docusign-container #send-setting .document-title:after, .docusign-container #docusign-account-info .document-title:after, .docusign-container #connect-docusign .document-title:after { content: ""; display: block; width: 0; height: 0; position: absolute; top: 0; right: 0; border-right: solid #6D6E70 7px; border-top: solid transparent 5px; border-bottom: solid transparent 5px; }
+.docusign-container #message section, .docusign-container #envelopeCustomFields section,.docusign-container #settings section, .docusign-container #chatter-setting section, .docusign-container #recipient-role-setting section, .docusign-container #send-setting section, .docusign-container #docusign-account-info section, .docusign-container #connect-docusign section { margin: 0; padding: 15px; background: #fff; border-radius: 2px; }
+.docusign-container #message .content, .docusign-container #envelopeCustomFields .content, .docusign-container #settings .content, .docusign-container #chatter-setting .content, .docusign-container #recipient-role-setting .content, .docusign-container #send-setting .content, .docusign-container #docusign-account-info .content, .docusign-container #connect-docusign .content { display: none; padding-top: 16px; }
+.docusign-container #message.expanded .content, .docusign-container #envelopeCustomFields.expanded .content, .docusign-container #settings.expanded .content, .docusign-container #chatter-setting.expanded .content, .docusign-container #recipient-role-setting.expanded .content, .docusign-container #send-setting.expanded .content, .docusign-container #docusign-account-info.expanded .content, .docusign-container #connect-docusign.expanded .content { display: block; }
+.docusign-container #message.expanded .document-title:after, .docusign-container #envelopeCustomFields.expanded .document-title:after, .docusign-container #settings.expanded .document-title:after, .docusign-container #chatter-setting.expanded .document-title:after, .docusign-container #recipient-role-setting.expanded .document-title:after, .docusign-container #send-setting.expanded .document-title:after, .docusign-container #docusign-account-info.expanded .document-title:after, .docusign-container #connect-docusign.expanded .document-title:after { border-right: solid transparent 6px; border-top: solid #6D6E70 8px; border-left: solid transparent 6px; border-bottom: none; }
+.docusign-container #message .form{ background: #E8EBED; border-radius: 2px; padding: 7px; }
+.docusign-container #envelopeCustomFields .form {border-radius: 2px; padding: 7px; }
+.docusign-container #message .form label,.docusign-container #envelopeCustomFields .form label{ margin: 10px 0 2px 0; display: block; color: #666666; font-size: 12px; }
+.docusign-container #message .form label:first-child,.docusign-container #envelopeCustomFields .form label:first-child { margin-top: 0; }
 .docusign-container #message .form input, .docusign-container #message .form textarea { display: block; width: 100%; padding: 6px; border: none; font-size: 13px; max-width: 100%; }
-.docusign-container #message .form input[type="text"], .docusign-container #message .form [type="password"] { margin: 0 0 7px 0; }
+.docusign-container #message .form input[type="text"], .docusign-container #message .form [type="password"].docusign-container #envelopeCustomFields .form input[type="text"], .docusign-container #envelopeCustomFields .form [type="password"]  { margin: 0 0 7px 0; }
+.docusign-container #envelopeCustomFields .text-alert {color: #d03238;}
+.docusign-container #envelopeCustomFields input[type="text"].errortext { border: 1px solid #E86B52; }
+.docusign-container #envelopeCustomFields select.errorlist { border: 1px solid #E86B52; }
+
 .docusign-container #settings .option { padding: 3px 0 16px 34px; margin-bottom: 16px; position: relative; border-bottom: solid 1px #eaeaea; }
 .docusign-container #settings .option:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
 .docusign-container #settings .option input[type="checkbox"] { position: absolute; left: 0; top: 0; }
+.docusign-container #settings .option input[type="text"] {width: 25%;maxlength=100}
+.docusign-container #settings .option select{ width: 25%; background-position: right center; }
+.docusign-container #settings .option .customfieldtext {  padding: 3px 0 16px 34px; margin-bottom: 16px; position: relative; left: -65px; top: 0;}
 .docusign-container #settings .option label { display: block; margin: 0 0 8px; font-size: 13px; color: #777; }
 .docusign-container #settings .option .sub { color: #999; font-size: 12px; padding-bottom: 10px; }
 .docusign-container #settings .option .sub input[type="text"] { display: inline-block; width: 36px; height: 25px; border: 1px solid #BBC0C4; border-radius: 2px; text-align: center; padding-left: 0px; }
@@ -123,7 +134,7 @@
 .docusign-container .button.secondary:active { background-color: #e6e6e6; }
 .docusign-container .button.secondary.hidden { display:none; }
 .docusign-container .button.has-dropdown > a:after { content: ""; display: block; width: 0; height: 0; position: absolute; right: 17px; top: 12px; border-top: solid 7px #fff; border-left: solid 5px transparent; border-right: solid 5px transparent; }
-.docusign-container .button > a { display: block; height: 30px; background-color: #2093D9; font-size: 13px; color: #fff !important; border-radius: 2px; text-decoration: none !important; padding: 8px 35px 5px 35px; }
+.docusign-container .button > a { display: block; height: 30px; background-color: #2093D9; font-size: 13px; color: #fff !important; border-radius: 2px; text-decoration: none !important; padding: 8px 34px 8px 25px; }
 .docusign-container .button > a:hover { background-color: #1C80BF; }
 .docusign-container .button > a:active { background-color: #1670A8; }
 .docusign-container .button .dropdown { position: absolute; z-index: 10; right: 0; top: 29px; padding: 1px 0 0 0; background: #fff; border: 1px solid #D2D2D2; font-size: 13px; min-width: 100%; }
@@ -288,6 +299,7 @@
 .msgothic { font-family: MS Gothic; } 
 .msmincho { font-family: MS Mincho; } 
 
+
 #circleG { width: 70px; height: 12px; display: block; margin: 0 auto; padding-top: 5px; }
 
 .circleG { background-color: #FFFFFF; float: left; height: 12px; margin-left: 6px; width: 12px; -moz-animation-name: bounce_circleG; -moz-animation-duration: 2.0999999999999996s; -moz-animation-iteration-count: infinite; -moz-animation-direction: linear; -moz-border-radius: 8px; -webkit-animation-name: bounce_circleG; -webkit-animation-duration: 2.0999999999999996s; -webkit-animation-iteration-count: infinite; -webkit-animation-direction: linear; -webkit-border-radius: 8px; -ms-animation-name: bounce_circleG; -ms-animation-duration: 2.0999999999999996s; -ms-animation-iteration-count: infinite; -ms-animation-direction: linear; -ms-border-radius: 8px; -o-animation-name: bounce_circleG; -o-animation-duration: 2.0999999999999996s; -o-animation-iteration-count: infinite; -o-animation-direction: linear; -o-border-radius: 8px; animation-name: bounce_circleG; animation-duration: 2.0999999999999996s; animation-iteration-count: infinite; animation-direction: linear; border-radius: 8px; }
@@ -316,4 +328,6 @@
 	.docusign-container #recipients {
 		 width: 100%; padding-left: 0; 
 	}
+	.docusign-container #envelopeCustomFields .four { display: block; float: none; width: 80%; } }
+	
 }

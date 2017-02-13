@@ -407,10 +407,21 @@
 															</tr>
 
 															<tr ng-if="{!configObject.objectPrefix == '00Q'}">
-																<td class="col-xs-2">Lead Quick Convert Status</td>
+																<td class="col-xs-2">Quick Convert Status</td>
 																<td class="col-xs-2">
 																	<select ng-change="updateSetting('leadConvertStatus')" selectpicker="selectpicker" data-width="100%" ng-model="config.leadConvertStatus" ng-options="item.MasterLabel as item.MasterLabel for item in config.convertStatusList">
 																		
+																	</select>
+																</td>
+															</tr>
+															<tr ng-if="{!configObject.objectPrefix == '00Q'}">
+																<td class="col-xs-2">Quick Convert Owner</td>
+																<td class="col-xs-2">
+																	<select ng-change="updateSetting('leadConvertOwner')" selectpicker="selectpicker" data-width="100%" ng-model="config.leadConvertOwner">
+																		<option value="LEAD">{!$ObjectType.Lead.Label} Owner</option>
+																		<option value="ACCOUNT">{!$ObjectType.Account.Label} Owner</option>
+																		<option value="CONTACT">{!$ObjectType.Contact.Label} Owner</option>
+																		<option value="USER">Converting User</option>
 																	</select>
 																</td>
 															</tr>

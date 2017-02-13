@@ -2930,6 +2930,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>dsfs__DSAccountCustomFields</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>dsfs__DSClient</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -3019,6 +3023,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>dsfs__DSSignatureResult</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dsfs__DSSigningGroups</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -3211,6 +3219,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>dsfs__DocuSignCustomRelatedContactBuilderTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dsfs__DocuSignCustomRelatedContact_Test</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -3414,6 +3426,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>dsfs__DocuSignStatusBackEndController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dsfs__DocuSignStatusBackEndControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>dsfs__DocuSignTab</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -3458,7 +3478,19 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>dsfs__DocusignSendingBackEndController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dsfs__DocusignSendingBackEndControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>dsfs__DtoTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dsfs__Envelope</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -3543,6 +3575,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>dsfs__PlatformPermissionSetServiceTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dsfs__Recipient</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -58113,6 +58149,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>dsfs__DocuSignAccountConfiguration__c.dsfs__Lightning_Component_Logging__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>dsfs__DocuSignAccountConfiguration__c.dsfs__LoadFiles__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>dsfs__DocuSignAccountConfiguration__c.dsfs__LookupUser__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -58319,6 +58365,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>dsfs__DocuSign_Envelope_Recipient__c.dsfs__SignNow__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>dsfs__DocuSign_Envelope_Recipient__c.dsfs__SigningGroupId__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -58854,6 +58905,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>dupcheck__dcAudit__c.dupcheck__dcAudit__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>dupcheck__dcDelta__c.dupcheck__Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -66544,6 +66600,18 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>dsfs__DocuSign_Admin</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>dsfs__DocuSign_Envelope_Document__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>dsfs__DocuSign_Envelope_Recipient__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>dsfs__DocuSign_Envelope__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>

@@ -1,10 +1,11 @@
 // release dollar sign for other libraries possible
 jQuery.noConflict();
 // all docusign front end logic starts from document.loaded event
+var firstTimeLoad =true;
+
 jQuery(document).ready(function($) {
 
-    console.log(dsGlobal);
-
+  console.log(dsGlobal);
 /*------------------------------ Init ------------------------------*/
 
     // Populate all html and show it
@@ -12,10 +13,10 @@ jQuery(document).ready(function($) {
     initRecipient();
     showEditEnvelope();
     if (dsGlobal.envelope.chatterEnabled === false) {
-    	$("#add-feed-items").parent().remove();
+        $("#add-feed-items").parent().remove();
     }
     if (dsGlobal.envelope.enableChatterUpdates === false) {
-    	$("#add-libraries").parent().remove();
+        $("#add-libraries").parent().remove();
     }
 
     if(!Modernizr.svg) {
@@ -26,11 +27,24 @@ jQuery(document).ready(function($) {
         $('#recipientIcon').attr('src', dsGlobal.RecipientIconPNG);
         $('#messageIcon').attr('src', dsGlobal.MessageIconPNG);
         $('#settingIcon').attr('src', dsGlobal.SettingIconPNG);
+        $('#envelopecustomfieldIcon').attr('src', dsGlobal.EnvelopecustomfieldIconPNG);
         $('.ds-recipient-close-icon, .ds-document-close-icon').attr('src', dsGlobal.deleteIconPNG);
         $('#ds-recipient-search-btn').css("background-image", "url("+dsGlobal.searchIconPNG+")");
         $('.docusignlogo').attr('src', dsGlobal.DocuSignLoadingLogoPNG);
     }
 /*------------------------------ Helper functions ------------------------------*/
+
+	/*
+	 * This function un-escapes all html special characters.
+	 * @param str the string to be modified
+	 */
+
+		function unescapeHtmlSpecialCharacters(str) {
+			if (!str) {
+				return '';
+			}
+			return str.replace(/&quot;/g, '"').replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&#39;/g, "'");
+		}
 
     /*
      * Hide all pages.
@@ -62,64 +76,301 @@ jQuery(document).ready(function($) {
     }
     
     function hideFullScreenLoading() {
-    	$('.fullscreenload').hide();
+        $('.fullscreenload').hide();
     }
     
     function showFullScreenLoading() {
-    	$('.fullscreenload').show();
+        $('.fullscreenload').show();
     }
     
     /*
      *
      */
     function showDocumentModal() {
-    	$('.ds-add-document-modal').show();
+        $('.ds-add-document-modal').show();
     }
     
     /*
      * Hide Documents Modal Dialog
      */
     function hideDocumentsModal() {
-    	$(".ds-add-document-modal-content .content ").html('');
-    	$("#ds_docmodal_folder_select").html('');
-    	$("#ds_docmodal_header").html('');
-    	$("#ds_docmodal_folder").hide();
-    	$("#ds_docmodal_add_attachment").hide();
-    	$('.ds-add-document-modal').hide();
+        $(".ds-add-document-modal-content .content ").html('');
+        $("#ds_docmodal_folder_select").html('');
+        $("#ds_docmodal_header").html('');
+        $("#ds_docmodal_folder").hide();
+        $("#ds_docmodal_add_attachment").hide();
+        $('.ds-add-document-modal').hide();
     }
     
     /*
      * Show Documents Modal Loading
      */
     function showDocumentsModalLoadind() {
-    	showDocumentModal();
-    	$('.ds-add-document-modal .modal .ds-add-document-modal-content').css('opacity', '0');
-    	$(".modal-loading").show();
+        showDocumentModal();
+        $('.ds-add-document-modal .modal .ds-add-document-modal-content').css('opacity', '0');
+        $(".modal-loading").show();
     }
     
     /*
      * Hide Documents Modal Loading
      */
     function hideDocumentsModalLoading() {
-    	$('.ds-add-document-modal .modal .ds-add-document-modal-content').css('opacity', '1.0');
-    	$(".modal-loading").hide();
+        $('.ds-add-document-modal .modal .ds-add-document-modal-content').css('opacity', '1.0');
+        $(".modal-loading").hide();
     }
 
-    /*
+    /*  
      * Hide Edit Envelope
      */
     function hideEditEnvelope() {
         $("#ds-edit-envelope").hide();
     }
+    
+    /*
+    * Load Account Envelope custom fields  
+    */
+    function loadAccountEnvelopeCustomFields(){
+    	 if(firstTimeLoad === true){ 
+                var textFieldFlagShow = false;
+                var listFieldFlagShow = false;
+                 
+                
+                //display textfield envelope custom fields
+		                if(dsGlobal.envelope.textCustomFields.length > 0){
+		                    for(var i = 0; i < dsGlobal.envelope.textCustomFields.length; i++) {
+		                        textField = dsGlobal.envelope.textCustomFields[i];
+		                        textField.name =unescapeHtmlSpecialCharacters(textField.name);
+		                        if(textField.show === 'true'){
+		                            var newTextBoxDiv = $(document.createElement('div')).attr("id", 'envelopeTextCustomFieldDiv' + i);
+		                            newTextBoxDiv.addClass('four col');
+		                                           
+		                            var textfieldVal = '<label><span>'+textField.name+'</span></label>';
+		                            if(textField.required === 'true')
+		                                textfieldVal= '<label><span class="text-alert">* </span><span>'+textField.name+'</span></label>';
+		        
+		                            newTextBoxDiv.after().html(
+		                            textfieldVal+
+		                              '<input type="text" maxlength="100" name="textbox' + i + '" id="envelopeTextCustomField_'+textField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i + '" >');
+		                            newTextBoxDiv.appendTo("#envelopeCustomFieldsGridRow");
+		                           	textFieldFlagShow = true;
+		                            }
+		                        }
+		                        
+		                    }
+		                    
+		                    
+		                //display dropdown envelope custom fields
+		                if(dsGlobal.envelope.listCustomFields.length > 0){
+		                    for(var i = 0; i < dsGlobal.envelope.listCustomFields.length; i++) {
+		                        listField = dsGlobal.envelope.listCustomFields[i];
+		                        listField.name =unescapeHtmlSpecialCharacters(listField.name);
+		                        if(listField.show === 'true'){
+		                                var newListDiv = $(document.createElement('div')).attr("id", 'envelopeListCustomFieldDiv' + i);
+		                                newListDiv.addClass('four col');
+		                                
+		                                var listfieldVal = '<label><span>'+listField.name+'</span></label>';
+		                                if(listField.required === 'true')
+		                                    listfieldVal= '<label><span class="text-alert">* </span><span>'+listField.name+'</span></label>';
+		                                newListDiv.after().html( listfieldVal);
+		        						var s = $('<select/>', {id: 'envelopeListCustomField_'+listField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i});
+		        						$('<option />', {value:"", text:""}).appendTo(s);
+			        					if(listField.listItems!== null){
+			                               for(var j=0; j< listField.listItems.length; j++){
+			                                    $('<option />', {value:listField.listItems[j], text:listField.listItems[j]} ).appendTo(s);
+			                                }
+			                                
+			                                s.appendTo(newListDiv); // or wherever it should be
+			                                newListDiv.appendTo("#envelopeCustomFieldsGridRow");
+			                            }
+			                            listFieldFlagShow= true;
+			                        }
+			                            
+		                        }
+		                        
+		                    }
+		                    
+		                    if( textFieldFlagShow || listFieldFlagShow){
+		                    	 $('#envelopeCustomFields').show();
+		                    	 getAccountECFforPageRedirect();
+                				 
+		                    }
+		                    else{
+		                         $('#envelopeCustomFields').hide();
+		                    }
+		                    
+		                    firstTimeLoad = false;
+		              }
+		              else{
+		              		 $('#envelopeCustomFields').show();
+		              		  getAccountECFforPageRedirect();
+		              		 
+		              }
+    }
+    
+    function getAccountECFforPageRedirect(){
+			//Special handling for attachments and documents where we redirect page.
+            if(typeof(Storage) !== "undefined") {
+			   // Code for localStorage/sessionStorage.
+			   
+			   //Text
+			    if(dsGlobal.envelope.textCustomFields.length > 0){
+                    for(var i = 0; i < dsGlobal.envelope.textCustomFields.length; i++) {
+                        textField = dsGlobal.envelope.textCustomFields[i];
+                        if(textField.show === 'true' && firstTimeLoad){
+                           	if(typeof(Storage) !== "undefined") {
+							    // Code for localStorage/sessionStorage.
+							   var textfieldVal = localStorage.getItem('#envelopeTextCustomField_'+textField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i);
+							   localStorage.removeItem('#envelopeTextCustomField_'+textField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i);
+							  $('#envelopeTextCustomField_'+textField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i).val(textfieldVal);
+							} 
+		                 }
+	            	}
+	            }
+	            //List
+	            if(dsGlobal.envelope.listCustomFields.length > 0){
+                    for(var i = 0; i < dsGlobal.envelope.listCustomFields.length; i++) {
+                        listField = dsGlobal.envelope.listCustomFields[i];
+                        if(listField.show === 'true' && firstTimeLoad){
+                           	if(typeof(Storage) !== "undefined") {
+							    // Code for localStorage/sessionStorage.
+							   var listfieldVal = localStorage.getItem('#envelopeListCustomField_'+listField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i);
+							   localStorage.removeItem('#envelopeListCustomField_'+listField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i);
+							  $('#envelopeListCustomField_'+listField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i).val(listfieldVal);
+							} 
+		                 }
+	            	}
+	            }
+			}
+    }
+    
+    /*
+    * Retrieve account level ECF and save it in local storage
+    */
+    function retrieveAccountEnvelopeCustomFields(){
+    //retrieve data for Envelope Custom Fields and populating envelope custom fields object
+	        	if($("#envelopeCustomFields").is(':visible')){
+	        		if(dsGlobal.envelope.textCustomFields.length > 0){
+			                    for(var i = 0; i < dsGlobal.envelope.textCustomFields.length; i++) {
+			                        textField = dsGlobal.envelope.textCustomFields[i];
+			                        if(textField.show === 'true'){
+			                            var textfieldVal = $('#envelopeTextCustomField_'+textField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i).val();
+			                            textfieldVal = unescapeHtmlSpecialCharacters(textfieldVal);
+			                           	dsGlobal.envelope.textCustomFields[i].value = textfieldVal;
+			                           	if(typeof(Storage) !== "undefined") {
+										    // Code for localStorage/sessionStorage.
+										    localStorage.setItem('#envelopeTextCustomField_'+textField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i,textfieldVal);
+										} 
+					                 }
+				            	}
+				            }
+		            if(dsGlobal.envelope.listCustomFields.length > 0){
+			                    for(var i = 0; i < dsGlobal.envelope.listCustomFields.length; i++) {
+			                        listField = dsGlobal.envelope .listCustomFields[i];
+			                        if(listField.show === 'true'){
+			                            var listfieldVal = $('#envelopeListCustomField_'+listField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i).val();
+			                            listfieldVal = unescapeHtmlSpecialCharacters(listfieldVal);
+			                         	dsGlobal.envelope.listCustomFields[i].value = listfieldVal;
+			                         	localStorage.setItem('#envelopeListCustomField_'+listField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i,listfieldVal);
+			                 }
+		            	}
+		            }
+		       }
+    }
+    
+    
+    /*
+    * Load Template Envelope custom fields  
+    */
+	function loadTemplateEnvelopeCustomFields(result){
+	var textFieldFlagShow = false;
+    var listFieldFlagShow = false;
+   	dsGlobal.envelope.textCustomFields = result.textCustomFields;  
+    //display textfield envelope custom fields
+            if(result.textCustomFields.length > 0){
+                for(var i = 0; i < result.textCustomFields.length; i++) {
+                    textField = result.textCustomFields[i];
+                     textField.name =unescapeHtmlSpecialCharacters(textField.name);
+                	
+            			if(!$('#envelopeTextCustomField_'+textField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i).length){
+	                        var newTextBoxDiv = $(document.createElement('div')).attr("id", 'envelopeTextCustomFieldDiv' + i);
+	                        newTextBoxDiv.addClass('four col');
+	                                       
+	                        var textfieldVal = '<label><span>'+textField.name+'</span></label>';
+	                        if(textField.required === 'true')
+	                            textfieldVal= '<label><span class="text-alert">* </span><span>'+textField.name+'</span></label>';
+	    
+	                        newTextBoxDiv.after().html(
+	                        textfieldVal+
+	                          '<input type="text" maxlength="100" name="textbox' + i + '" id="envelopeTextCustomField_'+textField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i + '" >');
+	                        newTextBoxDiv.appendTo("#envelopeCustomFieldsGridRow");
+	                        if( $('#envelopeTextCustomField_'+textField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i).val().length == 0)
+            					$('#envelopeTextCustomField_'+textField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i).val(unescapeHtmlSpecialCharacters(textField.value));
+                   		}
+                   		else if( $('#envelopeTextCustomField_'+textField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i).val().length == 0){
+            				$('#envelopeTextCustomField_'+textField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i).val(unescapeHtmlSpecialCharacters(textField.value));
+                   		}
+                   	  
+                      textFieldFlagShow = true;
+                   }
+                    
+                }
+
+            //display dropdown envelope custom fields
+            dsGlobal.envelope.listCustomFields = result.listCustomFields;
+            if(result.listCustomFields.length > 0){
+                for(var i = 0; i < result.listCustomFields.length; i++) {
+                    listField = result.listCustomFields[i];
+                    listField.name =unescapeHtmlSpecialCharacters(listField.name);
+                    	if(!$('#envelopeListCustomField_'+listField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i).length){
+                                var newListDiv = $(document.createElement('div')).attr("id", 'envelopeListCustomFieldDiv' + i);
+                                newListDiv.addClass('four col');
+                                
+                                var listfieldVal = '<label><span>'+listField.name+'</span></label>';
+                                if(listField.required === 'true')
+                                    listfieldVal= '<label><span class="text-alert">* </span><span>'+listField.name+'</span></label>';
+                                newListDiv.after().html( listfieldVal);
+        						var s = $('<select/>', {id: 'envelopeListCustomField_'+listField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i});
+        						$('<option />', {value:"", text:""}).appendTo(s);
+	        					if(listField.listItems!== null){
+	                               for(var j=0; j< listField.listItems.length; j++){
+	                                    $('<option />', {value:unescapeHtmlSpecialCharacters(listField.listItems[j]), text:unescapeHtmlSpecialCharacters(listField.listItems[j])} ).appendTo(s);
+	                                }
+	                                
+	                                s.appendTo(newListDiv); // or wherever it should be
+	                                newListDiv.appendTo("#envelopeCustomFieldsGridRow");
+	                            }
+	                            
+		                            $('#envelopeListCustomField_'+listField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i).val(unescapeHtmlSpecialCharacters(listField.value));
+		                      }
+	                   	 else if( $('#envelopeListCustomField_'+listField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i).val().length == 0){
+            				$('#envelopeListCustomField_'+listField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i).val(unescapeHtmlSpecialCharacters(listField.value));
+                   		}
+	               
+	                   	 listFieldFlagShow= true;
+                   	 	}
+                   	} 
+		
+			 if( textFieldFlagShow || listFieldFlagShow){
+            	 $('#envelopeCustomFields').show();
+            	 
+            }
+            else{
+                 $('#envelopeCustomFields').hide();
+            }
+		 
+	}
 
     /*
      * Show Edit Envelope
      */
+     
+     //Envelope Custom Fields
     function showEditEnvelope() {
         hideAll();
-        if (dsGlobal.envelope.messages.length > 0) {
+        if (dsGlobal.envelope.messages.length > 0 && dsGlobal.envelope.trialAccountFriendlyWarning!== true) {
             showErrors(dsGlobal.envelope.messages, false);
         } else {
+        	
             $("#ds-edit-envelope").show();
             if(dsGlobal.envelope.enableRecipientLanguageSelection !== true) {
                 $('#message').show();
@@ -165,6 +416,16 @@ jQuery(document).ready(function($) {
             if (dsGlobal.envelope.enableChatterUpdates === true) {
                 $('#enableChatterUpdates').prop('checked', true);
             }
+           if ((dsGlobal.envelope.listCustomFields !== null && dsGlobal.envelope.listCustomFields.length > 0) || 
+                (dsGlobal.envelope.textCustomFields !== null && dsGlobal.envelope.textCustomFields.length > 0)
+                ) {
+              		loadAccountEnvelopeCustomFields();
+              		loadTemplateEnvelopeCustomFields(dsGlobal.envelope);
+            }
+            else{
+                 
+                $('#envelopeCustomFields').hide();
+            }
             if (dsGlobal.envelope.showTagButton === true && dsGlobal.showTagButtonOverride !== '0') {
                 $('#nextButton').show();
             }
@@ -172,10 +433,11 @@ jQuery(document).ready(function($) {
                 $('#sendNowButton').show();
             }
         }
+        showErrors(dsGlobal.envelope.messages, false);
     }
 
     $('#remindSigners').click(function() {
-    	hideErrors();
+        hideErrors();
         if ($('#remindSigners').prop('checked') === true) {
             $('#reminders').show();
         } else {
@@ -184,7 +446,7 @@ jQuery(document).ready(function($) {
     });
     
     $('#expireEnvelope').click(function() {
-    	hideErrors();
+        hideErrors();
         if ($('#expireEnvelope').prop('checked') === true) {
             $('#expirations').show();
         } else {
@@ -193,11 +455,11 @@ jQuery(document).ready(function($) {
     });
     
     $('#emailSubject').keyup(function() {
-    	hideErrors();
+        hideErrors();
     });
     
     $('#emailMessage').keyup(function() {
-    	hideErrors();
+        hideErrors();
     });
 
     /*
@@ -218,7 +480,7 @@ jQuery(document).ready(function($) {
      * Show Add Recipient Modal
      */
     function showAddRecipientModal(type) {
-    	hideErrors();
+        hideErrors();
         console.log('showAddRecipientModal called, type='+type);
         hideAll();
         $("#ds-edit-envelope").show();
@@ -265,8 +527,8 @@ jQuery(document).ready(function($) {
             $('#ds-quickadd-form').show();
             $('#ds-recipient-info').hide();
             $('#ds-edit-recipient-btn').hide();
-        	$('#ds-recipient-name').attr('class', '');
-        	$('#ds-change-recipient').attr('class', '');
+            $('#ds-recipient-name').attr('class', '');
+            $('#ds-change-recipient').attr('class', '');
         }
     }
     
@@ -293,21 +555,21 @@ jQuery(document).ready(function($) {
         var recipientName = '';
         var recipientEmail = '';
         var recipientIsCurrentUser;
-    	dsGlobal.currentEditingRecipientName = '';
-    	dsGlobal.currentEditingRecipient = null;
+        dsGlobal.currentEditingRecipientName = '';
+        dsGlobal.currentEditingRecipient = null;
         if(dsGlobal.isEditing) {
             // Info from saved recipient
             recipient = getRecipientById(recipientId);
             console.log(recipient);
             $('#ds-recipient-modal-title').text(dsGlobal.editRecipientLabel);
             if(!dsGlobal.isChangingRecipient) {
-            	recipientName = unescapeHTMLSpecialCharacters(recipient.name);
-            	recipientEmail = recipient.email;
+                recipientName = unescapeHTMLSpecialCharacters(recipient.name);
+                recipientEmail = recipient.email;
             } else {
-            	recipient.signatureName = null;
-            	recipientName = unescapeHTMLSpecialCharacters(dsGlobal.newRecipientName);
-            	recipientEmail = dsGlobal.newRecipientEmail;
-            	dsGlobal.isChangingRecipient = false;
+                recipient.signatureName = null;
+                recipientName = unescapeHTMLSpecialCharacters(dsGlobal.newRecipientName);
+                recipientEmail = dsGlobal.newRecipientEmail;
+                dsGlobal.isChangingRecipient = false;
             }
             recipientIsCurrentUser = isCurrentUser(recipientName, recipientEmail);
             $('#ds-recipient-signer-role').val(recipient.signerRole);
@@ -342,8 +604,8 @@ jQuery(document).ready(function($) {
             }
             $('#ds-recipient-info').show();
             $('#ds-edit-recipient-btn').show();
-        	$('#ds-recipient-name').attr('class', 'ten col no-padding');
-        	$('#ds-change-recipient').attr('class', 'two col no-padding');
+            $('#ds-recipient-name').attr('class', 'ten col no-padding');
+            $('#ds-change-recipient').attr('class', 'two col no-padding');
             $('#ds-quickadd-form').hide();
             $('#ds-recipient-signertype-select').change();
             //$('#quick-add-name').val('').removeClass('error');
@@ -407,28 +669,28 @@ jQuery(document).ready(function($) {
      * Shortens document name
      */
     function shortenDocumentName(/*string*/ filename) {
-    	if (filename === null || filename === undefined) {
-    		return filename;
-    	}
-    	var length = filename.length;
-    	if (length < 50) {
-    		return filename;
-    	} else {
-    		return filename.substring(0, 25) + '...' + filename.substring(length-25, length);
-    	}
+        if (filename === null || filename === undefined) {
+            return filename;
+        }
+        var length = filename.length;
+        if (length < 50) {
+            return filename;
+        } else {
+            return filename.substring(0, 25) + '...' + filename.substring(length-25, length);
+        }
     }
     
     /*
      * Creates HTML layout for a document and returns HTML
      */
     function createDocumentHtml(doc) {
-    	var documentOrder = doc.documentOrder;
-    	var documentName = doc.name;
-    	var documentSize = doc.size;
-    	var html = '<div class="document" id="' + doc.id + '">';
+        var documentOrder = doc.documentOrder;
+        var documentName = doc.name;
+        var documentSize = doc.size;
+        var html = '<div class="document" id="' + doc.id + '">';
         html += '<img class="delete" src="' + ((Modernizr.svg) ? dsGlobal.deleteIcon : dsGlobal.deleteIconPNG) + '"></img>';
         html += '<img class="move" src="' + ((Modernizr.svg) ? dsGlobal.grabberIcon : dsGlobal.grabberPNG) + '"></img>';
-    	html += '<input type="text" class="number" readonly="readonly" disabled value="' + documentOrder+ '" />';
+        html += '<input type="text" class="number" readonly="readonly" disabled value="' + documentOrder+ '" />';
         html += '<p class="name" title="' + documentName + '">' + shortenDocumentName(documentName) + '<span class="sub-text">' + documentSize + '</span></p>';
         html += '</div>';
         return html;
@@ -439,8 +701,8 @@ jQuery(document).ready(function($) {
      * @docs - list of all documents from corresponding dto object
      */
     function populateAllDocumentHTML(docs) {
-    	 // sort documents using document order
-    	 docs.sort(function (a, b) {
+         // sort documents using document order
+         docs.sort(function (a, b) {
             if (parseInt(a.documentOrder) > parseInt(b.documentOrder)) {
                 return 1;
             }
@@ -453,46 +715,46 @@ jQuery(document).ready(function($) {
         // iterate over all the documents and create final HTML layout
         var documentsHtml = '';
         if (docs !== null) {  
-    		for(var i = 0; i < docs.length; i++) {
-    			documentsHtml += createDocumentHtml(docs[i]);
-    		}
-    	}
-    	
-    	// delete all HTML and event handlers
-    	$('#dsDocumentListContainer .document .delete').unbind();
-    	$("#dsDocumentListContainer").html('');
-    	
-    	// add new HTML and event handlers
-    	// add HTML
-    	$("#dsDocumentListContainer").html(documentsHtml);
-    	// add remove click handlers
-    	$('#dsDocumentListContainer .document .delete').bind('click', function(){
-        	var documentId = this.parentNode.id;
-        	console.log('delete document clicked id=' + documentId);
-        	$("#" + documentId).css('opacity', '0.5');
-        	deleteDocument(documentId);
+            for(var i = 0; i < docs.length; i++) {
+                documentsHtml += createDocumentHtml(docs[i]);
+            }
+        }
+        
+        // delete all HTML and event handlers
+        $('#dsDocumentListContainer .document .delete').unbind();
+        $("#dsDocumentListContainer").html('');
+        
+        // add new HTML and event handlers
+        // add HTML
+        $("#dsDocumentListContainer").html(documentsHtml);
+        // add remove click handlers
+        $('#dsDocumentListContainer .document .delete').bind('click', function(){
+            var documentId = this.parentNode.id;
+            console.log('delete document clicked id=' + documentId);
+            $("#" + documentId).css('opacity', '0.5');
+            deleteDocument(documentId);
         });
         // add sortable feature
         if (docs !== null && docs.length > 1) {
-	        $('#dsDocumentListContainer').sortable({
-		        axis: 'y',
-		        opacity: 0.6,
-		        items: '> div.document',
-		        containment: 'document',
-		        placeholder: 'ui-placeholder',
-		        forcePlaceholderSize: true,
-		        stop: function (event, ui) {
-		            var reorderedDocuments = $('#dsDocumentListContainer').sortable('toArray');
-		            var newOrders = {};
-		            for(var index = 0; index < reorderedDocuments.length; index++) {
-		            	var currentItemId = reorderedDocuments[index];
-		            	var currentOrder = index + 1;
-		            	newOrders[currentItemId] = currentOrder;
-		            }
-		            reorderDocuments(newOrders);
-	 			}
-	    	});
-    	}
+            $('#dsDocumentListContainer').sortable({
+                axis: 'y',
+                opacity: 0.6,
+                items: '> div.document',
+                containment: 'document',
+                placeholder: 'ui-placeholder',
+                forcePlaceholderSize: true,
+                stop: function (event, ui) {
+                    var reorderedDocuments = $('#dsDocumentListContainer').sortable('toArray');
+                    var newOrders = {};
+                    for(var index = 0; index < reorderedDocuments.length; index++) {
+                        var currentItemId = reorderedDocuments[index];
+                        var currentOrder = index + 1;
+                        newOrders[currentItemId] = currentOrder;
+                    }
+                    reorderDocuments(newOrders);
+                }
+            });
+        }
     }
 
     /*
@@ -647,17 +909,17 @@ jQuery(document).ready(function($) {
                             && signerType.toLowerCase() === 'signer' && recipient.signNow === 'true') ) {
                 signerTypeFull = dsGlobal.signerDashSignNowLabel;
             } else if(signerType.toLowerCase() === 'signer') {
-            	signerTypeFull = dsGlobal.signerLabel;
+                signerTypeFull = dsGlobal.signerLabel;
             } else if(signerType.toLowerCase() === 'carbon copy'){
-            	signerTypeFull = dsGlobal.carbonCopyLabel;
+                signerTypeFull = dsGlobal.carbonCopyLabel;
             } else if(signerType.toLowerCase() === 'certified delivery'){
-            	signerTypeFull = dsGlobal.certifiedDeliveryLabel;
+                signerTypeFull = dsGlobal.certifiedDeliveryLabel;
             } else if(signerType.toLowerCase() === 'carbon copy'){
-            	signerTypeFull = dsGlobal.carbonCopyLabel;
+                signerTypeFull = dsGlobal.carbonCopyLabel;
             } else if(signerType.toLowerCase() === 'address recipients'){
-            	signerTypeFull = dsGlobal.addressRecipientsLabel;
+                signerTypeFull = dsGlobal.addressRecipientsLabel;
             } else if(signerType.toLowerCase() === 'manage envelope'){
-            	signerTypeFull = dsGlobal.manageEnvelopeLabel;
+                signerTypeFull = dsGlobal.manageEnvelopeLabel;
             }
             signerType = (signerTypeFull.length > 16) ? signerTypeFull.substring(0, 16) + '...' : signerTypeFull;
         } else {
@@ -722,7 +984,7 @@ jQuery(document).ready(function($) {
             for(var i = 0; i < dsGlobal.envelope.recipients.length; i++) {
                 if(dsGlobal.envelope.recipients[i].id === recipient.id) {
                     dsGlobal.envelope.recipients[i] = recipient;
-                	console.log(dsGlobal.envelope.recipients);
+                    console.log(dsGlobal.envelope.recipients);
                     return;
                 }
             }
@@ -799,6 +1061,54 @@ jQuery(document).ready(function($) {
         }
     }
 
+
+	function validateEnvelopeCustomFields() {
+	        console.log('validateCustomFields called');
+	        var hasNoError = true;
+	        if($("#envelopeCustomFields").is(':visible')){
+        		if(dsGlobal.envelope.textCustomFields.length > 0){
+		                    for(var i = 0; i < dsGlobal.envelope.textCustomFields.length; i++) {
+		                        textField = dsGlobal.envelope.textCustomFields[i];
+		                         textField.name =unescapeHtmlSpecialCharacters(textField.name);
+		                        if(textField.show === 'true'){
+		                        	if((textField.required === 'true')  
+		                        	  && ($('#envelopeTextCustomField_'+textField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i).val().length > 0) 
+		                        	  && ($('#envelopeTextCustomField_'+textField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i).val().trim().length > 0) 
+		                        	  ||(textField.required === 'false')){
+		                        		
+		                           		$('#envelopeTextCustomField_'+textField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i).removeClass('errortext');
+		                           		 
+		                        	}
+		                        	else{
+		                        		$('#envelopeTextCustomField_'+textField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i).addClass('errortext');
+		                        	
+		                        	}
+		                          
+		                 }
+	            	}
+	            }
+	            if(dsGlobal.envelope.listCustomFields.length > 0){
+		                    for(var i = 0; i < dsGlobal.envelope.listCustomFields.length; i++) {
+		                        listField = dsGlobal.envelope .listCustomFields[i];
+		                        listField.name =unescapeHtmlSpecialCharacters(listField.name);
+		                        if(listField.show === 'true'){
+		                         	if((listField.required === 'true' && $('#envelopeListCustomField_'+listField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i).val().length > 0
+		                        	)||(listField.required === 'false')){	
+		                        		$('#envelopeListCustomField_'+listField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i).removeClass('errorlist');
+		                           		
+		                        	}
+		                        	else{
+		                        		$('#envelopeListCustomField_'+listField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i).addClass('errorlist');
+		                        		 hasNoError = false;
+		                        	}
+		                 }
+	            	}
+	            }
+			  	
+			}
+	        console.log('validateEnvelopeCustomFields result=' + hasNoError);
+	      
+	    }
     /**
      * This function sends the envelope to DocuSign and renders the Success or Tagger page.
      * @param sendMethod is either sendNow or tagEnvelope, depending on the button pressed
@@ -807,18 +1117,49 @@ jQuery(document).ready(function($) {
         console.log('sendEnvelope called with sendNow='+sendNow);
         console.log(dsGlobal.envelope);
         try {
-            Visualforce.remoting.Manager.invokeAction(
-                dsGlobal.sendEnvelope, dsGlobal.sourceId, dsGlobal.envelopeId, sendNow, dsGlobal.newWindow,
-                $('#emailSubject').val(), $('#emailMessage').val(), $('#remindSigners').prop('checked'),
-                $('#sendReminderDays').val(), $('#sendReminderRepeatDays').val(), $('#expireEnvelope').prop('checked'),
-                $('#expireEnvelopeDays').val(), $('#warnExpireDays').val(), $('#enableChatterUpdates').prop('checked'),
-                function(result, event) {
-                    remoteActionHandler(result, event);
-                }
-            );
-        } catch (err) {
-            console.log(err);
-        }
+        
+        		
+	        	//retrieve data for Envelope Custom Fields and populating envelope custom fields object
+	        	if($("#envelopeCustomFields").is(':visible')){
+	        		if(dsGlobal.envelope.textCustomFields.length > 0){
+			                    for(var i = 0; i < dsGlobal.envelope.textCustomFields.length; i++) {
+			                        textField = dsGlobal.envelope.textCustomFields[i];
+			                        if(textField.show === 'true'){
+			                            var textfieldVal = $('#envelopeTextCustomField_'+textField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i).val().replace(/^\s+/g, '');
+			                           	dsGlobal.envelope.textCustomFields[i].value = unescapeHtmlSpecialCharacters(textfieldVal);
+			                          
+			                 }
+		            	}
+		            }
+		            if(dsGlobal.envelope.listCustomFields.length > 0){
+			                    for(var i = 0; i < dsGlobal.envelope.listCustomFields.length; i++) {
+			                        listField = dsGlobal.envelope .listCustomFields[i];
+			                        if(listField.show === 'true'){
+			                            var listfieldVal = $('#envelopeListCustomField_'+listField.name.split(' ').join('_').replace(/[^A-Za-z0-9]/g, '')+'_' + i).val();
+			                         	dsGlobal.envelope.listCustomFields[i].value = unescapeHtmlSpecialCharacters(listfieldVal);
+			                 }
+		            	}
+		            }
+				  	
+				}
+	        	
+	            Visualforce.remoting.Manager.invokeAction(
+	                dsGlobal.sendEnvelope, dsGlobal.sourceId, dsGlobal.envelopeId, sendNow, dsGlobal.newWindow, dsGlobal.lightningEnabled,
+	                $('#emailSubject').val(), $('#emailMessage').val(), $('#remindSigners').prop('checked'),
+	                $('#sendReminderDays').val(), $('#sendReminderRepeatDays').val(), $('#expireEnvelope').prop('checked'),
+	                $('#expireEnvelopeDays').val(), $('#warnExpireDays').val(), $('#enableChatterUpdates').prop('checked'),
+	                dsGlobal.envelope.listCustomFields,dsGlobal.envelope.textCustomFields,
+	                function(result, event) {
+	                    remoteActionHandler(result, event);
+	                }
+	            );
+	            
+	           validateEnvelopeCustomFields();
+	           
+	     }
+	     catch (err) {
+	            console.log(err);
+	     } 
     }
 
     /**
@@ -893,8 +1234,8 @@ jQuery(document).ready(function($) {
     }
     
     function hideErrors() {
-    	$('#dsAlert').hide();
-    	$('#backButton').hide();
+        $('#dsAlert').hide();
+        $('#backButton').hide();
     }
 
     /*
@@ -915,7 +1256,7 @@ jQuery(document).ready(function($) {
             $('#quick-add-email').addClass('error');
             $('.ds-recipient-email-error-label').text(dsGlobal.fieldRequiredLabel).show();
             hasNoError = false;
-        } else if(!/^([\w-\.+-]+@([\w-]+\.)+[\w-]{2,4})?$/.test($('#quick-add-email').val())) {          
+        } else if(!/^(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])$/.test($('#quick-add-email').val())) {          
             $('#quick-add-email').addClass('error');
             $('.ds-recipient-email-error-label').text(dsGlobal.invalidEmailLabel).show();
             hasNoError = false;
@@ -1022,41 +1363,41 @@ jQuery(document).ready(function($) {
     });
 
     $("#cancelButton").click(function(){
-    	disableButtons();
+        disableButtons();
         showFullScreenLoading();
         deleteEnvelope();
         enableButtons();
         if(dsGlobal.newWindow == '1'){
-        	window.close();
+            window.close();
         }
     });
     
 
     $("#sendNowButton").click(function(){
-    	disableButtons();
+        disableButtons();
         showFullScreenLoading();
         sendEnvelope(true);
         enableButtons();
     });
 
     $("#nextButton").click(function(){
-    	disableButtons();
+        disableButtons();
         showFullScreenLoading();
         sendEnvelope(false);
         enableButtons();
     });
 
-	function disableButtons() {
-		$("#cancelButton").removeAttr("href");
-		$("#sendNowButton").removeAttr("href");
-		$("#nextButton").removeAttr("href");
-	}
+    function disableButtons() {
+        $("#cancelButton").removeAttr("href");
+        $("#sendNowButton").removeAttr("href");
+        $("#nextButton").removeAttr("href");
+    }
 
-	function enableButtons() {
-		$("#cancelButton").attr("href", "javascript:void(0);");
-		$("#sendNowButton").attr("href", "javascript:void(0);");
-		$("#nextButton").attr("href", "javascript:void(0);");
-	}
+    function enableButtons() {
+        $("#cancelButton").attr("href", "javascript:void(0);");
+        $("#sendNowButton").attr("href", "javascript:void(0);");
+        $("#nextButton").attr("href", "javascript:void(0);");
+    }
 
     // Click handler for hidding add recipient modal
     $('.ds-recipient-cancel-btn, .ds-recipient-close-icon, #ds-cancel-new-contact-btn').click(function(){
@@ -1066,14 +1407,14 @@ jQuery(document).ready(function($) {
     
     // function for deleting document
     function deleteDocument(/*string*/ docId) {
-    	hideErrors();
-    	try {
- 			Visualforce.remoting.Manager.invokeAction(
- 				dsGlobal.deleteDocument,	// action name
- 				dsGlobal.envelopeId, docId, // parameters
- 				function(result, event) {   // handler
- 					 console.log('delete document, result='+result+' event.status='+event.status);
- 					 if (event.status) {
+        hideErrors();
+        try {
+            Visualforce.remoting.Manager.invokeAction(
+                dsGlobal.deleteDocument,    // action name
+                dsGlobal.envelopeId, docId, // parameters
+                function(result, event) {   // handler
+                     console.log('delete document, result='+result+' event.status='+event.status);
+                     if (event.status) {
                         if(!result) {
                             // Back-end returns unknown error..
                             return;
@@ -1083,22 +1424,22 @@ jQuery(document).ready(function($) {
                     } else {
                         showErrors(result.messages, false);
                     }
- 				}
- 			);
-    	} catch (err) {
+                }
+            );
+        } catch (err) {
             console.log(err);
         }
     }
     
     // function for reordering documents
     function reorderDocuments(/*map<string documentId,int newOrder>*/ newOrders) {
-    	try {
-    		Visualforce.remoting.Manager.invokeAction(
-    			dsGlobal.reorderDocuments,
-    			dsGlobal.envelopeId, newOrders,
-    			function(result, event) {   // handler
- 					 console.log('reorder documents, result='+result+' event.status='+event.status);
- 					 if (event.status) {
+        try {
+            Visualforce.remoting.Manager.invokeAction(
+                dsGlobal.reorderDocuments,
+                dsGlobal.envelopeId, newOrders,
+                function(result, event) {   // handler
+                     console.log('reorder documents, result='+result+' event.status='+event.status);
+                     if (event.status) {
                         if(!result) {
                             // Back-end returns unknown error..
                             return;
@@ -1108,282 +1449,299 @@ jQuery(document).ready(function($) {
                     } else {
                         showErrors(result.messages, false);
                     }
- 				}
-    		);
-    	} catch(err) {
-    		console.log(err);
-    	}
+                }
+            );
+        } catch(err) {
+            console.log(err);
+        }
     }
     
     // creates html layout for attachment
     function createAvailableDocument(doc) {
-    	var name = doc.name;
-    	var docType = doc.documentType;
-    	var id = doc.relatedObjectId;
-    	var templateId = doc.externalDocumentId;
-    	var html = '<label class="option">';
-    	html += '<input type="checkbox" id="' + id + '" name="' + name + '" docType="' + docType + '"/>';
-    	html += name;
-    	html += ' </label>';
-    	return html;
+        var name = doc.name;
+        var docType = doc.documentType;
+        var id = doc.relatedObjectId;
+        var templateId = doc.externalDocumentId;
+        var html = '<label class="option">';
+        html += '<input type="checkbox" id="' + id + '" name="' + name + '" docType="' + docType + '"/>';
+        html += name;
+        html += ' </label>';
+        return html;
     }
     
     // creates html layout for folder
     function createFolder(folder, selected) {
-    	var id = folder.id;
-    	var name = folder.name;
-    	var html = '<option';
-    	if (selected) {
-    		html += ' selected="selected"';
-    	} 
-    	html += ' value="' + id + '"';
-    	html += ' id="' + id + '" >';
-    	html += name;
-    	html += '</option>'
-    	return html;
+        var id = folder.id;
+        var name = folder.name;
+        var html = '<option';
+        if (selected) {
+            html += ' selected="selected"';
+        } 
+        html += ' value="' + id + '"';
+        html += ' id="' + id + '" >';
+        html += name;
+        html += '</option>'
+        return html;
     }
     
     // loads documents from folder
     function loadDocumentsFromFolder(remoteActionName, folderId, headerName) {
-    	try {
-			Visualforce.remoting.Manager.invokeAction(
-				remoteActionName , 				  	// action	
-				dsGlobal.envelopeId, folderId,			  // parameters
-				function(result, event) {						  // handler
-					hideDocumentsModalLoading();
-					console.log('attachments loaded, result='+result+' event.status='+event.status);
- 					 if (event.status) {
+        try {
+            Visualforce.remoting.Manager.invokeAction(
+                remoteActionName ,                  // action   
+                dsGlobal.envelopeId, folderId,            // parameters
+                function(result, event) {                         // handler
+                    hideDocumentsModalLoading();
+                    console.log('attachments loaded, result='+result+' event.status='+event.status);
+                     if (event.status) {
                         if(!result) {
                             // Back-end returns unknown error..
                             return;
                         }
-                		showAvailableDocuments(result.documents, result.folders, headerName);      	
+                        showAvailableDocuments(result.documents, result.folders, headerName);       
                     } else {
                         showErrors(result.messages, false);
                     }
-				}
-			);
-		} catch(err) {
-    		console.log(err);
-    	}	
+                }
+            );
+        } catch(err) {
+            console.log(err);
+        }   
     }
     
     // shows obtained documents from back end
     function showAvailableDocuments(/*list<document>*/ docs, /*list<folder>*/ folders, /*string*/ header) {
-    	// header and folders
-    	$("#ds_docmodal_header").html(header);
-    	if ((header === dsGlobal.documentsLabel) || (header === dsGlobal.libraryLabel)) {
-    		$("#ds_docmodal_folder").show();
-    	} else {
-    		$("#ds_docmodal_folder").hide();
-    	}
-    	
-    	
-    	// delete all HTML and event handlers
-    	$("#ds_docmodal_add_attachment").unbind();
-    	$('.ds-add-document-modal-content .content input').unbind();
-    	$(".ds-add-document-modal-content .content ").html('');
-    	
-    	// add new layout (folders)
-    	if (folders !== null && folders.length > 0) {
-    		var foldersHtml = '';
-    		$("#ds_docmodal_folder_select").unbind();
-    		$("#ds_docmodal_folder_select").html('');
-    		for(var i = 0; i < folders.length; i++) {
-    			var selected = (i == 0);
-				foldersHtml += createFolder(folders[i], selected);
-			}
-			$("#ds_docmodal_folder_select").html(foldersHtml);
-			$("#ds_docmodal_folder_select").change(function() {
-				var folderId = $("#ds_docmodal_folder_select").val();
-				var header = $("#ds_docmodal_header").html();
-				if (header == 'Documents') {
-					loadDocumentsFromFolder(dsGlobal.getAvailableDocumentForFolder, folderId, dsGlobal.documentsLabel);
-				} else {
-					loadDocumentsFromFolder(dsGlobal.getAvailableContentDocumentForFolder, folderId, dsGlobal.libraryLabel);
-				}
-			});
-    	}
+        // header and folders
+        $("#ds_docmodal_header").html(header);
+        if ((header === dsGlobal.documentsLabel) || (header === dsGlobal.libraryLabel)) {
+            $("#ds_docmodal_folder").show();
+        } else {
+            $("#ds_docmodal_folder").hide();
+        }
+        
+        
+        // delete all HTML and event handlers
+        $("#ds_docmodal_add_attachment").unbind();
+        $('.ds-add-document-modal-content .content input').unbind();
+        $(".ds-add-document-modal-content .content ").html('');
+        
+        // add new layout (folders)
+        if (folders !== null && folders.length > 0) {
+            var foldersHtml = '';
+            $("#ds_docmodal_folder_select").unbind();
+            $("#ds_docmodal_folder_select").html('');
+            for(var i = 0; i < folders.length; i++) {
+                var selected = (i == 0);
+                foldersHtml += createFolder(folders[i], selected);
+            }
+            $("#ds_docmodal_folder_select").html(foldersHtml);
+            $("#ds_docmodal_folder_select").change(function() {
+                var folderId = $("#ds_docmodal_folder_select").val();
+                var header = $("#ds_docmodal_header").html();
+                if ((header === dsGlobal.documentsLabel)) {
+                    loadDocumentsFromFolder(dsGlobal.getAvailableDocumentForFolder, folderId, dsGlobal.documentsLabel);
+                } else {
+                    loadDocumentsFromFolder(dsGlobal.getAvailableContentDocumentForFolder, folderId, dsGlobal.libraryLabel);
+                }
+            });
+        }
 
-    	// add new document/attachment handler
-    	if (header === dsGlobal.attachmentsLabel) {
-    		$("#ds_docmodal_add_attachment").show();
-    		$("#ds_docmodal_add_attachment").click(function() {
-    			Visualforce.remoting.Manager.invokeAction(
-	                dsGlobal.updateEnvelope, // action 
-	                dsGlobal.sourceId, dsGlobal.envelopeId, false, // parameters
-	                $('#emailSubject').val(), $('#emailMessage').val(), $('#remindSigners').prop('checked'),
-	                $('#sendReminderDays').val(), $('#sendReminderRepeatDays').val(), $('#expireEnvelope').prop('checked'),
-	                $('#expireEnvelopeDays').val(), $('#warnExpireDays').val(), $('#enableChatterUpdates').prop('checked'),
-	                function(result, event) { // callback
-	                	if (event.status) {
-	                        if(!result) {
-	                            return;
-	                        }
-	                		var currentPageAddress = window.location.href;
-			    			if (currentPageAddress[currentPageAddress.length-1] == '#') {
-			    				currentPageAddress = currentPageAddress.substring(0, currentPageAddress.length-1);
-			    			}
-			    			currentPageAddress += '&SAA=1';
-			    			var returnUrl = encodeURIComponent(currentPageAddress);
-			    			var addAttachmentUrl = dsGlobal.pathPrefix + '/p/attach/NoteAttach?pid=';
-			    			addAttachmentUrl += dsGlobal.envelopeId;
-			    			addAttachmentUrl += '&retURL=';
-			    			addAttachmentUrl += returnUrl;
-			    			window.location.href = addAttachmentUrl;     	
-	                    } else {
-	                    	$(".ds-document-cancel-btn").click();
-	                        showErrors(result.messages, false);
-	                    }            	
-				    }
-            	);
-    		});
-    	} else if (header === dsGlobal.documentsLabel) {
-    		$("#ds_docmodal_add_attachment").show();
-    		$("#ds_docmodal_add_attachment").click(function() {
-    			window.open(dsGlobal.pathPrefix + '/p/doc/DocumentUploadUi','_blank','width=900,height=700,scrollbars=1,resizable=1');
-    		});
-    	} else {
-    		$("#ds_docmodal_add_attachment").hide();
-    	}
-    	
-    	// add new layout (documents)
-    	var documentsHtml = '';
-		if (docs !== null) {
-			for(var i = 0; i < docs.length; i++) {
-				documentsHtml += createAvailableDocument(docs[i]);
-			}
-		}
-		$(".ds-add-document-modal-content .content ").html(documentsHtml);
+        // add new document/attachment handler
+        if (header === dsGlobal.attachmentsLabel) {
+            $("#ds_docmodal_add_attachment").show();
+            $("#ds_docmodal_add_attachment").click(function() {
+            
+            	//save envelope custom fields values in localstorage for page redirect
+            	retrieveAccountEnvelopeCustomFields();
+            	
+            	// save account lavel fields for redirect
+                Visualforce.remoting.Manager.invokeAction(
+                    dsGlobal.updateEnvelope, // action 
+                    dsGlobal.sourceId, dsGlobal.envelopeId, false, // parameters
+                    $('#emailSubject').val(), $('#emailMessage').val(), $('#remindSigners').prop('checked'),
+                    $('#sendReminderDays').val(), $('#sendReminderRepeatDays').val(), $('#expireEnvelope').prop('checked'),
+                    $('#expireEnvelopeDays').val(), $('#warnExpireDays').val(), $('#enableChatterUpdates').prop('checked'),
+                    function(result, event) { // callback
+                        if (event.status) {
+                            if(!result) {
+                                return;
+                            }
+                            var currentPageAddress = window.location.href;
+                            if (currentPageAddress[currentPageAddress.length-1] == '#') {
+                                currentPageAddress = currentPageAddress.substring(0, currentPageAddress.length-1);
+                            }
+                            currentPageAddress += '&SAA=1';
+                            var returnUrl = encodeURIComponent(currentPageAddress);
+                            var addAttachmentUrl = dsGlobal.pathPrefix + '/p/attach/NoteAttach?pid=';
+                            addAttachmentUrl += dsGlobal.envelopeId;
+                            addAttachmentUrl += '&retURL=';
+                            addAttachmentUrl += returnUrl;
+                            window.location.href = addAttachmentUrl;  
+                              
+                             
+                        } else {
+                            $(".ds-document-cancel-btn").click();
+                            showErrors(result.messages, false);
+                        }               
+                    }
+                );
+            });
+        } else if (header === dsGlobal.documentsLabel) {
+            $("#ds_docmodal_add_attachment").show();
+            $("#ds_docmodal_add_attachment").click(function() {
+                window.open(dsGlobal.pathPrefix + '/p/doc/DocumentUploadUi','_blank','width=900,height=700,scrollbars=1,resizable=1');
+            });
+        } else {
+            $("#ds_docmodal_add_attachment").hide();
+        }
+        
+        // add new layout (documents)
+        var documentsHtml = '';
+        if (docs !== null) {
+            for(var i = 0; i < docs.length; i++) {
+                documentsHtml += createAvailableDocument(docs[i]);
+            }
+        }
+        $(".ds-add-document-modal-content .content ").html(documentsHtml);
     }
     
     /*
      * Loads available documents and shows the dialog
      */
     function loadAvailableDocuments(/*string*/ remoteActionName, /*string*/ modalHeader) {
-    	hideErrors();
-    	try {
-			Visualforce.remoting.Manager.invokeAction(
-				remoteActionName, 				  				   // action	
-				dsGlobal.envelopeId, dsGlobal.sourceId,			  // parameters
-				function(result, event) {						  // handler
-					hideDocumentsModalLoading();
-					console.log('attachments loaded, result='+result+' event.status='+event.status);
- 					 if (event.status) {
+        hideErrors();
+        try {
+            Visualforce.remoting.Manager.invokeAction(
+                remoteActionName,                                  // action    
+                dsGlobal.envelopeId, dsGlobal.sourceId,           // parameters
+                function(result, event) {                         // handler
+                    hideDocumentsModalLoading();
+                    console.log('attachments loaded, result='+result+' event.status='+event.status);
+                     if (event.status) {
                         if(!result) {
                             // Back-end returns unknown error..
                             return;
                         }
-                		showAvailableDocuments(result.documents, result.folders, modalHeader);      	
+                        showAvailableDocuments(result.documents, result.folders, modalHeader);          
                     } else {
                         showErrors(result.messages, false);
                     }
             
-				}
-			);
-			showDocumentsModalLoadind();
-		} catch(err) {
-    		console.log(err);
-    	} finally {
-    		hideDocumentsModalLoading();
-    	}
+                }
+            );
+            showDocumentsModalLoadind();
+        } catch(err) {
+            console.log(err);
+        } finally {
+            hideDocumentsModalLoading();
+        }
     }
     
     /*
      * Loads available documents (with folders) and shows the dialog
      */
     function loadAvailableDocumentsWithFolders(/*string*/ remoteActionName, /*string*/ modalHeader) {
-    	hideErrors();
-    	try {
-			Visualforce.remoting.Manager.invokeAction(
-				remoteActionName, 	// action	
-				dsGlobal.envelopeId,            // parameters
-				function(result, event) {		// handler
-					hideDocumentsModalLoading();
-					console.log('attachments loaded, result='+result+' event.status='+event.status);
- 					if (event.status) {
+        hideErrors();
+        try {
+            Visualforce.remoting.Manager.invokeAction(
+                remoteActionName,   // action   
+                dsGlobal.envelopeId,            // parameters
+                function(result, event) {       // handler
+                    hideDocumentsModalLoading();
+                    console.log('attachments loaded, result='+result+' event.status='+event.status);
+                    if (event.status) {
                         if(!result) {
                             // Back-end returns unknown error..
                             return;
                         }
-                		showAvailableDocuments(result.documents, result.folders, modalHeader);      	
+                        showAvailableDocuments(result.documents, result.folders, modalHeader);          
                     } else {
                         showErrors(result.messages, false);
                     }
             
-				}
-			);
-			showDocumentsModalLoadind();
-			$("#ds_docmodal_folder").hide();
-    		$("#ds_docmodal_add_attachment").hide();
-		} catch(err) {
-    		console.log(err);
-    	} finally {
-    		hideDocumentsModalLoading();
-    	}
+                }
+            );
+            showDocumentsModalLoadind();
+            $("#ds_docmodal_folder").hide();
+            $("#ds_docmodal_add_attachment").hide();
+        } catch(err) {
+            console.log(err);
+        } finally {
+            hideDocumentsModalLoading();
+        }
     }
     
     // Click handler for hidding add recipient modal
     $('.ds-document-close-icon, .ds-document-cancel-btn').click(function(){
-    	hideDocumentsModal();
+        hideDocumentsModal();
         showEditEnvelope();
     })
     
     // click handler for add attachment
     $('#add-attachment').click(function(){
-    	loadAvailableDocuments(dsGlobal.getAvailableAttachments, dsGlobal.attachmentsLabel);
+        loadAvailableDocuments(dsGlobal.getAvailableAttachments, dsGlobal.attachmentsLabel);
     });
     
     // click handler for add new feed item
     $('#add-feed-items').click(function(){
-    	loadAvailableDocuments(dsGlobal.getAvailableFeedItems, dsGlobal.feeditemsLabel);
+        loadAvailableDocuments(dsGlobal.getAvailableFeedItems, dsGlobal.feeditemsLabel);
     });
     
     // click handler for add new docusign template
     $('#add-docusign-template').click(function(){
-    	loadAvailableDocuments(dsGlobal.getAvailableDocusignTemplates, dsGlobal.templatesLabel);
+        loadAvailableDocuments(dsGlobal.getAvailableDocusignTemplates, dsGlobal.templatesLabel);
     });
     
     // click handler for add new docusign template
     $('#add-libraries').click(function(){
-    	loadAvailableDocumentsWithFolders(dsGlobal.getAvailableContentFolders, dsGlobal.libraryLabel);
+        loadAvailableDocumentsWithFolders(dsGlobal.getAvailableContentFolders, dsGlobal.libraryLabel);
     });
     
     // click handler for add new docuemnt
     $('#add-document').click(function(){
-    	loadAvailableDocumentsWithFolders(dsGlobal.getAvailableFolders, dsGlobal.documentsLabel);
+        loadAvailableDocumentsWithFolders(dsGlobal.getAvailableFolders, dsGlobal.documentsLabel);
     });
     
     
     // Click handler on next button for attachments
     $('#ds-document-next-btn').click(function(){
-    	hideErrors();
-    	var newDocuments = [];		
-    	$(".ds-add-document-modal-content .content input:checked").each(function(index, item) {
-    		var newDocument = {};
-    		var $item = $(item);
-    		newDocument.relatedObjectId = $item.attr('id');
-    		newDocument.name = $item.attr('name');
-    		newDocument.documentType = $item.attr('docType');
-    		docType = newDocument.documentType;
-    		newDocuments.push(newDocument);
-    	});
-    	try {
+        hideErrors();
+        var newDocuments = [];      
+        $(".ds-add-document-modal-content .content input:checked").each(function(index, item) {
+            var newDocument = {};
+            var $item = $(item);
+            newDocument.relatedObjectId = $item.attr('id');
+            newDocument.name = $item.attr('name');
+            newDocument.documentType = $item.attr('docType');
+            docType = newDocument.documentType;
+            newDocuments.push(newDocument);
+        });
+        try {
             Visualforce.remoting.Manager.invokeAction(
                 dsGlobal.addDocuments, // method 
-                dsGlobal.envelopeId, newDocuments,	// parameters
-                function(result, event) {	// handler
+                dsGlobal.envelopeId, newDocuments,  // parameters
+                function(result, event) {   // handler
                     console.log('add documents, result='+result+' event.status='+event.status);
- 					if (event.status) {
+                    if (event.status) {
                         if(!result) {
                             // Back-end returns unknown error..
                             return;
                         }
                         if (result.messages.length > 0) {
-                        	showErrors([{code:"Unknown", description:"Unknown server error"}], false);
+                            showErrors([{code:"Unknown", description:"Unknown server error"}], false);
                         } else {
-                        	populateAllDocumentHTML(result.documents);
-                        	dsGlobal.envelope.documents = result.documents;
+                            populateAllDocumentHTML(result.documents);
+                            dsGlobal.envelope.documents = result.documents;
+                            if ((result.listCustomFields !== null && result.listCustomFields.length > 0) || 
+				                (result.textCustomFields !== null && result.textCustomFields.length > 0)
+				                ) {
+				              		loadAccountEnvelopeCustomFields();
+				              		loadTemplateEnvelopeCustomFields(result);
+				            }
+				            else{
+				                 
+				                $('#envelopeCustomFields').hide();
+				            }
                         }
                     } else {
                         showErrors([{code:"Unknown", description:"Unknown server error"}], false);
@@ -1393,7 +1751,7 @@ jQuery(document).ready(function($) {
         } catch (err) {
             console.log(err);
         } finally {
-        	showEditEnvelope();
+            showEditEnvelope();
         }
     });
 
@@ -1526,21 +1884,21 @@ jQuery(document).ready(function($) {
                             if (dsGlobal.recipientType === 'add-contact' || dsGlobal.recipientType === 'edit-contact' ||
                             dsGlobal.recipientType === 'add-lead' || dsGlobal.recipientType === 'edit-lead' || 
                             dsGlobal.recipientType === 'add-user' || dsGlobal.recipientType === 'edit-user') {
-                            	content += '<span class="account-name">';
-                            	var accountName = recipients[i].accountName;
-                            	if (accountName !== undefined && accountName !== null && accountName.length > 0) { 
-                            		content += accountName;
-                            	}
-                            	content += '</span><span class="contact-name">';
-                            	content += recipients[i].name;
-                            	content += '</span><span class="contact-email">';
-                            	var contactEmail = recipients[i].email;
-                            	if (contactEmail !== undefined && contactEmail !== null && contactEmail.length > 0) { 
-                            		content += contactEmail;
-                            	}
-                            	content += '</span>';
+                                content += '<span class="account-name">';
+                                var accountName = recipients[i].accountName;
+                                if (accountName !== undefined && accountName !== null && accountName.length > 0) { 
+                                    content += accountName;
+                                }
+                                content += '</span><span class="contact-name">';
+                                content += recipients[i].name;
+                                content += '</span><span class="contact-email">';
+                                var contactEmail = recipients[i].email;
+                                if (contactEmail !== undefined && contactEmail !== null && contactEmail.length > 0) { 
+                                    content += contactEmail;
+                                }
+                                content += '</span>';
                             } else {
-                            	content += recipients[i].name;
+                                content += recipients[i].name;
                             }
                             content += '</li>';
                         }
@@ -1551,8 +1909,8 @@ jQuery(document).ready(function($) {
                     var recipientName = unescapeHTMLSpecialCharacters(dsGlobal.currentEditingRecipientName);
                     var recipient = dsGlobal.currentEditingRecipient;
                     if(result.envelope.recipients[0].recipientNames.length === 0) {
-                    	$('#ds-recipient-signature-dropdown select').append($("<option></option>").attr("value", unescapeHTMLSpecialCharacters(recipientName)).text(unescapeHTMLSpecialCharacters(recipientName)));
-                    	$('#ds-recipient-signature-dropdown select').val(unescapeHTMLSpecialCharacters(recipientName));
+                        $('#ds-recipient-signature-dropdown select').append($("<option></option>").attr("value", unescapeHTMLSpecialCharacters(recipientName)).text(unescapeHTMLSpecialCharacters(recipientName)));
+                        $('#ds-recipient-signature-dropdown select').val(unescapeHTMLSpecialCharacters(recipientName));
                         $('#ds-recipient-signature-dropdown').hide();
                     } else {
                         $('#ds-recipient-signature-dropdown').show();
@@ -1592,7 +1950,7 @@ jQuery(document).ready(function($) {
 
     // Click handler for deleting recipient
     $('#recipients section').on('click', '.recipient .delete', function(){
-    	hideErrors();
+        hideErrors();
         var recipientId = this.parentNode.id;
         console.log('delete recipient called, id='+recipientId);
         $('#'+recipientId).css('opacity', '0.5');
@@ -1613,7 +1971,7 @@ jQuery(document).ready(function($) {
 
     //  Click handler for saving (new or edited) recipient
     $('#ds-recipient-save-btn').click(function(){
-    	hideErrors();
+        hideErrors();
         console.log('save recipient btn clicked, currentEditingRecipientId='+dsGlobal.currentEditingRecipientId);
         console.log('recipientType=' + dsGlobal.recipientType);
         if(dsGlobal.recipientType === 'add-quick') {
@@ -1780,11 +2138,12 @@ jQuery(document).ready(function($) {
         showRecipientModalLoading();
         var keyword = $('#ds-recipient-search-text').val();
         $('#ds-recipient-search-result ul').html('');
-        if(keyword === '') {
-            $('#ds-recipient-search-result ul').html(dsGlobal.pleaseEnterSearchKeywordLabel);
+        
+         /*if(keyword === '') {
+           $('#ds-recipient-search-result ul').html(dsGlobal.pleaseEnterSearchKeywordLabel);
             hideRecipientModalLoading();
             return;
-        }
+        }*/
         console.log('search recipient called, keyword='+keyword+', action='+dsGlobal.action);
         try {
             Visualforce.remoting.Manager.invokeAction(dsGlobal.action, keyword, recipientRemoteActionHandler);
@@ -1852,12 +2211,12 @@ jQuery(document).ready(function($) {
             dsGlobal.newRecipientName = recipientInfo[0];
             dsGlobal.newRecipientEmail = recipientInfo[1];
             dsGlobal.newRecipientId = recipientInfo[2];
-	        if(!dsGlobal.isEditing) {
-	            showEditRecipientModal();
-	        } else {
-	            dsGlobal.isChangingRecipient = true;
-	            showEditRecipientModal(dsGlobal.currentEditingRecipientId);
-	        }
+            if(!dsGlobal.isEditing) {
+                showEditRecipientModal();
+            } else {
+                dsGlobal.isChangingRecipient = true;
+                showEditRecipientModal(dsGlobal.currentEditingRecipientId);
+            }
         }
     });
 
@@ -1991,6 +2350,16 @@ jQuery(document).ready(function($) {
         }
     });
     
+     $('#envelopeCustomFields-document-title').click(function() {
+        if ($('#envelopeCustomFields').hasClass('expanded')) {
+            $('#envelopeCustomFields').removeClass('expanded');
+            $('#envelopeCustomFields').addClass('collapsed');
+        } else {
+            $('#envelopeCustomFields').removeClass('collapsed');
+            $('#envelopeCustomFields').addClass('expanded');
+        }
+    });
+    
     $('#settings-document-title').click(function() {
         if ($('#settings').hasClass('expanded')) {
             $('#settings').removeClass('expanded');
@@ -2034,6 +2403,6 @@ jQuery(document).ready(function($) {
     });
     
     if (dsGlobal.showAddAttachmentWindow === '1') {
-    	$('#add-attachment').click();
+        $('#add-attachment').click();
     }
 });

@@ -6,7 +6,8 @@
 	<apex:includeScript value="{!$Resource.dsfs__html5shivjs}" />
 	<script type="text/javascript">
 		jQuery.noConflict();
-		jQuery(document).ready(function($) {	
+		jQuery(document).ready(function($) {
+ 			console.log('isLightningEnabled? : ' + '{!isLightningEnabled}');		
 			if(!Modernizr.svg) {
 			    $('.dsLogo').attr('src', '{!$Resource.DocuSignPNG}');
 			}
@@ -24,8 +25,8 @@
 				</td>
 			</tr>
 		</table>
-		<iframe height="600px" id="theIframe" name="theIframe"
-			src="{!TaggerUrl}?DSEnvGUID={!MyEnvGUID}&DSEID={!MyDSEID}&SourceID={!MyStartingPageObjectID}&NW={!NewWindow}"
-			width="100%"></iframe>
+        <iframe  height='{!IF(isLightningEnabled,"97%","600px")}' id="theIframe" name="theIframe"
+            src="{!TaggerUrl}?DSEnvGUID={!MyEnvGUID}&DSEID={!MyDSEID}&SourceID={!MyStartingPageObjectID}&NW={!NewWindow}"
+            width="100%" style="{!IF(isLightningEnabled,'position: absolute;','')}"></iframe>
 	</apex:form>
 </apex:page>

@@ -106,6 +106,10 @@ global class dc3Config {
         get;
         set;
     }
+    global String leadConvertOwner {
+        get;
+        set;
+    }
     global String leadConvertStatus {
         get;
         set;

@@ -45,25 +45,26 @@
           showTagButtonOverride: '{!$CurrentPage.parameters.STB}',
           enableEmailSubjectEditingOverride: '{!$CurrentPage.parameters.SES}',
           enableEmailMessageEditingOverride: '{!$CurrentPage.parameters.SEM}', 
-          newWindow: '{!$CurrentPage.parameters.NW}',    
+          newWindow: '{!$CurrentPage.parameters.NW}', 
+          lightningEnabled : '{!$CurrentPage.parameters.LT}',        
           // Current User Info
           currentUserName: "{!$User.FirstName} {!$User.LastName}",
           currentUserEmail: "{!$User.Email}",
           currentUserId: '{!$User.Id}',
           // Labels
           editLabel: '{!$Label.Edit}',
-          editRecipientLabel: '{!$Label.Edit} {!$Label.Recipient}',
-          addRecipientLabel: '{!$Label.Add} {!$Label.Recipient}',
+          editRecipientLabel: '{!$Label.EditRecipient}',
+          addRecipientLabel: '{!$Label.AddRecipient}',
           addMeLabel: "{!$Label.AddMe}",
-          addContactLabel: '{!$Label.Add} {!$Label.Contact}',
-          addLeadLabel: '{!$Label.Add} {!$Label.Lead}',
-          addUserLabel: '{!$Label.Add} {!$Label.User}',
-          selectContactLabel: '{!$Label.SelectRecipient} {!$Label.Contact}',
-          selectLeadLabel: '{!$Label.SelectRecipient} {!$Label.Lead}',
-          selectUserLabel: '{!$Label.SelectRecipient} {!$Label.User}',
-          searchContactsLabel: '{!$Label.Search} {!$Label.Contacts}',
-          searchLeadsLabel: '{!$Label.Search} {!$Label.Leads}',
-          searchUsersLabel: '{!$Label.Search} {!$Label.Users}',
+          addContactLabel: '{!$Label.AddContact}',
+          addLeadLabel: '{!$Label.AddLead}',
+          addUserLabel: '{!$Label.AddUser}',
+          selectContactLabel: '{!$Label.SelectContact}',
+          selectLeadLabel: '{!$Label.SelectLead}',
+          selectUserLabel: '{!$Label.SelectUser}',
+          searchContactsLabel: '{!$Label.SearchContacts}',
+          searchLeadsLabel: '{!$Label.SearchLeads}',
+          searchUsersLabel: '{!$Label.SearchUsers}',
           invalidEmailLabel: '{!$Label.m_InvalidEmailError}',
           fieldRequiredLabel: '{!$Label.FieldRequired}',
           signerDashSignNowLabel: '{!$Label.SignerDashSignNow}',
@@ -91,6 +92,7 @@
           DocumentIconPNG: '{!$Resource.DocumentIconPNG}',
           SettingIconPNG: '{!$Resource.SettingIconPNG}',
           MessageIconPNG: '{!$Resource.MessageIconPNG}',
+          EnvelopecustomfieldIconPNG: '{!$Resource.EnvelopecustomfieldIconPNG}',
           DocuSignLoadingLogoPNG: '{!$Resource.DocuSignLoadingLogoPNG}',
           isEditing: false,
           isChangingRecipient: false
@@ -136,6 +138,7 @@
                 </div>
               </section>
             </div>
+          
             <div id="recipients">
                <section id="dsRecipientsList">
                   <div class="document-title">
@@ -177,6 +180,21 @@
                   </div>
                </section>
             </div>
+             <div id="envelopeCustomFields" class="expanded" style="display: none">
+               <section>
+                  <div class="document-title" id="envelopeCustomFields-document-title">
+                     <h2><img class="icon" id="envelopecustomfieldIcon" src="{!$Resource.EnvelopecustomfieldIconPNG}"></img>{!$Label.EnvelopeCustomFields}</h2>
+                  </div>
+                  <div id="envelopeCustomFieldsContent" class="content">
+                   <div id="envelopeCustomFieldsForm" class="form">
+                    <div id="envelopeCustomFieldsGridRow" class="grid-row">
+                   
+                    </div>
+                   </div>
+                  </div>
+               </section>
+            </div>
+            
             <div id="settings" class="expanded" style="display: none">
                <section>
                   <div class="document-title" id="settings-document-title">
@@ -203,6 +221,7 @@
                         <input type="checkbox" id="enableChatterUpdates"/>
                         <label for="enableChatterUpdates">{!$Label.EnableChatterUpdates}</label>
                      </div>
+                     
                   </div>
                </section>
             </div>
@@ -323,7 +342,7 @@
              <div class="search">
                 <input type="text" id="ds-recipient-search-text" placeholder="{!$Label.Search}" maxlength="100"/>
                 <button type="button" id="ds-recipient-search-btn">{!$Label.Search}</button>
-                <a href="javascript:void(0);" id="ds-add-new-contact-link" >{!$Label.New} {!$Label.Recipient}</a>
+                <a href="javascript:void(0);" id="ds-add-new-contact-link" >{!$Label.AddRecipient}</a>
              </div>
             <div id="ds-recipient-search-form">
               <div class="content static" id="ds-recipient-search-result">

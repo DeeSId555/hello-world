@@ -32,6 +32,11 @@ global class dc3Settings {
         get;
         set;
     }
+    global static String LIGHTNING_PREVENTION;
+    global Boolean LightningPrevention {
+        get;
+        set;
+    }
     global static String MAX_RESULT_COUNT;
     global Integer MaxResultCount {
         get;

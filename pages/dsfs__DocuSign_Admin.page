@@ -22,7 +22,7 @@
             findDocuSignUrl: '{!$RemoteAction.AdminController.findDocuSignUrl}',
             responseJson: JSON.parse('{!JSENCODE(responseJson)}'),
             sessionId: '{!$Api.Session_ID}',
-            editLabel: '{!$Label.dsfs__Edit}',
+            editLabel: '{!$Label.dsfs__edit}',
             deleteLabel: '{!$Label.DeleteUppercase}',
             searchIconPNG: '{!$Resource.SearchIconPNG}',      
             docusignPNG: '{!$Resource.DocuSignPNG}',
@@ -30,11 +30,13 @@
             deleteIconPNG: '{!$Resource.DeletePNG}',
             isMetadataApiSupported: true,
             layoutsText: '{!$Label.Layouts}',
-            usersText: '{!$Label.dsfs__Users}',
+            usersText: '{!$Label.dsfs__users}',
             clickHereText: '{!$Label.ClickHere2}',
             chatterLanguageCodeText : '{!ChatterCurrentLanguageCode}',
             noSupportMetadataAPIText : "{!$Label.NoSupportToMetadataAPI}",
-            windowBlockedByBrowserText : '{!$Label.WindowBlockedByBrowser}'
+            windowBlockedByBrowserText : '{!$Label.WindowBlockedByBrowser}',
+            isLightningEnabled : '{!isLightningReady}',
+            baseVFPUrl : '{!baseUrl}'
         };
         function selectAllByLayoutId(uniqueId) {
             var checked = !$("#desktopCheckbox" + uniqueId).prop('checked');
@@ -64,7 +66,7 @@
                             <li id="accountTabListItem"><a href="?t=a" id="accountTab">{!$Label.Account}</a></li>
                             <li id="layoutsTabListItem"><a href="?t=l" id="layoutsTab">{!$Label.Layouts}</a></li>
                             <li id="customTagsTabListItem"><a href="?t=c" id="customTagsTab">{!$Label.CustomTags}</a></li>
-                            <li id="usersTabListItem"><a href="?t=u" id="usersTab">{!$Label.dsfs__Users}</a></li>
+                            <li id="usersTabListItem"><a href="?t=u" id="usersTab">{!$Label.dsfs__users}</a></li>
                             <li><a href="#" id="docusignTab">{!$Label.DocuSign}</a></li>
                         </ul>
                     </div>
@@ -149,16 +151,16 @@
                       &nbsp;
                     </div>
                     <div class="two col">
-                      <p id="desktopHeader" onclick="javascript:$('#layoutDropdown').val('Custom');">{!$Label.Desktop}</p>
+                      <p id="desktopHeader" class="clickable" onclick="javascript:$('#layoutDropdown').val('Custom');">{!$Label.Desktop}</p>
                     </div>
                     <div class="two col">
-                      <p id="mobileHeader" onclick="javascript:$('#layoutDropdown').val('Custom');">{!$Label.Mobile}</p>
+                      <p id="mobileHeader" class="clickable" onclick="javascript:$('#layoutDropdown').val('Custom');">{!$Label.Mobile}</p>
                     </div>
                     <div class="two col">
-                      <p id="statusListHeader" onclick="javascript:$('#layoutDropdown').val('Custom');">{!$Label.DocuSignStatusRelatedList}</p>
+                      <p id="statusListHeader" class="clickable" onclick="javascript:$('#layoutDropdown').val('Custom');">{!$Label.DocuSignStatusRelatedList}</p>
                     </div>
                     <div class="three col">
-                      <p id="recipientStatusListHeader" onclick="javascript:$('#layoutDropdown').val('Custom');">{!$Label.DocuSignRecipientStatusRelatedList}</p>
+                      <p id="recipientStatusListHeader" class="clickable" onclick="javascript:$('#layoutDropdown').val('Custom');">{!$Label.DocuSignRecipientStatusRelatedList}</p>
                     </div>
                   </div>
                   
@@ -209,7 +211,7 @@
         <div class="inline-button send" id="layoutsButtons" style="display:none">
            <ul>
               <li><a href="javascript:void(0);" id="updateLayoutsButton" class="next">{!$Label.UpdateLayouts}</a></li>
-              <li><a href="?t=h" id="cancelLayoutsButton">{!$Label.dsfs__Cancel}</a></li>
+              <li><a href="?t=h" id="cancelLayoutsButton">{!$Label.dsfs__cancel}</a></li>
            </ul>
         </div>
     </div>
@@ -535,7 +537,7 @@
      <div id="newCustomTagSaveCancel" class="inline-button" style="display:none">
               <ul>
                 <li><a href="#" id="deleteCustomTagBtn">{!$Label.DeleteUppercase}</a></li>
-                <li><a href="#" id="cancelCustomTagBtn">{!$Label.dsfs__Cancel}</a></li>
+                <li><a href="#" id="cancelCustomTagBtn">{!$Label.dsfs__cancel}</a></li>
                 <li><a href="" id="saveCustomTagBtn" class="next">{!$Label.Save}</a></li>
               </ul>
           </div>
@@ -554,7 +556,7 @@
           <div class="leftalign-button">
              <ul>
                 <li><a href="#" class="next" id="deleteCustomTagConfirmationBtn">{!$Label.DeleteUppercase}</a></li>
-                <li><a href="#" id="cancelDeleteCustomTagConfirmationBtn" >{!$Label.dsfs__Cancel}</a></li>
+                <li><a href="#" id="cancelDeleteCustomTagConfirmationBtn" >{!$Label.dsfs__cancel}</a></li>
              </ul>
           </div>
        </div>
@@ -599,7 +601,7 @@
                       <div class="three col">
                          <label>{!$Label.DefaultEmailSubject}</label>
                       </div>
-                      <div class="five col">
+                      <div class="two col wrap">
                          <label>{!$Label.DefaultEmailMessage}</label>
                       </div>
                    </div>
@@ -686,6 +688,14 @@
                       <div class="option">
                          <input type="checkbox" id="hideRemindAndExpireSettings" />
                          <label>{!$Label.HideTheRemindAndExpireSettings}</label>
+                      </div>
+                      <div class="option">
+                      	 <input type="checkbox" id="loadFiles" />
+                      	 <label>{!$Label.LoadFiles}</label>
+                      </div>
+                      <div class="option">
+                      	 <input type="checkbox" id="lightningComponentLogging" />
+                      	 <label>{!$Label.LightningComponentLogging}</label>
                       </div>
                    </div>
                 </div>
@@ -907,13 +917,22 @@
           <div class="admin-container">
             <section>
               <h2>{!$Label.AddDSTrusted}</h2>
-              <p>{!$Label.ClickButtonsToAddIPRanges}</p>
+              <p>{!$Label.ClickButtonsToAddIPRanges}</p> 
               <ul class="button-group steps">
                  <li><div class="button"><a target="_blank" href="/05G/e?IpStartAddress=162.248.184.1&IpEndAddress=162.248.187.255" class="ip-range-button">{!$Label.AutoSetupStep1}</a></div></li>
                  <li><div class="button"><a target="_blank" href="/05G/e?IpStartAddress=185.81.100.1&IpEndAddress=185.81.103.254" class="ip-range-button">{!$Label.AutoSetupStep2}</a></div></li>
                  <li><div class="button"><a target="_blank" href="/05G/e?IpStartAddress=206.25.247.129&IpEndAddress=206.25.247.159" class="ip-range-button">{!$Label.AutoSetupStep3}</a></div></li>
                  <li><div class="button"><a target="_blank" href="/05G/e?IpStartAddress=209.46.117.161&IpEndAddress=209.46.117.191" class="ip-range-button">{!$Label.AutoSetupStep4}</a></div></li>
                  <li><div class="button"><a target="_blank" href="/05G/e?IpStartAddress=209.67.98.1&IpEndAddress=209.67.98.63" class="ip-range-button">{!$Label.AutoSetupStep5}</a></div></li>
+                 <li><div class="button"><a target="_blank" href="/05G/e?IpStartAddress=54.149.21.90&IpEndAddress=54.149.21.90" class="ip-range-button">{!$Label.AutoSetupStep6}</a></div></li>	
+				 <li><div class="button"><a target="_blank" href="/05G/e?IpStartAddress=54.69.114.54&IpEndAddress=54.69.114.54" class="ip-range-button">{!$Label.AutoSetupStep7}</a></div></li>	
+				 <li><div class="button"><a target="_blank" href="/05G/e?IpStartAddress=52.25.122.31&IpEndAddress=52.25.122.31" class="ip-range-button">{!$Label.AutoSetupStep8}</a></div></li>	
+				 <li><div class="button"><a target="_blank" href="/05G/e?IpStartAddress=52.25.145.215&IpEndAddress=52.25.145.215" class="ip-range-button">{!$Label.AutoSetupStep9}</a></div></li>	
+				 <li><div class="button"><a target="_blank" href="/05G/e?IpStartAddress=52.26.192.160&IpEndAddress=52.26.192.160" class="ip-range-button">{!$Label.AutoSetupStep10}</a></div></li>	
+				 <li><div class="button"><a target="_blank" href="/05G/e?IpStartAddress=52.24.91.157&IpEndAddress=52.24.91.157" class="ip-range-button">{!$Label.AutoSetupStep11}</a></div></li>	
+				 <li><div class="button"><a target="_blank" href="/05G/e?IpStartAddress=52.27.126.9&IpEndAddress=52.27.126.9" class="ip-range-button">{!$Label.AutoSetupStep12}</a></div></li>	
+				 <li><div class="button"><a target="_blank" href="/05G/e?IpStartAddress=52.11.152.229&IpEndAddress=52.11.152.229" class="ip-range-button">{!$Label.AutoSetupStep13}</a></div></li>	
+				 <li><div class="button"><a target="_blank" href="/05G/e?IpStartAddress=52.28.168.105&IpEndAddress=52.28.168.105" class="ip-range-button">{!$Label.AutoSetupStep14}</a></div></li>	
               </ul>
            </section>
           </div>
@@ -988,7 +1007,7 @@
                       </div>
                       <div class="inline-button">
                         <ul>
-                          <li><a href="#" id="trialFormNextButton" class="next">{!$Label.dsfs__Next}</a></li>
+                          <li><a href="#" id="trialFormNextButton" class="next">{!$Label.dsfs__next}</a></li>
                           <li><a href="#" id="trialFormBackButton">{!$Label.Back}</a></li>
                         </ul>
                       </div>
@@ -1016,7 +1035,7 @@
           <div class="inline-button">
              <ul>
                 <li><a href="#" class="next" id="saveLanguageSettingBtn">{!$Label.Add}</a></li>
-                <li><a href="#" id="cancelLanguageSettingBtn" >{!$Label.dsfs__Cancel}</a></li>
+                <li><a href="#" id="cancelLanguageSettingBtn" >{!$Label.dsfs__cancel}</a></li>
              </ul>
           </div>
        </div>

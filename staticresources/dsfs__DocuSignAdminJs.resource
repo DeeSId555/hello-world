@@ -2,7 +2,16 @@
 jQuery.noConflict();
 // all docusign front end logic starts from document.loaded event
 jQuery(document).ready(function($) {
-
+        /*--Check if user has lightning enabled and change tab href values--*/
+        if(dsGlobal.isLightningEnabled){
+             document.getElementById("homeTab").href = dsGlobal.baseVFPUrl+'?t=h';
+			 document.getElementById("settingsTab").href = dsGlobal.baseVFPUrl+'?t=s';
+			 document.getElementById("accountTab").href = dsGlobal.baseVFPUrl+'?t=a';
+			 document.getElementById("layoutsTab").href = dsGlobal.baseVFPUrl+'?t=l';
+			 document.getElementById("customTagsTab").href = dsGlobal.baseVFPUrl+'?t=c';
+			 document.getElementById("usersTab").href = dsGlobal.baseVFPUrl+'?t=u';
+			 console.log('Lighting Enabed');
+	    }
 		/*------------------------------ Init ------------------------------*/
 		var pixels = {
 			"default": 19,
@@ -32,6 +41,8 @@ jQuery(document).ready(function($) {
 		function loadAdminTab() {
 			hideAll();
 			showMessages(dsGlobal.responseJson.messages);
+			
+			
 			if (dsGlobal.responseJson.action === 'ShowDemo') {
 				window.location.href = 'docusignsetupdemo?demo=1';
 			} else if (dsGlobal.responseJson.action === 'ShowLogin') {
@@ -61,8 +72,14 @@ jQuery(document).ready(function($) {
 					$('#accountTabListItem').hide();
 					$('#layoutsTabListItem').hide();
 					$('#customTagsTabListItem').hide();
-					$('#usersTabListItem').hide();
+					$('#usersTabListItem').hide();					
 				}
+				if(dsGlobal.responseJson.admin.isExpiredAccount === true && dsGlobal.responseJson.admin.adminUser === true){
+					$('#settingsTabListItem').hide();
+					$('#accountTabListItem').hide();
+					$('#customTagsTabListItem').hide();
+					$('#usersTabListItem').hide();
+				}				
 				hideCustomTagsIfDisabled();
 				$('#homeTab').addClass('active');
 				$('#navigation').show();
@@ -85,6 +102,9 @@ jQuery(document).ready(function($) {
 				$('#account-installed-content').show();
 				hideCustomTagsIfDisabled();
 			} else if (dsGlobal.responseJson.action === 'ShowCustomTags') {
+				if (dsGlobal.responseJson.admin.accountSettings.tabTextFormattingEnabled == false) {
+					$('#newCustomTagFormat').remove();
+				}
 				if (dsGlobal.responseJson.admin.accountSettings.savingCustomTabsEnabled) {
 					$('#customTagsTab').addClass('active');
 					$('#navigation').show();
@@ -92,6 +112,11 @@ jQuery(document).ready(function($) {
 						$('#relatedToSalesforce, .relateFieldToSalesforce').show();
 					} else {
 						$('#relatedToSalesforce, .relateFieldToSalesforce').hide();
+					}
+					if (dsGlobal.responseJson.admin.accountSettings.tabDataLabelEnabled) {
+						$('#newCustomTag').show();
+					} else {
+						$('#newCustomTag').hide();
 					}
 					$('#customTagTabContent').show();
 				}
@@ -103,6 +128,7 @@ jQuery(document).ready(function($) {
 					}
 				}
 			} else if (dsGlobal.responseJson.action === 'ShowLayouts') {
+				createRemoteSite('?t=l',true);
 				$('#layoutsTab').addClass('active');
 				$('#navigation').show();
 				$('#layoutsTabContent').show();
@@ -126,6 +152,12 @@ jQuery(document).ready(function($) {
 					$('#layoutsChecklistContent').show();
 					$('#layoutsButtons').show();
 				}
+				if(dsGlobal.responseJson.admin.isExpiredAccount === true && dsGlobal.responseJson.admin.adminUser === true){
+					$('#settingsTabListItem').hide();
+					$('#accountTabListItem').hide();
+					$('#customTagsTabListItem').hide();
+					$('#usersTabListItem').hide();
+				}				
 			}
 			if (!Modernizr.svg) {
 				console.log('SVG is NOT supported.');
@@ -135,6 +167,7 @@ jQuery(document).ready(function($) {
 				$('.docusignlogo').attr('src', dsGlobal.DocuSignLoadingLogoPNG);
 				$('#languageSettingsCloseIcon').attr('src', dsGlobal.deleteIconPNG);
 			}
+			 
 		}
 
 		function hideAll() {
@@ -191,7 +224,9 @@ jQuery(document).ready(function($) {
 
 		function search() {
 			if ($("#searchInput").val()) {
-				window.open('https://www.docusign.com/results#type=default&startIndex=0&qu=' + escape($("#searchInput").val()));
+				//window.open('https://www.docusign.com/results#type=default&startIndex=0&qu=' + escape($("#searchInput").val()));
+				window.open('https://www.docusign.com/results?qu='+ escape($("#searchInput").val()));
+				
 			}
 		}
 
@@ -326,13 +361,13 @@ jQuery(document).ready(function($) {
 		$("#connectButton").click(function() {
 			if ($("#connectAgreeCheckbox").is(':checked')) {
 				showLoading();
-				createRemoteSite('');
+				createRemoteSite('',false);
 			}
 		});
 
 		$("#addRemoteSiteButton").click(function() {
 			showLoading();
-			createRemoteSite('?t=l');
+			createRemoteSite('?t=l',false);
 		});
 
 		$("#updateLayoutsButton").click(function() {
@@ -458,7 +493,7 @@ jQuery(document).ready(function($) {
 			}
 		}
 
-		function createRemoteSite(redirectUrl) {
+		function createRemoteSite(redirectUrl,customDomainFlag) {
 			// Calls the Metdata API from JavaScript to create the Remote Site Setting to permit Apex callouts
 			var request =
 				'<?xml version="1.0" encoding="utf-8"?>' +
@@ -469,7 +504,7 @@ jQuery(document).ready(function($) {
 				'</urn:SessionHeader>' +
 				'</env:Header>' +
 				'<env:Body>' +
-				'<createMetadata xmlns="http://soap.sforce.com/2006/04/metadata">' +
+				'<upsertMetadata xmlns="http://soap.sforce.com/2006/04/metadata">' +
 				'<metadata xsi:type="RemoteSiteSetting">' +
 				'<fullName>DocuSignDlrsMdapi</fullName>' +
 				'<description>Metadata API Remote Site Setting for Declarative Rollup Tool (DLRS). Create by DocuSign for Salesforce package.</description>' +
@@ -484,7 +519,7 @@ jQuery(document).ready(function($) {
 				'<isActive>true</isActive>' +
 				'<url>' + dsGlobal.responseJson.admin.hostAlt + '</url>' +
 				'</metadata>' +
-				'</createMetadata>' +
+				'</upsertMetadata>' +
 				'</env:Body>' +
 				'</env:Envelope>';
 			$.ajax({
@@ -498,18 +533,20 @@ jQuery(document).ready(function($) {
 				dataType: "xml",
 				data: request,
 				success: function(anythng, status, xhr) {
-					handleRemoteSiteResult(true, redirectUrl);
+					handleRemoteSiteResult(true, redirectUrl,customDomainFlag);
 				},
 				error: function(xhr, status, errorThr) {
-					handleRemoteSiteResult(false, redirectUrl);
+					handleRemoteSiteResult(false, redirectUrl,customDomainFlag);
 				}
 			});
 		}
 
-		function handleRemoteSiteResult(success, redirectUrl) {
+		function handleRemoteSiteResult(success, redirectUrl,customDomainFlag) {
 			if (redirectUrl) {
 				if (success) {
-					window.location.href = redirectUrl;
+					if(!customDomainFlag) {
+						window.location.href = redirectUrl;
+						}
 				} else {
 					hideAll();
 					$('#layoutsTab').addClass('active');
@@ -718,6 +755,8 @@ jQuery(document).ready(function($) {
 			populateCheckbox('displayTaggerPageInNewWindow', settings.displayTaggerPageInNewWindow);
 			populateCheckbox('displayInPersonSigningPageInNewWindow', settings.displayInPersonSigningPageInNewWindow);
 			populateCheckbox('reminderSettingsCheckbox', settings.enableRemindAndExpirationSettings);
+			populateCheckbox('loadFiles', settings.loadFiles);
+			populateCheckbox('lightningComponentLogging', settings.lightningComponentLogging);
 			if (settings.enableRemindAndExpirationSettings === true) {
 				$('#reminderSettings').show();
 				$('#remindSignersTextInput').val(populateRemindExpireSettings(settings.reminderDays));
@@ -852,10 +891,10 @@ jQuery(document).ready(function($) {
 			var emailSubject = (emailSubjectFull.length > 100) ? emailSubjectFull.substring(0, 100) + '..' : emailSubjectFull;
 			var emailBodyFull = (localizationSettings.DefaultEmailBody === null) ? '' : localizationSettings.DefaultEmailBody;
 			var emailBody = (emailBodyFull.length > 200) ? emailBodyFull.substring(0, 200) + '..' : emailBodyFull;
-			var html = '<div class="divided email-setting" id="' + languageCode + '"><div class="grid-row"><div class="three col"><p class="break">' +
-				language + '</p></div><div class="three col"><p class="break">' +
+			var html = '<div class="divided email-setting" id="' + languageCode + '"><div class="grid-row"><div class="three col wrap"><p class="break">' +
+				language + '</p></div><div class="three col wrap"><p class="breakword">' +
 				'<span class="sub-text" title="' + encodeSpecialCharacters(emailSubjectFull) + '">' +
-				encodeSpecialCharacters(emailSubject) + '</span></p></div><div class="six col editable"><p class="break">' +
+				encodeSpecialCharacters(emailSubject) + '</span></p></div><div class="six col editable wrap"><p class="breakword">' +
 				'<span class="sub-text" title="' + encodeSpecialCharacters(emailBodyFull) + '">' +
 				encodeSpecialCharacters(emailBody) + '</p><div class="controls">';
 			if (languageCode !== 'en') {
@@ -1157,6 +1196,8 @@ jQuery(document).ready(function($) {
 				settings.reminderRepeat = $('#continueToSendRemindersTextInput').val();
 				settings.expireDays = $('#expireRequestInTextInput').val();
 				settings.expireWarning = $('#warnSignersTextInput').val();
+				settings.loadFiles = $('#loadFiles').prop('checked');
+				settings.lightningComponentLogging = $('#lightningComponentLogging').prop('checked');
 				// Update Chatter Settings
 				settings.chatterSettingCode = $('#dsChatterDropdown').val();
 				settings.envelopeSentChatterEnabled = $('#chatterEnvelopeSentCheckbox').prop('checked');
@@ -1343,14 +1384,18 @@ jQuery(document).ready(function($) {
 			//set initial default value to text field
 			var selectedVal = 'text';
 			$('#tagTypeDropdown').val(selectedVal);
-
 			
 			//handle visibility for all six divs    	
 			handleCustomTagDiv(selectedVal);
 			handleFormattingDiv(selectedVal);
 			handleValidation(selectedVal);
+			handleAccountSettings(selectedVal);
 			handleInputLimitDiv(selectedVal);
 			handleAdvancedDiv(selectedVal);
+			
+			if (dsGlobal.responseJson.admin.accountSettings.dataFieldRegexEnabled === false) {
+				$("#validationTypeDropdown option[value='RegExp']").remove();
+			}
 		});
        
 		$("#cancelCustomTagBtn").click(function() {
@@ -1470,7 +1515,8 @@ jQuery(document).ready(function($) {
 			clearallCheckBoxesNewCustomTag();
 			$('#customTagIdText').val(customTagId); 
 			$('#CreateEditCustomTag').html();
-			disableSaveButton();
+			hideValidationErrorOnName();
+			enableSaveButton();
 			$('#deleteCustomTagBtn').show();
 			$('#newCustomTagCreationContent').show();
 			$('#newCustomTagInfo').show();
@@ -1480,9 +1526,26 @@ jQuery(document).ready(function($) {
 			$('#newCustomTagAdvanced').show();
 			$('#newCustomTagSaveCancel').show();
 			$('#customTagTabContent').hide();
+			
 			// reload to UI elements 
 			$('#customTagNameText').val(customTag.tabLabel === "--" ? "" : customTag.tabLabel);
+			if (dsGlobal.responseJson.admin.accountSettings.tabDataLabelEnabled) {
+				$('#customTagNameText').attr('readonly', false);
+				$('#customTagNameText').css('background-color' , '#FFFFFF'); 
+			} else {
+				$('#customTagNameText').attr('readonly', true);
+				$('#customTagNameText').css('background-color' , '#DEDEDE'); 
+				
+			}
 			$('#anchorText').val(customTag.anchor === "--" ? "" : customTag.anchor);
+			
+			if (customTag.validationPattern.length > 0 && dsGlobal.responseJson.admin.accountSettings.dataFieldRegexEnabled === false) {
+				$("#validationTypeDropdown option[value='RegExp']").remove();
+				$('#RegExPatternDiv').hide();
+				customTag.type = 'text';
+				customTag.validationPattern = '';
+			}
+			handleAccountSettings(customTag.type);
 			
 			var validationTypes = ['email', 'number', 'date', 'ssn', 'zip5', 'zip5Dash4'];
 			if(validationTypes.indexOf(customTag.type) >= 0) {
@@ -1527,7 +1590,7 @@ jQuery(document).ready(function($) {
 			if (customTag.bold == 'true') {
 				$('#bold').addClass('selected');
 			} else {
-				$('#bold').removeClass('selected');
+				$('#bold').removeClass('selected'); 
 			}
 			if (customTag.italic == 'true') {
 				$('#italic').addClass('selected');
@@ -1612,6 +1675,15 @@ jQuery(document).ready(function($) {
 			customTabIDForDeletion=customTagId;
 			showCustomTag(customTagId);
 		});
+		
+		function setDefaultFormatting(isDefault, isUi, isOld, defaultValue, uiValue, oldValue) {
+			if (isDefault)
+				return defaultValue;
+			if (isUi) 
+				return uiValue;
+			if (isOld) 
+				return oldValue;
+		}
 
 		
 		// Save Custom Button
@@ -1637,14 +1709,33 @@ jQuery(document).ready(function($) {
 				var items = $('#dropDownOptionsTextArea').val().split(';');
 				customTag.items = items;
 			}
-
-
+			
+			var isCreateNew = (customTag.customTabId === null) || (customTag.customTabId === undefined) || (customTag.customTabId.length === 0);
+			var oldCustomTag = {};
+			if (!isCreateNew) {
+				for (var i = 0; i < dsGlobal.responseJson.admin.customTags.length; i++) {
+					var c = dsGlobal.responseJson.admin.customTags[i];
+					if (c.customTabId == customTag.customTabId) {
+						oldCustomTag = c;
+						break;
+					}
+				}
+			}
+			var useUi = dsGlobal.responseJson.admin.accountSettings.tabTextFormattingEnabled;
+			var useDefault = !useUi && isCreateNew;
+			var useOld = !useUi && !isCreateNew;
+			
 			//--Font Div --
-			customTag.font = $('#fontDropDown').val(); customTag.fontSize = $('#fontSizeDropDown').val(); customTag.fontColor = $('#fontColorDropDown').val();
+			customTag.font = setDefaultFormatting(useDefault, useUi, useOld, 'arial', $('#fontDropDown').val(), oldCustomTag.font);
+			customTag.fontSize = setDefaultFormatting(useDefault, useUi, useOld, 'size9', $('#fontSizeDropDown').val(), oldCustomTag.fontSize);	
+			customTag.fontColor = setDefaultFormatting(useDefault, useUi, useOld, 'black', $('#fontColorDropDown').val(), oldCustomTag.fontColor );
 
-			customTag.bold = $('#bold').is('.selected'); customTag.italic = $('#italic').is('.selected'); customTag.underline = $('#underline').is('.selected');
+			customTag.bold = setDefaultFormatting(useDefault, useUi, useOld, false, $('#bold').is('.selected'), oldCustomTag.bold); 
+			customTag.italic = setDefaultFormatting(useDefault, useUi, useOld, false, $('#italic').is('.selected'), oldCustomTag.italic); 
+			customTag.underline = setDefaultFormatting(useDefault, useUi, useOld, false, $('#underline').is('.selected'), oldCustomTag.underline);
 
-			customTag.concealValueOnDocument = $('#hideTextWithAsterisksTxtBox').is(':checked'); customTag.width = $('#widthText').val(); customTag.height = $('#heightText').val();
+			customTag.concealValueOnDocument = setDefaultFormatting(useDefault, useUi, useOld, false, $('#hideTextWithAsterisksTxtBox').is(':checked'), oldCustomTag.concealValueOnDocument); 
+			customTag.width = $('#widthText').val(); customTag.height = $('#heightText').val();
 
 			//-- Tooltip Div --
 			customTag.name = $('#customTagToolTipText').val();
@@ -1670,7 +1761,9 @@ jQuery(document).ready(function($) {
 			customTag.validationMessage = $('#validationErrorMessageText').val();
 
 			//--Advanced Div --
-			customTag.editable = $('#fixedSizeChkBox').is(':checked'); customTag.includedInEmail = $('#includeNoteInEmailChkBox').is(':checked');
+			customTag.editable = setDefaultFormatting(useDefault, useUi, useOld, false, $('#fixedSizeChkBox').is(':checked'), customTag.editable); 
+			
+			customTag.includedInEmail = $('#includeNoteInEmailChkBox').is(':checked');
 			//-----Related to salesforce----
 			customTag.relatedToSalesforce = $('#relateFieldToSalesforceCheckbox').is(':checked'); console.log("relateFieldToSalesforceCheckbox : " + $('#relateFieldToSalesforceCheckbox').is(':checked'));
 
@@ -1710,7 +1803,10 @@ jQuery(document).ready(function($) {
 					if (arr[0].trim() !== 'NaNval')
 						path = path + arr[0].trim();
 				}
-
+			
+				if (path.substr(-1) === ".") {
+				    path = path.slice(0, -1);
+				}
 				mergeField.writeBack = $('#AllowWritebackToSalesforceChkBox').is(':checked');
 				mergeField.path = path
 				mergeField.allowSenderToEdit = $('#AllowSenderToEditCustomFieldsChkBox').is(':checked');
@@ -1749,41 +1845,14 @@ jQuery(document).ready(function($) {
 	//enable save when someone editing Custom Tag Name Textbox
 	$('#customTagNameText').on('input', function(e) {
 		if ($('#customTagNameText').val().trim() !== '') {
-			if($(tagTypeDropdown).val() == 'list' && $(dropDownOptionsTextArea).val().trim() == '' && !$('#relateFieldToSalesforceCheckbox').is('checked')){
-				disableSaveButton();
-			}
-			else if ($(tagTypeDropdown).val() == 'text' && $(validationTypeDropdown).val() == 'RegExp' && $(regExPatternText).val().trim() == ''){
-				disableSaveButton();
-			}
-			else{
-				enableSaveButton();
-			}
-		} else {
-			disableSaveButton();
-		}
-		// if tag type is dropdown we need to make sure we have value for options also
-		if ($(tagTypeDropdown).val() != 'text' && $('#relateFieldToSalesforceCheckbox').is('checked'))
-			enableSaveButton();
-	});
-
-	//enable save when someone editing dropdown options Textbox when tag type is dropdown
-	$('#dropDownOptionsTextArea').on('input', function(e) {
-		if ($('#dropDownOptionsTextArea').val().trim() !== '' && $('#customTagNameText').val().trim() !== '' && (!$('#relateFieldToSalesforceCheckbox').is('checked'))) {
 			enableSaveButton();
 		} else {
 			disableSaveButton();
 		}
+		
 	});
 
-	//enable save when someone editing regex pattern and when tag type is text field
-	$('#regExPatternText').on('input', function(e) {
-		if ($('#regExPatternText').val().trim() !== '' && $(customTagNameText).val().trim() !== '') {
-			enableSaveButton();
-		} else {
-			disableSaveButton();
-		}
-	});
-
+	
 	$('.fontSelectionButton').click(function(event) {
 		$(this).parent().toggleClass("selected");
 		event.preventDefault();
@@ -1791,150 +1860,16 @@ jQuery(document).ready(function($) {
 
 	//check for all mandatory fields when anything on div changes
 	$('#newCustomTagCreationContent').click(function() {
-		
-
-		//TagType="Dropdown" so Options is mandatory
-
-		if ($(tagTypeDropdown).val() == 'list') {
-			if ($(dropDownOptionsTextArea).val().trim() !== '' && $(customTagNameText).val().trim() !== '') {
-				$(dropDownOptionsTextArea).css({
-					"border-color": "",
-					"border-width": "",
-					"border-style": ""
-				});
-				enableSaveButton();
-
-			} else {
-				$(dropDownOptionsTextArea).css({
-					"border-color": "#E86B52",
-					"border-width": "1px",
-					"border-style": "solid"
-				});
-				disableSaveButton();
-
-			}
-		}
-
-		//Tag Type = "Text Field" and Validation Type="Regular Expression" so Validation Pattern is mandatory
-
-		if ($(tagTypeDropdown).val() == 'text') {
-			if ($('validationTypeDropdown').val() == 'RegExp' && $(customTagNameText).val() !== '') {
-				if ($(regExPatternText).val() !== '') {
-					$(regExPatternText).css({
-						"border-color": "",
-						"border-width": "",
-						"border-style": ""
-					});
-					enableSaveButton();
-
-				} else {
-					$(regExPatternText).css({
-						"border-color": "#E86B52",
-						"border-width": "1px",
-						"border-style": "solid"
-					});
-					disableSaveButton();
-				}
-			}
-		}
-
-		if ($('#relateFieldToSalesforceCheckbox').is(':checked')) {
-
-			
-			//related to salesforce mandatory field check
-
-			if ($(salesforceObjectDropDown).val() !== '-1' && $(salesforceObjectDropDown).val() !== null && $(salesforceObjectDropDown).val() !== '') {
-				$(salesforceObjectDropDown).css({
-					"border-color": "",
-					"border-width": "",
-					"border-style": ""
-				});
-				enableSaveButton();
-			} else {
-				$(salesforceObjectDropDown).css({
-					"border-color": "#E86B52",
-					"border-width": "1px",
-					"border-style": "solid"
-				});
-				disableSaveButton();
-			}
-
-			if ($(firstLevelFieldSetDropDown).val() !== null && $(firstLevelFieldSetDropDown).val() !== '') {
-				var objName = $('#firstLevelFieldSetDropDown').val();
-				var arr = objName.split('|');
-				if (arr[0].trim() !== 'NaNval') {
-
-					$(firstLevelFieldSetDropDown).css({
-						"border-color": "",
-						"border-width": "",
-						"border-style": ""
-					});
-					enableSaveButton();
-				} else {
-					$(firstLevelFieldSetDropDown).css({
-						"border-color": "#E86B52",
-						"border-width": "1px",
-						"border-style": "solid"
-					});
-					disableSaveButton();
-				}
-			}
-
-			if ($(secondLevelFieldSetDropDown).val() !== null && $(secondLevelFieldSetDropDown).val() !== '') {
-				var objName = $('#secondLevelFieldSetDropDown').val();
-				var arr = objName.split('|');
-				if (arr[0].trim() !== 'NaNval') {
-					$(secondLevelFieldSetDropDown).css({
-						"border-color": "",
-						"border-width": "",
-						"border-style": ""
-					});
-					enableSaveButton();
-				} else {
-					$(secondLevelFieldSetDropDown).css({
-						"border-color": "#E86B52",
-						"border-width": "1px",
-						"border-style": "solid"
-					});
-					disableSaveButton();
-				}
-			}
-
-			if ($(thirdLevelFieldSetDropDown).val() !== null && $(thirdLevelFieldSetDropDown).val() !== '') {
-				var objName = $('#thirdLevelFieldSetDropDown').val();
-				var arr = objName.split('|');
-				if (arr[0].trim() !== 'NaNval') {
-					$(thirdLevelFieldSetDropDown).css({
-						"border-color": "",
-						"border-width": "",
-						"border-style": ""
-					});
-					enableSaveButton();
-				} else {
-					$(thirdLevelFieldSetDropDown).css({
-						"border-color": "#E86B52",
-						"border-width": "1px",
-						"border-style": "solid"
-					});
-					disableSaveButton();
-				}
-			}
-			
-			
-		}
-
 		//Custom tag name mandatory field check
-
-		if ($(customTagNameText).val().trim() !== '') {
-			hideValidationErrorOnName();
-			enableSaveButton();
-
-		} else {
-			showValidationErrorOnName();
-			disableSaveButton();
-
-		}
+			if ($(customTagNameText).val().trim() !== '') {
+				hideValidationErrorOnName();
+				enableSaveButton();
 	
+			} else {
+				showValidationErrorOnName();
+				disableSaveButton();
+	
+			}
 	});
 
 	// width,hight,lines,characters per line,maxcharacters should accept numbers only
@@ -1986,6 +1921,7 @@ jQuery(document).ready(function($) {
 						$('.fullscreenload').hide();
 						showMessages(result.messages);
 						var mergeFieldItemList = result.admin.customTag.mergeFieldItemList;
+						dsGlobal.responseJson.admin.customTag.mergeFieldItemList = mergeFieldItemList;
 						for (var i = 0; i < mergeFieldItemList.length; i++) {
 							var displayName = escapeJs(mergeFieldItemList[i].displayName);
 							if (i == 0)
@@ -2003,12 +1939,6 @@ jQuery(document).ready(function($) {
 						}
 						
 						if (callback == null || callback == undefined) {
-							$(salesforceObjectDropDown).css({
-								"border-color": "#E86B52",
-								"border-width": "1px",
-								"border-style": "solid"
-							});
-							disableSaveButton();
 	
 							if ($(customTagNameText).val().trim() == '') {
 								showValidationErrorOnName();
@@ -2079,6 +2009,7 @@ jQuery(document).ready(function($) {
 						$('.fullscreenload').hide();
 						showMessages(result.messages);
 						var mergeFieldItemList = result.admin.customTag.mergeFieldItemList;
+						dsGlobal.responseJson.admin.customTag.mergeFieldItemList = mergeFieldItemList;
 						for (var i = 0; i < mergeFieldItemList.length; i++) {
 							var displayName = escapeJs(mergeFieldItemList[i].displayName);
 							if (i == 0)
@@ -2102,12 +2033,6 @@ jQuery(document).ready(function($) {
 						}
 						$('#firstLevelFieldSetDropDown').show();
 						if (callback == null || callback == undefined) {
-							$(firstLevelFieldSetDropDown).css({
-								"border-color": "#E86B52",
-								"border-width": "1px",
-								"border-style": "solid"
-							});
-							disableSaveButton();
 	
 							if ($(customTagNameText).val().trim() == '') {
 								showValidationErrorOnName();
@@ -2171,6 +2096,7 @@ jQuery(document).ready(function($) {
 								$('.fullscreenload').hide();
 								showMessages(result.messages);
 								var mergeFieldItemList = result.admin.customTag.mergeFieldItemList;
+								dsGlobal.responseJson.admin.customTag.mergeFieldItemList = mergeFieldItemList;
 								for (var i = 0; i < mergeFieldItemList.length; i++) {
 									var displayName = escapeJs(mergeFieldItemList[i].displayName);
 									if (i == 0)
@@ -2194,12 +2120,6 @@ jQuery(document).ready(function($) {
 
 								}
 								if (callback == null || callback == undefined) {
-									$(secondLevelFieldSetDropDown).css({
-										"border-color": "#E86B52",
-										"border-width": "1px",
-										"border-style": "solid"
-									});
-									disableSaveButton();
 									if ($(customTagNameText).val().trim() == '') {
 										showValidationErrorOnName();
 										disableSaveButton();
@@ -2215,12 +2135,23 @@ jQuery(document).ready(function($) {
 						console.log(err);
 					}
 				} else {
+					var isPicklist = (arr[1].trim() === 'picklist');
 					$('#secondLevelFieldSetDropDown').empty();
 					$('#secondLevelFieldSetDropDown').hide();
 					if(isChanging) {
 						selectCustomTagTypeBasedOnMergeField(arr[1].trim());
+						if (isPicklist) {
+							var mergeFieldItemList = dsGlobal.responseJson.admin.customTag.mergeFieldItemList;
+							var value = arr[0];
+							for (var i = 0; i < mergeFieldItemList.length; i++) {
+							 	if (mergeFieldItemList[i].name == value) {
+							 		$('#dropDownOptionsTextArea').val(mergeFieldItemList[i].picklistvalues);
+							 	}
+							}
+							
+						}
 					} else {
-						setOptionsVisibility(arr[1].trim() === 'picklist');
+						setOptionsVisibility(isPicklist);
 					}
 				}
 			} else {
@@ -2278,6 +2209,7 @@ jQuery(document).ready(function($) {
 								$('.fullscreenload').hide();
 								showMessages(result.messages);
 								var mergeFieldItemList = result.admin.customTag.mergeFieldItemList;
+								dsGlobal.responseJson.admin.customTag.mergeFieldItemList = mergeFieldItemList;
 								for (var i = 0; i < mergeFieldItemList.length; i++) {
 									var displayName = escapeJs(mergeFieldItemList[i].displayName);
 									if (i == 0)
@@ -2294,12 +2226,6 @@ jQuery(document).ready(function($) {
 										}));
 								}
 								if (callback == null || callback == undefined) {
-									$(thirdLevelFieldSetDropDown).css({
-										"border-color": "#E86B52",
-										"border-width": "1px",
-										"border-style": "solid"
-									});
-									disableSaveButton();
 									if ($(customTagNameText).val().trim() == '') {
 										showValidationErrorOnName();
 										disableSaveButton();
@@ -2314,12 +2240,24 @@ jQuery(document).ready(function($) {
 						console.log(err);
 					}
 				} else {
+					var isPicklist = (arr[1].trim() === 'picklist');
 					$('#thirdLevelFieldSetDropDown').empty();
 					$('#thirdLevelFieldSetDropDown').hide();
 					if(isChanging) {
 						selectCustomTagTypeBasedOnMergeField(arr[1].trim());
+						if (isPicklist) {
+							var mergeFieldItemList = dsGlobal.responseJson.admin.customTag.mergeFieldItemList;
+							var value = arr[0];
+							for (var i = 0; i < mergeFieldItemList.length; i++) {
+							 	if (mergeFieldItemList[i].name == value) {
+							 		$('#dropDownOptionsTextArea').val(mergeFieldItemList[i].picklistvalues);
+							 	}
+							}
+							
+						}
+						
 					} else {
-						setOptionsVisibility(arr[1].trim() === 'picklist');
+						setOptionsVisibility(isPicklist);
 					}
 				}
 			} else {
@@ -2361,11 +2299,21 @@ jQuery(document).ready(function($) {
 				$('#AllowSenderToEditCustomFieldsChkBox').attr('disabled', true);
 			}
 			var selectedVal = arr[1].trim();
-			
+			var isPicklist = (arr[1].trim() === 'picklist');
 			if(isChanging) {
 				selectCustomTagTypeBasedOnMergeField(selectedVal);
+				if (isPicklist) {
+					var mergeFieldItemList = dsGlobal.responseJson.admin.customTag.mergeFieldItemList;
+					var value = arr[0];
+					for (var i = 0; i < mergeFieldItemList.length; i++) {
+					 	if (mergeFieldItemList[i].name == value) {
+					 		$('#dropDownOptionsTextArea').val(mergeFieldItemList[i].picklistvalues);
+					 	}
+					}
+					
+				}
 			} else {
-				setOptionsVisibility(arr[1].trim() === 'picklist');
+				setOptionsVisibility(isPicklist);
 			}
 		}	
 	}
@@ -2374,54 +2322,6 @@ jQuery(document).ready(function($) {
 		switchThirdLevelFieldSetDropDown( $('#thirdLevelFieldSetDropDown').val(), true);
 
 	});
-	//Change handler for Validation Type Dropdown
-
-	function changeValidationTypeDropdown(validationTypeVal) {
-		switch (validationTypeVal) {
-			case 'RegExp':
-				$('#newCustomTagValidation').show();
-				$('#validationTypeDiv').show();
-				$('#RegExPatternDiv').show();
-				$('#ValidationErrorMessageDiv').show();
-				if ($(regExPatternText).val() !== '') {
-					$(regExPatternText).css({
-						"border-color": "",
-						"border-width": "",
-						"border-style": ""
-					});
-					if($(customTagNameText).val().trim() !== '')
-						enableSaveButton();
-					else
-						disableSaveButton();
-
-				} else {
-					$(regExPatternText).css({
-						"border-color": "#E86B52",
-						"border-width": "1px",
-						"border-style": "solid"
-					});
-					disableSaveButton();
-				}
-				break;
-			default:
-				$('#newCustomTagValidation').show();
-				$('#validationTypeDiv').show();
-				$('#RegExPatternDiv').hide();
-				$('#ValidationErrorMessageDiv').show();
-				$(regExPatternText).css({
-					"border-color": "",
-					"border-width": "",
-					"border-style": ""
-				});
-				if($(customTagNameText).val().trim() !== ''){
-					enableSaveButton();
-				}
-				else{
-					disableSaveButton();
-				}
-				
-		}
-	}
 	
 	function setOptionsVisibility(/*string*/ show) {
 		if (show) {
@@ -2472,6 +2372,75 @@ jQuery(document).ready(function($) {
 		var validationTypeVal = $(this).val();
 		changeValidationTypeDropdown(validationTypeVal);
 	});
+	
+	//Change handler for Validation Type Dropdown
+	function changeValidationTypeDropdown(validationTypeVal) {
+		if (dsGlobal.responseJson.admin.accountSettings.dataFieldSizeEnabled === false) {
+			switch (validationTypeVal) {
+				case 'date':
+					disableFunction('#maxCharactersText');
+					disableFunction('#fixedSizeChkBox');
+					disableFunction('#charactersPerLineText');
+					disableFunction('#linesText');
+					break;
+				case 'number':
+					disableFunction('#maxCharactersText');
+					disableFunction('#fixedSizeChkBox');
+					disableFunction('#charactersPerLineText');
+					disableFunction('#linesText');
+					break;
+				case 'email':
+					disableFunction('#maxCharactersText');
+					disableFunction('#fixedSizeChkBox');
+					disableFunction('#charactersPerLineText');
+					disableFunction('#linesText');
+					break;
+				case 'ssn':
+					disableFunction('#widthText');
+					disableFunction('#heightText');
+					disableFunction('#maxCharactersText');
+					break;
+				case 'zip5':
+					disableFunction('#widthText');
+					disableFunction('#heightText');
+					disableFunction('#maxCharactersText');
+					break;
+				case 'zip5Dash4':
+					disableFunction('#widthText');
+					disableFunction('#heightText');
+					disableFunction('#maxCharactersText');
+					break;
+			}
+		}
+		if (validationTypeVal === 'RegExp') {
+			$('#newCustomTagValidation').show();
+			$('#validationTypeDiv').show();
+			$('#RegExPatternDiv').show();
+			$('#ValidationErrorMessageDiv').show();
+			if($(customTagNameText).val().trim() !== ''){
+				enableSaveButton();
+			}
+			else{
+				disableSaveButton();
+			}
+		} else {
+			$('#newCustomTagValidation').show();
+			$('#validationTypeDiv').show();
+			$('#RegExPatternDiv').hide();
+			$('#ValidationErrorMessageDiv').show();
+			$(regExPatternText).css({
+				"border-color": "",
+				"border-width": "",
+				"border-style": ""
+			});
+			if($(customTagNameText).val().trim() !== ''){
+				enableSaveButton();
+			}
+			else{
+				disableSaveButton();
+			}
+		}
+	}
 
 	function enableSaveButton() {
 		$('#saveCustomTagBtn').attr('href', '#').css({
@@ -2510,6 +2479,7 @@ jQuery(document).ready(function($) {
 		handleFormattingDiv(selectedVal);
 		handleValidation(selectedVal);
 		handleInputLimitDiv(selectedVal);
+		handleAccountSettings(selectedVal);
 		handleAdvancedDiv(selectedVal);
 	};
 
@@ -2602,12 +2572,6 @@ jQuery(document).ready(function($) {
 				$('#requiredField').show();
 				$('#readOnly').show();
 				$('#Options').show();
-				$(dropDownOptionsTextArea).css({
-					"border-color": "#E86B52",
-					"border-width": "1px",
-					"border-style": "solid"
-				});
-				disableSaveButton();
 				break;
 
 			case 'envelopeId':
@@ -3026,7 +2990,84 @@ jQuery(document).ready(function($) {
 				$('#RegExPatternDiv').hide();
 				$('#ValidationErrorMessageDiv').show();
 		}
-
+		if (dsGlobal.responseJson.admin.accountSettings.dataFieldRegexEnabled === false) {
+			$('#RegExPatternDiv').hide();
+		}
+	}
+	
+	//Handler for account settings
+	
+	function disableFunction(/*jquery selector */ jQuerySelector) { 
+		$(jQuerySelector).attr("disabled", "disabled"); 
+	}
+	
+	function handleAccountSettings(tagType) {
+		if (dsGlobal.responseJson.admin.accountSettings.dataFieldSizeEnabled === false) {
+			switch (tagType) {
+				case 'text':
+					disableFunction('#maxCharactersText');
+					disableFunction('#fixedSizeChkBox');
+					disableFunction('#charactersPerLineText');
+					disableFunction('#linesText');
+					break;
+				case 'approve':
+					disableFunction('#widthText');
+					disableFunction('#heightText');
+					break;			
+				case 'checkBox':
+					break;			
+				case 'company':
+					disableFunction('#charactersPerLineText');
+					break;
+				case 'dateSigned':
+					disableFunction('#maxCharactersText');
+					disableFunction('#fixedSizeChkBox');
+					disableFunction('#charactersPerLineText');
+					disableFunction('#linesText');
+					break;
+				case 'decline':
+					disableFunction('#widthText');
+					disableFunction('#heightText');
+					break;
+				case 'list':
+					break;
+				case 'emailAddress':
+					disableFunction('#maxCharactersText');
+					disableFunction('#fixedSizeChkBox');
+					disableFunction('#charactersPerLineText');
+					disableFunction('#linesText');
+					break;
+				case 'envelopeId':
+					break;
+				case 'firstName':	
+					break;
+				case 'formula':
+					break;
+				case 'fullName':
+					break;
+				case 'initialHere':
+					break;
+				case 'initialHereOptional':
+					break;
+				case 'lastName':
+					break;
+				case 'note':
+					disableFunction('#widthText');
+					disableFunction('#heightText');
+					break;
+				case 'radio':
+					break;
+				case 'signHere':
+					break;
+				case 'signHereOptional':
+					break;
+				case 'signerAttachment':
+					break;
+				case 'title':
+					disableFunction('#charactersPerLineText');
+					break;
+			}	
+		}
 	}
 
 	//Handler for InputLimit Div
@@ -3159,6 +3200,7 @@ jQuery(document).ready(function($) {
 				$('#maxCharacters').show();
 				$('#lines').show();
 				$('#charactersPerLine').show();
+				break;
 		}
 
 	}
@@ -3276,3 +3318,4 @@ function handleAdvancedDiv(tagType) {
 
 	}
 });
+ 
