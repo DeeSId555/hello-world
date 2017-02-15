@@ -3,8 +3,8 @@
     <assignments>
         <name>Calculate_YP_Matching_Score</name>
         <label>Calculate YP Matching Score</label>
-        <locationX>704</locationX>
-        <locationY>286</locationY>
+        <locationX>286</locationX>
+        <locationY>131</locationY>
         <assignmentItems>
             <assignToReference>MatchingScoreVal</assignToReference>
             <operator>Assign</operator>
@@ -92,8 +92,8 @@
     <decisions>
         <name>Is_this_record_a_match_to_exisiting_YP</name>
         <label>Is this record a match to exisiting YP?</label>
-        <locationX>529</locationX>
-        <locationY>293</locationY>
+        <locationX>290</locationX>
+        <locationY>267</locationY>
         <defaultConnector>
             <targetReference>Family_Account</targetReference>
         </defaultConnector>
@@ -158,8 +158,8 @@ IF({!varYPContact.MobilePhone}=&quot;&quot;,0,IF({!varYPMobile}={!varYPContact.M
     <loops>
         <name>Loop_through_YP_Contacts</name>
         <label>Loop through YP Contacts</label>
-        <locationX>702</locationX>
-        <locationY>164</locationY>
+        <locationX>54</locationX>
+        <locationY>233</locationY>
         <assignNextValueToReference>varYPContact</assignNextValueToReference>
         <collectionReference>YPContactList</collectionReference>
         <iterationOrder>Asc</iterationOrder>
@@ -171,8 +171,8 @@ IF({!varYPContact.MobilePhone}=&quot;&quot;,0,IF({!varYPMobile}={!varYPContact.M
     <recordCreates>
         <name>Create_Relationship_between_YP_and_PG</name>
         <label>Create Relationship between YP and PG</label>
-        <locationX>454</locationX>
-        <locationY>566</locationY>
+        <locationX>827</locationX>
+        <locationY>353</locationY>
         <inputAssignments>
             <field>First_Relationship_Type__c</field>
             <value>
@@ -226,8 +226,8 @@ IF({!varYPContact.MobilePhone}=&quot;&quot;,0,IF({!varYPMobile}={!varYPContact.M
     <recordCreates>
         <name>Family_Account</name>
         <label>Family Account</label>
-        <locationX>102</locationX>
-        <locationY>158</locationY>
+        <locationX>526</locationX>
+        <locationY>120</locationY>
         <assignRecordIdToReference>AccountID</assignRecordIdToReference>
         <connector>
             <targetReference>Lookup_Account_Name</targetReference>
@@ -249,8 +249,8 @@ IF({!varYPContact.MobilePhone}=&quot;&quot;,0,IF({!varYPMobile}={!varYPContact.M
     <recordCreates>
         <name>PG_Contact_Account</name>
         <label>PG Contact Account</label>
-        <locationX>105</locationX>
-        <locationY>562</locationY>
+        <locationX>675</locationX>
+        <locationY>353</locationY>
         <assignRecordIdToReference>PGAccountID</assignRecordIdToReference>
         <connector>
             <targetReference>Create_Relationship_between_YP_and_PG</targetReference>
@@ -314,8 +314,8 @@ IF({!varYPContact.MobilePhone}=&quot;&quot;,0,IF({!varYPMobile}={!varYPContact.M
     <recordCreates>
         <name>YP_Contact_Account</name>
         <label>YP Contact Account</label>
-        <locationX>103</locationX>
-        <locationY>413</locationY>
+        <locationX>530</locationX>
+        <locationY>351</locationY>
         <assignRecordIdToReference>YPAccountID</assignRecordIdToReference>
         <connector>
             <targetReference>PG_Contact_Account</targetReference>
@@ -469,8 +469,8 @@ IF({!varYPContact.MobilePhone}=&quot;&quot;,0,IF({!varYPMobile}={!varYPContact.M
     <recordLookups>
         <name>Find_Duplicate_YP_Records</name>
         <label>Find Duplicate YP Records</label>
-        <locationX>525</locationX>
-        <locationY>159</locationY>
+        <locationX>53</locationX>
+        <locationY>19</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Loop_through_YP_Contacts</targetReference>
@@ -479,14 +479,14 @@ IF({!varYPContact.MobilePhone}=&quot;&quot;,0,IF({!varYPMobile}={!varYPContact.M
             <field>Email</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>varYPEmail</elementReference>
+                <elementReference>YPEmail</elementReference>
             </value>
         </filters>
         <filters>
             <field>Name</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>varYPName</elementReference>
+                <elementReference>Surname</elementReference>
             </value>
         </filters>
         <filters>
@@ -498,17 +498,18 @@ IF({!varYPContact.MobilePhone}=&quot;&quot;,0,IF({!varYPMobile}={!varYPContact.M
         </filters>
         <object>Contact</object>
         <outputReference>YPContactList</outputReference>
-        <queriedFields>Name</queriedFields>
         <queriedFields>Email</queriedFields>
         <queriedFields>Birthdate</queriedFields>
         <queriedFields>MobilePhone</queriedFields>
         <queriedFields>MailingPostalCode</queriedFields>
+        <queriedFields>FirstName</queriedFields>
+        <queriedFields>LastName</queriedFields>
     </recordLookups>
     <recordLookups>
         <name>Lookup_Account_Name</name>
         <label>Lookup Account Name</label>
-        <locationX>100</locationX>
-        <locationY>270</locationY>
+        <locationX>530</locationX>
+        <locationY>243</locationY>
         <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>YP_Contact_Account</targetReference>
@@ -529,8 +530,11 @@ IF({!varYPContact.MobilePhone}=&quot;&quot;,0,IF({!varYPMobile}={!varYPContact.M
     <recordUpdates>
         <name>Mark_YP_as_a_Duplicate_EOI</name>
         <label>Mark YP as a Duplicate EOI</label>
-        <locationX>534</locationX>
-        <locationY>406</locationY>
+        <locationX>289</locationX>
+        <locationY>402</locationY>
+        <connector>
+            <targetReference>Loop_through_YP_Contacts</targetReference>
+        </connector>
         <filters>
             <field>Id</field>
             <operator>EqualTo</operator>
@@ -549,8 +553,8 @@ IF({!varYPContact.MobilePhone}=&quot;&quot;,0,IF({!varYPMobile}={!varYPContact.M
     <screens>
         <name>NCS_EOI_Form</name>
         <label>NCS EOI Form</label>
-        <locationX>99</locationX>
-        <locationY>29</locationY>
+        <locationX>521</locationX>
+        <locationY>19</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
