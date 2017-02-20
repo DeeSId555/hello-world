@@ -551,6 +551,15 @@ IF({!varYPContact.MobilePhone}=&quot;&quot;,0,IF({!varYPMobile}={!varYPContact.M
         <object>Contact</object>
     </recordUpdates>
     <screens>
+        <name>Duplicate_YPs</name>
+        <label>Duplicate YPs</label>
+        <locationX>49</locationX>
+        <locationY>372</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+    </screens>
+    <screens>
         <name>NCS_EOI_Form</name>
         <label>NCS EOI Form</label>
         <locationX>521</locationX>
