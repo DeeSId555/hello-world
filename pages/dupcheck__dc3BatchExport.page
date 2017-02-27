@@ -16,11 +16,11 @@
   <apex:includeScript value="{!IF(isDev,AssetsUrl,URLFOR($Resource.dupcheck__dupcheckAssets,'/dupcheckAssets'))}/lightning/js/dupcheck.ng.batch.export.js" />   
       
       
-  <div id="dataStore" class="plauti" ng-app="dcApp" ng-controller="batchExportController" data-job-id="{!jobId}" data-sf-get-data="{!$RemoteAction.dc3ControllerBatchExport.getData}">
+  <div id="dataStore" class="plauti" ng-app="dcApp" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" ng-controller="batchExportController" data-job-id="{!jobId}" data-sf-get-data="{!$RemoteAction.dc3ControllerBatchExport.getData}">
   
     <div ng-if="{!NOT(license.features.batchExport)}">
       <div class="slds-page-header" role="banner">
-        <div class="slds-grid slds-wrap">
+        <div class="slds-grid slds-wrap"> 
           <div class="slds-col slds-has-flexi-truncate ">
             <div class="slds-media">
               <div class="slds-media__figure">
@@ -90,10 +90,18 @@
       <div class="slds-col--padded">
       
         <div class="slds-form-element slds-m-top--large slds-m-bottom--medium slds-grid slds-grid--align-spread">
-          <div class="slds-form-element__control slds-has-divider--bottom">
-            <span class="slds-form-element__static" ng-if="!meta.isLoading" ng-bind-html="meta.text"></span>
-            <span class="slds-form-element__static" ng-if="meta.isLoading">Fetching records...</span>
-          </div>
+			<div class="slds-form-element__control slds-has-divider--bottom">
+            	<span class="slds-form-element__static" ng-if="!meta.isLoading" ng-bind-html="meta.text"></span>
+            	<span class="slds-form-element__static" ng-if="meta.isLoading">Fetching records</span>
+            	<span class="slds-form-element__static">&nbsp;(max 50.000)</span>
+            	<div class="slds-form-element__icon slds-align-middle">
+    				<button class="slds-button slds-button slds-button--icon" ng-click="openUrl(meta.largeExport)">
+      					<svg class="slds-button__icon">
+        					<use xlink:href="{!URLFOR($Resource.slds,'')}/assets/icons/utility-sprite/svg/symbols.svg#info"></use> 
+      					</svg>
+      				</button>	
+          		</div>
+          	</div>
         </div>  
       
         <div class="slds-m-top--medium slds-m-bottom--medium">

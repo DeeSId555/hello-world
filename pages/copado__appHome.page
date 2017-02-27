@@ -1,6 +1,9 @@
 <apex:page controller="copado.appHome" action="{!init}" title="{!$Label.copado__account_summary}" standardStylesheets="true" sidebar="false" showHeader="true" id="thePage" cache="false">
     <c:GAnalytics />    
-    <apex:sectionHeader id="theHeader" title="Copado" subtitle="{!$Label.copado__account_summary}" />    
+    <apex:pageMessages id="theMessages" />
+    
+    <apex:sectionHeader id="theHeader" title="Copado" subtitle="{!$Label.copado__account_summary}" />
+    
     <apex:form id="theForm" >     
         <c:credits id="cmp_credits" />
         <style>
@@ -10,7 +13,7 @@
         <apex:tabPanel switchType="client" selectedTab="transactions" id="theTabPanel"
             tabClass="activeTab" inactiveTabClass="inactiveTab">
             <apex:tab label="{!$Label.copado__transactions}" name="transactions" id="tabOne">
-                <apex:pageBlock id="pbTrans" title="{!$Label.copado__transactions}" helpUrl="http://docs.copa.do" helpTitle="{!$Label.copado__help_for_this_page}">
+                <apex:pageBlock id="pbTrans" title="{!$Label.copado__transactions}" helpUrl="http://www.copa.do/cms/documentation" helpTitle="{!$Label.copado__help_for_this_page}">
                     <apex:pageBlockTable value="{!transactions}" var="t">
                         <apex:column >
                             <apex:facet name="header">{!$ObjectType.User.Label}</apex:facet>
@@ -105,7 +108,7 @@
                     <apex:pageBlockSection >
                         <apex:pageBlockSectionItem >
                             <apex:outputLabel value="{!$Label.copado__api_key}" for="api_key"/>
-                            <apex:outputText value="{!$Setup.copado__Personal_Settings__c.copado__API_Key__c}" id="api_key"/> 
+                            <apex:outputText value="{!APIKey}" id="api_key"/> 
                         </apex:pageBlockSectionItem>
                     </apex:pageBlockSection>
                 </apex:pageBlock>

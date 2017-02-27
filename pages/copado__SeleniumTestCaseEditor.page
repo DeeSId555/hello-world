@@ -2,7 +2,7 @@
 
     <c:GAnalytics />
     <div style="display: none">
-        <apex:outputText value="{!$Setup.copado__Personal_Settings__c.copado__API_Key__c}" id="api_key"/>
+        <apex:outputText value="{!APIKey}" id="api_key"/>
         <script type="text/javascript">
         	var copado_api_key = document.getElementById('{!$Component.api_key}').innerText;
         </script>

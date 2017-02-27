@@ -1,4 +1,4 @@
-<apex:page sidebar="false" id="thePage">
+<apex:page sidebar="false" id="thePage" controller="copado.appHome">
     
     <c:GAnalytics />
     <script>
@@ -12,7 +12,7 @@
     <apex:pageMessage id="theWarning" severity="WARNING" strength="2" summary="{!$Label.copado__selenium_not_enabled}" rendered="{!!and($Setup.copado__Settings__c.copado__Enabled_Multi_Licenses__c, $Setup.copado__Copado_License__c.copado__Enable_CST__c)}"></apex:pageMessage>
     
     <div style="display: none">
-        <apex:outputText value="{!$Setup.copado__Personal_Settings__c.copado__API_Key__c}" id="api_key"/>
+        <apex:outputText value="{!APIKey}" id="api_key"/>
         <script type="text/javascript">
         	var copado_api_key = document.getElementById('{!$Component.api_key}').innerText;
         </script>

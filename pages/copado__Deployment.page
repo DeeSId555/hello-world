@@ -98,6 +98,7 @@ window,"sortable");</script>
 
     $copado( document ).ready(function() {
         deploymentStreamingService.ns = copadoApp.ns;
+        copadoStreamingService.ns = copadoApp.ns;
         copadoStreamingService.init();
         $copado.cometd.subscribe('/topic/CopadoNotifications', function(message) {
             console.info('Push message: ', message);
@@ -323,7 +324,7 @@ window,"sortable");</script>
                                     <option value="Data">{!$Label.STEP_TYPE_DATA}</option>
                                     <option value="Bulk Data">{!$Label.STEP_TYPE_BULK_DATA}</option>
                                     <option value="Delete MetaData">{!$Label.STEP_TYPE_DELETE_METADATA}</option>
-                                    <option value="Custom Settings">{!$Label.STEP_TYPE_CUSTOM_SETTINGS}</option>
+                                    <option value="Custom Settings">{!$Label.copado__step_type_custom_settings}</option>
                                     <option value="Apex">{!$Label.STEP_TYPE_APEX}</option>
                                     <option value="Manual Task">{!$Label.STEP_TYPE_MANUAL_TASK}</option>
                                     <option value="Git MetaData">{!$Label.STEP_TYPE_GIT_METADATA}</option>
